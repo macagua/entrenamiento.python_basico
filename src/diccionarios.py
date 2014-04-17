@@ -15,6 +15,15 @@ datos_basicos = {
     "estado_civil":"Complicado"
 }
 
+print "\nDetalle del diccionario"
+print "=======================\n"
+
+print "\nClaves del diccionario:", datos_basicos.keys()
+print "\nValores del diccionario:", datos_basicos.values()
+print "\nElementos del diccionario:", datos_basicos.items()
+
+
+# Ejemplo practico de los diccionarios
 print "\nInscripcion de Curso"
 print "===================="
 

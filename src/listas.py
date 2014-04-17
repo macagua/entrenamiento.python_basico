@@ -1,5 +1,10 @@
 # -*- coding: utf8 -*-
 
+"""
+   La lista en Python son variables que almacenan arrays, 
+   internamente cada posicion puede ser un tipo de datos distinto.
+"""
+
 # Coleccion ordenada / arreglos o vectores
 l = [2, "tres", True, ["uno", 10]]
 print l

@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 
 """
-    Un conjunto es una colección no ordenada y sin elementos repetidos. 
+    Un conjunto, es una colección no ordenada y sin elementos repetidos. 
     Los usos básicos de éstos incluyen verificación de pertenencia y 
     eliminación de entradas duplicadas.
 """
