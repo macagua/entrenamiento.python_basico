@@ -14,168 +14,168 @@ LECCIÓN 1: INTRODUCCIÓN
 
 - Características.
 
-- ¿Por qué Python?
+- ¿Por qué Python?.
 
 LECCIÓN 2: INSTALANDO PYTHON
 ----------------------------
 
-- Instalando Python en Windows
+- Instalando Python en Windows.
 
-- Instalando Python en una Mac
+- Instalando Python en una Mac.
 
 LECCIÓN 3: ESCRIBIENDO SU PRIMER PROGRAMA - HOLA, MUNDO!
 --------------------------------------------------------
 
-- Ingresando y ejecutando un programa en Windows
+- Ingresando y ejecutando un programa en Windows.
 
-- Ingresando y ejecutando un programa en una Mac
+- Ingresando y ejecutando un programa en una Mac.
 
-- Ejercicio 1
+- Ejercicio 1.
 
 LECCIÓN 4: TIPOS DE DATOS BÁSICOS Y VARIABLES PYTHON
 ----------------------------------------------------
 
-- Expresiones, Sentencias, Variables
+- Expresiones, Sentencias, Variables.
 
-- Trabajando con Números
+- Trabajando con Números.
 
-- Trabajando con Cadenas
+- Trabajando con Cadenas.
 
-- Trabajando con Booleanos
+- Trabajando con Booleanos.
 
-- Trabajando con Listas
+- Trabajando con Listas.
 
-- Trabajando con Diccionarios
+- Trabajando con Diccionarios.
 
-- Trabajando con Tuplas
+- Trabajando con Tuplas.
 
-- Ejercicio 1
+- Ejercicio 1.
 
-- Ejercicio 2
+- Ejercicio 2.
 
 LECCIÓN 5: ENTRADA/SALIDA EN PYTHON
 -----------------------------------
 
-- Usando la función Print - Parte 1
+- Usando la función Print - Parte 1.
 
-- Usando la función Print - Parte 2
+- Usando la función Print - Parte 2.
 
-- Obtener datos de entrada ingresado por el usuario
+- Obtener datos de entrada ingresado por el usuario.
 
-- Ejercicio 1
+- Ejercicio 1.
 
 LECCIÓN 6: HACIENDO DECISIONES - SENTENCIAS IF
 ----------------------------------------------
 
-- Los Operadores Relacionales 03:19
+- Los Operadores Relacionales.
 
-- Los Operadores Lógicos 04:50
+- Los Operadores Lógicos.
 
-- Sentencia Simple if
+- Sentencia Simple if.
 
-- Sentencia if-else
+- Sentencia if-else.
 
-- Sentencia if-elif
+- Sentencia if-elif.
 
-- Ejercicio 1
+- Ejercicio 1.
 
-- Ejercicio 2
+- Ejercicio 2.
 
 LECCIÓN 7: BUCLES WHILE
 -----------------------
 
-- Introducción a Bucles while
+- Introducción a Bucles while.
 
-- Bucles while controlado por Conteo
+- Bucles while controlado por Conteo.
 
-- Bucles while controlado por Evento
+- Bucles while controlado por Evento.
 
-- Usando continue
+- Usando continue.
 
-- Usando break
+- Usando break.
 
-- Trabajando con Archivos - Parte 1
+- Trabajando con Archivos - Parte 1.
 
-- Trabajando con Archivos - Parte 2
+- Trabajando con Archivos - Parte 2.
 
-- Ejercicio 1
+- Ejercicio 1.
 
-- Ejercicio 2
+- Ejercicio 2.
 
 LECCIÓN 8: BUCLES FOR
 ---------------------
 
-- Introducción a Bucles for - Parte 1
+- Introducción a Bucles for - Parte 1.
 
-- Introducción a Bucles for - Parte 2
+- Introducción a Bucles for - Parte 2.
 
-- Bucles for con Listas
+- Bucles for con Listas.
 
-- Bucles for con Tuplas
+- Bucles for con Tuplas.
 
-- Bucles for con Diccionarios
+- Bucles for con Diccionarios.
 
-- Bucles for con Archivos
+- Bucles for con Archivos.
 
-- Ejercicio 1
+- Ejercicio 1.
 
-- Ejercicio 2
+- Ejercicio 2.
 
 LECCIÓN 9: ITERADORES
 ---------------------
 
-- Entendiendo Iteradores
+- Entendiendo Iteradores.
 
-- Usando 'iter' y 'next'
+- Usando 'iter' y 'next'.
 
-- Iteradores y Diccionarios
+- Iteradores y Diccionarios.
 
-- Otros Iteradores
+- Otros Iteradores.
 
-- Ejercicio 1
+- Ejercicio 1.
 
 LECCIÓN 10: LISTA DE COMPRENSIONES
 ----------------------------------
 
-- Introducción a Listas de comprensión
+- Introducción a Listas de comprensión.
 
-- Usando Listas de comprensión con Archivos
+- Usando Listas de comprensión con Archivos.
 
-- Ejercicio 1
+- Ejercicio 1.
 
 LECCIÓN 11: FUNCIONES
 ---------------------
 
-- Introducción a Funciones - Why
+- Introducción a Funciones - ¿Por qué?.
 
-- Definiendo Funciones
+- Definiendo Funciones.
 
-- Llamando Funciones
+- Llamando Funciones.
 
-- Funciones con Argumentos Múltiple
+- Funciones con Argumentos Múltiple.
 
-- Funciones de Predicado
+- Funciones de Predicado.
 
-- Ejercicio 1
+- Ejercicio 1.
 
-- Ejercicio 2
+- Ejercicio 2.
 
 LECCIÓN 12: MAS EN FUNCIONES
 ----------------------------
 
-- Funciones Recursiva - Parte 1
+- Funciones Recursiva - Parte 1.
 
-- Funciones Recursiva - Parte 2
+- Funciones Recursiva - Parte 2.
 
-- Objetos de función
+- Objetos de función.
 
-- Funciones Anónima
+- Funciones Anónima.
 
-- Funciones de orden superior
+- Funciones de orden superior.
 
-- Ejercicio 1
+- Ejercicio 1.
 
-- Ejercicio 2
+- Ejercicio 2.
 
 LECCIÓN 13: ÁMBITO
 ------------------
@@ -250,5 +250,3 @@ LECCIÓN 18: USANDO ESTRUCTURAS DE DATOS
 - Ejercicio 2 - Tuplas.
 
 - Ejercicio 3 - Diccionarios.
-
-
