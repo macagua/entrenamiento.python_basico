@@ -56,9 +56,7 @@ LECCIÓN 4: TIPOS DE DATOS BÁSICOS Y VARIABLES PYTHON
 LECCIÓN 5: ENTRADA/SALIDA EN PYTHON
 -----------------------------------
 
-- Usando la función Print - Parte 1.
-
-- Usando la función Print - Parte 2.
+- Usando la función Print.
 
 - Obtener datos de entrada ingresado por el usuario.
 
@@ -94,9 +92,7 @@ LECCIÓN 7: BUCLES WHILE
 
 - Usando break.
 
-- Trabajando con Archivos - Parte 1.
-
-- Trabajando con Archivos - Parte 2.
+- Trabajando con Archivos.
 
 - Ejercicio 1.
 
@@ -105,9 +101,7 @@ LECCIÓN 7: BUCLES WHILE
 LECCIÓN 8: BUCLES FOR
 ---------------------
 
-- Introducción a Bucles for - Parte 1.
-
-- Introducción a Bucles for - Parte 2.
+- Introducción a Bucles for.
 
 - Bucles for con Listas.
 
@@ -163,9 +157,7 @@ LECCIÓN 11: FUNCIONES
 LECCIÓN 12: MAS EN FUNCIONES
 ----------------------------
 
-- Funciones Recursiva - Parte 1.
-
-- Funciones Recursiva - Parte 2.
+- Funciones Recursiva.
 
 - Objetos de función.
 
@@ -186,18 +178,14 @@ LECCIÓN 13: ÁMBITO
 
 - Ámbito Anidado.
 
-- Ejercicio 1 - Parte 1.
-
-- Ejercicio 1 - Parte 2.
+- Ejercicio 1.
 
 LECCIÓN 14: MÓDULOS
 -------------------
 
 - Usando Módulos Built-In.
 
-- Módulos Definido por el usuario - Parte 1.
-
-- Módulos Definido por el usuario - Parte 2.
+- Módulos Definido por el usuario.
 
 - Namespaces de Módulos.
 
@@ -221,9 +209,7 @@ LECCIÓN 15: PROGRAMANDO ORIENTADO OBJETO - PARTE 1
 LECCIÓN 16: PROGRAMANDO ORIENTADO OBJETO - PARTE 2
 --------------------------------------------------
 
-- Creando una Clase derivada - Parte 1.
-
-- Creando una Clase derivada - Parte 2.
+- Creando una Clase derivada.
 
 - Ejercicio 1.
 
