@@ -56,7 +56,7 @@ LECCIÓN 4: TIPOS DE DATOS BÁSICOS Y VARIABLES PYTHON
 LECCIÓN 5: ENTRADA/SALIDA EN PYTHON
 -----------------------------------
 
-- Usando la función Print.
+- Usando la función 'print'.
 
 - Obtener datos de entrada ingresado por el usuario.
 
@@ -69,11 +69,11 @@ LECCIÓN 6: HACIENDO DECISIONES - SENTENCIAS IF
 
 - Los Operadores Lógicos.
 
-- Sentencia Simple if.
+- Sentencia simple 'if'.
 
-- Sentencia if-else.
+- Sentencia 'if-else'.
 
-- Sentencia if-elif.
+- Sentencia 'if-elif'.
 
 - Ejercicio 1.
 
@@ -82,15 +82,15 @@ LECCIÓN 6: HACIENDO DECISIONES - SENTENCIAS IF
 LECCIÓN 7: BUCLES WHILE
 -----------------------
 
-- Introducción a Bucles while.
+- Introducción a Bucles 'while'.
 
-- Bucles while controlado por Conteo.
+- Bucles 'while' controlado por Conteo.
 
-- Bucles while controlado por Evento.
+- Bucles 'while' controlado por Evento.
 
-- Usando continue.
+- Usando la sentencia 'continue'.
 
-- Usando break.
+- Usando la sentencia 'break'.
 
 - Trabajando con Archivos.
 
@@ -101,15 +101,15 @@ LECCIÓN 7: BUCLES WHILE
 LECCIÓN 8: BUCLES FOR
 ---------------------
 
-- Introducción a Bucles for.
+- Introducción a Bucles 'for'.
 
-- Bucles for con Listas.
+- Bucles 'for' con Listas.
 
-- Bucles for con Tuplas.
+- Bucles 'for' con Tuplas.
 
-- Bucles for con Diccionarios.
+- Bucles 'for' con Diccionarios.
 
-- Bucles for con Archivos.
+- Bucles 'for' con Archivos.
 
 - Ejercicio 1.
 
@@ -183,7 +183,7 @@ LECCIÓN 13: ÁMBITO
 LECCIÓN 14: MÓDULOS
 -------------------
 
-- Usando Módulos Built-In.
+- Usando módulos incorporados en la biblioteca estándar.
 
 - Módulos Definido por el usuario.
 
@@ -220,11 +220,11 @@ LECCIÓN 17: MANIPULANDO EXCEPCIONES
 
 - Excepciones demostradas.
 
-- Sentencias Try-Except.
+- Sentencias 'Try-Except'.
 
-- Sentencias Try-Except-Finally.
+- Sentencias 'Try-Except-Finally'.
 
-- La Sentencia raise.
+- La sentencia 'raise'.
 
 - Ejercicio 1.
 
