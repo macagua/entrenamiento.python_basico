@@ -19,31 +19,3 @@ print type(real)
 real = 0.56e-3
 print real
 print type(real)
-
-# Operaciones
-
-a = 26
-b = 11.3
-c = 5
-d = 3.5
-
-# Suma
-print a + b
-
-# Resta
-print c -a
-
-# Multiplicacion
-print d * c
-
-# Exponente
-print c ** 2
-
-# Division
-print float(c) / a
-
-# Division entera
-print 7 / 3
-
-# Modulo
-print 7 % 3
