@@ -12,8 +12,9 @@ LECCIÓN 1: INTRODUCCIÓN
 Vídeo tutorial
 ==============
 
- - `Tutorial Python 1: Introducción al Lenguaje de Programación <https://www.youtube.com/watch?v=CjmzDHMHxwU>`.
+ - `Tutorial Python 1 - Introducción al Lenguaje de Programación`_.
  
 .. _¿Qué es Python?: http://es.wikipedia.org/wiki/Python
 .. _Características: http://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas
 .. _¿Por qué Python?: http://es.wikipedia.org/wiki/Python#Filosof.C3.ADa
+.. _Tutorial Python 1 - Introducción al Lenguaje de Programación: https://www.youtube.com/watch?v=CjmzDHMHxwU

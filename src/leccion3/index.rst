@@ -29,6 +29,6 @@ TODO
 Vídeo tutorial
 ==============
 
- - `Tutorial Python 3: "Hola Mundo"`_.
+ - `Tutorial Python 3 - Hola Mundo`_.
 
-.. _Tutorial Python 3: "Hola Mundo": https://www.youtube.com/watch?v=OtJEj7N9T6k
+.. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k
