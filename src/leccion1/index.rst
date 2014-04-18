@@ -1,17 +1,19 @@
 .. -*- coding: utf-8 -*-
 
-.. highlight:: rest
-
 LECCIÓN 1: INTRODUCCIÓN
 =======================
 
-- `¿Qué es Python? <http://es.wikipedia.org/wiki/Python>`.
+- `¿Qué es Python?`_.
 
-- `Caracteristicas <http://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas>`.
+- `Características`_.
 
-- `¿Por qué Python? <http://es.wikipedia.org/wiki/Python#Filosof.C3.ADa>`
+- `¿Por qué Python?`_.
 
-Video tutorial
+Vídeo tutorial
 ==============
 
  - `Tutorial Python 1: Introducción al Lenguaje de Programación <https://www.youtube.com/watch?v=CjmzDHMHxwU>`.
+ 
+.. _¿Qué es Python?: http://es.wikipedia.org/wiki/Python
+.. _Características: http://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas
+.. _¿Por qué Python?: http://es.wikipedia.org/wiki/Python#Filosof.C3.ADa
