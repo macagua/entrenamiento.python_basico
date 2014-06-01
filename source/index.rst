@@ -12,9 +12,7 @@ Contents:
    :maxdepth: 2
 
    leccion1/index
-   leccion1/acerca_python
    leccion2/index
-   leccion2/descargar_python
    leccion3/index
    leccion4/index
    leccion5/index
