@@ -70,7 +70,7 @@ Cuando se usa en un bucle, finalmente se llama a StopIteration y se provoca la f
 - Ejercicio 1.
 
 Vídeo tutorial
-==============
+--------------
 
  - `Tutorial Python 25 - Comprensión de Listas`_.
 

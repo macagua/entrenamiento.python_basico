@@ -65,7 +65,7 @@ Ejemplo de completo de bucles ``while``:
     :language: python
 
 Vídeo tutorial
-==============
+--------------
 
 - `Tutorial Python 11 - Bucles`_.
  
