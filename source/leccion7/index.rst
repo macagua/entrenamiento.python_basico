@@ -67,8 +67,8 @@ Ejemplo de completo de bucles ``while``:
 Vídeo tutorial
 ==============
 
- - `Tutorial Python 1 - Introducción al Lenguaje de Programación`_.
+- `Tutorial Python 11 - Bucles`_.
  
 .. _Introducción a Bucles 'while': http://docs.python.org.ar/tutorial/2/introduction.html#primeros-pasos-hacia-la-programacion
 .. _Sucesión de Fibonacci: http://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
-.. _Tutorial Python 1 - Introducción al Lenguaje de Programación: https://www.youtube.com/watch?v=CjmzDHMHxwU
+.. _Tutorial Python 11 - Bucles: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
