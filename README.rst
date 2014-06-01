@@ -26,9 +26,11 @@ LECCIÓN 2: INSTALANDO PYTHON
 LECCIÓN 3: ESCRIBIENDO SU PRIMER PROGRAMA - HOLA, MUNDO!
 --------------------------------------------------------
 
+- Ingresando y ejecutando un programa en Linux.
+
 - Ingresando y ejecutando un programa en Windows.
 
-- Ingresando y ejecutando un programa en una Mac.
+- Ingresando y ejecutando un programa en OSX.
 
 - Ejercicio 1.
 
