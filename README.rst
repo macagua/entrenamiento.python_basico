@@ -206,16 +206,11 @@ LECCIÓN 15: PROGRAMANDO ORIENTADO OBJETO - PARTE 1
 
 - Ejercicio 2.
 
-LECCIÓN 16: PROGRAMANDO ORIENTADO OBJETO - PARTE 2
---------------------------------------------------
-
 - Creando una Clase derivada.
 
-- Ejercicio 1.
+- Ejercicio 3.
 
-- Ejercicio 2.
-
-LECCIÓN 17: MANIPULANDO EXCEPCIONES
+LECCIÓN 16: MANIPULANDO EXCEPCIONES
 -----------------------------------
 
 - Excepciones demostradas.
@@ -228,7 +223,7 @@ LECCIÓN 17: MANIPULANDO EXCEPCIONES
 
 - Ejercicio 1.
 
-LECCIÓN 18: USANDO ESTRUCTURAS DE DATOS
+LECCIÓN 17: USANDO ESTRUCTURAS DE DATOS
 ---------------------------------------
 
 - Ejercicio 1 - Listas.
