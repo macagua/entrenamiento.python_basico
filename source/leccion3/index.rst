@@ -27,7 +27,7 @@ TODO
 - Ejercicio 1
 
 Vídeo tutorial
-==============
+--------------
 
  - `Tutorial Python 3 - Hola Mundo`_.
 

@@ -3,11 +3,6 @@
 LECCIÓN 1: INTRODUCCIÓN
 =======================
 
-.. toctree::
-   :maxdepth: 1
-
-   Recursos de Python <leccion1/acerca_python>.
-
 - `¿Qué es Python?`_.
 
 - `Características`_.
@@ -15,7 +10,7 @@ LECCIÓN 1: INTRODUCCIÓN
 - `¿Por qué Python?`_.
 
 Vídeo tutorial
-==============
+--------------
 
  - `Tutorial Python 1 - Introducción al Lenguaje de Programación`_.
  
