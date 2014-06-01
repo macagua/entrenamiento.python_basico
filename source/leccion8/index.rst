@@ -42,7 +42,7 @@ Ejemplo de completo de bucles ``for``:
     :language: python
 
 Vídeo tutorial
-==============
+--------------
 
 - `Tutorial Python 11 - Bucles`_.
  
