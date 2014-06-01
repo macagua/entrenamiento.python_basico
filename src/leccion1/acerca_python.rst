@@ -1,23 +1,24 @@
 .. -*- coding: utf-8 -*-
 
+Recursos de Python
+==================
+
 Recursos Web de Python
-======================
+----------------------
 
  - `Pagina Web Oficial`_.
 
  - `Descarga Python`_.
 
-
 Documentación de Python
-=======================
+-----------------------
 
  - `Documentación oficial de Python 2.7`_.
 
  - `Tutorial de Python 2.7`_.
 
-
 Manuales de Python
-==================
+------------------
 
  - `Python para programadores con experiencia`_.
 
@@ -25,9 +26,8 @@ Manuales de Python
 
  - `Python Tutorial`_.
 
-
 Soporte comunitario de Python
-=============================
+-----------------------------
 
  - `Comunidad Python Venezuela`_.
 

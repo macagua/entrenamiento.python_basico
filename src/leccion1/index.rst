@@ -3,6 +3,11 @@
 LECCIÓN 1: INTRODUCCIÓN
 =======================
 
+.. toctree::
+   :maxdepth: 1
+
+   Recursos de Python <leccion1/acerca_python>.
+
 - `¿Qué es Python?`_.
 
 - `Características`_.
