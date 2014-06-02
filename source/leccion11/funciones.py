@@ -4,15 +4,22 @@
     Funciones en Python
 """
 
-# escribe la sucesión Fibonacci hasta n
+def iva():
+    ''' funcion basica de Python '''
+    iva = 12
+    costo = input('¿Cual es el monto a calcular?: ')
+    calculo = costo * iva / 100
+    print calculo
+
 def imprime_fibonacci(n):
+    ''' escribe la sucesión Fibonacci hasta n '''
     a, b = 0, 1
     while b < n:
         print b,
         a, b = b, a + b
 
-# devuelve la sucesión Fibonacci hasta n
 def devuelve_fibonacci(n): 
+    ''' devuelve la sucesión Fibonacci hasta n '''
     resultado = []
     a, b = 0, 1
     while b < n:
