@@ -57,7 +57,7 @@ Cuando se usa en un bucle, finalmente se llama a StopIteration y se provoca la f
     File "<stdin>", line 1, in <module>
   StopIteration
 
-
+::
 
   >>> f = open('/etc/fstab')
   >>> f is f.__iter__()
