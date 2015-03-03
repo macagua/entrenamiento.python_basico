@@ -3,10 +3,10 @@
 LECCIÓN 4: TIPOS DE DATOS BÁSICOS Y VARIABLES PYTHON
 ====================================================
 
-Ejemplo de tipos de booleanos
------------------------------
+Ejemplo de tipos de enteros
+---------------------------
 
-.. literalinclude:: booleanos.py
+.. literalinclude:: enteros.py
     :linenos:
     :language: python
 
@@ -17,24 +17,17 @@ Ejemplo de tipos de cadenas
     :linenos:
     :language: python
 
+Ejemplo de tipos de booleanos
+-----------------------------
+
+.. literalinclude:: booleanos.py
+    :linenos:
+    :language: python
+
 Ejemplo de tipos de conjuntos
 -----------------------------
 
 .. literalinclude:: conjuntos.py
-    :linenos:
-    :language: python
-
-Ejemplo de tipos de diccionarios
---------------------------------
-
-.. literalinclude:: diccionarios.py
-    :linenos:
-    :language: python
-
-Ejemplo de tipos de enteros
----------------------------
-
-.. literalinclude:: enteros.py
     :linenos:
     :language: python
 
@@ -45,6 +38,20 @@ Ejemplo de tipos de listas
     :linenos:
     :language: python
 
+Ejemplo de tipos de tuplas
+--------------------------
+
+.. literalinclude:: tuplas.py
+    :linenos:
+    :language: python
+
+Ejemplo de tipos de diccionarios
+--------------------------------
+
+.. literalinclude:: diccionarios.py
+    :linenos:
+    :language: python
+
 Ejemplo de operadores numéricos
 -------------------------------
 
@@ -52,10 +59,10 @@ Ejemplo de operadores numéricos
     :linenos:
     :language: python
 
-Ejemplo de tipos de tuplas
---------------------------
+Ejemplo de operadores relacionales
+----------------------------------
 
-.. literalinclude:: tuplas.py
+.. literalinclude:: operadores_relacionales.py
     :linenos:
     :language: python
 
