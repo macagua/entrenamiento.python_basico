@@ -1,6 +1,6 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 8: BUCLES FOR
+MÓDULO 8: BUCLES FOR
 =======================
 
 La sentencia `for` en Python difiere un poco de lo que uno puede estar
