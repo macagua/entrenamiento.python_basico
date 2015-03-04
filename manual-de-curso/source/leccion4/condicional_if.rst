@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 6: HACIENDO DECISIONES - SENTENCIAS IF
-==============================================
+Haciendo decisiones - Sentencias IF
+===================================
 
 La sentencia ``If`` evalua basicamente una operación logica,
 es decir una expresión que de como resultado verdadero o false
