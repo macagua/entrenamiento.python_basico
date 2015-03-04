@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 4: TIPOS DE DATOS BÁSICOS Y VARIABLES PYTHON
-====================================================
+Tipos de datos básicos y variables Python
+=========================================
 
 En Python tenemos como tipos de datos simples números: enteros,
 de coma flotante y complejos, como pueden ser 3, 15.57 o 7 + 5j;
