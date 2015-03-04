@@ -118,7 +118,7 @@ hasta ±1,7976931348623157×10\ :sup:`308`.
 La mayor parte de los lenguajes de programación siguen el mismo esquema
 para la representación interna. Pero como muchos sabréis esta tiene sus
 limitaciones, impuestas por el hardware. Por eso desde Python 2.4
-contamos también con un nuevo tipo
+contamos también con un nuevo tipo 
 `*Decimal* <https://www.python.org/dev/peps/pep-0327/>`_, para el caso de
 que se necesite representar fracciones de forma más precisa. Sin embargo
 este tipo está fuera del alcance de este tutorial, y sólo es necesario
@@ -157,7 +157,7 @@ En el caso de que necesitéis utilizar números complejos, o simplemente
 tengáis curiosidad, os diré que este tipo, llamado ``complex`` en Python,
 también se almacena usando coma flotante, debido a que estos números son
 una extensión de los números reales. En concreto se almacena en una
-estructura de C, compuesta por dos variables de tipo double, sirviendo
+estructura de C, compuesta por dos variables de tipo ``double``, sirviendo
 una de ellas para almacenar la parte real y la otra para la parte
 imaginaria.
 
@@ -184,7 +184,7 @@ nueva línea, o ‘\\t’, el de tabulación.
 
 Una cadena puede estar precedida por el carácter ‘u’ o el carácter ‘r’,
 los cuales indican, respectivamente, que se trata de una cadena que
-utiliza codificación Unicode y una cadena ``raw`` (del inglés, cruda). Las
+utiliza codificación **Unicode** y una cadena ``raw`` (del inglés, cruda). Las
 cadenas ``raw`` se distinguen de las normales en que los caracteres
 escapados mediante la barra invertida (\\) no se sustituyen por sus
 contrapartidas. Esto es especialmente útil, por ejemplo, para las
@@ -352,8 +352,8 @@ los operandos fuera un número real, bien indicando los decimales
 
     r = 3.0 / 2
 
-o bien utilizando la función float (no es necesario que sepais lo que
-significa el término función, ni que recordeis esta forma, lo veremos un
+o bien utilizando la función float (no es necesario que sepas lo que
+significa el término función, ni que recuerdes esta forma, lo veremos un
 poco más adelante):
 
 ::

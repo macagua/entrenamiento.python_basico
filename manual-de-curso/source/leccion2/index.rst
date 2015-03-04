@@ -675,14 +675,14 @@ la documentación y la estructura del lenguaje, con los siguientes comandos de e
     >>> print 'Hola mundo'
     Hola mundo
     >>> for item in xrange(
-    ┌───────────────────────────────────────────────────────────────────────┐
+    +───────────────────────────────────────────────────────────────────────+
     │ xrange: ([start, ] stop[, step])                                      │
     │ xrange([start,] stop[, step]) -> xrange object                        │
     │                                                                       │
     │ Like range(), but instead of returning a list, returns an object that │
     │ generates the numbers in the range on demand.  For looping, this is   │
     │ slightly faster than range() and more memory efficient.               │
-    └───────────────────────────────────────────────────────────────────────┘
+    +───────────────────────────────────────────────────────────────────────+
 
      <C-r> Rewind  <C-s> Save  <F8> Pastebin  <F9> Pager  <F2> Show Source
 

@@ -1,12 +1,12 @@
 .. -*- coding: utf-8 -*-
 
-Haciendo decisiones - Sentencias IF
+Sentencias IF
 ===================================
 
-La sentencia ``If`` evalua basicamente una operación logica,
-es decir una expresión que de como resultado verdadero o false
-(true o false), y ejecuta la pieza de codigo siguiente siempre
-y cuando el resultado sea verdadero.
+La sentencia ``If`` se usa para tomar decisiones, este evalua
+basicamente una operación logica, es decir una expresión que de
+como resultado verdadero o false (``True`` o ``False``), y ejecuta
+la pieza de codigo siguiente siempre y cuando el resultado sea verdadero.
 
 Ejemplo de Sentencias IF
 ........................
