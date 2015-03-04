@@ -3,12 +3,25 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Materiales del curso de programación básico en Python
-=====================================================
+Materiales del curso de Programación en Python - Nivel básico
+=============================================================
+
+Esta es la documentación para el capacitación **"Programación en Python - Nivel básico"**.
+
+.. sidebar:: Sobre esta capacitación
+
+    Para dominar Python se tiene pensado como un entrenamiento de 2 a 3 días para
+    las personas que son nuevas en Python o los que quieren aprender acerca de las
+    actuales mejores prácticas del desarrollo en Python.
+    
+    La planificación de este capacitación se estima en:
+    
+    - Una capacitación de **nivel básico** (*2 a 3 días*) que cubre los *diez (10) capítulos*.
 
 Tabla de contenidos:
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
 
    leccion1/index
@@ -28,7 +41,12 @@ Tabla de contenidos:
    leccion10/index
    leccion10/iteradores
 
-Apendices
+.. warning::
+   Tenga en cuenta que este documento no está completo sin la palabra hablada de un instructor
+   a pesar de que tratamos de incluir las partes más importantes de lo que enseñamos en la narrativa
+   no puede considerarse completa sin la palabra hablada.
+
+Apéndices
 =========
 
 .. toctree::
@@ -38,7 +56,7 @@ Apendices
    licencia
 
 
-Indices y tablas
+Índices y tablas
 ================
 
 * :ref:`genindex`
