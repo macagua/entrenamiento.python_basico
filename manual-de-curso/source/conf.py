@@ -18,6 +18,7 @@ import os
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+sys.path.append(os.path.abspath('sphinxext'))
 
 # -- General configuration -----------------------------------------------------
 
@@ -26,7 +27,13 @@ import os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.todo', 'sphinx.ext.viewcode']
+extensions = [
+	'sphinx.ext.autodoc',
+	'sphinx.ext.todo',
+	'sphinx.ext.viewcode',
+	'sphinx.ext.intersphinx',
+#	'ipython_console_highlighting',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -307,3 +314,10 @@ epub_exclude_files = ['search.html']
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
+
+# Add mappings
+# https://kev.inburke.com/kevin/sphinx-interlinks/
+intersphinx_mapping = {
+#    'urllib3': ('http://urllib3.readthedocs.org/en/latest', None),
+    'python': ('http://docs.python.org/2', None),
+}
