@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 3: ESCRIBIENDO SU PRIMER PROGRAMA - ¡HOLA, MUNDO!
-=========================================================
+Escribiendo su primer programa - ¡Hola, mundo!
+==============================================
 
 Ingresando y ejecutando un programa en Linux
 --------------------------------------------
@@ -10,11 +10,11 @@ Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
 y dentro de este, cree un archivo de texto plano con el siguiente
 nombre ``holamundo.py`` y escriba la siguiente sintaxis:
 
-Python 2.x: ::
+**Python 2.x:** ::
 
   print "Hola Mundo"
 
-Python 3.x: ::
+**Python 3.x:** ::
 
   print("Hola Mundo");
 
