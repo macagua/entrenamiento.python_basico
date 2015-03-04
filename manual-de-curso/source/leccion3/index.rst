@@ -5,8 +5,8 @@ Tipos de datos básicos y variables Python
 
 En Python tenemos como tipos de datos simples números: enteros,
 de coma flotante y complejos, como pueden ser 3, 15.57 o 7 + 5j;
-cadenas de texto, como "Hola Mundo" y valores booleanos: True (cierto)
-y False (falso).
+cadenas de texto, como "Hola Mundo" y valores booleanos: ``True`` (cierto)
+y ``False`` (falso).
 
 Vamos a crear un par de variables a modo de ejemplo. Una de tipo 
 cadena y una de tipo entero:
@@ -51,27 +51,27 @@ Enteros
 
 Los números enteros son aquellos que no tienen decimales, tanto
 positivos como negativos (además del cero). En Python se pueden
-representar mediante el tipo int (de integer, entero) o el tipo long
+representar mediante el tipo ``int`` (de integer, entero) o el tipo ``long``
 (largo). La única diferencia es que el tipo long permite almacenar
-números más grandes. Es aconsejable no utilizar el tipo long a menos que
+números más grandes. Es aconsejable no utilizar el tipo ``long`` a menos que
 sea necesario, para no malgastar memoria.
 
-El tipo int de Python se implementa a bajo nivel mediante un tipo long
+El tipo ``int`` de Python se implementa a bajo nivel mediante un tipo ``long``
 de C. Y dado que Python utiliza C por debajo, como C, y a diferencia de
 Java, el rango de los valores que puede representar depende de la
-plataforma. En la mayor parte de las máquinas el long de C se almacena
+plataforma. En la mayor parte de las máquinas el ``long`` de C se almacena
 utilizando 32 bits, es decir, mediante el uso de una variable de tipo
-int de Python podemos almacenar números de -2\ :sup:`31` a 2\ :sup:`31`
+``int`` de Python podemos almacenar números de -2\ :sup:`31` a 2\ :sup:`31`
 – 1, o lo que es lo mismo, de -2.147.483.648 a 2.147.483.647. En
 plataformas de 64 bits, el rango es de -9.223.372.036.854.775.808 hasta
 9.223.372.036.854.775.807.
 
-El tipo long de Python permite almacenar números de cualquier precisión,
+El tipo ``long`` de Python permite almacenar números de cualquier precisión,
 limitado por la memoria disponible en la máquina.
 
-Al asignar un número a una variable esta pasará a tener tipo int, a
+Al asignar un número a una variable esta pasará a tener tipo ``int``, a
 menos que el número sea tan grande como para requerir el uso del tipo
-long.
+``long``.
 
 ::
 
@@ -87,7 +87,7 @@ añadiendo una L al final:
     entero = 23L
 
 El literal que se asigna a la variable también se puede expresar como un
-octal, anteponiendo un cero:
+``octal``, anteponiendo un cero:
 
 ::
 
@@ -105,10 +105,10 @@ Reales
 ~~~~~~
 
 Los números reales son los que tienen decimales. En Python se expresan
-mediante el tipo float. En otros lenguajes de programación, como C,
-tenemos también el tipo double, similar a float pero de mayor precisión
+mediante el tipo ``float``. En otros lenguajes de programación, como C,
+tenemos también el tipo ``double``, similar a ``float`` pero de mayor precisión
 (double = doble precisión). Python, sin embargo, implementa su tipo
-float a bajo nivel mediante una variable de tipo double de C, es decir,
+``float`` a bajo nivel mediante una variable de tipo ``double`` de C, es decir,
 utilizando 64 bits, luego en Python siempre se utiliza doble precisión,
 y en concreto se sigue el estándar IEEE 754: 1 bit para el signo, 11
 para el exponente, y 52 para la mantisa. Esto significa que los valores
@@ -123,7 +123,7 @@ contamos también con un nuevo tipo
 que se necesite representar fracciones de forma más precisa. Sin embargo
 este tipo está fuera del alcance de este tutorial, y sólo es necesario
 para el ámbito de la programación científica y otros relacionados. Para
-aplicaciones normales podeis utilizar el tipo float sin miedo, como ha
+aplicaciones normales podeis utilizar el tipo ``float`` sin miedo, como ha
 venido haciéndose desde hace años, aunque teniendo en cuenta que los
 números en coma flotante no son precisos (ni en este ni en otros
 lenguajes de programación).
@@ -154,7 +154,7 @@ hecho la mayor parte de lenguajes de programación carecen de este tipo,
 aunque sea muy utilizado por ingenieros y científicos en general.
 
 En el caso de que necesitéis utilizar números complejos, o simplemente
-tengáis curiosidad, os diré que este tipo, llamado complex en Python,
+tengáis curiosidad, os diré que este tipo, llamado ``complex`` en Python,
 también se almacena usando coma flotante, debido a que estos números son
 una extensión de los números reales. En concreto se almacena en una
 estructura de C, compuesta por dos variables de tipo double, sirviendo
@@ -184,8 +184,8 @@ nueva línea, o ‘\\t’, el de tabulación.
 
 Una cadena puede estar precedida por el carácter ‘u’ o el carácter ‘r’,
 los cuales indican, respectivamente, que se trata de una cadena que
-utiliza codificación Unicode y una cadena raw (del inglés, cruda). Las
-cadenas raw se distinguen de las normales en que los caracteres
+utiliza codificación Unicode y una cadena ``raw`` (del inglés, cruda). Las
+cadenas ``raw`` se distinguen de las normales en que los caracteres
 escapados mediante la barra invertida (\\) no se sustituyen por sus
 contrapartidas. Esto es especialmente útil, por ejemplo, para las
 expresiones regulares.
@@ -222,13 +222,13 @@ Ejemplo de tipos de cadenas
 Tipos de booleanos
 ------------------
 
-Como decíamos el tipo booleano sólo puede tener dos valores: True
-(cierto) y False (falso). Estos valores son especialmente importantes
+Como decíamos el tipo booleano sólo puede tener dos valores: ``True``
+(cierto) y ``False`` (falso). Estos valores son especialmente importantes
 para las expresiones condicionales y los bucles, como veremos más
 adelante.
 
-En realidad el tipo bool (el tipo de los booleanos) es una subclase del
-tipo int. Puede que esto no tenga mucho sentido para tí si no conoces
+En realidad el tipo ``bool`` (el tipo de los booleanos) es una subclase del
+tipo ``int``. Puede que esto no tenga mucho sentido para tí si no conoces
 los términos de la orientación a objetos, que veremos más adelantes,
 aunque tampoco es nada importante.
 
@@ -258,7 +258,16 @@ Tipos de listas
 ---------------
 
 La lista en Python son variables que almacenan arrays, 
-internamente cada posicion puede ser un tipo de datos distinto.
+internamente cada posición puede ser un tipo de datos distinto.
+
+En Python tiene varios tipos de datos *compuestos*, usados para agrupar otros
+valores.  El más versátil es la *lista*, la cual puede ser escrita como una
+lista de valores separados por coma (ítems) entre corchetes.  No es necesario
+que los ítems de una lista tengan todos el mismo tipo. ::
+
+   >>> a = ['pan', 'huevos', 100, 1234]
+   >>> a
+   ['pan', 'huevos', 100, 1234]
 
 Ejemplo de tipos de listas
 ..........................
@@ -394,14 +403,14 @@ Ejemplo de operadores relacionales
 Vídeo tutorial
 --------------
 
- - `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_.
+- `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_.
 
- - `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_.
+- `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_.
 
 Referencia
 ----------
 
- - `Python - Tipos básicos`_.
+- `Python - Tipos básicos`_.
 
 .. _¿Qué es Python?: http://es.wikipedia.org/wiki/Python
 .. _Características: http://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas

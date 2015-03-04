@@ -21,17 +21,17 @@ Operadores de Asignaciones
 Los operadores de asignación se utilizan para basicamente asignar un
 valor a una variable, así como cuando utilizamos el “=”.
 
-Los operadores de asignación son “=,+=,-=,\*=,/=,\*\*=,//=”, a
+Los operadores de asignación son ``=,+=,-=,\*=,/=,\*\*=,//=``, a
 continuación algunos ejemplos.
 
--  = , igual a, es el mas simple de todos y asigna a la variable del
+-  ``=`` , igual a, es el mas simple de todos y asigna a la variable del
    lado izquierdo cualquier variable o resultado del lado derecho.
--  += , suma a la variable del lado izquierdo el valor del lado derecho.
+-  ``+=`` , suma a la variable del lado izquierdo el valor del lado derecho.
     ej.  si  “a” es igual a 5 y a+=10, entonces “a” sera igual a 15
--  -= , resta a la variable del lado izquierdo el valor del lado
+-  ``-=`` , resta a la variable del lado izquierdo el valor del lado
    derecho.
     ej.  si  “a” es igual a 5 y a-=10, entonces “a” sera igual a -5
--  \*=, multiplica  a la variable del lado izquierdo el valor del lado
+-  ``\*=``, multiplica  a la variable del lado izquierdo el valor del lado
    derecho.
     ej.  si  “a” es igual a 5 y a\*=10, entonces “a” sera igual a 50
 
@@ -100,18 +100,18 @@ Ejemplo de Operadores de Lógicos
 Vídeo tutorial
 --------------
 
- - `Tutorial Python 10 - Sentencias condicionales`_.
+- `Tutorial Python 10 - Sentencias condicionales`_.
 
 Referencia
 ----------
 
- - `Sentencias IF`_.
+- `Sentencias IF`_.
 
- - `Condicionales if y else en Python`_.
+- `Condicionales if y else en Python`_.
 
- - `Python - Tipos básicos`_.
+- `Python - Tipos básicos`_.
 
- - `Operadores basicos de Python`_.
+- `Operadores basicos de Python`_.
  
 .. _Sentencias IF: http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-if
 .. _Tutorial Python 10 - Sentencias condicionales: https://www.youtube.com/watch?v=hLqKvB7tGWk

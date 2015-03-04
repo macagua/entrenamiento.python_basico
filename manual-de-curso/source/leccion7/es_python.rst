@@ -1,12 +1,14 @@
 .. -*- coding: utf-8 -*-
 
-Entrada/Salida en Python
-========================
+Entrada / Salida en Python
+==========================
 
-E/S en Python
--------------
+Nuestros programas serían de muy poca utilidad si no fueran capaces de
+interaccionar con el usuario. Para mostrar mensajes en pantalla, se 
+utiliza el uso de la palabra clave ``print``.
 
-TODO.
+Para pedir información al usuario, debe utilizar las funciones ``input``
+y ``raw_input``, así como los argumentos de línea de comandos.
 
 Ejemplo de E/S en Python
 ........................
@@ -22,10 +24,18 @@ con el usuario y en base a condicionales muestra un mensaje.
 Vídeo tutorial
 --------------
 
- - `Tutorial Python 30 - Entrada Estandar rawInput`_.
+- `Tutorial Python 30 - Entrada Estandar rawInput`_.
 
- - `Tutorial Python 31 - Salida Estandar rawInput`_.
+- `Tutorial Python 31 - Salida Estandar rawInput`_.
 
-.. _¿Por qué Python?: http://es.wikipedia.org/wiki/Python#Filosof.C3.ADa
+Referencia
+----------
+
+- `Python Programming / Input and Output`_.
+
+- `Python - Entrada / Salida. Ficheros`_.
+ 
+.. _Python Programming / Input and Output: http://en.wikibooks.org/wiki/Python_Programming/Input_and_Output
+.. _Python - Entrada / Salida. Ficheros: http://mundogeek.net/archivos/2008/04/02/python-entrada-salida-ficheros/
 .. _Tutorial Python 30 - Entrada Estandar rawInput: https://www.youtube.com/watch?v=AzeUCuMvW6I
 .. _Tutorial Python 31 - Salida Estandar rawInput: https://www.youtube.com/watch?v=B-JPXgxK3Oc

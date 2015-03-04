@@ -3,6 +3,21 @@
 Escribiendo su primer programa - ¡Hola, mundo!
 ==============================================
 
+En informática, un programa **Hola mundo** es el que imprime el texto
+*«¡Hola, mundo!»* en un dispositivo de visualización, en la mayoría de
+los casos una pantalla de monitor. Este programa suele ser usado como
+introducción al estudio de un lenguaje de programación, siendo un primer
+ejercicio típico, y se lo considera fundamental desde el punto de vista
+didáctico.
+
+El *Hola Mundo* se caracteriza por su sencillez, especialmente cuando se
+ejecuta en una interfaz de línea de comandos. En interfaces gráficas la
+creación de este programa requiere de más pasos.
+
+El programa *Hola Mundo* también puede ser útil como prueba de configuración
+para asegurar que el compilador, el entorno de desarrollo y el entorno de
+ejecución estén instalados correctamente y funcionando.
+
 Ingresando y ejecutando un programa en Linux
 --------------------------------------------
 
@@ -111,7 +126,7 @@ Enhorabuena, ha ejecutar tu primer programa Python.
 Vídeo tutorial
 --------------
 
- - `Tutorial Python 3 - Hola Mundo`_.
+- `Tutorial Python 3 - Hola Mundo`_.
 
 .. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k
 

@@ -64,6 +64,8 @@ Usando la sentencia 'continue'
     :language: python
     :lines: 50-58
 
+La sentencia ``continue`` hace que pase de nuevo al principio del bucle aunque no se haya terminado de ejecutar el ciclo anterior.
+
 Ejemplos
 --------
 

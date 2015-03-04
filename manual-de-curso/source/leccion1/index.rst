@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 1: INTRODUCCIÓN
-=======================
+Introducción a Python
+=====================
 
 - `¿Qué es Python?`_.
 
@@ -12,39 +12,38 @@ LECCIÓN 1: INTRODUCCIÓN
 Recursos Web de Python
 ----------------------
 
- - `Pagina Web Oficial`_.
+- `Pagina Web Oficial`_.
 
- - `Descarga Python`_.
+- `Descarga Python`_.
 
 Documentación de Python
 -----------------------
 
- - `Documentación oficial de Python 2.7`_.
+- `Documentación oficial de Python 2.7`_.
 
- - `Tutorial de Python 2.7`_.
+- `Tutorial de Python 2.7`_.
 
 Manuales de Python
 ------------------
 
- - `Python para programadores con experiencia`_.
+- `Python para programadores con experiencia`_.
 
- - `Introducción a la programación con Python`_.
+- `Introducción a la programación con Python`_.
 
- - `Python Tutorial`_.
+- `Python Tutorial`_.
 
 Soporte comunitario de Python
 -----------------------------
 
- - `Comunidad Python Venezuela`_.
+- `Comunidad Python Venezuela`_.
 
- - `Comunidad Python Argentina`_.
-
+- `Comunidad Python Argentina`_.
 
 
 Vídeo tutorial
 --------------
 
- - `Tutorial Python 1 - Introducción al Lenguaje de Programación`_.
+- `Tutorial Python 1 - Introducción al Lenguaje de Programación`_.
  
 .. _¿Qué es Python?: http://es.wikipedia.org/wiki/Python
 .. _Características: http://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas

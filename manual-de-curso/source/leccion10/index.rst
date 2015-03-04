@@ -1,6 +1,6 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 10: LISTA DE COMPRENSIONES
+MÓDULO 10: LISTA DE COMPRENSIONES
 ==================================
 
 - Introducción a Listas de comprensión.

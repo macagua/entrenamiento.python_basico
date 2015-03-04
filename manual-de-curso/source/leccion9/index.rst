@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 9: ITERADORES
-=====================
+Iteradores
+==========
 
 Entendiendo Iteradores
 ----------------------
@@ -9,9 +9,9 @@ Entendiendo Iteradores
 .. sidebar:: Simplicidad
 
    La duplicación del esfuerzo es un derroche y reemplazar
-   varios de los enfoques propios con una característica estándar,
-   normalmente, deriva en hacer las cosas más legibles además de más
-   interoperable.
+   varios de los enfoques propios con una característica 
+   estándar, normalmente, deriva en hacer las cosas más 
+   legibles además de más interoperable.
 
                  *Guido van Rossum* --- `Añadiendo tipado estático opcional a Python` (`Adding Optional Static Typing to Python`_)
 
@@ -19,10 +19,11 @@ Entendiendo Iteradores
    http://www.artima.com/weblogs/viewpost.jsp?thread=86641
 
 
-Un iterador es un objeto adherido al 'protocolo de iterador' (`iterator protocol`_)
---- básicamente esto significa que tiene un método `next <iterator.next>` ('next' por siguiente),
-el cual, cuando se le llama, devuelve la siguiente 'pieza' (o 'item') en la secuencia y, cuando
-no queda nada para ser devuelto, lanza la excepción 
+Un iterador es un objeto adherido al 'protocolo de iterador'
+(`iterator protocol`_) --- básicamente esto significa que tiene
+un método `next <iterator.next>` ('next' por siguiente), el cual,
+cuando se le llama, devuelve la siguiente 'pieza' (o 'item') en la
+secuencia y, cuando no queda nada para ser devuelto, lanza la excepción 
 `StopIteration <exceptions.StopIteration>`.
 
 .. _`iterator protocol`: http://docs.python.org/dev/library/stdtypes.html#iterator-types

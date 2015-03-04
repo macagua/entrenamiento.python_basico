@@ -55,7 +55,7 @@ Vídeo tutorial
 Referencia
 ----------
 
- - Introducción a `Bucles 'for'`_.
+- Introducción a `Bucles 'for'`_.
  
 .. _Bucles 'for': http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-for
 .. _Tutorial Python 11 - Bucles: https://www.youtube.com/watch?v=IyI2ZuOq_xQ

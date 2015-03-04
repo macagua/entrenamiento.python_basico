@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-MÓDULO 11: FUNCIONES
-=====================
+Funciones
+=========
 
 `Introducción a Funciones`_ - ¿Por qué?.
 
@@ -48,15 +48,35 @@ Ejemplo de completo de Funciones
     :linenos:
     :language: python
 
+Funciones Recursiva
+-------------------
+
+TODO.
+
+Objetos de función
+------------------
+
+TODO.
+
+Funciones anónimas
+------------------
+
+TODO.
+
+Funciones de orden superior
+----------------------------
+
+TODO.
+
 Vídeo tutorial
 --------------
 
- - `Tutorial Python 12 - Funciones`_.
+- `Tutorial Python 12 - Funciones`_.
 
 Referencia
 ----------
 
- - `Introducción a Funciones`_ - ¿Por qué?.
+- `Introducción a Funciones`_ - ¿Por qué?.
  
 .. _Introducción a Funciones: http://docs.python.org.ar/tutorial/2/controlflow.html#definiendo-funciones
 .. _Tutorial Python 12 - Funciones: https://www.youtube.com/watch?v=_C7Uj7O5o_Q
