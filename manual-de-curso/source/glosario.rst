@@ -17,7 +17,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
     :sorted:
     
     buildout
-        En la herramienta :ref:`buildout <que_es_zcbuildout>`, es un conjunto de partes
+        En la herramienta `buildout`_, es un conjunto de partes
         que describe como ensamblar una aplicación.
     
     bundle
@@ -28,8 +28,8 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
 
     Catálogo
         Es un índice interno de los contenidos dentro de Plone para que se pueda buscar. 
-        El objetivo del catálogo es que sea accesible a través de la :ref:`ZMI <que_es_zmi>` 
-        a través de la herramienta :ref:`portal_catalog <zmi_portal_catalog>`.
+        El objetivo del catálogo es que sea accesible a través de la `ZMI`_ 
+        a través de la herramienta `portal_catalog`_.
 
     Cheese shop
         Ver :term:`PyPI`.
@@ -83,6 +83,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
     
     grok
         Ver la documentacion del proyecto `grok <http://grok.zope.org/>`_.
+
     Instalación de Zope
         El software propio del servidor de aplicaciones.
     
@@ -120,8 +121,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
     
     recipe
         En la herramienta :term:`buildout`, es el software usado para crear partes de 
-        una instalación basada en sus opciones. Mas información consulte el articulo 
-        :ref:`Recipes Buildout <recipe_buildout>`.
+        una instalación basada en sus opciones. Mas información consulte el articulo `Recipes Buildout`_.
     
     paquete
         Ver :term:`Paquete Python`.
@@ -132,7 +132,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         electrónico y información sobre el licenciamiento), como las dependencias del
         paquete. 
         
-        La herramienta del :ref:`setuptools <que_es_setuptools>`, es la librería Python que permite
+        La herramienta del `setuptools <que_es_setuptools>`, es la librería Python que permite
         usar el mecanismo de paquetes egg, esta es capaz de encontrar y descargar
         automáticamente las dependencias de los paquetes Egg que se instale. 
 
@@ -180,8 +180,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         Por ejemplo, el núcleo de Plone es un producto llamado ``CMFPlone``, conocido 
         en Python como `Products.CMFPlone`_.
         
-        Este tipo de productos esta disponibles desde la :ref:`interfaz administrativa de Zope (ZMI) <que_es_zmi>` 
-        de `su instalación`_ donde deben acceder con las credenciales del usuario 
+        Este tipo de productos esta disponibles desde la `interfaz administrativa de Zope (ZMI)`_ de `su instalación`_ donde deben acceder con las credenciales del usuario 
         Administrador de Zope. Muchas veces el producto simplemente no hay que 
         instalarlo por que se agregar automáticamente.
     
@@ -277,7 +276,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
     
     ZCA
     Zope Component Architecture
-        La :ref:`arquitectura de componentes de Zope (alias ZCA) <zca-es>`, es un
+        La `arquitectura de componentes de Zope (alias ZCA)`_, es un
         sistema que permite la aplicación y la expedición enchufabilidad complejo
         basado en objetos que implementan una interfaz.
 
@@ -316,3 +315,10 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
 .. _su instalación: http://localhost:8080/manage
 .. _z3c.autoinclude: http://pypi.python.org/pypi/z3c.autoinclude
 .. _Paste: http://pythonpaste.org/
+.. _buildout: https://plone-spanish-docs.readthedocs.org/es/latest/buildout/replicacion_proyectos_python.html
+.. _ZMI: https://plone-spanish-docs.readthedocs.org/es/latest/zope/zmi/index.html
+.. _portal_catalog: https://plone-spanish-docs.readthedocs.org/es/latest/zope/zmi/index.html#portal-catalog
+.. _Recipes Buildout: https://plone-spanish-docs.readthedocs.org/es/latest/buildout/recipes.html
+.. _setuptools: https://plone-spanish-docs.readthedocs.org/es/latest/python/setuptools.html
+.. _interfaz administrativa de Zope (ZMI): https://plone-spanish-docs.readthedocs.org/es/latest/zope/zmi/index.html
+.. _arquitectura de componentes de Zope (alias ZCA): https://plone-spanish-docs.readthedocs.org/es/latest/programacion/zca/zca-es.html

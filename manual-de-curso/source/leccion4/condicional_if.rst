@@ -26,13 +26,14 @@ continuación algunos ejemplos.
 
 -  ``=`` , igual a, es el mas simple de todos y asigna a la variable del
    lado izquierdo cualquier variable o resultado del lado derecho.
+
 -  ``+=`` , suma a la variable del lado izquierdo el valor del lado derecho.
     ej.  si  “a” es igual a 5 y a+=10, entonces “a” sera igual a 15
--  ``-=`` , resta a la variable del lado izquierdo el valor del lado
-   derecho.
+
+-  ``-=`` , resta a la variable del lado izquierdo el valor del lado derecho.
     ej.  si  “a” es igual a 5 y a-=10, entonces “a” sera igual a -5
--  ``\*=``, multiplica  a la variable del lado izquierdo el valor del lado
-   derecho.
+
+-  ``\*=``, multiplica  a la variable del lado izquierdo el valor del lado derecho.
     ej.  si  “a” es igual a 5 y a\*=10, entonces “a” sera igual a 50
 
 Espero que hasta el momento hayas podido encontrar este tutorial de
