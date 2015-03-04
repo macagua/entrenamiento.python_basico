@@ -20,7 +20,7 @@ Entendiendo Iteradores
 
 
 Un iterador es un objeto adherido al 'protocolo de iterador' (`iterator protocol`_)
---- basicamente esto significa que tiene un método `next <iterator.next>` ('next' por siguiente),
+--- básicamente esto significa que tiene un método `next <iterator.next>` ('next' por siguiente),
 el cual, cuando se le llama, devuelve la siguiente 'pieza' (o 'item') en la secuencia y, cuando
 no queda nada para ser devuelto, lanza la excepción 
 `StopIteration <exceptions.StopIteration>`.

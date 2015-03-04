@@ -3,8 +3,17 @@
 LECCIÓN 5: ENTRADA/SALIDA EN PYTHON
 ===================================
 
+E/S en Python
+-------------
+
+TODO.
+
 Ejemplo de E/S en Python
-------------------------
+........................
+
+Este ejemplo simula a sala de chat del servicio LatinChat.com, 
+validando datos de entradas numerico y tipo cadena e interactua
+con el usuario y en base a condicionales muestra un mensaje.
 
 .. literalinclude:: datos_entrada.py
     :linenos:
