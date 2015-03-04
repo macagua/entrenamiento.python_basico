@@ -129,7 +129,7 @@ Ejecución paso a paso
 
 **Situación**: Crees que existe un error en un módulo pero no estás seguro donde.
 
-Por ejemplo, estamos intentado depurar :download:`wiener_filtering.py`.
+Por ejemplo, estamos intentado depurar `wiener_filtering.py <http://pybonacci.github.io/scipy-lecture-notes-ES/_downloads/wiener_filtering.py>`_.
 A pesar de que el código se ejecuta, observamos que el filtrado no se
 está haciendo correctamente.
 
@@ -214,7 +214,7 @@ estamos haciendo aritmética con enteros.
 
 .. topic:: Lanzando excepciones en errores numéricos
 
-    Cuando ejecutamos el fichero :download:`wiener_filtering.py`, se lanzarán
+    Cuando ejecutamos el fichero `wiener_filtering.py <http://pybonacci.github.io/scipy-lecture-notes-ES/_downloads/wiener_filtering.py>`_, se lanzarán
     los siguientes avisos:
 
     .. sourcecode:: ipython

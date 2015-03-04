@@ -1,13 +1,17 @@
 .. -*- coding: utf-8 -*-
 
-MÓDULO 10: LISTA DE COMPRENSIONES
-==================================
+Listas de comprensión
+=====================
 
-- Introducción a Listas de comprensión.
+Introducción a Listas de comprensión
+-------------------------------------
 
-- Usando Listas de comprensión con Archivos.
+TODO.
 
-- Ejercicio 1.
+Usando Listas de comprensión con Archivos
+-----------------------------------------
+
+TODO.
 
 Vídeo tutorial
 --------------
