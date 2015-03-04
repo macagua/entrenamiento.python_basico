@@ -2,7 +2,7 @@
 entrenamiento.python_basico
 ===========================
 
-Materiales de formación para el curso de programación básico en Python
+Materiales de formación para el curso de programación en Python - Nivel básico.
 
 CURRÍCULUM DEL CURSO
 ====================
