@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 7: BUCLES WHILE
-=======================
+Bucles WHILE
+============
 
 En Python tenemos una palabra reservada llamada “\ **while**\ ” que nos
 permite ejecutar ciclos, o bien secuencias periódicas que nos permiten

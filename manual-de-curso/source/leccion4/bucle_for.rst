@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-MÓDULO 8: BUCLES FOR
-=======================
+Bucles FOR
+==========
 
 La sentencia `for` en Python difiere un poco de lo que uno puede estar
 acostumbrado en lenguajes como C o Pascal.  En lugar de siempre iterar sobre
