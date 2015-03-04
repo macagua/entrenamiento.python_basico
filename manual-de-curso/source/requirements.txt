@@ -1,0 +1,2 @@
+Sphinx = v1.3b3
+alabaster = 0.7.1
