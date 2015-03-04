@@ -6,13 +6,17 @@ LECCIÓN 3: ESCRIBIENDO SU PRIMER PROGRAMA - ¡HOLA, MUNDO!
 Ingresando y ejecutando un programa en Linux
 --------------------------------------------
 
-Cree un directorio llamado ``proyectos`` el ``home`` de su usuario y dentro
-de este, cree un archivo de texto plano con el siguiente nombre ``holamundo.py``
-y escriba la siguiente sintaxis:
+Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
+y dentro de este, cree un archivo de texto plano con el siguiente
+nombre ``holamundo.py`` y escriba la siguiente sintaxis:
 
-::
+Python 2.x: ::
 
   print "Hola Mundo"
+
+Python 3.x: ::
+
+  print("Hola Mundo");
 
 Luego ejecute desde la consola de comando el siguiente comando:
 
@@ -27,15 +31,15 @@ Enhorabuena, ha ejecutar tu primer programa Python.
 Ingresando y ejecutando un programa en Windows 
 ----------------------------------------------
 
-Cree un directorio llamado ``proyectos`` la unidad ``C:\`` y dentro de este, 
-cree un archivo de texto plano con el siguiente nombre ``holamundo.py`` y 
-escriba la siguiente sintaxis: 
+Cree un directorio llamado ``proyectos`` la unidad ``C:\`` y dentro
+de este, cree un archivo de texto plano con el siguiente nombre
+``holamundo.py`` y escriba la siguiente sintaxis: 
 
 :: 
 
   print "Hola Mundo"
 
-Luego ejecute desde la consola de MSDOS el siguiente comando:
+Luego ejecute desde la consola de ``MS-DOS`` el siguiente comando:
 
 ::
 
