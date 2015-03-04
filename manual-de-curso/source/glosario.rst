@@ -8,10 +8,10 @@ Glosario
 
 :Autor(es): Leonardo J. Caballero G.
 :Correo(s): leonardocaballero@gmail.com
-:Compatible con: Plone 3, Plone 4
-:Fecha: 19 de Diciembre de 2013
+:Compatible con: Python 2.x, Python 3.x
+:Fecha: 04 de Marzo de 2015
 
-A continuación una serie de términos usados en las tecnologías Python / Zope / Plone
+A continuación una serie de términos usados en las tecnologías Python / Zope / Plone.
 
 .. glossary ::
     :sorted:
@@ -180,7 +180,8 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         Por ejemplo, el núcleo de Plone es un producto llamado ``CMFPlone``, conocido 
         en Python como `Products.CMFPlone`_.
         
-        Este tipo de productos esta disponibles desde la `interfaz administrativa de Zope (ZMI)`_ de `su instalación`_ donde deben acceder con las credenciales del usuario 
+        Este tipo de productos esta disponibles desde la `interfaz administrativa de Zope (ZMI)`_
+        de `su instalación`_ donde deben acceder con las credenciales del usuario 
         Administrador de Zope. Muchas veces el producto simplemente no hay que 
         instalarlo por que se agregar automáticamente.
     
@@ -299,7 +300,9 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         ahí, se importa y se carga automáticamente. Este no es el caso en ``Zope 3`` Si no
         habilita explícitamente, no va a ser encontrado.
 
-        El :term:`grok` proyecto ha adoptado un enfoque diferente para el mismo problema, y permite el registro de componentes, etc haciendo declarativa de código Python. Ambos enfoques son posibles en Plone.
+        El :term:`grok` proyecto ha adoptado un enfoque diferente para el mismo problema, 
+        y permite el registro de componentes, etc haciendo declarativa de código Python.
+        Ambos enfoques son posibles en Plone.
 
 .. _Third-Party Products: http://plone.org/documentation/kb/add-ons/tutorial-all-pages
 .. _Products.CMFPlone: http://pypi.python.org/pypi/Products.CMFPlone
