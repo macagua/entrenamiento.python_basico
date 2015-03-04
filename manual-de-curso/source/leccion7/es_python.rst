@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
-LECCIÓN 5: ENTRADA/SALIDA EN PYTHON
-===================================
+Entrada/Salida en Python
+========================
 
 E/S en Python
 -------------
