@@ -1,235 +1,70 @@
-===========================
-entrenamiento.python_basico
-===========================
+.. -*- coding: utf-8 -*-
 
-Materiales de formación para el curso de programación en Python - Nivel básico.
+========================================================
+Manual del curso "Programación en Python - Nivel básico"
+========================================================
 
-CURRÍCULUM DEL CURSO
-====================
+Repositorio de manuales y recursos del curso "Programación en Python - Nivel básico"
+realizado por Covantec R.L.
 
-LECCIÓN 1: INTRODUCCIÓN
------------------------
+.. contents :: :local:
 
-- ¿Qué es Python?.
+Estructura general
+===================
 
-- Características.
+La estructura general de contenidos esta confirmada por los principales archivos:
 
-- ¿Por qué Python?.
+**00-capacitacion_python_basico.odt**
+  Describe el contenido de la capacitación.
 
-LECCIÓN 2: INSTALANDO PYTHON
-----------------------------
+**01-introduccion-lenguaje-python.odp**
+  Describe los contenidos del módulo *1* de la capacitación.
 
-- Instalando Python en Windows.
+**manual-de-curso**
+  Describe los contenidos de los módulos *2, 3, 4, 5, 6, 7, 8, 9, 10* de la capacitación.
+  Además de otros temas complementarios de Python.
 
-- Instalando Python en una Mac.
+Obtener y compilar la documentación
+===================================
 
-LECCIÓN 3: ESCRIBIENDO SU PRIMER PROGRAMA - HOLA, MUNDO!
---------------------------------------------------------
+El almacenamiento de este material está disponible en un repositorio Git 
+en Github.com "`entrenamiento.python_basico`_". Si usted tiene una
+credenciales en este servidor y desea convertirse en un colaborador ejecute 
+el siguiente comando: ::
 
-- Ingresando y ejecutando un programa en Linux.
+  $ cd $HOME
+  $ git clone https://github.com/Covantec/entrenamiento.python_basico.git
 
-- Ingresando y ejecutando un programa en Windows.
+Crear entorno virtual de Python para reconstruir este proyecto: ::
 
-- Ingresando y ejecutando un programa en OSX.
+  # aptitude install python-setuptools git-core
+  # easy_install virtualenv
+  $ cd $HOME ; mkdir $HOME/virtualenv ; cd $HOME/virtualenv
+  $ virtualenv --python=/usr/bin/python sphinx
+  $ source virtualenv/sphinx/bin/activate
 
-- Ejercicio 1.
+Instale Sphinx: ::
 
-LECCIÓN 4: TIPOS DE DATOS BÁSICOS Y VARIABLES PYTHON
-----------------------------------------------------
+  (sphinx)$ ~/entrenamiento.python_basico
+  (sphinx)$ pip install -r requirements.txt
 
-- Expresiones, Sentencias, Variables.
+Materia de cursos
+-----------------
+  
+Ahora puede generar la documentación en PDF del módulo *2, 3, 4, 5, 6, 7, 8, 9, 10*;
+ejecute los siguientes comandos: ::
 
-- Trabajando con Números.
+  (sphinx)$ cd ~/entrenamiento.python_basico/manual-de-curso/source
+  (sphinx)$ make latexpdf
 
-- Trabajando con Cadenas.
+Una ves generado el PDF se puede abrir desde el directorio ``build/latex/entrenamientopython_basico.pdf``
+con cualquiera de sus programas de visor de PDF favorito (Evince, Acrobat Reader, ...).
 
-- Trabajando con Booleanos.
+Colabora
+========
 
-- Trabajando con Listas.
+¿Tiene alguna idea?, ¿Encontró un error? Por favor, hágalo saber registrando un `ticket de soporte`_.
 
-- Trabajando con Diccionarios.
+.. _entrenamiento.python_basico: https://github.com/Covantec/entrenamiento.python_basico
+.. _ticket de soporte: https://github.com/Covantec/entrenamiento.python_basico/issues/new
 
-- Trabajando con Tuplas.
-
-- Ejercicio 1.
-
-- Ejercicio 2.
-
-LECCIÓN 5: ENTRADA/SALIDA EN PYTHON
------------------------------------
-
-- Usando la función 'print'.
-
-- Obtener datos de entrada ingresado por el usuario.
-
-- Ejercicio 1.
-
-LECCIÓN 6: HACIENDO DECISIONES - SENTENCIAS IF
-----------------------------------------------
-
-- Los Operadores Relacionales.
-
-- Los Operadores Lógicos.
-
-- Sentencia simple 'if'.
-
-- Sentencia 'if-else'.
-
-- Sentencia 'if-elif'.
-
-- Ejercicio 1.
-
-- Ejercicio 2.
-
-LECCIÓN 7: BUCLES WHILE
------------------------
-
-- Introducción a Bucles 'while'.
-
-- Bucles 'while' controlado por Conteo.
-
-- Bucles 'while' controlado por Evento.
-
-- Usando la sentencia 'continue'.
-
-- Usando la sentencia 'break'.
-
-- Trabajando con Archivos.
-
-- Ejercicio 1.
-
-- Ejercicio 2.
-
-LECCIÓN 8: BUCLES FOR
----------------------
-
-- Introducción a Bucles 'for'.
-
-- Bucles 'for' con Listas.
-
-- Bucles 'for' con Tuplas.
-
-- Bucles 'for' con Diccionarios.
-
-- Bucles 'for' con Archivos.
-
-- Ejercicio 1.
-
-- Ejercicio 2.
-
-LECCIÓN 9: ITERADORES
----------------------
-
-- Entendiendo Iteradores.
-
-- Usando 'iter' y 'next'.
-
-- Iteradores y Diccionarios.
-
-- Otros Iteradores.
-
-- Ejercicio 1.
-
-LECCIÓN 10: LISTA DE COMPRENSIONES
-----------------------------------
-
-- Introducción a Listas de comprensión.
-
-- Usando Listas de comprensión con Archivos.
-
-- Ejercicio 1.
-
-LECCIÓN 11: FUNCIONES
----------------------
-
-- Introducción a Funciones - ¿Por qué?.
-
-- Definiendo Funciones.
-
-- Llamando Funciones.
-
-- Funciones con Argumentos Múltiple.
-
-- Funciones de Predicado.
-
-- Ejercicio 1.
-
-- Ejercicio 2.
-
-LECCIÓN 12: MAS EN FUNCIONES
-----------------------------
-
-- Funciones Recursiva.
-
-- Objetos de función.
-
-- Funciones Anónima.
-
-- Funciones de orden superior.
-
-- Ejercicio 1.
-
-- Ejercicio 2.
-
-LECCIÓN 13: ÁMBITO
-------------------
-
-- Ámbito Global.
-
-- Ámbito Local.
-
-- Ámbito Anidado.
-
-- Ejercicio 1.
-
-LECCIÓN 14: MÓDULOS
--------------------
-
-- Usando módulos incorporados en la biblioteca estándar.
-
-- Módulos Definido por el usuario.
-
-- Namespaces de Módulos.
-
-- Ejercicio 1.
-
-LECCIÓN 15: PROGRAMANDO ORIENTADO OBJETO - PARTE 1
---------------------------------------------------
-
-- Tipos de Datos Abstractos.
-
-- Diseñando una Clase, Campos y Constructores.
-
-- Diseñando una Clase, Métodos.
-
-- Estructura de Datos para Campos.
-
-- Ejercicio 1.
-
-- Ejercicio 2.
-
-- Creando una Clase derivada.
-
-- Ejercicio 3.
-
-LECCIÓN 16: MANIPULANDO EXCEPCIONES
------------------------------------
-
-- Excepciones demostradas.
-
-- Sentencias 'Try-Except'.
-
-- Sentencias 'Try-Except-Finally'.
-
-- La sentencia 'raise'.
-
-- Ejercicio 1.
-
-LECCIÓN 17: USANDO ESTRUCTURAS DE DATOS
----------------------------------------
-
-- Ejercicio 1 - Listas.
-
-- Ejercicio 2 - Tuplas.
-
-- Ejercicio 3 - Diccionarios.
