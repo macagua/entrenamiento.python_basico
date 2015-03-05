@@ -178,7 +178,7 @@ htmlhelp_basename = 'entrenamientopython_basicodoc'
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
@@ -318,6 +318,6 @@ epub_exclude_files = ['search.html']
 # Add mappings
 # https://kev.inburke.com/kevin/sphinx-interlinks/
 intersphinx_mapping = {
-#    'urllib3': ('http://urllib3.readthedocs.org/en/latest', None),
     'python': ('http://docs.python.org/2', None),
+#    'urllib3': ('http://urllib3.readthedocs.org/en/latest', None),
 }
