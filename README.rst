@@ -60,6 +60,14 @@ ejecute los siguientes comandos: ::
 Una ves generado el PDF se puede abrir desde el directorio ``build/latex/entrenamientopython_basico.pdf``
 con cualquiera de sus programas de visor de PDF favorito (Evince, Acrobat Reader, ...).
 
+Estatus de Calidad
+==================
+
+.. image:: https://readthedocs.org/projects/entrenamiento-python-basico/?badge=latest
+   :target: http://entrenamiento-python-basico.rtfd.org/
+   :align: left
+   :alt: entrenamiento-python-basico ReadTheDocs build status
+
 Colabora
 ========
 
