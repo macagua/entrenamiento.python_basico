@@ -33,6 +33,18 @@ Características de Python
 -   Es un `lenguaje interpretado`_, usa `tipado dinámico`_, es 
     `fuertemente tipado`_ y es `multiplataforma`_.
 
+
+.. _python_tipado_dinamico:
+
+Python es tipado dinámico
+.........................
+
+.. literalinclude:: tipado_dinamico.py
+    :linenos:
+    :language: python
+    :lines: 1-19
+
+
 .. _python_introspeccion:
 
 Introspección en Python
