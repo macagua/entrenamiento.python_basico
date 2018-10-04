@@ -45,6 +45,17 @@ Python es tipado dinámico
     :lines: 1-19
 
 
+.. _python_fuertemente_tipado:
+
+Python es fuertemente tipado
+............................
+
+.. literalinclude:: fuertemente_tipados.py
+    :linenos:
+    :language: python
+    :lines: 1-23
+
+
 .. _python_introspeccion:
 
 Introspección en Python
