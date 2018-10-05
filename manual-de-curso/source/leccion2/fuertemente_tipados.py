@@ -2,7 +2,7 @@
 
 """ 
     El fuertemente tipado significa que el tipo de valor no 
-    cambia repentinamente. Una cadena que contiene solo dígitos 
+    cambia repentinamente. Un string que contiene solo dígitos 
     no se convierte mágicamente en un número. Cada cambio de tipo 
     requiere una conversión explícita.
 
@@ -17,7 +17,14 @@
     7
 """
 
-valor1 = 2 # "valor1" guarda un valor entero
-valor2 = "5" # "valor1" guarda un valor cadena
-total = valor1 + int(valor2) # se usa el metodo int() para convertir a entero
-print "El total es: " + str(total) # se usa el metodo str() para convertir a cadena
+# varible "valor1" guarda un valor integer
+valor1 = 2
+
+# varible "valor2" guarda un valor string
+valor2 = "5"
+
+# el metodo int() es para convertir a integer
+total = valor1 + int(valor2)
+
+# el metodo str() es para convertir a string
+print "El total es: " + str(total)
