@@ -13,7 +13,9 @@
     activo <type 'str'>
 """
 
-variable = 11 # "variable" guarda un valor entero
+# "variable" guarda un valor integer
+variable = 11
 print variable, type(variable)
-variable = "activo" # "variable" guarda un valor cadena
+# "variable" guarda un valor string
+variable = "activo"
 print (variable), type(variable)
