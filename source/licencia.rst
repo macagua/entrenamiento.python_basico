@@ -37,6 +37,6 @@ Bajo los siguientes términos:
     a partir de esta obra, usted podrá distribuir su contribución siempre
     que utilice la misma licencia que la obra original.
 
-Términos de la licencia: https://creativecommons.org/licenses/by-sa/3.0/ve/
+Términos detallados de la licencia: https://creativecommons.org/licenses/by-sa/3.0/ve/legalcode
 
 .. _Reconocimiento-CompartirIgual 3.0 Venezuela de Creative Commons: https://creativecommons.org/licenses/by-sa/3.0/ve/
