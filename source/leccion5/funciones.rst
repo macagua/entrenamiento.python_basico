@@ -8,7 +8,7 @@ Funciones
 Definiendo Funciones
 --------------------
 
-.. literalinclude:: ../../recursos/leccion4/funciones.py
+.. literalinclude:: ../../recursos/leccion5/funciones.py
     :linenos:
     :language: python
     :lines: 7-12
@@ -25,14 +25,14 @@ Llamando Funciones
 Funciones con Argumentos Múltiple
 ---------------------------------
 
-.. literalinclude:: ../../recursos/leccion4/funciones.py
+.. literalinclude:: ../../recursos/leccion5/funciones.py
     :linenos:
     :language: python
     :lines: 14-19
 
 Y se invoca de la siguiente forma:
 
-.. literalinclude:: ../../recursos/leccion4/funciones.py
+.. literalinclude:: ../../recursos/leccion5/funciones.py
     :linenos:
     :language: python
     :lines: 30
@@ -44,7 +44,7 @@ Ejemplo de Funciones
 
 Ejemplo de completo de Funciones
 
-.. literalinclude:: ../../recursos/leccion4/funciones.py
+.. literalinclude:: ../../recursos/leccion5/funciones.py
     :linenos:
     :language: python
 
