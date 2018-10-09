@@ -199,9 +199,9 @@ dentro de las funciones que se llaman (inclusive indirectamente) dentro del
    >>> try:
    ...     esto_falla()
    ... except ZeroDivisionError as detail:
-   ...     print 'Manejando error en tiempo de ejecucion:', detail
+   ...     print 'Manejando error en tiempo de ejecución:', detail
    ...
-   Manejando error en tiempo de ejecucion: integer division or modulo by zero
+   Manejando error en tiempo de ejecución: integer division or modulo by zero
 
 
 Levantando excepciones
@@ -226,10 +226,10 @@ relanzarla::
    >>> try:
    ...     raise NameError('Hola')
    ... except NameError:
-   ...     print u'Voló una excepción!'
+   ...     print u'Ha sucedido una excepción!'
    ...     raise
    ...
-   Voló una excpeción!
+   Ha sucedido una excepción!
    Traceback (most recent call last):
      File "<stdin>", line 2, in ?
    NameError: Hola
@@ -252,7 +252,7 @@ Python).  Las excepciones, típicamente, deberán derivar de la clase
    >>> try:
    ...     raise MiError(2*2)
    ... except MyError as e:
-   ...     print u'Ocurrió mi excepción, valor:', e.valor
+   ...     print u'Ha ocurrido mi excepción, valor:', e.valor
    ...
    Ocurrió mi excepción, valor: 4
    >>> raise MiError('oops!')
@@ -277,11 +277,11 @@ condiciones de error::
        pass
 
    class EntradaError(Error):
-       """Excepcion lanzada por errores en las entradas.
+       """Exception lanzada por errores en las entradas.
 
        Atributos:
-           expresion -- expresion de entrada en la que ocurre el error
-           mensaje -- explicacion del error
+           expresion -- expresión de entrada en la que ocurre el error
+           mensaje -- explicación del error
        """
 
        def __init__(self, expresion, mensaje):
@@ -289,13 +289,13 @@ condiciones de error::
            self.mensaje = mensaje
 
    class TransicionError(Error):
-       """Lanzada cuando una operacion intenta una transicion de estado no
+       """Lanzada cuando una operación intenta una transición de estado no
        permitida.
 
        Atributos:
-           previo -- estado al principio de la transicion
+           previo -- estado al principio de la transición
            siguiente -- nuevo estado intentado
-           mensaje -- explicacion de porque la transicion no esta permitida
+           mensaje -- explicación de porque la transición no esta permitida
        """
        def __init__(self, previo, siguiente, mensaje):
            self.previo = previo
@@ -319,7 +319,7 @@ circunstancias. Por ejemplo::
    >>> try:
    ...     raise KeyboardInterrupt
    ... finally:
-   ...     print 'Chau, mundo!'
+   ...     print 'Adiós, mundo!'
    ...
    Chau, mundo!
    Traceback (most recent call last):
@@ -341,7 +341,7 @@ declaración :keyword:`try`)::
    ...     try:
    ...         result = x / y
    ...     except ZeroDivisionError:
-   ...         print "¡division por cero!"
+   ...         print "¡división por cero!"
    ...     else:
    ...         print "el resultado es", result
    ...     finally:
@@ -351,7 +351,7 @@ declaración :keyword:`try`)::
    el resultado es 2
    ejecutando la clausula finally
    >>> dividir(2, 0)
-   ¡division por cero!
+   ¡división por cero!
    ejecutando la clausula finally
    >>> divide("2", "1")
    ejecutando la clausula finally
@@ -360,7 +360,7 @@ declaración :keyword:`try`)::
      File "<stdin>", line 3, in divide
    TypeError: unsupported operand type(s) for /: 'str' and 'str'
 
-Como podés ver, la cláusula :keyword:`finally` es ejecutada siempre.  La
+Como puedes ver, la cláusula :keyword:`finally` es ejecutada siempre.  La
 excepción :exc:`TypeError` lanzada al dividir dos cadenas de texto no es
 manejado por la cláusula :keyword:`except` y por lo tanto es relanzada luego
 de que se ejecuta la cláusula :keyword:`finally`.

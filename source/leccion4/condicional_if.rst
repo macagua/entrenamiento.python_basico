@@ -1,12 +1,12 @@
 .. -*- coding: utf-8 -*-
 
 Sentencias IF
-===================================
+=============
 
-La sentencia ``If`` se usa para tomar decisiones, este evalua
-basicamente una operación logica, es decir una expresión que de
+La sentencia ``If`` se usa para tomar decisiones, este evaluá
+básicamente una operación lógica, es decir una expresión que de
 como resultado verdadero o false (``True`` o ``False``), y ejecuta
-la pieza de codigo siguiente siempre y cuando el resultado sea verdadero.
+la pieza de código siguiente siempre y cuando el resultado sea verdadero.
 
 Ejemplo de Sentencias IF
 ........................
@@ -18,7 +18,7 @@ Ejemplo de Sentencias IF
 Operadores de Asignaciones
 --------------------------
 
-Los operadores de asignación se utilizan para basicamente asignar un
+Los operadores de asignación se utilizan para básicamente asignar un
 valor a una variable, así como cuando utilizamos el “=”.
 
 Los operadores de asignación son ``=,+=,-=,\*=,/=,\*\*=,//=``, a
