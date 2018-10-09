@@ -15,8 +15,7 @@ Entendiendo Iteradores
 
                  *Guido van Rossum* --- `Añadiendo tipado estático opcional a Python` (`Adding Optional Static Typing to Python`_)
 
-.. _`Adding Optional Static Typing to Python`:
-   http://www.artima.com/weblogs/viewpost.jsp?thread=86641
+.. _`Adding Optional Static Typing to Python`: https://www.artima.com/weblogs/viewpost.jsp?thread=86641
 
 
 Un iterador es un objeto adherido al 'protocolo de iterador'
@@ -26,7 +25,7 @@ cuando se le llama, devuelve la siguiente 'pieza' (o 'item') en la
 secuencia y, cuando no queda nada para ser devuelto, lanza la excepción 
 `StopIteration <exceptions.StopIteration>`.
 
-.. _`iterator protocol`: http://docs.python.org/dev/library/stdtypes.html#iterator-types
+.. _`iterator protocol`: https://docs.python.org/dev/library/stdtypes.html#iterator-types
 
 
 ::
@@ -79,6 +78,6 @@ Vídeo tutorial
 
  - `Tutorial Python 27 - Decoradores`_.
  
-.. _Tutorial Python 25 - Comprensión de Listas: https://www.youtube.com/watch?v=87s8XQbUv1k
-.. _Tutorial Python 26 - Generadores: https://www.youtube.com/watch?v=tvHbC_OZV14
-.. _Tutorial Python 27 - Decoradores: https://www.youtube.com/watch?v=TaIWx9paNIA
+.. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
+.. _`Tutorial Python 26 - Generadores`: https://www.youtube.com/watch?v=tvHbC_OZV14
+.. _`Tutorial Python 27 - Decoradores`: https://www.youtube.com/watch?v=TaIWx9paNIA

@@ -112,10 +112,10 @@ Referencia
 
 - `Python - Tipos básicos`_.
 
-- `Operadores basicos de Python`_.
+- `Operadores básicos de Python`_.
  
-.. _Sentencias IF: http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-if
-.. _Tutorial Python 10 - Sentencias condicionales: https://www.youtube.com/watch?v=hLqKvB7tGWk
-.. _Python - Tipos básicos: http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/
-.. _Operadores basicos de Python: http://codigoprogramacion.com/cursos/tutoriales-python/operadores-basicos-de-python.html
-.. _Condicionales if y else en Python: http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html
+.. _`Sentencias IF`: http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-if
+.. _`Tutorial Python 10 - Sentencias condicionales`: https://www.youtube.com/watch?v=hLqKvB7tGWk
+.. _`Python - Tipos básicos`: http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/
+.. _`Operadores básicos de Python`: http://codigoprogramacion.com/cursos/tutoriales-python/operadores-basicos-de-python.html
+.. _`Condicionales if y else en Python`: http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html

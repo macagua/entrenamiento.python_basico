@@ -412,9 +412,9 @@ Referencia
 
 - `Python - Tipos básicos`_.
 
-.. _¿Qué es Python?: http://es.wikipedia.org/wiki/Python
-.. _Características: http://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas
-.. _¿Por qué Python?: http://es.wikipedia.org/wiki/Python#Filosof.C3.ADa
-.. _Tutorial Python 4 - Enteros, reales y operadores aritméticos: https://www.youtube.com/watch?v=ssnkfbBbcuw
-.. _Tutorial Python 5 - Booleanos, operadores lógicos y cadenas: https://www.youtube.com/watch?v=ZrxcqbFYjiw
-.. _Python - Tipos básicos: http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/
+.. _`¿Qué es Python?`: https://es.wikipedia.org/wiki/Python
+.. _`Características`: https://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas
+.. _`¿Por qué Python?`: https://es.wikipedia.org/wiki/Python#Filosof.C3.ADa
+.. _`Tutorial Python 4 - Enteros, reales y operadores aritméticos`: https://www.youtube.com/watch?v=ssnkfbBbcuw
+.. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
+.. _`Python - Tipos básicos`: http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/

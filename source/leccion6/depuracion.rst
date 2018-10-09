@@ -7,7 +7,7 @@ En este tutorial se exploran herramientas que ayudan a entender tu
 código: depuración para encontrar y corregir *bugs* (errores).
 
 El depurador python, ``pdb``:
-`http://docs.python.org/library/pdb.html <http://docs.python.org/library/pdb.html>`_,
+`https://docs.python.org/2/library/pdb.html <https://docs.python.org/2/library/pdb.html>`_,
 te permite inspeccionar tu código de forma interactiva.
 
 Te permite:
@@ -47,7 +47,7 @@ Postmortem
 
 **Situación**: Estás trabajando en ipython y obtienes un error (`traceback`).
 
-En este caso estamos depurando el fichero ```index_error.py`` <http://pybonacci.github.io/scipy-lecture-notes-ES/_downloads/index_error.py>`_. Cuando lo ejecutes verás como se lanza un :class:`IndexError`. Escribe ``%debug`` y entrarás en el depurador.
+En este caso estamos depurando el fichero ```index_error.py`` <https://www.pybonacci.org/scipy-lecture-notes-ES/_downloads/index_error.py>`_. Cuando lo ejecutes verás como se lanza un :class:`IndexError`. Escribe ``%debug`` y entrarás en el depurador.
 
 .. sourcecode:: ipython
 
@@ -129,7 +129,7 @@ Ejecución paso a paso
 
 **Situación**: Crees que existe un error en un módulo pero no estás seguro donde.
 
-Por ejemplo, estamos intentado depurar `wiener_filtering.py <http://pybonacci.github.io/scipy-lecture-notes-ES/_downloads/wiener_filtering.py>`_.
+Por ejemplo, estamos intentado depurar `wiener_filtering.py <https://www.pybonacci.org/scipy-lecture-notes-ES/_downloads/wiener_filtering.py>`_.
 A pesar de que el código se ejecuta, observamos que el filtrado no se
 está haciendo correctamente.
 
@@ -214,7 +214,7 @@ estamos haciendo aritmética con enteros.
 
 .. topic:: Lanzando excepciones en errores numéricos
 
-    Cuando ejecutamos el fichero `wiener_filtering.py <http://pybonacci.github.io/scipy-lecture-notes-ES/_downloads/wiener_filtering.py>`_, se lanzarán
+    Cuando ejecutamos el fichero `wiener_filtering.py <https://www.pybonacci.org/scipy-lecture-notes-ES/_downloads/wiener_filtering.py>`_, se lanzarán
     los siguientes avisos:
 
     .. sourcecode:: ipython
@@ -272,7 +272,7 @@ Otras formas de comenzar una depuración
 
   Además, puedes usar la interfaz IPython para el depurador en **nose**
   usando el plugin  de **nose**
-  `ipdbplugin <http://pypi.python.org/pypi/ipdbplugin>`_. Podremos, entonces,
+  `ipdbplugin <https://pypi.org/project/ipdbplugin>`_. Podremos, entonces,
   pasar las opciones ``--ipdb`` y ``--ipdb-failure`` a los *nosetests*.
 
 * **Llamando explícitamente al depurador**
@@ -294,11 +294,11 @@ Otras formas de comenzar una depuración
       `winpdb <http://winpdb.org/>`_. para inspeccionar saltas a través del 
       código e inspeccionar las variables
 
-    * De forma alternativa, `pudb <http://pypi.python.org/pypi/pudb>`_ es un 
+    * De forma alternativa, `pudb <https://pypi.org/project/pudb>`_ es un 
       buen depurador semi-gráfico con una interfaz de texto en la consola.
 
     * También, estaría bien echarle un ojo al proyecto 
-      `pydbgr <http://code.google.com/p/pydbgr/>`_
+      `pydbgr <https://code.google.com/archive/p/pydbgr>`_
 
 Comandos del depurador e interacciones
 --------------------------------------
@@ -357,5 +357,5 @@ Referencia
 
 - `pdb — The Python Debugger`_.
  
-.. _pdb — The Python Debugger: https://docs.python.org/2/library/pdb.html
-.. _Depurando um programa Python com pdb - Python Debugger: https://www.youtube.com/watch?v=N4NtB4r28h0
+.. _`pdb — The Python Debugger`: https://docs.python.org/2/library/pdb.html
+.. _`Depurando um programa Python com pdb - Python Debugger`: https://www.youtube.com/watch?v=N4NtB4r28h0

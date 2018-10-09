@@ -9,7 +9,7 @@ Glosario
 :Autor(es): Leonardo J. Caballero G.
 :Correo(s): leonardocaballero@gmail.com
 :Compatible con: Python 2.x, Python 3.x
-:Fecha: 04 de Marzo de 2015
+:Fecha: 08 de Octubre de 2018
 
 A continuación una serie de términos usados en las tecnologías Python / Zope / Plone.
 
@@ -113,7 +113,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
     
     PyPI
         Siglas del termino en Ingles :term:`Python Package Index`, es el servidor central 
-        de :term:`paquetes Egg` Python ubicado en la dirección http://pypi.python.org/pypi/.
+        de :term:`paquetes Egg` Python ubicado en la dirección https://pypi.org/.
     
     part
         En la herramienta :term:`buildout`, es un conjunto opciones que le permite a usted 
@@ -217,7 +217,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         Entonces el módulo Python se instalará.
 
         .. seealso::
-            - http://docs.python.org/install/index.html
+            - https://docs.python.org/2/install/index.html
     
     Temas / Apariencias
         Por lo general si un producto de Tema esta bien diseñado y implementado
@@ -304,24 +304,24 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         y permite el registro de componentes, etc haciendo declarativa de código Python.
         Ambos enfoques son posibles en Plone.
 
-.. _Third-Party Products: http://plone.org/documentation/kb/add-ons/tutorial-all-pages
-.. _Products.CMFPlone: http://pypi.python.org/pypi/Products.CMFPlone
-.. _sitio web de PEAK: http://peak.telecommunity.com/DevCenter/setuptools
-.. _obtener acceso de escritura al repositorio: http://plone.org/countries/conosur/documentacion/obtener-acceso-de-escritura-al-repositorio-svn-de-plone
-.. _crear su estructura básica de repositorio: http://plone.org/countries/conosur/documentacion/crear-un-nuevo-proyecto-en-el-repositorio-collective-de-plone
-.. _enlace: http://svn.plone.org/svn/collective/
-.. _obtener acceso de escritura: http://collective.github.io/
-.. _seguir las reglas en github/collective: http://collective.github.io/
-.. _github.com: http://github.com/collective
-.. _Configuración de Temas: http://localhost:8080/Plone/@@skins-controlpanel
-.. _Configuración de Productos Adicionales: http://localhost:8080/Plone/prefs_install_products_form
-.. _su instalación: http://localhost:8080/manage
-.. _z3c.autoinclude: http://pypi.python.org/pypi/z3c.autoinclude
-.. _Paste: http://pythonpaste.org/
-.. _buildout: https://plone-spanish-docs.readthedocs.org/es/latest/buildout/replicacion_proyectos_python.html
-.. _ZMI: https://plone-spanish-docs.readthedocs.org/es/latest/zope/zmi/index.html
-.. _portal_catalog: https://plone-spanish-docs.readthedocs.org/es/latest/zope/zmi/index.html#portal-catalog
-.. _Recipes Buildout: https://plone-spanish-docs.readthedocs.org/es/latest/buildout/recipes.html
-.. _setuptools: https://plone-spanish-docs.readthedocs.org/es/latest/python/setuptools.html
-.. _interfaz administrativa de Zope (ZMI): https://plone-spanish-docs.readthedocs.org/es/latest/zope/zmi/index.html
-.. _arquitectura de componentes de Zope (alias ZCA): https://plone-spanish-docs.readthedocs.org/es/latest/programacion/zca/zca-es.html
+.. _`Third-Party Products`: https://old.plone.org/documentation/kb/add-ons/tutorial-all-pages
+.. _`Products.CMFPlone`: https://pypi.org/project/Products.CMFPlone
+.. _`sitio web de PEAK`: http://peak.telecommunity.com/DevCenter/setuptools
+.. _`obtener acceso de escritura al repositorio`: https://old.plone.org/countries/conosur/documentacion/obtener-acceso-de-escritura-al-repositorio-svn-de-plone
+.. _`crear su estructura básica de repositorio`: https://old.plone.org/countries/conosur/documentacion/crear-un-nuevo-proyecto-en-el-repositorio-collective-de-plone
+.. _`enlace`: https://svn.plone.org/svn/collective/
+.. _`obtener acceso de escritura`: https://collective.github.io/
+.. _`seguir las reglas en github/collective`: https://collective.github.io/
+.. _`github.com`: https://github.com/collective
+.. _`Configuración de Temas`: http://localhost:8080/Plone/@@skins-controlpanel
+.. _`Configuración de Productos Adicionales`: http://localhost:8080/Plone/prefs_install_products_form
+.. _`su instalación`: http://localhost:8080/manage
+.. _`z3c.autoinclude`: https://pypi.org/project/z3c.autoinclude
+.. _`Paste`: https://paste.readthedocs.io/en/latest/
+.. _`buildout`: https://plone-spanish-docs.readthedocs.io/es/latest/buildout/replicacion_proyectos_python.html
+.. _`ZMI`: https://plone-spanish-docs.readthedocs.io/es/latest/zope/zmi/index.html
+.. _`portal_catalog`: https://plone-spanish-docs.readthedocs.io/es/latest/zope/zmi/index.html#portal-catalog
+.. _`Recipes Buildout`: https://plone-spanish-docs.readthedocs.io/es/latest/buildout/recipes.html
+.. _`setuptools`: https://plone-spanish-docs.readthedocs.io/es/latest/python/setuptools.html
+.. _`interfaz administrativa de Zope (ZMI)`: https://plone-spanish-docs.readthedocs.io/es/latest/zope/zmi/index.html
+.. _`arquitectura de componentes de Zope (alias ZCA)`: https://plone-spanish-docs.readthedocs.io/es/latest/programacion/zca/zca-es.html

@@ -35,7 +35,7 @@ Referencia
 
 - `Python - Entrada / Salida. Ficheros`_.
  
-.. _Python Programming / Input and Output: http://en.wikibooks.org/wiki/Python_Programming/Input_and_Output
-.. _Python - Entrada / Salida. Ficheros: http://mundogeek.net/archivos/2008/04/02/python-entrada-salida-ficheros/
-.. _Tutorial Python 30 - Entrada Estandar rawInput: https://www.youtube.com/watch?v=AzeUCuMvW6I
-.. _Tutorial Python 31 - Salida Estandar rawInput: https://www.youtube.com/watch?v=B-JPXgxK3Oc
+.. _`Python Programming / Input and Output`: https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output
+.. _`Python - Entrada / Salida. Ficheros`: http://mundogeek.net/archivos/2008/04/02/python-entrada-salida-ficheros/
+.. _`Tutorial Python 30 - Entrada Estandar rawInput`: https://www.youtube.com/watch?v=AzeUCuMvW6I
+.. _`Tutorial Python 31 - Salida Estandar rawInput`: https://www.youtube.com/watch?v=B-JPXgxK3Oc

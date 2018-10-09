@@ -78,5 +78,5 @@ Referencia
 
 - `Introducción a Funciones`_ - ¿Por qué?.
  
-.. _Introducción a Funciones: http://docs.python.org.ar/tutorial/2/controlflow.html#definiendo-funciones
-.. _Tutorial Python 12 - Funciones: https://www.youtube.com/watch?v=_C7Uj7O5o_Q
+.. _`Introducción a Funciones`: http://docs.python.org.ar/tutorial/2/controlflow.html#definiendo-funciones
+.. _`Tutorial Python 12 - Funciones`: https://www.youtube.com/watch?v=_C7Uj7O5o_Q

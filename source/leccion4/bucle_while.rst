@@ -100,7 +100,7 @@ Referencia
 
 - `Ciclo while en Python`_.
  
-.. _Introducción a Bucles 'while': http://docs.python.org.ar/tutorial/2/introduction.html#primeros-pasos-hacia-la-programacion
-.. _Sucesión de Fibonacci: http://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
-.. _Tutorial Python 11 - Bucles: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
-.. _Ciclo while en Python: http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html
+.. _`Introducción a Bucles 'while'`: http://docs.python.org.ar/tutorial/2/introduction.html#primeros-pasos-hacia-la-programacion
+.. _`Sucesión de Fibonacci`: https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
+.. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
+.. _`Ciclo while en Python`: http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html

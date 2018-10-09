@@ -10,7 +10,7 @@ Inmersión al modo interactivo de Python
     :Autor(es): Leonardo J. Caballero G.
     :Correo(s): leonardocaballero@gmail.com
     :Compatible con: Python 2.4 o versiones superiores
-    :Fecha: 31 de Diciembre de 2013
+    :Fecha: 08 de Octubre de 2018
 
 Descripción general
 -------------------
@@ -113,7 +113,7 @@ Pidiendo la ayudar del interprete de Python
     Welcome to Python 2.5!  This is the online help utility.
 
     If this is your first time using Python, you should definitely check
-    out the tutorial on the Internet at http://www.python.org/doc/tut/.
+    out the tutorial on the Internet at https://www.python.org/doc/tut/.
 
     Enter the name of any module, keyword, or topic to get help on
     writing Python programs and using Python modules. To quit this help 
@@ -323,7 +323,7 @@ siguiente comando:
           /usr/lib/python2.5/os.py
 
       MODULE DOCS
-          http://www.python.org/doc/current/lib/module-os.html
+          https://www.python.org/doc/current/lib/module-os.html
 
       DESCRIPTION
           This exports:
@@ -635,7 +635,7 @@ ejecutando el siguiente comando:
         /usr/lib/python2.5/os.py
 
     MODULE DOCS
-        http://www.python.org/doc/current/lib/module-os.html
+        https://www.python.org/doc/current/lib/module-os.html
 
     DESCRIPTION
         This exports:
@@ -731,29 +731,29 @@ Referencias
 
 -   `Una pequeña inmersión al modo interactivo de Python`_ de la fundación Cenditel.
 
-.. _Python: http://www.python.org/ 
-.. _multiparadigma: http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_multiparadigma
-.. _orientación a objetos: http://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos
-.. _programación imperativa: http://es.wikipedia.org/wiki/Programaci%C3%B3n_imperativa
-.. _programación funcional: http://es.wikipedia.org/wiki/Programaci%C3%B3n_funcional
-.. _lenguaje interpretado: http://es.wikipedia.org/wiki/Lenguaje_interpretado
-.. _tipado dinámico: http://es.wikipedia.org/wiki/Tipado_din%C3%A1mico
-.. _fuertemente tipado: http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_fuertemente_tipado
-.. _multiplataforma: http://es.wikipedia.org/wiki/Multiplataforma
-.. _todo en Python es un objeto: http://es.diveintopython.org/odbchelper_objects.html
-.. _Javadoc: http://es.wikipedia.org/wiki/Javadoc
-.. _diagramas de clases: http://es.wikipedia.org/wiki/Diagrama_de_clases
-.. _Sphinx: http://en.wikipedia.org/wiki/Sphinx_%28documentation_generator%29
-.. _La librería estándar de Python: http://pyspanishdoc.sourceforge.net/tut/node12.html
-.. _librería del estándar: http://pyspanishdoc.sourceforge.net/tut/node12.html
-.. _modo interactivo: http://es.wikipedia.org/wiki/Python#Modo_interactivo
-.. _SciPy: http://en.wikipedia.org/wiki/SciPy
-.. _página principal de ipython: http://ipython.scipy.org/
-.. _paquete bpython: http://pypi.python.org/pypi/bpython/
-.. _página principal de bpython: http://bpython-interpreter.org/
-.. _estilo de completación de lineas de comandos: http://en.wikipedia.org/wiki/Command_line_completion
-.. _Inmersión en Python: http://es.diveintopython.org/
-.. _Guía de aprendizaje de Python: http://pyspanishdoc.sourceforge.net/tut/tut.html
-.. _Guide to Python introspection: http://www.ibm.com/developerworks/linux/library/l-pyint.html
-.. _Una pequeña inmersión al modo interactivo de Python: http://plataforma.cenditel.gob.ve/wiki/Plone%3AUnaPequenaInmersionPython
-.. _fundación Cenditel: https://twitter.com/cenditel
+.. _`Python`: https://www.python.org/ 
+.. _`multiparadigma`: https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_multiparadigma
+.. _`orientación a objetos`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos
+.. _`programación imperativa`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_imperativa
+.. _`programación funcional`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_funcional
+.. _`lenguaje interpretado`: https://es.wikipedia.org/wiki/Lenguaje_interpretado
+.. _`tipado dinámico`: https://es.wikipedia.org/wiki/Tipado_din%C3%A1mico
+.. _`fuertemente tipado`: https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_fuertemente_tipado
+.. _`multiplataforma`: https://es.wikipedia.org/wiki/Multiplataforma
+.. _`todo en Python es un objeto`: http://es.diveintopython.org/odbchelper_objects.html
+.. _`Javadoc`: https://es.wikipedia.org/wiki/Javadoc
+.. _`diagramas de clases`: https://es.wikipedia.org/wiki/Diagrama_de_clases
+.. _`Sphinx`: https://en.wikipedia.org/wiki/Sphinx_%28documentation_generator%29
+.. _`La librería estándar de Python`: http://pyspanishdoc.sourceforge.net/tut/node12.html
+.. _`librería del estándar`: http://pyspanishdoc.sourceforge.net/tut/node12.html
+.. _`modo interactivo`: https://es.wikipedia.org/wiki/Python#Modo_interactivo
+.. _`SciPy`: https://en.wikipedia.org/wiki/SciPy
+.. _`página principal de ipython`: https://ipython.org
+.. _`paquete bpython`: https://pypi.org/project/bpython/
+.. _`página principal de bpython`: https://bpython-interpreter.org/
+.. _`estilo de completación de lineas de comandos`: https://en.wikipedia.org/wiki/Command_line_completion
+.. _`Inmersión en Python`: http://es.diveintopython.org/
+.. _`Guía de aprendizaje de Python`: http://pyspanishdoc.sourceforge.net/tut/tut.html
+.. _`Guide to Python introspection`: https://www.ibm.com/developerworks/linux/library/l-pyint/index.html
+.. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
+.. _`fundación Cenditel`: https://mobile.twitter.com/cenditel

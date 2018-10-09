@@ -60,5 +60,5 @@ Referencia
 
 - `Clases — Tutorial de Python v2.7.0`_.
  
-.. _Tutorial Python 13 - Clases y Objetos: https://www.youtube.com/watch?v=VYXdpjCZojA
-.. _Clases — Tutorial de Python v2.7.0: http://docs.python.org.ar/tutorial/2/classes.html
+.. _`Tutorial Python 13 - Clases y Objetos`: https://www.youtube.com/watch?v=VYXdpjCZojA
+.. _`Clases — Tutorial de Python v2.7.0`: http://docs.python.org.ar/tutorial/2/classes.html

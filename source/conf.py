@@ -34,6 +34,20 @@ extensions = [
 	'sphinx.ext.intersphinx',
 ]
 
+# Options for the linkcheck builder
+# Ignore localhost
+linkcheck_ignore = [
+    r'http://localhost:\d+/',
+    r'http://localhost:8080\d+/',
+    r'http://localhost:8080',
+    r'http://127.0.0.1:8080',
+    r'http://whatever.herokuapp.com',
+    r'http://example.com/news',
+    r'http://example.com\d+/',
+]
+linkcheck_anchors = False
+linkcheck_timeout = 30
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -318,6 +332,6 @@ epub_exclude_files = ['search.html']
 # Add mappings
 # https://kev.inburke.com/kevin/sphinx-interlinks/
 intersphinx_mapping = {
-    'python': ('http://docs.python.org/2', None),
+    'python': ('https://docs.python.org/2', None),
 #    'urllib3': ('http://urllib3.readthedocs.org/en/latest', None),
 }

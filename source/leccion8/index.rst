@@ -10,7 +10,7 @@ Scaffolding en proyectos Python
     :Autor(es): Leonardo J. Caballero G.
     :Correo(s): leonardocaballero@gmail.com
     :Compatible con: Python 2.4 o versiones superiores
-    :Fecha: 03 de Octubre de 2014
+    :Fecha: 08 de Octubre de 2018
 
 .. _scaffolding_python:
 
@@ -79,7 +79,7 @@ Usted puede usar el comando :command:`paster` para crear paquetes Python.
     Enter keywords (Space-separated keywords/tags) ['']: PasteScript Basic Package Demo
     Enter author (Author name) ['']: Pedro Picapiedra
     Enter author_email (Author email) ['']: pedro@acme.com
-    Enter url (URL of homepage) ['']: http://github.com/pyve/mipaquetepython
+    Enter url (URL of homepage) ['']: https://github.com/pyve/mipaquetepython
     Enter license_name (License name) ['']: GPL
     Enter zip_safe (True/False: if the package can be distributed as a .zip file) [False]:
     Creating template basic_package
@@ -157,10 +157,10 @@ A continuación se muestran algunos esqueletos útiles:
 
 - `Esqueletos de proyectos Zope/Plone`_.
 
-- `Esqueletos de proyectos OpenERP`_.
+- `Esqueletos de proyectos Odoo (Antiguo OpenERP)`_.
 
   .. note::
-      `OpenERP`_, es un sistema ERP y CRM programado con Python,
+      `Odoo`_, es un sistema ERP y CRM programado con Python,
       de propósito general.
 
 - **Esqueletos de proyectos Django**:
@@ -242,31 +242,31 @@ Referencias
 - `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo`_ 
   desde la comunidad de Plone Venezuela.
 
-.. _PasteScript: http://pypi.python.org/pypi/PasteScript
-.. _paste.deploy: http://pypi.python.org/pypi/PasteDeploy
-.. _OpenERP: https://www.openerp.com/
-.. _Django: https://www.djangoproject.com/
-.. _django-project-templates: http://pypi.python.org/pypi/django-project-templates
-.. _fez.djangoskel: http://pypi.python.org/pypi/fez.djangoskel
-.. _django-harness: http://pypi.python.org/pypi/django-harness
-.. _lfc-skel: http://pypi.python.org/pypi/lfc-skel/
-.. _django-lfc: http://pypi.python.org/pypi/django-lfc
-.. _ZopeSkel: http://pypi.python.org/pypi/ZopeSkel
-.. _zopeproject: http://pypi.python.org/pypi/zopeproject/
-.. _grokcore.startup: http://pypi.python.org/pypi/grokcore.startup
-.. _grokproject: http://pypi.python.org/pypi/grokproject/
-.. _Pylons: http://pypi.python.org/pypi/Pylons/
-.. _PylonsTemplates: http://pypi.python.org/pypi/PylonsTemplates/
-.. _BlastOff: http://pypi.python.org/pypi/BlastOff/
-.. _CherryPy: http://pypi.python.org/pypi/CherryPy
-.. _CherryPaste: http://pypi.python.org/pypi/CherryPaste
-.. _Trac: http://pypi.python.org/pypi/Trac
-.. _TracLegosScript: http://trac-hacks.org/wiki/TracLegosScript
-.. _trac_project: http://trac-hacks.org/browser/traclegosscript/anyrelease/example/oss
-.. _Esqueletos de proyectos Zope/Plone: https://plone-spanish-docs.readthedocs.org/es/latest/python/skel_proyectos_plone.html
-.. _Esqueletos de proyectos OpenERP: https://plone-spanish-docs.readthedocs.org/es/latest/python/skel_proyectos_openerp.html
-.. _PIP: https://plone-spanish-docs.readthedocs.org/es/latest/python/distribute_pip.html
-.. _Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo: http://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout
-.. _entorno virtual: https://plone-spanish-docs.readthedocs.-org/es/latest/python/creacion_entornos_virtuales.html
-.. _easy_install: https://plone-spanish-docs.readthedocs.org/es/latest/python/setuptools.html#que-es-easyinstall
-.. _Setuptools: https://plone-spanish-docs.readthedocs.org/es/latest/python/setuptools.html
+.. _`PasteScript`: https://pypi.org/project/PasteScript
+.. _`paste.deploy`: https://pypi.org/project/PasteDeploy
+.. _`Odoo`: https://www.odoo.com/
+.. _`Django`: https://www.djangoproject.com/
+.. _`django-project-templates`: https://pypi.org/project/django-project-templates
+.. _`fez.djangoskel`: https://pypi.org/project/fez.djangoskel
+.. _`django-harness`: https://pypi.org/project/django-harness
+.. _`lfc-skel`: https://pypi.org/project/lfc-skel/
+.. _`django-lfc`: https://pypi.org/project/django-lfc
+.. _`ZopeSkel`: https://pypi.org/project/ZopeSkel
+.. _`zopeproject`: https://pypi.org/project/zopeproject/
+.. _`grokcore.startup`: https://pypi.org/project/grokcore.startup
+.. _`grokproject`: https://pypi.org/project/grokproject/
+.. _`Pylons`: https://pypi.org/project/Pylons/
+.. _`PylonsTemplates`: https://pypi.org/project/PylonsTemplates/
+.. _`BlastOff`: https://pypi.org/project/BlastOff/
+.. _`CherryPy`: https://pypi.org/project/CherryPy
+.. _`CherryPaste`: https://pypi.org/project/CherryPaste
+.. _`Trac`: https://pypi.org/project/Trac
+.. _`TracLegosScript`: https://trac-hacks.org/wiki/TracLegosScript
+.. _`trac_project`: https://trac-hacks.org/browser/traclegosscript/anyrelease/example/oss
+.. _`Esqueletos de proyectos Zope/Plone`: https://plone-spanish-docs.readthedocs.io/es/latest/python/skel_proyectos_plone.html
+.. _`Esqueletos de proyectos Odoo (Antiguo OpenERP)`: https://plone-spanish-docs.readthedocs.io/es/latest/python/skel_proyectos_openerp.html
+.. _`PIP`: https://plone-spanish-docs.readthedocs.io/es/latest/python/distribute_pip.html
+.. _`Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo`: https://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout
+.. _`entorno virtual`: https://plone-spanish-docs.readthedocs.io/es/latest/python/creacion_entornos_virtuales.html
+.. _`easy_install`: https://plone-spanish-docs.readthedocs.io/es/latest/python/setuptools.html#que-es-easyinstall
+.. _`Setuptools`: https://plone-spanish-docs.readthedocs.io/es/latest/python/setuptools.html

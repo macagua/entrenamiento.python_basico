@@ -18,4 +18,4 @@ Vídeo tutorial
 
  - `Tutorial Python 25 - Comprensión de Listas`_.
  
-.. _Tutorial Python 25 - Comprensión de Listas: https://www.youtube.com/watch?v=87s8XQbUv1k
+.. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
