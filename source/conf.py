@@ -62,7 +62,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'entrenamiento.python_basico'
-copyright = u'2014, Covantec R.L.'
+copyright = u'2014 - 2018, Covantec R.L.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -293,7 +293,7 @@ texinfo_documents = [
 epub_title = u'Materiales del curso de programación en Python - Nivel básico'
 epub_author = u'Leonardo J. Caballero G.'
 epub_publisher = u'Covantec R.L.'
-epub_copyright = u'2014, Leonardo J. Caballero G.'
+epub_copyright = u'2014 - 2018, Leonardo J. Caballero G.'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
