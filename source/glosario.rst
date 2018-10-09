@@ -82,7 +82,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         Termino ingles File system, referido al sistema de archivo del sistema operativo.
     
     grok
-        Ver la documentacion del proyecto `grok <http://grok.zope.org/>`_.
+        Ver la documentacion del proyecto `grok <https://grok-community-docs.readthedocs.io/en/latest/>`_.
 
     Instalación de Zope
         El software propio del servidor de aplicaciones.
@@ -304,7 +304,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         y permite el registro de componentes, etc haciendo declarativa de código Python.
         Ambos enfoques son posibles en Plone.
 
-.. _`Third-Party Products`: https://old.plone.org/documentation/kb/add-ons/tutorial-all-pages
+.. _`Third-Party Products`: https://docs.plone.org/develop/addons/
 .. _`Products.CMFPlone`: https://pypi.org/project/Products.CMFPlone
 .. _`sitio web de PEAK`: http://peak.telecommunity.com/DevCenter/setuptools
 .. _`obtener acceso de escritura al repositorio`: https://old.plone.org/countries/conosur/documentacion/obtener-acceso-de-escritura-al-repositorio-svn-de-plone

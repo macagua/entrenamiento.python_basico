@@ -291,7 +291,7 @@ Otras formas de comenzar una depuración
 .. topic:: Depuradores gráficos y alternativas
 
     * Quizá encuentres más conveniente usar un depurador gráfico como  
-      `winpdb <http://winpdb.org/>`_. para inspeccionar saltas a través del 
+      `winpdb <https://pypi.org/project/winpdb/>`_. para inspeccionar saltas a través del 
       código e inspeccionar las variables
 
     * De forma alternativa, `pudb <https://pypi.org/project/pudb>`_ es un 

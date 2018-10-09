@@ -740,7 +740,7 @@ Referencias
 .. _`tipado dinámico`: https://es.wikipedia.org/wiki/Tipado_din%C3%A1mico
 .. _`fuertemente tipado`: https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_fuertemente_tipado
 .. _`multiplataforma`: https://es.wikipedia.org/wiki/Multiplataforma
-.. _`todo en Python es un objeto`: http://es.diveintopython.org/odbchelper_objects.html
+.. _`todo en Python es un objeto`: http://www.diveintopython3.net/
 .. _`Javadoc`: https://es.wikipedia.org/wiki/Javadoc
 .. _`diagramas de clases`: https://es.wikipedia.org/wiki/Diagrama_de_clases
 .. _`Sphinx`: https://en.wikipedia.org/wiki/Sphinx_%28documentation_generator%29
@@ -752,7 +752,7 @@ Referencias
 .. _`paquete bpython`: https://pypi.org/project/bpython/
 .. _`página principal de bpython`: https://bpython-interpreter.org/
 .. _`estilo de completación de lineas de comandos`: https://en.wikipedia.org/wiki/Command_line_completion
-.. _`Inmersión en Python`: http://es.diveintopython.org/
+.. _`Inmersión en Python`: http://www.diveintopython3.net/
 .. _`Guía de aprendizaje de Python`: http://pyspanishdoc.sourceforge.net/tut/tut.html
 .. _`Guide to Python introspection`: https://www.ibm.com/developerworks/linux/library/l-pyint/index.html
 .. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
