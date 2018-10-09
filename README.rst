@@ -82,10 +82,29 @@ comando:
   (venv)$ pip install -r requirements.txt
 
 
-Materia del entrenamiento
--------------------------
+Recursos del entrenamiento
+==========================
+
+La herramientas Sphinx le permite generar los recursos usado 
+en el entrenamiento, en diversos formatos, actualmente se 
+tiene bien soportado los siguientes:
+
+
+Formato HTML
+------------
+
+Usted puede generar la documentación en HTML del módulo *1, 
+2, 3, 4, 5, 6, 7, 8, 9, 10*; ejecute los siguientes comando:
+
+::
+
+  (venv)$ make html
+
+
+Formato PDF
+-----------
   
-Ahora puede generar la documentación en PDF del módulo *1, 
+Usted puede generar la documentación en PDF del módulo *1, 
 2, 3, 4, 5, 6, 7, 8, 9, 10*; ejecute los siguientes comando:
 
 ::
