@@ -17,7 +17,7 @@ Estructura general
 La estructura general de contenidos esta confirmada por 
 los principales archivos:
 
-**00-capacitacion_python_basico.odt**
+**00-entrenamiento_python_basico.odt**
   Describe el contenido del entrenamiento.
 
 **01-introduccion-lenguaje-python.odp**
