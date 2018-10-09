@@ -11,7 +11,7 @@ la pieza de código siguiente siempre y cuando el resultado sea verdadero.
 Ejemplo de Sentencias IF
 ........................
 
-.. literalinclude:: condicional_if.py
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :linenos:
     :language: python
 
@@ -42,7 +42,7 @@ ayuda, espero tus comentarios.
 Ejemplo de Operadores de Asignaciones
 .....................................
 
-.. literalinclude:: operadores_asignaciones.py
+.. literalinclude:: ../../recursos/leccion4/operadores_asignaciones.py
     :linenos:
     :language: python
 
@@ -71,7 +71,7 @@ utilizan operadores relacionales (comparaciones entre valores):
 Ejemplo Operadores de Comparación
 .................................
 
-.. literalinclude:: operadores_comparacion.py
+.. literalinclude:: ../../recursos/leccion4/operadores_comparacion.py
     :linenos:
     :language: python
 
@@ -94,7 +94,7 @@ con valores booleanos, los llamados operadores lógicos o condicionales:
 Ejemplo de Operadores de Lógicos
 ................................
 
-.. literalinclude:: operadores_logicos.py
+.. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :linenos:
     :language: python
 

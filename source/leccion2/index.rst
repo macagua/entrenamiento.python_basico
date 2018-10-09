@@ -39,7 +39,7 @@ Características de Python
 Python es tipado dinámico
 .........................
 
-.. literalinclude:: tipado_dinamico.py
+.. literalinclude:: ../../recursos/leccion2/tipado_dinamico.py
     :linenos:
     :language: python
     :lines: 1-19
@@ -50,7 +50,7 @@ Python es tipado dinámico
 Python es fuertemente tipado
 ............................
 
-.. literalinclude:: fuertemente_tipados.py
+.. literalinclude:: ../../recursos/leccion2/fuertemente_tipados.py
     :linenos:
     :language: python
     :lines: 1-23

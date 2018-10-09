@@ -17,7 +17,7 @@ Tipos de Bucles 'while'
 Bucles 'while' controlado por Conteo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. literalinclude:: bucle_while.py
+.. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
     :lines: 7-17
@@ -33,7 +33,7 @@ terminará arrojando el siguiente resultado.
 Bucles 'while' controlado por Evento
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. literalinclude:: bucle_while.py
+.. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
     :lines: 19-36
@@ -44,7 +44,7 @@ Sentencias utilitarias
 Usando la sentencia 'break'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. literalinclude:: bucle_while.py
+.. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
     :lines: 40-48
@@ -59,7 +59,7 @@ anterior pero interrumpiremos el ciclo usando ``break``.
 Usando la sentencia 'continue'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. literalinclude:: bucle_while.py
+.. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
     :lines: 50-58
@@ -74,7 +74,7 @@ Ejemplo de fibonacci
 
 Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
 
-.. literalinclude:: fibonacci.py
+.. literalinclude:: ../../recursos/leccion4/fibonacci.py
     :linenos:
     :language: python
 
@@ -83,7 +83,7 @@ Ejemplo de bucle while
 
 Ejemplo de completo de bucles ``while``:
 
-.. literalinclude:: bucle_while.py
+.. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
 

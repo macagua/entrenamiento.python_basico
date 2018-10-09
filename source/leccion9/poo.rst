@@ -44,7 +44,7 @@ Ejemplo de la clase Persona: ::
 
 Ejemplo de la clase Persona con funcion interna:
 
-.. literalinclude:: clases.py
+.. literalinclude:: ../../recursos/leccion4/clases.py
     :linenos:
     :language: python
     :lines: 1-8

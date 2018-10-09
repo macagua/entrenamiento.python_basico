@@ -17,7 +17,7 @@ Tipos de Bucles 'for'
 Bucles 'for' con Listas
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. literalinclude:: bucle_for.py
+.. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
     :lines: 8-26
@@ -25,7 +25,7 @@ Bucles 'for' con Listas
 Bucles 'for' con Tuplas
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. literalinclude:: bucle_for.py
+.. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
     :lines: 30-35
@@ -33,7 +33,7 @@ Bucles 'for' con Tuplas
 Bucles 'for' con Diccionarios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. literalinclude:: bucle_for.py
+.. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
     :lines: 39-57
@@ -43,7 +43,7 @@ Ejemplo de bucle for
 
 Ejemplo de completo de bucles ``for``:
 
-.. literalinclude:: bucle_for.py
+.. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
 

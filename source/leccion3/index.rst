@@ -170,7 +170,7 @@ Los números complejos en Python se representan de la siguiente forma:
 Ejemplo de tipos de enteros
 ...........................
 
-.. literalinclude:: enteros.py
+.. literalinclude:: ../../recursos/leccion3/enteros.py
     :linenos:
     :language: python
 
@@ -215,7 +215,7 @@ cadenas) y la multiplicación.
 Ejemplo de tipos de cadenas
 ...........................
 
-.. literalinclude:: cadenas.py
+.. literalinclude:: ../../recursos/leccion3/cadenas.py
     :linenos:
     :language: python
 
@@ -236,7 +236,7 @@ aunque tampoco es nada importante.
 Ejemplo de tipos de booleanos
 .............................
 
-.. literalinclude:: booleanos.py
+.. literalinclude:: ../../recursos/leccion3/booleanos.py
     :linenos:
     :language: python
 
@@ -250,7 +250,7 @@ eliminación de entradas duplicadas.
 Ejemplo de tipos de conjuntos
 .............................
 
-.. literalinclude:: conjuntos.py
+.. literalinclude:: ../../recursos/leccion3/conjuntos.py
     :linenos:
     :language: python
 
@@ -272,7 +272,7 @@ que los ítems de una lista tengan todos el mismo tipo. ::
 Ejemplo de tipos de listas
 ..........................
 
-.. literalinclude:: listas.py
+.. literalinclude:: ../../recursos/leccion3/listas.py
     :linenos:
     :language: python
 
@@ -285,7 +285,7 @@ modificarse de ningún modo después de su creación.
 Ejemplo de tipos de tuplas
 ..........................
 
-.. literalinclude:: tuplas.py
+.. literalinclude:: ../../recursos/leccion3/tuplas.py
     :linenos:
     :language: python
 
@@ -298,7 +298,7 @@ claves y valores.
 Ejemplo de tipos de diccionarios
 ................................
 
-.. literalinclude:: diccionarios.py
+.. literalinclude:: ../../recursos/leccion3/diccionarios.py
     :linenos:
     :language: python
 
@@ -367,7 +367,7 @@ operandos.
 Ejemplo de operadores numéricos
 ...............................
 
-.. literalinclude:: operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
 
@@ -396,7 +396,7 @@ utilizan operadores relacionales (comparaciones entre valores):
 Ejemplo de operadores relacionales
 ...................................
 
-.. literalinclude:: operadores_relacionales.py
+.. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :linenos:
     :language: python
 
