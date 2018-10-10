@@ -133,5 +133,19 @@ Colabora
 ¿Tiene alguna idea?, ¿Encontró un error? Por favor, hágalo saber 
 registrando un `ticket de soporte`_.
 
+
+Licencia
+========
+
+Esta obra está licenciada bajo la licencia Creative Commons 
+Atribución-CompartirIgual 3.0 Venezuela. Para ver una copia de esta licencia, 
+visite https://creativecommons.org/licenses/by-sa/3.0/ve/ o envíe una carta a 
+Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 
+94041, EE.UU.
+
+Una copia de esta licencia en formato de texto se incluye en este paquete 
+dentro del directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como 
+el idioma Español (LICENSE.es.rst).
+
 .. _`entrenamiento.python_basico`: https://github.com/Covantec/entrenamiento.python_basico
 .. _`ticket de soporte`: https://github.com/Covantec/entrenamiento.python_basico/issues/new

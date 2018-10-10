@@ -1,17 +1,13 @@
 .. -*- coding: utf-8 -*-
 
 
-Licencia Creative Commons Atribución-CompartirIgual 3.0 Venezuela
-=================================================================
-
-.. sidebar:: Sobre esta licencia
-
-    Esta documentación se distribuye bajo los términos de la licencia 
-    `Creative Commons Atribución-CompartirIgual 3.0 Venezuela (CC BY-SA 3.0 VE)`_.
+Licencia Creative Commons Atribución-CompartirIgual 3.0 Venezuela (CC BY-SA 3.0 VE)
+===================================================================================
 
 Usted es libre de:
 
-  * Compartir — copiar y redistribuir el material en cualquier medio o formato.
+  * Compartir — copiar y redistribuir el material en cualquier medio 
+    o formato.
 
   * Adaptar — remezclar, transformar y crear a partir del material.
 
@@ -30,5 +26,3 @@ Bajo los siguientes términos:
     original.
 
 Términos detallados de la licencia: https://creativecommons.org/licenses/by-sa/3.0/ve/legalcode
-
-.. _Reconocimiento-CompartirIgual 3.0 Venezuela de Creative Commons: https://creativecommons.org/licenses/by-sa/3.0/ve/
