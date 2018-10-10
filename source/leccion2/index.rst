@@ -348,7 +348,7 @@ siguiente comando:
       :
 
 
-Entonces presione la convinación de tecla **Crtl+d** para salir de la ayuda.
+Entonces presione la combinación de tecla **Crtl+d** para salir de la ayuda.
 
 Luego realice la importación de la `librería del estándar`_ Python llamada
 ``os`` 

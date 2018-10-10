@@ -123,7 +123,7 @@ contamos también con un nuevo tipo
 que se necesite representar fracciones de forma más precisa. Sin embargo
 este tipo está fuera del alcance de este tutorial, y sólo es necesario
 para el ámbito de la programación científica y otros relacionados. Para
-aplicaciones normales podeis utilizar el tipo ``float`` sin miedo, como ha
+aplicaciones normales puedes utilizar el tipo ``float`` sin miedo, como ha
 venido haciéndose desde hace años, aunque teniendo en cuenta que los
 números en coma flotante no son precisos (ni en este ni en otros
 lenguajes de programación).

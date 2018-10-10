@@ -14,7 +14,7 @@ Ejemplo de E/S en Python
 ........................
 
 Este ejemplo simula a sala de chat del servicio LatinChat.com, 
-validando datos de entradas numerico y tipo cadena e interactua
+validando datos de entradas numérico y tipo cadena e interactuá
 con el usuario y en base a condicionales muestra un mensaje.
 
 .. literalinclude:: ../../recursos/leccion7/datos_entrada.py
@@ -24,9 +24,10 @@ con el usuario y en base a condicionales muestra un mensaje.
 Vídeo tutorial
 --------------
 
-- `Tutorial Python 30 - Entrada Estandar rawInput`_.
+- `Tutorial Python 30 - Entrada Estándar rawInput`_.
 
-- `Tutorial Python 31 - Salida Estandar rawInput`_.
+- `Tutorial Python 31 - Salida Estándar rawInput`_.
+
 
 Referencia
 ----------
@@ -37,5 +38,5 @@ Referencia
  
 .. _`Python Programming / Input and Output`: https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output
 .. _`Python - Entrada / Salida. Ficheros`: http://mundogeek.net/archivos/2008/04/02/python-entrada-salida-ficheros/
-.. _`Tutorial Python 30 - Entrada Estandar rawInput`: https://www.youtube.com/watch?v=AzeUCuMvW6I
-.. _`Tutorial Python 31 - Salida Estandar rawInput`: https://www.youtube.com/watch?v=B-JPXgxK3Oc
+.. _`Tutorial Python 30 - Entrada Estándar rawInput`: https://www.youtube.com/watch?v=AzeUCuMvW6I
+.. _`Tutorial Python 31 - Salida Estándar rawInput`: https://www.youtube.com/watch?v=B-JPXgxK3Oc

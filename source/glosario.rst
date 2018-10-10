@@ -286,7 +286,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         es capaz de realizar diferentes tipos de declaración de configuración. Es utilizado
         para extender y conectar a los sistemas basados en la :term:`Zope Component Architecture`.
 
-        ``Zope 3`` tiene la política de separar el código actial y moverlo a los
+        ``Zope 3`` tiene la política de separar el código actual y moverlo a los
         archivos de configuración independientes, típicamente un archivo
         :file:`configure.zcml` en un buildout. Este archivo configura la instancia Zope.
         El concepto 'Configuración' podría ser un poco engañoso aquí y debe ser pensado
