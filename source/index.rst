@@ -3,20 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Materiales del curso de Programación en Python - Nivel básico
-=============================================================
+=====================================
+Programación en Python - Nivel básico
+=====================================
 
-Esta es la documentación para el capacitación **"Programación en Python - Nivel básico"**.
+Repositorio de manuales y recursos del entrenamiento 
+**"Programación en Python - Nivel básico"** realizado por 
+la empresa `Covantec R.L <https://github.com/Covantec>`_.
 
-.. sidebar:: Sobre esta capacitación
+.. sidebar:: Sobre este entrenamiento
 
-    Para dominar Python se tiene pensado como un entrenamiento de 2 a 3 días para
-    las personas que son nuevas en Python o los que quieren aprender acerca de las
-    actuales mejores prácticas del desarrollo en Python.
+    Para dominar el lenguaje de programación se tiene pensado 
+    como un entrenamiento de 2 a 3 días para las personas que 
+    son nuevas usándolo o los que quieren aprender acerca de 
+    las mejores prácticas actuales del desarrollo en Python.
     
-    La planificación de este capacitación se estima en:
+    La planificación de este entrenamiento se estima en:
     
-    - Una capacitación de **nivel básico** (*2 a 3 días*) que cubre los *diez (10) capítulos*.
+    - Un entrenamiento de **nivel básico** (*2 a 3 días*) que 
+      cubre los *diez (10) capítulos*.
+
 
 Tabla de contenidos:
 
@@ -41,24 +47,26 @@ Tabla de contenidos:
    leccion10/index
    leccion10/iteradores
 
+
 .. warning::
-   Tenga en cuenta que este documento no está completo sin la palabra hablada de un instructor
-   a pesar de que tratamos de incluir las partes más importantes de lo que enseñamos en la narrativa
-   no puede considerarse completa sin la palabra hablada.
+   Tenga en cuenta que este documento no está completo sin 
+   la palabra hablada de un instructor a pesar de que tratamos 
+   de incluir las partes más importantes de lo que enseñamos 
+   en la narrativa no puede considerarse completa sin la 
+   palabra hablada.
+
 
 Apéndices
 =========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    glosario
    licencia
 
 
-..
-  Índices y tablas
-  ================
+Búsqueda
+========
 
-  * :ref:`genindex`
-  * :ref:`search`
+* :ref:`search`
