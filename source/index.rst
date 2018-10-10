@@ -56,8 +56,9 @@ Apéndices
    licencia
 
 
-Índices y tablas
-================
+..
+  Índices y tablas
+  ================
 
-* :ref:`genindex`
-* :ref:`search`
+  * :ref:`genindex`
+  * :ref:`search`
