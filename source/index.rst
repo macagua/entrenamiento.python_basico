@@ -34,7 +34,7 @@ Tabla de contenidos:
    leccion4/bucle_for
    leccion5/funciones
    leccion6/depuracion
-   leccion7/es_python
+   leccion7/entrada_salida
    leccion8/index
    leccion9/errores
    leccion9/poo
