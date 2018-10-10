@@ -34,7 +34,7 @@ escribiríamos:
 
 También nos ha servido nuestro pequeño ejemplo para presentaros los
 comentarios inline en Python: cadenas de texto que comienzan con el
-carácter ‘#’ y que Python ignora totalmente. Hay más tipos de
+carácter '#' y que Python ignora totalmente. Hay más tipos de
 comentarios, de los que hablaremos más adelante.
 
 Tipos de Enteros
@@ -178,11 +178,11 @@ Tipo Cadenas
 ------------
 
 Las cadenas no son más que texto encerrado entre comillas simples
-(‘cadena’) o dobles (“cadena”). Dentro de las comillas se pueden añadir
-caracteres especiales escapándolos con ‘\\’, como ‘\\n’, el carácter de
-nueva línea, o ‘\\t’, el de tabulación.
+('cadena') o dobles ("cadena"). Dentro de las comillas se pueden añadir
+caracteres especiales escapándolos con '\\', como '\\n', el carácter de
+nueva línea, o '\\t', el de tabulación.
 
-Una cadena puede estar precedida por el carácter ‘u’ o el carácter ‘r’,
+Una cadena puede estar precedida por el carácter 'u' o el carácter 'r',
 los cuales indican, respectivamente, que se trata de una cadena que
 utiliza codificación **Unicode** y una cadena ``raw`` (del inglés, cruda). Las
 cadenas ``raw`` se distinguen de las normales en que los caracteres
@@ -352,7 +352,7 @@ los operandos fuera un número real, bien indicando los decimales
 
     r = 3.0 / 2
 
-o bien utilizando la función float (no es necesario que sepas lo que
+o bien utilizando la función ``float`` (no es necesario que sepas lo que
 significa el término función, ni que recuerdes esta forma, lo veremos un
 poco más adelante):
 

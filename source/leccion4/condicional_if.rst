@@ -19,7 +19,7 @@ Operadores de Asignaciones
 --------------------------
 
 Los operadores de asignación se utilizan para básicamente asignar un
-valor a una variable, así como cuando utilizamos el “=”.
+valor a una variable, así como cuando utilizamos el "=".
 
 Los operadores de asignación son ``=,+=,-=,\*=,/=,\*\*=,//=``, a
 continuación algunos ejemplos.
@@ -28,13 +28,13 @@ continuación algunos ejemplos.
    lado izquierdo cualquier variable o resultado del lado derecho.
 
 -  ``+=`` , suma a la variable del lado izquierdo el valor del lado derecho.
-    ej.  si  “a” es igual a 5 y a+=10, entonces “a” sera igual a 15
+    ej.  si  "a" es igual a 5 y a+=10, entonces "a" sera igual a 15
 
 -  ``-=`` , resta a la variable del lado izquierdo el valor del lado derecho.
-    ej.  si  “a” es igual a 5 y a-=10, entonces “a” sera igual a -5
+    ej.  si  "a" es igual a 5 y a-=10, entonces "a" sera igual a -5
 
 -  ``\*=``, multiplica  a la variable del lado izquierdo el valor del lado derecho.
-    ej.  si  “a” es igual a 5 y a\*=10, entonces “a” sera igual a 50
+    ej.  si  "a" es igual a 5 y a\*=10, entonces "a" sera igual a 50
 
 Espero que hasta el momento hayas podido encontrar este tutorial de
 ayuda, espero tus comentarios.

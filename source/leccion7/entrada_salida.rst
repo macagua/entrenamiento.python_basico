@@ -1,5 +1,6 @@
 .. -*- coding: utf-8 -*-
 
+
 Entrada / Salida en Python
 ==========================
 
@@ -9,6 +10,7 @@ utiliza el uso de la palabra clave ``print``.
 
 Para pedir información al usuario, debe utilizar las funciones ``input``
 y ``raw_input``, así como los argumentos de línea de comandos.
+
 
 Ejemplo de E/S en Python
 ........................
@@ -20,6 +22,7 @@ con el usuario y en base a condicionales muestra un mensaje.
 .. literalinclude:: ../../recursos/leccion7/datos_entrada.py
     :linenos:
     :language: python
+
 
 Vídeo tutorial
 --------------

@@ -3,7 +3,7 @@
 Bucles WHILE
 ============
 
-En Python tenemos una palabra reservada llamada “\ **while**\ ” que nos
+En Python tenemos una palabra reservada llamada "\ **while**\ " que nos
 permite ejecutar ciclos, o bien secuencias periódicas que nos permiten
 ejecutar código múltiples veces.
 

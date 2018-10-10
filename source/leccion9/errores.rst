@@ -3,16 +3,19 @@
 Errores y excepciones
 =====================
 
-Hasta ahora los mensajes de error no habían sido más que mencionados, pero si
-probaste los ejemplos probablemente hayas visto algunos.  Hay (al menos) dos
-tipos diferentes de errores: *errores de sintaxis* y *excepciones*.
+Hasta ahora los mensajes de error no habían sido más que 
+mencionados, pero si probaste los ejemplos probablemente 
+hayas visto algunos. Hay (al menos) dos tipos diferentes 
+de errores: *errores de sintaxis* y *excepciones*.
 
 Errores de sintaxis
 -------------------
 
-Los errores de sintaxis, también conocidos como errores de interpretación, son
-quizás el tipo de queja más común que tenés cuando todavía estás aprendiendo
-Python::
+Los errores de sintaxis, también conocidos como errores 
+de interpretación, son quizás el tipo de queja más común 
+que tenés cuando todavía estás aprendiendo Python:
+
+::
 
    >>> while True print 'Hola mundo'
    Traceback (most recent call last):
@@ -21,22 +24,28 @@ Python::
                       ^
    SyntaxError: invalid syntax
 
-El intérprete repite la línea culpable y muestra una pequeña 'flecha'
-que apunta al primer lugar donde se detectó el error.  Este es causado por (o
-al menos detectado en) el símbolo que *precede* a la flecha: en el ejemplo,
-el error se detecta en el :keyword:`print`, ya que faltan dos puntos (``':'``)
-antes del mismo.  Se muestran el nombre del archivo y el número de línea para
-que sepas dónde mirar en caso de que la entrada venga de un programa.
+El intérprete repite la línea culpable y muestra una pequeña 
+'flecha' que apunta al primer lugar donde se detectó el error. 
+Este es causado por (o al menos detectado en) el símbolo que 
+*precede* a la flecha: en el ejemplo, el error se detecta en 
+el :keyword:`print`, ya que faltan dos puntos (``':'``) antes 
+del mismo. Se muestran el nombre del archivo y el número de 
+línea para que sepas dónde mirar en caso de que la entrada 
+venga de un programa.
+
 
 Excepciones
 -----------
 
-Incluso si la declaración o expresión es sintácticamente correcta, puede
-generar un error cuando se intenta ejecutarla.  Los errores detectados durante
-la ejecución se llaman *excepciones*, y no son incondicionalmente fatales:
-pronto aprenderás cómo manejarlos en los programas en Python.  Sin embargo, la
-mayoría de las excepciones no son manejadas por los programas, y resultan en
-mensajes de error como los mostrados aquí::
+Incluso si la declaración o expresión es sintácticamente 
+correcta, puede generar un error cuando se intenta ejecutarla. 
+Los errores detectados durante la ejecución se llaman *excepciones*, 
+y no son incondicionalmente fatales: pronto aprenderás cómo 
+manejarlos en los programas en Python. Sin embargo, la mayoría 
+de las excepciones no son manejadas por los programas, y resultan 
+en mensajes de error como los mostrados aquí:
+
+::
 
    >>> 10 * (1/0)
    Traceback (most recent call last):
@@ -51,42 +60,48 @@ mensajes de error como los mostrados aquí::
      File "<stdin>", line 1, in ?
    TypeError: cannot concatenate 'str' and 'int' objects
 
-La última línea de los mensajes de error indica qué sucedió.  Las excepciones
-vienen de distintos tipos, y el tipo se imprime como parte del mensaje: los
-tipos en el ejemplo son: :exc:`ZeroDivisionError`, :exc:`NameError` y
-:exc:`TypeError`.  La cadena mostrada como tipo de la excepción es el nombre de
-la excepción predefinida que ocurrió.  Esto es verdad para todas las
-excepciones predefinidas del intérprete, pero no necesita ser verdad para
-excepciones definidas por el usuario (aunque es una convención útil).  Los
-nombres de las excepciones estándar son identificadores incorporados al
-intérprete (no son palabras clave reservadas).
+La última línea de los mensajes de error indica qué sucedió. 
+Las excepciones vienen de distintos tipos, y el tipo se imprime 
+como parte del mensaje: los tipos en el ejemplo son: 
+:exc:`ZeroDivisionError`, :exc:`NameError` y :exc:`TypeError`. 
+La cadena mostrada como tipo de la excepción es el nombre de
+la excepción predefinida que ocurrió. Esto es verdad para todas 
+las excepciones predefinidas del intérprete, pero no necesita 
+ser verdad para excepciones definidas por el usuario (aunque 
+es una convención útil). Los nombres de las excepciones estándar 
+son identificadores incorporados al intérprete (no son palabras 
+clave reservadas).
 
-El resto de la línea provee un detalle basado en el tipo de la excepción y qué
-la causó.
+El resto de la línea provee un detalle basado en el tipo de la 
+excepción y qué la causó.
 
-La parte anterior del mensaje de error muestra el contexto donde la excepción
-sucedió, en la forma de un *trazado del error* listando líneas fuente; sin
-embargo, no mostrará líneas leídas desde la entrada estándar.
+La parte anterior del mensaje de error muestra el contexto donde 
+la excepción sucedió, en la forma de un *trazado del error* 
+listando líneas fuente; sin embargo, no mostrará líneas leídas 
+desde la entrada estándar.
 
 ..
   :ref:`bltin-exceptions` lista las excepciones predefinidas y sus significados.
 
+
 Manejando excepciones
 ---------------------
 
-Es posible escribir programas que manejen determinadas excepciones.  Mirá el
-siguiente ejemplo, que le pide al usuario una entrada hasta que ingrese un
-entero válido, pero permite al usuario interrumpir el programa (usando
-:kbd:`Control-C` o lo que sea que el sistema operativo soporte); notá que una
-interrupción generada por el usuario se señaliza generando la excepción
-:exc:`KeyboardInterrupt`. ::
+Es posible escribir programas que manejen determinadas excepciones. 
+Mirá el siguiente ejemplo, que le pide al usuario una entrada hasta 
+que ingrese un entero válido, pero permite al usuario interrumpir 
+el programa (usando :kbd:`Control-C` o lo que sea que el sistema 
+operativo soporte); notá que una interrupción generada por el usuario 
+se señaliza generando la excepción :exc:`KeyboardInterrupt`.
+
+::
 
    >>> while True:
    ...     try:
    ...         x = int(raw_input(u"Por favor ingrese un número: "))
    ...         break
    ...     except ValueError:
-   ...         print u"Oops!  No era válido.  Intente nuevamente..."
+   ...         print u"Oops!  No era válido. Intente nuevamente..."
    ...
 
 La declaración :keyword:`try` funciona de la siguiente manera:
@@ -94,34 +109,41 @@ La declaración :keyword:`try` funciona de la siguiente manera:
 * Primero, se ejecuta el *bloque try* (el código entre las declaración
   :keyword:`try` y :keyword:`except`).
 
-* Si no ocurre ninguna excepción, el *bloque except* se saltea y termina la
-  ejecución de la declaración :keyword:`try`.
+* Si no ocurre ninguna excepción, el *bloque except* se saltea y 
+  termina la ejecución de la declaración :keyword:`try`.
 
-* Si ocurre una excepción durante la ejecución del *bloque try*, el resto del
-  bloque se saltea.  Luego, si su tipo coincide con la excepción nombrada luego
-  de la palabra reservada :keyword:`except`, se ejecuta el *bloque except*,
-  y la ejecución continúa luego de la declaración :keyword:`try`.
+* Si ocurre una excepción durante la ejecución del *bloque try*, 
+  el resto del bloque se saltea. Luego, si su tipo coincide con 
+  la excepción nombrada luego de la palabra reservada :keyword:`except`, 
+  se ejecuta el *bloque except*, y la ejecución continúa luego de la 
+  declaración :keyword:`try`.
 
-* Si ocurre una excepción que no coincide con la excepción nombrada en el
-  :keyword:`except`, esta se pasa a declaraciones :keyword:`try` de más afuera;
-  si no se encuentra nada que la maneje, es una *excepción no manejada*, y la
-  ejecución se frena con un mensaje como los mostrados arriba.
+* Si ocurre una excepción que no coincide con la excepción nombrada 
+  en el :keyword:`except`, esta se pasa a declaraciones :keyword:`try` 
+  de más afuera; si no se encuentra nada que la maneje, es una 
+  *excepción no manejada*, y la ejecución se frena con un mensaje como 
+  los mostrados arriba.
 
-Una declaración :keyword:`try` puede tener más de un :keyword:`except`, para
-especificar manejadores para distintas excepciones.  A lo sumo un manejador
-será ejecutado.  Sólo se manejan excepciones que ocurren en el correspondiente
-:keyword:`try`, no en otros manejadores del mismo :keyword:`try`.  Un
-:keyword:`except` puede nombrar múltiples excepciones usando paréntesis, por
-ejemplo::
+Una declaración :keyword:`try` puede tener más de un :keyword:`except`, 
+para especificar manejadores para distintas excepciones. A lo sumo un 
+manejador será ejecutado. Sólo se manejan excepciones que ocurren en el 
+correspondiente :keyword:`try`, no en otros manejadores del mismo 
+:keyword:`try`. Un :keyword:`except` puede nombrar múltiples excepciones 
+usando paréntesis, por ejemplo:
+
+::
 
    ... except (RuntimeError, TypeError, NameError):
    ...     pass
 
-El último :keyword:`except` puede omitir nombrar qué excepción captura, para
-servir como comodín.  Usá esto con extremo cuidado, ya que de esta manera es
-fácil ocultar un error real de programación.  También puede usarse para mostrar
-un mensaje de error y luego re-generar la excepción (permitiéndole al que
-llama, manejar también la excepción)::
+
+El último :keyword:`except` puede omitir nombrar qué excepción captura, 
+para servir como comodín. Usá esto con extremo cuidado, ya que de esta 
+manera es fácil ocultar un error real de programación. También puede 
+usarse para mostrar un mensaje de error y luego re-generar la excepción 
+(permitiéndole al que llama, manejar también la excepción):
+
+::
 
    import sys
 
@@ -137,10 +159,13 @@ llama, manejar también la excepción)::
        print "Error inesperado:", sys.exc_info()[0]
        raise
 
-Las declaraciones :keyword:`try` ... :keyword:`except` tienen un *bloque else*
-opcional, el cual, cuando está presente, debe seguir a los except.  Es útil
-para aquel código que debe ejecutarse si el *bloque try* no genera una
-excepción.  Por ejemplo::
+
+Las declaraciones :keyword:`try` ... :keyword:`except` tienen un 
+*bloque else* opcional, el cual, cuando está presente, debe seguir 
+a los :keyword:`except`. Es útil para aquel código que debe ejecutarse 
+si el *bloque try* no genera una excepción. Por ejemplo:
+
+::
 
    for arg in sys.argv[1:]:
        try:
@@ -151,23 +176,26 @@ excepción.  Por ejemplo::
            print arg, 'tiene', len(f.readlines()), 'lineas'
            f.close()
 
-El uso de :keyword:`else` es mejor que agregar código adicional en el
-:keyword:`try` porque evita capturar accidentalmente una excepción que no fue
-generada por el código que está protegido por la declaración :keyword:`try` ...
-:keyword:`except`.
+El uso de :keyword:`else` es mejor que agregar código adicional en 
+el :keyword:`try` porque evita capturar accidentalmente una excepción 
+que no fue generada por el código que está protegido por la declaración 
+:keyword:`try` ... :keyword:`except`.
 
-Cuando ocurre una excepción, puede tener un valor asociado, también conocido
-como el *argumento* de la excepción.  La presencia y el tipo de argumento
-depende del tipo de excepción.
+Cuando ocurre una excepción, puede tener un valor asociado, también 
+conocido como el *argumento* de la excepción. La presencia y el tipo 
+de argumento depende del tipo de excepción.
 
-El :keyword:`except` puede especificar una variable luego del nombre (o tupla)
-de excepción(es).  La variable se vincula a una instancia de excepción con los
-argumentos almacenados en ``instance.args``.  Por conveniencia, la instancia
-de excepción define :meth:`__str__` para que se pueda mostrar los argumentos
-directamente, sin necesidad de hacer referencia a ``.args``.
+El :keyword:`except` puede especificar una variable luego del nombre 
+(o tupla) de excepción(es). La variable se vincula a una instancia de 
+excepción con los argumentos almacenados en ``instance.args``. Por 
+conveniencia, la instancia de excepción define :meth:`__str__` para 
+que se pueda mostrar los argumentos directamente, sin necesidad de hacer 
+referencia a ``.args``.
 
-Uno también puede instanciar una excepción antes de generarla, y agregarle
-cualquier atributo que se desee::
+Uno también puede instanciar una excepción antes de generarla, y 
+agregarle cualquier atributo que se desee:
+
+::
 
    >>> try:
    ...    raise Exception('carne', 'huevos')
@@ -185,13 +213,15 @@ cualquier atributo que se desee::
    x = carne
    y = huevos
 
-Si una excepción tiene un argumento, este se imprime como la última parte (el
-'detalle') del mensaje para las excepciones que no están manejadas.
+Si una excepción tiene un argumento, este se imprime como la última 
+parte (el 'detalle') del mensaje para las excepciones que no están manejadas.
 
-Los manejadores de excepciones no manejan solamente las excepciones que
-ocurren en el *bloque try*, también manejan las excepciones que ocurren
-dentro de las funciones que se llaman (inclusive indirectamente) dentro del
-*bloque try*.  Por ejemplo::
+Los manejadores de excepciones no manejan solamente las excepciones 
+que ocurren en el *bloque try*, también manejan las excepciones que 
+ocurren dentro de las funciones que se llaman (inclusive indirectamente) 
+dentro del *bloque try*. Por ejemplo:
+
+::
 
    >>> def esto_falla():
    ...     x = 1/0
@@ -207,21 +237,25 @@ dentro de las funciones que se llaman (inclusive indirectamente) dentro del
 Levantando excepciones
 ----------------------
 
-La declaración :keyword:`raise` permite al programador forzar a que ocurra
-una excepción específica.  Por ejemplo::
+La declaración :keyword:`raise` permite al programador forzar a 
+que ocurra una excepción específica. Por ejemplo:
+
+::
 
    >>> raise NameError('Hola')
    Traceback (most recent call last):
      File "<stdin>", line 1, in ?
    NameError: Hola
 
-El único argumento a :keyword:`raise` indica la excepción a generarse. Tiene
-que ser o una instancia de excepción, o una clase de excepción (una clase que
-hereda de :class:`Exception`).
+El único argumento a :keyword:`raise` indica la excepción a generarse. 
+Tiene que ser o una instancia de excepción, o una clase de excepción 
+(una clase que hereda de :class:`Exception`).
 
 Si necesitás determinar cuando una excepción fue lanzada pero no querés
-manejarla, una forma simplificada de la instrucción :keyword:`raise` te permite
-relanzarla::
+manejarla, una forma simplificada de la instrucción :keyword:`raise` te 
+permite relanzarla:
+
+::
 
    >>> try:
    ...     raise NameError('Hola')
@@ -238,10 +272,13 @@ relanzarla::
 Excepciones definidas por el usuario
 ------------------------------------
 
-Los programas pueden nombrar sus propias excepciones creando una nueva clase
-excepción (mirá el apartado de `Clases`_ para más información sobre las clases de
-Python).  Las excepciones, típicamente, deberán derivar de la clase
-:exc:`Exception`, directa o indirectamente.  Por ejemplo::
+Los programas pueden nombrar sus propias excepciones creando una 
+nueva clase excepción (mirá el apartado de `Clases`_ para más 
+información sobre las clases de Python). Las excepciones, típicamente, 
+deberán derivar de la clase :exc:`Exception`, directa o indirectamente. 
+Por ejemplo:
+
+::
 
    >>> class MiError(Exception):
    ...     def __init__(self, valor):
@@ -260,17 +297,23 @@ Python).  Las excepciones, típicamente, deberán derivar de la clase
      File "<stdin>", line 1, in ?
    __main__.MiError: 'oops!'
 
-En este ejemplo, el método :meth:`__init__` de :class:`Exception` fue
-sobrescrito.  El nuevo comportamiento simplemente crea el atributo *valor*.
-Esto reemplaza el comportamiento por defecto de crear el atributo *args*.
+En este ejemplo, el método :meth:`__init__` de :class:`Exception` 
+fue sobrescrito. El nuevo comportamiento simplemente crea el atributo 
+*valor*. 
 
-Las clases de Excepciones pueden ser definidas de la misma forma que cualquier
-otra clase, pero usualmente se mantienen simples, a menudo solo ofreciendo un
-número de atributos con información sobre el error que leerán los manejadores
-de la excepción.  Al crear un módulo que puede lanzar varios errores distintos,
-una práctica común es crear una clase base para excepciones definidas en ese
-módulo y extenderla para crear clases excepciones específicas para distintas
-condiciones de error::
+Esto reemplaza el comportamiento por defecto de crear el atributo 
+*args*.
+
+Las clases de Excepciones pueden ser definidas de la misma forma 
+que cualquier otra clase, pero usualmente se mantienen simples, a 
+menudo solo ofreciendo un número de atributos con información sobre 
+el error que leerán los manejadores de la excepción. Al crear un 
+módulo que puede lanzar varios errores distintos, una práctica 
+común es crear una clase base para excepciones definidas en ese 
+módulo y extenderla para crear clases excepciones específicas para 
+distintas condiciones de error:
+
+::
 
    class Error(Exception):
        """Clase base para excepciones en el modulo."""
@@ -289,8 +332,8 @@ condiciones de error::
            self.mensaje = mensaje
 
    class TransicionError(Error):
-       """Lanzada cuando una operación intenta una transición de estado no
-       permitida.
+       """Lanzada cuando una operación intenta una 
+          transición de estado no permitida.
 
        Atributos:
            previo -- estado al principio de la transición
@@ -302,19 +345,22 @@ condiciones de error::
            self.siguiente = siguiente
            self.mensaje = mensaje
 
-La mayoría de las excepciones son definidas con nombres que terminan en
-"Error", similares a los nombres de las excepciones estándar.
+La mayoría de las excepciones son definidas con nombres que terminan 
+en "Error", similares a los nombres de las excepciones estándar.
 
-Muchos módulos estándar definen sus propias excepciones para reportar errores
-que pueden ocurrir en funciones propias. Se puede encontrar más información
-sobre clases en el capítulo `Clases`_.
+Muchos módulos estándar definen sus propias excepciones para reportar 
+errores que pueden ocurrir en funciones propias. Se puede encontrar 
+más información sobre clases en el capítulo `Clases`_.
+
 
 Definiendo acciones de limpieza
 -------------------------------
 
-La declaración :keyword:`try` tiene otra cláusula opcional que intenta
-definir acciones de limpieza que deben ser ejecutadas bajo ciertas
-circunstancias. Por ejemplo::
+La declaración :keyword:`try` tiene otra cláusula opcional que 
+intenta definir acciones de limpieza que deben ser ejecutadas bajo 
+ciertas circunstancias. Por ejemplo:
+
+::
 
    >>> try:
    ...     raise KeyboardInterrupt
@@ -326,16 +372,20 @@ circunstancias. Por ejemplo::
      File "<stdin>", line 2, in ?
    KeyboardInterrupt
 
-Una *cláusula finally* siempre es ejecutada antes de salir de la declaración
-:keyword:`try`, ya sea que una excepción haya ocurrido o no.  Cuando ocurre una
-excepción en la cláusula :keyword:`try` y no fue manejada por una cláusula
-:keyword:`except` (o ocurrió en una cláusula :keyword:`except` o
-:keyword:`else`), es relanzada luego de que se ejecuta la cláusula
-:keyword:`finally`. :keyword:`finally` es también ejecutada "a la salida"
-cuando cualquier otra cláusula de la declaración :keyword:`try` es dejada
-via :keyword:`break`, :keyword:`continue` or :keyword:`return`.  Un ejemplo
-más complicado (cláusulas :keyword:`except` y :keyword:`finally` en la misma
-declaración :keyword:`try`)::
+
+Una *cláusula finally* siempre es ejecutada antes de salir de la 
+declaración :keyword:`try`, ya sea que una excepción haya ocurrido 
+o no. Cuando ocurre una excepción en la cláusula :keyword:`try` y 
+no fue manejada por una cláusula :keyword:`except` (o ocurrió en 
+una cláusula :keyword:`except` o :keyword:`else`), es relanzada 
+luego de que se ejecuta la cláusula :keyword:`finally`. 
+:keyword:`finally` es también ejecutada "a la salida" cuando 
+cualquier otra cláusula de la declaración :keyword:`try` es dejada 
+vía :keyword:`break`, :keyword:`continue` or :keyword:`return`. Un 
+ejemplo más complicado (cláusulas :keyword:`except` y 
+:keyword:`finally` en la misma declaración :keyword:`try`):
+
+::
 
    >>> def dividir(x, y):
    ...     try:
@@ -360,41 +410,49 @@ declaración :keyword:`try`)::
      File "<stdin>", line 3, in divide
    TypeError: unsupported operand type(s) for /: 'str' and 'str'
 
-Como puedes ver, la cláusula :keyword:`finally` es ejecutada siempre.  La
-excepción :exc:`TypeError` lanzada al dividir dos cadenas de texto no es
-manejado por la cláusula :keyword:`except` y por lo tanto es relanzada luego
-de que se ejecuta la cláusula :keyword:`finally`.
 
-En aplicaciones reales, la cláusula :keyword:`finally` es útil para liberar
-recursos externos (como archivos o conexiones de red), sin importar si el
-uso del recurso fue exitoso.
+Como puedes ver, la cláusula :keyword:`finally` es ejecutada siempre. 
+La excepción :exc:`TypeError` lanzada al dividir dos cadenas de texto 
+no es manejado por la cláusula :keyword:`except` y por lo tanto es 
+relanzada luego de que se ejecuta la cláusula :keyword:`finally`.
+
+En aplicaciones reales, la cláusula :keyword:`finally` es útil para 
+liberar recursos externos (como archivos o conexiones de red), sin 
+importar si el uso del recurso fue exitoso.
 
 
 Acciones predefinidas de limpieza
 ---------------------------------
 
-Algunos objetos definen acciones de limpieza estándar que llevar a cabo cuando
-el objeto no es más necesitado, independientemente de que las operaciones
-sobre el objeto hayan sido exitosas o no.  Mirá el siguiente ejemplo, que
-intenta abrir un archivo e imprimir su contenido en la pantalla.::
+Algunos objetos definen acciones de limpieza estándar que llevar 
+a cabo cuando el objeto no es más necesitado, independientemente 
+de que las operaciones sobre el objeto hayan sido exitosas o no. 
+Mirá el siguiente ejemplo, que intenta abrir un archivo e imprimir 
+su contenido en la pantalla.
+
+::
 
    for linea in open("miarchivo.txt"):
        print linea
 
-El problema con este código es que deja el archivo abierto por un periodo de
-tiempo indeterminado luego de que termine de ejecutarse.  Esto no es un
-problema en scripts simples, pero puede ser un problema en aplicaciones más
-grandes.  La declaración :keyword:`with` permite que objetos como archivos sean
-usados de una forma que asegure que siempre se los libera rápido y en forma
-correcta. ::
+
+El problema con este código es que deja el archivo abierto por un 
+periodo de tiempo indeterminado luego de que termine de ejecutarse. 
+Esto no es un problema en scripts simples, pero puede ser un problema 
+en aplicaciones más grandes. La declaración :keyword:`with` permite 
+que objetos como archivos sean usados de una forma que asegure que 
+siempre se los libera rápido y en forma correcta.
+
+::
 
    with open("miarchivo.txt") as f:
        for linea in f:
            print linea
 
-Luego de que la declaración sea ejecutada, el archivo *f* siempre es cerrado,
-incluso si se encuentra un problema al procesar las líneas.  Otros objetos que
-provean acciones de limpieza predefinidas lo indicarán en su documentación.
+Luego de que la declaración sea ejecutada, el archivo *f* siempre 
+es cerrado, incluso si se encuentra un problema al procesar las 
+líneas. Otros objetos que provean acciones de limpieza predefinidas 
+lo indicarán en su documentación.
 
 
 Vídeo tutorial
