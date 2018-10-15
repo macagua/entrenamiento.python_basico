@@ -329,9 +329,16 @@ epub_exclude_files = ['search.html']
 # Allow duplicate toc entries.
 #epub_tocdup = True
 
+
+# -- Extension configuration -------------------------------------------------
+
+# -- Options for intersphinx extension ---------------------------------------
+
+# Example configuration for intersphinx: refer to the Python standard library.
 # Add mappings
 # https://kev.inburke.com/kevin/sphinx-interlinks/
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/2', None),
+#    'python': ('https://docs.python.org/2/', None),
 #    'urllib3': ('http://urllib3.readthedocs.org/en/latest', None),
 }
+intersphinx_timeout = 120
