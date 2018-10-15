@@ -342,3 +342,9 @@ intersphinx_mapping = {
 #    'urllib3': ('http://urllib3.readthedocs.org/en/latest', None),
 }
 intersphinx_timeout = 120
+
+# -- Options for todo extension ----------------------------------------------
+
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = True
+todo_emit_warnings = True
