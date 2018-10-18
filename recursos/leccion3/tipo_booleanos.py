@@ -1,9 +1,9 @@
 # -*- coding: utf8 -*-
 
+# Tipos de datos booleanos
 print '\nTipos de datos booleanos'
 print '========================\n'
 
-# Tipos de datos booleanos
 aT = True
 print "El valor es Verdadero:", aT, ", el cual es de tipo", type(aT), "\n"
 

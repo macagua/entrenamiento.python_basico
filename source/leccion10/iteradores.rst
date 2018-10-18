@@ -1,10 +1,16 @@
 .. -*- coding: utf-8 -*-
 
+
+.. _python_iteradores:
+
 Iteradores
-==========
+----------
+
+.. todo::
+    TODO escribir esta sección.
 
 Entendiendo Iteradores
-----------------------
+......................
 
 .. sidebar:: Simplicidad
 
@@ -38,8 +44,9 @@ secuencia y, cuando no queda nada para ser devuelto, lanza la excepción
   >>> nums.__reversed__()
   <listreverseiterator object at 0xb712ebec>
 
+
 Usando 'iter' y 'next'
-----------------------
+......................
 
 Cuando se usa en un bucle, finalmente se llama a StopIteration y se provoca la finalización del bucle. Pero si se invoca de forma explícita podemos ver que, una vez que el iterador está ‘agotado’, al invocarlo nuevamente veremos que se lanza la excepción comentada anteriormente.
 
@@ -69,14 +76,15 @@ Cuando se usa en un bucle, finalmente se llama a StopIteration y se provoca la f
 
 - Ejercicio 1.
 
-Vídeo tutorial
---------------
+.. seealso::
 
- - `Tutorial Python 25 - Comprensión de Listas`_.
+    Ver los siguientes vídeos:
 
- - `Tutorial Python 26 - Generadores`_.
+    - `Tutorial Python 25 - Comprensión de Listas`_.
 
- - `Tutorial Python 27 - Decoradores`_.
+    - `Tutorial Python 26 - Generadores`_.
+
+    - `Tutorial Python 27 - Decoradores`_.
  
 .. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
 .. _`Tutorial Python 26 - Generadores`: https://www.youtube.com/watch?v=tvHbC_OZV14

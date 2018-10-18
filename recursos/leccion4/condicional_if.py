@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 
 """
-    Sentencias conficional if
+    Ejemplo de uso de sentencia conficional if
 """
 
 numero = int(raw_input("Ingresa un entero, por favor: "))

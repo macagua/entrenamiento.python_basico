@@ -1,3 +1,9 @@
+# -*- coding: utf8 -*-
+
+"""
+    Operadores relacionales
+"""
+
 a = 5
 b = 5
 a1 = 7

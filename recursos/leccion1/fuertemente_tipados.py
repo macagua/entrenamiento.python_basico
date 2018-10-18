@@ -19,12 +19,9 @@
 
 # varible "valor1" guarda un valor integer
 valor1 = 2
-
 # varible "valor2" guarda un valor string
 valor2 = "5"
-
 # el metodo int() es para convertir a integer
 total = valor1 + int(valor2)
-
 # el metodo str() es para convertir a string
 print "El total es: " + str(total)

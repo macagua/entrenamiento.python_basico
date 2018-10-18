@@ -28,19 +28,19 @@ linea 4
 linea N
 """
 print cadenac
-print type (cadenac)
+print type(cadenac)
 
 # Repeticion de cadena
 cadrep = "Cadena" * 3
 print cadrep
-print type (cadrep)
+print type(cadrep)
 
 # Concatenacion de cadena
 nombre = "Leonardo"
 apellido = "Caballero"
 nombre_completo = nombre + " " + apellido
 print nombre_completo
-print type (nombre_completo)
+print type(nombre_completo)
 
 print "Tamano de cadena '", nombre_completo, "' es:", len(nombre_completo)
 

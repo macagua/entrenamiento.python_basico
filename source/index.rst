@@ -31,21 +31,15 @@ Tabla de contenidos:
    :maxdepth: 2
 
    leccion1/index
-   leccion1/instalacion
    leccion2/index
-   leccion2/holamundo
    leccion3/index
-   leccion4/condicional_if
-   leccion4/bucle_while
-   leccion4/bucle_for
-   leccion5/funciones
-   leccion6/depuracion
-   leccion7/entrada_salida
+   leccion4/index
+   leccion5/index
+   leccion6/index
+   leccion7/index
    leccion8/index
-   leccion9/errores
-   leccion9/poo
+   leccion9/index
    leccion10/index
-   leccion10/iteradores
 
 
 .. warning::

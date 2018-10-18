@@ -4,9 +4,9 @@
 
 Simula a sala de chat del servicio LatinChat.com.
 
-Validando datos de entradas numerico y tipo cadena.
+Validando datos de entradas numérico y tipo cadena.
 
-E interactua con el usuario y en base a condicionales 
+E interactuá con el usuario y en base a condicionales 
 muestra un mensaje.
 
 """
@@ -14,7 +14,7 @@ muestra un mensaje.
 print "\nSimulando a LatinChat"
 print "====================="
 
-print "\nLatinChat > De 20 a 30 anos"
+print "\nLatinChat > De 20 a 30 años"
 print "---------------------------\n"
 
 print 'Pepe: ' 
@@ -31,4 +31,4 @@ tiene_WebCam = raw_input('¿Tienes WebCam?, ingrese "si" o "no", por favor!: ')
 if tiene_WebCam in ('s', 'S', 'si', 'Si', 'SI'):
 	print "Pon la WebCam para verte :-D"
 elif tiene_WebCam in ('n', 'no', 'No', 'NO'):
-	print "Lastima por ti :'( Adios"
+	print "Lastima por ti :'( Adiós"

@@ -1,21 +1,15 @@
 .. -*- coding: utf-8 -*-
 
-Listas de comprensión
-=====================
 
-Introducción a Listas de comprensión
--------------------------------------
+.. _python_leccion10:
 
-TODO.
+Uso de decoradores y módulos de la biblioteca estándar
+======================================================
 
-Usando Listas de comprensión con Archivos
------------------------------------------
+.. toctree::
+   :maxdepth: 2
 
-TODO.
-
-Vídeo tutorial
---------------
-
- - `Tutorial Python 25 - Comprensión de Listas`_.
- 
-.. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
+   decoradores
+   iteradores
+   listas_comprension
+   fecha_hora

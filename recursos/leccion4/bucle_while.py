@@ -4,10 +4,12 @@
     Ejemplo de uso de bucle While
 """
 
+# While controlado con Conteo
 print "\nWhile controlado con Conteo"
 print "===========================\n"
 
-print "Un ejemplo es un sumador numérico hasta 10, \ncomo se muestra a continuación:\n"
+print "Un ejemplo es un sumador numérico hasta 10, "
+print "como se muestra a continuación:\n"
 
 suma = 0
 numero = 1
@@ -16,10 +18,13 @@ while numero <= 10:
     numero = numero + 1
 print "La suma es " + str(suma)
 
+
+# While controlado con Evento
 print "\nWhile controlado con Evento"
 print "===========================\n"
 
-print "Un ejemplo es calcular el promedio de grado, \ncomo se muestra a continuación:\n"
+print "Un ejemplo es calcular el promedio de grado, "
+print "como se muestra a continuación:\n"
 
 promedio = 0.0
 total = 0
@@ -36,7 +41,7 @@ promedio = total / contar
 print "Promedio de grado: " + str(promedio)
 
 
-
+# While con sentencia break
 print "\nWhile con sentencia break"
 print "=========================\n"
 
@@ -47,6 +52,8 @@ while variable > 0:
     if variable == 5:
         break
 
+
+# While con sentencia continue
 print "\nWhile con sentencia continue"
 print "============================\n"
 

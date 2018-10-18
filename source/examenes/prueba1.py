@@ -35,7 +35,7 @@ def menu():
     opcion = 0
     
     print "\n=============="
-    print "MENU PRINCIPAL"
+    print "MENÚ PRINCIPAL"
     print "==============\n"
     
     print "1.- Cargar Datos\n"
@@ -43,7 +43,7 @@ def menu():
     print "3.- Eliminar Datos\n"
     print "4.- Salir\n"
     
-    opcion = int(input('Cual es su opcion: '))
+    opcion = int(input('Cual es su opción: '))
     
     if opcion == 1:
     	print "Cargando Datos"
@@ -68,3 +68,4 @@ elif __name__ == "prueba1":
     initialize()
 else:
     print "Este programa esta mal configurado, debes llamar a su modulo...."
+

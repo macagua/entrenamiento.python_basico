@@ -1,7 +1,10 @@
 .. -*- coding: utf-8 -*-
 
-Escribiendo su primer programa - ¡Hola, mundo!
-==============================================
+
+.. _python_1er_programa:
+
+Su primer programa - ¡Hola, mundo!
+----------------------------------
 
 En informática, un programa **Hola mundo** es el que imprime el texto
 *«¡Hola, mundo!»* en un dispositivo de visualización, en la mayoría de
@@ -18,20 +21,37 @@ El programa *Hola Mundo* también puede ser útil como prueba de configuración
 para asegurar que el compilador, el entorno de desarrollo y el entorno de
 ejecución estén instalados correctamente y funcionando.
 
-Ingresando y ejecutando un programa en Linux
---------------------------------------------
 
-Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
-y dentro de este, cree un archivo de texto plano con el siguiente
-nombre ``holamundo.py`` y escriba la siguiente sintaxis:
+.. _python_hola_mundo:
+
+¡Hola, mundo!
+.............
+
+Programa ¡Hola, mundo! en diversas versiones de Python:
+
+.. _python2_hola_mundo:
 
 **Python 2.x:** ::
 
   print "Hola Mundo"
 
+
+.. _python3_hola_mundo:
+
 **Python 3.x:** ::
 
   print("Hola Mundo");
+
+
+.. _python_ejecutar_linux:
+
+Ejecutar un programa en Linux
+.............................
+
+Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
+y dentro de este, cree un archivo de texto plano con el siguiente
+nombre ``holamundo.py`` y escriba la sintaxis de :ref:`Python 2 <python2_hola_mundo>` 
+o :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
 Luego ejecute desde la consola de comando el siguiente comando:
 
@@ -41,18 +61,18 @@ Luego ejecute desde la consola de comando el siguiente comando:
 
 Usted debe ver la línea *Hola Mundo*.
 
-Enhorabuena, ha ejecutar tu primer programa Python.
+Enhorabuena, usted ha ejecutado su primer programa Python.
 
-Ingresando y ejecutando un programa en Windows 
-----------------------------------------------
+
+.. _python_ejecutar_windows:
+
+Ejecutar un programa en Windows
+...............................
 
 Cree un directorio llamado ``proyectos`` la unidad ``C:\`` y dentro
 de este, cree un archivo de texto plano con el siguiente nombre
-``holamundo.py`` y escriba la siguiente sintaxis: 
-
-:: 
-
-  print "Hola Mundo"
+``holamundo.py`` y escriba la sintaxis de :ref:`Python 2 <python2_hola_mundo>` 
+o :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
 Luego ejecute desde la consola de ``MS-DOS`` el siguiente comando:
 
@@ -62,10 +82,13 @@ Luego ejecute desde la consola de ``MS-DOS`` el siguiente comando:
 
 Usted debe ver la línea *Hola Mundo*.
 
-Enhorabuena, ha ejecutar tu primer programa Python.
+Enhorabuena, usted ha ejecutado su primer programa Python.
 
-Ingresando y ejecutando un programa en OSX
-------------------------------------------
+
+.. _python_ejecutar_macosx:
+
+Ejecutar un programa en Mac OSX
+...............................
 
 #. Haga clic en ``Archivo`` y luego la nueva Ventana del ``Finder``.
 
@@ -84,11 +107,8 @@ Ingresando y ejecutando un programa en OSX
 #. Seleccione ``Texto plano``.
 
 #. En el vacío ``TextEdit`` tipo de ventana en el siguiente programa, tal y
-   como se da:
-
-::
-
-  print "Hola Mundo"
+   como escribe la sintaxis de :ref:`Python 2 <python2_hola_mundo>` o 
+   :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
 #. Desde el archivo de menú en TextEdit.
 
@@ -120,17 +140,15 @@ Ingresando y ejecutando un programa en OSX
 
 #. Usted debe ver la línea *Hola Mundo*.
 
-Enhorabuena, ha ejecutar tu primer programa Python.
+Enhorabuena, usted ha ejecutado su primer programa Python.
 
 
-Vídeo tutorial
---------------
+.. seealso:: Ver el vídeo `Tutorial Python 3 - Hola Mundo`_.
 
-- `Tutorial Python 3 - Hola Mundo`_.
-
-.. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k
 
 Referencias
------------
+...........
 
 - `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_
+
+.. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k

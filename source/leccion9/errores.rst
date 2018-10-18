@@ -1,15 +1,19 @@
 .. -*- coding: utf-8 -*-
 
+
+.. _python_errores:
+
 Errores y excepciones
-=====================
+---------------------
 
 Hasta ahora los mensajes de error no habían sido más que 
 mencionados, pero si probaste los ejemplos probablemente 
 hayas visto algunos. Hay (al menos) dos tipos diferentes 
 de errores: *errores de sintaxis* y *excepciones*.
 
+
 Errores de sintaxis
--------------------
+...................
 
 Los errores de sintaxis, también conocidos como errores 
 de interpretación, son quizás el tipo de queja más común 
@@ -35,7 +39,7 @@ venga de un programa.
 
 
 Excepciones
------------
+...........
 
 Incluso si la declaración o expresión es sintácticamente 
 correcta, puede generar un error cuando se intenta ejecutarla. 
@@ -85,7 +89,7 @@ desde la entrada estándar.
 
 
 Manejando excepciones
----------------------
+.....................
 
 Es posible escribir programas que manejen determinadas excepciones. 
 Mirá el siguiente ejemplo, que le pide al usuario una entrada hasta 
@@ -235,7 +239,7 @@ dentro del *bloque try*. Por ejemplo:
 
 
 Levantando excepciones
-----------------------
+......................
 
 La declaración :keyword:`raise` permite al programador forzar a 
 que ocurra una excepción específica. Por ejemplo:
@@ -270,10 +274,10 @@ permite relanzarla:
 
 
 Excepciones definidas por el usuario
-------------------------------------
+....................................
 
 Los programas pueden nombrar sus propias excepciones creando una 
-nueva clase excepción (mirá el apartado de `Clases`_ para más 
+nueva clase excepción (mirá el apartado de :ref:`Clases <python_poo>` para más 
 información sobre las clases de Python). Las excepciones, típicamente, 
 deberán derivar de la clase :exc:`Exception`, directa o indirectamente. 
 Por ejemplo:
@@ -350,11 +354,11 @@ en "Error", similares a los nombres de las excepciones estándar.
 
 Muchos módulos estándar definen sus propias excepciones para reportar 
 errores que pueden ocurrir en funciones propias. Se puede encontrar 
-más información sobre clases en el capítulo `Clases`_.
+más información sobre clases en el capítulo :ref:`Clases <python_poo>`.
 
 
 Definiendo acciones de limpieza
--------------------------------
+...............................
 
 La declaración :keyword:`try` tiene otra cláusula opcional que 
 intenta definir acciones de limpieza que deben ser ejecutadas bajo 
@@ -389,11 +393,11 @@ ejemplo más complicado (cláusulas :keyword:`except` y
 
    >>> def dividir(x, y):
    ...     try:
-   ...         result = x / y
+   ...         resultado = x / y
    ...     except ZeroDivisionError:
    ...         print "¡división por cero!"
    ...     else:
-   ...         print "el resultado es", result
+   ...         print "el resultado es", resultado
    ...     finally:
    ...         print "ejecutando la clausula finally"
    ...
@@ -422,13 +426,13 @@ importar si el uso del recurso fue exitoso.
 
 
 Acciones predefinidas de limpieza
----------------------------------
+.................................
 
 Algunos objetos definen acciones de limpieza estándar que llevar 
 a cabo cuando el objeto no es más necesitado, independientemente 
 de que las operaciones sobre el objeto hayan sido exitosas o no. 
-Mirá el siguiente ejemplo, que intenta abrir un archivo e imprimir 
-su contenido en la pantalla.
+Mirá el siguiente ejemplo, que intenta :ref:`abrir un archivo <python_manipular_archivo>` 
+e imprimir su contenido en la pantalla.
 
 ::
 
@@ -454,18 +458,13 @@ es cerrado, incluso si se encuentra un problema al procesar las
 líneas. Otros objetos que provean acciones de limpieza predefinidas 
 lo indicarán en su documentación.
 
-
-Vídeo tutorial
---------------
-
-- `Tutorial Python 13 - Clases y Objetos`_.
+..
+  .. seealso:: Ver el vídeo ``_.
 
 
-Referencia
-----------
+  Referencia
+  ..........
 
-- `Clases — Tutorial de Python v2.7.0`_.
- 
-.. _`Tutorial Python 13 - Clases y Objetos`: https://www.youtube.com/watch?v=VYXdpjCZojA
-.. _`Clases — Tutorial de Python v2.7.0`: http://docs.python.org.ar/tutorial/2/classes.html
-.. _`Clases`: http://docs.python.org.ar/tutorial/2/classes.html#tut-classes
+  - ``_.
+   
+  .. _``: 

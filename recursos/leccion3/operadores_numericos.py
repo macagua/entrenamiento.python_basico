@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 
 """
-    Operadores numericos
+    Operadores numéricos
 """
 
 a = 26
@@ -15,16 +15,16 @@ print a + b
 # Resta, Resta el operando de la derecha del operador del lado izquierdo
 print c - a
 
-# Multiplicacion, Multiplica los valores de ambos lados del operador
+# Multiplicación, Multiplica los valores de ambos lados del operador
 print d * c
 
 # Exponente, Realiza el cálculo exponencial (potencia) de los operadores
 print c ** 2
 
-# Division
+# División
 print float(c) / a
 
-# Division entera, 
+# División entera
 print 7 / 3
 
 # Cociente de una división, La división de operandos que el resultado es el cociente 

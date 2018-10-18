@@ -1,7 +1,10 @@
 .. -*- coding: utf-8 -*-
 
+
+.. _python_pdb:
+
 Depuración con pdb
-==================
+------------------
 
 En este tutorial se exploran herramientas que ayudan a entender tu
 código: depuración para encontrar y corregir *bugs* (errores).
@@ -29,8 +32,9 @@ Te permite:
     Sin embargo, para inspeccionar en tiempo de ejecución es más
     eficiente usar el depurador.
 
+
 Invocando al depurador
-----------------------
+......................
 
 Formas de lanzar el depurador:
 
@@ -43,24 +47,24 @@ Formas de lanzar el depurador:
 
 
 Postmortem
-..........
+~~~~~~~~~~
 
-**Situación**: Estás trabajando en ipython y obtienes un error (`traceback`).
+**Situación**: Estás trabajando en ``ipython`` y obtienes un error (`traceback`).
 
-En este caso estamos depurando el fichero ```index_error.py`` <https://www.pybonacci.org/scipy-lecture-notes-ES/_downloads/index_error.py>`_. Cuando lo ejecutes verás como se lanza un :class:`IndexError`. Escribe ``%debug`` y entrarás en el depurador.
+En este caso estamos depurando el fichero `index_error.py <https://www.pybonacci.org/scipy-lecture-notes-ES/_downloads/index_error.py>`_. Cuando lo ejecutes verás como se lanza un :class:`IndexError`. Escribe ``%debug`` y entrarás en el depurador.
 
 .. sourcecode:: ipython
 
     In [1]: %run index_error.py
     ---------------------------------------------------------------------------
     IndexError                                Traceback (most recent call last)
-    /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/index_error.py in <module>()
+    /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py in <module>()
           6 
           7 if __name__ == '__main__':
     ----> 8     index_error()
           9 
 
-    /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/index_error.py in index_error()
+    /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py in index_error()
           3 def index_error():
           4     lst = list('foobar')
     ----> 5     print lst[len(lst)]
@@ -70,7 +74,7 @@ En este caso estamos depurando el fichero ```index_error.py`` <https://www.pybon
     IndexError: list index out of range
 
     In [2]: %debug
-    > /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/index_error.py(5)index_error()
+    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py(5)index_error()
           4     lst = list('foobar')
     ----> 5     print lst[len(lst)]
           6 
@@ -102,15 +106,15 @@ En este caso estamos depurando el fichero ```index_error.py`` <https://www.pybon
    ``python -m pdb script.py``::
 
     $ python -m pdb index_error.py
-    > /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/index_error.py(1)<module>()
+    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py(1)<module>()
     -> """Small snippet to raise an IndexError."""
     (Pdb) continue
     Traceback (most recent call last):
-    File "/usr/lib/python2.6/pdb.py", line 1296, in main
+    File "/usr/lib/python2.7/pdb.py", line 1296, in main
         pdb._runscript(mainpyfile)
-    File "/usr/lib/python2.6/pdb.py", line 1215, in _runscript
+    File "/usr/lib/python2.7/pdb.py", line 1215, in _runscript
         self.run(statement)
-    File "/usr/lib/python2.6/bdb.py", line 372, in run
+    File "/usr/lib/python2.7/bdb.py", line 372, in run
         exec cmd in globals, locals
     File "<string>", line 1, in <module>
     File "index_error.py", line 8, in <module>
@@ -120,12 +124,13 @@ En este caso estamos depurando el fichero ```index_error.py`` <https://www.pybon
     IndexError: list index out of range
     Uncaught exception. Entering post mortem debugging
     Running 'cont' or 'step' will restart the program
-    > /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/index_error.py(5)index_error()
+    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py(5)index_error()
     -> print lst[len(lst)]
     (Pdb) 
 
+
 Ejecución paso a paso
-.......................
+~~~~~~~~~~~~~~~~~~~~~
 
 **Situación**: Crees que existe un error en un módulo pero no estás seguro donde.
 
@@ -142,7 +147,7 @@ está haciendo correctamente.
     *** Blank or comment
     *** Blank or comment
     *** Blank or comment
-    Breakpoint 1 at /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/wiener_filtering.py:4
+    Breakpoint 1 at /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py:4
     NOTE: Enter 'c' at the ipdb>  prompt to start your script.
     > <string>(1)<module>()
 
@@ -151,20 +156,20 @@ está haciendo correctamente.
   .. sourcecode:: ipython
 
     ipdb> n
-    > /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/wiener_filtering.py(4)<module>()
+    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(4)<module>()
           3 
     1---> 4 import numpy as np
           5 import scipy as sp
 
     ipdb> b 34
-    Breakpoint 2 at /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/wiener_filtering.py:34
+    Breakpoint 2 at /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py:34
 
 * Continua la ejecución hasta el siguiente `breakpoint` con ``c(ont(inue))``:
 
   .. sourcecode:: ipython
 
     ipdb> c
-    > /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/wiener_filtering.py(34)iterated_wiener()
+    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(34)iterated_wiener()
          33     """
     2--> 34     noisy_img = noisy_img
          35     denoised_img = local_mean(noisy_img, size=size)
@@ -177,13 +182,13 @@ está haciendo correctamente.
   .. sourcecode:: ipython
 
     ipdb> s
-    > /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/wiener_filtering.py(35)iterated_wiener()
+    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(35)iterated_wiener()
     2    34     noisy_img = noisy_img
     ---> 35     denoised_img = local_mean(noisy_img, size=size)
          36     l_var = local_var(noisy_img, size=size)
 
     ipdb> n
-    > /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/wiener_filtering.py(36)iterated_wiener()
+    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(36)iterated_wiener()
          35     denoised_img = local_mean(noisy_img, size=size)
     ---> 36     l_var = local_var(noisy_img, size=size)
          37     for i in range(3):
@@ -194,7 +199,7 @@ está haciendo correctamente.
   .. sourcecode:: ipython
 
     ipdb> n
-    > /home/varoquau/dev/scipy-lecture-notes/advanced/debugging_optimizing/wiener_filtering.py(37)iterated_wiener()
+    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(37)iterated_wiener()
          36     l_var = local_var(noisy_img, size=size)
     ---> 37     for i in range(3):
          38         res = noisy_img - denoised_img
@@ -254,14 +259,15 @@ estamos haciendo aritmética con enteros.
              42         denoised_img += noise_level*res
         FloatingPointError: divide by zero encountered in divide
 
-Otras formas de comenzar una depuración
-.......................................
 
-* **Lanzar una excepción *break point* a lo pobre**
+Otras formas de comenzar una depuración
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* **Lanzar una excepción "break point" a lo pobre**
 
   Si encuentras tedioso el tener que anotar el número de línea para colocar
   un *break point*, puedes lanzar una excepción en el punto que quieres 
-  inspeccionar y usar la 'magia' ``%debug`` de ipython. Destacar que en este
+  inspeccionar y usar la 'magia' ``%debug`` de ``ipython``. Destacar que en este
   caso no puedes moverte por el código y continuar después la ejecución.
 
 * **Depurando fallos de pruebas usando nosetests**
@@ -301,7 +307,7 @@ Otras formas de comenzar una depuración
       `pydbgr <https://code.google.com/archive/p/pydbgr>`_
 
 Comandos del depurador e interacciones
---------------------------------------
+......................................
 
 ============ ======================================================================
 ``l(list)``   Lista el código en la posición actual
@@ -317,9 +323,9 @@ Comandos del depurador e interacciones
 .. warning:: **Los comandos de depuración no son código Python**
 
     No puedes nombrar a las variables de la forma que quieras. Por ejemplo,
-    si estamos dentro del depurador no podremos sobreescribir a las variables 
+    si estamos dentro del depurador no podremos sobrescribir a las variables 
     con el mismo y, por tanto, **habrá que usar diferentes nombres para las
-    variables cuando estemos teclenado código en el depurador**.
+    variables cuando estemos tecleando código en el depurador**.
 
 Obteniendo ayuda dentro del depurador
 .....................................
@@ -347,15 +353,16 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
     ======================
     retval  rv
 
-Vídeo tutorial
---------------
 
-- `Depurando um programa Python com pdb - Python Debugger`_.
+.. seealso:: Ver el vídeo `Depurando um programa Python com pdb - Python Debugger`_.
+
 
 Referencia
-----------
+..........
 
 - `pdb — The Python Debugger`_.
+- `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation)`_.
  
 .. _`pdb — The Python Debugger`: https://docs.python.org/2/library/pdb.html
+.. _`Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation)`: https://www.pybonacci.org/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python
 .. _`Depurando um programa Python com pdb - Python Debugger`: https://www.youtube.com/watch?v=N4NtB4r28h0

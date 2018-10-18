@@ -1,26 +1,35 @@
 .. -*- coding: utf-8 -*-
 
-Bucles WHILE
-============
 
-En Python tenemos una palabra reservada llamada "\ **while**\ " que nos
+.. _python_bucle_while:
+
+Bucle while
+-----------
+
+En Python tenemos una palabra reservada llamada ``while`` que nos
 permite ejecutar ciclos, o bien secuencias periódicas que nos permiten
 ejecutar código múltiples veces.
 
 El ciclo ``while`` nos permite realizar múltiples iteraciones basándonos en
 el resultado de una expresión lógica que puede tener como resultado un
-valor verdadero o falso (true o false).
+valor ``true`` o ``false`` (verdadero o  falso).
 
-Tipos de Bucles 'while'
------------------------
 
-Bucles 'while' controlado por Conteo
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Tipos de Bucle 'while'
+.......................
+
+A continuación, se presentan algunos ejemplos del uso del bucle ``while``:
+
+
+Bucle 'while' controlado por Conteo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado por Conteo:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
-    :lines: 7-17
+    :lines: 8-19
 
 En este ejemplo tenemos un contador con un valor inicial de cero, cada
 iteración del ``while`` manipula esta variable de manera que
@@ -30,24 +39,38 @@ Eventualmente cuando el contador llegue a tener un valor de 10, la
 condición del ciclo ``numero <= 10`` sera falsa, por lo que el ciclo
 terminará arrojando el siguiente resultado.
 
-Bucles 'while' controlado por Evento
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Bucle 'while' controlado por Evento
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado por Evento:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
-    :lines: 19-36
+    :lines: 23-41
+
+En este casi el evento que se dispara cuando el usuario ingresa el valor ``-1``, 
+causando que el bucle ``while`` se interrumpo o no se inicie.
+
 
 Sentencias utilitarias
-----------------------
+......................
+
+A continuación, se presentan algunos ejemplos del uso de sentencias utilitarias usadas en 
+el bucle ``while``:
+
 
 Usando la sentencia 'break'
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado la sentencia 
+``break``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
-    :lines: 40-48
+    :lines: 45-53
 
 Adicionalmente existe una forma alternativa de interrumpir
 o cortar los ciclos utilizando la palabra reservada ``break``.
@@ -56,45 +79,41 @@ en ``while`` (o en otro ciclo como ``for``) permanece siendo
 verdadera. Para comprender mejor usaremos el mismo ejemplo
 anterior pero interrumpiremos el ciclo usando ``break``.
 
+
 Usando la sentencia 'continue'
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado la sentencia 
+``continue``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
-    :lines: 50-58
+    :lines: 57-65
 
-La sentencia ``continue`` hace que pase de nuevo al principio del bucle aunque no se haya terminado de ejecutar el ciclo anterior.
+La sentencia ``continue`` hace que pase de nuevo al principio del 
+bucle aunque no se haya terminado de ejecutar el ciclo anterior.
+
 
 Ejemplos
---------
+........
 
-Ejemplo de fibonacci
-^^^^^^^^^^^^^^^^^^^^
+Sucesión de Fibonacci
+~~~~~~~~~~~~~~~~~~~~~
 
 Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
 
 .. literalinclude:: ../../recursos/leccion4/fibonacci.py
     :linenos:
     :language: python
+    :lines: 8-11
 
-Ejemplo de bucle while
-^^^^^^^^^^^^^^^^^^^^^^
 
-Ejemplo de completo de bucles ``while``:
-
-.. literalinclude:: ../../recursos/leccion4/bucle_while.py
-    :linenos:
-    :language: python
-
-Vídeo tutorial
---------------
-
-- `Tutorial Python 11 - Bucles`_.
+.. seealso:: Ver el vídeo `Tutorial Python 11 - Bucles`_.
 
 
 Referencia
-----------
+..........
 
 - `Introducción a Bucles 'while'`_.
 
