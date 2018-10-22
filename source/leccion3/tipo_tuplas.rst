@@ -3,8 +3,8 @@
 
 .. _python_tuplas:
 
-Tipos de tuplas
----------------
+Tipo tuplas
+-----------
 
 Una tupla es una lista inmutable. Una tupla no puede 
 modificarse de ningún modo después de su creación.
@@ -64,9 +64,20 @@ A continuación, un ejemplo más apegado a la realidad que busca
 establecer una conexión a una BD:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
-    :linenos:
     :language: python
-    :lines: 18-37
+    :lines: 18-38
+
+----
+
+Ayuda integrada
+...............
+
+Usted puede consultar toda la documentación disponible sobre las **tuplas** 
+desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
+
+::
+
+    >>> help(tuple)
 
 
 Referencia

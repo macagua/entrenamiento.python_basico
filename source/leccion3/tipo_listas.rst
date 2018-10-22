@@ -3,8 +3,8 @@
 
 .. _python_listas:
 
-Tipos de listas
----------------
+Tipo listas
+-----------
 
 La lista en Python son variables que almacenan ``arrays``, 
 internamente cada posición puede ser un tipo de datos distinto.
@@ -73,10 +73,10 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 **Ejemplo de iterar sobre cualquier secuencia**
 
-Usted puede iterar sobre cualquier secuencia (cadena de texto, lista, 
+Usted puede iterar sobre cualquier secuencia (cadenas de caracteres, lista, 
 claves en un diccionario, lineas en un archivo, ...):
 
-*Ejemplo de iterar sobre una cadena de texto*
+*Ejemplo de iterar sobre una cadenas de caracteres*
 
 ::
 
@@ -116,6 +116,19 @@ emparejarse con la función ``zip()``.
 ¿Cual es tu objetivo?, la respuesta es: aprender Python.
 ¿Cual es tu sistema operativo?, la respuesta es: Linux.
 >>> 
+
+----
+
+Ayuda integrada
+...............
+
+Usted puede consultar toda la documentación disponible sobre las **listas** 
+desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
+
+::
+
+    >>> help(list)
+
 
 Referencia
 ..........

@@ -15,8 +15,6 @@ En Python tiene las estructuras de control como ``if`` (``elif``, ``else``),
 
    condicional_if
    expresiones_condicional
-   operadores_asignaciones
-   operadores_comparacion
    operadores_logicos
    bucle_while
    bucle_for

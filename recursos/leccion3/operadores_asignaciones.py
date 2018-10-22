@@ -4,9 +4,7 @@
     Operadores de asignaciones
 """
 
-a = 21
-b = 10
-c = 0
+a, b, c = 21, 10, 0
 
 print "el valor de la variable 'a' es:", a
 print "el valor de la variable 'b' es:", b

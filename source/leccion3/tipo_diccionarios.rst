@@ -3,8 +3,8 @@
 
 .. _python_diccionarios:
 
-Tipos de diccionarios
----------------------
+Tipo diccionarios
+-----------------
 
 El diccionario, que define una relación uno a uno entre
 claves y valores.
@@ -41,7 +41,19 @@ A continuación, se presentan un ejemplo de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :linenos:
     :language: python
-    :lines: 32-48
+    :lines: 32-49
+
+----
+
+Ayuda integrada
+...............
+
+Usted puede consultar toda la documentación disponible sobre los **diccionarios** 
+desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
+
+::
+
+    >>> help(dict)
 
 
 Referencia

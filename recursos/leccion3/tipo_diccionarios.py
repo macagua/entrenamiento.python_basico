@@ -36,7 +36,8 @@ print "\nDatos de participante"
 print "---------------------"
 
 print "Cédula de identidad: ", datos_basicos['cedula']
-print "Nombre completo: " + datos_basicos['nombres'] + " " + datos_basicos['apellidos']
+print "Nombre completo: " + datos_basicos['nombres'] + " " + \
+datos_basicos['apellidos']
 import datetime, locale, os
 locale.setlocale(locale.LC_ALL, os.environ['LANG'])
 print "Fecha y lugar de nacimiento:", datetime.datetime.strftime(

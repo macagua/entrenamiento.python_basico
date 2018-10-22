@@ -6,54 +6,78 @@
 Operadores aritméticos
 ----------------------
 
-Los valores numéricos son además el resultado de  una serie
-de operadores aritméticos y matemáticos:
+Los valores numéricos son además el resultado de una serie de operadores 
+aritméticos y matemáticos:
 
 +----------------+-------------------+---------------------------+
 | **Operador**   | **Descripción**   | **Ejemplo**               |
 +----------------+-------------------+---------------------------+
-| \+             | Suma              | r = 3 + 2 # r es 5        |
+|                |                   | ::                        |
+|                |                   |                           |
+| \+             | Suma              |     >>> 3 + 2             |
+|                |                   |     5                     |
 +----------------+-------------------+---------------------------+
-| \-             | Resta             | r = 4 – 7 # r es -3       |
+|                |                   | ::                        |
+|                |                   |                           |
+| \-             | Resta             |     >>> 4 - 7             |
+|                |                   |     -3                    |
 +----------------+-------------------+---------------------------+
-| \-             | Negación          | r = -7 # r es -7          |
+|                |                   | ::                        |
+|                |                   |                           |
+| \-             | Negación          |     >>> -7                |
+|                |                   |     -7                    |
 +----------------+-------------------+---------------------------+
-| \*             | Multiplicación    | r = 2 \* 6 # r es 12      |
+|                |                   | ::                        |
+|                |                   |                           |
+| \*             | Multiplicación    |     >>> 2 * 6             |
+|                |                   |     12                    |
 +----------------+-------------------+---------------------------+
-| \*\*           | Exponente         | r = 2 \*\* 6 # r es 64    |
+|                |                   | ::                        |
+|                |                   |                           |
+| \*\*           | Exponente         |     >>> 2 ** 6            |
+|                |                   |     64                    |
 +----------------+-------------------+---------------------------+
-| /              | División          | r = 3.5 / 2 # r es 1.75   |
+|                |                   | ::                        |
+|                |                   |                           |
+| /              | División          |     >>> 3.5 / 2           |
+|                |                   |     1.75                  |
 +----------------+-------------------+---------------------------+
-| //             | División entera   | r = 3.5 // 2 # r es 1.0   |
+|                |                   | ::                        |
+|                |                   |                           |
+| //             | División entera   |     >>> 3.5 // 2          |
+|                |                   |     1.0                   |
 +----------------+-------------------+---------------------------+
-| %              | Módulo            | r = 7 % 2 # r es 1        |
+|                |                   | ::                        |
+|                |                   |                           |
+| %              | Módulo            |     >>> 7 % 2             |
+|                |                   |     1                     |
 +----------------+-------------------+---------------------------+
 
-Puede que tengáis dudas sobre cómo funciona el operador de módulo, y
-cuál es la diferencia entre división y división entera.
+Puede que tengáis dudas sobre cómo funciona el *operador módulo*, y
+cuál es la diferencia entre *división* y *división entera*.
 
-El operador de módulo no hace otra cosa que devolvernos el resto de la
+El *operador módulo* no hace otra cosa que devolvernos el resto de la
 división entre los dos operandos. En el ejemplo, 7 / 2 sería 3, con 1 de
-resto, luego el módulo es 1.
+resto, luego el *módulo* es 1.
 
-La diferencia entre división y división entera no es otra que la que
+La diferencia entre *división* y *división entera* no es otra que la que
 indica su nombre. En la división el resultado que se devuelve es un
-número real, mientras que en la división entera el resultado que se
+número real, mientras que en la *división entera* el resultado que se
 devuelve es solo la parte entera.
 
 No obstante hay que tener en cuenta que si utilizamos dos operandos
-enteros, Python determinará que queremos que la variable resultado
+enteros, Python determinará que quiere que la variable resultado
 también sea un entero, por lo que el resultado de, por ejemplo, 3 / 2 y
 3 // 2 sería el mismo: 1.
 
 Si quisiéramos obtener los decimales necesitaríamos que al menos uno de
-los operandos fuera un número real, bien indicando los decimales
+los operandos fuera un número real, bien indicando los decimales:
 
 ::
 
     r = 3.0 / 2
 
-o bien utilizando la función ``float`` (no es necesario que sepas lo que
+O bien utilizando la función ``float`` (no es necesario que sepas lo que
 significa el término función, ni que recuerdes esta forma, lo veremos un
 poco más adelante):
 
@@ -65,6 +89,38 @@ Esto es así porque cuando se mezclan tipos de números, Python convierte
 todos los operandos al tipo más complejo de entre los tipos de los
 operandos.
 
+
+Orden de precedencia
+....................
+
+El orden de precedencia de ejecución de los operadores aritméticos es:
+
+#. Exponente: ``**``
+
+#. Negación: ``-``
+
+#. Multiplicación, División, División entera, Módulo: ``*``, ``/``, ``//``, ``%``
+
+#. Suma, Resta: ``+``, ``-``
+
+Eso quiere decir que se debe usar así:
+
+::
+
+    >>> 2**1/12
+    0.16666666666666666
+    >>> 
+
+Más igualmente usted puede omitir este orden de precedencia de ejecución de los operadores 
+aritméticos usando paréntesis ``()``  anidados entre cada nivel calculo, por ejemplo:
+
+::
+
+    >>> 2**(1/12)
+    1.0594630943592953
+    >>> 
+
+
 Ejemplo de operadores numéricos
 ...............................
 
@@ -75,7 +131,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 7-10
+    :lines: 7
 
 
 **Ejemplo de operador aritmético Suma**, Añade valores a cada lado del operador.
@@ -83,7 +139,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 13-13
+    :lines: 10
 
 
 **Ejemplo de operador aritmético Resta**, Resta el operando de la derecha del 
@@ -92,7 +148,7 @@ operador del lado izquierdo.
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 16-16
+    :lines: 13
 
 
 **Ejemplo de operador aritmético Multiplicación**, Multiplica los valores de 
@@ -101,7 +157,7 @@ ambos lados del operador.
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 19-19
+    :lines: 16
 
 
 **Ejemplo de operador aritmético Exponente, Realiza el cálculo exponencial** 
@@ -110,7 +166,7 @@ ambos lados del operador.
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 22-22
+    :lines: 19
 
 
 **Ejemplo de operador aritmético División**.
@@ -118,7 +174,7 @@ ambos lados del operador.
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 25-25
+    :lines: 22
 
 
 **Ejemplo de operador aritmético División entera**.
@@ -126,7 +182,7 @@ ambos lados del operador.
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 28-28
+    :lines: 25
 
 
 **Ejemplo de operador aritmético Cociente de una división**, la división de 
@@ -136,7 +192,7 @@ después del punto decimal.
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 32-32
+    :lines: 29
 
 
 **Ejemplo de operador aritmético Modulo**, el cual divide el operando de la 
@@ -145,5 +201,13 @@ izquierda por el operador del lado derecho y devuelve el resto.
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
-    :lines: 36-36
+    :lines: 33
 
+
+Referencia
+..........
+
+- `orden de precedencia - operadores aritméticos`_ del tutorial *Introducción a 
+  la programación en Python - clase 1*.
+
+.. _`orden de precedencia - operadores aritméticos`: https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html#orden-de-precedencia

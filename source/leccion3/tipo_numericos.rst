@@ -3,17 +3,28 @@
 
 .. _python_numericos:
 
-Tipos de Enteros
-----------------
+Tipo números
+------------
 
-Números
-.......
+En Python se pueden representar números enteros, coma flotante y complejos.
 
-Como decíamos, en Python se pueden representar números enteros, reales y
-complejos.
++-------------+-----------------+-------------------------------------+---------------------------+
+| **Tipo**    | **Clase**       | **Notas**                           | **Ejemplo**               |
++-------------+-----------------+-------------------------------------+---------------------------+
+| ``int``     | Número entero   | Precisión fija, convertido en       | 42                        |
+|             |                 | ``long`` en caso de overflow.       |                           |
++-------------+-----------------+-------------------------------------+---------------------------+
+| ``long``    | Número entero   | Precisión arbitraria                | 42L ó 456966786151987643L |
++-------------+-----------------+-------------------------------------+---------------------------+
+| ``float``   | Número decimal  | Coma flotante de doble precisión    | 3.1415927                 |
++-------------+-----------------+-------------------------------------+---------------------------+
+| ``complex`` | Número complejo | Parte real y parte imaginaria *j*.  | (4.5 + 3j)                |
++-------------+-----------------+-------------------------------------+---------------------------+
+
+.. _python_numerico_entero:
 
 Enteros
-~~~~~~~
+.......
 
 Los números enteros son aquellos que no tienen decimales, tanto
 positivos como negativos (además del cero). En Python se pueden
@@ -32,6 +43,24 @@ utilizando 32 bits, es decir, mediante el uso de una variable de tipo
 plataformas de 64 bits, el rango es de -9.223.372.036.854.775.808 hasta
 9.223.372.036.854.775.807.
 
+
+Ejemplo de enteros
+~~~~~~~~~~~~~~~~~~
+
+A continuación, se presentan un ejemplo de su uso:
+
+**Ejemplo de definición de un tipo entero**
+
+.. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
+    :language: python
+    :lines: 4-6
+
+
+.. _python_numerico_entero_long:
+
+Enteros long
+............
+
 El tipo ``long`` de Python permite almacenar números de cualquier precisión,
 limitado por la memoria disponible en la máquina.
 
@@ -41,16 +70,21 @@ menos que el número sea tan grande como para requerir el uso del tipo
 
 ::
 
-    # type(entero) daría int
-    entero = 23
+    >>> entero = 23
+    >>> type(entero)
+    <type 'int'>
+    >>> 
 
 También podemos indicar a Python que un número se almacene usando long
 añadiendo una L al final:
 
 ::
 
-    # type(entero) daría long
-    entero = 23L
+    >>> entero = 23L
+    >>> type(entero)
+    <type 'long'>
+    >>> 
+
 
 El literal que se asigna a la variable también se puede expresar como un
 ``octal``, anteponiendo un cero:
@@ -60,24 +94,32 @@ El literal que se asigna a la variable también se puede expresar como un
     # 027 octal = 23 en base 10
     entero = 027
 
-o bien en hexadecimal, anteponiendo un 0x:
+o bien en hexadecimal, anteponiendo un ``0x``:
 
 ::
 
     # 0x17 hexadecimal = 23 en base 10
     entero = 0x17
 
-Ejemplo de enteros
-````````````````````
+
+Ejemplo de enteros long
+~~~~~~~~~~~~~~~~~~~~~~~
 
 A continuación, se presentan un ejemplo de su uso:
 
+**Ejemplo de definición de un tipo entero long**
+
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 9-42
+    :lines: 9-11
 
-Reales
-~~~~~~
+
+----
+
+.. _python_numerico_coma_flotante:
+
+Coma flotante
+.............
 
 Los números reales son los que tienen decimales. En Python se expresan
 mediante el tipo ``float``. En otros lenguajes de programación, como C,
@@ -119,18 +161,31 @@ exponente) para indicar un exponente en base 10. Por ejemplo:
 
 sería equivalente a 0.1 x 10\ :sup:`-3` = 0.1 x 0.001 = 0.0001
 
-Ejemplo de reales
-`````````````````
+
+Ejemplo de enteros float
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 A continuación, se presentan un ejemplo de su uso:
 
+**Ejemplo de definición de tipo entero coma flotante**
+
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 12-21
+    :lines: 14-18
 
+
+**Ejemplo de definición de tipo entero coma flotante con exponente en base 10**
+
+.. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
+    :language: python
+    :lines: 22-24
+
+----
+
+.. _python_numerico_complejo:
 
 Complejos
-~~~~~~~~~
+.........
 
 Los números complejos son aquellos que tienen parte imaginaria. Si no
 conocías de su existencia, es más que probable que nunca lo vayas a
@@ -152,3 +207,219 @@ Los números complejos en Python se representan de la siguiente forma:
 
     complejo = 2.1 + 7.8j
 
+
+Ejemplo de enteros complex
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A continuación, se presentan un ejemplo de su uso:
+
+**Ejemplo de definición de tipo entero complejos**
+
+.. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
+    :language: python
+    :lines: 28-30
+
+
+----
+
+
+Convertir a tipos numéricos
+...........................
+
+Para convertir a tipos numéricos debes usar las :ref:`funciones integradas <python_funciones_integradas>` 
+al interprete disponible, a continuación se describen algunas de ellas para 
+tipos de datos numéricos:
+
+
+.. _python_funcion_int:
+
+int()
+~~~~~
+
+La función ``int()`` devuelve un número entero.
+
+::
+
+    >>> int(2.5)
+    2
+    >>>
+
+También puede convertir una cadena de caracteres a un número entero.
+
+::
+
+    >>> int("23")
+    23
+    >>> 
+
+
+La función ``int()`` sólo procesa correctamente cadenas que contengan exclusivamente 
+números. Si la cadena contiene cualquier otro carácter, la función devuelve un error.
+
+::
+
+    >>> int("2.5")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for int() with base 10: '2.5'
+    >>>
+    >>> int("doscientos")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for int() with base 10: 'doscientos'
+    >>> 
+
+
+.. _python_funcion_long:
+
+long()
+~~~~~~
+
+La función ``long()`` devuelve un número entero ``long``.
+
+::
+
+    >>> long(23)
+    23L
+    >>> long(23.4)
+    23L
+    >>>
+
+También puede convertir una cadena de caracteres a un número entero.
+
+::
+
+    >>> long("23")
+    23
+    >>> 
+
+
+La función ``long()`` sólo procesa correctamente cadenas que contengan exclusivamente 
+números. Si la cadena contiene cualquier otro carácter, la función devuelve un error.
+
+::
+
+    >>> long("23.4")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for long() with base 10: '23.4'
+    >>>
+    >>> long("23,4")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for long() with base 10: '23,4'
+    >>> 
+
+
+.. _python_funcion_float:
+
+float()
+~~~~~~~
+
+Devuelve un número de coma flotante, y acepta argumentos de tipo numérico 
+(:ref:`int <python_numerico_entero>` o :ref:`float <python_numerico_coma_flotante>`), 
+o de tipo :ref:`string <python_cadenas>` que sean coherentes con un número entero o 
+de coma flotante (cadenas de caracteres formadas por números y hasta un punto).
+
+::
+
+    >>> float(2)
+    2.0
+    >>> float(2.5)
+    2.5
+    >>> float("2")
+    2.0
+    >>> float("2.5")
+    2.5
+    >>> 
+
+
+.. _python_funcion_complex:
+
+complex()
+~~~~~~~~~
+
+Devuelve un número complejo, y acepta argumentos de tipo numérico 
+(:ref:`int <python_numerico_entero>` o :ref:`float <python_numerico_coma_flotante>`), 
+o de tipo :ref:`string <python_cadenas>` que sean coherentes con un número entero o 
+de coma flotante (cadenas de caracteres formadas por números y hasta un punto).
+
+::
+
+    >>> complex(23)
+    (23+0j)
+    >>> complex(23.4)
+    (23.4+0j)
+    >>> complex("23")
+    (23+0j)
+    >>> complex("23.6")
+    (23.6+0j)
+    >>> 
+
+La función ``complex()`` sólo procesa correctamente cadenas que contengan 
+exclusivamente números.Si la cadena contiene cualquier otro carácter, la 
+función devuelve un error.
+
+::
+
+    >>> complex("qwerty")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: complex() arg is a malformed string
+    >>> 
+
+
+----
+
+Ayuda integrada
+...............
+
+Usted puede consultar toda la documentación disponible sobre las **números 
+enteros** desde la :ref:`consola interactiva <python_interactivo>` de la 
+siguiente forma:
+
+::
+
+    >>> help(int)
+
+Para salir de esa ayuda presione la tecla ``q``.
+
+
+Usted puede consultar toda la documentación disponible sobre las **números 
+enteros long** desde la :ref:`consola interactiva <python_interactivo>` de la 
+siguiente forma:
+
+::
+
+    >>> help(long)
+
+Para salir de esa ayuda presione la tecla ``q``.
+
+
+Usted puede consultar toda la documentación disponible sobre las **números 
+coma flotante** desde la :ref:`consola interactiva <python_interactivo>` de la 
+siguiente forma:
+
+::
+
+    >>> help(float)
+
+Para salir de esa ayuda presione la tecla ``q``.
+
+
+Usted puede consultar toda la documentación disponible sobre las **números 
+complejos** desde la :ref:`consola interactiva <python_interactivo>` de la 
+siguiente forma:
+
+::
+
+    >>> help(complex)
+
+Para salir de esa ayuda presione la tecla ``q``.
+
+
+.. tip:: 
+    Para más información consulte las funciones integradas para 
+    :ref:`operaciones numéricas <python_funciones_integradas_numericas>`.
+
+.. _`Introducción a la programación en Python - clase 1`: https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html

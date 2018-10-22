@@ -1,22 +1,14 @@
 # -*- coding: utf8 -*-
 
 """
-    Operadores relacionales
+    Operadores relacionales o comparación
 """
 
-a = 5
-b = 5
-a1 = 7
-b1 = 3
-c1 = 3
+a, b, a1, b1, c1 = 5, 5, 7, 3, 3
+cadena1, cadena2 = 'Hola', 'Adiós'
+lista1, lista2 = [1, 'Lista Python', 23], [11, 'Lista Python', 23]
 
-cadena1 = 'Hola'
-cadena2 = 'Adios'
-
-lista1 = [1, 'Lista Python', 23]
-lista2 = [11, 'Lista Python', 23]
-
-# igual
+# Igual
 c = a == b
 print c
 
@@ -26,25 +18,25 @@ print cadenas
 listas = lista1 == lista2
 print listas
 
-# diferente
+# Diferente
 d = a1 != b
 print d
 
 cadena0 = cadena1 != cadena2
 print cadena0
 
-# mayor que
-e = a1 > b1
-print e
-
-# menor que
+# Menor que
 f = b1 < a1
 print f
 
-# mayor o igual que
-g = b1 >= c1
-print g
+# Mayor que
+e = a1 > b1
+print e
 
-# menor o igual que
+# Menor o igual que
 h = b1 <= c1
 print h
+
+# Mayor o igual que
+g = b1 >= c1
+print g

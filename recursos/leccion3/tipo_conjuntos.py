@@ -31,10 +31,10 @@ print "\nTostadas A que Pipo!"
 print "===================="
 
 # valida si un elemento esta en el conjunto
-print "Teneis tequeno?: ", 'tequeno' in para_comer
+print "Tenéis tequeno?: ", 'tequeno' in para_comer
 
 # valida si un elemento esta en el conjunto
-print "Teneis pa tomar fresco?: ", 'refresco' in para_tomar
+print "Tenéis pa' tomar fresco?: ", 'refresco' in para_tomar
 
 if (hay_tequeno and hay_fresco):
 	print "Desayuno vergatario"

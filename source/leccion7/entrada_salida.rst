@@ -12,10 +12,13 @@ interaccionar con el usuario.
 Entrada estándar
 ................
 
-Para pedir información al usuario, debe utilizar las funciones ``input``
-y ``raw_input``, así como los argumentos de línea de comandos.
+Para pedir información al usuario, debe utilizar las funciones integradas 
+en el interprete del lenguaje, así como los argumentos de línea de comandos.
 
 **Ejemplo de la función raw_input**:
+
+La función :ref:`raw_input() <python_funcion_raw_input>` siempre devuelve un 
+valor de cadenas de caracteres:
 
 ::
 
@@ -24,6 +27,9 @@ y ``raw_input``, así como los argumentos de línea de comandos.
 	>>>
 
 **Ejemplo de la función input**:
+
+La función :ref:`input() <python_funcion_input>` siempre devuelve un valor 
+numérico:
 
 ::
 

@@ -10,9 +10,9 @@ import os
 print "\nCrear un archivo"
 print "================"
 
-nombre_archivo = 'archivo.txt'
+nombre_archivo = 'datos.txt'
 
-f = open(nombre_archivo, 'w') # abre el archivo archivo.txt
+f = open(nombre_archivo, 'w') # abre el archivo datos.txt
 f.write('Este es una prueba \ny otra prueba.')
 f.close()
 

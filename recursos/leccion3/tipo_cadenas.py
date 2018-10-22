@@ -1,5 +1,10 @@
 # -*- coding: utf8 -*-
 
+"""
+    Una cadena de caracteres, no es más que varios caracteres 
+    encerrado entre comillas simples ('cadena') o dobles ("cadena").
+"""
+
 # Comillas simples
 cadenaa = 'Texto entre comillas simples'
 print cadenaa
@@ -10,12 +15,12 @@ cadenab = "Texto entre comillas dobles"
 print cadenab
 print type(cadenab)
 
-# Cadena con codigo escapes
+# Cadena con código escapes
 cadenaesc = 'Texto entre \n\tcomillas simples'
 print cadenaesc
 print type(cadenaesc)
 
-# Cadena multilinea
+# Cadena varias lineas
 cadenac = """Texto linea 1
 linea 2
 linea 3
@@ -30,19 +35,20 @@ linea N
 print cadenac
 print type(cadenac)
 
-# Repeticion de cadena
+# Repetición de cadena
 cadrep = "Cadena" * 3
 print cadrep
 print type(cadrep)
 
-# Concatenacion de cadena
+# Concatenación de cadena
 nombre = "Leonardo"
 apellido = "Caballero"
 nombre_completo = nombre + " " + apellido
 print nombre_completo
 print type(nombre_completo)
 
-print "Tamano de cadena '", nombre_completo, "' es:", len(nombre_completo)
+# tamaño de cadena
+print "Tamaño de cadena '", nombre_completo, "' es:", len(nombre_completo)
 
-# acceder a rango de la cadena
+# acceder a rango de cadena
 print nombre_completo[3:13]

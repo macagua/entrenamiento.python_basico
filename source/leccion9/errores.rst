@@ -152,7 +152,7 @@ usarse para mostrar un mensaje de error y luego re-generar la excepción
    import sys
 
    try:
-       f = open('miarchivo.txt')
+       f = open('datos.txt')
        s = f.readline()
        i = int(s.strip())
    except IOError as (errno, strerror):
@@ -416,7 +416,7 @@ ejemplo más complicado (cláusulas :keyword:`except` y
 
 
 Como puedes ver, la cláusula :keyword:`finally` es ejecutada siempre. 
-La excepción :exc:`TypeError` lanzada al dividir dos cadenas de texto 
+La excepción :exc:`TypeError` lanzada al dividir dos cadenas de caracteres 
 no es manejado por la cláusula :keyword:`except` y por lo tanto es 
 relanzada luego de que se ejecuta la cláusula :keyword:`finally`.
 
@@ -436,7 +436,7 @@ e imprimir su contenido en la pantalla.
 
 ::
 
-   for linea in open("miarchivo.txt"):
+   for linea in open("datos.txt"):
        print linea
 
 
@@ -449,7 +449,7 @@ siempre se los libera rápido y en forma correcta.
 
 ::
 
-   with open("miarchivo.txt") as f:
+   with open("datos.txt") as f:
        for linea in f:
            print linea
 

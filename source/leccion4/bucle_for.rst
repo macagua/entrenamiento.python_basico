@@ -11,7 +11,7 @@ acostumbrado en lenguajes como C o Pascal.  En lugar de siempre iterar sobre
 una progresión aritmética de números (como en Pascal) o darle al usuario la
 posibilidad de definir tanto el paso de la iteración como la condición de fin
 (como en C), la sentencia `for` de Python itera sobre los ítems de
-cualquier secuencia (una lista o una cadena de texto), en el orden que aparecen
+cualquier secuencia (una lista o una cadenas de caracteres), en el orden que aparecen
 en la secuencia.
 
 

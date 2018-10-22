@@ -11,17 +11,96 @@ básicamente una operación lógica, es decir una expresión que de
 como resultado verdadero o false (``True`` o ``False``), y ejecuta
 la pieza de código siguiente siempre y cuando el resultado sea verdadero.
 
-
 Ejemplo de condicionales if
 ...........................
 
 A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
+
+**Definir variables usadas en los siguientes ejemplos**:
+
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :linenos:
     :language: python
-    :lines: 7-17
+    :lines: 7
 
+
+**Ejemplo de operador de comparación Igual**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :linenos:
+    :language: python
+    :lines: 15-18
+
+
+**Ejemplo de operador de comparación Distinto**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :linenos:
+    :language: python
+    :lines: 21-24
+
+
+**Ejemplo de operador de comparación Diferente**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :linenos:
+    :language: python
+    :lines: 27-30
+
+
+**Ejemplo de operador de comparación Menor que**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :linenos:
+    :language: python
+    :lines: 33-36
+
+
+**Ejemplo de operador de comparación Mayor que**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :linenos:
+    :language: python
+    :lines: 39-42
+
+
+**Ejemplo de operador de comparación Menor o igual que**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :linenos:
+    :language: python
+    :lines: 45-48
+
+
+**Ejemplo de operador de comparación Mayor o igual que**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :linenos:
+    :language: python
+    :lines: 51-54
+
+
+**Ejemplo de condicional if / elif / else completo**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :linenos:
+    :language: python
+    :lines: 58-68
+
+En el ejemplo anterior usa dos funciones integradas en el interprete Python:
+
+- La función :ref:`int() <python_funcion_int>` que convierte el valor ingresado 
+  a numero entero.
+
+- La función :ref:`raw_input() <python_funcion_raw_input>` lee el valor ingresado 
+  por la entrada estándar.
+
+El valor es ingresado en la variable ``numero`` comprobará en el sentencia condicional 
+``if``, si la comprobación devuelve ``False`` intentará con el siguiente bloque condicional 
+``elif``, si la comprobación devuelve ``False`` nuevamente intentará con el siguiente 
+bloque condicional ``elif`` si de nuevo la comprobación devuelve ``False`` por ultimo 
+intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin comprobación.
 
 .. seealso::
 
@@ -30,6 +109,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
     - `Python - Tipos básicos`_.
 
     - `Operadores básicos de Python`_.
+
 
 Referencias
 ...........

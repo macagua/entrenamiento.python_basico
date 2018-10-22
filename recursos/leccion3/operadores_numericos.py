@@ -4,10 +4,7 @@
     Operadores numéricos
 """
 
-a = 26
-b = 11.3
-c = 5
-d = 3.5
+a, b, c, d = 26, 11.3, 5, 3.5
 
 # Suma, Añade valores a cada lado del operador
 print a + b

@@ -6,8 +6,7 @@
     no se convierte mágicamente en un número. Cada cambio de tipo 
     requiere una conversión explícita.
 
-    >>> valor1 = 2
-    >>> valor2 = "5"
+    >>> valor1, valor2 = 2, "5"
     >>> total = valor1 + valor2
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -17,10 +16,8 @@
     7
 """
 
-# varible "valor1" guarda un valor integer
-valor1 = 2
-# varible "valor2" guarda un valor string
-valor2 = "5"
+# varible "valor1" es integer, varible "valor2" es string
+valor1, valor2 = 2, "5"
 # el metodo int() es para convertir a integer
 total = valor1 + int(valor2)
 # el metodo str() es para convertir a string

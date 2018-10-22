@@ -7,7 +7,7 @@ Instalando Python
 -----------------
 
 Debido al soporte :ref:`multiplataforma <python_multiplataforma>` de Python, se ofrecen 
-ciertos recursos para los sistemas operativos mas populares:
+ciertos recursos para los sistemas operativos más populares:
 
 - `Instalando Python en Windows`_.
 

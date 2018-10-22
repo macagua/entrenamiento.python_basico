@@ -9,30 +9,18 @@ Características
 Las `características`_ del lenguaje de programación Python se resumen 
 a continuación:
 
--   Es un `lenguaje interpretado`_, usa :ref:`tipado dinámico <python_tipado_dinamico>`,  
+-   Es un `lenguaje interpretado`_, **no compilado**, usa :ref:`tipado dinámico <python_tipado_dinamico>`,
     :ref:`fuertemente tipado <python_fuertemente_tipado>`.
 
 -   Es :ref:`multiplataforma <python_multiplataforma>`, lo cual es ventajoso para hacer 
     ejecutable su código fuente entre varios sistema operativos.
 
 -   Es un lenguaje de programación `multiparadigma`_, el cual soporta varios paradigma de 
-    programación como :ref:`orientación a objetos <python_poo>`, `programación imperativa`_ 
-    y, en menor medida, `programación funcional`_.
+    programación como :ref:`orientación a objetos <python_poo>`, 
+    :ref:`estructurada <python_programacion_estructurada>`,
+    `programación imperativa`_ y, en menor medida, `programación funcional`_.
 
-
-.. _python_tipado_dinamico:
-
-Python es tipado dinámico
-.........................
-
-El `tipado dinámico`_ significa que los objetos en tiempo de ejecución (valores) 
-tienen un tipo, a diferencia del tipado estático donde las variables tienen un tipo.
-A continuación un ejemplo de este concepto:
-
-.. literalinclude:: ../../recursos/leccion1/tipado_dinamico.py
-    :linenos:
-    :language: python
-    :lines: 16-21
+-   En Python, el formato del código (p. ej., la indentación) es estructural.
 
 
 .. _python_fuertemente_tipado:
@@ -46,9 +34,22 @@ cambio de tipo requiere una conversión explícita. A continuación un ejemplo d
 concepto:
 
 .. literalinclude:: ../../recursos/leccion1/fuertemente_tipados.py
-    :linenos:
     :language: python
-    :lines: 20-27
+    :lines: 20-25
+
+
+.. _python_tipado_dinamico:
+
+Python es tipado dinámico
+.........................
+
+El `tipado dinámico`_ significa que los objetos en tiempo de ejecución (valores) 
+tienen un tipo, a diferencia del tipado estático donde las variables tienen un tipo.
+A continuación un ejemplo de este concepto:
+
+.. literalinclude:: ../../recursos/leccion1/tipado_dinamico.py
+    :language: python
+    :lines: 16-21
 
 
 .. _python_multiplataforma:
@@ -85,14 +86,17 @@ su ejecución:
     - `MicroPython <http://micropython.org/>`_, Python ejecutando en micro controladores.
 
 - Versiones de Python en `otras plataformas <https://www.python.org/download/other/>`_,
-  la versión "tradicional" de Python (tiene nombre código ``CPython``), mas esta versión ha sido migrada a un número plataformas especializadas y/o antiguas, a continuación se destacan algunas de ellas. 
+  la versión "tradicional" de Python (tiene nombre código ``CPython``), mas esta versión ha sido migrada 
+  a un número plataformas especializadas y/o antiguas, a continuación se destacan algunas de ellas. 
 
-    - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un completo entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
+    - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un completo 
+       entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
 
-    -  `ActivePython <http://www.activestate.com/activepython/>`_, Python para Solaris, Usted puede 
-       comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
-       no de código abierto), o compilar desde una fuente si tiene un compilador de C.
-       Los paquetes UNIX tienen una variedad de versiones de Python para una variedad de versiones de Solaris. Estos utilizan el estándar Sun ``pkgadd``.
+    - `ActivePython <http://www.activestate.com/activepython/>`_, Python para Solaris, Usted puede 
+      comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
+      no de código abierto), o compilar desde una fuente si tiene un compilador de C.
+      Los paquetes UNIX tienen una variedad de versiones de Python para una variedad de versiones de 
+      Solaris. Estos utilizan el estándar Sun ``pkgadd``.
 
   .. note::
   
@@ -110,95 +114,73 @@ Filosofía "Incluye baterías"
 
 - Esto le da al lenguaje una ventaja en muchos proyectos. 
 
-- Las "baterías incluidas" están en la librería estándar Python.
+- Las "baterías incluidas" están en la :ref:`librería estándar Python <python_libreria_estandar>`.
 
 
-La librería estándar Python
-...........................
+Zen de Python
+~~~~~~~~~~~~~
 
-La librería estándar Python incluye los siguientes módulos y librerías:
+Es una colección de 20 principios de software que influyen en el diseño del Lenguaje 
+de Programación Python, de los cuales 19 fueron escritos por Tim Peters1 en junio de 
+1999. El texto es distribuido como dominio público.
 
-- Funciones incorporadas y funciones incorporadas no esenciales
+El Zen de Python está escrito como la entrada informativa número 20 de las Propuestas 
+de Mejoras de Python (PEP, Python Enhancement Proposals), y se puede encontrar en el 
+sitio oficial de Python.​ 
 
-- Constantes incorporadas, con el módulo ``site``.
+Los principios están listados a continuación:
 
-- Tipos incorporados, incluye 13 tipos, como ``Booleano``, ``Numérico`` y otros.
+- Bello es mejor que feo.
 
-- Manejo de Excepciones
+- Explícito es mejor que implícito.
 
-- Servicios cadenas de caracteres, incluye 11 librerías, como ``string``, ``re`` y otros.
+- Simple es mejor que complejo.
 
-- Tipos de datos, incluye 19 librerías, como ``datetime``, ``pprint`` y otros.
+- Complejo es mejor que complicado.
 
-- Módulos numéricos y matemáticos, incluye 9 librerías, como ``decimal``, ``math`` y otros.
+- Plano es mejor que anidado.
 
-- Acceso a archivos y directorios, incluye 12 librerías, como ``os.path``, ``fileinput`` y otros.
+- Disperso es mejor que denso.
 
-- Persistencia de datos, incluye 13 librerías, como ``pickle``, ``sqlite3`` y otros.
+- La legibilidad cuenta.
 
-- Compresión de datos y de archivo, incluye 5 librerías, como ``zlib``, ``gzip`` y otros.
+- Los casos especiales no son tan especiales como para quebrantar las reglas.
 
-- Formatos de archivo, incluye 6 librerías, como ``csv``, ``ConfigParser`` y otros.
+- Lo práctico gana a lo puro.
 
-- Servicios criptográficos, incluye 4 librerías, como ``hashlib``, ``md5`` y otros.
+- Los errores nunca deberían dejarse pasar silenciosamente.
 
-- Servicios genéricos del sistema operativo, incluye 17 librerías, como ``os``, ``time`` y otros.
+- A menos que hayan sido silenciados explícitamente.
 
-- Servicios opcionales del sistema operativo, incluye 9 librerías, como ``threading``, ``readline`` y otros.
+- Frente a la ambigüedad, rechaza la tentación de adivinar.
 
-- Comunicación entre procesos y redes, incluye 7 librerías, como ``subprocess``, ``socket`` y otros.
+- Debería haber una -y preferiblemente sólo una- manera obvia de hacerlo.
 
-- Manejo de datos de Internet, incluye 16 librerías, como ``email``, ``json`` y otros.
+- Aunque esa manera puede no ser obvia al principio a menos que usted sea holandés.[19]​
 
-- Procesamiento de marcado estructurado, incluye 15 librerías, como ``HTMLParser``, ``htmllib`` y otros.
+- Ahora es mejor que nunca.
 
-- Protocolos de Internet y soporte, incluye 25 librerías, como ``cgi``, ``wsgiref`` y otros.
+- Aunque nunca es a menudo mejor que ya mismo.
 
-- Servicios multimedia, incluye 10 librerías, como ``audioop``, ``wave`` y otros.
+- Si la implementación es difícil de explicar, es una mala idea.
 
-- Internacionalización, incluye las librerías ``gettext`` y ``locale``.
+- Si la implementación es fácil de explicar, puede que sea una buena idea.
 
-- Program Frameworks, incluye las librerías ``cmd`` y ``shlex``.
+- Los espacios de nombres (namespaces) son una gran idea ¡Hagamos más de esas cosas!
 
-- Interfaces gráficas de usuario con Tk, incluye 7 librerías, como ``Tkinter``, ``IDLE`` y otros.
+También se incluye como un huevo de pascua en el intérprete de Python, mostrandosé al 
+ingresar la instrucción: 
 
-- Herramientas de desarrollo, incluye 6 librerías, como ``unittest``, ``test`` y otros.
+::
 
-- Depuración y Profiling, incluye 7 librerías, como ``pdb``, ``trace`` y otros.
-
-- Empaquetado y distribución de software, incluye las librerías ``distutils`` y ``ensurepip``.
-
-- Python Runtime Services, incluye 16 librerías, como ``sys``, ``site`` y otros.
-
-- Intérpretes de Python personalizados, incluye las librerías ``code`` y ``codeop``.
-
-- Ejecución restringida, incluye las librerías ``rexec`` y ``Bastion``.
-
-- Importación de módulos, incluye 7 librerías, como ``imp``, ``runpy`` y otros.
-
-- Python Language Services, incluye 13 librerías, como ``parser``, ``dis`` y otros.
-
-- Paquete compilador de Python, incluye 5 librerías.
-
-- Servicios Misceláneos, ``formatter`` librería incluida.
-
-- Servicios específicos de MS Windows, incluye 4 librerías, como ``msilib``, ``winsound`` y otros.
-
-- Servicios específicos de Unix, incluye 16 librerías, como ``commands``, ``syslog`` y otros.
-
-- Servicios específicos de Mac OS X, incluye 9 librerías, como ``ic``, ``MacOS`` y otros.
-
-- Módulos de MacPython OSA, incluye 12 librerías, como ``aepack``, ``aetypes`` y otros.
-
-- Servicios específicos de SGI IRIX, incluye  12 librerías, como ``gl``, ``jpeg`` y otros.
-
-- Servicios específicos de SunOS, las librerías ``sunaudiodev`` y ``SUNAUDIODEV``.
+    >>> import this
 
 
 .. seealso:: Ver el vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación`_.
 
 .. _`características`: https://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas
 .. _`multiparadigma`: https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_multiparadigma
+.. _`programación estructurada`: https://es.wikipedia.org/wiki/Programación_estructurada
 .. _`programación imperativa`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_imperativa
 .. _`programación funcional`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_funcional
 .. _`lenguaje interpretado`: https://es.wikipedia.org/wiki/Lenguaje_interpretado
