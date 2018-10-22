@@ -4,54 +4,54 @@
     Operadores de comparación
 """
 
-a = 21
-b = 10
-c = 5;
-d = 20;
+dato1 = 21
+dato2 = 10
+dato3 = 5;
+dato4 = 20;
 
-print "el valor de la variable 'a' es:", a
-print "el valor de la variable 'b' es:", b
-print "el valor de la variable 'c' es:", c
-print "el valor de la variable 'd' es:", d
+print "Valor de variable 'dato1':", dato1
+print "Valor de variable 'dato2':", dato2
+print "Valor de variable 'dato3':", dato3
+print "Valor de variable 'dato4':", dato4
 
 # Igual
-if ( a == b ):
-   print "Comparación == | la variable 'a' es igual a la variable 'b'"
+if ( dato1 == dato2 ):
+   print "Variable 'dato1' es igual a la variable 'dato2', (operador ==)"
 else:
-   print "Comparación == | la variable 'a' no es igual a la variable 'b'"
+   print "Variable 'dato1' no es igual a la variable 'dato2', (operador ==)"
 
 # Distinto
-if ( a != b ):
-   print "Comparación != | la variable 'a' no es igual a la variable 'b'"
+if ( dato1 != dato2 ):
+   print "Variable 'dato1' es distinto a la variable 'dato2', (operador !=)"
 else:
-   print "Comparación != | la variable 'a' es igual a la variable 'b'"
+   print "Variable 'dato1' no es distinto a la variable 'dato2', (operador !=)"
 
 # Diferente
-if ( a <> b ):
-   print "Comparación <> | la variable 'a' no es igual a la variable 'b'"
+if ( dato1 <> dato2 ):
+   print "Variable 'dato1' es diferente a la variable 'dato2', (operador )"
 else:
-   print "Comparación <> | la variable 'a' es igual a la variable 'b'"
+   print "Variable 'dato1' no es diferente a la variable 'dato2', (operador )"
 
 # Menor que
-if ( a < b ):
-   print "Comparación < | la variable 'a' es menor que la variable 'b'"
+if ( dato1 < dato2 ):
+   print "Variable 'dato1' es menor que la variable 'dato2', (operador <)"
 else:
-   print "Comparación < | la variable 'a' no es menor que la variable 'b'"
+   print "Variable 'dato1' no es menor que la variable 'dato2', (operador <)"
 
 # Mayor que
-if ( a > b ):
-   print "Comparación > | la variable 'a' es mayor que la variable 'b'"
+if ( dato1 > dato2 ):
+   print "Variable 'dato1' es mayor que la variable 'dato2', (operador >)"
 else:
-   print "Comparación > | la variable 'a' no es mayor que la variable 'b'"
+   print "Variable 'dato1' no es mayor que la variable 'dato2', (operador >)"
 
 # Menor o igual que
-if ( c <= d ):
-   print "Comparación <= | la variable 'c' es menor o igual a la variable 'd'"
+if ( dato3 <= dato4 ):
+   print "Variable 'dato3' es menor o igual que la variable 'dato4', (operador <=)"
 else:
-   print "Comparación <= | la variable 'c' es ni menor de ni igual a la variable 'd'"
+   print "Variable 'dato3' no es menor o igual que la variable 'dato4', (operador <=)"
 
 # Mayor o igual que
-if ( d >= c ):
-   print "Comparación >= | la variable 'd' es o bien mayor que o igual a la variable 'c'"
+if ( dato4 >= dato3 ):
+   print "Variable 'dato4' es mayor o igual que la variable 'dato3', (operador >=)"
 else:
-   print "Comparación >= | la variable 'd' es ni mayor que ni igual a la variable 'c'"
+   print "Variable 'dato4' no es mayor o igual que a la variable 'dato3', (operador >=)"
