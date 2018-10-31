@@ -121,7 +121,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
     
     recipe
         En la herramienta :term:`buildout`, es el software usado para crear partes de 
-        una instalación basada en sus opciones. Mas información consulte el articulo `Recipes Buildout`_.
+        una instalación basada en sus opciones. Más información consulte el articulo `Recipes Buildout`_.
     
     paquete
         Ver :term:`Paquete Python`.
