@@ -158,10 +158,6 @@ Funciones de orden superior
     TODO escribir esta sección.
 
 
-.. seealso:: Ver el vídeo `Tutorial Python 12 - Funciones`_.
-
-
-
 Ejemplos de funciones
 .....................
 
@@ -188,6 +184,17 @@ A continuación, se presenta un ejemplo del uso de invocar funciones:
     36
 
 
+.. seealso::
+
+    .. figure:: https://img.youtube.com/vi/_C7Uj7O5o_Q/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 12 - Funciones`_, cortesía de `CodigoFacilito.com`_.
+
+    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+
+
 Referencia
 ..........
 
@@ -195,5 +202,6 @@ Referencia
  
 .. _`Introducción a Funciones`: http://docs.python.org.ar/tutorial/2/controlflow.html#definiendo-funciones
 .. _`Tutorial Python 12 - Funciones`: https://www.youtube.com/watch?v=_C7Uj7O5o_Q
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
 .. _`Cadenas de texto de documentación`: http://docs.python.org.ar/tutorial/2/controlflow.html#tut-docstrings
 .. _`Defining functions - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/functions.html

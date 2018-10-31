@@ -17,6 +17,251 @@ a continuación:
 
 ----
 
+.. _python_funciones_generales:
+
+Funciones generales
+...................
+
+Las funciones de uso general se describen a continuación:
+
+
+.. _python_funcion_credits:
+
+credits()
+~~~~~~~~~
+
+Imprime el texto de la lista de contribuidores.
+
+::
+
+    >>> credits()
+        Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+        for supporting Python development.  See www.python.org for more information.
+
+
+.. _python_funcion_copyright:
+
+copyright()
+~~~~~~~~~~~
+
+Imprime el texto de la nota de copyright.
+
+::
+
+    >>> copyright()
+    Copyright (c) 2001-2016 Python Software Foundation.
+    All Rights Reserved.
+
+    Copyright (c) 2000 BeOpen.com.
+    All Rights Reserved.
+
+    Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+    All Rights Reserved.
+
+    Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+    All Rights Reserved.
+
+
+.. _python_funcion_dir:
+
+dir()
+~~~~~
+
+Si es llamado sin argumentos, devuelve los nombres en el ámbito actual.
+
+::
+
+    >>> dir()
+    ['__builtins__', '__doc__', '__name__', '__package__']
+    >>> 
+
+
+De lo contrario, devuelve una lista alfabética de nombres comprising 
+(alguno(s) de) los atributos de un objeto dato, y de los atributos 
+legibles desde este.
+
+::
+
+    >>> dir(__builtins__)
+    ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BufferError', 'BytesWarning', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError', 'None', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'ReferenceError', 'RuntimeError', 'RuntimeWarning', 'StandardError', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', '_', '__debug__', '__doc__', '__import__', '__name__', '__package__', 'abs', 'all', 'any', 'apply', 'basestring', 'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'cmp', 'coerce', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'execfile', 'exit', 'file', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'intern', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'long', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'raw_input', 'reduce', 'reload', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr', 'unicode', 'vars', 'xrange', 'zip']
+
+Si el objeto soporta un método llamado ``__dir__``, ese será usado; otherwise
+the default ``dir()`` logic is used y devuelve:
+
+- para un objeto módulo: los atributos del módulo.
+
+::
+
+    >>> import os
+    >>> type(os)
+    <type 'module'>
+    >>> dir(os)
+    ['EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 'EX_NOHOST', 'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER', 'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL', 'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE', 'F_OK', 'NGROUPS_MAX', 'O_APPEND', 'O_ASYNC', 'O_CREAT', 'O_DIRECT', 'O_DIRECTORY', 'O_DSYNC', 'O_EXCL', 'O_LARGEFILE', 'O_NDELAY', 'O_NOATIME', 'O_NOCTTY', 'O_NOFOLLOW', 'O_NONBLOCK', 'O_RDONLY', 'O_RDWR', 'O_RSYNC', 'O_SYNC', 'O_TRUNC', 'O_WRONLY', 'P_NOWAIT', 'P_NOWAITO', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END', 'SEEK_SET', 'ST_APPEND', 'ST_MANDLOCK', 'ST_NOATIME', 'ST_NODEV', 'ST_NODIRATIME', 'ST_NOEXEC', 'ST_NOSUID', 'ST_RDONLY', 'ST_RELATIME', 'ST_SYNCHRONOUS', 'ST_WRITE', 'TMP_MAX', 'UserDict', 'WCONTINUED', 'WCOREDUMP', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED', 'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WSTOPSIG', 'WTERMSIG', 'WUNTRACED', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', '__doc__', '__file__', '__name__', 
+    ...
+    ...
+    ... ]
+    >>>
+    >>> os.__doc__
+    "OS routines for NT or Posix depending on what system we're on.\n\nThis exports:\n  - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.\n  - os.path is one of the modules posixpath, or ntpath\n  - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'\n  - os.curdir is a string representing the current directory ('.' or ':')\n  - os.pardir is a string representing the parent directory ('..' or '::')\n  - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\\\')\n
+    ...
+    ...
+    ...
+    >>> 
+    >>> print os.__doc__
+    OS routines for NT or Posix depending on what system we're on.
+
+    This exports:
+      - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
+      - os.path is one of the modules posixpath, or ntpath
+      - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
+      - os.curdir is a string representing the current directory ('.' or ':')
+      - os.pardir is a string representing the parent directory ('..' or '::')
+      - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
+    ...
+    ...
+    ...
+    >>> 
+
+- para un objeto clase: sus atributos, y recursivamente los atributos
+  de sus clases bases.
+
+::
+
+    >>> class Persona(object):
+    ...     """ Clase que representa una persona. """
+    ...     def __init__(self, cedula, nombre, apellido, sexo):
+    ...         """ Constructor de clase Persona """
+    ...         self.cedula = cedula
+    ...         self.nombre = nombre
+    ...         self.apellido = apellido
+    ...         self.sexo = sexo
+    ...     def __str__(self):
+    ...         """ Devuelve una cadena representativa al Persona """
+    ...         return "%s: %s %s, %s." % (
+    ...             str(self.cedula), self.nombre,
+    ...             self.apellido, self.sexo
+    ...         )
+    ...     def hablar(self, mensaje):
+    ...         """ Mostrar mensaje de saludo de Persona """
+    ...         print mensaje
+    ... 
+    >>> type(Persona)
+    <type 'type'>
+    >>> vars()
+    {'Persona': <class '__main__.Persona'>, '__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': '__main__', 'os': <module 'os' from '/usr/lib/python2.7/os.pyc'>, '__doc__': None}
+    >>> dir(Persona)
+    ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'hablar']
+    >>> Persona.__dict__
+    dict_proxy({'__module__': '__main__', '__str__': <function __str__ at 0x7fab8aaad758>, '__dict__': <attribute '__dict__' of 'Persona' objects>, 'hablar': <function hablar at 0x7fab8aaad7d0>, '__weakref__': <attribute '__weakref__' of 'Persona' objects>, '__doc__': ' Clase que representa una persona. ', '__init__': <function __init__ at 0x7fab8aaad6e0>})
+    >>> Persona.__doc__
+    ' Clase que representa una persona. '
+    >>> Persona.__init__.__doc__
+    ' Constructor de clase Persona '
+    >>> Persona.hablar.__doc__
+    ' Mostrar mensaje de saludo de Persona '
+
+- para cualquier otro objecto: sus atributos, sus atributos de clases, y
+  recursivamente los atributos de esas clases bases de las clases.
+
+::
+
+    >>> type(int)
+    <type 'type'>
+    >>> dir(int)
+    ['__abs__', '__add__', '__and__', '__class__', '__cmp__', '__coerce__', '__delattr__', '__div__', '__divmod__', '__doc__', '__float__', '__floordiv__', '__format__', '__getattribute__', '__getnewargs__', '__hash__', '__hex__', '__index__', '__init__', '__int__', '__invert__', '__long__', '__lshift__', '__mod__', '__mul__', '__neg__', '__new__', '__nonzero__', '__oct__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'imag', 'numerator', 'real']
+
+
+.. _python_funcion_len:
+
+len()
+~~~~~
+
+Devuelve el numero de elementos de una secuencia o colección.
+
+::
+
+    >>> len("leonardo caballero")
+    18
+
+
+.. _python_funcion_license:
+
+license()
+~~~~~~~~~
+
+Imprime el texto de la licencia.
+
+::
+
+    >>> license
+    Type license() to see the full license text
+    >>> license()
+    A. HISTORY OF THE SOFTWARE
+    ==========================
+
+    Python was created in the early 1990s by Guido van Rossum at Stichting
+    Mathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands
+    as a successor of a language called ABC.  Guido remains Python's
+    principal author, although it includes many contributions from others.
+
+    In 1995, Guido continued his work on Python at the Corporation for
+    National Research Initiatives (CNRI, see http://www.cnri.reston.va.us)
+    in Reston, Virginia where he released several versions of the
+    software.
+
+    In May 2000, Guido and the Python core development team moved to
+    BeOpen.com to form the BeOpen PythonLabs team.  In October of the same
+    year, the PythonLabs team moved to Digital Creations (now Zope
+    Corporation, see http://www.zope.com).  In 2001, the Python Software
+    Foundation (PSF, see http://www.python.org/psf/) was formed, a
+    non-profit organization created specifically to own Python-related
+    Intellectual Property.  Zope Corporation is a sponsoring member of
+    the PSF.
+
+    All Python releases are Open Source (see http://www.opensource.org for
+    Hit Return for more, or q (and Return) to quit: 
+
+
+.. _python_funcion_range:
+
+range()
+~~~~~~~
+
+Devuelve una lista conteniendo una progresión aritmética de enteros.
+
+range(inicio, detener[, paso]) -> lista de enteros
+
+    ::
+
+        >>> range(3,9)
+        [3, 4, 5, 6, 7, 8]
+
+``range(i, j)`` devuelve ``[i, i+1, i+2, ..., j-1]``; inicia (!) por defecto en **0**.
+
+Cuando el ``paso`` es definido como un tercer argumento, ese especifica el incremento 
+(o decremento).
+
+    ::
+
+        >>> range(3,9,2)
+        [3, 5, 7]
+
+En el ejemplo anterior, la función ``range(3,9,2)`` devuelve **[3, 5, 7]**, es decir, 
+el rango inicia en **3** y termina en **9** incrementando cada **2** números.
+
+range(detener) -> lista de enteros
+
+    ::
+
+        >>> range(4)
+        [0, 1, 2, 3]
+
+En el ejemplo anterior, la función ``range(4)`` devuelve **[0, 1, 2, 3]**. ¡El punto 
+final es omitido! Hay exactamente los indices validos para una lista de **4** elementos.
+
+
+----
+
 .. _python_funciones_integradas_es:
 
 Funciones de entrada y salida
