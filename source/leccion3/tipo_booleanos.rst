@@ -17,10 +17,10 @@ adelante.
 | ``bool`` | Booleano  | Valor booleano verdadero o falso | ``True`` o ``False`` |
 +----------+-----------+----------------------------------+----------------------+
 
-En realidad el tipo ``bool`` (el tipo de los booleanos) es una subclase del
-tipo ``int``. Puede que esto no tenga mucho sentido para usted si no conoces
-los términos de la :ref:`orientación a objetos <python_poo>`, que se tocará 
-más adelantes, aunque tampoco es nada importante.
+En realidad el tipo ``bool`` (el tipo de los booleanos) es una :ref:`subclase <python_poo_herencia>` 
+del tipo ``int``. Puede que esto para usted, no lo entienda mucho, si no conoces los 
+términos de la :ref:`orientación a objetos <python_poo>`, que se tocará más adelantes, 
+aunque tampoco es nada importante.
 
 
 Ejemplo de booleanos
@@ -33,7 +33,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
     :linenos:
     :language: python
-    :lines: 4-11
+    :lines: 7-11
 
 
 **Ejemplo de operadores booleanos**
@@ -41,7 +41,20 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
     :linenos:
     :language: python
-    :lines: 13-24
+    :lines: 17-24
+
+
+.. important::
+	Usted puede descargar el código usado en esta sección haciendo clic 
+	:download:`aquí <../../recursos/leccion3/tipo_booleanos.py>`.
+
+
+.. tip::
+	Para ejecutar el código :file:`tipo_booleanos.py`, abra una 
+	consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+	y ejecute el siguiente comando: ::
+
+		python2 tipo_booleanos.py
 
 
 ----
@@ -58,3 +71,18 @@ forma:
     >>> help(bool)
 
 Para salir de esa ayuda presione la tecla ``q``.
+
+
+.. seealso:: 
+
+    .. figure:: https://img.youtube.com/vi/ZrxcqbFYjiw/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
+        cortesía de `CodigoFacilito.com`_.
+
+    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+
+.. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/

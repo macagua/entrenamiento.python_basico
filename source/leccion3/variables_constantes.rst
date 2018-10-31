@@ -1,10 +1,11 @@
 .. -*- coding: utf-8 -*-
 
-.. _python_variable_constante:
 
+.. _python_variable_constante:
 
 Variables y constantes
 ----------------------
+
 
 .. _python_variable:
 
@@ -123,6 +124,14 @@ etc; el cual es importada en el archivo principal. Dentro del módulo, las
 constantes son escritas en letras MAYÚSCULAS y separadas las palabras con el 
 carácter *underscore* ``_``.
 
+
+Ejemplo de constantes
+~~~~~~~~~~~~~~~~~~~~~
+
+A continuación, se presentan algunos ejemplos del uso de *constantes*:
+
+**Ejemplo de constantes desde un modulo externo**
+
 Crear un archivo ``constantes.py`` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/constantes.py
@@ -141,7 +150,7 @@ Cuando usted ejecuta el programa, la salida será:
 
 ::
 
-    scp -v -P 3307 root@127.0.0.1:/root/nomina/nomina.sql /srv/backup
+    scp -v -P 3307 root@127.0.0.1:/root/webapp/db.sql /srv/backup
 
 En el programa anterior, existe un archivo de módulo ``constantes.py``. Entonces en 
 este se asignan los valores de constantes ``IP_DB_SERVER``, ``PORT_DB_SERVER``, 
@@ -153,6 +162,24 @@ librería estándar Python llamada :ref:`format <python_funcion_format>`.
 .. note:: 
     En realidad, no se usa las constantes en Python. El módulo ``globals`` o ``constants`` 
     es usado throughout the Python programs.
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en los 
+    siguientes enlaces: :download:`constantes.py <../../recursos/leccion3/constantes.py>` 
+    y :download:`main.py <../../recursos/leccion3/main.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`constantes.py` y :file:`main.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra ambos programas: :: 
+
+		leccion3/
+		├── constantes.py
+		└── main.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
+
+        python2 constantes.py
 
 ----
 
@@ -180,7 +207,6 @@ y :ref:`constantes <python_constante>`:
 	- camelCase
 
 	- CapWords
-
 
 - Los nombres que comienzan con guión bajo (simple ``_`` o doble ``__``) se reservan para 
   variables con significado especial

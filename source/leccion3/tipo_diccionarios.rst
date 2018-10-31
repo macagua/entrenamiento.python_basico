@@ -43,6 +43,20 @@ A continuación, se presentan un ejemplo de su uso:
     :language: python
     :lines: 32-49
 
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_diccionarios.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_diccionarios.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 tipo_diccionarios.py
+
+
 ----
 
 Ayuda integrada

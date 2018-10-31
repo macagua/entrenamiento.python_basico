@@ -142,7 +142,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 44-48
+    :lines: 44-47
 
 
 **Ejemplo de medir tamaño de la cadena con función "len()"**
@@ -150,14 +150,27 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :linenos:
     :language: python
-    :lines: 51
+    :lines: 50
 
 
 **Ejemplo de acceder a rango de la cadena**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 54
+    :lines: 53
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_cadenas.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_cadenas.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 tipo_cadenas.py
 
 
 ----
@@ -217,3 +230,18 @@ siguiente forma:
     >>> help(unicode)
 
 Para salir de esa ayuda presione la tecla ``q``.
+
+
+.. seealso:: 
+
+    .. figure:: https://img.youtube.com/vi/ZrxcqbFYjiw/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
+        cortesía de `CodigoFacilito.com`_.
+
+    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+
+.. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/

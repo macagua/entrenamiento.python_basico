@@ -6,96 +6,222 @@
 Operadores de asignaciones
 --------------------------
 
-Los operadores de asignación se utilizan para básicamente asignar un
-valor a una variable, así como cuando utilizamos el "=".
+Los operadores de asignación se utilizan para 
 
-A continuación, se descriptiven de los operadores de asignación:
+
+Existe en Python todo un grupo de operadores los cuales le permiten básicamente asignar 
+un valor a una variable, usando el operador "``=``". Con estos operadores pueden aplicar 
+la técnica denominada :ref:`asignación aumentada <python_asignacion_aumentada>`.
+
+A continuación, se describen de los operadores de asignación:
 
 +--------------+-----------------------------------+---------------------+-----------+
 | **Operador** | **Descripción**                   | **Ejemplo**         | **Notas** |
 +--------------+-----------------------------------+---------------------+-----------+
 |              |                                   | ::                  |           |
 |              |                                   |                     |           |
-| ``=``        | asigna valor a una variable       |     >>> a = 5       | [1]       |
-|              |                                   |     >>> b = a       |           |
+| ``=``        | asigna valor a una variable       |     >>> r = 5       | [1]       |
+|              |                                   |     >>> r1 = r      |           |
 +--------------+-----------------------------------+---------------------+-----------+
 |              |                                   |  ::                 |           |
 |              |                                   |                     |           |
-| ``+=``       | suma el valor a la variable       |     >>> a = 5; a    | [2]       |
-|              |                                   |      5              |           |
-|              |                                   |      >>> a += 10; a |           |
-|              |                                   |      15             |           |
+| ``+=``       | suma el valor a la variable       |     >>> r = 5       | [2]       |
+|              |                                   |     >>> r += 10; r  |           |
+|              |                                   |     15              |           |
 +--------------+-----------------------------------+---------------------+-----------+
 |              |                                   |  ::                 |           |
 |              |                                   |                     |           |
-| ``-=``       | resta el valor a la variable      |     >>> a = 5; a    | [3]       |
-|              |                                   |      5              |           |
-|              |                                   |      >>> a -= 10; a |           |
-|              |                                   |      -5             |           |
+| ``-=``       | resta el valor a la variable      |     >>> r = 5       | [3]       |
+|              |                                   |     >>> r -= 10; r  |           |
+|              |                                   |     -5              |           |
 +--------------+-----------------------------------+---------------------+-----------+
 |              |                                   | ::                  |           |
 |              |                                   |                     |           |
-| ``*=``       | multiplica el valor a la variable |     >>> a = 5; a    | [4]       |
-|              |                                   |     5               |           |
-|              |                                   |     >>> a *= 10; a  |           |
+| ``*=``       | multiplica el valor a la variable |     >>> r = 5       | [4]       |
+|              |                                   |     >>> r *= 10; r  |           |
 |              |                                   |     50              |           |
 +--------------+-----------------------------------+---------------------+-----------+
 |              |                                   | ::                  |           |
 |              |                                   |                     |           |
-| ``/=``       | divide el valor a la variable     |     >>> a = 5; a    | [5]       |
-|              |                                   |     5               |           |
-|              |                                   |     >>> a /= 10; a  |           |
+| ``/=``       | divide el valor a la variable     |     >>> r = 5       | [5]       |
+|              |                                   |     >>> r /= 10; r  |           |
 |              |                                   |     0               |           |
 +--------------+-----------------------------------+---------------------+-----------+
 |              |                                   | ::                  |           |
 |              |                                   |                     |           |
-| ``**=``      | .. todo::                         |     >>> a = 5; a    | [6]       |
-|              |    Explicar esta descripción      |     5               |           |
-|              |                                   |     >>> a **= 10; a |           |
+| ``**=``      | calcula el exponente del valor    |     >>> r = 5       | [6]       |
+|              | de la variable                    |     >>> r **= 10; r |           |
 |              |                                   |     9765625         |           |
 +--------------+-----------------------------------+---------------------+-----------+
 |              |                                   | ::                  |           |
 |              |                                   |                     |           |
-| ``//=``      | .. todo::                         |     >>> a = 5; a    | [7]       |
-|              |    Explicar esta descripción      |     5               |           |
-|              |                                   |     >>> a //= 10; a |           |
+| ``//=``      | calcula la división entera del    |     >>> r = 5       | [7]       |
+|              | valor de la variable              |     >>> r //= 10; r |           |
 |              |                                   |     0               |           |
++--------------+-----------------------------------+---------------------+-----------+
+|              |                                   | ::                  |           |
+|              |                                   |                     |           |
+| ``%=``       | devuelve el resto de la división  |     >>> r = 5       | [8]       |
+|              | del valor de la variable          |     >>> r %= 10; r  |           |
+|              |                                   |     5               |           |
 +--------------+-----------------------------------+---------------------+-----------+
 
 
-.. note::
+**Operador Igual** [1]
 
-	Nota [1]
-		El operador *igual a*, (``=``) , es el más simple de todos y asigna a la variable del
-		lado izquierdo cualquier variable o resultado del lado derecho.
+El operador *igual a*, (``=``), es el más simple de todos y asigna a la variable 
+del lado izquierdo cualquier variable o resultado del lado derecho.
 
-	Nota [2]
-		El operador ``+=`` , suma a la variable del lado izquierdo el valor del lado derecho.
-		ej.  si la variable "``a``" es igual a ``5`` y ``a+=10``, entonces la variable "``a``" sera igual a ``15``.
 
-	Nota [3]
-		El operador ``-=`` , resta a la variable del lado izquierdo el valor del lado derecho.
-		ej.  si la variable "``a``" es igual a ``5`` y ``a-=10``, entonces la variable "``a``" sera igual a ``-5``.
+**Operador Suma** [2]
 
-	Nota [4]
-		El operador ``*=``, multiplica  a la variable del lado izquierdo el valor del lado derecho.
-		ej.  si la variable "``a``" es igual a ``5`` y ``a*=10``, entonces la variable "``a``" sera igual a ``50``.
+El operador ``+=`` suma a la variable del lado izquierdo el valor del lado derecho.
 
-	Nota [5]
-		El operador ``/=``, 
+	::
 
-		.. todo::  Escribir esta nota.
+		>>> r = 5; r += 10; r
+		15
 
-	Nota [6]
-		El operador ``**=``, 
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r += 10``, entonces 
+la variable "``r``" sera igual a ``15``. Su equivalente seria el siguiente:
 
-		.. todo::  Escribir esta nota.
+	::
 
-	Nota [7]
-		El operador ``//=``, 
+		>>> r = 5; r = r + 10; r
+		15
 
-		.. todo::  Escribir esta nota.
 
+**Operador Resta** [3]
+
+El operador ``-=`` resta a la variable del lado izquierdo el valor del lado derecho.
+
+	::
+
+		>>> r = 5; r -= 10; r
+		-5
+
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r -= 10``, entonces 
+la variable "``r``" sera igual a ``-5``. Su equivalente seria el siguiente:
+
+	::
+
+		>>> r = 5; r = r - 10; r
+		-5
+
+
+**Operador Multiplicación** [4]
+
+El operador ``*=`` multiplica a la variable del lado izquierdo el valor del lado derecho.
+
+	::
+
+		>>> r = 5; r *= 10; r
+		50
+
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r *= 10``, entonces 
+la variable "``r``" sera igual a ``50``. Su equivalente seria el siguiente:
+
+	::
+
+		>>> r = 5; r = r * 10; r
+		50
+
+
+**Operador División** [5]
+
+El operador ``/=`` divide a la variable del lado izquierdo el valor del lado derecho.
+
+	::
+
+		>>> r = 5; r /= 10; r
+		0
+
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r /= 10``, entonces 
+la variable "``r``" sera igual a ``0``. Su equivalente seria el siguiente:
+
+	::
+
+		>>> r = 5; r = r / 10; r
+		0
+
+
+**Operador Exponente** [6]
+
+El operador ``**=`` calcula el exponente a la variable del lado izquierdo el valor del 
+lado derecho.
+
+	::
+
+		>>> r = 5; r **= 10; r
+		9765625
+
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r **= 10``, entonces 
+la variable "``r``" sera igual a ``9765625``. Su equivalente seria el siguiente:
+
+	::
+
+		>>> r = 5; r = r ** 10; r
+		9765625
+
+
+**Operador División entera** [7]
+
+El operador ``//=`` calcula la división entera a la variable del lado izquierdo el valor 
+del lado derecho.
+
+	::
+
+		>>> r = 5; r //= 10; r
+		0
+
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r //= 10``, entonces 
+la variable "``r``" sera igual a ``0``. Su equivalente seria el siguiente:
+
+	::
+
+		>>> r = 5; r = r // 10; r
+		0
+
+**Operador Módulo**  [8]
+
+El operador ``%=`` devuelve el resto de la división a la variable del lado izquierdo el 
+valor del lado derecho.
+
+	::
+
+		>>> r = 5; r %= 10; r
+		5
+
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r %= 10``, entonces 
+la variable "``r``" sera igual a ``5``. Su equivalente seria el siguiente:
+
+	::
+
+		>>> r = 5; r = r % 10; r
+		5
+
+
+.. _python_asignacion_aumentada:
+
+Asignación aumentada
+....................
+
+Es frecuente que una variable tenga que ser redefinida en función de sí misma. En vez de escribir:
+
+::
+
+	>>> contador = contador + 1
+
+Se puede abreviar a su equivalente:
+
+::
+
+	>>> contador += 1
+
+Que no sólo es más corto de escribir, sino también más eficiente.
+
+
+.. _python_operadores_asignaciones_ejemplo:
 
 Ejemplo de operadores de asignaciones
 .....................................
@@ -106,3 +232,16 @@ A continuación, se presentan algunos ejemplos de su uso:
     :linenos:
     :language: python
     :lines: 7-32
+
+
+.. important::
+	Usted puede descargar el código usado en esta sección haciendo clic 
+	:download:`aquí <../../recursos/leccion3/operadores_asignaciones.py>`.
+
+
+.. tip::
+	Para ejecutar el código :file:`operadores_asignaciones.py`, abra una 
+	consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+	y ejecute el siguiente comando: ::
+
+		python2 operadores_asignaciones.py

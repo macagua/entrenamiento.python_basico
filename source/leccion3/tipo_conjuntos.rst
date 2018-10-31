@@ -55,6 +55,19 @@ Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y
 deben ser objetos inmutables: números, cadenas de caracteres, tuplas y sets 
 inmutables, pero no listas ni sets mutables.
 
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_conjuntos.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_conjuntos.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 tipo_conjuntos.py
+
 ----
 
 Ayuda integrada

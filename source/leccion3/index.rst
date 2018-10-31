@@ -38,6 +38,8 @@ excepciones. Se pueden resumir en esta tabla:
 |                       | ``frozenset``  | conjunto inmutable              |
 +-----------------------+----------------+---------------------------------+
 
+En esta lección se describen los tipos de datos en el lenguaje Python, los 
+cuales se resumieron en esta tabla. A continuación el temario de esta lección:
 
 .. toctree::
    :maxdepth: 2
@@ -54,17 +56,10 @@ excepciones. Se pueden resumir en esta tabla:
    tipo_diccionarios
    tipo_conjuntos
 
-.. seealso:: 
-
-    - Ver el vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_.
-
-    - Ver el vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_.
-
 
 **Referencia**
 
     - `Python - Tipos básicos`_.
 
 .. _`Python - Tipos básicos`: http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/
-.. _`Tutorial Python 4 - Enteros, reales y operadores aritméticos`: https://www.youtube.com/watch?v=ssnkfbBbcuw
-.. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
+

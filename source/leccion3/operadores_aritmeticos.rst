@@ -53,22 +53,21 @@ aritméticos y matemáticos:
 |                |                   |     1                     |
 +----------------+-------------------+---------------------------+
 
-Puede que tengáis dudas sobre cómo funciona el *operador módulo*, y
-cuál es la diferencia entre *división* y *división entera*.
 
-El *operador módulo* no hace otra cosa que devolvernos el resto de la
-división entre los dos operandos. En el ejemplo, 7 / 2 sería 3, con 1 de
-resto, luego el *módulo* es 1.
+**Operador división**
 
-La diferencia entre *división* y *división entera* no es otra que la que
-indica su nombre. En la división el resultado que se devuelve es un
-número real, mientras que en la *división entera* el resultado que se
-devuelve es solo la parte entera.
+El operador *división* el resultado que se devuelve es un número real. 
+
+
+**Operador división entera**
+
+El operador *división entera* el resultado que se devuelve es solo la 
+parte entera.
 
 No obstante hay que tener en cuenta que si utilizamos dos operandos
 enteros, Python determinará que quiere que la variable resultado
-también sea un entero, por lo que el resultado de, por ejemplo, 3 / 2 y
-3 // 2 sería el mismo: 1.
+también sea un entero, por lo que el resultado de, por ejemplo, 
+``3 / 2`` y ``3 // 2`` sería el mismo: ``1``.
 
 Si quisiéramos obtener los decimales necesitaríamos que al menos uno de
 los operandos fuera un número real, bien indicando los decimales:
@@ -77,9 +76,8 @@ los operandos fuera un número real, bien indicando los decimales:
 
     r = 3.0 / 2
 
-O bien utilizando la función ``float`` (no es necesario que sepas lo que
-significa el término función, ni que recuerdes esta forma, lo veremos un
-poco más adelante):
+O bien utilizando la función :ref:`float <python_funcion_float>` para 
+convertir a entero coma flotante o real:
 
 ::
 
@@ -89,6 +87,15 @@ Esto es así porque cuando se mezclan tipos de números, Python convierte
 todos los operandos al tipo más complejo de entre los tipos de los
 operandos.
 
+
+**Operador módulo**
+
+El operador *módulo* no hace otra cosa que devolvernos el resto de la
+división entre los dos operandos. En el ejemplo, ``7 / 2`` sería ``3``, 
+con ``1`` de resto, luego el *módulo* es ``1``.
+
+
+.. _python_operadores_aritmeticos_precedencia:
 
 Orden de precedencia
 ....................
@@ -195,13 +202,38 @@ después del punto decimal.
     :lines: 29
 
 
-**Ejemplo de operador aritmético Modulo**, el cual divide el operando de la 
+**Ejemplo de operador aritmético Módulo**, el cual divide el operando de la 
 izquierda por el operador del lado derecho y devuelve el resto.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
     :linenos:
     :language: python
     :lines: 33
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/operadores_numericos.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`operadores_numericos.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 operadores_asignaciones.py
+
+
+.. seealso:: 
+
+    .. figure:: https://img.youtube.com/vi/ssnkfbBbcuw/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_, 
+        cortesía de `CodigoFacilito.com`_.
+
+    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
 
 
 Referencia
@@ -211,3 +243,5 @@ Referencia
   la programación en Python - clase 1*.
 
 .. _`orden de precedencia - operadores aritméticos`: https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html#orden-de-precedencia
+.. _`Tutorial Python 4 - Enteros, reales y operadores aritméticos`: https://www.youtube.com/watch?v=ssnkfbBbcuw
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/

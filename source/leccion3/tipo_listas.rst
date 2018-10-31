@@ -9,15 +9,85 @@ Tipo listas
 La lista en Python son variables que almacenan ``arrays``, 
 internamente cada posición puede ser un tipo de datos distinto.
 
-En Python tiene varios tipos de datos *compuestos*, usados para agrupar otros
-valores.  El más versátil es la *lista*, la cual puede ser escrita como una
-lista de valores separados por coma (ítems) entre corchetes.  No es necesario
-que los ítems de una lista tengan todos el mismo tipo. ::
+En Python tiene varios tipos de datos *compuestos*, como los tipos *numéricos*, 
+*secuencias*, *conjuntos* y *mapeos* usados para agrupar otros valores. 
 
-   >>> a = ['pan', 'huevos', 100, 1234]
-   >>> a
+Dentro de las secuencias, estan los tipos de cadenas de caracteres (strings).
+Otro tipo muy importante de secuencia son las listas.
+
+El más versátil de las *secuencias* es la *lista*, para definir una debe escribir 
+es entre corchetes, separando sus elementos con comas cada ítems. 
+
+::
+
+   >>> factura = ['pan', 'huevos', 100, 1234]
+   >>> factura
    ['pan', 'huevos', 100, 1234]
 
+Las listas en Python son:
+
+- **heterogéneas**: pueden estar conformadas por elementos de distintos tipo, 
+  incluidos otras listas.
+
+- **mutables**: sus elementos pueden modificarse.
+
+Una lista en Python es una estructura de datos formada por una secuencia ordenada 
+de objetos.
+
+Los elementos de una lista pueden accederse mediante su índice, siendo 0 el índice 
+del primer elemento.
+
+::
+
+    >>> factura[0]
+    'pan'
+    >>> factura[3]
+    1234
+
+La función :ref:`len <python_funcion_len>` devuelve la longitud de la lista (su 
+cantidad de elementos).
+
+::
+
+    >>> len(factura)
+    4
+
+Los índices de una lista inicia entonces de **0** hasta el tamaño de la lista menos uno 
+(``len(factura) - 1``):
+
+::
+
+    >>> len(factura) - 1
+    3
+
+Pueden usarse también índices negativos, siendo **-1** el índice del último elemento.
+
+::
+
+    >>> factura[-1]
+    1234
+    >>> 
+
+Los índices negativos van entonces de **-1** (último elemento) a ``-len(factura)`` (primer elemento).
+
+::
+
+    >>> factura[-len(factura)]
+    'pan'
+    >>> 
+
+A través de los índices, pueden cambiarse los elementos de una lista en el lugar.
+
+::
+
+    >>> factura[1] = "carne"
+    >>> factura
+    ['pan', 'carne', 100, 1234
+
+De esta forma se cambia el valor inicial de un elemento de la lista lo cual hacen una la 
+lista *mutable*
+
+.. _python_listas_ejemplos:
 
 Ejemplo de listas
 .................
@@ -117,6 +187,19 @@ emparejarse con la función ``zip()``.
 ¿Cual es tu sistema operativo?, la respuesta es: Linux.
 >>> 
 
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_listas.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_listas.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 tipo_listas.py
+
 ----
 
 Ayuda integrada
@@ -135,5 +218,7 @@ Referencia
 
 - `Iterate over any sequence - Scipy lecture notes`_.
 
+- `Listas I - clase 3 - Introducción a la programación en Python`_.
 
 .. _`Iterate over any sequence - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#iterate-over-any-sequence
+.. _`Listas I - clase 3 - Introducción a la programación en Python`: https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase03.html#Listas-I

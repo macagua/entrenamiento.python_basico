@@ -103,3 +103,16 @@ A continuación, se presentan algunos ejemplos de su uso:
     :linenos:
     :language: python
     :lines: 41-42
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/operadores_relacionales.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`operadores_relacionales.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 operadores_relacionales.py

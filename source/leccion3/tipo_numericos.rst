@@ -220,6 +220,19 @@ A continuación, se presentan un ejemplo de su uso:
     :lines: 28-30
 
 
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_numericos.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_numericos.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 tipo_numericos.py
+
+
 ----
 
 
@@ -236,7 +249,13 @@ tipos de datos numéricos:
 int()
 ~~~~~
 
-La función ``int()`` devuelve un número entero.
+La función ``int()`` devuelve un número entero. Es un constructor, que crea un 
+:ref:`entero <python_numerico_entero>` a partir de un 
+:ref:`entero float <python_numerico_coma_flotante>`, 
+:ref:`entero complex <python_numerico_complejo>` o una 
+:ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
+entero.
+
 
 ::
 
@@ -275,7 +294,10 @@ números. Si la cadena contiene cualquier otro carácter, la función devuelve u
 long()
 ~~~~~~
 
-La función ``long()`` devuelve un número entero ``long``.
+La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea un 
+:ref:`entero long <python_numerico_entero_long>` a partir de un 
+:ref:`entero <python_numerico_entero>`, :ref:`entero float <python_numerico_coma_flotante>` 
+o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número entero.
 
 ::
 
@@ -316,15 +338,19 @@ números. Si la cadena contiene cualquier otro carácter, la función devuelve u
 float()
 ~~~~~~~
 
-Devuelve un número de coma flotante, y acepta argumentos de tipo numérico 
-(:ref:`int <python_numerico_entero>` o :ref:`float <python_numerico_coma_flotante>`), 
-o de tipo :ref:`string <python_cadenas>` que sean coherentes con un número entero o 
-de coma flotante (cadenas de caracteres formadas por números y hasta un punto).
+La función ``float()`` devuelve un número coma flotante ``float``. Es un constructor, 
+que crea un :ref:`coma flotante <python_numerico_coma_flotante>` a partir de un 
+:ref:`entero <python_numerico_entero>`, :ref:`entero long <python_numerico_entero_long>`, 
+:ref:`entero float <python_numerico_coma_flotante>` (cadenas de caracteres formadas por 
+números y hasta un punto) o una :ref:`cadena de caracteres <python_cadenas>` que sean 
+coherentes con un número entero.
 
 ::
 
     >>> float(2)
     2.0
+    >>> float(23L)
+    23.0
     >>> float(2.5)
     2.5
     >>> float("2")
@@ -339,14 +365,18 @@ de coma flotante (cadenas de caracteres formadas por números y hasta un punto).
 complex()
 ~~~~~~~~~
 
-Devuelve un número complejo, y acepta argumentos de tipo numérico 
-(:ref:`int <python_numerico_entero>` o :ref:`float <python_numerico_coma_flotante>`), 
-o de tipo :ref:`string <python_cadenas>` que sean coherentes con un número entero o 
-de coma flotante (cadenas de caracteres formadas por números y hasta un punto).
+La función ``complex()`` devuelve un número complejo ``complex``. Es un constructor, 
+que crea un :ref:`entero complex <python_numerico_complejo>` a partir de un 
+:ref:`entero <python_numerico_entero>`, :ref:`entero long <python_numerico_entero_long>`, 
+:ref:`entero float <python_numerico_coma_flotante>` (cadenas de caracteres formadas por 
+números y hasta un punto), o una :ref:`cadena de caracteres <python_cadenas>` que sean 
+coherentes con un número entero.
 
 ::
 
     >>> complex(23)
+    (23+0j)
+    >>> complex(23L)
     (23+0j)
     >>> complex(23.4)
     (23.4+0j)
@@ -422,4 +452,17 @@ Para salir de esa ayuda presione la tecla ``q``.
     Para más información consulte las funciones integradas para 
     :ref:`operaciones numéricas <python_funciones_integradas_numericas>`.
 
+.. seealso:: 
+
+    .. figure:: https://img.youtube.com/vi/ssnkfbBbcuw/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_, 
+        cortesía de `CodigoFacilito.com`_.
+
+    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+
 .. _`Introducción a la programación en Python - clase 1`: https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html
+.. _`Tutorial Python 4 - Enteros, reales y operadores aritméticos`: https://www.youtube.com/watch?v=ssnkfbBbcuw
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/

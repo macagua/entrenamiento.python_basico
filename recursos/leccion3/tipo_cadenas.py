@@ -44,11 +44,14 @@ print type(cadrep)
 nombre = "Leonardo"
 apellido = "Caballero"
 nombre_completo = nombre + " " + apellido
-print nombre_completo
-print type(nombre_completo)
+print nombre_completo, type(nombre_completo)
 
 # tamaño de cadena
 print "Tamaño de cadena '", nombre_completo, "' es:", len(nombre_completo)
 
 # acceder a rango de cadena
-print nombre_completo[3:13]
+print "Acceso a rango de cadena: '", nombre_completo[3:13]
+
+# formato de impresión de cadena
+print "Tamaño de cadena '{nombre_completo}' es: {tamano} ".format(
+	nombre_completo=nombre_completo, tamano=len(nombre_completo))

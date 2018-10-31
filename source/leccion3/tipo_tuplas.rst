@@ -40,7 +40,9 @@ A continuación, se presentan algunos ejemplos de su uso:
 Una tarea común es iterar sobre una secuencia mientras cuidas 
 el seguimiento de la numeración de un elemento.
 
-Podría usar un bucle ``while`` con un contador o un bucle ``for``:
+Podría usar un bucle ``while`` con un contador o un bucle ``for`` 
+usando la función :ref:`range <python_funcion_range>` y la función 
+:ref:`len <python_funcion_len>`:
 
 ::
 
@@ -66,6 +68,19 @@ establecer una conexión a una BD:
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
     :lines: 18-38
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_tuplas.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_tuplas.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 tipo_tuplas.py
 
 ----
 
