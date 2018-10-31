@@ -10,7 +10,7 @@ Uso de decoradores y módulos de la librería estándar
    :maxdepth: 2
 
    decoradores
-   libreria_estandar
    iteradores
    listas_comprension
+   libreria_estandar
    fecha_hora

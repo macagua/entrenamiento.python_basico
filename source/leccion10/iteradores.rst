@@ -70,22 +70,52 @@ Cuando se usa en un bucle, finalmente se llama a StopIteration y se provoca la f
   >>> f is f.__iter__()
   True
 
-- Iteradores y Diccionarios.
+Iteradores y Diccionarios
+.........................
 
-- Otros Iteradores.
+.. todo::
+    TODO escribir esta sección.
 
-- Ejercicio 1.
+Otros Iteradores
+................
+
+.. todo::
+    TODO escribir esta sección.
+
+Ejercicios
+..........
+
+.. todo::
+    TODO escribir esta sección.
+
+
 
 .. seealso::
 
-    Ver los siguientes vídeos:
+    Ver los siguientes vídeos, cortesía de `CodigoFacilito.com`_:
 
-    - `Tutorial Python 25 - Comprensión de Listas`_.
+    .. figure:: https://img.youtube.com/vi/87s8XQbUv1k/0.jpg
+        :align: center
+        :width: 60%
 
-    - `Tutorial Python 26 - Generadores`_.
+        Vídeo `Tutorial Python 25 - Comprensión de Listas`_.
 
-    - `Tutorial Python 27 - Decoradores`_.
+    .. figure:: https://img.youtube.com/vi/tvHbC_OZV14/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 26 - Generadores`_.
+
+    .. figure:: https://img.youtube.com/vi/TaIWx9paNIA/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 27 - Decoradores`_.
+
+
+  .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
  
 .. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
 .. _`Tutorial Python 26 - Generadores`: https://www.youtube.com/watch?v=tvHbC_OZV14
 .. _`Tutorial Python 27 - Decoradores`: https://www.youtube.com/watch?v=TaIWx9paNIA
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/

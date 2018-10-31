@@ -85,6 +85,6 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 - Servicios específicos de SunOS, las librerías ``sunaudiodev`` y ``SUNAUDIODEV``.
 
 .. todo::
-    TODO escribir esta sección.
+    TODO terminar de escribir esta sección.
 
 .. _`La biblioteca estándar Python 2`: https://docs.python.org/2/library/
