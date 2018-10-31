@@ -102,13 +102,32 @@ El valor es ingresado en la variable ``numero`` comprobará en el sentencia cond
 bloque condicional ``elif`` si de nuevo la comprobación devuelve ``False`` por ultimo 
 intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin comprobación.
 
+- ``if CONDICION``, significa, **Si** se cumple la 
+  :ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 
+  sentencias seguidas.
+
+- ``elif CONDICION``, significa, **De lo contrario Si** se cumple la 
+  :ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 
+  sentencias seguidas.
+
+- ``else``, significa, **De lo contrario** se cumple sin evaluar ninguna 
+  :ref:`expresión condicional <python_expresiones_condicional>` y ejecuta el bloque de 
+  sentencias seguidas.
+
 .. seealso::
 
-    - Ver el vídeo `Tutorial Python 10 - Sentencias condicionales`_.
+    .. figure:: https://img.youtube.com/vi/hLqKvB7tGWk/0.jpg
+        :align: center
+        :width: 60%
 
-    - `Python - Tipos básicos`_.
+        Vídeo `Tutorial Python 10 - Sentencias condicionales`_, cortesía de `CodigoFacilito.com`_.
 
-    - `Operadores básicos de Python`_.
+    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+
+    **Otros recursos**
+      - `Python - Tipos básicos`_.
+
+      - `Operadores básicos de Python`_.
 
 
 Referencias
@@ -118,8 +137,9 @@ Referencias
 
 - `Condicionales if y else en Python`_.
 
-.. _`Tutorial Python 10 - Sentencias condicionales`: https://www.youtube.com/watch?v=hLqKvB7tGWk
-.. _`Sentencias IF`: http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-if
-.. _`Condicionales if y else en Python`: http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html
 .. _`Python - Tipos básicos`: http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/
 .. _`Operadores básicos de Python`: http://codigoprogramacion.com/cursos/tutoriales-python/operadores-basicos-de-python.html
+.. _`Tutorial Python 10 - Sentencias condicionales`: https://www.youtube.com/watch?v=hLqKvB7tGWk
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+.. _`Sentencias IF`: http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-if
+.. _`Condicionales if y else en Python`: http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html

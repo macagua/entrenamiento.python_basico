@@ -1,51 +1,50 @@
 # -*- coding: utf8 -*-
 
 """
-    Ejemplo de uso de bucle While
+    Ejemplo de uso de bucle 'while'
 """
 
-# While controlado con Conteo
-print "\nWhile controlado con Conteo"
-print "===========================\n"
+# Bucle 'while' controlado con Conteo
+print "\nBucle 'while' controlado con Conteo"
+print "===================================\n"
 
-print "Un ejemplo es un sumador numérico hasta 10, "
+print "Ejemplo: es un sumador numérico hasta 10, "
 print "como se muestra a continuación:\n"
 
-suma = 0
-numero = 1
+suma, numero = 0, 1
+
 while numero <= 10:
     suma = numero + suma
     numero = numero + 1
 print "La suma es " + str(suma)
 
 
-# While controlado con Evento
-print "\nWhile controlado con Evento"
-print "===========================\n"
+# Bucle 'while' controlado con Evento
+print "\nBucle 'while' controlado con Evento"
+print "===================================\n"
 
-print "Un ejemplo es calcular el promedio de grado, "
-print "como se muestra a continuación:\n"
+print "Ejemplo: calcular el promedio de notas de N estudiante "
+print "en un grado escolar, como se muestra a continuación:\n"
 
-promedio = 0.0
-total = 0
-contar = 0
+promedio, total, contar = 0.0, 0, 0
 
-print "Introduzca valor numerico de un grado (-1 para salir): "
+print "Introduzca la nota de un estudiante (-1 para salir): "
 grado = int(raw_input())	
 while grado != -1:
     total = total + grado
     contar = contar + 1
-    print "Introduzca valor numerico de un grado (-1 para salir): "
+    print "Introduzca la nota de un estudiante (-1 para salir): "
     grado = int(raw_input())
 promedio = total / contar
-print "Promedio de grado: " + str(promedio)
+print "Promedio de notas del grado escolar es: " + str(promedio)
 
 
-# While con sentencia break
-print "\nWhile con sentencia break"
-print "=========================\n"
+# Bucle 'while' con sentencia 'break'
+print "\nBucle 'while' con sentencia 'break'"
+print "===================================\n"
 
 variable = 10
+
 while variable > 0:
     print 'Actual valor de variable:', variable
     variable = variable -1
@@ -53,13 +52,34 @@ while variable > 0:
         break
 
 
-# While con sentencia continue
-print "\nWhile con sentencia continue"
-print "============================\n"
+# Bucle 'while' con sentencia 'continue'
+print "\nBucle 'while' con sentencia 'continue'"
+print "======================================\n"
 
 variable = 10
+
 while variable > 0:              
    variable = variable -1
    if variable == 5:
       continue
    print 'Actual valor de variable:', variable
+
+
+# Bucle 'while' con sentencia 'else'
+print "\nBucle 'while' con sentencia 'else'"
+print "==================================\n"
+
+print "Ejemplo: calcular el promedio de notas de N estudiante "
+print "en un grado escolar, como se muestra a continuación:\n"
+
+promedio, total, contar = 0.0, 0, 0
+mensaje = "Introduzca la nota de un estudiante (-1 para salir): "
+
+grado = int(raw_input(mensaje))
+while grado != -1:
+    total = total + grado
+    contar += 1
+    grado = int(raw_input(mensaje))
+else:
+    promedio = total / contar
+    print "Promedio de notas del grado escolar es: " + str(promedio)
