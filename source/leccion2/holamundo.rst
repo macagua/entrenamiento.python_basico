@@ -152,7 +152,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
         Vídeo `Tutorial Python 3 - Hola Mundo`_, cortesía de `CodigoFacilito.com`_.
 
-    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 
 Referencias

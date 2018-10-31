@@ -136,7 +136,7 @@ Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
 
         Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
 
-    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 
 Referencia

@@ -414,7 +414,7 @@ nombres agrega el nombre de la clase:
 
         Vídeo `Tutorial Python 13 - Clases y Objetos`_, cortesía de `CodigoFacilito.com`_.
 
-    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 
 Referencia

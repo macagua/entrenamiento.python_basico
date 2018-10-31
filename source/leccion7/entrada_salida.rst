@@ -203,7 +203,7 @@ valor con 8 dígitos después de la coma:
 
         Vídeo `Tutorial Python 31 - Salida Estándar rawInput`_.
 
-  .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+  .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 
 Referencia

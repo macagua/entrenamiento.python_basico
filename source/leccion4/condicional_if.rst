@@ -122,7 +122,7 @@ intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
 
         Vídeo `Tutorial Python 10 - Sentencias condicionales`_, cortesía de `CodigoFacilito.com`_.
 
-    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
     **Otros recursos**
       - `Python - Tipos básicos`_.

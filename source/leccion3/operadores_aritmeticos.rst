@@ -233,7 +233,7 @@ izquierda por el operador del lado derecho y devuelve el resto.
         Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_, 
         cortesía de `CodigoFacilito.com`_.
 
-    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 
 Referencia

@@ -75,7 +75,7 @@ A continuación, se presentan algunos ejemplos de su uso:
         Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
         cortesía de `CodigoFacilito.com`_.
 
-    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 .. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
 .. _`CodigoFacilito.com`: https://www.codigofacilito.com/

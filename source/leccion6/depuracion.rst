@@ -361,7 +361,7 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
         Vídeo `Depurando um programa Python com pdb - Python Debugger`_.
 
-  .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+  .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 
 Referencia

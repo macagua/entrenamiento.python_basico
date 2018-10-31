@@ -461,7 +461,7 @@ Para salir de esa ayuda presione la tecla ``q``.
         Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_, 
         cortesía de `CodigoFacilito.com`_.
 
-    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 .. _`Introducción a la programación en Python - clase 1`: https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html
 .. _`Tutorial Python 4 - Enteros, reales y operadores aritméticos`: https://www.youtube.com/watch?v=ssnkfbBbcuw

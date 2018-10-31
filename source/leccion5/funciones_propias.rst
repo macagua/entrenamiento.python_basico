@@ -192,7 +192,7 @@ A continuación, se presenta un ejemplo del uso de invocar funciones:
 
         Vídeo `Tutorial Python 12 - Funciones`_, cortesía de `CodigoFacilito.com`_.
 
-    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
+    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
 
 
 Referencia
