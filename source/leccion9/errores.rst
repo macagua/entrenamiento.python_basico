@@ -459,7 +459,9 @@ líneas. Otros objetos que provean acciones de limpieza predefinidas
 lo indicarán en su documentación.
 
 ..
-  .. seealso:: Ver el vídeo ``_.
+  .. seealso:: Ver el vídeo ``_ cortesía de CodigoFacilito.com.
+
+    .. todo:: Agregar imagen preview de youtube sobre el(los) video(s) anterior(es).
 
 
   Referencia

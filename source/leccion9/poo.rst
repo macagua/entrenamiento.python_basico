@@ -64,7 +64,7 @@ Definiciones necesarias
     Los atributos o propiedades de los objetos son las características 
     que puede tener un objeto: Si el objeto fuera ``Persona``, los 
     atributos podrían ser: ``cedula``, ``nombre``, ``apellido``, 
-    ``edad``, etc...
+    ``sexo``, etc...
 
 **¿Qué es un Método?**
     Los métodos son la acción o función que realiza un objeto. Si 
@@ -80,9 +80,9 @@ Definiciones necesarias
 **¿Qué es una Instancia?**
     Ya sabemos que una clase es una estructura general del objeto. 
     Por ejemplo, podemos decir que la clase ``Persona`` necesita tener 
-    una ``cedula``, un ``nombre``, un ``apellido`` y una ``edad``, pero 
+    una ``cedula``, un ``nombre``, un ``apellido`` y una ``sexo``, pero 
     no nos va a decir cual es ``cedula``, ``nombre``, ``apellido`` y 
-    ``edad``, es aquí donde entran las instancias. Una instancia es una 
+    ``sexo``, es aquí donde entran las instancias. Una instancia es una 
     copia específica de la clase con todo su contenido.
 
     Ejemplo: Leonardo = Persona (13567098, "Leonardo", "Caballero", 38)
@@ -93,7 +93,7 @@ Definiciones necesarias
 
 Las clases nos dan la posibilidad de crear estructuras de datos más complejas. 
 En nuestro ejemplo crearemos una clase ``Persona`` que realizará un seguimiento 
-del ``cedula``, ``nombre``, ``apellido`` y ``edad`` (que pasaremos como atributos).
+del ``cedula``, ``nombre``, ``apellido`` y ``sexo`` (que pasaremos como atributos).
 
 .. note:: 
     Más información consulte el articulo `Programación orientada a objetos - Wikipedia`_.
@@ -150,7 +150,7 @@ Ejemplo de la clase ``Persona`` con función interna:
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :linenos:
     :language: python
-    :lines: 3-22
+    :lines: 3-32
 
 
 En el ejemplo previo, es donde empieza a crear una clase (lo hace con la 
@@ -160,19 +160,39 @@ conoce con el nombre de herencia (mas tarde abajo se explicará el concepto
 de herencia). Lo que debe saber es que ``object`` es una variable especial 
 en Python que se utiliza de herencia cuando creamos una nueva clase en Python.
 
-La clase ``Persona`` tiene los métodos ``__init__``, ``__str__`` y ``hablar``. 
-Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``. Usted puede 
-invocar esos métodos y atributos con la siguiente notación: ``claseinstancia.metodo`` 
-o ``claseinstancia.atributo``. El constructor ``__init__`` es un método 
-especial el cual llamaremos con: ``MiClase(parámetros iniciales si hay cualquiera)``.
+La clase ``Persona`` tiene los métodos ``__init__``, ``__str__``, ``hablar`` 
+y ``getSexo``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``. 
 
 La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :linenos:
     :language: python
-    :lines: 47-52
+    :lines: 59-60
 
+El método constructor ``__init__`` es un método especial el cual debe escribir 
+como: ``MiClase(parámetros iniciales si hay cualquiera)``.
+
+Usted puede invocar esos métodos y atributos con la siguiente notación: 
+``claseinstancia.metodo`` o ``claseinstancia.atributo``. 
+
+.. literalinclude:: ../../recursos/leccion9/clases.py
+    :linenos:
+    :language: python
+    :lines: 63
+
+El método ``__str__`` es un método usando para imprimir la descripción de la 
+instancia de objeto el cual debe mostrar como:
+
+.. literalinclude:: ../../recursos/leccion9/clases.py
+    :linenos:
+    :language: python
+    :lines: 69
+
+En el anterior código se usan para cierto formato para imprimir la instancia de 
+objeto usando la sentencia ``print``, concatenando el carácter ``\n`` para 
+generar un salto de página y seguidamente convertir a formato cadena de caracteres 
+usando la función ``str()`` a la instancia de objeto llamada ``persona2``. 
 
 .. _python_poo_herencia:
 
@@ -195,7 +215,7 @@ que derivada de la clase ``Persona`` con función interna:
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :linenos:
     :language: python
-    :lines: 24-45
+    :lines: 35-56
 
 Ahora, se creará una nueva clase ``Supervisor`` con los mismos métodos y atributos 
 como la clase ``Persona``, pero con dos nuevos atributos ``permisos`` y ``tareas``. 
@@ -206,7 +226,30 @@ La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :linenos:
     :language: python
-    :lines: 54-58
+    :lines: 79
+
+Luego que generá la instancia del nuevo objeto ``Supervisor`` llamada ``supervisor1`` 
+se puede imprimir sus detalles de la siguiente forma:
+
+.. literalinclude:: ../../recursos/leccion9/clases.py
+    :linenos:
+    :language: python
+    :lines: 80
+
+Si desea usar los métodos de la clase ``Supervisor`` se puede imprimir de la siguiente forma:
+
+.. literalinclude:: ../../recursos/leccion9/clases.py
+    :linenos:
+    :language: python
+    :lines: 81-82
+
+Como la instancia de objeto ``supervisor1`` hereda los métodos de la clase ``Persona`` 
+usted puede reusarlo e invocarlo de la siguiente forma:
+
+.. literalinclude:: ../../recursos/leccion9/clases.py
+    :linenos:
+    :language: python
+    :lines: 84-85
 
 Gracias a las clases y la programación orientada a objetos, usted puede organizar 
 el código con diferentes clases correspondientes a diferentes objetos que encontramos 
@@ -215,6 +258,11 @@ propios métodos y atributos. Luego podemos usar la herencia para considerar las
 variaciones en torno a una clase base y reutilizar el código. Ej.: a partir de una 
 clase base de ``Persona``, podemos crear clases derivadas como ``Supervisor``, 
 ``Profesor``, ``Obrero``, etc.
+
+.. literalinclude:: ../../recursos/leccion9/clases.py
+    :linenos:
+    :language: python
+    :lines: 89-92
 
 
 Herencia múltiple
@@ -251,23 +299,19 @@ Clase Base).
     ...     def __init__(self):
     ...         self.cedula = 13765890
     ...     def mensaje(self):
-    ...         print("mensaje desde Persona")
+    ...         print("mensaje desde la clase Persona")
     ... 
     >>> class Obrero(Persona):
     ...     def __init__(self):
     ...         self.__especialista = 1
     ...     def mensaje(self):
-    ...         print("mensaje desde Obrero")
+    ...         print("mensaje desde la clase Obrero")
     ... 
     >>> obrero_planta = Obrero()
     >>> obrero_planta.mensaje()
-    mensaje desde Obrero
+    mensaje desde la clase Obrero
     >>> 
 
-
-El resultado sería:
-
-    mensaje desde Obrero
 
 Lo que se logra definiendo el método ``mensaje()`` en la Clase Derivada 
 (``Obrero``) se conoce como **Método Overriding** (cuando se cree el objeto 
@@ -362,7 +406,15 @@ nombres agrega el nombre de la clase:
 
 ----
 
-.. seealso:: Ver el vídeo `Tutorial Python 13 - Clases y Objetos`_.
+.. seealso::
+
+    .. figure:: https://img.youtube.com/vi/VYXdpjCZojA/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 13 - Clases y Objetos`_, cortesía de `CodigoFacilito.com`_.
+
+    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
 
 
 Referencia
@@ -374,7 +426,8 @@ Referencia
 
 - `Object-oriented programming (OOP) - Scipy lecture notes`_.
 
-.. _`Programación orientada a objetos - Wikipedia`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos 
 .. _`Tutorial Python 13 - Clases y Objetos`: https://www.youtube.com/watch?v=VYXdpjCZojA
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+.. _`Programación orientada a objetos - Wikipedia`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos
 .. _`Clases — Tutorial de Python v2.7.0`: http://docs.python.org.ar/tutorial/2/classes.html
 .. _`Object-oriented programming (OOP) - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/oop.html
