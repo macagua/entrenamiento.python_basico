@@ -51,7 +51,7 @@ Postmortem
 
 **Situación**: Estás trabajando en ``ipython`` y obtienes un error (`traceback`).
 
-En este caso estamos depurando el fichero `index_error.py <https://www.pybonacci.org/scipy-lecture-notes-ES/_downloads/index_error.py>`_. Cuando lo ejecutes verás como se lanza un :class:`IndexError`. Escribe ``%debug`` y entrarás en el depurador.
+En este caso estamos depurando el fichero :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza un :class:`IndexError`. Escribe ``%debug`` y entrarás en el depurador.
 
 .. sourcecode:: ipython
 
@@ -134,12 +134,11 @@ Ejecución paso a paso
 
 **Situación**: Crees que existe un error en un módulo pero no estás seguro donde.
 
-Por ejemplo, estamos intentado depurar `wiener_filtering.py <https://www.pybonacci.org/scipy-lecture-notes-ES/_downloads/wiener_filtering.py>`_.
+Por ejemplo, estamos intentado depurar :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
 A pesar de que el código se ejecuta, observamos que el filtrado no se
 está haciendo correctamente.
 
-* Ejecuta el `script` en IPython con el depurador usando ``%run -d
-  wiener_filtering.py``:
+* Ejecuta el `script` en IPython con el depurador usando ``%run -d wiener_filtering.py``:
 
   .. sourcecode:: ipython
 
@@ -219,8 +218,8 @@ estamos haciendo aritmética con enteros.
 
 .. topic:: Lanzando excepciones en errores numéricos
 
-    Cuando ejecutamos el fichero `wiener_filtering.py <https://www.pybonacci.org/scipy-lecture-notes-ES/_downloads/wiener_filtering.py>`_, se lanzarán
-    los siguientes avisos:
+    Cuando ejecutamos el fichero :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`, 
+    se lanzarán los siguientes avisos:
 
     .. sourcecode:: ipython
 
@@ -239,19 +238,19 @@ estamos haciendo aritmética con enteros.
         In [4]: %run wiener_filtering.py
         ---------------------------------------------------------------------------
         FloatingPointError                        Traceback (most recent call last)
-        /home/esc/anaconda/lib/python2.7/site-packages/IPython/utils/py3compat.pyc in execfile(fname, *where)
+        /home/macagua/venv/lib/python2.7/site-packages/IPython/utils/py3compat.pyc in execfile(fname, *where)
             176             else:
             177                 filename = fname
         --> 178             __builtin__.execfile(filename, *where)
 
-        /home/esc/physique-cuso-python-2013/scipy-lecture-notes/advanced/debugging/wiener_filtering.py in <module>()
+        /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py in <module>()
              55 pl.matshow(noisy_lena[cut], cmap=pl.cm.gray)
              56 
         ---> 57 denoised_lena = iterated_wiener(noisy_lena)
              58 pl.matshow(denoised_lena[cut], cmap=pl.cm.gray)
              59 
 
-        /home/esc/physique-cuso-python-2013/scipy-lecture-notes/advanced/debugging/wiener_filtering.py in iterated_wiener(noisy_img, size)
+        /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py in iterated_wiener(noisy_img, size)
              38         res = noisy_img - denoised_img
              39         noise = (res**2).sum()/res.size
         ---> 40         noise_level = (1 - noise/l_var )
@@ -354,7 +353,15 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
     retval  rv
 
 
-.. seealso:: Ver el vídeo `Depurando um programa Python com pdb - Python Debugger`_.
+.. seealso::
+
+    .. figure:: https://img.youtube.com/vi/N4NtB4r28h0/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Depurando um programa Python com pdb - Python Debugger`_.
+
+  .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
 
 
 Referencia
