@@ -10,6 +10,10 @@ En Python puede realizar operaciones de entrada y salida de datos, almacenar eso
 manipulando de archivos usando métodos para leer y escribir archivos desde el sistema de 
 ficheros.
 
+En esta lección se describen las operaciones de entrada y salida, manipulando de archivos 
+del lenguaje Python, mostrando ejemplos prácticos y utiles. A continuación el temario de 
+esta lección:
+
 .. toctree::
    :maxdepth: 2
 
