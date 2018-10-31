@@ -90,7 +90,7 @@ su ejecución:
   a un número plataformas especializadas y/o antiguas, a continuación se destacan algunas de ellas. 
 
     - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un completo 
-       entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
+      entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
 
     - `ActivePython <http://www.activestate.com/activepython/>`_, Python para Solaris, Usted puede 
       comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
@@ -176,8 +176,6 @@ ingresar la instrucción:
     >>> import this
 
 
-.. seealso:: Ver el vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación`_.
-
 .. _`características`: https://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas
 .. _`multiparadigma`: https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_multiparadigma
 .. _`programación estructurada`: https://es.wikipedia.org/wiki/Programación_estructurada
@@ -187,4 +185,3 @@ ingresar la instrucción:
 .. _`tipado dinámico`: https://es.wikipedia.org/wiki/Tipado_din%C3%A1mico
 .. _`fuertemente tipado`: https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_fuertemente_tipado
 .. _`multiplataforma`: https://es.wikipedia.org/wiki/Multiplataforma
-.. _`Tutorial Python 1 - Introducción al Lenguaje de Programación`: https://www.youtube.com/watch?v=CjmzDHMHxwU
