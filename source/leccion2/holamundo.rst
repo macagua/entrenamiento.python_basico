@@ -136,14 +136,23 @@ Ejecutar un programa en Mac OSX
 
 #. Ejecute ``ls`` y presione ``Enter`` y usted debería ver el archivo ``holamundo.py``.
 
-#. Para ejecutar el programa, escriba el siguiente comando ``python holamundo.py`` y presione ``Enter``.
+#. Para ejecutar el programa, escriba el siguiente comando ``python holamundo.py`` 
+   y presione ``Enter``.
 
 #. Usted debe ver la línea *Hola Mundo*.
 
 Enhorabuena, usted ha ejecutado su primer programa Python.
 
 
-.. seealso:: Ver el vídeo `Tutorial Python 3 - Hola Mundo`_.
+.. seealso::
+
+    .. figure:: https://img.youtube.com/vi/OtJEj7N9T6k/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 3 - Hola Mundo`_, cortesía de `CodigoFacilito.com`_.
+
+    .. todo:: Cambiar la URL de imagen de previsuaalación del video, de forma local.
 
 
 Referencias
@@ -152,3 +161,4 @@ Referencias
 - `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_
 
 .. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
