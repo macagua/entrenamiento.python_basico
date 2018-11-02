@@ -114,6 +114,20 @@ intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
   :ref:`expresión condicional <python_expresiones_condicional>` y ejecuta el bloque de 
   sentencias seguidas.
 
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion4/condicional_if.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`condicional_if.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 condicional_if.py
+
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 

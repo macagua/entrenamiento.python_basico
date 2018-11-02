@@ -98,6 +98,20 @@ sea ``False``, (a comparación de la :ref:`sentencia if <python_condicional_if>`
 La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis 
 que en las demás estructuras de control.
 
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion4/bucle_for.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`bucle_for.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 bucle_for.py
+
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 

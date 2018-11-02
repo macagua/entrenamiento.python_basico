@@ -265,6 +265,19 @@ clase base de ``Persona``, podemos crear clases derivadas como ``Supervisor``,
     :lines: 89-92
 
 
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion9/clases.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`clases.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 clases.py
+
+
 Herencia múltiple
 ~~~~~~~~~~~~~~~~~
 

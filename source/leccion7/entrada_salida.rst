@@ -79,6 +79,19 @@ con el usuario y en base a condicionales muestra un mensaje.
     salas de chat, muy popular en la década de los 90 en latinoamericana.
 
 
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion7/entrada_salida.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`entrada_salida.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 entrada_salida.py
+
+
 .. _python_salida_formato_impresion_cadenas:
 
 Formato de impresión de cadenas

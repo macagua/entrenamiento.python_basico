@@ -128,6 +128,19 @@ Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
     :lines: 8-11
 
 
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion4/bucle_while.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`bucle_while.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 bucle_while.py
+
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 

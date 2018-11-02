@@ -184,6 +184,19 @@ A continuación, se presenta un ejemplo del uso de invocar funciones:
     36
 
 
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion5/funciones.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`funciones.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 funciones.py
+
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion5>` 

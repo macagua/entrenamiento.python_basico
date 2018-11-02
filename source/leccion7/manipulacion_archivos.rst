@@ -174,6 +174,19 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
 	>>> f.close()
 
 
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion7/archivo.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`archivo.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 archivo.py
+
+
 ----
 
 Ayuda integrada
