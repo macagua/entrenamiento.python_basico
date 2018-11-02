@@ -122,7 +122,7 @@ intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
 
 .. tip::
     Para ejecutar el código :file:`condicional_if.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 condicional_if.py

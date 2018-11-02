@@ -7,7 +7,7 @@ Manipulación de archivos
 ------------------------
 
 Para escribir o leer cadenas de caracteres para/desde archivos (otros tipos deben 
-ser convertidas a cadenas de caracteress). 
+ser convertidas a cadenas de caracteres). 
 
 open()
 ......
@@ -52,7 +52,7 @@ read()
 La función ``read()`` permite leer el contenido del archivo. El argumento 
 es opcional y si no se especifica (o es -1) devuelve el contenido de todo 
 el archivo. Una vez que se leyó todo el archivo, una nueva llamada a 
-la función devuelve un string vacío ('').
+la función devuelve una cadena vacía ('').
 
 ::
 
@@ -78,11 +78,11 @@ readline()
 ..........
 
 La función ``readline()`` permite leer una sola línea del archivo, 
-devuelve al final de la línea el caracter de nueva línea y solo 
-se omite en la última línea del archivo (si no termina con el caracter 
-de nueva línea). Esto hace que el valor de retorno no sea ambigüo. 
+devuelve al final de la línea el carácter de nueva línea y solo 
+se omite en la última línea del archivo (si no termina con el carácter 
+de nueva línea). Esto hace que el valor de retorno no sea ambiguo. 
 Si retorna una cadena de caracteres vacía se alcanzó el fin del archivo, 
-mientras que una línea en blanco se representa con un caracter de nueva línea.
+mientras que una línea en blanco se representa con un carácter de nueva línea.
 
 ::
 
@@ -181,7 +181,7 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
 
 .. tip::
     Para ejecutar el código :file:`archivo.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 archivo.py

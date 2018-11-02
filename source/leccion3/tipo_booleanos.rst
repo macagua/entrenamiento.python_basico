@@ -51,7 +51,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. tip::
 	Para ejecutar el código :file:`tipo_booleanos.py`, abra una 
-	consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+	consola de comando, acceda al directorio donde se encuentra el mismo, 
 	y ejecute el siguiente comando: ::
 
 		python2 tipo_booleanos.py

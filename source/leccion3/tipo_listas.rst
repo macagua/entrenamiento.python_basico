@@ -12,7 +12,7 @@ internamente cada posición puede ser un tipo de datos distinto.
 En Python tiene varios tipos de datos *compuestos*, como los tipos *numéricos*, 
 *secuencias*, *conjuntos* y *mapeos* usados para agrupar otros valores. 
 
-Dentro de las secuencias, estan los tipos de cadenas de caracteres (strings).
+Dentro de las secuencias, están los tipos de cadenas de caracteres (strings).
 Otro tipo muy importante de secuencia son las listas.
 
 El más versátil de las *secuencias* es la *lista*, para definir una debe escribir 
@@ -195,7 +195,7 @@ emparejarse con la función ``zip()``.
 
 .. tip::
     Para ejecutar el código :file:`tipo_listas.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 tipo_listas.py

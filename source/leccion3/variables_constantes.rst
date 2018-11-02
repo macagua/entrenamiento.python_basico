@@ -161,7 +161,7 @@ librería estándar Python llamada :ref:`format <python_funcion_format>`.
 
 .. note:: 
     En realidad, no se usa las constantes en Python. El módulo ``globals`` o ``constants`` 
-    es usado throughout the Python programs.
+    es usado a lo largo de los programas de Python.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los 

@@ -86,7 +86,7 @@ con el usuario y en base a condicionales muestra un mensaje.
 
 .. tip::
     Para ejecutar el código :file:`entrada_salida.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 entrada_salida.py
@@ -141,11 +141,11 @@ Los objetos también pueden ser referenciados por nombre (argumentos por clave).
 Opcionalmente se puede poner el signo de dos puntos después del número o nombre, 
 y explicitar el tipo del objeto:
 
-- ``s`` para cadenas de caracteres (tipo str).
+- ``s`` para cadenas de caracteres (tipo ``str``).
 
-- ``d`` para números enteros (tipo int).
+- ``d`` para números enteros (tipo ``int``).
 
-- ``f`` para números de coma flotante (tipo float).
+- ``f`` para números de coma flotante (tipo ``float``).
 
 
 Esto permite controlar el formato de impresión del objeto. Por ejemplo, podemos 

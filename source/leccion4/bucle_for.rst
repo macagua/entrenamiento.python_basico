@@ -106,7 +106,7 @@ que en las demás estructuras de control.
 
 .. tip::
     Para ejecutar el código :file:`bucle_for.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 bucle_for.py

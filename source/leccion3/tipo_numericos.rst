@@ -227,7 +227,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. tip::
     Para ejecutar el código :file:`tipo_numericos.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 tipo_numericos.py

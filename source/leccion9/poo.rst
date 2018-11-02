@@ -272,7 +272,7 @@ clase base de ``Persona``, podemos crear clases derivadas como ``Supervisor``,
 
 .. tip::
     Para ejecutar el código :file:`clases.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 clases.py

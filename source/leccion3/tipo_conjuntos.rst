@@ -63,7 +63,7 @@ inmutables, pero no listas ni sets mutables.
 
 .. tip::
     Para ejecutar el código :file:`tipo_conjuntos.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 tipo_conjuntos.py

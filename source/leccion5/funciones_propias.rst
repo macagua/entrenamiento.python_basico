@@ -42,8 +42,8 @@ navegue el código en forma interactiva; es una buena práctica incluir
 un hábito de esto.
 
 La ejecución de la función ``prueba()`` muestra la impresión de un 
-mensaje **función de prueba** que se imprime por consola. Return object 
-for optionally returning values.
+mensaje **función de prueba** que se imprime por consola. Devolver 
+el objeto por los valores de retorno opcionales.
 
 
 Sentencia return
@@ -191,7 +191,7 @@ A continuación, se presenta un ejemplo del uso de invocar funciones:
 
 .. tip::
     Para ejecutar el código :file:`funciones.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
         python2 funciones.py
