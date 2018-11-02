@@ -254,6 +254,16 @@ Funciones definidas por el usuario
 .. _`Tutorial Python 12 - Funciones`: https://www.youtube.com/watch?v=_C7Uj7O5o_Q
 
 
+Programación estructurada
+.........................
+
+- `Reusing code: scripts and modules - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/reusing_code.html>`_.
+
+- `Programación estructurada <https://es.wikipedia.org/wiki/Programación_estructurada>`_.
+
+- `Paseo por la programación estructurada y modular con Python - Rosalía Peña Ros <http://www.aenui.net/ojs/index.php?journal=revision&page=article&op=viewArticle&path%5B%5D=184>`_.
+
+
 .. _lecturas_suplementarias_sesion6:
 
 Sesión 6 - Introspección a la depuración con pdb
@@ -323,6 +333,12 @@ Manipulación de archivos
 
 Sesión 8 - Creación de módulos y paquetes Python
 ------------------------------------------------
+
+
+Módulos Python
+..............
+
+- `Reusing code: scripts and modules - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/reusing_code.html>`_.
 
 
 Scaffolding en proyectos Python

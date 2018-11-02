@@ -20,28 +20,21 @@ Estos son los distintos tipos de expresiones condicionales:
 |                   |  - ``False``, ``None``.                                      |
 |                   | Evaluá a ``True``:                                           |
 |                   |  - cualquier cosa de lo contrario.                           |
-|                   |                                                              |
 +-------------------+--------------------------------------------------------------+
 | ``a == b``:       | Prueba igualdad, con lógicas:                                |
-|                   |                                                              |
 |                   | ::                                                           |
 |                   |                                                              |
 |                   |     >>> 1 == 1                                               |
 |                   |     True                                                     |
-|                   |                                                              |
 +-------------------+--------------------------------------------------------------+
 | ``a is b``:       | Prueba identidad: ambos lados debe ser el mismo objecto:     |
-|                   |                                                              |
 |                   | ::                                                           |
 |                   |                                                              |
 |                   |     >>> 1 is 1.                                              |
 |                   |     False                                                    |
-|                   |                                                              |
-|                   |     >>> a = 1                                                |
-|                   |     >>> b = 1                                                |
+|                   |     >>> a, b = 1, 1                                          |
 |                   |     >>> a is b                                               |
 |                   |     True                                                     |
-|                   |                                                              |
 +-------------------+--------------------------------------------------------------+
 | ``a in b``:       | Para cualquier colección b: ``b`` contenga ``a``:            |
 |                   | ::                                                           |
@@ -54,7 +47,6 @@ Estos son los distintos tipos de expresiones condicionales:
 |                   |                                                              |
 |                   | Si ``b`` es un diccionario, este prueba que ``a`` sea una    |
 |                   | key de ``b``.                                                |
-|                   |                                                              |
 +-------------------+--------------------------------------------------------------+
 
 .. seealso::

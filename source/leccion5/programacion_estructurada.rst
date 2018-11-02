@@ -60,6 +60,7 @@ llamado despectivamente *código espagueti*), cabe citar las siguientes:
 .. todo::
     TODO terminar de escribir esta sección
 
-.. _`Reusing code: scripts and modules - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/reusing_code.html
-.. _`Programación estructurada`: https://es.wikipedia.org/wiki/Programación_estructurada
-.. _`Paseo por la programación estructurada y modular con Python - Rosalía Peña Ros`: http://www.aenui.net/ojs/index.php?journal=revision&page=article&op=viewArticle&path%5B%5D=184
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion5>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.
