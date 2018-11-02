@@ -171,7 +171,7 @@ librería estándar Python llamada :ref:`format <python_funcion_format>`.
 
 .. tip::
     Para ejecutar el código :file:`constantes.py` y :file:`main.py`, abra una 
-    consola de comando, acceda al dirfectorio donde se encuentra ambos programas: :: 
+    consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
 
 		leccion3/
 		├── constantes.py
