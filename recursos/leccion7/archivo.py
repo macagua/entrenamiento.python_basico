@@ -10,22 +10,22 @@ import os
 print "\nCrear un archivo"
 print "================"
 
-nombre_archivo = 'datos.txt'
+NOMBRE_ARCHIVO = 'datos.txt'
 
-f = open(nombre_archivo, 'w') # abre el archivo datos.txt
+f = open(NOMBRE_ARCHIVO, 'w') # abre el archivo datos.txt
 f.write('Este es una prueba \ny otra prueba.')
 f.close()
 
-if nombre_archivo in os.listdir("."):
-    print "\nEl archivo se creo exitosamente en la siguiente ruta: \n\n" + "\t"+ os.getcwd() + "/" + nombre_archivo
+if NOMBRE_ARCHIVO in os.listdir("."):
+    print "\nArchivo creado con éxito en la ruta: \n\n" + "\t"+ os.getcwd() + "/" + NOMBRE_ARCHIVO
 else:
-    print "El archivo no se creo exitosamente\n"
+    print "El archivo no fue creado!!!\n"
 
 
 print "\n\nLeer un archivo"
 print "===============\n"
 
-f = open(nombre_archivo, 'r')
+f = open(NOMBRE_ARCHIVO, 'r')
 s = f.read()
 print s
 f.close()
@@ -34,7 +34,7 @@ f.close()
 print "\n\nIterar sobre un archivo"
 print "=======================\n"
 
-f = open(nombre_archivo, 'r')
+f = open(NOMBRE_ARCHIVO, 'r')
 for line in f:
     print line
 print "\n"
