@@ -87,6 +87,9 @@ desde la entrada estándar.
 ..
   :ref:`bltin-exceptions` lista las excepciones predefinidas y sus significados.
 
+.. todo::
+    TODO Escribir una lista las excepciones predefinidas y sus significados.
+
 
 Manejando excepciones
 .....................
@@ -152,7 +155,7 @@ usarse para mostrar un mensaje de error y luego re-generar la excepción
    import sys
 
    try:
-       f = open('datos.txt')
+       f = open('numeros.txt')
        s = f.readline()
        i = int(s.strip())
    except IOError as (errno, strerror):
@@ -436,7 +439,7 @@ e imprimir su contenido en la pantalla.
 
 ::
 
-   for linea in open("datos.txt"):
+   for linea in open("numeros.txt"):
        print linea
 
 
@@ -449,7 +452,7 @@ siempre se los libera rápido y en forma correcta.
 
 ::
 
-   with open("datos.txt") as f:
+   with open("numeros.txt") as f:
        for linea in f:
            print linea
 
@@ -457,3 +460,16 @@ Luego de que la declaración sea ejecutada, el archivo *f* siempre
 es cerrado, incluso si se encuentra un problema al procesar las 
 líneas. Otros objetos que provean acciones de limpieza predefinidas 
 lo indicarán en su documentación.
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion9/errores.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`errores.py`, abra una 
+    consola de comando, acceda al dirfectorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 errores.py
