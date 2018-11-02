@@ -3,8 +3,8 @@
 
 .. _python_leccion10:
 
-Uso de decoradores y módulos de la librería estándar
-====================================================
+Decoradores y la librería estándar
+==================================
 
 .. toctree::
    :maxdepth: 2

@@ -1,0 +1,413 @@
+.. -*- coding: utf-8 -*-
+
+
+.. _lecturas_suplementarias_entrenamiento:
+
+Lecturas suplementarias del entrenamiento
+=========================================
+
+Siempre aprender un nuevo lenguaje de programación tiene nuevos retos 
+desde aprender sobre la filosofía del lenguaje y hasta léxicos propios 
+los cuales hacen característico el uso y expresión de sus programas con 
+este nuevo lenguaje, más esto requiere práctica y tiempo para lograr la 
+fluidez en hablar y escribir programas en Python.
+
+Hay más contenido complementario o detallada que el contenido del entrenamiento 
+de las 10 lecciones cubiertas en este entrenamiento. Al finalizar, yo he 
+compilado una lista de lecturas relacionadas que soporta la información 
+que usted aprende en cada lección. Piensa que esto como materiales 
+suplementarios. Usted puede leerlo at your leisure para ayudar a incrementar 
+tanto la profundidad y breadth de su conocimiento.
+
+Las lecturas están organizada como las lecciones y sus temas.
+
+
+.. _lecturas_suplementarias_sesion1:
+
+Sesión 1 - Introducción al lenguaje Python
+------------------------------------------
+
+
+Introducción a Python
+.....................
+
+
+- `Wikipedia - Python <https://es.wikipedia.org/wiki/Python>`_.
+
+.. seealso::
+
+    .. figure:: _static/youtube/CjmzDHMHxwU.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación`_,
+        cortesía de `CodigoFacilito.com`_.
+
+
+Instalando Python
+.................
+
+.. seealso::
+
+    .. figure:: _static/youtube/VTykmP-a2KY.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 2 - Instalación`_, cortesía de `CodigoFacilito.com`_.
+
+.. _`Tutorial Python 1 - Introducción al Lenguaje de Programación`: https://www.youtube.com/watch?v=CjmzDHMHxwU
+.. _`Tutorial Python 2 - Instalación`: https://www.youtube.com/watch?v=VTykmP-a2KY
+
+
+.. _lecturas_suplementarias_sesion2:
+
+Sesión 2 - Introspección del lenguaje Python
+--------------------------------------------
+
+
+Inmersión al modo interactivo de Python
+.......................................
+
+- `Una pequeña inmersión al modo interactivo de Python`_ de la fundación Cenditel.
+
+
+Su primer programa - ¡Hola, mundo!
+..................................
+
+- `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_
+
+.. seealso::
+
+    .. figure:: _static/youtube/OtJEj7N9T6k.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 3 - Hola Mundo`_, cortesía de `CodigoFacilito.com`_.
+
+.. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
+.. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k
+
+
+.. _lecturas_suplementarias_sesion3:
+
+Sesión 3 - Tipos y estructuras de datos
+---------------------------------------
+
+- `Python - Tipos básicos <http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/>`_.
+
+Operadores aritméticos, tipo enteros y reales
+.............................................
+
+- `orden de precedencia - operadores aritméticos <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html#orden-de-precedencia>`_.
+
+- `Introducción a la programación en Python - clase 1 <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html>`_.
+
+.. seealso:: 
+
+    .. figure:: _static/youtube/ssnkfbBbcuw.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_, 
+        cortesía de `CodigoFacilito.com`_.
+
+.. _`Tutorial Python 4 - Enteros, reales y operadores aritméticos`: https://www.youtube.com/watch?v=ssnkfbBbcuw
+
+
+Tipo booleanos y cadenas de caracteres 
+......................................
+
+.. seealso:: 
+
+    .. figure:: _static/youtube/ZrxcqbFYjiw.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
+        cortesía de `CodigoFacilito.com`_.
+
+.. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
+
+
+Tipo listas
+...........
+
+- `Iterate over any sequence - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#iterate-over-any-sequence>`_.
+
+- `Listas I - clase 3 - Introducción a la programación en Python <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase03.html#Listas-I>`_.
+
+
+Tipo tuplas
+...........
+
+- `Keeping track of enumeration number - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#keeping-track-of-enumeration-number>`_.
+
+
+Tipo diccionarios
+.................
+
+- `Looping over a dictionary - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#looping-over-a-dictionary>`_.
+
+
+.. _lecturas_suplementarias_sesion4:
+
+Sesión 4 - Bloques de código y estructuras de control
+-----------------------------------------------------
+
+
+Condicional if
+..............
+
+- `Python - Tipos básicos <http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/>`_.
+
+- `Operadores básicos de Python <http://codigoprogramacion.com/cursos/tutoriales-python/operadores-basicos-de-python.html>`_.
+
+- `Sentencias IF <http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-if>`_.
+
+- `Condicionales if y else en Python <http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html>`_.
+
+.. seealso::
+
+    .. figure:: _static/youtube/hLqKvB7tGWk.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 10 - Sentencias condicionales`_, cortesía de `CodigoFacilito.com`_.
+
+.. _`Tutorial Python 10 - Sentencias condicionales`: https://www.youtube.com/watch?v=hLqKvB7tGWk
+
+
+Expresiones condicional
+.......................
+
+- `Conditional Expressions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#conditional-expressions>`_.
+
+
+Operadores lógicos
+..................
+
+.. seealso:: 
+
+    .. figure:: _static/youtube/ZrxcqbFYjiw.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
+        cortesía de `CodigoFacilito.com`_.
+
+
+Bucle while
+...........
+
+- `Introducción a Bucles 'while' <http://docs.python.org.ar/tutorial/2/introduction.html#primeros-pasos-hacia-la-programacion>`_.
+
+- `Ciclo while en Python <http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html>`_.
+
+.. seealso::
+
+    .. figure:: _static/youtube/IyI2ZuOq_xQ.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
+
+.. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
+
+
+Bucle for
+.........
+
+- Introducción a `Bucles 'for' <http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-for>`_.
+
+.. seealso::
+
+    .. figure:: _static/youtube/IyI2ZuOq_xQ.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
+
+.. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
+
+
+.. _lecturas_suplementarias_sesion5:
+
+Sesión 5 - Funciones y programación estructurada
+------------------------------------------------
+
+
+Funciones definidas por el usuario
+..................................
+
+- `Introducción a Funciones <http://docs.python.org.ar/tutorial/2/controlflow.html#definiendo-funciones>`_ - ¿Por qué?.
+
+- `Defining functions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/functions.html>`_.
+
+.. seealso::
+
+    .. figure:: _static/youtube/_C7Uj7O5o_Q.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 12 - Funciones`_, cortesía de `CodigoFacilito.com`_.
+
+.. _`Tutorial Python 12 - Funciones`: https://www.youtube.com/watch?v=_C7Uj7O5o_Q
+
+
+.. _lecturas_suplementarias_sesion6:
+
+Sesión 6 - Introspección a la depuración con pdb
+------------------------------------------------
+
+- `pdb — The Python Debugger <https://docs.python.org/2/library/pdb.html>`_.
+
+- `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://www.pybonacci.org/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
+
+
+.. seealso::
+
+    .. figure:: _static/youtube/N4NtB4r28h0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Depurando um programa Python com pdb - Python Debugger`_.
+
+.. _`Depurando um programa Python com pdb - Python Debugger`: https://www.youtube.com/watch?v=N4NtB4r28h0
+
+
+.. _lecturas_suplementarias_sesion7:
+
+Sesión 7 - Operaciones de E/S y manipulación de archivos
+--------------------------------------------------------
+
+
+Entrada / Salida en Python
+..........................
+
+- `Python Programming / Input and Output <https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output>`_.
+
+- `Python - Entrada / Salida. Ficheros <http://mundogeek.net/archivos/2008/04/02/python-entrada-salida-ficheros/>`_.
+
+
+.. seealso::
+
+    Ver los siguientes vídeos, cortesía de `CodigoFacilito.com`_:
+
+    .. figure:: _static/youtube/AzeUCuMvW6I.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 30 - Entrada Estándar rawInput`_.
+
+    .. figure:: https://img.youtube.com/vi/JPXgxK3Oc/0.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 31 - Salida Estándar rawInput`_.
+
+  .. todo:: 
+      TODO Cambiar la URL de imagen de previsualización del video 
+      *Tutorial Python 31 - Salida Estándar rawInput*, de forma local.
+
+.. _`Tutorial Python 30 - Entrada Estándar rawInput`: https://www.youtube.com/watch?v=AzeUCuMvW6I
+.. _`Tutorial Python 31 - Salida Estándar rawInput`: https://www.youtube.com/watch?v=B-JPXgxK3Oc
+
+
+Manipulación de archivos
+........................
+
+- `Input and Output - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/io.html>`_.
+
+
+.. _lecturas_suplementarias_sesion8:
+
+Sesión 8 - Creación de módulos y paquetes Python
+------------------------------------------------
+
+
+Scaffolding en proyectos Python
+...............................
+
+- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo <https://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout>`_ 
+  desde la comunidad de Plone Venezuela.
+
+
+.. _lecturas_suplementarias_sesion9:
+
+Sesión 9 - Manejos de errores y programación orientada a objetos
+----------------------------------------------------------------
+
+
+Programación orientada a objetos
+................................
+
+- `Programación orientada a objetos - Wikipedia <https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos>`_.
+
+- `Clases — Tutorial de Python v2.7.0 <http://docs.python.org.ar/tutorial/2/classes.html>`_.
+
+- `Object-oriented programming (OOP) - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/oop.html>`_.
+
+
+.. seealso::
+
+    .. figure:: _static/youtube/VYXdpjCZojA.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 13 - Clases y Objetos`_, cortesía de `CodigoFacilito.com`_.
+
+.. _`Tutorial Python 13 - Clases y Objetos`: https://www.youtube.com/watch?v=VYXdpjCZojA
+
+
+.. _lecturas_suplementarias_sesion10:
+
+Sesión 10 - Decoradores y la librería estándar
+----------------------------------------------
+
+
+Iteradores
+..........
+
+.. seealso::
+
+    Ver los siguientes vídeos, cortesía de `CodigoFacilito.com`_:
+
+    .. figure:: _static/youtube/87s8XQbUv1k.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 25 - Comprensión de Listas`_.
+
+    .. figure:: _static/youtube/tvHbC_OZV14.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 26 - Generadores`_.
+
+    .. figure:: _static/youtube/TaIWx9paNIA.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 27 - Decoradores`_.
+
+.. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
+.. _`Tutorial Python 26 - Generadores`: https://www.youtube.com/watch?v=tvHbC_OZV14
+.. _`Tutorial Python 27 - Decoradores`: https://www.youtube.com/watch?v=TaIWx9paNIA
+
+
+Listas de comprensión
+.....................
+
+
+- `List Comprehensions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#list-comprehensions>`_.
+
+.. seealso::
+
+    .. figure:: _static/youtube/87s8XQbUv1k.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 25 - Comprensión de Listas`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _`CodigoFacilito.com`: https://www.codigofacilito.com/

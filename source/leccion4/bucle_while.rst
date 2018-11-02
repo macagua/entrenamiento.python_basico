@@ -130,24 +130,7 @@ Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
 
 .. seealso::
 
-    .. figure:: https://img.youtube.com/vi/IyI2ZuOq_xQ/0.jpg
-        :align: center
-        :width: 60%
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.
 
-        Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
-
-    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
-
-
-Referencia
-..........
-
-- `Introducción a Bucles 'while'`_.
-
-- `Ciclo while en Python`_.
- 
 .. _`Sucesión de Fibonacci`: https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
-.. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
-.. _`Introducción a Bucles 'while'`: http://docs.python.org.ar/tutorial/2/introduction.html#primeros-pasos-hacia-la-programacion
-.. _`Ciclo while en Python`: http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html

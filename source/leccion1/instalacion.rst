@@ -29,17 +29,10 @@ Recursos de Descargas
 
 .. seealso::
 
-    .. figure:: https://img.youtube.com/vi/VTykmP-a2KY/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 2 - Instalación`_, cortesía de `CodigoFacilito.com`_.
-
-    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion1>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.
 
 .. _`Instalando Python en Windows`: https://www.youtube.com/watch?v=VTykmP-a2KY
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
 .. _`Instalando Python en una Mac`: https://es.wikibooks.org/wiki/Python/Instalaci%C3%B3n_de_Python/Python_en_Mac_OS_X
 .. _`Descarga Python`: https://www.python.org/downloads/
 .. _`PyPI - the Python Package Index`: https://pypi.org/
-.. _`Tutorial Python 2 - Instalación`: https://www.youtube.com/watch?v=VTykmP-a2KY

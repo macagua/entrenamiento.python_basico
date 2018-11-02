@@ -55,11 +55,3 @@ cuales se resumieron en esta tabla. A continuación el temario de esta lección:
    tipo_tuplas
    tipo_diccionarios
    tipo_conjuntos
-
-
-**Referencia**
-
-    - `Python - Tipos básicos`_.
-
-.. _`Python - Tipos básicos`: http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/
-

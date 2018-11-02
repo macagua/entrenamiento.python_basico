@@ -29,19 +29,5 @@ Usando Listas de comprensión con Archivos
 
 .. seealso::
 
-    .. figure:: https://img.youtube.com/vi/87s8XQbUv1k/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 25 - Comprensión de Listas`_, cortesía de `CodigoFacilito.com`_.
-
-	.. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
-
-Referencias
-...........
-
-- `List Comprehensions - Scipy lecture notes`_.
-
-.. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
-.. _`List Comprehensions - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#list-comprehensions
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion10>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

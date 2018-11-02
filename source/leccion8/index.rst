@@ -3,8 +3,8 @@
 
 .. _python_leccion8:
 
-Creación de módulos y paquetes Egg Python
-=========================================
+Creación de módulos y paquetes Python
+=====================================
 
 En Python las diversas aplicaciones Python se encuentran dentro de módulos 
 el cual los contienen el sistema de ficheros.

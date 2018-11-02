@@ -95,9 +95,7 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
     >>> help(tuple)
 
 
-Referencia
-..........
+.. seealso::
 
-- `Keeping track of enumeration number - Scipy lecture notes`_.
-
-.. _`Keeping track of enumeration number - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#keeping-track-of-enumeration-number
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

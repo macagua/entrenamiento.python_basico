@@ -213,12 +213,7 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
     >>> help(list)
 
 
-Referencia
-..........
+.. seealso::
 
-- `Iterate over any sequence - Scipy lecture notes`_.
-
-- `Listas I - clase 3 - Introducción a la programación en Python`_.
-
-.. _`Iterate over any sequence - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#iterate-over-any-sequence
-.. _`Listas I - clase 3 - Introducción a la programación en Python`: https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase03.html#Listas-I
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

@@ -408,26 +408,7 @@ nombres agrega el nombre de la clase:
 
 .. seealso::
 
-    .. figure:: https://img.youtube.com/vi/VYXdpjCZojA/0.jpg
-        :align: center
-        :width: 60%
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion9>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.
 
-        Vídeo `Tutorial Python 13 - Clases y Objetos`_, cortesía de `CodigoFacilito.com`_.
-
-    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
-
-
-Referencia
-..........
-
-- `Programación orientada a objetos - Wikipedia`_.
-
-- `Clases — Tutorial de Python v2.7.0`_.
-
-- `Object-oriented programming (OOP) - Scipy lecture notes`_.
-
-.. _`Tutorial Python 13 - Clases y Objetos`: https://www.youtube.com/watch?v=VYXdpjCZojA
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
 .. _`Programación orientada a objetos - Wikipedia`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos
-.. _`Clases — Tutorial de Python v2.7.0`: http://docs.python.org.ar/tutorial/2/classes.html
-.. _`Object-oriented programming (OOP) - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/oop.html

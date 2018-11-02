@@ -355,21 +355,5 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
 .. seealso::
 
-    .. figure:: https://img.youtube.com/vi/N4NtB4r28h0/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Depurando um programa Python com pdb - Python Debugger`_.
-
-  .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
-
-
-Referencia
-..........
-
-- `pdb — The Python Debugger`_.
-- `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation)`_.
- 
-.. _`pdb — The Python Debugger`: https://docs.python.org/2/library/pdb.html
-.. _`Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation)`: https://www.pybonacci.org/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python
-.. _`Depurando um programa Python com pdb - Python Debugger`: https://www.youtube.com/watch?v=N4NtB4r28h0
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion6>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

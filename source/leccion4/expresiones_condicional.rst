@@ -57,10 +57,7 @@ Estos son los distintos tipos de expresiones condicionales:
 |                   |                                                              |
 +-------------------+--------------------------------------------------------------+
 
+.. seealso::
 
-Referencia
-..........
-
-- `Conditional Expressions - Scipy lecture notes`_.
-
-.. _`Conditional Expressions - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#conditional-expressions
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

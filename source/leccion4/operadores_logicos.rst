@@ -66,16 +66,7 @@ A continuación, se presentan algunos ejemplos de su uso:
     :lines: 32-35
 
 
-.. seealso:: 
+.. seealso::
 
-    .. figure:: https://img.youtube.com/vi/ZrxcqbFYjiw/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
-        cortesía de `CodigoFacilito.com`_.
-
-    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
-
-.. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

@@ -19,15 +19,6 @@ general de GNU a partir de la versión 2.1.1, e incompatible en ciertas versione
 
 .. seealso::
 
-    .. figure:: https://img.youtube.com/vi/CjmzDHMHxwU/0.jpg
-        :align: center
-        :width: 60%
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion1>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.
 
-        Vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación`_,
-        cortesía de `CodigoFacilito.com`_.
-
-    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
-
-.. _`¿Qué es Python?`: https://es.wikipedia.org/wiki/Python
-.. _`Tutorial Python 1 - Introducción al Lenguaje de Programación`: https://www.youtube.com/watch?v=CjmzDHMHxwU
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/

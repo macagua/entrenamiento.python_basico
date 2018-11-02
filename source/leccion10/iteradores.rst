@@ -89,33 +89,7 @@ Ejercicios
     TODO escribir esta sección.
 
 
-
 .. seealso::
 
-    Ver los siguientes vídeos, cortesía de `CodigoFacilito.com`_:
-
-    .. figure:: https://img.youtube.com/vi/87s8XQbUv1k/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 25 - Comprensión de Listas`_.
-
-    .. figure:: https://img.youtube.com/vi/tvHbC_OZV14/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 26 - Generadores`_.
-
-    .. figure:: https://img.youtube.com/vi/TaIWx9paNIA/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 27 - Decoradores`_.
-
-
-  .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
- 
-.. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
-.. _`Tutorial Python 26 - Generadores`: https://www.youtube.com/watch?v=tvHbC_OZV14
-.. _`Tutorial Python 27 - Decoradores`: https://www.youtube.com/watch?v=TaIWx9paNIA
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion10>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

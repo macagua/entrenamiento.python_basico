@@ -22,4 +22,3 @@ mostrando ejemplos prácticos y utiles. A continuación el temario de esta lecci
    operadores_logicos
    bucle_while
    bucle_for
-

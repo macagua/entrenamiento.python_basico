@@ -56,6 +56,7 @@ Apéndices
 .. toctree::
    :maxdepth: 1
 
+   lecturas
    glosario
    licencia
 

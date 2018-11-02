@@ -146,19 +146,5 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
 .. seealso::
 
-    .. figure:: https://img.youtube.com/vi/OtJEj7N9T6k/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 3 - Hola Mundo`_, cortesía de `CodigoFacilito.com`_.
-
-    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
-
-
-Referencias
-...........
-
-- `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_
-
-.. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion2>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

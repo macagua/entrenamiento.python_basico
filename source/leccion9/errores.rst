@@ -457,16 +457,3 @@ Luego de que la declaración sea ejecutada, el archivo *f* siempre
 es cerrado, incluso si se encuentra un problema al procesar las 
 líneas. Otros objetos que provean acciones de limpieza predefinidas 
 lo indicarán en su documentación.
-
-..
-  .. seealso:: Ver el vídeo ``_ cortesía de CodigoFacilito.com.
-
-    .. todo:: Agregar imagen preview de youtube sobre el(los) video(s) anterior(es).
-
-
-  Referencia
-  ..........
-
-  - ``_.
-   
-  .. _``: 

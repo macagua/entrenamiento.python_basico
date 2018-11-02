@@ -70,9 +70,7 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
     >>> help(dict)
 
 
-Referencia
-..........
+.. seealso::
 
-- `Looping over a dictionary - Scipy lecture notes`_.
-
-.. _`Looping over a dictionary - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#looping-over-a-dictionary
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

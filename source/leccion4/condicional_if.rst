@@ -116,30 +116,5 @@ intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
 
 .. seealso::
 
-    .. figure:: https://img.youtube.com/vi/hLqKvB7tGWk/0.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 10 - Sentencias condicionales`_, cortesía de `CodigoFacilito.com`_.
-
-    .. todo:: Cambiar la URL de imagen de previsualización del video, de forma local.
-
-    **Otros recursos**
-      - `Python - Tipos básicos`_.
-
-      - `Operadores básicos de Python`_.
-
-
-Referencias
-...........
-
-- `Sentencias IF`_.
-
-- `Condicionales if y else en Python`_.
-
-.. _`Python - Tipos básicos`: http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/
-.. _`Operadores básicos de Python`: http://codigoprogramacion.com/cursos/tutoriales-python/operadores-basicos-de-python.html
-.. _`Tutorial Python 10 - Sentencias condicionales`: https://www.youtube.com/watch?v=hLqKvB7tGWk
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
-.. _`Sentencias IF`: http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-if
-.. _`Condicionales if y else en Python`: http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

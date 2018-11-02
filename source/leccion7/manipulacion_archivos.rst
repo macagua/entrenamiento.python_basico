@@ -190,9 +190,7 @@ siguiente forma:
 Para salir de esa ayuda presione la tecla ``q``.
 
 
-Referencia
-..........
+.. seealso::
 
-- `Input and Output - Scipy lecture notes`_.
-
-.. _`Input and Output - Scipy lecture notes`: https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/io.html
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion7>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

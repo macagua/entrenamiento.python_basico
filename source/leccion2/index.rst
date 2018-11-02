@@ -3,8 +3,8 @@
 
 .. _python_leccion2:
 
-Introspección del lenguaje como IPython
-=======================================
+Introspección del lenguaje Python
+=================================
 
 En Python siendo un lenguaje interpretado tiene a disposición un shell 
 de comando para hacer introspección del lenguaje, ademas también existe 
