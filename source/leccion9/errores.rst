@@ -464,12 +464,12 @@ lo indicarán en su documentación.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion9/errores.py>`.
+    :download:`aquí <../../recursos/leccion9/excepciones_integradas.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`errores.py`, abra una 
+    Para ejecutar el código :file:`excepciones_integradas.py`, abra una 
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python2 errores.py
+        python2 excepciones_integradas.py
