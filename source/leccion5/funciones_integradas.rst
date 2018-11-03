@@ -563,8 +563,8 @@ La función ``format()`` devuelve una versión formateada, usando sustituciones 
 index()
 ~~~~~~~
 
-La función ``index()`` es como la función ``find()`` pero arroja el error ``ValueError`` 
-cuando la sub-cadena no es encontrada.
+La función ``index()`` es como la función ``find()`` pero arroja una excepción 
+:ref:`ValueError <python_exception_valueerror>` cuando la sub-cadena no es encontrada.
 
 ::
 

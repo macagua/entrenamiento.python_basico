@@ -18,4 +18,5 @@ continuación el temario de esta lección:
    :maxdepth: 2
 
    errores
+   exceptions
    poo

@@ -273,7 +273,8 @@ También puede convertir una cadena de caracteres a un número entero.
 
 
 La función ``int()`` sólo procesa correctamente cadenas que contengan exclusivamente 
-números. Si la cadena contiene cualquier otro carácter, la función devuelve un error.
+números. Si la cadena contiene cualquier otro carácter, la función devuelve una excepción 
+:ref:`ValueError <python_exception_valueerror>`.
 
 ::
 
@@ -317,7 +318,8 @@ También puede convertir una cadena de caracteres a un número entero.
 
 
 La función ``long()`` sólo procesa correctamente cadenas que contengan exclusivamente 
-números. Si la cadena contiene cualquier otro carácter, la función devuelve un error.
+números. Si la cadena contiene cualquier otro carácter, la función devuelve una excepción 
+:ref:`ValueError <python_exception_valueerror>`.
 
 ::
 
@@ -388,7 +390,7 @@ coherentes con un número entero.
 
 La función ``complex()`` sólo procesa correctamente cadenas que contengan 
 exclusivamente números.Si la cadena contiene cualquier otro carácter, la 
-función devuelve un error.
+función devuelve una excepción :ref:`ValueError <python_exception_valueerror>`.
 
 ::
 
@@ -397,7 +399,6 @@ función devuelve un error.
       File "<stdin>", line 1, in <module>
     ValueError: complex() arg is a malformed string
     >>> 
-
 
 ----
 

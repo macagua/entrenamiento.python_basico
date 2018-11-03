@@ -67,7 +67,9 @@ en mensajes de error como los mostrados aquí:
 La última línea de los mensajes de error indica qué sucedió. 
 Las excepciones vienen de distintos tipos, y el tipo se imprime 
 como parte del mensaje: los tipos en el ejemplo son: 
-:exc:`ZeroDivisionError`, :exc:`NameError` y :exc:`TypeError`. 
+:ref:`ZeroDivisionError <python_exception_zerodivisionerror>`, 
+:ref:`NameError <python_exception_nameerror>` y 
+:ref:`TypeError <python_exception_typeerror>`. 
 La cadena mostrada como tipo de la excepción es el nombre de
 la excepción predefinida que ocurrió. Esto es verdad para todas 
 las excepciones predefinidas del intérprete, pero no necesita 
@@ -84,11 +86,7 @@ la excepción sucedió, en la forma de un *trazado del error*
 listando líneas fuente; sin embargo, no mostrará líneas leídas 
 desde la entrada estándar.
 
-..
-  :ref:`bltin-exceptions` lista las excepciones predefinidas y sus significados.
-
-.. todo::
-    TODO Escribir una lista las excepciones predefinidas y sus significados.
+:ref:`python_excepciones_integradas`, lista las excepciones predefinidas y sus significados.
 
 
 Manejando excepciones
@@ -256,7 +254,7 @@ que ocurra una excepción específica. Por ejemplo:
 
 El único argumento a :keyword:`raise` indica la excepción a generarse. 
 Tiene que ser o una instancia de excepción, o una clase de excepción 
-(una clase que hereda de :class:`Exception`).
+(una clase que hereda de :ref:`Exception <python_exception>`).
 
 Si necesitás determinar cuando una excepción fue lanzada pero no querés
 manejarla, una forma simplificada de la instrucción :keyword:`raise` te 
@@ -282,8 +280,8 @@ Excepciones definidas por el usuario
 Los programas pueden nombrar sus propias excepciones creando una 
 nueva clase excepción (mirá el apartado de :ref:`Clases <python_poo>` para más 
 información sobre las clases de Python). Las excepciones, típicamente, 
-deberán derivar de la clase :exc:`Exception`, directa o indirectamente. 
-Por ejemplo:
+deberán derivar de la clase :ref:`Exception <python_exception>`, directa o 
+indirectamente. Por ejemplo:
 
 ::
 
@@ -304,7 +302,7 @@ Por ejemplo:
      File "<stdin>", line 1, in ?
    __main__.MiError: 'oops!'
 
-En este ejemplo, el método :meth:`__init__` de :class:`Exception` 
+En este ejemplo, el método :meth:`__init__` de :ref:`Exception <python_exception>` 
 fue sobrescrito. El nuevo comportamiento simplemente crea el atributo 
 *valor*. 
 
@@ -419,9 +417,10 @@ ejemplo más complicado (cláusulas :keyword:`except` y
 
 
 Como puedes ver, la cláusula :keyword:`finally` es ejecutada siempre. 
-La excepción :exc:`TypeError` lanzada al dividir dos cadenas de caracteres 
-no es manejado por la cláusula :keyword:`except` y por lo tanto es 
-relanzada luego de que se ejecuta la cláusula :keyword:`finally`.
+La excepción :ref:`TypeError <python_exception_typeerror>` lanzada 
+al dividir dos cadenas de caracteres no es manejado por la cláusula 
+:keyword:`except` y por lo tanto es relanzada luego de que se ejecuta 
+la cláusula :keyword:`finally`.
 
 En aplicaciones reales, la cláusula :keyword:`finally` es útil para 
 liberar recursos externos (como archivos o conexiones de red), sin 

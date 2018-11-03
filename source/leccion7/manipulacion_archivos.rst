@@ -9,6 +9,8 @@ Manipulación de archivos
 Para escribir o leer cadenas de caracteres para/desde archivos (otros tipos deben 
 ser convertidas a cadenas de caracteres). 
 
+.. _python_funcion_open:
+
 open()
 ......
 
@@ -46,6 +48,8 @@ Para crear en un archivo:
 	<type 'file'>
 
 
+.. _python_funcion_read:
+
 read()
 ......
 
@@ -74,6 +78,8 @@ continuación un ejemplo:
 	and another test
 
 
+.. _python_funcion_readline:
+
 readline()
 ..........
 
@@ -94,6 +100,8 @@ mientras que una línea en blanco se representa con un carácter de nueva línea
 	>>> 
 
 
+.. _python_funcion_readlines:
+
 readlines()
 ...........
 
@@ -107,6 +115,8 @@ líneas del archivo.
 	>>> print(lines)
 	['Este es una prueba \n', 'y otra prueba']
 
+
+.. _python_funcion_write:
 
 write()
 .......
@@ -123,6 +133,8 @@ debe convertir a cadena de caracteres.
 	>>> f.write('Este es una prueba \ny otra prueba') # escribe el archivo datos.txt
 
 
+.. _python_funcion_close:
+
 close()
 .......
 
@@ -138,8 +150,8 @@ los recursos tomados por el manejo del archivo. Eso se hace con la sentencia
 
 
 Luego de lo cual no se puede acceder al archivo ``datos.txt``, si intenta 
-una invocación a la función ``f.read()`` devuelve un error, porque el archivo 
-está cerrado:
+una invocación a la función :ref:`f.read() <python_funcion_read>` devuelve una excepción 
+:ref:`ValueError <python_exception_valueerror>`, porque el archivo está cerrado:
 
 ::
 

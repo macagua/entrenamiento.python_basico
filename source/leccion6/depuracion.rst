@@ -51,7 +51,7 @@ Postmortem
 
 **Situación**: Estás trabajando en ``ipython`` y obtienes un error (`traceback`).
 
-En este caso estamos depurando el fichero :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza un :class:`IndexError`. Escribe ``%debug`` y entrarás en el depurador.
+En este caso estamos depurando el fichero :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`. Escribe ``%debug`` y entrarás en el depurador.
 
 .. sourcecode:: ipython
 
