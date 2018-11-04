@@ -19,7 +19,5 @@ la Web para tomar en cuenta. A continuación el temario de esta lección:
 
    introduccion
    caracteristicas
-   porque
    instalacion
    soporte
-   recursos

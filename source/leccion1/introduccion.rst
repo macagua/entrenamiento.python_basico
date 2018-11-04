@@ -13,6 +13,12 @@ procesar fácilmente todo tipo de estructuras de datos, tanto numéricos como de
 Python es software libre, y está implementado en :ref:`todas las plataformas <python_multiplataforma>` 
 y sistemas operativos habituales.
 
+
+.. _python_software_foundation:
+
+Python Software Foundation
+..........................
+
 Es administrado por la Python Software Foundation. Posee una licencia de código abierto, 
 denominada Python Software Foundation License, [3] que es compatible con la Licencia pública 
 general de GNU a partir de la versión 2.1.1, e incompatible en ciertas versiones anteriores.

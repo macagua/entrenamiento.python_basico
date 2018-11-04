@@ -25,8 +25,8 @@ a continuación:
 
 .. _python_fuertemente_tipado:
 
-Python es fuertemente tipado
-............................
+Fuertemente tipado
+..................
 
 El `fuertemente tipado`_ significa que el tipo de valor no cambia repentinamente. 
 Un string que contiene solo dígitos no se convierte mágicamente en un número. Cada 
@@ -40,8 +40,8 @@ concepto:
 
 .. _python_tipado_dinamico:
 
-Python es tipado dinámico
-.........................
+Tipado dinámico
+...............
 
 El `tipado dinámico`_ significa que los objetos en tiempo de ejecución (valores) 
 tienen un tipo, a diferencia del tipado estático donde las variables tienen un tipo.
@@ -54,8 +54,8 @@ A continuación un ejemplo de este concepto:
 
 .. _python_multiplataforma:
 
-Python es multiplataforma
-.........................
+Multiplataforma
+...............
 
 Python es `multiplataforma`_, lo cual es ventajoso para hacer ejecutable su código fuente 
 entre varios sistema operativos, eso quiere decir, soporta las siguientes plataformas para 
@@ -65,15 +65,22 @@ su ejecución:
   (arquitectura x86/x86-64 en presentación de ejecutable, archivo Zip, instalador basado en 
   la Web).
 
-- Versiones Python para `Mac OSX (Macintosh) <https://www.python.org/downloads/mac-osx/>`_ (arquitectura 
-  32bit/64bit en presentación de instalador ejecutable).
+  .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en Windows <python_instalacion_windows>`.
+
+- Versiones Python para `Mac OSX (Macintosh) <https://www.python.org/downloads/mac-osx/>`_ 
+  (arquitectura 32bit/64bit en presentación de instalador ejecutable).
+
+  .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en una Mac <python_instalacion_mac>`.
 
 - Versiones Python en `código fuente <https://www.python.org/downloads/source/>`_ (archivo 
   tarball del código fuente comprimido con XZ y con Gz). Para las mayoría de los sistemas 
   Linux/UNIX, usted debe descargar y compilar el código fuente.
 
+  .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en un Linux <python_instalacion_linux>`.
+
 - Versiones de `Implementaciones Alternativas Python <https://www.python.org/download/alternatives/>`_, 
-  la versión "tradicional" de Python (tiene nombre código ``CPython``). Existen un número de implementaciones alternativas que están disponibles a continuación:
+  la versión "tradicional" de Python (tiene nombre código ``CPython``). Existen un número de 
+  implementaciones alternativas que están disponibles a continuación:
 
     - `IronPython <http://ironpython.net/>`_, Python ejecutando en .NET.
 
@@ -81,16 +88,18 @@ su ejecución:
 
     - `PyPy <http://pypy.org/>`_, Una rápida implementación de python con un compilador JIT.
 
-    - `Stackless Python <http://www.stackless.com/>`_, Rama del desarrollo del ``CPython`` que soporta microthreads.
+    - `Stackless Python <http://www.stackless.com/>`_, Rama del desarrollo del ``CPython`` que 
+       soporta microthreads.
 
     - `MicroPython <http://micropython.org/>`_, Python ejecutando en micro controladores.
 
 - Versiones de Python en `otras plataformas <https://www.python.org/download/other/>`_,
-  la versión "tradicional" de Python (tiene nombre código ``CPython``), mas esta versión ha sido migrada 
-  a un número plataformas especializadas y/o antiguas, a continuación se destacan algunas de ellas. 
+  la versión "tradicional" de Python (tiene nombre código ``CPython``), mas esta versión ha 
+  sido migrada a un número plataformas especializadas y/o antiguas, a continuación se destacan 
+  algunas de ellas. 
 
-    - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un completo 
-      entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
+    - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un 
+      completo entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
 
     - `ActivePython <http://www.activestate.com/activepython/>`_, Python para Solaris, Usted puede 
       comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
@@ -118,10 +127,10 @@ Filosofía "Incluye baterías"
 
 
 Zen de Python
-~~~~~~~~~~~~~
+.............
 
 Es una colección de 20 principios de software que influyen en el diseño del Lenguaje 
-de Programación Python, de los cuales 19 fueron escritos por Tim Peters1 en junio de 
+de Programación Python, de los cuales 19 fueron escritos por Tim Peters en junio de 
 1999. El texto es distribuido como dominio público.
 
 El Zen de Python está escrito como la entrada informativa número 20 de las Propuestas 
@@ -166,10 +175,10 @@ Los principios están listados a continuación:
 
 - Si la implementación es fácil de explicar, puede que sea una buena idea.
 
-- Los espacios de nombres (namespaces) son una gran idea ¡Hagamos más de esas cosas!
+- Los espacios de nombres (``namespaces``) son una gran idea ¡Hagamos más de esas cosas!
 
-También se incluye como un huevo de pascua en el intérprete de Python, mostrandosé al 
-ingresar la instrucción: 
+También se incluye como un *huevo de pascua*, el cual se puede encontrar, desde el 
+:ref:`intérprete de Python <python_interactivo>`, ingresar la siguiente instrucción: 
 
 ::
 
