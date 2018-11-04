@@ -184,6 +184,9 @@ Para convertir a tipos cadenas de caracteres debes usar las
 al interprete disponible, a continuación se describen algunas 
 de ellas para tipos de datos cadenas de caracteres:
 
+
+.. _python_funcion_str:
+
 str()
 ~~~~~
 
