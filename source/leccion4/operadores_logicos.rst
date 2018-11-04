@@ -47,7 +47,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :linenos:
     :language: python
-    :lines: 16-19
+    :lines: 16-20
 
 
 **Ejemplo de operador lógico or**:
@@ -55,7 +55,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :linenos:
     :language: python
-    :lines: 24-27
+    :lines: 25-31
 
 
 **Ejemplo de operador lógico not**:
@@ -63,7 +63,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :linenos:
     :language: python
-    :lines: 32-35
+    :lines: 36-40
 
 
 .. important::
