@@ -31,6 +31,17 @@ Sesión 1 - Introducción al lenguaje Python
 Introducción a Python
 .....................
 
+- `Pagina Web Oficial <https://www.python.org/>`_.
+
+- `Documentación oficial de Python 2.7 <https://docs.python.org/2.7/>`_.
+
+- `Tutorial de Python 2.7 <http://docs.python.org.ar/tutorial/2/contenido.html>`_.
+
+- `Python para programadores con experiencia <http://es.diveintopython.net/odbchelper_divein.html>`_.
+
+- `Introducción a la programación con Python <http://www.mclibre.org/consultar/python/>`_.
+
+- `Python Tutorial <http://www.tutorialspoint.com/python/index.htm>`_.
 
 - `Wikipedia - Python <https://es.wikipedia.org/wiki/Python>`_.
 
@@ -47,6 +58,10 @@ Introducción a Python
 Instalando Python
 .................
 
+- `Descarga Python <https://www.python.org/downloads/>`_.
+
+- `PyPI - the Python Package Index <https://pypi.org/>`_.
+
 .. seealso::
 
     .. figure:: _static/youtube/VTykmP-a2KY.jpg
@@ -57,6 +72,9 @@ Instalando Python
 
 .. _`Tutorial Python 1 - Introducción al Lenguaje de Programación`: https://www.youtube.com/watch?v=CjmzDHMHxwU
 .. _`Tutorial Python 2 - Instalación`: https://www.youtube.com/watch?v=VTykmP-a2KY
+
+
+----
 
 
 .. _lecturas_suplementarias_sesion2:
@@ -86,6 +104,9 @@ Su primer programa - ¡Hola, mundo!
 
 .. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
 .. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k
+
+
+----
 
 
 .. _lecturas_suplementarias_sesion3:
@@ -147,6 +168,9 @@ Tipo diccionarios
 .................
 
 - `Looping over a dictionary - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#looping-over-a-dictionary>`_.
+
+
+----
 
 
 .. _lecturas_suplementarias_sesion4:
@@ -230,6 +254,9 @@ Bucle for
 .. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
 
 
+----
+
+
 .. _lecturas_suplementarias_sesion5:
 
 Sesión 5 - Funciones y programación estructurada
@@ -264,6 +291,9 @@ Programación estructurada
 - `Paseo por la programación estructurada y modular con Python - Rosalía Peña Ros <http://www.aenui.net/ojs/index.php?journal=revision&page=article&op=viewArticle&path%5B%5D=184>`_.
 
 
+----
+
+
 .. _lecturas_suplementarias_sesion6:
 
 Sesión 6 - Introspección a la depuración con pdb
@@ -283,6 +313,9 @@ Sesión 6 - Introspección a la depuración con pdb
         Vídeo `Depurando um programa Python com pdb - Python Debugger`_.
 
 .. _`Depurando um programa Python com pdb - Python Debugger`: https://www.youtube.com/watch?v=N4NtB4r28h0
+
+
+----
 
 
 .. _lecturas_suplementarias_sesion7:
@@ -329,6 +362,9 @@ Manipulación de archivos
 - `Input and Output - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/io.html>`_.
 
 
+----
+
+
 .. _lecturas_suplementarias_sesion8:
 
 Sesión 8 - Creación de módulos y paquetes Python
@@ -346,6 +382,9 @@ Scaffolding en proyectos Python
 
 - `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo <https://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout>`_ 
   desde la comunidad de Plone Venezuela.
+
+
+----
 
 
 .. _lecturas_suplementarias_sesion9:
@@ -373,6 +412,9 @@ Programación orientada a objetos
         Vídeo `Tutorial Python 13 - Clases y Objetos`_, cortesía de `CodigoFacilito.com`_.
 
 .. _`Tutorial Python 13 - Clases y Objetos`: https://www.youtube.com/watch?v=VYXdpjCZojA
+
+
+----
 
 
 .. _lecturas_suplementarias_sesion10:
