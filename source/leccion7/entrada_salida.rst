@@ -109,6 +109,7 @@ las cadenas de caracteres y variables:
 	el resultado de raíz cuadrada de dos es: 1.41421356237
 	>>> 
 
+.. _python_funcion_format_detalle:
 
 format()
 ````````
