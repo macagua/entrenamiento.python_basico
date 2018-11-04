@@ -32,8 +32,8 @@ Para los bucles o iteraciones existen las estructuras :ref:`while <python_bucle_
 y :ref:`for <python_bucle_for>`.
 
 
-Ventajas de la programación estructurada
-........................................
+Ventajas del paradigma
+......................
 
 Entre las ventajas de la programación estructurada sobre el modelo anterior (hoy 
 llamado despectivamente *código espagueti*), cabe citar las siguientes:

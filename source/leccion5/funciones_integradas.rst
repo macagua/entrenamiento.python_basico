@@ -558,6 +558,9 @@ La función ``format()`` devuelve una versión formateada, usando sustituciones 
     'Nombre: leonardo caballero'
 
 
+.. tip:: Para mayor información consulte la sección :ref:`format() <python_funcion_format_detalle>` detallada.
+
+
 .. _python_funcion_index:
 
 index()
