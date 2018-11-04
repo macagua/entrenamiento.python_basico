@@ -141,6 +141,8 @@ Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
         python2 bucle_while.py
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 

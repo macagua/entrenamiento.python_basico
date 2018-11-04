@@ -378,6 +378,8 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
         python2 funcion_a_depurar.py
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion6>` 

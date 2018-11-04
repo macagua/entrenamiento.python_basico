@@ -70,6 +70,8 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
     >>> help(dict)
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 

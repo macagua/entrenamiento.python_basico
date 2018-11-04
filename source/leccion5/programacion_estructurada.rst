@@ -60,6 +60,8 @@ llamado despectivamente *código espagueti*), cabe citar las siguientes:
 .. todo::
     TODO terminar de escribir esta sección
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion5>` 

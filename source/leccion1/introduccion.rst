@@ -17,6 +17,8 @@ Es administrado por la Python Software Foundation. Posee una licencia de código
 denominada Python Software Foundation License, [3] que es compatible con la Licencia pública 
 general de GNU a partir de la versión 2.1.1, e incompatible en ciertas versiones anteriores.
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion1>` 

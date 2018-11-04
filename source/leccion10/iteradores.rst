@@ -89,6 +89,8 @@ Ejercicios
     TODO escribir esta sección.
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion10>` 

@@ -79,6 +79,8 @@ A continuación, se presentan algunos ejemplos de su uso:
         python2 operadores_logicos.py
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 

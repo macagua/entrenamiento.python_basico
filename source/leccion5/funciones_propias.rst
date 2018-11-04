@@ -197,6 +197,8 @@ A continuación, se presenta un ejemplo del uso de invocar funciones:
         python2 funciones.py
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion5>` 

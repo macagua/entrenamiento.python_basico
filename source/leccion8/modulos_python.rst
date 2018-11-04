@@ -34,6 +34,8 @@ Probar su módulo desde el interprete Python.
     y :download:`programa.py <../../recursos/leccion8/mi_modulo/programa.py>`.
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion8>` 

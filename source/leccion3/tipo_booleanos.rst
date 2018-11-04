@@ -73,6 +73,8 @@ forma:
 Para salir de esa ayuda presione la tecla ``q``.
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 

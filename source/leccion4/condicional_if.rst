@@ -128,6 +128,8 @@ intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
         python2 condicional_if.py
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 

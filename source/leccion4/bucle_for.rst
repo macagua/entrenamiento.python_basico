@@ -112,6 +112,8 @@ que en las demás estructuras de control.
         python2 bucle_for.py
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 

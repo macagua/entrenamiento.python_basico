@@ -453,6 +453,8 @@ Para salir de esa ayuda presione la tecla ``q``.
     Para más información consulte las funciones integradas para 
     :ref:`operaciones numéricas <python_funciones_integradas_numericas>`.
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 

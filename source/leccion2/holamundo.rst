@@ -144,6 +144,8 @@ Ejecutar un programa en Mac OSX
 Enhorabuena, usted ha ejecutado su primer programa Python.
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion2>` 

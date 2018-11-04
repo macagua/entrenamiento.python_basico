@@ -224,6 +224,8 @@ izquierda por el operador del lado derecho y devuelve el resto.
         python2 operadores_asignaciones.py
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 

@@ -200,6 +200,8 @@ valor con 8 dígitos después de la coma:
 	https://docs.python.org/2/tutorial/inputoutput.html
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion7>` 

@@ -27,6 +27,8 @@ Recursos de Descargas
 - `PyPI - the Python Package Index`_.
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion1>` 
