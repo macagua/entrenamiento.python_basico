@@ -8,7 +8,7 @@ RUTA_ARCHIVO = os.path.join(RUTA_BASE, 'numeros.txt')
 linea1, linea2 = 1, 3
 
 archivo = open(RUTA_ARCHIVO, 'w')
-archivo.write("1\n2")
+archivo.write("1\n2\n")
 archivo.close()
 
 try:
