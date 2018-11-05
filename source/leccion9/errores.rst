@@ -86,7 +86,8 @@ la excepción sucedió, en la forma de un *trazado del error*
 listando líneas fuente; sin embargo, no mostrará líneas leídas 
 desde la entrada estándar.
 
-:ref:`python_excepciones_integradas`, lista las excepciones predefinidas y sus significados.
+:ref:`python_excepciones_integradas`, es una lista las excepciones 
+predefinidas y sus significados.
 
 
 Manejando excepciones
@@ -97,7 +98,8 @@ Mirá el siguiente ejemplo, que le pide al usuario una entrada hasta
 que ingrese un entero válido, pero permite al usuario interrumpir 
 el programa (usando :kbd:`Control-C` o lo que sea que el sistema 
 operativo soporte); notá que una interrupción generada por el usuario 
-se señaliza generando la excepción :exc:`KeyboardInterrupt`.
+se señaliza generando la excepción 
+:ref:`KeyboardInterrupt <python_exception_keyboardinterrupterror>`.
 
 ::
 
@@ -278,8 +280,8 @@ Excepciones definidas por el usuario
 ....................................
 
 Los programas pueden nombrar sus propias excepciones creando una 
-nueva clase excepción (mirá el apartado de :ref:`Clases <python_poo>` para más 
-información sobre las clases de Python). Las excepciones, típicamente, 
+nueva clase excepción (mirá el apartado de :ref:`Clases <python_poo>` para 
+más información sobre las clases de Python). Las excepciones, típicamente, 
 deberán derivar de la clase :ref:`Exception <python_exception>`, directa o 
 indirectamente. Por ejemplo:
 
@@ -293,7 +295,7 @@ indirectamente. Por ejemplo:
    ...
    >>> try:
    ...     raise MiError(2*2)
-   ... except MyError as e:
+   ... except MiError as e:
    ...     print u'Ha ocurrido mi excepción, valor:', e.valor
    ...
    Ocurrió mi excepción, valor: 4
@@ -433,8 +435,9 @@ Acciones predefinidas de limpieza
 Algunos objetos definen acciones de limpieza estándar que llevar 
 a cabo cuando el objeto no es más necesitado, independientemente 
 de que las operaciones sobre el objeto hayan sido exitosas o no. 
-Mirá el siguiente ejemplo, que intenta :ref:`abrir un archivo <python_manipular_archivo>` 
-e imprimir su contenido en la pantalla.
+Mirá el siguiente ejemplo, que intenta 
+:ref:`abrir un archivo <python_manipular_archivo>` e imprimir su 
+contenido en la pantalla.
 
 ::
 
