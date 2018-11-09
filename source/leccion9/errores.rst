@@ -276,6 +276,8 @@ permite relanzarla:
    NameError: Hola
 
 
+.. _python_excepciones_usuario:
+
 Excepciones definidas por el usuario
 ....................................
 
@@ -465,13 +467,23 @@ lo indicarán en su documentación.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion9/excepciones_integradas.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en los 
+    siguientes enlaces: 
+    :download:`excepciones_integradas.py <../../recursos/leccion9/excepciones_integradas.py>`,
+    :download:`excepciones_propias.py <../../recursos/leccion9/excepciones_propias.py>` 
+    y :download:`errores_propios.py <../../recursos/leccion9/errores_propios.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`excepciones_integradas.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+    Para ejecutar el código :file:`excepciones_integradas.py` y :file:`errores_propios.py`, 
+    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+
+        leccion9/
+        ├── excepciones_integradas.py
+        ├── excepciones_propias.py
+        └── errores_propios.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
         python2 excepciones_integradas.py
+        python2 errores_propios.py
