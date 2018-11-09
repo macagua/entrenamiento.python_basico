@@ -16,8 +16,9 @@ explícitamente, pues las excepciones vienen proporcionadas por el espacio nomin
 Dos objetos de cadena distintos con el mismo valor se consideran diferentes excepciones. 
 Esto es así para forzar a los programadores a usar nombres de excepción en lugar de su 
 valor textual al especificar gestores de excepciones. El valor de cadena de todas las 
-excepciones internas es su nombre, pero no es un requisito para las excepciones definidas 
-por el usuario u otras excepciones definidas por módulos de biblioteca.
+excepciones internas es su nombre, pero no es un requisito para las 
+:ref:`excepciones definidas por el usuario <python_excepciones_usuario>` u otras excepciones 
+definidas por módulos de biblioteca.
 
 En el caso de las clases de excepción, en una sentencia ``try`` con una cláusula ``except`` 
 que mencione una clase particular, esta cláusula también gestionará cualquier excepción 
@@ -47,9 +48,8 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
 .. _python_exception_baseexceptionerror:
 
 ``BaseException``
-	La clase base de todas las comunes excepciones. 
-
-	.. todo:: Terminar de escribir sobre la excepción BaseException.
+	La clase base de todas las comunes excepciones. Deriva de la clase raíz ``__builtin__.object``, 
+	es el tipo más básico.
 
 
 .. _python_exception:
@@ -73,8 +73,8 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
 
 ``StandardError``
 	La clase base para todas las excepciones internas excepto 
-	:ref:`SystemExit <python_exception_systemexit>`. La excepción ``StandardError`` 
-	deriva de la clase raíz :ref:`Exception <python_exception>`.
+	:ref:`SystemExit <python_exception_systemexit>`. Deriva de la clase raíz 
+	:ref:`Exception <python_exception>`.
 
 
 .. _python_exception_arithmeticerror:
@@ -83,7 +83,8 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
 	La clase base de las excepciones lanzadas por diversos errores aritméticos: 
 	:ref:`OverflowError <python_exception_overflowerror>`, 
 	:ref:`ZeroDivisionError <python_exception_zerodivisionerror>` y	
-	:ref:`FloatingPointError <python_exception_floatingpointerror>`.
+	:ref:`FloatingPointError <python_exception_floatingpointerror>`. Deriva de la clase raíz 
+	:ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_lookuperror:
@@ -92,6 +93,7 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
 	La clase base de las excepciones lanzadas cuando una clave o índice utilizado en 
 	una correspondencia (diccionario) o secuencia son incorrectos: 
 	:ref:`IndexError <python_exception_indexerror>`, :ref:`KeyError <python_exception_keyerror>`.
+	Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_environmenterror:
@@ -113,6 +115,7 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
 	de argumentos diferente de 3. Los atributos ``errno`` y ``strerror`` son también 
 	``None`` cuando la instancia no se cree con 2 ó 3 argumentos. En este último caso, 
 	``args`` contiene los argumentos del constructor tal cual, en forma de tupla.
+	Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 Las siguientes excepciones son las realmente lanzadas.
@@ -120,7 +123,8 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_assertionerror:
 
 ``AssertionError``
-	Se lanza cuando una sentencia ``assert`` es ``False``.
+	Se lanza cuando una sentencia ``assert`` es ``False``. Deriva de la clase raíz 
+	:ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_attributeerror:
@@ -128,7 +132,8 @@ Las siguientes excepciones son las realmente lanzadas.
 ``AttributeError``
 	Se lanza cuando una referencia o asignación a atributo fracasa (cuando un objeto no tenga 
 	referencias o asignaciones a atributos en absoluto, se lanza, la excepción 
-	:ref:`TypeError <python_exception_typeerror>`.)
+	:ref:`TypeError <python_exception_typeerror>`.) Deriva de la clase raíz 
+	:ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_buffererror:
@@ -142,10 +147,10 @@ Las siguientes excepciones son las realmente lanzadas.
 
 ``EOFError``
 	Se lanza cuando las funciones internas (:ref:`input() <python_funcion_input>` o 
-	:ref:`raw_input() <python_funcion_raw_input>`) alcanzan un final de archivo (EOF) sin leer 
-	datos. N.B.: Los métodos :ref:`read() <python_funcion_read>` y 
+	:ref:`raw_input() <python_funcion_raw_input>`) alcanzan un *end of file* ``EOF`` (final de 
+	archivo) sin leer datos. N.B.: Los métodos :ref:`read() <python_funcion_read>` y 
 	:ref:`readline() <python_funcion_readline>` de los objetos archivo devuelven una cadena 
-	vacía al alcanzar EOF.
+	vacía al alcanzar ``EOF``. Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_floatingpointerror:
@@ -153,7 +158,8 @@ Las siguientes excepciones son las realmente lanzadas.
 ``FloatingPointError``
 	Se lanza cuando falla una operación de coma flotante. Esta excepción siempre está definida, 
 	pero sólo se puede lanzar cuando Python esta configurado con la opción ``--with-fpectl`` o 
-	se ha definido el símbolo ``WANT_SIGFPE_HANDLER`` en el archivo :file:`config.h`.
+	se ha definido el símbolo ``WANT_SIGFPE_HANDLER`` en el archivo :file:`config.h`. Deriva de 
+	la clase raíz :ref:`ArithmeticError <python_exception_arithmeticerror>`.
 
 
 .. _python_exception_generatorexiterror:
@@ -173,13 +179,15 @@ Las siguientes excepciones son las realmente lanzadas.
 	o llenarse el disco. Esta clase se deriva de 
 	:ref:`EnvironmentError <python_exception_environmenterror>`. En la explicación anterior 
 	se proporciona información adicional sobre los atributos de instancias de excepción.
+	Deriva de la clase raíz :ref:`EnvironmentError <python_exception_environmenterror>`.
 
 
 .. _python_exception_importerror:
 
 ``ImportError``
 	Se lanza cuando una sentencia ``import`` no encuentra la definición del módulo o 
-	cuando ``from ... import`` no encuentra un nombre a importar.
+	cuando ``from ... import`` no encuentra un nombre a importar. Deriva de la clase raíz 
+	:ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_indexerror:
@@ -187,7 +195,8 @@ Las siguientes excepciones son las realmente lanzadas.
 ``IndexError``
 	Se lanza cuando un sub-índice de una secuencia se sale del rango. Los índices de 
 	corte se truncan silenciosamente al rango disponible. Si un índice no es un entero 
-	simple, se lanza :ref:`TypeError <python_exception_typeerror>`.
+	simple, se lanza :ref:`TypeError <python_exception_typeerror>`. Deriva de la clase raíz 
+	:ref:`LookupError <python_exception_lookuperror>`.
 
 
 .. _python_exception_indentationerror:
@@ -202,7 +211,8 @@ Las siguientes excepciones son las realmente lanzadas.
 
 ``KeyError``
 	Se lanza cuando no se encuentra una clave de una correspondencia (diccionario) en 
-	el conjunto de claves existentes.
+	el conjunto de claves existentes. Deriva de la clase raíz 
+	:ref:`LookupError <python_exception_lookuperror>`.
 
 
 .. _python_exception_keyboardinterrupterror:
@@ -213,7 +223,7 @@ Las siguientes excepciones son las realmente lanzadas.
 	A lo largo de la ejecución se comprueba si se ha interrumpido regularmente. Las 
 	interrupciones ocurridas cuando una función :ref:`input() <python_funcion_input>` 
 	o :ref:`raw_input() <python_funcion_raw_input>`) espera datos también lanzan esta 
-	excepción.
+	excepción. Deriva de la clase raíz :ref:`BaseException <python_exception_baseexceptionerror>`.
 
 
 .. _python_exception_memoryerror:
@@ -225,14 +235,16 @@ Las siguientes excepciones son las realmente lanzadas.
 	de gestión de memoria subyacente (la función de C ``malloc()``), puede que el 
 	intérprete no siempre sea capaz de recuperarse completamente de esta situación. 
 	De cualquier modo, se lanza una excepción para que se pueda imprimir una traza, 
-	por si la causa fue un programa desbocado.
+	por si la causa fue un programa desbocado. Deriva de la clase raíz 
+	:ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_nameerror:
 
 ``NameError``
 	Se lanza cuando no se encuentra un nombre local o global. Sólo se aplica a nombre 
-	no calificados. El valor asociado es el nombre no encontrado.
+	no calificados. El valor asociado es el nombre no encontrado. Deriva de la clase raíz 
+	:ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_notimplementederror:
@@ -241,6 +253,7 @@ Las siguientes excepciones son las realmente lanzadas.
 	Esta excepción se deriva de :ref:`RuntimeError <python_exception_runtimeerror>`. 
 	En clases base definidas por el usuario, los métodos abstractos deberían lanzar 
 	esta excepción cuando se desea que las clases derivadas redefinan este método.
+	Deriva de la clase raíz :ref:`RuntimeError <python_exception_runtimeerror>`.
 
 
 .. _python_exception_oserror:
@@ -262,7 +275,8 @@ Las siguientes excepciones son las realmente lanzadas.
 	de las operaciones de coma flotante, tampoco se comprueban. En el caso de enteros 
 	normales, se comprueban todas las operaciones que pueden desbordar excepto el 
 	desplazamiento a la izquierda, en el que las aplicaciones típicas prefieren perder 
-	bits que lanzar una excepción.
+	bits que lanzar una excepción. Deriva de la clase raíz 
+	:ref:`ArithmeticError <python_exception_arithmeticerror>`.
 
 
 .. _python_exception_runtimeerror:
@@ -271,6 +285,7 @@ Las siguientes excepciones son las realmente lanzadas.
 	Se lanza cuando se detecta un error que no cuadra en ninguna de las otras categorías. 
 	El valor asociado es una cadena que indica qué fue mal concretamente. Esta excepción 
 	es mayormente una reliquia de versiones anteriores del intérprete; ya casi no se usa.
+	Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_stopiteration:
@@ -293,7 +308,8 @@ Las siguientes excepciones son las realmente lanzadas.
 	``offset`` (nº de columna) y ``text`` (texto), que ofrecen un acceso más fácil a 
 	los detalles. En las excepciones de cadena, el valor asociado suele ser una tupla 
 	de la forma (mensaje, (nombreFichero, numLinea, columna, texto)). En las excepciones 
-	de clase, ``str()`` sólo devuelve el mensaje.
+	de clase, ``str()`` sólo devuelve el mensaje. Deriva de la clase raíz 
+	:ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_systemerror:
@@ -305,7 +321,8 @@ Las siguientes excepciones son las realmente lanzadas.
 	este error al autor o mantenedor del intérprete Python en cuestión. Se debe incluir 
 	en el informe la cadena de versión del intérprete Python (``sys.version``, que 
 	también se muestra al inicio de una sesión interactiva), la causa exacta del error 
-	y, si es posible, el código fuente del programa que provocó el error.
+	y, si es posible, el código fuente del programa que provocó el error. Deriva de la 
+	clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_systemexit:
@@ -325,13 +342,15 @@ Las siguientes excepciones son las realmente lanzadas.
 	limpieza final (las cláusulas ``finally`` de las sentencias ``try``) se puedan ejecutar 
 	y para que un depurador pueda ejecutar un guion sin riesgo de perder el control. Se 
 	puede usar la función os._exit() si es total y absolutamente necesario salir inmediatamente 
-	(por ejemplo, tras un ``fork()`` en el proceso hijo).
+	(por ejemplo, tras un ``fork()`` en el proceso hijo). Deriva de la clase raíz 
+	:ref:`BaseException <python_exception_baseexceptionerror>`.
 
 
 .. _python_exception_referenceerror:
 
 ``ReferenceError``
-	Weak ref proxy used after referent went away. Deriva de la excepción :ref:`StandardError <python_exception_standarderror>`.
+	Weak ref proxy used after referent went away. 
+	Deriva de la excepción :ref:`StandardError <python_exception_standarderror>`.
 
 	.. todo:: Terminar de escribir sobre la excepción ReferenceError.
 
@@ -339,7 +358,8 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_taberror:
 
 ``TabError``
-	Improper mixture de espacios y tabulaciones. Deriva de la excepción :ref:`IndentationError <python_exception_indentationerror>`.
+	Improper mixture de espacios y tabulaciones. 
+	Deriva de la excepción :ref:`IndentationError <python_exception_indentationerror>`.
 
 	.. todo:: Terminar de escribir sobre la excepción TabError.
 
@@ -349,6 +369,7 @@ Las siguientes excepciones son las realmente lanzadas.
 ``TypeError``
 	Se lanza cuando una operación o función interna se aplica a un objeto de tipo 
 	inadecuado. El valor asociado es una cadena con detalles de la incoherencia de tipos.
+	Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_unboundlocalerror:
@@ -411,7 +432,8 @@ Las siguientes excepciones son las realmente lanzadas.
 ``ZeroDivisionError``
 	Se lanza cuando el segundo argumento de una operación de división o módulo 
 	es cero. El valor asociado es una cadena que indica el tipo de operandos y 
-	la operación.
+	la operación. Deriva de la clase raíz 
+	:ref:`ArithmeticError <python_exception_arithmeticerror>`.
 
 
 
