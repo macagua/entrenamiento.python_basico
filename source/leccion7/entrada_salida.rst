@@ -109,91 +109,17 @@ las cadenas de caracteres y variables:
 	el resultado de raíz cuadrada de dos es: 1.41421356237
 	>>> 
 
-.. _python_funcion_format_detalle:
 
-format()
-````````
+.. seealso::
 
-Una forma más clara y elegante es referenciar objetos dentro de la misma cadena, 
-y usar el *método* ``format()`` para sustituirlos con los objetos que se le pasan 
-como argumentos.
+    Hay disponibles otras formas de aplicar formato de cadenas de caracteres:
 
-Los objetos se referencian con números entre llaves ``{ }`` dentro de la cadena 
-(llamados campos de formato), y son sustituidos en el orden con que aparecen como 
-argumentos de ``format()``, contando a partir de cero (*argumentos posicionales*).
+    - :ref:`Formateo % <python_cadenas_formateo_modulo>`.
 
-::
-
-	>>> operacion = "raíz cuadrada de dos"
-	>>> valor = 2**0.5
-	>>> print "el resultado de {0} es {1}".format(operacion, valor)
-	el resultado de raíz cuadrada de dos es 1.41421356237
-	>>> 
-
-Los objetos también pueden ser referenciados por nombre (argumentos por clave).
-
-::
-
-	>>> operacion = "raíz cuadrada de dos"
-	>>> print "el resultado de {nombre} es {resultado}".format(nombre=operacion, resultado=2**0.5)
-	el resultado de raíz cuadrada de dos es 1.41421356237
-	>>> 
-
-Opcionalmente se puede poner el signo de dos puntos después del número o nombre, 
-y explicitar el tipo del objeto:
-
-- ``s`` para cadenas de caracteres (tipo ``str``).
-
-- ``d`` para números enteros (tipo ``int``).
-
-- ``f`` para números de coma flotante (tipo ``float``).
+    - :ref:`Clase formatter <python_cadenas_formatter>`.
 
 
-Esto permite controlar el formato de impresión del objeto. Por ejemplo, podemos 
-utilizar la expresión ``.4f`` para determinar que un número de coma flotante (``f``) 
-se imprima con cuatro dígitos después de la coma (``.4``).
-
-::
-
-	>>> operacion = "raíz cuadrada de dos"
-	>>> valor = 2**0.5
-	>>> print "el resultado de {0} es {resultado:.4f}".format(operacion, resultado=valor)
-	el resultado de raíz cuadrada de dos es 1.4142
-	>>> 
-
-
-También puede aplicarse el operador % para dar formato a las cadenas.
-La sintaxis es la siguiente:
-
-::
-
-	>>> operacion = "raíz cuadrada de dos"
-	>>> valor = 2**0.5
-	>>> print "el resultado de %s es %f" % (operacion, valor)
-	el resultado de raíz cuadrada de dos es 1.414214
-	>>> 
-
-
-Con esta sintaxis hay que determinar el tipo del objeto:
-
-- ``%s`` = str.
-
-- ``%d`` = int.
-
-- ``%f`` = float.
-
-
-También aquí se puede controlar el formato de salida. Por ejemplo, para obtener el 
-valor con 8 dígitos después de la coma:
-
-::
-
-	>>> operacion = "raíz cuadrada de dos"
-	>>> valor = 2**0.5
-	>>> print "el resultado de %s es %.8f" % (operacion, valor)
-	el resultado de raíz cuadrada de dos es 1.41421356
-	>>> 
-
+----
 
 .. note::
 

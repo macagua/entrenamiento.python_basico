@@ -20,3 +20,4 @@ continuación el temario de esta lección:
    errores
    exceptions
    poo
+   objeto_integrados

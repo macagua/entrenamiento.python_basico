@@ -97,6 +97,137 @@ triples comillas (simples o dobles) que Python ignora totalmente.
     ' comentarios en varias lineas '
     >>> 
 
+.. _python_cadenas_formateo:
+
+Formateo de cadenas
+...................
+
+Python soporta múltiples formas de formatear una cadena de caracteres. A continuación 
+se describen:
+
+
+.. _python_cadenas_formateo_modulo:
+
+Formateo %
+~~~~~~~~~~
+
+El modulo ``%`` es un operador integrado en Python. Ese es conocido como el operador 
+de interpolación. Usted necesitará proveer el % seguido por el tipo que necesita ser 
+formateado o convertido. El operador % entonces substituye la frase '%tipodato' con 
+cero o mas elementos del tipo de datos especificado:
+
+::
+
+    >>> operacion = "raíz cuadrada de dos"
+    >>> valor = 2**0.5
+    >>> print "el resultado de %s es %f" % (operacion, valor)
+    el resultado de raíz cuadrada de dos es 1.414214
+    >>> 
+
+También aquí se puede controlar el formato de salida. Por ejemplo, para obtener el 
+valor con 8 dígitos después de la coma:
+
+::
+
+    >>> operacion = "raíz cuadrada de dos"
+    >>> valor = 2**0.5
+    >>> print "el resultado de %s es %.8f" % (operacion, valor)
+    el resultado de raíz cuadrada de dos es 1.41421356
+    >>> 
+
+Con esta sintaxis hay que determinar el tipo del objeto:
+
+- ``%c`` = str, simple carácter.
+
+- ``%s`` = str, cadena de carácter.
+
+- ``%d`` = int, enteros.
+
+- ``%f`` = float, coma flotante.
+
+- ``%o`` = octal.
+
+- ``%x`` = hexadecimal.
+
+
+A continuación un ejemplo por cada tipo de datos:
+
+::
+
+    >>> print "¿Activo S o N?: %c, Apodo: %s" % ("S", "Macagua")
+    ¿Activo S o N?: S, Apodo: Macagua
+    >>> print "N. factura: %d, Total a pagar: %f" % (345, 658.23)
+    N. factura: 345, Total a pagar: 658.230000
+    >>> print "Tipo Octal: %o, Tipo Hexadecimal: %x" % (027, 0x17)
+    Tipo Octal: 27, Tipo Hexadecimal: 17
+
+
+.. _python_cadenas_formatter:
+
+Clase formatter
+~~~~~~~~~~~~~~~
+
+La clase ``formatter`` es una de las clases integradas ``string``. Ese provee 
+la habilidad de hacer variable compleja de substituciones y formateo de valores 
+usando el método ``format()``. Es le permite crear y personalizar sus propios 
+comportamientos de formatos de cadena de caracteres para reescribir los métodos 
+públicos y contiene: ``format()``, ``vformat()``. Ese tiene algunos métodos que 
+son intended para ser remplazados por las sub-clases: ``parse()``, ``get_field()``, 
+``get_value()``, ``check_unused_args()``, ``format_field()`` y ``convert_field()``. 
+
+
+.. _python_funcion_format_detalle:
+
+format()
+````````
+
+Una forma más clara y elegante es referenciar objetos dentro de la misma cadena, 
+y usar el *método* ``format()`` para sustituirlos con los objetos que se le pasan 
+como argumentos.
+
+Los objetos se referencian con números entre llaves ``{ }`` dentro de la cadena 
+(llamados campos de formato), y son sustituidos en el orden con que aparecen como 
+argumentos de ``format()``, contando a partir de cero (*argumentos posicionales*).
+
+::
+
+    >>> operacion = "raíz cuadrada de dos"
+    >>> valor = 2**0.5
+    >>> print "el resultado de {0} es {1}".format(operacion, valor)
+    el resultado de raíz cuadrada de dos es 1.41421356237
+    >>> 
+
+Los objetos también pueden ser referenciados por nombre (argumentos por clave).
+
+::
+
+    >>> operacion = "raíz cuadrada de dos"
+    >>> print "el resultado de {nombre} es {resultado}".format(nombre=operacion, resultado=2**0.5)
+    el resultado de raíz cuadrada de dos es 1.41421356237
+    >>> 
+
+Opcionalmente se puede poner el signo de dos puntos después del número o nombre, 
+y explicitar el tipo del objeto:
+
+- ``s`` para cadenas de caracteres (tipo :ref:`str <python_cadenas>`).
+
+- ``d`` para números enteros (tipo :ref:`int <python_numericos>`).
+
+- ``f`` para números de coma flotante (tipo :ref:`float <python_numerico_coma_flotante>`).
+
+
+Esto permite controlar el formato de impresión del objeto. Por ejemplo, podemos 
+utilizar la expresión ``.4f`` para determinar que un número de coma flotante (``f``) 
+se imprima con cuatro dígitos después de la coma (``.4``).
+
+::
+
+    >>> operacion = "raíz cuadrada de dos"
+    >>> valor = 2**0.5
+    >>> print "el resultado de {0} es {resultado:.4f}".format(operacion, resultado=valor)
+    el resultado de raíz cuadrada de dos es 1.4142
+    >>> 
+
 
 Ejemplo de cadenas de caracteres
 ................................
@@ -177,7 +308,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 
 Convertir a tipos cadenas de caracteres
-.......................................
+........................................
 
 Para convertir a tipos cadenas de caracteres debes usar las 
 :ref:`funciones integradas <python_funciones_integradas>` 

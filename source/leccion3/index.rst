@@ -13,8 +13,6 @@ excepciones. Se pueden resumir en esta tabla:
 +-----------------------+----------------+---------------------------------+
 | **Categoría de tipo** | **Nombre**     | **Descripción**                 |
 +-----------------------+----------------+---------------------------------+
-| None                  | ``type(None)`` | el objeto nulo ``None``         |
-+-----------------------+----------------+---------------------------------+
 |                       | ``int``        | entero (precisión arbitraria)   |
 |                       +----------------+---------------------------------+
 |                       | ``float``      | coma flotante                   |
@@ -37,6 +35,20 @@ excepciones. Se pueden resumir en esta tabla:
 | Conjuntos             +----------------+---------------------------------+
 |                       | ``frozenset``  | conjunto inmutable              |
 +-----------------------+----------------+---------------------------------+
+
+Otros tipos de datos incorporados, se decscriben a continuación:
+
++-----------------------+----------------+-------------------------------------------+
+| **Categoría de tipo** | **Nombre**     | **Descripción**                           |
++-----------------------+----------------+-------------------------------------------+
+|                       | ``type(None)`` | el objeto                                 |
+| None                  |                | :ref:`nulo <python_objeto_none>`          |
+|                       |                | ``None``.                                 |
++-----------------------+----------------+-------------------------------------------+
+|                       | ``file``       | el objeto                                 |
+| Archivos              |                | :ref:`archivo <python_manipular_archivo>` |
+|                       |                | o fichero.                                |
++-----------------------+----------------+-------------------------------------------+
 
 En esta lección se describen los tipos de datos en el lenguaje Python, los 
 cuales se resumieron en esta tabla. A continuación el temario de esta lección:
