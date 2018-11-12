@@ -649,7 +649,7 @@ este programa ejecute el siguiente comando:
 
 .. code-block:: sh
 
-    # pip install bpython
+    $ sudo pip install bpython
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 ``python`` por ``ipython`` de la siguiente forma:
