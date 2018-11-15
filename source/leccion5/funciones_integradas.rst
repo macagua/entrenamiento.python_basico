@@ -222,6 +222,79 @@ Imprime el texto de la licencia.
     Hit Return for more, or q (and Return) to quit: 
 
 
+.. _python_funcion_open:
+
+open()
+~~~~~~
+
+La función ``open()`` abre un archivo usando el tipo ``file()``, devuelve 
+un objeto del tipo :ref:`file <python_objeto_file>` (ej. *archivo*), y se 
+invoca habitualmente con de dos a tres argumentos: 
+
+::
+
+    file(nombre[, mode[, buffering]]) -> objeto archivo
+
+Los argumentos son:
+
+- ``nombre``, es una cadena de caracteres que indica el *nombre de archivo* 
+  (incluso ruta relativa o absoluta).
+
+- ``mode``, es una cadena de unos pocos caracteres describiendo la forma en 
+  la que se usará el archivo, como se indica a continuación:
+
+  +----------+-------------------------------------------------------------------------------------------+
+  | **Modo** | **Notas**                                                                                 |
+  +----------+-------------------------------------------------------------------------------------------+
+  | ``r``    | el archivo se abre en modo de solo lectura, no se puede escribir (argumento por defecto). |
+  +----------+-------------------------------------------------------------------------------------------+
+  | ``w``    | modo de solo escritura (si existe un archivo con el mismo nombre, se borra).              |
+  +----------+-------------------------------------------------------------------------------------------+
+  | ``a``    | modo de agregado (``append``), los datos escritos se agregan al final del archivo.        |
+  +----------+-------------------------------------------------------------------------------------------+
+  | ``r+``   | el archivo se abre para lectura y escritura al mismo tiempo.                              |
+  +----------+-------------------------------------------------------------------------------------------+
+  | ``b``    | el archivo se abre en modo binario, para almacenar cualquier cosa que no sea texto.       |
+  +----------+-------------------------------------------------------------------------------------------+
+  | ``U``    | el archivo se abre con soporte a nueva linea universal, cualquier fin de linea ingresada  |
+  |          | sera como un ``\n`` en Python.                                                            |
+  +----------+-------------------------------------------------------------------------------------------+
+
+
+- ``buffering``, si este argumento es dado, 0 significa unbuffered, 1 significa 
+  linea buffered y números grande especifico el tamaño del buffer. 
+  If the buffering argument is given, 0 means unbuffered, 1 means line
+  buffered, and larger numbers specify the buffer size.
+
+Para crear en un archivo:
+
+::
+
+    >>> f = open('datos.txt', 'w') # abre el archivo datos.txt
+    >>> type(f)
+    <type 'file'>
+
+
+El archivo será creado si no existe cuando es abierto para escribir 
+o agregar data. Es archivo sera truncated cuando es abierto para escritura. 
+
+Add a 'U' to modo to open the file for input with universal newline
+support.  Any line ending in the input file will be seen as a '\n'
+in Python.  Also, a file so opened gains the attribute 'newlines';
+the value for this attribute is one of None (no newline read yet),
+'\r', '\n', '\r\n' or a tuple containing all the newline types seen.
+
+
+.. tip::
+
+    Ver para futura información desde el :ref:`modo interactivo <python_interactivo>` 
+    Python, lo siguiente:
+
+    ::
+
+        >>> file.__doc__
+
+
 .. _python_funcion_range:
 
 range()
