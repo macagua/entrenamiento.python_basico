@@ -11,7 +11,8 @@ Python es un lenguaje de programación de propósito general muy poderoso y flex
 a la vez que sencillo y fácil de aprender. Es un lenguaje de alto nivel, que permite 
 procesar fácilmente todo tipo de estructuras de datos, tanto numéricos como de texto.
 
-Este lenguaje fue creado a principios de los noventa por Guido van Rossum en los Países 
+Este lenguaje fue creado a principios de los noventa por 
+`Guido van Rossum <https://es.wikipedia.org/wiki/Guido_van_Rossum>`_ en los Países 
 Bajos. Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 
 1991). Toma características de lenguajes predecesores, incluso, compatibilizando la 
 solución de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de 
