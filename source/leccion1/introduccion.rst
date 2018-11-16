@@ -151,10 +151,47 @@ Existe algunos recursos disponibles en formato de Foros, a continuación se list
 Si usted esta buscando un foro nativo en su idioma, por favor, consulte la pagina de los grupos 
 locales en la `Wiki de Python <https://wiki.python.org/moin/>`_.
 
+
+.. _python_comunidades_locales:
+
+Comunidades locales
+~~~~~~~~~~~~~~~~~~~
+
+Siendo Python un proyecto :ref:`Open source <python_open_source>` el cual es mantenido por 
+toda una gran comunidad de usuarios y desarrolladores a nivel mundial, la cual ofrece soporte 
+comunitario del proyecto Python en Sudamérica.
+
+**Comunidad(es) de Python en Argentina**
+	Es una asociación civil sin fines de lucros creada para promover el proyecto `Python en Argentina <http://www.python.org.ar/>`_.
+
+**Comunidad(es) de Python en Brasil**
+	.. todo:: TODO escribir esta sección.
+
+**Comunidad(es) de Python en Chile**
+	.. todo:: TODO escribir esta sección.
+
+**Comunidad(es) de Python en Colombia**
+	.. todo:: TODO escribir esta sección.
+
+**Comunidad(es) de Python en Ecuador**
+	.. todo:: TODO escribir esta sección.
+
+**Comunidad(es) de Python en Perú**
+	.. todo:: TODO escribir esta sección.
+
+**Comunidad(es) de Python en Paraguay**
+	.. todo:: TODO escribir esta sección.
+
+**Comunidad(es) de Python en Uruguay**
+	.. todo:: TODO escribir esta sección.
+
+**Comunidad(es) de Python en Venezuela**
+	Es una asociación civil sin fines de lucros creada para promover el proyecto `Python en Venezuela <http://pyve.github.io/>`_.
+
+
 ----
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion1>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
-
