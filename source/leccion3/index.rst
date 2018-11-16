@@ -38,17 +38,17 @@ excepciones. Se pueden resumir en esta tabla:
 
 Otros tipos de datos incorporados, se decscriben a continuación:
 
-+-----------------------+----------------+-------------------------------------------+
-| **Categoría de tipo** | **Nombre**     | **Descripción**                           |
-+-----------------------+----------------+-------------------------------------------+
-|                       | ``type(None)`` | el objeto                                 |
-| None                  |                | :ref:`nulo <python_objeto_none>`          |
-|                       |                | ``None``.                                 |
-+-----------------------+----------------+-------------------------------------------+
-|                       | ``file``       | el objeto                                 |
-| Archivos              |                | :ref:`archivo <python_manipular_archivo>` |
-|                       |                | o fichero.                                |
-+-----------------------+----------------+-------------------------------------------+
++-----------------------+----------------+-------------------------------------+
+| **Categoría de tipo** | **Nombre**     | **Descripción**                     |
++-----------------------+----------------+-------------------------------------+
+|                       | ``type(None)`` | el objeto                           |
+| None                  |                | :ref:`nulo <python_objeto_none>`    |
+|                       |                | ``None``.                           |
++-----------------------+----------------+-------------------------------------+
+|                       | ``file``       | el objeto                           |
+| Archivos              |                | :ref:`archivo <python_objeto_file>` |
+|                       |                | o fichero.                          |
++-----------------------+----------------+-------------------------------------+
 
 En esta lección se describen los tipos de datos en el lenguaje Python, los 
 cuales se resumieron en esta tabla. A continuación el temario de esta lección:

@@ -13,12 +13,16 @@ a través de una función integrada en Python, a continuación se describen los 
 típicos y sus referencias a funciones propias del lenguaje:
 
 
+.. _python_abrir_archivo:
+
 Abrir archivo
 .............
 
 La forma preferida para abrir un archivo es usando la función integrada 
 :ref:`open() <python_funcion_open>`.
 
+
+.. _python_leer_archivo:
 
 Leer archivo
 ............
@@ -28,6 +32,8 @@ objeto ``file`` como :ref:`read() <python_funcion_read>`,
 :ref:`readline() <python_funcion_readline>` y :ref:`readlines() <python_funcion_readlines>`. 
 
 
+.. _python_escribir_archivo:
+
 Escribir archivo
 ................
 
@@ -35,12 +41,16 @@ La forma preferida para escribir un archivo es usando la función del objeto
 ``file`` llamada :ref:`write() <python_funcion_write>`.
 
 
+.. _python_cerrar_archivo:
+
 Cerrar archivo
 ..............
 
 La forma preferida para cerrar un archivo es usando la función del objeto 
 ``file`` llamada :ref:`close() <python_funcion_close>`.
 
+
+.. _python_ejemplos_archivo:
 
 Ejemplos de archivos
 ....................

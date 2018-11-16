@@ -227,9 +227,9 @@ Imprime el texto de la licencia.
 open()
 ~~~~~~
 
-La función ``open()`` abre un archivo usando el tipo ``file()``, devuelve 
-un objeto del tipo :ref:`file <python_objeto_file>` (ej. *archivo*), y se 
-invoca habitualmente con de dos a tres argumentos: 
+La función ``open()`` :ref:`abre un archivo <python_abrir_archivo>` usando 
+el tipo ``file()``, devuelve un objeto del tipo :ref:`archivo <python_objeto_file>` 
+(ej. *archivo*), y se invoca habitualmente con de dos a tres argumentos: 
 
 ::
 
