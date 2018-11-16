@@ -6,37 +6,39 @@
 Tipos y estructuras de datos
 ============================
 
-Los tipos de datos estándar disponibles por defecto en el interprete 
-son numéricos, secuencias, mapeo, archivos, clases, instancias y 
-excepciones. Se pueden resumir en esta tabla:
+En Python para estructuras de datos se usan variables y constantes las cuales usan operadores 
+para tratar los tipos de datos estándar disponibles por defecto en el interprete. Se pueden 
+resumir en esta tabla:
 
-+-----------------------+----------------+---------------------------------+
-| **Categoría de tipo** | **Nombre**     | **Descripción**                 |
-+-----------------------+----------------+---------------------------------+
-|                       | ``int``        | entero (precisión arbitraria)   |
-|                       +----------------+---------------------------------+
-|                       | ``float``      | coma flotante                   |
-| Números               +----------------+---------------------------------+
-|                       | ``complex``    | complejo                        |
-|                       +----------------+---------------------------------+
-|                       | ``bool``       | booleano (``True`` o ``False``) |
-+-----------------------+----------------+---------------------------------+
-|                       | ``str``        | cadena de caracteres            |
-|                       +----------------+---------------------------------+
-|                       | ``list``       | lista                           |
-| Secuencias            +----------------+---------------------------------+
-|                       | ``tuple``      | tupla                           |
-|                       +----------------+---------------------------------+
-|                       | ``range``      | rango de enteros                |
-+-----------------------+----------------+---------------------------------+
-| Mapeos                | ``dict``       | diccionario                     |
-+-----------------------+----------------+---------------------------------+
-|                       | ``set``        | conjunto mutable                |
-| Conjuntos             +----------------+---------------------------------+
-|                       | ``frozenset``  | conjunto inmutable              |
-+-----------------------+----------------+---------------------------------+
++-----------------------+----------------+------------------------------------------------------+
+| **Categoría de tipo** | **Nombre**     | **Descripción**                                      |
++-----------------------+----------------+------------------------------------------------------+
+|                       | ``int``        | :ref:`entero <python_numericos>`                     |
+|                       |                | (precisión arbitraria)                               |
+|                       +----------------+------------------------------------------------------+
+|                       | ``float``      | :ref:`coma flotante <python_numerico_coma_flotante>` |
+| Números               +----------------+------------------------------------------------------+
+|                       | ``complex``    | :ref:`complejo <python_numerico_complejo>`           |
+|                       +----------------+------------------------------------------------------+
+|                       | ``bool``       | :ref:`booleano <python_numerico_complejo>`           |
+|                       | ``bool``       | (``True`` o ``False``)                               |
++-----------------------+----------------+------------------------------------------------------+
+|                       | ``str``        | :ref:`cadena de caracteres <python_cadenas>`         |
+|                       +----------------+------------------------------------------------------+
+|                       | ``list``       | :ref:`lista <python_listas>`                         |
+| Secuencias            +----------------+------------------------------------------------------+
+|                       | ``tuple``      | :ref:`tupla <python_tuplas>`                         |
+|                       +----------------+------------------------------------------------------+
+|                       | ``range``      | :ref:`rango de enteros <python_funcion_range>`       |
++-----------------------+----------------+------------------------------------------------------+
+| Mapeos                | ``dict``       | :ref:`diccionario <python_diccionarios>`             |
++-----------------------+----------------+------------------------------------------------------+
+|                       | ``set``        | :ref:`conjunto mutable <python_conjuntos>`           |
+| Conjuntos             +----------------+------------------------------------------------------+
+|                       | ``frozenset``  | :ref:`conjunto inmutable <python_conjuntos>`         |
++-----------------------+----------------+------------------------------------------------------+
 
-Otros tipos de datos incorporados, se decscriben a continuación:
+Otros tipos de datos incorporados, se describen a continuación:
 
 +-----------------------+----------------+-------------------------------------+
 | **Categoría de tipo** | **Nombre**     | **Descripción**                     |
@@ -50,8 +52,8 @@ Otros tipos de datos incorporados, se decscriben a continuación:
 |                       |                | o fichero.                          |
 +-----------------------+----------------+-------------------------------------+
 
-En esta lección se describen los tipos de datos en el lenguaje Python, los 
-cuales se resumieron en esta tabla. A continuación el temario de esta lección:
+En esta lección se describen las variables, operadores y sus tipos de datos en el lenguaje Python, 
+los cuales se resumieron en esta tabla. A continuación el temario de esta lección:
 
 .. toctree::
    :maxdepth: 2
