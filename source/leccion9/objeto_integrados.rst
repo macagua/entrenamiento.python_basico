@@ -117,7 +117,7 @@ interfaces de bajo nivel que utilicen descriptores de ficheros, por ejemplo, el 
 next()
 ````````
 
-La función ``next()`` permite x.next() -> the next value, or raise StopIteration
+La función ``next()`` permite x.next() -> el próximo valor, o causa una :ref:`StopIteration <python_exception_stopiteration>`
 
 
 .. _python_funcion_read:

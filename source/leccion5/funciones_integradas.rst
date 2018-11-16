@@ -76,7 +76,7 @@ Si es llamado sin argumentos, devuelve los nombres en el ámbito actual.
     >>> 
 
 
-De lo contrario, devuelve una lista alfabética de nombres comprising 
+De lo contrario, devuelve una lista alfabética de nombres que comprende 
 (alguno(s) de) los atributos de un objeto dato, y de los atributos 
 legibles desde este.
 
@@ -85,8 +85,8 @@ legibles desde este.
     >>> dir(__builtins__)
     ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BufferError', 'BytesWarning', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError', 'None', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'ReferenceError', 'RuntimeError', 'RuntimeWarning', 'StandardError', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', '_', '__debug__', '__doc__', '__import__', '__name__', '__package__', 'abs', 'all', 'any', 'apply', 'basestring', 'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'cmp', 'coerce', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'execfile', 'exit', 'file', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'intern', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'long', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'raw_input', 'reduce', 'reload', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr', 'unicode', 'vars', 'xrange', 'zip']
 
-Si el objeto soporta un método llamado ``__dir__``, ese será usado; otherwise
-the default ``dir()`` logic is used y devuelve:
+Si el objeto soporta un método llamado ``__dir__``, ese será usado; de lo contrario se usa 
+la lógica ``dir()`` predeterminada y devuelve:
 
 - para un objeto módulo: los atributos del módulo.
 
@@ -261,10 +261,8 @@ Los argumentos son:
   +----------+-------------------------------------------------------------------------------------------+
 
 
-- ``buffering``, si este argumento es dado, 0 significa unbuffered, 1 significa 
-  linea buffered y números grande especifico el tamaño del buffer. 
-  If the buffering argument is given, 0 means unbuffered, 1 means line
-  buffered, and larger numbers specify the buffer size.
+- ``buffering``, si este argumento es dado, 0 significa sin búfer, 1 significa búfer 
+  de línea y los números más grandes especifican el tamaño del búfer.
 
 Para crear en un archivo:
 
@@ -276,13 +274,14 @@ Para crear en un archivo:
 
 
 El archivo será creado si no existe cuando es abierto para escribir 
-o agregar data. Es archivo sera truncated cuando es abierto para escritura. 
+o agregar data. Es archivo sera truncado cuando es abierto para escritura. 
 
-Add a 'U' to modo to open the file for input with universal newline
-support.  Any line ending in the input file will be seen as a '\n'
-in Python.  Also, a file so opened gains the attribute 'newlines';
-the value for this attribute is one of None (no newline read yet),
-'\r', '\n', '\r\n' or a tuple containing all the newline types seen.
+Agregue una 'U' a modo para abrir el archivo para la entrada con soporte de 
+nueva línea universal. Cualquier línea que termine en el archivo de entrada 
+se verá como '\n' en Python. Además, un archivo así abierto gana el atributo 
+``newlines``; el valor para este atributo es uno de Ninguno (aún no se ha 
+leído una nueva línea), ``\r``, ``\n``, ``\r\n`` o una tupla que contiene 
+todos los tipos de nueva línea que se han visto.
 
 
 .. tip::

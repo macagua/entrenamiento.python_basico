@@ -165,9 +165,8 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_generatorexiterror:
 
 ``GeneratorExit``
-	Se lanza cuando la solicitud de salida de un generador Python sucede (Request that a generator exit). Deriva de la excepción :ref:`BaseException <python_exception_baseexceptionerror>`.
-
-	.. todo:: Terminar de escribir sobre la excepción GeneratorExit.
+	Se lanza cuando la solicitud de salida de un generador Python sucede. Deriva de la 
+	excepción :ref:`BaseException <python_exception_baseexceptionerror>`.
 
 
 .. _python_exception_ioerror:
@@ -202,9 +201,7 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_indentationerror:
 
 ``IndentationError``
-	Improper indentation. Deriva de la excepción :ref:`SyntaxError <python_exception_syntaxerror>`.
-
-	.. todo:: Terminar de escribir sobre la excepción IndentationError.
+	Se lanza cuando una indentación incorrecta sucede. Deriva de la excepción :ref:`SyntaxError <python_exception_syntaxerror>`.
 
 
 .. _python_exception_keyerror:
@@ -291,9 +288,8 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_stopiteration:
 
 ``StopIteration``
-	Signal the end from iterator.next(). Deriva de la excepción :ref:`Exception <python_exception>`.
-
-	.. todo:: Terminar de escribir sobre la excepción StopIteration.
+	Se lanza cuando se indica el final desde ``iterator.next()``. Deriva de la excepción 
+	:ref:`Exception <python_exception>`.
 
 
 .. _python_exception_syntaxerror:
@@ -349,19 +345,15 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_referenceerror:
 
 ``ReferenceError``
-	Weak ref proxy used after referent went away. 
+	Se lanza cuando se usó un proxy de referencia débil después de que el referente desapareció. 
 	Deriva de la excepción :ref:`StandardError <python_exception_standarderror>`.
-
-	.. todo:: Terminar de escribir sobre la excepción ReferenceError.
 
 
 .. _python_exception_taberror:
 
 ``TabError``
-	Improper mixture de espacios y tabulaciones. 
-	Deriva de la excepción :ref:`IndentationError <python_exception_indentationerror>`.
-
-	.. todo:: Terminar de escribir sobre la excepción TabError.
+	Se lanza cuando sucede una mezcla inadecuada de espacios y tabulaciones. Deriva de la 
+	excepción :ref:`IndentationError <python_exception_indentationerror>`.
 
 
 .. _python_exception_typeerror:
@@ -390,21 +382,21 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_unicodedecodeerror:
 
 ``UnicodeDecodeError``
-	Se lanza cuando un error al decodificar Unicode sucede. Deriva de la excepción 
+	Se lanza cuando un error al decodificar ``Unicode`` sucede. Deriva de la excepción 
 	:ref:`UnicodeError <python_exception_unicodeerror>`.
 
 
 .. _python_exception_unicodeencodeerror:
 
 ``UnicodeEncodeError``
-	Se lanza cuando un error al codificar Unicode sucede. Deriva de la excepción 
+	Se lanza cuando un error al codificar ``Unicode`` sucede. Deriva de la excepción 
 	:ref:`UnicodeError <python_exception_unicodeerror>`.
 
 
 .. _python_exception_unicodetranslateerror:
 
 ``UnicodeTranslateError``
-	Se lanza cuando un error al traducir Unicode sucede. Deriva de la excepción 
+	Se lanza cuando un error al traducir ``Unicode`` sucede. Deriva de la excepción 
 	:ref:`UnicodeError <python_exception_unicodeerror>`.
 
 
@@ -469,7 +461,7 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_importwarning:
 
 ``ImportWarning``
-	La clase base para las advertencias acerca de probables mistakes en importar módulos. 
+	La clase base para las advertencias acerca de probables errores en importar módulos. 
 	Deriva de la excepción :ref:`Warning <python_exception_warning>`.
 
 
@@ -483,14 +475,14 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_runtimewarning:
 
 ``RuntimeWarning``
-	La clase base para las advertencias acerca de comportamiento del tiempo de ejecución dubious. 
+	La clase base para las advertencias acerca de comportamiento del tiempo de ejecución dudosa. 
 	Deriva de la excepción :ref:`Warning <python_exception_warning>`.
 
 
 .. _python_exception_syntaxwarning:
 
 ``SyntaxWarning``
-	La clase base para las advertencias acerca de sintaxis dudosa dubious. Deriva de la excepción 
+	La clase base para las advertencias acerca de sintaxis dudosa. Deriva de la excepción 
 	:ref:`Warning <python_exception_warning>`.
 
 

@@ -172,7 +172,7 @@ la habilidad de hacer variable compleja de substituciones y formateo de valores
 usando el método :ref:`format() <python_funcion_format_detalle>`. Es le permite 
 crear y personalizar sus propios comportamientos de formatos de cadena de caracteres 
 para reescribir los métodos públicos y contiene: ``format()``, ``vformat()``. Ese 
-tiene algunos métodos que son intended para ser remplazados por las sub-clases: 
+tiene algunos métodos que son destinado para ser remplazados por las sub-clases: 
 ``parse()``, ``get_field()``, ``get_value()``, ``check_unused_args()``, ``format_field()`` 
 y ``convert_field()``. 
 

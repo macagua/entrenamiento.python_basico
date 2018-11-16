@@ -6,8 +6,8 @@
 Tipo tuplas
 -----------
 
-Una tupla es una lista inmutable. Una tupla no puede 
-modificarse de ningún modo después de su creación.
+La tupla es una lista inmutable. Esta no puede modificarse de ningún 
+modo después de su creación.
 
 Ejemplo de tuplas
 .................

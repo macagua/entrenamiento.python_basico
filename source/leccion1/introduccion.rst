@@ -87,7 +87,6 @@ estándar de Python como los módulos aportados por la comunidad permiten infini
 - `Desarrollo de Software y Juegos <https://www.python.org/about/apps/#software-development>`_.
 
 
-
 .. _python_comunidad:
 
 Comunidad
@@ -125,14 +124,14 @@ documentación traducida y original que no está en inglés, y otros recursos.
 Internet Relay Chat - IRC
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Existen muchos canales relacionados con Python en la red IRC de Freenode. Todos los canales esta 
-disponibles en el servidor de Internet Relay Chat de `Freenode <http://freenode.net/>`_. Para 
+Existen muchos canales relacionados con Python en la red Internet Relay Chat (IRC) de Freenode. Todos 
+los canales esta disponibles en el servidor de IRC en `Freenode <http://freenode.net/>`_. Para 
 conectarse al servidor IRC use *irc.freenode.net* o puede usar la 
 `interfaz web de chat IRC de Freenode <https://webchat.freenode.net/>`_.
 
 Para preguntas cortas, usted puede obtener ayuda inmediata visitando el canal ``#python``. Usted 
-necesitará registrar su nickname con FreeNode, usando la 
-`instrucciones para registrar nickname <http://freenode.net/kb/answer/registration>`_.
+necesitará registrar su apodo con FreeNode, usando la 
+`instrucciones para registrar apodo <http://freenode.net/kb/answer/registration>`_.
 
 .. note:: Mayor información consulte https://www.python.org/community/irc/
 

@@ -6,8 +6,7 @@
 Tipo diccionarios
 -----------------
 
-El diccionario, que define una relación uno a uno entre
-claves y valores.
+El diccionario, define una relación uno a uno entre claves y valores.
 
 
 Ejemplo de diccionarios

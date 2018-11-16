@@ -16,8 +16,8 @@ Hay más contenido complementario o detallada que el contenido del entrenamiento
 de las 10 lecciones cubiertas en este entrenamiento. Al finalizar, yo he 
 compilado una lista de lecturas relacionadas que soporta la información 
 que usted aprende en cada lección. Piensa que esto como materiales 
-suplementarios. Usted puede leerlo at your leisure para ayudar a incrementar 
-tanto la profundidad y breadth de su conocimiento.
+suplementarios. Usted puede leerlo en su tiempo libre para ayudar a incrementar 
+tanto la profundidad y amplitud en su conocimiento.
 
 Las lecturas están organizada como las lecciones y sus temas.
 
