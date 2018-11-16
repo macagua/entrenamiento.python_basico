@@ -24,20 +24,74 @@ Es software libre, y está implementado en :ref:`todas las plataformas <python_m
 y sistemas operativos habituales.
 
 
-.. _python_software_foundation:
+.. _python_open_source:
+
+Open source
+...........
+
+Python se desarrolla bajo una licencia de Open source o código abierto aprobada por OSI, 
+por lo que se puede usar y distribuir libremente, incluso para uso comercial. La licencia 
+de Python es administrada por :ref:`Python Software Foundation <python_psf>`.
+
+- `Aprenda más sobre la licencia <https://docs.python.org/license.html>`_.
+
+- `Licencia Python en OSI <http://opensource.org/licenses/Python-2.0>`_.
+
+- `Conozca más sobre la Fundación <https://www.python.org/psf-landing/>`_.
+
+
+.. _python_psf:
 
 Python Software Foundation
-..........................
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Es administrado por la Python Software Foundation. Posee una licencia de código abierto, 
-denominada Python Software Foundation License, que es compatible con la Licencia pública 
-general de GNU a partir de la versión 2.1.1, e incompatible en ciertas versiones anteriores.
+La Python Software Foundation (PSF) es una corporación sin fines de lucro 501 (c) (3) que 
+posee los derechos de propiedad intelectual detrás del lenguaje de programación Python. 
+Administramos las licencias de código abierto para Python versión 2.1 y posteriores, y 
+poseemos y protegemos las marcas comerciales asociadas con Python. También realiza la 
+conferencia PyCon de Norteamérica anualmente, apoyamos otras conferencias de Python en 
+todo el mundo y financiamos el desarrollo relacionado con Python con nuestro `programa de 
+subvenciones <https://www.python.org/psf/grants/>`_ y financiamos proyectos especiales.
+
+	*La misión de Python Software Foundation es promover, proteger y avanzar el lenguaje 
+	de programación Python, y apoyar y facilitar el crecimiento de una comunidad* 
+	`diversa <https://www.python.org/psf/diversity/>`_ *e internacional de programadores 
+	de Python.*
+
+	—De la `página de la Declaración de la Misión <https://www.python.org/psf/mission/>`_.
+
+.. note:: Mayor información consulte https://www.python.org/psf/
+
+
+.. _python_aplicaciones:
+
+Aplicaciones
+............
+
+El `Python Package Index (PyPI) <https://pypi.org/>`_ o en español significa *Índice de 
+paquetes de Python* alberga miles de módulos de terceros para Python. Tanto la biblioteca 
+estándar de Python como los módulos aportados por la comunidad permiten infinitas posibilidades.
+
+- `Desarrollo web e Internet <https://www.python.org/about/apps/#web-and-internet-development>`_.
+
+- `Acceso a la base de datos <https://www.python.org/about/apps/#database-access>`_.
+
+- `GUIs de escritorio <https://www.python.org/about/apps/#desktop-guis>`_.
+
+- `Científico y numérico <https://www.python.org/about/apps/#scientific-and-numeric>`_.
+
+- `Educación <https://www.python.org/about/apps/#education>`_.
+
+- `Programación de red <https://www.python.org/about/apps/#network-programming>`_.
+
+- `Desarrollo de Software y Juegos <https://www.python.org/about/apps/#software-development>`_.
+
 
 
 .. _python_comunidad:
 
-La comunidad de Python
-......................
+Comunidad
+.........
 
 El gran software es soportado por grandes personas. Nuestra base de usuarios es entusiasta, 
 dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.
@@ -46,10 +100,11 @@ dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amiga
 Declaración de Diversidad
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-La Python Software Foundation y la comunidad global de Python dan la bienvenida y fomentan la 
-participación de todos. Nuestra comunidad se basa en el respeto mutuo, la tolerancia y el aliento, 
-y estamos trabajando para ayudarnos mutuamente a cumplir con estos principios. Queremos que nuestra 
-comunidad sea más diversa: sea quien sea, y cualquiera sea su experiencia, le damos la bienvenida.
+La :ref:`Python Software Foundation <python_psf>` y la comunidad global de Python dan la 
+bienvenida y fomentan la participación de todos. Nuestra comunidad se basa en el respeto mutuo, 
+la tolerancia y el aliento, y estamos trabajando para ayudarnos mutuamente a cumplir con estos 
+principios. Queremos que nuestra comunidad sea más diversa: sea quien sea, y cualquiera sea su 
+experiencia, le damos la bienvenida.
 
 .. note:: Mayor información consulte https://www.python.org/community/diversity/
 
