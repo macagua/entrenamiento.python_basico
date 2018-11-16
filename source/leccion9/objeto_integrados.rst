@@ -18,7 +18,7 @@ El objeto nulo
 No tiene ninguna operación especial. Existe exactamente un objeto nulo, llamado 
 ``None`` (un nombre interno).
 
-Se muestra como ``None``.
+.. note:: El tipo se muestra de este modo: ``None``.
 
 ----
 
@@ -341,4 +341,4 @@ accesible mediante la función interna ``type()``. No hay operaciones especiales
 los tipos. El módulo estándar ``types`` define nombres para todos los tipos internos 
 estándar.
 
-Los tipos se muestran de este modo: ``<type 'int'>``.
+.. note:: Los tipos se muestran de este modo: ``<type 'int'>``.
