@@ -51,7 +51,7 @@ Introducción a Python
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación`_,
+        Vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación <https://www.youtube.com/watch?v=CjmzDHMHxwU>`_,
         cortesía de `CodigoFacilito.com`_.
 
 
@@ -68,10 +68,7 @@ Instalando Python
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 2 - Instalación`_, cortesía de `CodigoFacilito.com`_.
-
-.. _`Tutorial Python 1 - Introducción al Lenguaje de Programación`: https://www.youtube.com/watch?v=CjmzDHMHxwU
-.. _`Tutorial Python 2 - Instalación`: https://www.youtube.com/watch?v=VTykmP-a2KY
+        Vídeo `Tutorial Python 2 - Instalación <https://www.youtube.com/watch?v=VTykmP-a2KY>`_, cortesía de `CodigoFacilito.com`_.
 
 
 ----
@@ -100,10 +97,9 @@ Su primer programa - ¡Hola, mundo!
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 3 - Hola Mundo`_, cortesía de `CodigoFacilito.com`_.
+        Vídeo `Tutorial Python 3 - Hola Mundo <https://www.youtube.com/watch?v=OtJEj7N9T6k>`_, cortesía de `CodigoFacilito.com`_.
 
 .. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
-.. _Tutorial Python 3 - Hola Mundo: https://www.youtube.com/watch?v=OtJEj7N9T6k
 
 
 ----
@@ -129,10 +125,7 @@ Operadores aritméticos, tipo enteros y reales
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos`_, 
-        cortesía de `CodigoFacilito.com`_.
-
-.. _`Tutorial Python 4 - Enteros, reales y operadores aritméticos`: https://www.youtube.com/watch?v=ssnkfbBbcuw
+        Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos <https://www.youtube.com/watch?v=ssnkfbBbcuw>`_, cortesía de `CodigoFacilito.com`_.
 
 
 Tipo booleanos y cadenas de caracteres 
@@ -196,9 +189,7 @@ Condicional if
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 10 - Sentencias condicionales`_, cortesía de `CodigoFacilito.com`_.
-
-.. _`Tutorial Python 10 - Sentencias condicionales`: https://www.youtube.com/watch?v=hLqKvB7tGWk
+        Vídeo `Tutorial Python 10 - Sentencias condicionales <https://www.youtube.com/watch?v=hLqKvB7tGWk>`_, cortesía de `CodigoFacilito.com`_.
 
 
 Expresiones condicional
@@ -251,8 +242,6 @@ Bucle for
 
         Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
 
-.. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
-
 
 ----
 
@@ -276,9 +265,7 @@ Funciones definidas por el usuario
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 12 - Funciones`_, cortesía de `CodigoFacilito.com`_.
-
-.. _`Tutorial Python 12 - Funciones`: https://www.youtube.com/watch?v=_C7Uj7O5o_Q
+        Vídeo `Tutorial Python 12 - Funciones <https://www.youtube.com/watch?v=_C7Uj7O5o_Q>`_, cortesía de `CodigoFacilito.com`_.
 
 
 Programación estructurada
@@ -310,9 +297,7 @@ Sesión 6 - Introspección a la depuración con pdb
         :align: center
         :width: 60%
 
-        Vídeo `Depurando um programa Python com pdb - Python Debugger`_.
-
-.. _`Depurando um programa Python com pdb - Python Debugger`: https://www.youtube.com/watch?v=N4NtB4r28h0
+        Vídeo `Depurando um programa Python com pdb - Python Debugger <https://www.youtube.com/watch?v=N4NtB4r28h0>`_.
 
 
 ----
@@ -340,20 +325,17 @@ Entrada / Salida en Python
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 30 - Entrada Estándar rawInput`_.
+        Vídeo `Tutorial Python 30 - Entrada Estándar rawInput <https://www.youtube.com/watch?v=AzeUCuMvW6I>`_.
 
     .. figure:: https://img.youtube.com/vi/JPXgxK3Oc/0.jpg
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 31 - Salida Estándar rawInput`_.
+        Vídeo `Tutorial Python 31 - Salida Estándar rawInput <https://www.youtube.com/watch?v=B-JPXgxK3Oc>`_.
 
   .. todo:: 
       TODO Cambiar la URL de imagen de previsualización del video 
       *Tutorial Python 31 - Salida Estándar rawInput*, de forma local.
-
-.. _`Tutorial Python 30 - Entrada Estándar rawInput`: https://www.youtube.com/watch?v=AzeUCuMvW6I
-.. _`Tutorial Python 31 - Salida Estándar rawInput`: https://www.youtube.com/watch?v=B-JPXgxK3Oc
 
 
 Manipulación de archivos
@@ -409,9 +391,7 @@ Programación orientada a objetos
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 13 - Clases y Objetos`_, cortesía de `CodigoFacilito.com`_.
-
-.. _`Tutorial Python 13 - Clases y Objetos`: https://www.youtube.com/watch?v=VYXdpjCZojA
+        Vídeo `Tutorial Python 13 - Clases y Objetos <https://www.youtube.com/watch?v=VYXdpjCZojA>`_, cortesía de `CodigoFacilito.com`_.
 
 
 ----
@@ -440,17 +420,15 @@ Iteradores
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 26 - Generadores`_.
+        Vídeo `Tutorial Python 26 - Generadores <https://www.youtube.com/watch?v=tvHbC_OZV14>`_.
 
     .. figure:: _static/youtube/TaIWx9paNIA.jpg
         :align: center
         :width: 60%
 
-        Vídeo `Tutorial Python 27 - Decoradores`_.
+        Vídeo `Tutorial Python 27 - Decoradores <https://www.youtube.com/watch?v=TaIWx9paNIA>`_.
 
 .. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
-.. _`Tutorial Python 26 - Generadores`: https://www.youtube.com/watch?v=tvHbC_OZV14
-.. _`Tutorial Python 27 - Decoradores`: https://www.youtube.com/watch?v=TaIWx9paNIA
 
 
 Listas de comprensión
@@ -466,6 +444,5 @@ Listas de comprensión
         :width: 60%
 
         Vídeo `Tutorial Python 25 - Comprensión de Listas`_, cortesía de `CodigoFacilito.com`_.
-
 
 .. _`CodigoFacilito.com`: https://www.codigofacilito.com/
