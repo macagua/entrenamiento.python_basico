@@ -118,9 +118,9 @@ cero o mas elementos del tipo de datos especificado:
 
 ::
 
-    >>> operacion = "raíz cuadrada de dos"
+    >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de %s es %f" % (operacion, valor)
+    >>> print "el resultado de %s es %f" % (tipo_calculo, valor)
     el resultado de raíz cuadrada de dos es 1.414214
     >>> 
 
@@ -129,9 +129,9 @@ valor con 8 dígitos después de la coma:
 
 ::
 
-    >>> operacion = "raíz cuadrada de dos"
+    >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de %s es %.8f" % (operacion, valor)
+    >>> print "el resultado de %s es %.8f" % (tipo_calculo, valor)
     el resultado de raíz cuadrada de dos es 1.41421356
     >>> 
 
@@ -192,9 +192,9 @@ argumentos de ``format()``, contando a partir de cero (*argumentos posicionales*
 
 ::
 
-    >>> operacion = "raíz cuadrada de dos"
+    >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de {0} es {1}".format(operacion, valor)
+    >>> print "el resultado de {0} es {1}".format(tipo_calculo, valor)
     el resultado de raíz cuadrada de dos es 1.41421356237
     >>> 
 
@@ -202,8 +202,8 @@ Los objetos también pueden ser referenciados por nombre (argumentos por clave).
 
 ::
 
-    >>> operacion = "raíz cuadrada de dos"
-    >>> print "el resultado de {nombre} es {resultado}".format(nombre=operacion, resultado=2**0.5)
+    >>> tipo_calculo = "raíz cuadrada de dos"
+    >>> print "el resultado de {nombre} es {resultado}".format(nombre=tipo_calculo, resultado=2**0.5)
     el resultado de raíz cuadrada de dos es 1.41421356237
     >>> 
 
@@ -223,9 +223,9 @@ se imprima con cuatro dígitos después de la coma (``.4``).
 
 ::
 
-    >>> operacion = "raíz cuadrada de dos"
+    >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de {0} es {resultado:.4f}".format(operacion, resultado=valor)
+    >>> print "el resultado de {0} es {resultado:.4f}".format(tipo_calculo, resultado=valor)
     el resultado de raíz cuadrada de dos es 1.4142
     >>> 
 

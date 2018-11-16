@@ -103,9 +103,9 @@ las cadenas de caracteres y variables:
 
 ::
 
-	>>> operacion = "raíz cuadrada de dos"
+	>>> tipo_calculo = "raíz cuadrada de dos"
 	>>> valor = 2**0.5
-	>>> print "el resultado de", operacion, "es:", valor
+	>>> print "el resultado de", tipo_calculo, "es:", valor
 	el resultado de raíz cuadrada de dos es: 1.41421356237
 	>>> 
 
