@@ -117,6 +117,17 @@ Sesión 3 - Tipos y estructuras de datos
 
 - `Python - Tipos básicos <http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/>`_.
 
+- `Python Data Types <https://www.programiz.com/python-programming/variables-datatypes>`_.
+
+
+Variables y constantes
+......................
+
+- `Python Variables, Constants and Literals <https://www.programiz.com/python-programming/variables-constants-literals>`_.
+
+- `Built-in Constants — Python 2.7.15 documentation <https://docs.python.org/2/library/constants.html>`_.
+
+
 Operadores aritméticos, tipo enteros y reales
 .............................................
 

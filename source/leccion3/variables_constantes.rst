@@ -125,6 +125,41 @@ constantes son escritas en letras MAYÚSCULAS y separadas las palabras con el
 carácter *underscore* ``_``.
 
 
+Constantes integradas
+~~~~~~~~~~~~~~~~~~~~~
+
+Un pequeño número de constantes vive en el espacio de nombres incorporado. Son:
+
+``False``
+	El valor falso del tipo :ref:`booleano <python_booleanos>`.
+
+``True``
+	El valor verdadero del tipo :ref:`booleano <python_booleanos>`.
+
+``None``
+	El valor único de ``types.NoneType``. ``None`` se utiliza con frecuencia 
+	para representar la ausencia de un valor, como cuando los argumentos 
+	predeterminados no se pasan a una función.
+
+``NotImplemented``
+	Valor especial que puede ser devuelto por los métodos especiales de 
+	"comparación rica" (``__eq__()``, ``__lt__()`` y amigos), para indicar que 
+	la comparación no se implementa con respecto al otro tipo.
+
+``Ellipsis``
+`	Valor especial utilizado junto con la sintaxis de corte ampliada.
+
+``__debug__``
+	Esta constante es ``True`` si Python no se inició con una opción ``-O``. 
+	Véase también la declaración ``assert``.
+
+.. note:: 
+	Los nombres ``None`` y ``__debug__`` no se pueden reasignar (asignaciones 
+	a ellos, incluso como un nombre de atributo, causa una excepción 
+	:ref:`SyntaxError <python_exception_syntaxerror>`), por lo que pueden 
+	considerarse constantes "verdaderas".
+
+
 Ejemplo de constantes
 ~~~~~~~~~~~~~~~~~~~~~
 
