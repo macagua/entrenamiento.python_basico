@@ -32,7 +32,7 @@ El intérprete repite la línea culpable y muestra una pequeña
 'flecha' que apunta al primer lugar donde se detectó el error. 
 Este es causado por (o al menos detectado en) el símbolo que 
 *precede* a la flecha: en el ejemplo, el error se detecta en 
-el :keyword:`print`, ya que faltan dos puntos (``':'``) antes 
+el ``print``, ya que faltan dos puntos (``':'``) antes 
 del mismo. Se muestran el nombre del archivo y el número de 
 línea para que sepas dónde mirar en caso de que la entrada 
 venga de un programa.
@@ -111,31 +111,31 @@ se señaliza generando la excepción
    ...         print u"Oops!  No era válido. Intente nuevamente..."
    ...
 
-La declaración :keyword:`try` funciona de la siguiente manera:
+La declaración ``try`` funciona de la siguiente manera:
 
 * Primero, se ejecuta el *bloque try* (el código entre las declaración
-  :keyword:`try` y :keyword:`except`).
+  ``try`` y ``except``).
 
 * Si no ocurre ninguna excepción, el *bloque except* se saltea y 
-  termina la ejecución de la declaración :keyword:`try`.
+  termina la ejecución de la declaración ``try``.
 
 * Si ocurre una excepción durante la ejecución del *bloque try*, 
   el resto del bloque se saltea. Luego, si su tipo coincide con 
-  la excepción nombrada luego de la palabra reservada :keyword:`except`, 
+  la excepción nombrada luego de la palabra reservada ``except``, 
   se ejecuta el *bloque except*, y la ejecución continúa luego de la 
-  declaración :keyword:`try`.
+  declaración ``try``.
 
 * Si ocurre una excepción que no coincide con la excepción nombrada 
-  en el :keyword:`except`, esta se pasa a declaraciones :keyword:`try` 
+  en el ``except``, esta se pasa a declaraciones ``try`` 
   de más afuera; si no se encuentra nada que la maneje, es una 
   *excepción no manejada*, y la ejecución se frena con un mensaje como 
   los mostrados arriba.
 
-Una declaración :keyword:`try` puede tener más de un :keyword:`except`, 
+Una declaración ``try`` puede tener más de un ``except``, 
 para especificar manejadores para distintas excepciones. A lo sumo un 
 manejador será ejecutado. Sólo se manejan excepciones que ocurren en el 
-correspondiente :keyword:`try`, no en otros manejadores del mismo 
-:keyword:`try`. Un :keyword:`except` puede nombrar múltiples excepciones 
+correspondiente ``try``, no en otros manejadores del mismo 
+``try``. Un ``except`` puede nombrar múltiples excepciones 
 usando paréntesis, por ejemplo:
 
 ::
@@ -144,7 +144,7 @@ usando paréntesis, por ejemplo:
    ...     pass
 
 
-El último :keyword:`except` puede omitir nombrar qué excepción captura, 
+El último ``except`` puede omitir nombrar qué excepción captura, 
 para servir como comodín. Usá esto con extremo cuidado, ya que de esta 
 manera es fácil ocultar un error real de programación. También puede 
 usarse para mostrar un mensaje de error y luego re-generar la excepción 
@@ -167,9 +167,9 @@ usarse para mostrar un mensaje de error y luego re-generar la excepción
        raise
 
 
-Las declaraciones :keyword:`try` ... :keyword:`except` tienen un 
+Las declaraciones ``try`` ... ``except`` tienen un 
 *bloque else* opcional, el cual, cuando está presente, debe seguir 
-a los :keyword:`except`. Es útil para aquel código que debe ejecutarse 
+a los ``except``. Es útil para aquel código que debe ejecutarse 
 si el *bloque try* no genera una excepción. Por ejemplo:
 
 ::
@@ -183,16 +183,16 @@ si el *bloque try* no genera una excepción. Por ejemplo:
            print arg, 'tiene', len(f.readlines()), 'lineas'
            f.close()
 
-El uso de :keyword:`else` es mejor que agregar código adicional en 
-el :keyword:`try` porque evita capturar accidentalmente una excepción 
+El uso de ``else`` es mejor que agregar código adicional en 
+el ``try`` porque evita capturar accidentalmente una excepción 
 que no fue generada por el código que está protegido por la declaración 
-:keyword:`try` ... :keyword:`except`.
+``try`` ... ``except``.
 
 Cuando ocurre una excepción, puede tener un valor asociado, también 
 conocido como el *argumento* de la excepción. La presencia y el tipo 
 de argumento depende del tipo de excepción.
 
-El :keyword:`except` puede especificar una variable luego del nombre 
+El ``except`` puede especificar una variable luego del nombre 
 (o tupla) de excepción(es). La variable se vincula a una instancia de 
 excepción con los argumentos almacenados en ``instance.args``. Por 
 conveniencia, la instancia de excepción define :meth:`__str__` para 
@@ -244,7 +244,7 @@ dentro del *bloque try*. Por ejemplo:
 Levantando excepciones
 ......................
 
-La declaración :keyword:`raise` permite al programador forzar a 
+La declaración ``raise`` permite al programador forzar a 
 que ocurra una excepción específica. Por ejemplo:
 
 ::
@@ -254,12 +254,12 @@ que ocurra una excepción específica. Por ejemplo:
      File "<stdin>", line 1, in ?
    NameError: Hola
 
-El único argumento a :keyword:`raise` indica la excepción a generarse. 
+El único argumento a ``raise`` indica la excepción a generarse. 
 Tiene que ser o una instancia de excepción, o una clase de excepción 
 (una clase que hereda de :ref:`Exception <python_exception>`).
 
 Si necesitás determinar cuando una excepción fue lanzada pero no querés
-manejarla, una forma simplificada de la instrucción :keyword:`raise` te 
+manejarla, una forma simplificada de la instrucción ``raise`` te 
 permite relanzarla:
 
 ::
@@ -365,7 +365,7 @@ más información sobre clases en el capítulo :ref:`Clases <python_poo>`.
 Definiendo acciones de limpieza
 ...............................
 
-La declaración :keyword:`try` tiene otra cláusula opcional que 
+La declaración ``try`` tiene otra cláusula opcional que 
 intenta definir acciones de limpieza que deben ser ejecutadas bajo 
 ciertas circunstancias. Por ejemplo:
 
@@ -383,16 +383,16 @@ ciertas circunstancias. Por ejemplo:
 
 
 Una *cláusula finally* siempre es ejecutada antes de salir de la 
-declaración :keyword:`try`, ya sea que una excepción haya ocurrido 
-o no. Cuando ocurre una excepción en la cláusula :keyword:`try` y 
-no fue manejada por una cláusula :keyword:`except` (o ocurrió en 
-una cláusula :keyword:`except` o :keyword:`else`), es relanzada 
-luego de que se ejecuta la cláusula :keyword:`finally`. 
-:keyword:`finally` es también ejecutada "a la salida" cuando 
-cualquier otra cláusula de la declaración :keyword:`try` es dejada 
-vía :keyword:`break`, :keyword:`continue` or :keyword:`return`. Un 
-ejemplo más complicado (cláusulas :keyword:`except` y 
-:keyword:`finally` en la misma declaración :keyword:`try`):
+declaración ``try``, ya sea que una excepción haya ocurrido 
+o no. Cuando ocurre una excepción en la cláusula ``try`` y 
+no fue manejada por una cláusula ``except`` (o ocurrió en 
+una cláusula ``except`` o ``else``), es relanzada 
+luego de que se ejecuta la cláusula ``finally``. 
+``finally`` es también ejecutada "a la salida" cuando 
+cualquier otra cláusula de la declaración ``try`` es dejada 
+vía ``break``, ``continue`` or ``return``. Un 
+ejemplo más complicado (cláusulas ``except`` y 
+``finally`` en la misma declaración ``try``):
 
 ::
 
@@ -420,13 +420,13 @@ ejemplo más complicado (cláusulas :keyword:`except` y
    TypeError: unsupported operand type(s) for /: 'str' and 'str'
 
 
-Como puedes ver, la cláusula :keyword:`finally` es ejecutada siempre. 
+Como puedes ver, la cláusula ``finally`` es ejecutada siempre. 
 La excepción :ref:`TypeError <python_exception_typeerror>` lanzada 
 al dividir dos cadenas de caracteres no es manejado por la cláusula 
-:keyword:`except` y por lo tanto es relanzada luego de que se ejecuta 
-la cláusula :keyword:`finally`.
+``except`` y por lo tanto es relanzada luego de que se ejecuta 
+la cláusula ``finally``.
 
-En aplicaciones reales, la cláusula :keyword:`finally` es útil para 
+En aplicaciones reales, la cláusula ``finally`` es útil para 
 liberar recursos externos (como archivos o conexiones de red), sin 
 importar si el uso del recurso fue exitoso.
 
@@ -450,7 +450,7 @@ contenido en la pantalla.
 El problema con este código es que deja el archivo abierto por un 
 periodo de tiempo indeterminado luego de que termine de ejecutarse. 
 Esto no es un problema en scripts simples, pero puede ser un problema 
-en aplicaciones más grandes. La declaración :keyword:`with` permite 
+en aplicaciones más grandes. La declaración ``with`` permite 
 que objetos como archivos sean usados de una forma que asegure que 
 siempre se los libera rápido y en forma correcta.
 
