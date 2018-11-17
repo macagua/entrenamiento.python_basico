@@ -30,7 +30,7 @@ A continuación, se presentan algunos ejemplos del uso de *variables*:
 
 A continuación, se creará un par de variables a modo de ejemplo. Una 
 de tipo :ref:`cadenas de caracteres <python_cadenas>` y una de tipo 
-:ref:`entero <python_numerico_entero>`:
+:ref:`entero <python_num_entero>`:
 
 ::
 
@@ -75,8 +75,8 @@ A continuación, se cambiará el valor para una variable de tipo
 
 **Ejemplo de asignar múltiples valores a a múltiples variables**
 
-A continuación, se creará múltiples variables (:ref:`entero <python_numerico_entero>`, 
-:ref:`coma flotante <python_numerico_coma_flotante>`, :ref:`cadenas de caracteres <python_cadenas>`) 
+A continuación, se creará múltiples variables (:ref:`entero <python_num_entero>`, 
+:ref:`coma flotante <python_coma_flotante>`, :ref:`cadenas de caracteres <python_cadenas>`) 
 asignando múltiples valores:
 
 ::

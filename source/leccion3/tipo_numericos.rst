@@ -21,7 +21,7 @@ En Python se pueden representar números enteros, coma flotante y complejos.
 | ``complex`` | Número complejo | Parte real y parte imaginaria *j*.  | (4.5 + 3j)                |
 +-------------+-----------------+-------------------------------------+---------------------------+
 
-.. _python_numerico_entero:
+.. _python_num_entero:
 
 Enteros
 .......
@@ -56,7 +56,7 @@ A continuación, se presentan un ejemplo de su uso:
     :lines: 4-6
 
 
-.. _python_numerico_entero_long:
+.. _python_num_entero_long:
 
 Enteros long
 ............
@@ -116,7 +116,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 ----
 
-.. _python_numerico_coma_flotante:
+.. _python_coma_flotante:
 
 Coma flotante
 .............
@@ -182,7 +182,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 ----
 
-.. _python_numerico_complejo:
+.. _python_num_complejo:
 
 Complejos
 .........
@@ -250,9 +250,9 @@ int()
 ~~~~~
 
 La función ``int()`` devuelve un número entero. Es un constructor, que crea un 
-:ref:`entero <python_numerico_entero>` a partir de un 
-:ref:`entero float <python_numerico_coma_flotante>`, 
-:ref:`entero complex <python_numerico_complejo>` o una 
+:ref:`entero <python_num_entero>` a partir de un 
+:ref:`entero float <python_coma_flotante>`, 
+:ref:`entero complex <python_num_complejo>` o una 
 :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
 entero.
 
@@ -296,8 +296,8 @@ long()
 ~~~~~~
 
 La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea un 
-:ref:`entero long <python_numerico_entero_long>` a partir de un 
-:ref:`entero <python_numerico_entero>`, :ref:`entero float <python_numerico_coma_flotante>` 
+:ref:`entero long <python_num_entero_long>` a partir de un 
+:ref:`entero <python_num_entero>`, :ref:`entero float <python_coma_flotante>` 
 o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número entero.
 
 ::
@@ -341,9 +341,9 @@ float()
 ~~~~~~~
 
 La función ``float()`` devuelve un número coma flotante ``float``. Es un constructor, 
-que crea un :ref:`coma flotante <python_numerico_coma_flotante>` a partir de un 
-:ref:`entero <python_numerico_entero>`, :ref:`entero long <python_numerico_entero_long>`, 
-:ref:`entero float <python_numerico_coma_flotante>` (cadenas de caracteres formadas por 
+que crea un :ref:`coma flotante <python_coma_flotante>` a partir de un 
+:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
+:ref:`entero float <python_coma_flotante>` (cadenas de caracteres formadas por 
 números y hasta un punto) o una :ref:`cadena de caracteres <python_cadenas>` que sean 
 coherentes con un número entero.
 
@@ -368,9 +368,9 @@ complex()
 ~~~~~~~~~
 
 La función ``complex()`` devuelve un número complejo ``complex``. Es un constructor, 
-que crea un :ref:`entero complex <python_numerico_complejo>` a partir de un 
-:ref:`entero <python_numerico_entero>`, :ref:`entero long <python_numerico_entero_long>`, 
-:ref:`entero float <python_numerico_coma_flotante>` (cadenas de caracteres formadas por 
+que crea un :ref:`entero complex <python_num_complejo>` a partir de un 
+:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
+:ref:`entero float <python_coma_flotante>` (cadenas de caracteres formadas por 
 números y hasta un punto), o una :ref:`cadena de caracteres <python_cadenas>` que sean 
 coherentes con un número entero.
 

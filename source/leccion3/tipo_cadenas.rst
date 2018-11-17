@@ -214,7 +214,7 @@ y explicitar el tipo del objeto:
 
 - ``d`` para números enteros (tipo :ref:`int <python_numericos>`).
 
-- ``f`` para números de coma flotante (tipo :ref:`float <python_numerico_coma_flotante>`).
+- ``f`` para números de coma flotante (tipo :ref:`float <python_coma_flotante>`).
 
 
 Esto permite controlar el formato de impresión del objeto. Por ejemplo, podemos 
