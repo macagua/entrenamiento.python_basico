@@ -57,8 +57,12 @@ llamado despectivamente *código espagueti*), cabe citar las siguientes:
 - Se incrementa el rendimiento de los programadores.
 
 
-.. todo::
-    TODO terminar de escribir esta sección
+.. important::
+
+	Seguidamente se presenta el concepto de funciones poniendo en practica forma de secuencia, 
+	implementado las estructuras condicionales :ref:`if <python_condicional_if>` y los bucles 
+	o iteraciones existen :ref:`while <python_bucle_while>` y :ref:`for <python_bucle_for>`.
+
 
 ----
 
