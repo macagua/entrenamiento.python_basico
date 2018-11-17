@@ -20,4 +20,3 @@ programación diarias con el lenguaje. A continuación el temario de esta lecci�
    :maxdepth: 2
 
    interactivo
-   holamundo

@@ -43,27 +43,6 @@ Programa ¡Hola, mundo! en diversas versiones de Python:
   print("Hola Mundo");
 
 
-.. _python_ejecutar_linux:
-
-Ejecutar un programa en Linux
-.............................
-
-Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
-y dentro de este, cree un archivo de texto plano con el siguiente
-nombre ``holamundo.py`` y escriba la sintaxis de :ref:`Python 2 <python2_hola_mundo>` 
-o :ref:`Python 3 <python3_hola_mundo>` respectivamente.
-
-Luego ejecute desde la consola de comando el siguiente comando:
-
-::
-
-  python $HOME/proyectos/holamundo.py
-
-Usted debe ver la línea *Hola Mundo*.
-
-Enhorabuena, usted ha ejecutado su primer programa Python.
-
-
 .. _python_ejecutar_windows:
 
 Ejecutar un programa en Windows
@@ -142,6 +121,41 @@ Ejecutar un programa en Mac OSX
 #. Usted debe ver la línea *Hola Mundo*.
 
 Enhorabuena, usted ha ejecutado su primer programa Python.
+
+
+.. _python_ejecutar_linux:
+
+Ejecutar un programa en Linux
+.............................
+
+Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
+y dentro de este, cree un archivo de texto plano con el siguiente
+nombre ``holamundo.py`` y escriba la sintaxis de :ref:`Python 2 <python2_hola_mundo>` 
+o :ref:`Python 3 <python3_hola_mundo>` respectivamente.
+
+Luego ejecute desde la consola de comando el siguiente comando:
+
+::
+
+  python $HOME/proyectos/holamundo.py
+
+Usted debe ver la línea *Hola Mundo*.
+
+Enhorabuena, usted ha ejecutado su primer programa Python.
+
+----
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion1/holamundo.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`holamundo.py`, abra una 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 holamundo.py
 
 
 ----
