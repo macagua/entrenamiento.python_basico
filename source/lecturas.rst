@@ -103,9 +103,9 @@ Inmersión al modo interactivo de Python
 
 - `Inmersión en Python <http://www.diveintopython3.net/>`_.
 
-- `Guía de aprendizaje de Python <http://pyspanishdoc.sourceforge.net/tut/tut.html>`_.
+- `La librería estándar de Python <https://docs.python.org/2/library/index.html>`_.
 
-- `La librería estándar de Python <http://pyspanishdoc.sourceforge.net/tut/node12.html>`_.
+- `Guía de aprendizaje de Python <http://pyspanishdoc.sourceforge.net/tut/tut.html>`_.
 
 ----
 

@@ -606,16 +606,14 @@ módulos propios escritos en Python que tienes instalado en tu sistema.
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-.. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
-.. _`fundación Cenditel`: https://mobile.twitter.com/cenditel
 .. _`Python`: https://www.python.org/ 
 .. _`Javadoc`: https://es.wikipedia.org/wiki/Javadoc
 .. _`diagramas de clases`: https://es.wikipedia.org/wiki/Diagrama_de_clases
 .. _`Sphinx`: https://en.wikipedia.org/wiki/Sphinx_%28documentation_generator%29
-.. _`librería del estándar`: http://pyspanishdoc.sourceforge.net/tut/node12.html
+.. _`librería del estándar`: https://docs.python.org/2/library/index.html
 .. _`modo interactivo`: https://es.wikipedia.org/wiki/Python#Modo_interactivo
 .. _`SciPy`: https://en.wikipedia.org/wiki/SciPy
-.. _`ipython`: https://ipython.org
+.. _`ipython`: https://ipython.readthedocs.io/
 .. _`bpython`: https://pypi.org/project/bpython/
 .. _`interprete bpython`: https://bpython-interpreter.org/
 .. _`estilo de completación de lineas de comandos`: https://en.wikipedia.org/wiki/Command_line_completion
