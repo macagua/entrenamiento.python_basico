@@ -3,8 +3,8 @@
 
 .. _python_1er_programa:
 
-Su primer programa - ¡Hola, mundo!
-----------------------------------
+Su primer programa
+------------------
 
 En informática, un programa **Hola mundo** es el que imprime el texto
 *«¡Hola, mundo!»* en un dispositivo de visualización, en la mayoría de
@@ -43,10 +43,19 @@ Programa ¡Hola, mundo! en diversas versiones de Python:
   print("Hola Mundo");
 
 
+.. _python_ejecucion:
+
+Ejecución
+.........
+
+Dependiendo del sistema operativo que este usando debe realizar procedimientos 
+distintos para cada plataforma cuando usted quiere escribir y ejecutar un programa 
+Python. A continuación un procedimiento básico para las principales plataformas:
+
 .. _python_ejecutar_windows:
 
 Ejecutar un programa en Windows
-...............................
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Cree un directorio llamado ``proyectos`` la unidad ``C:\`` y dentro
 de este, cree un archivo de texto plano con el siguiente nombre
@@ -67,7 +76,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 .. _python_ejecutar_macosx:
 
 Ejecutar un programa en Mac OSX
-...............................
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Haga clic en ``Archivo`` y luego la nueva Ventana del ``Finder``.
 
@@ -126,7 +135,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 .. _python_ejecutar_linux:
 
 Ejecutar un programa en Linux
-.............................
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
 y dentro de este, cree un archivo de texto plano con el siguiente

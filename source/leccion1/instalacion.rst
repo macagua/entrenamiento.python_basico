@@ -3,8 +3,8 @@
 
 .. _python_instalacion:
 
-Instalación de Python
----------------------
+Instalación
+-----------
 
 Debido al soporte :ref:`multiplataforma <python_multiplataforma>` de Python, se ofrecen 
 ciertos recursos para los sistemas operativos más populares:

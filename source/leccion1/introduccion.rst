@@ -3,8 +3,8 @@
 
 .. _python_intro:
 
-Introducción a Python
----------------------
+Acerca de Python
+----------------
 
 
 Python es un lenguaje de programación de propósito general muy poderoso y flexible, 
