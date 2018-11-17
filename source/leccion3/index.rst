@@ -43,7 +43,7 @@ Otros tipos de datos incorporados, se describen a continuación:
 +-----------------------+----------------+-------------------------------------+
 | **Categoría de tipo** | **Nombre**     | **Descripción**                     |
 +-----------------------+----------------+-------------------------------------+
-|                       | ``type(None)`` | el objeto                           |
+|                       | ``NoneType``   | el objeto                           |
 | None                  |                | :ref:`nulo <python_objeto_none>` o  |
 |                       |                | ``None``.                           |
 +-----------------------+----------------+-------------------------------------+
