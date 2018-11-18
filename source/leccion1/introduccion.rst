@@ -11,9 +11,26 @@ Python es un lenguaje de programación de propósito general muy poderoso y flex
 a la vez que sencillo y fácil de aprender. Es un lenguaje de alto nivel, que permite 
 procesar fácilmente todo tipo de estructuras de datos, tanto numéricos como de texto.
 
+
+.. figure:: ../_static/python_logo.png
+    :align: center
+    :width: 70%
+
+    Lenguaje de programación Python.
+
+
 Este lenguaje fue creado a principios de los noventa por 
 `Guido van Rossum <https://es.wikipedia.org/wiki/Guido_van_Rossum>`_ en los Países 
-Bajos. Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 
+Bajos. 
+
+.. figure:: ../_static/Guido_van_Rossum_2006.jpg
+    :align: center
+    :width: 40%
+
+    Guido van Rossum en 2006.
+
+
+Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 
 1991). Toma características de lenguajes predecesores, incluso, compatibilizando la 
 solución de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de 
 una variable: desde el entorno interactivo escribiendo su nombre (como en Basic), usando 
@@ -30,7 +47,15 @@ Open source
 ...........
 
 Python se desarrolla bajo una licencia de Open source o código abierto aprobada por OSI, 
-por lo que se puede usar y distribuir libremente, incluso para uso comercial. La licencia 
+por lo que se puede usar y distribuir libremente, incluso para uso comercial. 
+
+.. figure:: ../_static/Open_Source_Initiative.png
+    :align: center
+    :width: 40%
+
+    Logotipo de la Open Source Initiative.
+
+La licencia 
 de Python es administrada por :ref:`Python Software Foundation <python_psf>`.
 
 - `Aprenda más sobre la licencia <https://docs.python.org/license.html>`_.
@@ -48,10 +73,18 @@ Python Software Foundation
 La Python Software Foundation (PSF) es una corporación sin fines de lucro 501 (c) (3) que 
 posee los derechos de propiedad intelectual detrás del lenguaje de programación Python. 
 Administramos las licencias de código abierto para Python versión 2.1 y posteriores, y 
-poseemos y protegemos las marcas comerciales asociadas con Python. También realiza la 
-conferencia PyCon de Norteamérica anualmente, apoyamos otras conferencias de Python en 
-todo el mundo y financiamos el desarrollo relacionado con Python con nuestro `programa de 
-subvenciones <https://www.python.org/psf/grants/>`_ y financiamos proyectos especiales.
+poseemos y protegemos las marcas comerciales asociadas con Python. 
+
+.. figure:: ../_static/psf_logo.png
+    :align: center
+    :width: 70%
+
+    Python Software Foundation.
+
+También realiza la conferencia PyCon de Norteamérica anualmente, apoyamos otras conferencias 
+de Python en todo el mundo y financiamos el desarrollo relacionado con Python con nuestro 
+`programa de subvenciones <https://www.python.org/psf/grants/>`_ y financiamos proyectos 
+especiales.
 
 	*La misión de Python Software Foundation es promover, proteger y avanzar el lenguaje 
 	de programación Python, y apoyar y facilitar el crecimiento de una comunidad* 
@@ -69,8 +102,16 @@ Aplicaciones
 ............
 
 El `Python Package Index (PyPI) <https://pypi.org/>`_ o en español significa *Índice de 
-paquetes de Python* alberga miles de módulos de terceros para Python. Tanto la biblioteca 
-estándar de Python como los módulos aportados por la comunidad permiten infinitas posibilidades.
+paquetes de Python* alberga miles de módulos de terceros para Python.
+
+.. figure:: ../_static/landing_about.png
+    :align: center
+    :width: 70%
+
+    Aplicaciones estan disponibles en el Python Package Index (PyPI).
+
+Tanto la biblioteca estándar de Python como los módulos aportados por la comunidad 
+permiten infinitas posibilidades.
 
 - `Desarrollo web e Internet <https://www.python.org/about/apps/#web-and-internet-development>`_.
 
@@ -94,6 +135,12 @@ Comunidad
 
 El gran software es soportado por grandes personas. Nuestra base de usuarios es entusiasta, 
 dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.
+
+.. figure:: ../_static/PyCon_US_2018_BrettKeynote.png
+    :align: center
+    :width: 70%
+
+    Comunidad Python reunidad en la PyCon 2018 in Cleveland, Ohio.
 
 
 Declaración de Diversidad
@@ -161,31 +208,54 @@ toda una gran comunidad de usuarios y desarrolladores a nivel mundial, la cual o
 comunitario del proyecto Python en Sudamérica.
 
 **Comunidad(es) de Python en Argentina**
-	Es una asociación civil sin fines de lucros creada para promover el proyecto `Python en Argentina <http://www.python.org.ar/>`_.
+	Nuestro objetivo es nuclear a los usuarios de Python. Pretendemos llegar a personas y 
+	empresas, promover el uso de Python e intercambiar información. Más información 
+	visite http://www.python.org.ar/
 
 **Comunidad(es) de Python en Brasil**
-	.. todo:: TODO escribir esta sección.
+	La comunidad Python Brasil reúne grupos de usuarios en todo el Brasil interesados en 
+	difundir e divulgar a lenguaje de programación. Más información visite https://python.org.br
 
 **Comunidad(es) de Python en Chile**
-	.. todo:: TODO escribir esta sección.
+	Una comunidad de amigos apasionados por la tecnología e informática, que busca compartir 
+	conocimiento de forma libre y sin fines de lucro, con el fin de fortalecer a los miembros 
+	de la comunidad para generar un impacto positivo en la región. Más información visite 
+	https://pythonchile.cl/comunidad/
 
 **Comunidad(es) de Python en Colombia**
-	.. todo:: TODO escribir esta sección.
+	Somos una comunidad enfocada en extender en el territorio nacional el uso y aprendizaje de 
+	las distintas tecnologías Python y sus numerosas aplicaciones. Más información visite 
+	https://www.python.org.co/
 
 **Comunidad(es) de Python en Ecuador**
-	.. todo:: TODO escribir esta sección.
+	Somos una comunidad independiente, conformada por entusiastas de Python, con la filosofía 
+	común de que el conocimiento debe ser libre. No lucramos con ningún evento, y esperamos 
+	llegar a todos aquellos que desean aprender. Más información visite https://pythonecuador.org/
 
 **Comunidad(es) de Python en Perú**
-	.. todo:: TODO escribir esta sección.
+	Comunidad de estudiantes, profesionales e interesados en tener un espacio donde conversar, 
+	preguntar e intercambiar ideas todo acerca del lenguaje de programación Python. Más 
+	información visite https://www.meetup.com/es/pythonperu/
 
 **Comunidad(es) de Python en Paraguay**
-	.. todo:: TODO escribir esta sección.
+	Las comunidades de Python están presentes en todo el mundo, con el objeto de apoyar a los 
+	usuarios de este lenguaje y difundirlo. En Paraguay lo conforman un grupo de entusiastas 
+	de Python, que creemos que podemos sumar ganas y esfuerzo para lograr difundir y ayudar a 
+	toda aquella persona que se interese por Python a crecer dentro del sus interés. Entre las 
+	funciones de la comunidad organizamos eventos de distinto tipo para difundir el lenguaje, 
+	desde PyDay, meetup hasta simples reuniones para comentar ideas y experiencias. Más 
+	información visite https://pythonpy.org
 
 **Comunidad(es) de Python en Uruguay**
-	.. todo:: TODO escribir esta sección.
+	Para más información visite https://python.uy
 
 **Comunidad(es) de Python en Venezuela**
-	Es una asociación civil sin fines de lucros creada para promover el proyecto `Python en Venezuela <http://pyve.github.io/>`_.
+	La Fundación Python de Venezuela (FPyVE) es una organización sin fines de lucro creada 
+	el 2 de febrero de 2015 dedicada a fomentar al lenguaje de programación Python. El objetivo 
+	principal es el desarrollo, ejecución y/o consultoría de proyectos científicos, tecnológicos 
+	y productivos, para cumplir fines de interés público en torno al desarrollo Nacional, haciendo 
+	uso y promoviendo para tal fin, el uso del lenguaje de programación Python y las tecnologías 
+	asociadas a éste. Más información visite http://pyve.github.io/
 
 
 ----
