@@ -332,15 +332,11 @@ Entrada / Salida en Python
 
         Vídeo `Tutorial Python 30 - Entrada Estándar rawInput <https://www.youtube.com/watch?v=AzeUCuMvW6I>`_.
 
-    .. figure:: https://img.youtube.com/vi/JPXgxK3Oc/0.jpg
+    .. figure:: _static/youtube/JPXgxK3Oc.jpg
         :align: center
         :width: 60%
 
         Vídeo `Tutorial Python 31 - Salida Estándar rawInput <https://www.youtube.com/watch?v=B-JPXgxK3Oc>`_.
-
-  .. todo:: 
-      TODO Cambiar la URL de imagen de previsualización del video 
-      *Tutorial Python 31 - Salida Estándar rawInput*, de forma local.
 
 
 Manipulación de archivos
