@@ -55,8 +55,8 @@ Introducción a Python
         cortesía de `CodigoFacilito.com`_.
 
 
-Instalando Python
-.................
+Instalación
+...........
 
 - `Descarga Python <https://www.python.org/downloads/>`_.
 
@@ -71,6 +71,20 @@ Instalando Python
         Vídeo `Tutorial Python 2 - Instalación <https://www.youtube.com/watch?v=VTykmP-a2KY>`_, cortesía de `CodigoFacilito.com`_.
 
 
+Su primer programa
+..................
+
+- `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_
+
+.. seealso::
+
+    .. figure:: _static/youtube/OtJEj7N9T6k.jpg
+        :align: center
+        :width: 60%
+
+        Vídeo `Tutorial Python 3 - Hola Mundo <https://www.youtube.com/watch?v=OtJEj7N9T6k>`_, cortesía de `CodigoFacilito.com`_.
+
+
 ----
 
 
@@ -83,24 +97,15 @@ Sesión 2 - Introspección del lenguaje Python
 Inmersión al modo interactivo de Python
 .......................................
 
-- `Una pequeña inmersión al modo interactivo de Python`_ de la fundación Cenditel.
+- `Una pequeña inmersión al modo interactivo de Python <https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/>`_ de la fundación Cenditel.
 
+- `Guide to Python introspection <https://www.ibm.com/developerworks/linux/library/l-pyint/index.html>`_.
 
-Su primer programa - ¡Hola, mundo!
-..................................
+- `Inmersión en Python <http://www.diveintopython3.net/>`_.
 
-- `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_
+- `Guía de aprendizaje de Python <http://pyspanishdoc.sourceforge.net/tut/tut.html>`_.
 
-.. seealso::
-
-    .. figure:: _static/youtube/OtJEj7N9T6k.jpg
-        :align: center
-        :width: 60%
-
-        Vídeo `Tutorial Python 3 - Hola Mundo <https://www.youtube.com/watch?v=OtJEj7N9T6k>`_, cortesía de `CodigoFacilito.com`_.
-
-.. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
-
+- `La librería estándar de Python <http://pyspanishdoc.sourceforge.net/tut/node12.html>`_.
 
 ----
 

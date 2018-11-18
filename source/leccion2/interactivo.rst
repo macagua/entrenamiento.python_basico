@@ -6,31 +6,20 @@
 Inmersión al modo interactivo de Python
 ---------------------------------------
 
-.. sidebar:: Sobre este artículo
-
-    :Autor(es): Leonardo J. Caballero G.
-    :Correo(s): leonardocaballero@gmail.com
-    :Compatible con: Python 2.4 o versiones superiores
-    :Fecha: 08 de Octubre de 2018
-
-
-Descripción general
-...................
-
-Este articulo se basa en el documento `Una pequeña inmersión al modo interactivo de Python`_ 
-generado por la `fundación Cenditel`_ y la idea principal de este tutorial es para alguien que 
-**NUNCA** ha trabajando con el interprete de `Python`_ pueda tener un primer acercamiento 
-**SIN PROGRAMAR**, solamente con conocer el uso del interprete y sus comandos básicos.
-
+La *inmersión al modo interactivo* le permite a cualquier usuario el cual **NUNCA** 
+ha trabajando con el interprete de `Python`_ pueda tener un primer acercamiento 
+**SIN PROGRAMAR**, solamente con conocer el uso del interprete y sus comandos básicos 
+usando la técnica de introspección.
 
 .. _python_introspeccion:
 
 Introspección en Python
 .......................
 
-Según el libro Inmersión en Python ...Como usted sabe, `todo en Python es un objeto`_, 
-y la introspección es código que examina como objetos otros
-módulos y funciones en memoria, obtiene información sobre ellos y los maneja.
+En Python como usted lo ira entendiendo **todo en Python es un objeto**, y la 
+técnica de introspección, no es más que código el cual examina como objetos 
+otros módulos y funciones en memoria, obtiene información sobre ellos y los 
+que los maneja.
 
 De paso, usted podrá definir las funciones sin nombre, las llamará a
 funciones con argumentos sin orden, y podrá hacer referencia a funciones
@@ -38,23 +27,23 @@ cuyos nombres desconocemos.
 
 
 Python a través de su interprete
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+................................
 
 Es importante conocer Python a través de su interprete debido a varios
 factores:
 
--   Conocer las clases, sus funciones y atributos propios, a través de la
-    introspección del lenguaje.
+- Conocer las clases, sus funciones y atributos propios, a través de la
+  introspección del lenguaje.
 
--   Disponibilidad de consultar la documentación del lenguaje desde el
-    interprete, por mucho tiempo no estaba disponible documentación tipo 
-    `Javadoc`_ o `diagramas de clases`_ del propio lenguaje por lo cual
-    muchas programadores **Python** se acostumbraron a estudiar su código de
-    esta forma, así que le recomiendo que use el interprete ``python`` para
-    eso.
+- Disponibilidad de consultar la documentación del lenguaje desde el
+  interprete, por mucho tiempo no estaba disponible documentación tipo 
+  `Javadoc`_ o `diagramas de clases`_ del propio lenguaje por lo cual
+  muchas programadores **Python** se acostumbraron a estudiar su código de
+  esta forma, así que le recomiendo que use el interprete ``python`` para
+  eso.
 
--   Hoy en día existente herramientas que te permiten generar
-    documentación desde los códigos fuentes Python como `Sphinx`_.
+- Hoy en día existente herramientas que te permiten generar
+  documentación desde los códigos fuentes Python como `Sphinx`_.
 
 La forma mas fácil es iniciar tu relación con Python simplemente ejecutando
 el comando ``python`` de la siguiente forma: 
@@ -62,14 +51,13 @@ el comando ``python`` de la siguiente forma:
 .. code-block:: python
 
     $ python
-    Python 2.5.2 (r252:60911, Jan  4 2009, 17:40:26)
-    [GCC 4.3.2] on linux2
-    Type "help", "copyright", "credits" or "license" for more
-    information.
+    Python 2.7.13 (default, Sep 26 2018, 18:42:22)
+    [GCC 6.3.0 20170516] on linux2
+    Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
 
-Pidiendo la ayudar del interprete de Python
+Puede solicitar la ayudar del interprete de Python, ejecutando:
 
 .. code-block:: python
 
@@ -77,20 +65,19 @@ Pidiendo la ayudar del interprete de Python
     Type help() for interactive help, or help(object) for help about object.
     >>> help()
 
-    Welcome to Python 2.5!  This is the online help utility.
+    Welcome to Python 2.7!  This is the online help utility.
 
-    If this is your first time using Python, you should definitely check
-    out the tutorial on the Internet at https://www.python.org/doc/tut/.
+    If this is your first time using Python, you should definitely check out
+    the tutorial on the Internet at http://docs.python.org/2.7/tutorial/.
 
-    Enter the name of any module, keyword, or topic to get help on
-    writing Python programs and using Python modules. To quit this help 
-    utility and return to the interpreter, just type "quit".
+    Enter the name of any module, keyword, or topic to get help on writing
+    Python programs and using Python modules.  To quit this help utility and
+    return to the interpreter, just type "quit".
 
-    To get a list of available modules, keywords, or topics, type
-    "modules", "keywords", or "topics".  Each module also comes with 
-    a one-line summary of what it does; to list the modules whose 
-    summaries contain a given word such as "spam", type "modules spam".
-    help>
+    To get a list of available modules, keywords, or topics, type "modules",
+    "keywords", or "topics".  Each module also comes with a one-line summary
+    of what it does; to list the modules whose summaries contain a given word
+    such as "spam", type "modules spam".
 
 
 Para ejecutar la ayuda disponible sobre la sintaxis Python ejecute el
@@ -100,225 +87,150 @@ siguiente comando:
 
     help> modules
 
-      Please wait a moment while I gather a list of all available
-      modules...
+    Please wait a moment while I gather a list of all available modules...
 
-      /usr/lib/python2.5/site-packages/apt/__init__.py:18: FutureWarning:
-      apt API not stable yet
-        warnings.warn("apt API not stable yet", FutureWarning)
-      Data Dir: /usr/share/colorblind
-      Data Dir: /usr/share/gnome-applets/invest-applet
-      Alacarte            _ctypes             gksu                platform
-      AppInstall          _ctypes_test        gksu2               plistlib
-      ArgImagePlugin      _curses             glchess             popen2
-      ArrayPrinter        _curses_panel       glob                poplib
-      BaseHTTPServer      _dbus_bindings      gmenu               posix
-      Bastion             _dbus_glib_bindings gnome               posixfile
-      BdfFontFile         _elementtree        gnome_sudoku        posixpath
-      BeautifulSoup       _functools          gnomeapplet         pprint
-      BeautifulSoupTests  _hashlib            gnomecanvas         profile
-      BmpImagePlugin      _heapq              gnomedesktop
-      pspersistence
-      BufrStubImagePlugin _hotshot            gnomekeyring        pstats
-      CDROM               _imaging            gnomeprint          pty
-      CGIHTTPServer       _imagingft          gnomevfs            pwd
-      Canvas              _imagingmath        gobject             pxssh
-      ConfigParser        _ldap               gopherlib
-      py_compile
-      ContainerIO         _locale             grp                 pyatspi
-      Cookie              _lsprof             gst                 pyclbr
-      Crypto              _multibytecodec     gtk                 pydoc
-      CurImagePlugin      _mysql              gtkhtml2            pyexpat
-      DLFCN               _mysql_exceptions   gtkmozembed         pygst
-      DcxImagePlugin      _numpy              gtksourceview       pygtk
-      Dialog              _random             gtksourceview2      pynotify
-      DocXMLRPCServer     _socket             gtkspell
-      pythonloader
-      EpsImagePlugin      _sqlite3            gtkunixprint
-      pythonscript
-      ExifTags            _sre                gtop                pyuno
-      FileDialog          _ssl                gzip                quopri
-      FitsStubImagePlugin _strptime           hashlib             random
-      FixTk               _struct             heapq               re
-      FliImagePlugin      _symtable           hitcount            readline
-      FontFile            _testcapi           hmac                repr
-      FpxImagePlugin      _threading_local    hotshot             resource
-      Ft                  _types              hpmudext            rexec
-      GMenuSimpleEditor   _weakref            htmlentitydefs      rfc822
-      GbrImagePlugin      aifc                htmllib
-      rlcompleter
-      GdImageFile         anydbm              httplib
-      robotparser
-      GifImagePlugin      apt                 ibrowse             rsvg
-      GimpGradientFile    apt_inst            idlelib             runpy
-      GimpPaletteFile     apt_pkg             igrid               scanext
-      GribStubImagePlugin aptsources          ihooks              sched
-      HTMLParser          argparse            imaplib             select
-      Hdf5StubImagePlugin array               imghdr
-      serpentine
-      IN                  arrayfns            imp                 sets
-      IPy                 astyle              imputil
-      setuptools
-      IPython             asynchat            inspect             sexy
-      IcnsImagePlugin     asyncore            invest              sgmllib
-      IcoImagePlugin      atexit              ipipe               sha
-      ImImagePlugin       atk                 ipy_app_completers  shelve
-      Image               atom                ipy_autoreload      shlex
-      ImageChops          audiodev            ipy_bzr             shutil
-      ImageColor          audioop             ipy_completers      signal
-      ImageDraw           base64              ipy_constants       site
-      ImageDraw2          bdb                 ipy_defaults
-      sitecustomize
-      ImageEnhance        binascii            ipy_editors         smtpd
-      ImageFile           binhex              ipy_exportdb        smtplib
-      ImageFileIO         bisect              ipy_extutil         sndhdr
-      ImageFilter         bonobo              ipy_fsops           socket
-      ImageFont           brlapi              ipy_gnuglobal       spwd
-      ImageGL             bsddb               ipy_greedycompleter sqlite3
-      ImageGrab           bugbuddy            ipy_jot             sqlobject
-      ImageMath           bz2                 ipy_kitcfg          sre
-      ImageMode           cPickle             ipy_legacy
-      sre_compile
-      ImageOps            cProfile            ipy_leo
-      sre_constants
-      ImagePalette        cStringIO           ipy_lookfor         sre_parse
-      ImagePath           cairo               ipy_p4              stat
-      ImageQt             calendar            ipy_profile_doctest statvfs
-      ImageSequence       cgi                 ipy_profile_none    string
-      ImageStat           cgitb               ipy_profile_scipy   stringold
-      ImageTransform      chunk               ipy_profile_sh
-      stringprep
-      ImageWin            clearcmd            ipy_profile_zope    strop
-      ImtImagePlugin      cmath               ipy_pydb            struct
-      InterpreterExec     cmd                 ipy_rehashdir
-      subprocess
-      InterpreterPasteInput code                ipy_render          sunau
-      IptcImagePlugin     codecs              ipy_server          sunaudio
-      JpegImagePlugin     codeop              ipy_signals         svn
-      McIdasImagePlugin   collections         ipy_stock_completers symbol
-      MicImagePlugin      colorblind          ipy_system_conf     symtable
-      MimeWriter          colorsys            ipy_traits_completer sys
-      MpegImagePlugin     commands            ipy_vimserver       syslog
-      MspImagePlugin      compileall          ipy_which           tabnanny
-      MySQLdb             compiler            ipy_winpdb          tarfile
-      Numeric             configobj           ipy_workdir         telnetlib
-      Numeric_headers     constants           itertools           tempfile
-      ORBit               contextlib          jobctrl
-      templatetags
-      OggConvert          cookielib           keyword
-      terminatorlib
-      OleFileIO           copy                ldap                termios
-      PIL                 copy_reg            ldapurl             test
-      PSDraw              crypt               ldif                textwrap
-      PaletteFile         csv                 ledit               this
-      PalmImagePlugin     ctypes              libsvn              thread
-      PcdImagePlugin      cups                libxml2             threading
-      PcfFontFile         cupsext             libxml2mod          time
-      PcxImagePlugin      cupsutils           linecache           timeit
-      PdfImagePlugin      curses              linuxaudiodev
-      tkColorChooser
-      PhysicalQInput      datetime            locale
-      tkCommonDialog
-      PhysicalQInteractive dbhash              logging
-      tkFileDialog
-      PixarImagePlugin    dbm                 macpath             tkFont
-      PngImagePlugin      dbus                macurl2path
-      tkMessageBox
-      PpmImagePlugin      dbus_bindings       mailbox
-      tkSimpleDialog
-      Precision           debconf             mailcap             toaiff
-      PsdImagePlugin      decimal             markupbase          token
-      Queue               deskbar             marshal             tokenize
-      ScrolledText        difflib             math                totem
-      SgiImagePlugin      dircache            md5                 trace
-      SimpleDialog        dis                 mediaprofiles       traceback
-      SimpleHTTPServer    distutils           metacity            tty
-      SimpleXMLRPCServer  django              mhlib               turtle
-      SocketServer        doctest             mimetools           types
-      SpiderImagePlugin   drv_libxml2         mimetypes           umath
-      StringIO            dsextras            mimify
-      unicodedata
-      SunImagePlugin      dsml                mmap                unittest
-      TYPES               dumbdbm             modulefinder        uno
-      TarIO               dummy_thread        multiarray          unohelper
-      TgaImagePlugin      dummy_threading     multifile           urllib
-      TiffImagePlugin     easy_install        mutex               urllib2
-      TiffTags            egg                 nautilusburn        urlparse
-      Tix                 email               netrc               user
-      Tkconstants         encodings           new                 uu
-      Tkdnd               envbuilder          nis                 uuid
-      Tkinter             envpersist          nntplib             validate
-      UserArray           errno               ntpath
-      virtualenv
-      UserDict            evolution           nturl2path
-      virtualenv_support
-      UserList            exceptions          numeric_formats     vte
-      UserString          ext_rescapture      numeric_version     warnings
-      WalImageFile        fcntl               opcode              wave
-      WmfImagePlugin      fdpexpect           operator            weakref
-      XVThumbImagePlugin  filecmp             optparse
-      webbrowser
-      XbmImagePlugin      fileinput           orca                whichdb
-      XpmImagePlugin      fnmatch             os                  win32clip
-      _LWPCookieJar       foomatic            os2emxpath          wnck
-      _MozillaCookieJar   formatter           ossaudiodev         wsgiref
-      __builtin__         formencode          pango               xdg
-      __future__          fpformat            pangocairo          xdrlib
-      _ast                ftplib              parser              xml
-      _bisect             functools           pcardext            xmllib
-      _bsddb              gc                  pdb                 xmlrpclib
-      _codecs             gconf               pexpect             xxsubtype
-      _codecs_cn          gda                 pickle              z3c
-      _codecs_hk          gdata               pickleshare         zc
-      _codecs_iso2022     gdbm                pickletools         zipfile
-      _codecs_jp          gdl                 pip                 zipimport
-      _codecs_kr          getopt              pipes               zlib
-      _codecs_tw          getpass             pkg_resources       zopeskel
-      _csv                gettext             pkgutil
+    BaseHTTPServer      asynchat            imputil             sha
+    Bastion             asyncore            inspect             shelve
+    CDROM               atexit              io                  shlex
+    CGIHTTPServer       audiodev            ipython_genutils    shutil
+    Canvas              audioop             itertools           shutil_backports
+    ConfigParser        autoreload          jinja2              signal
+    Cookie              babel               json                simplegeneric
+    DLFCN               backports           keyword             site
+    Dialog              base64              lib2to3             sitecustomize
+    DocXMLRPCServer     bdb                 linecache           six
+    FileDialog          binascii            linuxaudiodev       smtpd
+    FixTk               binhex              locale              smtplib
+    HTMLParser          bisect              logging             sndhdr
+    IN                  bsddb               macpath             snowballstemmer
+    IPython             bz2                 macurl2path         socket
+    MimeWriter          cPickle             mailbox             sphinx
+    Queue               cProfile            mailcap             sphinx_rtd_theme
+    ScrolledText        cStringIO           markupbase          spwd
+    SimpleDialog        calendar            markupsafe          sqlite3
+    SimpleHTTPServer    cgi                 marshal             sre
+    SimpleXMLRPCServer  cgitb               math                sre_compile
+    SocketServer        chunk               md5                 sre_constants
+    StringIO            cmath               mhlib               sre_parse
+    TYPES               cmd                 mimetools           ssl
+    Tix                 code                mimetypes           stat
+    Tkconstants         codecs              mimify              statvfs
+    Tkdnd               codeop              mmap                storemagic
+    Tkinter             collections         modulefinder        string
+    UserDict            colorsys            multifile           stringold
+    UserList            commands            multiprocessing     stringprep
+    UserString          compileall          mutex               strop
+    _LWPCookieJar       compiler            netrc               struct
+    _MozillaCookieJar   contextlib          new                 subprocess
+    __builtin__         cookielib           nis                 sunau
+    __future__          copy                nntplib             sunaudio
+    _abcoll             copy_reg            ntpath              symbol
+    _ast                crypt               nturl2path          sympyprinting
+    _bisect             csv                 numbers             symtable
+    _bsddb              ctypes              opcode              sys
+    _codecs             curses              operator            sysconfig
+    _codecs_cn          cythonmagic         optparse            syslog
+    _codecs_hk          datetime            os                  tabnanny
+    _codecs_iso2022     dbhash              os2emxpath          tarfile
+    _codecs_jp          dbm                 ossaudiodev         telnetlib
+    _codecs_kr          decimal             parser              tempfile
+    _codecs_tw          decorator           pathlib2            termios
+    _collections        difflib             pdb                 test
+    _csv                dircache            pexpect             tests
+    _ctypes             dis                 pickle              textwrap
+    _ctypes_test        distutils           pickleshare         this
+    _curses             doctest             pickletools         thread
+    _curses_panel       docutils            pip                 threading
+    _elementtree        dumbdbm             pipes               time
+    _functools          dummy_thread        pkg_resources       timeit
+    _hashlib            dummy_threading     pkgutil             tkColorChooser
+    _heapq              easy_install        platform            tkCommonDialog
+    _hotshot            email               plistlib            tkFileDialog
+    _io                 encodings           popen2              tkFont
+    _json               ensurepip           poplib              tkMessageBox
+    _locale             enum                posix               tkSimpleDialog
+    _lsprof             errno               posixfile           toaiff
+    _md5                exceptions          posixpath           token
+    _multibytecodec     fcntl               pprint              tokenize
+    _multiprocessing    filecmp             profile             trace
+    _osx_support        fileinput           prompt_toolkit      traceback
+    _pyio               fnmatch             pstats              traitlets
+    _random             formatter           pty                 ttk
+    _scandir            fpectl              ptyprocess          tty
+    _sha                fpformat            pwd                 turtle
+    _sha256             fractions           py_compile          types
+    _sha512             ftplib              pyclbr              unicodedata
+    _socket             functools           pydoc               unittest
+    _sqlite3            future_builtins     pydoc_data          urllib
+    _sre                gc                  pyexpat             urllib2
+    _ssl                gdbm                pygments            urlparse
+    _strptime           genericpath         pytz                user
+    _struct             getopt              quopri              uu
+    _symtable           getpass             random              uuid
+    _sysconfigdata      gettext             re                  warnings
+    _sysconfigdata_nd   glob                readline            wave
+    _testcapi           grp                 repr                wcwidth
+    _threading_local    gzip                resource            weakref
+    _tkinter            hashlib             rexec               webbrowser
+    _warnings           heapq               rfc822              wheel
+    _weakref            hmac                rlcompleter         whichdb
+    _weakrefset         hotshot             rmagic              wsgiref
+    abc                 htmlentitydefs      robotparser         xdrlib
+    aifc                htmllib             runpy               xml
+    alabaster           httplib             scandir             xmllib
+    antigravity         ihooks              sched               xmlrpclib
+    anydbm              imaplib             select              xxsubtype
+    argparse            imghdr              sets                zipfile
+    array               imp                 setuptools          zipimport
+    ast                 importlib           sgmllib             zlib
 
-      Enter any module name to get more help.  Or, type "modules spam" to
-      search for modules whose descriptions contain the word "spam".
+    Enter any module name to get more help.  Or, type "modules spam" to search
+    for modules whose descriptions contain the word "spam".
 
-      help> os
-      Help on module os:
+Entonces consulte la ayuda del modulo ``os``, ejecutando:
 
-      NAME
-          os - OS routines for Mac, NT, or Posix depending on what
-          system we're on.
+::
 
-      FILE
-          /usr/lib/python2.5/os.py
+    help> os
+    Help on module os:
 
-      MODULE DOCS
-          https://www.python.org/doc/current/lib/module-os.html
+    NAME
+        os - OS routines for NT or Posix depending on what system we're on.
 
-      DESCRIPTION
-          This exports:
-            - all functions from posix, nt, os2, mac, or ce, e.g. unlink, stat, etc.
-            - os.path is one of the modules posixpath, ntpath, or macpath
-            - os.name is 'posix', 'nt', 'os2', 'mac', 'ce' or 'riscos'
-            - os.curdir is a string representing the current directory ('.' or ':')
-            - os.pardir is a string representing the parent directory ('..' or '::')
-            - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
-            - os.extsep is the extension separator ('.' or '/')
-            - os.altsep is the alternate pathname separator (None or '/')
-            - os.pathsep is the component separator used in $PATH etc
-            - os.linesep is the line separator in text files ('\r' or '\n' or '\r\n')
-            - os.defpath is the default search path for executables
-            - os.devnull is the file path of the null device ('/dev/null', etc.)
+    FILE
+        /usr/lib/python2.7/os.py
 
-          Programs that import and use 'os' stand a better chance of
-          being portable between different platforms.  Of course, 
-          they must then only use functions that are defined by all 
-          platforms (e.g., unlink and opendir), and leave all pathname 
-          manipulation to os.path
-      :
+    MODULE DOCS
+        https://docs.python.org/library/os
 
+    DESCRIPTION
+        This exports:
+          - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
+          - os.path is one of the modules posixpath, or ntpath
+          - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
+          - os.curdir is a string representing the current directory ('.' or ':')
+          - os.pardir is a string representing the parent directory ('..' or '::')
+          - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
+          - os.extsep is the extension separator ('.' or '/')
+          - os.altsep is the alternate pathname separator (None or '/')
+          - os.pathsep is the component separator used in $PATH etc
+          - os.linesep is the line separator in text files ('\r' or '\n' or '\r\n')
+          - os.defpath is the default search path for executables
+          - os.devnull is the file path of the null device ('/dev/null', etc.)
 
-Entonces presione la combinación de tecla **Crtl+d** para salir de la ayuda.
+        Programs that import and use 'os' stand a better chance of being
+        portable between different platforms.  Of course, they must then
+        only use functions that are defined by all platforms (e.g., unlink
+        and opendir), and leave all pathname manipulation to os.path
+        (e.g., split and join).
+    :
+
+.. tip:: Presione la tecla ``q`` para salir de la ayuda dl modulo ``os``.
+
+Seguidamente presione la combinación de tecla **Crtl+d** para salir de la ayuda.
 
 Luego realice la importación de la `librería del estándar`_ Python llamada
-``os`` 
+``os``, con el siguiente comando:
 
 .. code-block:: python
 
@@ -326,7 +238,7 @@ Luego realice la importación de la `librería del estándar`_ Python llamada
     >>>
 
 
-Previamente importada la librería usted puede usar el comando ``dir`` para
+Previamente importada la librería usted puede usar la función ``dir()`` para
 listar o descubrir que atributos, métodos de la clase están disponibles con
 la importación
 
@@ -378,7 +290,7 @@ ubicación de la librería importada de la siguiente forma:
 .. code-block:: python
 
     >>> os.__file__
-    '/usr/lib/python2.5/os.pyc'
+    '/usr/lib/python2.7/os.pyc'
     >>>
 
 También puede consultar la documentación de la librería ``os`` ejecutando el
@@ -386,24 +298,28 @@ siguiente comando:
 
 .. code-block:: python
 
-    >>> os.__doc__
-    "OS routines for Mac, NT, or Posix depending on what system we're
-    on.\n\nThis exports:\n  - all functions from posix, nt, os2, mac, or ce,
-    e.g. unlink, stat, etc.\n  - os.path is one of the modules posixpath,
-    ntpath, or macpath\n  - os.name is 'posix', 'nt', 'os2', 'mac', 'ce' or
-    'riscos'\n  - os.curdir is a string representing the current directory
-    ('.' or ':')\n  - os.pardir is a string representing the parent directory
-    ('..' or '::')\n  - os.sep is the (or a most common) pathname separator
-    ('/' or ':' or '\\\\')\n  - os.extsep is the extension separator ('.' or
-    '/')\n  - os.altsep is the alternate pathname separator (None or '/')\n
-    - os.pathsep is the component separator used in $PATH etc\n  - os.linesep
-    is the line separator in text files ('\\r' or '\\n' or '\\r\\n')\n  -
-    os.defpath is the default search path for executables\n  - os.devnull is
-    the file path of the null device ('/dev/null', etc.)\n\nPrograms that
-    import and use 'os' stand a better chance of being\nportable between
-    different platforms.  Of course, they must then\nonly use functions that
-    are defined by all platforms (e.g., unlink\nand opendir), and leave all
-    pathname manipulation to os.path\n(e.g., split and join).\n"
+    >>> print os.__doc__
+    OS routines for NT or Posix depending on what system we're on.
+
+    This exports:
+      - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
+      - os.path is one of the modules posixpath, or ntpath
+      - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
+      - os.curdir is a string representing the current directory ('.' or ':')
+      - os.pardir is a string representing the parent directory ('..' or '::')
+      - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
+      - os.extsep is the extension separator ('.' or '/')
+      - os.altsep is the alternate pathname separator (None or '/')
+      - os.pathsep is the component separator used in $PATH etc
+      - os.linesep is the line separator in text files ('\r' or '\n' or '\r\n')
+      - os.defpath is the default search path for executables
+      - os.devnull is the file path of the null device ('/dev/null', etc.)
+
+    Programs that import and use 'os' stand a better chance of being
+    portable between different platforms.  Of course, they must then
+    only use functions that are defined by all platforms (e.g., unlink
+    and opendir), and leave all pathname manipulation to os.path
+    (e.g., split and join).
     >>>
 
 
@@ -416,26 +332,26 @@ Ejecute el comando exit() para salir del interprete...
 
 .. _python_interprete_interactivo:
 
-Interprete interactivo de Python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Interprete ipython
+..................
 
 Para mejorar la experiencia con el interprete Python le sugerimos instalar el
-programa IPython, según su documentación:
+paquete ``ipython``, según su documentación:
 
 Según Wikipedia
 
-  "IPython es un shell interactivo que añade funcionalidades extra al `modo
+  "``ipython`` es un shell interactivo que añade funcionalidades extra al `modo
   interactivo`_ incluido con Python, como resaltado de líneas y errores
-  mediante colores, una sintaxis adicional para el shell, autocompletado
+  mediante colores, una sintaxis adicional para el shell, completado automático
   mediante tabulador de variables, módulos y atributos; entre otras
   funcionalidades. Es un componente del paquete `SciPy`_."
 
-Para mayor información visite su `página principal de ipython`_ y si necesita instalar
+Para mayor información visite su página principal de `ipython`_ y si necesita instalar
 este programa ejecute el siguiente comando:
 
 .. code-block:: sh
 
-    $ sudo apt-get install ipython python-pip
+    $ sudo apt-get install ipython
 
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
@@ -444,18 +360,16 @@ Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 .. code-block:: sh
 
     $  ipython
-    Python 2.5.2 (r252:60911, Jan 24 2010, 17:44:40)
+    Python 2.7.13 (default, Sep 26 2018, 18:42:22) 
     Type "copyright", "credits" or "license" for more information.
 
-    IPython 0.8.4 -- An enhanced Interactive Python.
+    IPython 5.8.0 -- An enhanced Interactive Python.
     ?         -> Introduction and overview of IPython's features.
     %quickref -> Quick reference.
     help      -> Python's own help system.
-    object?   -> Details about 'object'. ?object also works, ?? prints
-    more.
+    object?   -> Details about 'object', use 'object??' for extra details.
 
-    In [1]:
-
+        In [1]:
 
 
 Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
@@ -481,10 +395,10 @@ Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
         recursively the attributes of its class's base classes.
 
 
-Entonces presione la tecla **q** para salir de la ayuda
+Entonces presione la tecla **q** para salir de la ayuda de la función ``dir()``.
 
 De nuevo realice la importación de la librería del estándar Python llamada
-``os``
+``os``.
 
 .. code-block:: python
 
@@ -497,51 +411,44 @@ la librería ``os`` ejecutando el siguiente comando:
 .. code-block:: python
 
     In [2]: os?
-    Type:           module
-    Base Class:     <type 'module'>
-    String Form:    <module 'os' from '/usr/lib/python2.5/os.pyc'>
-    Namespace:      Interactive
-    File:           /usr/lib/python2.5/os.py
+    Type:        module
+    String form: <module 'os' from '/usr/lib/python2.7/os.pyc'>
+    File:        /usr/lib/python2.7/os.py
     Docstring:
-        OS routines for Mac, NT, or Posix depending on what system
-        we're on.
+    OS routines for NT or Posix depending on what system we're on.
 
-        This exports:
-          - all functions from posix, nt, os2, mac, or ce, e.g. unlink, stat, etc.
-          - os.path is one of the modules posixpath, ntpath, or macpath
-          - os.name is 'posix', 'nt', 'os2', 'mac', 'ce' or 'riscos'
-          - os.curdir is a string representing the current directory ('.' or ':')
-          - os.pardir is a string representing the parent directory ('..' or '::')
-          - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
-          - os.extsep is the extension separator ('.' or '/')
-          - os.altsep is the alternate pathname separator (None or '/')
-          - os.pathsep is the component separator used in $PATH etc
-          - os.linesep is the line separator in text files ('\r' or '\n' or '\r\n')
-          - os.defpath is the default search path for executables
-          - os.devnull is the file path of the null device ('/dev/null', etc.)
+    This exports:
+      - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
+      - os.path is one of the modules posixpath, or ntpath
+      - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
+      - os.curdir is a string representing the current directory ('.' or ':')
+      - os.pardir is a string representing the parent directory ('..' or '::')
+      - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
+      - os.extsep is the extension separator ('.' or '/')
+      - os.altsep is the alternate pathname separator (None or '/')
+      - os.pathsep is the component separator used in $PATH etc
+      - os.linesep is the line separator in text files ('\r' or '\n' or '\r\n')
+      - os.defpath is the default search path for executables
+      - os.devnull is the file path of the null device ('/dev/null', etc.)
 
-        Programs that import and use 'os' stand a better chance of
-        being portable between different platforms.  Of course, 
-        they must then only use functions that are defined by all 
-        platforms (e.g., unlink and opendir), and leave all pathname 
-        manipulation to os.path (e.g., split and join).
+    Programs that import and use 'os' stand a better chance of being
+    portable between different platforms.  Of course, they must then
+    only use functions that are defined by all platforms (e.g., unlink
+    and opendir), and leave all pathname manipulation to os.path
+    (e.g., split and join).
 
 
 Escriba la librería *os.* y luego escribe dos **underscore** y presione *dos
-veces la tecla tabular* para usar la autocompletado del interprete al 
+veces la tecla tabular* para usar la completado automático del interprete al 
 `estilo de completación de lineas de comandos`_ en el shell UNIX/Linux para
 ayudar a la introspección del lenguaje y sus librerías.
 
 .. code-block:: python
 
     In [3]: os.__
-    os.__all__           os.__class__         os.__dict__
-    os.__file__          os.__hash__          os.__name__
-    os.__reduce__        os.__repr__          os.__str__
-    os.__builtins__      os.__delattr__       os.__doc__
-    os.__getattribute__  os.__init__          os.__new__
-    os.__reduce_ex__     os.__setattr__
-
+    os.__all__      os.__file__
+    os.__builtins__ os.__name__
+    os.__doc__      os.__package__
 
 
 De nuevo ejecute el método ``file`` para determinar la ubicación de la
@@ -550,7 +457,7 @@ librería importada
 .. code-block:: python
 
     In [4]: os.__file__
-    Out[4]: '/usr/lib/python2.5/os.pyc'
+    Out[4]: '/usr/lib/python2.7/os.pyc'
 
 
 También puede consultar la documentación de la librería ``os`` de la
@@ -558,25 +465,28 @@ siguiente forma:
 
 .. code-block:: python
 
-    In [5]: os.__doc__
-    Out[5]: "OS routines for Mac, NT, or Posix depending on what system
-    we're on.\n\nThis exports:\n  - all functions from posix, nt, os2, mac,
-    or ce, e.g. unlink, stat, etc.\n  - os.path is one of the modules
-    posixpath, ntpath, or macpath\n  - os.name is 'posix', 'nt', 'os2',
-    'mac', 'ce' or 'riscos'\n  - os.curdir is a string representing the
-    current directory ('.' or ':')\n  - os.pardir is a string representing
-    the parent directory ('..' or '::')\n  - os.sep is the (or a most common)
-    pathname separator ('/' or ':' or '\\\\')\n  - os.extsep is the extension
-    separator ('.' or '/')\n  - os.altsep is the alternate pathname separator
-    (None or '/')\n  - os.pathsep is the component separator used in $PATH
-    etc\n  - os.linesep is the line separator in text files ('\\r' or '\\n'
-    or '\\r\\n')\n  - os.defpath is the default search path for executables\n
-    - os.devnull is the file path of the null device ('/dev/null',
-    etc.)\n\nPrograms that import and use 'os' stand a better chance of
-    being\nportable between different platforms.  Of course, they must
-    then\nonly use functions that are defined by all platforms (e.g.,
-    unlink\nand opendir), and leave all pathname manipulation to
-    os.path\n(e.g., split and join).\n"
+    In [5]: print os.__doc__
+    OS routines for NT or Posix depending on what system we're on.
+
+    This exports:
+      - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
+      - os.path is one of the modules posixpath, or ntpath
+      - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
+      - os.curdir is a string representing the current directory ('.' or ':')
+      - os.pardir is a string representing the parent directory ('..' or '::')
+      - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
+      - os.extsep is the extension separator ('.' or '/')
+      - os.altsep is the alternate pathname separator (None or '/')
+      - os.pathsep is the component separator used in $PATH etc
+      - os.linesep is the line separator in text files ('\r' or '\n' or '\r\n')
+      - os.defpath is the default search path for executables
+      - os.devnull is the file path of the null device ('/dev/null', etc.)
+
+    Programs that import and use 'os' stand a better chance of being
+    portable between different platforms.  Of course, they must then
+    only use functions that are defined by all platforms (e.g., unlink
+    and opendir), and leave all pathname manipulation to os.path
+    (e.g., split and join).
 
 
 Otro ejemplo es imprimir el **nombre de la clase** con el siguiente comando:
@@ -596,20 +506,19 @@ ejecutando el siguiente comando:
     Help on module os:
 
     NAME
-        os - OS routines for Mac, NT, or Posix depending on what
-        system we're on.
+        os - OS routines for NT or Posix depending on what system we're on.
 
     FILE
-        /usr/lib/python2.5/os.py
+        /usr/lib/python2.7/os.py
 
     MODULE DOCS
-        https://www.python.org/doc/current/lib/module-os.html
+        https://docs.python.org/library/os
 
     DESCRIPTION
         This exports:
-          - all functions from posix, nt, os2, mac, or ce, e.g. unlink, stat, etc.
-          - os.path is one of the modules posixpath, ntpath, or macpath
-          - os.name is 'posix', 'nt', 'os2', 'mac', 'ce' or 'riscos'
+          - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
+          - os.path is one of the modules posixpath, or ntpath
+          - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
           - os.curdir is a string representing the current directory ('.' or ':')
           - os.pardir is a string representing the parent directory ('..' or '::')
           - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
@@ -620,17 +529,16 @@ ejecutando el siguiente comando:
           - os.defpath is the default search path for executables
           - os.devnull is the file path of the null device ('/dev/null', etc.)
 
-        Programs that import and use 'os' stand a better chance of
-        being portable between different platforms.  Of course, 
-        they must then only use functions that are defined by all 
-        platforms (e.g., unlink and opendir), and leave all pathname 
-        manipulation to os.path
+        Programs that import and use 'os' stand a better chance of being
+        portable between different platforms.  Of course, they must then
+        only use functions that are defined by all platforms (e.g., unlink
+        and opendir), and leave all pathname manipulation to os.path
+        (e.g., split and join).
     :
 
+Entonces presione la tecla ``q`` para salir de la ayuda del modulo ``os``.
 
-Entonces presione la tecla **q** para salir de la ayuda
-
-Y para borrar la sesión con el IPython ejecute el siguiente comando:
+Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 
 .. code-block:: python
 
@@ -638,17 +546,18 @@ Y para borrar la sesión con el IPython ejecute el siguiente comando:
     Do you really want to exit ([y]/n)? y
 
 
-Interprete interactivo con el paquete bpython
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Interprete bpython
+..................
 
-Alternativamente puedes usar el `paquete bpython` que mejora aun mas la experiencia 
-de trabajo con el paquete `ipython`
+Alternativamente puedes usar el paquete `bpython` que mejora aun mas la experiencia 
+de trabajo con el paquete `ipython`.
 
-Para mayor información visite su `página principal de bpython`_ y si necesita instalar
+Para mayor información visite su página principal de `interprete bpython`_ y si necesita instalar
 este programa ejecute el siguiente comando:
 
 .. code-block:: sh
 
+    $ sudo apt-get install python-pip
     $ sudo pip install bpython
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
@@ -683,39 +592,30 @@ Conclusiones
 ............
 
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
-aprender a conocer como manejarse en el modo interactivo de Python/IPython
-con el fin de conocer a través de la introspección del lenguaje, las
-librerías estándar / propias de Python que tienes instalado en tu sistema.
-
-.. seealso:: 
-  
-  -   `Python`_.
-  -   `Inmersión en Python`_.
-  -   `Guía de aprendizaje de Python`_.
-  -   `La librería estándar de Python`_.
-  -   `Guide to Python introspection`_.
+aprender a conocer como manejarse en shell de Python y en el modo interactivo 
+usando el paquete ``ipython`` y otros adicionales como ``bpython``, con el fin 
+de conocer a través de la introspección del lenguaje, las librerías estándar y 
+módulos propios escritos en Python que tienes instalado en tu sistema.
 
 
-Referencias
-...........
+----
 
--   `Una pequeña inmersión al modo interactivo de Python`_ de la fundación Cenditel.
+.. seealso::
 
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion2>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
+.. _`fundación Cenditel`: https://mobile.twitter.com/cenditel
 .. _`Python`: https://www.python.org/ 
-.. _`todo en Python es un objeto`: http://www.diveintopython3.net/
 .. _`Javadoc`: https://es.wikipedia.org/wiki/Javadoc
 .. _`diagramas de clases`: https://es.wikipedia.org/wiki/Diagrama_de_clases
 .. _`Sphinx`: https://en.wikipedia.org/wiki/Sphinx_%28documentation_generator%29
-.. _`La librería estándar de Python`: http://pyspanishdoc.sourceforge.net/tut/node12.html
 .. _`librería del estándar`: http://pyspanishdoc.sourceforge.net/tut/node12.html
 .. _`modo interactivo`: https://es.wikipedia.org/wiki/Python#Modo_interactivo
 .. _`SciPy`: https://en.wikipedia.org/wiki/SciPy
-.. _`página principal de ipython`: https://ipython.org
-.. _`paquete bpython`: https://pypi.org/project/bpython/
-.. _`página principal de bpython`: https://bpython-interpreter.org/
+.. _`ipython`: https://ipython.org
+.. _`bpython`: https://pypi.org/project/bpython/
+.. _`interprete bpython`: https://bpython-interpreter.org/
 .. _`estilo de completación de lineas de comandos`: https://en.wikipedia.org/wiki/Command_line_completion
-.. _`Inmersión en Python`: http://www.diveintopython3.net/
-.. _`Guía de aprendizaje de Python`: http://pyspanishdoc.sourceforge.net/tut/tut.html
-.. _`Guide to Python introspection`: https://www.ibm.com/developerworks/linux/library/l-pyint/index.html
-.. _`Una pequeña inmersión al modo interactivo de Python`: https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/
-.. _`fundación Cenditel`: https://mobile.twitter.com/cenditel
