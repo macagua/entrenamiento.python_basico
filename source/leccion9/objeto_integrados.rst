@@ -9,6 +9,21 @@ Objetos de tipos integrados
 .. todo:: TODO Escribir sobre los objetos de tipos integrados.
 
 
+.. _python_objeto_ellipsis:
+
+El objeto elipsis
+.................
+
+Éste objeto lo utiliza la notación de corte extendida. No tiene ninguna operación 
+especial. Existe exactamente un objeto ``elipsis``, llamado ``Ellipsis`` (un nombre 
+interno).
+
+.. note:: El tipo se muestra de este modo: ``Ellipsis``.
+
+
+----
+
+
 .. _python_objeto_none:
 
 El objeto nulo
