@@ -178,7 +178,7 @@ Los principios están listados a continuación:
 - Los espacios de nombres (``namespaces``) son una gran idea ¡Hagamos más de esas cosas!
 
 También se incluye como un *huevo de pascua*, el cual se puede encontrar, desde el 
-:ref:`intérprete de Python <python_interactivo>`, ingresar la siguiente instrucción: 
+:ref:`intérprete de Python <python_interactivo>`, ingresar la siguiente sentencia: 
 
 ::
 

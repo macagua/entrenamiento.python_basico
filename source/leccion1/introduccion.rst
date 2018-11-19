@@ -133,8 +133,8 @@ permiten infinitas posibilidades.
 Comunidad
 .........
 
-El gran software es soportado por grandes personas. Nuestra base de usuarios es entusiasta, 
-dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.
+El gran software es soportado por grandes personas. La base de usuarios es entusiasta, dedicada 
+a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.
 
 .. figure:: ../_static/PyCon_US_2018_BrettKeynote.png
     :align: center
@@ -146,8 +146,8 @@ dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amiga
 Declaración de Diversidad
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-La :ref:`Python Software Foundation <python_psf>` y la comunidad global de Python dan la 
-bienvenida y fomentan la participación de todos. Nuestra comunidad se basa en el respeto mutuo, 
+La :ref:`Python Software Foundation <python_psf>` y la comunidad a nivel mundial de Python dan 
+la bienvenida y fomentan la participación de todos. La comunidad se basa en el respeto mutuo, 
 la tolerancia y el aliento, y estamos trabajando para ayudarnos mutuamente a cumplir con estos 
 principios. Queremos que nuestra comunidad sea más diversa: sea quien sea, y cualquiera sea su 
 experiencia, le damos la bienvenida.
@@ -177,7 +177,7 @@ conectarse al servidor IRC use *irc.freenode.net* o puede usar la
 `interfaz web de chat IRC de Freenode <https://webchat.freenode.net/>`_.
 
 Para preguntas cortas, usted puede obtener ayuda inmediata visitando el canal ``#python``. Usted 
-necesitará registrar su apodo con FreeNode, usando la 
+necesitará registrar su apodo con FreeNode, usando la guiá de 
 `instrucciones para registrar apodo <http://freenode.net/kb/answer/registration>`_.
 
 .. note:: Mayor información consulte https://www.python.org/community/irc/

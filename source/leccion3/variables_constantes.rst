@@ -147,11 +147,12 @@ Un pequeño número de constantes vive en el espacio de nombres incorporado. Son
 	la comparación no se implementa con respecto al otro tipo.
 
 ``Ellipsis``
-`	Valor especial utilizado junto con la sintaxis de corte ampliada.
+	Valor especial utilizado junto con la sintaxis de corte ampliada. Véase también el 
+	objeto :ref:`elipsis <python_objeto_ellipsis>`.
 
 ``__debug__``
 	Esta constante es ``True`` si Python no se inició con una opción ``-O``. 
-	Véase también la declaración ``assert``.
+	Véase también la sentencia :ref:`assert <python_sentencia_assert>`.
 
 .. note:: 
 	Los nombres ``None`` y ``__debug__`` no se pueden reasignar (asignaciones 

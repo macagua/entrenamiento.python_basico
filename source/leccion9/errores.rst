@@ -259,7 +259,7 @@ Tiene que ser o una instancia de excepción, o una clase de excepción
 (una clase que hereda de :ref:`Exception <python_exception>`).
 
 Si necesitás determinar cuando una excepción fue lanzada pero no querés
-manejarla, una forma simplificada de la instrucción ``raise`` te 
+manejarla, una forma simplificada de la sentencia ``raise`` te 
 permite relanzarla:
 
 ::
