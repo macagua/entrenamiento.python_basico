@@ -41,7 +41,7 @@ venga de un programa.
 Excepciones
 ...........
 
-Incluso si la declaración o expresión es sintácticamente 
+Incluso si la sentencia o expresión es sintácticamente 
 correcta, puede generar un error cuando se intenta ejecutarla. 
 Los errores detectados durante la ejecución se llaman *excepciones*, 
 y no son incondicionalmente fatales: pronto aprenderás cómo 
@@ -111,19 +111,19 @@ se señaliza generando la excepción
    ...         print u"Oops!  No era válido. Intente nuevamente..."
    ...
 
-La declaración ``try`` funciona de la siguiente manera:
+La sentencia ``try`` funciona de la siguiente manera:
 
-* Primero, se ejecuta el *bloque try* (el código entre las declaración
+* Primero, se ejecuta el *bloque try* (el código entre las sentencias
   ``try`` y ``except``).
 
 * Si no ocurre ninguna excepción, el *bloque except* se saltea y 
-  termina la ejecución de la declaración ``try``.
+  termina la ejecución de la sentencia ``try``.
 
 * Si ocurre una excepción durante la ejecución del *bloque try*, 
   el resto del bloque se saltea. Luego, si su tipo coincide con 
   la excepción nombrada luego de la palabra reservada ``except``, 
   se ejecuta el *bloque except*, y la ejecución continúa luego de la 
-  declaración ``try``.
+  sentencia ``try``.
 
 * Si ocurre una excepción que no coincide con la excepción nombrada 
   en el ``except``, esta se pasa a declaraciones ``try`` 
@@ -131,7 +131,7 @@ La declaración ``try`` funciona de la siguiente manera:
   *excepción no manejada*, y la ejecución se frena con un mensaje como 
   los mostrados arriba.
 
-Una declaración ``try`` puede tener más de un ``except``, 
+Una sentencia ``try`` puede tener más de un ``except``, 
 para especificar manejadores para distintas excepciones. A lo sumo un 
 manejador será ejecutado. Sólo se manejan excepciones que ocurren en el 
 correspondiente ``try``, no en otros manejadores del mismo 
@@ -185,7 +185,7 @@ si el *bloque try* no genera una excepción. Por ejemplo:
 
 El uso de ``else`` es mejor que agregar código adicional en 
 el ``try`` porque evita capturar accidentalmente una excepción 
-que no fue generada por el código que está protegido por la declaración 
+que no fue generada por el código que está protegido por la sentencia 
 ``try`` ... ``except``.
 
 Cuando ocurre una excepción, puede tener un valor asociado, también 
@@ -244,7 +244,7 @@ dentro del *bloque try*. Por ejemplo:
 Levantando excepciones
 ......................
 
-La declaración ``raise`` permite al programador forzar a 
+La sentencia ``raise`` permite al programador forzar a 
 que ocurra una excepción específica. Por ejemplo:
 
 ::
@@ -365,7 +365,7 @@ más información sobre clases en el capítulo :ref:`Clases <python_poo>`.
 Definiendo acciones de limpieza
 ...............................
 
-La declaración ``try`` tiene otra cláusula opcional que 
+La sentencia ``try`` tiene otra cláusula opcional que 
 intenta definir acciones de limpieza que deben ser ejecutadas bajo 
 ciertas circunstancias. Por ejemplo:
 
@@ -383,16 +383,16 @@ ciertas circunstancias. Por ejemplo:
 
 
 Una *cláusula finally* siempre es ejecutada antes de salir de la 
-declaración ``try``, ya sea que una excepción haya ocurrido 
+sentencia ``try``, ya sea que una excepción haya ocurrido 
 o no. Cuando ocurre una excepción en la cláusula ``try`` y 
 no fue manejada por una cláusula ``except`` (o ocurrió en 
 una cláusula ``except`` o ``else``), es relanzada 
 luego de que se ejecuta la cláusula ``finally``. 
 ``finally`` es también ejecutada "a la salida" cuando 
-cualquier otra cláusula de la declaración ``try`` es dejada 
+cualquier otra cláusula de la sentencia ``try`` es dejada 
 vía ``break``, ``continue`` or ``return``. Un 
 ejemplo más complicado (cláusulas ``except`` y 
-``finally`` en la misma declaración ``try``):
+``finally`` en la misma sentencia ``try``):
 
 ::
 
@@ -450,7 +450,7 @@ contenido en la pantalla.
 El problema con este código es que deja el archivo abierto por un 
 periodo de tiempo indeterminado luego de que termine de ejecutarse. 
 Esto no es un problema en scripts simples, pero puede ser un problema 
-en aplicaciones más grandes. La declaración ``with`` permite 
+en aplicaciones más grandes. La sentencia ``with`` permite 
 que objetos como archivos sean usados de una forma que asegure que 
 siempre se los libera rápido y en forma correcta.
 
@@ -460,7 +460,7 @@ siempre se los libera rápido y en forma correcta.
        for linea in f:
            print linea
 
-Luego de que la declaración sea ejecutada, el archivo *f* siempre 
+Luego de que la sentencia sea ejecutada, el archivo *f* siempre 
 es cerrado, incluso si se encuentra un problema al procesar las 
 líneas. Otros objetos que provean acciones de limpieza predefinidas 
 lo indicarán en su documentación.
