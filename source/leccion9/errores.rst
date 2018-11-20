@@ -302,17 +302,19 @@ La forma extendida, "assert expression1, expression2", es equivalente a:
    if __debug__:
        if not expression1: raise AssertionError(expression2)
 
-Estas equivalencias suponen que "__debug__" y "AssertionError" se refieren
+Estas equivalencias suponen que ``__debug__`` y 
+":ref:`AssertionError <python_exception_assertionerror>`" se refieren
 a las variables incorporadas con esos nombres. En la corriente
-implementación, la variable incorporada "__debug__" es "True" en
-circunstancias normales, "False" cuando se solicita la optimización (comando
-Opción de línea ``-O``). El generador de código actual no emite ningún código para 
-una sentencia ``assert`` cuando se solicita la optimización en tiempo de compilación. Nota
-que no es necesario incluir el código fuente de la expresión
-que falló en el mensaje de error; se mostrará como parte del stack trace.
+implementación, la variable incorporada ``__debug__`` es ``True`` en
+circunstancias normales, ``False`` cuando se solicita la optimización 
+(opción del línea de comando ``-O``). El generador de código actual no 
+emite ningún código para una sentencia ``assert`` cuando se solicita la 
+optimización en tiempo de compilación. Nota que no es necesario incluir el 
+código fuente de la expresión que falló en el mensaje de error; se mostrará 
+como parte del *stack trace*.
 
-Asignaciones a "__debug__" son ilegales. El valor para la variable 
-integrada es determinada cuando el interprete inicia.
+Asignaciones a ``__debug__`` son ilegales. El valor para la variable integrada 
+es determinada cuando el interprete inicia.
 
 .. todo: TODO terminar de escribir esta sección
 
