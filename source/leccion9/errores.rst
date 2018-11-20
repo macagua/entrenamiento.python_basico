@@ -90,6 +90,8 @@ desde la entrada estándar.
 predefinidas y sus significados.
 
 
+.. _python_sentencia_try_except:
+
 Manejando excepciones
 .....................
 
@@ -240,6 +242,8 @@ dentro del *bloque try*. Por ejemplo:
    ...
    Manejando error en tiempo de ejecución: integer division or modulo by zero
 
+
+.. _python_sentencia_raise:
 
 Levantando excepciones
 ......................
@@ -399,6 +403,8 @@ errores que pueden ocurrir en funciones propias. Se puede encontrar
 más información sobre clases en el capítulo :ref:`Clases <python_poo>`.
 
 
+.. _python_sentencia_finally:
+
 Definiendo acciones de limpieza
 ...............................
 
@@ -487,9 +493,17 @@ contenido en la pantalla.
 El problema con este código es que deja el archivo abierto por un 
 periodo de tiempo indeterminado luego de que termine de ejecutarse. 
 Esto no es un problema en scripts simples, pero puede ser un problema 
-en aplicaciones más grandes. La sentencia ``with`` permite 
-que objetos como archivos sean usados de una forma que asegure que 
-siempre se los libera rápido y en forma correcta.
+en aplicaciones más grandes. 
+
+
+.. _python_sentencia_with:
+
+Sentencia with
+~~~~~~~~~~~~~~
+
+La sentencia ``with`` permite que objetos como archivos sean usados 
+de una forma que asegure que siempre se los libera rápido y en forma 
+correcta.
 
 ::
 
@@ -502,6 +516,7 @@ es cerrado, incluso si se encuentra un problema al procesar las
 líneas. Otros objetos que provean acciones de limpieza predefinidas 
 lo indicarán en su documentación.
 
+----
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los 
