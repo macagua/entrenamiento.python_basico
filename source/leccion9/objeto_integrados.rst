@@ -346,6 +346,20 @@ lleve la cuenta de su estado interno.
 
 ----
 
+.. _python_objeto_object:
+
+El objeto object
+................
+
+El objeto de la clase ``object`` es el tipo más básico de objeto, es integrado en el módulo 
+``__builtin__``. Este objeto se usa como :ref:`herencia <python_poo_herencia>` cuando se crea 
+una nueva clase en Python.
+
+
+.. note:: Los tipos se muestran de este modo: ``<type 'object'>``.
+
+----
+
 .. _python_objeto_type:
 
 El objeto tipo
