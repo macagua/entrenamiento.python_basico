@@ -20,4 +20,7 @@ continuación el temario de esta lección:
    errores
    exceptions
    poo
+   herencia
+   abstraccion
+   polimorfismo
    objeto_integrados

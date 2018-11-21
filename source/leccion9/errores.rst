@@ -541,3 +541,12 @@ lo indicarán en su documentación.
 
         python2 excepciones_integradas.py
         python2 errores_propios.py
+
+
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion9>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

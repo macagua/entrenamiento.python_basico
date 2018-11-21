@@ -17,6 +17,12 @@ actuales permiten la agrupación en bibliotecas o librerías, sin
 embargo, muchos de estos lenguajes permiten al usuario la creación 
 de sus propias bibliotecas.
 
+.. figure:: ../_static/oop.jpg
+    :align: center
+    :width: 30%
+
+    Programación Orientada a Objetos - POO
+
 Está basada en varias técnicas, como las siguientes:
 
 - :ref:`herencia <python_poo_herencia>`.
@@ -31,15 +37,14 @@ Está basada en varias técnicas, como las siguientes:
 
 - :ref:`encapsulación <python_poo_encapsulacion>`.
 
-La programación orientada a objetos tiene sus raíces en la década 
-del 60 con el lenguaje de programación Simula que en 1967, el cual 
-fue el primer lenguaje que posee las características principales 
-de un lenguaje orientado a objetos. 
+
+La POO tiene sus raíces en la década del 60 con el lenguaje de programación 
+Simula que en 1967, el cual fue el primer lenguaje que posee las 
+características principales de un lenguaje orientado a objetos. 
 
 Smalltalk (de 1972 a 1980) es posiblemente el ejemplo canónico, y 
-con el que gran parte de la teoría de la programación orientada 
-a objetos se ha desarrollado. Más su uso se popularizó a principios 
-de la década de 1990. 
+con el que gran parte de la teoría de la POO se ha desarrollado. Más su uso 
+se popularizó a principios de la década de 1990. 
 
 En la actualidad, existe una gran variedad de lenguajes de programación 
 que soportan la orientación a objetos.
@@ -50,86 +55,53 @@ Los objetivos de la POO son:
 
 - re-usar código fuente en similares contextos.
 
-
-Definiciones necesarias
-.......................
-
-**¿Qué es un Objeto?**
-    Los objetos son la clave para entender la Programación Orientada 
-    a Objetos. Si miramos a nuestro alrededor  encontraremos un sin 
-    fin de objetos de la vida real: perro, escritorio, televisor, 
-    bicicleta, etc...
-
-**¿Qué es un Atributo?**
-    Los atributos o propiedades de los objetos son las características 
-    que puede tener un objeto: Si el objeto fuera ``Persona``, los 
-    atributos podrían ser: ``cedula``, ``nombre``, ``apellido``, 
-    ``sexo``, etc...
-
-**¿Qué es un Método?**
-    Los métodos son la acción o función que realiza un objeto. Si 
-    nuestro objeto es ``Persona``, los métodos pueden ser: ``hablar``, 
-    ``caminar``, ``comer``, ``dormir``, etc...
-
-**¿Qué es una Clase?**
-    Con todos los conceptos anteriores explicados, se puede decir que 
-    una clase es una plantilla genérica de un objeto. La clase proporciona 
-    variables iniciales de estado (donde se guardan los atributos) e 
-    implementaciones de comportamiento (métodos).
-
-**¿Qué es una Instancia?**
-    Ya sabemos que una clase es una estructura general del objeto. 
-    Por ejemplo, podemos decir que la clase ``Persona`` necesita tener 
-    una ``cedula``, un ``nombre``, un ``apellido`` y una ``sexo``, pero 
-    no nos va a decir cual es ``cedula``, ``nombre``, ``apellido`` y 
-    ``sexo``, es aquí donde entran las instancias. Una instancia es una 
-    copia específica de la clase con todo su contenido.
-
-    Ejemplo: Leonardo = Persona (13567098, "Leonardo", "Caballero", 38)
-    
-    Aquí podemos decir que ``Leonardo`` es una instancia de la clase 
-    ``Persona``.
-
-
-Las clases nos dan la posibilidad de crear estructuras de datos más complejas. 
-En nuestro ejemplo crearemos una clase ``Persona`` que realizará un seguimiento 
-del ``cedula``, ``nombre``, ``apellido`` y ``sexo`` (que pasaremos como atributos).
-
 .. note:: 
-    Más información consulte el articulo `Programación orientada a objetos - Wikipedia`_.
+    Más información consulte el articulo `Programación orientada a objetos - Wikipedia <https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos>`_.
 
 
-Programación orientada a objetos en Python
-..........................................
+----
 
-El mecanismo de clases de Python agrega clases al lenguaje 
-con un mínimo de nuevas sintaxis y semánticas. Es una mezcla 
-de los mecanismos de clase encontrados en ``C++`` y ``Modula-3``. 
+
+POO en Python
+.............
+
+El mecanismo de clases de Python agrega clases al lenguaje con 
+un mínimo de nuevas sintaxis y semánticas. 
+
+En Python las clases es una mezcla de los mecanismos de clase 
+encontrados en ``C++`` y ``Modula-3``. 
+
 Como es cierto para los módulos, las clases en Python no ponen 
 una barrera absoluta entre la definición y el usuario, sino que
 más bien se apoya en la cortesía del usuario de no "forzar la 
-definición". Sin embargo, se mantiene el poder completo de las 
-características más importantes de las clases: el mecanismo de 
-la herencia de clases permite múltiples clases base, una clase 
-derivada puede sobrescribir cualquier método de su(s) clase(s)
-base, y un método puede llamar al método de la clase base con 
-el mismo nombre.
+definición". 
 
-    "Los objetos pueden tener una cantidad arbitraria de datos."
+Sin embargo, se mantiene el poder completo de las características 
+más importantes de las clases: el mecanismo de la herencia de 
+clases permite múltiples clases base, una clase derivada puede 
+sobrescribir cualquier método de su(s) clase(s) base, y un método 
+puede llamar al método de la clase base con el mismo nombre.
+
+    *"Los objetos pueden tener una cantidad arbitraria de datos."*
 
 En terminología de ``C++``, todos los miembros de las clases (incluyendo 
 los miembros de datos), son *públicos*, y todas las funciones 
-miembro son *virtuales*. Como en ``Modula-3``, no hay atajos para 
-hacer referencia a los miembros del objeto desde sus métodos: 
-la función método se declara con un primer argumento explícito 
-que representa al objeto, el cual se provee implícitamente por 
-la llamada. Como en ``Smalltalk``, las clases mismas son objetos. 
-Esto provee una semántica para importar y renombrar. A diferencia
-de ``C++`` y ``Modula-3``, los tipos de datos integrados pueden usarse 
-como clases base para que el usuario los extienda. También, como 
-en ``C++`` pero a diferencia de ``Modula-3``, la mayoría de los operadores 
-integrados con sintaxis especial (operadores aritméticos, de 
-subíndice, etc.) pueden ser redefinidos por instancias de la clase.
+miembro son *virtuales*. 
+
+Como en ``Modula-3``, no hay atajos para hacer referencia a los 
+miembros del objeto desde sus métodos: la función método se declara 
+con un primer argumento explícito que representa al objeto, el cual 
+se provee implícitamente por la llamada. 
+
+Como en ``Smalltalk``, las clases mismas son objetos. Esto provee 
+una semántica para importar y renombrar. 
+
+A diferencia de ``C++`` y ``Modula-3``, los tipos de datos integrados 
+pueden usarse como clases base para que el usuario los extienda. 
+
+También, como en ``C++`` pero a diferencia de ``Modula-3``, la mayoría 
+de los operadores integrados con sintaxis especial (operadores aritméticos, 
+de subíndice, etc.) pueden ser redefinidos por instancias de la clase.
 
 (Sin haber una terminología universalmente aceptada sobre clases, 
 haré uso ocasional de términos de ``Smalltalk`` y ``C++``. Usaría términos 
@@ -138,290 +110,220 @@ a Python que ``C++``, pero no espero que muchos lectores hayan escuchado
 hablar de él).
 
 
-Clase Base
-..........
+Algunas particularidades de POO en Python son las siguientes:
 
-Clase Base o también conocida como *Clase abstracta* le permite definir una 
-clase que puede heredarse en otras clases los atributos y comportamientos 
-definido en esta.
+- Todo es un objeto, incluyendo los tipos y clases.
 
-Ejemplo de la clase ``Persona`` con función interna:
+- Permite herencia múltiple.
 
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 3-32
+- No existen métodos ni atributos privados.
 
+- Los atributos pueden ser modificados directamente.
 
-En el ejemplo previo, es donde empieza a crear una clase (lo hace con la 
-palabra ``class``). La segunda palabra ``Persona`` es el nombre de la clase. 
-La tercera palabra que se encuentra dentro de los paréntesis ``object`` se 
-conoce con el nombre de herencia (mas tarde abajo se explicará el concepto 
-de herencia). Lo que debe saber es que ``object`` es una variable especial 
-en Python que se utiliza de herencia cuando creamos una nueva clase en Python.
+- Permite "monkey patching".
 
-La clase ``Persona`` tiene los métodos ``__init__``, ``__str__``, ``hablar`` 
-y ``getSexo``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``. 
+- Permite "duck typing".
 
-La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
+- Permite la sobrecarga de operadores.
 
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 59-60
-
-El método constructor ``__init__`` es un método especial el cual debe escribir 
-como: ``MiClase(parámetros iniciales si hay cualquiera)``.
-
-Usted puede invocar esos métodos y atributos con la siguiente notación: 
-``claseinstancia.metodo`` o ``claseinstancia.atributo``. 
-
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 63
-
-El método ``__str__`` es un método usando para imprimir la descripción de la 
-instancia de objeto el cual debe mostrar como:
-
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 69
-
-En el anterior código se usan para cierto formato para imprimir la instancia de 
-objeto usando la sentencia ``print``, concatenando el carácter ``\n`` para 
-generar un salto de página y seguidamente convertir a formato cadena de caracteres 
-usando la función ``str()`` a la instancia de objeto llamada ``persona2``. 
-
-.. _python_poo_herencia:
-
-Herencia
-........
-
-La herencia en Python nos permite a los programadores crear una clase general 
-primero y luego más tarde crear clases más especializadas que re utilicen código 
-de la clase general. La herencia también nos permite escribir un código más 
-limpio y legible.
+- Permite la creación de nuevos tipos de datos.
 
 
-
-Herencia simple
-~~~~~~~~~~~~~~~
-
-El siguiente es un ejemplo de la clase ``Supervisor`` 
-que derivada de la clase ``Persona`` con función interna:
-
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 35-56
-
-Ahora, se creará una nueva clase ``Supervisor`` con los mismos métodos y atributos 
-como la clase ``Persona``, pero con dos nuevos atributos ``permisos`` y ``tareas``. 
-No se copia la clase previa, pero si **se hereda** de ella.
-
-La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
-
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 79
-
-Luego que generá la instancia del nuevo objeto ``Supervisor`` llamada ``supervisor1`` 
-se puede imprimir sus detalles de la siguiente forma:
-
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 80
-
-Si desea usar los métodos de la clase ``Supervisor`` se puede imprimir de la siguiente forma:
-
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 81-82
-
-Como la instancia de objeto ``supervisor1`` hereda los métodos de la clase ``Persona`` 
-usted puede reusarlo e invocarlo de la siguiente forma:
-
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 84-85
-
-Gracias a las clases y la programación orientada a objetos, usted puede organizar 
-el código con diferentes clases correspondientes a diferentes objetos que encontramos 
-(una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``, etc.), con sus 
-propios métodos y atributos. Luego podemos usar la herencia para considerar las 
-variaciones en torno a una clase base y reutilizar el código. Ej.: a partir de una 
-clase base de ``Persona``, podemos crear clases derivadas como ``Supervisor``, 
-``Profesor``, ``Obrero``, etc.
-
-.. literalinclude:: ../../recursos/leccion9/clases.py
-    :linenos:
-    :language: python
-    :lines: 89-92
+A continuación se procede a definir algunos conceptos necesarios para entender la POO:
 
 
-.. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion9/clases.py>`.
+.. _python_objetos:
 
+Objetos
+.......
 
-.. tip::
-    Para ejecutar el código :file:`clases.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+Los objetos son la clave para entender la :ref:`Programación Orientada a Objetos <python_poo>`. 
+Si mira a nuestro alrededor encontrará un sin fin de objetos de la vida real: 
+perro, escritorio, televisor, bicicleta, etc...
 
-        python2 clases.py
-
-
-Herencia múltiple
-~~~~~~~~~~~~~~~~~
-
-A diferencia de lenguajes como *Java* y *C#*, Python permite la herencia múltiple, 
-es decir, se puede heredar de múltiples clases.
-
-
-.. _python_poo_polimorfismo:
-
-Polimorfismo
-.............
-
-
-.. todo::
-    TODO escribir esta sección
-
-
-.. _python_overriding_methods:
-
-Sobrecarga de métodos
-~~~~~~~~~~~~~~~~~~~~~
-
-La *sobrecarga de métodos* es también es conocida por *Overriding Methods*, 
-le permite sustituir un método proveniente de la Clase Base, en la Clase 
-Derivada debemos definir un método con la **misma forma** (es decir, mismo 
-nombre de método y mismo número de parámetros que como está definido en la 
-Clase Base).
+En Python puede definir una clase con la palabra reservada ``class``, de 
+la siguiente forma:
 
 ::
 
-    >>> class Persona():
-    ...     def __init__(self):
-    ...         self.cedula = 13765890
-    ...     def mensaje(self):
-    ...         print("mensaje desde la clase Persona")
+    class Persona:
+        pass
+
+En el ejemplo anterior, el nombre de la clase es ``Persona`` y dentro 
+del bloque de código usa la sentencia :ref:`pass <python_sentencia_pass>`. 
+Aunque no es requerido por el intérprete, los nombres de las clases se 
+escriben por convención capitalizadas. Las clases pueden (y siempre 
+deberían) tener comentarios.
+
+.. figure:: ../_static/objetos_clases.png
+    :align: center
+    :width: 50%
+
+    Diagrama de Objeto Persona
+
+
+.. _python_atributos:
+
+Atributos
+.........
+
+Los atributos o propiedades de los objetos son las características 
+que puede tener un objeto, como el color. Si el objeto fuera ``Persona``, 
+los atributos podrían ser: ``cedula``, ``nombre``, ``apellido``, ``sexo``, 
+etc...
+
+Los atributos describen el estado de un objeto. Pueden ser de cualquier 
+tipo de dato.
+
+.. literalinclude:: ../../recursos/leccion9/poo.py
+    :language: python
+    :lines: 3-8
+
+Usted puede probar el código anterior, si lo transcribe en el 
+:ref:`consola interactiva <python_interactivo>` de Python como lo siguiente:
+
+::
+
+    >>> class Persona:
+    ...     """ Representa una persona real """
+    ...     cedula = "V-13458796"
+    ...     nombre = "Leonardo"
+    ...     apellido = "Caballero"
+    ...     sexo = "M"
     ... 
-    >>> class Obrero(Persona):
-    ...     def __init__(self):
-    ...         self.__especialista = 1
-    ...     def mensaje(self):
-    ...         print("mensaje desde la clase Obrero")
-    ... 
-    >>> obrero_planta = Obrero()
-    >>> obrero_planta.mensaje()
-    mensaje desde la clase Obrero
+    >>> macagua = Persona
+    >>> type(macagua)
+    <type 'classobj'>
+    >>> macagua.__name__
+    'Persona'
+    >>> macagua.__doc__
+    ' Representa una persona real '
+    >>> dir(macagua)
+    ['__doc__', '__module__', 'apellido', 'cedula', 'nombre', 'sexo']
+    >>> macagua.cedula
+    'V-13458796'
+    >>> macagua.nombre
+    'Leonardo'
+    >>> macagua.apellido
+    'Caballero'
+    >>> macagua.sexo
+    'M'
+    >>> print "El objeto de la clase " + macagua.__name__ +"," \
+    ... + macagua.__doc__ + "."
+    El objeto de la clase Persona, Representa una persona real .
+    >>> print "Hola, mucho gusto, mi nombre es '"+ \
+    ... macagua.nombre +" "+ \
+    ... macagua.apellido +"', \nmi cédula de identidad es '"+  \
+    ... macagua.cedula +"', y mi sexo es '"+  \
+    ... macagua.sexo +"'."
+    Hola, mucho gusto, mi nombre es 'Leonardo Caballero', 
+    mi cédula de identidad es 'V-13458796', y mi sexo es 'M'.
     >>> 
 
 
-Lo que se logra definiendo el método ``mensaje()`` en la Clase Derivada 
-(``Obrero``) se conoce como **Método Overriding** (cuando se cree el objeto 
-(en este caso ``obrero_planta`` y se llame al método ``mensaje()``, este será 
-tomado de la propia clase y no de la Clase Base ``Persona``). Si **comentamos 
-o borramos** el método ``mensaje()`` de la clase ``Obrero`` (Clase Derivada) 
-y corremos nuevamente el código, el método llamado será el ``mensaje()`` de la 
-Clase Base ``Persona``.
+.. _python_metodos:
 
+Métodos
+.......
 
-.. _python_overloading_operators:
+Los métodos describen el comportamiento de los objetos de una clase. Estos 
+representan las operaciones que se pueden realizar con los objetos de la clase, 
 
-Sobrecarga de Operadores
-~~~~~~~~~~~~~~~~~~~~~~~~
+La ejecución de un método puede conducir a cambiar el estado del objeto.
 
-La *sobrecarga de operadores* es también es conocida por *Overloading Operators*, 
-trata básicamente de lo mismo que la **sobrecarga de métodos** pero pertenece en 
-esencia al ámbito de los operadores aritméticos, binarios, de comparación y lógicos.
+Se definen de la misma forma que las funciones normales pero deben declararse dentro 
+de la clase y su primer argumento siempre referencia a la instancia que lo invoca, 
+de esta forma se afirma que los métodos son :ref:`funciones <python_funciones>`, 
+adjuntadas a :ref:`objectos <python_objetos>`.
 
-::
+.. note:: 
+    Usted puede encontrar ejemplos en las funciones de :ref:`cadena de caracteres <python_cadenas>`, 
+    :ref:`listas <python_listas>`, :ref:`diccionarios <python_diccionarios>`, etc. 
 
-    >>> class Punto:
-    ...     def __init__(self,x = 0,y = 0):
-    ...         self.x = x
-    ...         self.y = y
-    ...     def __add__(self,other):
-    ...         x = self.x + other.x
-    ...         y = self.y + other.y
-    ...         return x, y
-    ... 
-    >>> punto1 = Punto(4,6)
-    >>> punto2 = Punto(1,-2)
-    >>> print punto1 + punto2
-    (5, 4)
+Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``, 
+``comer``, ``dormir``, etc. 
 
+.. literalinclude:: ../../recursos/leccion9/poo.py
+    :language: python
+    :lines: 3-12
 
-.. _python_poo_abstraccion:
-
-Abstracción
-...........
-
-
-.. todo::
-    TODO escribir esta sección
-
-
-.. _python_poo_encapsulacion:
-
-Encapsulación (Ocultación de datos)
-...................................
-
-Los atributos de un objeto pueden ocultarse (superficialmente) para que no sean 
-accedidos desde fuera de la definición de una clase. Para ello, es necesario 
-nombrar los atributos con un prefijo de doble subrayado: ``__atributo``.
+Usted puede probar el código anterior, si lo transcribe en el 
+:ref:`consola interactiva <python_interactivo>` de Python como lo siguiente:
 
 ::
 
-    >>> class Factura:
-    ...     __tasa = 19
-    ...     def __init__(self, unidad, precio):
-    ...         self.unidad = unidad
-    ...         self.precio = precio
-    ...     def por_pagar(self):
-    ...         total = self.unidad * self.precio
-    ...         impuesto = total * Factura.__tasa / 100
-    ...         return(total + impuesto)
+    >>> class Persona:
+    ...     """ Representa una persona real """
+    ...     cedula = "V-13458796"
+    ...     nombre = "Leonardo"
+    ...     apellido = "Caballero"
+    ...     sexo = "M"
+    ...     
+    ...     def hablar(self, mensaje):
+    ...         """ Mostrar mensaje de saludo de Persona """
+    ...         return mensaje
     ... 
-    >>> compra1 = Factura(12, 110)
-    >>> print compra1.unidad
-    12
-    >>> print compra1.precio
-    110
-    >>> print compra1.por_pagar(), "bitcoins"
-    (1570, 'bitcoins')
-    >>> print Factura.__tasa
+    >>> Persona().hablar("Hola, soy la clase {0}.".format(macagua.__name__))
+    'Hola, soy la clase Persona.'
+    >>> 
+
+Si creo una instancia de objeto para la clase ``Persona`` lanzara una excepción 
+:ref:`TypeError <python_exception_typeerror>`, como sucede a continuación:
+
+::
+
+    >>> macagua = Persona
+    >>> macagua.hablar("Hola Python")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    AttributeError: class Factura has no attribute '__tasa'
-    >>> 
+    TypeError: unbound method hablar() must be called with Persona instance as first argument (got str instance instead)
+
+Esto sucede por...
+
+.. todo:: TODO explicar por que se lanza la excepción TypeError.
 
 
-Python protege estos atributos cambiando su nombre internamente. A sus 
-nombres agrega el nombre de la clase:
+.. _python_clases:
 
-    ``objeto._NombreClase__NombreAtributo``
+Clases
+......
 
-::
+Las clases definen las características del :ref:`objeto <python_objetos>`.
 
-    >>> print compra1._Factura__tasa
-    19
-    >>> 
+Con todos los conceptos anteriores explicados, se puede decir que 
+una clase es una plantilla genérica de un :ref:`objeto <python_objetos>`. 
+La clase proporciona variables iniciales de estado (donde se guardan los 
+:ref:`atributos <python_atributos>`) e implementaciones de comportamiento 
+(:ref:`métodos <python_metodos>`) necesarias para crear nuevos objetos, son 
+los modelos sobre los cuáles serán construidos.
+
+
+.. _python_instancias:
+
+Instancias
+..........
+
+Ya sabe que una clase es una estructura general del objeto. Por ejemplo, puede 
+decir que la clase ``Persona`` necesita tener una ``cedula``, un ``nombre``, 
+un ``apellido`` y una ``sexo``, pero no va a decir cual es ``cedula``, ``nombre``, 
+``apellido`` y ``sexo``, es aquí donde entran las instancias. Una instancia es una 
+copia específica de la clase con todo su contenido.
+
+Ejemplo: Leonardo = Persona (13567098, "Leonardo", "Caballero", "M")
+
+Aquí puede decir que ``Leonardo`` es una instancia de la clase 
+``Persona``.
+
+
+Las clases dan la posibilidad de crear estructuras de datos más complejas. En el 
+ejemplo, cree una clase ``Persona`` que realizará un seguimiento del ``cedula``, 
+``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
+
 
 ----
+
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion9>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
-
-.. _`Programación orientada a objetos - Wikipedia`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos

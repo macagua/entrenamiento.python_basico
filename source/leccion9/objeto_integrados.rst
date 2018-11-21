@@ -18,7 +18,7 @@ El objeto elipsis
 especial. Existe exactamente un objeto ``elipsis``, llamado ``Ellipsis`` (un nombre 
 interno).
 
-.. note:: El tipo se muestra de este modo: ``Ellipsis``.
+.. note:: El tipo se muestra de este modo: ``<type 'ellipsis'>``.
 
 
 ----
@@ -33,7 +33,7 @@ El objeto nulo
 No tiene ninguna operación especial. Existe exactamente un objeto nulo, llamado 
 ``None`` (un nombre interno).
 
-.. note:: El tipo se muestra de este modo: ``None``.
+.. note:: El tipo se muestra de este modo: ``<type 'NoneType'>``.
 
 ----
 
@@ -370,4 +370,13 @@ accesible mediante la función interna ``type()``. No hay operaciones especiales
 los tipos. El módulo estándar ``types`` define nombres para todos los tipos internos 
 estándar.
 
-.. note:: Los tipos se muestran de este modo: ``<type 'int'>``.
+.. note:: Los tipos se muestran de este modo: ``<type 'type'>``.
+
+
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion9>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.
