@@ -16,11 +16,11 @@ Un módulo puede definir funciones, clases y variables, también puede incluir
 código ejecutable.
 
 El código Python para un módulo nombrado ``funciones`` normalmente reside un archivo 
-llamado ``funciones.py``. A continuación un ejemplo de un simple módulo, ``funciones.py``.
+llamado ``utilidades.py``. A continuación un ejemplo de un simple módulo, ``utilidades.py``.
 
-.. literalinclude:: ../../recursos/leccion8/funciones.py
+.. literalinclude:: ../../recursos/leccion8/modulos/utilidades.py
     :language: python
-    :lines: 3-6
+    :lines: 2-8
 
 .. _python_sentencia_import:
 
@@ -39,23 +39,25 @@ sintaxis:
 
 Cuando el interprete encuentra una sentencia ``import``, este importa el módulo 
 si el mismo esta presente en la ruta de búsqueda. Una ruta de búsqueda es una lista 
-de directorios que el interprete busca antes de importar un módulo. Por ejemplo, al 
-importar el módulo ``funciones.py``, usted necesita colocar la siguiente sentencia al 
-tope del otro script Python. A continuación un ejemplo de un simple módulo, 
-``mi_mensaje.py``.
+de directorios que el interprete busca antes de importar un módulo. 
 
-.. literalinclude:: ../../recursos/leccion8/mi_mensaje.py
+Por ejemplo, al importar el módulo ``utilidades.py``, usted necesita colocar la 
+siguiente sentencia al tope del otro script Python. A continuación un ejemplo de 
+un simple módulo, ``calculo_factura_pipo.py``.
+
+.. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
     :language: python
-    :lines: 3-16
+    :lines: 3-17
 
 Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
 
 ::
 
-    Se importo el modulo 'funciones.pyc'
+    Importo el modulo 'utilidades.pyc'
 
-    Función 'mensaje' del módulo 'funciones.pyc' se llamo mostrando:
-    Hola Python
+    Función 'suma_total' del módulo 'utilidades.pyc' llamado y mostró:
+    Ingrese un monto: 56987
+    Monto total a facturar: 57007 BsS.
 
 Un módulo se carga solo una vez, independientemente de la cantidad de veces que se 
 importe. Esto evita que la ejecución del módulo ocurra una y otra vez si se producen 
@@ -73,78 +75,16 @@ sentencias:
 
     >>> import funciones, os
     >>> archivos = os.listdir(os.path.abspath(
-    ...     funciones.__file__).replace("/funciones.pyc", "/"))
+    ...     funciones.__file__).replace("/utilidades.pyc", "/"))
     >>> print filter(lambda x: x.startswith('funciones.'), archivos)
-    ['funciones.py', 'funciones.pyc']
+    ['utilidades.py', 'utilidades.pyc']
 
 
 De esta forma se comprueba que existe el archivo compilado de Python junto con 
 el mismo modulo Python.
 
 
-.. comments
-
-    ::
-
-        >>> archivos = os.listdir(os.__file__.replace("/os.pyc", "/"))
-        >>> print filter(lambda x: x.startswith('os.'), archivos)
-        ['os.pyc', 'os.py']
-
-    En el ejemplo anterior se el método ``os.__file__`` para obtener la ruta donde esta instalada 
-    el modulo ``os`` en su sistema, ejecutando la siguiente sentencia:
-
-    ::
-
-        >>> os.__file__
-        '/usr/lib/python2.7/os.pyc'
-
-    Luego se inicializa la variable ``archivos`` generando una lista de archivos usando la función 
-    ``os.listdir()``, ejecutando la siguiente sentencia:
-
-    ::
-
-        >>> archivos = os.listdir("/usr/lib/python2.7/")
-        >>> type(archivos)
-        <type 'list'>
-        >>> len(archivos)
-        443
-
-    Opcionalmente puede comprobar si la cadena de caracteres **os.pyc** se encuentras una de las 
-    posiciones de la lista ``archivos``, ejecutando la siguiente sentencia:
-
-    ::
-
-        >>> "os.pyc" in archivos
-        True
-
-    Ya al comprobar que existe la cadena de caracteres "**os.pyc**" se usa una 
-    función :ref:`lambda <python_funcion_lambda>` con la función 
-    :ref:`filter() <python_funcion_filter>` para filtrar todos los archivos 
-    del directorio "*/usr/lib/python2.7/*" por medio del función ``os.listdir()`` 
-    que inicien con la cadena de caracteres "**os.**" usando la función 
-    :ref:`startswith() <python_funcion_startswith>`.
-
-    ::
-
-        >>> print filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python2.7/'))
-        ['os.pyc', 'os.py']
-
-    Así de esta forma se comprueba que existe el archivo compilado de Python junto con el mismo modulo Python.
-
-    ::
-
-        >>> os.__file__
-        '/usr/lib/python2.7/os.pyc'
-        >>> archivos = os.listdir("/usr/lib/python2.7/")
-        >>> type(archivos)
-        <type 'list'>
-        >>> len(archivos)
-        443
-        >>> "os.pyc" in archivos
-        True
-        >>> print filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python2.7/'))
-        >>> ['os.pyc', 'os.py']
-
+.. _python_localizar_modulos:
 
 Localizando módulos
 ...................
@@ -155,7 +95,8 @@ la secuencia siguiente:
 #. El directorio actual.
 
 #. Si el módulo no es encontrado, Python entonces busca en cada directorio en 
-   la variable de entorno ``PYTHONPATH`` del sistema operativo.
+   la variable de entorno :ref:`PYTHONPATH <python_variable_entorno_path>` del 
+   sistema operativo.
 
 #. Si todas las anteriores fallan, Python busca la ruta predeterminada. En UNIX, 
    la ruta predeterminada normalmente esta ``/usr/local/lib/python/``.
@@ -164,6 +105,8 @@ El ruta de búsqueda de módulo es almacenado en el modulo de system ``sys`` com
 la variable ``sys.path``. La variable ``sys.path`` contiene el directorio actual, 
 ``PYTHONPATH``, y las predeterminadas dependencia de instalación.
 
+
+.. _python_variable_entorno_path:
 
 PYTHONPATH
 ..........
@@ -183,6 +126,8 @@ Así es una típica definición de ``PYTHONPATH`` desde un sistema UNIX, ejecuta
 
     set PYTHONPATH = /usr/local/lib/python
 
+
+.. _python_modulos_namespace_alcance:
 
 Espacios de nombres y alcance
 .............................
@@ -207,12 +152,12 @@ debe usar la sentencia ``global``.
 La sentencia ``global VarName`` le dice a Python que ``VarName`` es una variable global. 
 Python deja de buscar el espacio de nombres local para la variable.
 
-Por ejemplo, definimos una variable ``Money`` en el espacio de nombres global. Dentro de 
-la función ``Money``, asignamos un valor a ``Money``, por lo tanto, Python asume que ``Money`` 
-es una variable local. Sin embargo, accedimos al valor de la variable local ``Money`` antes de 
+Por ejemplo, defina una variable ``Money`` en el espacio de nombres global. Dentro de 
+la función ``Money``, asigna un valor a ``Money``, por lo tanto, Python asume que ``Money`` 
+es una variable local. Sin embargo, accede al valor de la variable local ``Money`` antes de 
 configurarlo, por lo que el resultado es una excepción 
-:ref:`UnboundLocalError <python_exception_unboundlocalerror>`. Si no se comenta la sentencia 
-``global``, se soluciona el problema. Uncommenting the global statement fixes the problem.
+:ref:`UnboundLocalError <python_exception_unboundlocalerror>`. Si descomenta la sentencia 
+``global``, se soluciona el problema.
 
 
 ----
@@ -220,21 +165,21 @@ configurarlo, por lo que el resultado es una excepción
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los 
-    siguientes enlaces: :download:`funciones.py <../../recursos/leccion8/funciones.py>` 
-    y :download:`mi_mensaje.py <../../recursos/leccion8/mi_mensaje.py>`.
+    siguientes enlaces: :download:`utilidades.py <../../recursos/leccion8/modulos/utilidades.py>` 
+    y :download:`calculo_factura_pipo.py <../../recursos/leccion8/modulos/calculo_factura_pipo.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`funciones.py` y :file:`mi_mensaje.py`, 
+    Para ejecutar el código :file:`utilidades.py` y :file:`calculo_factura_pipo.py`, 
     abra una consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
 
         leccion8/
-        ├── funciones.py
-        └── mi_mensaje.py
+        ├── utilidades.py
+        └── calculo_factura_pipo.py
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
-        python2 mi_mensaje.py
+        python2 calculo_factura_pipo.py
 
 
 ----
