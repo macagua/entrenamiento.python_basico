@@ -274,6 +274,8 @@ Funciones definidas por el usuario
 
 - `Defining functions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/functions.html>`_.
 
+- `Funciones de orden superior <https://github.com/josuemontano/python_intro/wiki/Funciones-de-orden-superior>`_.
+
 .. seealso::
 
     .. figure:: _static/youtube/_C7Uj7O5o_Q.jpg
