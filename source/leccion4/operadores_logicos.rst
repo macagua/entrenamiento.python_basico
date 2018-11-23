@@ -6,7 +6,7 @@
 Operadores de lógicos
 ---------------------
 
-Estos son los distintos tipos de operadores con los que podemos trabajar
+Estos son los distintos tipos de operadores con los que puede trabajar
 con valores booleanos, los llamados operadores lógicos o condicionales:
 
 +----------------+--------------------+------------------------+

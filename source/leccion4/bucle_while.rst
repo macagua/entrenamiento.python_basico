@@ -6,7 +6,7 @@
 Bucle while
 -----------
 
-En Python tenemos una palabra reservada llamada ``while`` que nos
+En Python tiene una palabra reservada llamada ``while`` que nos
 permite ejecutar ciclos, o bien secuencias periódicas que nos permiten
 ejecutar código múltiples veces.
 
@@ -32,7 +32,7 @@ por Conteo:
     :language: python
     :lines: 14-19
 
-En este ejemplo tenemos un contador con un valor inicial de cero, cada
+En este ejemplo tiene un contador con un valor inicial de cero, cada
 iteración del ``while`` manipula esta variable de manera que
 incremente su valor en 1, por lo que después de su primera iteración el
 contador tendrá un valor de 1, luego 2, y así sucesivamente.
@@ -83,8 +83,8 @@ en el bucle ``while``:
 
 .. _python_sentencia_break:
 
-Usando la sentencia 'break'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sentencia break
+~~~~~~~~~~~~~~~
 
 A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado la sentencia 
 ``break``:
@@ -97,14 +97,14 @@ A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado l
 Adicionalmente existe una forma alternativa de interrumpir o cortar los ciclos utilizando 
 la palabra reservada ``break``.
 Esta nos permite salir del ciclo incluso si la expresión evaluada en ``while`` (o en otro 
-ciclo como ``for``) permanece siendo ``True``. Para comprender mejor usaremos el mismo 
-ejemplo anterior pero interrumpiremos el ciclo usando ``break``.
+ciclo como ``for``) permanece siendo ``True``. Para comprender mejor use el mismo 
+ejemplo anterior pero se interrumpe el ciclo usando la sentencia ``break``.
 
 
 .. _python_sentencia_continue:
 
-Usando la sentencia 'continue'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sentencia continue
+~~~~~~~~~~~~~~~~~~
 
 A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado la sentencia 
 ``continue``:
