@@ -89,17 +89,17 @@ Sesión 7 - Operaciones de E/S y manipulación de archivos
 	apertura, lectura, escritura archivos y explorar el resultado en un módulo.
 
 
-Sesión 8 - Creación de módulos y paquetes Python
-------------------------------------------------
+Sesión 8 - Creación de módulos, paquetes y distribución de software
+-------------------------------------------------------------------
 
 **Descripción:**
-	Comprender la creación de módulos y paquetes Egg Python e implementación de estos 
-	en sus propios desarrollos.
+	Comprender la creación de módulos, paquetes y distribución de software Python e 
+	implementación de estos en sus propios desarrollos.
 
 **Práctica:**
-	Ejemplo de creación de módulos y paquetes Egg Python organizando su código en estas 
-	estructuras de programas y explorar el resultado en un módulo y paquete en el sistema 
-	de archivos.
+	Ejemplo de creación de módulos, paquetes y distribución de software Python organizando 
+	su código en estas estructuras de programas y explorar el resultado en un módulo y 
+	paquete en el sistema de archivos.
 
 
 Sesión 9 - Manejos de errores y programación orientada a objetos
