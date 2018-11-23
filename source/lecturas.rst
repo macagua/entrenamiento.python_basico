@@ -392,6 +392,12 @@ Sesión 9 - Manejos de errores y programación orientada a objetos
 ----------------------------------------------------------------
 
 
+Errores y excepciones
+.....................
+
+- `Principales errores al comenzar con Python <http://www.cursosgis.com/principales-errores-al-comenzar-con-python/>`_.
+
+
 Programación orientada a objetos
 ................................
 
