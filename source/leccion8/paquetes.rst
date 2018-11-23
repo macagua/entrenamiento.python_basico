@@ -106,7 +106,7 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
 .. important::
     Usted puede descargar el código usado en esta sección, haciendo clic en el 
-    siguiente enlace: :download:`paquetes.zip <../../recursos/leccion8/paquetes/paquetes.zip>`.
+    siguiente enlace: :download:`paquetes.zip <../../recursos/leccion8/paquetes.zip>`.
 
 
 .. tip::
