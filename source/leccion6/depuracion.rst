@@ -51,7 +51,7 @@ Postmortem
 
 **Situación**: Estás trabajando en ``ipython`` y obtienes un error (`traceback`).
 
-En este caso estamos depurando el fichero :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`. Escribe ``%debug`` y entrarás en el depurador.
+En este caso esta depurando el fichero :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`. Escribe ``%debug`` y entrarás en el depurador.
 
 .. sourcecode:: ipython
 
@@ -134,8 +134,8 @@ Ejecución paso a paso
 
 **Situación**: Crees que existe un error en un módulo pero no estás seguro donde.
 
-Por ejemplo, estamos intentado depurar :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
-A pesar de que el código se ejecuta, observamos que el filtrado no se
+Por ejemplo, esta intentado depurar :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
+A pesar de que el código se ejecuta, observa que el filtrado no se
 está haciendo correctamente.
 
 * Ejecuta el `script` en IPython con el depurador usando ``%run -d wiener_filtering.py``:
@@ -213,12 +213,12 @@ está haciendo correctamente.
     ipdb> print l_var.min()
     0
 
-*Oh dear*, solo vemos enteror y variación 0. Aquí está nuestro error,
+*Oh dear*, solo ve entero y variación 0. Aquí está nuestro error,
 estamos haciendo aritmética con enteros.
 
 .. topic:: Lanzando excepciones en errores numéricos
 
-    Cuando ejecutamos el fichero :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`, 
+    Cuando ejecuta el fichero :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`, 
     se lanzarán los siguientes avisos:
 
     .. sourcecode:: ipython
@@ -227,7 +227,7 @@ estamos haciendo aritmética con enteros.
         wiener_filtering.py:40: RuntimeWarning: divide by zero encountered in divide
             noise_level = (1 - noise/l_var )
 
-    Podemos convertir estos avisos a excepciones, lo que nos permitiría
+    Puede convertir estos avisos a excepciones, lo que le permitiría
     hacer una depuración post-mortem sobre ellos y encontrar el problema
     de manera más rápida:
 
@@ -271,13 +271,13 @@ Otras formas de comenzar una depuración
 
 * **Depurando fallos de pruebas usando nosetests**
 
-  Podemos ejecutar ``nosetests --pdb`` para saltar a la depuración
+  Puede ejecutar ``nosetests --pdb`` para saltar a la depuración
   post-mortem de excepciones y ``nosetests --pdb-failure`` para inspeccionar
   los fallos de pruebas usando el depurador.
 
   Además, puedes usar la interfaz IPython para el depurador en **nose**
   usando el plugin  de **nose**
-  `ipdbplugin <https://pypi.org/project/ipdbplugin>`_. Podremos, entonces,
+  `ipdbplugin <https://pypi.org/project/ipdbplugin>`_. Puede, entonces,
   pasar las opciones ``--ipdb`` y ``--ipdb-failure`` a los *nosetests*.
 
 * **Llamando explícitamente al depurador**
@@ -322,9 +322,9 @@ Comandos del depurador e interacciones
 .. warning:: **Los comandos de depuración no son código Python**
 
     No puedes nombrar a las variables de la forma que quieras. Por ejemplo,
-    si estamos dentro del depurador no podremos sobrescribir a las variables 
-    con el mismo y, por tanto, **habrá que usar diferentes nombres para las
-    variables cuando estemos tecleando código en el depurador**.
+    si esta dentro del depurador no podrá sobrescribir a las variables con el 
+    mismo y, por tanto, **habrá que usar diferentes nombres para las
+    variables cuando este tecleando código en el depurador**.
 
 Obteniendo ayuda dentro del depurador
 .....................................
