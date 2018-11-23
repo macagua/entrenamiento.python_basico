@@ -137,9 +137,9 @@ Un pequeño número de constantes vive en el espacio de nombres incorporado. Son
 	El valor verdadero del tipo :ref:`booleano <python_booleanos>`.
 
 ``None``
-	El valor único de ``types.NoneType``. ``None`` se utiliza con frecuencia 
-	para representar la ausencia de un valor, como cuando los argumentos 
-	predeterminados no se pasan a una función.
+	El valor único de objeto :ref:`types.NoneType <python_objeto_none>`. ``None`` 
+	se utiliza con frecuencia para representar la ausencia de un valor, como cuando 
+	los argumentos predeterminados no se pasan a una función.
 
 ``NotImplemented``
 	Valor especial que puede ser devuelto por los métodos especiales de 
@@ -199,25 +199,104 @@ librería estándar Python llamada :ref:`format <python_funcion_format>`.
     En realidad, no se usa las constantes en Python. El módulo ``globals`` o ``constants`` 
     es usado a lo largo de los programas de Python.
 
-.. important::
-    Usted puede descargar el código usado en esta sección haciendo clic en los 
-    siguientes enlaces: :download:`constantes.py <../../recursos/leccion3/constantes.py>` 
-    y :download:`main.py <../../recursos/leccion3/main.py>`.
+----
 
 
-.. tip::
-    Para ejecutar el código :file:`constantes.py` y :file:`main.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+.. _python_palabras_reservadas:
 
-		leccion3/
-		├── constantes.py
-		└── main.py
+Palabras reservadas
+...................
 
-    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
+Existen ciertas palabras que tienen significado especial para el intérprete de Python. Estas 
+no pueden utilizarse para ningún otro fin (como ser nombrar valores) excepto para el que han 
+sido creadas. Estas son:
 
-        python2 constantes.py
+
+- :ref:`and <python_operadores_logicos>`.
+
+- ``as``.
+
+- :ref:`assert <python_sentencia_assert>`.
+
+- :ref:`break <python_sentencia_break>`.
+
+- :ref:`class <python_clases>`.
+
+- :ref:`continue <python_sentencia_continue>`.
+
+- :ref:`def <python_funciones>`.
+
+- ``del``.
+
+- :ref:`elif <python_condicional_if>`.
+
+- :ref:`else <python_condicional_if>`.
+
+- :ref:`except <python_sentencia_try_except>`.
+
+- ``exec``.
+
+- :ref:`finally <python_sentencia_finally>`.
+
+- :ref:`for <python_bucle_for>`.
+
+- :ref:`from <python_sentencia_from>`.
+
+- ``global``.
+
+- :ref:`if <python_condicional_if>`.
+
+- :ref:`import <python_sentencia_import>`.
+
+- :ref:`in <python_expresiones_condicional>`.
+
+- :ref:`is <python_expresiones_condicional>`.
+
+- :ref:`lambda <python_funcion_lambda>`.
+
+- :ref:`not <python_operadores_logicos>`.
+
+- :ref:`or <python_operadores_logicos>`.
+
+- :ref:`pass <python_sentencia_pass>`.
+
+- :ref:`print <python_salida>`.
+
+- :ref:`raise <python_sentencia_raise>`.
+
+- :ref:`return <python_sentencia_return>`.
+
+- :ref:`try <python_sentencia_try_except>`.
+
+- :ref:`while <python_bucle_while>`.
+
+- :ref:`with <python_sentencia_with>`.
+
+- ``yield``.
+
+
+.. note:: Para Python 2.7 son un total de 31 palabras reservadas.
+
+
+Puede verificar si una palabra esta reservada utilizando el módulo integrado 
+``keyword``, de la siguiente forma:
+
+::
+
+	>>> import keyword
+	>>> keyword.iskeyword('as')
+	>>> keyword.iskeyword('x')
+
+Para obtener una lista de todas las palabras reservadas
+
+::
+
+	>>> import keyword
+	>>> keyword.kwlist
+
 
 ----
+
 
 Reglas y convención de nombres
 ..............................
@@ -247,8 +326,33 @@ y :ref:`constantes <python_constante>`:
 - Los nombres que comienzan con guión bajo (simple ``_`` o doble ``__``) se reservan para 
   variables con significado especial
 
-- No pueden usarse como identificadores, las palabras reservadas: ``True``, ``False``, ``and``, 
-  ``or``, ``as``, ``is``, ``in``, ``not``, ``None``, ``assert``, ``break``, ``continue``, 
-  ``class``, ``pass``, ``def``, ``del``, ``if``, ``elif``, ``else``, ``return``, ``try``, 
-  ``except``, ``finally``, ``lambda``, ``from``, ``import``, ``global``, ``for``, ``while``, 
-  ``with``, ``yield``, ``nonlocal`` y ``rais``.
+- No pueden usarse como identificadores, las :ref:`palabras reservadas <python_palabras_reservadas>` .
+
+----
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en los 
+    siguientes enlaces: :download:`constantes.py <../../recursos/leccion3/constantes.py>` 
+    y :download:`main.py <../../recursos/leccion3/main.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`constantes.py` y :file:`main.py`, abra una 
+    consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+
+		leccion3/
+		├── constantes.py
+		└── main.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
+
+        python2 constantes.py
+
+
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

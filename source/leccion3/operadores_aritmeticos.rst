@@ -90,7 +90,7 @@ operandos.
 
 **Operador módulo**
 
-El operador *módulo* no hace otra cosa que devolvernos el resto de la
+El operador *módulo* no hace otra cosa que devolver el resto de la
 división entre los dos operandos. En el ejemplo, ``7 / 2`` sería ``3``, 
 con ``1`` de resto, luego el *módulo* es ``1``.
 

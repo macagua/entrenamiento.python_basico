@@ -6,10 +6,9 @@
 Tipo booleanos
 --------------
 
-Como decíamos el tipo booleano sólo puede tener dos valores: ``True``
-(verdadero) y ``False`` (falso). Estos valores son especialmente importantes
-para las expresiones condicionales y los bucles, como veremos más
-adelante.
+El tipo booleano sólo puede tener dos valores: ``True`` (verdadero) y ``False`` (falso). 
+Estos valores son especialmente importantes para las expresiones condicionales y los 
+bucles, como verá más adelante.
 
 +----------+-----------+----------------------------------+----------------------+
 | **Tipo** | **Clase** | **Notas**                        | **Ejemplo**          |

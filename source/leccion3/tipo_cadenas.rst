@@ -58,8 +58,8 @@ expresiones regulares.
 
 
 También es posible encerrar una cadena entre triples comillas (simples o
-dobles). De esta forma podremos escribir el texto en varias líneas, y al
-imprimir la cadena, se respetarán los saltos de línea que introdujimos
+dobles). De esta forma puede escribir el texto en varias líneas, y al
+imprimir la cadena, se respetarán los saltos de línea que se introdujeron 
 sin tener que recurrir al carácter ``\n``, así como las comillas sin tener
 que escaparlas.
 
@@ -96,6 +96,7 @@ triples comillas (simples o dobles) que Python ignora totalmente.
     >>> ''' comentarios en varias lineas '''
     ' comentarios en varias lineas '
     >>> 
+
 
 .. _python_cadenas_formateo:
 
@@ -217,7 +218,7 @@ y explicitar el tipo del objeto:
 - ``f`` para números de coma flotante (tipo :ref:`float <python_coma_flotante>`).
 
 
-Esto permite controlar el formato de impresión del objeto. Por ejemplo, podemos 
+Esto permite controlar el formato de impresión del objeto. Por ejemplo, usted puede 
 utilizar la expresión ``.4f`` para determinar que un número de coma flotante (``f``) 
 se imprima con cuatro dígitos después de la coma (``.4``).
 
