@@ -19,5 +19,5 @@ mostrando ejemplos prácticos y útiles. A continuación el temario de esta lecc
 
    programacion_estructurada
    funciones
-   funciones_integradas
    funciones_propias
+   funciones_integradas

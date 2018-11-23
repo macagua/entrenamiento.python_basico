@@ -6,9 +6,9 @@
 Funciones
 ---------
 
-Una función es un bloque de código con un nombre asociado, que recibe 0 
-o más argumentos como entrada, sigue una serie de instrucciones, y devuelve 
-un valor y/o realiza una tarea.
+Una función es un bloque de código con un nombre asociado, que recibe cero 
+o más argumentos como entrada, sigue una secuencia de sentencias, la cuales 
+ejecuta una operación deseada y devuelve un valor y/o realiza una tarea.
 
 El uso de funciones es un componente muy importante del paradigma de la 
 programación llamada :ref:`estructurada <python_programacion_estructurada>`, 

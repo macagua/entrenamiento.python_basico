@@ -31,9 +31,9 @@ que forman el cuerpo de la función empiezan en la línea siguiente,
 y deben estar indentado.
 
 La primer sentencia del cuerpo de la función puede ser opcionalmente 
-una cadenas de caracteres literal; esta es la cadenas de caracteres de documentación 
-de la función, o ``docstrings``. (Puedes encontrar más acerca de 
-``docstrings`` en la sección `Cadenas de texto de documentación`_.)
+una cadenas de caracteres literal; esta es la cadenas de caracteres 
+de documentación de la función, o ``docstrings``. (Puedes encontrar 
+más acerca de ``docstrings`` en la sección `Cadenas de texto de documentación`_.)
 
 Hay herramientas que usan las ``docstrings`` para producir automáticamente 
 documentación en línea o imprimible, o para permitirle al usuario que 
@@ -45,6 +45,35 @@ La ejecución de la función ``prueba()`` muestra la impresión de un
 mensaje **función de prueba** que se imprime por consola. Devolver 
 el objeto por los valores de retorno opcionales.
 
+
+.. _python_sentencia_pass:
+
+Sentencia pass
+................
+
+Es una operación nula --- cuando es ejecutada, nada sucede. Eso es útil 
+como un contenedor cuando una sentencia es requerida sintácticamente, 
+pero no necesita código que ser ejecutado, por ejemplo:
+
+::
+
+    >>> # una función que no hace nada (aun)
+    ... def consultar_nombre_genero(letra_genero): pass
+    ... 
+    >>> type(consultar_nombre_genero)
+    <type 'function'>
+    >>> consultar_nombre_genero("M")
+    >>> 
+    >>> # una clase sin ningún método (aun)
+    ... class Persona: pass
+    ... 
+    >>> macagua = Persona
+    >>> type(macagua)
+    <type 'classobj'>
+    >>> 
+
+
+.. _python_sentencia_return:
 
 Sentencia return
 ................
@@ -154,9 +183,108 @@ Funciones anónimas
 Funciones de orden superior
 ...........................
 
-.. todo::
-    TODO escribir esta sección.
+Las funciones de Python pueden tomar funciones como parámetros y devolver funciones 
+como resultado. Una función que hace ambas cosas o alguna de ellas se llama función 
+de orden superior.
 
+.. _python_funcion_map:
+
+Función map
+~~~~~~~~~~~
+
+``map`` toma una función y una lista y aplica esa función a cada elemento de esa lista, 
+produciendo una nueva lista. Va a ver su definición de tipo y como se define.
+
+
+.. _python_funcion_filter:
+
+Función filter
+~~~~~~~~~~~~~~
+
+``filter`` es una función que toma un predicado (un predicado es una función que dice si 
+algo es cierto o falso, o en nuestro caso, una función que devuelve un valor booleano) y 
+una lista y devuelve una lista con los elementos que satisfacen el predicado. La sentencia
+de tipo y la implementación serían algo como:
+
+Todo esto podría haberse logrado también con listas por comprensión que usaran predicados. 
+No hay ninguna regla que diga cuando usar ``map`` o ``filter`` en lugar de listas por comprensión, 
+simplemente debes decidir que es más legible dependiendo del contexto.
+
+.. _python_funcion_lambda:
+
+lambdas
+~~~~~~~
+
+Las lambdas son funciones anónimas que suelen ser usadas cuando necesita una función una 
+sola vez. Normalmente crea funciones lambda con el único propósito de pasarlas a funciones 
+de orden superior.
+
+En muchos lenguajes, el uso de lambdas sobre funciones definidas causa problemas de rendimiento. 
+No es el caso en Python.
+
+::
+
+    >>> import os
+    >>> archivos = os.listdir(os.__file__.replace("/os.pyc", "/"))
+    >>> print filter(lambda x: x.startswith('os.'), archivos)
+    ['os.pyc', 'os.py']
+
+En el ejemplo anterior se el método ``os.__file__`` para obtener la ruta donde esta instalada 
+el modulo ``os`` en su sistema, ejecutando la siguiente sentencia:
+
+::
+
+    >>> os.__file__
+    '/usr/lib/python2.7/os.pyc'
+
+Luego se inicializa la variable ``archivos`` generando una lista de archivos usando la función 
+``os.listdir()``, ejecutando la siguiente sentencia:
+
+::
+
+    >>> archivos = os.listdir("/usr/lib/python2.7/")
+    >>> type(archivos)
+    <type 'list'>
+    >>> len(archivos)
+    443
+
+Opcionalmente puede comprobar si la cadena de caracteres **os.pyc** se encuentras una de las 
+posiciones de la lista ``archivos``, ejecutando la siguiente sentencia:
+
+::
+
+    >>> "os.pyc" in archivos
+    True
+
+Ya al comprobar que existe la cadena de caracteres "**os.pyc**" se usa una 
+función :ref:`lambda <python_funcion_lambda>` con la función 
+:ref:`filter() <python_funcion_filter>` para filtrar todos los archivos 
+del directorio "*/usr/lib/python2.7/*" por medio del función ``os.listdir()`` 
+que inicien con la cadena de caracteres "**os.**" usando la función 
+:ref:`startswith() <python_funcion_startswith>`.
+
+::
+
+    >>> print filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python2.7/'))
+    ['os.pyc', 'os.py']
+
+Así de esta forma se comprueba que existe el archivo compilado de Python junto con el mismo modulo Python.
+
+::
+
+    >>> os.__file__
+    '/usr/lib/python2.7/os.pyc'
+    >>> archivos = os.listdir("/usr/lib/python2.7/")
+    >>> type(archivos)
+    <type 'list'>
+    >>> len(archivos)
+    443
+    >>> "os.pyc" in archivos
+    True
+    >>> print filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python2.7/'))
+    >>> ['os.pyc', 'os.py']
+
+----
 
 Ejemplos de funciones
 .....................
