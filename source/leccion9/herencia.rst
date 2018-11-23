@@ -33,7 +33,6 @@ se crea una clase base llamada ``Persona``. A continuación un ejemplo de la cla
 ``Persona`` con un método interno:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 3-32
 
@@ -50,7 +49,6 @@ y ``getSexo``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``
 La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 59-60
 
@@ -69,7 +67,6 @@ El método ``__str__`` es un método usando para imprimir la descripción de la
 instancia de objeto el cual debe mostrar como:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 69
 
@@ -98,7 +95,6 @@ El siguiente es un ejemplo de la clase ``Supervisor``
 que derivada de la clase ``Persona`` con función interna:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 35-56
 
@@ -117,14 +113,12 @@ Luego que generá la instancia del nuevo objeto ``Supervisor`` llamada ``supervi
 se puede imprimir sus detalles de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 80
 
 Si desea usar los métodos de la clase ``Supervisor`` se puede imprimir de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 81-82
 
@@ -132,7 +126,6 @@ Como la instancia de objeto ``supervisor1`` hereda los métodos de la clase ``Pe
 usted puede reusarlo e invocarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 84-85
 
@@ -141,13 +134,16 @@ el código con diferentes clases correspondientes a diferentes objetos que encon
 (una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``, etc.), con sus 
 propios métodos y atributos. Luego puede usar la herencia para considerar las variaciones 
 en torno a una clase base y reutilizar el código. Ej.: a partir de una clase base de 
-``Persona``, usted puede crear clases derivadas como ``Supervisor``, ``Profesor``, ``Obrero``, 
-etc.
+``Persona``, usted puede crear clases derivadas como ``Supervisor``, ``JefeCuadrilla``, 
+``Obrero``, etc.
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :linenos:
     :language: python
     :lines: 89-92
+
+
+----
 
 
 .. important::

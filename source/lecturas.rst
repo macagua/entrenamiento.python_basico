@@ -407,6 +407,9 @@ Programación orientada a objetos
 
 - `Object-oriented programming (OOP) - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/oop.html>`_.
 
+- `What's the meaning of underscores (_ & __) in Python variable names? <https://www.youtube.com/watch?v=ALZmCy2u0jQ>`_.
+
+- `What is the meaning of a single and a double underscore before an object name? <https://stackoverflow.com/questions/1301346/what-is-the-meaning-of-a-single-and-a-double-underscore-before-an-object-name>`_.
 
 .. seealso::
 

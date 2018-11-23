@@ -355,6 +355,9 @@ El objeto de la clase ``object`` es el tipo más básico de objeto, es integrado
 ``__builtin__``. Este objeto se usa como :ref:`herencia <python_poo_herencia>` cuando se crea 
 una nueva clase en Python.
 
+Todo, incluyendo las clases y tipos de Python son instancias de object. Para corroborar si 
+un objeto es instancia de una clase se utiliza la función :ref:`isinstance() <python_funcion_isinstance>`.
+
 
 .. note:: Los tipos se muestran de este modo: ``<type 'object'>``.
 
