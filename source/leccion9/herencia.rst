@@ -32,9 +32,9 @@ personales y comportamiento tipicos como hablar, comer, caminar, entonces para e
 se crea una clase base llamada ``Persona``. A continuación un ejemplo de la clase 
 ``Persona`` con un método interno:
 
-.. literalinclude:: ../../recursos/leccion9/herencia_simple.py
+.. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 3-32
+    :lines: 6-34
 
 
 En el ejemplo previo, es donde empieza a crear una clase (lo hace con la 
@@ -44,13 +44,13 @@ al :ref:`objeto object <python_objeto_object>`, usando para indicar la clase de
 la cual precede.
 
 La clase ``Persona`` tiene los métodos ``__init__``, ``__str__``, ``hablar`` 
-y ``getSexo``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``. 
+y ``getGenero``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``. 
 
 La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 59-60
+    :lines: 6-7
 
 El método constructor ``__init__`` es un método especial el cual debe escribir 
 como: ``MiClase(parámetros iniciales si hay cualquiera)``.
@@ -58,17 +58,16 @@ como: ``MiClase(parámetros iniciales si hay cualquiera)``.
 Usted puede invocar esos métodos y atributos con la siguiente notación: 
 ``claseinstancia.metodo`` o ``claseinstancia.atributo``. 
 
-.. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
-    :language: python
-    :lines: 63
+::
+
+    >>> print persona1.nombre, persona1.apellido, persona1.getGenero(persona1.sexo)
 
 El método ``__str__`` es un método usando para imprimir la descripción de la 
 instancia de objeto el cual debe mostrar como:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 69
+    :lines: 12
 
 En el anterior código se usan para cierto formato para imprimir la instancia de 
 objeto usando la sentencia ``print``, concatenando el carácter ``\n`` para 
@@ -94,9 +93,9 @@ siguiente ejemplos el objeto ``Supervisor`` y el objeto ``Obrero``.
 El siguiente es un ejemplo de la clase ``Supervisor`` 
 que derivada de la clase ``Persona`` con función interna:
 
-.. literalinclude:: ../../recursos/leccion9/herencia_simple.py
+.. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 35-56
+    :lines: 37-58
 
 Ahora, se creará una nueva clase ``Supervisor`` con los mismos métodos y atributos 
 como la clase ``Persona``, pero con dos nuevos atributos ``permisos`` y ``tareas``. 
@@ -107,27 +106,28 @@ La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :linenos:
     :language: python
-    :lines: 79
+    :lines: 42
 
 Luego que generá la instancia del nuevo objeto ``Supervisor`` llamada ``supervisor1`` 
 se puede imprimir sus detalles de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 80
+    :lines: 47
 
-Si desea usar los métodos de la clase ``Supervisor`` se puede imprimir de la siguiente forma:
-
-.. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :language: python
-    :lines: 81-82
-
-Como la instancia de objeto ``supervisor1`` hereda los métodos de la clase ``Persona`` 
-usted puede reusarlo e invocarlo de la siguiente forma:
+Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de la 
+clase ``Persona`` usted puede reusarlo e invocarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 84-85
+    :lines: 50-55
+
+Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se puede 
+imprimir de la siguiente forma:
+
+.. literalinclude:: ../../recursos/leccion9/herencia_simple.py
+    :language: python
+    :lines: 58-59
 
 Gracias a las clases y la programación orientada a objetos, usted puede organizar 
 el código con diferentes clases correspondientes a diferentes objetos que encontrará 
@@ -140,7 +140,7 @@ en torno a una clase base y reutilizar el código. Ej.: a partir de una clase ba
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :linenos:
     :language: python
-    :lines: 89-92
+    :lines: 63-69
 
 
 ----
@@ -169,6 +169,22 @@ es decir, se puede heredar de múltiples clases.
 
 
 .. todo:: TODO terminar de escribir esta sección.
+
+
+----
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion9/herencia_multiple.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`herencia_multiple.py`, abra una 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: ::
+
+        python2 herencia_multiple.py
 
 ----
 

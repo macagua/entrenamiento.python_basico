@@ -379,9 +379,9 @@ momento en el cual un objeto se manda a mostrar, es decir es una cadena
 representativa de la clase, la cual puede incluir formatos personalizados
 de presentación del mismo.
 
-.. literalinclude:: ../../recursos/leccion9/herencia_simple.py
+.. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 13-18
+    :lines: 16-20
 
 
 .. _python_metodo_del:
@@ -532,9 +532,9 @@ argumentos que se utilizan en la definición de ``__init__()``
 corresponden a los parámetros que se deben ingresar al instanciar 
 un objeto.
 
-.. literalinclude:: ../../recursos/leccion9/herencia_simple.py
+.. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 6-11
+    :lines: 9-14
 
 
 .. _python_funcion_isinstance:
