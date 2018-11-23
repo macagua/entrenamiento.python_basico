@@ -19,7 +19,7 @@ Entendiendo Iteradores
    estándar, normalmente, deriva en hacer las cosas más 
    legibles además de más interoperable.
 
-                 *Guido van Rossum* --- `Añadiendo tipado estático opcional a Python` (`Adding Optional Static Typing to Python`_)
+      *Guido van Rossum* --- `Añadiendo tipado estático opcional a Python` (`Adding Optional Static Typing to Python`_)
 
 .. _`Adding Optional Static Typing to Python`: https://www.artima.com/weblogs/viewpost.jsp?thread=86641
 
@@ -29,7 +29,7 @@ Un iterador es un objeto adherido al 'protocolo de iterador'
 un método `next <iterator.next>` ('next' por siguiente), el cual,
 cuando se le llama, devuelve la siguiente 'pieza' (o 'item') en la
 secuencia y, cuando no queda nada para ser devuelto, lanza la excepción 
-`StopIteration <exceptions.StopIteration>`.
+:ref:`StopIteration <python_exception_stopiteration>`.
 
 .. _`iterator protocol`: https://docs.python.org/dev/library/stdtypes.html#iterator-types
 
@@ -48,7 +48,7 @@ secuencia y, cuando no queda nada para ser devuelto, lanza la excepción
 Usando 'iter' y 'next'
 ......................
 
-Cuando se usa en un bucle, finalmente se llama a StopIteration y se provoca la finalización del bucle. Pero si se invoca de forma explícita podemos ver que, una vez que el iterador está ‘agotado’, al invocarlo nuevamente veremos que se lanza la excepción comentada anteriormente.
+Cuando se usa en un bucle, finalmente se llama a :ref:`StopIteration <python_exception_stopiteration>` y se provoca la finalización del bucle. Pero si se invoca de forma explícita puede ver que, una vez que el iterador está ‘agotado’, al invocarlo nuevamente verá que se lanza la excepción comentada anteriormente.
 
 ::
   
