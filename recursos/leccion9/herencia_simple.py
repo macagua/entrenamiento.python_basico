@@ -1,92 +1,69 @@
 # -*- coding: utf8 -*-
 
-class Persona(object):
-    """ Clase que representa una persona. """
-
-    def __init__(self, cedula, nombre, apellido, sexo):
-        """ Constructor de clase Persona """
-        self.cedula = cedula
-        self.nombre = nombre
-        self.apellido = apellido
-        self.sexo = sexo
-
-    def __str__(self):
-        """ Devuelve una cadena representativa de Persona """
-        return "%s: %s %s, %s." % (
-            str(self.cedula), self.nombre,
-            self.apellido, self.sexo
-        )
-
-    def hablar(self, mensaje):
-        """ Mostrar mensaje de saludo de Persona """
-        return mensaje
-
-    def getSexo(self, sexo):
-        """ Mostrar el genero de la Persona """
-        genero = ('Masculino','Femenino')
-        if sexo == "M":
-            return genero[0]
-        elif sexo == "F":
-            return genero[1]
-        else:
-            return "Genero desconocido"
-
-
-class Supervisor(Persona):
-    """ Clase que representa a un Supervisor """
-
-    def __init__(self, cedula, nombre, apellido, sexo, permisos):
-        """ Constructor de clase Supervisor """
-
-        # Invoca al constructor de clase Persona
-        Persona.__init__(self, cedula, nombre, apellido, sexo)
-
-        # Nuevos atributos
-        self.permisos = permisos
-        self.tareas = ['10','11','12','13']
-
-    def __str__(self):
-        """ Devuelve una cadena representativa al Supervisor """
-        return "%s %s, rol(es) '%s', sus tareas: %s." % (
-            self.nombre, self.apellido, self.permisos, self.consulta_tareas()
-        )
-
-    def consulta_tareas(self):
-        """ Mostrar las tareas del Supervisor """
-        return ', '.join(self.tareas)
+from clases import Persona, Supervisor
 
 # Dos instancias de Objeto Persona
 persona1 = Persona("V-13458796", "Leonardo", "Caballero", "M")
 persona2 = Persona("V-23569874", "Ana", "Poleo", "F")
-persona1.hablar("Hola Mundo")
-print persona1
-print persona1.nombre, persona1.apellido, persona1.getSexo(persona1.sexo)
 
-print persona1.hablar("Hola, Soy una Persona") +", me llamo '"+ \
-persona1.nombre +" "+ persona1.apellido +"' y mi cédula de identidad es '"+  \
+print persona1.__doc__[26:33]
+print len(persona1.__doc__[26:33]) * "#"
+
+print "\n" + str(persona1) + "\n"
+
+print "- Cedula de identidad: {0}.".format(persona1.cedula)
+print "- Nombre completo: {0} {1}.".format(persona1.nombre,
+    persona1.apellido)
+print "- Genero: {0}.".format(persona1.getGenero(persona1.sexo))
+print "- {0} {1} dijo: {2}".format(persona1.nombre, 
+    persona1.apellido, persona1.hablar("Hola Ana :-*"))
+
+print persona1.hablar("\nHola, Soy una Persona") +", me llamo '"+ \
+persona1.nombre +" "+ persona1.apellido +"', con cédula '"+  \
 persona1.cedula +"'."
 
-print "\n" + str(persona2)
-print "Nombre: {0} {1}, sexo: {2}.".format(
-    persona2.nombre, persona2.apellido, persona2.getSexo(persona2.__getattribute__('sexo')))
+print "\nOtra " + persona1.__doc__[26:33]
+print (len(persona1.__doc__[26:33])+5) * "#"
 
-print persona2.hablar("Hola, Soy una Persona") +", me llamo '"+ \
+print "\n" + str(persona2) + "\n"
+
+print "- Cedula de identidad: {0}.".format(persona2.cedula)
+print "- Nombre completo: {0} {1}.".format(persona2.nombre,
+    persona2.apellido)
+print "- Genero: {0}.".format(persona2.getGenero(persona2.__getattribute__('sexo')))
+print "- {0} {1} dijo: {2}".format(persona2.nombre, persona2.apellido, persona2.hablar("Hola Leonardo ^_^"))
+
+print persona2.hablar("\nHola, Soy otra Persona") +", me llamo '"+ \
 persona2.__getattribute__('nombre') +" "+ \
-persona2.__getattribute__('apellido') +"' y mi cédula de identidad es '"+  \
+persona2.__getattribute__('apellido') +"', con cédula '"+  \
 persona1.__getattribute__('cedula') +"'."
 
 # Una instancia de Objeto Supervisor
 supervisor1 = Supervisor("V-16987456", "Pedro", "Perez", "No se", "El chivo")
-print "\n" + str(supervisor1)
-print "El permiso es: {0}.".format(supervisor1.permisos)
-print "Las tareas son: {0}.".format(supervisor1.consulta_tareas())
-# Método heredado de la clase Persona
-print "El sexo es: {0}.".format(
-    supervisor1.getSexo(supervisor1.sexo))
+
+print "\n" + supervisor1.__doc__[27:37]
+print len(supervisor1.__doc__[27:37]) * "#"
+
+print "\n" + str(supervisor1) + "\n"
+
+# Atributo(s) y Método(s) heredado de la clase Persona
+print "- Cedula de identidad: {0}.".format(supervisor1.cedula)
+print "- Nombre completo: {0} {1}.".format(supervisor1.nombre,
+    supervisor1.apellido)
+print "- Genero: {0}.".format(supervisor1.getGenero(supervisor1.sexo))
+print "- {0} {1} dijo: {2}".format(supervisor1.nombre, 
+    supervisor1.apellido, supervisor1.hablar("Hola Leonardo y Ana :-P"))
+
+# Atributo(s) y Método(s) heredado de la clase Supervisor
+print "- Permisos: {0}.".format(supervisor1.permisos)
+print "- N. Tareas: {0}.".format(supervisor1.consulta_tareas())
 
 # Mostrar los atributos y métodos propios de la clase Supervisor 
 # y los heredados de la clase Persona
-print supervisor1.hablar("Hola, Soy el supervisor") +", me llamo "+ \
-supervisor1.nombre +", mi cargo es '"+ \
-supervisor1.permisos +"' y mi sexo es '"+  \
-supervisor1.getSexo(supervisor1.sexo) +"'."
+print """Hola, Soy el {0} {1} {2}, mi cédula es '{3}', 
+mi genero '{4}', con el cargo '{5}' y mis tareas
+asignadas '{6}'.""".format(
+    supervisor1.__doc__[27:37].lower(),
+    supervisor1.nombre, supervisor1.apellido, supervisor1.cedula, 
+    supervisor1.getGenero(supervisor1.sexo), supervisor1.permisos,
+    supervisor1.consulta_tareas())
