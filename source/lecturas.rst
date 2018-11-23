@@ -119,7 +119,6 @@ Sesión 3 - Tipos y estructuras de datos
 
 - `Python Data Types <https://www.programiz.com/python-programming/variables-datatypes>`_.
 
-
 Variables y constantes
 ......................
 
@@ -369,6 +368,12 @@ Módulos Python
 ..............
 
 - `Reusing code: scripts and modules - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/reusing_code.html>`_.
+
+
+Distribución de Software
+........................
+
+- `Packaging Python Projects <https://packaging.python.org/tutorials/packaging-projects/>`_.
 
 
 Scaffolding en proyectos Python

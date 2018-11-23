@@ -1,0 +1,7 @@
+include LICENSE
+include *.txt *.in
+include *.py
+recursive-include tostadas_pipo *
+global-exclude *.pyc *.pyo *~
+prune build
+prune dist
