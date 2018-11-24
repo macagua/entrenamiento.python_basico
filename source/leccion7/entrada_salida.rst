@@ -25,9 +25,9 @@ valor de cadenas de caracteres:
 
 ::
 
-	>>> nombre = raw_input('¿Cómo te llamás?: ')
-	¿Cómo te llamás?: Leonardo
-	>>>
+    >>> nombre = raw_input('¿Cómo te llamás?: ')
+    ¿Cómo te llamás?: Leonardo
+    >>>
 
 **Ejemplo de la función input**:
 
@@ -36,9 +36,71 @@ numérico:
 
 ::
 
-	>>> edad = input('¿Cual es tu edad?: ')
-	¿Cual es tu edad?: 38
-	>>>
+    >>> edad = input('¿Cual es tu edad?: ')
+    ¿Cual es tu edad?: 38
+    >>>
+
+
+.. _python_entrada_script:
+
+Entrada por script
+..................
+
+Hasta ahora todo lo que ha hecho ha sido escribir código en el intérprete, y/o 
+escribir/ejecutar pequeños programas Python, pero los programas informáticos no 
+funcionan así. Se basan en escribir todas las instrucciones en archivos llamados 
+scripts, que no es mas que guiones de instrucciones. Luego se envía este archivo 
+al intérprete desde la terminal de comando (si es un lenguaje interpretado como 
+Python) y éste ejecutará todas las instrucciones en bloque.
+
+A parte de ser la base del funcionamiento de los programas, la característica de 
+los scripts es que pueden recibir datos desde la propia terminal de comando en el 
+momento de la ejecución, algo muy útil para agregar dinamismo los scripts a través 
+de parámetros personalizables.
+
+
+.. _python_entrada_script_argv:
+
+Scripts con argumentos
+~~~~~~~~~~~~~~~~~~~~~~
+
+Para poder enviar información a un script y manejarla, tenemos que utilizar la librería 
+de sistema ``sys``. En ella encontraremos la lista ``argv`` que almacena los argumentos 
+enviados al *script*. 
+
+Cree el siguiente *script* llamado ``entrada_argumentos.py`` con el siguiente contenido
+
+.. literalinclude:: ../../recursos/leccion7/entrada_argumentos.py
+    :linenos:
+    :language: python
+    :lines: 3-5
+
+Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
+
+::
+
+    python2 entrada_argumentos.py
+    ['entrada_argumentos.py']
+
+
+Al ejecutarlo puede ver que devuelve una lista con una cadena que contiene el nombre del 
+*script*. Entonces, el primer argumento de la lista ``sys.argv`` (es decir, ``sys.argv[0]``) 
+es el propio nombre del *script*.
+
+Ahora si intenta ejecutar el *script* de nuevo pasando algunos valores como números y cadenas 
+de caracteres entre comillas dobles, todo separado por espacios:
+
+::
+
+    python2 entrada_argumentos.py 300 43.234 "Hola Python"
+    ['entrada_argumentos.py', '300', '43.234', 'Hola Python']
+
+Cada valor que enviamos al *script* durante la llamada se llama argumento e implica una forma 
+de entrada de datos alternativa sin usar las funciones :ref:`input() <python_funcion_input>` 
+y :ref:`raw_input() <python_funcion_raw_input>`.
+
+
+
 
 
 .. _python_salida:
@@ -67,45 +129,9 @@ Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``
 
 ::
 
-	>>> print 'Pepe: Hola', nombre, ', encantado de conocerte :3'
-	Pepe: Hola Leonardo , encantado de conocerte :3
-	>>> 
-
-
-.. _python_entrada_salida_ejemplo:
-
-Ejemplo de E/S en Python
-........................
-
-Este ejemplo simula a sala de chat del servicio *LatinChat.com*, 
-validando datos de entradas numérico y tipo cadena e interactuá
-con el usuario y en base a condicionales muestra un mensaje.
-
-.. literalinclude:: ../../recursos/leccion7/entrada_salida.py
-    :linenos:
-    :language: python
-    :lines: 14-34
-
-
-.. tip::
-
-    **LatinChat.com**, fue un servicio de Internet que ofrecía diversas 
-    salas de chat, muy popular en la década de los 90 en latinoamericana.
-
-
-.. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion7/entrada_salida.py>`.
-
-
-.. tip::
-    Para ejecutar el código :file:`entrada_salida.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando:
-
-    ::
-
-        python2 entrada_salida.py
+    >>> print 'Pepe: Hola', nombre, ', encantado de conocerte :3'
+    Pepe: Hola Leonardo , encantado de conocerte :3
+    >>> 
 
 
 .. _python_salida_formato_impresion_cadenas:
@@ -119,11 +145,11 @@ las cadenas de caracteres y variables:
 
 ::
 
-	>>> tipo_calculo = "raíz cuadrada de dos"
-	>>> valor = 2**0.5
-	>>> print "el resultado de", tipo_calculo, "es:", valor
-	el resultado de raíz cuadrada de dos es: 1.41421356237
-	>>> 
+    >>> tipo_calculo = "raíz cuadrada de dos"
+    >>> valor = 2**0.5
+    >>> print "el resultado de", tipo_calculo, "es:", valor
+    el resultado de raíz cuadrada de dos es: 1.41421356237
+    >>> 
 
 
 .. seealso::
@@ -135,12 +161,96 @@ las cadenas de caracteres y variables:
     - :ref:`Clase formatter <python_cadenas_formatter>`.
 
 
+.. _python_entrada_salida_ejemplo:
+
+Ejemplo de E/S en Python
+........................
+
+Este ejemplo simula a sala de chat del servicio *LatinChat.com*, 
+validando datos de entradas numérico y tipo cadena e interactuá
+con el usuario y en base a condicionales muestra un mensaje.
+
+.. literalinclude:: ../../recursos/leccion7/entrada_salida.py
+    :language: python
+    :lines: 14-34
+
+
+.. tip::
+
+    **LatinChat.com**, fue un servicio de Internet que ofrecía diversas 
+    salas de chat, muy popular en la década de los 90 en latinoamericana.
+
+
+Ejemplo de E/S con script
+.........................
+
+Este ejemplo de entrada usando un script con la librería ``sys``. El siguiente script 
+recibe dos argumentos: una cadena de caracteres y un número entero. Lo que hace es 
+imprimir la cadena de caracteres tantas veces como le indique con el argumento de tipo 
+número:
+
+.. literalinclude:: ../../recursos/leccion7/entrada_dos_argumentos.py
+    :language: python
+    :lines: 3-15
+
+Si quiere comprobar la validación de cuantos argumentos deben enviarme al script, 
+ejecute el siguiente comando:
+
+::
+
+    python2 entrada_dos_argumentos.py "Hola Python"
+    ERROR: Introdujo uno (1) o más de dos (2) argumentos
+    SOLUCIÓN: Introduce los argumentos correctamente
+    Ejemplo: entrada_dos_argumentos.py "Texto" 5
+
+Ahora si intenta ejecutar el script ``entrada_dos_argumentos.py`` con solo dos (2) 
+argumentos, ejecutando el siguiente comando:
+
+::
+
+    python2 entrada_dos_argumentos.py "Hola Python" 3
+    Hola Python
+    Hola Python
+    Hola Python
+
+
+----
+
+
+.. important::
+    Usted puede descargar los códigos usados en esta sección haciendo clic en los
+    siguientes enlaces: :download:`entrada_salida.py <../../recursos/leccion7/entrada_salida.py>`, 
+    :download:`entrada_argumentos.py <../../recursos/leccion7/entrada_argumentos.py>` y 
+    :download:`entrada_dos_argumentos.py <../../recursos/leccion7/entrada_dos_argumentos.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`entrada_salida.py`, :file:`entrada_argumentos.py` y 
+    :file:`entrada_dos_argumentos.py`, abra una consola de comando, acceda al directorio 
+    donde se encuentra ambos programas: 
+
+    ::
+
+        leccion8/
+        ├── entrada_argumentos.py
+        ├── entrada_dos_argumentos.py
+        └── entrada_salida.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    ::
+
+        python2 entrada_salida.py
+        python2 entrada_argumentos.py
+        python2 entrada_dos_argumentos.py
+
+
 ----
 
 .. note::
 
-	Una documentación completa del control de la salida de Python se encuentra en 
-	https://docs.python.org/2/tutorial/inputoutput.html
+    Una documentación completa del control de la salida de Python se encuentra en 
+    https://docs.python.org/2/tutorial/inputoutput.html
 
 
 ----
