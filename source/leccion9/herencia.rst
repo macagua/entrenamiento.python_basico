@@ -98,7 +98,7 @@ que derivada de la clase ``Persona`` con función interna:
     :lines: 37-58
 
 Ahora, se creará una nueva clase ``Supervisor`` con los mismos métodos y atributos 
-como la clase ``Persona``, pero con dos nuevos atributos ``permisos`` y ``tareas``. 
+como la clase ``Persona``, pero con dos nuevos atributos ``rol`` y ``tareas``. 
 No se copia la clase previa, pero si **se hereda** de ella.
 
 La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
@@ -120,14 +120,14 @@ clase ``Persona`` usted puede reusarlo e invocarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 50-55
+    :lines: 50-57
 
 Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se puede 
 imprimir de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 58-59
+    :lines: 60-61
 
 Gracias a las clases y la programación orientada a objetos, usted puede organizar 
 el código con diferentes clases correspondientes a diferentes objetos que encontrará 
@@ -140,7 +140,48 @@ en torno a una clase base y reutilizar el código. Ej.: a partir de una clase ba
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :linenos:
     :language: python
-    :lines: 63-69
+    :lines: 65-71
+
+
+.. _python_funcion_issubclass:
+
+Función issubclass()
+~~~~~~~~~~~~~~~~~~~~
+
+La función ``issubclass()`` le permite corroborar si un objeto es instancia 
+de una clase. 
+
+::
+
+    issubclass(subclase, clase)
+
+Esta función devuelve ``True`` si la clase especificada es 
+una subclase de la clase base, de lo contrario ``False``.
+
+Un ejemplo de uso con la subclase ``Supervisor`` que deriva de la clase ``Persona`` 
+seria como lo siguiente:
+
+::
+
+    >>> supervisor1 = Supervisor("V-16987456", "Pedro", "Pérez", "No se", "El chivo")
+    >>> issubclass(supervisor1, Persona)
+    True
+
+
+Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le 
+objeto es uno de los tipos en la tupla.
+
+::
+
+    >>> supervisor1 = Supervisor("V-16987456", "Pedro", "Pérez", "No se", "El chivo")
+    >>> issubclass(supervisor1, (Persona, Empleado, Supervisor, Destreza))
+    True
+
+Aquí puede decir que ``supervisor1`` es una subclase derivada de la clase ``Persona``.
+
+Las clases dan la posibilidad de crear estructuras de datos más complejas. 
+En el ejemplo, una clase ``Persona`` que realizará un seguimiento del 
+``cedula``, ``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
 
 
 ----

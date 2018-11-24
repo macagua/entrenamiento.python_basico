@@ -252,7 +252,7 @@ son atributos especiales.
 
 
 Si el nombre de un atributo esta con dobles guiones bajos al principio son 
-atributos "escondidos".
+atributos "escondidos". A continuación un seudo código que ilustra un ejemplo:
 
 ::
 
