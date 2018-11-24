@@ -46,8 +46,22 @@ numérico:
 Salida estándar
 ...............
 
-Para mostrar mensajes en pantalla, se utiliza el uso de la palabra 
-reservada ``print``.
+La forma general de mostrar información por pantalla es mediante una consola 
+de comando, generalmente podemos mostrar texto y variables separándolos con 
+comas, para este se usa la sentencia :ref:`print <python_sentencia_print>`.
+
+
+.. _python_sentencia_print:
+
+Sentencia print
+~~~~~~~~~~~~~~~
+
+Sentencia ``print`` evalúa cada expresión y retorna y escribe el objeto resultado 
+a la salida estándar de la consola de comando. Si un objeto no es un tipo string,
+ese es primeramente convertido a un tipo string usando las reglas para conversiones 
+de tipo string. El string (resultado o original) es entonces escrito.
+
+Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``print``.
 
 **Ejemplo del uso de print**:
 
