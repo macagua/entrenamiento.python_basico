@@ -91,9 +91,9 @@ triples comillas (simples o dobles) que Python ignora totalmente.
 
     >>> # comentarios en linea
     ... 
-    >>> """ comentarios en varias lineas """
+    >>> """comentarios en varias lineas"""
     ' comentarios en varias lineas '
-    >>> ''' comentarios en varias lineas '''
+    >>> '''comentarios en varias lineas'''
     ' comentarios en varias lineas '
     >>> 
 
@@ -170,7 +170,7 @@ Clase formatter
 
 La clase ``formatter`` es una de las clases integradas ``string``. Ese provee 
 la habilidad de hacer variable compleja de substituciones y formateo de valores 
-usando el método :ref:`format() <python_funcion_format_detalle>`. Es le permite 
+usando el método :ref:`format() <python_metodo_format>`. Es le permite 
 crear y personalizar sus propios comportamientos de formatos de cadena de caracteres 
 para reescribir los métodos públicos y contiene: ``format()``, ``vformat()``. Ese 
 tiene algunos métodos que son destinado para ser remplazados por las sub-clases: 
@@ -178,18 +178,30 @@ tiene algunos métodos que son destinado para ser remplazados por las sub-clases
 y ``convert_field()``. 
 
 
-.. _python_funcion_format_detalle:
+.. _python_metodo_format:
 
 format()
 ````````
 
-Una forma más clara y elegante es referenciar objetos dentro de la misma cadena, 
-y usar el *método* ``format()`` para sustituirlos con los objetos que se le pasan 
-como argumentos.
+El método ``format()`` devuelve una versión formateada de una cadena de caracteres, 
+usando substituciones desde argumentos ``args`` y ``kwargs``. Las substituciones son 
+identificadas entre llaves ``{ }`` dentro de la cadena de caracteres (llamados campos 
+de formato), y son sustituidos en el orden con que aparecen como argumentos de 
+``format()``, contando a partir de cero (*argumentos posicionales*).
 
-Los objetos se referencian con números entre llaves ``{ }`` dentro de la cadena 
-(llamados campos de formato), y son sustituidos en el orden con que aparecen como 
-argumentos de ``format()``, contando a partir de cero (*argumentos posicionales*).
+Esto es una forma más clara y elegante es referenciar objetos dentro de la misma 
+cadena, y usar este *método* para sustituirlos con los objetos que se le pasan como 
+argumentos.
+
+::
+
+    >>> tipo_calculo = "raíz cuadrada de dos"
+    >>> valor = 2**0.5
+    >>> print "el resultado de {} es {}".format(tipo_calculo, valor)
+    el resultado de raíz cuadrada de dos es 1.41421356237
+    >>> 
+
+También se puede referenciar a partir de la posición de los valores utilizando índices:
 
 ::
 
@@ -199,7 +211,8 @@ argumentos de ``format()``, contando a partir de cero (*argumentos posicionales*
     el resultado de raíz cuadrada de dos es 1.41421356237
     >>> 
 
-Los objetos también pueden ser referenciados por nombre (argumentos por clave).
+Los objetos también pueden ser referenciados utilizando un identificador con una clave y 
+luego pasarla como argumento al método:
 
 ::
 
@@ -207,6 +220,54 @@ Los objetos también pueden ser referenciados por nombre (argumentos por clave).
     >>> print "el resultado de {nombre} es {resultado}".format(nombre=tipo_calculo, resultado=2**0.5)
     el resultado de raíz cuadrada de dos es 1.41421356237
     >>> 
+
+
+**Formateo avanzado**
+
+Este método soporta muchas técnicas de formateo, aquí algunos ejemplos:
+
+Alinear una cadena de caracteres a la derecha en 30 caracteres, con la 
+siguiente sentencia:
+
+::
+
+    >>> print "{:>30}".format("raíz cuadrada de dos")
+         raíz cuadrada de dos
+
+Alinear una cadena de caracteres a la izquierda en 30 caracteres (crea 
+espacios a la derecha), con la siguiente sentencia:
+
+::
+
+    >>> print "{:30}".format("raíz cuadrada de dos")
+    raíz cuadrada de dos         
+
+Alinear una cadena de caracteres al centro en 30 caracteres, con la siguiente 
+sentencia:
+
+::
+
+    >>> print "{:^30}".format("raíz cuadrada de dos")
+        raíz cuadrada de dos     
+
+Truncamiento a 9 caracteres, con la siguiente sentencia:
+
+::
+
+    >>> print "{:.9}".format("raíz cuadrada de dos")
+    raíz cua
+
+
+Alinear una cadena de caracteres a la derecha en 30 caracteres con truncamiento 
+de 9, con la siguiente sentencia:
+
+::
+
+    >>> print "{:>30.9}".format("raíz cuadrada de dos")
+                         raíz cua
+
+
+**Formateo por tipo**
 
 Opcionalmente se puede poner el signo de dos puntos después del número o nombre, 
 y explicitar el tipo del objeto:
@@ -229,6 +290,49 @@ se imprima con cuatro dígitos después de la coma (``.4``).
     >>> print "el resultado de {0} es {resultado:.4f}".format(tipo_calculo, resultado=valor)
     el resultado de raíz cuadrada de dos es 1.4142
     >>> 
+
+Formateo de números enteros, rellenados con espacios, con las siguientes 
+sentencias:
+
+::
+
+    >>> print "{:4d}".format(10)
+      10
+    >>> print "{:4d}".format(100)
+     100
+    >>> print "{:4d}".format(1000)
+    1000
+
+
+Formateo de números enteros, rellenados con ceros, con las siguientes sentencias:
+
+::
+
+    >>> print "{:04d}".format(10)
+    0010
+    >>> print "{:04d}".format(100)
+    0100
+    >>> print "{:04d}".format(1000)
+    1000
+
+Formateo de números flotantes, rellenados con espacios, con las siguientes 
+sentencias:
+
+::
+
+    >>> print "{:7.3f}".format(3.1415926)
+      3.142
+    >>> print "{:7.3f}".format(153.21)
+    153.210
+
+Formateo de números flotantes, rellenados con ceros, con las siguientes sentencias:
+
+::
+
+    >>> print "{:07.3f}".format(3.1415926)
+    003.142
+    >>> print "{:07.3f}".format(153.21)
+    153.210
 
 
 Ejemplo de cadenas de caracteres

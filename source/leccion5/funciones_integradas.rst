@@ -618,19 +618,25 @@ en la función.
 format()
 ~~~~~~~~
 
-La función ``format()`` devuelve una versión formateada, usando sustituciones desde 
-``args`` y ``kwargs``. Las sustituciones son identificado por caracteres llaves 
-('{' y '}').
+La función ``format()`` devuelve ....
 
-::
+.. todo:: TODO terminar escribir sobre la funcion integrada format()
 
-    >>> nombre = "leonardo"
-    >>> apellido = "caballero"
-    >>> "Nombre: {0} {1}".format(nombre, apellido)
-    'Nombre: leonardo caballero'
+.. comments:
+
+    La función ``format()`` devuelve una versión formateada, usando sustituciones desde 
+    ``args`` y ``kwargs``. Las sustituciones son identificado por caracteres llaves 
+    ('{' y '}').
+
+    ::
+
+        >>> nombre = "leonardo"
+        >>> apellido = "caballero"
+        >>> "Nombre: {0} {1}".format(nombre, apellido)
+        'Nombre: leonardo caballero'
 
 
-.. tip:: Para mayor información consulte la sección :ref:`format() <python_funcion_format_detalle>` detallada.
+    .. tip:: Para mayor información consulte la sección :ref:`format() <python_metodo_format>` detallada.
 
 
 .. _python_funcion_index:

@@ -6,22 +6,22 @@
 """
 
 # Comillas simples
-cadenaa = 'Texto entre comillas simples'
-print cadenaa
-print type(cadenaa)
+cadena1 = 'Texto entre comillas simples'
+print cadena1
+print type(cadena1)
 
 # Comillas dobles
-cadenab = "Texto entre comillas dobles"
-print cadenab
-print type(cadenab)
+cadena2 = "Texto entre comillas dobles"
+print cadena2
+print type(cadena2)
 
 # Cadena con código escapes
-cadenaesc = 'Texto entre \n\tcomillas simples'
-print cadenaesc
-print type(cadenaesc)
+cadena3 = 'Texto entre \n\tcomillas simples'
+print cadena3
+print type(cadena3)
 
 # Cadena varias lineas
-cadenac = """Texto linea 1
+cadena4 = """Texto linea 1
 linea 2
 linea 3
 linea 4
@@ -32,13 +32,13 @@ linea 4
 .
 linea N
 """
-print cadenac
-print type(cadenac)
+print cadena4
+print type(cadena4)
 
 # Repetición de cadena
-cadrep = "Cadena" * 3
-print cadrep
-print type(cadrep)
+cadena5 = "Cadena" * 3
+print cadena5
+print type(cadena5)
 
 # Concatenación de cadena
 nombre = "Leonardo"
