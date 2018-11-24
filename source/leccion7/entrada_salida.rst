@@ -101,7 +101,9 @@ con el usuario y en base a condicionales muestra un mensaje.
 .. tip::
     Para ejecutar el código :file:`entrada_salida.py`, abra una 
     consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+    y ejecute el siguiente comando:
+
+    ::
 
         python2 entrada_salida.py
 

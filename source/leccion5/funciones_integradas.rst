@@ -402,7 +402,14 @@ entre comillas simples o dobles, como el siguiente ejemplo:
 raw_input()
 ~~~~~~~~~~~
 
-Lee una cadena de caracteres desde la entrada estándar.
+Lee una cadena de caracteres desde la entrada estándar. The trailing newline 
+is stripped. Si el usuario indica un EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), 
+lanza una excepción :ref:`EOFError <python_exception_eoferror>`. En sistemas 
+Unix, la librería GNU readline es usada si es habilitada.  El prompt de la 
+cadena de caracteres, si es dado, es impreso sin un a trailing newline before 
+reading.
+
+.. todo:: TODO traducir oraciones del párrafo anterior.
 
 ::
 
