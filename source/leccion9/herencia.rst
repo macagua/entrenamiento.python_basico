@@ -155,8 +155,8 @@ de una clase.
 
     issubclass(subclase, clase)
 
-Esta función devuelve ``True`` si la clase especificada es 
-una subclase de la clase base, de lo contrario ``False``.
+Esta función devuelve ``True`` si la clase especificada es una subclase de la 
+clase base, de lo contrario ``False``.
 
 Un ejemplo de uso con la subclase ``Supervisor`` que deriva de la clase ``Persona`` 
 seria como lo siguiente:
@@ -195,7 +195,9 @@ En el ejemplo, una clase ``Persona`` que realizará un seguimiento del
 .. tip::
     Para ejecutar el código :file:`herencia_simple.py`, abra una 
     consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+    y ejecute el siguiente comando: 
+
+    ::
 
         python2 herencia_simple.py
 
@@ -205,9 +207,21 @@ En el ejemplo, una clase ``Persona`` que realizará un seguimiento del
 Herencia múltiple
 .................
 
-A diferencia de lenguajes como *Java* y *C#*, Python permite la herencia múltiple, 
-es decir, se puede heredar de múltiples clases.
+A diferencia de lenguajes como *Java* y *C#*, el lenguaje *Python* permite la herencia 
+múltiple, es decir, se puede heredar de múltiples clases.
 
+La herencia múltiple es la capacidad de una subclase de heredar de múltiples súper 
+clases.
+
+Esto conlleva un problema, y es que si varias súper clases tienen los mismos atributos 
+o métodos, la subclase sólo podrá heredar de una de ellas.
+
+En estos casos Python dará prioridad a las clases más a la izquierda en el momento de 
+la declaración de la subclase:
+
+.. literalinclude:: ../../recursos/leccion9/clases.py
+    :language: python
+    :lines: 61-96
 
 .. todo:: TODO terminar de escribir esta sección.
 
