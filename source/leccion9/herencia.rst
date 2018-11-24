@@ -188,14 +188,20 @@ En el ejemplo, una clase ``Persona`` que realizará un seguimiento del
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion9/herencia_simple.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en los 
+    siguientes enlaces: :download:`clases.py <../../recursos/leccion9/clases.py>` 
+    y :download:`herencia_simple.py <../../recursos/leccion9/herencia_simple.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`herencia_simple.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: 
+    Para ejecutar el código :file:`clases.py` y :file:`herencia_simple.py`, 
+    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+
+        leccion9/
+        ├── clases.py
+        └── herencia_simple.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
     ::
 
@@ -230,16 +236,23 @@ la declaración de la subclase:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion9/herencia_multiple.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en los 
+    siguientes enlaces: :download:`clases.py <../../recursos/leccion9/clases.py>` 
+    y :download:`herencia_multiple.py <../../recursos/leccion9/herencia_multiple.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`herencia_multiple.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+    Para ejecutar el código :file:`clases.py` y :file:`herencia_multiple.py`, 
+    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+
+        leccion9/
+        ├── clases.py
+        └── herencia_multiple.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
         python2 herencia_multiple.py
+
 
 ----
 
