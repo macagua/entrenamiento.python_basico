@@ -88,8 +88,8 @@ su ejecución:
 
     - `PyPy <http://pypy.org/>`_, Una rápida implementación de python con un compilador JIT.
 
-    - `Stackless Python <http://www.stackless.com/>`_, Rama del desarrollo del ``CPython`` que 
-       soporta microthreads.
+    - `Stackless Python <http://www.stackless.com/>`_, Una rama del desarrollo del ``CPython`` 
+      que soporta microthreads.
 
     - `MicroPython <http://micropython.org/>`_, Python ejecutando en micro controladores.
 
@@ -118,8 +118,8 @@ Filosofía "Incluye baterías"
 
 - Python ha mantenido durante mucho tiempo esta filosofía de "baterías incluidas":
 
-	*"Tener una biblioteca estándar rica y versátil que está disponible de inmediato. 
-	Sin que el usuario descargue paquetes separados."*
+  *"Tener una biblioteca estándar rica y versátil que está disponible de inmediato. 
+  Sin que el usuario descargue paquetes separados."*
 
 - Esto le da al lenguaje una ventaja en muchos proyectos. 
 
