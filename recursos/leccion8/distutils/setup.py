@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Instalador para el paquete "tostadas_pipo"."""
 
-from distutils.core import setup
+from setuptools import setup
 
 long_description = (
     open('README.txt').read()
