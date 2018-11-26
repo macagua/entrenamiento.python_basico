@@ -79,7 +79,7 @@ Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
 
 ::
 
-    python2 entrada_argumentos.py
+    python entrada_argumentos.py
     ['entrada_argumentos.py']
 
 
@@ -92,7 +92,7 @@ de caracteres entre comillas dobles, todo separado por espacios:
 
 ::
 
-    python2 entrada_argumentos.py 300 43.234 "Hola Python"
+    python entrada_argumentos.py 300 43.234 "Hola Python"
     ['entrada_argumentos.py', '300', '43.234', 'Hola Python']
 
 Cada valor que enviamos al *script* durante la llamada se llama argumento e implica una forma 
@@ -198,7 +198,7 @@ ejecute el siguiente comando:
 
 ::
 
-    python2 entrada_dos_argumentos.py "Hola Python"
+    python entrada_dos_argumentos.py "Hola Python"
     ERROR: Introdujo uno (1) o más de dos (2) argumentos
     SOLUCIÓN: Introduce los argumentos correctamente
     Ejemplo: entrada_dos_argumentos.py "Texto" 5
@@ -208,7 +208,7 @@ argumentos, ejecutando el siguiente comando:
 
 ::
 
-    python2 entrada_dos_argumentos.py "Hola Python" 3
+    python entrada_dos_argumentos.py "Hola Python" 3
     Hola Python
     Hola Python
     Hola Python
@@ -240,9 +240,9 @@ argumentos, ejecutando el siguiente comando:
 
     ::
 
-        python2 entrada_salida.py
-        python2 entrada_argumentos.py
-        python2 entrada_dos_argumentos.py
+        python entrada_salida.py
+        python entrada_argumentos.py
+        python entrada_dos_argumentos.py
 
 
 ----

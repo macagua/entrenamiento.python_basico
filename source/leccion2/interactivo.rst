@@ -50,7 +50,7 @@ el comando ``python`` de la siguiente forma:
 
 .. code-block:: python
 
-    $ python
+    python
     Python 2.7.13 (default, Sep 26 2018, 18:42:22)
     [GCC 6.3.0 20170516] on linux2
     Type "help", "copyright", "credits" or "license" for more information.
@@ -351,7 +351,7 @@ este programa ejecute el siguiente comando:
 
 .. code-block:: sh
 
-    $ sudo apt-get install ipython
+    sudo apt-get install ipython
 
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
@@ -359,7 +359,7 @@ Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 
 .. code-block:: sh
 
-    $  ipython
+    ipython
     Python 2.7.13 (default, Sep 26 2018, 18:42:22) 
     Type "copyright", "credits" or "license" for more information.
 
@@ -557,15 +557,15 @@ este programa ejecute el siguiente comando:
 
 .. code-block:: sh
 
-    $ sudo apt-get install python-pip
-    $ sudo pip install bpython
+    sudo apt-get install python-pip
+    sudo pip install bpython
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 ``python`` por ``ipython`` de la siguiente forma:
 
 .. code-block:: sh
 
-    $  bpython
+    bpython
     
 
 Dentro de interprete Python puede apreciar que ofrece otra forma de presentar 

@@ -539,8 +539,8 @@ lo indicarán en su documentación.
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
-        python2 excepciones_integradas.py
-        python2 errores_propios.py
+        python excepciones_integradas.py
+        python errores_propios.py
 
 
 ----

@@ -125,7 +125,7 @@ intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python2 condicional_if.py
+        python condicional_if.py
 
 
 ----

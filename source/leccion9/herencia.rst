@@ -205,7 +205,7 @@ En el ejemplo, una clase ``Persona`` que realizará un seguimiento del
 
     ::
 
-        python2 herencia_simple.py
+        python herencia_simple.py
 
 
 .. _python_poo_herencia_multiple:
@@ -251,7 +251,7 @@ la declaración de la subclase:
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
-        python2 herencia_multiple.py
+        python herencia_multiple.py
 
 
 ----

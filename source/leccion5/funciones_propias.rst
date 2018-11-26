@@ -322,7 +322,7 @@ A continuación, se presenta un ejemplo del uso de invocar funciones:
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python2 funciones.py
+        python funciones.py
 
 
 ----

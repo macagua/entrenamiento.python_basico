@@ -105,7 +105,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
    puedes ejecutar el `script` de la siguiente forma 
    ``python -m pdb script.py``::
 
-    $ python -m pdb index_error.py
+    python -m pdb index_error.py
     > /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py(1)<module>()
     -> """Small snippet to raise an IndexError."""
     (Pdb) continue
@@ -373,9 +373,9 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
     Si tiene la estructura de archivo previa, entonces ejecute por separado cada comando: ::
 
-        python2 index_error.py
-        python2 wiener_filtering.py
-        python2 funcion_a_depurar.py
+        python index_error.py
+        python wiener_filtering.py
+        python funcion_a_depurar.py
 
 
 ----

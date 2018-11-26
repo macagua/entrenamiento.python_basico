@@ -83,7 +83,7 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python2 archivo.py
+        python archivo.py
 
 
 ----

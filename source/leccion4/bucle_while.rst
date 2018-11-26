@@ -142,7 +142,7 @@ Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python2 bucle_while.py
+        python bucle_while.py
 
 
 ----

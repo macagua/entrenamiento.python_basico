@@ -179,7 +179,7 @@ configurarlo, por lo que el resultado es una excepción
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
-        python2 calculo_factura_pipo.py
+        python calculo_factura_pipo.py
 
 
 ----

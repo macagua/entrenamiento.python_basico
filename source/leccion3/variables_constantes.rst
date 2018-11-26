@@ -346,7 +346,7 @@ y :ref:`constantes <python_constante>`:
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
-        python2 constantes.py
+        python constantes.py
 
 
 ----

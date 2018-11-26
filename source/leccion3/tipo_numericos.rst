@@ -230,7 +230,7 @@ A continuación, se presentan un ejemplo de su uso:
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python2 tipo_numericos.py
+        python tipo_numericos.py
 
 
 ----

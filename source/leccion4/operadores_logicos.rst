@@ -76,7 +76,7 @@ A continuación, se presentan algunos ejemplos de su uso:
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python2 operadores_logicos.py
+        python operadores_logicos.py
 
 
 ----

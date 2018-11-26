@@ -146,7 +146,7 @@ Luego ejecute desde la consola de comando el siguiente comando:
 
 ::
 
-    $ python $HOME/proyectos/holamundo.py
+    python $HOME/proyectos/holamundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -166,7 +166,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
     ::
 
-        $ python2 holamundo.py
+        python holamundo.py
 
 
 ----

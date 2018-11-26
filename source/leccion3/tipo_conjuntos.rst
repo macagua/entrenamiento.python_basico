@@ -66,7 +66,7 @@ inmutables, pero no listas ni sets mutables.
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python2 tipo_conjuntos.py
+        python tipo_conjuntos.py
 
 ----
 
