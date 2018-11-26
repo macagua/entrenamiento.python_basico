@@ -40,4 +40,5 @@ setup(
     license="GPL",
     platforms="Unix",
     packages=["tostadas_pipo", "tostadas_pipo/utilidades/"],
+    include_package_data=True,
 )
