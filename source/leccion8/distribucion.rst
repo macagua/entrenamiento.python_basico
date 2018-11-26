@@ -6,7 +6,10 @@
 Distribución de Software
 ------------------------
 
-La distribución de código Python se hace mediante módulo ``distutils``.
+La distribución de código Python, le permite hacer portable de forma amigable usando 
+herramienta de gestión de paquetes Python como la herramienta ``pip``. Esta labor se 
+hace mediante el módulo :ref:`distutils <python_modulo_distutils>`, y más 
+reciente incorporando el módulo :ref:`setuptools <python_modulo_setuptools>`.
 
 
 .. _python_modulo_distutils:
@@ -24,6 +27,16 @@ programadores, ya que es un repositorio de software publico, solo con ejecutar e
 comando ``pip install libreria`` lo convierte en una herramienta tremendamente útil 
 y probablemente sea una de las razones del éxito de Python entre los que empiezan 
 a programar.
+
+
+.. _python_modulo_setuptools:
+
+Módulo setuptools
+.................
+
+El módulo ``setuptools``, incorpora varias extensiones al módulo ``distutils`` para 
+distribuciones de software grandes o complejas.
+
 
 .. _python_estructura_proyecto:
 
@@ -91,7 +104,7 @@ Vamos a ver qué significan los elementos anteriores:
   Este archivo incluye la configuración del paquete como se indica a continuación:
 
 
-.. literalinclude:: ../../recursos/leccion8/distutils/MANIFEST.in
+.. literalinclude:: ../../recursos/leccion8/distribucion/MANIFEST.in
     :language: text
     :lines: 1-7
 
@@ -112,11 +125,11 @@ Vamos a ver qué significan los elementos anteriores:
 
 
 - ``setup.py``: es el archivo donde se define el paquete, el formato es el mismo 
-  para el modulo ``setuptools`` y para el modulo ``distutils`` así que no hay que 
-  preocuparse por nada más. Lo vemos a continuación. Este archivo incluye la 
+  para el modulo ``setuptools`` y para el modulo :ref:`distutils <python_modulo_distutils>` 
+  así que no hay que preocuparse por nada más. Lo vemos a continuación. Este archivo incluye la 
   configuración del paquete como se indica a continuación:
 
-.. literalinclude:: ../../recursos/leccion8/distutils/setup.py
+.. literalinclude:: ../../recursos/leccion8/distribucion/setup.py
     :language: python
     :lines: 2-50
 
@@ -125,7 +138,7 @@ adelante:
 
 :: 
 
-    distro_distutils/
+    distribucion/
     ├── LICENSE
     ├── MANIFEST.in
     ├── README.txt
@@ -149,7 +162,7 @@ el siguiente comando:
 
 ::
 
-    python2 ./setup.py -v build
+    python ./setup.py -v build
     running build
     running build_py
     creating build
@@ -164,9 +177,9 @@ el siguiente comando:
     not copying tostadas_pipo/principal.py (output up-to-date)
     not copying tostadas_pipo/__init__.py (output up-to-date)
 
-De esta forma al terminar la ejecución del comando previo debe tener generado un 
+De esta forma al terminar la ejecución del comando previo debe tener creado un 
 directorio llamado ``build`` e incluyendo el paquete ``tostadas_pipo`` construido 
-con todo lo necesario para generar su distribución, como se muestra a continuación:
+con todo lo necesario para crear su distribución, como se muestra a continuación:
 
 ::
 
@@ -181,84 +194,133 @@ con todo lo necesario para generar su distribución, como se muestra a continuac
                 └── __init__.py
 
 De esta forma ya construyo el paquete ``tostadas_pipo``  y todas las cosas necesarias 
-para generar su distribución de código fuente para su proyecto.
+para crear su distribución de código fuente o binaria para su proyecto.
 
 
-.. _python_distro_generar_pkg:
+.. _python_distro_crear_pkg:
 
-Generar paquete
+Crear paquete
 ...............
 
-Para crear una distribución de código fuente de su paquete, ejecute el siguiente 
-comando: 
+Usted puede crear diversos tipos de formatos de instalación y distribución de sus 
+paquetes Python, a continuación se describen los mas usados:
+
+
+.. _python_distro_crear_sdist:
+
+Distribución código fuente
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>` le permiten crear una distribución de código 
+fuente o source distribution (``sdist``) de su paquete en formatos como **tarball**, archivo **zip**, etc. 
+Para crear una paquete ``sdist``, ejecute el siguiente comando:
 
 ::
 
-    python2 ./setup.py -v sdist
+    python ./setup.py -v sdist
     running sdist
-    running check
+    running egg_info
+    creating tostadas_pipo.egg-info
+    writing tostadas_pipo.egg-info/PKG-INFO
+    writing top-level names to tostadas_pipo.egg-info/top_level.txt
+    writing dependency_links to tostadas_pipo.egg-info/dependency_links.txt
+    writing entry points to tostadas_pipo.egg-info/entry_points.txt
+    writing manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    reading manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
     reading manifest template 'MANIFEST.in'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*~' found anywhere in distribution
     no previously-included directories found matching 'build'
     no previously-included directories found matching 'dist'
-    writing manifest file 'MANIFEST'
+    writing manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    running check
     creating tostadas_pipo-0.1
     creating tostadas_pipo-0.1/tostadas_pipo
+    creating tostadas_pipo-0.1/tostadas_pipo.egg-info
     creating tostadas_pipo-0.1/tostadas_pipo/utilidades
-    making hard links in tostadas_pipo-0.1...
-    hard linking LICENSE -> tostadas_pipo-0.1
-    hard linking MANIFEST.in -> tostadas_pipo-0.1
-    hard linking README.txt -> tostadas_pipo-0.1
-    hard linking setup.py -> tostadas_pipo-0.1
-    hard linking tostadas_pipo/__init__.py -> tostadas_pipo-0.1/tostadas_pipo
-    hard linking tostadas_pipo/principal.py -> tostadas_pipo-0.1/tostadas_pipo
-    hard linking tostadas_pipo/utilidades/__init__.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
-    hard linking tostadas_pipo/utilidades/calculos.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
-    hard linking tostadas_pipo/utilidades/impuestos.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
+    copying files to tostadas_pipo-0.1...
+    copying LICENSE -> tostadas_pipo-0.1
+    copying MANIFEST.in -> tostadas_pipo-0.1
+    copying README.txt -> tostadas_pipo-0.1
+    copying setup.py -> tostadas_pipo-0.1
+    copying tostadas_pipo/__init__.py -> tostadas_pipo-0.1/tostadas_pipo
+    copying tostadas_pipo/principal.py -> tostadas_pipo-0.1/tostadas_pipo
+    copying tostadas_pipo.egg-info/PKG-INFO -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo.egg-info/SOURCES.txt -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo.egg-info/dependency_links.txt -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo.egg-info/entry_points.txt -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo.egg-info/top_level.txt -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo/utilidades/__init__.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
+    copying tostadas_pipo/utilidades/calculos.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
+    copying tostadas_pipo/utilidades/impuestos.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
+    not copying tostadas_pipo.egg-info/SOURCES.txt (output up-to-date)
+    Reading configuration from tostadas_pipo-0.1/setup.cfg
+    Adding new section [egg_info] to tostadas_pipo-0.1/setup.cfg
+    Setting egg_info.tag_build to '' in tostadas_pipo-0.1/setup.cfg
+    Setting egg_info.tag_date to 0 in tostadas_pipo-0.1/setup.cfg
+    Writing tostadas_pipo-0.1/setup.cfg
     creating dist
     Creating tar archive
     removing 'tostadas_pipo-0.1' (and everything under it)
 
-De esta forma al terminar la ejecución del comando previo debe tener generado un 
+De esta forma al terminar la ejecución del comando previo debe tener creado un 
 directorio llamado ``dist`` e incluyendo el paquete en formato de archivo tarball 
-comprimido en *gzip*, como se muestra a continuación:
+comprimido en *gztar*, como se muestra a continuación:
 
 ::
 
     dist/
     └── tostadas_pipo-0.1.tar.gz
 
-Por defecto, el módulo ``distutils`` genera el paquete en formato de archivo 
-tarball comprimido usando *gzip*.).
+Por defecto, tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>` creá el paquete en formato de archivo 
+tarball comprimido usando *gztar*.).
 
-Usted puede cambiar el formato de paquete a generar de su distribución de código 
-fuente de su paquete (en formato archivo tarball, archivo zip, etc.), ejecute el 
+Usted puede cambiar el formato de paquete a crear de su distribución de código 
+fuente de su paquete (en formato archivo **tarball**, archivo **zip**, etc.), ejecute el 
 siguiente comando:
 
 ::
 
-    python2 ./setup.py sdist --formats=zip,gztar,bztar
+    python ./setup.py sdist --formats=zip,gztar,bztar
     running sdist
-    running check
+    running egg_info
+    writing tostadas_pipo.egg-info/PKG-INFO
+    writing top-level names to tostadas_pipo.egg-info/top_level.txt
+    writing dependency_links to tostadas_pipo.egg-info/dependency_links.txt
+    writing entry points to tostadas_pipo.egg-info/entry_points.txt
+    reading manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
     reading manifest template 'MANIFEST.in'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*~' found anywhere in distribution
     no previously-included directories found matching 'build'
     no previously-included directories found matching 'dist'
-    writing manifest file 'MANIFEST'
+    writing manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    running check
     creating tostadas_pipo-0.1
     creating tostadas_pipo-0.1/tostadas_pipo
+    creating tostadas_pipo-0.1/tostadas_pipo.egg-info
     creating tostadas_pipo-0.1/tostadas_pipo/utilidades
-    making hard links in tostadas_pipo-0.1...
-    hard linking LICENSE -> tostadas_pipo-0.1
-    hard linking MANIFEST.in -> tostadas_pipo-0.1
-    hard linking README.txt -> tostadas_pipo-0.1
-    hard linking setup.py -> tostadas_pipo-0.1
-    hard linking tostadas_pipo/__init__.py -> tostadas_pipo-0.1/tostadas_pipo
-    hard linking tostadas_pipo/principal.py -> tostadas_pipo-0.1/tostadas_pipo
-    hard linking tostadas_pipo/utilidades/__init__.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
-    hard linking tostadas_pipo/utilidades/calculos.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
-    hard linking tostadas_pipo/utilidades/impuestos.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
-    creating dist
+    copying files to tostadas_pipo-0.1...
+    copying LICENSE -> tostadas_pipo-0.1
+    copying MANIFEST.in -> tostadas_pipo-0.1
+    copying README.txt -> tostadas_pipo-0.1
+    copying setup.py -> tostadas_pipo-0.1
+    copying tostadas_pipo/__init__.py -> tostadas_pipo-0.1/tostadas_pipo
+    copying tostadas_pipo/principal.py -> tostadas_pipo-0.1/tostadas_pipo
+    copying tostadas_pipo.egg-info/PKG-INFO -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo.egg-info/SOURCES.txt -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo.egg-info/dependency_links.txt -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo.egg-info/entry_points.txt -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo.egg-info/top_level.txt -> tostadas_pipo-0.1/tostadas_pipo.egg-info
+    copying tostadas_pipo/utilidades/__init__.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
+    copying tostadas_pipo/utilidades/calculos.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
+    copying tostadas_pipo/utilidades/impuestos.py -> tostadas_pipo-0.1/tostadas_pipo/utilidades
+    Writing tostadas_pipo-0.1/setup.cfg
     creating 'dist/tostadas_pipo-0.1.zip' and adding 'tostadas_pipo-0.1' to it
     adding 'tostadas_pipo-0.1/MANIFEST.in'
+    adding 'tostadas_pipo-0.1/setup.cfg'
     adding 'tostadas_pipo-0.1/PKG-INFO'
     adding 'tostadas_pipo-0.1/LICENSE'
     adding 'tostadas_pipo-0.1/README.txt'
@@ -268,11 +330,17 @@ siguiente comando:
     adding 'tostadas_pipo-0.1/tostadas_pipo/utilidades/impuestos.py'
     adding 'tostadas_pipo-0.1/tostadas_pipo/utilidades/__init__.py'
     adding 'tostadas_pipo-0.1/tostadas_pipo/utilidades/calculos.py'
+    adding 'tostadas_pipo-0.1/tostadas_pipo.egg-info/dependency_links.txt'
+    adding 'tostadas_pipo-0.1/tostadas_pipo.egg-info/entry_points.txt'
+    adding 'tostadas_pipo-0.1/tostadas_pipo.egg-info/PKG-INFO'
+    adding 'tostadas_pipo-0.1/tostadas_pipo.egg-info/SOURCES.txt'
+    adding 'tostadas_pipo-0.1/tostadas_pipo.egg-info/top_level.txt'
     Creating tar archive
     Creating tar archive
     removing 'tostadas_pipo-0.1' (and everything under it)
 
-De esta forma al terminar la ejecución del comando previo debe tener generado un 
+
+De esta forma al terminar la ejecución del comando previo debe tener creado un 
 directorio llamado ``dist`` e incluyendo los tres paquetes en formatos de archivos 
 tarball comprimido en *gzip/bzip2* y archivo comprimido en *zip*.
 
@@ -283,8 +351,155 @@ tarball comprimido en *gzip/bzip2* y archivo comprimido en *zip*.
     ├── tostadas_pipo-0.1.tar.gz
     └── tostadas_pipo-0.1.zip
 
-De esta forma ya genero el(los) paquete(s) en diversos formato de distribución 
+De esta forma ya creo el(los) paquete(s) en diversos formato de distribución 
 de código fuente para su proyecto.
+
+
+.. _python_distro_crear_bdist:
+
+Distribución binaria
+~~~~~~~~~~~~~~~~~~~~
+
+El módulo :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>` le permiten crear una distribución binaria 
+construida o built "binary" distribution (``bdist``) de su paquete en formato **egg**, **wheel**, 
+**rpm**, etc. A continuación se describen los mas usados:
+
+.. figure:: ../_static/python_eggs.jpg
+    :align: center
+    :width: 50%
+
+    Distribución binaria Egg.
+
+
+Egg
+````
+
+Para crear una distribución ``bdist`` de su paquete en formato ``egg``, ejecute el 
+siguiente comando:
+
+::
+
+    python ./setup.py bdist_egg
+    running bdist_egg
+    running egg_info
+    writing tostadas_pipo.egg-info/PKG-INFO
+    writing top-level names to tostadas_pipo.egg-info/top_level.txt
+    writing dependency_links to tostadas_pipo.egg-info/dependency_links.txt
+    writing entry points to tostadas_pipo.egg-info/entry_points.txt
+    reading manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*~' found anywhere in distribution
+    no previously-included directories found matching 'build'
+    no previously-included directories found matching 'dist'
+    writing manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    installing library code to build/bdist.linux-x86_64/egg
+    running install_lib
+    running build_py
+    creating build/bdist.linux-x86_64
+    creating build/bdist.linux-x86_64/egg
+    creating build/bdist.linux-x86_64/egg/tostadas_pipo
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
+    creating build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/principal.py to principal.pyc
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/__init__.py to __init__.pyc
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades/impuestos.py to impuestos.pyc
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades/__init__.py to __init__.pyc
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades/calculos.py to calculos.pyc
+    creating build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+    zip_safe flag not set; analyzing archive contents...
+    creating 'dist/tostadas_pipo-0.1-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+    removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+
+De esta forma al terminar la ejecución del comando previo debe tener creado un 
+directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *egg*.
+
+::
+
+    dist/
+    └── tostadas_pipo-0.1-py2.7.egg
+
+De esta forma ya creo la distribución ``bdist`` del paquete en formato *egg* para 
+su proyecto.
+
+
+Wheel
+`````
+
+Para crear una distribución ``bdist`` de su paquete en formato **wheel**, ejecute el 
+siguiente comando:
+
+::
+
+    python ./setup.py bdist_wheel
+    running bdist_wheel
+    running build
+    running build_py
+    installing to build/bdist.linux-x86_64/wheel
+    running install
+    running install_lib
+    creating build/bdist.linux-x86_64/wheel
+    creating build/bdist.linux-x86_64/wheel/tostadas_pipo
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo
+    creating build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
+    running install_egg_info
+    running egg_info
+    writing tostadas_pipo.egg-info/PKG-INFO
+    writing top-level names to tostadas_pipo.egg-info/top_level.txt
+    writing dependency_links to tostadas_pipo.egg-info/dependency_links.txt
+    writing entry points to tostadas_pipo.egg-info/entry_points.txt
+    reading manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*~' found anywhere in distribution
+    no previously-included directories found matching 'build'
+    no previously-included directories found matching 'dist'
+    writing manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    Copying tostadas_pipo.egg-info to build/bdist.linux-x86_64/wheel/tostadas_pipo-0.1-py2.7.egg-info
+    running install_scripts
+    adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+    creating build/bdist.linux-x86_64/wheel/tostadas_pipo-0.1.dist-info/WHEEL
+    creating 'dist/tostadas_pipo-0.1-py2-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+    adding 'tostadas_pipo/__init__.py'
+    adding 'tostadas_pipo/principal.py'
+    adding 'tostadas_pipo/utilidades/__init__.py'
+    adding 'tostadas_pipo/utilidades/calculos.py'
+    adding 'tostadas_pipo/utilidades/impuestos.py'
+    adding 'tostadas_pipo-0.1.dist-info/LICENSE'
+    adding 'tostadas_pipo-0.1.dist-info/METADATA'
+    adding 'tostadas_pipo-0.1.dist-info/WHEEL'
+    adding 'tostadas_pipo-0.1.dist-info/entry_points.txt'
+    adding 'tostadas_pipo-0.1.dist-info/top_level.txt'
+    adding 'tostadas_pipo-0.1.dist-info/RECORD'
+    removing build/bdist.linux-x86_64/wheel
+
+
+De esta forma al terminar la ejecución del comando previo debe tener creado un 
+directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *whl*.
+
+::
+
+    dist/
+    ├── tostadas_pipo-0.1-py2.7.egg
+    └── tostadas_pipo-0.1-py2-none-any.whl
+
+De esta forma ya creo la distribución ``bdist`` del paquete en formato *whl* para 
+su proyecto.
 
 
 .. _python_distro_instalar:
@@ -296,13 +511,13 @@ Para instalar el paquete de su proyecto, hay dos formas de instalación disponib
 a continuación:
 
 
-.. _python_distro_install_pkg_gen:
+.. _python_distro_instalar_sdist:
 
-Instalar paquete generado
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Instalar distribución código fuente
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Para instalar el paquete generado se usa la herramienta ``pip``, ejecutando el 
-siguiente comando:
+Para instalar una distribución código fuente de su paquete previamente creado, se 
+realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 ::
 
@@ -336,15 +551,35 @@ De nuevo vuelva a ejecutar en su consola de comando el comando:
     Successfully installed tostadas-pipo-0.1
 
 
-De esta forma tiene instalado su paquete en su interprete Python usando la 
-herramienta ``pip``.
+De esta forma tiene instalado una distribución código fuente en formato **tarball** 
+de su paquete en el interprete Python usando la herramienta ``pip``.
+
+
+.. _python_distro_instalar_bdist:
+
+Instalar distribución binaria
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Para instalar una distribución binaria de su paquete previamente creado, se 
+realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
+
+::
+
+    pip install --user ./dist/tostadas_pipo-0.1-py2-none-any.whl
+    Processing ./dist/tostadas_pipo-0.1-py2-none-any.whl
+    Installing collected packages: tostadas-pipo
+    Successfully installed tostadas-pipo-0.1
+
+De esta forma tiene instalado una distribución binaria en formato **wheel** de su 
+paquete en el interprete Python usando la herramienta ``pip``.
+
 
 .. note::
     `pip <https://pip.readthedocs.io/>`_, es una herramienta para instalación y 
     administración de paquetes Python.
 
 
-.. _python_distro_install_distutils_pkg:
+.. _python_distro_install_source_pkg:
 
 Instalar de código de proyecto
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -353,7 +588,7 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
 
 ::
 
-    python2 ./setup.py -v install --user
+    python ./setup.py -v install --user
     running install
     running build
     running build_py
@@ -381,6 +616,23 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
     Writing /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo-0.1-py2.7.egg-info
 
 De esta forma tiene instalado su paquete en su interprete Python usando el comando ``install`` disponible con el script ``setup.py``.
+
+
+.. _python_distro_check_install:
+
+Comprobar la instalación
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Usted puede comprobar luego de realizar la instalación de la distribución de código fuente 
+o binaria de su paquete, ejecute el siguiente comando:
+
+::
+
+    pip list --user --format=freeze | grep "tostadas"
+    tostadas-pipo==0.1
+
+De esta forma la herramienta de gestión de paquete indica que el ``tostadas-pipo`` en su 
+versión **0.1** esta instalado en su interprete Python.
 
 
 .. _python_distro_usar_pkg:
@@ -433,11 +685,11 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
     Proceed (y/n)? y
       Successfully uninstalled tostadas-pipo-0.1
 
-``pip`` esta habiliado a desinstalar la mayoria de paquetes instalados. Las excepciones 
+``pip`` esta habilitado a desinstalar la mayoría de paquetes instalados. Las excepciones 
 conocidas son:
 
-- Los paquetes ``distutils`` puros instalados sin la herramienta ``pip`` usando el 
-  :ref:`código de proyecto distutils <python_distro_install_distutils_pkg>`, 
+- Los paquetes :ref:`distutils <python_modulo_distutils>` puros instalados sin la herramienta ``pip`` usando el 
+  :ref:`código de proyecto distutils <python_distro_install_source_pkg>`, 
   which leave behind no metadata to determine what files were installed.
 
 - Los scripts wrappers instalados ``python setup.py develop``.
@@ -506,52 +758,77 @@ De esta forma ya tiene eliminado su paquete de forma manual de su sistema.
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la ayuda comandos disponibles del módulo ``distutils``, 
+Usted puede consultar toda la ayuda comandos disponibles del módulo :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>`, 
 ejecute el comando siguiente:
 
 ::
 
-    python2 ./setup.py --help-commands
+    python ./setup.py --help-commands
     Standard commands:
-      build            build everything needed to install
-      build_py         "build" pure Python modules (copy to build directory)
-      build_ext        build C/C++ extensions (compile/link to build directory)
-      build_clib       build C/C++ libraries used by Python extensions
-      build_scripts    "build" scripts (copy and fixup #! line)
-      clean            clean up temporary files from 'build' command
-      install          install everything from build directory
-      install_lib      install all Python modules (extensions and pure Python)
-      install_headers  install C/C++ header files
-      install_scripts  install scripts (Python or otherwise)
-      install_data     install data files
-      sdist            create a source distribution (tarball, zip file, etc.)
-      register         register the distribution with the Python package index
-      bdist            create a built (binary) distribution
-      bdist_dumb       create a "dumb" built distribution
-      bdist_rpm        create an RPM distribution
-      bdist_wininst    create an executable installer for MS Windows
-      upload           upload binary package to PyPI
-      check            perform some checks on the package
+      build             build everything needed to install
+      build_py          "build" pure Python modules (copy to build directory)
+      build_ext         build C/C++ extensions (compile/link to build directory)
+      build_clib        build C/C++ libraries used by Python extensions
+      build_scripts     "build" scripts (copy and fixup #! line)
+      clean             clean up temporary files from 'build' command
+      install           install everything from build directory
+      install_lib       install all Python modules (extensions and pure Python)
+      install_headers   install C/C++ header files
+      install_scripts   install scripts (Python or otherwise)
+      install_data      install data files
+      sdist             create a source distribution (tarball, zip file, etc.)
+      register          register the distribution with the Python package index
+      bdist             create a built (binary) distribution
+      bdist_dumb        create a "dumb" built distribution
+      bdist_rpm         create an RPM distribution
+      bdist_wininst     create an executable installer for MS Windows
+      upload            upload binary package to PyPI
+      check             perform some checks on the package
 
-Para consultar toda la ayuda del módulo ``distutils``, ejecute el comando siguiente:
+    Extra commands:
+      saveopts          save supplied options to setup.cfg or other config file
+      testr             Run unit tests using testr
+      compile_catalog   compile message catalogs to binary MO files
+      develop           install package in 'development mode'
+      upload_docs       Upload documentation to PyPI
+      extract_messages  extract localizable strings from the project code
+      init_catalog      create a new catalog based on a POT file
+      test              run unit tests after in-place build
+      update_catalog    update message catalogs from a POT file
+      setopt            set an option in setup.cfg or another config file
+      install_egg_info  Install an .egg-info directory for the package
+      rotate            delete older distributions, keeping N newest files
+      bdist_wheel       create a wheel distribution
+      egg_info          create a distribution's .egg-info directory
+      alias             define a shortcut to invoke one or more commands
+      easy_install      Find/get/install Python packages
+      bdist_egg         create an "egg" distribution
+
+    usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+       or: setup.py --help [cmd1 cmd2 ...]
+       or: setup.py --help-commands
+       or: setup.py cmd --help
+
+Para consultar toda la ayuda del módulo :ref:`setuptools <python_modulo_setuptools>` 
+y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 ::
 
-    python2 setup.py --help
+    python setup.py --help
 
 ----
 
 
 .. important::
     Usted puede descargar el código usado en esta sección, haciendo clic en el 
-    siguiente enlace: :download:`distro_distutils.zip <../../recursos/leccion8/distro_distutils.zip>`.
+    siguiente enlace: :download:`distribucion.zip <../../recursos/leccion8/distribucion.zip>`.
 
 
 .. tip::
     Para poder definir un instalador y construirlo para así poder hacer que su proyecto 
     se pueda distribuir de forma más fácil debe crear la :ref:`estructura de proyecto <python_estructura_proyecto>` usando el código descomprimido del archivo 
-    :file:`distro_distutils.zip`, siga los pasos para construir los archivos, 
-    generar el instalador y probar su instalación.
+    :file:`distribucion.zip`, siga los pasos para construir los archivos, 
+    crear el instalador y probar su instalación.
 
 ----
 
