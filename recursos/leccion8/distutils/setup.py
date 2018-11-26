@@ -39,13 +39,5 @@ setup(
     download_url="https://github.com/macagua/tostadas_pipo",
     license="GPL",
     platforms="Unix",
-    packages=[".tostadas_pipo"],
-    py_modules=[
-        ".tostadas_pipo/__init__",
-        ".tostadas_pipo/principal",
-        ".tostadas_pipo/utilidades/__init__",
-        ".tostadas_pipo/utilidades/calculos",
-        ".tostadas_pipo/utilidades/impuestos"
-    ]
+    packages=["tostadas_pipo", "tostadas_pipo/utilidades/"],
 )
-
