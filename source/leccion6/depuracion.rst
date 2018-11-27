@@ -352,6 +352,10 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
     ======================
     retval  rv
 
+
+----
+
+
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los 
     siguientes enlaces: :download:`index_error.py <../../recursos/leccion6/index_error.py>` 
@@ -364,14 +368,18 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 .. tip::
     Para ejecutar el código :file:`index_error.py`, :file:`wiener_filtering.py` 
     y :file:`funcion_a_depurar.py`, abra una consola de comando, acceda al directorio 
-    donde se encuentra ambos programas: ::
+    donde se encuentra ambos programas:
+
+    ::
 
       leccion6/
       ├── index_error.py
       ├── wiener_filtering.py
       └── funcion_a_depurar.py
 
-    Si tiene la estructura de archivo previa, entonces ejecute por separado cada comando: ::
+    Si tiene la estructura de archivo previa, entonces ejecute por separado cada comando:
+
+    ::
 
         python index_error.py
         python wiener_filtering.py
