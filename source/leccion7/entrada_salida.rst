@@ -216,6 +216,14 @@ argumentos, ejecutando el siguiente comando:
 
 ----
 
+.. note::
+
+    Una documentación completa del control de la salida de Python se encuentra en 
+    https://docs.python.org/2/tutorial/inputoutput.html
+
+
+----
+
 
 .. important::
     Usted puede descargar los códigos usados en esta sección haciendo clic en los
@@ -243,14 +251,6 @@ argumentos, ejecutando el siguiente comando:
         python entrada_salida.py
         python entrada_argumentos.py
         python entrada_dos_argumentos.py
-
-
-----
-
-.. note::
-
-    Una documentación completa del control de la salida de Python se encuentra en 
-    https://docs.python.org/2/tutorial/inputoutput.html
 
 
 ----
