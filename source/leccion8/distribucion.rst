@@ -24,7 +24,7 @@ Cada paquete empaquetado se puede distribuir en su propia pagina de proyecto y a
 mismo tiempo puede optar a publicar su proyecto en el Python Package Index (PyPI), 
 con el cual si lo publica allí su proyecto estará a su alcance y sino de muchos mas 
 programadores, ya que es un repositorio de software publico, solo con ejecutar el 
-comando ``pip install libreria`` lo convierte en una herramienta tremendamente útil 
+comando ``pip install <paquete>`` lo convierte en una herramienta tremendamente útil 
 y probablemente sea una de las razones del éxito de Python entre los que empiezan 
 a programar.
 
@@ -211,9 +211,10 @@ paquetes Python, a continuación se describen los mas usados:
 Distribución código fuente
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>` le permiten crear una distribución de código 
-fuente o source distribution (``sdist``) de su paquete en formatos como **tarball**, archivo **zip**, etc. 
-Para crear una paquete ``sdist``, ejecute el siguiente comando:
+Tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y 
+:ref:`distutils <python_modulo_distutils>` le permiten crear una distribución de código 
+fuente o source distribution (``sdist``) de su paquete en formatos como **tarball**, 
+archivo **zip**, etc. Para crear una paquete ``sdist``, ejecute el siguiente comando:
 
 ::
 
@@ -273,12 +274,13 @@ comprimido en *gztar*, como se muestra a continuación:
     dist/
     └── tostadas_pipo-0.1.tar.gz
 
-Por defecto, tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>` creá el paquete en formato de archivo 
-tarball comprimido usando *gztar*.).
+Por defecto, tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y 
+:ref:`distutils <python_modulo_distutils>` creá el paquete en formato de archivo tarball 
+comprimido usando *gztar*.).
 
-Usted puede cambiar el formato de paquete a crear de su distribución de código 
-fuente de su paquete (en formato archivo **tarball**, archivo **zip**, etc.), ejecute el 
-siguiente comando:
+Usted puede cambiar el formato de paquete a crear de su distribución de código fuente de 
+su paquete (en formato archivo **tarball**, archivo **zip**, etc.), ejecute el siguiente 
+comando:
 
 ::
 
@@ -360,9 +362,10 @@ de código fuente para su proyecto.
 Distribución binaria
 ~~~~~~~~~~~~~~~~~~~~
 
-El módulo :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>` le permiten crear una distribución binaria 
-construida o built "binary" distribution (``bdist``) de su paquete en formato **egg**, **wheel**, 
-**rpm**, etc. A continuación se describen los mas usados:
+El módulo :ref:`setuptools <python_modulo_setuptools>` y 
+:ref:`distutils <python_modulo_distutils>` le permiten crear una distribución binaria 
+construida o built "binary" distribution (``bdist``) de su paquete en formato **egg**, 
+**wheel**, **rpm**, etc. A continuación se describen los mas usados:
 
 .. figure:: ../_static/python_eggs.jpg
     :align: center
@@ -590,32 +593,79 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
 
     python ./setup.py -v install --user
     running install
-    running build
+    running bdist_egg
+    running egg_info
+    writing tostadas_pipo.egg-info/PKG-INFO
+    writing top-level names to tostadas_pipo.egg-info/top_level.txt
+    writing dependency_links to tostadas_pipo.egg-info/dependency_links.txt
+    reading manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*~' found anywhere in distribution
+    no previously-included directories found matching 'build'
+    no previously-included directories found matching 'dist'
+    writing manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
+    installing library code to build/bdist.linux-x86_64/egg
+    running install_lib
     running build_py
-    not copying tostadas_pipo/__init__.py (output up-to-date)
     not copying tostadas_pipo/principal.py (output up-to-date)
+    not copying tostadas_pipo/__init__.py (output up-to-date)
+    not copying tostadas_pipo/utilidades/impuestos.py (output up-to-date)
+    not copying tostadas_pipo/utilidades/__init__.py (output up-to-date)
+    not copying tostadas_pipo/utilidades/calculos.py (output up-to-date)
     not copying tostadas_pipo/utilidades/__init__.py (output up-to-date)
     not copying tostadas_pipo/utilidades/calculos.py (output up-to-date)
     not copying tostadas_pipo/utilidades/impuestos.py (output up-to-date)
-    not copying tostadas_pipo/principal.py (output up-to-date)
-    not copying tostadas_pipo/__init__.py (output up-to-date)
-    running install_lib
-    creating /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/principal.py -> /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/__init__.py -> /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo
-    creating /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/impuestos.py -> /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/__init__.py -> /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/calculos.py -> /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/utilidades
-    byte-compiling /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/principal.py to principal.pyc
-    byte-compiling /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/__init__.py to __init__.pyc
-    byte-compiling /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/utilidades/impuestos.py to impuestos.pyc
-    byte-compiling /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/utilidades/__init__.py to __init__.pyc
-    byte-compiling /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo/utilidades/calculos.py to calculos.pyc
-    running install_egg_info
-    Writing /home/leonardo/venv/lib/python2.7/site-packages/tostadas_pipo-0.1-py2.7.egg-info
+    creating build/bdist.linux-x86_64
+    creating build/bdist.linux-x86_64/egg
+    creating build/bdist.linux-x86_64/egg/tostadas_pipo
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
+    creating build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/principal.py to principal.pyc
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/__init__.py to __init__.pyc
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades/impuestos.py to impuestos.pyc
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades/__init__.py to __init__.pyc
+    byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades/calculos.py to calculos.pyc
+    creating build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+    copying tostadas_pipo.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+    zip_safe flag not set; analyzing archive contents...
+    creating dist
+    creating 'dist/tostadas_pipo-0.1-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+    adding 'tostadas_pipo/principal.py'
+    adding 'tostadas_pipo/principal.pyc'
+    adding 'tostadas_pipo/__init__.pyc'
+    adding 'tostadas_pipo/__init__.py'
+    adding 'tostadas_pipo/utilidades/impuestos.pyc'
+    adding 'tostadas_pipo/utilidades/calculos.pyc'
+    adding 'tostadas_pipo/utilidades/impuestos.py'
+    adding 'tostadas_pipo/utilidades/__init__.pyc'
+    adding 'tostadas_pipo/utilidades/__init__.py'
+    adding 'tostadas_pipo/utilidades/calculos.py'
+    adding 'EGG-INFO/zip-safe'
+    adding 'EGG-INFO/dependency_links.txt'
+    adding 'EGG-INFO/PKG-INFO'
+    adding 'EGG-INFO/SOURCES.txt'
+    adding 'EGG-INFO/top_level.txt'
+    removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+    Processing tostadas_pipo-0.1-py2.7.egg
+    Copying tostadas_pipo-0.1-py2.7.egg to /home/leonardo/.local/lib/python2.7/site-packages
+    Adding tostadas-pipo 0.1 to easy-install.pth file
+    Saving /home/leonardo/.local/lib/python2.7/site-packages/easy-install.pth
 
-De esta forma tiene instalado su paquete en su interprete Python usando el comando ``install`` disponible con el script ``setup.py``.
+    Installed /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1-py2.7.egg
+    Processing dependencies for tostadas-pipo==0.1
+    Finished processing dependencies for tostadas-pipo==0.1
+
+
+De esta forma tiene instalado su paquete en su interprete Python usando el comando ``install`` 
+disponible con el script ``setup.py``.
 
 
 .. _python_distro_check_install:
@@ -665,6 +715,7 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
 
     pip uninstall tostadas_pipo
     Uninstalling tostadas-pipo-0.1:
+      /home/leonardo/.local/bin/tostadas_pipo
       /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/DESCRIPTION.rst
       /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/INSTALLER
       /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/METADATA
@@ -685,71 +736,74 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
     Proceed (y/n)? y
       Successfully uninstalled tostadas-pipo-0.1
 
+
 ``pip`` esta habilitado a desinstalar la mayoría de paquetes instalados. Las excepciones 
 conocidas son:
 
-- Los paquetes :ref:`distutils <python_modulo_distutils>` puros instalados sin la herramienta ``pip`` usando el 
-  :ref:`código de proyecto distutils <python_distro_install_source_pkg>`, 
+- Los paquetes :ref:`distutils <python_modulo_distutils>` puros instalados sin la herramienta 
+  ``pip`` usando el :ref:`código de proyecto distutils <python_distro_install_source_pkg>`, 
   which leave behind no metadata to determine what files were installed.
 
-- Los scripts wrappers instalados ``python setup.py develop``.
+- Los scripts wrappers instalados ejecutando el comando ``python setup.py develop``.
 
+.. comments:
 
-Si alguno de esos casos previos es el suyo, debe seguir los siguientes pasos para eliminar manualmente el paquete instalado:
+    Si alguno de esos casos previos es el suyo, debe seguir los siguientes pasos para eliminar 
+    manualmente el paquete instalado:
 
-#. Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado 
-   en el directorio ``$HOME/.local/lib/python2.7/site-packages/`` puede verificar 
-   su correcta instalación, ejecute el siguiente comando:
+    #. Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado 
+       en el directorio ``$HOME/.local/lib/python2.7/site-packages/`` puede verificar 
+       su correcta instalación, ejecute el siguiente comando:
 
-    ::
+        ::
 
-        ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
-        tostadas_pipo/
-        tostadas_pipo-0.1.egg-info/
+            ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
+            tostadas_pipo/
+            tostadas_pipo-0.1.egg-info/
 
-#. Para eliminar el paquete usando la herramienta ``pip``, ejecute el siguiente 
-   comando: 
+    #. Para eliminar el paquete usando la herramienta ``pip``, ejecute el siguiente 
+       comando: 
 
-    ::
+        ::
 
-        pip uninstall tostadas_pipo
-        DEPRECATION: Uninstalling a distutils installed project (tostadas-pipo) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
-        Uninstalling tostadas-pipo-0.1:
-          /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.egg-info
-        Proceed (y/n)? y
-          Successfully uninstalled tostadas-pipo-0.1
+            pip uninstall tostadas_pipo
+            DEPRECATION: Uninstalling a distutils installed project (tostadas-pipo) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
+            Uninstalling tostadas-pipo-0.1:
+              /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.egg-info
+            Proceed (y/n)? y
+              Successfully uninstalled tostadas-pipo-0.1
 
-   Aunque ``pip`` indique **Successfully uninstalled tostadas-pipo-0.1**, no es cierto, 
-   solo removió el directorio ``tostadas_pipo-0.1.egg-info`` y dejo instalado el 
-   directorio del paquete ``tostadas_pipo``.
+       Aunque ``pip`` indique **Successfully uninstalled tostadas-pipo-0.1**, no es cierto, 
+       solo removió el directorio ``tostadas_pipo-0.1.egg-info`` y dejo instalado el 
+       directorio del paquete ``tostadas_pipo``.
 
-#. Luego de ejecutar el comando previo, puede verificar si aun instalado el paquete 
-   parcialmente, con el siguiente comando:
+    #. Luego de ejecutar el comando previo, puede verificar si aun instalado el paquete 
+       parcialmente, con el siguiente comando:
 
-    ::
+        ::
 
-        ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
-        tostadas_pipo/
+            ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
+            tostadas_pipo/
 
-   Si el comando previo muestra el resultado **tostadas_pipo**, es el directorio del 
-   paquete ``tostadas_pipo``, el cual no se ha eliminado. 
+       Si el comando previo muestra el resultado **tostadas_pipo**, es el directorio del 
+       paquete ``tostadas_pipo``, el cual no se ha eliminado. 
 
-#. Entonces tiene que eliminar manualmente el directorio aun encontrado ejecutando el 
-   siguiente comando:
+    #. Entonces tiene que eliminar manualmente el directorio aun encontrado ejecutando el 
+       siguiente comando:
 
-    ::
+        ::
 
-        rm -rf $HOME/.local/lib/python2.7/site-packages/tostadas_pipo
+            rm -rf $HOME/.local/lib/python2.7/site-packages/tostadas_pipo
 
-#. Al ejecutar el comando previo, de nuevo verifique que ya fue eliminado de su sistema, 
-   ejecutando el siguiente comando:
+    #. Al ejecutar el comando previo, de nuevo verifique que ya fue eliminado de su sistema, 
+       ejecutando el siguiente comando:
 
-    ::
+        ::
 
-        ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
+            ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
 
-   Si el comando previo, no muestra el resultado **tostadas_pipo**, es el directorio del 
-   paquete ``tostadas_pipo``, fue eliminado completamente de su sistema. 
+       Si el comando previo, no muestra el resultado **tostadas_pipo**, es el directorio del 
+       paquete ``tostadas_pipo``, fue eliminado completamente de su sistema. 
 
 De esta forma ya tiene eliminado su paquete de forma manual de su sistema.
 
@@ -758,7 +812,8 @@ De esta forma ya tiene eliminado su paquete de forma manual de su sistema.
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la ayuda comandos disponibles del módulo :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>`, 
+Usted puede consultar toda la ayuda comandos disponibles del módulo 
+:ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>`, 
 ejecute el comando siguiente:
 
 ::
@@ -826,8 +881,9 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 .. tip::
     Para poder definir un instalador y construirlo para así poder hacer que su proyecto 
-    se pueda distribuir de forma más fácil debe crear la :ref:`estructura de proyecto <python_estructura_proyecto>` usando el código descomprimido del archivo 
-    :file:`distribucion.zip`, siga los pasos para construir los archivos, 
+    se pueda distribuir de forma más fácil debe crear la 
+    :ref:`estructura de proyecto <python_estructura_proyecto>` usando el código descomprimido 
+    del archivo :file:`distribucion.zip`, siga los pasos para construir los archivos, 
     crear el instalador y probar su instalación.
 
 ----
