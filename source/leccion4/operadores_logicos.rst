@@ -66,6 +66,9 @@ A continuación, se presentan algunos ejemplos de su uso:
     :lines: 36-40
 
 
+----
+
+
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
     :download:`aquí <../../recursos/leccion4/operadores_logicos.py>`.
@@ -74,7 +77,9 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. tip::
     Para ejecutar el código :file:`operadores_logicos.py`, abra una 
     consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+    y ejecute el siguiente comando:
+
+    ::
 
         python operadores_logicos.py
 

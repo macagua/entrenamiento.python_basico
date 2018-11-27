@@ -115,6 +115,9 @@ intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
   sentencias seguidas.
 
 
+----
+
+
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
     :download:`aquí <../../recursos/leccion4/condicional_if.py>`.
@@ -123,7 +126,9 @@ intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
 .. tip::
     Para ejecutar el código :file:`condicional_if.py`, abra una 
     consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+    y ejecute el siguiente comando:
+
+    ::
 
         python condicional_if.py
 

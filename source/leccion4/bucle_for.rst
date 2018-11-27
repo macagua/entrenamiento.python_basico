@@ -99,6 +99,9 @@ La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma si
 que en las demás estructuras de control.
 
 
+----
+
+
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
     :download:`aquí <../../recursos/leccion4/bucle_for.py>`.
@@ -107,7 +110,9 @@ que en las demás estructuras de control.
 .. tip::
     Para ejecutar el código :file:`bucle_for.py`, abra una 
     consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+    y ejecute el siguiente comando:
+
+    ::
 
         python bucle_for.py
 
