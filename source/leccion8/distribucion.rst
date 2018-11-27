@@ -740,9 +740,20 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
 ``pip`` esta habilitado a desinstalar la mayoría de paquetes instalados. Las excepciones 
 conocidas son:
 
-- Los paquetes :ref:`distutils <python_modulo_distutils>` puros instalados sin la herramienta 
-  ``pip`` usando el :ref:`código de proyecto distutils <python_distro_install_source_pkg>`, 
-  which leave behind no metadata to determine what files were installed.
+- Los paquetes basado en solamente en el módulo :ref:`distutils <python_modulo_distutils>` los 
+  cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python setup.py install`` 
+  desde el :ref:`código del paquete <python_distro_install_source_pkg>`. 
+
+  Instalándolo de esta forma, al momento de desintalarlo usando el comando ``pip uninstall tostadas_pipo`` 
+  este comando removerá solo la metadata, no detrás dejando de la instalación metadata para 
+  determinar que archivos fueron instalados. 
+
+  Entonces para solventar este problema tiene que ir manualmente al directorio ``site-packages`` a 
+  eliminar manualmente el paquete que instalo.
+
+  .. warning::
+
+      Esta entrando a la de los cueva de los Dragones!!!
 
 - Los scripts wrappers instalados ejecutando el comando ``python setup.py develop``.
 
