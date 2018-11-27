@@ -586,6 +586,24 @@ En el ejemplo, una clase ``Persona`` que realizará un seguimiento del
 ----
 
 
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion9/poo.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`poo.py`, abra una 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: 
+
+    ::
+
+        python poo.py
+
+
+----
+
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion9>` 
