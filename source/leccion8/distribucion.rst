@@ -61,7 +61,7 @@ siguiente:
                ├── __init__.py
                └── MAS_ARCHIVOS.py
 
-Vamos a ver qué significan los elementos anteriores:
+A continuación se detallan el significado y uso de la estructura de directorio anterior:
 
 - ``DIRECTORIO-DEL-PROYECTO`` puede ser cualquiera, no afecta en absoluto, lo que 
   cuenta es lo que hay dentro.
@@ -126,7 +126,7 @@ Vamos a ver qué significan los elementos anteriores:
 
 - ``setup.py``: es el archivo donde se define el paquete, el formato es el mismo 
   para el modulo ``setuptools`` y para el modulo :ref:`distutils <python_modulo_distutils>` 
-  así que no hay que preocuparse por nada más. Lo vemos a continuación. Este archivo incluye la 
+  así que no hay que preocuparse por nada más. Lo puede ver a continuación. Este archivo incluye la 
   configuración del paquete como se indica a continuación:
 
 .. literalinclude:: ../../recursos/leccion8/distribucion/setup.py
@@ -753,7 +753,7 @@ conocidas son:
 
   .. warning::
 
-      Esta entrando a la de los cueva de los Dragones!!!
+      Esta entrando a la cueva de los Dragones!!!
 
 - Los scripts wrappers instalados ejecutando el comando ``python setup.py develop``.
 
