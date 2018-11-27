@@ -397,19 +397,6 @@ A continuación, se presentan algunos ejemplos de su uso:
     :lines: 53
 
 
-.. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion3/tipo_cadenas.py>`.
-
-
-.. tip::
-    Para ejecutar el código :file:`tipo_cadenas.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
-
-        python tipo_cadenas.py
-
-
 ----
 
 
@@ -470,6 +457,24 @@ siguiente forma:
     >>> help(unicode)
 
 Para salir de esa ayuda presione la tecla ``q``.
+
+
+----
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_cadenas.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_cadenas.py`, abra una 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando: 
+
+    ::
+
+        python tipo_cadenas.py
 
 
 ----

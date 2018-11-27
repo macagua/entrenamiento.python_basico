@@ -233,6 +233,7 @@ A continuación, se presentan algunos ejemplos de su uso:
     :language: python
     :lines: 7-32
 
+----
 
 .. important::
 	Usted puede descargar el código usado en esta sección haciendo clic 
@@ -242,6 +243,17 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. tip::
 	Para ejecutar el código :file:`operadores_asignaciones.py`, abra una 
 	consola de comando, acceda al directorio donde se encuentra el mismo, 
-	y ejecute el siguiente comando: ::
+	y ejecute el siguiente comando: 
+
+	::
 
 		python operadores_asignaciones.py
+
+
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

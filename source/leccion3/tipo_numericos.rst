@@ -220,19 +220,6 @@ A continuación, se presentan un ejemplo de su uso:
     :lines: 28-30
 
 
-.. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion3/tipo_numericos.py>`.
-
-
-.. tip::
-    Para ejecutar el código :file:`tipo_numericos.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
-
-        python tipo_numericos.py
-
-
 ----
 
 
@@ -453,7 +440,27 @@ Para salir de esa ayuda presione la tecla ``q``.
     Para más información consulte las funciones integradas para 
     :ref:`operaciones numéricas <python_funciones_integradas_numericas>`.
 
+
 ----
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_numericos.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_numericos.py`, abra una 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando:
+
+    ::
+
+        python tipo_numericos.py
+
+
+----
+
 
 .. seealso::
 

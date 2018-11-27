@@ -210,6 +210,8 @@ izquierda por el operador del lado derecho y devuelve el resto.
     :language: python
     :lines: 33
 
+----
+
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
@@ -225,6 +227,7 @@ izquierda por el operador del lado derecho y devuelve el resto.
 
 
 ----
+
 
 .. seealso::
 

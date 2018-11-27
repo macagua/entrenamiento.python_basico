@@ -105,6 +105,9 @@ A continuación, se presentan algunos ejemplos de su uso:
     :lines: 41-42
 
 
+----
+
+
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
     :download:`aquí <../../recursos/leccion3/operadores_relacionales.py>`.
@@ -113,6 +116,17 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. tip::
     Para ejecutar el código :file:`operadores_relacionales.py`, abra una 
     consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
+    y ejecute el siguiente comando:
+
+    ::
 
         python operadores_relacionales.py
+
+
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion3>` 
+    del entrenamiento para ampliar su conocimiento en esta temática.

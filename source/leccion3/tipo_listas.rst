@@ -187,19 +187,6 @@ emparejarse con la función ``zip()``.
 ¿Cual es tu sistema operativo?, la respuesta es: Linux.
 >>> 
 
-
-.. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion3/tipo_listas.py>`.
-
-
-.. tip::
-    Para ejecutar el código :file:`tipo_listas.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
-
-        python tipo_listas.py
-
 ----
 
 Ayuda integrada
@@ -211,6 +198,23 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 ::
 
     >>> help(list)
+
+
+----
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_listas.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_listas.py`, abra una 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando:
+
+    ::
+
+        python tipo_listas.py
 
 
 ----

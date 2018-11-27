@@ -70,18 +70,6 @@ establecer una conexión a una BD:
     :lines: 18-38
 
 
-.. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion3/tipo_tuplas.py>`.
-
-
-.. tip::
-    Para ejecutar el código :file:`tipo_tuplas.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: ::
-
-        python tipo_tuplas.py
-
 ----
 
 Ayuda integrada
@@ -93,6 +81,22 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 ::
 
     >>> help(tuple)
+
+----
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic 
+    :download:`aquí <../../recursos/leccion3/tipo_tuplas.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`tipo_tuplas.py`, abra una 
+    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    y ejecute el siguiente comando:
+
+    ::
+
+        python tipo_tuplas.py
 
 
 ----

@@ -328,7 +328,9 @@ y :ref:`constantes <python_constante>`:
 
 - No pueden usarse como identificadores, las :ref:`palabras reservadas <python_palabras_reservadas>` .
 
+
 ----
+
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los 
@@ -338,13 +340,17 @@ y :ref:`constantes <python_constante>`:
 
 .. tip::
     Para ejecutar el código :file:`constantes.py` y :file:`main.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+    consola de comando, acceda al directorio donde se encuentra ambos programas:
+
+    ::
 
 		leccion3/
 		├── constantes.py
 		└── main.py
 
-    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    ::
 
         python constantes.py
 
