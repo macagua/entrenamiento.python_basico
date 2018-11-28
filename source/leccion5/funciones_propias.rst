@@ -157,7 +157,8 @@ Funciones de predicado
 ......................
 
 Las funciones de predicado no es más que una función la cual dice si algo es ``True`` 
-o ``False``, es decir, es una función que devuelve un tipo de datos :ref:`booleano <python_booleanos>`.
+o ``False``, es decir, es una función que devuelve un tipo de datos 
+:ref:`booleano <python_booleanos>`.
 
 .. todo::
     TODO terminar de escribir la sección Funciones de predicado.
@@ -232,7 +233,7 @@ de este tipo de funciones:
 
     print factorial(5)
 
-Dando como resultado los siguientes mensajes:
+El código anterior da como resultado los siguientes mensajes:
 
 ::
 
@@ -410,6 +411,7 @@ una función anónima ``lambda``, como se muestra a continuación:
 Así, en una sola línea ha definido y ejecutado el filtro utilizando una función condicional 
 anónima y devolviendo una lista de números.
 
+
 Filtrando objetos
 ````````````````` 
 
@@ -476,7 +478,6 @@ la llamada de una función definida, como se muestra a continuación:
     >>> map(lambda x: x*2, numeros)
     [4, 10, 20, 46, 100, 66]
 
-
 La función ``map()`` se utiliza mucho junto a expresiones ``lambda`` ya que permite evitar 
 escribir :ref:`bucles for <python_bucle_for>`.
 
@@ -500,11 +501,12 @@ E incluso usted puede extender la funcionalidad a tres listas o más:
     >>> map(lambda x,y,z : x*y*z, a,b,c)
     [66, 168, 312, 504, 750]
 
+
 Mapeando objetos
 ````````````````
 
-Evidentemente, siempre que la función ``map()`` la utilice correctamente podrá mapear una serie 
-de objetos sin ningún problema:
+Evidentemente, siempre que la función ``map()`` la utilice correctamente podrá mapear 
+una serie de objetos sin ningún problema:
 
 ::
 
@@ -590,7 +592,7 @@ rendimiento. No es el caso en Python.
     ['os.pyc', 'os.py']
 
 En el ejemplo anterior se el método ``os.__file__`` para obtener la ruta donde esta instalada 
-el modulo ``os`` en su sistema, ejecutando la siguiente sentencia:
+el módulo ``os`` en su sistema, ejecutando la siguiente sentencia:
 
 ::
 
@@ -628,7 +630,8 @@ que inicien con la cadena de caracteres "**os.**" usando la función
     >>> print filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python2.7/'))
     ['os.pyc', 'os.py']
 
-Así de esta forma se comprueba que existe el archivo compilado de Python junto con el mismo modulo Python.
+Así de esta forma se comprueba que existe el archivo compilado de Python junto con el mismo 
+módulo Python.
 
 ::
 

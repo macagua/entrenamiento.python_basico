@@ -187,7 +187,7 @@ siguiente comando:
     Enter any module name to get more help.  Or, type "modules spam" to search
     for modules whose descriptions contain the word "spam".
 
-Entonces consulte la ayuda del modulo ``os``, ejecutando:
+Entonces consulte la ayuda del módulo ``os``, ejecutando:
 
 ::
 
@@ -225,7 +225,7 @@ Entonces consulte la ayuda del modulo ``os``, ejecutando:
         (e.g., split and join).
     :
 
-.. tip:: Presione la tecla ``q`` para salir de la ayuda dl modulo ``os``.
+.. tip:: Presione la tecla ``q`` para salir de la ayuda del módulo ``os``.
 
 Seguidamente presione la combinación de tecla **Crtl+d** para salir de la ayuda.
 
@@ -536,7 +536,7 @@ ejecutando el siguiente comando:
         (e.g., split and join).
     :
 
-Entonces presione la tecla ``q`` para salir de la ayuda del modulo ``os``.
+Entonces presione la tecla ``q`` para salir de la ayuda del módulo ``os``.
 
 Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 

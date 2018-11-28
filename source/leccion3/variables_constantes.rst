@@ -166,7 +166,7 @@ Ejemplo de constantes
 
 A continuación, se presentan algunos ejemplos del uso de *constantes*:
 
-**Ejemplo de constantes desde un modulo externo**
+**Ejemplo de constantes desde un módulo externo**
 
 Crear un archivo ``constantes.py`` con el siguiente contenido:
 

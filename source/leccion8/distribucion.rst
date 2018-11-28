@@ -125,7 +125,7 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 
 
 - ``setup.py``: es el archivo donde se define el paquete, el formato es el mismo 
-  para el modulo ``setuptools`` y para el modulo :ref:`distutils <python_modulo_distutils>` 
+  para el módulo ``setuptools`` y para el módulo :ref:`distutils <python_modulo_distutils>` 
   así que no hay que preocuparse por nada más. Lo puede ver a continuación. Este archivo incluye la 
   configuración del paquete como se indica a continuación:
 

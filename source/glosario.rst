@@ -95,7 +95,7 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         Una clase `Paste`_ la cual provee funcionalidad adicional a una estructura 
         de esqueleto de proyecto que ha sido generada.
     
-    modulo
+    módulo
         Del Ingles ``module``, es un archivo fuente Python; un archivo en el sistema
         de archivo que típicamente finaliza con la extensión ``.py`` o ``.pyc``. Los modules
         son parte de un :term:`paquete`.
@@ -205,8 +205,8 @@ A continuación una serie de términos usados en las tecnologías Python / Zope 
         archivos o en un archivo tar.
 
     setup.py
-        El archivo :file:`setup.py` es un modulo de Python, que por lo general indica que
-        el módulo / paquete que está a punto de instalar ha sido empacado ​​y distribuidos
+        El archivo :file:`setup.py` es un módulo de Python, que por lo general indica que
+        el módulo / paquete que está a punto de instalar ha sido empacado y distribuidos
         con ``Distutils``, que es el estándar para la distribución de módulos de Python.
         
         Con esto le permite instalar fácilmente paquetes de Python, a menudo es suficiente

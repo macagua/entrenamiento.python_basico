@@ -81,7 +81,7 @@ sentencias:
 
 
 De esta forma se comprueba que existe el archivo compilado de Python junto con 
-el mismo modulo Python.
+el mismo módulo Python.
 
 
 .. _python_localizar_modulos:
@@ -101,7 +101,7 @@ la secuencia siguiente:
 #. Si todas las anteriores fallan, Python busca la ruta predeterminada. En UNIX, 
    la ruta predeterminada normalmente esta ``/usr/local/lib/python/``.
 
-El ruta de búsqueda de módulo es almacenado en el modulo de system ``sys`` como 
+El ruta de búsqueda de módulo es almacenado en el módulo de system ``sys`` como 
 la variable ``sys.path``. La variable ``sys.path`` contiene el directorio actual, 
 ``PYTHONPATH``, y las predeterminadas dependencia de instalación.
 

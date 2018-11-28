@@ -368,7 +368,7 @@ distintas condiciones de error:
 ::
 
    class Error(Exception):
-       """Clase base para excepciones en el modulo."""
+       """Clase base para excepciones en el módulo."""
        pass
 
    class EntradaError(Error):
