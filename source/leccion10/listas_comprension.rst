@@ -6,19 +6,157 @@
 Listas de comprensión
 ---------------------
 
-.. todo::
-    TODO escribir esta sección.
+La comprensión de listas, del inglés *list comprehensions*, es una funcionalidad 
+que le permite crear listas avanzadas en una misma línea de código. 
 
-Introducción a Listas de comprensión
-....................................
-
-.. todo::
-    TODO escribir esta sección.
+Si requiere crear una lista de 4 elementos y cada elemento calcularle la potencia 
+de 2, usando el método tradicional, eso seria así:
 
 ::
 
-	>>> [i**2 for i in range(4)]
-	[0, 1, 4, 9]
+    >>> lista = []
+    >>> for i in range(4):
+    ...     lista.append(i**2)
+    ... 
+    >>> print lista
+    [0, 1, 4, 9]
+
+Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
+
+::
+
+    >>> [i**2 for i in range(4)]
+    [0, 1, 4, 9]
+    >>> 
+
+A continuación se crear una lista con las letras de una palabra, usando el método 
+tradicional, eso seria así:
+
+::
+
+    >>> lista = []
+    >>> for letra in 'casa':
+    ...     lista.append(letra)
+    ... 
+    >>> print lista
+    ['c', 'a', 's', 'a']
+
+
+Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
+
+::
+
+    >>> lista = [letra for letra in 'casa']
+    >>> print lista
+    ['c', 'a', 's', 'a']
+
+Como puede detallar en el ejemplo anterior, gracias a la comprensión de listas usted 
+puede indicar directamente cada elemento que va a formar la lista, en este caso cada 
+letra, a la vez que definimos el :ref:`bucle for <python_bucle_for>`, entonces la lista 
+está formada por cada letra que recorremos en el bucle ``for``.
+
+
+A continuación se crear una lista con las potencias de 2 de los primeros 10 números, 
+usando el método tradicional, eso seria así:
+
+::
+
+    >>> lista = []
+    >>> for numero in range(0,11):
+    ...     lista.append(numero**2)
+    ... 
+    >>> print lista
+    [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
+
+::
+
+    >>> lista = [numero**2 for numero in  range(0,11)]
+    >>> print lista
+    [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+De este código anterior usted puede aprender que es posible modificar al vuelo los elementos 
+los cuales van a formar la lista.
+
+
+A continuación se crear una lista con los todos los múltiples de 2 entre 0 y 10, 
+usando el método tradicional, eso seria así:
+
+::
+
+    >>> lista = []
+    >>> for numero in range(0,11):
+    ...     lista.append(numero**2)
+    ... 
+    >>> print lista
+    [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+
+También, si añade al código anterior, los números del 0 al 10 cuando su módulo de 2 sea 0 
+usando el método tradicional, eso seria así:
+
+::
+
+    >>> lista = []
+    >>> for numero in range(0,11):
+    ...     if numero % 2 == 0:
+    ...         lista.append(numero)
+    ... 
+    >>> print lista
+    [0, 2, 4, 6, 8, 10]
+
+Entonces el ejemplo anterior donde crear una lista con los todos los múltiples de 2 entre 
+0 y 10, usando listas de comprensión, eso seria así:
+
+::
+
+    >>> lista = [numero for numero in range(0,11) if numero % 2 == 0 ]
+    >>> print lista
+    [0, 2, 4, 6, 8, 10]
+
+Para el ejemplo anterior donde crear una lista con los todos los múltiples de 2 entre 
+0 y 10 cuando su módulo de 2 sea 0, usando listas de comprensión, eso seria así:
+
+::
+
+    >>> [numero for numero in range(0,11) if numero % 2 == 0 ] 
+    [0, 2, 4, 6, 8, 10]
+
+En este caso puede observar que incluso puede marcar una condición justo al final para añadir 
+o no el elemento en la lista.
+
+
+A continuación se crear una lista de pares a partir de otra lista creada con las potencias 
+de 2 de los primeros 10 números, usando el método tradicional, eso seria así:
+
+::
+
+    >>> lista = []
+    >>> for numero in range(0,11):
+    ...     lista.append(numero**2)
+    ... 
+    >>> pares = []
+    >>> for numero in lista:
+    ...     if numero % 2 == 0:
+    ...         pares.append(numero)
+    ... 
+    >>> print pares
+    [0, 4, 16, 36, 64, 100]
+
+Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
+
+::
+
+    >>> lista = [numero for numero in 
+    ...             [numero**2 for numero in range(0,11)] 
+    ...                 if numero % 2 == 0]
+    >>> print lista
+    [0, 4, 16, 36, 64, 100]
+
+Crear listas a partir de listas anidadas le permite llevar la comprensión de listas al siguiente 
+nivel y además no hay un límite.
+
 
 Usando Listas de comprensión con Archivos
 .........................................
