@@ -130,12 +130,12 @@ Zen de Python
 .............
 
 Es una colección de 20 principios de software que influyen en el diseño del Lenguaje 
-de Programación Python, de los cuales 19 fueron escritos por Tim Peters en junio de 
+de Programación Python, de los cuales 19 fueron escritos por *Tim Peters* en junio de 
 1999. El texto es distribuido como dominio público.
 
-El Zen de Python está escrito como la entrada informativa número 20 de las Propuestas 
-de Mejoras de Python (PEP, Python Enhancement Proposals), y se puede encontrar en el 
-sitio oficial de Python.​ 
+El *Zen de Python* está escrito como la entrada informativa número 20 de las propuestas 
+de mejoras de Python (*Python Enhancement Proposals - PEP*), y se puede encontrar en el 
+sitio oficial de Python.
 
 Los principios están listados a continuación:
 
@@ -165,7 +165,7 @@ Los principios están listados a continuación:
 
 - Debería haber una -y preferiblemente sólo una- manera obvia de hacerlo.
 
-- Aunque esa manera puede no ser obvia al principio a menos que usted sea holandés.[19]​
+- Aunque esa manera puede no ser obvia al principio a menos que usted sea holandés.
 
 - Ahora es mejor que nunca.
 
@@ -185,12 +185,12 @@ También se incluye como un *huevo de pascua*, el cual se puede encontrar, desde
     >>> import this
 
 
-.. _`características`: https://es.wikipedia.org/wiki/Python#Caracter.C3.ADsticas_y_paradigmas
-.. _`multiparadigma`: https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_multiparadigma
+.. _`características`: https://es.wikipedia.org/wiki/Python#Características_y_paradigmas
+.. _`multiparadigma`: https://es.wikipedia.org/wiki/Lenguaje_de_programación_multiparadigma
 .. _`programación estructurada`: https://es.wikipedia.org/wiki/Programación_estructurada
-.. _`programación imperativa`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_imperativa
-.. _`programación funcional`: https://es.wikipedia.org/wiki/Programaci%C3%B3n_funcional
+.. _`programación imperativa`: https://es.wikipedia.org/wiki/Programación_imperativa
+.. _`programación funcional`: https://es.wikipedia.org/wiki/Programación_funcional
 .. _`lenguaje interpretado`: https://es.wikipedia.org/wiki/Lenguaje_interpretado
-.. _`tipado dinámico`: https://es.wikipedia.org/wiki/Tipado_din%C3%A1mico
-.. _`fuertemente tipado`: https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_fuertemente_tipado
+.. _`tipado dinámico`: https://es.wikipedia.org/wiki/Tipado_dinámico
+.. _`fuertemente tipado`: https://es.wikipedia.org/wiki/Lenguaje_de_programación_fuertemente_tipado
 .. _`multiplataforma`: https://es.wikipedia.org/wiki/Multiplataforma
