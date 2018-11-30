@@ -98,6 +98,187 @@ triples comillas (simples o dobles) que Python ignora totalmente.
     >>> 
 
 
+.. _python_cadenas_docstrings:
+
+Docstrings
+..........
+
+En Python todos los objetos cuentan con una variable especial llamada ``doc``, 
+gracias a la cual puede describir para qué sirven los objetos y cómo se usan. 
+Estas variables reciben el nombre de ``docstrings``, o 
+`cadenas de documentación <http://docs.python.org.ar/tutorial/2/controlflow.html#tut-docstrings>`_.
+
+Ten en cuenta, una buena documentación siempre dará respuesta a las dos preguntas:
+
+- ¿Para qué sirve?
+
+- ¿Cómo se utiliza?
+
+
+.. _python_cadenas_docstrings_def:
+
+Funciones
+~~~~~~~~~
+
+Python implementa un sistema muy sencillo para establecer el valor de las 
+``docstrings`` en las funciones, únicamente tiene que crear un comentario en 
+la primera línea después de la declaración.
+
+::
+
+    >>> def hola(arg):
+    ...     """Este es el docstring de la función"""
+    ...     print "Hola", arg, "!"
+    ... 
+    >>> hola("Python")
+    Hola Python !
+
+Puede puede consultar la documentación de la función ``hola()`` debe utilizar 
+la función reservada ``help()`` y pasarle el argumento del objeto de función 
+``hola``:
+
+::
+
+    >>> help(hola)
+
+    Help on function hola in module __main__:
+
+    hola(arg)
+        Este es el docstring de la función
+
+    >>>
+    >>> print hola.__doc__
+    Este es el docstring de la función
+
+
+Clases y métodos
+~~~~~~~~~~~~~~~~
+
+De la misma forma puede establecer la documentación de la clase después de la 
+definición, y de los métodos, como si fueran funciones:
+
+::
+
+    >>> class Clase:
+    ...     
+    ...     """Este es el docstring de la clase"""
+    ...     def __init__(self):
+    ...         """Este es el docstring del método constructor de clase"""
+    ...     
+    ...     def metodo(self):
+    ...         """Este es el docstring del método de clase"""
+    ... 
+    >>> o = Clase()
+    >>> help(o)
+
+    Help on instance of Clase in module __main__:
+
+    class Clase
+     |  Este es el docstring de la clase
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(self)
+     |      Este es el docstring del inicializador de clase
+     |  
+     |  metodo(self)
+     |      Este es el docstring del metodo de clase
+
+    >>> o.__doc__
+    'Este es el docstring de la clase'
+    >>> o.__init__.__doc__
+    'Este es el docstring del inicializador de clase'
+    >>> o.metodo.__doc__
+    'Este es el docstring del metodo de clase'
+
+
+Scripts y módulos
+~~~~~~~~~~~~~~~~~
+
+Cuando tiene un script o módulo, la primera línea del mismo hará referencia al 
+docstring del módulo, en él debe explicar el funcionamiento del mismo:
+
+En el archivo ``mi_modulo.py`` debe contener el siguiente código:
+
+::
+
+    """Este es el docstring del módulo"""
+
+    def despedir():
+        """Este es el docstring de la función despedir"""
+        print "Adiós! Me despido desde la función despedir() del módulo prueba"
+
+    def saludar():
+        """Este es el docstring de la función saludar"""
+        print "Hola! Te saludo desde la función saludar() del módulo prueba"
+
+
+Entonces, usted debe importar el módulo anterior, para consultar la documentación 
+del módulo ``mi_modulo`` debe utilizar la función reservada ``help()`` y pasarle 
+el argumento el nombre de módulo ``mi_modulo``, de la siguiente manera:
+
+::
+
+    >>> import mi_modulo
+    >>> help(mi_modulo)
+
+    Help on module mi_modulo:
+
+    NAME
+        mi_modulo - Este es el docstring del módulo
+    FUNCTIONS
+        despedir()
+            Este es el docstring de la función despedir
+        saludar()
+            Este es el docstring de la función saludar
+
+También puede consultar la documentación de la función ``despedir()`` dentro del 
+módulo ``mi_modulo``, usando la función reservada ``help()`` y pasarle el argumento 
+el formato *nombre_modulo.nombre_funcion*, es decir, ``mi_modulo.despedir``, de la 
+siguiente manera:
+
+::
+
+    >>> help(mi_modulo.despedir)
+
+    Help on function despedir in module mi_modulo:
+
+    despedir()
+        Este es el docstring de la función despedir
+
+Opcionalmente , usted puede listar las variables y funciones del módulo con la función 
+``dir()``, de la siguiente manera:
+
+::
+
+    >>> dir(mi_modulo)
+    ['__builtins__',
+     '__cached__',
+     '__doc__',
+     '__file__',
+     '__loader__',
+     '__name__',
+     '__package__',
+     '__spec__',
+     'despedir',
+     'saludar']
+
+Como puede apreciar, muchas de estas variables son especiales, puede comprobar sus 
+valores:
+
+::
+
+    >>> print mi_modulo.__name__     # Nombre del módulo
+    'mi_modulo'
+    >>> print mi_modulo.__doc__      # Docstring del módulo
+    'Este es el docstring del módulo'
+    >>> print mi_modulo.__package__  # Nombre del paquete del módulo
+
+
+.. todo::
+    TODO terminar de escribir la sección docstrings.
+
+
 .. _python_cadenas_formateo:
 
 Formateo de cadenas
@@ -397,6 +578,58 @@ A continuación, se presentan algunos ejemplos de su uso:
     :lines: 53
 
 
+**Ejemplo de consulta de ayuda a la función len**
+
+::
+
+    >>> help(len)
+
+    Help on built-in function len in module __builtin__:
+
+    len(...)
+        len(object) -> integer
+        
+        Return the number of items of a sequence or collection.
+
+
+**Ejemplo de consulta de ayuda a la clase int**
+
+::
+
+    >>> help(int)
+
+    Help on class int in module __builtin__:
+
+    class int(object)
+     |  int(x=0) -> int or long
+     |  int(x, base=10) -> int or long
+     |  
+     |  Convert a number or string to an integer, or return 0 if no arguments
+     |  are given.  If x is floating point, the conversion truncates towards zero.
+     |  If x is outside the integer range, the function returns a long instead.
+
+
+**Ejemplo de consulta de ayuda del módulo**
+
+::
+
+    >>> import datetime
+    >>> help(datetime)
+
+    Help on built-in module datetime:
+
+    NAME
+        datetime - Fast implementation of the datetime type.
+
+    FILE
+        (built-in)
+
+    CLASSES
+        __builtin__.object
+            date
+                datetime
+
+
 ----
 
 
@@ -440,7 +673,7 @@ Ayuda integrada
 
 Usted puede consultar toda la documentación disponible sobre las **cadenas 
 de caracteres** desde la :ref:`consola interactiva <python_interactivo>` de la 
-siguiente forma:
+siguiente manera:
 
 ::
 
@@ -450,7 +683,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
 Usted puede consultar toda la documentación disponible sobre las **cadenas 
 de caracteres unicode** desde la :ref:`consola interactiva <python_interactivo>` de la 
-siguiente forma:
+siguiente manera:
 
 ::
 
