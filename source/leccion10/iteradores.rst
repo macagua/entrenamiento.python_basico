@@ -48,7 +48,7 @@ secuencia y, cuando no queda nada para ser devuelto, lanza la excepción
 Usando 'iter' y 'next'
 ......................
 
-Cuando se usa en un bucle, finalmente se llama a :ref:`StopIteration <python_exception_stopiteration>` y se provoca la finalización del bucle. Pero si se invoca de forma explícita puede ver que, una vez que el iterador está ‘agotado’, al invocarlo nuevamente verá que se lanza la excepción comentada anteriormente.
+Cuando se usa en un bucle, finalmente se llama a :ref:`StopIteration <python_exception_stopiteration>` y se provoca la finalización del bucle. Pero si se llama de forma explícita puede ver que, una vez que el iterador está ‘agotado’, al llamarlo nuevamente verá que se lanza la excepción comentada anteriormente.
 
 ::
   

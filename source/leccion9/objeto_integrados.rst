@@ -74,7 +74,7 @@ tomados por el manejo del archivo. Eso se hace con la sentencia ``f.close()``:
 	>>> f.close() # cierra el archivo datos.txt
 
 
-Luego de lo cual no se puede acceder al archivo ``datos.txt``, si intenta una invocación a 
+Luego de lo cual no se puede acceder al archivo ``datos.txt``, si intenta una llamada a 
 la función :ref:`f.read() <python_funcion_read>` devuelve una excepción 
 :ref:`ValueError <python_exception_valueerror>`, porque el archivo está cerrado:
 
@@ -174,7 +174,7 @@ La función ``readline()`` permite leer una sola línea del archivo,
 devuelve al final de la línea el carácter de nueva línea y solo 
 se omite en la última línea del archivo (si no termina con el carácter 
 de nueva línea). Esto hace que el valor de retorno no sea ambiguo. 
-Si retorna una cadena de caracteres vacía se alcanzó el fin del archivo, 
+Si devuelve una cadena de caracteres vacía se alcanzó el fin del archivo, 
 mientras que una línea en blanco se representa con un carácter de nueva línea.
 
 ::

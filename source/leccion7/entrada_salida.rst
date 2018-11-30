@@ -118,7 +118,7 @@ comas, para este se usa la sentencia :ref:`print <python_sentencia_print>`.
 Sentencia print
 ~~~~~~~~~~~~~~~
 
-Sentencia ``print`` evalúa cada expresión y retorna y escribe el objeto resultado 
+Sentencia ``print`` evalúa cada expresión, devuelve y escribe el objeto resultado 
 a la salida estándar de la consola de comando. Si un objeto no es un tipo string,
 ese es primeramente convertido a un tipo string usando las reglas para conversiones 
 de tipo string. El string (resultado o original) es entonces escrito.

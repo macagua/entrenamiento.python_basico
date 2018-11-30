@@ -30,7 +30,7 @@ La encapsulación se considera una de las características definitorias de la
 :ref:`POO <python_poo>`.
 
 Cuando una clase existe (se define), se crean objetos a partir de ella, y se 
-usan dichos objetos invocando los métodos necesarios. Es decir, crea objetos 
+usan dichos objetos llamando los métodos necesarios. Es decir, crea objetos 
 para usar los servicios que nos proporciona la clase a través de sus métodos.
 
 No necesita saber cómo trabaja el objeto, ni saber las variables que usa, ni 
@@ -44,7 +44,7 @@ Así, un objeto encapsula datos y métodos, que están dentro del objeto.
 
 **Interfaz pública de una clase:** Es el conjunto de métodos (métodos de servicio) 
 que sirve para que los objetos de una clase proporcionen sus servicios. Estos 
-servicios son los que pueden ser invocados por un cliente.
+servicios son los que pueden ser llamados por un cliente.
 
 **Métodos de soporte:** Son métodos adicionales en un objeto que no definen un servicio 
 utilizable por un cliente, pero que ayudan a otros métodos en sus tareas.

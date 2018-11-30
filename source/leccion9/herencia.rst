@@ -55,7 +55,7 @@ La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
 El método constructor ``__init__`` es un método especial el cual debe escribir 
 como: ``MiClase(parámetros iniciales si hay cualquiera)``.
 
-Usted puede invocar esos métodos y atributos con la siguiente notación: 
+Usted puede llamar esos métodos y atributos con la siguiente notación: 
 ``claseinstancia.metodo`` o ``claseinstancia.atributo``. 
 
 ::
@@ -116,7 +116,7 @@ se puede imprimir sus detalles de la siguiente forma:
     :lines: 47
 
 Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de la 
-clase ``Persona`` usted puede reusarlo e invocarlo de la siguiente forma:
+clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python

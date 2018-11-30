@@ -282,7 +282,7 @@ La ejecución de un método puede conducir a cambiar el estado del objeto.
 
 Se definen de la misma forma que las funciones normales pero deben 
 declararse dentro de la clase y su primer argumento siempre referencia a 
-la instancia que lo invoca, de esta forma se afirma que los métodos son 
+la instancia que la llama, de esta forma se afirma que los métodos son 
 :ref:`funciones <python_funciones>`, adjuntadas a :ref:`objectos <python_objetos>`.
 
 .. note:: 
@@ -325,7 +325,7 @@ siguiente:
     >>> Persona().hablar.__doc__
     ' Mostrar mensaje de saludo de Persona '
 
-Si crea una instancia de objeto para la clase ``Persona`` e intenta invocar 
+Si crea una instancia de objeto para la clase ``Persona`` e intenta llamar 
 al método ``hablar()`` esto lanzara una excepción 
 :ref:`TypeError <python_exception_typeerror>`, como sucede a continuación:
 
@@ -464,7 +464,7 @@ Implementaciones
 ~~~~~~~~~~~~~~~~
 
 Una implementación corresponde al mecanismo interno que se desencadena en 
-un método cuando éste es invocado. Las implementaciones procesan las entradas 
+un método cuando éste es llamado. Las implementaciones procesan las entradas 
 proveniente de las interfaces y actúan en consecuencia ya sea:
 
 - Modificando el estado del objeto.
