@@ -242,8 +242,7 @@ son atributos especiales.
     'Persona'
 
 - __doc__, contiene la documentación de un módulo, una clase, o método 
-  especifico, escrita en el formato 
-  `docstrings <http://docs.python.org.ar/tutorial/2/controlflow.html#tut-docstrings>`_.
+  especifico, escrita en el formato :ref:`docstrings <python_cadenas_docstrings>`.
 
 ::
 
