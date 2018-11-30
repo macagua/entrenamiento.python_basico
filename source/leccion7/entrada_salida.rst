@@ -64,11 +64,12 @@ de parámetros personalizables.
 Scripts con argumentos
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Para poder enviar información a un script y manejarla, tenemos que utilizar la librería 
-de sistema ``sys``. En ella encontraremos la lista ``argv`` que almacena los argumentos 
-enviados al *script*. 
+Para poder enviar información a un script y manejarla, tenemos que utilizar la 
+librería de sistema ``sys``. En ella encontraremos la lista ``argv`` que almacena 
+los argumentos enviados al *script*. 
 
-Cree el siguiente *script* llamado ``entrada_argumentos.py`` con el siguiente contenido
+Usted debe crear un *script* llamado ``entrada_argumentos.py`` con el siguiente 
+contenido:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_argumentos.py
     :linenos:
@@ -83,24 +84,21 @@ Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
     ['entrada_argumentos.py']
 
 
-Al ejecutarlo puede ver que devuelve una lista con una cadena que contiene el nombre del 
-*script*. Entonces, el primer argumento de la lista ``sys.argv`` (es decir, ``sys.argv[0]``) 
-es el propio nombre del *script*.
+Al ejecutarlo puede ver que devuelve una lista con una cadena que contiene el nombre 
+del *script*. Entonces, el primer argumento de la lista ``sys.argv`` (es decir, 
+``sys.argv[0]``) es el propio nombre del *script*.
 
-Ahora si intenta ejecutar el *script* de nuevo pasando algunos valores como números y cadenas 
-de caracteres entre comillas dobles, todo separado por espacios:
+Ahora si intenta ejecutar el *script* de nuevo pasando algunos valores como números 
+y cadenas de caracteres entre comillas dobles, todo separado por espacios:
 
 ::
 
     python entrada_argumentos.py 300 43.234 "Hola Python"
     ['entrada_argumentos.py', '300', '43.234', 'Hola Python']
 
-Cada valor que enviamos al *script* durante la llamada se llama argumento e implica una forma 
-de entrada de datos alternativa sin usar las funciones :ref:`input() <python_funcion_input>` 
-y :ref:`raw_input() <python_funcion_raw_input>`.
-
-
-
+Cada valor que enviamos al *script* durante la llamada se llama argumento e implica 
+una forma de entrada de datos alternativa sin usar las funciones 
+:ref:`input() <python_funcion_input>` y :ref:`raw_input() <python_funcion_raw_input>`.
 
 
 .. _python_salida:
@@ -119,11 +117,14 @@ Sentencia print
 ~~~~~~~~~~~~~~~
 
 Sentencia ``print`` evalúa cada expresión, devuelve y escribe el objeto resultado 
-a la salida estándar de la consola de comando. Si un objeto no es un tipo string,
-ese es primeramente convertido a un tipo string usando las reglas para conversiones 
-de tipo string. El string (resultado o original) es entonces escrito.
+a la salida estándar de la consola de comando. Si un objeto no es un 
+:ref:`tipo cadena de caracteres <python_cadenas>`, ese es primeramente convertido 
+a un *tipo cadena de caracteres* usando las reglas para las 
+:ref:`conversiones del tipo <python_funcion_str>`. La *cadena de caracteres* 
+(resultado o original) es entonces escrito.
 
-Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``print``.
+Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia 
+``print``.
 
 **Ejemplo del uso de print**:
 
@@ -184,10 +185,10 @@ con el usuario y en base a condicionales muestra un mensaje.
 Ejemplo de E/S con script
 .........................
 
-Este ejemplo de entrada usando un script con la librería ``sys``. El siguiente script 
-recibe dos argumentos: una cadena de caracteres y un número entero. Lo que hace es 
-imprimir la cadena de caracteres tantas veces como le indique con el argumento de tipo 
-número:
+Este ejemplo de entrada usando un script con la librería ``sys``. El siguiente 
+script recibe dos argumentos: una cadena de caracteres y un número entero. Lo que 
+hace es imprimir la cadena de caracteres tantas veces como le indique con el 
+argumento de tipo número:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_dos_argumentos.py
     :language: python

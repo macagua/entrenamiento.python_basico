@@ -519,14 +519,12 @@ entre comillas simples o dobles, como el siguiente ejemplo:
 raw_input()
 ~~~~~~~~~~~
 
-Lee una cadena de caracteres desde la entrada estándar. The trailing newline 
-is stripped. Si el usuario indica un EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), 
+Lee una cadena de caracteres desde la entrada estándar. La nueva línea final 
+es despojada. Si el usuario indica un EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), 
 lanza una excepción :ref:`EOFError <python_exception_eoferror>`. En sistemas 
 Unix, la librería GNU readline es usada si es habilitada.  El prompt de la 
-cadena de caracteres, si es dado, es impreso sin un a trailing newline before 
-reading.
-
-.. todo:: TODO traducir oraciones del párrafo anterior.
+cadena de caracteres, si es dado, es impreso sin una nueva línea final antes 
+de leer.
 
 ::
 
@@ -884,19 +882,15 @@ En el ejemplo anterior cuando se formatea el :ref:`número float <python_coma_fl
 describe cada opción a continuación:
 
 - ``^`` Es la opción de alineación centrar, el cual alinea la cadena de 
-  caracteres de salida al centro del espacio remanente. the remaining space.
-- ``-`` Es la opción de signo, el cual obliga solamente a números negativos a mostrar 
-  the sign. It is the sign option that forces only negative numbers to show the sign
+  caracteres de salida al centro del espacio restante. 
+- ``-`` Es la opción de signo el cual obliga solo a los números negativos a mostrar el signo.
 - ``0`` Ese es el carácter, el cual es colocado en lugar de los espacios vacíos.
-- ``9`` Es la opción de ancho, el cual define el mínimo ancho del número a 9 (incluyendo 
-  el punto decimal, comas de miles y sign). It is the width option that sets the minimum 
-  width of the number to 9 (including decimal point, thousands comma and sign)
+- ``9`` Es la opción de ancho, el cual establece el ancho mínimo del número en 9 
+  (incluido el punto decimal, la coma y el signo de miles).
 - ``.3`` Ese es el operador de precisión que define la precisión del número 
   flotante dado a 3 lugares.
 - ``f`` Es la opción tipo que especifica que el número es un 
   :ref:`número float <python_coma_flotante>`.
-
-.. todo:: TODO traducir oraciones del párrafo anterior.
 
 A continuación, un ejemplo de usar la función ``format()`` sobre escribiendo el método 
 especial ``__format__()`` de una :ref:`clase <python_metodos_especiales>`, seria de la 

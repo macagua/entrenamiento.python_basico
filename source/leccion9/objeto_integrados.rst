@@ -18,7 +18,8 @@ El objeto elipsis
 especial. Existe exactamente un objeto ``elipsis``, llamado ``Ellipsis`` (un nombre 
 interno).
 
-.. note:: El tipo se muestra de este modo: ``<type 'ellipsis'>``.
+.. note::
+    El tipo se muestra de este modo: ``<type 'ellipsis'>``.
 
 
 ----
@@ -33,7 +34,8 @@ El objeto nulo
 No tiene ninguna operación especial. Existe exactamente un objeto nulo, llamado 
 ``None`` (un nombre interno).
 
-.. note:: El tipo se muestra de este modo: ``<type 'NoneType'>``.
+.. note::
+    El tipo se muestra de este modo: ``<type 'NoneType'>``.
 
 ----
 
@@ -336,13 +338,14 @@ softspace
 
 El atributo ``softspace`` del objeto *fichero* de tipo :ref:`Booleano <python_booleanos>` 
 indica si se debe escribir un espacio antes de escribir otro valor al usar la sentencia 
-:ref:`print <python_salida>`. Las clases que intenten simular un objeto fichero deberían 
-tener un atributo escribible ``softspace``, que debería inicializarse a cero. Esto será 
-automático en la mayoría de las clases implementadas en Python (se debe tener cuidado en 
-las clases que redefinan el acceso a los atributos). Los tipos implementados en C tendrán 
-que proporcionar un atributo ``softspace`` escribible. Nota: Este atributo no se usa para 
-controlar la sentencia ``print``, sino para permitir que la implementación de ``print`` 
-lleve la cuenta de su estado interno.
+:ref:`print <python_sentencia_print>`. Las clases que intenten simular un objeto fichero 
+deberían tener un atributo escribible ``softspace``, que debería inicializarse a cero. 
+
+Esto será automático en la mayoría de las clases implementadas en Python (se debe tener 
+cuidado en las clases que redefinan el acceso a los atributos). Los tipos implementados 
+en C tendrán que proporcionar un atributo ``softspace`` escribible. Nota: Este atributo 
+no se usa para controlar la sentencia ``print``, sino para permitir que la implementación 
+de ``print`` lleve la cuenta de su estado interno.
 
 ----
 
@@ -351,15 +354,17 @@ lleve la cuenta de su estado interno.
 El objeto object
 ................
 
-El objeto de la clase ``object`` es el tipo más básico de objeto, es integrado en el módulo 
-``__builtin__``. Este objeto se usa como :ref:`herencia <python_poo_herencia>` cuando se crea 
-una nueva clase en Python.
+El objeto de la clase ``object`` es el tipo más básico de objeto, es integrado en 
+el módulo ``__builtin__``. Este objeto se usa como :ref:`herencia <python_poo_herencia>` 
+cuando se crea una nueva clase en Python.
 
-Todo, incluyendo las clases y tipos de Python son instancias de object. Para corroborar si 
-un objeto es instancia de una clase se utiliza la función :ref:`isinstance() <python_funcion_isinstance>`.
+Todo, incluyendo las clases y tipos de Python son instancias de object. Para corroborar 
+si un objeto es instancia de una clase se utiliza la función 
+:ref:`isinstance() <python_funcion_isinstance>`.
 
 
-.. note:: Los tipos se muestran de este modo: ``<type 'object'>``.
+.. note::
+    Los tipos se muestran de este modo: ``<type 'object'>``.
 
 ----
 
@@ -369,11 +374,12 @@ El objeto tipo
 ..............
 
 Los objetos tipo representan los diversos tipos de objeto. El tipo de un objeto es 
-accesible mediante la función interna ``type()``. No hay operaciones especiales sobre 
-los tipos. El módulo estándar ``types`` define nombres para todos los tipos internos 
-estándar.
+accesible mediante la función interna ``type()``. No hay operaciones especiales 
+sobre los tipos. El módulo estándar ``types`` define nombres para todos los tipos 
+internos estándar.
 
-.. note:: Los tipos se muestran de este modo: ``<type 'type'>``.
+.. note::
+    Los tipos se muestran de este modo: ``<type 'type'>``.
 
 
 ----

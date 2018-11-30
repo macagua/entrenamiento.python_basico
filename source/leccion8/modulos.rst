@@ -15,8 +15,9 @@ Simplemente, un módulo es no es otra cosa sino un archivo con extensión **.py*
 Un módulo puede definir funciones, clases y variables, también puede incluir 
 código ejecutable.
 
-El código Python para un módulo nombrado ``funciones`` normalmente reside un archivo 
-llamado ``utilidades.py``. A continuación un ejemplo de un simple módulo, ``utilidades.py``.
+El código Python para un módulo nombrado ``funciones`` normalmente reside un 
+archivo llamado ``utilidades.py``. A continuación un ejemplo de un simple módulo 
+llamado ``utilidades.py``:
 
 .. literalinclude:: ../../recursos/leccion8/modulos/utilidades.py
     :language: python
@@ -59,12 +60,12 @@ Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
     Ingrese un monto: 56987
     Monto total a facturar: 57007 BsS.
 
-Un módulo se carga solo una vez, independientemente de la cantidad de veces que se 
-importe. Esto evita que la ejecución del módulo ocurra una y otra vez si se producen 
-múltiples importaciones.
+Un módulo se carga solo una vez, independientemente de la cantidad de veces que 
+se importe. Esto evita que la ejecución del módulo ocurra una y otra vez si se 
+producen múltiples importaciones.
 
-La primera vez que un módulo es importado en un script de Python, se ejecuta 
-su código una vez. Si otro módulo importa el mismo módulo este no se cargará 
+La primera vez que un módulo es importado en un script de Python, se ejecuta su 
+código una vez. Si otro módulo importa el mismo módulo este no se cargará 
 nuevamente; los módulos son inicializados una sola vez.
 
 Esto se debe al código objeto compilado que genera en el mismo directorio del 
@@ -111,8 +112,9 @@ la variable ``sys.path``. La variable ``sys.path`` contiene el directorio actual
 PYTHONPATH
 ..........
 
-Es una variable de entorno del sistema operativo, consistiendo de una lista de directorios. 
-La sintaxis de ``PYTHONPATH`` es la misma como la del shell de la variable ``PATH``.
+Es una variable de entorno del sistema operativo, consistiendo de una lista de 
+directorios. La sintaxis de ``PYTHONPATH`` es la misma como la del shell de la 
+variable ``PATH``.
 
 Así es una típica definición de ``PYTHONPATH`` desde un sistema Windows, ejecutando:
 
@@ -149,15 +151,21 @@ que cualquier variable asignada a un valor en una función es local.
 Por lo tanto, para asignar un valor a una variable global dentro de una función, primero 
 debe usar la sentencia ``global``.
 
-La sentencia ``global VarName`` le dice a Python que ``VarName`` es una variable global. 
-Python deja de buscar el espacio de nombres local para la variable.
+La sentencia ``global nombre`` le dice al interprete Python que ``nombre`` es una 
+variable global. Python deja de buscar el espacio de nombres local para la variable.
 
-Por ejemplo, defina una variable ``Money`` en el espacio de nombres global. Dentro de 
-la función ``Money``, asigna un valor a ``Money``, por lo tanto, Python asume que ``Money`` 
-es una variable local. Sin embargo, accede al valor de la variable local ``Money`` antes de 
-configurarlo, por lo que el resultado es una excepción 
-:ref:`UnboundLocalError <python_exception_unboundlocalerror>`. Si descomenta la sentencia 
-``global``, se soluciona el problema.
+::
+
+    >>> global nombre
+    >>> nombre
+    'Leonardo'
+
+Por ejemplo, defina una variable ``Money`` en el espacio de nombres global. Dentro 
+de la función ``Money``, asigna un valor a ``Money``, por lo tanto, Python asume que 
+``Money`` es una variable local. Sin embargo, accede al valor de la variable local 
+``Money`` antes de configurarlo, por lo que el resultado es una excepción 
+:ref:`UnboundLocalError <python_exception_unboundlocalerror>`. Si descomenta la 
+sentencia ``global``, se soluciona el problema.
 
 
 ----
@@ -171,7 +179,9 @@ configurarlo, por lo que el resultado es una excepción
 
 .. tip::
     Para ejecutar el código :file:`utilidades.py` y :file:`calculo_factura_pipo.py`, 
-    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+    abra una consola de comando, acceda al directorio donde se encuentra ambos programas:
+
+    ::
 
         leccion8/
         ├── utilidades.py

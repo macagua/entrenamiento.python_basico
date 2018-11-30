@@ -112,7 +112,9 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 .. tip::
     Para ejecutar el código incluido en el archivo :file:`paquetes.zip` debe 
     descomprimirlo, abra una consola de comando, acceda al directorio donde 
-    se encuentra el archivo descomprimido, de la siguiente forma: :: 
+    se encuentra el archivo descomprimido, de la siguiente forma: 
+
+    ::
 
         calculo_factura_pipo.py
         tostadas_pipo/

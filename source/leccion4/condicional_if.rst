@@ -97,10 +97,11 @@ En el ejemplo anterior usa dos funciones integradas en el interprete Python:
   por la entrada estándar.
 
 El valor es ingresado en la variable ``numero`` comprobará en el sentencia condicional 
-``if``, si la comprobación devuelve ``False`` intentará con el siguiente bloque condicional 
-``elif``, si la comprobación devuelve ``False`` nuevamente intentará con el siguiente 
-bloque condicional ``elif`` si de nuevo la comprobación devuelve ``False`` por ultimo 
-intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin comprobación.
+``if``, si la comprobación devuelve ``False`` intentará con el siguiente bloque 
+condicional ``elif``, si la comprobación devuelve ``False`` nuevamente intentará con el 
+siguiente bloque condicional ``elif`` si de nuevo la comprobación devuelve ``False`` por 
+ultimo intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin 
+comprobación.
 
 - ``if CONDICION``, significa, **Si** se cumple la 
   :ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 

@@ -735,6 +735,3 @@ sumar dos números:
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion5>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
-
-
-.. _`Cadenas de texto de documentación`: http://docs.python.org.ar/tutorial/2/controlflow.html#tut-docstrings

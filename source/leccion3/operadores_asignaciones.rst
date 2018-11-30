@@ -206,7 +206,8 @@ la variable "``r``" sera igual a ``5``. Su equivalente seria el siguiente:
 Asignación aumentada
 ....................
 
-Es frecuente que una variable tenga que ser redefinida en función de sí misma. En vez de escribir:
+Es frecuente que una variable tenga que ser definida de nuevo en función de sí misma. 
+En vez de escribir:
 
 ::
 

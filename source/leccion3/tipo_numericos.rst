@@ -75,8 +75,8 @@ menos que el número sea tan grande como para requerir el uso del tipo
     <type 'int'>
     >>> 
 
-También puede indicar a Python que un número se almacene usando long
-añadiendo una L al final:
+También puede indicar a Python que un número se almacene usando ``long``
+añadiendo una *L* al final:
 
 ::
 
@@ -123,26 +123,30 @@ Coma flotante
 
 Los números reales son los que tienen decimales. En Python se expresan
 mediante el tipo ``float``. En otros lenguajes de programación, como C,
-tiene también el tipo ``double``, similar a ``float`` pero de mayor precisión
-(double = doble precisión). Python, sin embargo, implementa su tipo
-``float`` a bajo nivel mediante una variable de tipo ``double`` de C, es decir,
-utilizando 64 bits, luego en Python siempre se utiliza doble precisión,
-y en concreto se sigue el estándar IEEE 754: 1 bit para el signo, 11
-para el exponente, y 52 para la mantisa. Esto significa que los valores
-que puede representar van desde ±2,2250738585072020 x 10\ :sup:`-308`
-hasta ±1,7976931348623157×10\ :sup:`308`.
+tiene también el tipo ``double``, similar a ``float`` pero de mayor 
+precisión (double = doble precisión). 
+
+Python, sin embargo, implementa su tipo ``float`` a bajo nivel mediante 
+una variable de tipo ``double`` de C, es decir, utilizando 64 bits, 
+luego en Python siempre se utiliza doble precisión, y en concreto se 
+sigue el estándar IEEE 754: 1 bit para el signo, 11 para el exponente, 
+y 52 para la mantisa. Esto significa que los valores que puede representar 
+van desde ±2,2250738585072020 x 10\ :sup:`-308` hasta 
+±1,7976931348623157×10\ :sup:`308`.
 
 La mayor parte de los lenguajes de programación siguen el mismo esquema
 para la representación interna. Pero como muchos sabréis esta tiene sus
-limitaciones, impuestas por el hardware. Por eso desde Python 2.4
-cuenta también con un nuevo tipo 
-`*Decimal* <https://www.python.org/dev/peps/pep-0327/>`_, para el caso de
+limitaciones, impuestas por el hardware. 
+
+Por eso desde Python 2.4 cuenta también con un nuevo tipo 
+`Decimal <https://www.python.org/dev/peps/pep-0327/>`_, para el caso de
 que se necesite representar fracciones de forma más precisa. Sin embargo
 este tipo está fuera del alcance de este tutorial, y sólo es necesario
-para el ámbito de la programación científica y otros relacionados. Para
-aplicaciones normales puedes utilizar el tipo ``float`` sin miedo, como ha
-venido haciéndose desde hace años, aunque teniendo en cuenta que los
-números en coma flotante no son precisos (ni en este ni en otros
+para el ámbito de la programación científica y otros relacionados. 
+
+Para aplicaciones normales puedes utilizar el tipo ``float`` sin miedo, 
+como ha venido haciéndose desde hace años, aunque teniendo en cuenta que 
+los números en coma flotante no son precisos (ni en este ni en otros
 lenguajes de programación).
 
 Para representar un número real en Python se escribe primero la parte
@@ -189,17 +193,19 @@ Complejos
 
 Los números complejos son aquellos que tienen parte imaginaria. Si no
 conocías de su existencia, es más que probable que nunca lo vayas a
-necesitar, por lo que puedes saltarte este apartado tranquilamente. De
-hecho la mayor parte de lenguajes de programación carecen de este tipo,
+necesitar, por lo que puede saltarte este apartado tranquilamente. 
+
+De hecho la mayor parte de lenguajes de programación carecen de este tipo,
 aunque sea muy utilizado por ingenieros y científicos en general.
 
-En el caso de que necesitéis utilizar números complejos, o simplemente
-tengáis curiosidad, os diré que este tipo, llamado ``complex`` en Python,
-también se almacena usando coma flotante, debido a que estos números son
-una extensión de los números reales. En concreto se almacena en una
-estructura de C, compuesta por dos variables de tipo ``double``, sirviendo
-una de ellas para almacenar la parte real y la otra para la parte
-imaginaria.
+En el caso de que necesite utilizar números complejos, o simplemente
+tiene curiosidad, este tipo, llamado ``complex`` en Python, también se 
+almacena usando coma flotante, debido a que estos números son una extensión 
+de los números reales. 
+
+En concreto se almacena en una estructura de C, compuesta por dos variables 
+de tipo ``double``, sirviendo una de ellas para almacenar la parte real y 
+la otra para la parte imaginaria.
 
 Los números complejos en Python se representan de la siguiente forma:
 
@@ -226,9 +232,9 @@ A continuación, se presentan un ejemplo de su uso:
 Convertir a tipos numéricos
 ...........................
 
-Para convertir a tipos numéricos debes usar las :ref:`funciones integradas <python_funciones_integradas>` 
-al interprete disponible, a continuación se describen algunas de ellas para 
-tipos de datos numéricos:
+Para convertir a tipos numéricos debe usar las 
+:ref:`funciones integradas <python_funciones_integradas>` al interprete disponible, 
+a continuación se describen algunas de ellas para tipos de datos numéricos:
 
 
 .. _python_funcion_int:
@@ -238,9 +244,8 @@ int()
 
 La función ``int()`` devuelve un número entero. Es un constructor, que crea un 
 :ref:`entero <python_num_entero>` a partir de un 
-:ref:`entero float <python_coma_flotante>`, 
-:ref:`entero complex <python_num_complejo>` o una 
-:ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
+:ref:`entero float <python_coma_flotante>`, :ref:`entero complex <python_num_complejo>` 
+o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
 entero.
 
 
@@ -260,8 +265,8 @@ También puede convertir una cadena de caracteres a un número entero.
 
 
 La función ``int()`` sólo procesa correctamente cadenas que contengan exclusivamente 
-números. Si la cadena contiene cualquier otro carácter, la función devuelve una excepción 
-:ref:`ValueError <python_exception_valueerror>`.
+números. Si la cadena contiene cualquier otro carácter, la función devuelve una 
+excepción :ref:`ValueError <python_exception_valueerror>`.
 
 ::
 
@@ -282,10 +287,11 @@ números. Si la cadena contiene cualquier otro carácter, la función devuelve u
 long()
 ~~~~~~
 
-La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea un 
-:ref:`entero long <python_num_entero_long>` a partir de un 
+La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea 
+un :ref:`entero long <python_num_entero_long>` a partir de un 
 :ref:`entero <python_num_entero>`, :ref:`entero float <python_coma_flotante>` 
-o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número entero.
+o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
+entero.
 
 ::
 
@@ -305,8 +311,8 @@ También puede convertir una cadena de caracteres a un número entero.
 
 
 La función ``long()`` sólo procesa correctamente cadenas que contengan exclusivamente 
-números. Si la cadena contiene cualquier otro carácter, la función devuelve una excepción 
-:ref:`ValueError <python_exception_valueerror>`.
+números. Si la cadena contiene cualquier otro carácter, la función devuelve una 
+excepción :ref:`ValueError <python_exception_valueerror>`.
 
 ::
 

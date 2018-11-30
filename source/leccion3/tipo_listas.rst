@@ -52,8 +52,8 @@ cantidad de elementos).
     >>> len(factura)
     4
 
-Los índices de una lista inicia entonces de **0** hasta el tamaño de la lista menos uno 
-(``len(factura) - 1``):
+Los índices de una lista inicia entonces de **0** hasta el tamaño de la lista menos 
+uno (``len(factura) - 1``):
 
 ::
 
@@ -68,7 +68,8 @@ Pueden usarse también índices negativos, siendo **-1** el índice del último 
     1234
     >>> 
 
-Los índices negativos van entonces de **-1** (último elemento) a ``-len(factura)`` (primer elemento).
+Los índices negativos van entonces de **-1** (último elemento) a ``-len(factura)`` 
+(primer elemento).
 
 ::
 
@@ -84,8 +85,9 @@ A través de los índices, pueden cambiarse los elementos de una lista en el lug
     >>> factura
     ['pan', 'carne', 100, 1234
 
-De esta forma se cambia el valor inicial de un elemento de la lista lo cual hacen una la 
-lista *mutable*
+De esta forma se cambia el valor inicial de un elemento de la lista lo cual hacen 
+una la lista *mutable*
+
 
 .. _python_listas_ejemplos:
 

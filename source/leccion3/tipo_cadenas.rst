@@ -134,8 +134,8 @@ la primera línea después de la declaración.
     Hola Python !
 
 Puede puede consultar la documentación de la función ``hola()`` debe utilizar 
-la función reservada ``help()`` y pasarle el argumento del objeto de función 
-``hola``:
+la función integrada :ref:`help() <python_funcion_help>` y pasarle el argumento 
+del objeto de función ``hola``:
 
 ::
 
@@ -214,8 +214,9 @@ En el archivo ``mi_modulo.py`` debe contener el siguiente código:
 
 
 Entonces, usted debe importar el módulo anterior, para consultar la documentación 
-del módulo ``mi_modulo`` debe utilizar la función reservada ``help()`` y pasarle 
-el argumento el nombre de módulo ``mi_modulo``, de la siguiente manera:
+del módulo ``mi_modulo`` debe utilizar la función integrada 
+:ref:`help() <python_funcion_help>` y pasarle el argumento el nombre de módulo 
+``mi_modulo``, de la siguiente manera:
 
 ::
 
@@ -233,9 +234,9 @@ el argumento el nombre de módulo ``mi_modulo``, de la siguiente manera:
             Este es el docstring de la función saludar
 
 También puede consultar la documentación de la función ``despedir()`` dentro del 
-módulo ``mi_modulo``, usando la función reservada ``help()`` y pasarle el argumento 
-el formato *nombre_modulo.nombre_funcion*, es decir, ``mi_modulo.despedir``, de la 
-siguiente manera:
+módulo ``mi_modulo``, usando la función integrada :ref:`help() <python_funcion_help>` 
+y pasarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir, 
+``mi_modulo.despedir``, de la siguiente manera:
 
 ::
 

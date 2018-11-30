@@ -6,13 +6,13 @@
 Bucle while
 -----------
 
-En Python tiene una palabra reservada llamada ``while`` que nos
-permite ejecutar ciclos, o bien secuencias periódicas que nos permiten
-ejecutar código múltiples veces.
+En Python tiene una palabra reservada llamada ``while`` que nos permite ejecutar 
+ciclos, o bien secuencias periódicas que nos permiten ejecutar código múltiples 
+veces.
 
-El ciclo ``while`` nos permite realizar múltiples iteraciones basándonos en
-el resultado de una expresión lógica que puede tener como resultado un
-valor ``True`` o ``False``.
+El ciclo ``while`` nos permite realizar múltiples iteraciones basándonos en el 
+resultado de una expresión lógica que puede tener como resultado un valor ``True`` 
+o ``False``.
 
 
 Tipos de Bucle 'while'
@@ -24,21 +24,22 @@ A continuación, se presentan algunos ejemplos del uso del bucle ``while``:
 Bucle 'while' controlado por Conteo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado 
-por Conteo:
+A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado por 
+conteo:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
     :lines: 14-19
 
-En este ejemplo tiene un contador con un valor inicial de cero, cada
-iteración del ``while`` manipula esta variable de manera que
-incremente su valor en 1, por lo que después de su primera iteración el
-contador tendrá un valor de 1, luego 2, y así sucesivamente.
-Eventualmente cuando el contador llegue a tener un valor de 10, la
-condición del ciclo ``numero <= 10`` sera ``False``, por lo que el ciclo
-terminará arrojando el siguiente resultado.
+En este ejemplo tiene un contador con un valor inicial de cero, cada iteración del 
+``while`` manipula esta variable de manera que incremente su valor en 1, por lo que 
+después de su primera iteración el contador tendrá un valor de 1, luego 2, y así 
+sucesivamente. 
+
+Eventualmente cuando el contador llegue a tener un valor de 10, la condición del ciclo 
+``numero <= 10`` sera ``False``, por lo que el ciclo terminará arrojando el siguiente 
+resultado.
 
 
 Bucle 'while' controlado por Evento
@@ -77,8 +78,8 @@ que en las demás estructuras de control.
 Sentencias utilitarias
 ......................
 
-A continuación, se presentan algunos ejemplos del uso de sentencias utilitarias usadas 
-en el bucle ``while``:
+A continuación, se presentan algunos ejemplos del uso de sentencias utilitarias 
+usadas en el bucle ``while``:
 
 
 .. _python_sentencia_break:
@@ -86,8 +87,8 @@ en el bucle ``while``:
 Sentencia break
 ~~~~~~~~~~~~~~~
 
-A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado la sentencia 
-``break``:
+A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado la 
+sentencia ``break``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
@@ -96,8 +97,9 @@ A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado l
 
 Adicionalmente existe una forma alternativa de interrumpir o cortar los ciclos utilizando 
 la palabra reservada ``break``.
-Esta nos permite salir del ciclo incluso si la expresión evaluada en ``while`` (o en otro 
-ciclo como ``for``) permanece siendo ``True``. Para comprender mejor use el mismo 
+
+Esta nos permite salir del ciclo incluso si la expresión evaluada en ``while`` (o en 
+otro ciclo como ``for``) permanece siendo ``True``. Para comprender mejor use el mismo 
 ejemplo anterior pero se interrumpe el ciclo usando la sentencia ``break``.
 
 
@@ -106,16 +108,16 @@ ejemplo anterior pero se interrumpe el ciclo usando la sentencia ``break``.
 Sentencia continue
 ~~~~~~~~~~~~~~~~~~
 
-A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado la sentencia 
-``continue``:
+A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado la 
+sentencia ``continue``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
     :language: python
     :lines: 59-65
 
-La sentencia ``continue`` hace que pase de nuevo al principio del bucle aunque no se haya 
-terminado de ejecutar el ciclo anterior.
+La sentencia ``continue`` hace que pase de nuevo al principio del bucle aunque no 
+se haya terminado de ejecutar el ciclo anterior.
 
 
 Ejemplos
@@ -124,7 +126,8 @@ Ejemplos
 Sucesión de Fibonacci
 ~~~~~~~~~~~~~~~~~~~~~
 
-Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
+Ejemplo de la `Sucesión de Fibonacci <https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci>`_ 
+con bucle ``while``:
 
 .. literalinclude:: ../../recursos/leccion4/fibonacci.py
     :linenos:
@@ -156,5 +159,3 @@ Ejemplo de la `Sucesión de Fibonacci`_ con bucle ``while``:
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
-
-.. _`Sucesión de Fibonacci`: https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci

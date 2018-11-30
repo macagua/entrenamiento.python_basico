@@ -76,7 +76,9 @@ A continuación se detallan el significado y uso de la estructura de directorio 
   términos bajos los cuales pueden usarlo en su paquete. Para ayuda a seleccionar 
   una licencia, consulte https://choosealicense.com/. Una vez tenga seleccionado una 
   licencia abra el archivo ``LICENSE`` e ingrese el texto de la licencia. Por ejemplo, 
-  si usted elije la licencia GPL: ::
+  si usted elije la licencia GPL:
+
+  ::
 
     License
     =======
@@ -112,7 +114,9 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 - ``README.txt``: es el archivo donde se define la documentación general del paquete, 
   este archivo es importante debido a que no solo es usado localmente en un copia 
   descargada, sino como información usada el en sitio de PyPI. Entonces abra el archivo 
-  ``README.txt`` e ingrese el siguiente contenido. Usted puede personalizarlo como quiera: ::
+  ``README.txt`` e ingrese el siguiente contenido. Usted puede personalizarlo como quiera:
+
+  ::
 
     ==================
     NOMBRE-DEL-PAQUETE
@@ -125,9 +129,9 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 
 
 - ``setup.py``: es el archivo donde se define el paquete, el formato es el mismo 
-  para el módulo ``setuptools`` y para el módulo :ref:`distutils <python_modulo_distutils>` 
-  así que no hay que preocuparse por nada más. Lo puede ver a continuación. Este archivo incluye la 
-  configuración del paquete como se indica a continuación:
+  para el módulo :ref:`setuptools <python_modulo_setuptools>` y para el módulo 
+  :ref:`distutils <python_modulo_distutils>`. Lo puede ver a continuación. Este 
+  archivo incluye la configuración del paquete como se indica a continuación:
 
 .. literalinclude:: ../../recursos/leccion8/distribucion/setup.py
     :language: python
@@ -576,11 +580,13 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 De esta forma tiene instalado una distribución binaria en formato **wheel** de su 
 paquete en el interprete Python usando la herramienta ``pip``.
 
+----
 
 .. note::
     `pip <https://pip.readthedocs.io/>`_, es una herramienta para instalación y 
     administración de paquetes Python.
 
+----
 
 .. _python_distro_install_source_pkg:
 
@@ -667,6 +673,14 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
 De esta forma tiene instalado su paquete en su interprete Python usando el comando ``install`` 
 disponible con el script ``setup.py``.
 
+----
+
+.. warning::
+
+    Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado en el 
+    directorio ``$HOME/.local/lib/python2.7/site-packages/``.
+
+----
 
 .. _python_distro_check_install:
 
@@ -699,9 +713,9 @@ ejecutando el siguiente comando:
     python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print "Función importada " + impuesto_iva14.__doc__[1:36] + "."'
     Función importada Calcula el impuesto del IVA de 14 %.
 
-El comando previo muestra la ``docstring`` de la función importada ``impuesto_iva14`` 
-sino muestra ningún mensaje de error, el paquete ``tostadas_pipo-0.1`` se instalo 
-correctamente.
+El comando previo muestra la :ref:`docstring <python_cadenas_docstrings>` de la 
+función importada ``impuesto_iva14`` sino muestra ningún mensaje de error, el 
+paquete ``tostadas_pipo-0.1`` se instalo correctamente.
 
 
 .. _python_distro_eliminar_pkg:

@@ -7,40 +7,42 @@ Excepciones integradas
 ----------------------
 
 Las excepciones pueden ser objetos de una clase u objetos cadena. Aunque la mayoría 
-de las excepciones eran objetos cadena en las anteriores versiones de Python, en Python 
-1.5 y versiones posteriores, todas las excepciones estándar han sido convertidas en 
-objetos de clase y se anima a los usuarios a que hagan lo propio. Las excepciones están 
-definidas en el módulo ``exceptions``. Nunca es necesario importar este módulo 
-explícitamente, pues las excepciones vienen proporcionadas por el espacio nominal interno.
+de las excepciones eran objetos cadena en las anteriores versiones de Python, en 
+Python 1.5 y versiones posteriores, todas las excepciones estándar han sido convertidas 
+en objetos de clase y se anima a los usuarios a que hagan lo propio. Las excepciones 
+están definidas en el módulo ``exceptions``. Nunca es necesario importar este módulo 
+explícitamente, pues las excepciones vienen proporcionadas por el espacio nominal 
+interno.
 
 Dos objetos de cadena distintos con el mismo valor se consideran diferentes excepciones. 
-Esto es así para forzar a los programadores a usar nombres de excepción en lugar de su 
-valor textual al especificar gestores de excepciones. El valor de cadena de todas las 
-excepciones internas es su nombre, pero no es un requisito para las 
-:ref:`excepciones definidas por el usuario <python_excepciones_usuario>` u otras excepciones 
-definidas por módulos de biblioteca.
+Esto es así para forzar a los programadores a usar nombres de excepción en lugar 
+de su valor textual al especificar gestores de excepciones. El valor de cadena de 
+todas las excepciones internas es su nombre, pero no es un requisito para las 
+:ref:`excepciones definidas por el usuario <python_excepciones_usuario>` u otras 
+excepciones definidas por módulos de biblioteca.
 
-En el caso de las clases de excepción, en una sentencia ``try`` con una cláusula ``except`` 
-que mencione una clase particular, esta cláusula también gestionará cualquier excepción 
-derivada de dicha clase (pero no las clases de excepción de las que deriva ella). Dos clases 
-de excepción no emparentadas mediante sub-clasificación nunca son equivalentes, aunque tengan 
-el mismo nombre.
+En el caso de las clases de excepción, en una sentencia ``try`` con una sentencia 
+``except`` que mencione una clase particular, esta sentencia también gestionará 
+cualquier excepción derivada de dicha clase (pero no las clases de excepción de 
+las que deriva ella). Dos clases de excepción no emparentadas mediante sub-clasificación 
+nunca son equivalentes, aunque tengan el mismo nombre.
 
-Las excepciones internas enumeradas a continuación pueden ser generadas por el intérprete o por 
-funciones internas. Excepto en los casos mencionados, tienen un ``valor asociado`` indicando en 
-detalle la causa del error. Este valor puede ser una cadena o tupla de varios elementos 
-informativos (es decir, un código de error y una cadena que explica el código). El valor asociado 
-es el segundo argumento a la sentencia ``raise``. En las cadenas de excepción, el propio valor 
-asociado se almacenará en la variable nombrada como el segundo argumento de la cláusula ``except`` 
-(si la hay). En las clases de excepción, dicha variable recoge la instancia de la excepción. Si la 
-clase de excepción deriva de la clase raíz estándar :ref:`Exception <python_exception>`, el valor 
-asociado está disponible en el atributo ``args`` de la instancia de excepción y es probable que 
-aparezca en otros atributos.
+Las excepciones internas enumeradas a continuación pueden ser generadas por el 
+intérprete o por funciones internas. Excepto en los casos mencionados, tienen un 
+``valor asociado`` indicando en detalle la causa del error. Este valor puede ser 
+una cadena o tupla de varios elementos informativos (es decir, un código de error 
+y una cadena que explica el código). El valor asociado es el segundo argumento a 
+la sentencia ``raise``. En las cadenas de excepción, el propio valor asociado se 
+almacenará en la variable nombrada como el segundo argumento de la sentencia ``except`` 
+(si la hay). En las clases de excepción, dicha variable recoge la instancia de la 
+excepción. Si la clase de excepción deriva de la clase raíz estándar 
+:ref:`Exception <python_exception>`, el valor asociado está disponible en el atributo 
+``args`` de la instancia de excepción y es probable que aparezca en otros atributos.
 
-El código de usuario puede lanzar excepciones internas. Se puede usar para comprobar un gestor de 
-excepciones o para informar de una condición de error del mismo modo que el intérprete lanza la 
-misma excepción. Hay que ser precavido, pues nada incluye que el código de usuario lance una 
-excepción inadecuada.
+El código de usuario puede lanzar excepciones internas. Se puede usar para comprobar 
+un gestor de excepciones o para informar de una condición de error del mismo modo 
+que el intérprete lanza la misma excepción. Hay que ser precavido, pues nada incluye 
+que el código de usuario lance una excepción inadecuada.
 
 Las siguientes excepciones sólo se usan como clase base de otras excepciones.
 
@@ -335,7 +337,7 @@ Las siguientes excepciones son las realmente lanzadas.
 	directamente de :ref:`Exception <python_exception>` y no de la excepción 
 	:ref:`StandardError <python_exception_standarderror>`, ya que técnicamente no es un 
 	error. Una llamada a ``sys.exit()`` se traduce a un error para que los gestores de 
-	limpieza final (las cláusulas ``finally`` de las sentencias ``try``) se puedan ejecutar 
+	limpieza final (las sentencias ``finally`` de las sentencias ``try``) se puedan ejecutar 
 	y para que un depurador pueda ejecutar un guion sin riesgo de perder el control. Se 
 	puede usar la función os._exit() si es total y absolutamente necesario salir inmediatamente 
 	(por ejemplo, tras un ``fork()`` en el proceso hijo). Deriva de la clase raíz 
@@ -406,17 +408,6 @@ Las siguientes excepciones son las realmente lanzadas.
 	Se lanza cuando una operación o función interna recibe un argumento del tipo 
 	correcto, pero con un valor inapropiado y no es posible describir la situación 
 	con una excepción más precisa, como :ref:`IndexError <python_exception_indexerror>`.
-
-
-..
-	.. _python_exception_windowserror:
-
-	``WindowsError``
-		Se lanza cuando se da un error específico de Windows o el número de error 
-		no corresponde a un valor ``errno``. Los valores ``errno`` y ``strerror`` 
-		se crean a partir de los valores devueltos por las funciones ``GetLastError()`` 
-		y ``FormatMessage()`` del API de plataforma de Windows. Deriva de 
-		:ref:`OSError <python_exception_oserror>`.
 
 
 .. _python_exception_zerodivisionerror:

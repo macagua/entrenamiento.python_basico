@@ -28,7 +28,7 @@ definido en esta.
 
 Use el diagrama anterior para ilustrar el concepto de la herencia, vea el caso de 
 dos clases que tiene algo en común, ambas son personas, con atributos de datos 
-personales y comportamiento tipicos como hablar, comer, caminar, entonces para eso 
+personales y comportamiento típicos como hablar, comer, caminar, entonces para eso 
 se crea una clase base llamada ``Persona``. A continuación un ejemplo de la clase 
 ``Persona`` con un método interno:
 
@@ -37,11 +37,11 @@ se crea una clase base llamada ``Persona``. A continuación un ejemplo de la cla
     :lines: 6-34
 
 
-En el ejemplo previo, es donde empieza a crear una clase (lo hace con la 
-palabra ``class``). La segunda palabra ``Persona`` es el nombre de la clase. 
-La tercera palabra que se encuentra dentro de los paréntesis este hace referencia 
-al :ref:`objeto object <python_objeto_object>`, usando para indicar la clase de 
-la cual precede.
+En el ejemplo previo, es donde empieza a crear una clase (lo hace con la palabra 
+``class``). La segunda palabra ``Persona`` es el nombre de la clase. La tercera 
+palabra que se encuentra dentro de los paréntesis este hace referencia al 
+:ref:`objeto object <python_objeto_object>`, usando para indicar la clase de la 
+cual precede.
 
 La clase ``Persona`` tiene los métodos ``__init__``, ``__str__``, ``hablar`` 
 y ``getGenero``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``. 
@@ -115,27 +115,27 @@ se puede imprimir sus detalles de la siguiente forma:
     :language: python
     :lines: 47
 
-Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de la 
-clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
+Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de 
+la clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :lines: 50-57
 
-Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se puede 
-imprimir de la siguiente forma:
+Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se 
+puede imprimir de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :lines: 60-61
 
-Gracias a las clases y la programación orientada a objetos, usted puede organizar 
-el código con diferentes clases correspondientes a diferentes objetos que encontrará 
-(una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``, etc.), con sus 
-propios métodos y atributos. Luego puede usar la herencia para considerar las variaciones 
-en torno a una clase base y reutilizar el código. Ej.: a partir de una clase base de 
-``Persona``, usted puede crear clases derivadas como ``Supervisor``, ``JefeCuadrilla``, 
-``Obrero``, etc.
+El uso de las clases y la programación orientada a objetos, le permite a usted que pueda 
+organizar el código con diferentes clases correspondientes a diferentes objetos que 
+encontrará (una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``, 
+etc.), con sus propios métodos y atributos. Luego puede usar la herencia para considerar 
+las variaciones en torno a una clase base y reutilizar el código. Ej.: a partir de una 
+clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor``, 
+``JefeCuadrilla``, ``Obrero``, etc.
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :linenos:
@@ -148,15 +148,15 @@ en torno a una clase base y reutilizar el código. Ej.: a partir de una clase ba
 Función issubclass()
 ~~~~~~~~~~~~~~~~~~~~
 
-La función ``issubclass()`` le permite corroborar si un objeto es instancia 
-de una clase. 
+La función ``issubclass()`` le permite corroborar si un objeto es instancia de una 
+clase. 
 
 ::
 
     issubclass(subclase, clase)
 
-Esta función devuelve ``True`` si la clase especificada es una subclase de la 
-clase base, de lo contrario ``False``.
+Esta función devuelve ``True`` si la clase especificada es una subclase de la clase 
+base, de lo contrario ``False``.
 
 Un ejemplo de uso con la subclase ``Supervisor`` que deriva de la clase ``Persona`` 
 seria como lo siguiente:
@@ -168,8 +168,8 @@ seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le 
-objeto es uno de los tipos en la tupla.
+Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es 
+uno de los tipos en la tupla.
 
 ::
 
@@ -179,9 +179,9 @@ objeto es uno de los tipos en la tupla.
 
 Aquí puede decir que ``supervisor1`` es una subclase derivada de la clase ``Persona``.
 
-Las clases dan la posibilidad de crear estructuras de datos más complejas. 
-En el ejemplo, una clase ``Persona`` que realizará un seguimiento del 
-``cedula``, ``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
+Las clases dan la posibilidad de crear estructuras de datos más complejas. En el ejemplo, 
+una clase ``Persona`` que realizará un seguimiento del ``cedula``, ``nombre``, ``apellido`` 
+y ``sexo`` (que pasará como atributos).
 
 
 ----
@@ -195,7 +195,9 @@ En el ejemplo, una clase ``Persona`` que realizará un seguimiento del
 
 .. tip::
     Para ejecutar el código :file:`clases.py` y :file:`herencia_simple.py`, 
-    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: 
+
+    ::
 
         leccion9/
         ├── clases.py
@@ -243,13 +245,17 @@ la declaración de la subclase:
 
 .. tip::
     Para ejecutar el código :file:`clases.py` y :file:`herencia_multiple.py`, 
-    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+    abra una consola de comando, acceda al directorio donde se encuentra ambos programas:
+
+    ::
 
         leccion9/
         ├── clases.py
         └── herencia_multiple.py
 
-    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    ::
 
         python herencia_multiple.py
 

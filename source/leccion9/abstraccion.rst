@@ -46,8 +46,8 @@ Así, un objeto encapsula datos y métodos, que están dentro del objeto.
 que sirve para que los objetos de una clase proporcionen sus servicios. Estos 
 servicios son los que pueden ser llamados por un cliente.
 
-**Métodos de soporte:** Son métodos adicionales en un objeto que no definen un servicio 
-utilizable por un cliente, pero que ayudan a otros métodos en sus tareas.
+**Métodos de soporte:** Son métodos adicionales en un objeto que no definen un 
+servicio utilizable por un cliente, pero que ayudan a otros métodos en sus tareas.
 
 La encapsulación es un **mecanismo de control**. El estado (el conjunto de propiedades, 
 atributos ó datos) de un objeto sólo debe ser modificado por medio de los métodos 

@@ -188,16 +188,16 @@ Cuando usted ejecuta el programa, la salida será:
 
     scp -v -P 3307 root@127.0.0.1:/root/webapp/db.sql /srv/backup
 
-En el programa anterior, existe un archivo de módulo ``constantes.py``. Entonces en 
-este se asignan los valores de constantes ``IP_DB_SERVER``, ``PORT_DB_SERVER``, 
+En el programa anterior, existe un archivo de módulo ``constantes.py``. Entonces 
+en este se asignan los valores de constantes ``IP_DB_SERVER``, ``PORT_DB_SERVER``, 
 ``USER_DB_SERVER``, ``PASSWORD_DB_SERVER`` y ``DB_NAME``. Ademas, existe el archivo 
-de módulo ``main.py`` el cual importa el módulo ``constantes``. Finalmente, se imprime 
-una linea de conexión del comando ``scp`` de Linux usando la función integrada en la 
-librería estándar Python llamada :ref:`format <python_funcion_format>`.
+de módulo ``main.py`` el cual importa el módulo ``constantes``. Finalmente, se 
+imprime una linea de conexión del comando ``scp`` de Linux usando la función 
+integrada en la librería estándar Python llamada :ref:`format <python_funcion_format>`.
 
 .. note:: 
-    En realidad, no se usa las constantes en Python. El módulo ``globals`` o ``constants`` 
-    es usado a lo largo de los programas de Python.
+    En realidad, no se usa las constantes en Python. El módulo ``globals`` o 
+    ``constants`` es usado a lo largo de los programas de Python.
 
 ----
 
@@ -207,9 +207,9 @@ librería estándar Python llamada :ref:`format <python_funcion_format>`.
 Palabras reservadas
 ...................
 
-Existen ciertas palabras que tienen significado especial para el intérprete de Python. Estas 
-no pueden utilizarse para ningún otro fin (como ser nombrar valores) excepto para el que han 
-sido creadas. Estas son:
+Existen ciertas palabras que tienen significado especial para el intérprete de Python. 
+Estas no pueden utilizarse para ningún otro fin (como ser nombrar valores) excepto 
+para el que han sido creadas. Estas son:
 
 
 - :ref:`and <python_operadores_logicos>`.
@@ -224,7 +224,7 @@ sido creadas. Estas son:
 
 - :ref:`continue <python_sentencia_continue>`.
 
-- :ref:`def <python_funciones>`.
+- :ref:`def <python_sentencia_def>`.
 
 - ``del``.
 

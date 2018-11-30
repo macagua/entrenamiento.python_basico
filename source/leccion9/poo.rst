@@ -57,7 +57,8 @@ Los objetivos de la POO son:
 - re-usar código fuente en similares contextos.
 
 .. note:: 
-    Más información consulte el articulo `Programación orientada a objetos - Wikipedia <https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos>`_.
+    Más información consulte el articulo de Wikipedia 
+    `Programación orientada a objetos <https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos>`_.
 
 
 ----
@@ -251,7 +252,7 @@ son atributos especiales.
 
 
 Si el nombre de un atributo esta con dobles guiones bajos al principio son 
-atributos "escondidos". A continuación un seudo código que ilustra un ejemplo:
+atributos "escondidos". A continuación un pseudo código que ilustra un ejemplo:
 
 ::
 

@@ -410,7 +410,7 @@ más información sobre clases en el capítulo :ref:`Clases <python_poo>`.
 Definiendo acciones de limpieza
 ...............................
 
-La sentencia ``try`` tiene otra cláusula opcional que 
+La sentencia ``try`` tiene otra sentencia opcional que 
 intenta definir acciones de limpieza que deben ser ejecutadas bajo 
 ciertas circunstancias. Por ejemplo:
 
@@ -427,16 +427,14 @@ ciertas circunstancias. Por ejemplo:
    KeyboardInterrupt
 
 
-Una *cláusula finally* siempre es ejecutada antes de salir de la 
-sentencia ``try``, ya sea que una excepción haya ocurrido 
-o no. Cuando ocurre una excepción en la cláusula ``try`` y 
-no fue manejada por una cláusula ``except`` (o ocurrió en 
-una cláusula ``except`` o ``else``), es relanzada 
-luego de que se ejecuta la cláusula ``finally``. 
-``finally`` es también ejecutada "a la salida" cuando 
-cualquier otra cláusula de la sentencia ``try`` es dejada 
+Una *sentencia finally* siempre es ejecutada antes de salir de la sentencia ``try``, 
+ya sea que una excepción haya ocurrido o no. Cuando ocurre una excepción en la 
+sentencia ``try`` y no fue manejada por una sentencia ``except`` (o ocurrió en una 
+sentencia ``except`` o ``else``), es relanzada luego de que se ejecuta la sentencia 
+``finally``. La sentencia ``finally`` es también ejecutada "a la salida" cuando 
+cualquier otra sentencia de la sentencia ``try`` es dejada 
 vía ``break``, ``continue`` or ``return``. Un 
-ejemplo más complicado (cláusulas ``except`` y 
+ejemplo más complicado (sentencias ``except`` y 
 ``finally`` en la misma sentencia ``try``):
 
 ::
@@ -465,13 +463,13 @@ ejemplo más complicado (cláusulas ``except`` y
    TypeError: unsupported operand type(s) for /: 'str' and 'str'
 
 
-Como puedes ver, la cláusula ``finally`` es ejecutada siempre. 
+Como puedes ver, la sentencia ``finally`` es ejecutada siempre. 
 La excepción :ref:`TypeError <python_exception_typeerror>` lanzada 
-al dividir dos cadenas de caracteres no es manejado por la cláusula 
+al dividir dos cadenas de caracteres no es manejado por la sentencia 
 ``except`` y por lo tanto es relanzada luego de que se ejecuta 
-la cláusula ``finally``.
+la sentencia ``finally``.
 
-En aplicaciones reales, la cláusula ``finally`` es útil para 
+En aplicaciones reales, la sentencia ``finally`` es útil para 
 liberar recursos externos (como archivos o conexiones de red), sin 
 importar si el uso del recurso fue exitoso.
 
@@ -530,14 +528,18 @@ lo indicarán en su documentación.
 
 .. tip::
     Para ejecutar el código :file:`excepciones_integradas.py` y :file:`errores_propios.py`, 
-    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: :: 
+    abra una consola de comando, acceda al directorio donde se encuentra ambos programas: 
+
+    ::
 
         leccion9/
         ├── excepciones_integradas.py
         ├── excepciones_propias.py
         └── errores_propios.py
 
-    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    ::
 
         python excepciones_integradas.py
         python errores_propios.py
