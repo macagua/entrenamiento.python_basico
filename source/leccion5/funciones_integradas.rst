@@ -3,16 +3,16 @@
 
 .. _python_funciones_integradas:
 
-Funciones integradas (built-in)
--------------------------------
+Funciones integradas
+--------------------
 
 
-El interprete Python tiene un número de funciones integradas dentro de el 
-que están siempre disponibles. Ellas están listadas en orden alfabéticos 
-a continuación:
+El interprete Python tiene un número de funciones integradas (built-in) dentro del 
+módulo ``__builtins__``, las cuales están siempre disponibles. Ellas están listadas 
+en orden alfabéticos a continuación:
 
 
-.. todo:: TODO escribir esta sección.
+.. todo:: TODO terminar de escribir esta sección.
 
 
 ----
@@ -83,7 +83,36 @@ legibles desde este.
 ::
 
     >>> dir(__builtins__)
-    ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BufferError', 'BytesWarning', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError', 'None', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'ReferenceError', 'RuntimeError', 'RuntimeWarning', 'StandardError', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', '_', '__debug__', '__doc__', '__import__', '__name__', '__package__', 'abs', 'all', 'any', 'apply', 'basestring', 'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'cmp', 'coerce', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'execfile', 'exit', 'file', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'intern', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'long', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'raw_input', 'reduce', 'reload', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr', 'unicode', 'vars', 'xrange', 'zip']
+    ['ArithmeticError', 'AssertionError', 'AttributeError',
+    'BaseException', 'BufferError', 'BytesWarning', 
+    'DeprecationWarning', 'EOFError', 'Ellipsis', 
+    'EnvironmentError', 'Exception', 'False', 'FloatingPointError',
+    'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError',
+    'ImportWarning', 'IndentationError', 'IndexError', 'KeyError',
+    'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError',
+    'None', 'NotImplemented', 'NotImplementedError', 'OSError', 
+    'OverflowError', 'PendingDeprecationWarning', 'ReferenceError',
+    'RuntimeError', 'RuntimeWarning', 'StandardError', 
+    'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 
+    'SystemExit', 'TabError', 'True', 'TypeError', 
+    'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 
+    'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 
+    'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', 
+    '_', '__debug__', '__doc__', '__import__', '__name__', 
+    '__package__', 'abs', 'all', 'any', 'apply', 'basestring', 
+    'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable', 
+    'chr', 'classmethod', 'cmp', 'coerce', 'compile', 'complex', 
+    'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod',
+    'enumerate', 'eval', 'execfile', 'exit', 'file', 'filter',
+    'float', 'format', 'frozenset', 'getattr', 'globals', 
+    'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 
+    'intern', 'isinstance', 'issubclass', 'iter', 'len', 
+    'license', 'list', 'locals', 'long', 'map', 'max', 'memoryview',
+    'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print',
+    'property', 'quit', 'range', 'raw_input', 'reduce', 'reload',
+    'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted',
+    'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr',
+    'unicode', 'vars', 'xrange', 'zip']
 
 Si el objeto soporta un método llamado ``__dir__``, ese será usado; de lo contrario se usa 
 la lógica ``dir()`` predeterminada y devuelve:
@@ -96,16 +125,25 @@ la lógica ``dir()`` predeterminada y devuelve:
     >>> type(os)
     <type 'module'>
     >>> dir(os)
-    ['EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 'EX_NOHOST', 'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER', 'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL', 'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE', 'F_OK', 'NGROUPS_MAX', 'O_APPEND', 'O_ASYNC', 'O_CREAT', 'O_DIRECT', 'O_DIRECTORY', 'O_DSYNC', 'O_EXCL', 'O_LARGEFILE', 'O_NDELAY', 'O_NOATIME', 'O_NOCTTY', 'O_NOFOLLOW', 'O_NONBLOCK', 'O_RDONLY', 'O_RDWR', 'O_RSYNC', 'O_SYNC', 'O_TRUNC', 'O_WRONLY', 'P_NOWAIT', 'P_NOWAITO', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END', 'SEEK_SET', 'ST_APPEND', 'ST_MANDLOCK', 'ST_NOATIME', 'ST_NODEV', 'ST_NODIRATIME', 'ST_NOEXEC', 'ST_NOSUID', 'ST_RDONLY', 'ST_RELATIME', 'ST_SYNCHRONOUS', 'ST_WRITE', 'TMP_MAX', 'UserDict', 'WCONTINUED', 'WCOREDUMP', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED', 'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WSTOPSIG', 'WTERMSIG', 'WUNTRACED', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', '__doc__', '__file__', '__name__', 
+    ['EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 
+    'EX_NOHOST', 'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER', 
+    'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL', 
+    'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE', 
+    'F_OK', 'NGROUPS_MAX', 'O_APPEND', 'O_ASYNC', 'O_CREAT', 
+    'O_DIRECT', 'O_DIRECTORY', 'O_DSYNC', 'O_EXCL', 'O_LARGEFILE', 
+    'O_NDELAY', 'O_NOATIME', 'O_NOCTTY', 'O_NOFOLLOW', 'O_NONBLOCK', 
+    'O_RDONLY', 'O_RDWR', 'O_RSYNC', 'O_SYNC', 'O_TRUNC', 'O_WRONLY', 
+    'P_NOWAIT', 'P_NOWAITO', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END', 
+    'SEEK_SET', 'ST_APPEND', 'ST_MANDLOCK', 'ST_NOATIME', 'ST_NODEV', 
+    'ST_NODIRATIME', 'ST_NOEXEC', 'ST_NOSUID', 'ST_RDONLY', 
+    'ST_RELATIME', 'ST_SYNCHRONOUS', 'ST_WRITE', 'TMP_MAX', 'UserDict', 
+    'WCONTINUED', 'WCOREDUMP', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED', 
+    'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WSTOPSIG', 'WTERMSIG', 
+    'WUNTRACED', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', 
+    '__doc__', '__file__', '__name__', 
     ...
     ...
     ... ]
-    >>>
-    >>> os.__doc__
-    "OS routines for NT or Posix depending on what system we're on.\n\nThis exports:\n  - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.\n  - os.path is one of the modules posixpath, or ntpath\n  - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'\n  - os.curdir is a string representing the current directory ('.' or ':')\n  - os.pardir is a string representing the parent directory ('..' or '::')\n  - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\\\')\n
-    ...
-    ...
-    ...
     >>> 
     >>> print os.__doc__
     OS routines for NT or Posix depending on what system we're on.
@@ -120,7 +158,6 @@ la lógica ``dir()`` predeterminada y devuelve:
     ...
     ...
     ...
-    >>> 
 
 - para un objeto clase: sus atributos, y recursivamente los atributos
   de sus clases bases.
@@ -148,11 +185,24 @@ la lógica ``dir()`` predeterminada y devuelve:
     >>> type(Persona)
     <type 'type'>
     >>> vars()
-    {'Persona': <class '__main__.Persona'>, '__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': '__main__', 'os': <module 'os' from '/usr/lib/python2.7/os.pyc'>, '__doc__': None}
+    {'Persona': <class '__main__.Persona'>, '__builtins__': <module '__builtin__' (built-in)>, 
+    '__package__': None, '__name__': '__main__', 
+    'os': <module 'os' from '/usr/lib/python2.7/os.pyc'>, '__doc__': None}
     >>> dir(Persona)
-    ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'hablar']
+    ['__class__', '__delattr__', '__dict__', '__doc__', 
+    '__format__', '__getattribute__', '__hash__', 
+    '__init__', '__module__', '__new__', '__reduce__', 
+    '__reduce_ex__', '__repr__', '__setattr__', 
+    '__sizeof__', '__str__', '__subclasshook__', 
+    '__weakref__', 'hablar']
     >>> Persona.__dict__
-    dict_proxy({'__module__': '__main__', '__str__': <function __str__ at 0x7fab8aaad758>, '__dict__': <attribute '__dict__' of 'Persona' objects>, 'hablar': <function hablar at 0x7fab8aaad7d0>, '__weakref__': <attribute '__weakref__' of 'Persona' objects>, '__doc__': ' Clase que representa una persona. ', '__init__': <function __init__ at 0x7fab8aaad6e0>})
+    dict_proxy({'__module__': '__main__', 
+    '__str__': <function __str__ at 0x7fab8aaad758>, 
+    '__dict__': <attribute '__dict__' of 'Persona' objects>, 
+    'hablar': <function hablar at 0x7fab8aaad7d0>, 
+    '__weakref__': <attribute '__weakref__' of 'Persona' objects>, 
+    '__doc__': ' Clase que representa una persona. ', 
+    '__init__': <function __init__ at 0x7fab8aaad6e0>})
     >>> Persona.__doc__
     ' Clase que representa una persona. '
     >>> Persona.__init__.__doc__
@@ -168,7 +218,41 @@ la lógica ``dir()`` predeterminada y devuelve:
     >>> type(int)
     <type 'type'>
     >>> dir(int)
-    ['__abs__', '__add__', '__and__', '__class__', '__cmp__', '__coerce__', '__delattr__', '__div__', '__divmod__', '__doc__', '__float__', '__floordiv__', '__format__', '__getattribute__', '__getnewargs__', '__hash__', '__hex__', '__index__', '__init__', '__int__', '__invert__', '__long__', '__lshift__', '__mod__', '__mul__', '__neg__', '__new__', '__nonzero__', '__oct__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'imag', 'numerator', 'real']
+    ['__abs__', '__add__', '__and__', '__class__', '__cmp__', 
+    '__coerce__', '__delattr__', '__div__', '__divmod__', 
+    '__doc__', '__float__', '__floordiv__', '__format__', 
+    '__getattribute__', '__getnewargs__', '__hash__', '__hex__', 
+    '__index__', '__init__', '__int__', '__invert__', '__long__', 
+    '__lshift__', '__mod__', '__mul__', '__neg__', '__new__', 
+    '__nonzero__', '__oct__', '__or__', '__pos__', '__pow__', 
+    '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__', 
+    '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', 
+    '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__', 
+    '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', 
+    '__sizeof__', '__str__', '__sub__', '__subclasshook__', 
+    '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 
+    'denominator', 'imag', 'numerator', 'real']
+
+
+.. _python_funcion_eval:
+
+eval()
+~~~~~~
+
+Evalúa una cadena como una expresión: 
+
+::
+
+    >>> eval('2 + 5')
+    7
+
+Ademas si se han definido anteriormente variables las acepta como parámetros:
+
+::
+
+    >>> numero = 10
+    >>> eval('numero * 10 - 5')
+    95
 
 
 .. _python_funcion_len:
@@ -176,12 +260,40 @@ la lógica ``dir()`` predeterminada y devuelve:
 len()
 ~~~~~
 
-Devuelve el numero de elementos de una secuencia o colección.
+Devuelve el número de elementos de una secuencia o colección.
 
 ::
 
     >>> len("leonardo caballero")
     18
+
+
+.. _python_funcion_help:
+
+help()
+~~~~~~
+
+Invoca el menú de ayuda del intérprete de Python:
+
+::
+
+    >>> help()
+
+    Welcome to Python 2.7!  This is the online help utility.
+
+    If this is your first time using Python, you should definitely check out
+    the tutorial on the Internet at http://docs.python.org/2.7/tutorial/.
+
+    Enter the name of any module, keyword, or topic to get help on writing
+    Python programs and using Python modules.  To quit this help utility and
+    return to the interpreter, just type "quit".
+
+    To get a list of available modules, keywords, or topics, type "modules",
+    "keywords", or "topics".  Each module also comes with a one-line summary
+    of what it does; to list the modules whose summaries contain a given word
+    such as "spam", type "modules spam".
+
+    help> 
 
 
 .. _python_funcion_license:
@@ -229,7 +341,7 @@ open()
 
 La función ``open()`` :ref:`abre un archivo <python_abrir_archivo>` usando 
 el tipo ``file()``, devuelve un objeto del tipo :ref:`archivo <python_objeto_file>` 
-(ej. *archivo*), y se invoca habitualmente con de dos a tres argumentos: 
+(ej. *archivo*), y se llama habitualmente con de dos a tres argumentos: 
 
 ::
 
@@ -243,32 +355,37 @@ Los argumentos son:
 - ``mode``, es una cadena de unos pocos caracteres describiendo la forma en 
   la que se usará el archivo, como se indica a continuación:
 
-  +----------+-------------------------------------------------------------------------------------------+
-  | **Modo** | **Notas**                                                                                 |
-  +----------+-------------------------------------------------------------------------------------------+
-  | ``r``    | el archivo se abre en modo de solo lectura, no se puede escribir (argumento por defecto). |
-  +----------+-------------------------------------------------------------------------------------------+
-  | ``w``    | modo de solo escritura (si existe un archivo con el mismo nombre, se borra).              |
-  +----------+-------------------------------------------------------------------------------------------+
-  | ``a``    | modo de agregado (``append``), los datos escritos se agregan al final del archivo.        |
-  +----------+-------------------------------------------------------------------------------------------+
-  | ``r+``   | el archivo se abre para lectura y escritura al mismo tiempo.                              |
-  +----------+-------------------------------------------------------------------------------------------+
-  | ``b``    | el archivo se abre en modo binario, para almacenar cualquier cosa que no sea texto.       |
-  +----------+-------------------------------------------------------------------------------------------+
-  | ``U``    | el archivo se abre con soporte a nueva linea universal, cualquier fin de linea ingresada  |
-  |          | sera como un ``\n`` en Python.                                                            |
-  +----------+-------------------------------------------------------------------------------------------+
-
+  +----------+-----------------------------------------------------------+
+  | **Modo** | **Notas**                                                 |
+  +----------+-----------------------------------------------------------+
+  | ``r``    | el archivo se abre en modo de solo lectura, no se puede   |
+  |          | escribir (argumento por defecto).                         |
+  +----------+-----------------------------------------------------------+
+  | ``w``    | modo de solo escritura (si existe un archivo con el mismo |
+  |          | nombre, se borra).                                        |
+  +----------+-----------------------------------------------------------+
+  | ``a``    | modo de agregado (``append``), los datos escritos se      |
+  |          | agregan al final del archivo.                             |
+  +----------+-----------------------------------------------------------+
+  | ``r+``   | el archivo se abre para lectura y escritura al mismo      |
+  |          | tiempo.                                                   |
+  +----------+-----------------------------------------------------------+
+  | ``b``    | el archivo se abre en modo binario, para almacenar        |
+  |          | cualquier cosa que no sea texto.                          |
+  +----------+-----------------------------------------------------------+
+  | ``U``    | el archivo se abre con soporte a nueva linea universal,   |
+  |          | cualquier fin de linea ingresada sera como un ``\n`` en   |
+  |          | Python.                                                   |
+  +----------+-----------------------------------------------------------+
 
 - ``buffering``, si este argumento es dado, 0 significa sin búfer, 1 significa búfer 
   de línea y los números más grandes especifican el tamaño del búfer.
 
-Para crear en un archivo:
+Para crear y abrir un archivo, seria así:
 
 ::
 
-    >>> f = open('datos.txt', 'w') # abre el archivo datos.txt
+    >>> f = open('datos.txt', 'w')
     >>> type(f)
     <type 'file'>
 
@@ -471,6 +588,19 @@ Devuelve el valor absoluto de un número (entero o de coma flotante).
     >>> 
 
 
+.. _python_funcion_bin:
+
+bin()
+~~~~~
+
+Devuelve una representación binaria de un numero entero o entero long, 
+es decir, lo convierte de entero a binario.
+
+::
+
+    >>> bin(10)
+    '0b1010'
+
 .. _python_funcion_divmod:
 
 divmod()
@@ -484,6 +614,20 @@ la división entera, y el resto.
     >>> divmod(22, 4)
     (5, 2)
     >>> 
+
+
+.. _python_funcion_hex:
+
+hex()
+~~~~~
+
+Devuelve una representación hexadecimal de un numero entero o entero long, 
+es decir, lo convierte de entero a hexadecimal.
+
+::
+
+    >>> hex(10)
+    '0xa'
 
 
 .. _python_funcion_max:
@@ -539,6 +683,34 @@ Tiene un comportamiento similar a ``max()``, pero devuelve el mínimo.
     >>> 
 
 
+.. _python_funcion_round:
+
+round()
+~~~~~~~
+
+Redondea un numero flotante a una precisión dada en dígitos decimal (por 
+defecto 0 dígitos). Esto siempre devuelve un numero flotante. La precisión 
+tal vez sea negativa.
+
+En el siguiente ejemplo redondeo de un numero flotante a entero, mayor o igual 
+a *.5* al alza:
+
+::
+
+    >>> round(5.5)
+    6.0
+    >>> 
+
+En este otro ejemplo redondeo de un numero flotante a entero, menor de *.5* a 
+la baja:
+
+::
+
+    >>> round(5.4)
+    5.0
+    >>> 
+
+
 ----
 
 .. _python_funciones_integradas_cadenas:
@@ -586,7 +758,7 @@ expandtabs()
 ~~~~~~~~~~~~
 
 La función ``expandtabs()`` devuelve una copia de la cadenas de caracteres donde 
-todos los caracteres tab (tabulación) son remplazados por uno o más espacios, 
+todos los caracteres ``tab`` (tabulación) son remplazados por uno o más espacios, 
 depende en la actual columna y el tamaño del tab dado.
 
 ::
@@ -594,7 +766,7 @@ depende en la actual columna y el tamaño del tab dado.
     >>> 'Leonardo Caballero\tPython Developer\tleonardoc@plone.org'.expandtabs()
     'Leonardo Caballero      Python Developer        leonardoc@plone.org'
 
-Usted puede indicar el tamaño del tab vía parámetro de la función:
+Usted puede indicar el tamaño de la tecla ``tab`` vía parámetro de la función:
 
 ::
 
@@ -625,25 +797,129 @@ en la función.
 format()
 ~~~~~~~~
 
-La función ``format()`` devuelve ....
+La función integrada ``format()`` devuelve una representación formateada de un valor 
+dato controlado por el especificador de formato.
 
-.. todo:: TODO terminar escribir sobre la funcion integrada format()
+La función integrada ``format()`` es similar al :ref:`método format() <python_metodo_format>` 
+disponible en el tipo de :ref:`cadena de caracteres <python_cadenas>`. Internamente, 
+ambos llaman al método ``__format__()`` de un objecto.
 
-.. comments:
+Mientras, la función integrada ``format()`` es una implementación de bajo nivel para 
+formatear un objeto usando ``__format__()`` internamente, el 
+:ref:`método format() <python_metodo_format>` del tipo de cadena de caracteres es una 
+implementación de alto nivel disponible para ejecutar operaciones de formateo complejas 
+en múltiples objeto de :ref:`cadena de caracteres <python_cadenas>`.
 
-    La función ``format()`` devuelve una versión formateada, usando sustituciones desde 
-    ``args`` y ``kwargs``. Las sustituciones son identificado por caracteres llaves 
-    ('{' y '}').
+La sintaxis de la función integrada ``format()`` es:
 
-    ::
+::
 
-        >>> nombre = "leonardo"
-        >>> apellido = "caballero"
-        >>> "Nombre: {0} {1}".format(nombre, apellido)
-        'Nombre: leonardo caballero'
+    format(value[, format_spec])
+
+La a función integrada ``format()`` toma dos parámetros:
+
+- value - valor que necesita formatear.
+
+- format_spec - La especificación en como el valor debe ser formateado.
+
+A continuación, un ejemplo de un valor :ref:`número entero <python_num_entero>`, 
+seria de la siguiente forma:
+
+::
+
+    >>> print format(123,"d")
+    123
+
+A continuación, un ejemplo de un valor :ref:`número float <python_coma_flotante>`, 
+seria de la siguiente forma:
+
+::
+
+    >>> print format(123.456789,"f")
+    123.456789
+
+A continuación, un ejemplo de un valor binario, seria de la siguiente forma:
+
+::
+
+    >>> print format(10,"b")
+    1010
 
 
-    .. tip:: Para mayor información consulte la sección :ref:`format() <python_metodo_format>` detallada.
+A continuación, un ejemplo de un valor :ref:`número entero <python_num_entero>` 
+con formato especifico, seria de la siguiente forma:
+
+::
+
+    >>> print format(1234,"*>+7,d")
+    *+1,234
+
+En el ejemplo anterior cuando se formatea el :ref:`número entero <python_num_entero>` 
+*1234*, usted especifico el especificador de formato ``*<+7,d``. Seguidamente, se 
+describe cada opción a continuación:
+
+- ``*`` Es la opción del carácter de relleno, el cual rellena los espacio vacío después 
+  del formato.
+- ``>`` Es la opción de alineación a la derecha, el cual alinea la cadena de caracteres 
+  de salida a la derecha.
+- ``+`` Es la opción de signo, el cual obliga al número a ser firmado (con un signo a 
+  su izquierda).
+- ``7`` Es la opción ancho, el cual obliga el número que tome un mínimo de ancho de 7, 
+  otros espacios serán rellenado por el carácter de relleno.
+- ``,`` Ese es el operador miles, el cual coloca un carácter coma entre todos los números 
+  miles.
+- ``d`` Es la opción tipo que especifica que el número es un 
+  :ref:`número entero <python_num_entero>`.
+
+A continuación, un ejemplo de un valor :ref:`número float <python_coma_flotante>` 
+con formato especifico, seria de la siguiente forma:
+
+::
+
+    >>> print format(123.4567, "^-09.3f")
+    0123.4570
+
+En el ejemplo anterior cuando se formatea el :ref:`número float <python_coma_flotante>` 
+*123.4567*, usted especifico el especificador de formato ``^-09.3f``. Seguidamente, se 
+describe cada opción a continuación:
+
+- ``^`` Es la opción de alineación centrar, el cual alinea la cadena de 
+  caracteres de salida al centro del espacio remanente. the remaining space.
+- ``-`` Es la opción de signo, el cual obliga solamente a números negativos a mostrar 
+  the sign. It is the sign option that forces only negative numbers to show the sign
+- ``0`` Ese es el carácter, el cual es colocado en lugar de los espacios vacíos.
+- ``9`` Es la opción de ancho, el cual define el mínimo ancho del número a 9 (incluyendo 
+  el punto decimal, comas de miles y sign). It is the width option that sets the minimum 
+  width of the number to 9 (including decimal point, thousands comma and sign)
+- ``.3`` Ese es el operador de precisión que define la precisión del número 
+  flotante dado a 3 lugares.
+- ``f`` Es la opción tipo que especifica que el número es un 
+  :ref:`número float <python_coma_flotante>`.
+
+.. todo:: TODO traducir oraciones del párrafo anterior.
+
+A continuación, un ejemplo de usar la función ``format()`` sobre escribiendo el método 
+especial ``__format__()`` de una :ref:`clase <python_metodos_especiales>`, seria de la 
+siguiente forma:
+
+::
+
+    >>> class Persona:
+    ...     def __format__(self, formato):
+    ...         if(formato == 'edad'):
+    ...             return '23'
+    ...         return 'Formato nulo'
+    ... 
+    >>> print format(Persona(), "edad")
+    23
+
+En el ejemplo anterior cuando se sobre escribe el método especial ``__format__()`` de 
+la clase ``Persona``. Ese ahora acepta el argumento del método llamado ``edad`` el 
+cual devuelve *23*. 
+
+El método ``format()`` internamente ejecuta ``Persona().__format__("edad")``, el cual 
+devuelve el mensaje *23*. Si no hay formato especificado, el mensaje devuelto es 
+*Formato nulo*. 
 
 
 .. _python_funcion_index:
@@ -781,6 +1057,23 @@ si coincide que la cadenas de caracteres estén en MAYÚSCULAS en cada palabra.
     True
     >>> 'LEONARDO caballero'.isupper()
     False
+
+
+.. _python_funcion_lstrip:
+
+lstrip()
+~~~~~~~~
+
+La función ``lstrip()`` devuelve una copia de la cadena de caracteres con 
+todos los espacios al inicio removido. Si la cadena de caracteres es dada 
+y no es :ref:`None <python_objeto_none>`, remove characters in chars instead. 
+Si la cadena de caracteres es ``unicode``, la cadena de caracteres serán 
+convertidas a ``unicode`` antes de before stripping.
+
+::
+
+    >>> "leonardo caballero ".lstrip()
+    'leonardo caballero '
 
 
 .. _python_funcion_lower:
