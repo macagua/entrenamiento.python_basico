@@ -24,8 +24,8 @@ Las lecturas están organizada como las lecciones y sus temas.
 
 .. _lecturas_suplementarias_sesion1:
 
-Sesión 1 - Introducción al lenguaje Python
-------------------------------------------
+Lección 1 - Introducción al lenguaje Python
+-------------------------------------------
 
 
 Introducción a Python
@@ -90,8 +90,8 @@ Su primer programa
 
 .. _lecturas_suplementarias_sesion2:
 
-Sesión 2 - Introspección del lenguaje Python
---------------------------------------------
+Lección 2 - Introspección del lenguaje Python
+---------------------------------------------
 
 
 Inmersión al modo interactivo de Python
@@ -112,8 +112,8 @@ Inmersión al modo interactivo de Python
 
 .. _lecturas_suplementarias_sesion3:
 
-Sesión 3 - Tipos y estructuras de datos
----------------------------------------
+Lección 3 - Tipos y estructuras de datos
+----------------------------------------
 
 - `Python - Tipos básicos <http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/>`_.
 
@@ -183,8 +183,8 @@ Tipo diccionarios
 
 .. _lecturas_suplementarias_sesion4:
 
-Sesión 4 - Bloques de código y estructuras de control
------------------------------------------------------
+Lección 4 - Bloques de código y estructuras de control
+------------------------------------------------------
 
 
 Condicional if
@@ -263,8 +263,8 @@ Bucle for
 
 .. _lecturas_suplementarias_sesion5:
 
-Sesión 5 - Funciones y programación estructurada
-------------------------------------------------
+Lección 5 - Funciones y programación estructurada
+-------------------------------------------------
 
 
 Funciones definidas por el usuario
@@ -300,8 +300,8 @@ Programación estructurada
 
 .. _lecturas_suplementarias_sesion6:
 
-Sesión 6 - Introspección a la depuración con pdb
-------------------------------------------------
+Lección 6 - Introspección a la depuración con pdb
+-------------------------------------------------
 
 - `pdb — The Python Debugger <https://docs.python.org/2/library/pdb.html>`_.
 
@@ -322,8 +322,8 @@ Sesión 6 - Introspección a la depuración con pdb
 
 .. _lecturas_suplementarias_sesion7:
 
-Sesión 7 - Operaciones de E/S y manipulación de archivos
---------------------------------------------------------
+Lección 7 - Operaciones de E/S y manipulación de archivos
+---------------------------------------------------------
 
 
 Entrada / Salida en Python
@@ -362,8 +362,8 @@ Manipulación de archivos
 
 .. _lecturas_suplementarias_sesion8:
 
-Sesión 8 - Creación de módulos y paquetes Python
-------------------------------------------------
+Lección 8 - Creación de módulos y paquetes Python
+-------------------------------------------------
 
 
 Módulos Python
@@ -390,8 +390,8 @@ Scaffolding en proyectos Python
 
 .. _lecturas_suplementarias_sesion9:
 
-Sesión 9 - Manejos de errores y programación orientada a objetos
-----------------------------------------------------------------
+Lección 9 - Manejos de errores y programación orientada a objetos
+-----------------------------------------------------------------
 
 
 Errores y excepciones
@@ -427,8 +427,8 @@ Programación orientada a objetos
 
 .. _lecturas_suplementarias_sesion10:
 
-Sesión 10 - Decoradores y la librería estándar
-----------------------------------------------
+Lección 10 - Decoradores y la librería estándar
+-----------------------------------------------
 
 
 Iteradores
