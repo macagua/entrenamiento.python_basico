@@ -1058,11 +1058,11 @@ si coincide que la cadenas de caracteres estén en MAYÚSCULAS en cada palabra.
 lstrip()
 ~~~~~~~~
 
-La función ``lstrip()`` devuelve una copia de la cadena de caracteres con 
-todos los espacios al inicio removido. Si la cadena de caracteres es dada 
-y no es :ref:`None <python_objeto_none>`, remove characters in chars instead. 
-Si la cadena de caracteres es ``unicode``, la cadena de caracteres serán 
-convertidas a ``unicode`` antes de before stripping.
+La función ``lstrip()`` devuelve una copia de la cadena de caracteres con todos 
+los espacios al inicio removido. Si la cadena de caracteres es dada y no es 
+:ref:`None <python_objeto_none>`, eliminar caracteres en caracteres en su lugar. 
+Si la cadena de caracteres es ``unicode``, la cadena de caracteres serán convertidas 
+a ``unicode`` antes de pelar antes de aplicar la técnica *stripping*.
 
 ::
 
