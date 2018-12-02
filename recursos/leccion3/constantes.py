@@ -1,4 +1,5 @@
 # -*- coding: utf8 -*-
+"""Ejemplo de literales constantes"""
 
 # Constantes de aplicación
 IP_DB_SERVER = "127.0.0.1"

@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
 
-# Constantes de aplicación
+# Importar constantes
 import constantes
 
 print "scp -v -P {0} {1}@{2}:/{3}/{4}/{4}.sql /srv/backup".format(

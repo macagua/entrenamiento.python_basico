@@ -173,7 +173,7 @@ Crear un archivo ``constantes.py`` con el siguiente contenido:
 .. literalinclude:: ../../recursos/leccion3/constantes.py
     :linenos:
     :language: python
-    :lines: 4-9
+    :lines: 5-9
 
 Crear un archivo ``main.py``
 
