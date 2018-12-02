@@ -1,8 +1,8 @@
 # -*- coding: utf8 -*-
 
 """
-   La lista son variables que almacenan arrays, internamente 
-   cada posición puede ser un tipo de datos distinto.
+    La lista son variables que almacenan arrays, internamente 
+    cada posición puede ser un tipo de datos distinto.
 """
 
 # Colección ordenada / arreglos o vectores
@@ -29,6 +29,5 @@ print l3
 # Obtener un rango con saltos de elementos específicos
 l4 = lista[0:3:2]
 print l4
-
 l5 = lista[1::2]
 print l5

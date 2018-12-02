@@ -141,7 +141,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :linenos:
     :language: python
-    :lines: 30-34
+    :lines: 30-33
 
 **Ejemplo de iterar sobre cualquier secuencia**
 
