@@ -134,31 +134,35 @@ Así es una típica definición de ``PYTHONPATH`` desde un sistema UNIX, ejecuta
 Espacios de nombres y alcance
 .............................
 
-Las variables son nombres (identificadores) que se asignan a objetos. Un namespace 
-o espacio de nombres es un diccionario de nombres de variables (claves) y sus objetos 
-(valores) correspondientes.
+Las :ref:`variables <python_variable>` son nombres (identificadores) que se asignan 
+a objetos. 
+
+Un espacio de nombres o namespace, es un diccionario de nombres de variables (claves) 
+y sus objetos (valores) correspondientes.
 
 Una sentencia de Python puede acceder a las variables en un espacio de nombres local 
-y en el espacio de nombres global. Si una variable local y una global tienen el mismo 
-nombre, la variable local sombrea la variable global.
+y en el espacio de nombres global. Si una *variable local* y una *variable global* 
+tienen el mismo nombre, la *variable local* sombrea la *variable global*.
 
-Cada función tiene su propio espacio de nombres local. Los métodos de Clase siguen la 
-misma regla de alcance que las funciones ordinarias.
+Cada :ref:`función <python_funciones>` tiene su propio espacio de nombres local. Los 
+:ref:`métodos <python_metodos>` de Clase siguen la misma regla de alcance que las 
+funciones ordinarias.
 
 Python hace conjeturas educadas sobre si las variables son locales o globales. Se supone 
 que cualquier variable asignada a un valor en una función es local.
 
 Por lo tanto, para asignar un valor a una variable global dentro de una función, primero 
-debe usar la sentencia ``global``.
-
-La sentencia ``global nombre`` le dice al interprete Python que ``nombre`` es una 
-variable global. Python deja de buscar el espacio de nombres local para la variable.
+debe usar la sentencia :ref:`global <python_sentencia_global>`.
 
 ::
 
     >>> global nombre
     >>> nombre
     'Leonardo'
+
+La sintaxis ``global nombre``, le dice al interprete Python que la variable ``nombre`` 
+es una *variable global*. Python deja de buscar la variable en el espacio de nombres 
+local.
 
 Por ejemplo, defina una variable ``Money`` en el espacio de nombres global. Dentro 
 de la función ``Money``, asigna un valor a ``Money``, por lo tanto, Python asume que 

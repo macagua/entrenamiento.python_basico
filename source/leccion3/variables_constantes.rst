@@ -12,13 +12,60 @@ Variables y constantes
 Variables
 .........
 
-Es un nombre que se refiere a un objeto que reside en la memoria. 
-El objeto puede ser de alguno de los tipos vistos (número o cadena 
-de texto), o alguno de los otros tipos existentes en Python.
+Es un nombre que se refiere a un objeto que reside en la memoria. El objeto puede ser 
+de alguno de los tipos vistos (número o cadena de texto), o alguno de los otros tipos 
+existentes en Python.
 
-Cada variable debe tener un nombre único llamado identificador. Eso es muy 
-de ayuda pensar las variables como contenedores que contienen data el cual 
-puede ser cambiado después a través de técnicas de programación.
+Cada variable debe tener un nombre único llamado identificador. Eso es muy de ayuda 
+pensar las variables como contenedores que contienen data el cual puede ser cambiado 
+después a través de técnicas de programación.
+
+
+.. _python_alcance_variables:
+
+Alcance de las variables
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Las variables en Python son locales por defecto. Esto quiere decir que las variables 
+definidas y utilizadas en el bloque de código de una :ref:`función <python_funciones>`, 
+sólo tienen existencia dentro de la misma, y no interfieren con otras variables del 
+resto del código.
+
+A su vez, las variables existentes fuera de una :ref:`función <python_funciones>`, no 
+son visibles dentro de la misma.
+
+En caso de que sea conveniente o necesario, una variable local puede convertirse en 
+una variable global declarándola explícitamente como tal con la sentencia 
+:ref:`global <python_sentencia_global>`.
+
+
+.. _python_sentencia_global:
+
+Sentencia global
+~~~~~~~~~~~~~~~~
+
+La sentencia ``global`` es una declaración que se mantiene para todo el bloque de 
+código actual. Eso significa que los identificadores listados son interpretados como 
+globales. Eso podría ser imposible asignar a una variable global sin la sentencia 
+``global``, aunque las variables libres pueden referirse a globales sin ser declaradas 
+globales.
+
+::
+
+    >>> variable1 = "variable original"
+    >>> def variable_global():
+    ...     global variable1
+    ...     variable1 = "variable global modificada"
+    ... 
+    >>> print variable1
+    variable original
+    >>> variable_global()
+    >>> print variable1
+    variable global modificada
+
+Como se puede ver, después de llamar a la función ``variable_global()``, la variable 
+``variable1`` queda modificada. En general, este procedimiento debe utilizarse con 
+precaución.
 
 
 Ejemplos de variables
@@ -28,8 +75,8 @@ A continuación, se presentan algunos ejemplos del uso de *variables*:
 
 **Ejemplo de asignar valor a variable**
 
-A continuación, se creará un par de variables a modo de ejemplo. Una 
-de tipo :ref:`cadenas de caracteres <python_cadenas>` y una de tipo 
+A continuación, se creará un par de variables a modo de ejemplo. Una de tipo 
+:ref:`cadenas de caracteres <python_cadenas>` y una de tipo 
 :ref:`entero <python_num_entero>`:
 
 ::
@@ -40,22 +87,20 @@ de tipo :ref:`cadenas de caracteres <python_cadenas>` y una de tipo
 	>>> e = 23 # número entero
 	>>> type(e) # comprobar tipo de dato
 	<type 'int'>
-	>>> 
 
-Como puede ver en Python, a diferencia de muchos otros lenguajes, no se
-declara el tipo de la variable al crearla. En *Java*, por ejemplo,
-definir una variable seria así:
+Como puede ver en Python, a diferencia de muchos otros lenguajes, no se declara el 
+tipo de la variable al crearla. En *Java*, por ejemplo, definir una variable seria 
+así:
 
 .. sourcecode:: java
 
     String c = "Hola Mundo";
     int e = 23;
 
-También nos ha servido el pequeño ejemplo para presentar los
-comentarios en linea en Python: cadenas de caracteres que comienzan con el
-carácter ``#`` y que Python ignora totalmente. Hay más tipos de 
-:ref:`comentarios <python_cadenas_comentarios>`, de los cuales se 
-tratarán más adelante.
+También nos ha servido el pequeño ejemplo para presentar los comentarios en linea en 
+Python: cadenas de caracteres que comienzan con el carácter ``#`` y que Python ignora 
+totalmente. Hay más tipos de :ref:`comentarios <python_cadenas_comentarios>`, de los 
+cuales se tratarán más adelante.
 
 ----
 
@@ -87,10 +132,9 @@ asignando múltiples valores:
 	3.2
 	>>> print c
 	'Hello'
-	>>> 
 
-Si usted quiere asignar el mismo valor a múltiples variables al mismo tiempo, 
-usted puede hacer lo siguiente:
+Si usted quiere asignar el mismo valor a múltiples variables al mismo tiempo, usted 
+puede hacer lo siguiente:
 
 ::
 
@@ -114,15 +158,14 @@ El segundo programa asigna el mismo valor booleano a todas las tres variables ``
 Constantes
 ..........
 
-Una constante es un tipo de variable la cual no puede ser cambiada. Eso es muy 
-de ayuda pensar las constantes como contenedores que contienen información el 
-cual no puede ser cambiado después.
+Una constante es un tipo de variable la cual no puede ser cambiada. Eso es muy de 
+ayuda pensar las constantes como contenedores que contienen información el cual no 
+puede ser cambiado después.
 
-En Python, las constantes son usualmente declaradas y asignadas en un módulo. 
-Aquí, el módulo significa un nuevo archivo que contiene variables, funciones, 
-etc; el cual es importada en el archivo principal. Dentro del módulo, las 
-constantes son escritas en letras MAYÚSCULAS y separadas las palabras con el 
-carácter *underscore* ``_``.
+En Python, las constantes son usualmente declaradas y asignadas en un módulo. Aquí, 
+el módulo significa un nuevo archivo que contiene variables, funciones, etc; el cual 
+es importada en el archivo principal. Dentro del módulo, las constantes son escritas 
+en letras MAYÚSCULAS y separadas las palabras con el carácter *underscore* ``_``.
 
 
 Constantes integradas
@@ -142,23 +185,23 @@ Un pequeño número de constantes vive en el espacio de nombres incorporado. Son
 	los argumentos predeterminados no se pasan a una función.
 
 ``NotImplemented``
-	Valor especial que puede ser devuelto por los métodos especiales de 
-	"comparación rica" (``__eq__()``, ``__lt__()`` y amigos), para indicar que 
-	la comparación no se implementa con respecto al otro tipo.
+	Valor especial que puede ser devuelto por los métodos especiales de "comparación 
+	rica" (``__eq__()``, ``__lt__()`` y amigos), para indicar que la comparación no 
+	se implementa con respecto al otro tipo.
 
 ``Ellipsis``
-	Valor especial utilizado junto con la sintaxis de corte ampliada. Véase también el 
-	objeto :ref:`elipsis <python_objeto_ellipsis>`.
+	Valor especial utilizado junto con la sintaxis de corte ampliada. Véase también 
+	el objeto :ref:`elipsis <python_objeto_ellipsis>`.
 
 ``__debug__``
-	Esta constante es ``True`` si Python no se inició con una opción ``-O``. 
-	Véase también la sentencia :ref:`assert <python_sentencia_assert>`.
+	Esta constante es ``True`` si Python no se inició con una opción ``-O``. Véase 
+	también la sentencia :ref:`assert <python_sentencia_assert>`.
 
 .. note:: 
-	Los nombres ``None`` y ``__debug__`` no se pueden reasignar (asignaciones 
-	a ellos, incluso como un nombre de atributo, causa una excepción 
-	:ref:`SyntaxError <python_exception_syntaxerror>`), por lo que pueden 
-	considerarse constantes "verdaderas".
+	Los nombres ``None`` y ``__debug__`` no se pueden reasignar (asignaciones a ellos, 
+	incluso como un nombre de atributo, causa una excepción 
+	:ref:`SyntaxError <python_exception_syntaxerror>`), por lo que pueden considerarse 
+	constantes "verdaderas".
 
 
 Ejemplo de constantes
@@ -211,7 +254,6 @@ Existen ciertas palabras que tienen significado especial para el intérprete de 
 Estas no pueden utilizarse para ningún otro fin (como ser nombrar valores) excepto 
 para el que han sido creadas. Estas son:
 
-
 - :ref:`and <python_operadores_logicos>`.
 
 - ``as``.
@@ -242,7 +284,7 @@ para el que han sido creadas. Estas son:
 
 - :ref:`from <python_sentencia_from>`.
 
-- ``global``.
+- :ref:`global <python_sentencia_global>`.
 
 - :ref:`if <python_condicional_if>`.
 
