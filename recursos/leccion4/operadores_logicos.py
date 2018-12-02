@@ -1,8 +1,6 @@
 # -*- coding: utf8 -*-
 
-"""
-    Operadores lógicos
-"""
+"""Operadores lógicos"""
 
 a, b = 10, 20
 
@@ -13,7 +11,7 @@ print "Valor de variable 'b':", b
 print "\nOperador and"
 print "============"
 
-if ( a and b ):
+if (a and b):
    print "Las variables 'a' y 'b' son VERDADERO."
 else:
    print "O bien la variable 'a' no es VERDADERO " + \
@@ -22,7 +20,7 @@ else:
 # Operador or
 print "\nOperador or"
 print "==========="
-if ( a or b ):
+if (a or b):
    print "O bien la variable 'a' es VERDADERA " + \
    "o la variable 'b' es VERDADERA " + \
    "o ambas variables son VERDADERAS."
@@ -33,7 +31,7 @@ else:
 # Operador not
 print "\nOperador not"
 print "============"
-if not( a and b ):
+if not(a and b):
    print "Ni la variable 'a' NO es VERDADERA " + \
    "o la variable 'b' NO es VERDADERA."
 else:
