@@ -81,21 +81,127 @@ cadenas) y la multiplicación.
 
 .. _python_cadenas_comentarios:
 
-Cadenas de comentarios
-......................
+Comentarios
+...........
 
-Son cadenas de caracteres que comienzan con el carácter ``#`` y cadena entre 
-triples comillas (simples o dobles) que Python ignora totalmente.
+Son cadenas de caracteres las cuales comienzan con el carácter ``#`` estas el intérprete 
+Python ignora totalmente, no generan ningún tipo de código, pero constituyen una ayuda 
+esencial tanto para quien está desarrollando el programa, como para otras personas que 
+lean el código.
+
+Los comentarios en el código tienen una vital importancia en el desarrollo de todo 
+programa, algunas de las funciones más importantes que pueden cumplir los comentarios 
+en un programa, son:
+
+- Brindar información general sobre el programa.
+
+- Explicar qué hace cada una de sus partes.
+
+- Aclarar y/o fundamentar el funcionamiento de un bloque específico de código, que no 
+  sea evidente de su propia lectura.
+
+- Indicar cosas pendientes para agregar o mejorar.
+
+El signo para indicar el comienzo de un comentario en Python es la almohadilla o numeral 
+``#``, a partir del cual y hasta el fin de la línea, todo se considera un comentario y 
+es ignorado por el intérprete Python.
 
 ::
 
     >>> # comentarios en linea
     ... 
+
+El carácter ``#`` puede estar al comienzo de línea (en cuyo caso toda la línea será 
+ignorada), o después de finalizar una instrucción válida de código.
+
+::
+
+    >>> # Programa que calcula la Sucesión de números Fibonacci
+    ... # Más información en https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci
+    ... 
+    >>> # se definen las variables
+    ... a, b = 0, 1
+    >>> while b < 100: # mientras b sea menor a 100 itere
+    ...     print b,
+    ...     a, b = b, a + b # se calcula la sucesión Fibonacci
+    ... 
+    1 1 2 3 5 8 13 21 34 55 89
+
+
+.. _python_comentarios_multilinea:
+
+Comentarios multilínea
+~~~~~~~~~~~~~~~~~~~~~~
+
+Python no dispone de un método para delimitar bloques de comentarios de varias líneas.
+
+Al igual que los comentarios de un sola linea, son cadenas de caracteres, en este caso 
+van entre triples comillas (simples o dobles), esto tiene el inconveniente que, aunque 
+no genera código ejecutable, el bloque delimitado no es ignorado por el intérprete Python, 
+que crea el correspondiente objeto de tipo :ref:`cadena de caracteres <python_cadenas>`.
+
+::
+
     >>> """comentarios en varias lineas"""
-    ' comentarios en varias lineas '
+    'comentarios en varias lineas'
     >>> '''comentarios en varias lineas'''
-    ' comentarios en varias lineas '
+    'comentarios en varias lineas'
+
+
+A continuación, una comparación entre comentarios multilínea y comentarios en solo 
+una linea:
+
+::
+
+    >>> # Programa que calcula la Sucesión de números Fibonacci
+    ... # Más información en https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci
+    ... 
+    >>> """Programa que calcula la Sucesión de números Fibonacci.
+    ... Más información en https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci"""
+    'Programa que calcula la Sucesi\xc3\xb3n de n\xc3\xbameros Fibonacci.\nM\xc3\xa1s informaci\xc3\xb3n en https://es.wikipedia.org/wiki/Sucesi\xc3\xb3n_de_Fibonacci'
     >>> 
+
+Entonces existen al menos dos (02) alternativas para introducir comentarios multilíneas 
+son:
+
+- Comentar cada una de las líneas con el carácter #: en general todos los editores 
+  de programación y entornos de desarrollo (IDEs) disponen de mecanismos que permiten 
+  comentar y descomentar fácilmente un conjunto de líneas.
+
+- Utilizar triple comillas (simples o dobles) para generar una cadena multilínea: 
+  si bien este método es aceptado.
+
+A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
+
+::
+
+    >>> u"""
+    ...     Programa que calcula la Sucesión de números Fibonacci
+    ...     Más información en https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci
+    ... """
+    '\n    Programa que calcula la Sucesi\xc3\xb3n de n\xc3\xbameros Fibonacci\n    M\xc3\xa1s informaci\xc3\xb3n en https://es.wikipedia.org/wiki/Sucesi\xc3\xb3n_de_Fibonacci\n'
+    >>> 
+    >>> # se definen las variables
+    ... a, b = 0, 1
+    >>> while b < 100:
+    ...     print b,
+    ...     # se calcula la sucesión Fibonacci
+    ...     a, b = b, a + b
+    ... 
+    1 1 2 3 5 8 13 21 34 55 89
+    >>> 
+
+Los comentarios multilína usado con mucha frecuencia como en las varias sintaxis 
+Python como :ref:`comentarios de documentación <python_cadenas_docstrings>` a 
+continuación se listan las sintaxis más comunes:
+
+- :ref:`Módulos <python_modulos>`.
+
+- :ref:`Funciones <python_funciones>`.
+
+- :ref:`Clases <python_clases>`.
+
+- :ref:`Métodos <python_metodos>`.
 
 
 .. _python_cadenas_docstrings:
