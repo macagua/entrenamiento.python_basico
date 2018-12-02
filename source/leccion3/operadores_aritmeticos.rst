@@ -219,11 +219,11 @@ izquierda por el operador del lado derecho y devuelve el resto.
 
 
 .. tip::
-    Para ejecutar el código :file:`operadores_numericos.py`, abra una 
+    Para ejecutar el código :file:`operadores_aritmeticos.py`, abra una 
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python operadores_asignaciones.py
+        python operadores_aritmeticos.py
 
 
 ----
