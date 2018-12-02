@@ -53,7 +53,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 4-6
+    :lines: 5-6
 
 
 .. _python_num_entero_long:
@@ -111,7 +111,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 9-11
+    :lines: 9-10
 
 
 ----
@@ -175,14 +175,14 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 14-18
+    :lines: 13-16
 
 
 **Ejemplo de definición de tipo entero coma flotante con exponente en base 10**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 22-24
+    :lines: 20-21
 
 ----
 
@@ -223,7 +223,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 28-30
+    :lines: 24-25
 
 
 ----
