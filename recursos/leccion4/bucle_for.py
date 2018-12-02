@@ -1,8 +1,6 @@
 # -*- coding: utf8 -*-
 
-"""
-    Ejemplo de uso de bucle 'for'
-"""
+"""Ejemplo de uso de bucle 'for'"""
 
 # Bucle 'for' con estructura 'lista'
 print "\nBucle 'for' con estructura 'lista'"
@@ -63,7 +61,7 @@ datos_basicos = {
     "fecha_nacimiento":"03/12/1980",
     "lugar_nacimiento":"Maracaibo, Zulia, Venezuela",
     "nacionalidad":"Venezolana",
-    "estado_civil":"Complicado"
+    "estado_civil":"Soltero"
 }
 clave = datos_basicos.keys()
 valor = datos_basicos.values()

@@ -30,7 +30,7 @@ estructuras de datos :ref:`Listas <python_listas>`:
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
-    :lines: 14-17
+    :lines: 12-15
 
 
 Bucle 'for' con Listas y función 'range'
@@ -43,7 +43,7 @@ estructuras de datos :ref:`Listas <python_listas>` con la función
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
-    :lines: 34-39
+    :lines: 32-37
 
 Si se necesita iterar sobre una secuencia de números. Genera una lista conteniendo 
 progresiones aritméticos, por ejemplo, como se hace en el fragmento de código fuente 
@@ -59,7 +59,7 @@ estructuras de datos :ref:`Tuplas <python_tuplas>`:
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
-    :lines: 48-50
+    :lines: 46-48
 
 El ejemplo anterior itera una :ref:`tupla <python_tuplas>` de parámetros.
 
@@ -73,7 +73,7 @@ estructuras de datos :ref:`Diccionarios <python_diccionarios>`:
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
-    :lines: 59-73
+    :lines: 57-71
 
 El ejemplo anterior itera un :ref:`diccionario <python_diccionarios>` con datos 
 básicos de una persona.
@@ -93,7 +93,7 @@ sea ``False``, (a comparación de la :ref:`sentencia if <python_condicional_if>`
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
-    :lines: 82-89
+    :lines: 80-87
 
 La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis 
 que en las demás estructuras de control.
