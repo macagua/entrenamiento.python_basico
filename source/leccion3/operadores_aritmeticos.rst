@@ -135,87 +135,87 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 **Ejemplo de definir variables numéricas**
 
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
+    :linenos:
+    :language: python
+    :lines: 4
+
+
+**Ejemplo de operador aritmético Suma**, Añade valores a cada lado del operador.
+
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
     :language: python
     :lines: 7
 
 
-**Ejemplo de operador aritmético Suma**, Añade valores a cada lado del operador.
+**Ejemplo de operador aritmético Resta**, Resta el operando de la derecha del 
+operador del lado izquierdo.
 
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
     :language: python
     :lines: 10
 
 
-**Ejemplo de operador aritmético Resta**, Resta el operando de la derecha del 
-operador del lado izquierdo.
+**Ejemplo de operador aritmético Multiplicación**, Multiplica los valores de 
+ambos lados del operador.
 
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
     :language: python
     :lines: 13
 
 
-**Ejemplo de operador aritmético Multiplicación**, Multiplica los valores de 
-ambos lados del operador.
+**Ejemplo de operador aritmético Exponente, Realiza el cálculo exponencial** 
+(potencia) de los operadores.
 
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
     :language: python
     :lines: 16
 
 
-**Ejemplo de operador aritmético Exponente, Realiza el cálculo exponencial** 
-(potencia) de los operadores.
+**Ejemplo de operador aritmético División**.
 
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
     :language: python
     :lines: 19
 
 
-**Ejemplo de operador aritmético División**.
+**Ejemplo de operador aritmético División entera**.
 
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
     :language: python
     :lines: 22
-
-
-**Ejemplo de operador aritmético División entera**.
-
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
-    :linenos:
-    :language: python
-    :lines: 25
 
 
 **Ejemplo de operador aritmético Cociente de una división**, la división de 
 operandos que el resultado es el cociente en el cual se eliminan los dígitos 
 después del punto decimal.
 
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
     :language: python
-    :lines: 29
+    :lines: 26
 
 
 **Ejemplo de operador aritmético Módulo**, el cual divide el operando de la 
 izquierda por el operador del lado derecho y devuelve el resto.
 
-.. literalinclude:: ../../recursos/leccion3/operadores_numericos.py
+.. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
     :language: python
-    :lines: 33
+    :lines: 30
 
 ----
 
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
-    :download:`aquí <../../recursos/leccion3/operadores_numericos.py>`.
+    :download:`aquí <../../recursos/leccion3/operadores_aritmeticos.py>`.
 
 
 .. tip::
