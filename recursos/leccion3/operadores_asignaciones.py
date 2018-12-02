@@ -1,8 +1,5 @@
 # -*- coding: utf8 -*-
-
-"""
-    Operadores de asignaciones
-"""
+"""Operadores de asignaciones"""
 
 a, b, c = 21, 10, 0
 

@@ -207,19 +207,21 @@ Asignación aumentada
 ....................
 
 Es frecuente que una variable tenga que ser definida de nuevo en función de sí misma. 
-En vez de escribir:
+Normalmente usted escribir la siguiente sintaxis:
 
 ::
 
 	>>> contador = contador + 1
 
-Se puede abreviar a su equivalente:
+El código anterior, se puede abreviar a su equivalente, usando la asignación aumentada, 
+de la siguiente manera:
 
 ::
 
 	>>> contador += 1
 
-Que no sólo es más corto de escribir, sino también más eficiente.
+El código anterior, no sólo es más corto de escribir, sino también más eficiente en 
+tiempo de ejecución.
 
 
 .. _python_operadores_asignaciones_ejemplo:
@@ -232,7 +234,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/operadores_asignaciones.py
     :linenos:
     :language: python
-    :lines: 7-32
+    :lines: 4-29
 
 ----
 
