@@ -69,7 +69,6 @@ A continuación, se cambiará el valor para una variable de tipo
 	>>> c = "Hola Python" # cadenas de caracteres
 	>>> c
 	'Hola Python'
-	>>>
 
 ----
 
@@ -102,10 +101,11 @@ usted puede hacer lo siguiente:
 	True
 	>>> print z
 	True
-	>>> 
 
 El segundo programa asigna el mismo valor booleano a todas las tres variables ``x``, 
 ``y``, ``z``.
+
+
 
 ----
 

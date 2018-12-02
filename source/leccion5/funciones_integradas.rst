@@ -68,7 +68,6 @@ Si es llamado sin argumentos, devuelve los nombres en el ámbito actual.
 
     >>> dir()
     ['__builtins__', '__doc__', '__name__', '__package__']
-    >>> 
 
 
 De lo contrario, devuelve una lista alfabética de nombres que comprende 
@@ -139,7 +138,6 @@ la lógica ``dir()`` predeterminada y devuelve:
     ...
     ...
     ... ]
-    >>> 
     >>> print os.__doc__
     OS routines for NT or Posix depending on what system we're on.
 
@@ -756,7 +754,6 @@ Devuelve el valor absoluto de un número (entero o de coma flotante).
     3
     >>> abs(-2.5)
     2.5
-    >>> 
 
 
 .. _python_funcion_bin:
@@ -785,7 +782,6 @@ la división entera, y el resto.
 
     >>> divmod(22, 4)
     (5, 2)
-    >>> 
 
 
 .. _python_funcion_hex:
@@ -820,7 +816,6 @@ Si recibe más de un argumento, devuelve el mayor de ellos.
     'a'
     >>> type(max("a", "Z"))
     <type 'str'>
-    >>> 
 
 
 Si recibe un solo argumento, devuelve el mayor de sus elementos. Debe ser un objeto 
@@ -833,7 +828,6 @@ o colección.
     'y'
     >>> type(max("Hola, Python"))
     <type 'str'>
-    >>> 
 
 
 .. _python_funcion_min:
@@ -1414,7 +1408,6 @@ sea MAYÚSCULAS o MINÚSCULAS.
     'LEONARDO CABALLERO'
     >>> 'LEONARDO CABALLERO'.swapcase()
     'leonardo caballero'
-    >>> 
 
 
 .. _python_funcion_title:

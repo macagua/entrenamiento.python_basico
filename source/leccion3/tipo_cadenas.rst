@@ -76,7 +76,6 @@ cadenas) y la multiplicación.
     >>> c = a * 3
     >>> c
     'unounouno'
-    >>> 
 
 
 .. _python_cadenas_comentarios:
@@ -411,7 +410,6 @@ necesita ser formateado o convertido. El operador % entonces substituye la frase
     >>> valor = 2**0.5
     >>> print "el resultado de %s es %f" % (tipo_calculo, valor)
     el resultado de raíz cuadrada de dos es 1.414214
-    >>> 
 
 También aquí se puede controlar el formato de salida. Por ejemplo, para obtener el 
 valor con 8 dígitos después de la coma:
@@ -422,7 +420,6 @@ valor con 8 dígitos después de la coma:
     >>> valor = 2**0.5
     >>> print "el resultado de %s es %.8f" % (tipo_calculo, valor)
     el resultado de raíz cuadrada de dos es 1.41421356
-    >>> 
 
 Con esta sintaxis hay que determinar el tipo del objeto:
 
@@ -487,7 +484,6 @@ argumentos.
     >>> valor = 2**0.5
     >>> print "el resultado de {} es {}".format(tipo_calculo, valor)
     el resultado de raíz cuadrada de dos es 1.41421356237
-    >>> 
 
 También se puede referenciar a partir de la posición de los valores utilizando índices:
 
@@ -497,7 +493,6 @@ También se puede referenciar a partir de la posición de los valores utilizando
     >>> valor = 2**0.5
     >>> print "el resultado de {0} es {1}".format(tipo_calculo, valor)
     el resultado de raíz cuadrada de dos es 1.41421356237
-    >>> 
 
 Los objetos también pueden ser referenciados utilizando un identificador con una clave y 
 luego pasarla como argumento al método:
@@ -507,7 +502,6 @@ luego pasarla como argumento al método:
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> print "el resultado de {nombre} es {resultado}".format(nombre=tipo_calculo, resultado=2**0.5)
     el resultado de raíz cuadrada de dos es 1.41421356237
-    >>> 
 
 
 **Formateo avanzado**
@@ -577,7 +571,6 @@ se imprima con cuatro dígitos después de la coma (``.4``).
     >>> valor = 2**0.5
     >>> print "el resultado de {0} es {resultado:.4f}".format(tipo_calculo, resultado=valor)
     el resultado de raíz cuadrada de dos es 1.4142
-    >>> 
 
 Formateo de números enteros, rellenados con espacios, con las siguientes 
 sentencias:
@@ -766,7 +759,6 @@ La función ``str()`` devuelve una cadenas de caracteres.
     '-2.5'
     >>> str(2.3+0j)
     '(2.3+0j)'
-    >>> 
 
 .. tip:: 
     Para más información consulte las funciones integradas para 
