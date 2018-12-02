@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
+"""Ejemplo del Tipos de datos booleanos"""
 
-# Tipos de datos booleanos
 print '\nTipos de datos booleanos'
 print '========================\n'
 
