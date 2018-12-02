@@ -374,9 +374,9 @@ El objeto tipo
 ..............
 
 Los objetos tipo representan los diversos tipos de objeto. El tipo de un objeto es 
-accesible mediante la función interna ``type()``. No hay operaciones especiales 
-sobre los tipos. El módulo estándar ``types`` define nombres para todos los tipos 
-internos estándar.
+accesible mediante la función integrada :ref:`type() <python_funcion_type>`. No hay 
+operaciones especiales sobre los tipos. El módulo estándar ``types`` define nombres 
+para todos los tipos internos estándar.
 
 .. note::
     Los tipos se muestran de este modo: ``<type 'type'>``.

@@ -8,14 +8,9 @@ Funciones integradas
 
 
 El interprete Python tiene un número de funciones integradas (built-in) dentro del 
-módulo ``__builtins__``, las cuales están siempre disponibles. Ellas están listadas 
-en orden alfabéticos a continuación:
+módulo ``__builtins__``, las cuales están siempre disponibles. Estas funciones están 
+listadas en orden alfabéticos a continuación:
 
-
-.. todo:: TODO terminar de escribir esta sección.
-
-
-----
 
 .. _python_funciones_generales:
 
@@ -255,17 +250,19 @@ Ademas si se han definido anteriormente variables las acepta como parámetros:
     95
 
 
-.. _python_funcion_len:
+.. _python_funcion_globals:
 
-len()
-~~~~~
+globals()
+~~~~~~~~~
 
-Devuelve el número de elementos de una secuencia o colección.
+La función ``globals()`` puede ser usada para devolver los nombres en el ``namespaces`` 
+global dependiendo en la locación desde donde ella es llamada.
 
-::
+Si la función ``globals()`` es llamada desde una función, eso devolverá todos los nombres 
+que pueden ser accesibles globalmente desde esa función.
 
-    >>> len("leonardo caballero")
-    18
+El tipo de dato devuelto por función es un tipo diccionario. Therefore, los nombres pueden 
+ser extraídos usando la función integrada ``keys()``.
 
 
 .. _python_funcion_help:
@@ -294,6 +291,19 @@ Invoca el menú de ayuda del intérprete de Python:
     such as "spam", type "modules spam".
 
     help> 
+
+
+.. _python_funcion_len:
+
+len()
+~~~~~
+
+Devuelve el número de elementos de una secuencia o colección.
+
+::
+
+    >>> len("leonardo caballero")
+    18
 
 
 .. _python_funcion_license:
@@ -332,6 +342,21 @@ Imprime el texto de la licencia.
 
     All Python releases are Open Source (see http://www.opensource.org for
     Hit Return for more, or q (and Return) to quit: 
+
+
+.. _python_funcion_locals:
+
+locals()
+~~~~~~~~
+
+La función ``locals()`` puede ser usadas para devolver los nombres en el ``namespaces`` 
+local dependiendo en la locación desde donde ella es llamada.
+
+Si la función ``locals()`` es llamada desde una función, eso devolverá todos los nombres 
+que pueden ser accesibles localmente desde esa función.
+
+El tipo de dato devuelto por la función es un tipo diccionario. Therefore, los nombres 
+pueden ser extraídos usando la función integrada ``keys()``.
 
 
 .. _python_funcion_open:
@@ -416,7 +441,8 @@ todos los tipos de nueva línea que se han visto.
 range()
 ~~~~~~~
 
-Devuelve una lista conteniendo una progresión aritmética de enteros.
+La función ``range()`` devuelve una lista conteniendo una progresión aritmética 
+de enteros.
 
 range(inicio, detener[, paso]) -> lista de enteros
 
@@ -449,7 +475,153 @@ En el ejemplo anterior, la función ``range(4)`` devuelve **[0, 1, 2, 3]**. ¡El
 final es omitido! Hay exactamente los indices validos para una lista de **4** elementos.
 
 
+.. _python_funcion_reload:
+
+reload()
+~~~~~~~~
+
+Cuando el modulo es importado dentro de un script, el código en la porción del nivel 
+superior de un modulo es ejecutado solamente una vez.
+
+Therefore, si usted quiere volver a ejecutar la porción del nivel superior el código 
+de un modulo, usted puede usar la función ``reload()``. Esta función importa otra vez 
+un modulo previamente importado. La sintaxis de la función ``reload()`` es la siguiente:
+
+::
+
+    >>> reload(module_name)
+
+Aquí, ``module_name`` es el nombre del modulo que usted quiere volver a cargar y no la 
+cadena de caracteres contendiente el nombre del modulo. Por ejemplo, para recargar el 
+modulo ``clases.py``, debe hacer lo siguiente:
+
+::
+
+    >>> import clases
+    >>> reload(clases)
+
+
+.. _python_funcion_xrange:
+
+xrange()
+~~~~~~~~
+
+El tipo ``xrange`` es una secuencia inmutable utilizada normalmente en bucles. La 
+ventaja de la función ``xrange()`` sobre la función ``range()``, es que devuelve 
+un objeto ``xrange`` el cual ocupa siempre la misma cantidad de memoria, 
+independientemente del rango el cual represente. 
+
+::
+
+    >>> for item in range(5):
+    ...     print item
+    ... 
+    0
+    1
+    2
+    3
+    4
+    >>> for item in xrange(5):
+    ...     print item
+    ... 
+    0
+    1
+    2
+    3
+    4
+    >>>
+
+Como la función ``xrange()``, devuelve un objeto el cual genera los números en el 
+rango a demanda. Para bucles, esto es slightly faster que la función ``range()`` 
+y más eficiente en la memoria.
+
+.. todo:: TODO traducir las frases del párrafo anterior.
+
+::
+
+    >>> print xrange(5)
+    xrange(5)
+    >>> type(xrange(5))
+    <type 'xrange'>
+    >>> dir(xrange(5))
+    ['__class__', '__delattr__', '__doc__', '__format__', 
+    '__getattribute__', '__getitem__', '__hash__', '__init__', 
+    '__iter__', '__len__', '__new__', '__reduce__', '__reduce_ex__', 
+    '__repr__', '__reversed__', '__setattr__', '__sizeof__', 
+    '__str__', '__subclasshook__']
+
+La ventaja de la función ``xrange()`` es *excepto* en hardware impedido en cuestión 
+de memoria (por ejemplo, MS-DOS) o cuando nunca se utilizan todos los elementos 
+del rango (por ejemplo, porque se suele interrumpir la ejecución del bucle con la 
+sentencia :ref:`break <python_sentencia_break>`).
+
+
+.. _python_funcion_type:
+
+type()
+~~~~~~~
+
+La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
+
+::
+
+    >>> type(2)
+    <type 'int'>
+    >>> type(2.5)
+    <type 'float'>
+    >>> type(True)
+    <type 'bool'>
+    >>> type("Hola Mundo")
+    <type 'str'>
+    >>> type(int)
+    <type 'type'>
+    >>> type(str)
+    <type 'type'>
+    >>> type(None)
+    <type 'NoneType'>
+    >>> type(object)
+    <type 'type'>
+    >>> import os
+    >>> type(os)
+    <type 'module'>
+    >>> type(format)
+    <type 'builtin_function_or_method'>
+
+.. tip::
+
+    La función ``type()`` devuelve el tipo del objeto, en base al modulo integrado 
+    ``types``, el cual define los nombres para todos los símbolos tipo conocidos 
+    en el interprete estándar.
+
+    ::
+
+        >>> import types
+        >>> help(types)
+
+        Help on module types:
+
+        NAME
+            types - Define names for all type symbols known in the standard interpreter.
+
+        FILE
+            /usr/lib/python2.7/types.py
+
+        MODULE DOCS
+            https://docs.python.org/library/types
+
+        DESCRIPTION
+            Types that are part of optional modules (e.g. array) are not listed.
+
+        CLASSES
+            __builtin__.basestring(__builtin__.object)
+                __builtin__.str
+                __builtin__.unicode
+
+        >>> 
+
+
 ----
+
 
 .. _python_funciones_integradas_es:
 
@@ -560,6 +732,7 @@ de leer.
 
 ----
 
+
 .. _python_funciones_integradas_numericas:
 
 Funciones de numéricas
@@ -591,13 +764,14 @@ Devuelve el valor absoluto de un número (entero o de coma flotante).
 bin()
 ~~~~~
 
-Devuelve una representación binaria de un numero entero o entero long, 
-es decir, lo convierte de entero a binario.
+Devuelve una representación binaria de un :ref:`numero entero <python_num_entero>` 
+o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a binario.
 
 ::
 
     >>> bin(10)
     '0b1010'
+
 
 .. _python_funcion_divmod:
 
@@ -619,8 +793,9 @@ la división entera, y el resto.
 hex()
 ~~~~~
 
-Devuelve una representación hexadecimal de un numero entero o entero long, 
-es decir, lo convierte de entero a hexadecimal.
+Devuelve una representación hexadecimal de un :ref:`numero entero <python_num_entero>` 
+o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a 
+hexadecimal.
 
 ::
 
@@ -678,7 +853,31 @@ Tiene un comportamiento similar a ``max()``, pero devuelve el mínimo.
     ' '
     >>> type(min("Hola, Python"))
     <type 'str'>
-    >>> 
+
+
+.. _python_funcion_pow:
+
+pow()
+~~~~~
+
+La función ``pow()`` si recibe dos (02) argumentos, eleva el primero argumento 
+a la potencia del segundo argumento.
+
+::
+
+    >>> pow(2, 3)
+    8
+    >>> pow(10, 2)
+    100
+    >>> pow(10, -2)
+    0.01
+
+Si recibe un tercer argumento opcional, éste funciona como módulo.
+
+::
+
+    >>> pow(2, 3, 3)
+    2
 
 
 .. _python_funcion_round:
@@ -686,30 +885,45 @@ Tiene un comportamiento similar a ``max()``, pero devuelve el mínimo.
 round()
 ~~~~~~~
 
-Redondea un numero flotante a una precisión dada en dígitos decimal (por 
-defecto 0 dígitos). Esto siempre devuelve un numero flotante. La precisión 
-tal vez sea negativa.
+La función ``round()`` redondea un numero flotante a una precisión dada en 
+dígitos decimal (por defecto 0 dígitos). Esto siempre devuelve un numero 
+flotante. La precisión tal vez sea negativa.
 
-En el siguiente ejemplo redondeo de un numero flotante a entero, mayor o igual 
-a *.5* al alza:
+En el siguiente ejemplo redondeo de un numero flotante a entero, mayor o 
+igual a *.5* al alza:
 
 ::
 
     >>> round(5.5)
     6.0
-    >>> 
 
-En este otro ejemplo redondeo de un numero flotante a entero, menor de *.5* a 
-la baja:
+En este otro ejemplo redondeo de un numero flotante a entero, menor de *.5* 
+a la baja:
 
 ::
 
     >>> round(5.4)
     5.0
-    >>> 
+
+
+.. _python_funcion_oct:
+
+oct()
+~~~~~
+
+La función ``oct()`` convierte un número entero en una cadena en base octal, 
+antecedida del prefijo *'0'*.
+
+::
+
+    >>> oct(8)
+    '010'
+    >>> oct(123)
+    '0173'
 
 
 ----
+
 
 .. _python_funciones_integradas_cadenas:
 
@@ -731,6 +945,27 @@ la primera palabra.
 
     >>> 'leonardo caballero'.capitalize()
     'Leonardo caballero'
+
+
+.. _python_funcion_chr:
+
+chr()
+~~~~~
+
+La función ``chr()`` recibe como argumento un entero, y devuelve una cadena con 
+el carácter cuyo código *Unicode* corresponde a ese valor. El rango válido para 
+el argumento es de 0 a 256.
+
+::
+
+    >>> chr(64)
+    '@'
+    >>> chr(36)
+    '$'
+    >>> chr(94)
+    '^'
+    >>> chr(126)
+    '~'
 
 
 .. _python_funcion_endswith:
@@ -789,6 +1024,7 @@ en la función.
     0
     >>> 'leonardo caballero'.find("ana")
     -1
+
 
 .. _python_funcion_format:
 
@@ -1084,6 +1320,26 @@ en cada palabra.
     'leonardo caballero'
 
 
+.. _python_funcion_ord:
+
+ord()
+~~~~~
+
+La función ``ord()`` es el inverso de :ref:`chr() <python_funcion_chr>` dada una 
+cadena representando un carácter Unicode, devuelve el entero del código correspondiente.
+
+::
+
+    >>> ord('@')
+    64
+    >>> ord('$')
+    36
+    >>> ord('^')
+    94
+    >>> ord('~')
+    126
+
+
 .. _python_funcion_replace:
 
 replace()
@@ -1188,3 +1444,11 @@ en cada palabra.
     >>> "leonardo caballero".upper()
     'LEONARDO CABALLERO'
 
+----
+
+.. important::
+
+    La lista de todas las funciones disponibles en el lenguaje Python con la descripción 
+    correspondiente se puede encontrar en la siguiente dirección URL: 
+
+    - https://docs.python.org/2/library/functions.html
