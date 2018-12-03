@@ -253,6 +253,16 @@ Ademas si se han definido anteriormente variables las acepta como parámetros:
 globals()
 ~~~~~~~~~
 
+La función ``globals()`` devuelve un diccionario conteniendo ámbito actual global de 
+las variables.
+
+::
+
+    >>> globals()
+    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': 
+    '__main__', '__doc__': None}
+
+
 La función ``globals()`` puede ser usada para devolver los nombres en el ``namespaces`` 
 global dependiendo en la locación desde donde ella es llamada.
 
@@ -346,6 +356,15 @@ Imprime el texto de la licencia.
 
 locals()
 ~~~~~~~~
+
+La función ``locals()`` devuelve un diccionario conteniendo ámbito actual local de 
+las variables.
+
+::
+
+    >>> locals()
+    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': 
+    '__main__', '__doc__': None}
 
 La función ``locals()`` puede ser usadas para devolver los nombres en el ``namespaces`` 
 local dependiendo en la locación desde donde ella es llamada.
@@ -616,6 +635,25 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
                 __builtin__.unicode
 
         >>> 
+
+
+.. _python_funcion_vars:
+
+vars()
+~~~~~~
+
+La función ``vars()`` devuelve un diccionario conteniendo ámbito actual de las 
+variables.
+
+::
+
+    >>> vars()
+    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': 
+    '__main__', '__doc__': None}
+
+
+La función ``vars()`` sin argumentos, equivale a la función :ref:`locals() <python_funcion_locals>`. 
+Si se llama con un argumento equivale a la sentencia ``object.__dict__``.
 
 
 ----
@@ -899,6 +937,21 @@ a la baja:
 
     >>> round(5.4)
     5.0
+
+
+.. _python_funcion_sum:
+
+sum()
+~~~~~
+
+La función ``sum()`` devuelve una lista ordenada de los elementos de la secuencia 
+que recibe como argumento (lista o cadena). La secuencia original no es modificada.
+
+::
+
+    >>> lista = [1, 2, 3, 4]
+    >>> sum(lista)
+    10
 
 
 .. _python_funcion_oct:
@@ -1466,7 +1519,44 @@ en cada palabra.
     >>> "leonardo caballero".upper()
     'LEONARDO CABALLERO'
 
+
 ----
+
+
+.. _python_funciones_secuencias:
+
+Funciones de secuencias
+.......................
+
+Las funciones de secuencias se describen a continuación:
+
+
+.. _python_funcion_sorted:
+
+sorted()
+~~~~~~~~
+
+La función ``sorted()`` devuelve una lista ordenada de los elementos de la secuencia 
+que recibe como argumento (lista o cadena). La secuencia original no es modificada.
+
+::
+
+    >>> lista = [23, 13, 7, 37]
+    >>> sorted(lista)
+    [7, 13, 23, 37]
+
+La función ``sorted()`` siempre devuelve una lista, aunque reciba como argumento una 
+cadena de caracteres.
+
+::
+
+    >>> cadena = "asdlk"
+    >>> sorted(cadena)
+    ['a', 'd', 'k', 'l', 's']
+
+
+----
+
 
 .. important::
 
