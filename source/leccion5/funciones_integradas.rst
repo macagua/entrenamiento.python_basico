@@ -731,10 +731,11 @@ de leer.
 ----
 
 
+
 .. _python_funciones_integradas_numericas:
 
-Funciones de numéricas
-......................
+Funciones numéricas
+...................
 
 Las funciones de tipos numéricos se describen a continuación:
 
@@ -761,7 +762,7 @@ Devuelve el valor absoluto de un número (entero o de coma flotante).
 bin()
 ~~~~~
 
-Devuelve una representación binaria de un :ref:`numero entero <python_num_entero>` 
+Devuelve una representación binaria de un :ref:`número entero <python_num_entero>` 
 o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a binario.
 
 ::
@@ -789,7 +790,7 @@ la división entera, y el resto.
 hex()
 ~~~~~
 
-Devuelve una representación hexadecimal de un :ref:`numero entero <python_num_entero>` 
+Devuelve una representación hexadecimal de un :ref:`número entero <python_num_entero>` 
 o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a 
 hexadecimal.
 
@@ -824,9 +825,9 @@ o colección.
 
 ::
 
-    >>> max("Hola, Python")
-    'y'
-    >>> type(max("Hola, Python"))
+    >>> max("Hola, Plone")
+    'o'
+    >>> type(max("Hola, Plone"))
     <type 'str'>
 
 
@@ -843,9 +844,9 @@ Tiene un comportamiento similar a ``max()``, pero devuelve el mínimo.
     12
     >>> type(min(23, 12, 145, 88))
     <type 'int'>
-    >>> min("Hola, Python")
+    >>> min("Hola, Plone")
     ' '
-    >>> type(min("Hola, Python"))
+    >>> type(min("Hola, Plone"))
     <type 'str'>
 
 
@@ -879,11 +880,11 @@ Si recibe un tercer argumento opcional, éste funciona como módulo.
 round()
 ~~~~~~~
 
-La función ``round()`` redondea un numero flotante a una precisión dada en 
-dígitos decimal (por defecto 0 dígitos). Esto siempre devuelve un numero 
+La función ``round()`` redondea un número flotante a una precisión dada en 
+dígitos decimal (por defecto 0 dígitos). Esto siempre devuelve un número 
 flotante. La precisión tal vez sea negativa.
 
-En el siguiente ejemplo redondeo de un numero flotante a entero, mayor o 
+En el siguiente ejemplo redondeo de un número flotante a entero, mayor o 
 igual a *.5* al alza:
 
 ::
@@ -891,7 +892,7 @@ igual a *.5* al alza:
     >>> round(5.5)
     6.0
 
-En este otro ejemplo redondeo de un numero flotante a entero, menor de *.5* 
+En este otro ejemplo redondeo de un número flotante a entero, menor de *.5* 
 a la baja:
 
 ::
