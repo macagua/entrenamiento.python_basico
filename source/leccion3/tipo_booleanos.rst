@@ -16,6 +16,47 @@ bucles, como verá más adelante.
 | ``bool`` | Booleano  | Valor booleano verdadero o falso | ``True`` o ``False`` |
 +----------+-----------+----------------------------------+----------------------+
 
+En el contexto de las operaciones booleanas, y también cuando las expresiones son 
+usadas bajo sentencias de flujo de control, los siguientes valores son interpretados 
+como ``False``: 
+
+- ``False``.
+
+- :ref:`None <python_objeto_none>`.
+
+- :ref:`Número cero <python_numericos>` en todos los tipos.
+
+- :ref:`Cadena de caracteres <python_cadenas>` vaciás.
+
+- Contenedores, incluyendo *cadenas de caracteres*, :ref:`tuplas <python_tuplas>`, 
+  :ref:`listas <python_listas>`, :ref:`diccionarios <python_diccionarios>` y 
+  :ref:`conjuntos <python_conjuntos>` mutables e inmutables.
+
+A continuación, varios ejemplos en códigos de los citado previamente:
+
+::
+
+    >>> False
+    False
+    >>> False == False
+    True
+    >>> 0 == False
+    True
+    >>> "" == False
+    False
+    >>> None == False
+    False
+    >>> [] == False
+    False
+    >>> () == False
+    False
+    >>> {} == False
+    False
+    >>> ['', ''] == False
+    False
+
+Todos los otros valores son interpretadas a ``True``.
+
 En realidad el tipo ``bool`` (el tipo de los booleanos) es una :ref:`subclase <python_poo_herencia>` 
 del tipo ``int``. Puede que esto para usted, no lo entienda mucho, si no conoces los 
 términos de la :ref:`orientación a objetos <python_poo>`, que se tocará más adelantes, 
