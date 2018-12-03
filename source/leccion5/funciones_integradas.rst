@@ -919,6 +919,34 @@ antecedida del prefijo *'0'*.
 ----
 
 
+.. _python_funciones_integradas_booleanos:
+
+Funciones de booleanos
+......................
+
+Las funciones de tipos :ref:`booleanos <python_booleanos>` se describen a continuación:
+
+
+.. _python_funcion_bool:
+
+bool()
+~~~~~~
+
+La función ``bool()``, es un constructor, el cual crea un tipo de datos 
+:ref:`booleanos <python_booleanos>`, devuelve un tipo booleano ``True`` cuando el 
+argumento dado es ``True``, de lo contrario ``False``.
+
+::
+
+    >>> bool(True)
+    True
+    >>> bool()
+    False
+
+
+----
+
+
 .. _python_funciones_integradas_cadenas:
 
 Funciones de cadenas de caracteres

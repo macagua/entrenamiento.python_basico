@@ -57,10 +57,21 @@ A continuación, varios ejemplos en códigos de los citado previamente:
 
 Todos los otros valores son interpretadas a ``True``.
 
-En realidad el tipo ``bool`` (el tipo de los booleanos) es una :ref:`subclase <python_poo_herencia>` 
-del tipo ``int``. Puede que esto para usted, no lo entienda mucho, si no conoces los 
-términos de la :ref:`orientación a objetos <python_poo>`, que se tocará más adelantes, 
-aunque tampoco es nada importante.
+Los tipos integrados ``True`` y ``False`` son solamente dos instancias de la clase 
+``bool``. En realidad el tipo ``bool`` (el tipo de los booleanos) es una 
+:ref:`subclase <python_poo_herencia>` del tipo ``int``, y no puede ser a su vez una 
+subclase. 
+
+Puede que esto para usted, no lo entienda mucho, si no conoces los términos de 
+la :ref:`orientación a objetos <python_poo>`, que se tocará más adelantes, aunque 
+tampoco es nada importante.
+
+
+Convertir a booleanos
+.....................
+
+Para convertir a *tipos booleanos* debe usar la función integrada 
+:ref:`bool() <python_funcion_bool>` disponible en el interprete Python.
 
 
 Ejemplo de booleanos
