@@ -19,10 +19,10 @@ el tipo de queja más común que tenés cuando todavía estás aprendiendo Pytho
 
 ::
 
-   >>> while True print 'Hola mundo'
+   >>> while True print 'Hola Mundo'
    Traceback (most recent call last):
    ...
-       while True print 'Hola mundo'
+       while True print 'Hola Mundo'
                       ^
    SyntaxError: invalid syntax
 
@@ -397,9 +397,9 @@ limpieza que deben ser ejecutadas bajo ciertas circunstancias. Por ejemplo:
    >>> try:
    ...     raise KeyboardInterrupt
    ... finally:
-   ...     print 'Adiós, mundo!'
+   ...     print 'Adiós, Mundo!'
    ...
-   Chau, mundo!
+   Chau, Mundo!
    Traceback (most recent call last):
      File "<stdin>", line 2, in ?
    KeyboardInterrupt

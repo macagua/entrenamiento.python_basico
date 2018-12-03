@@ -93,8 +93,8 @@ y cadenas de caracteres entre comillas dobles, todo separado por espacios:
 
 ::
 
-    python entrada_argumentos.py 300 43.234 "Hola Python"
-    ['entrada_argumentos.py', '300', '43.234', 'Hola Python']
+    python entrada_argumentos.py 300 43.234 "Hola Plone"
+    ['entrada_argumentos.py', '300', '43.234', 'Hola Plone']
 
 Cada valor que enviamos al *script* durante la llamada se llama argumento e implica 
 una forma de entrada de datos alternativa sin usar las funciones 
@@ -199,7 +199,7 @@ ejecute el siguiente comando:
 
 ::
 
-    python entrada_dos_argumentos.py "Hola Python"
+    python entrada_dos_argumentos.py "Hola Plone"
     ERROR: Introdujo uno (1) o más de dos (2) argumentos
     SOLUCIÓN: Introduce los argumentos correctamente
     Ejemplo: entrada_dos_argumentos.py "Texto" 5
@@ -209,10 +209,10 @@ argumentos, ejecutando el siguiente comando:
 
 ::
 
-    python entrada_dos_argumentos.py "Hola Python" 3
-    Hola Python
-    Hola Python
-    Hola Python
+    python entrada_dos_argumentos.py "Hola Plone" 3
+    Hola Plone
+    Hola Plone
+    Hola Plone
 
 
 ----

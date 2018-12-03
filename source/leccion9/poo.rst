@@ -332,7 +332,7 @@ al método ``hablar()`` esto lanzara una excepción
 ::
 
     >>> macagua = Persona
-    >>> macagua.hablar("Hola Python")
+    >>> macagua.hablar("Hola Plone")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     TypeError: unbound method hablar() must be called with Persona instance as first argument (got str instance instead)

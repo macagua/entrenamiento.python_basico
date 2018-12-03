@@ -82,9 +82,9 @@ A continuación, se cambiará el valor para una variable de tipo
 
 ::
 
-    >>> c = "Hola Python" # cadenas de caracteres
+    >>> c = "Hola Plone" # cadenas de caracteres
     >>> c
-    'Hola Python'
+    'Hola Plone'
 
 ----
 
@@ -362,8 +362,8 @@ define la asignación. A continuación unos ejemplos donde se inicializan variab
 
 ::
 
-    >>> cadena, numero, lista = "Hola Python", 123456, [7,8,9,0]
-    >>> tupla = (11, "Chao Python", True, None)
+    >>> cadena, numero, lista = "Hola Plone", 123456, [7,8,9,0]
+    >>> tupla = (11, "Chao Plone", True, None)
     >>> diccionario = {"nombres":"Leonardo Jose","apellidos":"Caballero Garcia"}
 
 Luego de inicializar las variables del código anterior, usted puede usar la función 
@@ -373,8 +373,8 @@ actual de las variables, ejecutando:
 ::
 
     >>> vars()
-    {'tupla': (11, 'Chao Python', True, None), '__builtins__': <module '__builtin__' (built-in)>, 
-    'numero': 123456, '__package__': None, 'cadena': 'Hola Python', 
+    {'tupla': (11, 'Chao Plone', True, None), '__builtins__': <module '__builtin__' (built-in)>, 
+    'numero': 123456, '__package__': None, 'cadena': 'Hola Plone', 
     'diccionario': {'apellidos': 'Caballero Garcia', 'nombres': 'Leonardo Jose'}, 
     '__name__': '__main__', 'lista': [7, 8, 9, 0], '__doc__': None}
 
@@ -385,7 +385,7 @@ Si desea eliminar la referencia a la variable ``cadena``, ejecuta:
 
     >>> del cadena
     >>> vars()
-    {'tupla': (11, 'Chao Python', True, None), '__builtins__': <module '__builtin__' (built-in)>, 
+    {'tupla': (11, 'Chao Plone', True, None), '__builtins__': <module '__builtin__' (built-in)>, 
     'numero': 123456, '__package__': None, 'diccionario': {'apellidos': 'Caballero Garcia', 
     'nombres': 'Leonardo Jose'}, '__name__': '__main__', 'lista': [7, 8, 9, 0], '__doc__': None}
 

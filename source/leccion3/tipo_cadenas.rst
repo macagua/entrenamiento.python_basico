@@ -12,9 +12,9 @@ Las cadenas no son más que caracteres encerrado entre comillas simples
 +---------------+-----------+----------------------------+---------------+
 | **Tipo**      | **Clase** | **Notas**                  | **Ejemplo**   |
 +---------------+-----------+----------------------------+---------------+
-| ``str``       | Cadena    | Inmutable                  | 'Hola mundo'  |
+| ``str``       | Cadena    | Inmutable                  | 'Hola Mundo'  |
 +---------------+-----------+----------------------------+---------------+
-| ``unicode``   | Cadena    | Versión ``Unicode`` de str | u'Hola mundo' |
+| ``unicode``   | Cadena    | Versión ``Unicode`` de str | u'Hola Mundo' |
 +---------------+-----------+----------------------------+---------------+
 
 .. note::
@@ -235,8 +235,8 @@ la primera línea después de la declaración.
     ...     """Este es el docstring de la función"""
     ...     print "Hola", arg, "!"
     ... 
-    >>> hola("Python")
-    Hola Python !
+    >>> hola("Plone")
+    Hola Plone !
 
 Puede puede consultar la documentación de la función ``hola()`` debe utilizar 
 la función integrada :ref:`help() <python_funcion_help>` y pasarle el argumento 

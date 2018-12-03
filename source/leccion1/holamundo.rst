@@ -6,8 +6,8 @@
 Su primer programa
 ------------------
 
-En informática, un programa **Hola mundo** es el que imprime el texto
-*«¡Hola, mundo!»* en un dispositivo de visualización, en la mayoría de
+En informática, un programa **Hola Mundo** es el que imprime el texto
+*«¡Hola, Mundo!»* en un dispositivo de visualización, en la mayoría de
 los casos una pantalla de monitor. Este programa suele ser usado como
 introducción al estudio de un lenguaje de programación, siendo un primer
 ejercicio típico, y se lo considera fundamental desde el punto de vista
@@ -24,10 +24,10 @@ ejecución estén instalados correctamente y funcionando.
 
 .. _python_hola_mundo:
 
-¡Hola, mundo!
+¡Hola, Mundo!
 .............
 
-Programa ¡Hola, mundo! en diversas versiones de Python:
+Programa ¡Hola, Mundo! en diversas versiones de Python:
 
 .. _python2_hola_mundo:
 

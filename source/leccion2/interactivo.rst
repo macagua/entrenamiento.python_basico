@@ -573,8 +573,8 @@ la documentación y la estructura del lenguaje, con los siguientes comandos de e
 
 .. code-block:: python
 
-    >>> print 'Hola mundo'
-    Hola mundo
+    >>> print 'Hola Mundo'
+    Hola Mundo
     >>> for item in xrange(
     +───────────────────────────────────────────────────────────────────────+
     │ xrange: ([start, ] stop[, step])                                      │
