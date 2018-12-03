@@ -39,35 +39,6 @@ una variable global declarándola explícitamente como tal con la sentencia
 :ref:`global <python_sentencia_global>`.
 
 
-.. _python_sentencia_global:
-
-Sentencia global
-~~~~~~~~~~~~~~~~
-
-La sentencia ``global`` es una declaración que se mantiene para todo el bloque de 
-código actual. Eso significa que los identificadores listados son interpretados como 
-globales. Eso podría ser imposible asignar a una variable global sin la sentencia 
-``global``, aunque las variables libres pueden referirse a globales sin ser declaradas 
-globales.
-
-::
-
-    >>> variable1 = "variable original"
-    >>> def variable_global():
-    ...     global variable1
-    ...     variable1 = "variable global modificada"
-    ... 
-    >>> print variable1
-    variable original
-    >>> variable_global()
-    >>> print variable1
-    variable global modificada
-
-Como se puede ver, después de llamar a la función ``variable_global()``, la variable 
-``variable1`` queda modificada. En general, este procedimiento debe utilizarse con 
-precaución.
-
-
 Ejemplos de variables
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -81,12 +52,12 @@ A continuación, se creará un par de variables a modo de ejemplo. Una de tipo
 
 ::
 
-	>>> c = "Hola Mundo" # cadenas de caracteres
-	>>> type(c) # comprobar tipo de dato
-	<type 'str'>
-	>>> e = 23 # número entero
-	>>> type(e) # comprobar tipo de dato
-	<type 'int'>
+    >>> c = "Hola Mundo" # cadenas de caracteres
+    >>> type(c) # comprobar tipo de dato
+    <type 'str'>
+    >>> e = 23 # número entero
+    >>> type(e) # comprobar tipo de dato
+    <type 'int'>
 
 Como puede ver en Python, a diferencia de muchos otros lenguajes, no se declara el 
 tipo de la variable al crearla. En *Java*, por ejemplo, definir una variable seria 
@@ -111,9 +82,9 @@ A continuación, se cambiará el valor para una variable de tipo
 
 ::
 
-	>>> c = "Hola Python" # cadenas de caracteres
-	>>> c
-	'Hola Python'
+    >>> c = "Hola Python" # cadenas de caracteres
+    >>> c
+    'Hola Python'
 
 ----
 
@@ -125,26 +96,26 @@ asignando múltiples valores:
 
 ::
 
-	>>> a, b, c = 5, 3.2, "Hello"
-	>>> print a
-	5
-	>>> print b
-	3.2
-	>>> print c
-	'Hello'
+    >>> a, b, c = 5, 3.2, "Hello"
+    >>> print a
+    5
+    >>> print b
+    3.2
+    >>> print c
+    'Hello'
 
 Si usted quiere asignar el mismo valor a múltiples variables al mismo tiempo, usted 
 puede hacer lo siguiente:
 
 ::
 
-	>>> x = y = z = True
-	>>> print x
-	True
-	>>> print y
-	True
-	>>> print z
-	True
+    >>> x = y = z = True
+    >>> print x
+    True
+    >>> print y
+    True
+    >>> print z
+    True
 
 El segundo programa asigna el mismo valor booleano a todas las tres variables ``x``, 
 ``y``, ``z``.
@@ -174,34 +145,34 @@ Constantes integradas
 Un pequeño número de constantes vive en el espacio de nombres incorporado. Son:
 
 ``False``
-	El valor falso del tipo :ref:`booleano <python_booleanos>`.
+    El valor falso del tipo :ref:`booleano <python_booleanos>`.
 
 ``True``
-	El valor verdadero del tipo :ref:`booleano <python_booleanos>`.
+    El valor verdadero del tipo :ref:`booleano <python_booleanos>`.
 
 ``None``
-	El valor único de objeto :ref:`types.NoneType <python_objeto_none>`. ``None`` 
-	se utiliza con frecuencia para representar la ausencia de un valor, como cuando 
-	los argumentos predeterminados no se pasan a una función.
+    El valor único de objeto :ref:`types.NoneType <python_objeto_none>`. ``None`` 
+    se utiliza con frecuencia para representar la ausencia de un valor, como cuando 
+    los argumentos predeterminados no se pasan a una función.
 
 ``NotImplemented``
-	Valor especial que puede ser devuelto por los métodos especiales de "comparación 
-	rica" (``__eq__()``, ``__lt__()`` y amigos), para indicar que la comparación no 
-	se implementa con respecto al otro tipo.
+    Valor especial que puede ser devuelto por los métodos especiales de "comparación 
+    rica" (``__eq__()``, ``__lt__()`` y amigos), para indicar que la comparación no 
+    se implementa con respecto al otro tipo.
 
 ``Ellipsis``
-	Valor especial utilizado junto con la sintaxis de corte ampliada. Véase también 
-	el objeto :ref:`elipsis <python_objeto_ellipsis>`.
+    Valor especial utilizado junto con la sintaxis de corte ampliada. Véase también 
+    el objeto :ref:`elipsis <python_objeto_ellipsis>`.
 
 ``__debug__``
-	Esta constante es ``True`` si Python no se inició con una opción ``-O``. Véase 
-	también la sentencia :ref:`assert <python_sentencia_assert>`.
+    Esta constante es ``True`` si Python no se inició con una opción ``-O``. Véase 
+    también la sentencia :ref:`assert <python_sentencia_assert>`.
 
 .. note:: 
-	Los nombres ``None`` y ``__debug__`` no se pueden reasignar (asignaciones a ellos, 
-	incluso como un nombre de atributo, causa una excepción 
-	:ref:`SyntaxError <python_exception_syntaxerror>`), por lo que pueden considerarse 
-	constantes "verdaderas".
+    Los nombres ``None`` y ``__debug__`` no se pueden reasignar (asignaciones a ellos, 
+    incluso como un nombre de atributo, causa una excepción 
+    :ref:`SyntaxError <python_exception_syntaxerror>`), por lo que pueden considerarse 
+    constantes "verdaderas".
 
 
 Ejemplo de constantes
@@ -268,7 +239,7 @@ para el que han sido creadas. Estas son:
 
 - :ref:`def <python_sentencia_def>`.
 
-- ``del``.
+- :ref:`del <python_sentencia_del>`.
 
 - :ref:`elif <python_condicional_if>`.
 
@@ -325,23 +296,23 @@ Puede verificar si una palabra esta reservada utilizando el módulo integrado
 
 ::
 
-	>>> import keyword
-	>>> keyword.iskeyword('as')
-	True
-	>>> keyword.iskeyword('x')
-	False
+    >>> import keyword
+    >>> keyword.iskeyword('as')
+    True
+    >>> keyword.iskeyword('x')
+    False
 
 Para obtener una lista de todas las palabras reservadas
 
 ::
 
-	>>> import keyword
-	>>> keyword.kwlist
-	['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 
-	'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 
-	'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 
-	'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 
-	'with', 'yield']
+    >>> import keyword
+    >>> keyword.kwlist
+    ['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 
+    'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 
+    'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 
+    'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 
+    'with', 'yield']
 
 
 ----
@@ -364,18 +335,121 @@ y :ref:`constantes <python_constante>`:
   minúsculas (de *a* a la *z*) o MAYÚSCULAS (de la *A* a la *Z*) o dígitos (del 
   *0* al *9*) o un ``underscore`` (_). Por ejemplo:
 
-	- snake_case
+    - snake_case
 
-	- MACRO_CASE
+    - MACRO_CASE
 
-	- camelCase
+    - camelCase
 
-	- CapWords
+    - CapWords
 
 - Los nombres que comienzan con guión bajo (simple ``_`` o doble ``__``) se reservan para 
   variables con significado especial
 
 - No pueden usarse como identificadores, las :ref:`palabras reservadas <python_palabras_reservadas>` .
+
+
+----
+
+
+.. _python_sentencia_del:
+
+Sentencia del
+.............
+
+La sentencia ``del`` se define recursivamente muy similar a la forma en el cual se 
+define la asignación. A continuación unos ejemplos donde se inicializan variables:
+
+::
+
+    >>> cadena, numero, lista = "Hola Python", 123456, [7,8,9,0]
+    >>> tupla = (11, "Chao Python", True, None)
+    >>> diccionario = {"nombres":"Leonardo Jose","apellidos":"Caballero Garcia"}
+
+Luego de inicializar las variables del código anterior, usted puede usar la función 
+:ref:`vars() <python_funcion_vars>` para obtener un diccionario conteniendo ámbito 
+actual de las variables, ejecutando:
+
+::
+
+    >>> vars()
+    {'tupla': (11, 'Chao Python', True, None), '__builtins__': <module '__builtin__' (built-in)>, 
+    'numero': 123456, '__package__': None, 'cadena': 'Hola Python', 
+    'diccionario': {'apellidos': 'Caballero Garcia', 'nombres': 'Leonardo Jose'}, 
+    '__name__': '__main__', 'lista': [7, 8, 9, 0], '__doc__': None}
+
+
+Si desea eliminar la referencia a la variable ``cadena``, ejecuta:
+
+::
+
+    >>> del cadena
+    >>> vars()
+    {'tupla': (11, 'Chao Python', True, None), '__builtins__': <module '__builtin__' (built-in)>, 
+    'numero': 123456, '__package__': None, 'diccionario': {'apellidos': 'Caballero Garcia', 
+    'nombres': 'Leonardo Jose'}, '__name__': '__main__', 'lista': [7, 8, 9, 0], '__doc__': None}
+
+Como pudo ver en el ejemplo anterior que elimino la referencia a la variable ``cadena``,
+incluso al volver a la función :ref:`vars() <python_funcion_vars>` ya no sale en el 
+ámbito de variables disponibles.
+
+La eliminación de una lista de objetivos elimina recursivamente cada objetivo, de 
+izquierda a derecha.
+
+::
+
+    >>> del numero, lista, tupla, diccionario
+    >>> vars()
+    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': 
+    '__main__', '__doc__': None}
+
+Como pudo ver en el ejemplo anterior que elimino las referencias a las variables ``numero``, 
+``lista``, ``tupla``, ``diccionario`` que incluso al volver a la función 
+:ref:`vars() <python_funcion_vars>` ya no están en el ámbito de variables disponibles.
+
+La eliminación de un nombre elimina el enlace de ese nombre del espacio de nombres 
+*local* o *global*, dependiendo de si el nombre aparece en una sentencia 
+":ref:`global <python_sentencia_global>`" en el mismo bloque de código. Si el nombre 
+no está vinculado, se generará una excepción ":ref:`NameError <python_exception_nameerror>`".
+
+.. tip::
+
+    Es ilegal eliminar un nombre del espacio de nombres *local* si aparece como una 
+    variable libre en un bloque anidado.
+
+La eliminación de las referencias de atributos, suscripciones y segmentaciones se pasa 
+al objeto primario involucrado; la eliminación de un corte es en general equivalente a 
+la asignación de un corte vacío del tipo correcto (pero incluso esto está determinado 
+por el objeto cortado).
+
+
+.. _python_sentencia_global:
+
+Sentencia global
+................
+
+La sentencia ``global`` es una declaración que se mantiene para todo el bloque de 
+código actual. Eso significa que los identificadores listados son interpretados como 
+globales. Eso podría ser imposible asignar a una variable global sin la sentencia 
+``global``, aunque las variables libres pueden referirse a globales sin ser declaradas 
+globales.
+
+::
+
+    >>> variable1 = "variable original"
+    >>> def variable_global():
+    ...     global variable1
+    ...     variable1 = "variable global modificada"
+    ... 
+    >>> print variable1
+    variable original
+    >>> variable_global()
+    >>> print variable1
+    variable global modificada
+
+Como se puede ver, después de llamar a la función ``variable_global()``, la variable 
+``variable1`` queda modificada. En general, este procedimiento debe utilizarse con 
+precaución.
 
 
 ----
@@ -393,9 +467,9 @@ y :ref:`constantes <python_constante>`:
 
     ::
 
-		leccion3/
-		├── constantes.py
-		└── main.py
+        leccion3/
+        ├── constantes.py
+        └── main.py
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
