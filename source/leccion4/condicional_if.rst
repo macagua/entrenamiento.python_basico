@@ -91,7 +91,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 En el ejemplo anterior usa dos funciones integradas en el interprete Python:
 
 - La función :ref:`int() <python_funcion_int>` que convierte el valor ingresado 
-  a numero entero.
+  a número entero.
 
 - La función :ref:`raw_input() <python_funcion_raw_input>` lee el valor ingresado 
   por la entrada estándar.
