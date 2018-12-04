@@ -91,7 +91,7 @@ A continuación, se cambiará el valor para una variable de tipo
 **Ejemplo de asignar múltiples valores a a múltiples variables**
 
 A continuación, se creará múltiples variables (:ref:`entero <python_num_entero>`, 
-:ref:`coma flotante <python_coma_flotante>`, :ref:`cadenas de caracteres <python_cadenas>`) 
+:ref:`coma flotante <python_num_float>`, :ref:`cadenas de caracteres <python_cadenas>`) 
 asignando múltiples valores:
 
 ::

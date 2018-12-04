@@ -17,9 +17,9 @@ resumir en esta tabla:
 |                       +----------------+------------------------------------------------+
 |                       | ``long``       | :ref:`entero long <python_num_entero_long>`    |
 |                       +----------------+------------------------------------------------+
-|                       | ``float``      | :ref:`coma flotante <python_coma_flotante>`    |
+|                       | ``float``      | :ref:`coma flotante <python_num_float>`        |
 | Números               +----------------+------------------------------------------------+
-|                       | ``complex``    | :ref:`complejo <python_num_complejo>`          |
+|                       | ``complex``    | :ref:`complejo <python_num_complex>`           |
 |                       +----------------+------------------------------------------------+
 |                       | ``bool``       | :ref:`booleano <python_booleanos>`             |
 +-----------------------+----------------+------------------------------------------------+
