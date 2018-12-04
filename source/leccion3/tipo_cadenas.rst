@@ -29,8 +29,7 @@ Las cadenas no son más que caracteres encerrado entre comillas simples
 Cadenas de escape
 .................
 
-Dentro de las comillas se pueden añadir caracteres especiales para 
-escaparlos con:
+Dentro de las comillas se pueden añadir caracteres especiales para escaparlos con:
 
 - \\n : el carácter de salto de nueva línea.
 
@@ -43,13 +42,12 @@ escaparlos con:
 - \\" : el carácter de comillas doble.
 
 
-Una cadena puede estar precedida por el carácter 'u' o el carácter 'r',
-los cuales indican, respectivamente, que se trata de una cadena que
-utiliza codificación ``unicode`` y una cadena ``raw`` (del inglés, cruda). 
-Las cadenas ``raw`` se distinguen de las normales en que los caracteres
-escapados mediante la barra invertida (``\``) no se sustituyen por sus
-contrapartidas. Esto es especialmente útil, por ejemplo, para las
-expresiones regulares.
+Una cadena puede estar precedida por el carácter 'u' o el carácter 'r', los cuales 
+indican, respectivamente, que se trata de una cadena que utiliza codificación 
+``unicode`` y una cadena ``raw`` (del inglés, cruda). Las cadenas ``raw`` se distinguen 
+de las normales en que los caracteres escapados mediante la barra invertida (``\``) 
+no se sustituyen por sus contrapartidas. Esto es especialmente útil, por ejemplo, para 
+las expresiones regulares.
 
 ::
 
@@ -57,11 +55,10 @@ expresiones regulares.
     raw = r"\n"
 
 
-También es posible encerrar una cadena entre triples comillas (simples o
-dobles). De esta forma puede escribir el texto en varias líneas, y al
-imprimir la cadena, se respetarán los saltos de línea que se introdujeron 
-sin tener que recurrir al carácter ``\n``, así como las comillas sin tener
-que escaparlas.
+También es posible encerrar una cadena entre triples comillas (simples o dobles). De 
+esta forma puede escribir el texto en varias líneas, y al imprimir la cadena, se 
+respetarán los saltos de línea que se introdujeron sin tener que recurrir al carácter 
+``\n``, así como las comillas sin tener que escaparlas.
 
 Las cadenas también admiten operadores como la suma (concatenación de
 cadenas) y la multiplicación.
@@ -225,9 +222,9 @@ Ten en cuenta, una buena documentación siempre dará respuesta a las dos pregun
 Funciones
 ~~~~~~~~~
 
-Python implementa un sistema muy sencillo para establecer el valor de las 
-``docstrings`` en las funciones, únicamente tiene que crear un comentario en 
-la primera línea después de la declaración.
+Python implementa un sistema muy sencillo para establecer el valor de las ``docstrings`` 
+en las funciones, únicamente tiene que crear un comentario en la primera línea después 
+de la declaración.
 
 ::
 
@@ -238,9 +235,9 @@ la primera línea después de la declaración.
     >>> hola("Plone")
     Hola Plone !
 
-Puede puede consultar la documentación de la función ``hola()`` debe utilizar 
-la función integrada :ref:`help() <python_funcion_help>` y pasarle el argumento 
-del objeto de función ``hola``:
+Puede puede consultar la documentación de la función ``hola()`` debe utilizar la 
+función integrada :ref:`help() <python_funcion_help>` y pasarle el argumento del 
+objeto de función ``hola``:
 
 ::
 
@@ -301,7 +298,7 @@ Scripts y módulos
 ~~~~~~~~~~~~~~~~~
 
 Cuando tiene un script o módulo, la primera línea del mismo hará referencia al 
-docstring del módulo, en él debe explicar el funcionamiento del mismo:
+``docstrings`` del módulo, en él debe explicar el funcionamiento del mismo:
 
 En el archivo ``mi_modulo.py`` debe contener el siguiente código:
 
@@ -453,14 +450,13 @@ A continuación un ejemplo por cada tipo de datos:
 Clase formatter
 ~~~~~~~~~~~~~~~
 
-La clase ``formatter`` es una de las clases integradas ``string``. Ese provee 
-la habilidad de hacer variable compleja de substituciones y formateo de valores 
-usando el método :ref:`format() <python_metodo_format>`. Es le permite 
-crear y personalizar sus propios comportamientos de formatos de cadena de caracteres 
-para reescribir los métodos públicos y contiene: ``format()``, ``vformat()``. Ese 
-tiene algunos métodos que son destinado para ser remplazados por las sub-clases: 
-``parse()``, ``get_field()``, ``get_value()``, ``check_unused_args()``, ``format_field()`` 
-y ``convert_field()``. 
+La clase ``formatter`` es una de las clases integradas ``string``. Ese provee la 
+habilidad de hacer variable compleja de substituciones y formateo de valores usando 
+el método :ref:`format() <python_metodo_format>`. Es le permite crear y personalizar 
+sus propios comportamientos de formatos de cadena de caracteres para reescribir los 
+métodos públicos y contiene: ``format()``, ``vformat()``. Ese tiene algunos métodos 
+que son destinado para ser remplazados por las sub-clases: ``parse()``, ``get_field()``, 
+``get_value()``, ``check_unused_args()``, ``format_field()`` y ``convert_field()``. 
 
 
 .. _python_metodo_format:
@@ -508,16 +504,16 @@ luego pasarla como argumento al método:
 
 Este método soporta muchas técnicas de formateo, aquí algunos ejemplos:
 
-Alinear una cadena de caracteres a la derecha en 30 caracteres, con la 
-siguiente sentencia:
+Alinear una cadena de caracteres a la derecha en 30 caracteres, con la siguiente 
+sentencia:
 
 ::
 
     >>> print "{:>30}".format("raíz cuadrada de dos")
          raíz cuadrada de dos
 
-Alinear una cadena de caracteres a la izquierda en 30 caracteres (crea 
-espacios a la derecha), con la siguiente sentencia:
+Alinear una cadena de caracteres a la izquierda en 30 caracteres (crea espacios a 
+la derecha), con la siguiente sentencia:
 
 ::
 
@@ -551,8 +547,8 @@ de 9, con la siguiente sentencia:
 
 **Formateo por tipo**
 
-Opcionalmente se puede poner el signo de dos puntos después del número o nombre, 
-y explicitar el tipo del objeto:
+Opcionalmente se puede poner el signo de dos puntos después del número o nombre, y 
+explicitar el tipo del objeto:
 
 - ``s`` para cadenas de caracteres (tipo :ref:`str <python_cadenas>`).
 
@@ -572,8 +568,7 @@ se imprima con cuatro dígitos después de la coma (``.4``).
     >>> print "el resultado de {0} es {resultado:.4f}".format(tipo_calculo, resultado=valor)
     el resultado de raíz cuadrada de dos es 1.4142
 
-Formateo de números enteros, rellenados con espacios, con las siguientes 
-sentencias:
+Formateo de números enteros, rellenados con espacios, con las siguientes sentencias:
 
 ::
 
@@ -596,8 +591,7 @@ Formateo de números enteros, rellenados con ceros, con las siguientes sentencia
     >>> print "{:04d}".format(1000)
     1000
 
-Formateo de números flotantes, rellenados con espacios, con las siguientes 
-sentencias:
+Formateo de números flotantes, rellenados con espacios, con las siguientes sentencias:
 
 ::
 
@@ -620,6 +614,7 @@ Ejemplo de cadenas de caracteres
 ................................
 
 A continuación, se presentan algunos ejemplos de su uso:
+
 
 **Ejemplo de cadenas de caracteres con comillas simples**
 
