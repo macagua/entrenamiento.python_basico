@@ -1778,6 +1778,47 @@ En el ejemplo, una clase ``Persona`` que realizará un seguimiento del
 ``cedula``, ``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
 
 
+.. _python_funcion_issubclass:
+
+issubclass()
+~~~~~~~~~~~~
+
+La función ``issubclass()`` le permite corroborar si un objeto es instancia de una 
+clase. 
+
+::
+
+    issubclass(subclase, clase)
+
+Esta función devuelve ``True`` si la clase especificada es una subclase de la clase 
+base, de lo contrario ``False``.
+
+Un ejemplo de uso con la subclase ``Supervisor`` que deriva de la clase ``Persona`` 
+seria como lo siguiente:
+
+::
+
+    >>> supervisor1 = Supervisor("V-16987456", "Pedro", "Pérez", "No se", "El chivo")
+    >>> issubclass(supervisor1, Persona)
+    True
+
+
+Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es 
+uno de los tipos en la tupla.
+
+::
+
+    >>> supervisor1 = Supervisor("V-16987456", "Pedro", "Pérez", "No se", "El chivo")
+    >>> issubclass(supervisor1, (Persona, Empleado, Supervisor, Destreza))
+    True
+
+Aquí puede decir que ``supervisor1`` es una subclase derivada de la clase ``Persona``.
+
+Las clases dan la posibilidad de crear estructuras de datos más complejas. En el ejemplo, 
+una clase ``Persona`` que realizará un seguimiento del ``cedula``, ``nombre``, ``apellido`` 
+y ``sexo`` (que pasará como atributos).
+
+
 ----
 
 
