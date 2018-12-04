@@ -809,6 +809,43 @@ o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero 
     '0b1010'
 
 
+.. _python_funcion_complex:
+
+complex()
+~~~~~~~~~
+
+La función ``complex()`` devuelve un número complejo ``complex``. Es un constructor, 
+que crea un :ref:`entero complex <python_num_complex>` a partir de un 
+:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
+:ref:`entero float <python_num_float>` (cadenas de caracteres formadas por números y 
+hasta un punto), o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes 
+con un número entero.
+
+::
+
+    >>> complex(23)
+    (23+0j)
+    >>> complex(23L)
+    (23+0j)
+    >>> complex(23.4)
+    (23.4+0j)
+    >>> complex("23")
+    (23+0j)
+    >>> complex("23.6")
+    (23.6+0j)
+
+La función ``complex()`` sólo procesa correctamente cadenas que contengan 
+exclusivamente números.Si la cadena contiene cualquier otro carácter, la 
+función devuelve una excepción :ref:`ValueError <python_exception_valueerror>`.
+
+::
+
+    >>> complex("qwerty")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: complex() arg is a malformed string
+
+
 .. _python_funcion_divmod:
 
 divmod()
@@ -821,6 +858,32 @@ la división entera, y el resto.
 
     >>> divmod(22, 4)
     (5, 2)
+
+
+.. _python_funcion_float:
+
+float()
+~~~~~~~
+
+La función ``float()`` devuelve un número coma flotante ``float``. Es un constructor, 
+que crea un :ref:`coma flotante <python_num_float>` a partir de un 
+:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
+:ref:`entero float <python_num_float>` (cadenas de caracteres formadas por 
+números y hasta un punto) o una :ref:`cadena de caracteres <python_cadenas>` que sean 
+coherentes con un número entero.
+
+::
+
+    >>> float(2)
+    2.0
+    >>> float(23L)
+    23.0
+    >>> float(2.5)
+    2.5
+    >>> float("2")
+    2.0
+    >>> float("2.5")
+    2.5
 
 
 .. _python_funcion_hex:
@@ -836,6 +899,90 @@ hexadecimal.
 
     >>> hex(10)
     '0xa'
+
+
+.. _python_funcion_int:
+
+int()
+~~~~~
+
+La función ``int()`` devuelve un número entero. Es un constructor, que crea un 
+:ref:`entero <python_num_entero>` a partir de un :ref:`entero float <python_num_float>`, 
+:ref:`entero complex <python_num_complex>` o una 
+:ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número entero.
+
+
+::
+
+    >>> int(2.5)
+    2
+
+También puede convertir una cadena de caracteres a un número entero.
+
+::
+
+    >>> int("23")
+    23
+
+
+La función ``int()`` sólo procesa correctamente cadenas que contengan exclusivamente 
+números. Si la cadena contiene cualquier otro carácter, la función devuelve una 
+excepción :ref:`ValueError <python_exception_valueerror>`.
+
+::
+
+    >>> int("2.5")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for int() with base 10: '2.5'
+    >>>
+    >>> int("doscientos")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for int() with base 10: 'doscientos'
+
+
+.. _python_funcion_long:
+
+long()
+~~~~~~
+
+La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea 
+un :ref:`entero long <python_num_entero_long>` a partir de un 
+:ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>` 
+o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
+entero.
+
+::
+
+    >>> long(23)
+    23L
+    >>> long(23.4)
+    23L
+
+También puede convertir una cadena de caracteres a un número entero.
+
+::
+
+    >>> long("23")
+    23
+
+
+La función ``long()`` sólo procesa correctamente cadenas que contengan exclusivamente 
+números. Si la cadena contiene cualquier otro carácter, la función devuelve una 
+excepción :ref:`ValueError <python_exception_valueerror>`.
+
+::
+
+    >>> long("23.4")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for long() with base 10: '23.4'
+    >>>
+    >>> long("23,4")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for long() with base 10: '23,4'
 
 
 .. _python_funcion_max:
@@ -1140,7 +1287,7 @@ seria de la siguiente forma:
     >>> print format(123,"d")
     123
 
-A continuación, un ejemplo de un valor :ref:`número float <python_coma_flotante>`, 
+A continuación, un ejemplo de un valor :ref:`número float <python_num_float>`, 
 seria de la siguiente forma:
 
 ::
@@ -1181,7 +1328,7 @@ describe cada opción a continuación:
 - ``d`` Es la opción tipo que especifica que el número es un 
   :ref:`número entero <python_num_entero>`.
 
-A continuación, un ejemplo de un valor :ref:`número float <python_coma_flotante>` 
+A continuación, un ejemplo de un valor :ref:`número float <python_num_float>` 
 con formato especifico, seria de la siguiente forma:
 
 ::
@@ -1189,7 +1336,7 @@ con formato especifico, seria de la siguiente forma:
     >>> print format(123.4567, "^-09.3f")
     0123.4570
 
-En el ejemplo anterior cuando se formatea el :ref:`número float <python_coma_flotante>` 
+En el ejemplo anterior cuando se formatea el :ref:`número float <python_num_float>` 
 *123.4567*, usted especifico el especificador de formato ``^-09.3f``. Seguidamente, se 
 describe cada opción a continuación:
 
@@ -1202,7 +1349,7 @@ describe cada opción a continuación:
 - ``.3`` Ese es el operador de precisión que define la precisión del número 
   flotante dado a 3 lugares.
 - ``f`` Es la opción tipo que especifica que el número es un 
-  :ref:`número float <python_coma_flotante>`.
+  :ref:`número float <python_num_float>`.
 
 A continuación, un ejemplo de usar la función ``format()`` sobre escribiendo el método 
 especial ``__format__()`` de una :ref:`clase <python_metodos_especiales>`, seria de la 

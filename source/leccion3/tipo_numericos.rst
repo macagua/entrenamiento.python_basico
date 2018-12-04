@@ -116,7 +116,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 ----
 
-.. _python_coma_flotante:
+.. _python_num_float:
 
 Coma flotante
 .............
@@ -186,7 +186,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 ----
 
-.. _python_num_complejo:
+.. _python_num_complex:
 
 Complejos
 .........
@@ -226,174 +226,24 @@ A continuación, se presentan un ejemplo de su uso:
     :lines: 24-25
 
 
-----
+Convertir a numéricos
+.....................
 
+Para convertir a :ref:`tipos numéricos <python_numericos>` debe usar las siguientes 
+:ref:`funciones integradas <python_funciones_integradas>` en el interprete Python:
 
-Convertir a tipos numéricos
-...........................
+- La función :ref:`int() <python_funcion_int>` devuelve un tipo de datos 
+  :ref:`número entero <python_num_entero>`.
 
-Para convertir a tipos numéricos debe usar las 
-:ref:`funciones integradas <python_funciones_integradas>` al interprete disponible, 
-a continuación se describen algunas de ellas para tipos de datos numéricos:
+- La función :ref:`long() <python_funcion_long>` devuelve un tipo de datos 
+  :ref:`número entero long <python_num_entero_long>`.
 
+- La función :ref:`float() <python_funcion_float>` devuelve un tipo de datos 
+  :ref:`número entero float <python_num_float>`.
 
-.. _python_funcion_int:
+- La función :ref:`complex() <python_funcion_complex>` devuelve un tipo de datos 
+  :ref:`número complejo <python_num_complex>`.
 
-int()
-~~~~~
-
-La función ``int()`` devuelve un número entero. Es un constructor, que crea un 
-:ref:`entero <python_num_entero>` a partir de un 
-:ref:`entero float <python_coma_flotante>`, :ref:`entero complex <python_num_complejo>` 
-o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
-entero.
-
-
-::
-
-    >>> int(2.5)
-    2
-    >>>
-
-También puede convertir una cadena de caracteres a un número entero.
-
-::
-
-    >>> int("23")
-    23
-    >>> 
-
-
-La función ``int()`` sólo procesa correctamente cadenas que contengan exclusivamente 
-números. Si la cadena contiene cualquier otro carácter, la función devuelve una 
-excepción :ref:`ValueError <python_exception_valueerror>`.
-
-::
-
-    >>> int("2.5")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    ValueError: invalid literal for int() with base 10: '2.5'
-    >>>
-    >>> int("doscientos")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    ValueError: invalid literal for int() with base 10: 'doscientos'
-    >>> 
-
-
-.. _python_funcion_long:
-
-long()
-~~~~~~
-
-La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea 
-un :ref:`entero long <python_num_entero_long>` a partir de un 
-:ref:`entero <python_num_entero>`, :ref:`entero float <python_coma_flotante>` 
-o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
-entero.
-
-::
-
-    >>> long(23)
-    23L
-    >>> long(23.4)
-    23L
-    >>>
-
-También puede convertir una cadena de caracteres a un número entero.
-
-::
-
-    >>> long("23")
-    23
-    >>> 
-
-
-La función ``long()`` sólo procesa correctamente cadenas que contengan exclusivamente 
-números. Si la cadena contiene cualquier otro carácter, la función devuelve una 
-excepción :ref:`ValueError <python_exception_valueerror>`.
-
-::
-
-    >>> long("23.4")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    ValueError: invalid literal for long() with base 10: '23.4'
-    >>>
-    >>> long("23,4")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    ValueError: invalid literal for long() with base 10: '23,4'
-    >>> 
-
-
-.. _python_funcion_float:
-
-float()
-~~~~~~~
-
-La función ``float()`` devuelve un número coma flotante ``float``. Es un constructor, 
-que crea un :ref:`coma flotante <python_coma_flotante>` a partir de un 
-:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
-:ref:`entero float <python_coma_flotante>` (cadenas de caracteres formadas por 
-números y hasta un punto) o una :ref:`cadena de caracteres <python_cadenas>` que sean 
-coherentes con un número entero.
-
-::
-
-    >>> float(2)
-    2.0
-    >>> float(23L)
-    23.0
-    >>> float(2.5)
-    2.5
-    >>> float("2")
-    2.0
-    >>> float("2.5")
-    2.5
-    >>> 
-
-
-.. _python_funcion_complex:
-
-complex()
-~~~~~~~~~
-
-La función ``complex()`` devuelve un número complejo ``complex``. Es un constructor, 
-que crea un :ref:`entero complex <python_num_complejo>` a partir de un 
-:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
-:ref:`entero float <python_coma_flotante>` (cadenas de caracteres formadas por 
-números y hasta un punto), o una :ref:`cadena de caracteres <python_cadenas>` que sean 
-coherentes con un número entero.
-
-::
-
-    >>> complex(23)
-    (23+0j)
-    >>> complex(23L)
-    (23+0j)
-    >>> complex(23.4)
-    (23.4+0j)
-    >>> complex("23")
-    (23+0j)
-    >>> complex("23.6")
-    (23.6+0j)
-    >>> 
-
-La función ``complex()`` sólo procesa correctamente cadenas que contengan 
-exclusivamente números.Si la cadena contiene cualquier otro carácter, la 
-función devuelve una excepción :ref:`ValueError <python_exception_valueerror>`.
-
-::
-
-    >>> complex("qwerty")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    ValueError: complex() arg is a malformed string
-    >>> 
-
-----
 
 Ayuda integrada
 ...............
