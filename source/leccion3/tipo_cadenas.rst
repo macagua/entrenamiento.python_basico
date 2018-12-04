@@ -733,32 +733,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 ----
 
 
-Convertir a tipos cadenas de caracteres
-........................................
+Convertir a cadenas de caracteres
+.................................
 
-Para convertir a tipos cadenas de caracteres debes usar las 
-:ref:`funciones integradas <python_funciones_integradas>` 
-al interprete disponible, a continuación se describen algunas 
-de ellas para tipos de datos cadenas de caracteres:
-
-
-.. _python_funcion_str:
-
-str()
-~~~~~
-
-La función ``str()`` devuelve una cadenas de caracteres. 
-
-::
-
-    >>> str(2)
-    '2'
-    >>> str(2.5)
-    '2.5'
-    >>> str(-2.5)
-    '-2.5'
-    >>> str(2.3+0j)
-    '(2.3+0j)'
+Para convertir a *tipos cadenas de caracteres* debe usar la función :ref:`str() <python_funcion_str>` 
+la cual :ref:`esta integrada <python_funciones_integradas>` en el interprete Python.
 
 .. tip:: 
     Para más información consulte las funciones integradas para 

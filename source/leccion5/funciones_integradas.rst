@@ -1623,6 +1623,25 @@ en la función.
     True
 
 
+.. _python_funcion_str:
+
+str()
+~~~~~
+
+La función ``str()`` devuelve una cadenas de caracteres. 
+
+::
+
+    >>> str(2)
+    '2'
+    >>> str(2.5)
+    '2.5'
+    >>> str(-2.5)
+    '-2.5'
+    >>> str(2.3+0j)
+    '(2.3+0j)'
+
+
 .. _python_funcion_swapcase:
 
 swapcase()
