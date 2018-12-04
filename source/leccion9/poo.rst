@@ -537,50 +537,15 @@ un objeto.
     :lines: 9-14
 
 
-.. _python_funcion_isinstance:
-
 Función isinstance()
 ~~~~~~~~~~~~~~~~~~~~
 
-La función ``isinstance()`` le permite corroborar si un objeto es instancia 
-de una clase. 
+``isinstance()``, es una :ref:`función integrada <python_funciones_integradas>` 
+la cual le permite corroborar si un objeto es instancia de una clase. 
 
-::
-
-    isinstance(objeto, tipo)
-
-Esta función devuelve ``True`` si el objeto especificado es 
-del tipo especificado, de lo contrario ``False``.
-
-Los parámetros son:
-
-- *objeto*, es requerido. Un objeto.
-
-- *tipo*, un tipo o una clase, o una tupla de tipos y/o clases
-
-Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
-
-::
-
-    >>> persona1 = Persona("V-13458796", "Leonardo", "Caballero", "M")
-    >>> isinstance(persona1, Persona)
-    True
-
-
-Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le 
-objeto es uno de los tipos en la tupla.
-
-::
-
-    >>> persona1 = Persona("V-13458796", "Leonardo", "Caballero", "M")
-    >>> isinstance(persona1, (Persona, int))
-    True
-
-Aquí puede decir que ``persona1`` es una instancia de la clase ``Persona``.
-
-Las clases dan la posibilidad de crear estructuras de datos más complejas. 
-En el ejemplo, una clase ``Persona`` que realizará un seguimiento del 
-``cedula``, ``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
+.. note::
+    Más información consulte la documentación detallada de la función 
+    :ref:`isinstance() <python_funcion_isinstance>`.
 
 
 ----
