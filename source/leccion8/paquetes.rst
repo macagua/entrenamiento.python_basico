@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_paquetes:
+.. _python_pkgs:
 
 Paquetes Python
 ---------------
