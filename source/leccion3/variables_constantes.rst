@@ -373,7 +373,8 @@ actual de las variables, ejecutando:
 ::
 
     >>> vars()
-    {'tupla': (11, 'Chao Plone', True, None), '__builtins__': <module '__builtin__' (built-in)>, 
+    {'tupla': (11, 'Chao Plone', True, None), 
+    '__builtins__': <module '__builtin__' (built-in)>, 
     'numero': 123456, '__package__': None, 'cadena': 'Hola Plone', 
     'diccionario': {'apellidos': 'Caballero Garcia', 'nombres': 'Leonardo Jose'}, 
     '__name__': '__main__', 'lista': [7, 8, 9, 0], '__doc__': None}
@@ -400,8 +401,8 @@ izquierda a derecha.
 
     >>> del numero, lista, tupla, diccionario
     >>> vars()
-    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': 
-    '__main__', '__doc__': None}
+    {'__builtins__': <module '__builtin__' (built-in)>, 
+    '__package__': None, '__name__': '__main__', '__doc__': None}
 
 Como pudo ver en el ejemplo anterior que elimino las referencias a las variables ``numero``, 
 ``lista``, ``tupla``, ``diccionario`` que incluso al volver a la función 

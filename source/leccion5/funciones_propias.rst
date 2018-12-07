@@ -287,8 +287,8 @@ la siguiente función es para doblar un valor de un número:
 ::
 
     >>> def doblar(numero):
-    resultado = numero*2
-    return resultado
+    ...     resultado = numero*2
+    ...     return resultado
 
     >>> doblar(2)
     4
@@ -301,7 +301,7 @@ Si el código fuente anterior se simplifica se verá, de la siguiente forma:
 ::
 
     >>> def doblar(numero):
-    return numero*2
+    ...     return numero*2
 
     >>> doblar(2)
     4

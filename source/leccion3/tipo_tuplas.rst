@@ -46,12 +46,13 @@ usando la función :ref:`range <python_funcion_range>` y la función
 
 ::
 
-	>>> words = ('cool', 'powerful', 'readable')
-	>>> for i in range(0, len(words)):
-	...     print i, words[i]
-	0 cool
-	1 powerful
-	2 readable
+    >>> tecnologias = ('Zope', 'Plone', 'Pyramid')
+    >>> for i in range(0, len(tecnologias)):
+    ...     print i, tecnologias[i]
+    ... 
+    0 Zope
+    1 Plone
+    2 Pyramid
 
 Pero, Python provee la palabra reservada ``enumerate`` para esto:
 

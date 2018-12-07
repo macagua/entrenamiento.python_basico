@@ -308,14 +308,14 @@ siguiente:
 ::
 
     >>> class Persona:
-    ...     """ Representa una persona real """
+    ...     """Clase que representa una Persona"""
     ...     cedula = "V-13458796"
     ...     nombre = "Leonardo"
     ...     apellido = "Caballero"
     ...     sexo = "M"
     ...     
     ...     def hablar(self, mensaje):
-    ...         """ Mostrar mensaje de saludo de Persona """
+    ...         """Mostrar mensaje de saludo de Persona"""
     ...         return mensaje
     ... 
     >>> Persona().hablar("Hola, soy la clase {0}.".format(macagua.__name__))

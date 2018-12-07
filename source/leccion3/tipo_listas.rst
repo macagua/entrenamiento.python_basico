@@ -179,15 +179,17 @@ claves en un diccionario, lineas en un archivo, ...):
 Para iterar sobre dos o más secuencias al mismo tiempo, los valores pueden 
 emparejarse con la función ``zip()``.
 
->>> preguntas = ['nombre', 'objetivo', 'sistema operativo']
->>> respuestas = ['Leonardo', 'aprender Python', 'Linux']
->>> for pregunta, respuesta in zip(preguntas, respuestas):
-...     print '¿Cual es tu {0}?, la respuesta es: {1}.'.format(pregunta, respuesta)
-... 
-¿Cual es tu nombre?, la respuesta es: Leonardo.
-¿Cual es tu objetivo?, la respuesta es: aprender Python.
-¿Cual es tu sistema operativo?, la respuesta es: Linux.
->>> 
+::
+
+    >>> preguntas = ['nombre', 'objetivo', 'sistema operativo']
+    >>> respuestas = ['Leonardo', 'aprender Python y Plone', 'Linux']
+    >>> for pregunta, respuesta in zip(preguntas, respuestas):
+    ...     print '¿Cual es tu {0}?, la respuesta es: {1}.'.format(
+    ...         pregunta, respuesta)
+    ... 
+    ¿Cual es tu nombre?, la respuesta es: Leonardo.
+    ¿Cual es tu objetivo?, la respuesta es: aprender Python y Plone.
+    ¿Cual es tu sistema operativo?, la respuesta es: Linux.
 
 ----
 

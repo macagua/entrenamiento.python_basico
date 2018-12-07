@@ -437,8 +437,8 @@ A continuación un ejemplo por cada tipo de datos:
 
 ::
 
-    >>> print "¿Activo S o N?: %c, Apodo: %s" % ("S", "Macagua")
-    ¿Activo S o N?: S, Apodo: Macagua
+    >>> print "CMS: %s, ¿Activar S o N?: %c" % ("Plone", "S")
+    CMS: Plone, ¿Activar S o N?: S
     >>> print "N. factura: %d, Total a pagar: %f" % (345, 658.23)
     N. factura: 345, Total a pagar: 658.230000
     >>> print "Tipo Octal: %o, Tipo Hexadecimal: %x" % (027, 0x17)
@@ -496,7 +496,8 @@ luego pasarla como argumento al método:
 ::
 
     >>> tipo_calculo = "raíz cuadrada de dos"
-    >>> print "el resultado de {nombre} es {resultado}".format(nombre=tipo_calculo, resultado=2**0.5)
+    >>> print "el resultado de {nombre} es {resultado}".format(
+    ...     nombre=tipo_calculo, resultado=2**0.5)
     el resultado de raíz cuadrada de dos es 1.41421356237
 
 
@@ -565,7 +566,8 @@ se imprima con cuatro dígitos después de la coma (``.4``).
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de {0} es {resultado:.4f}".format(tipo_calculo, resultado=valor)
+    >>> print "el resultado de {0} es {resultado:.4f}".format(
+    ...     tipo_calculo, resultado=valor)
     el resultado de raíz cuadrada de dos es 1.4142
 
 Formateo de números enteros, rellenados con espacios, con las siguientes sentencias:

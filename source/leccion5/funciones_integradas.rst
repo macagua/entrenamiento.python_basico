@@ -158,7 +158,7 @@ la lógica ``dir()`` predeterminada y devuelve:
 ::
 
     >>> class Persona(object):
-    ...     """ Clase que representa una persona. """
+    ...     """Clase que representa una Persona"""
     ...     def __init__(self, cedula, nombre, apellido, sexo):
     ...         """ Constructor de clase Persona """
     ...         self.cedula = cedula
@@ -166,19 +166,20 @@ la lógica ``dir()`` predeterminada y devuelve:
     ...         self.apellido = apellido
     ...         self.sexo = sexo
     ...     def __str__(self):
-    ...         """ Devuelve una cadena representativa al Persona """
+    ...         """Devuelve una cadena representativa al Persona"""
     ...         return "%s: %s %s, %s." % (
     ...             str(self.cedula), self.nombre,
     ...             self.apellido, self.sexo
     ...         )
     ...     def hablar(self, mensaje):
-    ...         """ Mostrar mensaje de saludo de Persona """
+    ...         """Mostrar mensaje de saludo de Persona"""
     ...         print mensaje
     ... 
     >>> type(Persona)
     <type 'type'>
     >>> vars()
-    {'Persona': <class '__main__.Persona'>, '__builtins__': <module '__builtin__' (built-in)>, 
+    {'Persona': <class '__main__.Persona'>, 
+    '__builtins__': <module '__builtin__' (built-in)>, 
     '__package__': None, '__name__': '__main__', 
     'os': <module 'os' from '/usr/lib/python2.7/os.pyc'>, '__doc__': None}
     >>> dir(Persona)
@@ -259,8 +260,8 @@ las variables.
 ::
 
     >>> globals()
-    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': 
-    '__main__', '__doc__': None}
+    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, 
+    '__name__': '__main__', '__doc__': None}
 
 
 La función ``globals()`` puede ser usada para devolver los nombres en el ``namespaces`` 
@@ -363,8 +364,8 @@ las variables.
 ::
 
     >>> locals()
-    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': 
-    '__main__', '__doc__': None}
+    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': 
+    None, '__name__': '__main__', '__doc__': None}
 
 La función ``locals()`` puede ser usadas para devolver los nombres en el ``namespaces`` 
 local dependiendo en la locación desde donde ella es llamada.
@@ -648,8 +649,8 @@ variables.
 ::
 
     >>> vars()
-    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, '__name__': 
-    '__main__', '__doc__': None}
+    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': 
+    None, '__name__': '__main__', '__doc__': None}
 
 
 La función ``vars()`` sin argumentos, equivale a la función :ref:`locals() <python_funcion_locals>`. 
