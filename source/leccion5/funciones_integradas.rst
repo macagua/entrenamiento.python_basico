@@ -377,7 +377,7 @@ El tipo de dato devuelto por la función es un tipo diccionario. Therefore, los 
 pueden ser extraídos usando la función integrada ``keys()``.
 
 
-.. _python_funcion_open:
+.. _python_fun_open:
 
 open()
 ~~~~~~
@@ -1513,7 +1513,7 @@ si coincide que la cadenas de caracteres estén en MAYÚSCULAS en cada palabra.
     False
 
 
-.. _python_funcion_lstrip:
+.. _python_fun_lstrip:
 
 lstrip()
 ~~~~~~~~
