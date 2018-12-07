@@ -29,7 +29,7 @@ Fuertemente tipado
 ..................
 
 El `fuertemente tipado`_ significa que el tipo de valor no cambia repentinamente. 
-Un :ref:`string <python_cadenas>` que contiene solo dígitos no se convierte mágicamente 
+Un :ref:`string <python_str>` que contiene solo dígitos no se convierte mágicamente 
 en un número. Cada cambio de tipo requiere una conversión explícita. A continuación un 
 ejemplo de este concepto:
 
