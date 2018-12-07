@@ -153,11 +153,10 @@ de la siguiente forma:
     class Persona:
         pass
 
-En el ejemplo anterior, el nombre de la clase es ``Persona`` y dentro 
-del bloque de código usa la sentencia :ref:`pass <python_sentencia_pass>`. 
-Aunque no es requerido por el intérprete, los nombres de las clases se 
-escriben por convención capitalizadas. Las clases pueden (y siempre 
-deberían) tener comentarios.
+En el ejemplo anterior, el nombre de la clase es ``Persona`` y dentro del bloque de 
+código usa la sentencia :ref:`pass <python_sent_pass>`. Aunque no es requerido 
+por el intérprete, los nombres de las clases se escriben por convención capitalizadas. 
+Las clases pueden (y siempre deberían) tener comentarios.
 
 .. figure:: ../_static/objetos_clases.png
     :align: center
