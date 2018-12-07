@@ -12,7 +12,7 @@ datos_basicos = {
     "fecha_nacimiento":"03/12/1980",
     "lugar_nacimiento":"Maracaibo, Zulia, Venezuela",
     "nacionalidad":"Venezolana",
-    "estado_civil":"Complicado"
+    "estado_civil":"Soltero"
 }
 
 print "\nDetalle del diccionario"
