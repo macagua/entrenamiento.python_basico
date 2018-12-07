@@ -11,13 +11,13 @@ El único requisito es que contengan un archivo llamado ``__init__.py``.
 Este archivo puede estar vacío.
 
 
-.. _python_sentencia_from:
+.. _python_sent_from:
 
 Sentencia from
 ..............
 
 La sentencia ``from`` se utiliza en conjunto a la previa sentencia 
-:ref:`import <python_sentencia_import>` para importar un módulo.
+:ref:`import <python_sent_import>` para importar un módulo.
 
 ::
 

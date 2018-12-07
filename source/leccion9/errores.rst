@@ -83,7 +83,7 @@ líneas leídas desde la entrada estándar.
 significados.
 
 
-.. _python_sentencia_try_except:
+.. _python_sent_try_except:
 
 Manejando excepciones
 .....................
@@ -229,7 +229,7 @@ se llaman (inclusive indirectamente) dentro del *bloque try*. Por ejemplo:
    Manejando error en tiempo de ejecución: integer division or modulo by zero
 
 
-.. _python_sentencia_raise:
+.. _python_sent_raise:
 
 Levantando excepciones
 ......................
@@ -265,7 +265,7 @@ una forma simplificada de la sentencia ``raise`` te permite relanzarla:
    NameError: Hola
 
 
-.. _python_sentencia_assert:
+.. _python_sent_assert:
 
 Sentencia assert
 ................
@@ -384,7 +384,7 @@ pueden ocurrir en funciones propias. Se puede encontrar más información sobre 
 en el capítulo :ref:`Clases <python_poo>`.
 
 
-.. _python_sentencia_finally:
+.. _python_sent_finally:
 
 Definiendo acciones de limpieza
 ...............................
@@ -470,7 +470,7 @@ indeterminado luego de que termine de ejecutarse. Esto no es un problema en scri
 simples, pero puede ser un problema en aplicaciones más grandes. 
 
 
-.. _python_sentencia_with:
+.. _python_sent_with:
 
 Sentencia with
 ~~~~~~~~~~~~~~

@@ -571,7 +571,7 @@ y más eficiente en la memoria.
 La ventaja de la función ``xrange()`` es *excepto* en hardware impedido en cuestión 
 de memoria (por ejemplo, MS-DOS) o cuando nunca se utilizan todos los elementos 
 del rango (por ejemplo, porque se suele interrumpir la ejecución del bucle con la 
-sentencia :ref:`break <python_sentencia_break>`).
+sentencia :ref:`break <python_sent_break>`).
 
 
 .. _python_fun_type:

@@ -36,7 +36,7 @@ son visibles dentro de la misma.
 
 En caso de que sea conveniente o necesario, una variable local puede convertirse en 
 una variable global declarándola explícitamente como tal con la sentencia 
-:ref:`global <python_sentencia_global>`.
+:ref:`global <python_sent_global>`.
 
 
 Ejemplos de variables
@@ -166,7 +166,7 @@ Un pequeño número de constantes vive en el espacio de nombres incorporado. Son
 
 ``__debug__``
     Esta constante es ``True`` si Python no se inició con una opción ``-O``. Véase 
-    también la sentencia :ref:`assert <python_sentencia_assert>`.
+    también la sentencia :ref:`assert <python_sent_assert>`.
 
 .. note:: 
     Los nombres ``None`` y ``__debug__`` no se pueden reasignar (asignaciones a ellos, 
@@ -229,37 +229,37 @@ para el que han sido creadas. Estas son:
 
 - ``as``.
 
-- :ref:`assert <python_sentencia_assert>`.
+- :ref:`assert <python_sent_assert>`.
 
-- :ref:`break <python_sentencia_break>`.
+- :ref:`break <python_sent_break>`.
 
 - :ref:`class <python_clases>`.
 
-- :ref:`continue <python_sentencia_continue>`.
+- :ref:`continue <python_sent_continue>`.
 
-- :ref:`def <python_sentencia_def>`.
+- :ref:`def <python_sent_def>`.
 
-- :ref:`del <python_sentencia_del>`.
+- :ref:`del <python_sent_del>`.
 
 - :ref:`elif <python_condicional_if>`.
 
 - :ref:`else <python_condicional_if>`.
 
-- :ref:`except <python_sentencia_try_except>`.
+- :ref:`except <python_sent_try_except>`.
 
 - ``exec``.
 
-- :ref:`finally <python_sentencia_finally>`.
+- :ref:`finally <python_sent_finally>`.
 
 - :ref:`for <python_bucle_for>`.
 
-- :ref:`from <python_sentencia_from>`.
+- :ref:`from <python_sent_from>`.
 
-- :ref:`global <python_sentencia_global>`.
+- :ref:`global <python_sent_global>`.
 
 - :ref:`if <python_condicional_if>`.
 
-- :ref:`import <python_sentencia_import>`.
+- :ref:`import <python_sent_import>`.
 
 - :ref:`in <python_expresiones_condicional>`.
 
@@ -271,19 +271,19 @@ para el que han sido creadas. Estas son:
 
 - :ref:`or <python_operadores_logicos>`.
 
-- :ref:`pass <python_sentencia_pass>`.
+- :ref:`pass <python_sent_pass>`.
 
 - :ref:`print <python_salida>`.
 
-- :ref:`raise <python_sentencia_raise>`.
+- :ref:`raise <python_sent_raise>`.
 
-- :ref:`return <python_sentencia_return>`.
+- :ref:`return <python_sent_return>`.
 
-- :ref:`try <python_sentencia_try_except>`.
+- :ref:`try <python_sent_try_except>`.
 
 - :ref:`while <python_bucle_while>`.
 
-- :ref:`with <python_sentencia_with>`.
+- :ref:`with <python_sent_with>`.
 
 - ``yield``.
 
@@ -352,7 +352,7 @@ y :ref:`constantes <python_constante>`:
 ----
 
 
-.. _python_sentencia_del:
+.. _python_sent_del:
 
 Sentencia del
 .............
@@ -413,7 +413,7 @@ Como pudo ver en el ejemplo anterior que elimino las referencias a las variables
 
 La eliminación de un nombre elimina el enlace de ese nombre del espacio de nombres 
 *local* o *global*, dependiendo de si el nombre aparece en una sentencia 
-":ref:`global <python_sentencia_global>`" en el mismo bloque de código. Si el nombre 
+":ref:`global <python_sent_global>`" en el mismo bloque de código. Si el nombre 
 no está vinculado, se generará una excepción ":ref:`NameError <python_exception_nameerror>`".
 
 .. tip::
@@ -427,7 +427,7 @@ la asignación de un corte vacío del tipo correcto (pero incluso esto está det
 por el objeto cortado).
 
 
-.. _python_sentencia_global:
+.. _python_sent_global:
 
 Sentencia global
 ................

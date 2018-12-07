@@ -23,7 +23,7 @@ llamado ``utilidades.py``:
     :language: python
     :lines: 2-8
 
-.. _python_sentencia_import:
+.. _python_sent_import:
 
 Sentencia import
 ................
@@ -152,7 +152,7 @@ Python hace conjeturas educadas sobre si las variables son locales o globales. S
 que cualquier variable asignada a un valor en una función es local.
 
 Por lo tanto, para asignar un valor a una variable global dentro de una función, primero 
-debe usar la sentencia :ref:`global <python_sentencia_global>`.
+debe usar la sentencia :ref:`global <python_sent_global>`.
 
 ::
 

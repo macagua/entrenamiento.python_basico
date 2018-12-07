@@ -108,10 +108,10 @@ Salida estándar
 
 La forma general de mostrar información por pantalla es mediante una consola 
 de comando, generalmente podemos mostrar texto y variables separándolos con 
-comas, para este se usa la sentencia :ref:`print <python_sentencia_print>`.
+comas, para este se usa la sentencia :ref:`print <python_sent_print>`.
 
 
-.. _python_sentencia_print:
+.. _python_sent_print:
 
 Sentencia print
 ~~~~~~~~~~~~~~~

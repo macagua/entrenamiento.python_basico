@@ -82,7 +82,7 @@ A continuación, se presentan algunos ejemplos del uso de sentencias utilitarias
 usadas en el bucle ``while``:
 
 
-.. _python_sentencia_break:
+.. _python_sent_break:
 
 Sentencia break
 ~~~~~~~~~~~~~~~
@@ -103,7 +103,7 @@ otro ciclo como ``for``) permanece siendo ``True``. Para comprender mejor use el
 ejemplo anterior pero se interrumpe el ciclo usando la sentencia ``break``.
 
 
-.. _python_sentencia_continue:
+.. _python_sent_continue:
 
 Sentencia continue
 ~~~~~~~~~~~~~~~~~~
