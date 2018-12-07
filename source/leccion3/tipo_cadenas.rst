@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_cadenas:
+.. _python_str:
 
 Tipo cadenas de caracteres
 --------------------------
@@ -24,7 +24,7 @@ Las cadenas no son más que caracteres encerrado entre comillas simples
     - **Inmutable:** si su contenido (o dicho valor) no puede cambiarse en tiempo de ejecución.
 
 
-.. _python_cadenas_escape:
+.. _python_str_escape:
 
 Cadenas de escape
 .................
@@ -75,7 +75,7 @@ cadenas) y la multiplicación.
     'unounouno'
 
 
-.. _python_cadenas_comentarios:
+.. _python_str_comentarios:
 
 Comentarios
 ...........
@@ -134,7 +134,7 @@ Python no dispone de un método para delimitar bloques de comentarios de varias 
 Al igual que los comentarios de un sola linea, son cadenas de caracteres, en este caso 
 van entre triples comillas (simples o dobles), esto tiene el inconveniente que, aunque 
 no genera código ejecutable, el bloque delimitado no es ignorado por el intérprete Python, 
-que crea el correspondiente objeto de tipo :ref:`cadena de caracteres <python_cadenas>`.
+que crea el correspondiente objeto de tipo :ref:`cadena de caracteres <python_str>`.
 
 ::
 
@@ -188,7 +188,7 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
     >>> 
 
 Los comentarios multilína usado con mucha frecuencia como en las varias sintaxis 
-Python como :ref:`comentarios de documentación <python_cadenas_docstrings>` a 
+Python como :ref:`comentarios de documentación <python_str_docstrings>` a 
 continuación se listan las sintaxis más comunes:
 
 - :ref:`Módulos <python_modulos>`.
@@ -200,7 +200,7 @@ continuación se listan las sintaxis más comunes:
 - :ref:`Métodos <python_metodos>`.
 
 
-.. _python_cadenas_docstrings:
+.. _python_str_docstrings:
 
 Docstrings
 ..........
@@ -217,7 +217,7 @@ Ten en cuenta, una buena documentación siempre dará respuesta a las dos pregun
 - ¿Cómo se utiliza?
 
 
-.. _python_cadenas_docstrings_def:
+.. _python_str_docstrings_def:
 
 Funciones
 ~~~~~~~~~
@@ -382,7 +382,7 @@ valores:
     TODO terminar de escribir la sección docstrings.
 
 
-.. _python_cadenas_formateo:
+.. _python_str_formateo:
 
 Formateo de cadenas
 ...................
@@ -391,7 +391,7 @@ Python soporta múltiples formas de formatear una cadena de caracteres. A contin
 se describen:
 
 
-.. _python_cadenas_formateo_modulo:
+.. _python_str_formateo_modulo:
 
 Formateo %
 ~~~~~~~~~~
@@ -445,7 +445,7 @@ A continuación un ejemplo por cada tipo de datos:
     Tipo Octal: 27, Tipo Hexadecimal: 17
 
 
-.. _python_cadenas_formatter:
+.. _python_str_formatter:
 
 Clase formatter
 ~~~~~~~~~~~~~~~
@@ -551,7 +551,7 @@ de 9, con la siguiente sentencia:
 Opcionalmente se puede poner el signo de dos puntos después del número o nombre, y 
 explicitar el tipo del objeto:
 
-- ``s`` para cadenas de caracteres (tipo :ref:`str <python_cadenas>`).
+- ``s`` para cadenas de caracteres (tipo :ref:`str <python_str>`).
 
 - ``d`` para números enteros (tipo :ref:`int <python_numericos>`).
 

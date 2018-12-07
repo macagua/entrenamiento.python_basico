@@ -47,7 +47,7 @@ A continuación, se presentan algunos ejemplos del uso de *variables*:
 **Ejemplo de asignar valor a variable**
 
 A continuación, se creará un par de variables a modo de ejemplo. Una de tipo 
-:ref:`cadenas de caracteres <python_cadenas>` y una de tipo 
+:ref:`cadenas de caracteres <python_str>` y una de tipo 
 :ref:`entero <python_num_entero>`:
 
 ::
@@ -70,7 +70,7 @@ así:
 
 También nos ha servido el pequeño ejemplo para presentar los comentarios en linea en 
 Python: cadenas de caracteres que comienzan con el carácter ``#`` y que Python ignora 
-totalmente. Hay más tipos de :ref:`comentarios <python_cadenas_comentarios>`, de los 
+totalmente. Hay más tipos de :ref:`comentarios <python_str_comentarios>`, de los 
 cuales se tratarán más adelante.
 
 ----
@@ -78,7 +78,7 @@ cuales se tratarán más adelante.
 **Ejemplo de cambiar valor a variable**
 
 A continuación, se cambiará el valor para una variable de tipo 
-:ref:`cadenas de caracteres <python_cadenas>` a modo de ejemplo: 
+:ref:`cadenas de caracteres <python_str>` a modo de ejemplo: 
 
 ::
 
@@ -91,7 +91,7 @@ A continuación, se cambiará el valor para una variable de tipo
 **Ejemplo de asignar múltiples valores a a múltiples variables**
 
 A continuación, se creará múltiples variables (:ref:`entero <python_num_entero>`, 
-:ref:`coma flotante <python_num_float>`, :ref:`cadenas de caracteres <python_cadenas>`) 
+:ref:`coma flotante <python_num_float>`, :ref:`cadenas de caracteres <python_str>`) 
 asignando múltiples valores:
 
 ::

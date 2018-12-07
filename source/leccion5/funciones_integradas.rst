@@ -819,7 +819,7 @@ La función ``complex()`` devuelve un número complejo ``complex``. Es un constr
 que crea un :ref:`entero complex <python_num_complex>` a partir de un 
 :ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
 :ref:`entero float <python_num_float>` (cadenas de caracteres formadas por números y 
-hasta un punto), o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes 
+hasta un punto), o una :ref:`cadena de caracteres <python_str>` que sean coherentes 
 con un número entero.
 
 ::
@@ -870,7 +870,7 @@ La función ``float()`` devuelve un número coma flotante ``float``. Es un const
 que crea un :ref:`coma flotante <python_num_float>` a partir de un 
 :ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
 :ref:`entero float <python_num_float>` (cadenas de caracteres formadas por 
-números y hasta un punto) o una :ref:`cadena de caracteres <python_cadenas>` que sean 
+números y hasta un punto) o una :ref:`cadena de caracteres <python_str>` que sean 
 coherentes con un número entero.
 
 ::
@@ -910,7 +910,7 @@ int()
 La función ``int()`` devuelve un número entero. Es un constructor, que crea un 
 :ref:`entero <python_num_entero>` a partir de un :ref:`entero float <python_num_float>`, 
 :ref:`entero complex <python_num_complex>` o una 
-:ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número entero.
+:ref:`cadena de caracteres <python_str>` que sean coherentes con un número entero.
 
 
 ::
@@ -951,7 +951,7 @@ long()
 La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea 
 un :ref:`entero long <python_num_entero_long>` a partir de un 
 :ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>` 
-o una :ref:`cadena de caracteres <python_cadenas>` que sean coherentes con un número 
+o una :ref:`cadena de caracteres <python_str>` que sean coherentes con un número 
 entero.
 
 ::
@@ -1259,14 +1259,14 @@ La función integrada ``format()`` devuelve una representación formateada de un
 dato controlado por el especificador de formato.
 
 La función integrada ``format()`` es similar al :ref:`método format() <python_metodo_format>` 
-disponible en el tipo de :ref:`cadena de caracteres <python_cadenas>`. Internamente, 
+disponible en el tipo de :ref:`cadena de caracteres <python_str>`. Internamente, 
 ambos llaman al método ``__format__()`` de un objecto.
 
 Mientras, la función integrada ``format()`` es una implementación de bajo nivel para 
 formatear un objeto usando ``__format__()`` internamente, el 
 :ref:`método format() <python_metodo_format>` del tipo de cadena de caracteres es una 
 implementación de alto nivel disponible para ejecutar operaciones de formateo complejas 
-en múltiples objeto de :ref:`cadena de caracteres <python_cadenas>`.
+en múltiples objeto de :ref:`cadena de caracteres <python_str>`.
 
 La sintaxis de la función integrada ``format()`` es:
 

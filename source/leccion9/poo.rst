@@ -243,7 +243,7 @@ son atributos especiales.
     'Persona'
 
 - __doc__, contiene la documentación de un módulo, una clase, o método 
-  especifico, escrita en el formato :ref:`docstrings <python_cadenas_docstrings>`.
+  especifico, escrita en el formato :ref:`docstrings <python_str_docstrings>`.
 
 ::
 
@@ -287,7 +287,7 @@ la instancia que la llama, de esta forma se afirma que los métodos son
 
 .. note:: 
     Usted puede encontrar ejemplos en las funciones de 
-    :ref:`cadena de caracteres <python_cadenas>`, :ref:`listas <python_listas>`, 
+    :ref:`cadena de caracteres <python_str>`, :ref:`listas <python_listas>`, 
     :ref:`diccionarios <python_diccionarios>`, etc.
 
 Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``, 

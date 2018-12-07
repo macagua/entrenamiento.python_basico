@@ -713,7 +713,7 @@ ejecutando el siguiente comando:
     python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print "Función importada " + impuesto_iva14.__doc__[1:36] + "."'
     Función importada Calcula el impuesto del IVA de 14 %.
 
-El comando previo muestra la :ref:`docstring <python_cadenas_docstrings>` de la 
+El comando previo muestra la :ref:`docstring <python_str_docstrings>` de la 
 función importada ``impuesto_iva14`` sino muestra ningún mensaje de error, el 
 paquete ``tostadas_pipo-0.1`` se instalo correctamente.
 

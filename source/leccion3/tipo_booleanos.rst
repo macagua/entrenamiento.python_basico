@@ -26,7 +26,7 @@ como ``False``:
 
 - :ref:`Número cero <python_numericos>` en todos los tipos.
 
-- :ref:`Cadena de caracteres <python_cadenas>` vaciás.
+- :ref:`Cadena de caracteres <python_str>` vaciás.
 
 - Contenedores, incluyendo *cadenas de caracteres*, :ref:`tuplas <python_tuplas>`, 
   :ref:`listas <python_listas>`, :ref:`diccionarios <python_diccionarios>` y 

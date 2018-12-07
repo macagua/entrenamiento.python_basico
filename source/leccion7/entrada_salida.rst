@@ -118,7 +118,7 @@ Sentencia print
 
 Sentencia ``print`` evalúa cada expresión, devuelve y escribe el objeto resultado 
 a la salida estándar de la consola de comando. Si un objeto no es un 
-:ref:`tipo cadena de caracteres <python_cadenas>`, ese es primeramente convertido 
+:ref:`tipo cadena de caracteres <python_str>`, ese es primeramente convertido 
 a un *tipo cadena de caracteres* usando las reglas para las 
 :ref:`conversiones del tipo <python_fun_str>`. La *cadena de caracteres* 
 (resultado o original) es entonces escrito.
@@ -157,9 +157,9 @@ las cadenas de caracteres y variables:
 
     Hay disponibles otras formas de aplicar formato de cadenas de caracteres:
 
-    - :ref:`Formateo % <python_cadenas_formateo_modulo>`.
+    - :ref:`Formateo % <python_str_formateo_modulo>`.
 
-    - :ref:`Clase formatter <python_cadenas_formatter>`.
+    - :ref:`Clase formatter <python_str_formatter>`.
 
 
 .. _python_entrada_salida_ejemplo:
