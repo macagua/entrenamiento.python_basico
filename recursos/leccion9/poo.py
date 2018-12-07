@@ -1,14 +1,14 @@
 # -*- coding: utf8 -*-
 
 class Persona:
-    """ Representa una persona real """
+    """Clase que representa una Persona"""
     cedula = "V-13458796"
     nombre = "Leonardo"
     apellido = "Caballero"
     sexo = "M"
     
     def hablar(self, mensaje):
-        """ Mostrar mensaje de saludo de Persona """
+        """Mostrar mensaje de saludo de Persona"""
         return mensaje
 
 
