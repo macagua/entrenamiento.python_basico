@@ -58,13 +58,13 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     In [1]: %run index_error.py
     ---------------------------------------------------------------------------
     IndexError                                Traceback (most recent call last)
-    /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py in <module>()
+    /home/macagua/python/entrenamiento/index_error.py in <module>()
           6 
           7 if __name__ == '__main__':
     ----> 8     index_error()
           9 
 
-    /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py in index_error()
+    /home/macagua/python/entrenamiento/index_error.py in index_error()
           3 def index_error():
           4     lst = list('foobar')
     ----> 5     print lst[len(lst)]
@@ -74,7 +74,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     IndexError: list index out of range
 
     In [2]: %debug
-    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py(5)index_error()
+    > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
           4     lst = list('foobar')
     ----> 5     print lst[len(lst)]
           6 
@@ -106,7 +106,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
    ``python -m pdb script.py``::
 
     python -m pdb index_error.py
-    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py(1)<module>()
+    > /home/macagua/python/entrenamiento/index_error.py(1)<module>()
     -> """Small snippet to raise an IndexError."""
     (Pdb) continue
     Traceback (most recent call last):
@@ -124,7 +124,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     IndexError: list index out of range
     Uncaught exception. Entering post mortem debugging
     Running 'cont' or 'step' will restart the program
-    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/index_error.py(5)index_error()
+    > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
     -> print lst[len(lst)]
     (Pdb) 
 
@@ -146,7 +146,7 @@ está haciendo correctamente.
     *** Blank or comment
     *** Blank or comment
     *** Blank or comment
-    Breakpoint 1 at /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py:4
+    Breakpoint 1 at /home/macagua/python/entrenamiento/wiener_filtering.py:4
     NOTE: Enter 'c' at the ipdb>  prompt to start your script.
     > <string>(1)<module>()
 
@@ -155,20 +155,20 @@ está haciendo correctamente.
   .. sourcecode:: ipython
 
     ipdb> n
-    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(4)<module>()
+    > /home/macagua/python/entrenamiento/wiener_filtering.py(4)<module>()
           3 
     1---> 4 import numpy as np
           5 import scipy as sp
 
     ipdb> b 34
-    Breakpoint 2 at /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py:34
+    Breakpoint 2 at /home/macagua/python/entrenamiento/wiener_filtering.py:34
 
 * Continua la ejecución hasta el siguiente `breakpoint` con ``c(ont(inue))``:
 
   .. sourcecode:: ipython
 
     ipdb> c
-    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(34)iterated_wiener()
+    > /home/macagua/python/entrenamiento/wiener_filtering.py(34)iterated_wiener()
          33     """
     2--> 34     noisy_img = noisy_img
          35     denoised_img = local_mean(noisy_img, size=size)
@@ -181,13 +181,13 @@ está haciendo correctamente.
   .. sourcecode:: ipython
 
     ipdb> s
-    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(35)iterated_wiener()
+    > /home/macagua/python/entrenamiento/wiener_filtering.py(35)iterated_wiener()
     2    34     noisy_img = noisy_img
     ---> 35     denoised_img = local_mean(noisy_img, size=size)
          36     l_var = local_var(noisy_img, size=size)
 
     ipdb> n
-    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(36)iterated_wiener()
+    > /home/macagua/python/entrenamiento/wiener_filtering.py(36)iterated_wiener()
          35     denoised_img = local_mean(noisy_img, size=size)
     ---> 36     l_var = local_var(noisy_img, size=size)
          37     for i in range(3):
@@ -198,7 +198,7 @@ está haciendo correctamente.
   .. sourcecode:: ipython
 
     ipdb> n
-    > /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py(37)iterated_wiener()
+    > /home/macagua/python/entrenamiento/wiener_filtering.py(37)iterated_wiener()
          36     l_var = local_var(noisy_img, size=size)
     ---> 37     for i in range(3):
          38         res = noisy_img - denoised_img
@@ -238,19 +238,21 @@ estamos haciendo aritmética con enteros.
         In [4]: %run wiener_filtering.py
         ---------------------------------------------------------------------------
         FloatingPointError                        Traceback (most recent call last)
-        /home/macagua/venv/lib/python2.7/site-packages/IPython/utils/py3compat.pyc in execfile(fname, *where)
+        /home/macagua/venv/lib/python2.7/site-packages/IPython/utils/py3compat.pyc 
+        in execfile(fname, *where)
             176             else:
             177                 filename = fname
         --> 178             __builtin__.execfile(filename, *where)
 
-        /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py in <module>()
+        /home/macagua/python/entrenamiento/wiener_filtering.py in <module>()
              55 pl.matshow(noisy_lena[cut], cmap=pl.cm.gray)
              56 
         ---> 57 denoised_lena = iterated_wiener(noisy_lena)
              58 pl.matshow(denoised_lena[cut], cmap=pl.cm.gray)
              59 
 
-        /home/macagua/entrenamiento.python_basico/recursos/leccion6/wiener_filtering.py in iterated_wiener(noisy_img, size)
+        /home/macagua/python/entrenamiento/wiener_filtering.py in 
+        iterated_wiener(noisy_img, size)
              38         res = noisy_img - denoised_img
              39         noise = (res**2).sum()/res.size
         ---> 40         noise_level = (1 - noise/l_var )
