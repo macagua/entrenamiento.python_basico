@@ -232,16 +232,16 @@ Convertir a numéricos
 Para convertir a :ref:`tipos numéricos <python_numericos>` debe usar las siguientes 
 :ref:`funciones integradas <python_funciones_integradas>` en el interprete Python:
 
-- La función :ref:`int() <python_funcion_int>` devuelve un tipo de datos 
+- La función :ref:`int() <python_fun_int>` devuelve un tipo de datos 
   :ref:`número entero <python_num_entero>`.
 
-- La función :ref:`long() <python_funcion_long>` devuelve un tipo de datos 
+- La función :ref:`long() <python_fun_long>` devuelve un tipo de datos 
   :ref:`número entero long <python_num_entero_long>`.
 
-- La función :ref:`float() <python_funcion_float>` devuelve un tipo de datos 
+- La función :ref:`float() <python_fun_float>` devuelve un tipo de datos 
   :ref:`número entero float <python_num_float>`.
 
-- La función :ref:`complex() <python_funcion_complex>` devuelve un tipo de datos 
+- La función :ref:`complex() <python_fun_complex>` devuelve un tipo de datos 
   :ref:`número complejo <python_num_complex>`.
 
 

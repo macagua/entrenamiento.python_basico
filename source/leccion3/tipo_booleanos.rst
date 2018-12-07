@@ -70,7 +70,7 @@ tampoco es nada importante.
 Convertir a booleanos
 .....................
 
-Para convertir a *tipos booleanos* debe usar la función :ref:`bool() <python_funcion_bool>` 
+Para convertir a *tipos booleanos* debe usar la función :ref:`bool() <python_fun_bool>` 
 la cual :ref:`esta integrada <python_funciones_integradas>` en el interprete Python.
 
 

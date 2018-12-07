@@ -175,7 +175,7 @@ Las siguientes excepciones son las realmente lanzadas.
 
 ``IOError``
 	Se lanza cuando una operación de E/S (tal como una sentencia :ref:`print <python_salida>`, 
-	la función integrada :ref:`open() <python_funcion_open>` o un método de un objeto 
+	la función integrada :ref:`open() <python_fun_open>` o un método de un objeto 
 	archivo) fracasa por motivos relativos a E/S, por ejemplo, por no encontrarse un archivo 
 	o llenarse el disco. Esta clase se deriva de 
 	:ref:`EnvironmentError <python_exception_environmenterror>`. En la explicación anterior 
@@ -220,8 +220,8 @@ Las siguientes excepciones son las realmente lanzadas.
 	Se lanza cuando el usuario pulsa la tecla de interrupción (normalmente con la 
 	combinación de teclas ``Control-C`` o ``DEL2.7``). 
 	A lo largo de la ejecución se comprueba si se ha interrumpido regularmente. Las 
-	interrupciones ocurridas cuando una función :ref:`input() <python_funcion_input>` 
-	o :ref:`raw_input() <python_funcion_raw_input>`) espera datos también lanzan esta 
+	interrupciones ocurridas cuando una función :ref:`input() <python_fun_input>` 
+	o :ref:`raw_input() <python_fun_raw_input>`) espera datos también lanzan esta 
 	excepción. Deriva de la clase raíz :ref:`BaseException <python_exception_baseexceptionerror>`.
 
 
@@ -299,7 +299,7 @@ Las siguientes excepciones son las realmente lanzadas.
 ``SyntaxError``
 	Se lanza cuando el analizador encuentra un error en la sintaxis. Esto puede 
 	ocurrir en una sentencia ``import``, en una sentencia ``exec``, en una llamada 
-	a la función interna ``eval()`` o :ref:`input() <python_funcion_input>`, o al 
+	a la función interna ``eval()`` o :ref:`input() <python_fun_input>`, o al 
 	leer el guion inicial o la entrada estándar (por ejemplo, la entrada interactiva).
 	Si se usan excepciones de clase, las instancias de esta clase tienen disponibles 
 	los atributos ``filename`` (nombre del archivo), ``lineno`` (nº de línea), 

@@ -41,8 +41,8 @@ Una tarea común es iterar sobre una secuencia mientras cuidas
 el seguimiento de la numeración de un elemento.
 
 Podría usar un bucle ``while`` con un contador o un bucle ``for`` 
-usando la función :ref:`range <python_funcion_range>` y la función 
-:ref:`len <python_funcion_len>`:
+usando la función :ref:`range() <python_fun_range>` y la función 
+:ref:`len() <python_fun_len>`:
 
 ::
 

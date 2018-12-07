@@ -545,7 +545,7 @@ la cual le permite corroborar si un objeto es instancia de una clase.
 
 .. note::
     Más información consulte la documentación detallada de la función 
-    :ref:`isinstance() <python_funcion_isinstance>`.
+    :ref:`isinstance() <python_fun_isinstance>`.
 
 
 ----

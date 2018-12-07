@@ -29,9 +29,9 @@ resumir en esta tabla:
 | Secuencias            +----------------+------------------------------------------------+
 |                       | ``tuple``      | :ref:`tupla <python_tuplas>`                   |
 |                       +----------------+------------------------------------------------+
-|                       | ``range``      | :ref:`rango mutable <python_funcion_range>`    |
+|                       | ``range``      | :ref:`rango mutable <python_fun_range>`        |
 +-----------------------+----------------+------------------------------------------------+
-|                       | ``xrange``     | :ref:`rango inmutable <python_funcion_xrange>` |
+|                       | ``xrange``     | :ref:`rango inmutable <python_fun_xrange>`     |
 +-----------------------+----------------+------------------------------------------------+
 | Mapeos                | ``dict``       | :ref:`diccionario <python_diccionarios>`       |
 +-----------------------+----------------+------------------------------------------------+

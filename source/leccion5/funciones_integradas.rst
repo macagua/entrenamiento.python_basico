@@ -20,7 +20,7 @@ Funciones generales
 Las funciones de uso general se describen a continuación:
 
 
-.. _python_funcion_credits:
+.. _python_fun_credits:
 
 credits()
 ~~~~~~~~~
@@ -34,7 +34,7 @@ Imprime el texto de la lista de contribuidores.
         for supporting Python development.  See www.python.org for more information.
 
 
-.. _python_funcion_copyright:
+.. _python_fun_copyright:
 
 copyright()
 ~~~~~~~~~~~
@@ -57,7 +57,7 @@ Imprime el texto de la nota de copyright.
     All Rights Reserved.
 
 
-.. _python_funcion_dir:
+.. _python_fun_dir:
 
 dir()
 ~~~~~
@@ -228,7 +228,7 @@ la lógica ``dir()`` predeterminada y devuelve:
     'denominator', 'imag', 'numerator', 'real']
 
 
-.. _python_funcion_eval:
+.. _python_fun_eval:
 
 eval()
 ~~~~~~
@@ -249,7 +249,7 @@ Ademas si se han definido anteriormente variables las acepta como parámetros:
     95
 
 
-.. _python_funcion_globals:
+.. _python_fun_globals:
 
 globals()
 ~~~~~~~~~
@@ -274,7 +274,7 @@ El tipo de dato devuelto por función es un tipo diccionario. Therefore, los nom
 ser extraídos usando la función integrada ``keys()``.
 
 
-.. _python_funcion_help:
+.. _python_fun_help:
 
 help()
 ~~~~~~
@@ -302,7 +302,7 @@ Invoca el menú de ayuda del intérprete de Python:
     help> 
 
 
-.. _python_funcion_len:
+.. _python_fun_len:
 
 len()
 ~~~~~
@@ -315,7 +315,7 @@ Devuelve el número de elementos de una secuencia o colección.
     18
 
 
-.. _python_funcion_license:
+.. _python_fun_license:
 
 license()
 ~~~~~~~~~
@@ -353,7 +353,7 @@ Imprime el texto de la licencia.
     Hit Return for more, or q (and Return) to quit: 
 
 
-.. _python_funcion_locals:
+.. _python_fun_locals:
 
 locals()
 ~~~~~~~~
@@ -454,7 +454,7 @@ todos los tipos de nueva línea que se han visto.
         >>> file.__doc__
 
 
-.. _python_funcion_range:
+.. _python_fun_range:
 
 range()
 ~~~~~~~
@@ -493,7 +493,7 @@ En el ejemplo anterior, la función ``range(4)`` devuelve **[0, 1, 2, 3]**. ¡El
 final es omitido! Hay exactamente los indices validos para una lista de **4** elementos.
 
 
-.. _python_funcion_reload:
+.. _python_fun_reload:
 
 reload()
 ~~~~~~~~
@@ -519,7 +519,7 @@ modulo ``clases.py``, debe hacer lo siguiente:
     >>> reload(clases)
 
 
-.. _python_funcion_xrange:
+.. _python_fun_xrange:
 
 xrange()
 ~~~~~~~~
@@ -574,7 +574,7 @@ del rango (por ejemplo, porque se suele interrumpir la ejecución del bucle con 
 sentencia :ref:`break <python_sentencia_break>`).
 
 
-.. _python_funcion_type:
+.. _python_fun_type:
 
 type()
 ~~~~~~~
@@ -638,7 +638,7 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
         >>> 
 
 
-.. _python_funcion_vars:
+.. _python_fun_vars:
 
 vars()
 ~~~~~~
@@ -653,7 +653,7 @@ variables.
     None, '__name__': '__main__', '__doc__': None}
 
 
-La función ``vars()`` sin argumentos, equivale a la función :ref:`locals() <python_funcion_locals>`. 
+La función ``vars()`` sin argumentos, equivale a la función :ref:`locals() <python_fun_locals>`. 
 Si se llama con un argumento equivale a la sentencia ``object.__dict__``.
 
 
@@ -668,7 +668,7 @@ Funciones de entrada y salida
 Las funciones de tipos numéricos se describen a continuación:
 
 
-.. _python_funcion_input:
+.. _python_fun_input:
 
 input()
 ~~~~~~~
@@ -723,7 +723,7 @@ entre comillas simples o dobles, como el siguiente ejemplo:
     <type 'str'>
 
 
-.. _python_funcion_raw_input:
+.. _python_fun_raw_input:
 
 raw_input()
 ~~~~~~~~~~~
@@ -779,7 +779,7 @@ Funciones numéricas
 Las funciones de tipos numéricos se describen a continuación:
 
 
-.. _python_funcion_abs:
+.. _python_fun_abs:
 
 abs()
 ~~~~~
@@ -796,7 +796,7 @@ Devuelve el valor absoluto de un número (entero o de coma flotante).
     2.5
 
 
-.. _python_funcion_bin:
+.. _python_fun_bin:
 
 bin()
 ~~~~~
@@ -810,7 +810,7 @@ o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero 
     '0b1010'
 
 
-.. _python_funcion_complex:
+.. _python_fun_complex:
 
 complex()
 ~~~~~~~~~
@@ -847,7 +847,7 @@ función devuelve una excepción :ref:`ValueError <python_exception_valueerror>`
     ValueError: complex() arg is a malformed string
 
 
-.. _python_funcion_divmod:
+.. _python_fun_divmod:
 
 divmod()
 ~~~~~~~~
@@ -861,7 +861,7 @@ la división entera, y el resto.
     (5, 2)
 
 
-.. _python_funcion_float:
+.. _python_fun_float:
 
 float()
 ~~~~~~~
@@ -887,7 +887,7 @@ coherentes con un número entero.
     2.5
 
 
-.. _python_funcion_hex:
+.. _python_fun_hex:
 
 hex()
 ~~~~~
@@ -902,7 +902,7 @@ hexadecimal.
     '0xa'
 
 
-.. _python_funcion_int:
+.. _python_fun_int:
 
 int()
 ~~~~~
@@ -943,7 +943,7 @@ excepción :ref:`ValueError <python_exception_valueerror>`.
     ValueError: invalid literal for int() with base 10: 'doscientos'
 
 
-.. _python_funcion_long:
+.. _python_fun_long:
 
 long()
 ~~~~~~
@@ -986,7 +986,7 @@ excepción :ref:`ValueError <python_exception_valueerror>`.
     ValueError: invalid literal for long() with base 10: '23,4'
 
 
-.. _python_funcion_max:
+.. _python_fun_max:
 
 max()
 ~~~~~
@@ -1017,7 +1017,7 @@ o colección.
     <type 'str'>
 
 
-.. _python_funcion_min:
+.. _python_fun_min:
 
 min()
 ~~~~~
@@ -1036,7 +1036,7 @@ Tiene un comportamiento similar a ``max()``, pero devuelve el mínimo.
     <type 'str'>
 
 
-.. _python_funcion_pow:
+.. _python_fun_pow:
 
 pow()
 ~~~~~
@@ -1061,7 +1061,7 @@ Si recibe un tercer argumento opcional, éste funciona como módulo.
     2
 
 
-.. _python_funcion_round:
+.. _python_fun_round:
 
 round()
 ~~~~~~~
@@ -1087,7 +1087,7 @@ a la baja:
     5.0
 
 
-.. _python_funcion_sum:
+.. _python_fun_sum:
 
 sum()
 ~~~~~
@@ -1102,7 +1102,7 @@ que recibe como argumento (lista o cadena). La secuencia original no es modifica
     10
 
 
-.. _python_funcion_oct:
+.. _python_fun_oct:
 
 oct()
 ~~~~~
@@ -1129,7 +1129,7 @@ Funciones de booleanos
 Las funciones de tipos :ref:`booleanos <python_booleanos>` se describen a continuación:
 
 
-.. _python_funcion_bool:
+.. _python_fun_bool:
 
 bool()
 ~~~~~~
@@ -1157,7 +1157,7 @@ Funciones de cadenas de caracteres
 Las funciones de tipos cadenas de caracteres se describen a continuación:
 
 
-.. _python_funcion_capitalize:
+.. _python_fun_capitalize:
 
 capitalize()
 ~~~~~~~~~~~~
@@ -1171,7 +1171,7 @@ la primera palabra.
     'Leonardo caballero'
 
 
-.. _python_funcion_chr:
+.. _python_fun_chr:
 
 chr()
 ~~~~~
@@ -1192,7 +1192,7 @@ el argumento es de 0 a 256.
     '~'
 
 
-.. _python_funcion_endswith:
+.. _python_fun_endswith:
 
 endswith()
 ~~~~~~~~~~
@@ -1209,7 +1209,7 @@ en la función.
     True
 
 
-.. _python_funcion_expandtabs:
+.. _python_fun_expandtabs:
 
 expandtabs()
 ~~~~~~~~~~~~
@@ -1233,7 +1233,7 @@ Usted puede indicar el tamaño de la tecla ``tab`` vía parámetro de la funció
     'Leonardo Caballero  Python Developer  leonardoc@plone.org'
 
 
-.. _python_funcion_find:
+.. _python_fun_find:
 
 find()
 ~~~~~~
@@ -1250,7 +1250,7 @@ en la función.
     -1
 
 
-.. _python_funcion_format:
+.. _python_fun_format:
 
 format()
 ~~~~~~~~
@@ -1376,7 +1376,7 @@ devuelve el mensaje *23*. Si no hay formato especificado, el mensaje devuelto es
 *Formato nulo*. 
 
 
-.. _python_funcion_index:
+.. _python_fun_index:
 
 index()
 ~~~~~~~
@@ -1396,7 +1396,7 @@ La función ``index()`` es como la función ``find()`` pero arroja una excepció
     8
 
 
-.. _python_funcion_isalnum:
+.. _python_fun_isalnum:
 
 isalnum()
 ~~~~~~~~~
@@ -1412,7 +1412,7 @@ si coincide que la cadena contenga caracteres alfanuméricos.
     False
 
 
-.. _python_funcion_isalpha:
+.. _python_fun_isalpha:
 
 isalpha()
 ~~~~~~~~~
@@ -1428,7 +1428,7 @@ si coincide que la cadena contenga caracteres alfabéticos.
     False
 
 
-.. _python_funcion_isdigit:
+.. _python_fun_isdigit:
 
 isdigit()
 ~~~~~~~~~
@@ -1445,7 +1445,7 @@ si coincide que la cadena contenga caracteres dígitos.
     True
 
 
-.. _python_funcion_islower:
+.. _python_fun_islower:
 
 islower()
 ~~~~~~~~~
@@ -1461,7 +1461,7 @@ si coincide que la cadena contenga caracteres en MINÚSCULAS.
     False
 
 
-.. _python_funcion_istitle:
+.. _python_fun_istitle:
 
 istitle()
 ~~~~~~~~~
@@ -1477,7 +1477,7 @@ si coincide que la cadenas de caracteres sean capitales en cada palabra.
     False
 
 
-.. _python_funcion_isspace:
+.. _python_fun_isspace:
 
 isspace()
 ~~~~~~~~~
@@ -1497,7 +1497,7 @@ si no es vacía, y todos sus caracteres son espacios en blanco.
     False
 
 
-.. _python_funcion_isupper:
+.. _python_fun_isupper:
 
 isupper()
 ~~~~~~~~~
@@ -1530,7 +1530,7 @@ a ``unicode`` antes de pelar antes de aplicar la técnica *stripping*.
     'leonardo caballero '
 
 
-.. _python_funcion_lower:
+.. _python_fun_lower:
 
 lower()
 ~~~~~~~
@@ -1544,12 +1544,12 @@ en cada palabra.
     'leonardo caballero'
 
 
-.. _python_funcion_ord:
+.. _python_fun_ord:
 
 ord()
 ~~~~~
 
-La función ``ord()`` es el inverso de :ref:`chr() <python_funcion_chr>` dada una 
+La función ``ord()`` es el inverso de :ref:`chr() <python_fun_chr>` dada una 
 cadena representando un carácter Unicode, devuelve el entero del código correspondiente.
 
 ::
@@ -1564,7 +1564,7 @@ cadena representando un carácter Unicode, devuelve el entero del código corres
     126
 
 
-.. _python_funcion_replace:
+.. _python_fun_replace:
 
 replace()
 ~~~~~~~~~
@@ -1579,7 +1579,7 @@ en la función.
     'leonardo Caballero'
 
 
-.. _python_funcion_split:
+.. _python_fun_split:
 
 split()
 ~~~~~~~
@@ -1593,7 +1593,7 @@ por cada indice de la lista.
     ['leonardo', 'caballero']
 
 
-.. _python_funcion_splitlines:
+.. _python_fun_splitlines:
 
 splitlines()
 ~~~~~~~~~~~~
@@ -1607,7 +1607,7 @@ por cada salto de linea en cada indice de la lista.
     ['leonardo jose', 'caballero garcia']
 
 
-.. _python_funcion_startswith:
+.. _python_fun_startswith:
 
 startswith()
 ~~~~~~~~~~~~
@@ -1624,7 +1624,7 @@ en la función.
     True
 
 
-.. _python_funcion_str:
+.. _python_fun_str:
 
 str()
 ~~~~~
@@ -1643,7 +1643,7 @@ La función ``str()`` devuelve una cadenas de caracteres.
     '(2.3+0j)'
 
 
-.. _python_funcion_swapcase:
+.. _python_fun_swapcase:
 
 swapcase()
 ~~~~~~~~~~
@@ -1659,7 +1659,7 @@ sea MAYÚSCULAS o MINÚSCULAS.
     'leonardo caballero'
 
 
-.. _python_funcion_title:
+.. _python_fun_title:
 
 title()
 ~~~~~~~
@@ -1673,7 +1673,7 @@ en cada palabra.
     'Leonardo Caballero'
 
 
-.. _python_funcion_upper:
+.. _python_fun_upper:
 
 upper()
 ~~~~~~~
@@ -1733,7 +1733,7 @@ Funciones de objetos
 Las funciones de objetos se describen a continuación:
 
 
-.. _python_funcion_isinstance:
+.. _python_fun_isinstance:
 
 isinstance()
 ~~~~~~~~~~~~
@@ -1779,7 +1779,7 @@ En el ejemplo, una clase ``Persona`` que realizará un seguimiento del
 ``cedula``, ``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
 
 
-.. _python_funcion_issubclass:
+.. _python_fun_issubclass:
 
 issubclass()
 ~~~~~~~~~~~~

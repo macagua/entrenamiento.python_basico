@@ -207,7 +207,7 @@ en este se asignan los valores de constantes ``IP_DB_SERVER``, ``PORT_DB_SERVER`
 ``USER_DB_SERVER``, ``PASSWORD_DB_SERVER`` y ``DB_NAME``. Ademas, existe el archivo 
 de módulo ``main.py`` el cual importa el módulo ``constantes``. Finalmente, se 
 imprime una linea de conexión del comando ``scp`` de Linux usando la función 
-integrada en la librería estándar Python llamada :ref:`format <python_funcion_format>`.
+integrada en la librería estándar Python llamada :ref:`format() <python_fun_format>`.
 
 .. note:: 
     En realidad, no se usa las constantes en Python. El módulo ``globals`` o 
@@ -265,7 +265,7 @@ para el que han sido creadas. Estas son:
 
 - :ref:`is <python_expresiones_condicional>`.
 
-- :ref:`lambda <python_funcion_lambda>`.
+- :ref:`lambda <python_fun_lambda>`.
 
 - :ref:`not <python_operadores_logicos>`.
 
@@ -367,7 +367,7 @@ define la asignación. A continuación unos ejemplos donde se inicializan variab
     >>> diccionario = {"nombres":"Leonardo Jose","apellidos":"Caballero Garcia"}
 
 Luego de inicializar las variables del código anterior, usted puede usar la función 
-:ref:`vars() <python_funcion_vars>` para obtener un diccionario conteniendo ámbito 
+:ref:`vars() <python_fun_vars>` para obtener un diccionario conteniendo ámbito 
 actual de las variables, ejecutando:
 
 ::
@@ -394,7 +394,7 @@ Si desea eliminar la referencia a la variable ``cadena``, ejecuta:
     'lista': [7, 8, 9, 0], '__doc__': None}
 
 Como pudo ver en el ejemplo anterior que elimino la referencia a la variable ``cadena``,
-incluso al volver a la función :ref:`vars() <python_funcion_vars>` ya no sale en el 
+incluso al volver a la función :ref:`vars() <python_fun_vars>` ya no sale en el 
 ámbito de variables disponibles.
 
 La eliminación de una lista de objetivos elimina recursivamente cada objetivo, de 
@@ -409,7 +409,7 @@ izquierda a derecha.
 
 Como pudo ver en el ejemplo anterior que elimino las referencias a las variables ``numero``, 
 ``lista``, ``tupla``, ``diccionario`` que incluso al volver a la función 
-:ref:`vars() <python_funcion_vars>` ya no están en el ámbito de variables disponibles.
+:ref:`vars() <python_fun_vars>` ya no están en el ámbito de variables disponibles.
 
 La eliminación de un nombre elimina el enlace de ese nombre del espacio de nombres 
 *local* o *global*, dependiendo de si el nombre aparece en una sentencia 

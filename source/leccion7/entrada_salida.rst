@@ -20,7 +20,7 @@ en el interprete del lenguaje, así como los argumentos de línea de comandos.
 
 **Ejemplo de la función raw_input**:
 
-La función :ref:`raw_input() <python_funcion_raw_input>` siempre devuelve un 
+La función :ref:`raw_input() <python_fun_raw_input>` siempre devuelve un 
 valor de cadenas de caracteres:
 
 ::
@@ -31,7 +31,7 @@ valor de cadenas de caracteres:
 
 **Ejemplo de la función input**:
 
-La función :ref:`input() <python_funcion_input>` siempre devuelve un valor 
+La función :ref:`input() <python_fun_input>` siempre devuelve un valor 
 numérico:
 
 ::
@@ -98,7 +98,7 @@ y cadenas de caracteres entre comillas dobles, todo separado por espacios:
 
 Cada valor que enviamos al *script* durante la llamada se llama argumento e implica 
 una forma de entrada de datos alternativa sin usar las funciones 
-:ref:`input() <python_funcion_input>` y :ref:`raw_input() <python_funcion_raw_input>`.
+:ref:`input() <python_fun_input>` y :ref:`raw_input() <python_fun_raw_input>`.
 
 
 .. _python_salida:
@@ -120,7 +120,7 @@ Sentencia ``print`` evalúa cada expresión, devuelve y escribe el objeto result
 a la salida estándar de la consola de comando. Si un objeto no es un 
 :ref:`tipo cadena de caracteres <python_cadenas>`, ese es primeramente convertido 
 a un *tipo cadena de caracteres* usando las reglas para las 
-:ref:`conversiones del tipo <python_funcion_str>`. La *cadena de caracteres* 
+:ref:`conversiones del tipo <python_fun_str>`. La *cadena de caracteres* 
 (resultado o original) es entonces escrito.
 
 Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia 

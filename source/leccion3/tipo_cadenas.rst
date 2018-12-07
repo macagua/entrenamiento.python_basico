@@ -236,7 +236,7 @@ de la declaración.
     Hola Plone !
 
 Puede puede consultar la documentación de la función ``hola()`` debe utilizar la 
-función integrada :ref:`help() <python_funcion_help>` y pasarle el argumento del 
+función integrada :ref:`help() <python_fun_help>` y pasarle el argumento del 
 objeto de función ``hola``:
 
 ::
@@ -317,7 +317,7 @@ En el archivo ``mi_modulo.py`` debe contener el siguiente código:
 
 Entonces, usted debe importar el módulo anterior, para consultar la documentación 
 del módulo ``mi_modulo`` debe utilizar la función integrada 
-:ref:`help() <python_funcion_help>` y pasarle el argumento el nombre de módulo 
+:ref:`help() <python_fun_help>` y pasarle el argumento el nombre de módulo 
 ``mi_modulo``, de la siguiente manera:
 
 ::
@@ -336,7 +336,7 @@ del módulo ``mi_modulo`` debe utilizar la función integrada
             Este es el docstring de la función saludar
 
 También puede consultar la documentación de la función ``despedir()`` dentro del 
-módulo ``mi_modulo``, usando la función integrada :ref:`help() <python_funcion_help>` 
+módulo ``mi_modulo``, usando la función integrada :ref:`help() <python_fun_help>` 
 y pasarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir, 
 ``mi_modulo.despedir``, de la siguiente manera:
 
@@ -733,7 +733,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 Convertir a cadenas de caracteres
 .................................
 
-Para convertir a *tipos cadenas de caracteres* debe usar la función :ref:`str() <python_funcion_str>` 
+Para convertir a *tipos cadenas de caracteres* debe usar la función :ref:`str() <python_fun_str>` 
 la cual :ref:`esta integrada <python_funciones_integradas>` en el interprete Python.
 
 .. tip:: 

@@ -19,7 +19,7 @@ Abrir archivo
 .............
 
 La forma preferida para abrir un archivo es usando la función integrada 
-:ref:`open() <python_funcion_open>`.
+:ref:`open() <python_fun_open>`.
 
 
 .. _python_leer_archivo:

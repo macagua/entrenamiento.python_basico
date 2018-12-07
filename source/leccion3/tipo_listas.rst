@@ -44,7 +44,7 @@ del primer elemento.
     >>> factura[3]
     1234
 
-La función :ref:`len <python_funcion_len>` devuelve la longitud de la lista (su 
+La función :ref:`len() <python_fun_len>` devuelve la longitud de la lista (su 
 cantidad de elementos).
 
 ::

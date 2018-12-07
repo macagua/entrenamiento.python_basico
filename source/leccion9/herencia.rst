@@ -151,7 +151,7 @@ la cual le permite corroborar si un objeto es instancia de una clase
 
 .. note::
     Más información consulte la documentación detallada de la función 
-    :ref:`issubclass() <python_funcion_issubclass>`.
+    :ref:`issubclass() <python_fun_issubclass>`.
 
 
 ----

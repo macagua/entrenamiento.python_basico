@@ -76,7 +76,7 @@ los operandos fuera un número real, bien indicando los decimales:
 
     r = 3.0 / 2
 
-O bien utilizando la función :ref:`float <python_funcion_float>` para 
+O bien utilizando la función :ref:`float() <python_fun_float>` para 
 convertir a entero coma flotante o real:
 
 ::

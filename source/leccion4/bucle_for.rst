@@ -38,7 +38,7 @@ Bucle 'for' con Listas y función 'range'
 
 A continuación, se presenta un ejemplo del uso del bucle ``for`` con tipos de 
 estructuras de datos :ref:`Listas <python_listas>` con la función 
-:ref:`range <python_funcion_range>` y la función :ref:`len <python_funcion_len>`:
+:ref:`range() <python_fun_range>` y la función :ref:`len() <python_fun_len>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
