@@ -6,8 +6,8 @@
 Operadores relacionales
 -----------------------
 
-Los valores booleanos son además el resultado de expresiones que
-utilizan operadores relacionales (comparaciones entre valores):
+Los valores booleanos son además el resultado de expresiones que utilizan operadores 
+relacionales (comparaciones entre valores):
 
 
 .. _python_opers_rela_igual:
@@ -81,8 +81,8 @@ lado derecho.
 Operador <=
 ...........
 
-El operador ``<=`` evalua si el valor del lado izquierdo es *menor o igual que* el valor del 
-lado derecho.
+El operador ``<=`` evalua si el valor del lado izquierdo es *menor o igual que* el 
+valor del lado derecho.
 
 ::
 
@@ -95,8 +95,8 @@ lado derecho.
 Operador >=
 ...........
 
-El operador ``>=`` evalua si el valor del lado izquierdo es *mayor o igual que* el valor del 
-lado derecho.
+El operador ``>=`` evalua si el valor del lado izquierdo es *mayor o igual que* el 
+valor del lado derecho.
 
 ::
 

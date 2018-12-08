@@ -6,8 +6,8 @@
 Operadores lógicos
 ------------------
 
-Estos son los distintos tipos de operadores con los que puede trabajar
-con valores booleanos, los llamados operadores lógicos o condicionales:
+Estos son los distintos tipos de operadores con los que puede trabajar con valores 
+booleanos, los llamados operadores lógicos o condicionales:
 
 
 .. _python_opers_logi_and:
@@ -97,9 +97,8 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 
 .. tip::
-    Para ejecutar el código :file:`operadores_logicos.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando:
+    Para ejecutar el código :file:`operadores_logicos.py`, abra una consola de comando, 
+    acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     ::
 

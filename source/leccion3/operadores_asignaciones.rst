@@ -19,8 +19,8 @@ la técnica denominada :ref:`asignación aumentada <python_asignacion_aumentada>
 Operador =
 ..........
 
-El operador *igual a*, (``=``), es el más simple de todos y asigna a la variable 
-del lado izquierdo cualquier variable o resultado del lado derecho.
+El operador *igual a*, (``=``), es el más simple de todos y asigna a la variable del 
+lado izquierdo cualquier variable o resultado del lado derecho.
 
 
 .. _python_opers_asig_suma:
@@ -216,9 +216,9 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 
 .. tip::
-    Para ejecutar el código :file:`operadores_asignaciones.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando: 
+    Para ejecutar el código :file:`operadores_asignaciones.py`, abra una consola de 
+    comando, acceda al directorio donde se encuentra el mismo, y ejecute el siguiente 
+    comando: 
 
     ::
 
