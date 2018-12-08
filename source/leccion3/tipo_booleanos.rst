@@ -55,7 +55,9 @@ A continuación, varios ejemplos en códigos de los citado previamente:
     >>> ['', ''] == False
     False
 
-Todos los otros valores son interpretadas a ``True``.
+Todos los otros valores son interpretados por defecto a ``True``. El operador lógico 
+:ref:`not <python_opers_logicos>` produce ``True`` si su argumento es falso, 
+``False`` de lo contrario.
 
 Los tipos integrados ``True`` y ``False`` son solamente dos instancias de la clase 
 ``bool``. En realidad el tipo ``bool`` (el tipo de los booleanos) es una 

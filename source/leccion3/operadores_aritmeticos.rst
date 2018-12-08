@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_operadores_aritmeticos:
+.. _python_opers_aritmeticos:
 
 Operadores aritméticos
 ----------------------
@@ -95,7 +95,7 @@ división entre los dos operandos. En el ejemplo, ``7 / 2`` sería ``3``,
 con ``1`` de resto, luego el *módulo* es ``1``.
 
 
-.. _python_operadores_aritmeticos_precedencia:
+.. _python_opers_aritmeticos_precedencia:
 
 Orden de precedencia
 ....................

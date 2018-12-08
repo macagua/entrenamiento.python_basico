@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_operadores_relacionales:
+.. _python_opers_relacionales:
 
 Operadores relacionales
 -----------------------

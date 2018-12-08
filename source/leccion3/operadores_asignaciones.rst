@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_operadores_asignaciones:
+.. _python_opers_asignaciones:
 
 Operadores de asignaciones
 --------------------------
@@ -224,7 +224,7 @@ El código anterior, no sólo es más corto de escribir, sino también más efic
 tiempo de ejecución.
 
 
-.. _python_operadores_asignaciones_ejemplo:
+.. _python_opers_asignaciones_ejemplo:
 
 Ejemplo de operadores de asignaciones
 .....................................

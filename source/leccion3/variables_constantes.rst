@@ -225,7 +225,7 @@ Existen ciertas palabras que tienen significado especial para el intérprete de 
 Estas no pueden utilizarse para ningún otro fin (como ser nombrar valores) excepto 
 para el que han sido creadas. Estas son:
 
-- :ref:`and <python_operadores_logicos>`.
+- :ref:`and <python_opers_logicos>`.
 
 - ``as``.
 
@@ -267,9 +267,9 @@ para el que han sido creadas. Estas son:
 
 - :ref:`lambda <python_fun_lambda>`.
 
-- :ref:`not <python_operadores_logicos>`.
+- :ref:`not <python_opers_logicos>`.
 
-- :ref:`or <python_operadores_logicos>`.
+- :ref:`or <python_opers_logicos>`.
 
 - :ref:`pass <python_sent_pass>`.
 

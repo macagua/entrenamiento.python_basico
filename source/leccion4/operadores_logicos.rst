@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_operadores_logicos:
+.. _python_opers_logicos:
 
 Operadores de lógicos
 ---------------------
@@ -24,7 +24,7 @@ con valores booleanos, los llamados operadores lógicos o condicionales:
 +----------------+--------------------+------------------------+
 |                |                    | ::                     |
 |                |                    |                        |
-| not            | No a               |     >>> not True       |
+| not            | No al valor        |     >>> not True       |
 |                |                    |     False              |
 +----------------+--------------------+------------------------+
 
