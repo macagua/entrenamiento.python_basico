@@ -223,6 +223,7 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 'preamble': r'''
+\usepackage{pmboxdraw}
 \authoraddress{
   \strong{Covantec R.L., Santa Cruz de Mara, Mara, Zulia. 4046.}\\
   \strong{Telf.} +58-262-879.18.80 / +58-426-771.35.73 / +58-414-979.80.83\\
