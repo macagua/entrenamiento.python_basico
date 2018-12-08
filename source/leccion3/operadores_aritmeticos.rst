@@ -6,8 +6,8 @@
 Operadores aritméticos
 ----------------------
 
-Los valores numéricos son además el resultado de una serie de operadores 
-aritméticos y matemáticos:
+Los valores numéricos son además el resultado de una serie de operadores aritméticos 
+y matemáticos:
 
 
 .. _python_opers_arit_suma:
@@ -95,36 +95,33 @@ El operador *división* el resultado que se devuelve es un número real.
 Operador división entera
 ........................
 
-El operador *división entera* el resultado que se devuelve es solo la 
-parte entera.
+El operador *división entera* el resultado que se devuelve es solo la parte entera.
 
 ::
 
     >>> 3.5 // 22
     1.0
 
-No obstante hay que tener en cuenta que si utilizamos dos operandos
-enteros, Python determinará que quiere que la variable resultado
-también sea un entero, por lo que el resultado de, por ejemplo, 
-``3 / 2`` y ``3 // 2`` sería el mismo: ``1``.
+No obstante hay que tener en cuenta que si utilizamos dos operandos enteros, Python 
+determinará que quiere que la variable resultado también sea un entero, por lo que 
+el resultado de, por ejemplo, ``3 / 2`` y ``3 // 2`` sería el mismo: ``1``.
 
-Si quisiéramos obtener los decimales necesitaríamos que al menos uno de
-los operandos fuera un número real, bien indicando los decimales:
+Si quisiéramos obtener los decimales necesitaríamos que al menos uno de los operandos 
+fuera un número real, bien indicando los decimales:
 
 ::
 
     r = 3.0 / 2
 
-O bien utilizando la función :ref:`float() <python_fun_float>` para 
-convertir a entero coma flotante o real:
+O bien utilizando la función :ref:`float() <python_fun_float>` para convertir a 
+entero coma flotante o real:
 
 ::
 
     r = float(3) / 2
 
-Esto es así porque cuando se mezclan tipos de números, Python convierte
-todos los operandos al tipo más complejo de entre los tipos de los
-operandos.
+Esto es así porque cuando se mezclan tipos de números, Python convierte todos los 
+operandos al tipo más complejo de entre los tipos de los operandos.
 
 
 .. _python_opers_arit_mod:
@@ -132,9 +129,9 @@ operandos.
 Operador Módulo
 ...............
 
-El operador *módulo* no hace otra cosa que devolver el resto de la
-división entre los dos operandos. En el ejemplo, ``7 / 2`` sería ``3``, 
-con ``1`` de resto, luego el *módulo* es ``1``.
+El operador *módulo* no hace otra cosa que devolver el resto de la división entre 
+los dos operandos. En el ejemplo, ``7 / 2`` sería ``3``, con ``1`` de resto, luego 
+el *módulo* es ``1``.
 
 ::
 
@@ -165,8 +162,9 @@ Eso quiere decir que se debe usar así:
     0.16666666666666666
     >>> 
 
-Más igualmente usted puede omitir este orden de precedencia de ejecución de los operadores 
-aritméticos usando paréntesis ``()``  anidados entre cada nivel calculo, por ejemplo:
+Más igualmente usted puede omitir este orden de precedencia de ejecución de los 
+operadores aritméticos usando paréntesis ``()``  anidados entre cada nivel calculo, 
+por ejemplo:
 
 ::
 
@@ -198,8 +196,8 @@ A continuación, se presentan algunos ejemplos de su uso:
     :lines: 7
 
 
-**Ejemplo de operador aritmético Resta**, Resta el operando de la derecha del 
-operador del lado izquierdo.
+**Ejemplo de operador aritmético Resta**, Resta el operando de la derecha del operador 
+del lado izquierdo.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
@@ -241,9 +239,9 @@ ambos lados del operador.
     :lines: 22
 
 
-**Ejemplo de operador aritmético Cociente de una división**, la división de 
-operandos que el resultado es el cociente en el cual se eliminan los dígitos 
-después del punto decimal.
+**Ejemplo de operador aritmético Cociente de una división**, la división de operandos 
+que el resultado es el cociente en el cual se eliminan los dígitos después del punto 
+decimal.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
@@ -251,8 +249,8 @@ después del punto decimal.
     :lines: 26
 
 
-**Ejemplo de operador aritmético Módulo**, el cual divide el operando de la 
-izquierda por el operador del lado derecho y devuelve el resto.
+**Ejemplo de operador aritmético Módulo**, el cual divide el operando de la izquierda 
+por el operador del lado derecho y devuelve el resto.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :linenos:
