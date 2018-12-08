@@ -9,43 +9,105 @@ Operadores relacionales
 Los valores booleanos son además el resultado de expresiones que
 utilizan operadores relacionales (comparaciones entre valores):
 
-+----------------+----------------------------+------------------+
-| **Operador**   | **Descripción**            | **Ejemplo**      |
-+----------------+----------------------------+------------------+
-|                |                            | ::               |
-|                |                            |                  |
-| ==             | ¿son iguales a y b?        |     >>> 5 == 3   |
-|                |                            |     False        |
-+----------------+----------------------------+------------------+
-|                |                            | ::               |
-|                |                            |                  |
-| !=             | ¿son distintos a y b?      |     >>> 5 != 3   |
-|                |                            |     True         |
-+----------------+----------------------------+------------------+
-|                |                            | ::               |
-|                |                            |                  |
-| <              | ¿es a menor que b?         |     >>> 5 < 3    |
-|                |                            |     False        |
-+----------------+----------------------------+------------------+
-|                |                            | ::               |
-|                |                            |                  |
-| >              | ¿es a mayor que b?         |     >>> 5 > 3    |
-|                |                            |     True         |
-+----------------+----------------------------+------------------+
-|                |                            | ::               |
-|                |                            |                  |
-| <=             | ¿es a menor o igual que b? |     >>> 5 <= 5   |
-|                |                            |     True         |
-+----------------+----------------------------+------------------+
-|                |                            | ::               |
-|                |                            |                  |
-| >=             | ¿es a mayor o igual que b? |     >>> 5 >= 3   |
-|                |                            |     True         |
-+----------------+----------------------------+------------------+
+
+.. _python_opers_rela_igual:
+
+Operador ==
+...........
+
+El operador ``==`` evalua que los valores sean *iguales* para varios tipos de datos.
+
+::
+
+    >>> 5 == 3
+    False
+    >>> 5 == 5
+    True
+    >>> "Plone" == 5
+    False
+    >>> "Plone" == "Plone"
+    True
+    >>> type("Plone") == str
+    True
 
 
-Ejemplo de operadores relacionales
-..................................
+.. _python_opers_rela_dist:
+
+Operador !=
+...........
+
+El operador ``!=`` evalua si los valores son *distintos*.
+
+::
+
+    >>> 5 != 3
+    True
+    >>> "Plone" != 5
+    True
+    >>> "Plone" != False
+    True
+
+
+.. _python_opers_rela_menor:
+
+Operador <
+..........
+
+El operador ``<`` evalua si el valor del lado izquierdo es *menor que* el valor del 
+lado derecho.
+
+::
+
+    >>> 5 < 3
+    False
+
+
+.. _python_opers_rela_mayor:
+
+Operador >
+..........
+
+El operador ``>`` evalua si el valor del lado izquierdo es *mayor que* el valor del 
+lado derecho.
+
+::
+
+    >>> 5 > 3
+    True
+
+
+.. _python_opers_rela_menigu:
+
+Operador <=
+...........
+
+El operador ``<=`` evalua si el valor del lado izquierdo es *menor o igual que* el valor del 
+lado derecho.
+
+::
+
+    >>> 5 <= 3
+    False
+
+
+.. _python_opers_rela_mayigu:
+
+Operador >=
+...........
+
+El operador ``>=`` evalua si el valor del lado izquierdo es *mayor o igual que* el valor del 
+lado derecho.
+
+::
+
+    >>> 5 >= 3
+    True
+
+
+.. _python_opers_rela_ejs:
+
+Ejemplos
+........
 
 A continuación, se presentan algunos ejemplos de su uso:
 

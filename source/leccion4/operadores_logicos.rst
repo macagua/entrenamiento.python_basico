@@ -3,34 +3,56 @@
 
 .. _python_opers_logicos:
 
-Operadores de lógicos
----------------------
+Operadores lógicos
+------------------
 
 Estos son los distintos tipos de operadores con los que puede trabajar
 con valores booleanos, los llamados operadores lógicos o condicionales:
 
-+----------------+--------------------+------------------------+
-| **Operador**   | **Descripción**    | **Ejemplo**            |
-+----------------+--------------------+------------------------+
-|                |                    | ::                     |
-|                |                    |                        |
-| and            | ¿se cumple a y b?  |     >>> True and False |
-|                |                    |     False              |
-+----------------+--------------------+------------------------+
-|                |                    | ::                     |
-|                |                    |                        |
-| or             | ¿se cumple a o b?  |     >>> True or False  |
-|                |                    |     True               |
-+----------------+--------------------+------------------------+
-|                |                    | ::                     |
-|                |                    |                        |
-| not            | No al valor        |     >>> not True       |
-|                |                    |     False              |
-+----------------+--------------------+------------------------+
+
+.. _python_opers_logi_and:
+
+Operador and
+............
+
+El operador ``and`` evalúa si el valor del lado izquierdo y el lado derecho *se cumple*.
+
+::
+
+    >>> True and False
+    False
 
 
-Ejemplo de operadores de lógicos
-................................
+.. _python_opers_logi_or:
+
+Operador or
+............
+
+El operador ``or`` evalúa si el valor del lado izquierdo o el lado derecho *se cumple*.
+
+::
+
+    >>> True or False
+    True
+
+
+.. _python_opers_logi_not:
+
+Operador not
+............
+
+El operador ``not`` devuelve el valor *opuesto* la valor booleano.
+
+::
+
+    >>> not True
+    False
+
+
+.. _python_opers_logi_ejs:
+
+Ejemplos
+........
 
 A continuación, se presentan algunos ejemplos de su uso:
 

@@ -56,6 +56,7 @@ Apéndices
 .. toctree::
    :maxdepth: 1
 
+   apendices/operadores
    esquema
    lecturas
    glosario

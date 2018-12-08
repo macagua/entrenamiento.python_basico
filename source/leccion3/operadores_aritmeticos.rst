@@ -9,60 +9,99 @@ Operadores aritméticos
 Los valores numéricos son además el resultado de una serie de operadores 
 aritméticos y matemáticos:
 
-+----------------+-------------------+---------------------------+
-| **Operador**   | **Descripción**   | **Ejemplo**               |
-+----------------+-------------------+---------------------------+
-|                |                   | ::                        |
-|                |                   |                           |
-| \+             | Suma              |     >>> 3 + 2             |
-|                |                   |     5                     |
-+----------------+-------------------+---------------------------+
-|                |                   | ::                        |
-|                |                   |                           |
-| \-             | Resta             |     >>> 4 - 7             |
-|                |                   |     -3                    |
-+----------------+-------------------+---------------------------+
-|                |                   | ::                        |
-|                |                   |                           |
-| \-             | Negación          |     >>> -7                |
-|                |                   |     -7                    |
-+----------------+-------------------+---------------------------+
-|                |                   | ::                        |
-|                |                   |                           |
-| \*             | Multiplicación    |     >>> 2 * 6             |
-|                |                   |     12                    |
-+----------------+-------------------+---------------------------+
-|                |                   | ::                        |
-|                |                   |                           |
-| \*\*           | Exponente         |     >>> 2 ** 6            |
-|                |                   |     64                    |
-+----------------+-------------------+---------------------------+
-|                |                   | ::                        |
-|                |                   |                           |
-| /              | División          |     >>> 3.5 / 2           |
-|                |                   |     1.75                  |
-+----------------+-------------------+---------------------------+
-|                |                   | ::                        |
-|                |                   |                           |
-| //             | División entera   |     >>> 3.5 // 2          |
-|                |                   |     1.0                   |
-+----------------+-------------------+---------------------------+
-|                |                   | ::                        |
-|                |                   |                           |
-| %              | Módulo            |     >>> 7 % 2             |
-|                |                   |     1                     |
-+----------------+-------------------+---------------------------+
+
+.. _python_opers_arit_suma:
+
+Operador Suma
+.............
+
+El operador ``+`` suma los valores de tipo de datos numéricos.
+
+::
+
+    >>> 3 + 2
+    5
 
 
-**Operador división**
+.. _python_opers_arit_resta:
+
+Operador Resta
+..............
+
+El operador ``-`` resta los valores de tipo de datos numéricos.
+
+::
+
+    >>> 4 - 7
+    -3
+
+
+.. _python_opers_arit_nega:
+
+Operador Negación
+.................
+
+El operador ``-`` .....
+
+::
+
+    >>> -7
+    -7
+
+.. todo:: TODO terminar de escribir el párrafo de sección.
+
+
+.. _python_opers_arit_multi:
+
+Operador Multiplicación
+.......................
+
+El operador ``*`` multiplica los valores de tipo de datos numéricos.
+
+::
+
+    >>> 2 * 6
+    12
+
+
+.. _python_opers_arit_expo:
+
+Operador Exponente
+..................
+
+El operador ``**`` calcula el exponente entre valores de tipo de datos numéricos.
+
+::
+
+    >>> 2 ** 6
+    64
+
+
+.. _python_opers_arit_div:
+
+Operador división
+.................
 
 El operador *división* el resultado que se devuelve es un número real. 
 
+::
 
-**Operador división entera**
+    >>> 3.5 / 2
+    1.75
+
+
+.. _python_opers_arit_divent:
+
+Operador división entera
+........................
 
 El operador *división entera* el resultado que se devuelve es solo la 
 parte entera.
+
+::
+
+    >>> 3.5 // 22
+    1.0
 
 No obstante hay que tener en cuenta que si utilizamos dos operandos
 enteros, Python determinará que quiere que la variable resultado
@@ -88,11 +127,19 @@ todos los operandos al tipo más complejo de entre los tipos de los
 operandos.
 
 
-**Operador módulo**
+.. _python_opers_arit_mod:
+
+Operador Módulo
+...............
 
 El operador *módulo* no hace otra cosa que devolver el resto de la
 división entre los dos operandos. En el ejemplo, ``7 / 2`` sería ``3``, 
 con ``1`` de resto, luego el *módulo* es ``1``.
+
+::
+
+    >>> 7 % 2
+    1
 
 
 .. _python_opers_aritmeticos_precedencia:
@@ -128,8 +175,10 @@ aritméticos usando paréntesis ``()``  anidados entre cada nivel calculo, por e
     >>> 
 
 
-Ejemplo de operadores numéricos
-...............................
+.. _python_opers_arit_ejs:
+
+Ejemplos
+........
 
 A continuación, se presentan algunos ejemplos de su uso:
 
