@@ -84,17 +84,15 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de tipos de datos booleanos**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
-    :linenos:
     :language: python
-    :lines: 7-11
+    :lines: 7-9
 
 
 **Ejemplo de operadores booleanos**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
-    :linenos:
     :language: python
-    :lines: 17-24
+    :lines: 15-20
 
 
 ----
