@@ -10,19 +10,19 @@ Un conjunto, es una colección no ordenada y sin elementos repetidos.
 Los usos básicos de éstos incluyen verificación de pertenencia y 
 eliminación de entradas duplicadas.
 
-+---------------+----------+------------------------+-------------------------------------+
-| **Clase**     | **Tipo** | **Notas**              | **Ejemplo**                         |
-+---------------+----------+------------------------+-------------------------------------+
-|               |          |                        |                                     |
-| ``set``       | Conjunto | Mutable, sin orden, no | ``set([4.0, 'Carro', True])``       |
-|               |          | contiene duplicados    |                                     |
-|               |          |                        |                                     |
-+---------------+----------+------------------------+-------------------------------------+
-|               |          |                        |                                     |
-| ``frozenset`` | Conjunto | Inmutable, sin orden,  | ``frozenset([4.0, 'Carro', True])`` |
-|               |          | no contiene duplicados |                                     |
-|               |          |                        |                                     |
-+---------------+----------+------------------------+-------------------------------------+
++---------------+-----------+------------------------+-------------------------------------+
+| **Clase**     | **Tipo**  | **Notas**              | **Ejemplo**                         |
++---------------+-----------+------------------------+-------------------------------------+
+|               |           |                        |                                     |
+| ``set``       | Conjuntos | Mutable, sin orden, no | ``set([4.0, 'Carro', True])``       |
+|               |           | contiene duplicados    |                                     |
+|               |           |                        |                                     |
++---------------+-----------+------------------------+-------------------------------------+
+|               |           |                        |                                     |
+| ``frozenset`` | Conjuntos | Inmutable, sin orden,  | ``frozenset([4.0, 'Carro', True])`` |
+|               |           | no contiene duplicados |                                     |
+|               |           |                        |                                     |
++---------------+-----------+------------------------+-------------------------------------+
 
 .. note::
 
@@ -37,7 +37,6 @@ Ejemplo de conjuntos set
 A continuación, se presentan un ejemplo de conjuntos ``set``:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_conjuntos.py
-    :linenos:
     :language: python
     :lines: 9-38
 

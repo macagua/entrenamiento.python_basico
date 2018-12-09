@@ -7,7 +7,7 @@
 """
 
 # crea un conjunto sin repetidos
-plato = ['pastel', 'tequeno', 'papa', 'empanada', 'mandoca', 'queso']
+plato = ['pastel', 'tequeno', 'papa', 'empanada', 'mandoca']
 print plato, type(plato)
 bebida = ['refresco', 'malta', 'jugo', 'cafe']
 print bebida, type(bebida)
