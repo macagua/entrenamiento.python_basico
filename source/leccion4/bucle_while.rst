@@ -60,12 +60,12 @@ causando que el bucle ``while`` se interrumpo o no se inicie.
 Bucle 'while' con 'else'
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Al igual que la :ref:`sentencia if <python_condicional_if>`, la estructura ``while`` 
-también puede combinarse con una sentencia ``else``. 
+Al igual que la sentencia :ref:`if <python_sent_if>`, la estructura ``while`` también 
+puede combinarse con una sentencia :ref:`else <python_sent_else>`).
 
-El nombre de la sentencia ``else`` es equivocada, ya que el bloque ``else`` se ejecutará 
-en todos los casos, es decir, cuando la expresión condicional del ``while`` sea ``False``, 
-(a comparación de la :ref:`sentencia if <python_condicional_if>`).
+El nombre de la sentencia :ref:`else <python_sent_else>` es equivocada, ya que el bloque 
+``else`` se ejecutará en todos los casos, es decir, cuando la expresión condicional del 
+``while`` sea ``False``, (a comparación de la :ref:`sentencia if <python_sent_if>`).
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :linenos:
@@ -74,6 +74,7 @@ en todos los casos, es decir, cuando la expresión condicional del ``while`` sea
 
 La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis 
 que en las demás estructuras de control.
+
 
 Sentencias utilitarias
 ......................
@@ -122,6 +123,7 @@ se haya terminado de ejecutar el ciclo anterior.
 
 Ejemplos
 ........
+
 
 Sucesión de Fibonacci
 ~~~~~~~~~~~~~~~~~~~~~

@@ -1,100 +1,28 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_condicional_if:
+.. _python_condi_if:
 
 Condicional if
 --------------
 
-La sentencia condicional ``if`` se usa para tomar decisiones, este evaluá
-básicamente una operación lógica, es decir una expresión que de
-como resultado verdadero o false (``True`` o ``False``), y ejecuta
-la pieza de código siguiente siempre y cuando el resultado sea verdadero.
+La sentencia condicional ``if`` se usa para tomar decisiones, este evaluá básicamente 
+una operación lógica, es decir una expresión que de como resultado ``True`` o ``False``, 
+y ejecuta la pieza de código siguiente siempre y cuando el resultado sea verdadero.
 
-Ejemplo de condicionales if
-...........................
-
-A continuación, se presenta un ejemplo del uso de condicionales ``if``:
-
-
-**Definir variables usadas en los siguientes ejemplos**:
+A continuación un de estructura condicional ``if``/``elif``/``else`` completo:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
-    :language: python
-    :lines: 5
-
-
-**Ejemplo de operador de comparación Igual**:
-
-.. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
-    :language: python
-    :lines: 13-16
-
-
-**Ejemplo de operador de comparación Distinto**:
-
-.. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
-    :language: python
-    :lines: 19-22
-
-
-**Ejemplo de operador de comparación Diferente**:
-
-.. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
-    :language: python
-    :lines: 25-28
-
-
-**Ejemplo de operador de comparación Menor que**:
-
-.. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
-    :language: python
-    :lines: 31-34
-
-
-**Ejemplo de operador de comparación Mayor que**:
-
-.. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
-    :language: python
-    :lines: 37-40
-
-
-**Ejemplo de operador de comparación Menor o igual que**:
-
-.. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
-    :language: python
-    :lines: 43-46
-
-
-**Ejemplo de operador de comparación Mayor o igual que**:
-
-.. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
-    :language: python
-    :lines: 49-52
-
-
-**Ejemplo de condicional if / elif / else completo**:
-
-.. literalinclude:: ../../recursos/leccion4/condicional_if.py
-    :linenos:
     :language: python
     :lines: 56-66
 
 En el ejemplo anterior usa dos funciones integradas en el interprete Python:
 
-- La función :ref:`int() <python_fun_int>` que convierte el valor ingresado 
-  a número entero.
+- La función :ref:`int() <python_fun_int>` que convierte el valor ingresado a número 
+  entero.
 
-- La función :ref:`raw_input() <python_fun_raw_input>` lee el valor ingresado 
-  por la entrada estándar.
+- La función :ref:`raw_input() <python_fun_raw_input>` lee el valor ingresado por la 
+  entrada estándar.
 
 El valor es ingresado en la variable ``numero`` comprobará en el sentencia condicional 
 ``if``, si la comprobación devuelve ``False`` intentará con el siguiente bloque 
@@ -103,17 +31,182 @@ siguiente bloque condicional ``elif`` si de nuevo la comprobación devuelve ``Fa
 ultimo intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin 
 comprobación.
 
-- ``if CONDICION``, significa, **Si** se cumple la 
-  :ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 
-  sentencias seguidas.
 
-- ``elif CONDICION``, significa, **De lo contrario Si** se cumple la 
-  :ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 
-  sentencias seguidas.
+.. _python_sent_if:
 
-- ``else``, significa, **De lo contrario** se cumple sin evaluar ninguna 
-  :ref:`expresión condicional <python_expresiones_condicional>` y ejecuta el bloque de 
-  sentencias seguidas.
+Sentencia if
+............
+
+La sentencia ``if EXPRESION``, significa, **Si** se cumple la 
+:ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 
+sentencias seguidas.
+
+
+.. _python_sent_elif:
+
+Sentencia elif
+..............
+
+La sentencia ``elif EXPRESION``, significa, **De lo contrario Si** se cumple la 
+:ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 
+sentencias seguidas.
+
+
+.. _python_sent_else:
+
+Sentencia else
+..............
+
+La sentencia ``else``, significa, **De lo contrario** se cumple sin evaluar ninguna 
+:ref:`expresión condicional <python_expresiones_condicional>` y ejecuta el bloque de 
+sentencias seguidas.
+
+
+.. _python_opers_is:
+
+Operador is
+...........
+
+El operador ``is``, significa, que prueba identidad: ambos lados de la expresión 
+condicional debe ser el mismo objecto:
+
+::
+
+    >>> 1 is 1.
+    False
+    >>> a, b = 1, 1
+    >>> a is b
+    True
+
+
+.. _python_opers_in:
+
+Operador in
+...........
+
+El operador ``in``, significa, para cualquier colección del valor del lado izquierdo 
+contenga el valor del lado derecho:
+
+::
+
+    >>> b = [1, 2, 3]
+    >>> 2 in b
+    True 
+    >>> 5 in b
+    False
+
+En el ejemplo anterior, si ``b`` es una lista, este prueba que ``2`` sea una elemento de ``b``.
+
+
+.. _python_expresiones_condicional:
+
+Expresiones condicional
+.......................
+
+Estos son los distintos tipos de expresiones condicionales:
+
+
+Expresión if
+~~~~~~~~~~~~
+
+La expresión de la sentencia ``if`` se evaluá a ``False`` cuando se cumple las 
+siguientes expresiones están presente:
+
+- Cualquier numero igual a cero (0, 0.0, 0+0j).
+
+- Un contenedor vació (:ref:`lista <python_listas>`, :ref:`tupla <python_tuplas>`, 
+  :ref:`conjunto <python_conjuntos>`, :ref:`diccionario <python_diccionarios>`). 
+
+- ``False``, ``None``.
+
+De lo contrario evaluá a ``True`` cuando se cumple la siguiente expresión esta presente:
+
+- cualquier cosa de lo contrario.
+
+::
+
+    if EXPRESION:
+        pass
+
+
+Expresión ==
+~~~~~~~~~~~~
+
+Esta expresión usa el operador :ref:`== <python_opers_rela_igual>` para validar la misma.
+
+
+Expresión is
+~~~~~~~~~~~~
+
+Esta expresión usa el operador :ref:`is <python_opers_is>` para validar la misma.
+
+
+Expresión in
+~~~~~~~~~~~~
+
+Esta expresión usa el operador :ref:`in <python_opers_in>` para validar la misma.
+
+
+Ejemplos
+........
+
+A continuación, se presenta un ejemplo del uso de condicionales ``if``:
+
+
+**Definir variables usadas en los siguientes ejemplos**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :language: python
+    :lines: 5
+
+
+**Ejemplo de operador de comparación Igual**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :language: python
+    :lines: 13-16
+
+
+**Ejemplo de operador de comparación Distinto**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :language: python
+    :lines: 19-22
+
+
+**Ejemplo de operador de comparación Diferente**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :language: python
+    :lines: 25-28
+
+
+**Ejemplo de operador de comparación Menor que**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :language: python
+    :lines: 31-34
+
+
+**Ejemplo de operador de comparación Mayor que**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :language: python
+    :lines: 37-40
+
+
+**Ejemplo de operador de comparación Menor o igual que**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :language: python
+    :lines: 43-46
+
+
+**Ejemplo de operador de comparación Mayor o igual que**:
+
+.. literalinclude:: ../../recursos/leccion4/condicional_if.py
+    :language: python
+    :lines: 49-52
 
 
 ----

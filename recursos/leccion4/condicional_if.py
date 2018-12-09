@@ -11,45 +11,45 @@ print "Valor de variable 'dato4':", dato4
 
 # Igual
 if (dato1 == dato2):
-   print "Variable 'dato1' es igual a la variable 'dato2'."
+    print "'dato1' y 'dato2' son iguales."
 else:
-   print "Variable 'dato1' no es igual a la variable 'dato2'."
+    print "'dato1' y 'dato2' no son iguales."
 
 # Distinto
 if (dato1 != dato2):
-   print "Variable 'dato1' es distinto a la variable 'dato2'."
+    print "'dato1' y 'dato2' son distintas."
 else:
-   print "Variable 'dato1' no es distinto a la variable 'dato2'."
+    print "'dato1' y 'dato2' no son distintas."
 
 # Diferente
 if (dato1 <> dato2):
-   print "Variable 'dato1' es diferente a la variable 'dato2'."
+    print "'dato1' y 'dato2' son diferentes."
 else:
-   print "Variable 'dato1' no es diferente a la variable 'dato2'."
+    print "'dato1' y 'dato2' no son diferentes."
 
 # Menor que
 if (dato1 < dato2):
-   print "Variable 'dato1' es menor que la variable 'dato2'."
+    print "'dato1' es menor que 'dato2'."
 else:
-   print "Variable 'dato1' no es menor que la variable 'dato2'."
+    print "'dato1' no es menor que 'dato2'."
 
 # Mayor que
 if (dato1 > dato2):
-   print "Variable 'dato1' es mayor que la variable 'dato2'."
+    print "'dato1' es mayor que 'dato2'."
 else:
-   print "Variable 'dato1' no es mayor que la variable 'dato2'."
+    print "'dato1' no es mayor que 'dato2'."
 
 # Menor o igual que
 if (dato3 <= dato4):
-   print "Variable 'dato3' es menor o igual que la variable 'dato4'."
+    print "'dato3' es menor o igual que 'dato4'."
 else:
-   print "Variable 'dato3' no es menor o igual que la variable 'dato4'."
+    print "'dato3' no es menor o igual que 'dato4'."
 
 # Mayor o igual que
 if (dato4 >= dato3):
-   print "Variable 'dato4' es mayor o igual que la variable 'dato3'."
+    print "'dato4' es mayor o igual que 'dato3'."
 else:
-   print "Variable 'dato4' no es mayor o igual que a la variable 'dato3'."
+    print "'dato4' no es mayor o igual que 'dato3'."
 
 
 # Ejemplo de condicional if / elif / else completo

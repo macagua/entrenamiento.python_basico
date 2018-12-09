@@ -82,13 +82,14 @@ básicos de una persona.
 Bucle 'for' con 'else'
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Al igual que la :ref:`sentencia if <python_condicional_if>` y 
-:ref:`bucle while <python_bucle_while>`, la estructura ``for`` también puede 
-combinarse con una sentencia ``else``. 
+Al igual que la sentencia :ref:`if <python_condi_if>` y el bucle 
+:ref:`while <python_bucle_while>`, la estructura ``for`` también puede combinarse 
+con una sentencia :ref:`else <python_sent_else>`. 
 
-El nombre de la sentencia ``else`` es equivocada, ya que el bloque ``else`` se 
-ejecutará en todos los casos, es decir, cuando la expresión condicional del ``for`` 
-sea ``False``, (a comparación de la :ref:`sentencia if <python_condicional_if>`).
+El nombre de la sentencia :ref:`else <python_sent_else>` es equivocada, ya que el bloque 
+:ref:`else <python_sent_else>` se ejecutará en todos los casos, es decir, cuando la 
+expresión condicional del bucle ``for`` sea ``False``, (a comparación de la 
+:ref:`sentencia if <python_condi_if>`).
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:

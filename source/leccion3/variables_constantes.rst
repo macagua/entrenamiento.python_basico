@@ -241,9 +241,9 @@ para el que han sido creadas. Estas son:
 
 - :ref:`del <python_sent_del>`.
 
-- :ref:`elif <python_condicional_if>`.
+- :ref:`elif <python_sent_elif>`.
 
-- :ref:`else <python_condicional_if>`.
+- :ref:`else <python_sent_else>`.
 
 - :ref:`except <python_sent_try_except>`.
 
@@ -257,13 +257,13 @@ para el que han sido creadas. Estas son:
 
 - :ref:`global <python_sent_global>`.
 
-- :ref:`if <python_condicional_if>`.
+- :ref:`if <python_sent_if>`.
 
 - :ref:`import <python_sent_import>`.
 
-- :ref:`in <python_expresiones_condicional>`.
+- :ref:`in <python_opers_in>`.
 
-- :ref:`is <python_expresiones_condicional>`.
+- :ref:`is <python_opers_is>`.
 
 - :ref:`lambda <python_fun_lambda>`.
 

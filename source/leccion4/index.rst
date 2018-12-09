@@ -18,7 +18,6 @@ ejemplos prácticos y útiles. A continuación el temario de esta lección:
    :maxdepth: 2
 
    condicional_if
-   expresiones_condicional
    operadores_logicos
    bucle_while
    bucle_for

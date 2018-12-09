@@ -198,6 +198,8 @@ Condicional if
 
 - `Condicionales if y else en Python <http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html>`_.
 
+- `Conditional Expressions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#conditional-expressions>`_.
+
 .. seealso::
 
     .. figure:: _static/youtube/hLqKvB7tGWk.jpg
@@ -205,12 +207,6 @@ Condicional if
         :width: 60%
 
         Vídeo `Tutorial Python 10 - Sentencias condicionales <https://www.youtube.com/watch?v=hLqKvB7tGWk>`_, cortesía de `CodigoFacilito.com`_.
-
-
-Expresiones condicional
-.......................
-
-- `Conditional Expressions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#conditional-expressions>`_.
 
 
 Operadores lógicos

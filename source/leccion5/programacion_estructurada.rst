@@ -27,8 +27,8 @@ defecto las sentencias son ejecutadas en el orden en que aparecen escritas en el
 programa.
 
 Para las estructuras condicionales o de selección, Python dispone de la sentencia 
-:ref:`if <python_condicional_if>`, que puede combinarse con sentencias ``elif`` y/o 
-``else``.
+:ref:`if <python_sent_if>`, que puede combinarse con sentencias :ref:`elif <python_sent_elif>` 
+y/o :ref:`else <python_sent_else>`.
 
 Para los bucles o iteraciones existen las estructuras :ref:`while <python_bucle_while>` 
 y :ref:`for <python_bucle_for>`.
@@ -61,7 +61,7 @@ llamado despectivamente *código espagueti*), cabe citar las siguientes:
 .. important::
 
 	Seguidamente se presenta el concepto de funciones poniendo en practica forma de 
-	secuencia, implementado las estructuras condicionales :ref:`if <python_condicional_if>` 
+	secuencia, implementado las estructuras condicionales :ref:`if <python_condi_if>` 
 	y los bucles o iteraciones existen :ref:`while <python_bucle_while>` y 
 	:ref:`for <python_bucle_for>`.
 
