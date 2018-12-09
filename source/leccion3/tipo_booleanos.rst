@@ -10,11 +10,13 @@ El tipo booleano sólo puede tener dos valores: ``True`` (verdadero) y ``False``
 Estos valores son especialmente importantes para las expresiones condicionales y los 
 bucles, como verá más adelante.
 
-+----------+-----------+----------------------------------+----------------------+
-| **Tipo** | **Clase** | **Notas**                        | **Ejemplo**          |
-+----------+-----------+----------------------------------+----------------------+
-| ``bool`` | Booleano  | Valor booleano verdadero o falso | ``True`` o ``False`` |
-+----------+-----------+----------------------------------+----------------------+
++-----------+-----------+---------------------------+-------------+
+| **Clase** | **Tipo**  | **Notas**                 | **Ejemplo** |
++-----------+-----------+---------------------------+-------------+
+| ``bool``  | Números   | Valor booleano falso.     | ``False``   |
++-----------+-----------+---------------------------+-------------+
+| ``bool``  | Números   | Valor booleano verdadero. | ``True``    |
++-----------+-----------+---------------------------+-------------+
 
 En el contexto de las operaciones booleanas, y también cuando las expresiones son 
 usadas bajo sentencias de flujo de control, los siguientes valores son interpretados 
