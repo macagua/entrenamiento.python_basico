@@ -96,13 +96,13 @@ asignando múltiples valores:
 
 ::
 
-    >>> a, b, c = 5, 3.2, "Hello"
+    >>> a, b, c = 5, 3.2, "Hola"
     >>> print a
     5
     >>> print b
     3.2
     >>> print c
-    'Hello'
+    'Hola'
 
 Si usted quiere asignar el mismo valor a múltiples variables al mismo tiempo, usted 
 puede hacer lo siguiente:
@@ -182,19 +182,23 @@ A continuación, se presentan algunos ejemplos del uso de *constantes*:
 
 **Ejemplo de constantes desde un módulo externo**
 
-Crear un archivo ``constantes.py`` con el siguiente contenido:
+Crear un archivo llamado ``constantes.py`` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/constantes.py
-    :linenos:
     :language: python
     :lines: 5-9
 
-Crear un archivo ``main.py``
+Crear un archivo llamado ``main.py`` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/main.py
-    :linenos:
     :language: python
     :lines: 4-9
+
+Luego ejecuta el programa de la siguiente forma:
+
+::
+
+    python main.py
 
 Cuando usted ejecuta el programa, la salida será:
 
@@ -478,7 +482,7 @@ precaución.
 
     ::
 
-        python constantes.py
+        python main.py
 
 
 ----
