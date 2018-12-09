@@ -8,20 +8,16 @@
 
 # crea un conjunto sin repetidos
 plato = ['pastel', 'tequeno', 'papa', 'empanada', 'mandoca', 'queso']
-print plato
-print type(plato)
+print plato, type(plato)
 bebida = ['refresco', 'malta', 'jugo', 'cafe']
-print bebida
-print type(bebida)
+print bebida, type(bebida)
 
 # establece un conjunto a una variable
 para_comer = set(plato)
-print para_comer
-print type(para_comer)
+print para_comer, type(para_comer)
 
 para_tomar = set(bebida)
-print para_tomar
-print type(para_tomar)
+print para_tomar, type(para_tomar)
 
 # Ejemplo practico de los condicionales
 hay_tequeno = 'tequeno' in para_comer

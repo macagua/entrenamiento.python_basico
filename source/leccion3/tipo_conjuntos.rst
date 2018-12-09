@@ -10,19 +10,25 @@ Un conjunto, es una colección no ordenada y sin elementos repetidos.
 Los usos básicos de éstos incluyen verificación de pertenencia y 
 eliminación de entradas duplicadas.
 
-+---------------+-----------+----------------------------------------------+----------------------------------+
-| **Tipo**      | **Clase** | **Notas**                                    | **Ejemplo**                      |
-+---------------+-----------+----------------------------------------------+----------------------------------+
-| ``set``       | Conjunto  | Mutable, sin orden, no contiene duplicados   | set([4.0, 'Carro', True])        |
-+---------------+-----------+----------------------------------------------+----------------------------------+
-| ``frozenset`` | Conjunto  | Inmutable, sin orden, no contiene duplicados | frozenset([4.0, 'Carro', True])  |
-+---------------+-----------+----------------------------------------------+----------------------------------+
++---------------+----------+------------------------+-------------------------------------+
+| **Clase**     | **Tipo** | **Notas**              | **Ejemplo**                         |
++---------------+----------+------------------------+-------------------------------------+
+|               |          |                        |                                     |
+| ``set``       | Conjunto | Mutable, sin orden, no | ``set([4.0, 'Carro', True])``       |
+|               |          | contiene duplicados    |                                     |
+|               |          |                        |                                     |
++---------------+----------+------------------------+-------------------------------------+
+|               |          |                        |                                     |
+| ``frozenset`` | Conjunto | Inmutable, sin orden,  | ``frozenset([4.0, 'Carro', True])`` |
+|               |          | no contiene duplicados |                                     |
+|               |          |                        |                                     |
++---------------+----------+------------------------+-------------------------------------+
 
 .. note::
 
-	- **Mutable:** si su contenido (o dicho valor) puede cambiarse en tiempo de ejecución.
+	- **Mutable:** su contenido (o dicho valor) puede cambiarse en tiempo de ejecución.
 
-	- **Inmutable:** si su contenido (o dicho valor) no puede cambiarse en tiempo de ejecución.
+	- **Inmutable:** su contenido (o dicho valor) no puede cambiarse en tiempo de ejecución.
 
 
 Ejemplo de conjuntos set
@@ -33,7 +39,7 @@ A continuación, se presentan un ejemplo de conjuntos ``set``:
 .. literalinclude:: ../../recursos/leccion3/tipo_conjuntos.py
     :linenos:
     :language: python
-    :lines: 9-42
+    :lines: 9-38
 
 ----
 
@@ -44,12 +50,9 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
 
 ::
 
-	>>> a = frozenset([1, 2, 3, 2, 1, 4, 5, 3])
-	>>> a
-	frozenset([1, 2, 3, 4, 5])
-	>>> print a, type(a)
+	>>> inmutable = frozenset([1, 2, 3, 2, 1, 4, 5, 3])
+	>>> print inmutable, type(inmutable)
 	frozenset([1, 2, 3, 4, 5]) <type 'frozenset'>
-	>>> 
 
 Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y 
 deben ser objetos inmutables: números, cadenas de caracteres, tuplas y sets 
