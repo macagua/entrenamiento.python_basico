@@ -364,7 +364,7 @@ define la asignación. A continuación unos ejemplos donde se inicializan variab
 
     >>> cadena, numero, lista = "Hola Plone", 123456, [7,8,9,0]
     >>> tupla = (11, "Chao Plone", True, None)
-    >>> diccionario = {"nombres":"Leonardo Jose","apellidos":"Caballero Garcia"}
+    >>> diccionario = {"nombre":"Leonardo","apellido":"Caballero"}
 
 Luego de inicializar las variables del código anterior, usted puede usar la función 
 :ref:`vars() <python_fun_vars>` para obtener un diccionario conteniendo ámbito 
@@ -376,7 +376,7 @@ actual de las variables, ejecutando:
     {'tupla': (11, 'Chao Plone', True, None), 
     '__builtins__': <module '__builtin__' (built-in)>, 
     'numero': 123456, '__package__': None, 'cadena': 'Hola Plone', 
-    'diccionario': {'apellidos': 'Caballero Garcia', 'nombres': 'Leonardo Jose'}, 
+    'diccionario': {'apellido': 'Caballero', 'nombre': 'Leonardo'}, 
     '__name__': '__main__', 'lista': [7, 8, 9, 0], '__doc__': None}
 
 
@@ -389,9 +389,8 @@ Si desea eliminar la referencia a la variable ``cadena``, ejecuta:
     {'tupla': (11, 'Chao Plone', True, None), 
     '__builtins__': <module '__builtin__' (built-in)>, 
     'numero': 123456, '__package__': None, 
-    'diccionario': {'apellidos': 'Caballero Garcia', 
-    'nombres': 'Leonardo Jose'}, '__name__': '__main__', 
-    'lista': [7, 8, 9, 0], '__doc__': None}
+    'diccionario': {'apellido': 'Caballero', 'nombre': 'Leonardo'}, 
+    '__name__': '__main__', 'lista': [7, 8, 9, 0], '__doc__': None}
 
 Como pudo ver en el ejemplo anterior que elimino la referencia a la variable ``cadena``,
 incluso al volver a la función :ref:`vars() <python_fun_vars>` ya no sale en el 

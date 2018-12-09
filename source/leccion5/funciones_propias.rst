@@ -697,8 +697,11 @@ utilizando slicing:
 ::
 
     >>> revertir = lambda cadena: cadena[::-1]
-    >>> revertir("Hola")
-    'aloH'
+    >>> revertir("Plone")
+    'enolP'
+    >>> revertir("enolP")
+    'Plone'
+
 
 **Función lambda - varios parámetros**
 
