@@ -9,6 +9,30 @@ Listas de comprensión
 La listas de comprensión, del inglés *list comprehensions*, es una funcionalidad 
 que le permite crear listas avanzadas en una misma línea de código. 
 
+La forma general de la definición de una lista por comprensión es: 
+
+::
+
+    [expresion for item in iterable]
+
+Opcionalmente, se puede incluir un condicional en la expresión: 
+
+::
+
+    [expresion for item in iterable if condicion]
+
+``expresion`` puede ser cualquier expresión computable en Python, generalmente 
+involucrando un ``item`` del iterable llamado ``iterable`` puede ser cualquier 
+objeto iterable, como una secuencia (:ref:`lista <python_listas>` o 
+:ref:`cadena de caracteres <python_str>`), la función la función 
+:ref:`range() <python_fun_range>`, etc.
+
+La salida siempre es un tipo de :ref:`lista <python_listas>` Python.
+
+
+Ejemplo 1
+.........
+
 Si requiere crear una lista de 4 elementos y cada elemento calcularle la potencia 
 de 2, usando el método tradicional, eso seria así:
 
@@ -28,6 +52,10 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
     >>> [i**2 for i in range(4)]
     [0, 1, 4, 9]
     >>> 
+
+
+Ejemplo 2
+.........
 
 A continuación se crear una lista con las letras de una palabra, usando el método 
 tradicional, eso seria así:
@@ -56,6 +84,9 @@ caso cada letra, a la vez que definimos el :ref:`bucle for <python_bucle_for>`,
 entonces la lista está formada por cada letra que recorremos en el bucle ``for``.
 
 
+Ejemplo 3
+.........
+
 A continuación se crear una lista con las potencias de 2 de los primeros 10 
 números, usando el método tradicional, eso seria así:
 
@@ -72,13 +103,16 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 
 ::
 
-    >>> lista = [numero**2 for numero in  range(0,11)]
+    >>> lista = [numero**2 for numero in range(0,11)]
     >>> print lista
     [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 De este código anterior usted puede aprender que es posible modificar al vuelo 
 los elementos los cuales van a formar la lista.
 
+
+Ejemplo 4
+.........
 
 A continuación se crear una lista con los todos los múltiples de 2 entre 0 y 10, 
 usando el método tradicional, eso seria así:
@@ -127,6 +161,9 @@ así:
 En este caso puede observar que incluso puede marcar una condición justo al final 
 para añadir o no el elemento en la lista.
 
+
+Ejemplo 5
+.........
 
 A continuación se crear una lista de pares a partir de otra lista creada con las 
 potencias de 2 de los primeros 10 números, usando el método tradicional, eso seria 
