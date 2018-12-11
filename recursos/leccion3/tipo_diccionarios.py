@@ -14,6 +14,7 @@ datos_basicos = {
     "nacionalidad":"Venezolana",
     "estado_civil":"Soltero"
 }
+print datos_basicos, type(datos_basicos)
 
 print "\nDetalle del diccionario"
 print "======================="
