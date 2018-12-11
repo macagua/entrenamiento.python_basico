@@ -79,7 +79,7 @@ La parte anterior del mensaje de error muestra el contexto donde la excepción s
 en la forma de un *trazado del error* listando líneas fuente; sin embargo, no mostrará 
 líneas leídas desde la entrada estándar.
 
-:ref:`python_excepciones_integradas`, es una lista las excepciones predefinidas y sus 
+:ref:`python_excepciones_builtins`, es una lista las excepciones predefinidas y sus 
 significados.
 
 

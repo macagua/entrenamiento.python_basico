@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_excepciones_integradas:
+.. _python_excepciones_builtins:
 
 Excepciones integradas
 ----------------------

@@ -1121,7 +1121,7 @@ antecedida del prefijo *'0'*.
 ----
 
 
-.. _python_fun_builtins_booleanos:
+.. _python_fun_builtins_bool:
 
 Funciones de booleanos
 ......................
