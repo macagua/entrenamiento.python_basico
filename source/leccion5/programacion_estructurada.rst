@@ -60,10 +60,10 @@ llamado despectivamente *código espagueti*), cabe citar las siguientes:
 
 .. important::
 
-	Seguidamente se presenta el concepto de funciones poniendo en practica forma de 
-	secuencia, implementado las estructuras condicionales :ref:`if <python_condi_if>` 
-	y los bucles o iteraciones existen :ref:`while <python_bucle_while>` y 
-	:ref:`for <python_bucle_for>`.
+    Seguidamente se presenta el concepto de funciones poniendo en practica forma de 
+    secuencia, implementado las estructuras condicionales :ref:`if <python_condi_if>` 
+    y los bucles o iteraciones existen :ref:`while <python_bucle_while>` y 
+    :ref:`for <python_bucle_for>`.
 
 
 ----

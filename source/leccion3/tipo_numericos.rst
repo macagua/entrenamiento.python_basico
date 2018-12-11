@@ -70,7 +70,6 @@ número sea tan grande como para requerir el uso del tipo ``long``.
     >>> entero = 23
     >>> type(entero)
     <type 'int'>
-    >>> 
 
 También puede indicar a Python que un número se almacene usando ``long`` añadiendo 
 una *L* al final:
@@ -80,7 +79,6 @@ una *L* al final:
     >>> entero = 23L
     >>> type(entero)
     <type 'long'>
-    >>> 
 
 
 El literal que se asigna a la variable también se puede expresar como un ``octal``, 

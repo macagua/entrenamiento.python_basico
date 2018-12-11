@@ -63,14 +63,14 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
 
 ::
 
-	>>> f = open('datos.txt', 'r')
-	>>> for line in f:
-	...     print line
-	... 
-	Este es una prueba 
+    >>> f = open('datos.txt', 'r')
+    >>> for line in f:
+    ...     print line
+    ... 
+    Este es una prueba 
 
-	y otra prueba
-	>>> f.close()
+    y otra prueba
+    >>> f.close()
 
 
 ----

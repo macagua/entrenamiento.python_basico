@@ -51,7 +51,6 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 
     >>> [i**2 for i in range(4)]
     [0, 1, 4, 9]
-    >>> 
 
 
 Ejemplo 2

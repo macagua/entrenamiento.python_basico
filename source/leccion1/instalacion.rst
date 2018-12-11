@@ -53,7 +53,7 @@ Esto es debido a que no tiene instalado el interprete, así que debe ejecutar el
 
 ::
 
-	sudo apt-get install -y python-dev 
+    sudo apt-get install -y python-dev 
 
 De nuevo vuelva a ejecutar en su consola de comando el comando ``python``.
 

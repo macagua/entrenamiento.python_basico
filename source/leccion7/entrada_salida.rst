@@ -132,7 +132,6 @@ Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia
 
     >>> print 'Pepe: Hola', nombre, ', encantado de conocerte :3'
     Pepe: Hola Leonardo , encantado de conocerte :3
-    >>> 
 
 
 .. _python_salida_formato_impresion_cadenas:
@@ -150,7 +149,6 @@ las cadenas de caracteres y variables:
     >>> valor = 2**0.5
     >>> print "el resultado de", tipo_calculo, "es:", valor
     el resultado de raíz cuadrada de dos es: 1.41421356237
-    >>> 
 
 
 .. seealso::

@@ -21,9 +21,9 @@ de éstos incluyen verificación de pertenencia y eliminación de entradas dupli
 
 .. note::
 
-	- **Mutable:** su contenido (o dicho valor) puede cambiarse en tiempo de ejecución.
+    - **Mutable:** su contenido (o dicho valor) puede cambiarse en tiempo de ejecución.
 
-	- **Inmutable:** su contenido (o dicho valor) no puede cambiarse en tiempo de ejecución.
+    - **Inmutable:** su contenido (o dicho valor) no puede cambiarse en tiempo de ejecución.
 
 
 ----
@@ -59,9 +59,9 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
 
 ::
 
-	>>> inmutable = frozenset([1, 2, 3, 2, 1, 4, 5, 3])
-	>>> print inmutable, type(inmutable)
-	frozenset([1, 2, 3, 4, 5]) <type 'frozenset'>
+    >>> inmutable = frozenset([1, 2, 3, 2, 1, 4, 5, 3])
+    >>> print inmutable, type(inmutable)
+    frozenset([1, 2, 3, 4, 5]) <type 'frozenset'>
 
 Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y deben 
 ser objetos inmutables: números, cadenas de caracteres, tuplas y sets inmutables, 
