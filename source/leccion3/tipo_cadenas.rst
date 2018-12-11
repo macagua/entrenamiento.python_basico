@@ -449,14 +449,14 @@ Clase formatter
 
 La clase ``formatter`` es una de las clases integradas ``string``. Ese provee la 
 habilidad de hacer variable compleja de substituciones y formateo de valores usando 
-el método :ref:`format() <python_metodo_format>`. Es le permite crear y personalizar 
+el método :ref:`format() <python_mtd_format>`. Es le permite crear y personalizar 
 sus propios comportamientos de formatos de cadena de caracteres para reescribir los 
 métodos públicos y contiene: ``format()``, ``vformat()``. Ese tiene algunos métodos 
 que son destinado para ser remplazados por las sub-clases: ``parse()``, ``get_field()``, 
 ``get_value()``, ``check_unused_args()``, ``format_field()`` y ``convert_field()``. 
 
 
-.. _python_metodo_format:
+.. _python_mtd_format:
 
 format()
 ````````

@@ -1287,13 +1287,13 @@ format()
 La función integrada ``format()`` devuelve una representación formateada de un valor 
 dato controlado por el especificador de formato.
 
-La función integrada ``format()`` es similar al :ref:`método format() <python_metodo_format>` 
+La función integrada ``format()`` es similar al :ref:`método format() <python_mtd_format>` 
 disponible en el tipo de :ref:`cadena de caracteres <python_str>`. Internamente, 
 ambos llaman al método ``__format__()`` de un objecto.
 
 Mientras, la función integrada ``format()`` es una implementación de bajo nivel para 
 formatear un objeto usando ``__format__()`` internamente, el 
-:ref:`método format() <python_metodo_format>` del tipo de cadena de caracteres es una 
+:ref:`método format() <python_mtd_format>` del tipo de cadena de caracteres es una 
 implementación de alto nivel disponible para ejecutar operaciones de formateo complejas 
 en múltiples objeto de :ref:`cadena de caracteres <python_str>`.
 
