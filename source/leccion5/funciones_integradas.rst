@@ -1660,16 +1660,41 @@ str()
 
 La función ``str()`` devuelve una cadenas de caracteres. 
 
+Puede convertir un :ref:`número entero <python_num_entero>` a una cadena de caracteres, 
+de la siguiente forma:
+
 ::
 
     >>> str(2)
     '2'
+
+Puede convertir un :ref:`número float <python_num_float>` a una cadena de caracteres, 
+de la siguiente forma:
+
+::
+
     >>> str(2.5)
     '2.5'
     >>> str(-2.5)
     '-2.5'
+
+Puede convertir un :ref:`número complex <python_num_complex>` a una cadena de caracteres, 
+de la siguiente forma:
+
+::
+
     >>> str(2.3+0j)
     '(2.3+0j)'
+
+Puede convertir un tipo :ref:`booleano <python_bool>` a una cadena de caracteres, 
+de la siguiente forma:
+
+::
+
+    >>> str(True)
+    'True'
+    >>> str(False)
+    'False'
 
 
 .. _python_fun_swapcase:
