@@ -1762,7 +1762,7 @@ La función ``frozenset()`` ....
 list()
 ~~~~~~
 
-La función ``list()`` es el constructor del tipo de :ref:`lista <python_listas>`, 
+La función ``list()`` es el constructor del tipo de :ref:`lista <python_list>`, 
 se usa crear una lista mediante la misma función ``list()`` de un iterable. Por 
 ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
 

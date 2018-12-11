@@ -16,7 +16,7 @@ El diccionario, define una relación uno a uno entre claves y valores.
 
 Un objeto *mapping* mapea valores *hashable* a objetos arbitrariamente. Los objetos 
 Mapeos son objetos mutable. El *diccionario* es el único tipo de mapeo estándar 
-actual. Para otro contenedores ver los integrados en las clases ":ref:`lista <python_listas>`", 
+actual. Para otro contenedores ver los integrados en las clases ":ref:`lista <python_list>`", 
 ":ref:`conjuntos <python_conjuntos>`", y ":ref:`tupla <python_tuple>`", y el 
 modulo "``collections``".
 

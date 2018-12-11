@@ -7,7 +7,7 @@ Tipo tuplas
 -----------
 
 Las tuplas son objetos de tipo *secuencia*, específicamente es un tipo de dato 
-:ref:`lista <python_listas>` inmutable. Esta no puede modificarse de ningún modo 
+:ref:`lista <python_list>` inmutable. Esta no puede modificarse de ningún modo 
 después de su creación.
 
 .. _python_tuple_mtds:
@@ -15,7 +15,7 @@ después de su creación.
 Métodos
 .......
 
-Son muy similares a las :ref:`listas <python_listas>` y comparten varias de sus 
+Son muy similares a las :ref:`listas <python_list>` y comparten varias de sus 
 funciones y métodos integrados, aunque su principal diferencia es que son inmutables.
 El objeto de tipo *tupla* integra una serie de métodos integrados a continuación:
 
@@ -44,7 +44,7 @@ aparece en la tupla.
 index()
 ~~~~~~~
 
-Comparte el mismo método :ref:`index() <python_listas_mtd_index>` del tipo lista. 
+Comparte el mismo método :ref:`index() <python_list_mtd_index>` del tipo lista. 
 Esta método recibe un elemento como argumento, y devuelve el índice de su primera 
 aparición en la tupla.
 

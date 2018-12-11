@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_listas:
+.. _python_list:
 
 Tipo listas
 -----------
@@ -87,7 +87,7 @@ De esta forma se cambia el valor inicial de un elemento de la lista lo cual hace
 una la lista *mutable*
 
 
-.. _python_listas_mtds:
+.. _python_list_mtds:
 
 Métodos
 .......
@@ -95,7 +95,7 @@ Métodos
 El el objeto de tipo *lista* integra una serie de métodos integrados a continuación:
 
 
-.. _python_listas_mtd_append:
+.. _python_list_mtd_append:
 
 append()
 ~~~~~~~~
@@ -112,7 +112,7 @@ Esta método agrega un elemento al final de una lista.
     [2.5, 3.6, 4, 5, 6]
 
 
-.. _python_listas_mtd_count:
+.. _python_list_mtd_count:
 
 count()
 ~~~~~~~
@@ -131,7 +131,7 @@ aparece en la lista.
     2.5 -> 1
 
 
-.. _python_listas_mtd_extend:
+.. _python_list_mtd_extend:
 
 extend()
 ~~~~~~~~
@@ -151,7 +151,7 @@ Esta método extiende una lista agregando un iterable al final.
     [2.1, 2.5, 3.6, 4, 5, 6]
 
 
-.. _python_listas_mtd_index:
+.. _python_list_mtd_index:
 
 index()
 ~~~~~~~
@@ -194,7 +194,7 @@ elemento no se encuentra en la lista, o en el entorno definido.
     ValueError: 9 is not in list
 
 
-.. _python_listas_mtd_insert:
+.. _python_list_mtd_insert:
 
 insert()
 ~~~~~~~~
@@ -211,7 +211,7 @@ Esta método inserta el elemento x en la lista, en el índice i.
     [2.1, 2.5, 3.7, 3.6, 4, 5, 6]
 
 
-.. _python_listas_mtd_pop:
+.. _python_list_mtd_pop:
 
 pop()
 ~~~~~
@@ -238,7 +238,7 @@ elemento (por defecto, -1)
     [2.1, 2.5, 4, 5, 6]
 
 
-.. _python_listas_mtd_remove:
+.. _python_list_mtd_remove:
 
 remove()
 ~~~~~~~~
@@ -269,7 +269,7 @@ elemento no se encuentra en la lista.
     ValueError: list.remove(x): x not in list
 
 
-.. _python_listas_mtd_reverse:
+.. _python_list_mtd_reverse:
 
 reverse()
 ~~~~~~~~~
@@ -286,7 +286,7 @@ Esta método invierte el orden de los elementos de una lista.
     [6, 5, 4, 3.6, 2.5, 2.1]
 
 
-.. _python_listas_mtd_sort:
+.. _python_list_mtd_sort:
 
 sort()
 ~~~~~~
@@ -326,7 +326,7 @@ la cual :ref:`esta integrada <python_fun_builtins>` en el interprete Python.
 ----
 
 
-.. _python_listas_ejs:
+.. _python_list_ejs:
 
 Ejemplos
 ........

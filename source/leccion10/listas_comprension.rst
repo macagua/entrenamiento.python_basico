@@ -23,11 +23,11 @@ Opcionalmente, se puede incluir un condicional en la expresión:
 
 ``expresion`` puede ser cualquier expresión computable en Python, generalmente 
 involucrando un ``item`` del iterable llamado ``iterable`` puede ser cualquier 
-objeto iterable, como una secuencia (:ref:`lista <python_listas>` o 
+objeto iterable, como una secuencia (:ref:`lista <python_list>` o 
 :ref:`cadena de caracteres <python_str>`), la función la función 
 :ref:`range() <python_fun_range>`, etc.
 
-La salida siempre es un tipo de :ref:`lista <python_listas>` Python.
+La salida siempre es un tipo de :ref:`lista <python_list>` Python.
 
 
 Ejemplo 1
