@@ -54,14 +54,14 @@ Bucle 'for' con Tuplas
 ~~~~~~~~~~~~~~~~~~~~~~
 
 A continuación, se presenta un ejemplo del uso del bucle ``for`` con tipos de 
-estructuras de datos :ref:`Tuplas <python_tuplas>`:
+estructuras de datos :ref:`Tuplas <python_tuple>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
     :lines: 46-48
 
-El ejemplo anterior itera una :ref:`tupla <python_tuplas>` de parámetros.
+El ejemplo anterior itera una :ref:`tupla <python_tuple>` de parámetros.
 
 
 Bucle 'for' con Diccionarios

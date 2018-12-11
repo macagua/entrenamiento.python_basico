@@ -1727,7 +1727,84 @@ Funciones de secuencias
 Las funciones de secuencias se describen a continuación:
 
 
-.. _python_funcion_sorted:
+.. _python_fun_dict:
+
+dict()
+~~~~~~
+
+La función ``dict()`` ....
+
+::
+
+    >>> 
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_frozenset:
+
+frozenset()
+~~~~~~~~~~~
+
+La función ``frozenset()`` ....
+
+::
+
+    >>> 
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_list:
+
+list()
+~~~~~~
+
+La función ``list()`` es el constructor del tipo de :ref:`lista <python_listas>`, 
+se usa crear una lista mediante la misma función ``list()`` de un iterable. Por 
+ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
+
+::
+
+    >>> lista = list(range(10))
+    >>> print lista
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+.. _python_fun_tuple:
+
+tuple()
+~~~~~~~~
+
+La función ``tuple()`` es el constructor del tipo de :ref:`tuplas <python_tuple>`, 
+se usa crear una tupla mediante la misma función ``tuple()`` de un iterable. Por 
+ejemplo, una tupla podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
+
+::
+
+    >>> tupla = tuple(range(4, 9))
+    >>> print tupla
+    (4, 5, 6, 7, 8)
+
+
+.. _python_fun_set:
+
+set()
+~~~~~
+
+La función ``set()`` ....
+
+::
+
+    >>> 
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_sorted:
 
 sorted()
 ~~~~~~~~

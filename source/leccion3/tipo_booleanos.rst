@@ -30,7 +30,7 @@ como ``False``:
 
 - :ref:`Cadena de caracteres <python_str>` vaciás.
 
-- Contenedores, incluyendo *cadenas de caracteres*, :ref:`tuplas <python_tuplas>`, 
+- Contenedores, incluyendo *cadenas de caracteres*, :ref:`tuplas <python_tuple>`, 
   :ref:`listas <python_listas>`, :ref:`diccionarios <python_diccionarios>` y 
   :ref:`conjuntos <python_conjuntos>` mutables e inmutables.
 

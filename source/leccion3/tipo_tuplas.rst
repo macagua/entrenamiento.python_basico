@@ -1,16 +1,88 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_tuplas:
+.. _python_tuple:
 
 Tipo tuplas
 -----------
 
-La tupla es una lista inmutable. Esta no puede modificarse de ningún 
-modo después de su creación.
+Las tuplas son objetos de tipo *secuencia*, específicamente es un tipo de dato 
+:ref:`lista <python_listas>` inmutable. Esta no puede modificarse de ningún modo 
+después de su creación.
 
-Ejemplo de tuplas
-.................
+.. _python_tuple_mtds:
+
+Métodos
+.......
+
+Son muy similares a las :ref:`listas <python_listas>` y comparten varias de sus 
+funciones y métodos integrados, aunque su principal diferencia es que son inmutables.
+El objeto de tipo *tupla* integra una serie de métodos integrados a continuación:
+
+
+.. _python_tuple_mtd_count:
+
+count()
+~~~~~~~
+
+Esta método recibe un elemento como argumento, y cuenta la cantidad de veces que 
+aparece en la tupla.
+
+::
+
+    >>> tupla = ("Python", True, 'Zope', 5)
+    >>> print "True ->", tupla.count(True)
+    True -> 1
+    >>> print "'Zope' ->", tupla.count('Zope')
+    'Zope' -> 1
+    >>> print "5 ->", tupla.count(5)
+    5 -> 1
+
+
+.. _python_tuple_mtd_index:
+
+index()
+~~~~~~~
+
+Comparte el mismo método :ref:`index() <python_listas_mtd_index>` del tipo lista. 
+Esta método recibe un elemento como argumento, y devuelve el índice de su primera 
+aparición en la tupla.
+
+::
+
+    >>> tupla = ("Python", True, "Zope", 5)
+    >>> print tupla.index(True)
+    1
+    >>> print tupla.index(5)
+    3
+
+El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el 
+elemento no se encuentra en la tupla, o en el entorno definido.
+
+::
+
+    >>> tupla = ("Python", True, "Zope", 5)
+    >>> print tupla.index(4)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: tuple.index(x): x not in tuple
+
+
+Convertir a tuplas
+..................
+
+Para convertir a *tipos tuplas* debe usar la función :ref:`tuple() <python_fun_tuple>`, 
+la cual :ref:`está integrada <python_fun_builtins>` en el interprete Python.
+
+.. tip:: 
+    Para más información consulte las funciones integradas para 
+    :ref:`operaciones de secuencias <python_fun_builtins_secuencias>`.
+
+
+.. _python_tuple_ejs:
+
+Ejemplos
+........
 
 A continuación, se presentan algunos ejemplos de su uso:
 
@@ -37,12 +109,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 **Cuidar seguimiento del número de la numeración**
 
-Una tarea común es iterar sobre una secuencia mientras cuidas 
-el seguimiento de la numeración de un elemento.
+Una tarea común es iterar sobre una secuencia mientras cuidas el seguimiento de la 
+numeración de un elemento.
 
-Podría usar un bucle ``while`` con un contador o un bucle ``for`` 
-usando la función :ref:`range() <python_fun_range>` y la función 
-:ref:`len() <python_fun_len>`:
+Podría usar un bucle ``while`` con un contador o un bucle ``for`` usando la función 
+:ref:`range() <python_fun_range>` y la función :ref:`len() <python_fun_len>`:
 
 ::
 
@@ -63,8 +134,8 @@ Pero, Python provee la palabra reservada ``enumerate`` para esto:
 
 **Caso real de conexión a BD**
 
-A continuación, un ejemplo más apegado a la realidad que busca 
-establecer una conexión a una BD:
+A continuación, un ejemplo más apegado a la realidad que busca establecer una conexión 
+a una BD:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
@@ -76,8 +147,8 @@ establecer una conexión a una BD:
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la documentación disponible sobre las **tuplas** 
-desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
+Usted puede consultar toda la documentación disponible sobre las **tuplas** desde la 
+:ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
 ::
 
@@ -91,9 +162,8 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
 
 .. tip::
-    Para ejecutar el código :file:`tipo_tuplas.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando:
+    Para ejecutar el código :file:`tipo_tuplas.py`, abra una consola de comando, 
+    acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     ::
 
