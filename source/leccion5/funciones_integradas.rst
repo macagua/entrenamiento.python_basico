@@ -181,7 +181,8 @@ la lógica ``dir()`` predeterminada y devuelve:
     {'Persona': <class '__main__.Persona'>, 
     '__builtins__': <module '__builtin__' (built-in)>, 
     '__package__': None, '__name__': '__main__', 
-    'os': <module 'os' from '/usr/lib/python2.7/os.pyc'>, '__doc__': None}
+    'os': <module 'os' from '/usr/lib/python2.7/os.pyc'>, 
+    '__doc__': None}
     >>> dir(Persona)
     ['__class__', '__delattr__', '__dict__', '__doc__', 
     '__format__', '__getattribute__', '__hash__', 
@@ -222,10 +223,11 @@ la lógica ``dir()`` predeterminada y devuelve:
     '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__', 
     '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', 
     '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__', 
-    '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', 
-    '__sizeof__', '__str__', '__sub__', '__subclasshook__', 
-    '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 
-    'denominator', 'imag', 'numerator', 'real']
+    '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', 
+    '__setattr__', '__sizeof__', '__str__', '__sub__', 
+    '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 
+    'bit_length', 'conjugate', 'denominator', 'imag', 'numerator', 
+    'real']
 
 
 .. _python_fun_eval:
@@ -260,8 +262,8 @@ las variables.
 ::
 
     >>> globals()
-    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': None, 
-    '__name__': '__main__', '__doc__': None}
+    {'__builtins__': <module '__builtin__' (built-in)>, 
+    '__package__': None, '__name__': '__main__', '__doc__': None}
 
 
 La función ``globals()`` puede ser usada para devolver los nombres en el ``namespaces`` 
@@ -364,8 +366,8 @@ las variables.
 ::
 
     >>> locals()
-    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': 
-    None, '__name__': '__main__', '__doc__': None}
+    {'__builtins__': <module '__builtin__' (built-in)>, 
+    '__package__': None, '__name__': '__main__', '__doc__': None}
 
 La función ``locals()`` puede ser usadas para devolver los nombres en el ``namespaces`` 
 local dependiendo en la locación desde donde ella es llamada.
@@ -1825,7 +1827,7 @@ ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_
 .. _python_fun_tuple:
 
 tuple()
-~~~~~~~~
+~~~~~~~
 
 La función ``tuple()`` es el constructor del tipo de :ref:`tuplas <python_tuple>`, 
 se usa crear una tupla mediante la misma función ``tuple()`` de un iterable. Por 
