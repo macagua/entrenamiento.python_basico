@@ -20,6 +20,52 @@ Funciones generales
 Las funciones de uso general se describen a continuación:
 
 
+
+.. _python_fun_apply:
+
+apply()
+~~~~~~~
+
+La función ``apply()`` ....
+
+::
+
+    >>>
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_callable:
+
+callable()
+~~~~~~~~~~
+
+La función ``callable()`` ....
+
+::
+
+    >>>
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_compile:
+
+compile()
+~~~~~~~~~
+
+La función ``compile()`` ....
+
+::
+
+    >>>
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
 .. _python_fun_credits:
 
 credits()
@@ -251,6 +297,25 @@ Ademas si se han definido anteriormente variables las acepta como parámetros:
     95
 
 
+.. _python_fun_execfile:
+
+execfile()
+~~~~~~~~~~
+
+La función ``execfile()`` lee y ejecuta un script Python desde un archivo. 
+Los ``globals`` y ``locals`` son diccionarios, defaulting to the current 
+``globals`` y ``locals``.  Si solamente ``globals`` es dado, ``locals`` defaults to it.
+
+.. todo:: TODO traducir frases del párrafo anterior.
+
+::
+
+    >>>
+
+
+.. todo:: TODO terminar de escribir sobre esta función integrada.
+
+
 .. _python_fun_globals:
 
 globals()
@@ -302,6 +367,27 @@ Invoca el menú de ayuda del intérprete de Python:
     such as "spam", type "modules spam".
 
     help> 
+
+
+.. _python_fun_id:
+
+id()
+~~~~
+
+La función ``id()`` devuelve la identidad de un objecto. Esto garantiza ser el único 
+among simultaneously existing objects.  (Hint: it's the object's memory address.)
+
+.. todo:: TODO traducir las oraciones del párrafo anterior.
+
+::
+
+    >>> lista = range(5)
+    >>> lista
+    [0, 1, 2, 3, 4]
+    >>> id(lista)
+    139703096777904
+
+.. todo:: TODO escribir sobre esta función integrada.
 
 
 .. _python_fun_len:
@@ -810,6 +896,24 @@ o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero 
 
     >>> bin(10)
     '0b1010'
+
+
+.. _python_fun_cmp:
+
+cmp()
+~~~~~
+
+La función ``cmp()`` devuelve un valor negativo si ``x<y``, un valor cero si ``x==y``, 
+un valor positivo si ``x>y``:
+
+::
+
+    >>> cmp(1,2)
+    -1
+    >>> cmp(2,2)
+    0
+    >>> cmp(2,1)
+    1
 
 
 .. _python_fun_complex:
@@ -1729,6 +1833,28 @@ en cada palabra.
     'Leonardo Caballero'
 
 
+.. _python_fun_unichr:
+
+unichr()
+~~~~~~~~
+
+La función ``unichr()`` devuelve una cadena de caracteres *Unicode* de un carácter 
+con un ordinal i; 0 <= i <= 0x10ffff.
+
+::
+
+    >>> unichr(64)
+    u'@'
+    >>> unichr(36)
+    u'$'
+    >>> unichr(94)
+    u'^'
+    >>> unichr(126)
+    u'~'
+
+.. todo:: TODO terminar de escribir sobre esta función integrada.
+
+
 .. _python_fun_upper:
 
 upper()
@@ -1752,6 +1878,54 @@ Funciones de secuencias
 .......................
 
 Las funciones de secuencias se describen a continuación:
+
+
+.. _python_fun_all:
+
+all()
+~~~~~
+
+La función ``all()`` ....
+
+::
+
+    >>> 
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_any:
+
+any()
+~~~~~
+
+La función ``any()`` ....
+
+::
+
+    >>>
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_coerce:
+
+coerce()
+~~~~~~~~
+
+La función ``coerce()`` devuelve una tupla consisting of the two numeric arguments 
+converted to a common type, using the same rules as used by arithmetic operations.
+If coercion is not possible, raise :ref:`TypeError <python_exception_typeerror>`.
+
+.. todo:: TODO traducir frases en el párrafo anterior.
+
+::
+
+    >>> coerce(x, y) -> (x1, y1)
+
+.. todo:: TODO escribir sobre esta función integrada.
 
 
 .. _python_fun_dict:
