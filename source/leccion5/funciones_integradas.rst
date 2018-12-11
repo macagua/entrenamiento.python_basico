@@ -1732,14 +1732,38 @@ Las funciones de secuencias se describen a continuación:
 dict()
 ~~~~~~
 
-La función ``dict()`` ....
+La función ``dict()`` es el constructor del tipo de :ref:`diccionario <python_dict>`, 
+esta función se usa crear un diccionario:
 
 ::
 
-    >>> 
+    >>> dict(python=2.7, zope=2, plone=5.1)
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
 
+También puede crear un diccionario indicando a las claves usando comillas simples:
 
-.. todo:: TODO escribir sobre esta función integrada.
+::
+
+    >>> {'python': 2.7, 'zope': 2.13, 'plone': 5.1}
+    {'python': 2.7, 'zope': 2, 'plone': 5.1}
+    >>> dict({'python': 2.7, 'zope': 2.13, 'plone': 5.1})
+    {{'python': 2.7, 'zope': 2.13, 'plone': 5.1}
+
+Convertir desde un grupo de dos :ref:`listas <python_list>` de forma recursiva usando 
+la función :ref:`zip() <python_fun_zip>` a tipo *diccionario*:
+
+::
+
+    >>> dict(zip(['python', 'zope', 'plone'], [2.7, 2.13, 5.1]))
+    {'python': 2.7, 'zope': 2.13, 'plone': 5.1}
+
+Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una 
+:ref:`lista <python_list>` a tipo *diccionario*:
+
+::
+
+    >>> dict([('zope', 2.13), ('python', 2.7), ('plone', 5.1)])
+    {'plone': 5.1, 'zope': 2.13, 'python': 2.7}
 
 
 .. _python_fun_frozenset:
