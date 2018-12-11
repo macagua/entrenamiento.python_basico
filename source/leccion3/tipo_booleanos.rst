@@ -61,14 +61,46 @@ Todos los otros valores son interpretados por defecto a ``True``. El operador l�
 :ref:`not <python_opers_logicos>` produce ``True`` si su argumento es falso, 
 ``False`` de lo contrario.
 
-Los tipos integrados ``True`` y ``False`` son solamente dos instancias de la clase 
-``bool``. En realidad el tipo ``bool`` (el tipo de los booleanos) es una 
-:ref:`subclase <python_poo_herencia>` del tipo ``int``, y no puede ser a su vez una 
-subclase. 
+Los tipos integrados ``False`` y ``True`` son solamente dos instancias de la clase 
+``bool``. En realidad el tipo ``bool`` es una :ref:`subclase <python_poo_herencia>` 
+del tipo ``int`` o entero plano, es decir, sus valores son ``0`` y ``1`` respectivamente, 
+en casi todos los contextos:
+
+::
+
+    >>> int(False)
+    0
+    >>> int(True)
+    1
+
+En el ejemplo anterior se convierte tipos booleanos a tipo enteros, siempre devuelve sus 
+valores numéricos ``0`` y ``1``. La excepción a la regla anterior sucede cuando un tipo 
+booleano es convertido a un tipo de :ref:`cadenas de caracteres <python_str>`, las cadenas 
+*'False'* y/o *'True'* son retornadas, respectivamente:
+
+::
+
+    >>> type(True)
+    <type 'bool'>
+    >>> str(True)
+    'True'
+    >>> type(str(True))
+    <type 'str'>
+    >>> 
+    >>> type(False)
+    <type 'bool'>
+    >>> str(False)
+    'False'
+    >>> type(str(False))
+    <type 'str'>
+
 
 Puede que esto para usted, no lo entienda mucho, si no conoces los términos de 
-la :ref:`orientación a objetos <python_poo>`, que se tocará más adelantes, aunque 
+la :ref:`orientación a objetos <python_poo>`, que se tocará más adelante, aunque 
 tampoco es nada importante.
+
+.. important::
+    Los tipos *booleanos* no puede ser a su vez una subclase.
 
 
 Convertir a booleanos
@@ -77,9 +109,10 @@ Convertir a booleanos
 Para convertir a *tipos booleanos* debe usar la función :ref:`bool() <python_fun_bool>` 
 la cual :ref:`esta integrada <python_funciones_integradas>` en el interprete Python.
 
+.. _python_booleanos_ejs:
 
-Ejemplo de booleanos
-....................
+Ejemplos
+........
 
 A continuación, se presentan algunos ejemplos de su uso:
 

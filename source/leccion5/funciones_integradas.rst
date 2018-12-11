@@ -1140,11 +1140,40 @@ argumento dado es ``True``, de lo contrario ``False``.
 
 ::
 
-    >>> bool(True)
-    True
     >>> bool()
     False
+    >>> bool(True)
+    True
 
+Convertir desde un tipo :ref:`entero <python_numericos>` a tipo *booleano*:
+
+::
+
+    >>> bool(0)
+    False
+    >>> bool(1)
+    True
+
+Convertir desde un tipo :ref:`entero float <python_num_float>` de forma recursiva 
+usando la función :ref:`int() <python_fun_int>` a tipo *booleano*:
+
+::
+
+    >>> bool(int(0.1))
+    False
+    >>> bool(int(1.0))
+    True
+
+Convertir desde un tipo :ref:`cadena de caracteres <python_str>` de forma recursiva 
+usando la función :ref:`str() <python_fun_str>` y la función :ref:`int() <python_fun_int>` 
+a tipo *booleano*:
+
+::
+
+    >>> bool(int(str('0')))
+    False
+    >>> bool(int(str('1')))
+    True
 
 ----
 
