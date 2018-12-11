@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_conjuntos:
+.. _python_set:
 
 Tipo conjuntos
 --------------

@@ -35,9 +35,9 @@ resumir en esta tabla:
 +-----------------------+----------------+------------------------------------------------+
 | Mapeos                | ``dict``       | :ref:`diccionario <python_dict>`               |
 +-----------------------+----------------+------------------------------------------------+
-|                       | ``set``        | :ref:`conjunto mutable <python_conjuntos>`     |
+|                       | ``set``        | :ref:`conjunto mutable <python_set>`           |
 | Conjuntos             +----------------+------------------------------------------------+
-|                       | ``frozenset``  | :ref:`conjunto inmutable <python_conjuntos>`   |
+|                       | ``frozenset``  | :ref:`conjunto inmutable <python_set>`         |
 +-----------------------+----------------+------------------------------------------------+
 
 Otros tipos de datos incorporados, se describen a continuación:

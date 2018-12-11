@@ -32,7 +32,7 @@ como ``False``:
 
 - Contenedores, incluyendo *cadenas de caracteres*, :ref:`tuplas <python_tuple>`, 
   :ref:`listas <python_list>`, :ref:`diccionarios <python_dict>` y 
-  :ref:`conjuntos <python_conjuntos>` mutables e inmutables.
+  :ref:`conjuntos <python_set>` mutables e inmutables.
 
 A continuación, varios ejemplos en códigos de los citado previamente:
 
