@@ -341,7 +341,7 @@ Esto sucede por...
 .. todo:: TODO explicar por que se lanza la excepción TypeError.
 
 
-.. _python_metodo_ambito:
+.. _python_mtd_ambito:
 
 Ámbito de los métodos
 ~~~~~~~~~~~~~~~~~~~~~
@@ -364,11 +364,11 @@ Las clases en Python cuentan con múltiples métodos especiales, los
 cuales se encuentran entre dobles guiones bajos ``__<metodo>__()``. 
 
 Los métodos especiales más utilizados son 
-:ref:`__init__() <python_metodo_init>`, :ref:`__str__() <python_metodo_str>` 
-y :ref:`__del__() <python_metodo_del>`.
+:ref:`__init__() <python_mtd_init>`, :ref:`__str__() <python_mtd_str>` 
+y :ref:`__del__() <python_mtd_del>`.
 
 
-.. _python_metodo_str:
+.. _python_mtd_str:
 
 __str__()
 `````````
@@ -383,7 +383,7 @@ de presentación del mismo.
     :lines: 16-20
 
 
-.. _python_metodo_del:
+.. _python_mtd_del:
 
 __del__()
 `````````
@@ -394,7 +394,7 @@ comportamiento de ``__del__()`` es muy similar a los "destructores"
 en otros lenguajes.
 
 
-.. _python_metodo_classmethod:
+.. _python_mtd_classmethod:
 
 Métodos de clase
 ~~~~~~~~~~~~~~~~
@@ -422,7 +422,7 @@ a los atributos de la clase.
             ...
 
 
-.. _python_metodo_staticmethod:
+.. _python_mtd_staticmethod:
 
 Métodos estáticos
 ~~~~~~~~~~~~~~~~~
@@ -516,10 +516,10 @@ La excepción :ref:`TypeError <python_exception_typeerror>` indica que el
 definir la clase a cada atributo se le asigno un valor (tipo de dato).
 
 Usted puede definir el metodo constructor de la clase usando el método 
-:ref:`__init__() <python_metodo_init>`.
+:ref:`__init__() <python_mtd_init>`.
 
 
-.. _python_metodo_init:
+.. _python_mtd_init:
 
 Método __init__()
 ~~~~~~~~~~~~~~~~~
