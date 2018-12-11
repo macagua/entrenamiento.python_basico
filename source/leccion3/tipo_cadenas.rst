@@ -149,13 +149,12 @@ una linea:
 
 ::
 
-    >>> # Programa que calcula la Sucesión de números Fibonacci
-    ... # Más información en https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci
+    >>> # Programa que calcula la sucesión 
+    ... # de números Fibonacci
     ... 
-    >>> """Programa que calcula la Sucesión de números Fibonacci.
-    ... Más información en https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci"""
-    'Programa que calcula la Sucesi\xc3\xb3n de n\xc3\xbameros Fibonacci.\nM\xc3\xa1s informaci\xc3\xb3n en https://es.wikipedia.org/wiki/Sucesi\xc3\xb3n_de_Fibonacci'
-    >>> 
+    >>> """Programa que calcula la sucesión 
+    ... de números Fibonacci."""
+    'Programa que calcula la sucesi\xc3\xb3n \nde n\xc3\xbameros Fibonacci.'
 
 Entonces existen al menos dos (02) alternativas para introducir comentarios multilíneas 
 son:
@@ -172,11 +171,10 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
 ::
 
     >>> u"""
-    ...     Programa que calcula la Sucesión de números Fibonacci
-    ...     Más información en https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci
+    ...     Programa que calcula la sucesión 
+    ...     de números Fibonacci.
     ... """
-    '\n    Programa que calcula la Sucesi\xc3\xb3n de n\xc3\xbameros Fibonacci\n    M\xc3\xa1s informaci\xc3\xb3n en https://es.wikipedia.org/wiki/Sucesi\xc3\xb3n_de_Fibonacci\n'
-    >>> 
+    u'\n    Programa que calcula la sucesi\xf3n \n    de n\xfameros Fibonacci.\n'
     >>> # se definen las variables
     ... a, b = 0, 1
     >>> while b < 100:
@@ -185,7 +183,6 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
     ...     a, b = b, a + b
     ... 
     1 1 2 3 5 8 13 21 34 55 89
-    >>> 
 
 Los comentarios multilína usado con mucha frecuencia como en las varias sintaxis 
 Python como :ref:`comentarios de documentación <python_str_docstrings>` a 
@@ -622,57 +619,56 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 9-11
+    :lines: 9-10
 
 
 **Ejemplo de cadenas de caracteres con comillas dobles**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 14-16
+    :lines: 13-14
 
 
 **Ejemplo de cadenas de caracteres con código escapes**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 19-21
+    :lines: 17-18
 
 
 **Ejemplo de cadenas de caracteres con varias lineas**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 24-36
+    :lines: 21-31
 
 
 **Ejemplo operadores de repetición de cadenas de caracteres**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 39-41
+    :lines: 34-35
 
 
 **Ejemplo operadores de concatenación de cadenas de caracteres**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 44-47
+    :lines: 38-40
 
 
 **Ejemplo de medir tamaño de la cadena con función "len()"**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
-    :linenos:
     :language: python
-    :lines: 50
+    :lines: 43
 
 
 **Ejemplo de acceder a rango de la cadena**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 53
+    :lines: 46
 
 
 **Ejemplo de consulta de ayuda a la función len**

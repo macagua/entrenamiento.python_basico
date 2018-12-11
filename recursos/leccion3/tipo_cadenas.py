@@ -6,19 +6,16 @@
 """
 
 # Comillas simples
-cadena1 = 'Texto entre comillas simples'
-print cadena1
-print type(cadena1)
+cadena1 = 'Texto entre comillas simples,'
+print cadena1, type(cadena1)
 
 # Comillas dobles
-cadena2 = "Texto entre comillas dobles"
-print cadena2
-print type(cadena2)
+cadena2 = "Texto entre comillas dobles,"
+print cadena2, type(cadena2)
 
 # Cadena con código escapes
-cadena3 = 'Texto entre \n\tcomillas simples'
-print cadena3
-print type(cadena3)
+cadena3 = 'Texto entre \n\tcomillas simples,'
+print cadena3, type(cadena3)
 
 # Cadena varias lineas
 cadena4 = """Texto linea 1
@@ -30,28 +27,24 @@ linea 4
 .
 .
 .
-linea N
-"""
-print cadena4
-print type(cadena4)
+linea N"""
+print cadena4 + ",", type(cadena4)
 
-# Repetición de cadena
+# Repetición de cadena con el operador de multiplicación
 cadena5 = "Cadena" * 3
-print cadena5
-print type(cadena5)
+print cadena5 + ",", type(cadena5)
 
 # Concatenación de cadena
-nombre = "Leonardo"
-apellido = "Caballero"
+nombre, apellido = "Leonardo", "Caballero"
 nombre_completo = nombre + " " + apellido
-print nombre_completo, type(nombre_completo)
+print nombre_completo + ",", type(nombre_completo)
 
-# tamaño de cadena
-print "Tamaño de cadena '", nombre_completo, "' es:", len(nombre_completo)
+# Función len() devuelve el tamaño de la cadena
+print "El tamaño de la cadena es:", len(nombre_completo)
 
-# acceder a rango de cadena
+# Acceder a rango de cadena
 print "Acceso a rango de cadena: '", nombre_completo[3:13]
 
-# formato de impresión de cadena
-print "Tamaño de cadena '{nombre_completo}' es: {tamano} ".format(
-	nombre_completo=nombre_completo, tamano=len(nombre_completo))
+# Formato de impresión de cadena usando la función format()
+print "El nombre es '{nombre}', con un tamaño de: {tamano} ".format(
+	nombre=nombre_completo, tamano=len(nombre_completo))
