@@ -48,6 +48,14 @@ El operador ``not`` devuelve el valor *opuesto* la valor booleano.
     >>> not True
     False
 
+Si la expresión es ``True`` el valor devuelto es ``False``, de lo contrario si la 
+expresión es ``False`` el valor devuelto es ``True``.
+
+::
+
+    >>> not False
+    True
+
 
 .. _python_opers_logi_ejs:
 

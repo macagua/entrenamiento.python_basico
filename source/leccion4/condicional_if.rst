@@ -91,11 +91,32 @@ contenga el valor del lado derecho:
 
     >>> b = [1, 2, 3]
     >>> 2 in b
-    True 
+    True
     >>> 5 in b
     False
 
-En el ejemplo anterior, si ``b`` es una lista, este prueba que ``2`` sea una elemento de ``b``.
+En el ejemplo anterior, si ``b`` es una lista, este prueba que ``2`` y ``5`` sean 
+elementos de la lista ``b``.
+
+
+.. _python_opers_notin:
+
+Operador not in
+................
+
+El operador ``not in``, el contrario de operador :ref:`in <python_opers_in>`, devuelve 
+``True`` cuando un elemento no está en una secuencia.
+
+::
+
+    >>> b = [1, 2, 3]
+    >>> 4 not in b
+    True
+    >>> 1 not in b
+    False
+
+En el ejemplo anterior, si ``b`` es una lista, este prueba que ``4`` y ``1`` sean 
+elementos de la lista ``b``.
 
 
 .. _python_expresiones_condicional:
