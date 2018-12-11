@@ -33,7 +33,7 @@ resumir en esta tabla:
 |                       +----------------+------------------------------------------------+
 |                       | ``xrange``     | :ref:`rango inmutable <python_fun_xrange>`     |
 +-----------------------+----------------+------------------------------------------------+
-| Mapeos                | ``dict``       | :ref:`diccionario <python_diccionarios>`       |
+| Mapeos                | ``dict``       | :ref:`diccionario <python_dict>`               |
 +-----------------------+----------------+------------------------------------------------+
 |                       | ``set``        | :ref:`conjunto mutable <python_conjuntos>`     |
 | Conjuntos             +----------------+------------------------------------------------+

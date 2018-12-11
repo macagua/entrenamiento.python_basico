@@ -68,14 +68,14 @@ Bucle 'for' con Diccionarios
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A continuación, se presenta un ejemplo del uso del bucle ``for`` con tipos de 
-estructuras de datos :ref:`Diccionarios <python_diccionarios>`:
+estructuras de datos :ref:`diccionarios <python_dict>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :linenos:
     :language: python
     :lines: 57-71
 
-El ejemplo anterior itera un :ref:`diccionario <python_diccionarios>` con datos 
+El ejemplo anterior itera un :ref:`diccionario <python_dict>` con datos 
 básicos de una persona.
 
 

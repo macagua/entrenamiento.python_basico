@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_diccionarios:
+.. _python_dict:
 
 Tipo diccionarios
 -----------------
@@ -79,7 +79,7 @@ la cual :ref:`esta integrada <python_fun_builtins>` en el interprete Python.
     :ref:`operaciones de secuencias <python_fun_builtins_secuencias>`.
 
 
-.. _python_diccionarios_ejs:
+.. _python_dict_ejs:
 
 Ejemplos
 ........

@@ -115,7 +115,7 @@ siguientes expresiones están presente:
 - Cualquier numero igual a cero (0, 0.0, 0+0j).
 
 - Un contenedor vació (:ref:`lista <python_list>`, :ref:`tupla <python_tuple>`, 
-  :ref:`conjunto <python_conjuntos>`, :ref:`diccionario <python_diccionarios>`). 
+  :ref:`conjunto <python_conjuntos>`, :ref:`diccionario <python_dict>`). 
 
 - ``False``, ``None``.
 

@@ -287,7 +287,7 @@ la instancia que la llama, de esta forma se afirma que los métodos son
 .. note:: 
     Usted puede encontrar ejemplos en las funciones de 
     :ref:`cadena de caracteres <python_str>`, :ref:`listas <python_list>`, 
-    :ref:`diccionarios <python_diccionarios>`, etc.
+    :ref:`diccionarios <python_dict>`, etc.
 
 Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``, 
 ``comer``, ``dormir``, etc.
