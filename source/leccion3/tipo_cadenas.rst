@@ -112,8 +112,8 @@ ignorada), o después de finalizar una instrucción válida de código.
 
 ::
 
-    >>> # Programa que calcula la Sucesión de números Fibonacci
-    ... # Más información en https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci
+    >>> # Programa que calcula la sucesión 
+    ... # de números Fibonacci
     ... 
     >>> # se definen las variables
     ... a, b = 0, 1
@@ -226,7 +226,7 @@ de la declaración.
 ::
 
     >>> def hola(arg):
-    ...     """Este es el docstring de la función"""
+    ...     """El docstring de la función"""
     ...     print "Hola", arg, "!"
     ... 
     >>> hola("Plone")
@@ -243,11 +243,11 @@ objeto de función ``hola``:
     Help on function hola in module __main__:
 
     hola(arg)
-        Este es el docstring de la función
+        El docstring de la función
 
     >>>
     >>> print hola.__doc__
-    Este es el docstring de la función
+    El docstring de la función
 
 
 Clases y métodos
@@ -260,12 +260,12 @@ definición, y de los métodos, como si fueran funciones:
 
     >>> class Clase:
     ...     
-    ...     """Este es el docstring de la clase"""
+    ...     """El docstring de la clase"""
     ...     def __init__(self):
-    ...         """Este es el docstring del método constructor de clase"""
+    ...         """El docstring del método constructor de clase"""
     ...     
     ...     def metodo(self):
-    ...         """Este es el docstring del método de clase"""
+    ...         """El docstring del método de clase"""
     ... 
     >>> o = Clase()
     >>> help(o)
@@ -273,22 +273,22 @@ definición, y de los métodos, como si fueran funciones:
     Help on instance of Clase in module __main__:
 
     class Clase
-     |  Este es el docstring de la clase
+     |  El docstring de la clase
      |  
      |  Methods defined here:
      |  
      |  __init__(self)
-     |      Este es el docstring del inicializador de clase
+     |      El docstring del inicializador de clase
      |  
      |  metodo(self)
-     |      Este es el docstring del metodo de clase
+     |      El docstring del metodo de clase
 
     >>> o.__doc__
-    'Este es el docstring de la clase'
+    'El docstring de la clase'
     >>> o.__init__.__doc__
-    'Este es el docstring del inicializador de clase'
+    'El docstring del inicializador de clase'
     >>> o.metodo.__doc__
-    'Este es el docstring del metodo de clase'
+    'El docstring del metodo de clase'
 
 
 Scripts y módulos
@@ -301,15 +301,15 @@ En el archivo ``mi_modulo.py`` debe contener el siguiente código:
 
 ::
 
-    """Este es el docstring del módulo"""
+    """El docstring del módulo"""
 
     def despedir():
-        """Este es el docstring de la función despedir"""
-        print "Adiós! Me despido desde la función despedir() del módulo prueba"
+        """El docstring de la función despedir"""
+        print "Adiós! desde función despedir() del módulo prueba"
 
     def saludar():
-        """Este es el docstring de la función saludar"""
-        print "Hola! Te saludo desde la función saludar() del módulo prueba"
+        """El docstring de la función saludar"""
+        print "Hola! desde función saludar() del módulo prueba"
 
 
 Entonces, usted debe importar el módulo anterior, para consultar la documentación 
@@ -325,12 +325,12 @@ del módulo ``mi_modulo`` debe utilizar la función integrada
     Help on module mi_modulo:
 
     NAME
-        mi_modulo - Este es el docstring del módulo
+        mi_modulo - El docstring del módulo
     FUNCTIONS
         despedir()
-            Este es el docstring de la función despedir
+            El docstring de la función despedir
         saludar()
-            Este es el docstring de la función saludar
+            El docstring de la función saludar
 
 También puede consultar la documentación de la función ``despedir()`` dentro del 
 módulo ``mi_modulo``, usando la función integrada :ref:`help() <python_fun_help>` 
@@ -344,7 +344,7 @@ y pasarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir,
     Help on function despedir in module mi_modulo:
 
     despedir()
-        Este es el docstring de la función despedir
+        El docstring de la función despedir
 
 Opcionalmente , usted puede listar las variables y funciones del módulo con la función 
 ``dir()``, de la siguiente manera:
@@ -371,7 +371,7 @@ valores:
     >>> print mi_modulo.__name__     # Nombre del módulo
     'mi_modulo'
     >>> print mi_modulo.__doc__      # Docstring del módulo
-    'Este es el docstring del módulo'
+    'El docstring del módulo'
     >>> print mi_modulo.__package__  # Nombre del paquete del módulo
 
 
