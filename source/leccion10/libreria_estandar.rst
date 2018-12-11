@@ -8,7 +8,7 @@ La librería estándar Python
 
 La librería estándar Python 2 incluye los siguientes módulos y librerías:
 
-- :ref:`Funciones integradas <python_funciones_integradas>` y funciones integradas no esenciales
+- :ref:`Funciones integradas <python_fun_builtins>` y funciones integradas no esenciales
 
 - Constantes integradas, con el módulo ``site``.
 

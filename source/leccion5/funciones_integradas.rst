@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_funciones_integradas:
+.. _python_fun_builtins:
 
 Funciones integradas
 --------------------
@@ -12,7 +12,7 @@ módulo ``__builtins__``, las cuales están siempre disponibles. Estas funciones
 listadas en orden alfabéticos a continuación:
 
 
-.. _python_funciones_generales:
+.. _python_fun_generales:
 
 Funciones generales
 ...................
@@ -660,7 +660,7 @@ Si se llama con un argumento equivale a la sentencia ``object.__dict__``.
 ----
 
 
-.. _python_funciones_integradas_es:
+.. _python_fun_builtins_es:
 
 Funciones de entrada y salida
 .............................
@@ -771,7 +771,7 @@ de leer.
 
 
 
-.. _python_funciones_integradas_numericas:
+.. _python_fun_builtins_numericas:
 
 Funciones numéricas
 ...................
@@ -1121,7 +1121,7 @@ antecedida del prefijo *'0'*.
 ----
 
 
-.. _python_funciones_integradas_booleanos:
+.. _python_fun_builtins_booleanos:
 
 Funciones de booleanos
 ......................
@@ -1178,7 +1178,7 @@ a tipo *booleano*:
 ----
 
 
-.. _python_funciones_integradas_cadenas:
+.. _python_fun_builtins_cadenas:
 
 Funciones de cadenas de caracteres
 ..................................
@@ -1719,7 +1719,7 @@ en cada palabra.
 ----
 
 
-.. _python_funciones_secuencias:
+.. _python_fun_builtins_secuencias:
 
 Funciones de secuencias
 .......................
@@ -1831,7 +1831,7 @@ cadena de caracteres.
 ----
 
 
-.. _python_funciones_objetos:
+.. _python_fun_objetos:
 
 Funciones de objetos
 ....................

@@ -261,6 +261,8 @@ Objetos de función
     TODO escribir la sección Objetos de función.
 
 
+.. _python_fun_anonimas:
+
 Funciones anónimas
 ..................
 
@@ -349,7 +351,7 @@ tal como haría con una función normal:
 
 Con la flexibilidad de Python usted puede implementar infinitas funciones simples. 
 Usted puede encontrar más ejemplos de funciones anónimas usando ``lambda`` en la 
-sección :ref:`ejemplos de funciones <python_funciones_ejemplos>`.
+sección :ref:`ejemplos de funciones avanzadas <python_fun_avanzadas_ejs>`.
 
 Usted puede explotar al máximo la función lambda utilizándola en conjunto con otras 
 funciones como :ref:`filter() <python_funcion_filter>` y :ref:`map() <python_funcion_map>`.
@@ -650,7 +652,7 @@ módulo Python.
 ----
 
 
-.. _python_funciones_ejemplos:
+.. _python_fun_avanzadas_ejs:
 
 Ejemplos de funciones
 .....................

@@ -107,7 +107,8 @@ Convertir a booleanos
 .....................
 
 Para convertir a *tipos booleanos* debe usar la función :ref:`bool() <python_fun_bool>` 
-la cual :ref:`esta integrada <python_funciones_integradas>` en el interprete Python.
+la cual :ref:`esta integrada <python_fun_builtins>` en el interprete Python.
+
 
 .. _python_booleanos_ejs:
 

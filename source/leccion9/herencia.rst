@@ -146,7 +146,7 @@ clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor`
 Función issubclass()
 ~~~~~~~~~~~~~~~~~~~~
 
-``issubclass()``, es una :ref:`función integrada <python_funciones_integradas>` 
+``issubclass()``, es una :ref:`función integrada <python_fun_builtins>` 
 la cual le permite corroborar si un objeto es instancia de una clase
 
 .. note::

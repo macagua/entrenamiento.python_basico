@@ -223,7 +223,7 @@ Convertir a numéricos
 .....................
 
 Para convertir a :ref:`tipos numéricos <python_numericos>` debe usar las siguientes 
-:ref:`funciones integradas <python_funciones_integradas>` en el interprete Python:
+:ref:`funciones integradas <python_fun_builtins>` en el interprete Python:
 
 - La función :ref:`int() <python_fun_int>` devuelve un tipo de datos 
   :ref:`número entero <python_num_entero>`.
@@ -284,7 +284,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
 .. tip:: 
     Para más información consulte las funciones integradas para 
-    :ref:`operaciones numéricas <python_funciones_integradas_numericas>`.
+    :ref:`operaciones numéricas <python_fun_builtins_numericas>`.
 
 
 ----
