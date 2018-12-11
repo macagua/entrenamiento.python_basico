@@ -145,10 +145,10 @@ Constantes integradas
 Un pequeño número de constantes vive en el espacio de nombres incorporado. Son:
 
 ``False``
-    El valor falso del tipo :ref:`booleano <python_booleanos>`.
+    El valor falso del tipo :ref:`booleano <python_bool>`.
 
 ``True``
-    El valor verdadero del tipo :ref:`booleano <python_booleanos>`.
+    El valor verdadero del tipo :ref:`booleano <python_bool>`.
 
 ``None``
     El valor único de objeto :ref:`types.NoneType <python_objeto_none>`. ``None`` 

@@ -1126,7 +1126,7 @@ antecedida del prefijo *'0'*.
 Funciones de booleanos
 ......................
 
-Las funciones de tipos :ref:`booleanos <python_booleanos>` se describen a continuación:
+Las funciones de tipos :ref:`booleanos <python_bool>` se describen a continuación:
 
 
 .. _python_fun_bool:
@@ -1135,7 +1135,7 @@ bool()
 ~~~~~~
 
 La función ``bool()``, es un constructor, el cual crea un tipo de datos 
-:ref:`booleanos <python_booleanos>`, devuelve un tipo booleano ``True`` cuando el 
+:ref:`booleanos <python_bool>`, devuelve un tipo booleano ``True`` cuando el 
 argumento dado es ``True``, de lo contrario ``False``.
 
 ::

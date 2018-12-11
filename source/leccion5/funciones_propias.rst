@@ -158,7 +158,7 @@ Funciones de predicado
 
 Las funciones de predicado no es más que una función la cual dice si algo es ``True`` 
 o ``False``, es decir, es una función que devuelve un tipo de datos 
-:ref:`booleano <python_booleanos>`.
+:ref:`booleano <python_bool>`.
 
 .. todo::
     TODO terminar de escribir la sección Funciones de predicado.

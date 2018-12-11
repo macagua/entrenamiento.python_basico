@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_booleanos:
+.. _python_bool:
 
 Tipo booleanos
 --------------
@@ -110,7 +110,7 @@ Para convertir a *tipos booleanos* debe usar la función :ref:`bool() <python_fu
 la cual :ref:`esta integrada <python_fun_builtins>` en el interprete Python.
 
 
-.. _python_booleanos_ejs:
+.. _python_bool_ejs:
 
 Ejemplos
 ........
