@@ -410,7 +410,7 @@ integrada ``split()``.
 *Ejemplo de iterar sobre dos o más secuencias*
 
 Para iterar sobre dos o más secuencias al mismo tiempo, los valores pueden emparejarse 
-con la función integrada ``zip()``.
+con la función integrada :ref:`zip() <python_fun_zip>`.
 
 ::
 

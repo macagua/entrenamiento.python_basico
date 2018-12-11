@@ -1827,6 +1827,22 @@ cadena de caracteres.
     >>> sorted(cadena)
     ['a', 'd', 'k', 'l', 's']
 
+.. _python_fun_zip:
+
+zip()
+~~~~~
+
+La función ``zip()`` devuelve una lista de :ref:`tuplas <python_tuple>`, donde cada 
+tupla contiene el elemento i-th desde each of the argument sequences. 
+La lista devuelta es truncada in length to the length of the shortest argument sequence.
+
+.. todo:: TODO terminar de traducir las oraciones en el párrafo anterior
+
+::
+
+    >>> zip(['python', 'zope', 'plone'], [2.7, 2.13, 5.1])
+    [('python', 2.7), ('zope', 2.13), ('plone', 5.1)]
+
 
 ----
 
