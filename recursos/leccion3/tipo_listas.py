@@ -6,8 +6,8 @@
 """
 
 # Colección ordenada / arreglos o vectores
-lista = [2, "tres", True, ["uno", 10]]
-print lista
+lista = [2, "CMS", True, ["Plone", 10]]
+print lista, type(lista)
 
 # Acceder a un elemento especifico
 l2 = lista[1]
@@ -20,7 +20,7 @@ print l3
 # Establecer nuevo valor de un elemento de lista
 lista[1] = 4
 print lista
-lista[1] = "tres"
+lista[1] = "CMS"
 
 # Obtener un rango de elemento especifico
 l3 = lista[0:3]
