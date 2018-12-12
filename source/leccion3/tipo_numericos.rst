@@ -6,7 +6,15 @@
 Tipo números
 ------------
 
-En Python se pueden representar números enteros, coma flotante y complejos.
+Estos tipos de datos se crean mediante literales numéricos y se devuelven como 
+resultados por operadores aritméticos y funciones aritméticas integradas. Los 
+objetos numéricos son inmutables; Una vez creado su valor nunca cambia.
+
+Por supuesto, los números de Python están fuertemente relacionados con los números 
+matemáticos, pero están sujetos a las limitaciones de la representación numérica en 
+las computadoras.
+
+Python distingue entre enteros, números de punto flotante y números complejos:
 
 +-------------+----------+-------------------------------------+-------------------------+
 | **Clase**   | **Tipo** | **Notas**                           | **Ejemplo**             |

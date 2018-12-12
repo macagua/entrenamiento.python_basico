@@ -131,7 +131,7 @@ get()
 ~~~~~
 
 Esta método devuelve el valor en base a una coincidencia de búsqueda en un diccionario 
-mediante una clave, de lo contrario devuelve el objeto None. 
+mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_none>`. 
 
 ::
 

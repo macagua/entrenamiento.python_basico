@@ -113,11 +113,11 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
     el tercero queda en el atributo ``filename``. Sin embargo, por compatibilidad con 
     sistemas anteriores, el atributo ``args`` contiene sólo una tupla de dos elementos 
     de los dos primeros argumentos del constructor.
-    El atributo ``filename`` es ``None`` cuando se cree la excepción con una cantidad 
-    de argumentos diferente de 3. Los atributos ``errno`` y ``strerror`` son también 
-    ``None`` cuando la instancia no se cree con 2 ó 3 argumentos. En este último caso, 
-    ``args`` contiene los argumentos del constructor tal cual, en forma de tupla.
-    Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
+    El atributo ``filename`` es :ref:`None <python_obj_none>`` cuando se cree la excepción 
+    con una cantidad de argumentos diferente de 3. Los atributos ``errno`` y ``strerror`` 
+    son también ``None`` cuando la instancia no se cree con 2 ó 3 argumentos. En este 
+    último caso, ``args`` contiene los argumentos del constructor tal cual, en forma de 
+    tupla. Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 Las siguientes excepciones son las realmente lanzadas.

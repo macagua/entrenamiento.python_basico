@@ -24,7 +24,7 @@ como ``False``:
 
 - ``False``.
 
-- :ref:`None <python_objeto_none>`.
+- :ref:`None <python_obj_none>`.
 
 - :ref:`Número cero <python_numericos>` en todos los tipos.
 

@@ -6,11 +6,9 @@
 Tipo listas
 -----------
 
-En Python tiene varios tipos de datos *compuestos*, como los tipos *numéricos*, 
-*secuencias*, *mapeos* y *conjuntos* usados para agrupar otros valores. 
-
-Dentro de las secuencias, están los tipos de :ref:`cadenas de caracteres <python_str>`. 
-Otro tipo muy importante de secuencia son las *listas*.
+En Python tiene varios tipos de datos *compuestos* y dentro de las secuencias, están 
+los tipos de :ref:`cadenas de caracteres <python_str>`. Otro tipo muy importante de 
+secuencia son las *listas*.
 
 Entre las *secuencias*, el más versátil, es la *lista*, para definir una, usted debe 
 escribir es entre corchetes, separando sus elementos con comas cada uno. 

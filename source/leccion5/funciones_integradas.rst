@@ -12,7 +12,7 @@ módulo ``__builtins__``, las cuales están siempre disponibles. Estas funciones
 listadas en orden alfabéticos a continuación:
 
 
-.. _python_fun_generales:
+.. _python_fun_builtins_generales:
 
 Funciones generales
 ...................
@@ -337,8 +337,8 @@ global dependiendo en la locación desde donde ella es llamada.
 Si la función ``globals()`` es llamada desde una función, eso devolverá todos los nombres 
 que pueden ser accesibles globalmente desde esa función.
 
-El tipo de dato devuelto por función es un tipo diccionario. Therefore, los nombres pueden 
-ser extraídos usando la función integrada ``keys()``.
+El tipo de dato devuelto por función es un tipo diccionario. Por lo tanto, los nombres 
+pueden ser extraídos usando la función integrada ``keys()``.
 
 
 .. _python_fun_help:
@@ -375,9 +375,8 @@ id()
 ~~~~
 
 La función ``id()`` devuelve la identidad de un objecto. Esto garantiza ser el único 
-among simultaneously existing objects.  (Hint: it's the object's memory address.)
-
-.. todo:: TODO traducir las oraciones del párrafo anterior.
+entre objetos simultáneamente existentes. (Sugerencia: es la dirección de memoria del 
+objeto).
 
 ::
 
@@ -461,7 +460,7 @@ local dependiendo en la locación desde donde ella es llamada.
 Si la función ``locals()`` es llamada desde una función, eso devolverá todos los nombres 
 que pueden ser accesibles localmente desde esa función.
 
-El tipo de dato devuelto por la función es un tipo diccionario. Therefore, los nombres 
+El tipo de dato devuelto por la función es un tipo diccionario. Por lo tanto, los nombres 
 pueden ser extraídos usando la función integrada ``keys()``.
 
 
@@ -471,7 +470,7 @@ open()
 ~~~~~~
 
 La función ``open()`` :ref:`abre un archivo <python_abrir_archivo>` usando 
-el tipo ``file()``, devuelve un objeto del tipo :ref:`archivo <python_objeto_file>` 
+el tipo ``file()``, devuelve un objeto del tipo :ref:`file <python_cls_file>` 
 (ej. *archivo*), y se llama habitualmente con de dos a tres argumentos: 
 
 ::
@@ -480,7 +479,7 @@ el tipo ``file()``, devuelve un objeto del tipo :ref:`archivo <python_objeto_fil
 
 Los argumentos son:
 
-- ``nombre``, es una cadena de caracteres que indica el *nombre de archivo* 
+- ``nombre``, es una :ref:`cadena de caracteres <python_str>` que indica el *nombre de archivo* 
   (incluso ruta relativa o absoluta).
 
 - ``mode``, es una cadena de unos pocos caracteres describiendo la forma en 
@@ -589,7 +588,7 @@ reload()
 Cuando el modulo es importado dentro de un script, el código en la porción del nivel 
 superior de un modulo es ejecutado solamente una vez.
 
-Therefore, si usted quiere volver a ejecutar la porción del nivel superior el código 
+Por lo tanto, si usted quiere volver a ejecutar la porción del nivel superior el código 
 de un modulo, usted puede usar la función ``reload()``. Esta función importa otra vez 
 un modulo previamente importado. La sintaxis de la función ``reload()`` es la siguiente:
 
@@ -598,8 +597,8 @@ un modulo previamente importado. La sintaxis de la función ``reload()`` es la s
     >>> reload(module_name)
 
 Aquí, ``module_name`` es el nombre del modulo que usted quiere volver a cargar y no la 
-cadena de caracteres contendiente el nombre del modulo. Por ejemplo, para recargar el 
-modulo ``clases.py``, debe hacer lo siguiente:
+:ref:`cadena de caracteres <python_str>` contendiente el nombre del modulo. Por ejemplo, 
+para recargar el modulo ``clases.py``, debe hacer lo siguiente:
 
 ::
 
@@ -638,10 +637,8 @@ independientemente del rango el cual represente.
     >>>
 
 Como la función ``xrange()``, devuelve un objeto el cual genera los números en el 
-rango a demanda. Para bucles, esto es slightly faster que la función ``range()`` 
+rango a demanda. Para bucles, esto es un poco mas rápido que la función ``range()`` 
 y más eficiente en la memoria.
-
-.. todo:: TODO traducir las frases del párrafo anterior.
 
 ::
 
@@ -763,7 +760,7 @@ input()
 
 Equivalente a la función ``eval(raw_input(prompt))``
 
-Lee una cadena de caracteres desde la entrada estándar.
+Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar.
 
 ::
 
@@ -781,8 +778,8 @@ Lee una cadena de caracteres desde la entrada estándar.
     <type 'long'>
 
 
-En el caso que quiera ingresar una cadena de caracteres desde la entrada 
-estándar usando la función ``input()``, debe colocar la cadena de caracteres 
+En el caso que quiera ingresar una :ref:`cadena de caracteres <python_str>` desde la 
+entrada estándar usando la función ``input()``, debe colocar la cadena de caracteres 
 entre comillas simples o dobles, como el siguiente ejemplo:
 
 ::
@@ -816,11 +813,11 @@ entre comillas simples o dobles, como el siguiente ejemplo:
 raw_input()
 ~~~~~~~~~~~
 
-Lee una cadena de caracteres desde la entrada estándar. La nueva línea final 
-es despojada. Si el usuario indica un EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), 
-lanza una excepción :ref:`EOFError <python_exception_eoferror>`. En sistemas 
-Unix, la librería GNU readline es usada si es habilitada.  El prompt de la 
-cadena de caracteres, si es dado, es impreso sin una nueva línea final antes 
+Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva 
+línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*: 
+``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`. 
+En sistemas Unix, la librería **GNU readline** es usada si es habilitada.  El ``prompt`` 
+de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes 
 de leer.
 
 ::
@@ -1112,8 +1109,8 @@ Si recibe más de un argumento, devuelve el mayor de ellos.
 
 
 Si recibe un solo argumento, devuelve el mayor de sus elementos. Debe ser un objeto 
-iterable; puede ser una cadena de caracteres, o alguno de los otros tipos de secuencia 
-o colección.
+iterable; puede ser una :ref:`cadena de caracteres <python_str>`, o alguno de los 
+otros tipos de secuencia o colección.
 
 ::
 
@@ -1289,7 +1286,8 @@ a tipo *booleano*:
 Funciones de cadenas de caracteres
 ..................................
 
-Las funciones de tipos cadenas de caracteres se describen a continuación:
+Las funciones de tipos :ref:`cadena de caracteres <python_str>` se describen a 
+continuación:
 
 
 .. _python_fun_capitalize:
@@ -1297,8 +1295,8 @@ Las funciones de tipos cadenas de caracteres se describen a continuación:
 capitalize()
 ~~~~~~~~~~~~
 
-La función ``capitalize()`` devuelve una cadenas de caracteres con MAYÚSCULA 
-la primera palabra. 
+La función ``capitalize()`` devuelve una :ref:`cadenas de caracteres <python_str>` 
+con MAYÚSCULA la primera palabra. 
 
 ::
 
@@ -1349,8 +1347,8 @@ en la función.
 expandtabs()
 ~~~~~~~~~~~~
 
-La función ``expandtabs()`` devuelve una copia de la cadenas de caracteres donde 
-todos los caracteres ``tab`` (tabulación) son remplazados por uno o más espacios, 
+La función ``expandtabs()`` devuelve una copia de la :ref:`cadena de caracteres <python_str>` 
+donde todos los caracteres ``tab`` (tabulación) son remplazados por uno o más espacios, 
 depende en la actual columna y el tamaño del tab dado.
 
 ::
@@ -1478,12 +1476,18 @@ describe cada opción a continuación:
 
 - ``^`` Es la opción de alineación centrar, el cual alinea la cadena de 
   caracteres de salida al centro del espacio restante. 
-- ``-`` Es la opción de signo el cual obliga solo a los números negativos a mostrar el signo.
+
+- ``-`` Es la opción de signo el cual obliga solo a los números negativos a mostrar 
+  el signo.
+
 - ``0`` Ese es el carácter, el cual es colocado en lugar de los espacios vacíos.
+
 - ``9`` Es la opción de ancho, el cual establece el ancho mínimo del número en 9 
   (incluido el punto decimal, la coma y el signo de miles).
+
 - ``.3`` Ese es el operador de precisión que define la precisión del número 
   flotante dado a 3 lugares.
+
 - ``f`` Es la opción tipo que especifica que el número es un 
   :ref:`número float <python_num_float>`.
 
@@ -1601,8 +1605,8 @@ si coincide que la cadena contenga caracteres en MINÚSCULAS.
 istitle()
 ~~~~~~~~~
 
-La función ``istitle()`` devuelve un valor booleano ``True`` o ``False`` 
-si coincide que la cadenas de caracteres sean capitales en cada palabra. 
+La función ``istitle()`` devuelve un valor booleano ``True`` o ``False`` si coincide 
+que la :ref:`cadena de caracteres <python_str>` sean capitales en cada palabra. 
 
 ::
 
@@ -1617,8 +1621,8 @@ si coincide que la cadenas de caracteres sean capitales en cada palabra.
 isspace()
 ~~~~~~~~~
 
-La función ``isspace()`` devuelve un valor booleano ``True`` o ``False`` 
-si no es vacía, y todos sus caracteres son espacios en blanco.
+La función ``isspace()`` devuelve un valor booleano ``True`` o ``False`` si no es 
+vacía, y todos sus caracteres son espacios en blanco.
 
 ::
 
@@ -1637,8 +1641,8 @@ si no es vacía, y todos sus caracteres son espacios en blanco.
 isupper()
 ~~~~~~~~~
 
-La función ``isupper()`` devuelve un valor booleano ``True`` o ``False`` 
-si coincide que la cadenas de caracteres estén en MAYÚSCULAS en cada palabra. 
+La función ``isupper()`` devuelve un valor booleano ``True`` o ``False`` si coincide 
+que la :ref:`cadena de caracteres <python_str>` estén en MAYÚSCULAS en cada palabra. 
 
 ::
 
@@ -1653,11 +1657,11 @@ si coincide que la cadenas de caracteres estén en MAYÚSCULAS en cada palabra.
 lstrip()
 ~~~~~~~~
 
-La función ``lstrip()`` devuelve una copia de la cadena de caracteres con todos 
-los espacios al inicio removido. Si la cadena de caracteres es dada y no es 
-:ref:`None <python_objeto_none>`, eliminar caracteres en caracteres en su lugar. 
-Si la cadena de caracteres es ``unicode``, la cadena de caracteres serán convertidas 
-a ``unicode`` antes de pelar antes de aplicar la técnica *stripping*.
+La función ``lstrip()`` devuelve una copia de la :ref:`cadena de caracteres <python_str>` 
+con todos los espacios al inicio removido. Si la cadena de caracteres es dada y no es 
+:ref:`None <python_obj_none>`, eliminar caracteres en caracteres en su lugar. Si la 
+cadena de caracteres es ``unicode``, la cadena de caracteres serán convertidas a 
+``unicode`` antes de pelar antes de aplicar la técnica *stripping*.
 
 ::
 
@@ -1670,7 +1674,7 @@ a ``unicode`` antes de pelar antes de aplicar la técnica *stripping*.
 lower()
 ~~~~~~~
 
-La función ``lower()`` devuelve una cadenas de caracteres con MINÚSCULAS 
+La función ``lower()`` devuelve una :ref:`cadenas de caracteres <python_str>` con MINÚSCULAS 
 en cada palabra. 
 
 ::
@@ -1719,8 +1723,8 @@ en la función.
 split()
 ~~~~~~~
 
-La función ``split()`` devuelve una lista con la cadenas de caracteres separada 
-por cada indice de la lista. 
+La función ``split()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>` 
+separada por cada indice de la lista. 
 
 ::
 
@@ -1733,8 +1737,8 @@ por cada indice de la lista.
 splitlines()
 ~~~~~~~~~~~~
 
-La función ``splitlines()`` devuelve una lista con la cadenas de caracteres separada 
-por cada salto de linea en cada indice de la lista.
+La función ``splitlines()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>` 
+separada por cada salto de linea en cada indice de la lista.
 
 ::
 
@@ -1764,9 +1768,9 @@ en la función.
 str()
 ~~~~~
 
-La función ``str()`` devuelve una cadenas de caracteres. 
+La función ``str()`` devuelve una :ref:`cadenas de caracteres <python_str>`.
 
-Puede convertir un :ref:`número entero <python_num_entero>` a una cadena de caracteres, 
+Puede convertir un :ref:`número entero <python_num_entero>` a una *cadena de caracteres*, 
 de la siguiente forma:
 
 ::
@@ -1774,7 +1778,7 @@ de la siguiente forma:
     >>> str(2)
     '2'
 
-Puede convertir un :ref:`número float <python_num_float>` a una cadena de caracteres, 
+Puede convertir un :ref:`número float <python_num_float>` a una *cadena de caracteres*, 
 de la siguiente forma:
 
 ::
@@ -1784,7 +1788,7 @@ de la siguiente forma:
     >>> str(-2.5)
     '-2.5'
 
-Puede convertir un :ref:`número complex <python_num_complex>` a una cadena de caracteres, 
+Puede convertir un :ref:`número complex <python_num_complex>` a una *cadena de caracteres*, 
 de la siguiente forma:
 
 ::
@@ -1792,7 +1796,7 @@ de la siguiente forma:
     >>> str(2.3+0j)
     '(2.3+0j)'
 
-Puede convertir un tipo :ref:`booleano <python_bool>` a una cadena de caracteres, 
+Puede convertir un tipo :ref:`booleano <python_bool>` a una *cadena de caracteres*, 
 de la siguiente forma:
 
 ::
@@ -1808,8 +1812,8 @@ de la siguiente forma:
 swapcase()
 ~~~~~~~~~~
 
-La función ``swapcase()`` devuelve una cadenas de caracteres convertida al opuesto 
-sea MAYÚSCULAS o MINÚSCULAS.
+La función ``swapcase()`` devuelve una :ref:`cadenas de caracteres <python_str>` 
+convertida al opuesto sea MAYÚSCULAS o MINÚSCULAS.
 
 ::
 
@@ -1824,8 +1828,8 @@ sea MAYÚSCULAS o MINÚSCULAS.
 title()
 ~~~~~~~
 
-La función ``title()`` devuelve una cadenas de caracteres con capitales 
-en cada palabra. 
+La función ``title()`` devuelve una :ref:`cadenas de caracteres <python_str>` con 
+capitales en cada palabra. 
 
 ::
 
@@ -1838,7 +1842,7 @@ en cada palabra.
 unichr()
 ~~~~~~~~
 
-La función ``unichr()`` devuelve una cadena de caracteres *Unicode* de un carácter 
+La función ``unichr()`` devuelve una *cadena de caracteres* *Unicode* de un carácter 
 con un ordinal i; 0 <= i <= 0x10ffff.
 
 ::
@@ -1860,8 +1864,8 @@ con un ordinal i; 0 <= i <= 0x10ffff.
 upper()
 ~~~~~~~
 
-La función ``upper()`` devuelve una cadenas de caracteres con MAYÚSCULAS 
-en cada palabra. 
+La función ``upper()`` devuelve una :ref:`cadenas de caracteres <python_str>` con 
+MAYÚSCULAS en cada palabra. 
 
 ::
 
@@ -1938,7 +1942,7 @@ esta función se usa crear un diccionario:
 
 ::
 
-    >>> dict(python=2.7, zope=2, plone=5.1)
+    >>> dict(python=2.7, zope=2.13, plone=5.1)
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
 
 También puede crear un diccionario indicando a las claves usando comillas simples:
@@ -2044,7 +2048,7 @@ que recibe como argumento (lista o cadena). La secuencia original no es modifica
     [7, 13, 23, 37]
 
 La función ``sorted()`` siempre devuelve una lista, aunque reciba como argumento una 
-cadena de caracteres.
+:ref:`cadena de caracteres <python_str>`.
 
 ::
 
@@ -2092,8 +2096,8 @@ La función ``isinstance()`` le permite corroborar si un objeto es una
 
     isinstance(objeto, tipo)
 
-Esta función devuelve ``True`` si el objeto especificado es 
-del tipo especificado, de lo contrario ``False``.
+Esta función devuelve ``True`` si el objeto especificado es del tipo especificado, 
+de lo contrario ``False``.
 
 Los parámetros son:
 
@@ -2110,8 +2114,8 @@ Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le 
-objeto es uno de los tipos en la tupla.
+Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es 
+uno de los tipos en la tupla.
 
 ::
 
@@ -2121,9 +2125,9 @@ objeto es uno de los tipos en la tupla.
 
 Aquí puede decir que ``persona1`` es una instancia de la clase ``Persona``.
 
-Las clases dan la posibilidad de crear estructuras de datos más complejas. 
-En el ejemplo, una clase ``Persona`` que realizará un seguimiento del 
-``cedula``, ``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
+Las clases dan la posibilidad de crear estructuras de datos más complejas. En el 
+ejemplo, una clase ``Persona`` que realizará un seguimiento del ``cedula``, 
+``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
 
 
 .. _python_fun_issubclass:

@@ -24,3 +24,4 @@ continuación el temario de esta lección:
    abstraccion
    polimorfismo
    objeto_integrados
+   clases_integradas

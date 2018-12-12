@@ -27,9 +27,9 @@ La forma preferida para abrir un archivo es usando la función integrada
 Leer archivo
 ............
 
-La forma preferida para leer un archivo es usando algunas de las funciones del 
-objeto ``file`` como :ref:`read() <python_funcion_read>`, 
-:ref:`readline() <python_funcion_readline>` y :ref:`readlines() <python_funcion_readlines>`. 
+La forma preferida para leer un archivo es usando algunas de los métodos del 
+objeto :ref:`file <python_cls_file>` como :ref:`read() <python_mtd_read>`, 
+:ref:`readline() <python_mtd_readline>` y :ref:`readlines() <python_mtd_readlines>`. 
 
 
 .. _python_escribir_archivo:
@@ -37,8 +37,8 @@ objeto ``file`` como :ref:`read() <python_funcion_read>`,
 Escribir archivo
 ................
 
-La forma preferida para escribir un archivo es usando la función del objeto 
-``file`` llamada :ref:`write() <python_funcion_write>`.
+La forma preferida para escribir un archivo es usando el método del objeto 
+:ref:`file <python_cls_file>` llamado :ref:`write() <python_mtd_write>`.
 
 
 .. _python_cerrar_archivo:
@@ -46,8 +46,8 @@ La forma preferida para escribir un archivo es usando la función del objeto
 Cerrar archivo
 ..............
 
-La forma preferida para cerrar un archivo es usando la función del objeto 
-``file`` llamada :ref:`close() <python_funcion_close>`.
+La forma preferida para cerrar un archivo es usando el método del objeto 
+:ref:`file <python_cls_file>` llamado :ref:`close() <python_mtd_close>`.
 
 
 .. _python_ejemplos_archivo:
@@ -55,7 +55,7 @@ La forma preferida para cerrar un archivo es usando la función del objeto
 Ejemplos de archivos
 ....................
 
-A continuación, se presentan algunos ejemplos del uso del tipo ``file``:
+A continuación, se presentan algunos ejemplos del uso del tipo :ref:`file <python_cls_file>`:
 
 **Ejemplo de iterar sobre un archivo**
 

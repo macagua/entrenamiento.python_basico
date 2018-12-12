@@ -39,9 +39,8 @@ se crea una clase base llamada ``Persona``. A continuación un ejemplo de la cla
 
 En el ejemplo previo, es donde empieza a crear una clase (lo hace con la palabra 
 ``class``). La segunda palabra ``Persona`` es el nombre de la clase. La tercera 
-palabra que se encuentra dentro de los paréntesis este hace referencia al 
-:ref:`objeto object <python_objeto_object>`, usando para indicar la clase de la 
-cual precede.
+palabra que se encuentra dentro de los paréntesis este hace referencia al objeto 
+:ref:`object <python_cls_object>`, usando para indicar la clase de la cual precede.
 
 La clase ``Persona`` tiene los métodos ``__init__``, ``__str__``, ``hablar`` 
 y ``getGenero``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``. 

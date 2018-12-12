@@ -142,7 +142,17 @@ en letras MAYÚSCULAS y separadas las palabras con el carácter *underscore* ``_
 Constantes integradas
 ~~~~~~~~~~~~~~~~~~~~~
 
-Un pequeño número de constantes vive en el espacio de nombres incorporado. Son:
+Un pequeño número de constantes vive en el espacio de nombres incorporado. Son las 
+siguientes:
+
+``None``
+    Más información consulte sobre :ref:`None <python_obj_none>`.
+
+``NotImplemented``
+    Más información consulte sobre :ref:`NotImplemented <python_obj_notimp>`.
+
+``Ellipsis``
+    Más información consulte sobre :ref:`Ellipsis <python_obj_ellipsis>`.
 
 ``False``
     El valor falso del tipo :ref:`booleano <python_bool>`.
@@ -150,27 +160,13 @@ Un pequeño número de constantes vive en el espacio de nombres incorporado. Son
 ``True``
     El valor verdadero del tipo :ref:`booleano <python_bool>`.
 
-``None``
-    El valor único de objeto :ref:`types.NoneType <python_objeto_none>`. ``None`` 
-    se utiliza con frecuencia para representar la ausencia de un valor, como cuando 
-    los argumentos predeterminados no se pasan a una función.
-
-``NotImplemented``
-    Valor especial que puede ser devuelto por los métodos especiales de "comparación 
-    rica" (``__eq__()``, ``__lt__()`` y amigos), para indicar que la comparación no 
-    se implementa con respecto al otro tipo.
-
-``Ellipsis``
-    Valor especial utilizado junto con la sintaxis de corte ampliada. Véase también 
-    el objeto :ref:`elipsis <python_objeto_ellipsis>`.
-
 ``__debug__``
-    Esta constante es ``True`` si Python no se inició con una opción ``-O``. Véase 
-    también la sentencia :ref:`assert <python_sent_assert>`.
+    Esta constante su valor es ``True`` si Python no se inició con una opción ``-O``. 
+    Véase también la sentencia :ref:`assert <python_sent_assert>`.
 
 .. note:: 
-    Los nombres ``None`` y ``__debug__`` no se pueden reasignar (asignaciones a ellos, 
-    incluso como un nombre de atributo, causa una excepción 
+    Los nombres :ref:`None <python_obj_none>` y ``__debug__`` no se pueden reasignar 
+    (asignaciones a ellos, incluso como un nombre de atributo, causa una excepción 
     :ref:`SyntaxError <python_exception_syntaxerror>`), por lo que pueden considerarse 
     constantes "verdaderas".
 
