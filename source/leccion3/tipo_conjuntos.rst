@@ -20,9 +20,6 @@ de éstos incluyen verificación de pertenencia y eliminación de entradas dupli
 +---------------+-----------+-------------------------+-------------------------------------+
 
 
-----
-
-
 .. _python_set_mtds:
 
 Métodos
@@ -342,8 +339,7 @@ Esta método actualiza un **conjunto mutable** con la unión de si mismo y otros
 .. todo:: TODO terminar de escribir sobre este método integrado.
 
 
-----
-
+.. _python_set_convertir:
 
 Convertir a conjuntos
 .....................
@@ -357,8 +353,14 @@ y :ref:`frozenset() <python_fun_frozenset>`, las cuales
     :ref:`operaciones de secuencias <python_fun_builtins_secuencias>`.
 
 
-Ejemplo de conjuntos set
-........................
+.. _python_set_ejs:
+
+Ejemplos
+........
+
+
+Conjuntos set
+~~~~~~~~~~~~~
 
 A continuación, se presentan un ejemplo de conjuntos ``set``:
 
@@ -366,10 +368,9 @@ A continuación, se presentan un ejemplo de conjuntos ``set``:
     :language: python
     :lines: 9-38
 
-----
 
-Ejemplo de conjuntos frozenset
-..............................
+Conjuntos frozenset
+~~~~~~~~~~~~~~~~~~~
 
 A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
 
