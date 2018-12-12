@@ -86,9 +86,9 @@ Esta método remueve todos los elementos desde el **diccionario**.
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2, plone=5.1)
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
     >>> print versiones_plone
-    {'zope': 2, 'python': 2.7, 'plone': 5.1}
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
     >>> versiones_plone.clear()
     >>> print versiones_plone
     {}
@@ -103,7 +103,7 @@ Esta método devuelve una copia (a shallow copy) del tipo **diccionario**:
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2, plone=5.1)
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
     >>> otro_versiones_plone = versiones_plone.copy()
     >>> versiones_plone == otro_versiones_plone
     True
@@ -130,14 +130,16 @@ v defaults to None.
 get()
 ~~~~~
 
-Esta método 
-D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
+Esta método devuelve el valor en base a una coincidencia de búsqueda en un diccionario 
+mediante una clave, de lo contrario devuelve el objeto None. 
 
 ::
 
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.get('plone')
+    5.1
+    >>> versiones_plone.get('php')
     >>>
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
 
 
 .. _python_dict_mtd_has_key:
@@ -145,14 +147,14 @@ D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
 has_key()
 ~~~~~~~~~
 
-Esta método 
+Esta método devuelve el valor ``True`` si el diccionario tiene presente la clave enviada como argumento. 
 D.has_key(k) -> True if D has a key k, else False
 
 ::
 
-    >>>
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.has_key('plone')
+    True
 
 
 .. _python_dict_mtd_items:
@@ -160,14 +162,13 @@ D.has_key(k) -> True if D has a key k, else False
 items()
 ~~~~~~~
 
-Esta método 
-D.items() -> list of D's (key, value) pairs, as 2-tuples
+Esta método devuelve una lista de pares de diccionarios (clave, valor), como 2 tuplas:
 
 ::
 
-    >>>
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.items()
+    [('zope', 2.13), ('python', 2.7), ('plone', 5.1)]
 
 
 .. _python_dict_mtd_iteritems:
@@ -175,14 +176,15 @@ D.items() -> list of D's (key, value) pairs, as 2-tuples
 iteritems()
 ~~~~~~~~~~~
 
-Esta método 
-D.iteritems() -> an iterator over the (key, value) items of D
+Esta método devuelve un iterador sobre los elementos (clave, valor) del diccionario:
 
 ::
 
-    >>>
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.iteritems()
+    <dictionary-itemiterator object at 0x7fab9dd4bc58>
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+.. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
 
 .. _python_dict_mtd_iterkeys:
@@ -190,29 +192,31 @@ D.iteritems() -> an iterator over the (key, value) items of D
 iterkeys()
 ~~~~~~~~~~
 
-Esta método 
-D.iterkeys() -> an iterator over the keys of D
+Esta método devuelve un iterador sobre las claves (keys) del diccionario:
 
 ::
 
-    >>>
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.iterkeys()
+    <dictionary-keyiterator object at 0x7fab9dd4bcb0>
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+.. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
 
 .. _python_dict_mtd_itervalues:
 
 itervalues()
-~~~~~~~~~~
+~~~~~~~~~~~~
 
-Esta método 
-D.itervalues() -> an iterator over the values of D
+Esta método devuelve un iterador sobre los valores (values) del diccionario:
 
 ::
 
-    >>>
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.itervalues()
+    <dictionary-valueiterator object at 0x7fab9dd4bc58>
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+.. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
 
 .. _python_dict_mtd_keys:
@@ -220,14 +224,13 @@ D.itervalues() -> an iterator over the values of D
 keys()
 ~~~~~~
 
-Esta método 
-D.keys() -> list of D's keys
+Esta método devuelve una lista de las claves (keys) del diccionario:
 
 ::
 
-    >>>
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.keys()
+    ['zope', 'python', 'plone']
 
 
 .. _python_dict_mtd_pop:
@@ -235,17 +238,22 @@ D.keys() -> list of D's keys
 pop()
 ~~~~~
 
-Esta método remueve y devuelve un elemento de **diccionario** arbitrariamente. 
-Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si el **conjunto 
-mutable** es vacío.
-
-D.pop(k[,d]) -> v, remove specified key and return the corresponding value. If key is not found, d is returned if given, otherwise KeyError is raised
+Esta método remueve específicamente una clave de **diccionario** y devuelve valor correspondiente.  
+Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si la **clave** no es encontrada.
 
 ::
 
-    >>> 
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    >>> versiones_plone.pop('zope')
+    2.13
+    >>> versiones_plone
+    {'python': 2.7, 'plone': 5.1}
+    >>> versiones_plone.pop('django')
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    KeyError: 'django'
 
 
 .. _python_dict_mtd_popitem:
@@ -253,14 +261,30 @@ D.pop(k[,d]) -> v, remove specified key and return the corresponding value. If k
 popitem()
 ~~~~~~~~~
 
-Esta método 
-D.popitem() -> (k, v), remove and return some (key, value) pair as a 2-tuple; but raise KeyError if D is empty.
+Esta método remueve y devuelve algún par (clave, valor) del **diccionario** como una 2-tuple.
+Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si el **diccionario** esta vació.
 
 ::
 
-    >>> 
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    >>> versiones_plone.popitem()
+    ('zope', 2.13)
+    >>> versiones_plone
+    {'python': 2.7, 'plone': 5.1}
+    >>> versiones_plone.popitem()
+    ('python', 2.7)
+    >>> versiones_plone
+    {'plone': 5.1}
+    >>> versiones_plone.popitem()
+    ('plone', 5.1)
+    >>> versiones_plone
+    {}
+    >>> versiones_plone.popitem()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    KeyError: 'popitem(): dictionary is empty'
 
 
 .. _python_dict_mtd_setdefault:
@@ -268,14 +292,22 @@ D.popitem() -> (k, v), remove and return some (key, value) pair as a 2-tuple; bu
 setdefault()
 ~~~~~~~~~~~~
 
-Esta método 
+Esta método devuelve el valor producido por el método integrado ``get()``, también 
 D.setdefault(k[,d]) -> D.get(k,d), also set D[k]=d if k not in D.
+
+.. todo:: TODO terminar de escribir la explicación del del método.
 
 ::
 
-    >>> 
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    >>> versiones_plone.setdefault('zope')
+    2.13
+    >>> versiones_plone
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+.. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
 
 .. _python_dict_mtd_update:
@@ -284,10 +316,11 @@ update()
 ~~~~~~~~
 
 Esta método actualiza un **diccionario** desde un diccionario/iterable E y F.
-D.update([E, ]**F) -> None.  Update D from dict/iterable E and F.
-If E present and has a .keys() method, does:     for k in E: D[k] = E[k]
-If E present and lacks .keys() method, does:     for (k, v) in E: D[k] = v
-In either case, this is followed by: for k in F: D[k] = F[k]
+Si E esta presenta y tiene un método ``.keys()``, hace:     for k in E: D[k] = E[k]
+Si E esta presenta y lacks método ``.keys()``, hace:     for (k, v) in E: D[k] = v
+En otro caso, esto es lo seguido por: for k in F: D[k] = F[k]
+
+D.update([E, ]**F) -> None.
 
 ::
 
@@ -301,14 +334,13 @@ In either case, this is followed by: for k in F: D[k] = F[k]
 values()
 ~~~~~~~~
 
-Esta método 
-D.values() -> list of D's values
+Esta método devuelve una lista de los valores (values) del diccionario:
 
 ::
 
-    >>> 
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.values()
+    [2.13, 2.7, 5.1]
 
 
 .. _python_dict_mtd_viewitems:
@@ -316,14 +348,16 @@ D.values() -> list of D's values
 viewitems()
 ~~~~~~~~~~~
 
-Esta método 
-D.viewitems() -> a set-like object providing a view on D's items
+Esta método devuelve un objeto como un conjunto mutable proveyendo una vista en los 
+elementos del diccionario:
 
 ::
 
-    >>> 
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.viewitems()
+    dict_items([('zope', 2.13), ('python', 2.7), ('plone', 5.1)])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+.. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
 
 .. _python_dict_mtd_viewkeys:
@@ -336,9 +370,11 @@ D.viewkeys() -> a set-like object providing a view on D's keys
 
 ::
 
-    >>> 
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.viewkeys()
+    dict_keys(['zope', 'python', 'plone'])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+.. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
 
 .. _python_dict_mtd_viewvalues:
@@ -351,9 +387,11 @@ D.viewvalues() -> an object providing a view on D's values
 
 ::
 
-    >>> 
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone.viewvalues()
+    dict_values([2.13, 2.7, 5.1])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+.. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
 
 Convertir a diccionarios
