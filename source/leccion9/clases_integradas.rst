@@ -49,10 +49,10 @@ Las clases de tipos *archivos* se describen a continuación:
 file()
 ~~~~~~
 
-El objeto ``file()`` se implementan con el paquete C ``stdio`` y se pueden crear 
-con la función interna :ref:`open() <python_fun_open>`. También son el resultado 
-de otras funciones y métodos internos, por ejemplo, ``os.popen()`` y ``os.fdopen()`` 
-y el método ``makefile()`` de los objetos ``socket``.
+El objeto ``file()`` se implementan con el paquete C ``stdio`` y se pueden crear con 
+la función interna :ref:`open() <python_fun_open>`. También son el resultado de otras 
+funciones y métodos internos, por ejemplo, ``os.popen()`` y ``os.fdopen()`` y el método 
+``makefile()`` de los objetos ``socket``.
 
 Cuando falla una operación de ficheros por una cuestión de E/S, se lanza la excepción 
 :ref:`IOError <python_exception_ioerror>`. Esto incluye situaciones donde la operación 
@@ -72,11 +72,11 @@ close()
 
 El método ``close()`` permite cerrar la manipulación del archivo. No es posible escribir 
 ni leer en un fichero cerrado. Cualquier operación que requiera que el fichero esté 
-abierto lanzará :ref:`IOError <python_exception_ioerror>` si el fichero se ha cerrado. Está 
-permitido llamar a ``close()`` más de una vez.
+abierto lanzará :ref:`IOError <python_exception_ioerror>` si el fichero se ha cerrado. 
+Está permitido llamar a ``close()`` más de una vez.
 
-Una vez que se terminó de usar el archivo es necesario cerrarlo, para liberar los recursos 
-tomados por el manejo del archivo. Eso se hace con la sentencia ``f.close()``:
+Una vez que se terminó de usar el archivo es necesario cerrarlo, para liberar los 
+recursos tomados por el manejo del archivo. Eso se hace con la sentencia ``f.close()``:
 
 ::
 
@@ -105,7 +105,8 @@ flush()
 """""""
 
 El método ``flush()`` permite descargar el tampón interno, como la función C ``fflush()`` 
-de la librería ``stdio``. Puede no tener efecto en ciertos objetos similares a los ficheros.
+de la librería ``stdio``. Puede no tener efecto en ciertos objetos similares a los 
+ficheros.
 
 
 .. _python_mtd_isatty:
@@ -126,14 +127,14 @@ El método ``isatty()`` devuelve ``True`` si el fichero está conectado a un dis
 fileno()
 """"""""
 
-El método ``fileno()`` devuelve el "descriptor de fichero" utilizado por la implementación 
-subyacente para solicitar operaciones E/S del sistema operativo. Puede ser útil para 
-interfaces de bajo nivel que utilicen descriptores de ficheros, por ejemplo, el módulo 
-``fcntl`` o ``os.read()`` y similares. 
+El método ``fileno()`` devuelve el "descriptor de fichero" utilizado por la 
+implementación subyacente para solicitar operaciones E/S del sistema operativo. 
+Puede ser útil para interfaces de bajo nivel que utilicen descriptores de ficheros, 
+por ejemplo, el módulo ``fcntl`` o ``os.read()`` y similares. 
 
 .. note:: 
-    Si un objeto similar a los ficheros no tiene un descriptor de fichero, no debe implementar 
-    este método.
+    Si un objeto similar a los ficheros no tiene un descriptor de fichero, no debe 
+    implementar este método.
 
 
 .. _python_mtd_next:
@@ -150,10 +151,9 @@ El método ``next()`` permite x.next() -> el próximo valor, o causa una
 read()
 """"""
 
-El método ``read()`` permite leer el contenido del archivo. El argumento 
-es opcional y si no se especifica (o es -1) devuelve el contenido de todo 
-el archivo. Una vez que se leyó todo el archivo, una nueva llamada a 
-la función devuelve una cadena vacía ('').
+El método ``read()`` permite leer el contenido del archivo. El argumento es opcional 
+y si no se especifica (o es -1) devuelve el contenido de todo el archivo. Una vez que 
+se leyó todo el archivo, una nueva llamada a la función devuelve una cadena vacía ('').
 
 ::
 
@@ -163,8 +163,8 @@ la función devuelve una cadena vacía ('').
     >>> f.read()
     ''
 
-Si desea recibir una salida formateada por consola leyendo un archivo, a 
-continuación un ejemplo:
+Si desea recibir una salida formateada por consola leyendo un archivo, a continuación 
+un ejemplo:
 
 ::
 
@@ -180,11 +180,10 @@ continuación un ejemplo:
 readline()
 """"""""""
 
-El método ``readline()`` permite leer una sola línea del archivo, 
-devuelve al final de la línea el carácter de nueva línea y solo 
-se omite en la última línea del archivo (si no termina con el carácter 
-de nueva línea). Esto hace que el valor de retorno no sea ambiguo. 
-Si devuelve una cadena de caracteres vacía se alcanzó el fin del archivo, 
+El método ``readline()`` permite leer una sola línea del archivo, devuelve al final de 
+la línea el carácter de nueva línea y solo se omite en la última línea del archivo (si 
+no termina con el carácter de nueva línea). Esto hace que el valor de retorno no sea 
+ambiguo. Si devuelve una cadena de caracteres vacía se alcanzó el fin del archivo, 
 mientras que una línea en blanco se representa con un carácter de nueva línea.
 
 ::
@@ -202,8 +201,7 @@ mientras que una línea en blanco se representa con un carácter de nueva línea
 readlines()
 """""""""""
 
-El método ``readlines()`` devuelve una lista que contiene todas las 
-líneas del archivo.
+El método ``readlines()`` devuelve una lista que contiene todas las líneas del archivo.
 
 ::
 
@@ -287,8 +285,8 @@ Atributos
 `````````
 
 Los objetos fichero también ofrecen otros atributos interesantes. No son necesarios 
-para los objetos de interfaz tipo fichero, pero deberían implementarse si tienen sentido 
-en un objeto particular.
+para los objetos de interfaz tipo fichero, pero deberían implementarse si tienen 
+sentido en un objeto particular.
 
 
 .. _python_atributo_closed:
@@ -297,9 +295,9 @@ closed
 """"""
 
 El atributo ``closed`` del objeto *fichero* de tipo :ref:`booleano <python_bool>` 
-indica el estado actual. Es un atributo de sólo lectura, que se cambia mediante el método 
-:ref:`close() <python_mtd_close>`. Puede no estar disponible en todos los objetos con 
-interfaz tipo fichero.
+indica el estado actual. Es un atributo de sólo lectura, que se cambia mediante el 
+método :ref:`close() <python_mtd_close>`. Puede no estar disponible en todos los 
+objetos con interfaz tipo fichero.
 
 
 .. _python_atributo_mode:
@@ -307,10 +305,10 @@ interfaz tipo fichero.
 mode
 """"
 
-El atributo ``mode`` del objeto *fichero*, es el modo de E/S del fichero. Si se creó el 
-fichero con la función integrada :ref:`open() <python_fun_open>`, será el valor del 
-parámetro ``mode``. Es un atributo de sólo lectura y puede no estar disponible en todos 
-los objetos con interfaz tipo fichero.
+El atributo ``mode`` del objeto *fichero*, es el modo de E/S del fichero. Si se creó 
+el fichero con la función integrada :ref:`open() <python_fun_open>`, será el valor 
+del parámetro ``mode``. Es un atributo de sólo lectura y puede no estar disponible 
+en todos los objetos con interfaz tipo fichero.
 
 
 .. _python_atributo_name:
@@ -351,11 +349,12 @@ indica si se debe escribir un espacio antes de escribir otro valor al usar la se
 :ref:`print <python_sent_print>`. Las clases que intenten simular un objeto fichero 
 deberían tener un atributo escribible ``softspace``, que debería inicializarse a cero. 
 
-Esto será automático en la mayoría de las clases implementadas en Python (se debe tener 
-cuidado en las clases que redefinan el acceso a los atributos). Los tipos implementados 
-en C tendrán que proporcionar un atributo ``softspace`` escribible. Nota: Este atributo 
-no se usa para controlar la sentencia ``print``, sino para permitir que la implementación 
-de ``print`` lleve la cuenta de su estado interno.
+Esto será automático en la mayoría de las clases implementadas en Python (se debe 
+tener cuidado en las clases que redefinan el acceso a los atributos). Los tipos 
+implementados en C tendrán que proporcionar un atributo ``softspace`` escribible. 
+
+Nota: Este atributo no se usa para controlar la sentencia ``print``, sino para permitir 
+que la implementación de ``print`` lleve la cuenta de su estado interno.
 
 
 .. _python_cls_object:
@@ -367,8 +366,9 @@ El objeto de la clase ``object`` es el tipo más básico de objeto, es integrado
 el módulo ``__builtin__``. Este objeto se usa como :ref:`herencia <python_poo_herencia>` 
 cuando se crea una nueva clase en Python.
 
-Todo, incluyendo las clases y tipos de Python son instancias de ``object``. Para corroborar 
-si un objeto es instancia de una clase se utiliza la función :ref:`isinstance() <python_fun_isinstance>`.
+Todo, incluyendo las clases y tipos de Python son instancias de ``object``. Para 
+corroborar si un objeto es instancia de una clase se utiliza la función 
+:ref:`isinstance() <python_fun_isinstance>`.
 
 ::
 
