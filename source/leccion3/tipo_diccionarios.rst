@@ -176,15 +176,34 @@ Esta método devuelve una lista de pares de diccionarios (clave, valor), como 2 
 iteritems()
 ~~~~~~~~~~~
 
-Esta método devuelve un iterador sobre los elementos (clave, valor) del diccionario:
+Esta método devuelve un iterador sobre los elementos (clave, valor) del diccionario.
+Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al 
+final de la posición del **diccionario**.
 
 ::
 
     >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> print versiones_plone
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
     >>> versiones_plone.iteritems()
     <dictionary-itemiterator object at 0x7fab9dd4bc58>
-
-.. todo:: TODO terminar de escribir un ejemplo de uso del método.
+    >>> for clave,valor in versiones_plone.iteritems():
+    ...     print clave,valor
+    ... 
+    zope 2.13
+    python 2.7
+    plone 5.1
+    >>> versionesIterador = versiones_plone.iteritems()
+    >>> print versionesIterador.next()
+    ('zope', 2.13)
+    >>> print versionesIterador.next()
+    ('python', 2.7)
+    >>> print versionesIterador.next()
+    ('plone', 5.1)
+    >>> print versionesIterador.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
 
 .. _python_dict_mtd_iterkeys:
@@ -192,15 +211,34 @@ Esta método devuelve un iterador sobre los elementos (clave, valor) del diccion
 iterkeys()
 ~~~~~~~~~~
 
-Esta método devuelve un iterador sobre las claves (keys) del diccionario:
+Esta método devuelve un iterador sobre las claves (keys) del diccionario. Lanza una 
+excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al final de 
+la posición del **diccionario**.
 
 ::
 
     >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> print versiones_plone
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
     >>> versiones_plone.iterkeys()
     <dictionary-keyiterator object at 0x7fab9dd4bcb0>
-
-.. todo:: TODO terminar de escribir un ejemplo de uso del método.
+    >>> for clave in versiones_plone.iterkeys():
+    ...     print clave
+    ... 
+    zope
+    python
+    plone
+    >>> versionesIterador = versiones_plone.iterkeys()
+    >>> print versionesIterador.next()
+    zope
+    >>> print versionesIterador.next()
+    python
+    >>> print versionesIterador.next()
+    plone
+    >>> print versionesIterador.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
 
 .. _python_dict_mtd_itervalues:
@@ -208,15 +246,34 @@ Esta método devuelve un iterador sobre las claves (keys) del diccionario:
 itervalues()
 ~~~~~~~~~~~~
 
-Esta método devuelve un iterador sobre los valores (values) del diccionario:
+Esta método devuelve un iterador sobre los valores (values) del diccionario. Lanza una 
+excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al final de 
+la posición del **diccionario**.
 
 ::
 
     >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> print versiones_plone
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
     >>> versiones_plone.itervalues()
     <dictionary-valueiterator object at 0x7fab9dd4bc58>
-
-.. todo:: TODO terminar de escribir un ejemplo de uso del método.
+    >>> for valor in versiones_plone.itervalues():
+    ...     print valor
+    ... 
+    2.13
+    2.7
+    5.1
+    >>> versionesIterador = versiones_plone.itervalues()
+    >>> print versionesIterador.next()
+    2.13
+    >>> print versionesIterador.next()
+    2.7
+    >>> print versionesIterador.next()
+    5.1
+    >>> print versionesIterador.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
 
 .. _python_dict_mtd_keys:
