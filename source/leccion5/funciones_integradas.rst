@@ -1919,11 +1919,10 @@ La función ``any()`` ....
 coerce()
 ~~~~~~~~
 
-La función ``coerce()`` devuelve una tupla consisting of the two numeric arguments 
-converted to a common type, using the same rules as used by arithmetic operations.
-If coercion is not possible, raise :ref:`TypeError <python_exception_typeerror>`.
-
-.. todo:: TODO traducir frases en el párrafo anterior.
+La función ``coerce()`` devuelve una tupla que consta de los dos argumentos numéricos 
+convertidos en un tipo común, utilizando las mismas reglas que las operaciones 
+aritméticas. Si la coerción no es posible, levante una excepción 
+:ref:`TypeError <python_exception_typeerror>`.
 
 ::
 
