@@ -86,11 +86,11 @@ Esta método remueve todos los elementos desde el **diccionario**.
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> print versiones_plone
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> print versiones
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.clear()
-    >>> print versiones_plone
+    >>> versiones.clear()
+    >>> print versiones
     {}
 
 
@@ -103,9 +103,9 @@ Esta método devuelve una copia (a shallow copy) del tipo **diccionario**:
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> otro_versiones_plone = versiones_plone.copy()
-    >>> versiones_plone == otro_versiones_plone
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> otro_versiones = versiones.copy()
+    >>> versiones == otro_versiones
     True
 
 
@@ -135,10 +135,10 @@ mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_no
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone.get('plone')
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones.get('plone')
     5.1
-    >>> versiones_plone.get('php')
+    >>> versiones.get('php')
     >>>
 
 
@@ -152,8 +152,8 @@ D.has_key(k) -> True if D has a key k, else False
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone.has_key('plone')
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones.has_key('plone')
     True
 
 
@@ -166,8 +166,8 @@ Esta método devuelve una lista de pares de diccionarios (clave, valor), como 2 
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone.items()
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones.items()
     [('zope', 2.13), ('python', 2.7), ('plone', 5.1)]
 
 
@@ -182,18 +182,18 @@ final de la posición del **diccionario**.
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> print versiones_plone
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> print versiones
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.iteritems()
+    >>> versiones.iteritems()
     <dictionary-itemiterator object at 0x7fab9dd4bc58>
-    >>> for clave,valor in versiones_plone.iteritems():
+    >>> for clave,valor in versiones.iteritems():
     ...     print clave,valor
     ... 
     zope 2.13
     python 2.7
     plone 5.1
-    >>> versionesIterador = versiones_plone.iteritems()
+    >>> versionesIterador = versiones.iteritems()
     >>> print versionesIterador.next()
     ('zope', 2.13)
     >>> print versionesIterador.next()
@@ -217,18 +217,18 @@ la posición del **diccionario**.
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> print versiones_plone
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> print versiones
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.iterkeys()
+    >>> versiones.iterkeys()
     <dictionary-keyiterator object at 0x7fab9dd4bcb0>
-    >>> for clave in versiones_plone.iterkeys():
+    >>> for clave in versiones.iterkeys():
     ...     print clave
     ... 
     zope
     python
     plone
-    >>> versionesIterador = versiones_plone.iterkeys()
+    >>> versionesIterador = versiones.iterkeys()
     >>> print versionesIterador.next()
     zope
     >>> print versionesIterador.next()
@@ -252,18 +252,18 @@ la posición del **diccionario**.
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> print versiones_plone
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> print versiones
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.itervalues()
+    >>> versiones.itervalues()
     <dictionary-valueiterator object at 0x7fab9dd4bc58>
-    >>> for valor in versiones_plone.itervalues():
+    >>> for valor in versiones.itervalues():
     ...     print valor
     ... 
     2.13
     2.7
     5.1
-    >>> versionesIterador = versiones_plone.itervalues()
+    >>> versionesIterador = versiones.itervalues()
     >>> print versionesIterador.next()
     2.13
     >>> print versionesIterador.next()
@@ -285,8 +285,8 @@ Esta método devuelve una lista de las claves (keys) del diccionario:
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone.keys()
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones.keys()
     ['zope', 'python', 'plone']
 
 
@@ -300,14 +300,14 @@ Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si la **clave**
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.pop('zope')
+    >>> versiones.pop('zope')
     2.13
-    >>> versiones_plone
+    >>> versiones
     {'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.pop('django')
+    >>> versiones.pop('django')
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     KeyError: 'django'
@@ -323,22 +323,22 @@ Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si el **diccion
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.popitem()
+    >>> versiones.popitem()
     ('zope', 2.13)
-    >>> versiones_plone
+    >>> versiones
     {'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.popitem()
+    >>> versiones.popitem()
     ('python', 2.7)
-    >>> versiones_plone
+    >>> versiones
     {'plone': 5.1}
-    >>> versiones_plone.popitem()
+    >>> versiones.popitem()
     ('plone', 5.1)
-    >>> versiones_plone
+    >>> versiones
     {}
-    >>> versiones_plone.popitem()
+    >>> versiones.popitem()
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     KeyError: 'popitem(): dictionary is empty'
@@ -356,12 +356,12 @@ D.setdefault(k[,d]) -> D.get(k,d), also set D[k]=d if k not in D.
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones_plone.setdefault('zope')
+    >>> versiones.setdefault('zope')
     2.13
-    >>> versiones_plone
+    >>> versiones
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
 
 .. todo:: TODO terminar de escribir un ejemplo de uso del método.
@@ -373,11 +373,11 @@ update()
 ~~~~~~~~
 
 Esta método actualiza un **diccionario** desde un diccionario/iterable E y F.
-Si E esta presenta y tiene un método ``.keys()``, hace:     for k in E: D[k] = E[k]
-Si E esta presenta y lacks método ``.keys()``, hace:     for (k, v) in E: D[k] = v
-En otro caso, esto es lo seguido por: for k in F: D[k] = F[k]
+Si E esta presenta y tiene un método ``.keys()``, hace: ``for k in E: D[k] = E[k]``
+Si E esta presenta y lacks método ``.keys()``, hace: ``for (k, v) in E: D[k] = v``
+En otro caso, esto es lo seguido por: ``for k in F: D[k] = F[k]``
 
-D.update([E, ]**F) -> None.
+``D.update([E, ]**F) -> None.``
 
 ::
 
@@ -395,8 +395,8 @@ Esta método devuelve una lista de los valores (values) del diccionario:
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone.values()
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones.values()
     [2.13, 2.7, 5.1]
 
 
@@ -410,11 +410,15 @@ elementos del diccionario:
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone.viewitems()
-    dict_items([('zope', 2.13), ('python', 2.7), ('plone', 5.1)])
-
-.. todo:: TODO terminar de escribir un ejemplo de uso del método.
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones.viewkeys()
+    dict_keys(['zope', 'python', 'plone'])
+    >>> for clave,valor in versiones.iteritems():
+    ...     print clave,valor
+    ... 
+    zope 2.13
+    python 2.7
+    plone 5.1
 
 
 .. _python_dict_mtd_viewkeys:
@@ -422,16 +426,19 @@ elementos del diccionario:
 viewkeys()
 ~~~~~~~~~~
 
-Esta método 
-D.viewkeys() -> a set-like object providing a view on D's keys
+Esta método devuelve un objeto proveyendo una vista de las claves del *diccionario*.
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone.viewkeys()
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones.viewkeys()
     dict_keys(['zope', 'python', 'plone'])
-
-.. todo:: TODO terminar de escribir un ejemplo de uso del método.
+    >>> for clave in versiones.viewkeys():
+    ...     print clave
+    ... 
+    zope
+    python
+    plone
 
 
 .. _python_dict_mtd_viewvalues:
@@ -439,16 +446,19 @@ D.viewkeys() -> a set-like object providing a view on D's keys
 viewvalues()
 ~~~~~~~~~~~~
 
-Esta método 
-D.viewvalues() -> an object providing a view on D's values
+Esta método devuelve un objeto proveyendo una vista de los valores del *diccionario*.
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_plone.viewvalues()
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones.viewvalues()
     dict_values([2.13, 2.7, 5.1])
-
-.. todo:: TODO terminar de escribir un ejemplo de uso del método.
+    >>> for valor in versiones.viewvalues():
+    ...     print valor
+    ... 
+    2.13
+    2.7
+    5.1
 
 
 Convertir a diccionarios
