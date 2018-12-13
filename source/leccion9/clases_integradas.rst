@@ -108,6 +108,12 @@ El método ``flush()`` permite descargar el tampón interno, como la función C 
 de la librería ``stdio``. Puede no tener efecto en ciertos objetos similares a los 
 ficheros.
 
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+
 
 .. _python_mtd_isatty:
 
@@ -120,6 +126,12 @@ El método ``isatty()`` devuelve ``True`` si el fichero está conectado a un dis
 .. note:: 
     Si un objeto similar a los ficheros no está asociado a un fichero real, no debe 
     implementar este método.
+
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
 
 
 .. _python_mtd_fileno:
@@ -136,6 +148,12 @@ por ejemplo, el módulo ``fcntl`` o ``os.read()`` y similares.
     Si un objeto similar a los ficheros no tiene un descriptor de fichero, no debe 
     implementar este método.
 
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+
 
 .. _python_mtd_next:
 
@@ -144,6 +162,12 @@ next()
 
 El método ``next()`` permite x.next() -> el próximo valor, o causa una 
 :ref:`StopIteration <python_exception_stopiteration>`
+
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
 
 
 .. _python_mtd_read:
@@ -228,6 +252,9 @@ absoluto); otros valores posibles son ``1`` (posicionamiento relativo a la posic
 y ``2`` (posicionamiento relativo al final del fichero). No hay valor de retorno.
 
 
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+
+
 .. _python_mtd_tell:
 
 tell()
@@ -235,6 +262,12 @@ tell()
 
 El método ``tell()`` devuelve la posición actual del fichero, como la función C ``ftell()`` 
 de la librería ``stdio``.
+
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
 
 
 .. _python_mtd_truncate:
@@ -250,6 +283,12 @@ El método ``truncate()`` trunca el fichero. Si se proporciona el argumento opci
 el fichero se trunca a (como mucho) ese tamaño. El tamaño depende de la posición actual. La 
 disponibilidad de esta función depende de la versión del sistema operativo (por ejemplo, no 
 todas las versiones de Unix dan soporte a esta operación).
+
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
 
 
 .. _python_mtd_write:
@@ -280,6 +319,12 @@ El método ``writelines()`` escribe una lista de cadenas al fichero. No se devue
 ningún valor. El nombre es paralelo a ``readlines()``, ``writelines()`` no añade 
 separadores de línea.
 
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+
 
 Atributos
 `````````
@@ -299,6 +344,12 @@ indica el estado actual. Es un atributo de sólo lectura, que se cambia mediante
 método :ref:`close() <python_mtd_close>`. Puede no estar disponible en todos los 
 objetos con interfaz tipo fichero.
 
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+
 
 .. _python_atributo_mode:
 
@@ -309,6 +360,12 @@ El atributo ``mode`` del objeto *fichero*, es el modo de E/S del fichero. Si se 
 el fichero con la función integrada :ref:`open() <python_fun_open>`, será el valor 
 del parámetro ``mode``. Es un atributo de sólo lectura y puede no estar disponible 
 en todos los objetos con interfaz tipo fichero.
+
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
 
 
 .. _python_atributo_name:
@@ -322,6 +379,12 @@ fichero. En caso contrario, alguna cadena que indique el origen del fichero, de 
 "<...>". Es un atributo de sólo lectura y puede no estar disponible en todos los objetos 
 con interfaz tipo fichero.
 
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+
 
 .. _python_atributo_encoding:
 
@@ -330,6 +393,12 @@ encoding
 
 El atributo ``encoding`` del objeto *fichero* es el encoding del fichero.
 
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+
 
 .. _python_atributo_errors:
 
@@ -337,6 +406,12 @@ errors
 """"""
 
 El atributo ``errors`` del objeto *fichero* es el manipulador de error Unicode.
+
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
 
 
 .. _python_atributo_softspace:
@@ -355,6 +430,12 @@ implementados en C tendrán que proporcionar un atributo ``softspace`` escribibl
 
 Nota: Este atributo no se usa para controlar la sentencia ``print``, sino para permitir 
 que la implementación de ``print`` lleve la cuenta de su estado interno.
+
+::
+
+    >>>
+
+.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
 
 
 .. _python_cls_object:

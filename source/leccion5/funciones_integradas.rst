@@ -302,11 +302,10 @@ Ademas si se han definido anteriormente variables las acepta como parámetros:
 execfile()
 ~~~~~~~~~~
 
-La función ``execfile()`` lee y ejecuta un script Python desde un archivo. 
-Los ``globals`` y ``locals`` son diccionarios, defaulting to the current 
-``globals`` y ``locals``.  Si solamente ``globals`` es dado, ``locals`` defaults to it.
-
-.. todo:: TODO traducir frases del párrafo anterior.
+La función ``execfile()`` lee y ejecuta un script Python desde un archivo. Los 
+``globals`` y ``locals`` son diccionarios, por defecto a los actuales  ``globals`` 
+y ``locals``.  Si solamente ``globals`` es dado, ``locals`` es por defecto a la 
+misma.
 
 ::
 
@@ -1658,14 +1657,14 @@ lstrip()
 ~~~~~~~~
 
 La función ``lstrip()`` devuelve una copia de la :ref:`cadena de caracteres <python_str>` 
-con todos los espacios al inicio removido. Si la cadena de caracteres es dada y no es 
-:ref:`None <python_obj_none>`, eliminar caracteres en caracteres en su lugar. Si la 
-cadena de caracteres es ``unicode``, la cadena de caracteres serán convertidas a 
-``unicode`` antes de pelar antes de aplicar la técnica *stripping*.
+con el espacio en blanco inicial eliminado. Si se dan la cadena de caracteres y no es 
+:ref:`None <python_obj_none>`, elimina los caracteres en la cadena de caracteres en su 
+lugar. Si la cadena de caracteres son ``unicode``, serán convertidas a ``unicode`` antes 
+de eliminar.
 
 ::
 
-    >>> "leonardo caballero ".lstrip()
+    >>> " leonardo caballero ".lstrip()
     'leonardo caballero '
 
 
@@ -1768,7 +1767,8 @@ en la función.
 str()
 ~~~~~
 
-La función ``str()`` devuelve una :ref:`cadenas de caracteres <python_str>`.
+La función ``str()`` es el constructor del tipo de :ref:`cadenas de caracteres <python_str>`, 
+se usa crear una *carácter* o *cadenas de caracteres* mediante la misma función ``str()``. 
 
 Puede convertir un :ref:`número entero <python_num_entero>` a una *cadena de caracteres*, 
 de la siguiente forma:
@@ -2061,10 +2061,9 @@ zip()
 ~~~~~
 
 La función ``zip()`` devuelve una lista de :ref:`tuplas <python_tuple>`, donde cada 
-tupla contiene el elemento i-th desde each of the argument sequences. 
-La lista devuelta es truncada in length to the length of the shortest argument sequence.
-
-.. todo:: TODO terminar de traducir las oraciones en el párrafo anterior
+tupla contiene el elemento i-th desde cada una de las secuencias de argumento. La 
+lista devuelta es truncada en longitud a la longitud de la secuencia de argumentos 
+más corta.
 
 ::
 
