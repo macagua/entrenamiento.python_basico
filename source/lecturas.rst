@@ -358,8 +358,8 @@ Manipulación de archivos
 
 .. _lecturas_suplementarias_sesion8:
 
-Lección 8 - Creación de módulos y paquetes Python
--------------------------------------------------
+Lección 8 - Módulos, paquetes y distribución de software
+--------------------------------------------------------
 
 
 Módulos Python
@@ -386,8 +386,8 @@ Scaffolding en proyectos Python
 
 .. _lecturas_suplementarias_sesion9:
 
-Lección 9 - Manejos de errores y programación orientada a objetos
------------------------------------------------------------------
+Lección 9 - Manejos de errores y orientación a objetos
+------------------------------------------------------
 
 
 Errores y excepciones

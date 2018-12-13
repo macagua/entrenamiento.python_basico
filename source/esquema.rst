@@ -110,8 +110,8 @@ Lección 7 - Operaciones de E/S y manipulación de archivos
 
 .. _esquema_entrenamiento_leccion8:
 
-Lección 8 - Creación de módulos, paquetes y distribución de software
---------------------------------------------------------------------
+Lección 8 - Módulos, paquetes y distribución de software
+--------------------------------------------------------
 
 **Descripción:**
     Comprender la creación de módulos, paquetes y distribución de software Python 
@@ -125,8 +125,8 @@ Lección 8 - Creación de módulos, paquetes y distribución de software
 
 .. _esquema_entrenamiento_leccion9:
 
-Lección 9 - Manejos de errores y programación orientada a objetos
------------------------------------------------------------------
+Lección 9 - Manejos de errores y orientación a objetos
+------------------------------------------------------
 
 **Descripción:**
     Comprender el manejos de errores (``try``, ``except``, ``else``, ``finally``, y 
