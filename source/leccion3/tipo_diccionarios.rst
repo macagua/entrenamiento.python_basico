@@ -215,7 +215,7 @@ final de la posición del **diccionario**.
 iterkeys()
 ~~~~~~~~~~
 
-Esta método devuelve un iterador sobre las claves (keys) del diccionario. Lanza una 
+Esta método devuelve un iterador sobre las claves del diccionario. Lanza una 
 excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al final de 
 la posición del **diccionario**.
 
@@ -250,7 +250,7 @@ la posición del **diccionario**.
 itervalues()
 ~~~~~~~~~~~~
 
-Esta método devuelve un iterador sobre los valores (values) del diccionario. Lanza una 
+Esta método devuelve un iterador sobre los valores del diccionario. Lanza una 
 excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al final de 
 la posición del **diccionario**.
 
@@ -285,7 +285,7 @@ la posición del **diccionario**.
 keys()
 ~~~~~~
 
-Esta método devuelve una lista de las claves (keys) del diccionario:
+Esta método devuelve una lista de las claves del diccionario:
 
 ::
 
@@ -384,7 +384,7 @@ update()
 
 Esta método actualiza un **diccionario** desde un diccionario/iterable E y F.
 Si E esta presenta y tiene un método ``.keys()``, hace: ``for k in E: D[k] = E[k]``
-Si E esta presenta y lacks método ``.keys()``, hace: ``for (k, v) in E: D[k] = v``
+Si E esta presenta y carece del método ``.keys()``, hace: ``for (k, v) in E: D[k] = v``
 En otro caso, esto es lo seguido por: ``for k in F: D[k] = F[k]``
 
 ``D.update([E, ]**F) -> None.``
@@ -401,7 +401,7 @@ En otro caso, esto es lo seguido por: ``for k in F: D[k] = F[k]``
 values()
 ~~~~~~~~
 
-Esta método devuelve una lista de los valores (values) del diccionario:
+Esta método devuelve una lista de los valores del diccionario:
 
 ::
 
