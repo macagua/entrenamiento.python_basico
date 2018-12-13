@@ -51,7 +51,7 @@ unos ejemplos a continuación:
     >>> diccionario['clave4']
     [1, 2, 3, 4]
 
-Un diccionario puede almacenar los diveros tipos de datos integrados en Python usando 
+Un diccionario puede almacenar los diversos tipos de datos integrados en Python usando 
 la función :ref:`type() <python_fun_type>`, usted puede pasar el diccionario con la 
 clave que usted desea determinar el tipo de dato, se presenta unos ejemplos a 
 continuación:
@@ -99,7 +99,7 @@ Esta método remueve todos los elementos desde el **diccionario**.
 copy()
 ~~~~~~
 
-Esta método devuelve una copia (a shallow copy) del tipo **diccionario**:
+Esta método devuelve una copia superficial del tipo **diccionario**:
 
 ::
 
@@ -115,8 +115,10 @@ fromkeys()
 ~~~~~~~~~~
 
 Esta método 
-dict.fromkeys(S[,v]) -> New dict with keys from S and values equal to v.
-v defaults to None.
+dict.fromkeys(S[,v]) -> Nuevo dict con claves de S y los valores iguales a v.
+v por defecto es None.
+
+.. todo:: TODO traducir frases del párrafo anterior.
 
 ::
 
@@ -147,8 +149,10 @@ mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_no
 has_key()
 ~~~~~~~~~
 
-Esta método devuelve el valor ``True`` si el diccionario tiene presente la clave enviada como argumento. 
-D.has_key(k) -> True if D has a key k, else False
+Esta método devuelve el valor ``True`` si el diccionario tiene presente la clave 
+enviada como argumento. D.has_key(k) -> True if D has a key k, else False
+
+.. todo:: TODO traducir frases del párrafo anterior.
 
 ::
 
@@ -295,8 +299,9 @@ Esta método devuelve una lista de las claves (keys) del diccionario:
 pop()
 ~~~~~
 
-Esta método remueve específicamente una clave de **diccionario** y devuelve valor correspondiente.  
-Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si la **clave** no es encontrada.
+Esta método remueve específicamente una clave de **diccionario** y devuelve valor 
+correspondiente. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` 
+si la **clave** no es encontrada.
 
 ::
 
@@ -318,8 +323,11 @@ Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si la **clave**
 popitem()
 ~~~~~~~~~
 
-Esta método remueve y devuelve algún par (clave, valor) del **diccionario** como una 2-tuple.
-Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si el **diccionario** esta vació.
+Esta método remueve y devuelve algún par (clave, valor) del **diccionario** como 
+una 2-tuple. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si 
+el **diccionario** esta vació.
+
+.. todo:: TODO traducir frases del párrafo anterior.
 
 ::
 
@@ -351,6 +359,8 @@ setdefault()
 
 Esta método devuelve el valor producido por el método integrado ``get()``, también 
 D.setdefault(k[,d]) -> D.get(k,d), also set D[k]=d if k not in D.
+
+.. todo:: TODO traducir frases del párrafo anterior.
 
 .. todo:: TODO terminar de escribir la explicación del del método.
 

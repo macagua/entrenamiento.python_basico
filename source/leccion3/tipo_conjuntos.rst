@@ -69,7 +69,7 @@ Esta método remueve todos los elementos desde este **conjunto mutable**.
 copy()
 ~~~~~~
 
-Esta método devuelve una copia (a shallow copy) del tipo **conjunto mutable** o 
+Esta método devuelve una copia superficial del tipo **conjunto mutable** o 
 **conjunto inmutable**:
 
 ::
