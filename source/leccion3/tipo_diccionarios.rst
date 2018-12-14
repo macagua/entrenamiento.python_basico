@@ -114,17 +114,25 @@ Este método devuelve una copia superficial del tipo **diccionario**:
 fromkeys()
 ~~~~~~~~~~
 
-Esta método 
-dict.fromkeys(S[,v]) -> Nuevo dict con claves de S y los valores iguales a v.
-v por defecto es None.
+Este método crea un nuevo **diccionario** con claves a partir de una secuencia ``seq``
+y con valores asignados a ``value``.
 
-.. todo:: TODO traducir frases del párrafo anterior.
+.. todo:: TODO terminar de escribir sobre este método integrado.
 
 ::
 
-    >>>
+    dict.fromkeys(seq[,value])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+El nuevo **diccionario** con claves de la secuencia ``seq`` y los valores son iguales a 
+``value``. El valor de ``value`` por defecto es :ref:`None <python_obj_none>`.
+
+::
+
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versionesIterador = versiones.iterkeys()
+    >>> versiones.fromkeys(versionesIterador[,5.1])
+
+.. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
 
 .. _python_dict_mtd_get:
@@ -386,12 +394,14 @@ Este método devuelve el valor producido por el método integrado
 update()
 ~~~~~~~~
 
-Esta método actualiza un **diccionario** desde un diccionario/iterable E y F.
-Si E esta presenta y tiene un método ``.keys()``, hace: ``for k in E: D[k] = E[k]``
-Si E esta presenta y carece del método ``.keys()``, hace: ``for (k, v) in E: D[k] = v``
-En otro caso, esto es lo seguido por: ``for k in F: D[k] = F[k]``
+Este método actualiza un **diccionario** desde un diccionario/iterable E y F. Si E 
+esta presenta y tiene un método ``.keys()``, hace: ``for key in E: D[key] = E[key]``. 
+Si E esta presenta y carece del método ``.keys()``, hace: ``for (key, value) in E: D[key] = value``.
+En otro caso, esto es lo seguido por: ``for key in F: D[k] = F[key]``.
 
-``D.update([E, ]**F) -> None.``
+::
+
+    D.update([E, ]**F) -> None.
 
 ::
 
