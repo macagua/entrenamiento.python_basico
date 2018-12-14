@@ -107,7 +107,7 @@ siguientes comando:
   $ cd ~/entrenamiento.python_basico/source
   $ sudo apt-get install texlive-latex-base texlive-latex-recommended texlive-lang-spanish
   (venv)$ source ./venv/bin/activate
-  (venv)$ make latexpdf
+  (venv)$ make pdf
 
 Una ves generado el PDF se puede abrir desde el directorio 
 ``build/latex/entrenamientopython_basico.pdf``

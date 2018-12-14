@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
+SOURCEDIR     = source
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -14,7 +15,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
+.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext mv_index_latex mv_index_html
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -151,3 +152,20 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+# Rename index file to the new name index_html for later generate a PDF file.
+mv_index_latex:
+	mv $(SOURCEDIR)/index.rst $(SOURCEDIR)/index_html.rst
+	mv $(SOURCEDIR)/index_latex.rst $(SOURCEDIR)/index.rst
+	@echo
+	@echo "Renamed finished. The $(SOURCEDIR)/index_latex.rst file now is $(SOURCEDIR)/index.rst file."
+
+# Rename index file to the new name index_latex for later generate the HTML files.
+mv_index_html:
+	mv $(SOURCEDIR)/index.rst $(SOURCEDIR)/index_latex.rst
+	mv $(SOURCEDIR)/index_html.rst $(SOURCEDIR)/index.rst
+	@echo
+	@echo "Renamed finished. The $(SOURCEDIR)/index_html.rst file now is $(SOURCEDIR)/index.rst file."
+
+# Generate PDF.
+pdf:mv_index_latex clean latexpdf mv_index_html

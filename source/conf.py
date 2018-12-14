@@ -96,7 +96,7 @@ today_fmt = '%d de %B de %Y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['index_latex.rst']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -263,7 +263,7 @@ latex_show_pagerefs = True
 latex_show_urls = 'footnote'
 
 # Documents to append as an appendix to all manuals.
-latex_appendices = ['apendices/operadores', 'glosario','licencia']
+latex_appendices = ['apendices/operadores', 'esquema', 'lecturas', 'glosario', 'licencia']
 
 # If false, no module index is generated.
 #latex_domain_indices = True
