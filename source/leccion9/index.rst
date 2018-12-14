@@ -3,8 +3,8 @@
 
 .. _python_leccion9:
 
-Manejos de errores y programación orientada a objetos
-=====================================================
+Manejos de errores y orientación a objetos
+==========================================
 
 En Python usted puede manejar de los errores de sus aplicaciones, además 
 de poder escribir sus aplicaciones usando el paradigma de la 

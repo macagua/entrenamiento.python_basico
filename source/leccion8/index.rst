@@ -3,8 +3,8 @@
 
 .. _python_leccion8:
 
-Creación de módulos, paquetes y distribución de software
-========================================================
+Módulos, paquetes y distribución de software
+============================================
 
 En Python las diversas aplicaciones Python se encuentran dentro de módulos y 
 paquetes los cuales los contienen el sistema de ficheros.
