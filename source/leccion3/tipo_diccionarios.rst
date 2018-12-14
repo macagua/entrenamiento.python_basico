@@ -15,7 +15,7 @@ El diccionario, define una relación uno a uno entre claves y valores.
 +-----------+----------+---------------------+----------------------------------+
 
 Un objeto *mapping* mapea valores *hashable* a objetos arbitrariamente. Los objetos 
-Mapeos son objetos mutable. El *diccionario* es el único tipo de mapeo estándar 
+Mapeos son objetos mutable. El **diccionario** es el único tipo de mapeo estándar 
 actual. Para otro contenedores ver los integrados en las clases ":ref:`lista <python_list>`", 
 ":ref:`conjuntos <python_set>`", y ":ref:`tupla <python_tuple>`", y el modulo 
 "``collections``".
@@ -82,7 +82,7 @@ continuación:
 clear()
 ~~~~~~~
 
-Esta método remueve todos los elementos desde el **diccionario**.
+Este método remueve todos los elementos desde el **diccionario**.
 
 ::
 
@@ -99,7 +99,7 @@ Esta método remueve todos los elementos desde el **diccionario**.
 copy()
 ~~~~~~
 
-Esta método devuelve una copia superficial del tipo **diccionario**:
+Este método devuelve una copia superficial del tipo **diccionario**:
 
 ::
 
@@ -132,7 +132,7 @@ v por defecto es None.
 get()
 ~~~~~
 
-Esta método devuelve el valor en base a una coincidencia de búsqueda en un diccionario 
+Este método devuelve el valor en base a una coincidencia de búsqueda en un diccionario 
 mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_none>`. 
 
 ::
@@ -149,7 +149,7 @@ mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_no
 has_key()
 ~~~~~~~~~
 
-Esta método devuelve el valor ``True`` si el diccionario tiene presente la clave 
+Este método devuelve el valor ``True`` si el diccionario tiene presente la clave 
 enviada como argumento. D.has_key(k) -> True if D has a key k, else False
 
 .. todo:: TODO traducir frases del párrafo anterior.
@@ -166,7 +166,7 @@ enviada como argumento. D.has_key(k) -> True if D has a key k, else False
 items()
 ~~~~~~~
 
-Esta método devuelve una lista de pares de diccionarios (clave, valor), como 2 tuplas:
+Este método devuelve una lista de pares de diccionarios (clave, valor), como 2 tuplas:
 
 ::
 
@@ -180,7 +180,7 @@ Esta método devuelve una lista de pares de diccionarios (clave, valor), como 2 
 iteritems()
 ~~~~~~~~~~~
 
-Esta método devuelve un iterador sobre los elementos (clave, valor) del diccionario.
+Este método devuelve un iterador sobre los elementos (clave, valor) del diccionario.
 Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al 
 final de la posición del **diccionario**.
 
@@ -215,7 +215,7 @@ final de la posición del **diccionario**.
 iterkeys()
 ~~~~~~~~~~
 
-Esta método devuelve un iterador sobre las claves del diccionario. Lanza una 
+Este método devuelve un iterador sobre las claves del diccionario. Lanza una 
 excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al final de 
 la posición del **diccionario**.
 
@@ -250,7 +250,7 @@ la posición del **diccionario**.
 itervalues()
 ~~~~~~~~~~~~
 
-Esta método devuelve un iterador sobre los valores del diccionario. Lanza una 
+Este método devuelve un iterador sobre los valores del diccionario. Lanza una 
 excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al final de 
 la posición del **diccionario**.
 
@@ -285,7 +285,7 @@ la posición del **diccionario**.
 keys()
 ~~~~~~
 
-Esta método devuelve una lista de las claves del diccionario:
+Este método devuelve una lista de las claves del diccionario:
 
 ::
 
@@ -299,7 +299,7 @@ Esta método devuelve una lista de las claves del diccionario:
 pop()
 ~~~~~
 
-Esta método remueve específicamente una clave de **diccionario** y devuelve valor 
+Este método remueve específicamente una clave de **diccionario** y devuelve valor 
 correspondiente. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` 
 si la **clave** no es encontrada.
 
@@ -323,11 +323,9 @@ si la **clave** no es encontrada.
 popitem()
 ~~~~~~~~~
 
-Esta método remueve y devuelve algún par (clave, valor) del **diccionario** como 
-una 2-tuple. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si 
+Este método remueve y devuelve algún par (clave, valor) del **diccionario** como 
+una 2 tuplas. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si 
 el **diccionario** esta vació.
-
-.. todo:: TODO traducir frases del párrafo anterior.
 
 ::
 
@@ -357,10 +355,16 @@ el **diccionario** esta vació.
 setdefault()
 ~~~~~~~~~~~~
 
-Esta método devuelve el valor producido por el método integrado ``get()``, también 
-D.setdefault(k[,d]) -> D.get(k,d), also set D[k]=d if k not in D.
+Este método es similar a :ref:`get(key, default) <python_dict_mtd_get>`, pero además 
+asigna la clave ``key`` al valor por ``default`` si no se encuentra en el diccionario.
 
-.. todo:: TODO traducir frases del párrafo anterior.
+::
+
+    D.setdefault(key[,default])
+
+Este método devuelve el valor producido por el método integrado 
+:ref:`get() <python_dict_mtd_get>`, también define ``default`` para la clave del 
+**diccionario** si la clave no esta en el diccionario.
 
 .. todo:: TODO terminar de escribir la explicación del del método.
 
@@ -401,7 +405,7 @@ En otro caso, esto es lo seguido por: ``for k in F: D[k] = F[k]``
 values()
 ~~~~~~~~
 
-Esta método devuelve una lista de los valores del diccionario:
+Este método devuelve una lista de los valores del diccionario:
 
 ::
 
@@ -415,7 +419,7 @@ Esta método devuelve una lista de los valores del diccionario:
 viewitems()
 ~~~~~~~~~~~
 
-Esta método devuelve un objeto como un conjunto mutable proveyendo una vista en los 
+Este método devuelve un objeto como un conjunto mutable proveyendo una vista en los 
 elementos del diccionario:
 
 ::
@@ -436,7 +440,7 @@ elementos del diccionario:
 viewkeys()
 ~~~~~~~~~~
 
-Esta método devuelve un objeto proveyendo una vista de las claves del *diccionario*.
+Este método devuelve un objeto proveyendo una vista de las claves del **diccionario**.
 
 ::
 
@@ -456,7 +460,7 @@ Esta método devuelve un objeto proveyendo una vista de las claves del *dicciona
 viewvalues()
 ~~~~~~~~~~~~
 
-Esta método devuelve un objeto proveyendo una vista de los valores del *diccionario*.
+Este método devuelve un objeto proveyendo una vista de los valores del **diccionario**.
 
 ::
 

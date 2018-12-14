@@ -98,7 +98,7 @@ El el objeto de tipo *lista* integra una serie de métodos integrados a continua
 append()
 ~~~~~~~~
 
-Esta método agrega un elemento al final de una lista.
+Este método agrega un elemento al final de una lista.
 
 ::
 
@@ -115,7 +115,7 @@ Esta método agrega un elemento al final de una lista.
 count()
 ~~~~~~~
 
-Esta método recibe un elemento como argumento, y cuenta la cantidad de veces que 
+Este método recibe un elemento como argumento, y cuenta la cantidad de veces que 
 aparece en la lista.
 
 ::
@@ -134,7 +134,7 @@ aparece en la lista.
 extend()
 ~~~~~~~~
 
-Esta método extiende una lista agregando un iterable al final.
+Este método extiende una lista agregando un iterable al final.
 
 ::
 
@@ -154,7 +154,7 @@ Esta método extiende una lista agregando un iterable al final.
 index()
 ~~~~~~~
 
-Esta método recibe un elemento como argumento, y devuelve el índice de su primera 
+Este método recibe un elemento como argumento, y devuelve el índice de su primera 
 aparición en la lista.
 
 ::
@@ -197,7 +197,7 @@ elemento no se encuentra en la lista, o en el entorno definido.
 insert()
 ~~~~~~~~
 
-Esta método inserta el elemento x en la lista, en el índice i.
+Este método inserta el elemento x en la lista, en el índice i.
 
 ::
 
@@ -214,7 +214,7 @@ Esta método inserta el elemento x en la lista, en el índice i.
 pop()
 ~~~~~
 
-Esta método devuelve el último elemento de la lista, y lo borra de la misma.
+Este método devuelve el último elemento de la lista, y lo borra de la misma.
 
 ::
 
@@ -241,7 +241,7 @@ elemento (por defecto, -1)
 remove()
 ~~~~~~~~
 
-Esta método recibe como argumento un elemento, y borra su primera aparición en la lista.
+Este método recibe como argumento un elemento, y borra su primera aparición en la lista.
 
 ::
 
@@ -272,7 +272,7 @@ elemento no se encuentra en la lista.
 reverse()
 ~~~~~~~~~
 
-Esta método invierte el orden de los elementos de una lista.
+Este método invierte el orden de los elementos de una lista.
 
 ::
 
@@ -289,7 +289,7 @@ Esta método invierte el orden de los elementos de una lista.
 sort()
 ~~~~~~
 
-Esta método ordena los elementos de una lista.
+Este método ordena los elementos de una lista.
 
 ::
 

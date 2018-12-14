@@ -34,7 +34,7 @@ métodos integrados a continuación:
 add()
 ~~~~~
 
-Esta método agrega un elemento a un **conjunto mutable**. Esto no tiene efecto si el 
+Este método agrega un elemento a un **conjunto mutable**. Esto no tiene efecto si el 
 elemento ya esta presente.
 
 ::
@@ -52,7 +52,7 @@ elemento ya esta presente.
 clear()
 ~~~~~~~
 
-Esta método remueve todos los elementos desde este **conjunto mutable**.
+Este método remueve todos los elementos desde este **conjunto mutable**.
 
 ::
 
@@ -69,7 +69,7 @@ Esta método remueve todos los elementos desde este **conjunto mutable**.
 copy()
 ~~~~~~
 
-Esta método devuelve una copia superficial del tipo **conjunto mutable** o 
+Este método devuelve una copia superficial del tipo **conjunto mutable** o 
 **conjunto inmutable**:
 
 ::
@@ -85,7 +85,7 @@ Esta método devuelve una copia superficial del tipo **conjunto mutable** o
 difference()
 ~~~~~~~~~~~~
 
-Esta método devuelve la diferencia entre dos **conjunto mutable** o **conjunto inmutable**: 
+Este método devuelve la diferencia entre dos **conjunto mutable** o **conjunto inmutable**: 
 todos los elementos que están en el primero, pero no en el argumento.
 
 ::
@@ -107,7 +107,7 @@ todos los elementos que están en el primero, pero no en el argumento.
 difference_update()
 ~~~~~~~~~~~~~~~~~~~
 
-Esta método remueve todos los elementos de otro **conjunto mutable** desde este 
+Este método remueve todos los elementos de otro **conjunto mutable** desde este 
 **conjunto mutable**.
 
 ::
@@ -122,7 +122,7 @@ Esta método remueve todos los elementos de otro **conjunto mutable** desde este
 discard()
 ~~~~~~~~~
 
-Esta método remueve un elemento desde un **conjunto mutable** si ese es un miembro. 
+Este método remueve un elemento desde un **conjunto mutable** si ese es un miembro. 
 Si el elemento no es miembro, no hacer nada.
 
 
@@ -138,7 +138,7 @@ Si el elemento no es miembro, no hacer nada.
 intersection()
 ~~~~~~~~~~~~~~
 
-Esta método devuelve la intersección entre los **conjuntos mutables** o **conjuntos 
+Este método devuelve la intersección entre los **conjuntos mutables** o **conjuntos 
 inmutables**: todos los elementos que están en ambos.
 
 ::
@@ -160,7 +160,7 @@ inmutables**: todos los elementos que están en ambos.
 intersection_update()
 ~~~~~~~~~~~~~~~~~~~~~
 
-Esta método actualiza un **conjunto mutable** con la intersección de ese mismo y otro.
+Este método actualiza un **conjunto mutable** con la intersección de ese mismo y otro.
 
 ::
 
@@ -175,7 +175,7 @@ Esta método actualiza un **conjunto mutable** con la intersección de ese mismo
 isdisjoint()
 ~~~~~~~~~~~~
 
-Esta método devuelve el valor ``True`` si no hay elementos comunes entre los 
+Este método devuelve el valor ``True`` si no hay elementos comunes entre los 
 **conjuntos mutables** o **conjuntos inmutables**.
 
 ::
@@ -194,7 +194,7 @@ Esta método devuelve el valor ``True`` si no hay elementos comunes entre los
 issubset()
 ~~~~~~~~~~
 
-Esta método devuelve el valor ``True`` si el **conjunto mutable** es un *subconjunto* del 
+Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subconjunto* del 
 **conjunto mutable** o del **conjunto inmutable** argumento.
 
 ::
@@ -219,7 +219,7 @@ Esta método devuelve el valor ``True`` si el **conjunto mutable** es un *subcon
 issuperset()
 ~~~~~~~~~~~~
 
-Esta método devuelve el valor ``True`` si el **conjunto mutable** o el **conjunto inmutable** 
+Este método devuelve el valor ``True`` si el **conjunto mutable** o el **conjunto inmutable** 
 es un *superset* del **conjunto mutable** argumento.
 
 ::
@@ -244,7 +244,7 @@ es un *superset* del **conjunto mutable** argumento.
 pop()
 ~~~~~
 
-Esta método remueve y devuelve un elemento de **conjunto mutable** arbitrariamente. 
+Este método remueve y devuelve un elemento de **conjunto mutable** arbitrariamente. 
 Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si el **conjunto 
 mutable** es vacío.
 
@@ -260,7 +260,7 @@ mutable** es vacío.
 remove()
 ~~~~~~~~
 
-Esta método remueve un elemento de un **conjunto mutable**, si debe ser un miembro. 
+Este método remueve un elemento de un **conjunto mutable**, si debe ser un miembro. 
 Si el elemento no es miembro, lanza una excepción :ref:`KeyError <python_exception_keyerror>`.
 
 ::
@@ -275,7 +275,7 @@ Si el elemento no es miembro, lanza una excepción :ref:`KeyError <python_except
 symmetric_difference()
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Esta método devuelve todos los elementos que están en un **conjunto mutable** e 
+Este método devuelve todos los elementos que están en un **conjunto mutable** e 
 **conjunto inmutable** u otro, pero no en ambos.
 
 ::
@@ -295,7 +295,7 @@ Esta método devuelve todos los elementos que están en un **conjunto mutable** 
 symmetric_difference_update()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Esta método actualiza un **conjunto mutable** con diferencia simétrica de ese mismo 
+Este método actualiza un **conjunto mutable** con diferencia simétrica de ese mismo 
 y otro.
 
 ::
@@ -310,7 +310,7 @@ y otro.
 union()
 ~~~~~~~
 
-Esta método devuelve un **conjunto mutable** y **conjunto inmutable** con todos los 
+Este método devuelve un **conjunto mutable** y **conjunto inmutable** con todos los 
 elementos que están en alguno de los **conjuntos mutables** y **conjuntos inmutables**.
 
 ::
@@ -330,7 +330,7 @@ elementos que están en alguno de los **conjuntos mutables** y **conjuntos inmut
 update()
 ~~~~~~~~
 
-Esta método actualiza un **conjunto mutable** con la unión de si mismo y otros.
+Este método actualiza un **conjunto mutable** con la unión de si mismo y otros.
 
 ::
 

@@ -25,7 +25,7 @@ El objeto de tipo *tupla* integra una serie de métodos integrados a continuaci�
 count()
 ~~~~~~~
 
-Esta método recibe un elemento como argumento, y cuenta la cantidad de veces que 
+Este método recibe un elemento como argumento, y cuenta la cantidad de veces que 
 aparece en la tupla.
 
 ::
@@ -45,7 +45,7 @@ index()
 ~~~~~~~
 
 Comparte el mismo método :ref:`index() <python_list_mtd_index>` del tipo lista. 
-Esta método recibe un elemento como argumento, y devuelve el índice de su primera 
+Este método recibe un elemento como argumento, y devuelve el índice de su primera 
 aparición en la tupla.
 
 ::
