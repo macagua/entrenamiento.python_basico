@@ -497,5 +497,5 @@ Las siguientes excepciones son las realmente lanzadas.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion9>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>` 
     del entrenamiento para ampliar su conocimiento en esta temática.

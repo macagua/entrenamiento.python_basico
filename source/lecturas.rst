@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _lecturas_suplementarias_entrenamiento:
+.. _lectura_extras_entrenamiento:
 
 Lecturas suplementarias del entrenamiento
 =========================================
@@ -22,7 +22,7 @@ tanto la profundidad y amplitud en su conocimiento.
 Las lecturas están organizada como las lecciones y sus temas.
 
 
-.. _lecturas_suplementarias_sesion1:
+.. _lectura_extras_sesion1:
 
 Lección 1 - Introducción al lenguaje Python
 -------------------------------------------
@@ -88,7 +88,7 @@ Su primer programa
 ----
 
 
-.. _lecturas_suplementarias_sesion2:
+.. _lectura_extras_sesion2:
 
 Lección 2 - Introspección del lenguaje Python
 ---------------------------------------------
@@ -110,7 +110,7 @@ Inmersión al modo interactivo de Python
 ----
 
 
-.. _lecturas_suplementarias_sesion3:
+.. _lectura_extras_sesion3:
 
 Lección 3 - Tipos y estructuras de datos
 ----------------------------------------
@@ -178,10 +178,7 @@ Tipo diccionarios
 - `Looping over a dictionary - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#looping-over-a-dictionary>`_.
 
 
-----
-
-
-.. _lecturas_suplementarias_sesion4:
+.. _lectura_extras_sesion4:
 
 Lección 4 - Bloques de código y estructuras de control
 ------------------------------------------------------
@@ -257,7 +254,7 @@ Bucle for
 ----
 
 
-.. _lecturas_suplementarias_sesion5:
+.. _lectura_extras_sesion5:
 
 Lección 5 - Funciones y programación estructurada
 -------------------------------------------------
@@ -291,10 +288,7 @@ Programación estructurada
 - `Paseo por la programación estructurada y modular con Python - Rosalía Peña Ros <http://www.aenui.net/ojs/index.php?journal=revision&page=article&op=viewArticle&path%5B%5D=184>`_.
 
 
-----
-
-
-.. _lecturas_suplementarias_sesion6:
+.. _lectura_extras_sesion6:
 
 Lección 6 - Introspección a la depuración con pdb
 -------------------------------------------------
@@ -315,8 +309,7 @@ Lección 6 - Introspección a la depuración con pdb
 
 ----
 
-
-.. _lecturas_suplementarias_sesion7:
+.. _lectura_extras_sesion7:
 
 Lección 7 - Operaciones de E/S y manipulación de archivos
 ---------------------------------------------------------
@@ -353,10 +346,7 @@ Manipulación de archivos
 - `Input and Output - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/io.html>`_.
 
 
-----
-
-
-.. _lecturas_suplementarias_sesion8:
+.. _lectura_extras_sesion8:
 
 Lección 8 - Módulos, paquetes y distribución de software
 --------------------------------------------------------
@@ -381,10 +371,7 @@ Scaffolding en proyectos Python
   desde la comunidad de Plone Venezuela.
 
 
-----
-
-
-.. _lecturas_suplementarias_sesion9:
+.. _lectura_extras_sesion9:
 
 Lección 9 - Manejos de errores y orientación a objetos
 ------------------------------------------------------
@@ -421,7 +408,7 @@ Programación orientada a objetos
 ----
 
 
-.. _lecturas_suplementarias_sesion10:
+.. _lectura_extras_sesion10:
 
 Lección 10 - Decoradores y la librería estándar
 -----------------------------------------------

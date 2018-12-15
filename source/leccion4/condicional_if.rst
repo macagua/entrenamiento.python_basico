@@ -252,5 +252,5 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion4>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>` 
     del entrenamiento para ampliar su conocimiento en esta temática.

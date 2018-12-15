@@ -570,5 +570,5 @@ la cual le permite corroborar si un objeto es instancia de una clase.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion9>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>` 
     del entrenamiento para ampliar su conocimiento en esta temática.

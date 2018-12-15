@@ -200,5 +200,5 @@ sentencia ``global``, se soluciona el problema.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion8>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
