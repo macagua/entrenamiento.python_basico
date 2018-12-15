@@ -114,25 +114,24 @@ Este método devuelve una copia superficial del tipo **diccionario**:
 fromkeys()
 ~~~~~~~~~~
 
-Este método crea un nuevo **diccionario** con claves a partir de una secuencia ``seq``
-y con valores asignados a ``value``.
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
+Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de dato 
+*secuencia*. El valor de ``value`` por defecto es el tipo :ref:`None <python_obj_none>`
 
 ::
 
-    dict.fromkeys(seq[,value])
+    >>> secuencia = ('python', 'zope', 'plone')
+    >>> versiones = dict.fromkeys(secuencia)
+    >>> print "Nuevo Diccionario : %s" %  str(versiones)
+    Nuevo Diccionario : {'python': None, 'zope': None, 'plone': None}
 
-El nuevo **diccionario** con claves de la secuencia ``seq`` y los valores son iguales a 
-``value``. El valor de ``value`` por defecto es :ref:`None <python_obj_none>`.
+En el ejemplo anterior inicializa los valores de cada clave a ``None``, mas puede 
+inicializar un *valor* común por defecto para cada *clave*:
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versionesIterador = versiones.iterkeys()
-    >>> versiones.fromkeys(versionesIterador[,5.1])
-
-.. todo:: TODO terminar de escribir un ejemplo de uso del método.
+    >>> versiones = dict.fromkeys(secuencia, 0.1)
+    >>> print "Nuevo Diccionario : %s" %  str(versiones)
+    Nuevo Diccionario : {'python': 0.1, 'zope': 0.1, 'plone': 0.1}
 
 
 .. _python_dict_mtd_get:
@@ -158,15 +157,15 @@ has_key()
 ~~~~~~~~~
 
 Este método devuelve el valor ``True`` si el diccionario tiene presente la clave 
-enviada como argumento. D.has_key(k) -> True if D has a key k, else False
-
-.. todo:: TODO traducir frases del párrafo anterior.
+enviada como argumento.
 
 ::
 
     >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
     >>> versiones.has_key('plone')
     True
+    >>> versiones.has_key('django')
+    False
 
 
 .. _python_dict_mtd_items:
@@ -363,28 +362,89 @@ el **diccionario** esta vació.
 setdefault()
 ~~~~~~~~~~~~
 
-Este método es similar a :ref:`get(key, default) <python_dict_mtd_get>`, pero además 
-asigna la clave ``key`` al valor por ``default`` si no se encuentra en el diccionario.
+Este método es similar a :ref:`get(key, default_value) <python_dict_mtd_get>`, pero además 
+asigna la clave ``key`` al valor por ``default_value`` para la clave si esta no se encuentra 
+en el **diccionario**.
 
 ::
 
-    D.setdefault(key[,default])
+    D.setdefault(key[,default_value])
 
-Este método devuelve el valor producido por el método integrado 
-:ref:`get() <python_dict_mtd_get>`, también define ``default`` para la clave del 
-**diccionario** si la clave no esta en el diccionario.
-
-.. todo:: TODO terminar de escribir la explicación del del método.
+A continuación un ejemplo de como trabaja el método ``setdefault()`` cuando la clave 
+esta en el diccionario:
 
 ::
 
     >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones.setdefault('zope')
-    2.13
-    >>> versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    >>> zope = versiones.setdefault('zope')
+    >>> print 'Versiones instaladas:', versiones
+    Versiones instaladas: {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    >>> print 'Versión de Zope:', zope
+    Versión de Zope: 2.13
+
+A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta 
+en el diccionario:
+
+::
+
+    >>> paquetes = {'python': 2.7, 'zope': 2.13}
+    >>> print paquetes
+    {'python': 2.7, 'zope': 2.13}
+    >>> plone = paquetes.setdefault('plone')
+    >>> print 'paquetes: ', paquetes
+    paquetes:  {'python': 2.7, 'zope': 2.13, 'plone': None}
+    >>> print 'plone: ', plone
+    plone:  None
+
+Si el valor no es proveído, el valor ``default_value`` será el tipo objeto integrado
+:ref:`None <python_obj_none>`. 
+
+A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta 
+en el diccionario pero esta vez el ``default_value`` es proveído:
+
+::
+
+    >>> paquetes = {'python': 2.7, 'zope': 2.13, 'plone': None}
+    >>> print paquetes
+    {'python': 2.7, 'zope': 2.13, 'plone': None}
+    >>> django = paquetes.setdefault('django', 2.1)
+    >>> print 'paquetes = ', paquetes
+    paquetes =  {'python': 2.7, 'zope': 2.13, 'plone': None, 'django': 2.1}
+    >>> print 'django = ', django
+    django =  2.1
+
+::
+
+    >>> PKGS = (('zope', 'Zope2'),
+    ...        ('zope', 'ZODB3'),
+    ...        ('plone', 'Plone'),
+    ...        ('plone', 'diazo'),
+    ...        ('plone', 'plone.plone.i18n'),)
+    >>> 
+    >>> paquetes = {}
+    >>> for clave, valor in PKGS:
+    ...     if paquetes.has_key(clave):
+    ...         paquetes[clave].append(valor)
+    ...     else:
+    ...         paquetes[clave] = [valor]
+    ... 
+    >>> print paquetes
+    {'zope': ['Zope2', 'ZODB3'], 'plone': ['Plone', 'diazo', 'plone.i18n']}
+
+::
+
+    >>> PKGS = (('zope', 'Zope2'),
+    ...        ('zope', 'ZODB3'),
+    ...        ('plone', 'Plone'),
+    ...        ('plone', 'diazo'),
+    ...        ('plone', 'plone.i18n'),)
+    >>> paquetes = {}
+    >>> for clave, valor in PKGS:
+    ...     paquetes.setdefault(clave, []).append(valor)
+    ... 
+    >>> print paquetes
+    {'zope': ['Zope2', 'ZODB3'], 'plone': ['Plone', 'diazo', 'plone.i18n']}
+
 
 .. todo:: TODO terminar de escribir un ejemplo de uso del método.
 
@@ -394,20 +454,31 @@ Este método devuelve el valor producido por el método integrado
 update()
 ~~~~~~~~
 
-Este método actualiza un **diccionario** desde un diccionario/iterable E y F. Si E 
-esta presenta y tiene un método ``.keys()``, hace: ``for key in E: D[key] = E[key]``. 
-Si E esta presenta y carece del método ``.keys()``, hace: ``for (key, value) in E: D[key] = value``.
-En otro caso, esto es lo seguido por: ``for key in F: D[k] = F[key]``.
+Este método actualiza un **diccionario** agregando los pares clave-valores en un 
+segundo diccionario. Este método no devuelve nada.
+
+El método ``update()`` toma un diccionario o un objeto iterable de pares clave/valor 
+(generalmente tuplas). Si se llama a ``update()`` sin pasar parámetros, el diccionario 
+permanece sin cambios.
 
 ::
 
-    D.update([E, ]**F) -> None.
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> print versiones
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    >>> versiones_adicional = dict(django=2.1)
+    >>> print versiones_adicional
+    {'django': 2.1}
+    >>> versiones.update(versiones_adicional)
+
+Como puede apreciar este método no devuelve nada, más si muestra de nuevo el diccionario 
+``versiones`` puede ver que este fue actualizado con el otro diccionario 
+``versiones_adicional``.
 
 ::
 
-    >>> 
-
-.. todo:: TODO terminar de escribir sobre este método integrado.
+    >>> print versiones
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1, 'django': 2.1}
 
 
 .. _python_dict_mtd_values:
@@ -483,6 +554,80 @@ Este método devuelve un objeto proveyendo una vista de los valores del **diccio
     2.13
     2.7
     5.1
+
+
+.. _python_dict_fun:
+
+Funciones
+.........
+
+Los objetos de tipo **diccionario** tienen disponibles una serie de *funciones* 
+integradas en el interprete Python para su tratamiento, a continuación algunas 
+de estas:
+
+.. _python_dict_fun_cmp:
+
+cmp()
+~~~~~
+
+Esta función es la misma función integrada :ref:`cmp() <python_fun_cmp>` en el 
+interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
+
+::
+
+    >>> versiones_proyecto1 = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_proyecto2 = dict(django=2.1, djangorestframework=3.6)
+    >>> print cmp(versiones_proyecto1, versiones_proyecto2)
+    1
+
+La función ``cmp()`` es usado en Python para comparar valores y claves de dos 
+diccionarios. Si la función devuelve el valor ``0`` si ambos diccionarios son 
+igual, devuelve el valor ``1`` si el primer diccionario es mayor que el segundo 
+diccionario y devuelve el valor ``-1`` si el primer diccionario es menor que el 
+segundo diccionario.
+
+
+.. _python_dict_fun_len:
+
+len()
+~~~~~
+
+Esta función es la misma función integrada :ref:`len() <python_fun_len>` en el 
+interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
+
+::
+
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> len(versiones)
+    3
+
+
+Sentencias
+..........
+
+Los objetos de tipo **diccionario** tienen disponibles una serie de *sentencias* 
+integradas en el interprete Python para su tratamiento, a continuación algunas 
+de estas:
+
+.. _python_dict_snt_del:
+
+del
+~~~
+
+Esta sentencia es la misma sentencia integrada :ref:`del <python_sent_del>` en el 
+interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
+
+::
+
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+    >>> print versiones
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1, 'django': 2.1}
+    >>> del versiones['django']
+    >>> print versiones
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+
+En el código fuente anterior se usa la sentencia ``del`` para eliminar un elemento del 
+diccionario mediante su respectiva clave,
 
 
 Convertir a diccionarios
