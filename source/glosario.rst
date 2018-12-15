@@ -2,18 +2,17 @@
 
 .. _glosario:
 
-========
 Glosario
 ========
 
 :Autor(es): Leonardo J. Caballero G.
 :Correo(s): leonardocaballero@gmail.com
 :Compatible con: Python 2.x, Python 3.x
-:Fecha: 08 de Octubre de 2018
+:Fecha: 15 de Diciembre de 2018
 
-A continuación una serie de términos usados en las tecnologías Python / Zope / Plone.
+A continuación una serie de términos usados en las tecnologías Python/Zope/Plone.
 
-.. glossary ::
+.. glossary::
     :sorted:
     
     buildout
