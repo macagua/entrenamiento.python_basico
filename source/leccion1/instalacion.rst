@@ -62,5 +62,5 @@ De nuevo vuelva a ejecutar en su consola de comando el comando ``python``.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion1>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion1>` 
     del entrenamiento para ampliar su conocimiento en esta temática.

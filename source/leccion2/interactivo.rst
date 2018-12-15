@@ -602,7 +602,7 @@ módulos propios escritos en Python que tienes instalado en tu sistema.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lecturas_suplementarias_sesion2>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion2>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
