@@ -408,7 +408,7 @@ De nuevo realice la importación de la librería del estándar Python llamada
 También consultar los detalles acerca del 'objeto' para esto use como ejemplo
 la librería ``os`` ejecutando el siguiente comando:
 
-.. code-block:: python
+.. code-block:: ipython
 
     In [2]: os?
     Type:        module
@@ -463,7 +463,7 @@ librería importada
 También puede consultar la documentación de la librería ``os`` de la
 siguiente forma:
 
-.. code-block:: python
+.. code-block:: ipython
 
     In [5]: print os.__doc__
     OS routines for NT or Posix depending on what system we're on.
@@ -500,7 +500,7 @@ Otro ejemplo es imprimir el **nombre de la clase** con el siguiente comando:
 Y otra forma de consultar la documentación de la librería ``os`` es
 ejecutando el siguiente comando:
 
-.. code-block:: python
+.. code-block:: ipython
 
     In [7]: help(os)
     Help on module os:
@@ -540,7 +540,7 @@ Entonces presione la tecla ``q`` para salir de la ayuda del módulo ``os``.
 
 Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 
-.. code-block:: python
+.. code-block:: ipython
 
     In [8]: exit()
     Do you really want to exit ([y]/n)? y
