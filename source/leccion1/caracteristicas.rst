@@ -35,7 +35,7 @@ ejemplo de este concepto:
 
 .. literalinclude:: ../../recursos/leccion1/fuertemente_tipados.py
     :language: python
-    :lines: 20-25
+    :lines: 19-24
 
 
 .. _python_tipado_dinamico:

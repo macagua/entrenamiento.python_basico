@@ -135,7 +135,7 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 
 .. literalinclude:: ../../recursos/leccion8/distribucion/setup.py
     :language: python
-    :lines: 2-50
+    :lines: 2-44
 
 Entonces debe cree la siguiente estructura de directorios, ya hecha para seguir 
 adelante:
