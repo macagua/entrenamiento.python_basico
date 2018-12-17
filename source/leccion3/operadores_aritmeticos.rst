@@ -183,7 +183,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de definir variables numéricas**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 4
 
@@ -191,7 +190,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador aritmético Suma**, Añade valores a cada lado del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 7
 
@@ -200,7 +198,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 del lado izquierdo.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 10
 
@@ -209,7 +206,6 @@ del lado izquierdo.
 ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 13
 
@@ -218,7 +214,6 @@ ambos lados del operador.
 (potencia) de los operadores.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 16
 
@@ -226,7 +221,6 @@ ambos lados del operador.
 **Ejemplo de operador aritmético División**.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 19
 
@@ -234,7 +228,6 @@ ambos lados del operador.
 **Ejemplo de operador aritmético División entera**.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 22
 
@@ -244,7 +237,6 @@ que el resultado es el cociente en el cual se eliminan los dígitos después del
 decimal.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 26
 
@@ -253,7 +245,6 @@ decimal.
 por el operador del lado derecho y devuelve el resto.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
-    :linenos:
     :language: python
     :lines: 30
 
