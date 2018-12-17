@@ -67,7 +67,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Definir variables usadas en los siguientes ejemplos**:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
-    :linenos:
     :language: python
     :lines: 5
 
@@ -75,7 +74,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador lógico and**:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
-    :linenos:
     :language: python
     :lines: 14-18
 
@@ -83,7 +81,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador lógico or**:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
-    :linenos:
     :language: python
     :lines: 23-29
 
@@ -91,7 +88,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador lógico not**:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
-    :linenos:
     :language: python
     :lines: 34-38
 
