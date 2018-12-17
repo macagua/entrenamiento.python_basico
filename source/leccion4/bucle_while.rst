@@ -28,7 +28,6 @@ A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado p
 conteo:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
-    :linenos:
     :language: python
     :lines: 12-17
 
@@ -49,7 +48,6 @@ A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado
 por Evento:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
-    :linenos:
     :language: python
     :lines: 27-37
 
@@ -68,7 +66,6 @@ El nombre de la sentencia :ref:`else <python_sent_else>` es equivocada, ya que e
 ``while`` sea ``False``, (a comparación de la :ref:`sentencia if <python_sent_if>`).
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
-    :linenos:
     :language: python
     :lines: 47-57
 
@@ -92,7 +89,6 @@ A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado l
 sentencia ``break``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
-    :linenos:
     :language: python
     :lines: 64-70
 
@@ -113,7 +109,6 @@ A continuación, se presenta un ejemplo del uso del bucle ``while`` controlado l
 sentencia ``continue``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
-    :linenos:
     :language: python
     :lines: 77-83
 
@@ -132,7 +127,6 @@ Ejemplo de la `Sucesión de Fibonacci <https://es.wikipedia.org/wiki/Sucesión_d
 con bucle ``while``:
 
 .. literalinclude:: ../../recursos/leccion4/fibonacci.py
-    :linenos:
     :language: python
     :lines: 6-9
 

@@ -114,7 +114,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de definir variables numéricas**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
-    :linenos:
     :language: python
     :lines: 4-6
 
@@ -122,7 +121,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador relacional Igual**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
-    :linenos:
     :language: python
     :lines: 9-16
 
@@ -130,7 +128,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador relacional Diferente**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
-    :linenos:
     :language: python
     :lines: 19-23
 
@@ -138,7 +135,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador relacional Menor que**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
-    :linenos:
     :language: python
     :lines: 26-27
 
@@ -146,7 +142,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador relacional Mayor que**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
-    :linenos:
     :language: python
     :lines: 30-31
 
@@ -154,7 +149,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador relacional Menor o igual que**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
-    :linenos:
     :language: python
     :lines: 34-35
 
@@ -162,7 +156,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 **Ejemplo de operador relacional Mayor o igual que**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
-    :linenos:
     :language: python
     :lines: 38-39
 

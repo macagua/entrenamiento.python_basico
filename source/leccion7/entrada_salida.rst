@@ -72,7 +72,6 @@ Usted debe crear un *script* llamado ``entrada_argumentos.py`` con el siguiente
 contenido:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_argumentos.py
-    :linenos:
     :language: python
     :lines: 3-5
 

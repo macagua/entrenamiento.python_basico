@@ -137,7 +137,6 @@ clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor`
 ``JefeCuadrilla``, ``Obrero``, etc.
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 65-71
 

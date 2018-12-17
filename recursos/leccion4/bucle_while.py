@@ -54,7 +54,7 @@ while grado != -1:
     grado = int(raw_input(mensaje))
 else:
     promedio = total / contar
-    print "Promedio de notas del grado escolar es: " + str(promedio)
+    print "Promedio de notas del grado escolar: " + str(promedio)
 
 
 # Bucle 'while' con sentencia 'break'

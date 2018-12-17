@@ -28,7 +28,6 @@ A continuación, se presenta un ejemplo del uso del bucle ``for`` con tipos de
 estructuras de datos :ref:`listas <python_list>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
-    :linenos:
     :language: python
     :lines: 12-15
 
@@ -41,7 +40,6 @@ estructuras de datos :ref:`listas <python_list>` con la función
 :ref:`range() <python_fun_range>` y la función :ref:`len() <python_fun_len>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
-    :linenos:
     :language: python
     :lines: 32-37
 
@@ -57,7 +55,6 @@ A continuación, se presenta un ejemplo del uso del bucle ``for`` con tipos de
 estructuras de datos :ref:`Tuplas <python_tuple>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
-    :linenos:
     :language: python
     :lines: 46-48
 
@@ -71,7 +68,6 @@ A continuación, se presenta un ejemplo del uso del bucle ``for`` con tipos de
 estructuras de datos :ref:`diccionarios <python_dict>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
-    :linenos:
     :language: python
     :lines: 57-71
 
@@ -92,7 +88,6 @@ expresión condicional del bucle ``for`` sea ``False``, (a comparación de la
 :ref:`sentencia if <python_condi_if>`).
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
-    :linenos:
     :language: python
     :lines: 80-87
 
