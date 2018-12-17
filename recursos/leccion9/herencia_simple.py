@@ -39,7 +39,7 @@ persona2.__getattribute__('apellido') +"', con cédula '"+  \
 persona2.__getattribute__('cedula') +"'."
 
 # Una instancia de Objeto Supervisor
-supervisor1 = Supervisor("V-16987456", "Pedro", "Pérez", "No se", "El chivo")
+supervisor1 = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
 
 print "\n" + supervisor1.__doc__[26:37]
 print len(supervisor1.__doc__[26:37]) * "="

@@ -82,7 +82,8 @@ class JefeCuadrilla(Supervisor, Destreza):
         """Constructor de clase Jefe de Cuadrilla"""
 
         # Invoca al constructor de clase Supervisor
-        Supervisor.__init__(self, cedula, nombre, apellido, sexo, rol)
+        Supervisor.__init__(self, cedula, nombre, apellido, sexo, 
+            rol)
         # Invoca al constructor de clase Destreza
         Destreza.__init__(self, area, herramienta, experiencia)
 
@@ -90,10 +91,11 @@ class JefeCuadrilla(Supervisor, Destreza):
         self.cuadrilla = cuadrilla
 
     def __str__(self):
-        """Devuelve una cadena representativa al Jefe de Cuadrilla"""
-        return "%s: %s %s, rol: '%s', tareas: %s, en la cuadrilla: %s." % (
-            self.__doc__[28:46], self.nombre, self.apellido, self.rol,
-            self.consulta_tareas(), self.cuadrilla)
+        """Devuelve cadena representativa al Jefe de Cuadrilla"""
+        jq = "{0}: {1} {2}, rol '{3}', tareas {4}, cuadrilla: {5}"
+        return jq.format(
+            self.__doc__[28:46], self.nombre, self.apellido, 
+            self.rol, self.consulta_tareas(), self.cuadrilla)
 
 
 class Obrero(Persona, Destreza):

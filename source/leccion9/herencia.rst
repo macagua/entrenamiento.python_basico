@@ -6,19 +6,18 @@
 Herencia
 --------
 
-La herencia es una de las premisas y técnicas de la :ref:`POO <python_poo>` 
-la cual permite a los programadores crear una clase general primero y luego 
-más tarde crear clases más especializadas que re-utilicen código de la clase 
-general. La herencia también le permite escribir un código más limpio y legible.
+La herencia es una de las premisas y técnicas de la :ref:`POO <python_poo>` la cual 
+permite a los programadores crear una clase general primero y luego más tarde crear 
+clases más especializadas que re-utilicen código de la clase general. La herencia 
+también le permite escribir un código más limpio y legible.
 
 .. _python_poo_clase_base:
 
 Clase Base
 ..........
 
-Clase Base o también conocida como *Clase abstracta* le permite definir una 
-clase que puede heredarse en otras clases los atributos y comportamientos 
-definido en esta.
+Clase Base o también conocida como *Clase abstracta* le permite definir una clase que 
+puede heredarse en otras clases los atributos y comportamientos definido en esta.
 
 .. figure:: ../_static/clase_abstracta.png
     :align: center
@@ -51,27 +50,28 @@ La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
     :language: python
     :lines: 6-7
 
-El método constructor ``__init__`` es un método especial el cual debe escribir 
-como: ``MiClase(parámetros iniciales si hay cualquiera)``.
+El método constructor ``__init__`` es un método especial el cual debe escribir como: 
+``MiClase(parámetros iniciales si hay cualquiera)``.
 
 Usted puede llamar esos métodos y atributos con la siguiente notación: 
 ``claseinstancia.metodo`` o ``claseinstancia.atributo``. 
 
 ::
 
-    >>> print persona1.nombre, persona1.apellido, persona1.getGenero(persona1.sexo)
+    >>> print persona1.nombre, persona1.apellido
+    >>> print persona1.getGenero(persona1.sexo)
 
-El método ``__str__`` es un método usando para imprimir la descripción de la 
-instancia de objeto el cual debe mostrar como:
+El método ``__str__`` es un método usando para imprimir la descripción de la instancia 
+de objeto el cual debe mostrar como:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :lines: 12
 
-En el anterior código se usan para cierto formato para imprimir la instancia de 
-objeto usando la sentencia ``print``, concatenando el carácter ``\n`` para 
-generar un salto de página y seguidamente convertir a formato cadena de caracteres 
-usando la función ``str()`` a la instancia de objeto llamada ``persona2``. 
+En el anterior código se usan para cierto formato para imprimir la instancia de objeto 
+usando la sentencia ``print``, concatenando el carácter ``\n`` para generar un salto 
+de página y seguidamente convertir a formato cadena de caracteres usando la función 
+``str()`` a la instancia de objeto llamada ``persona2``. 
 
 
 .. _python_poo_herencia_simple:
@@ -89,8 +89,8 @@ siguiente ejemplos el objeto ``Supervisor`` y el objeto ``Obrero``.
 
     Diagrama de herencia de Objetos
 
-El siguiente es un ejemplo de la clase ``Supervisor`` 
-que derivada de la clase ``Persona`` con función interna:
+El siguiente es un ejemplo de la clase ``Supervisor`` que derivada de la clase 
+``Persona`` con función interna:
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
@@ -103,7 +103,6 @@ No se copia la clase previa, pero si **se hereda** de ella.
 La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :linenos:
     :language: python
     :lines: 42
 
@@ -114,23 +113,23 @@ se puede imprimir sus detalles de la siguiente forma:
     :language: python
     :lines: 47
 
-Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de 
-la clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
+Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de la 
+clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :lines: 50-57
 
-Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se 
-puede imprimir de la siguiente forma:
+Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se puede 
+imprimir de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :lines: 60-61
 
-El uso de las clases y la programación orientada a objetos, le permite a usted que pueda 
-organizar el código con diferentes clases correspondientes a diferentes objetos que 
-encontrará (una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``, 
+El uso de las clases y la programación orientada a objetos, le permite a usted que 
+pueda organizar el código con diferentes clases correspondientes a diferentes objetos 
+que encontrará (una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``, 
 etc.), con sus propios métodos y atributos. Luego puede usar la herencia para considerar 
 las variaciones en torno a una clase base y reutilizar el código. Ej.: a partir de una 
 clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor``, 
@@ -144,8 +143,8 @@ clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor`
 Función issubclass()
 ~~~~~~~~~~~~~~~~~~~~
 
-``issubclass()``, es una :ref:`función integrada <python_fun_builtins>` 
-la cual le permite corroborar si un objeto es instancia de una clase
+``issubclass()``, es una :ref:`función integrada <python_fun_builtins>` la cual le 
+permite corroborar si un objeto es instancia de una clase.
 
 .. note::
     Más información consulte la documentación detallada de la función 
@@ -197,7 +196,7 @@ la declaración de la subclase:
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 61-96
+    :lines: 61-98
 
 .. todo:: TODO terminar de escribir esta sección.
 
