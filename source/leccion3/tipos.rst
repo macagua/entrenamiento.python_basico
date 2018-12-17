@@ -3,15 +3,25 @@
 
 .. _python_tipos:
 
-Jerarquizar de tipos estándar
-=============================
+Jerarquía de tipos estándar
+===========================
+
+A continuación se muestra una lista de los tipos que están integrados en Python. 
+Los módulos de extensión (escritos en C, Java u otros lenguajes, dependiendo de 
+la implementación) pueden definir tipos adicionales. Las versiones futuras de 
+Python pueden agregar tipos a la jerarquía de tipos (por ejemplo, números racionales, 
+arrays de enteros almacenados eficientemente, etc.).
+
+Algunas de las descripciones de tipo a continuación contienen un párrafo que enumera 
+los "atributos especiales". Estos son atributos que proporcionan acceso a la implementación 
+y no están destinados para uso general. Su definición puede cambiar en el futuro.
 
 En Python tiene varios tipos de datos *compuestos* estándar disponibles por defecto en 
 el interprete, como los tipos *numéricos*, *secuencias*, *mapeos* y *conjuntos* usados 
 para agrupar otros valores.
 
 Para el caso de las estructuras de datos se usan variables y constantes las cuales usan 
-operadores para tratar los tipos de datos estándar. 
+operadores para tratar los tipos de datos estándar.
 
 Los tipos de datos *compuestos* estándar se pueden clasificar como los dos siguientes:
 
