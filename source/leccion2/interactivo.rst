@@ -3,8 +3,8 @@
 
 .. _python_interactivo:
 
-Inmersión al modo interactivo de Python
----------------------------------------
+Inmersión al modo interactivo
+-----------------------------
 
 La *inmersión al modo interactivo* le permite a cualquier usuario el cual **NUNCA** 
 ha trabajando con el interprete de `Python`_ pueda tener un primer acercamiento 
