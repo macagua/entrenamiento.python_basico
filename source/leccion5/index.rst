@@ -19,5 +19,7 @@ mostrando ejemplos prácticos y útiles. A continuación el temario de esta lecc
 
    programacion_estructurada
    funciones
-   funciones_propias
+   funciones_avanzadas
+   funciones_recursivas
+   funciones_orden_superior
    funciones_integradas

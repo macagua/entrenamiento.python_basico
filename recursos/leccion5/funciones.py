@@ -1,11 +1,9 @@
 # -*- coding: utf8 -*-
 
-"""
-    Funciones en Python
-"""
+"""Funciones en Python"""
 
 def iva():
-    ''' función básica para el calculo del IVA '''
+    '''función básica para el calculo del IVA'''
     iva = 12
     costo = input('¿Cual es el monto a calcular?: ')
     calculo = costo * iva / 100
@@ -13,13 +11,13 @@ def iva():
 
 
 def suma(numero1,numero2):
-    ''' función la cual suma dos números '''
+    '''función la cual suma dos números'''
     print numero1 + numero2
     print "\n"
 
 
 def imprime_fibonacci(n):
-    ''' escribe la sucesión Fibonacci hasta n '''
+    '''escribe la sucesión Fibonacci hasta n'''
     a, b = 0, 1
     while b < n:
         print b,
@@ -27,7 +25,7 @@ def imprime_fibonacci(n):
 
 
 def devuelve_fibonacci(n): 
-    ''' devuelve la sucesión Fibonacci hasta n '''
+    '''devuelve la sucesión Fibonacci hasta n'''
     resultado = []
     a, b = 0, 1
     while b < n:
