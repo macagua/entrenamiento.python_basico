@@ -60,3 +60,6 @@ docs/_build/
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
+
+# Virtualenv
+venv/
