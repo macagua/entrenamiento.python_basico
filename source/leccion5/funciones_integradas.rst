@@ -2148,7 +2148,7 @@ seria como lo siguiente:
 
 ::
 
-    >>> supervisor1 = Supervisor("V-16987456", "Pedro", "Pérez", "No se", "El chivo")
+    >>> supervi = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
     >>> issubclass(supervisor1, Persona)
     True
 
@@ -2158,11 +2158,11 @@ uno de los tipos en la tupla.
 
 ::
 
-    >>> supervisor1 = Supervisor("V-16987456", "Pedro", "Pérez", "No se", "El chivo")
-    >>> issubclass(supervisor1, (Persona, Empleado, Supervisor, Destreza))
+    >>> supervi = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
+    >>> issubclass(supervi, (Persona, Empleado, Supervisor, Destreza))
     True
 
-Aquí puede decir que ``supervisor1`` es una subclase derivada de la clase ``Persona``.
+Aquí puede decir que ``supervi`` es una subclase derivada de la clase ``Persona``.
 
 Las clases dan la posibilidad de crear estructuras de datos más complejas. En el ejemplo, 
 una clase ``Persona`` que realizará un seguimiento del ``cedula``, ``nombre``, ``apellido`` 
