@@ -68,6 +68,72 @@ continuación:
     <type 'list'>
 
 
+.. _python_dict_opers:
+
+Operaciones
+...........
+
+Los objetos de tipo **diccionario** permite una serie de operaciones usando operadores 
+integrados en el interprete Python para su tratamiento, a continuación algunos de 
+estos:
+
+
+.. _python_dict_opers_showv:
+
+Acceder a valor de clave
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Esta operación le permite acceder a un valor especifico del *diccionario* mediante su 
+clave.
+
+::
+
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+    >>> versiones['zope']
+    2.13
+
+
+.. _python_dict_opers_setv:
+
+Asignar valor a clave
+~~~~~~~~~~~~~~~~~~~~~
+
+Esta operación le permite asignar el valor especifico del *diccionario* mediante su 
+clave.
+
+::
+
+    >>> versiones = {'python': 2.7, 'zope': 2.13, 'plone': None}
+    >>> versiones['plone']
+    >>> versiones['plone'] = 5.1
+    >>> versiones
+    {'python': 2.7, 'zope': 2.13, 'plone': 5.1}
+    >>> versiones['plone']
+    5.1
+
+
+.. _python_dict_opers_in:
+
+Iteración in
+~~~~~~~~~~~~
+
+Este operador es el mismo operador integrado :ref:`in <python_opers_in>` en el 
+interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
+
+::
+
+    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+    >>> print versiones
+    {'zope': 2.13, 'python': 2.7, 'plone': 5.1, 'django': 2.1}
+    >>> 'plone' in versiones
+    True
+    >>> 'flask' in versiones
+    False
+
+En el ejemplo anterior este operador devuelve ``True`` si la clave esta en el diccionario 
+``versiones``, de lo contrario devuelve ``False``.
+
+
 .. _python_dict_mtds:
 
 Métodos
@@ -115,7 +181,7 @@ fromkeys()
 ~~~~~~~~~~
 
 Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de dato 
-*secuencia*. El valor de ``value`` por defecto es el tipo :ref:`None <python_obj_none>`
+*secuencia*. El valor de ``value`` por defecto es el tipo :ref:`None <python_obj_none>`.
 
 ::
 
@@ -173,7 +239,7 @@ enviada como argumento.
 items()
 ~~~~~~~
 
-Este método devuelve una lista de pares de diccionarios (clave, valor), como 2 tuplas:
+Este método devuelve una lista de pares de diccionarios (clave, valor), como 2 tuplas.
 
 ::
 
@@ -404,22 +470,24 @@ en el diccionario pero esta vez el ``default_value`` es proveído:
 
 ::
 
-    >>> paquetes = {'python': 2.7, 'zope': 2.13, 'plone': None}
-    >>> print paquetes
+    >>> pkgs = {'python': 2.7, 'zope': 2.13, 'plone': None}
+    >>> print pkgs
     {'python': 2.7, 'zope': 2.13, 'plone': None}
     >>> django = paquetes.setdefault('django', 2.1)
-    >>> print 'paquetes = ', paquetes
-    paquetes =  {'python': 2.7, 'zope': 2.13, 'plone': None, 'django': 2.1}
-    >>> print 'django = ', django
-    django =  2.1
+    >>> print 'paquetes =', pkgs
+    paquetes = {'python': 2.7, 'zope': 2.13, 'plone': None}
+    >>> print 'django =', django
+    django = 2.1
+
+A continuación otro ejemplo de como implementar el método ``setdefault()``:
 
 ::
 
     >>> PKGS = (('zope', 'Zope2'),
-    ...        ('zope', 'ZODB3'),
+    ...        ('zope', 'pytz'),
     ...        ('plone', 'Plone'),
     ...        ('plone', 'diazo'),
-    ...        ('plone', 'plone.plone.i18n'),)
+    ...        ('plone', 'z3c.form'),)
     >>> 
     >>> paquetes = {}
     >>> for clave, valor in PKGS:
@@ -429,21 +497,21 @@ en el diccionario pero esta vez el ``default_value`` es proveído:
     ...         paquetes[clave] = [valor]
     ... 
     >>> print paquetes
-    {'zope': ['Zope2', 'ZODB3'], 'plone': ['Plone', 'diazo', 'plone.i18n']}
+    {'zope': ['Zope2', 'pytz'], 'plone': ['Plone', 'diazo', 'z3c.form']}
 
 ::
 
     >>> PKGS = (('zope', 'Zope2'),
-    ...        ('zope', 'ZODB3'),
+    ...        ('zope', 'pytz'),
     ...        ('plone', 'Plone'),
     ...        ('plone', 'diazo'),
-    ...        ('plone', 'plone.i18n'),)
+    ...        ('plone', 'z3c.form'),)
     >>> paquetes = {}
     >>> for clave, valor in PKGS:
     ...     paquetes.setdefault(clave, []).append(valor)
     ... 
     >>> print paquetes
-    {'zope': ['Zope2', 'ZODB3'], 'plone': ['Plone', 'diazo', 'plone.i18n']}
+    {'zope': ['Zope2', 'pytz'], 'plone': ['Plone', 'diazo', 'z3c.form']}
 
 
 .. todo:: TODO terminar de escribir un ejemplo de uso del método.
@@ -576,7 +644,7 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 ::
 
     >>> versiones_proyecto1 = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_proyecto2 = dict(django=2.1, djangorestframework=3.6)
+    >>> versiones_proyecto2 = dict(django=2.1, django-filter=1.1.0)
     >>> print cmp(versiones_proyecto1, versiones_proyecto2)
     1
 
@@ -601,6 +669,8 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
     >>> len(versiones)
     3
 
+
+.. _python_dict_snt:
 
 Sentencias
 ..........
@@ -627,7 +697,7 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
     {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
 
 En el código fuente anterior se usa la sentencia ``del`` para eliminar un elemento del 
-diccionario mediante su respectiva clave,
+diccionario mediante su respectiva clave.
 
 
 Convertir a diccionarios
@@ -652,28 +722,26 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
-    :lines: 8-16
+    :lines: 5-13
 
 **Ejemplo de operaciones con tipo diccionario con funciones propias**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
-    :lines: 22-24
+    :lines: 19-21
 
 **Ejemplo de iteración avanzada sobre diccionarios con función iteritems**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
-    :lines: 29-30
+    :lines: 26-27
 
 **Ejemplo real de usar tipo diccionario**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
-    :lines: 33-50
+    :lines: 30-47
 
-
-----
 
 Ayuda integrada
 ...............
@@ -684,9 +752,6 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 ::
 
     >>> help(dict)
-
-
-----
 
 
 .. important::
@@ -702,8 +767,6 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
         python tipo_diccionarios.py
 
-
-----
 
 .. seealso::
 

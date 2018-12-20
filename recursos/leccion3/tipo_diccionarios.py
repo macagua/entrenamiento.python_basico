@@ -1,9 +1,6 @@
 # -*- coding: utf8 -*-
 
-"""
-    El diccionario, que define una relación 
-    uno a uno entre claves y valores.
-"""
+"""El diccionario define una relación uno a uno entre claves y valores."""
 
 datos_basicos = {
     "nombres":"Leonardo Jose",
@@ -19,9 +16,9 @@ print datos_basicos, type(datos_basicos)
 print "\nDetalle del diccionario"
 print "======================="
 
-print "\nClaves del diccionario:", datos_basicos.keys()
-print "\nValores del diccionario:", datos_basicos.values()
-print "\nElementos del diccionario:", datos_basicos.items()
+print "\nClaves de diccionario:", datos_basicos.keys()
+print "\nValores de diccionario:", datos_basicos.values()
+print "\nElementos de diccionario:", datos_basicos.items()
 
 print "\nDetalle del diccionario con iteritems()"
 print "======================================="
