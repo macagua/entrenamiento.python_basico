@@ -6,22 +6,114 @@
 Tipo cadenas de caracteres
 --------------------------
 
-Las cadenas no son más que caracteres encerrado entre comillas simples
-('cadena') o dobles ("cadena"). 
+Las cadenas de caracteres, son secuencias inmutables que contienen caracteres encerrado 
+entre comillas.
 
-+---------------+-----------+----------------------------+---------------+
-| **Tipo**      | **Clase** | **Notas**                  | **Ejemplo**   |
-+---------------+-----------+----------------------------+---------------+
-| ``str``       | Cadena    | Inmutable                  | 'Hola Mundo'  |
-+---------------+-----------+----------------------------+---------------+
-| ``unicode``   | Cadena    | Versión ``Unicode`` de str | u'Hola Mundo' |
-+---------------+-----------+----------------------------+---------------+
 
-.. note::
+.. _python_str_short:
 
-    - **Mutable:** si su contenido (o dicho valor) puede cambiarse en tiempo de ejecución.
+Cadenas cortas
+..............
 
-    - **Inmutable:** si su contenido (o dicho valor) no puede cambiarse en tiempo de ejecución.
+Son caracteres encerrado entre comillas simples (``'``) o dobles (``"``). 
+
+::
+
+    >>> 'Hola Mundo'
+    'Hola Mundo'
+
+
+.. _python_str_long:
+
+Cadenas largas
+..............
+
+Son caracteres encerrados entre grupo comillas triples simples (``'''``) o dobles 
+(``"""``), están son generalmente son referenciadas como *cadenas de triple comillas*.
+
+::
+
+    >>> """Clase que representa una Persona"""
+    'Clase que representa una Persona'
+    >>> '''Clase que representa un Supervisor'''
+    'Clase que representa un Supervisor'
+
+
+.. _python_str_clases:
+
+Clases
+......
+
+A continuación, una lista de clases integradas Python para los tipos de cadenas de 
+caracteres:
+
+
+.. _python_str_basestring:
+
+basestring
+~~~~~~~~~~
+
+Es la *clase base* de las clases ``str`` y ``unicode``.
+
+
+.. _python_str_str:
+
+str
+~~~
+
+Son *secuencias inmutables* de cadenas de caracteres con soporte a caracteres ``ASCII``.
+
+::
+
+    >>> 'Hola Mundo'
+    'Hola Mundo'
+    >>> "Hola Mundo"
+    'Hola Mundo'
+
+
+.. _python_str_unicode:
+
+unicode
+~~~~~~~
+
+Son *secuencias inmutables* de cadenas de caracteres con soporte a caracteres ``Unicode``. 
+
+::
+
+    >>> u'Jekechitü'
+    u'Jekechit\xfc'
+
+
+.. _python_str_prefijo:
+
+Prefijo de cadenas
+..................
+
+Una cadena puede estar precedida por el carácter: 
+
+- ``r``/``R``, el cual indica, que se trata de una cadena ``raw`` (del 
+  inglés, cruda). Las cadenas ``raw`` se distinguen de las normales en que los 
+  caracteres escapados mediante la barra invertida (``\``) no se sustituyen por 
+  sus contrapartidas. Esto es especialmente útil, por ejemplo, para usar las 
+  expresiones regulares.
+
+    ::
+
+        >>> raw = r"\t\nHola Plone\n"
+        >>> type(raw)
+        <type 'str'>
+
+- ``u``/``U``, el cual indica, que se trata de una cadena que utiliza 
+  codificación :ref:`unicode <python_str_unicode>`.
+
+    ::
+
+        >>> saber_mas = u"Atüjaa oo'omüin..."
+        >>> type(saber_mas)
+        <type 'unicode'>
+        >>> vocales = U"äóè"
+        >>> type(vocales)
+        <type 'unicode'>
 
 
 .. _python_str_escape:
@@ -29,50 +121,87 @@ Las cadenas no son más que caracteres encerrado entre comillas simples
 Cadenas de escape
 .................
 
-Dentro de las comillas se pueden añadir caracteres especiales para escaparlos con:
+Para escapar caracteres dentro de cadenas de caracteres se usa el carácter ``\`` 
+seguido de cualquier carácter ASCII.
 
-- \\n : el carácter de salto de nueva línea.
-
-- \\t : el carácter de tabulación.
-
-- \\ : el carácter de barra invertida (\\).
-
-- \\' : el carácter de comillas simple.
-
-- \\" : el carácter de comillas doble.
-
-
-Una cadena puede estar precedida por el carácter 'u' o el carácter 'r', los cuales 
-indican, respectivamente, que se trata de una cadena que utiliza codificación 
-``unicode`` y una cadena ``raw`` (del inglés, cruda). Las cadenas ``raw`` se distinguen 
-de las normales en que los caracteres escapados mediante la barra invertida (``\``) 
-no se sustituyen por sus contrapartidas. Esto es especialmente útil, por ejemplo, para 
-las expresiones regulares.
-
-::
-
-    unicode = u"äóè"
-    raw = r"\n"
-
++-------------------+-----------------------------------+
+| Secuencia Escape  | Significado                       |
++===================+===================================+
+| ``\newline``      | Ignorado                          |
++-------------------+-----------------------------------+
+| ``\\``            | Backslash (``\``)                 |
++-------------------+-----------------------------------+
+| ``\'``            | Comillas simple (``'``)           |
++-------------------+-----------------------------------+
+| ``\"``            | Comillas doble (``"``)            |
++-------------------+-----------------------------------+
+| ``\a``            | Bell ASCII (BEL)                  |
++-------------------+-----------------------------------+
+| ``\b``            | Backspace ASCII (BS)              |
++-------------------+-----------------------------------+
+| ``\f``            | Formfeed ASCII (FF)               |
++-------------------+-----------------------------------+
+| ``\n``            | Linefeed ASCII (LF)               |
++-------------------+-----------------------------------+
+| ``\N{name}``      | Carácter llamado *name* en base   |
+|                   | de datos Unicode (Solo Unicode)   |
++-------------------+-----------------------------------+
+| ``\r``            | Carriage Return ASCII (CR)        |
++-------------------+-----------------------------------+
+| ``\t``            | Tabulación Horizontal ASCII (TAB) |
++-------------------+-----------------------------------+
+| ``\uxxxx``        | Carácter con valor hex 16-bit     |
+|                   | *xxxx* (Solamente Unicode).       |
+|                   | Ver :ref:`hex <python_fun_hex>`.  |
++-------------------+-----------------------------------+
+| ``\Uxxxxxxxx``    | Carácter con valor hex 32-bit     |
+|                   | *xxxxxxxx* (Solamente Unicode).   |
+|                   | Ver :ref:`hex <python_fun_hex>`.  |
++-------------------+-----------------------------------+
+| ``\v``            | Tabulación Vertical ASCII (VT)    |
++-------------------+-----------------------------------+
+| ``\ooo``          | Carácter con valor octal *ooo*.   |
+|                   | Ver :ref:`octal <python_fun_oct>`.|
++-------------------+-----------------------------------+
+| ``\xhh``          | Carácter con valor hex *hh*.      |
+|                   | Ver :ref:`hex <python_fun_hex>`.  |
++-------------------+-----------------------------------+
 
 También es posible encerrar una cadena entre triples comillas (simples o dobles). De 
 esta forma puede escribir el texto en varias líneas, y al imprimir la cadena, se 
-respetarán los saltos de línea que se introdujeron sin tener que recurrir al carácter 
-``\n``, así como las comillas sin tener que escaparlas.
+respetarán los saltos de línea que se introdujeron sin tener que recurrir a los 
+carácteres escapados y las comillas como los anteriores.
 
-Las cadenas también admiten operadores como la suma (concatenación de
-cadenas) y la multiplicación.
 
-::
+.. _python_str_operaciones:
 
-    >>> a = "uno"
-    >>> b = "dos"
-    >>> c = a + b
-    >>> c
-    'unodos'
-    >>> c = a * 3
-    >>> c
-    'unounouno'
+Operaciones
+...........
+
+Las cadenas también admiten operadores aritméticos como los siguientes: 
+
+- El operador :ref:`suma <python_opers_arit_suma>` para realizar concatenación de 
+  cadenas de caracteres:
+
+  ::
+
+      >>> a, b = "uno", "dos"
+      >>> a + b
+      'unodos'
+
+- El operador :ref:`multiplicación <python_opers_arit_multi>` para repetir la cadena 
+  de caracteres por N veces definidas en la multiplicación:
+
+  ::
+
+      >>> c = "tres"
+      >>> c * 3
+      'trestrestres'
+
+
+- El operador :ref:`modulo <python_opers_arit_mod>` usado la técnica de interpolación 
+  variables dentro de una cadena de caracteres. Más información consulte la sección
+  :ref:`formateo % <python_str_formateo_modulo>`.
 
 
 .. _python_str_comentarios:
@@ -80,10 +209,8 @@ cadenas) y la multiplicación.
 Comentarios
 ...........
 
-Son cadenas de caracteres las cuales comienzan con el carácter ``#`` estas el intérprete 
-Python ignora totalmente, no generan ningún tipo de código, pero constituyen una ayuda 
-esencial tanto para quien está desarrollando el programa, como para otras personas que 
-lean el código.
+Son cadenas de caracteres las cuales constituyen una ayuda esencial tanto para quien 
+está desarrollando el programa, como para otras personas que lean el código.
 
 Los comentarios en el código tienen una vital importancia en el desarrollo de todo 
 programa, algunas de las funciones más importantes que pueden cumplir los comentarios 
@@ -98,7 +225,7 @@ en un programa, son:
 
 - Indicar cosas pendientes para agregar o mejorar.
 
-El signo para indicar el comienzo de un comentario en Python es la almohadilla o numeral 
+El signo para indicar el comienzo de un comentario en Python es el carácter numeral 
 ``#``, a partir del cual y hasta el fin de la línea, todo se considera un comentario y 
 es ignorado por el intérprete Python.
 
@@ -106,6 +233,7 @@ es ignorado por el intérprete Python.
 
     >>> # comentarios en linea
     ... 
+    >>> 
 
 El carácter ``#`` puede estar al comienzo de línea (en cuyo caso toda la línea será 
 ignorada), o después de finalizar una instrucción válida de código.
@@ -133,8 +261,8 @@ Python no dispone de un método para delimitar bloques de comentarios de varias 
 
 Al igual que los comentarios de un sola linea, son cadenas de caracteres, en este caso 
 van entre triples comillas (simples o dobles), esto tiene el inconveniente que, aunque 
-no genera código ejecutable, el bloque delimitado no es ignorado por el intérprete Python, 
-que crea el correspondiente objeto de tipo :ref:`cadena de caracteres <python_str>`.
+no genera código ejecutable, el bloque delimitado no es ignorado por el intérprete 
+Python, que crea el correspondiente objeto de tipo :ref:`cadena de caracteres <python_str>`.
 
 ::
 
@@ -149,14 +277,14 @@ una linea:
 
 ::
 
-    >>> # Programa que calcula la sucesión 
+    >>> # Calcula la sucesión 
     ... # de números Fibonacci
     ... 
-    >>> """Programa que calcula la sucesión 
-    ... de números Fibonacci."""
-    'Programa que calcula la sucesi\xc3\xb3n \nde n\xc3\xbameros Fibonacci.'
+    >>> """Calcula la sucesión 
+    ... de números Fibonacci"""
+    'Calcula la sucesi\xc3\xb3n \nde n\xc3\xbameros Fibonacci'
 
-Entonces existen al menos dos (02) alternativas para introducir comentarios multilíneas 
+Entonces existen al menos dos (02) alternativas para introducir comentarios multilínea 
 son:
 
 - Comentar cada una de las líneas con el carácter #: en general todos los editores 
@@ -170,11 +298,8 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
 
 ::
 
-    >>> u"""
-    ...     Programa que calcula la sucesión 
-    ...     de números Fibonacci.
-    ... """
-    u'\n    Programa que calcula la sucesi\xf3n \n    de n\xfameros Fibonacci.\n'
+    >>> u"""Calcula la sucesiónde números Fibonacci"""
+    u'Calcula la sucesi\xf3nde n\xfameros Fibonacci'
     >>> # se definen las variables
     ... a, b = 0, 1
     >>> while b < 100:
@@ -184,9 +309,9 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
     ... 
     1 1 2 3 5 8 13 21 34 55 89
 
-Los comentarios multilína usado con mucha frecuencia como en las varias sintaxis 
-Python como :ref:`comentarios de documentación <python_str_docstrings>` a 
-continuación se listan las sintaxis más comunes:
+Los comentarios multilínea usado con mucha frecuencia como en las varias sintaxis Python 
+como :ref:`comentarios de documentación <python_str_docstrings>` a continuación se listan 
+las sintaxis más comunes:
 
 - :ref:`Módulos <python_modulos>`.
 
@@ -202,9 +327,9 @@ continuación se listan las sintaxis más comunes:
 Docstrings
 ..........
 
-En Python todos los objetos cuentan con una variable especial llamada ``doc``, 
-gracias a la cual puede describir para qué sirven los objetos y cómo se usan. 
-Estas variables reciben el nombre de ``docstrings``, o 
+En Python todos los objetos cuentan con una variable especial llamada ``doc``, gracias 
+a la cual puede describir para qué sirven los objetos y cómo se usan. Estas variables 
+reciben el nombre de ``docstrings``, o 
 `cadenas de documentación <http://docs.python.org.ar/tutorial/2/controlflow.html#tut-docstrings>`_.
 
 Ten en cuenta, una buena documentación siempre dará respuesta a las dos preguntas:
@@ -233,8 +358,8 @@ de la declaración.
     Hola Plone !
 
 Puede puede consultar la documentación de la función ``hola()`` debe utilizar la 
-función integrada :ref:`help() <python_fun_help>` y pasarle el argumento del 
-objeto de función ``hola``:
+función integrada :ref:`help() <python_fun_help>` y pasarle el argumento del objeto 
+de función ``hola()``:
 
 ::
 
@@ -278,17 +403,17 @@ definición, y de los métodos, como si fueran funciones:
      |  Methods defined here:
      |  
      |  __init__(self)
-     |      El docstring del inicializador de clase
+     |      El docstring del método constructor de clase
      |  
      |  metodo(self)
-     |      El docstring del metodo de clase
+     |      El docstring del método de clase
 
     >>> o.__doc__
     'El docstring de la clase'
     >>> o.__init__.__doc__
-    'El docstring del inicializador de clase'
+    'El docstring del método constructor de clase'
     >>> o.metodo.__doc__
-    'El docstring del metodo de clase'
+    'El docstring del método de clase'
 
 
 Scripts y módulos
@@ -447,12 +572,12 @@ A continuación un ejemplo por cada tipo de datos:
 Clase formatter
 ~~~~~~~~~~~~~~~
 
-La clase ``formatter`` es una de las clases integradas ``string``. Ese provee la 
-habilidad de hacer variable compleja de substituciones y formateo de valores usando 
-el método :ref:`format() <python_mtd_format>`. Es le permite crear y personalizar 
-sus propios comportamientos de formatos de cadena de caracteres para reescribir los 
-métodos públicos y contiene: ``format()``, ``vformat()``. Ese tiene algunos métodos 
-que son destinado para ser remplazados por las sub-clases: ``parse()``, ``get_field()``, 
+``formatter`` es una de las clases integradas ``string``. Ese provee la habilidad 
+de hacer variable compleja de substituciones y formateo de valores usando el método 
+:ref:`format() <python_mtd_format>`. Es le permite crear y personalizar sus propios 
+comportamientos de formatos de cadena de caracteres para reescribir los métodos 
+públicos y contiene: ``format()``, ``vformat()``. Ese tiene algunos métodos que son 
+destinado para ser remplazados por las sub-clases: ``parse()``, ``get_field()``, 
 ``get_value()``, ``check_unused_args()``, ``format_field()`` y ``convert_field()``. 
 
 
@@ -461,7 +586,7 @@ que son destinado para ser remplazados por las sub-clases: ``parse()``, ``get_fi
 format()
 ````````
 
-El método ``format()`` devuelve una versión formateada de una cadena de caracteres, 
+Este método devuelve una versión formateada de una cadena de caracteres, 
 usando substituciones desde argumentos ``args`` y ``kwargs``. Las substituciones son 
 identificadas entre llaves ``{ }`` dentro de la cadena de caracteres (llamados campos 
 de formato), y son sustituidos en el orden con que aparecen como argumentos de 
@@ -609,8 +734,23 @@ Formateo de números flotantes, rellenados con ceros, con las siguientes sentenc
     153.210
 
 
-Ejemplo de cadenas de caracteres
-................................
+Convertir a cadenas de caracteres
+.................................
+
+Para convertir a *tipos cadenas de caracteres* debe usar la función :ref:`str() <python_fun_str>` 
+la cual :ref:`esta integrada <python_fun_builtins>` en el interprete Python.
+
+.. tip:: 
+    Para más información consulte las funciones integradas para 
+    :ref:`operaciones en cadenas de caracteres <python_fun_builtins_cadenas>`.
+
+
+----
+
+.. _python_str_ejs:
+
+Ejemplos
+........
 
 A continuación, se presentan algunos ejemplos de su uso:
 
@@ -723,28 +863,12 @@ A continuación, se presentan algunos ejemplos de su uso:
                 datetime
 
 
-----
-
-
-Convertir a cadenas de caracteres
-.................................
-
-Para convertir a *tipos cadenas de caracteres* debe usar la función :ref:`str() <python_fun_str>` 
-la cual :ref:`esta integrada <python_funciones_integradas>` en el interprete Python.
-
-.. tip:: 
-    Para más información consulte las funciones integradas para 
-    :ref:`operaciones en cadenas de caracteres <python_funciones_integradas_cadenas>`.
-
-
-----
-
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la documentación disponible sobre las **cadenas 
-de caracteres** desde la :ref:`consola interactiva <python_interactivo>` de la 
-siguiente manera:
+Usted puede consultar toda la documentación disponible sobre las 
+:ref:`cadenas de caracteres <python_str_str>` desde la 
+:ref:`consola interactiva <python_interactivo>` de la siguiente manera:
 
 ::
 
@@ -752,9 +876,9 @@ siguiente manera:
 
 Para salir de esa ayuda presione la tecla ``q``.
 
-Usted puede consultar toda la documentación disponible sobre las **cadenas 
-de caracteres unicode** desde la :ref:`consola interactiva <python_interactivo>` de la 
-siguiente manera:
+Usted puede consultar toda la documentación disponible sobre las cadenas de caracteres 
+:ref:`unicode <python_str_unicode>` desde la :ref:`consola interactiva <python_interactivo>` 
+de la siguiente manera:
 
 ::
 
