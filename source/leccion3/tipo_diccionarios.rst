@@ -479,7 +479,10 @@ en el diccionario pero esta vez el ``default_value`` es proveído:
     >>> print 'django =', django
     django = 2.1
 
-A continuación otro ejemplo de como implementar el método ``setdefault()``:
+A continuación otro ejemplo en donde puedes agrupar N :ref:`tuplas <python_tuple>` 
+por el valor el cual se repite más y construir un diccionario que cuyas claves son 
+los valores mas repetidos y cuyos valores este agrupados en tipo 
+:ref:`listas <python_list>`:
 
 ::
 
@@ -499,6 +502,12 @@ A continuación otro ejemplo de como implementar el método ``setdefault()``:
     >>> print paquetes
     {'zope': ['Zope2', 'pytz'], 'plone': ['Plone', 'diazo', 'z3c.form']}
 
+En el tipo tupla ``PKGS`` los elementos mas repetidos son ``'zope'`` y ``'plone'`` 
+estos se convierten en clave del diccionario ``paquetes`` y los otros elementos se 
+agrepan en listas como sus respectivos valores. 
+
+A continuación un mejor aprovechamiento implementando el método ``setdefault()``:
+
 ::
 
     >>> PKGS = (('zope', 'Zope2'),
@@ -513,8 +522,8 @@ A continuación otro ejemplo de como implementar el método ``setdefault()``:
     >>> print paquetes
     {'zope': ['Zope2', 'pytz'], 'plone': ['Plone', 'diazo', 'z3c.form']}
 
-
-.. todo:: TODO terminar de escribir un ejemplo de uso del método.
+En el ejemplo anterior puede ver que el aprovechamiento del método ``setdefault()`` 
+a comparación de no usar el respectivo método.
 
 
 .. _python_dict_mtd_update:
