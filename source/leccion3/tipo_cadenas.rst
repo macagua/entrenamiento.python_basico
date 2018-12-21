@@ -48,7 +48,7 @@ A continuación, una lista de clases integradas Python para los tipos de cadenas
 caracteres:
 
 
-.. _python_str_basestring:
+.. _python_str_basestring_cls:
 
 basestring
 ~~~~~~~~~~
@@ -56,7 +56,7 @@ basestring
 Es la *clase base* de las clases ``str`` y ``unicode``.
 
 
-.. _python_str_str:
+.. _python_str_str_cls:
 
 str
 ~~~
@@ -71,7 +71,7 @@ Son *secuencias inmutables* de cadenas de caracteres con soporte a caracteres ``
     'Hola Mundo'
 
 
-.. _python_str_unicode:
+.. _python_str_unicode_cls:
 
 unicode
 ~~~~~~~
@@ -104,7 +104,7 @@ Una cadena puede estar precedida por el carácter:
         <type 'str'>
 
 - ``u``/``U``, el cual indica, que se trata de una cadena que utiliza 
-  codificación :ref:`unicode <python_str_unicode>`.
+  codificación :ref:`unicode <python_str_unicode_cls>`.
 
     ::
 
@@ -867,7 +867,7 @@ Ayuda integrada
 ...............
 
 Usted puede consultar toda la documentación disponible sobre las 
-:ref:`cadenas de caracteres <python_str_str>` desde la 
+:ref:`cadenas de caracteres <python_str_str_cls>` desde la 
 :ref:`consola interactiva <python_interactivo>` de la siguiente manera:
 
 ::
@@ -877,7 +877,7 @@ Usted puede consultar toda la documentación disponible sobre las
 Para salir de esa ayuda presione la tecla ``q``.
 
 Usted puede consultar toda la documentación disponible sobre las cadenas de caracteres 
-:ref:`unicode <python_str_unicode>` desde la :ref:`consola interactiva <python_interactivo>` 
+:ref:`unicode <python_str_unicode_cls>` desde la :ref:`consola interactiva <python_interactivo>` 
 de la siguiente manera:
 
 ::
