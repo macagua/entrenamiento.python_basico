@@ -375,6 +375,8 @@ Iteradores y mapeos
 Los *iteradores* se usan con los tipos de secuencias estándar. A continuación, 
 se describen algunos ejemplos:
 
+**Iterar sobre las claves del diccionario**
+
 A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo*, 
 tipo :ref:`diccionario <python_dict>`, por defecto muestra la clave de la secuencia:
 
@@ -399,6 +401,8 @@ En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al
 llegar al final mediante el iterador ``paquete`` se llama a la excepción 
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
 iteración.
+
+**Iterar sobre los valores del diccionario**
 
 A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo*, 
 tipo :ref:`diccionario <python_dict>` para mostrar el valor de una clave usando el 
@@ -425,6 +429,8 @@ En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al
 llegar al final mediante el iterador ``version`` se llama a la excepción 
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
 iteración.
+
+**Iterar sobre los elementos del diccionario**
 
 A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo*, 
 tipo :ref:`diccionario <python_dict>` para mostrar el par clave/valor usando el 
