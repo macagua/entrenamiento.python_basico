@@ -54,6 +54,8 @@ Iteradores y secuencias
 Los *iteradores* se usan con los tipos de secuencias estándar. A continuación, 
 se describen algunos ejemplos:
 
+**Iterar sobre la secuencia inmutable cadena de caracter**
+
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de 
 tipo :ref:`cadena de caracteres <python_str>` ``ASCII``:
 
@@ -91,6 +93,8 @@ llegar al final mediante el iterador ``letra`` se llama a la excepción
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
 iteración.
 
+**Iterar sobre la secuencia inmutable cadena Unicode**
+
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de 
 tipo :ref:`cadena de caracteres <python_unicode_cls>` ``Unicode``:
 
@@ -126,6 +130,8 @@ llegar al final mediante el iterador ``letra`` se llama a la excepción
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
 iteración.
 
+**Iterar sobre la secuencia inmutable tupla**
+
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de 
 tipo :ref:`tupla <python_tuple>`:
 
@@ -156,6 +162,8 @@ final mediante el iterador ``valor`` se llama a la excepción
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
 iteración.
 
+**Iterar sobre la función inmutable xrange**
+
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* 
 con la función integrada :ref:`xrange() <python_fun_xrange>`:
 
@@ -182,6 +190,8 @@ con la función integrada :ref:`xrange() <python_fun_xrange>`:
 En el ejemplo anterior, cuando se itera en la secuencia ``lista``, al llegar 
 al final se llama a la excepción :ref:`StopIteration <python_exception_stopiteration>` 
 y se causa el detener la iteración.
+
+**Iterar sobre la secuencia mutable lista**
 
 A continuación, un ejemplo del uso de los iteradores con la secuencia *mutable* de 
 tipo :ref:`lista <python_list>`:
@@ -216,15 +226,6 @@ llegar al final mediante el iterador ``version`` se llama a la excepción
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
 iteración.
 
-También puede acceder al uso del método especial ``__iter__()`` incluido en la 
-secuencia *mutable* del tipo integrado :ref:`lista <python_list>`:
-
-::
-
-    >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
-    >>> versiones_plone.__iter__()
-    <listiterator object at 0x7fa44b9fa510>
-
 Usted puede devolver un objeto iterador en orden inverso sobre una secuencia *mutable* de 
 tipo :ref:`lista <python_list>` usando su función integrada ``__reversed__()``.
 
@@ -256,8 +257,19 @@ llegar al final mediante el iterador ``version`` se llama a la excepción
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
 iteración.
 
-A continuación, un ejemplo del uso de los iteradores con la secuencia de la función 
-integrada :ref:`range() <python_fun_range>`:
+También puede acceder al uso del método especial ``__iter__()`` incluido en la 
+secuencia *mutable* del tipo integrado :ref:`lista <python_list>`:
+
+::
+
+    >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
+    >>> versiones_plone.__iter__()
+    <listiterator object at 0x7fa44b9fa510>
+
+**Iterar sobre la función mutable range**
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia *mutable* 
+de la función integrada :ref:`range() <python_fun_range>`:
 
 ::
 
