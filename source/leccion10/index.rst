@@ -10,7 +10,6 @@ Decoradores y la librería estándar
    :maxdepth: 2
 
    decoradores
-   iteradores
    listas_comprension
    libreria_estandar
    fecha_hora
