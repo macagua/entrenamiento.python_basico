@@ -6,11 +6,11 @@
 Manipulación de archivos
 ------------------------
 
-Para escribir o leer cadenas de caracteres para/desde archivos (otros tipos deben 
-ser convertidas a cadenas de caracteres). Para esto Python incorpora un tipo integrado 
-llamado ``file``, el cual es manipulado mediante un objeto fichero el cual fue generado 
-a través de una función integrada en Python, a continuación se describen los procesos 
-típicos y sus referencias a funciones propias del lenguaje:
+Para escribir o leer cadenas de caracteres para/desde archivos (otros tipos deben ser 
+convertidas a cadenas de caracteres). Para esto Python incorpora un tipo integrado 
+llamado :ref:`file <python_cls_file>`, el cual es manipulado mediante un objeto fichero 
+el cual fue generado a través de una función integrada en Python, a continuación se 
+describen los procesos típicos y sus referencias a funciones propias del lenguaje:
 
 
 .. _python_abrir_archivo:
@@ -27,8 +27,8 @@ La forma preferida para abrir un archivo es usando la función integrada
 Leer archivo
 ............
 
-La forma preferida para leer un archivo es usando algunas de los métodos del 
-objeto :ref:`file <python_cls_file>` como :ref:`read() <python_mtd_read>`, 
+La forma preferida para leer un archivo es usando algunas de los métodos del tipo objeto 
+:ref:`file <python_cls_file>` como :ref:`read() <python_mtd_read>`, 
 :ref:`readline() <python_mtd_readline>` y :ref:`readlines() <python_mtd_readlines>`. 
 
 
@@ -37,7 +37,7 @@ objeto :ref:`file <python_cls_file>` como :ref:`read() <python_mtd_read>`,
 Escribir archivo
 ................
 
-La forma preferida para escribir un archivo es usando el método del objeto 
+La forma preferida para escribir un archivo es usando el método del tipo objeto 
 :ref:`file <python_cls_file>` llamado :ref:`write() <python_mtd_write>`.
 
 
@@ -46,7 +46,7 @@ La forma preferida para escribir un archivo es usando el método del objeto
 Cerrar archivo
 ..............
 
-La forma preferida para cerrar un archivo es usando el método del objeto 
+La forma preferida para cerrar un archivo es usando el método del tipo objeto 
 :ref:`file <python_cls_file>` llamado :ref:`close() <python_mtd_close>`.
 
 
@@ -55,22 +55,34 @@ La forma preferida para cerrar un archivo es usando el método del objeto
 Ejemplos de archivos
 ....................
 
-A continuación, se presentan algunos ejemplos del uso del tipo :ref:`file <python_cls_file>`:
+A continuación, se presentan algunos ejemplos del uso del tipo objeto 
+:ref:`file <python_cls_file>`:
 
-**Ejemplo de iterar sobre un archivo**
+**Ejemplo de iterar un archivo para leerlo**
 
 Usted puede iterar sobre un archivo como se muestra a continuación:
 
 ::
 
-    >>> f = open('datos.txt', 'r')
-    >>> for line in f:
-    ...     print line
+    >>> archivo = open('datos.txt', 'r')
+    >>> for linea in archivo:
+    ...     print linea
     ... 
     Este es una prueba 
 
     y otra prueba
-    >>> f.close()
+    >>> archivo.close()
+
+
+**Ejemplo de iterar un archivo con escritura y lectura**
+
+Usted puede manipular un archivo con permisos de escritura y lectura, ademas de 
+interactuar de el mismo como se muestra a continuación:
+
+
+.. literalinclude:: ../../recursos/leccion7/archivo.py
+    :language: python
+    :lines: 8-50
 
 
 Ayuda integrada
