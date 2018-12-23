@@ -6,7 +6,7 @@
 Objetos de tipos integrados
 ---------------------------
 
-Existe otros :ref:`tipos de datos integrados <python_tipos>` en el interprete Python, 
+Existe otros :ref:`tipos de datos integrados <python_types>` en el interprete Python, 
 que para muchos no son de uso frecuente, los cuales se describen a continuación:
 
 

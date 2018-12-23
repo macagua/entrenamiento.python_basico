@@ -112,7 +112,7 @@ ficheros.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
 
 .. _python_mtd_isatty:
@@ -131,7 +131,7 @@ El método ``isatty()`` devuelve ``True`` si el fichero está conectado a un dis
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
 
 .. _python_mtd_fileno:
@@ -152,7 +152,7 @@ por ejemplo, el módulo ``fcntl`` o ``os.read()`` y similares.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
 
 .. _python_mtd_next:
@@ -167,7 +167,7 @@ El método ``next()`` permite x.next() -> el próximo valor, o causa una
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
 
 .. _python_mtd_read:
@@ -252,7 +252,7 @@ absoluto); otros valores posibles son ``1`` (posicionamiento relativo a la posic
 y ``2`` (posicionamiento relativo al final del fichero). No hay valor de retorno.
 
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
 
 .. _python_mtd_tell:
@@ -267,7 +267,7 @@ de la librería ``stdio``.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
 
 .. _python_mtd_truncate:
@@ -288,7 +288,7 @@ todas las versiones de Unix dan soporte a esta operación).
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
 
 .. _python_mtd_write:
@@ -323,7 +323,7 @@ separadores de línea.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
 
 Atributos
@@ -348,7 +348,7 @@ objetos con interfaz tipo fichero.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
 .. _python_atributo_mode:
@@ -365,7 +365,7 @@ en todos los objetos con interfaz tipo fichero.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
 .. _python_atributo_name:
@@ -383,7 +383,7 @@ con interfaz tipo fichero.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
 .. _python_atributo_encoding:
@@ -397,7 +397,7 @@ El atributo ``encoding`` del objeto *fichero* es el encoding del fichero.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
 .. _python_atributo_errors:
@@ -411,7 +411,7 @@ El atributo ``errors`` del objeto *fichero* es el manipulador de error Unicode.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
 .. _python_atributo_softspace:
