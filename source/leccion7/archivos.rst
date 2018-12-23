@@ -73,8 +73,6 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
     >>> f.close()
 
 
-----
-
 Ayuda integrada
 ...............
 
@@ -87,9 +85,6 @@ siguiente forma:
     >>> help(file)
 
 Para salir de esa ayuda presione la tecla ``q``.
-
-
-----
 
 
 .. important::
@@ -107,9 +102,7 @@ Para salir de esa ayuda presione la tecla ``q``.
         python archivo.py
 
 
-----
-
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` 
-    del entrenamiento para ampliar su conocimiento en esta temática.
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` del 
+    entrenamiento para ampliar su conocimiento en esta temática.

@@ -18,4 +18,4 @@ esta lección:
    :maxdepth: 2
 
    entrada_salida
-   manipulacion_archivos
+   archivos
