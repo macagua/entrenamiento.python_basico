@@ -376,16 +376,14 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
 
 ::
 
-    >>> inmutable = frozenset([1, 2, 3, 2, 1, 4, 5, 3])
-    >>> print inmutable, type(inmutable)
-    frozenset([1, 2, 3, 4, 5]) <type 'frozenset'>
+    >>> versiones_plone = frozenset([6, 2.1, 2.5, 3.6, 4, 5, 6, 4, 2.5])
+    >>> print versiones_plone, type(versiones_plone)
+    frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
 Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y deben 
 ser objetos inmutables: números, cadenas de caracteres, tuplas y sets inmutables, 
 pero no listas ni sets mutables.
 
-
-----
 
 Ayuda integrada
 ...............
@@ -407,9 +405,6 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 Para salir de esa ayuda presione la tecla ``q``.
 
 
-----
-
-
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
     :download:`aquí <../../recursos/leccion3/tipo_conjuntos.py>`.
@@ -422,9 +417,6 @@ Para salir de esa ayuda presione la tecla ``q``.
     ::
 
         python tipo_conjuntos.py
-
-
-----
 
 
 .. seealso::

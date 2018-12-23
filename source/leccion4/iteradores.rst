@@ -296,6 +296,79 @@ al final se llama a la excepción :ref:`StopIteration <python_exception_stopiter
 y se causa el detener la iteración.
 
 
+Iteradores y conjuntos
+......................
+
+Los *iteradores* se usan con los tipos de conjuntos estándar. A continuación, 
+se describen algunos ejemplos:
+
+**Iterar sobre el conjunto mutable**
+
+A continuación, un ejemplo del uso de los iteradores con el conjunto *mutable* de 
+tipo :ref:`conjuntos <python_set>`:
+
+::
+
+    >>> versiones_plone = set([2.1, 2.5, 3.6, 4, 5, 6, 4])
+    >>> version = iter(versiones_plone)
+    >>> version
+    <setiterator object at 0x7fac9c7c7a50>
+    >>> version.next()
+    2.5
+    >>> version.next()
+    4
+    >>> version.next()
+    5
+    >>> version.next()
+    6
+    >>> version.next()
+    2.1
+    >>> version.next()
+    3.6
+    >>> version.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al 
+llegar al final mediante el iterador ``version`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+**Iterar sobre el conjunto inmutable**
+
+A continuación, un ejemplo del uso de los iteradores con el conjunto *inmutable* de 
+tipo :ref:`conjuntos <python_set>`:
+
+::
+
+    >>> versiones_plone = frozenset([6, 2.1, 2.5, 3.6, 4, 5, 4, 2.5])
+    >>> version = iter(versiones_plone)
+    >>> version
+    <setiterator object at 0x7fac9c7c7cd0>
+    >>> version.next()
+    2.5
+    >>> version.next()
+    4
+    >>> version.next()
+    5
+    >>> version.next()
+    6
+    >>> version.next()
+    2.1
+    >>> version.next()
+    3.6
+    >>> version.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al 
+llegar al final mediante el iterador ``version`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+
 Iteradores y mapeos
 ...................
 

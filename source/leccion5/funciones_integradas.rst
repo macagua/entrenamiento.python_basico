@@ -2013,14 +2013,18 @@ Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una
 frozenset()
 ~~~~~~~~~~~
 
-La función ``frozenset()`` ....
+La función ``frozenset()`` es el constructor del tipo de :ref:`conjuntos <python_set>`, 
+se usa crear un conjunto *inmutable* mediante la misma función ``frozenset()`` de un objeto 
+iterable :ref:`lista <python_list>`:
 
 ::
 
-    >>> 
-
-
-.. todo:: TODO escribir sobre esta función integrada.
+    >>> versiones = [6, 2.1, 2.5, 3.6, 4, 5, 6, 4, 2.5]
+    >>> print versiones, type(versiones)
+    [6, 2.1, 2.5, 3.6, 4, 5, 6, 4, 2.5] <type 'list'>
+    >>> versiones_plone = frozenset(versiones)
+    >>> print versiones_plone, type(versiones_plone)
+    frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
 
 .. _python_fun_iter:
@@ -2102,14 +2106,18 @@ ejemplo, una tupla podría crearse mediante la función :ref:`range(10) <python_
 set()
 ~~~~~
 
-La función ``set()`` ....
+La función ``set()`` es el constructor del tipo de :ref:`conjuntos <python_set>`, 
+se usa crear un conjunto *mutable* mediante la misma función ``set()`` de un objeto 
+iterable :ref:`lista <python_list>`:
 
 ::
 
-    >>> 
-
-
-.. todo:: TODO escribir sobre esta función integrada.
+    >>> versiones = [2.1, 2.5, 3.6, 4, 5, 6, 4]
+    >>> print versiones, type(versiones)
+    [2.1, 2.5, 3.6, 4, 5, 6, 4] <type 'list'>
+    >>> versiones_plone = set(versiones)
+    >>> print versiones_plone, type(versiones_plone)
+    set([2.5, 4, 5, 6, 2.1, 3.6]) <type 'set'>
 
 
 .. _python_fun_sorted:
