@@ -253,9 +253,9 @@ Este método devuelve una lista de pares de diccionarios (clave, valor), como 2 
 iteritems()
 ~~~~~~~~~~~
 
-Este método devuelve un iterador sobre los elementos (clave, valor) del diccionario.
-Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al 
-final de la posición del **diccionario**.
+Este método devuelve un :ref:`iterador <python_iter>` sobre los elementos (clave, valor) 
+del diccionario. Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` 
+si llega al final de la posición del **diccionario**.
 
 ::
 
@@ -288,9 +288,9 @@ final de la posición del **diccionario**.
 iterkeys()
 ~~~~~~~~~~
 
-Este método devuelve un iterador sobre las claves del diccionario. Lanza una 
-excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al final de 
-la posición del **diccionario**.
+Este método devuelve un :ref:`iterador <python_iter>` sobre las claves del diccionario. 
+Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al 
+final de la posición del **diccionario**.
 
 ::
 
@@ -323,9 +323,9 @@ la posición del **diccionario**.
 itervalues()
 ~~~~~~~~~~~~
 
-Este método devuelve un iterador sobre los valores del diccionario. Lanza una 
-excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al final de 
-la posición del **diccionario**.
+Este método devuelve un :ref:`iterador <python_iter>` sobre los valores del diccionario. 
+Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al 
+final de la posición del **diccionario**.
 
 ::
 

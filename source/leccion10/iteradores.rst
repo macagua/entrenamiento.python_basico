@@ -1,97 +1,383 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_iteradores:
+.. _python_iter:
 
 Iteradores
 ----------
 
-.. todo::
-    TODO escribir esta sección.
+Para entender los la filosofía de los *Iteradores*, busca la *simplicidad* de las 
+operaciones, evitando la duplicación del esfuerzo, el cual es un derroche y busca 
+reemplazar varios de los enfoques propios con una característica estándar, normalmente, 
+deriva en hacer las cosas más legibles además de más interoperable.
 
-Entendiendo Iteradores
-......................
+  *Guido van Rossum* --- `Añadiendo tipado estático opcional a Python` 
+  (`Adding Optional Static Typing to Python <https://www.artima.com/weblogs/viewpost.jsp?thread=86641>`_).
 
-.. sidebar:: Simplicidad
+Un iterador es un objeto adherido al `iterator protocol`_, básicamente esto significa 
+que tiene una función :ref:`next() <python_fun_next>`, es decir, cuando se le llama, 
+devuelve la siguiente elemento en la secuencia, cuando no queda nada para ser devuelto, 
+lanza la excepción :ref:`StopIteration <python_exception_stopiteration>` y se causa el 
+detener la iteración. Pero si se llama de forma explícita puede ver que, una vez que el 
+iterador esté *agotado*, al llamarlo nuevamente verá que se lanza la excepción comentada 
+anteriormente.
 
-   La duplicación del esfuerzo es un derroche y reemplazar
-   varios de los enfoques propios con una característica 
-   estándar, normalmente, deriva en hacer las cosas más 
-   legibles además de más interoperable.
-
-      *Guido van Rossum* --- `Añadiendo tipado estático opcional a Python` (`Adding Optional Static Typing to Python`_)
-
-.. _`Adding Optional Static Typing to Python`: https://www.artima.com/weblogs/viewpost.jsp?thread=86641
-
-
-Un iterador es un objeto adherido al 'protocolo de iterador'
-(`iterator protocol`_) --- básicamente esto significa que tiene
-un método `next <iterator.next>` ('next' por siguiente), el cual,
-cuando se le llama, devuelve la siguiente 'pieza' (o 'item') en la
-secuencia y, cuando no queda nada para ser devuelto, lanza la excepción 
-:ref:`StopIteration <python_exception_stopiteration>`.
-
-.. _`iterator protocol`: https://docs.python.org/dev/library/stdtypes.html#iterator-types
-
+A continuación el uso de iteradores usando del método especial ``__iter__()`` incluido 
+en el *objeto integrado* :ref:`file <python_cls_file>`:
 
 ::
 
-  >>> nums = [1,2,3]
-  >>> iter(nums)
-  <listiterator object at 0xb712ebec>
-  >>> nums.__iter__()
-  <listiterator object at 0xb712eb0c>
-  >>> nums.__reversed__()
-  <listreverseiterator object at 0xb712ebec>
+    >>> f = open('/etc/hostname')
+    >>> f
+    <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
+    >>> f.__iter__()
+    <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
+    >>> iter(f)
+    <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
+    >>> f is f.__iter__()
+    True
+    >>> linea = f.__iter__()
+    >>> linea.next()
+    'laptop\n'
+    >>> linea.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo, el método especial ``__iter__()``, hace lo mismo que la función integrada 
+:ref:`iter(f) <python_fun_iter>`, es decir, lo mismo que ``f.__iter__() <==> iter(f)``.
 
 
-Usando 'iter' y 'next'
-......................
+Iteradores y secuencias
+.......................
 
-Cuando se usa en un bucle, finalmente se llama a :ref:`StopIteration <python_exception_stopiteration>` y se provoca la finalización del bucle. Pero si se llama de forma explícita puede ver que, una vez que el iterador está ‘agotado’, al llamarlo nuevamente verá que se lanza la excepción comentada anteriormente.
+Los *iteradores* se usan con los tipos de secuencias estándar. A continuación, 
+se describen algunos ejemplos:
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de 
+tipo :ref:`cadena de caracteres <python_str>` ``ASCII``:
 
 ::
-  
-  >>> it = iter(nums)
-  >>> it.next()
-  1
-  >>> it.next()
-  2
-  >>> it.next()
-  3
-  >>> it.next()
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  StopIteration
+
+    >>> frase = 'Hola Mundo'
+    >>> letra = iter(frase)
+    >>> letra.next()
+    'H'
+    >>> letra.next()
+    'o'
+    >>> letra.next()
+    'l'
+    >>> letra.next()
+    'a'
+    >>> letra.next()
+    ' '
+    >>> letra.next()
+    'M'
+    >>> letra.next()
+    'u'
+    >>> letra.next()
+    'n'
+    >>> letra.next()
+    'd'
+    >>> letra.next()
+    'o'
+    >>> letra.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``frase``, al 
+llegar al final mediante el iterador ``letra`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de 
+tipo :ref:`cadena de caracteres <python_unicode_cls>` ``Unicode``:
 
 ::
 
-  >>> f = open('/etc/fstab')
-  >>> f is f.__iter__()
-  True
+    >>> frase = u'Jekechitü'
+    >>> letra = iter(frase)
+    >>> letra.next()
+    u'J'
+    >>> letra.next()
+    u'e'
+    >>> letra.next()
+    u'k'
+    >>> letra.next()
+    u'e'
+    >>> letra.next()
+    u'c'
+    >>> letra.next()
+    u'h'
+    >>> letra.next()
+    u'i'
+    >>> letra.next()
+    u't'
+    >>> letra.next()
+    u'\xfc'
+    >>> letra.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
-Iteradores y Diccionarios
-.........................
+En el ejemplo anterior, cuando se itera en la secuencia ``frase``, al 
+llegar al final mediante el iterador ``letra`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
 
-.. todo::
-    TODO escribir esta sección.
+A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de 
+tipo :ref:`tupla <python_tuple>`:
 
-Otros Iteradores
+::
+
+    >>> valores = ("Python", True, "Zope", 5)
+    >>> valores
+    ('Python', True, "Zope", 5)
+    >>> valores.__iter__()
+    <tupleiterator object at 0x7fa44b9fa450>
+    >>> valor = valores.__iter__()
+    >>> valor.next()
+    'Python'
+    >>> valor.next()
+    True
+    >>> valor.next()
+    'Zope'
+    >>> valor.next()
+    5
+    >>> valor.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+
+En el ejemplo anterior, cuando se itera en la secuencia ``valores``, al llegar al 
+final mediante el iterador ``valor`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* 
+con la función integrada :ref:`xrange() <python_fun_xrange>`:
+
+::
+
+    >>> lista = iter(xrange(5))
+    >>> lista
+    <rangeiterator object at 0x7fa44b9fb7b0>
+    >>> lista.next()
+    0
+    >>> lista.next()
+    1
+    >>> lista.next()
+    2
+    >>> lista.next()
+    3
+    >>> lista.next()
+    4
+    >>> lista.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``lista``, al llegar 
+al final se llama a la excepción :ref:`StopIteration <python_exception_stopiteration>` 
+y se causa el detener la iteración.
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia *mutable* de 
+tipo :ref:`lista <python_list>`:
+
+::
+
+    >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
+    >>> iter(versiones_plone)
+    <listiterator object at 0x7fa44b9fa450>
+    >>> version = iter(versiones_plone)
+    >>> version
+    <listiterator object at 0x7fa44b9fa550>
+    >>> version.next()
+    2.1
+    >>> version.next()
+    2.5
+    >>> version.next()
+    3.6
+    >>> version.next()
+    4
+    >>> version.next()
+    5
+    >>> version.next()
+    6
+    >>> version.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al 
+llegar al final mediante el iterador ``version`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+También puede acceder al uso del método especial ``__iter__()`` incluido en la 
+secuencia *mutable* del tipo integrado :ref:`lista <python_list>`:
+
+::
+
+    >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
+    >>> versiones_plone.__iter__()
+    <listiterator object at 0x7fa44b9fa510>
+
+Usted puede devolver un objeto iterador en orden inverso sobre una secuencia *mutable* de 
+tipo :ref:`lista <python_list>` usando su función integrada ``__reversed__()``.
+
+::
+
+    >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
+    >>> versiones_plone.__reversed__()
+    <listreverseiterator object at 0xb712ebec>
+    >>> version = versiones_plone.__reversed__()
+    >>> version.next()
+    6
+    >>> version.next()
+    5
+    >>> version.next()
+    4
+    >>> version.next()
+    3.6
+    >>> version.next()
+    2.5
+    >>> version.next()
+    2.1
+    >>> version.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al 
+llegar al final mediante el iterador ``version`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia de la función 
+integrada :ref:`range() <python_fun_range>`:
+
+::
+
+    >>> lista = iter(range(5))
+    >>> lista
+    <listiterator object at 0x7fa44b9fa490>
+    >>> lista.next()
+    0
+    >>> lista.next()
+    1
+    >>> lista.next()
+    2
+    >>> lista.next()
+    3
+    >>> lista.next()
+    4
+    >>> lista.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``lista``, al llegar 
+al final se llama a la excepción :ref:`StopIteration <python_exception_stopiteration>` 
+y se causa el detener la iteración.
+
+
+Iteradores y mapeos
+...................
+
+Los *iteradores* se usan con los tipos de secuencias estándar. A continuación, 
+se describen algunos ejemplos:
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo*, 
+tipo :ref:`diccionario <python_dict>`, por defecto muestra la clave de la secuencia:
+
+::
+
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> paquete = iter(versiones_plone)
+    >>> paquete
+    <dictionary-keyiterator object at 0x7fa44b9e99f0>
+    >>> paquete.next()
+    'zope'
+    >>> paquete.next()
+    'python'
+    >>> paquete.next()
+    'plone'
+    >>> paquete.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al 
+llegar al final mediante el iterador ``paquete`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo*, 
+tipo :ref:`diccionario <python_dict>` para mostrar el valor de una clave usando el 
+método integrado :ref:`itervalues() <python_dict_mtd_itervalues>`:
+
+::
+
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> version = iter(versiones_plone.itervalues())
+    >>> version
+    <dictionary-valueiterator object at 0x7fa44b9e9c00>
+    >>> version.next()
+    2.13
+    >>> version.next()
+    2.7
+    >>> version.next()
+    5.1
+    >>> version.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al 
+llegar al final mediante el iterador ``version`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo*, 
+tipo :ref:`diccionario <python_dict>` para mostrar el par clave/valor usando el 
+método integrado :ref:`iteritems() <python_dict_mtd_iteritems>`:
+
+::
+
+    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> paquete = iter(versiones_plone.iteritems())
+    >>> paquete
+    <dictionary-itemiterator object at 0x7fa44b9e9b50>
+    >>> paquete.next()
+    ('zope', 2.13)
+    >>> paquete.next()
+    ('python', 2.7)
+    >>> paquete.next()
+    ('plone', 5.1)
+    >>> paquete.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al 
+llegar al final mediante el iterador ``paquete`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
+
+
+Otros iteradores
 ................
 
 .. todo::
     TODO escribir esta sección.
 
-Ejercicios
-..........
-
-.. todo::
-    TODO escribir esta sección.
-
-
-----
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion10>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+.. _`iterator protocol`: https://docs.python.org/dev/library/stdtypes.html#iterator-types
