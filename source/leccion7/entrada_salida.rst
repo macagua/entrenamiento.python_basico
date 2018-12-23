@@ -3,11 +3,11 @@
 
 .. _python_entrada_salida:
 
-Entrada / Salida en Python
---------------------------
+Entrada/Salida en Python
+------------------------
 
-Los programas serían de muy poca utilidad si no fueran capaces de
-interaccionar con el usuario. 
+Los programas serían de muy poca utilidad si no fueran capaces de interaccionar con 
+el usuario. 
 
 
 .. _python_entrada:
@@ -15,13 +15,13 @@ interaccionar con el usuario.
 Entrada estándar
 ................
 
-Para pedir información al usuario, debe utilizar las funciones integradas 
-en el interprete del lenguaje, así como los argumentos de línea de comandos.
+Para pedir información al usuario, debe utilizar las funciones integradas en el 
+interprete del lenguaje, así como los argumentos de línea de comandos.
 
 **Ejemplo de la función raw_input**:
 
-La función :ref:`raw_input() <python_fun_raw_input>` siempre devuelve un 
-valor de cadenas de caracteres:
+La función :ref:`raw_input() <python_fun_raw_input>` siempre devuelve un valor de 
+cadenas de caracteres:
 
 ::
 
@@ -31,8 +31,7 @@ valor de cadenas de caracteres:
 
 **Ejemplo de la función input**:
 
-La función :ref:`input() <python_fun_input>` siempre devuelve un valor 
-numérico:
+La función :ref:`input() <python_fun_input>` siempre devuelve un valor numérico:
 
 ::
 
@@ -105,9 +104,9 @@ una forma de entrada de datos alternativa sin usar las funciones
 Salida estándar
 ...............
 
-La forma general de mostrar información por pantalla es mediante una consola 
-de comando, generalmente podemos mostrar texto y variables separándolos con 
-comas, para este se usa la sentencia :ref:`print <python_sent_print>`.
+La forma general de mostrar información por pantalla es mediante una consola de 
+comando, generalmente podemos mostrar texto y variables separándolos con comas, 
+para este se usa la sentencia :ref:`print <python_sent_print>`.
 
 
 .. _python_sent_print:
@@ -117,13 +116,12 @@ Sentencia print
 
 Sentencia ``print`` evalúa cada expresión, devuelve y escribe el objeto resultado 
 a la salida estándar de la consola de comando. Si un objeto no es un 
-:ref:`tipo cadena de caracteres <python_str>`, ese es primeramente convertido 
-a un *tipo cadena de caracteres* usando las reglas para las 
-:ref:`conversiones del tipo <python_fun_str>`. La *cadena de caracteres* 
-(resultado o original) es entonces escrito.
+:ref:`tipo cadena de caracteres <python_str>`, ese es primeramente convertido a un 
+*tipo cadena de caracteres* usando las reglas para las 
+:ref:`conversiones del tipo <python_fun_str>`. La *cadena de caracteres* (resultado 
+o original) es entonces escrito.
 
-Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia 
-``print``.
+Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``print``.
 
 **Ejemplo del uso de print**:
 
@@ -139,8 +137,8 @@ Formato de impresión de cadenas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-En la sentencia ``print`` se pueden usar el formato de impresión alternando 
-las cadenas de caracteres y variables:
+En la sentencia ``print`` se pueden usar el formato de impresión alternando las cadenas 
+de caracteres y variables:
 
 ::
 
@@ -164,9 +162,9 @@ las cadenas de caracteres y variables:
 Ejemplo de E/S en Python
 ........................
 
-Este ejemplo simula a sala de chat del servicio *LatinChat.com*, 
-validando datos de entradas numérico y tipo cadena e interactuá
-con el usuario y en base a condicionales muestra un mensaje.
+Este ejemplo simula a sala de chat del servicio *LatinChat.com*, validando datos de 
+entradas numérico y tipo cadena e interactuá con el usuario y en base a condicionales 
+muestra un mensaje.
 
 .. literalinclude:: ../../recursos/leccion7/entrada_salida.py
     :language: python
@@ -182,10 +180,10 @@ con el usuario y en base a condicionales muestra un mensaje.
 Ejemplo de E/S con script
 .........................
 
-Este ejemplo de entrada usando un script con la librería ``sys``. El siguiente 
-script recibe dos argumentos: una cadena de caracteres y un número entero. Lo que 
-hace es imprimir la cadena de caracteres tantas veces como le indique con el 
-argumento de tipo número:
+Este ejemplo de entrada usando un script con la librería ``sys``. El siguiente script 
+recibe dos argumentos: una cadena de caracteres y un número entero. Lo que hace es 
+imprimir la cadena de caracteres tantas veces como le indique con el argumento de tipo 
+número:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_dos_argumentos.py
     :language: python
@@ -212,15 +210,10 @@ argumentos, ejecutando el siguiente comando:
     Hola Plone
 
 
-----
-
 .. note::
 
     Una documentación completa del control de la salida de Python se encuentra en 
     https://docs.python.org/2/tutorial/inputoutput.html
-
-
-----
 
 
 .. important::
@@ -250,8 +243,6 @@ argumentos, ejecutando el siguiente comando:
         python entrada_argumentos.py
         python entrada_dos_argumentos.py
 
-
-----
 
 .. seealso::
 
