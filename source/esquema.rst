@@ -53,8 +53,10 @@ texto, listas, tuplas, diccionarios y explorar el resultado desde el interprete 
 Lección 4 - Bloques de código y estructuras de control
 ------------------------------------------------------
 
-**Descripción:** Comprender las estructuras de control como ``if`` (``elif``, ``else``), 
-``for``/``while`` (``else``, ``break``, ``continue``, ``pass``) y la función ``range``.
+**Descripción:** Comprender las estructuras de control como ``if`` (``elif``, ``else``); 
+``for``, ``while`` (``else``, ``break``, ``continue``, ``pass``); las funciones 
+:ref:`range() <python_fun_range>` y :ref:`xrange() <python_fun_xrange>`; ademas de los 
+tipos :ref:`iteradores() <python_iter>`.
 
 **Práctica:** Ejemplos de creación a estructuras condicionales, repetitivas y funciones 
 propias y explorar el resultado desde el interprete Python.
