@@ -30,12 +30,12 @@ aparece en la tupla.
 
 ::
 
-    >>> tupla = ("Python", True, 'Zope', 5)
-    >>> print "True ->", tupla.count(True)
+    >>> valores = ("Python", True, "Zope", 5)
+    >>> print "True ->", valores.count(True)
     True -> 1
-    >>> print "'Zope' ->", tupla.count('Zope')
+    >>> print "'Zope' ->", valores.count('Zope')
     'Zope' -> 1
-    >>> print "5 ->", tupla.count(5)
+    >>> print "5 ->", valores.count(5)
     5 -> 1
 
 
@@ -50,10 +50,10 @@ aparición en la tupla.
 
 ::
 
-    >>> tupla = ("Python", True, "Zope", 5)
-    >>> print tupla.index(True)
+    >>> valores = ("Python", True, "Zope", 5)
+    >>> print valores.index(True)
     1
-    >>> print tupla.index(5)
+    >>> print valores.index(5)
     3
 
 El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el 
@@ -61,8 +61,8 @@ elemento no se encuentra en la tupla, o en el entorno definido.
 
 ::
 
-    >>> tupla = ("Python", True, "Zope", 5)
-    >>> print tupla.index(4)
+    >>> valores = ("Python", True, "Zope", 5)
+    >>> print valores.index(4)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     ValueError: tuple.index(x): x not in tuple
@@ -142,8 +142,6 @@ a una BD:
     :lines: 18-38
 
 
-----
-
 Ayuda integrada
 ...............
 
@@ -154,7 +152,6 @@ Usted puede consultar toda la documentación disponible sobre las **tuplas** des
 
     >>> help(tuple)
 
-----
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic 
@@ -169,8 +166,6 @@ Usted puede consultar toda la documentación disponible sobre las **tuplas** des
 
         python tipo_tuplas.py
 
-
-----
 
 .. seealso::
 
