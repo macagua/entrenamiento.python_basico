@@ -20,7 +20,6 @@ Funciones generales
 Las funciones de uso general se describen a continuación:
 
 
-
 .. _python_fun_apply:
 
 apply()
@@ -1163,6 +1162,27 @@ Si recibe un tercer argumento opcional, éste funciona como módulo.
     2
 
 
+.. _python_fun_reduce:
+
+reduce()
+~~~~~~~~
+
+La función ``reduce()`` aplica una función de dos argumentos de forma acumulativa a 
+los elementos de una secuencia, de izquierda a derecha, para reducir la secuencia a 
+un solo valor. 
+
+::
+
+    reduce(function, sequence[, initial]) -> value
+    >>>
+
+Por ejemplo, ``reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])`` calcula ``((((1+2)+3)+4)+5)``. 
+Si ``initial`` está presente, se coloca antes de los elementos de la secuencia en 
+el cálculo y sirve como valor predeterminado cuando la secuencia está vacía.
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
 .. _python_fun_round:
 
 round()
@@ -1532,6 +1552,24 @@ La función ``index()`` es como la función ``find()`` pero arroja una excepció
     ValueError: substring not found
     >>> 'leonardo caballero'.index(" ca")
     8
+
+
+.. _python_fun_intern:
+
+intern()
+~~~~~~~~
+
+La función ``intern()`` es el "interno" de la cadena dada. Esto ingresa la cadena en la 
+tabla (global) de cadenas internas cuyo propósito es acelerar las búsquedas en el tipo
+diccionario. Devuelve la cadena misma o el objeto de cadena internado previamente con el 
+mismo valor.
+
+::
+
+    >>>
+
+
+.. todo:: TODO escribir sobre esta función integrada.
 
 
 .. _python_fun_isalnum:
@@ -1985,6 +2023,30 @@ La función ``frozenset()`` ....
 .. todo:: TODO escribir sobre esta función integrada.
 
 
+.. _python_fun_iter:
+
+iter()
+~~~~~~
+
+La función ``iter()`` obtiene un iterador de un objeto. En la primera forma, el 
+argumento debe proporcionar su propio iterador, o ser una secuencia.
+
+::
+
+    >>> iter(collection) -> iterator
+    >>> 
+
+En la segunda forma, la llamada se llama hasta que devuelve el centinela.
+
+::
+
+    >>> iter(callable, sentinel) -> iterator
+    >>>
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
 .. _python_fun_list:
 
 list()
@@ -1999,6 +2061,24 @@ ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_
     >>> lista = list(range(10))
     >>> print lista
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+.. _python_fun_next:
+
+next()
+~~~~~~
+
+La función ``next()`` devuelve el próximo elemento desde el iterador. Si el valor 
+``default`` es dato y el iterador is exhausted, ese es devuelto en vez de lanzar 
+la excepción :ref:`StopIteration <python_exception_stopiteration>`.
+
+.. todo:: TODO traducir las frases del párrafo anterior.
+
+::
+
+    >>> next(iterator[, default])
+
+.. todo:: TODO escribir sobre esta función integrada.
 
 
 .. _python_fun_tuple:
@@ -2082,6 +2162,102 @@ Funciones de objetos
 Las funciones de objetos se describen a continuación:
 
 
+.. _python_fun_delattr:
+
+delattr()
+~~~~~~~~~
+
+La función ``delattr()`` elimina un atributo con nombre en un objeto; 
+``delattr(x, 'y')`` es equivalente a ``del x.y``.
+
+::
+
+    >>> delattr(object, name)
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_getattr:
+
+getattr()
+~~~~~~~~~
+
+La función ``getattr()`` obtiene un atributo nombrado desde un objeto; getattr(x, 'y') 
+es equivalente a x.y. Cuando un argumento predeterminado es dato, es es devuelto cuando 
+el atributo no existe; sin eso, una excepción es lanzada en ese caso.
+
+::
+
+    >>>
+
+
+.. todo:: TODO escribir sobre esta función integrada.
+
+
+.. _python_fun_hasattr:
+
+hasattr()
+~~~~~~~~~
+
+La función ``hasattr()`` devuelve un tipo booleano cuando el objeto tiene un atributo 
+con el nombre dado. (Esta hecho llamando a la función ``getattr(object, name)`` y 
+capturar excepciones.)
+
+::
+
+    class Persona:
+        """Clase que representa una Persona"""
+        cedula = "V-13458796"
+        nombre = "Leonardo"
+        apellido = "Caballero"
+        sexo = "M"
+
+    macagua = Persona
+    hasattr(object, name) -> bool
+    hasattr(macagua, cedula)
+    hasattr(macagua, edad)
+
+
+.. todo:: TODO escribir un ejemplo completo de esta función integrada.
+
+
+.. _python_fun_hash:
+
+hash()
+~~~~~~
+
+La función ``hash()`` devuelve un valor hash de tipo entero para el objeto. 
+
+::
+
+    >>> class Persona:
+    ...     """Clase que representa una Persona"""
+    ...     cedula = "V-13458796"
+    ...     nombre = "Leonardo"
+    ...     apellido = "Caballero"
+    ...     sexo = "M"
+    ... 
+    >>> macagua = Persona
+    >>> type(macagua)
+    <type 'classobj'>
+
+Dos objetos con el mismo valor tienen el mismo valor hash.
+
+::
+
+    >>> type(Persona)
+    <type 'classobj'>
+    >>> type(macagua)
+    <type 'classobj'>
+    >>> hash(macagua)
+    8742669316448
+    >>> hash(Persona)
+    8742669316448
+
+Lo contrario no es necesariamente cierto, pero es probable.
+
+
 .. _python_fun_isinstance:
 
 isinstance()
@@ -2148,8 +2324,8 @@ seria como lo siguiente:
 
 ::
 
-    >>> supervi = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
-    >>> issubclass(supervisor1, Persona)
+    >>> sV1 = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
+    >>> issubclass(sV1, Persona)
     True
 
 
@@ -2158,15 +2334,28 @@ uno de los tipos en la tupla.
 
 ::
 
-    >>> supervi = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
-    >>> issubclass(supervi, (Persona, Empleado, Supervisor, Destreza))
+    >>> sV1 = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
+    >>> issubclass(sV1, (Persona, Empleado, Supervisor, Destreza))
     True
 
-Aquí puede decir que ``supervi`` es una subclase derivada de la clase ``Persona``.
+Aquí puede decir que ``sV1`` es una subclase derivada de la clase ``Persona``.
 
 Las clases dan la posibilidad de crear estructuras de datos más complejas. En el ejemplo, 
 una clase ``Persona`` que realizará un seguimiento del ``cedula``, ``nombre``, ``apellido`` 
 y ``sexo`` (que pasará como atributos).
+
+
+.. _python_fun_setattr:
+
+setattr()
+~~~~~~~~~
+
+La función ``setattr()`` establecer un atributo con nombre en un objeto; 
+``setattr(x, 'y', v)`` es equivalente a ``x.y = v``.
+
+::
+
+    >>> setattr(object, name, value)
 
 
 ----

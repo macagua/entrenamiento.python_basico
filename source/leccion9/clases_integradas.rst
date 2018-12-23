@@ -9,6 +9,82 @@ Clases de tipos integrados
 Python integra varias clases de tipos en el modulo ``__builtin__``, a continuación se 
 describen algunas clases:
 
+
+.. _python_cls_builtins_generales:
+
+Clases generales
+................
+
+Las clases de uso general se describen a continuación:
+
+
+.. _python_cls_buffer:
+
+buffer
+~~~~~~
+
+El objeto de la clase ``buffer()`` crea un nuevo objeto de búfer que haga referencia 
+al objeto dado. El búfer hará referencia a una porción del objeto de destino desde el 
+inicio del objeto (o en el desplazamiento especificado). La división se extenderá hasta 
+el final del objeto de destino (o con el tamaño especificado).
+
+::
+
+    >>>
+
+
+.. todo:: TODO escribir sobre esta clase integrada.
+
+
+.. _python_cls_bytes:
+
+bytes
+~~~~~
+
+El objeto de la clase ``bytes`` ....
+
+::
+
+    >>>
+
+
+.. todo:: TODO escribir sobre esta clase integrada.
+
+
+.. _python_cls_staticmethod:
+
+staticmethod
+~~~~~~~~~~~~
+
+La clase ``staticmethod`` convierte una función a un método estático. Un método 
+estático no recibe un argumento primero implícito. Un método estático no recibe 
+un primer argumento implícito.
+
+::
+
+    >>> staticmethod(function) -> method
+    >>>
+
+Para declarar un método estático, use este lenguaje:
+
+::
+
+    class C:
+        @staticmethod
+        def f(arg1, arg2, ...):
+            ...
+
+
+Se puede llamar en la clase (por ejemplo, ``C.f()``) o en una instancia (por ejemplo,
+``C().f()``). La instancia se ignora a excepción de su clase.
+
+Los métodos estáticos son similares a los métodos estáticos ``Java`` o ``C++``. Para 
+un concepto más avanzado, mire la clase :ref:`classmethod <python_cls_classmethod>` 
+integrada en el interprete.
+
+.. todo:: TODO escribir sobre esta clase integrada.
+
+
 .. comments:
 
     .. _python_cls_builtins_bool:
@@ -34,6 +110,51 @@ describen algunas clases:
         True
         >>> bool()
         False
+
+
+.. _python_cls_builtins_secue:
+
+Clases de secuencias
+....................
+
+Las clases de tipos secuencias se describen a continuación:
+
+
+.. _python_cls_enumerate:
+
+enumerate
+~~~~~~~~~
+
+La clase ``enumerate`` devuelve 
+Return an enumerate object.  iterable must be another object that supports
+iteration.  The enumerate object yields pairs containing a count (from
+start, which defaults to zero) and a value yielded by the iterable argument.
+enumerate is useful for obtaining an indexed list: (0, seq[0]), (1, seq[1]), (2, seq[2]), ...
+
+.. todo:: TODO traducir el párrafo anterior.
+
+
+::
+
+    >>> enumerate(iterable[, start]) -> iterator for index, value of iterable
+
+
+.. todo:: TODO escribir sobre esta clase integrada.
+
+
+.. _python_cls_reversed:
+
+reversed
+~~~~~~~~
+
+La clase ``reversed`` devolver un iterador inverso sobre los valores de la secuencia.
+
+::
+
+    >>> reversed(sequence) -> reverse iterator over values of the sequence
+
+
+.. todo:: TODO escribir sobre esta clase integrada.
 
 
 .. _python_cls_builtins_archivos:
@@ -435,13 +556,73 @@ que la implementación de ``print`` lleve la cuenta de su estado interno.
 
     >>>
 
-.. todo:: TODO escribir un ejemplo del uso de esta función integrada.
+.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
+
+
+.. _python_cls_builtins_objetos:
+
+Clases de objetos
+.................
+
+Las clases de objetos se describen a continuación:
+
+
+.. _python_cls_classmethod:
+
+classmethod
+~~~~~~~~~~~
+
+La clase ``classmethod`` convierte una función para ser un método de clase. Un método 
+de clase recibe la clase como primer argumento implícito, al igual que un método de 
+instancia recibe la instancia.
+
+::
+
+    >>> classmethod(function) -> method
+
+.. todo:: TODO escribir un ejemplo real del uso de esta clase integrada.
+
+Para declarar un método de clase, use este idioma:
+
+::
+
+    class C:
+        @classmethod
+        def f(cls, arg1, arg2, ...):
+            ...
+
+Se puede llamar en la clase (por ejemplo, ``C.f()``) o en una instancia (por ejemplo, 
+``C().f()``). La instancia se ignora a excepción de su clase. Si se llama a un método 
+de clase para una clase derivada, el objeto de clase derivada se pasa como el primer 
+argumento implícito.
+
+Los métodos de clase son diferentes a los métodos estáticos ``C++`` o ``Java``. Si 
+quieres eso, mira la clase :ref:`staticmethod <python_cls_staticmethod>` integrada en 
+el interprete.
+
+.. todo:: TODO escribir sobre esta clase integrada.
+
+
+.. _python_cls_memoryview:
+
+memoryview
+~~~~~~~~~~
+
+La clase ``memoryview`` crea un nuevo objecto memoryview el cual referencias al objecto 
+dado.
+
+::
+
+    >>> memoryview(object)
+
+
+.. todo:: TODO escribir sobre esta clase integrada.
 
 
 .. _python_cls_object:
 
 object
-......
+~~~~~~
 
 El objeto de la clase ``object`` es el tipo más básico de objeto, es integrado en 
 el módulo ``__builtin__``. Este objeto se usa como :ref:`herencia <python_poo_herencia>` 
@@ -455,6 +636,77 @@ corroborar si un objeto es instancia de una clase se utiliza la función
 
     >>> object
     <type 'object'>
+
+
+.. _python_cls_property:
+
+property
+~~~~~~~~
+
+La clase ``property`` típicamente es usado para definir un atributo administrado:
+
+::
+
+    >>> property(fget=None, fset=None, fdel=None, doc=None) -> property attribute
+
+``fget`` es una función a ser usada para obtener un valor de un atributo, y igualmente
+``fset`` es una función para definir el valor de un atributo, y ``fdel`` es una 
+función para eliminar un atributo. 
+
+::
+
+    class C(object):
+        def getx(self): return self._x
+        def setx(self, value): self._x = value
+        def delx(self): del self._x
+        x = property(getx, setx, delx, "I'm the 'x' property.")
+
+Los decoradores facilitan la definición de nuevas propiedades o la modificación de 
+las existentes:
+
+::
+
+    class C(object):
+        @property
+        def x(self):
+            "I am the 'x' property."
+            return self._x
+        @x.setter
+        def x(self, value):
+            self._x = value
+        @x.deleter
+        def x(self):
+            del self._x
+
+.. todo:: TODO escribir sobre esta clase integrada.
+
+
+.. _python_cls_super:
+
+super
+~~~~~
+
+La clase ``super`` típicamente es usada al llamar un método a cooperative superclass method.
+
+.. todo:: TODO traducir frase del párrafo anterior.
+
+::
+
+    >>> super(type, obj) -> bound super object; requires isinstance(obj, type)
+    >>> super(type) -> unbound super object
+    >>> super(type, type2) -> bound super object; requires issubclass(type2, type)
+
+Para declarar una cooperative superclass method, use este idioma:
+
+.. todo:: TODO traducir frase del párrafo anterior.
+
+::
+
+    class C(B):
+        def meth(self, arg):
+            super(C, self).meth(arg)
+
+.. todo:: TODO escribir sobre esta clase integrada.
 
 
 .. _python_cls_type:
