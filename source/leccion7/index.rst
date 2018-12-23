@@ -11,7 +11,7 @@ manipulando de archivos usando métodos para leer y escribir archivos desde el s
 ficheros.
 
 En esta lección se describen las operaciones de entrada y salida, manipulando de archivos 
-del lenguaje Python, mostrando ejemplos prácticos y utiles. A continuación el temario de 
+del lenguaje Python, mostrando ejemplos prácticos y útiles. A continuación el temario de 
 esta lección:
 
 .. toctree::
