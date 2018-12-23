@@ -366,7 +366,7 @@ A continuación, se presentan un ejemplo de conjuntos ``set``:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_conjuntos.py
     :language: python
-    :lines: 9-38
+    :lines: 9-32
 
 
 Conjuntos frozenset
@@ -376,7 +376,7 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
 
 ::
 
-    >>> versiones_plone = frozenset([6, 2.1, 2.5, 3.6, 4, 5, 6, 4, 2.5])
+    >>> versiones_plone = frozenset([6, 2.1, 2.5, 3.6, 4, 5, 4, 2.5])
     >>> print versiones_plone, type(versiones_plone)
     frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
