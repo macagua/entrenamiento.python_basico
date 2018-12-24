@@ -14,21 +14,21 @@ muestra un mensaje.
 print "\nSimulando a LatinChat"
 print "====================="
 
-print "\nLatinChat > De 20 a 30 años"
-print "---------------------------\n"
+print "\nSala de Chat > De 30 a 40 años"
+print "------------------------------\n"
 
-print 'Pepe: ' 
-nombre = raw_input('¿Cómo te llamás?: ')
-print 'Pepe: Hola', nombre, ', encantado de conocerte :3'
+print 'Ana: ¿Cómo se llama usted?: ' 
+nombre = raw_input('Yo: ')
+print 'Ana: Hola', nombre, ', encantada de conocerte :3'
 
-print 'Pepe: '
-edad = input('¿Cual es tu edad?: ')
-print 'Tu tienes', edad, 'y yo no tengo soy un programa xD'
+print 'Ana: ¿Que edad tiene usted?: '
+edad = input('Yo: ')
+print 'Usted tiene', edad, ', y yo ya no digo mi edad xD'
 
-print 'Pepe: '
-tiene_WebCam = raw_input('¿Tienes WebCam?, ingrese "si" o "no", por favor!: ')
+print 'Ana: ¿Tiene WebCam?, ingrese "si" o "no", por favor!: '
+tiene_WebCam = raw_input('Yo: ')
 
 if tiene_WebCam in ('s', 'S', 'si', 'Si', 'SI'):
-	print "Pon la WebCam para verte :-D"
+	print "Ponga la WebCam para verle :-D"
 elif tiene_WebCam in ('n', 'no', 'No', 'NO'):
-	print "Lastima por ti :'( Adiós"
+	print "Lastima por usted :'( Adiós"

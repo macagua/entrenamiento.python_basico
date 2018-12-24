@@ -57,6 +57,20 @@ los scripts es que pueden recibir datos desde la propia terminal de comando en e
 momento de la ejecución, algo muy útil para agregar dinamismo los scripts a través 
 de parámetros personalizables.
 
+A continuación, un ejemplo el cual simula a sala de chat del servicio *LatinChat.com*, 
+validando datos de entradas numérico y tipo cadena de caracteres e interactuá con 
+el usuario y en base a condicionales muestra un mensaje.
+
+.. literalinclude:: ../../recursos/leccion7/entrada_salida.py
+    :language: python
+    :lines: 14-34
+
+
+.. tip::
+
+    **LatinChat.com**, fue un servicio de Internet que ofrecía diversas salas de chat, 
+    muy popular en la década de los 90 en latinoamericana.
+
 
 .. _python_entrada_script_argv:
 
@@ -99,6 +113,36 @@ una forma de entrada de datos alternativa sin usar las funciones
 :ref:`input() <python_fun_input>` y :ref:`raw_input() <python_fun_raw_input>`.
 
 
+A continuación, un ejemplo el cual usa un script con la librería ``sys``. El siguiente 
+script recibe dos argumentos: una cadena de caracteres y un número entero. Lo que hace 
+es imprimir la cadena de caracteres tantas veces como le indique con el argumento de 
+tipo número:
+
+.. literalinclude:: ../../recursos/leccion7/entrada_dos_argumentos.py
+    :language: python
+    :lines: 3-15
+
+Si quiere comprobar la validación de cuantos argumentos deben enviarme al script, 
+ejecute el siguiente comando:
+
+::
+
+    python entrada_dos_argumentos.py "Hola Plone"
+    ERROR: Introdujo uno (1) o más de dos (2) argumentos
+    SOLUCIÓN: Introduce los argumentos correctamente
+    Ejemplo: entrada_dos_argumentos.py "Texto" 5
+
+Ahora si intenta ejecutar el script ``entrada_dos_argumentos.py`` con solo dos (2) 
+argumentos, ejecutando el siguiente comando:
+
+::
+
+    python entrada_dos_argumentos.py "Hola Plone" 3
+    Hola Plone
+    Hola Plone
+    Hola Plone
+
+
 .. _python_salida:
 
 Salida estándar
@@ -123,7 +167,7 @@ o original) es entonces escrito.
 
 Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``print``.
 
-**Ejemplo del uso de print**:
+**Ejemplo del uso de la sentencia print**:
 
 ::
 
@@ -155,59 +199,6 @@ de caracteres y variables:
     - :ref:`Formateo % <python_str_formateo_modulo>`.
 
     - :ref:`Clase formatter <python_str_formatter>`.
-
-
-.. _python_entrada_salida_ejemplo:
-
-Ejemplo de E/S en Python
-........................
-
-Este ejemplo simula a sala de chat del servicio *LatinChat.com*, validando datos de 
-entradas numérico y tipo cadena e interactuá con el usuario y en base a condicionales 
-muestra un mensaje.
-
-.. literalinclude:: ../../recursos/leccion7/entrada_salida.py
-    :language: python
-    :lines: 14-34
-
-
-.. tip::
-
-    **LatinChat.com**, fue un servicio de Internet que ofrecía diversas 
-    salas de chat, muy popular en la década de los 90 en latinoamericana.
-
-
-Ejemplo de E/S con script
-.........................
-
-Este ejemplo de entrada usando un script con la librería ``sys``. El siguiente script 
-recibe dos argumentos: una cadena de caracteres y un número entero. Lo que hace es 
-imprimir la cadena de caracteres tantas veces como le indique con el argumento de tipo 
-número:
-
-.. literalinclude:: ../../recursos/leccion7/entrada_dos_argumentos.py
-    :language: python
-    :lines: 3-15
-
-Si quiere comprobar la validación de cuantos argumentos deben enviarme al script, 
-ejecute el siguiente comando:
-
-::
-
-    python entrada_dos_argumentos.py "Hola Plone"
-    ERROR: Introdujo uno (1) o más de dos (2) argumentos
-    SOLUCIÓN: Introduce los argumentos correctamente
-    Ejemplo: entrada_dos_argumentos.py "Texto" 5
-
-Ahora si intenta ejecutar el script ``entrada_dos_argumentos.py`` con solo dos (2) 
-argumentos, ejecutando el siguiente comando:
-
-::
-
-    python entrada_dos_argumentos.py "Hola Plone" 3
-    Hola Plone
-    Hola Plone
-    Hola Plone
 
 
 .. note::
