@@ -125,8 +125,8 @@ Las clases de tipos secuencias se describen a continuación:
 enumerate
 ~~~~~~~~~
 
-La clase ``enumerate`` devuelve un objeto enumerate.  El iterable debe ser otro objeto 
-que soporte :ref:`iteradores <python_iter>`. El objeto enumerate produce pares que 
+La clase ``enumerate`` devuelve un objeto *enumerate*.  El iterable debe ser otro objeto 
+que soporte :ref:`iteradores <python_iter>`. El objeto *enumerate* produce pares que 
 contiene una cuenta (desde donde inicia, el cual el valor por defecto es cero) y un valor 
 producido por el argumento iterable, cuando la iteración de la secuencia llega al final 
 se llama a la excepción :ref:`StopIteration <python_exception_stopiteration>` y se causa 
@@ -176,10 +176,10 @@ inicial de *1* por la función integrada :ref:`xrange() <python_fun_xrange>`.
 reversed
 ~~~~~~~~
 
-La clase ``reversed`` devolver un iterador inverso sobre los valores de la secuencia, 
-cuando la iteración de la secuencia llega al final se llama a la excepción 
-:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
-iteración.
+La clase ``reversed`` devolver un :ref:`iterador <python_iter>` inverso sobre los 
+valores de la secuencia, cuando la iteración de la secuencia llega al final se llama 
+a la excepción :ref:`StopIteration <python_exception_stopiteration>` y se causa el 
+detener la iteración.
 
 ::
 
