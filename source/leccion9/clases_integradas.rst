@@ -542,7 +542,7 @@ para los objetos de interfaz tipo archivo, pero deberían implementarse si tiene
 sentido en un objeto particular.
 
 
-.. _python_atributo_closed:
+.. _python_attr_closed:
 
 closed
 """"""
@@ -562,7 +562,7 @@ disponible en todos los objetos con interfaz tipo archivo.
     True
 
 
-.. _python_atributo_mode:
+.. _python_attr_mode:
 
 mode
 """"
@@ -579,7 +579,7 @@ disponible en todos los objetos con interfaz tipo archivo.
     'w'
 
 
-.. _python_atributo_name:
+.. _python_attr_name:
 
 name
 """"
@@ -597,7 +597,7 @@ los objetos con interfaz tipo archivo.
     'datos.txt'
 
 
-.. _python_atributo_encoding:
+.. _python_attr_encoding:
 
 encoding
 """"""""
@@ -627,7 +627,7 @@ de error Unicode.
 .. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
-.. _python_atributo_softspace:
+.. _python_attr_softspace:
 
 softspace
 """""""""

@@ -185,7 +185,7 @@ existencia conforme se relaciona con su entorno y otros objetos.
 .. todo:: TODO explicar el concepto Estado de un objeto.
 
 
-.. _python_atributos:
+.. _python_attrs:
 
 Atributos
 .........
@@ -481,7 +481,7 @@ Las clases definen las características del :ref:`objeto <python_objetos>`.
 
 Con todos los conceptos anteriores explicados, se puede decir que una clase es una 
 plantilla genérica de un :ref:`objeto <python_objetos>`. La clase proporciona 
-variables iniciales de estado (donde se guardan los :ref:`atributos <python_atributos>`) 
+variables iniciales de estado (donde se guardan los :ref:`atributos <python_attrs>`) 
 e implementaciones de comportamiento (:ref:`métodos <python_metodos>`) necesarias 
 para crear nuevos objetos, son los modelos sobre los cuáles serán construidos.
 
