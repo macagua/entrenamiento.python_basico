@@ -128,10 +128,12 @@ enumerate
 La clase ``enumerate`` devuelve un objeto *enumerate*.  El iterable debe ser otro objeto 
 que soporte :ref:`iteradores <python_iter>`. El objeto *enumerate* produce pares que 
 contiene una cuenta (desde donde inicia, el cual el valor por defecto es cero) y un valor 
-producido por el argumento iterable, cuando la iteración de la secuencia llega al final 
-se llama a la excepción :ref:`StopIteration <python_exception_stopiteration>` y se causa 
-el detener la iteración. El objeto enumerate es muy útil para obtener una lista indexada 
-como: ``(0, seq[0]), (1, seq[1]), (2, seq[2]), ...``.
+producido por el argumento iterable. 
+
+Cuando la iteración de la secuencia llega al final se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la iteración. 
+El objeto enumerate es muy útil para obtener una lista indexada como: 
+``(0, seq[0]), (1, seq[1]), (2, seq[2]), ...``.
 
 ::
 
@@ -212,10 +214,10 @@ Las clases de tipos *archivos* se describen a continuación:
 file()
 ~~~~~~
 
-El objeto ``file()`` se implementan con el paquete C ``stdio`` y se pueden crear con 
-la función interna :ref:`open() <python_fun_open>`. También son el resultado de otras 
-funciones y métodos internos, por ejemplo, ``os.popen()`` y ``os.fdopen()`` y el método 
-``makefile()`` de los objetos ``socket``.
+El objeto ``file()`` se implementan con el paquete del lenguaje C ``stdio`` y se pueden 
+crear con la función interna :ref:`open() <python_fun_open>`. También son el resultado 
+de otras funciones y métodos internos, por ejemplo, ``os.popen()`` y ``os.fdopen()`` y 
+el método ``makefile()`` de los objetos ``socket``.
 
 Cuando falla una operación de archivos por una cuestión de E/S, se lanza la excepción 
 :ref:`IOError <python_exception_ioerror>`. Esto incluye situaciones donde la operación 
@@ -267,9 +269,9 @@ la método :ref:`archivo.read() <python_mtd_read>` devuelve una excepción
 flush()
 """""""
 
-El método ``flush()`` permite descargar el tampón interno, como la función C ``fflush()`` 
-de la librería ``stdio``. Puede no tener efecto en ciertos objetos similares a los 
-archivos.
+El método ``flush()`` permite descargar el tampón interno, como la función de lenguaje C 
+``fflush()`` de la librería ``stdio``. Puede no tener efecto en ciertos objetos similares 
+a los archivos.
 
 ::
 
@@ -292,9 +294,9 @@ El método ``isatty()`` devuelve ``True`` si el archivo está conectado a un dis
 
 ::
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este método integrado.
+    >>> archivo = open('datos.txt', 'r')
+    >>> archivo.isatty()
+    False
 
 
 .. _python_mtd_fileno:
@@ -418,17 +420,29 @@ El método ``readlines()`` devuelve una lista que contiene todas las líneas del
 seek()
 """"""
 
-El método ``seek()`` establece la posición actual del archivo, como la función C 
-``fseek()`` de la librería ``stdio``.
+El método ``seek()`` mueve la posición actual del cursos del archivo, como la función 
+del lenguaje C ``fseek()`` de la librería ``stdio``. No devuelve ningún valor.
+
+A continuación, un ejemplo que lee el archivo ``hostname`` en un sistema Linux:
 
 ::
 
-    seek(offset[, whence]) -> None.  Move to new file position.
+    >>> archivo = open('/etc/hostname')
+    >>> linea = iter(archivo)
+    >>> linea.next()
+    'debacagua9\n'
+    >>> archivo.seek(4)
+    >>> linea.next()
+    'cagua9\n'
 
 El argumento ``whence`` es opcional, con un valor predeterminado de ``0`` (posicionamiento 
 absoluto); otros valores posibles son ``1`` (posicionamiento relativo a la posición actual) 
 y ``2`` (posicionamiento relativo al final del archivo). No hay valor de retorno.
 
+
+::
+
+    >>> seek(offset[, whence])
 
 .. todo:: TODO escribir un ejemplo del uso de este método integrado.
 
@@ -438,14 +452,30 @@ y ``2`` (posicionamiento relativo al final del archivo). No hay valor de retorno
 tell()
 """"""
 
-El método ``tell()`` devuelve la posición actual del archivo, como la función C ``ftell()`` 
-de la librería ``stdio``.
+El método ``tell()`` devuelve la posición actual del archivo, como la función del 
+lenguaje C ``ftell()`` de la librería ``stdio``.
 
 ::
 
-    >>>
+    >>> archivo = open('/etc/hostname')
+    >>> archivo.tell()
+    0
+    >>> linea = iter(archivo)
+    >>> linea.next()
+    'debacagua9\n'
+    >>> archivo.tell()
+    11
+    >>> len('debacagua9\n')
+    11
+    >>> linea.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+    >>> archivo.tell()
+    11
 
-.. todo:: TODO escribir un ejemplo del uso de este método integrado.
+Cuando la iteración de la secuencia llega al final se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la iteración. 
 
 
 .. _python_mtd_truncate:
@@ -457,10 +487,10 @@ truncate()
 
     truncate([size]) -> None
 
-El método ``truncate()`` trunca el archivo. Si se proporciona el argumento opcional ``size``, 
-el archivo se trunca a (como mucho) ese tamaño. El tamaño depende de la posición actual. La 
-disponibilidad de esta función depende de la versión del sistema operativo (por ejemplo, no 
-todas las versiones de Unix dan soporte a esta operación).
+El método ``truncate()`` trunca el archivo. Si se proporciona el argumento opcional 
+``size``, el archivo se trunca a (como mucho) ese tamaño. El tamaño depende de la 
+posición actual. La disponibilidad de esta función depende de la versión del sistema 
+operativo (por ejemplo, no todas las versiones de Unix dan soporte a esta operación).
 
 ::
 
@@ -610,7 +640,8 @@ debería inicializarse a cero.
 
 Esto será automático en la mayoría de las clases implementadas en Python (se debe 
 tener cuidado en las clases que redefinan el acceso a los atributos). Los tipos 
-implementados en C tendrán que proporcionar un atributo ``softspace`` escribible. 
+implementados en el lenguaje C tendrán que proporcionar un atributo ``softspace`` 
+escribible. 
 
 Nota: Este atributo no se usa para controlar la sentencia ``print``, sino para permitir 
 que la implementación de ``print`` lleve la cuenta de su estado interno.
@@ -778,10 +809,10 @@ Para declarar una cooperative superclass method, use este idioma:
 type
 ....
 
-Los objetos tipo representan los diversos tipos de objeto. El tipo de un objeto es 
-accesible mediante la función integrada :ref:`type() <python_fun_type>`. No hay 
-operaciones especiales sobre los tipos. El módulo estándar ``types`` define nombres 
-para todos los tipos internos estándar.
+Los :ref:`objetos tipo <python_types_objs>` representan los diversos tipos de objeto. 
+El tipo de un objeto es accesible mediante la función integrada 
+:ref:`type() <python_fun_type>`. No hay operaciones especiales sobre los tipos. El 
+módulo estándar ``types`` define nombres para todos los tipos internos estándar.
 
 ::
 
