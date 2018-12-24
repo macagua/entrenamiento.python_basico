@@ -6,8 +6,8 @@
 Entrada/Salida en Python
 ------------------------
 
-Los programas serían de muy poca utilidad si no fueran capaces de interaccionar con 
-el usuario. 
+Los programas serían de muy poca utilidad si no fueran capaces de interaccionar 
+con el usuario. 
 
 
 .. _python_entrada:
@@ -25,9 +25,10 @@ cadenas de caracteres:
 
 ::
 
-    >>> nombre = raw_input('¿Cómo te llamás?: ')
-    ¿Cómo te llamás?: Leonardo
-    >>>
+    >>> nombre = raw_input('Ana: ¿Cómo se llama usted?: ')
+    Ana: ¿Cómo se llama usted?: Leonardo
+    >>> print nombre
+    Leonardo
 
 **Ejemplo de la función input**:
 
@@ -35,27 +36,29 @@ La función :ref:`input() <python_fun_input>` siempre devuelve un valor numéric
 
 ::
 
-    >>> edad = input('¿Cual es tu edad?: ')
-    ¿Cual es tu edad?: 38
-    >>>
-
+    >>> edad = input('Ana: ¿Que edad tiene usted?: ')
+    Ana: ¿Que edad tiene usted?: 38
+    >>> print edad
+    38
 
 .. _python_entrada_script:
 
 Entrada por script
 ..................
 
-Hasta ahora todo lo que ha hecho ha sido escribir código en el intérprete, y/o 
-escribir/ejecutar pequeños programas Python, pero los programas informáticos no 
-funcionan así. Se basan en escribir todas las instrucciones en archivos llamados 
-scripts, que no es mas que guiones de instrucciones. Luego se envía este archivo 
-al intérprete desde la terminal de comando (si es un lenguaje interpretado como 
+En muchas practicas de este entrenamiento usted lo que ha hecho ha sido escribir 
+código en el intérprete, y/o escribir/ejecutar pequeños programas Python, pero 
+los programas informáticos no funcionan así. 
+
+Se basan en escribir todas las instrucciones en archivos llamados *scripts*, que 
+no es mas que guiones de instrucciones. Luego se envía este archivo al intérprete 
+como parámetro desde la terminal de comando (si es un lenguaje interpretado como 
 Python) y éste ejecutará todas las instrucciones en bloque.
 
 A parte de ser la base del funcionamiento de los programas, la característica de 
-los scripts es que pueden recibir datos desde la propia terminal de comando en el 
-momento de la ejecución, algo muy útil para agregar dinamismo los scripts a través 
-de parámetros personalizables.
+los *scripts* es que pueden recibir datos desde la propia terminal de comando en 
+el momento de la ejecución, algo muy útil para agregar dinamismo los *scripts* a 
+través de parámetros personalizables.
 
 A continuación, un ejemplo el cual simula a sala de chat del servicio *LatinChat.com*, 
 validando datos de entradas numérico y tipo cadena de caracteres e interactuá con 
@@ -113,8 +116,8 @@ una forma de entrada de datos alternativa sin usar las funciones
 :ref:`input() <python_fun_input>` y :ref:`raw_input() <python_fun_raw_input>`.
 
 
-A continuación, un ejemplo el cual usa un script con la librería ``sys``. El siguiente 
-script recibe dos argumentos: una cadena de caracteres y un número entero. Lo que hace 
+A continuación, un ejemplo el cual usa un *script* con la librería ``sys``. El *script*
+recibe dos (02) argumentos: una cadena de caracteres y un número entero. Lo que hace 
 es imprimir la cadena de caracteres tantas veces como le indique con el argumento de 
 tipo número:
 
@@ -132,7 +135,7 @@ ejecute el siguiente comando:
     SOLUCIÓN: Introduce los argumentos correctamente
     Ejemplo: entrada_dos_argumentos.py "Texto" 5
 
-Ahora si intenta ejecutar el script ``entrada_dos_argumentos.py`` con solo dos (2) 
+Ahora si intenta ejecutar el *script* ``entrada_dos_argumentos.py`` con solo dos (2) 
 argumentos, ejecutando el siguiente comando:
 
 ::
@@ -171,8 +174,8 @@ Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``
 
 ::
 
-    >>> print 'Pepe: Hola', nombre, ', encantado de conocerte :3'
-    Pepe: Hola Leonardo , encantado de conocerte :3
+    >>> print 'Ana: Hola', nombre, ', encantada de conocerte :3'
+    Ana: Hola Leonardo , encantado de conocerte :3
 
 
 .. _python_salida_formato_impresion_cadenas:
@@ -237,5 +240,5 @@ de caracteres y variables:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` 
-    del entrenamiento para ampliar su conocimiento en esta temática.
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` del 
+    entrenamiento para ampliar su conocimiento en esta temática.
