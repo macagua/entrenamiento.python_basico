@@ -88,9 +88,9 @@ interactuar de el mismo como se muestra a continuación:
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la documentación disponible sobre los tipos 
-**file** desde la :ref:`consola interactiva <python_interactivo>` de la 
-siguiente forma:
+Usted puede consultar toda la documentación disponible sobre los tipos objeto 
+:ref:`file <python_cls_file>` desde la :ref:`consola interactiva <python_interactivo>` 
+de la siguiente forma:
 
 ::
 
@@ -105,9 +105,8 @@ Para salir de esa ayuda presione la tecla ``q``.
 
 
 .. tip::
-    Para ejecutar el código :file:`archivo.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
-    y ejecute el siguiente comando:
+    Para ejecutar el código :file:`archivo.py`, abra una consola de comando, acceda al 
+    directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     ::
 

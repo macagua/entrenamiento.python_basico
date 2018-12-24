@@ -197,21 +197,21 @@ abierto lanzará :ref:`IOError <python_exception_ioerror>` si el fichero se ha c
 Está permitido llamar a ``close()`` más de una vez.
 
 Una vez que se terminó de usar el archivo es necesario cerrarlo, para liberar los 
-recursos tomados por el manejo del archivo. Eso se hace con la sentencia ``f.close()``:
+recursos tomados por el manejo del archivo. Eso se hace con la sentencia ``archivo.close()``:
 
 ::
 
-    >>> f.close() # cierra el archivo datos.txt
+    >>> archivo.close() # cierra el archivo datos.txt
 
 
 Luego de lo cual no se puede acceder al archivo ``datos.txt``, si intenta una llamada a 
-la método :ref:`f.read() <python_mtd_read>` devuelve una excepción 
+la método :ref:`archivo.read() <python_mtd_read>` devuelve una excepción 
 :ref:`ValueError <python_exception_valueerror>`, porque el archivo está cerrado:
 
 ::
 
-    >>> f.close()
-    >>> f.read()
+    >>> archivo.close()
+    >>> archivo.read()
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     ValueError: I/O operation on closed file
@@ -302,10 +302,10 @@ se leyó todo el archivo, una nueva llamada a la función devuelve una cadena va
 
 ::
 
-    >>> f = open('datos.txt', 'r')
-    >>> f.read()
+    >>> archivo = open('datos.txt', 'r')
+    >>> archivo.read()
     'Este es una prueba \ny otra prueba'
-    >>> f.read()
+    >>> archivo.read()
     ''
 
 Si desea recibir una salida formateada por consola leyendo un archivo, a continuación 
@@ -313,11 +313,11 @@ un ejemplo:
 
 ::
 
-    >>> f = open('datos.txt', 'r')
-    >>> s = f.read()
-    >>> print s
-    This is a test
-    and another test
+    >>> archivo = open('datos.txt', 'r')
+    >>> contenido = archivo.read()
+    >>> print contenido
+    Este es una prueba
+    y otra prueba
 
 
 .. _python_mtd_readline:
@@ -333,10 +333,10 @@ mientras que una línea en blanco se representa con un carácter de nueva línea
 
 ::
 
-    >>> f = open('datos.txt', 'r')
-    >>> print f.readline() # lee la linea "Este es una prueba "
-    >>> print f.readline() # lee la linea "y otra prueba"
-    >>> print f.readline()
+    >>> archivo = open('datos.txt', 'r')
+    >>> print archivo.readline() # lee la linea "Este es una prueba "
+    >>> print archivo.readline() # lee la linea "y otra prueba"
+    >>> print archivo.readline()
         
     >>> 
 
@@ -350,8 +350,8 @@ El método ``readlines()`` devuelve una lista que contiene todas las líneas del
 
 ::
 
-    >>> f = open('datos.txt', 'r')
-    >>> lines = f.readlines()
+    >>> archivo = open('datos.txt', 'r')
+    >>> lines = archivo.readlines()
     >>> print(lines)
     ['Este es una prueba \n', 'y otra prueba']
 
@@ -425,9 +425,9 @@ cadena de caracteres.
 
 ::
 
-    >>> f = open('datos.txt', 'w')
+    >>> archivo = open('datos.txt', 'w')
     >>> # escribe el archivo datos.txt
-    ... f.write('Este es una prueba \ny otra prueba')
+    ... archivo.write('Este es una prueba \ny otra prueba')
     >>>
 
 
