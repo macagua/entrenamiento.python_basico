@@ -217,10 +217,10 @@ la función interna :ref:`open() <python_fun_open>`. También son el resultado d
 funciones y métodos internos, por ejemplo, ``os.popen()`` y ``os.fdopen()`` y el método 
 ``makefile()`` de los objetos ``socket``.
 
-Cuando falla una operación de ficheros por una cuestión de E/S, se lanza la excepción 
+Cuando falla una operación de archivos por una cuestión de E/S, se lanza la excepción 
 :ref:`IOError <python_exception_ioerror>`. Esto incluye situaciones donde la operación 
 no esté definida por cualquier motivo, como usar :ref:`seek() <python_mtd_seek>` 
-en un dispositivo ``tty`` o intentar escribir en un fichero abierto para lectura.
+en un dispositivo ``tty`` o intentar escribir en un archivo abierto para lectura.
 
 Métodos
 ````````
@@ -234,8 +234,8 @@ close()
 """""""
 
 El método ``close()`` permite cerrar la manipulación del archivo. No es posible escribir 
-ni leer en un fichero cerrado. Cualquier operación que requiera que el fichero esté 
-abierto lanzará :ref:`IOError <python_exception_ioerror>` si el fichero se ha cerrado. 
+ni leer en un archivo cerrado. Cualquier operación que requiera que el archivo esté 
+abierto lanzará :ref:`IOError <python_exception_ioerror>` si el archivo se ha cerrado. 
 Está permitido llamar a ``close()`` más de una vez.
 
 Una vez que se terminó de usar el archivo es necesario cerrarlo, para liberar los 
@@ -269,7 +269,7 @@ flush()
 
 El método ``flush()`` permite descargar el tampón interno, como la función C ``fflush()`` 
 de la librería ``stdio``. Puede no tener efecto en ciertos objetos similares a los 
-ficheros.
+archivos.
 
 ::
 
@@ -283,11 +283,11 @@ ficheros.
 isatty()
 """"""""
 
-El método ``isatty()`` devuelve ``True`` si el fichero está conectado a un dispositivo 
+El método ``isatty()`` devuelve ``True`` si el archivo está conectado a un dispositivo 
 ``tty`` (un terminal interactivo de líneas de orden), en caso contrario, ``False``. 
 
 .. note:: 
-    Si un objeto similar a los ficheros no está asociado a un fichero real, no debe 
+    Si un objeto similar a los archivos no está asociado a un archivo real, no debe 
     implementar este método.
 
 ::
@@ -302,13 +302,13 @@ El método ``isatty()`` devuelve ``True`` si el fichero está conectado a un dis
 fileno()
 """"""""
 
-El método ``fileno()`` devuelve el "descriptor de fichero" utilizado por la 
+El método ``fileno()`` devuelve el "descriptor de archivo" utilizado por la 
 implementación subyacente para solicitar operaciones E/S del sistema operativo. 
-Puede ser útil para interfaces de bajo nivel que utilicen descriptores de ficheros, 
+Puede ser útil para interfaces de bajo nivel que utilicen descriptores de archivos, 
 por ejemplo, el módulo ``fcntl`` o ``os.read()`` y similares. 
 
 .. note:: 
-    Si un objeto similar a los ficheros no tiene un descriptor de fichero, no debe 
+    Si un objeto similar a los archivos no tiene un descriptor de archivo, no debe 
     implementar este método.
 
 ::
@@ -418,7 +418,7 @@ El método ``readlines()`` devuelve una lista que contiene todas las líneas del
 seek()
 """"""
 
-El método ``seek()`` establece la posición actual del fichero, como la función C 
+El método ``seek()`` establece la posición actual del archivo, como la función C 
 ``fseek()`` de la librería ``stdio``.
 
 ::
@@ -427,7 +427,7 @@ El método ``seek()`` establece la posición actual del fichero, como la funció
 
 El argumento ``whence`` es opcional, con un valor predeterminado de ``0`` (posicionamiento 
 absoluto); otros valores posibles son ``1`` (posicionamiento relativo a la posición actual) 
-y ``2`` (posicionamiento relativo al final del fichero). No hay valor de retorno.
+y ``2`` (posicionamiento relativo al final del archivo). No hay valor de retorno.
 
 
 .. todo:: TODO escribir un ejemplo del uso de este método integrado.
@@ -438,7 +438,7 @@ y ``2`` (posicionamiento relativo al final del fichero). No hay valor de retorno
 tell()
 """"""
 
-El método ``tell()`` devuelve la posición actual del fichero, como la función C ``ftell()`` 
+El método ``tell()`` devuelve la posición actual del archivo, como la función C ``ftell()`` 
 de la librería ``stdio``.
 
 ::
@@ -457,8 +457,8 @@ truncate()
 
     truncate([size]) -> None
 
-El método ``truncate()`` trunca el fichero. Si se proporciona el argumento opcional ``size``, 
-el fichero se trunca a (como mucho) ese tamaño. El tamaño depende de la posición actual. La 
+El método ``truncate()`` trunca el archivo. Si se proporciona el argumento opcional ``size``, 
+el archivo se trunca a (como mucho) ese tamaño. El tamaño depende de la posición actual. La 
 disponibilidad de esta función depende de la versión del sistema operativo (por ejemplo, no 
 todas las versiones de Unix dan soporte a esta operación).
 
@@ -493,7 +493,7 @@ cadena de caracteres.
 writelines()
 """"""""""""
 
-El método ``writelines()`` escribe una lista de cadenas al fichero. No se devuelve 
+El método ``writelines()`` escribe una lista de cadenas al archivo. No se devuelve 
 ningún valor. El nombre es paralelo a ``readlines()``, ``writelines()`` no añade 
 separadores de línea.
 
@@ -507,8 +507,8 @@ separadores de línea.
 Atributos
 `````````
 
-Los objetos fichero también ofrecen otros atributos interesantes. No son necesarios 
-para los objetos de interfaz tipo fichero, pero deberían implementarse si tienen 
+Los objetos archivo también ofrecen otros atributos interesantes. No son necesarios 
+para los objetos de interfaz tipo archivo, pero deberían implementarse si tienen 
 sentido en un objeto particular.
 
 
@@ -517,16 +517,19 @@ sentido en un objeto particular.
 closed
 """"""
 
-El atributo ``closed`` del objeto *fichero* de tipo :ref:`booleano <python_bool>` 
-indica el estado actual. Es un atributo de sólo lectura, que se cambia mediante el 
-método :ref:`close() <python_mtd_close>`. Puede no estar disponible en todos los 
-objetos con interfaz tipo fichero.
+El atributo ``closed`` del objeto :ref:`file <python_cls_file>` de tipo 
+:ref:`booleano <python_bool>` indica el estado actual. Es un atributo de sólo lectura, 
+que se cambia mediante el método :ref:`close() <python_mtd_close>`. Puede no estar 
+disponible en todos los objetos con interfaz tipo archivo.
 
 ::
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
+    >>> archivo = open('datos.txt', 'w')
+    >>> archivo.closed
+    False
+    >>> archivo.close()
+    >>> archivo.closed
+    True
 
 
 .. _python_atributo_mode:
@@ -534,16 +537,16 @@ objetos con interfaz tipo fichero.
 mode
 """"
 
-El atributo ``mode`` del objeto *fichero*, es el modo de E/S del fichero. Si se creó 
-el fichero con la función integrada :ref:`open() <python_fun_open>`, será el valor 
-del parámetro ``mode``. Es un atributo de sólo lectura y puede no estar disponible 
-en todos los objetos con interfaz tipo fichero.
+El atributo ``mode`` del objeto :ref:`file <python_cls_file>`, es el modo de E/S del 
+archivo. Si se creó el archivo con la función integrada :ref:`open() <python_fun_open>`, 
+será el valor del parámetro ``mode``. Es un atributo de sólo lectura y puede no estar 
+disponible en todos los objetos con interfaz tipo archivo.
 
 ::
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
+    >>> archivo = open('datos.txt', 'w')
+    >>> archivo.mode
+    'w'
 
 
 .. _python_atributo_name:
@@ -551,17 +554,17 @@ en todos los objetos con interfaz tipo fichero.
 name
 """"
 
-El atributo ``name`` del objeto *fichero*, es el nombre del fichero si se creó el objeto 
-fichero mediante la función integrada :ref:`open() <python_fun_open>`, el nombre del 
-fichero. En caso contrario, alguna cadena que indique el origen del fichero, de la forma 
-"<...>". Es un atributo de sólo lectura y puede no estar disponible en todos los objetos 
-con interfaz tipo fichero.
+El atributo ``name`` del objeto :ref:`file <python_cls_file>`, es el nombre del archivo 
+si se creó el objeto archivo mediante la función integrada :ref:`open() <python_fun_open>`, 
+el nombre del archivo. En caso contrario, alguna cadena que indique el origen del archivo, 
+de la forma "<...>". Es un atributo de sólo lectura y puede no estar disponible en todos 
+los objetos con interfaz tipo archivo.
 
 ::
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
+    >>> archivo = open('datos.txt', 'w')
+    >>> archivo.name
+    'datos.txt'
 
 
 .. _python_atributo_encoding:
@@ -569,7 +572,8 @@ con interfaz tipo fichero.
 encoding
 """"""""
 
-El atributo ``encoding`` del objeto *fichero* es el encoding del fichero.
+El atributo ``encoding`` del objeto :ref:`file <python_cls_file>`, es el encoding 
+del archivo.
 
 ::
 
@@ -583,7 +587,8 @@ El atributo ``encoding`` del objeto *fichero* es el encoding del fichero.
 errors
 """"""
 
-El atributo ``errors`` del objeto *fichero* es el manipulador de error Unicode.
+El atributo ``errors`` del objeto :ref:`file <python_cls_file>`, es el manipulador 
+de error Unicode.
 
 ::
 
@@ -597,10 +602,11 @@ El atributo ``errors`` del objeto *fichero* es el manipulador de error Unicode.
 softspace
 """""""""
 
-El atributo ``softspace`` del objeto *fichero* de tipo :ref:`booleano <python_bool>` 
-indica si se debe escribir un espacio antes de escribir otro valor al usar la sentencia 
-:ref:`print <python_sent_print>`. Las clases que intenten simular un objeto fichero 
-deberían tener un atributo escribible ``softspace``, que debería inicializarse a cero. 
+El atributo ``softspace`` del objeto :ref:`file <python_cls_file>` del tipo 
+:ref:`booleano <python_bool>` indica si se debe escribir un espacio antes de escribir 
+otro valor al usar la sentencia :ref:`print <python_sent_print>`. Las clases que intenten 
+simular un objeto archivo deberían tener un atributo escribible ``softspace``, que 
+debería inicializarse a cero.
 
 Esto será automático en la mayoría de las clases implementadas en Python (se debe 
 tener cuidado en las clases que redefinan el acceso a los atributos). Los tipos 
@@ -611,7 +617,8 @@ que la implementación de ``print`` lleve la cuenta de su estado interno.
 
 ::
 
-    >>>
+    >>> archivo.softspace
+    0
 
 .. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 

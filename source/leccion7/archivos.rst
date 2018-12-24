@@ -8,7 +8,7 @@ Manipulación de archivos
 
 Para escribir o leer cadenas de caracteres para/desde archivos (otros tipos deben ser 
 convertidas a cadenas de caracteres). Para esto Python incorpora un tipo integrado 
-llamado :ref:`file <python_cls_file>`, el cual es manipulado mediante un objeto fichero 
+llamado :ref:`file <python_cls_file>`, el cual es manipulado mediante un objeto archivo 
 el cual fue generado a través de una función integrada en Python, a continuación se 
 describen los procesos típicos y sus referencias a funciones propias del lenguaje:
 
