@@ -27,16 +27,16 @@ en el *objeto integrado* :ref:`file <python_cls_file>`:
 
 ::
 
-    >>> f = open('/etc/hostname')
-    >>> f
+    >>> archivo = open('/etc/hostname')
+    >>> archivo
     <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
-    >>> f.__iter__()
+    >>> archivo.__iter__()
     <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
-    >>> iter(f)
+    >>> iter(archivo)
     <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
-    >>> f is f.__iter__()
+    >>> archivo is archivo.__iter__()
     True
-    >>> linea = f.__iter__()
+    >>> linea = archivo.__iter__()
     >>> linea.next()
     'laptop\n'
     >>> linea.next()
@@ -45,7 +45,7 @@ en el *objeto integrado* :ref:`file <python_cls_file>`:
     StopIteration
 
 En el ejemplo, el método especial ``__iter__()``, hace lo mismo que la función integrada 
-:ref:`iter(f) <python_fun_iter>`, es decir, lo mismo que ``f.__iter__() <==> iter(f)``.
+:ref:`iter(archivo) <python_fun_iter>`.
 
 
 Iteradores y secuencias
