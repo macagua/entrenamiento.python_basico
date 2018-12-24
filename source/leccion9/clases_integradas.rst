@@ -125,21 +125,50 @@ Las clases de tipos secuencias se describen a continuación:
 enumerate
 ~~~~~~~~~
 
-La clase ``enumerate`` devuelve 
-Return an enumerate object.  iterable must be another object that supports
-iteration.  The enumerate object yields pairs containing a count (from
-start, which defaults to zero) and a value yielded by the iterable argument.
-enumerate is useful for obtaining an indexed list: (0, seq[0]), (1, seq[1]), (2, seq[2]), ...
-
-.. todo:: TODO traducir el párrafo anterior.
-
+La clase ``enumerate`` devuelve un objeto enumerate.  El iterable debe ser otro objeto 
+que soporte :ref:`iteradores <python_iter>`. El objeto enumerate produce pares que 
+contiene una cuenta (desde donde inicia, el cual el valor por defecto es cero) y un valor 
+producido por el argumento iterable, cuando la iteración de la secuencia llega al final 
+se llama a la excepción :ref:`StopIteration <python_exception_stopiteration>` y se causa 
+el detener la iteración. El objeto enumerate es muy útil para obtener una lista indexada 
+como: ``(0, seq[0]), (1, seq[1]), (2, seq[2]), ...``.
 
 ::
 
-    >>> enumerate(iterable[, start]) -> iterator for index, value of iterable
+    >>> enumerar = enumerate(xrange(3))
+    >>> enumerar.next()
+    (0, 0)
+    >>> enumerar.next()
+    (1, 1)
+    >>> enumerar.next()
+    (2, 2)
+    >>> enumerar.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
+En el ejemplo anterior usa una secuencia numérica de 3 elementos generada por la función 
+integrada :ref:`xrange() <python_fun_xrange>`.
 
-.. todo:: TODO escribir sobre esta clase integrada.
+A continuación se le pasa el parámetro de *inicio* con el valor *1* de la secuencia 
+generada por la clase ``enumerate``:
+
+::
+
+    >>> enumerar = enumerate(xrange(3), 1)
+    >>> enumerar.next()
+    (1, 0)
+    >>> enumerar.next()
+    (2, 1)
+    >>> enumerar.next()
+    (3, 2)
+    >>> enumerar.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+En el ejemplo anterior usa una secuencia numérica de 3 elementos generada con el valor 
+inicial de *1* por la función integrada :ref:`xrange() <python_fun_xrange>`.
 
 
 .. _python_cls_reversed:
@@ -147,14 +176,27 @@ enumerate is useful for obtaining an indexed list: (0, seq[0]), (1, seq[1]), (2,
 reversed
 ~~~~~~~~
 
-La clase ``reversed`` devolver un iterador inverso sobre los valores de la secuencia.
+La clase ``reversed`` devolver un iterador inverso sobre los valores de la secuencia, 
+cuando la iteración de la secuencia llega al final se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
 
 ::
 
-    >>> reversed(sequence) -> reverse iterator over values of the sequence
+    >>> inversa = reversed(xrange(3))
+    >>> inversa.next()
+    2
+    >>> inversa.next()
+    1
+    >>> inversa.next()
+    0
+    >>> inversa.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
-
-.. todo:: TODO escribir sobre esta clase integrada.
+En el ejemplo anterior usa una secuencia numérica de 3 elementos generada por la 
+función integrada :ref:`xrange() <python_fun_xrange>`.
 
 
 .. _python_cls_builtins_archivos:
@@ -281,14 +323,29 @@ por ejemplo, el módulo ``fcntl`` o ``os.read()`` y similares.
 next()
 """"""
 
-El método ``next()`` permite x.next() -> el próximo valor, o causa una 
-:ref:`StopIteration <python_exception_stopiteration>`
+El método ``next()`` permite usar un iterador para tratar cada linea del archivo como 
+el próximo valor, cuando la iteración del archivo llega al final se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
 
 ::
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este método integrado.
+    >>> archivo = open('/etc/hostname')
+    >>> archivo
+    <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
+    >>> archivo.__iter__()
+    <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
+    >>> iter(archivo)
+    <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
+    >>> archivo is archivo.__iter__()
+    True
+    >>> linea = archivo.__iter__()
+    >>> linea.next()
+    'laptop\n'
+    >>> linea.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
 
 .. _python_mtd_read:
