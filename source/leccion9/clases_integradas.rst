@@ -315,10 +315,9 @@ por ejemplo, el módulo ``fcntl`` o ``os.read()`` y similares.
 
 ::
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este método integrado.
-
+    >>> archivo = open("datos.txt",mode="r")
+    >>> archivo.fileno()
+    6
 
 .. _python_mtd_next:
 
@@ -410,8 +409,8 @@ El método ``readlines()`` devuelve una lista que contiene todas las líneas del
 ::
 
     >>> archivo = open('datos.txt', 'r')
-    >>> lines = archivo.readlines()
-    >>> print(lines)
+    >>> lineas = archivo.readlines()
+    >>> print lineas
     ['Este es una prueba \n', 'y otra prueba']
 
 
@@ -423,28 +422,89 @@ seek()
 El método ``seek()`` mueve la posición actual del cursos del archivo, como la función 
 del lenguaje C ``fseek()`` de la librería ``stdio``. No devuelve ningún valor.
 
-A continuación, un ejemplo que lee el archivo ``hostname`` en un sistema Linux:
+El método ``seek()`` lleva la siguiente nomenclatura:
 
 ::
 
-    >>> archivo = open('/etc/hostname')
-    >>> linea = iter(archivo)
-    >>> linea.next()
-    'debacagua9\n'
-    >>> archivo.seek(4)
-    >>> linea.next()
-    'cagua9\n'
+    >>> seek(posicion_actual[, punto_referencia])
 
-El argumento ``whence`` es opcional, con un valor predeterminado de ``0`` (posicionamiento 
-absoluto); otros valores posibles son ``1`` (posicionamiento relativo a la posición actual) 
-y ``2`` (posicionamiento relativo al final del archivo). No hay valor de retorno.
-
+A continuación, un ejemplo que escribir y leer el archivo ``datos.txt`` agregando una 
+lista de lineas al principio del archivo, como al final del archivo:
 
 ::
 
-    >>> seek(offset[, whence])
+    >>> archivo = open('datos.txt', 'w')
+    >>> lista_de_lineas = ["Esta es la 1er linea", \
+    ...     "Esta es la 2da linea", "Esta es la 3era linea"]
+    >>> archivo.writelines("\n".join(lista_de_lineas))
+    >>> archivo.close()
+    >>> archivo = open('datos.txt', 'r')
+    >>> archivo.next()
+    'Esta es la 1er linea\n'
+    >>> archivo.seek(8)
+    >>> archivo.next()
+    'la 1er linea\n'
+    >>> archivo.next()
+    'Esta es la 2da linea\n'
+    >>> archivo.next()
+    'Esta es la 3era linea'
+    >>> archivo.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+    >>> archivo.close()
 
-.. todo:: TODO escribir un ejemplo del uso de este método integrado.
+En el ejemplo anterior, puede ver que se escriben tres lineas y se pasa como argumento 
+``posicion_actual`` el valor *8* el cual posiciona el curso de búsqueda en dicha posición 
+de la primera linea con ``archivo.seek(8)`` y muestra una parte de la linea.
+
+El argumento ``punto_referencia`` es opcional, con un valor predeterminado de ``0`` (es 
+el principio del archivo); otros valores posibles son ``1`` (la posición actual del 
+archivo) y ``2`` (el final del archivo). No hay valor de retorno.
+
+::
+
+    >>> archivo = open('datos.txt', 'w')
+    >>> lista_de_lineas = ["Esta es la 1er linea", \
+    ...     "Esta es la 2da linea", "Esta es la 3era linea"]
+    >>> archivo.writelines("\n".join(lista_de_lineas))
+    >>> archivo.close()
+    >>> archivo = open('datos.txt', 'r')
+    >>> archivo.next()
+    'Esta es la 1er linea\n'
+    >>> archivo.seek(8)
+    >>> archivo.next()
+    'la 1er linea\n'
+    >>> archivo.close()
+    >>> archivo = open('datos.txt', 'rw+')
+    >>> nuevas_lineas = ["\nEsta es la 4ta linea", \
+    ...     "Esta es la 5ta linea"]
+    >>> # Escribe la secuencia de la lineas al final del archivo.
+    ... archivo.seek(0, 2)
+    >>> archivo.writelines("\n".join(nuevas_lineas))
+    >>> # Ahora lea completamente el archivo desde el inicio.
+    ... archivo.seek(0,0)
+    >>> for elemento in range(1, 6):
+    ...    linea = archivo.next()
+    ...    print "Linea No %d - %s" % (elemento, linea)
+    ... 
+    Linea No 1 - Esta es la 1er linea
+
+    Linea No 2 - Esta es la 2da linea
+
+    Linea No 3 - Esta es la 3era linea
+
+    Linea No 4 - Esta es la 4ta linea
+
+    Linea No 5 - Esta es la 5ta linea
+    >>> # Cerrar archivo abierto
+    ... archivo.close()
+    >>> 
+
+En el ejemplo anterior se pudo usar el método ``seek()`` con el argumento 
+``punto_referencia`` al final del archivo para agregar nuevas lineas y luego se uso 
+de nuevo el argumento ``punto_referencia`` para ubicarse al inicio del archivo para 
+mostrar todo el contenido del archivo.
 
 
 .. _python_mtd_tell:
@@ -529,9 +589,12 @@ separadores de línea.
 
 ::
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este método integrado.
+    >>> archivo = open('datos.txt', 'w')
+    >>> lista_de_lineas = ['Plone es el más poderoso, ', \
+    ...     'escalable, seguro ', 'y longevo CMS, ', \
+    ...     'escrito en Python.']
+    >>> archivo.writelines("\n".join(lista_de_lineas))
+    >>> archivo.close()
 
 
 Atributos
@@ -607,24 +670,27 @@ del archivo.
 
 ::
 
-    >>>
+    >>> with open("datos.txt",mode="r") as archivo:
+    ...     print "Encoding por defecto:", archivo.encoding
+    ...     archivo.close()
+    ... 
+    Encoding por defecto: None
 
-.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
+.. commets:
 
+    .. _python_attr_errors:
 
-.. _python_atributo_errors:
+    errors
+    """"""
 
-errors
-""""""
+    El atributo ``errors`` del objeto :ref:`file <python_cls_file>`, es el manipulador 
+    de error Unicode.
 
-El atributo ``errors`` del objeto :ref:`file <python_cls_file>`, es el manipulador 
-de error Unicode.
+    ::
 
-::
+        >>>
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
+    .. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
 .. _python_attr_softspace:
@@ -781,9 +847,7 @@ las existentes:
 super
 ~~~~~
 
-La clase ``super`` típicamente es usada al llamar un método a cooperative superclass method.
-
-.. todo:: TODO traducir frase del párrafo anterior.
+La clase ``super`` típicamente es usada al llamar un método de superclase cooperativo.
 
 ::
 
@@ -791,9 +855,8 @@ La clase ``super`` típicamente es usada al llamar un método a cooperative supe
     >>> super(type) -> unbound super object
     >>> super(type, type2) -> bound super object; requires issubclass(type2, type)
 
-Para declarar una cooperative superclass method, use este idioma:
 
-.. todo:: TODO traducir frase del párrafo anterior.
+Para declarar un método de superclase cooperativo, use este idioma:
 
 ::
 
