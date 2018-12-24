@@ -467,9 +467,10 @@ pueden ser extraídos usando la función integrada ``keys()``.
 open()
 ~~~~~~
 
-La función ``open()`` :ref:`abre un archivo <python_abrir_archivo>` usando 
-el tipo ``file()``, devuelve un objeto del tipo :ref:`file <python_cls_file>` 
-(ej. *archivo*), y se llama habitualmente con de dos a tres argumentos: 
+La función ``open()`` es definida en el modulo ``io``, esta 
+:ref:`abre un archivo <python_abrir_archivo>` usando el tipo ``file()``, devuelve 
+un objeto del tipo :ref:`file <python_cls_file>` (ej. *archivo*), y se llama 
+habitualmente con de dos a tres argumentos: 
 
 ::
 
@@ -513,8 +514,8 @@ Para crear y abrir un archivo, seria así:
 
 ::
 
-    >>> f = open('datos.txt', 'w')
-    >>> type(f)
+    >>> archivo = open('datos.txt', 'w')
+    >>> type(archivo)
     <type 'file'>
 
 
