@@ -25,14 +25,16 @@ Las funciones de uso general se describen a continuación:
 apply()
 ~~~~~~~
 
-La función ``apply()`` ....
+La función ``apply()`` devuelve el resultado de una función o objeto clase llamado 
+con argumentos soportados.
 
 ::
 
-    >>>
-
-
-.. todo:: TODO escribir sobre esta función integrada.
+    >>> def demo(valor1, valor2, valor3=None):
+    ...     return valor1, valor2, valor3
+    ... 
+    >>> apply(demo, (1, 2), {'valor3': 3})
+    (1, 2, 3)
 
 
 .. _python_fun_callable:
@@ -40,14 +42,21 @@ La función ``apply()`` ....
 callable()
 ~~~~~~~~~~
 
-La función ``callable()`` ....
+La función ``callable()`` le indica si un objecto puede ser llamado.
 
 ::
 
-    >>>
+    >>> callable([1,2,3])
+    False
+    >>> callable(callable)
+    True
+    >>> callable(False)
+    False
+    >>> callable(list)
+    True
 
-
-.. todo:: TODO escribir sobre esta función integrada.
+Una función se puede llamar, una lista no se puede llamar. Incluso la función integrada 
+``callable()`` se puede llamar.
 
 
 .. _python_fun_compile:
@@ -55,14 +64,19 @@ La función ``callable()`` ....
 compile()
 ~~~~~~~~~
 
-La función ``compile()`` ....
+La función ``compile()`` devuelve un código objeto Python. Usted usa la función 
+integrada Python para convertir de la cadena de caracteres de código al código 
+objeto.
 
 ::
 
     >>>
+    >>> exec(compile('a=5\nb=7\nprint a+b','','exec'))
+    12
 
-
-.. todo:: TODO escribir sobre esta función integrada.
+Aquí, ``exec`` es el modo. El parámetro anterior que eso es el nombre del archivo 
+para la forma del archivo el cual el código es leído. Finalmente, es ejecutado 
+usando la función ``exec()``.
 
 
 .. _python_fun_credits:
@@ -384,8 +398,6 @@ objeto).
     >>> id(lista)
     139703096777904
 
-.. todo:: TODO escribir sobre esta función integrada.
-
 
 .. _python_fun_len:
 
@@ -467,21 +479,21 @@ pueden ser extraídos usando la función integrada ``keys()``.
 open()
 ~~~~~~
 
-La función ``open()`` es definida en el modulo ``io``, esta 
-:ref:`abre un archivo <python_abrir_archivo>` usando el tipo ``file()``, devuelve 
+La función ``open()`` es definida dentro del modulo integrado ``io``, esta le permite
+:ref:`abrir un archivo <python_abrir_archivo>` usando el tipo objeto ``file``, devuelve 
 un objeto del tipo :ref:`file <python_cls_file>` (ej. *archivo*), y se llama 
 habitualmente con de dos a tres argumentos: 
 
 ::
 
-    file(nombre[, mode[, buffering]]) -> objeto archivo
+    file(nombre[, modo[, buffering]]) -> objeto archivo
 
 Los argumentos son:
 
 - ``nombre``, es una :ref:`cadena de caracteres <python_str>` que indica el *nombre de archivo* 
   (incluso ruta relativa o absoluta).
 
-- ``mode``, es una cadena de unos pocos caracteres describiendo la forma en 
+- ``modo``, es una cadena de unos pocos caracteres describiendo la forma en 
   la que se usará el archivo, como se indica a continuación:
 
   +----------+-----------------------------------------------------------+
@@ -1928,14 +1940,17 @@ Las funciones de secuencias se describen a continuación:
 all()
 ~~~~~
 
-La función ``all()`` ....
+La función ``all()`` toma un contenedor como un argumento. Esta devuelve las funciones 
+integradas ``True`` si todo los valores en el objeto iterable python tienen un valor 
+de tipo :ref:`booleano <python_bool>` igual a ``True``. Un valor vacío tiene un tipo 
+:ref:`booleano <python_bool>` igual a ``False``.
 
 ::
 
-    >>> 
-
-
-.. todo:: TODO escribir sobre esta función integrada.
+    >>> all([' ',' ',' '])
+    True
+    >>> all({'*','',''})
+    False
 
 
 .. _python_fun_any:
@@ -1943,14 +1958,18 @@ La función ``all()`` ....
 any()
 ~~~~~
 
-La función ``any()`` ....
+La función ``any()`` ese toma un argumento y devuelve ``True`` incluso si, un valor en 
+el objeto iterable tiene un valor de tipo :ref:`booleano <python_bool>` igual a ``True``.
 
 ::
 
-    >>>
+    >>> any((1,0,0))
+    True
+    >>> any((0,0,0))
+    False
 
 
-.. todo:: TODO escribir sobre esta función integrada.
+.. todo:: TODO terminar de escribir sobre esta función integrada.
 
 
 .. _python_fun_coerce:
@@ -2038,14 +2057,14 @@ argumento debe proporcionar su propio iterador, o ser una secuencia.
 
 ::
 
-    >>> iter(collection) -> iterator
+    >>> iter(collection) -> iterador
     >>> 
 
 En la segunda forma, la llamada se llama hasta que devuelve el centinela.
 
 ::
 
-    >>> iter(callable, sentinel) -> iterator
+    >>> iter(callable, sentinel) -> iterador
     >>>
 
 
@@ -2082,6 +2101,26 @@ la excepción :ref:`StopIteration <python_exception_stopiteration>`.
 ::
 
     >>> next(iterator[, default])
+
+::
+
+    >>> iterador1 = iter([1,2,3,4,5])
+    >>> iterador1
+    <listiterator object at 0x7f77e0ab7910>
+    >>> next(iterador1)
+    1
+    >>> next(iterador1)
+    2
+    >>> next(iterador1)
+    3
+    >>> next(iterador1)
+    4
+    >>> next(iterador1)
+    5
+    >>> next(iterador1)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
 .. todo:: TODO escribir sobre esta función integrada.
 
@@ -2181,10 +2220,21 @@ La función ``delattr()`` elimina un atributo con nombre en un objeto;
 
 ::
 
-    >>> delattr(object, name)
-
-
-.. todo:: TODO escribir sobre esta función integrada.
+    >>> class Persona:
+    ...     """Clase que representa una Persona"""
+    ...     cedula = "V-13458796"
+    ...     nombre = "Leonardo"
+    ...     apellido = "Caballero"
+    ...     sexo = "M"
+    ... 
+    >>> macagua = Persona()
+    >>> macagua.sexo
+    'M'
+    >>> delattr(Persona,'sexo')
+    >>> macagua.sexo
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    AttributeError: Persona instance has no attribute 'sexo'
 
 
 .. _python_fun_getattr:
@@ -2192,17 +2242,25 @@ La función ``delattr()`` elimina un atributo con nombre en un objeto;
 getattr()
 ~~~~~~~~~
 
-La función ``getattr()`` obtiene un atributo nombrado desde un objeto; getattr(x, 'y') 
-es equivalente a x.y. Cuando un argumento predeterminado es dato, es es devuelto cuando 
-el atributo no existe; sin eso, una excepción es lanzada en ese caso.
+La función ``getattr()`` obtiene un atributo nombrado desde un objeto; de la siguiente 
+forma ``getattr(instancia, 'atributo')``  el cual es equivalente a ``instancia.atributo``. 
+Cuando un argumento predeterminado es dato, es es devuelto cuando el atributo no existe; 
+sin eso, una excepción es lanzada en ese caso.
 
 ::
 
-    >>>
-
-
-.. todo:: TODO escribir sobre esta función integrada.
-
+    >>> class Persona:
+    ...     """Clase que representa una Persona"""
+    ...     cedula = "V-13458796"
+    ...     nombre = "Leonardo"
+    ...     apellido = "Caballero"
+    ...     sexo = "M"
+    ... 
+    >>> macagua = Persona()
+    >>> getattr(macagua,'sexo')
+    'M'
+    >>> macagua.sexo
+    'M'
 
 .. _python_fun_hasattr:
 
@@ -2210,25 +2268,29 @@ hasattr()
 ~~~~~~~~~
 
 La función ``hasattr()`` devuelve un tipo booleano cuando el objeto tiene un atributo 
-con el nombre dado. (Esta hecho llamando a la función ``getattr(object, name)`` y 
-capturar excepciones.)
+con el nombre dado. (Esta hecho llamando a la función ``getattr(instancia, atributo)`` 
+y capturar excepciones.)
 
 ::
 
-    class Persona:
-        """Clase que representa una Persona"""
-        cedula = "V-13458796"
-        nombre = "Leonardo"
-        apellido = "Caballero"
-        sexo = "M"
-
-    macagua = Persona
-    hasattr(object, name) -> bool
-    hasattr(macagua, cedula)
-    hasattr(macagua, edad)
-
-
-.. todo:: TODO escribir un ejemplo completo de esta función integrada.
+    >>> class Persona:
+    ...     """Clase que representa una Persona"""
+    ...     cedula = "V-13458796"
+    ...     nombre = "Leonardo"
+    ...     apellido = "Caballero"
+    ...     sexo = "M"
+    ... 
+    >>> macagua = Persona()
+    >>> hasattr(macagua, 'nombre')
+    True
+    >>> hasattr(macagua, 'apellido')
+    True
+    >>> hasattr(macagua, 'cedula')
+    True
+    >>> hasattr(macagua, 'sexo')
+    True
+    >>> hasattr(macagua, 'email')
+    False
 
 
 .. _python_fun_hash:
@@ -2364,10 +2426,16 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
 
 ::
 
-    >>> setattr(object, name, value)
-
-
-----
+    >>> class Persona:
+    ...     """Clase que representa una Persona"""
+    ...     cedula = "V-13458796"
+    ...     nombre = "Leonardo"
+    ...     apellido = "Caballero"
+    ...     sexo = "M"
+    ... 
+    >>> setattr(macagua, 'email', 'leonardoc@plone.org')
+    >>> getattr(macagua,'email')
+    'leonardoc@plone.org'
 
 
 .. important::
