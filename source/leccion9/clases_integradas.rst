@@ -545,18 +545,18 @@ truncate()
 
 ::
 
-    truncate([size]) -> None
+    >>> archivo = open('datos.txt', 'w')
+    >>> archivo.write('Este es una prueba \ny otra prueba')
+    >>> archivo.truncate(20)
+    >>> archivo.close()
+    >>> archivo = open('datos.txt', 'r')
+    >>> archivo.read()
+    'Este es una prueba \n'
 
-El método ``truncate()`` trunca el archivo. Si se proporciona el argumento opcional 
-``size``, el archivo se trunca a (como mucho) ese tamaño. El tamaño depende de la 
-posición actual. La disponibilidad de esta función depende de la versión del sistema 
-operativo (por ejemplo, no todas las versiones de Unix dan soporte a esta operación).
-
-::
-
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este método integrado.
+El método ``truncate()`` trunca el archivo. Si se proporciona el argumento opcional, 
+el archivo se trunca a (como mucho) ese tamaño. El tamaño depende de la posición 
+actual. La disponibilidad de esta función depende de la versión del sistema operativo 
+(por ejemplo, no todas las versiones de Unix dan soporte a esta operación).
 
 
 .. _python_mtd_write:
