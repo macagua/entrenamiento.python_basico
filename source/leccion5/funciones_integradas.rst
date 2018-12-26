@@ -322,10 +322,8 @@ misma.
 
 ::
 
-    >>>
-
-
-.. todo:: TODO terminar de escribir sobre esta función integrada.
+    >>> execfile('./holamundo.py')
+    Hola Mundo
 
 
 .. _python_fun_globals:
@@ -404,7 +402,7 @@ objeto).
 len()
 ~~~~~
 
-Devuelve el número de elementos de una secuencia o colección.
+Devuelve el número de elementos de un tipo de secuencia o colección.
 
 ::
 
@@ -622,7 +620,7 @@ para recargar el modulo ``clases.py``, debe hacer lo siguiente:
 xrange()
 ~~~~~~~~
 
-El tipo ``xrange`` es una secuencia inmutable utilizada normalmente en bucles. La 
+El tipo ``xrange`` es un tipo secuencia inmutable utilizada normalmente en bucles. La 
 ventaja de la función ``xrange()`` sobre la función ``range()``, es que devuelve 
 un objeto ``xrange`` el cual ocupa siempre la misma cantidad de memoria, 
 independientemente del rango el cual represente. 
@@ -1181,19 +1179,43 @@ reduce()
 ~~~~~~~~
 
 La función ``reduce()`` aplica una función de dos argumentos de forma acumulativa a 
-los elementos de una secuencia, de izquierda a derecha, para reducir la secuencia a 
-un solo valor. 
+los elementos de un tipo de secuencia, de izquierda a derecha, para reducir la 
+secuencia a un solo valor. La sintaxis seria la siguiente:
 
 ::
 
-    reduce(function, sequence[, initial]) -> value
-    >>>
+    >>> reduce(funcion, secuencia[, inicial]) -> valor
 
-Por ejemplo, ``reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])`` calcula ``((((1+2)+3)+4)+5)``. 
-Si ``initial`` está presente, se coloca antes de los elementos de la secuencia en 
-el cálculo y sirve como valor predeterminado cuando la secuencia está vacía.
+A continuación un ejemplo:
 
-.. todo:: TODO escribir sobre esta función integrada.
+::
+
+    >>> reduce(lambda x, y: x + y, [1, 2, 3, 4, 5])
+    15
+    >>> ((((1+2)+3)+4)+5)
+    15
+
+En el ejemplo anterior, calcula el siguiente calculo ``((((1+2)+3)+4)+5)``. 
+
+Si el argumento ``inicial`` está presente, se coloca antes de los elementos de la 
+secuencia en el cálculo y sirve como valor predeterminado cuando la secuencia está 
+vacía.
+
+::
+
+    >>> reduce(lambda x, y: x + y, [1, 2, 3, 4, 5], 5 * 5)
+    40
+
+En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es 
+la lista ``[1, 2, 3, 4, 5]`` y el argumento ``inicial`` es ``5 * 5``
+
+::
+
+    >>> reduce(lambda x, y: x + y, [0, 0, 0, 0, 0], 5 * 5)
+    25
+
+En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es 
+la lista ``[0, 0, 0, 0, 0]`` y el argumento ``inicial`` es ``5 * 5``
 
 
 .. _python_fun_round:
@@ -1894,7 +1916,7 @@ unichr()
 ~~~~~~~~
 
 La función ``unichr()`` devuelve una *cadena de caracteres* *Unicode* de un carácter 
-con un ordinal i; 0 <= i <= 0x10ffff.
+con un numero entero.
 
 ::
 
@@ -1906,8 +1928,6 @@ con un ordinal i; 0 <= i <= 0x10ffff.
     u'^'
     >>> unichr(126)
     u'~'
-
-.. todo:: TODO terminar de escribir sobre esta función integrada.
 
 
 .. _python_fun_upper:
@@ -1967,9 +1987,10 @@ el objeto iterable tiene un valor de tipo :ref:`booleano <python_bool>` igual a 
     True
     >>> any((0,0,0))
     False
-
-
-.. todo:: TODO terminar de escribir sobre esta función integrada.
+    >>> any(range(5))
+    True
+    >>> any(range(0))
+    False
 
 
 .. _python_fun_coerce:
@@ -1984,9 +2005,10 @@ aritméticas. Si la coerción no es posible, levante una excepción
 
 ::
 
-    >>> coerce(x, y) -> (x1, y1)
-
-.. todo:: TODO escribir sobre esta función integrada.
+    >>> coerce(3, 4)
+    (3, 4)
+    >>> coerce(3, 4.2)
+    (3.0, 4.2)
 
 
 .. _python_fun_dict:
@@ -2052,23 +2074,34 @@ iterable :ref:`lista <python_list>`:
 iter()
 ~~~~~~
 
-La función ``iter()`` obtiene un iterador de un objeto. En la primera forma, el 
-argumento debe proporcionar su propio iterador, o ser una secuencia.
+La función ``iter()`` obtiene un :ref:`iterador <python_iter>` de un objeto. En la 
+primera forma, el argumento debe proporcionar su propio *iterador*, o ser una secuencia.
 
 ::
 
-    >>> iter(collection) -> iterador
-    >>> 
+    >>> elemento = iter("Plone")
+    >>> elemento
+    <iterator object at 0x7eff6ce10250>
+    >>> elemento.next()
+    'P'
+    >>> elemento.next()
+    'l'
+    >>> elemento.next()
+    'o'
+    >>> elemento.next()
+    'n'
+    >>> elemento.next()
+    'e'
+    >>> elemento.next()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
 
-En la segunda forma, la llamada se llama hasta que devuelve el centinela.
-
-::
-
-    >>> iter(callable, sentinel) -> iterador
-    >>>
-
-
-.. todo:: TODO escribir sobre esta función integrada.
+En el ejemplo anterior, cuando se itera en la secuencia de tipo 
+:ref:`cadena de caracteres <python_str>`, al llegar al final mediante el iterador 
+llamado ``elemento`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
 
 
 .. _python_fun_list:
@@ -2092,37 +2125,30 @@ ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_
 next()
 ~~~~~~
 
-La función ``next()`` devuelve el próximo elemento desde el iterador. Si el valor 
-``default`` es dato y el iterador is exhausted, ese es devuelto en vez de lanzar 
-la excepción :ref:`StopIteration <python_exception_stopiteration>`.
-
-.. todo:: TODO traducir las frases del párrafo anterior.
+La función ``next()`` devuelve el próximo elemento desde un :ref:`iterador <python_iter>`.
 
 ::
 
-    >>> next(iterator[, default])
-
-::
-
-    >>> iterador1 = iter([1,2,3,4,5])
-    >>> iterador1
-    <listiterator object at 0x7f77e0ab7910>
-    >>> next(iterador1)
+    >>> elemento = iter([1,2,3,4,5])
+    >>> next(elemento)
     1
-    >>> next(iterador1)
+    >>> next(elemento)
     2
-    >>> next(iterador1)
+    >>> next(elemento)
     3
-    >>> next(iterador1)
+    >>> next(elemento)
     4
-    >>> next(iterador1)
+    >>> next(elemento)
     5
-    >>> next(iterador1)
+    >>> next(elemento)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
 
-.. todo:: TODO escribir sobre esta función integrada.
+En el ejemplo anterior, cuando se itera en la secuencia de tipo :ref:`lista <python_list>`, 
+al llegar al final mediante el iterador llamado ``elemento`` se llama a la excepción 
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+iteración.
 
 
 .. _python_fun_tuple:
@@ -2165,8 +2191,9 @@ iterable :ref:`lista <python_list>`:
 sorted()
 ~~~~~~~~
 
-La función ``sorted()`` devuelve una lista ordenada de los elementos de la secuencia 
-que recibe como argumento (lista o cadena). La secuencia original no es modificada.
+La función ``sorted()`` devuelve una lista ordenada de los elementos del tipo secuencia 
+que recibe como argumento (lista o cadena de caracteres). La secuencia original no es 
+modificada.
 
 ::
 
@@ -2189,8 +2216,8 @@ zip()
 ~~~~~
 
 La función ``zip()`` devuelve una lista de :ref:`tuplas <python_tuple>`, donde cada 
-tupla contiene el elemento i-th desde cada una de las secuencias de argumento. La 
-lista devuelta es truncada en longitud a la longitud de la secuencia de argumentos 
+tupla contiene el elemento i-th desde cada una de los tipos de secuencias de argumento. 
+La lista devuelta es truncada en longitud a la longitud de la secuencia de argumentos 
 más corta.
 
 ::
