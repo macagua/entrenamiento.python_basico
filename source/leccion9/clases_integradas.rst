@@ -41,14 +41,21 @@ el final del objeto de destino (o con el tamaño especificado).
 bytes
 ~~~~~
 
-El objeto de la clase ``bytes`` ....
+El objeto de la clase ``bytes`` es agregada en Python 2.6 como un sinónimo para el tipo 
+:ref:`str <python_str>` y este también soporta la notación ``b''``.
+
+El uso principal de bytes en Python 2.6 será escribir pruebas de tipo de objeto como 
+``isinstance(x, bytes)``. Esto ayudará al convertidor ``2to3``, que no puede decir si 
+el código 2.x pretende que las cadenas contengan caracteres o bytes de 8 bits; ahora 
+puede usar ``bytes`` o ``str`` para representar exactamente su intención, y el código resultante también será correcto en Python 3.0.
 
 ::
 
-    >>>
-
-
-.. todo:: TODO escribir sobre esta clase integrada.
+    >>> arreglo = bytes("Python es interesante.")
+    >>> print arreglo
+    Python es interesante.
+    >>> type(arreglo)
+    <type 'str'>
 
 
 .. _python_cls_staticmethod:
@@ -675,22 +682,6 @@ del archivo.
     ...     archivo.close()
     ... 
     Encoding por defecto: None
-
-.. commets:
-
-    .. _python_attr_errors:
-
-    errors
-    """"""
-
-    El atributo ``errors`` del objeto :ref:`file <python_cls_file>`, es el manipulador 
-    de error Unicode.
-
-    ::
-
-        >>>
-
-    .. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
 .. _python_attr_softspace:
