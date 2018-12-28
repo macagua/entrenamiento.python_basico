@@ -107,14 +107,24 @@ todos los elementos que están en el primero, pero no en el argumento.
 difference_update()
 ~~~~~~~~~~~~~~~~~~~
 
-Este método remueve todos los elementos de otro **conjunto mutable** desde este 
-**conjunto mutable**.
+Este método actualiza un tipo **conjunto mutable** llamando al método 
+``difference_update()`` con la diferencia de los conjuntos.
 
 ::
 
-    >>> 
+    >>> proyecto1 = {'python', 'Zope2', 'ZODB3', 'pytz'}
+    >>> proyecto1
+    set(['python', 'pytz', 'Zope2', 'ZODB3'])
+    >>> proyecto2 = {'python', 'Plone', 'diazo'}
+    >>> proyecto2
+    set(['python', 'diazo', 'Plone'])
+    >>> proyecto1.difference_update(proyecto2)
+    >>> proyecto1
+    set(['pytz', 'Zope2', 'ZODB3'])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+Si ``proyecto1`` y ``proyecto2`` son dos conjuntos. La diferencia del conjunto 
+``proyecto1`` y conjunto ``proyecto2`` es un conjunto de elementos que existen 
+solamente en el conjunto ``proyecto1`` pero no en el conjunto ``proyecto2``.
 
 
 .. _python_set_mtd_discard:
@@ -122,15 +132,27 @@ Este método remueve todos los elementos de otro **conjunto mutable** desde este
 discard()
 ~~~~~~~~~
 
-Este método remueve un elemento desde un **conjunto mutable** si ese es un miembro. 
-Si el elemento no es miembro, no hacer nada.
+Este método remueve un elemento desde un **conjunto mutable** si esta presente. 
 
 
 ::
 
-    >>> 
+    >>> paquetes = {'python', 'zope', 'plone', 'django'}
+    >>> paquetes
+    set(['python', 'zope', 'plone', 'django'])
+    >>> paquetes.discard('django')
+    >>> paquetes
+    set(['python', 'zope', 'plone'])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+El **conjunto mutable** permanece sin cambio si el elemento pasado como argumento 
+al método ``discard()`` no existe.
+
+::
+
+    >>> paquetes = {'python', 'zope', 'plone', 'django'}
+    >>> paquetes.discard('php')
+    >>> paquetes
+    set(['python', 'zope', 'plone'])
 
 
 .. _python_set_mtd_intersection:
@@ -160,14 +182,29 @@ inmutables**: todos los elementos que están en ambos.
 intersection_update()
 ~~~~~~~~~~~~~~~~~~~~~
 
-Este método actualiza un **conjunto mutable** con la intersección de ese mismo y otro.
+Este método actualiza un **conjunto mutable** con la intersección de ese mismo y otro 
+**conjunto mutable**.
+
+El método ``intersection_update()`` le permite arbitrariamente varios numero de 
+argumentos (conjuntos).
 
 ::
 
-    >>> 
+    >>> proyecto1 = {'python', 'Zope2', 'pytz'}
+    >>> proyecto1
+    set(['python', 'pytz', 'Zope2'])
+    >>> proyecto2 = {'python', 'Plone', 'diazo', 'z3c.form'}
+    >>> proyecto2
+    set(['python', 'z3c.form', 'diazo', 'Plone'])
+    >>> proyecto3 = {'python', 'django', 'django-filter'}
+    >>> proyecto3
+    set(['python', 'django-filter', 'django'])
+    >>> proyecto3.intersection_update(proyecto1, proyecto2)
+    >>> proyecto3
+    set(['python'])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
-
+La intersección de dos o mas conjuntos es el conjunto de elemento el cual es común a 
+todos los conjuntos.
 
 
 .. _python_set_mtd_isdisjoint:
@@ -244,15 +281,37 @@ es un *superset* del **conjunto mutable** argumento.
 pop()
 ~~~~~
 
-Este método remueve y devuelve un elemento de **conjunto mutable** arbitrariamente. 
-Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si el **conjunto 
-mutable** es vacío.
+Este método remueve arbitrariamente y devuelve un elemento de **conjunto mutable**. 
+El método ``pop()`` no toma ningún argumento. Si el **conjunto mutable** esta vacío 
+se lanza una excepción :ref:`KeyError <python_exception_keyerror>`.
 
 ::
 
-    >>> 
+    >>> paquetes = {'python', 'zope', 'plone', 'django'}
+    >>> paquetes
+    set(['python', 'zope', 'plone', 'django'])
+    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    Valor aleatorio devuelto es: python
+    >>> paquetes
+    set(['zope', 'plone', 'django'])
+    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    Valor aleatorio devuelto es: zope
+    >>> paquetes
+    set(['plone', 'django'])
+    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    Valor aleatorio devuelto es: plone
+    >>> paquetes
+    set(['django'])
+    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    Valor aleatorio devuelto es: django
+    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    Valor aleatorio devuelto es:
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    KeyError: 'pop from an empty set'
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+Tenga en cuenta que usted podría obtener diferente salida devueltas usando el método 
+``pop()`` por que remueve aleatoriamente un elemento.
 
 
 .. _python_set_mtd_remove:
@@ -260,14 +319,27 @@ mutable** es vacío.
 remove()
 ~~~~~~~~
 
-Este método remueve un elemento de un **conjunto mutable**, si debe ser un miembro. 
-Si el elemento no es miembro, lanza una excepción :ref:`KeyError <python_exception_keyerror>`.
+Este método busca y remueve un elemento de un **conjunto mutable**, si debe ser un 
+miembro. 
 
 ::
 
-    >>> 
+    >>> paquetes = {'python', 'zope', 'plone', 'django'}
+    >>> paquetes
+    set(['python', 'zope', 'plone', 'django'])
+    >>> paquetes.remove('django')
+    >>> paquetes
+    set(['python', 'zope', 'plone'])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+Si el elemento no es existe en el **conjunto mutable**, lanza una excepción 
+:ref:`KeyError <python_exception_keyerror>`. Usted puede usar el método 
+:ref:`discard() <python_set_mtd_discard>` si usted no quiere este error. El 
+**conjunto mutable** permanece sin cambio si el elemento pasado al método ``discard()`` 
+no existe.
+
+Un conjunto es una colección desordenada de elementos. Si usted quiere remover 
+arbitrariamente elemento un conjunto, usted puede usar el método 
+:ref:`pop() <python_set_mtd_pop>`.
 
 
 .. _python_set_mtd_symmetric_difference:
@@ -295,15 +367,28 @@ Este método devuelve todos los elementos que están en un **conjunto mutable** 
 symmetric_difference_update()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Este método actualiza un **conjunto mutable** con diferencia simétrica de ese mismo 
-y otro.
+Este método actualiza un **conjunto mutable** llamando al método ``symmetric_difference_update()`` 
+con los conjuntos de diferencia simétrica.
+
+The symmetric difference of two sets is the set of elements that are in either of the 
+sets but not in both.
+
+.. todo:: TODO traducir el párrafo anterior
 
 ::
 
-    >>> 
+    >>> proyecto1 = {'python', 'plone', 'django'}
+    >>> proyecto1
+    set(['python', 'plone', 'django'])
+    >>> proyecto2 = {'django', 'zope', 'pyramid'}
+    >>> proyecto2
+    set(['zope', 'pyramid', 'django'])
+    >>> proyecto1.symmetric_difference_update(proyecto2)
+    >>> proyecto1
+    set(['python', 'zope', 'pyramid', 'plone'])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
-
+El método ``symmetric_difference_update()`` toma un argumento simple de un tipo 
+**conjunto mutable**.
 
 .. _python_set_mtd_union:
 
@@ -330,13 +415,51 @@ elementos que están en alguno de los **conjuntos mutables** y **conjuntos inmut
 update()
 ~~~~~~~~
 
-Este método actualiza un **conjunto mutable** con la unión de si mismo y otros.
+Este método agrega elementos desde un **conjunto mutable** (pasando como un argumento) 
+un tipo :ref:`tupla <python_tuple>`, un tipo :ref:`lista <python_list>`, un tipo 
+:ref:`diccionario <python_dict>` o un tipo **conjunto mutable** llamado con el método 
+``update()``.
+
+A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable** 
+usando otro tipo **conjunto mutable**:
 
 ::
 
-    >>> 
+    >>> version_plone_dev = set([5.1, 6])
+    >>> version_plone_dev
+    set([5.1, 6])
+    >>> versiones_plone = set([2.1, 2.5, 3.6, 4])
+    >>> versiones_plone
+    set([2.5, 3.6, 2.1, 4])
+    >>> versiones_plone.update(version_plone_dev)
+    >>> versiones_plone
+    set([2.5, 3.6, 4, 6, 5.1, 2.1])
 
-.. todo:: TODO terminar de escribir sobre este método integrado.
+A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable** 
+usando otro tipo :ref:`cadena de caracteres <python_str>`:
+
+::
+
+    >>> cadena = 'abc'
+    >>> cadena
+    'abc'
+    >>> conjunto = {1, 2}
+    >>> conjunto.update(cadena)
+    >>> conjunto
+    set(['a', 1, 2, 'b', 'c'])
+
+A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable** 
+usando otro tipo :ref:`diccionario <python_dict>`:
+
+::
+
+    >>> diccionario = {'key': 1, 2:'lock'}
+    >>> diccionario.viewitems()
+    dict_items([(2, 'lock'), ('key', 1)])
+    >>> conjunto = {'a', 'b'}
+    >>> conjunto.update(diccionario)
+    >>> conjunto
+    set(['a', 2, 'b', 'key'])
 
 
 .. _python_set_convertir:
