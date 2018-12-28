@@ -1594,17 +1594,55 @@ La función ``index()`` es como la función ``find()`` pero arroja una excepció
 intern()
 ~~~~~~~~
 
-La función ``intern()`` es el "interno" de la cadena dada. Esto ingresa la cadena en la 
-tabla (global) de cadenas internas cuyo propósito es acelerar las búsquedas en el tipo
-diccionario. Devuelve la cadena misma o el objeto de cadena internado previamente con el 
-mismo valor.
+La función ``intern()`` introduce la cadena en la tabla de cadenas internadas (si no 
+está ya allí). Esto ingresa la cadena en la tabla (global) de cadenas internas cuyo 
+propósito es acelerar las búsquedas en el tipo diccionario. 
+
+Al utilizar la función ``intern()``, se asegura de que nunca cree dos objetos de cadena 
+de caracteres que tengan el mismo valor: cuando solicita la creación de un segundo 
+objeto de cadena de caracteres con el mismo valor que un objeto de cadena existente, 
+recibe una referencia al objeto de cadena preexistente. De esta manera, estás ahorrando 
+memoria. Además, la comparación de objetos de cadena de caracteres ahora es muy eficiente 
+porque se lleva a cabo comparando las direcciones de memoria de los dos objetos de 
+cadena de caracteres en lugar de su contenido.
+
+Esencialmente, la función ``intern()`` busca (o almacena si no está presente) la 
+cadena de caracteres en una colección de cadenas de caracteres internadas, por lo 
+que todas las instancias internadas compartirán la misma identidad. Cambia el costo 
+único de buscar esta cadena de caracteres para realizar comparaciones más rápidas 
+(la comparación puede devolver ``True`` después de solo verificar la identidad, en 
+lugar de tener que comparar cada carácter), y reducir el uso de la memoria.
+
+Sin embargo, Python internará automáticamente cadenas de caracteres que sean pequeñas 
+o que parezcan identificadores, por lo que es posible que no obtengas ninguna mejora 
+porque tus cadenas de caracteres ya están internadas entre bastidores.
+
+A continuación uno ejemplo de comparación de cadena de caracteres con operadores de relacionales:
+
+::
+
+    >>> cadena0, cadena1 = 'python', 'python'
+    >>> cadena0 == cadena1
+    True
+    >>> cadena0 is cadena1
+    True
+    >>> cadena0, cadena1 = 'python 2.7', 'python 2.7'
+    >>> cadena0 is cadena1
+    False
+
+A continuación uno ejemplo de comparación de cadena de caracteres con el operador 
+:ref:`is <python_opers_is>`:
 
 ::
 
     >>>
-
-
-.. todo:: TODO escribir sobre esta función integrada.
+    >>> cadena0 = intern('plone cms')
+    >>> cadena1 = 'plone cms'
+    >>> cadena0 is cadena1
+    False
+    >>> cadena1 = intern('plone cms')
+    >>> cadena0 is cadena1
+    True
 
 
 .. _python_fun_isalnum:
