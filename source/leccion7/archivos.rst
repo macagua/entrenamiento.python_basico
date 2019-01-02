@@ -50,6 +50,118 @@ La forma preferida para cerrar un archivo es usando el método del tipo objeto
 :ref:`file <python_cls_file>` llamado :ref:`close() <python_mtd_close>`.
 
 
+.. _python_archivos_mdl_os:
+
+Archivos con modulo os
+......................
+
+El módulo ``os`` de Python le permite a usted realizar operaciones dependiente del 
+*Sistema Operativo* como crear una carpeta, listar contenidos de una carpeta, conocer 
+acerca de un proceso, finalizar un proceso, etc. Este módulo tiene métodos para ver 
+variables de entornos del *Sistema Operativo* con las cuales Python esta trabajando 
+en mucho más. `Aquí <https://docs.python.org/2/library/os.html>`_ la documentación 
+Python para el módulo ``os``.
+
+A continuación algunos útiles métodos del módulo ``os`` que pueden ayudar a manipular 
+archivos y carpeta en su programa Python:
+
+Crear una nueva carpeta
+
+::
+
+    >>> import os
+    >>> os.makedirs("Ana_Poleo")
+
+
+Listar el contenidos de una carpeta
+
+::
+
+    >>> import os
+    >>> os.listdir("./")
+    ['Ana_Poleo']
+
+
+Mostrar el actual directorio de trabajo
+
+::
+
+    >>> import os
+    >>> os.getcwd()
+    '/home/usuario/python/'
+
+
+Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
+
+::
+
+    >>> import os
+    >>> os.path.getsize("Ana_Poleo")
+    4096
+
+
+
+¿Es un archivo el parámetro pasado?
+
+::
+
+    >>> import os
+    >>> os.path.isfile("Ana_Poleo")
+    False
+
+
+¿Es una carpeta el parámetro pasado?
+
+::
+
+    >>> import os
+    >>> os.path.isdir("Ana_Poleo")
+    True
+
+
+Cambiar directorio/carpeta
+
+::
+
+    >>> import os
+    >>> os.chdir("Ana_Poleo")
+    >>> os.getcwd()
+    '/home/usuario/python/Ana_Poleo'
+    >>> os.listdir("./")
+    []
+    >>> os.chdir("../")
+    >>> os.getcwd()
+    '/home/usuario/python'
+
+
+Renombrar un archivo
+
+::
+
+    >>> import os
+    >>> os.rename("Ana_Poleo","Ana_Carolina")
+    >>> os.listdir("./")
+    ['Ana_Carolina']
+
+Eliminar un archivo
+
+::
+
+    >>> os.remove("Ana_Carolina")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    OSError: [Errno 21] Is a directory: 'Ana_Carolina'
+
+.. todo:: TODO escribir un ejemplo para un archivo usando remove()
+
+
+Eliminar una carpeta
+
+::
+
+    >>> os.rmdir("Ana_Carolina")
+
+
 .. _python_ejemplos_archivo:
 
 Ejemplos de archivos
