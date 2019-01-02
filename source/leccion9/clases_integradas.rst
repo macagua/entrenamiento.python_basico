@@ -332,15 +332,24 @@ la método :ref:`archivo.read() <python_mtd_read>` devuelve una excepción
 flush()
 """""""
 
-El método ``flush()`` permite descargar el tampón interno, como la función de lenguaje C 
+El método ``flush()`` permite descargar el bufér interno, como la función de lenguaje C 
 ``fflush()`` de la librería ``stdio``. Puede no tener efecto en ciertos objetos similares 
 a los archivos.
 
+Python automáticamente flushes los archivos cuando son cerrados. Pero usted podría to flush 
+la data antes de cerrar cualquier archivo.
+
 ::
 
-    >>>
-
-.. todo:: TODO escribir un ejemplo del uso de este método integrado.
+    >>> # Abre un archivo
+    ... archivo = open("datos.txt", "wb")
+    >>> print "Nombre del archivo: ", archivo.name
+    Nombre del archivo:  datos.txt
+    >>> # Aquí eso no hace nada, pero usted puede 
+    ... # llamarlo con la operación read.
+    ... archivo.flush()
+    >>> # Cerrar archivo abierto
+    ... archivo.close()
 
 
 .. _python_mtd_isatty:
