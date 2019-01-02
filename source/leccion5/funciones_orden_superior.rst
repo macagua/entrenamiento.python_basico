@@ -50,6 +50,7 @@ puede utilizar una función anónima ``lambda``, como se muestra a continuación
 
 ::
 
+    >>> numeros = [2, 5, 10, 23, 50, 33]
     >>> filter(lambda numero: numero%5 == 0, numeros)
     [5, 10, 50]
 
