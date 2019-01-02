@@ -147,19 +147,31 @@ Eliminar un archivo
 
 ::
 
-    >>> os.remove("Ana_Carolina")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    OSError: [Errno 21] Is a directory: 'Ana_Carolina'
-
-.. todo:: TODO escribir un ejemplo para un archivo usando remove()
-
+    >>> import os
+    >>> os.chdir("Ana_Carolina")
+    >>> archivo = open(os.getcwd()+'/datos.txt', 'w')
+    >>> archivo.write("Se Feliz!")
+    >>> archivo.close()
+    >>> os.getcwd()
+    '/home/usuario/python/Ana_Carolina'
+    >>> os.listdir("./")
+    ['datos.txt']
+    >>> os.remove(os.getcwd()+"/datos.txt")
+    >>> os.listdir("./")
+    []
 
 Eliminar una carpeta
 
 ::
 
     >>> os.rmdir("Ana_Carolina")
+    >>> os.chdir("Ana_Carolina")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    OSError: [Errno 2] No such file or directory: 'Ana_Carolina'
+
+Lanza una excepción :ref:`OSError <python_exception_oserror>` cuando intenta acceder 
+al directorio que previamente elimino y este no encuentra.
 
 
 .. _python_ejemplos_archivo:
