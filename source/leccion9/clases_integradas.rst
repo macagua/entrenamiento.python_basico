@@ -30,10 +30,65 @@ el final del objeto de destino (o con el tamaño especificado).
 
 ::
 
-    >>>
+    >>> cadena = 'Hola mundo'
+    >>> cadena
+    'Hola mundo'
+    >>> cadena[5:10]
+    'mundo'
+    >>> type(cadena)
+    <type 'str'>
+    >>> cadena_buffer = buffer(cadena, 5, 5)
+    >>> type(cadena_buffer)
+    <type 'buffer'>
+    >>> cadena_buffer
+    <read-only buffer for 0x7f42121d3810, size 5, offset 5 at 0x7f42121d23b0>
+    >>> print cadena_buffer
+    mundo
 
+El búfer en este caso anterior es una sub-cadena, inicia en la posición 5 con un 
+ancho de 5 caracteres y es no toma espacio de almacenamiento extra - eso referencia 
+a un ``slice`` de una cadena de caracteres.
 
-.. todo:: TODO escribir sobre esta clase integrada.
+Este ejemplo anterior no es muy útil para cadenas de caracteres cortas como esta, 
+pero eso puede ser necesario cuando usa un gran numero de data. Este ejemplo puede 
+usar un tipo mutable ``bytearray()``:
+
+::
+
+    >>> cadena = bytearray(1000000)
+    >>> type(cadena)
+    <type 'bytearray'>
+    >>> cadena_buffer = buffer(cadena, 1)
+    >>> cadena_buffer
+    <read-only buffer for 0x7f42121d3870, size -1, offset 1 at 0x7f42121d2270>
+    >>> type(cadena_buffer)
+    <type 'buffer'>
+    >>> cadena_buffer[0]
+    '\x00'
+    >>> cadena[1]
+    0
+    >>> cadena[1] = 5
+    >>> cadena[1]
+    5
+    >>> cadena_buffer[0]
+    '\x05'
+
+Esto puede ser muy útil si usted quiere tener más que una vista en la data y no quiere 
+(o puede) contener múltiples copias en memoria.
+
+Note que el búfer ha sido remplazado por el mejor llamado :ref:`memoryview() <python_cls_memoryview>` 
+en Python 3, aunque se puede usar en Python 2.7.
+
+Note también que usted no puede implementar una interfaz búfer para sus propios objetos 
+sin profundizando en la API de C, ej. usted no puede hacer eso con puramente con código 
+Python.
+
+En general un ``slice`` tomará extra almacenamiento, entonces, si ``cadena[5:10]`` será 
+una copia. Si usted define ``cadena_buffer = cadena[5:10]`` y entonces ``del cadena``, 
+eso liberaría la memoria que fue tomada por ``cadena``, proveyendo que ``cadena_buffer`` 
+fue copiada. (Para usar esto usted necesita una gran cadena de caracteres, en este ejemplo 
+``cadena`` y rastrear el uso de la memoria de Python). Es sin embargo mucho más eficiente 
+que hacer la copia si no existe mucha data involucrada.
 
 
 .. _python_cls_bytes:
@@ -47,7 +102,8 @@ El objeto de la clase ``bytes`` es agregada en Python 2.6 como un sinónimo para
 El uso principal de bytes en Python 2.6 será escribir pruebas de tipo de objeto como 
 ``isinstance(x, bytes)``. Esto ayudará al convertidor ``2to3``, que no puede decir si 
 el código 2.x pretende que las cadenas contengan caracteres o bytes de 8 bits; ahora 
-puede usar ``bytes`` o ``str`` para representar exactamente su intención, y el código resultante también será correcto en Python 3.0.
+puede usar ``bytes`` o ``str`` para representar exactamente su intención, y el código 
+resultante también será correcto en Python 3.0.
 
 ::
 
@@ -65,25 +121,25 @@ staticmethod
 
 La clase ``staticmethod`` convierte una función a un método estático. Un método 
 estático no recibe un argumento primero implícito. Un método estático no recibe 
-un primer argumento implícito.
+un primer argumento implícito. La sintaxis es la siguiente:
 
 ::
 
-    >>> staticmethod(function) -> method
+    >>> staticmethod(function) -> método
     >>>
 
 Para declarar un método estático, use este lenguaje:
 
 ::
 
-    class C:
+    class Clase:
         @staticmethod
-        def f(arg1, arg2, ...):
+        def funcion(argumento1, argumento2, ...):
             ...
 
 
-Se puede llamar en la clase (por ejemplo, ``C.f()``) o en una instancia (por ejemplo,
-``C().f()``). La instancia se ignora a excepción de su clase.
+Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o en una instancia (por ejemplo,
+``Clase().funcion()``). La instancia se ignora a excepción de su clase.
 
 Los métodos estáticos son similares a los métodos estáticos ``Java`` o ``C++``. Para 
 un concepto más avanzado, mire la clase :ref:`classmethod <python_cls_classmethod>` 
@@ -726,11 +782,11 @@ classmethod
 
 La clase ``classmethod`` convierte una función para ser un método de clase. Un método 
 de clase recibe la clase como primer argumento implícito, al igual que un método de 
-instancia recibe la instancia.
+instancia recibe la instancia. La sintaxis es la siguiente:
 
 ::
 
-    >>> classmethod(function) -> method
+    >>> classmethod(function) -> método
 
 .. todo:: TODO escribir un ejemplo real del uso de esta clase integrada.
 
@@ -738,13 +794,13 @@ Para declarar un método de clase, use este idioma:
 
 ::
 
-    class C:
+    class Clase:
         @classmethod
-        def f(cls, arg1, arg2, ...):
+        def funcion(cls, argumento1, argumento2, ...):
             ...
 
-Se puede llamar en la clase (por ejemplo, ``C.f()``) o en una instancia (por ejemplo, 
-``C().f()``). La instancia se ignora a excepción de su clase. Si se llama a un método 
+Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o en una instancia (por ejemplo, 
+``Clase().funcion()``). La instancia se ignora a excepción de su clase. Si se llama a un método 
 de clase para una clase derivada, el objeto de clase derivada se pasa como el primer 
 argumento implícito.
 
@@ -760,15 +816,52 @@ el interprete.
 memoryview
 ~~~~~~~~~~
 
-La clase ``memoryview`` crea un nuevo objecto memoryview el cual referencias al objecto 
-dado.
+La clase ``memoryview`` crea un nuevo objecto *memoryview* el cual referencias al objecto 
+dado. La sintaxis es la siguiente:
 
 ::
 
     >>> memoryview(object)
 
+A continuación unos ejemplos básico de su uso:
 
-.. todo:: TODO escribir sobre esta clase integrada.
+::
+
+    >>> cadena = bytearray(1000000)
+    >>> memoryview(cadena)
+    <memory at 0x7f6202179cc8>
+    >>> memoryview(cadena).format
+    'B'
+    >>> memoryview(cadena).itemsize
+    1L
+    >>> memoryview(cadena).ndim
+    1L
+    >>> memoryview(cadena).readonly
+    False
+    >>> memoryview(cadena).shape
+    (1000000L,)
+    >>> memoryview(cadena).strides
+    (1L,)
+    >>> memoryview(cadena).suboffsets
+    >>> cadena_buffer = buffer(cadena, 1)
+    >>> memoryview(cadena_buffer)
+    <memory at 0x7f6202179cc8>
+    >>> memoryview(cadena_buffer).format
+    'B'
+    >>> memoryview(cadena_buffer).itemsize
+    1L
+    >>> memoryview(cadena_buffer).ndim
+    1L
+    >>> memoryview(cadena_buffer).readonly
+    True
+    >>> memoryview(cadena_buffer).shape
+    (999999L,)
+    >>> memoryview(cadena_buffer).strides
+    (1L,)
+    >>> memoryview(cadena_buffer).suboffsets
+
+
+.. todo:: TODO terminar de escribir sobre esta clase integrada memoryview.
 
 
 .. _python_cls_object:
@@ -795,42 +888,63 @@ corroborar si un objeto es instancia de una clase se utiliza la función
 property
 ~~~~~~~~
 
-La clase ``property`` típicamente es usado para definir un atributo administrado:
+La clase ``property`` típicamente es usado para definir un atributo administrado.
+La sintaxis es la siguiente:
 
 ::
 
-    >>> property(fget=None, fset=None, fdel=None, doc=None) -> property attribute
+    >>> property(fget=None, fset=None,
+    ...     fdel=None, doc=None) # devuelve atributo property
 
-``fget`` es una función a ser usada para obtener un valor de un atributo, y igualmente
-``fset`` es una función para definir el valor de un atributo, y ``fdel`` es una 
-función para eliminar un atributo. 
+El parámetro ``fget`` es una función a ser usada para obtener un valor de un atributo, 
+y igualmente el parámetro ``fset`` es una función para definir el valor de un atributo, 
+y el parámetro ``fdel`` es una función para eliminar un atributo. 
 
 ::
 
-    class C(object):
-        def getx(self): return self._x
-        def setx(self, value): self._x = value
-        def delx(self): del self._x
-        x = property(getx, setx, delx, "I'm the 'x' property.")
+    >>> class Clase(object):
+    ...     def get_atributo(self): return self._atributo
+    ...     def set_atributo(self, valor): self._atributo = valor
+    ...     def del_atributo(self): del self._atributo
+    ...     atributo = property(get_atributo, 
+    ...         set_atributo, del_atributo, 
+    ...         "Yo soy la propiedad 'atributo'.")
+    ... 
+    >>> c = Clase()
+    >>> dir(c)
+    ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', 
+    '__getattribute__', '__hash__', '__init__', '__module__', 
+    '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
+    '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 
+    '__weakref__', 'atributo', 'del_atributo', 'get_atributo',
+    'set_atributo']
 
 Los decoradores facilitan la definición de nuevas propiedades o la modificación de 
 las existentes:
 
 ::
 
-    class C(object):
-        @property
-        def x(self):
-            "I am the 'x' property."
-            return self._x
-        @x.setter
-        def x(self, value):
-            self._x = value
-        @x.deleter
-        def x(self):
-            del self._x
+    >>> class Clase(object):
+    ...     @property
+    ...     def atributo(self):
+    ...         "Yo soy la propiedad 'atributo'."
+    ...         return self._atributo
+    ...     @atributo.setter
+    ...     def atributo(self, valor):
+    ...         self._atributo = valor
+    ...     @atributo.deleter
+    ...     def atributo(self):
+    ...         del self._atributo
+    ... 
+    >>> c = Clase()
+    >>> dir(c)
+    ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', 
+    '__getattribute__', '__hash__', '__init__', '__module__',
+    '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
+    '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+    '__weakref__', 'atributo']
 
-.. todo:: TODO escribir sobre esta clase integrada.
+.. todo:: TODO terminar de escribir sobre la clase integrada property.
 
 
 .. _python_cls_super:
@@ -839,23 +953,27 @@ super
 ~~~~~
 
 La clase ``super`` típicamente es usada al llamar un método de superclase cooperativo.
+La sintaxis son las siguientes:
 
 ::
 
-    >>> super(type, obj) -> bound super object; requires isinstance(obj, type)
-    >>> super(type) -> unbound super object
-    >>> super(type, type2) -> bound super object; requires issubclass(type2, type)
+    >>> super(type, obj) # devuelve un súper objeto enlazado; requiere isinstance(obj, type)
+    >>> super(type) # devuelve un súper objeto no unido
+    >>> super(type, type2) # devuelve un súper objeto enlazado; requiere issubclass(type2, type)
 
 
 Para declarar un método de superclase cooperativo, use este idioma:
 
 ::
 
-    class C(B):
-        def meth(self, arg):
-            super(C, self).meth(arg)
+    class ClaseBase():
+        def metodo(self, argumento):
+            pass
+    class Clase(ClaseBase):
+        def metodo(self, argumento):
+            super(Clase, self).metodo(argumento)
 
-.. todo:: TODO escribir sobre esta clase integrada.
+.. todo:: TODO terminar de escribir sobre la clase integrada super.
 
 
 .. _python_cls_type:
