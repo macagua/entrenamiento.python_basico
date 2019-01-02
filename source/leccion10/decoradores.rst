@@ -6,8 +6,9 @@
 Decoradores
 -----------
 
-Un decorador en Python permite modificar de forma dinámica a una 
-función o un método mediante otra función. 
+Un decorador es una función Python permite que agregar funcionalidad a otra función, 
+pero sin modificarla. También, esto es llamado meta-programación, por que parte del 
+programa trata de modificar a otro al momento de compilar.
 
 Para llamar un decorador se utiliza el signo de arroba (@).
 
