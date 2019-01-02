@@ -367,13 +367,11 @@ Este método devuelve todos los elementos que están en un **conjunto mutable** 
 symmetric_difference_update()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Este método actualiza un **conjunto mutable** llamando al método ``symmetric_difference_update()`` 
-con los conjuntos de diferencia simétrica.
+Este método actualiza un **conjunto mutable** llamando al método 
+``symmetric_difference_update()`` con los conjuntos de diferencia simétrica.
 
-The symmetric difference of two sets is the set of elements that are in either of the 
-sets but not in both.
-
-.. todo:: TODO traducir el párrafo anterior
+La diferencia simétrica de dos conjuntos es el conjunto de elementos que están en 
+cualquiera de los conjuntos pero no en ambos.
 
 ::
 
