@@ -120,15 +120,13 @@ staticmethod
 ~~~~~~~~~~~~
 
 La clase ``staticmethod`` convierte una función a un método estático. Un método 
-estático no recibe un argumento primero implícito. Un método estático no recibe 
-un primer argumento implícito. La sintaxis es la siguiente:
+estático no recibe un primer argumento implícito. La sintaxis es la siguiente:
 
 ::
 
     >>> staticmethod(function) -> método
-    >>>
 
-Para declarar un método estático, use este lenguaje:
+Para declarar un método estático, use esta sintaxis:
 
 ::
 
@@ -137,9 +135,11 @@ Para declarar un método estático, use este lenguaje:
         def funcion(argumento1, argumento2, ...):
             ...
 
+.. todo:: TODO escribir un ejemplo real del uso de esta clase integrada.
 
-Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o en una instancia (por ejemplo,
-``Clase().funcion()``). La instancia se ignora a excepción de su clase.
+Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o en una instancia 
+(por ejemplo, ``Clase().funcion()``). La instancia se ignora a excepción de su 
+clase.
 
 Los métodos estáticos son similares a los métodos estáticos ``Java`` o ``C++``. Para 
 un concepto más avanzado, mire la clase :ref:`classmethod <python_cls_classmethod>` 
@@ -797,9 +797,7 @@ instancia recibe la instancia. La sintaxis es la siguiente:
 
     >>> classmethod(function) -> método
 
-.. todo:: TODO escribir un ejemplo real del uso de esta clase integrada.
-
-Para declarar un método de clase, use este idioma:
+Para declarar un método de clase, use esta sintaxis:
 
 ::
 
@@ -808,14 +806,16 @@ Para declarar un método de clase, use este idioma:
         def funcion(cls, argumento1, argumento2, ...):
             ...
 
-Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o en una instancia (por ejemplo, 
-``Clase().funcion()``). La instancia se ignora a excepción de su clase. Si se llama a un método 
-de clase para una clase derivada, el objeto de clase derivada se pasa como el primer 
-argumento implícito.
+.. todo:: TODO escribir un ejemplo real del uso de esta clase integrada.
+
+Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o en una instancia 
+(por ejemplo, ``Clase().funcion()``). La instancia se ignora a excepción de su clase. 
+Si se llama a un método de clase para una clase derivada, el objeto de clase derivada 
+se pasa como el primer argumento implícito.
 
 Los métodos de clase son diferentes a los métodos estáticos ``C++`` o ``Java``. Si 
-quieres eso, mira la clase :ref:`staticmethod <python_cls_staticmethod>` integrada en 
-el interprete.
+quieres eso, mira la clase :ref:`staticmethod <python_cls_staticmethod>` integrada 
+en el interprete.
 
 .. todo:: TODO escribir sobre esta clase integrada.
 
