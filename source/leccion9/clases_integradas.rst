@@ -121,9 +121,7 @@ staticmethod
 
 Los métodos estáticos en Python son extremadamente similar a los métodos de nivel 
 clase en python, la diferencia esta que un método estático es enlazado a una clase 
-rather than los objectos para esa clase.
-
-.. todo:: TODO traducir la frase del párrafo anterior.
+más bien que los objectos para esa clase.
 
 Esto significa que un método estático puede ser llamado sin un objeto para esa clase.
 Esto también significa que los métodos estáticos no pueden modificar el estado de un 
@@ -189,11 +187,8 @@ a continuación:
 Este código fuente es enteramente idéntico al primer ejemplo (usando ``@staticmethod``), 
 solo que no usa la agradable sintaxis de :ref:`decorador <python_decoradores>`. 
 
-Finalmente, usa el ``staticmethod()`` sparingly!. Hay muchas situaciones donde los 
+Finalmente, se usa el método ``staticmethod()`` escasamente. Hay muchas situaciones donde los 
 métodos estáticos son necesarios en Python.
-
-.. todo:: TODO traducir la frase del párrafo anterior.
-
 
 .. comments:
 
