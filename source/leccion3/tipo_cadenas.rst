@@ -327,7 +327,7 @@ las sintaxis más comunes:
 Docstrings
 ..........
 
-En Python todos los objetos cuentan con una variable especial llamada ``doc``, gracias 
+En Python todos los objetos cuentan con una variable especial llamada ``__doc__``, gracias 
 a la cual puede describir para qué sirven los objetos y cómo se usan. Estas variables 
 reciben el nombre de ``docstrings``, o 
 `cadenas de documentación <http://docs.python.org.ar/tutorial/2/controlflow.html#tut-docstrings>`_.
@@ -498,10 +498,6 @@ valores:
     >>> print mi_modulo.__doc__      # Docstring del módulo
     'El docstring del módulo'
     >>> print mi_modulo.__package__  # Nombre del paquete del módulo
-
-
-.. todo::
-    TODO terminar de escribir la sección docstrings.
 
 
 .. _python_str_formateo:
