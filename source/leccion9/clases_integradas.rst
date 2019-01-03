@@ -119,14 +119,52 @@ resultante también será correcto en Python 3.0.
 staticmethod
 ~~~~~~~~~~~~
 
-La clase ``staticmethod`` convierte una función a un método estático. Un método 
+Los métodos estáticos en Python son extremadamente similar a los métodos de nivel 
+clase en python, la diferencia esta que un método estático es enlazado a una clase 
+rather than los objectos para esa clase.
+
+.. todo:: TODO traducir la frase del párrafo anterior.
+
+Esto significa que un método estático puede ser llamado sin un objeto para esa clase.
+Esto también significa que los métodos estáticos no pueden modificar el estado de un 
+objeto como ellos no pueden enlazarse a ese.
+
+Los métodos estáticos Python puede crearse en dos formas, usando el aprovechamiento 
+``staticmethod()`` o el decorador ``@staticmethod``:
+
+La clase ``staticmethod()`` convierte una función a un método estático. Un método 
 estático no recibe un primer argumento implícito. La sintaxis es la siguiente:
 
 ::
 
     >>> staticmethod(function) -> método
 
-Para declarar un método estático, use esta sintaxis:
+Para declarar un método estático, a continuación vea el siguiente ejemplo:
+
+::
+
+    >>> class Calculador:
+    ...     def sumaNumeros(x, y):
+    ...         return x + y
+    ...     # crea un static method sumaNumeros
+    ...     sumaNumeros = staticmethod(sumaNumeros)
+    ... 
+    >>> print 'Resultado:', Calculador.sumaNumeros(15, 110)
+    Resultado: 125
+    >>> print 'Resultado:', Calculador().sumaNumeros(15, 110)
+    Resultado: 125
+
+En el ejemplo anterior usted puede notar que se llamo al método ``sumaNumeros`` sin 
+crear un objeto. Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o 
+en una instancia (por ejemplo, ``Clase().funcion()``). La instancia se ignora a 
+excepción de su clase.
+
+Los métodos estáticos son similares a los métodos estáticos ``Java`` o ``C++``. Para 
+un concepto más avanzado, mire la clase :ref:`classmethod <python_cls_classmethod>` 
+integrada en el interprete.
+
+La clase ``staticmethod`` introduce un cambio en la versión 2.4, agregando sintaxis de 
+:ref:`decorador <python_decoradores>` de función. La sintaxis es la siguiente:
 
 ::
 
@@ -135,17 +173,26 @@ Para declarar un método estático, use esta sintaxis:
         def funcion(argumento1, argumento2, ...):
             ...
 
-.. todo:: TODO escribir un ejemplo real del uso de esta clase integrada.
+Un ejemplo del uso de :ref:`decoradores <python_decoradores>` para ``staticmethod`` 
+a continuación:
 
-Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o en una instancia 
-(por ejemplo, ``Clase().funcion()``). La instancia se ignora a excepción de su 
-clase.
+::
 
-Los métodos estáticos son similares a los métodos estáticos ``Java`` o ``C++``. Para 
-un concepto más avanzado, mire la clase :ref:`classmethod <python_cls_classmethod>` 
-integrada en el interprete.
+    >>> class Calculador:
+    ...     @staticmethod
+    ...     def sumaNumeros(x, y):
+    ...         return x + y
+    ... 
+    >>> print 'Resultado:', Calculador.sumaNumeros(15, 110)
+    Resultado: 125
 
-.. todo:: TODO escribir sobre esta clase integrada.
+Este código fuente es enteramente idéntico al primer ejemplo (usando ``@staticmethod``), 
+solo que no usa la agradable sintaxis de :ref:`decorador <python_decoradores>`. 
+
+Finalmente, usa el ``staticmethod()`` sparingly!. Hay muchas situaciones donde los 
+métodos estáticos son necesarios en Python.
+
+.. todo:: TODO traducir la frase del párrafo anterior.
 
 
 .. comments:
@@ -768,10 +815,10 @@ que la implementación de ``print`` lleve la cuenta de su estado interno.
 
 ::
 
+    >>> 
+    >>> archivo = open('datos.txt', 'w')
     >>> archivo.softspace
     0
-
-.. todo:: TODO escribir un ejemplo del uso de este atributo integrado.
 
 
 .. _python_cls_builtins_objetos:
@@ -795,7 +842,28 @@ instancia recibe la instancia. La sintaxis es la siguiente:
 
     >>> classmethod(function) -> método
 
-Para declarar un método de clase, use esta sintaxis:
+Para declarar un método de clase, a continuación vea el siguiente ejemplo:
+
+::
+
+    >>> def sumaNumeros(cls, x, y):
+    ...     return x + y
+    ... 
+    >>> type(sumaNumeros)
+    <type 'function'>
+    >>> class Calculador:
+    ...     # crea un static method sumaNumeros
+    ...     sumaNumeros = classmethod(sumaNumeros)
+    ... 
+    >>> Calculador.sumaNumeros(15, 110)
+    125
+    >>> Calculador().sumaNumeros(15, 110)
+    125
+    >>> type(Calculador.sumaNumeros)
+    <type 'instancemethod'>
+
+La clase ``classmethod`` introduce un cambio en la versión 2.4, agregando sintaxis de 
+:ref:`decorador <python_decoradores>` de función. La sintaxis es la siguiente:
 
 ::
 
@@ -804,7 +872,21 @@ Para declarar un método de clase, use esta sintaxis:
         def funcion(cls, argumento1, argumento2, ...):
             ...
 
-.. todo:: TODO escribir un ejemplo real del uso de esta clase integrada.
+Un ejemplo del uso de :ref:`decoradores <python_decoradores>` para ``classmethod`` 
+a continuación:
+
+::
+
+    >>> class Clase:
+    ...     @classmethod
+    ...     def funcion(cls, argumento1, argumento2):
+    ...         return argumento1 + argumento2
+    ... 
+    >>> Clase.funcion(2, 3)
+    5
+    >>> Clase().funcion(2, 3)
+    5
+
 
 Se puede llamar en la clase (por ejemplo, ``Clase.funcion()``) o en una instancia 
 (por ejemplo, ``Clase().funcion()``). La instancia se ignora a excepción de su clase. 
@@ -815,7 +897,7 @@ Los métodos de clase son diferentes a los métodos estáticos ``C++`` o ``Java`
 quieres eso, mira la clase :ref:`staticmethod <python_cls_staticmethod>` integrada 
 en el interprete.
 
-.. todo:: TODO escribir sobre esta clase integrada.
+.. todo:: TODO terminar de escribir sobre la clase integrada classmethod.
 
 
 .. _python_cls_memoryview:
