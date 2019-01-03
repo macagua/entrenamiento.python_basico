@@ -458,14 +458,6 @@ llegar al final mediante el iterador ``paquete`` se llama a la excepción
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
 iteración.
 
-
-Otros iteradores
-................
-
-.. todo::
-    TODO escribir esta sección.
-
-
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion10>` 
