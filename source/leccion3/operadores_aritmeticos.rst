@@ -41,14 +41,12 @@ El operador ``-`` resta los valores de tipo de datos numéricos.
 Operador Negación
 .................
 
-El operador ``-`` .....
+El operador ``-`` asigna un valor negativo a un tipo de datos numéricos.
 
 ::
 
     >>> -7
     -7
-
-.. todo:: TODO terminar de escribir el párrafo de sección.
 
 
 .. _python_opers_arit_multi:
