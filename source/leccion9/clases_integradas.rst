@@ -341,15 +341,13 @@ la data antes de cerrar cualquier archivo.
 
 ::
 
-    >>> # Abre un archivo
-    ... archivo = open("datos.txt", "wb")
+    >>> archivo = open("datos.txt", "wb") # Abre un archivo
     >>> print "Nombre del archivo: ", archivo.name
     Nombre del archivo:  datos.txt
-    >>> # Aquí eso no hace nada, pero usted puede 
+    >>> archivo.flush()
+    ... # Aquí eso no hace nada, pero usted puede 
     ... # llamarlo con la operación read.
-    ... archivo.flush()
-    >>> # Cerrar archivo abierto
-    ... archivo.close()
+    >>> archivo.close() # Cerrar archivo abierto
 
 
 .. _python_mtd_isatty:
