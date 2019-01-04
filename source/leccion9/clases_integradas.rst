@@ -972,7 +972,7 @@ corroborar si un objeto es instancia de una clase se utiliza la función
 property
 ~~~~~~~~
 
-La clase ``property`` típicamente es usado para definir un atributo administrado.
+La clase ``property`` típicamente es usado para definir un atributo property.
 La sintaxis es la siguiente:
 
 ::
@@ -984,51 +984,151 @@ El parámetro ``fget`` es una función a ser usada para obtener un valor de un a
 y igualmente el parámetro ``fset`` es una función para definir el valor de un atributo, 
 y el parámetro ``fdel`` es una función para eliminar un atributo. 
 
+El método ``property()`` devuelve un atributo ``property`` donde es dado el método 
+``getter``, ``setter`` y ``deleter``.
+
+Si no hay argumentos son dados, el método ``property()`` devuelven un atributo base 
+``property`` que no contienen ningún ``getter``, ``setter`` o ``deleter``. Si ``doc``
+no es proveído, método ``property()`` toma el :ref:`docstring <python_str_docstrings>` 
+de la función ``getter``.
+
+A continuación, un ejemplo sencillo:
+
 ::
 
-    >>> class Clase(object):
-    ...     def get_atributo(self): return self._atributo
-    ...     def set_atributo(self, valor): self._atributo = valor
-    ...     def del_atributo(self): del self._atributo
-    ...     atributo = property(get_atributo, 
-    ...         set_atributo, del_atributo, 
-    ...         "Yo soy la propiedad 'atributo'.")
+    >>> class Persona:
+    ...     def __init__(self, nombre):
+    ...         self._nombre = nombre
+    ...     
+    ...     def getNombre(self):
+    ...         print 'Obteniendo nombre'
+    ...         return self._nombre
+    ...     
+    ...     def setNombre(self, valor):
+    ...         print 'Definiendo nombre a ' + valor
+    ...         self._nombre = valor
+    ...     
+    ...     def delNombre(self):
+    ...         print 'Eliminando nombre'
+    ...         del self._nombre
+    ...     
+    ...     # Define la property para usar los métodos getNombre, 
+    ...     # setNombre y delNombre
+    ...     nombre = property(getNombre, setNombre, delNombre, 'Atributo property nombre')
     ... 
-    >>> c = Clase()
-    >>> dir(c)
-    ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', 
-    '__getattribute__', '__hash__', '__init__', '__module__', 
-    '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
-    '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 
-    '__weakref__', 'atributo', 'del_atributo', 'get_atributo',
-    'set_atributo']
+    >>> persona1 = Persona('Leo')
+    >>> print persona1.nombre
+    Obteniendo nombre
+    Leo
+    >>> persona1.nombre = 'Leonardo'
+    >>> print persona1.nombre
+    Leonardo
+    >>> dir(persona1)
+    ['__doc__', '__init__', '__module__', '_nombre', 'delNombre', 
+    'getNombre', 'nombre', 'setNombre']
+    >>> persona1.delNombre()
+    Eliminando nombre
+    >>> dir(persona1)
+    ['__doc__', '__init__', '__module__', 'delNombre', 'getNombre', 
+    'nombre', 'setNombre']
+    >>> print persona1.nombre
+    Leonardo
+    >>> del persona1.nombre
+    >>> print persona1.nombre
+    Obteniendo nombre
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "<stdin>", line 7, in getNombre
+    AttributeError: Persona instance has no attribute '_nombre'
 
-Los decoradores facilitan la definición de nuevas propiedades o la modificación de 
-las existentes:
+Cuando se elimina ``persona1.delNombre()`` puede notar que ``_nombre`` ya no esta 
+disponible y si se vuelve a imprimir el valor de nombre ``print persona1.nombre`` 
+aun muestra el valor inicializado con el método ``setNombre``, entonces al ejecutar
+``del persona1.nombre`` se elimina por completo el valor en memoria, luego si intenta 
+mostrar el valor del *atributo property* ``nombre`` lanza 
+:ref:`AttributeError <python_exception_attributeerror>` por no encontró ``_nombre`` 
+el cual es usado como la variable privado para almacenar el nombre de una Persona.
+
+Se definió lo siguiente:
+
+- Un método ``getter`` getNombre() para obtener el nombre de la persona,
+- Un método ``setter`` setNombre() para definir el nombre de la persona,
+- Un método ``deleter`` delNombre() para eliminar el nombre de la persona.
+
+Ahora tiene definido un *atributo property* ``nombre`` llamando al método ``property()``.
+
+Como se mostró en el código anterior, la referencia ``persona1.nombre`` internamente 
+llama al método ``getName()`` como *getter*, ``setName()`` como *setter* y ``delName()`` 
+como *deleter* a través de las salidas impresas presente dentro de los métodos.
+
+También se definió el :ref:`docstring <python_str_docstrings>` del atributo con el 
+valor *'Atributo property nombre'*.
+
+Otra alternativa son los :ref:`decoradores <python_decoradores>` facilitan la definición 
+de nuevas propiedades o la modificación de las existentes:
+
+A continuación se creará un *atributo property* con métodos ``getter``, ``setter`` y 
+``deleter`` usando el decorador ``@property`` en vez de usar el método ``property()``,
+usted puede usar el decorador Python ``@property`` para asignar el método ``getter``, 
+``setter`` y ``deleter``:
 
 ::
 
-    >>> class Clase(object):
+    >>> class Persona:
+    ...     def __init__(self, nombre):
+    ...         self._nombre = nombre
+    ...     
     ...     @property
-    ...     def atributo(self):
-    ...         "Yo soy la propiedad 'atributo'."
-    ...         return self._atributo
-    ...     @atributo.setter
-    ...     def atributo(self, valor):
-    ...         self._atributo = valor
-    ...     @atributo.deleter
-    ...     def atributo(self):
-    ...         del self._atributo
+    ...     def nombre(self):
+    ...         print 'Obteniendo nombre'
+    ...         return self._nombre
+    ...     
+    ...     @nombre.setter
+    ...     def nombre(self, valor):
+    ...         print 'Definiendo nombre a ' + valor
+    ...         self._nombre = valor
+    ...     
+    ...     @nombre.deleter
+    ...     def nombre(self):
+    ...         print 'Eliminando nombre'
+    ...         del self._nombre
     ... 
-    >>> c = Clase()
-    >>> dir(c)
-    ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', 
-    '__getattribute__', '__hash__', '__init__', '__module__',
-    '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
-    '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
-    '__weakref__', 'atributo']
+    >>> persona1 = Persona('Leo')
+    >>> print 'El nombre es:', persona1.nombre
+    El nombre es: Obteniendo nombre
+    Leo
+    >>> persona1.nombre = 'Leonardo'
+    >>> print persona1.nombre
+    Leonardo
+    >>> dir(persona1)
+    ['__doc__', '__init__', '__module__', '_nombre', 'nombre']
+    >>> del persona1.nombre
+    >>> dir(persona1)
+    ['__doc__', '__init__', '__module__', '_nombre', 'nombre']
+    >>> print persona1.nombre
+    Obteniendo nombre
+    Leo
 
-.. todo:: TODO terminar de escribir sobre la clase integrada property.
+Aquí, en vez de usar el método ``property()``, es usado el 
+:ref:`decorador <python_decoradores>` @property.
+
+Primero especifica que el método ``nombre()`` es un atributo de la clase ``Persona``. 
+Esto es hecho usando la sintaxis ``@property`` antes el método *getter* como se 
+muestra en el código anterior.
+
+Seguidamente se usa el nombre del atributo ``nombre`` para especificar los métodos 
+*setter* y *deleter*.
+
+Esto es hecho usando la sintaxis @<nombre-de-atributo>.setter (``@nombre.setter``) para 
+el método *setter* y @<nombre-de-atributo>.deleter (``@nombre.deleter``) para el método 
+*deleter*.
+
+Note, es usando el mismo método ``nombre()`` con diferentes definiciones para definir 
+los métodos ``getter``, ``setter`` y ``deleter``.
+
+Ahora, cada vez que se usa ``persona1.nombre``, es internamente llama el apropiado método 
+para ``getter``, ``setter`` y ``deleter`` como lo muestra la salida impresa presente 
+dentro de cada método.
 
 
 .. _python_cls_super:
