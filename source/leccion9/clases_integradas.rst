@@ -1283,10 +1283,10 @@ A continuación un ejemplo del uso ``super()`` con
 El orden en resolver la herencia múltiple esta basado en el principio 
 :ref:`Method Resolution Order (MRO) <python_poo_herencia_multiple_mro>`.
 
-El *MRO* es calculado en Python de la siguiente forma
+El *MRO* es calculado en Python de la siguiente forma:
 
 Un método en la llamada derivada es siempre llamada antes de método de la clase base.
-En nuestro ejemplo, la clase Perro es llamada antes de las clases ``MamiferoNoAcuatico`` 
+En nuestro ejemplo, la clase ``Perro`` es llamada antes de las clases ``MamiferoNoAcuatico`` 
 o ``MamiferoNoVolador``. Esas dos clases son llamada antes de la clase ``Mamifero`` 
 el cual es llamada antes de la clase ``Animal`` y la clase ``Animal`` es llamada antes 
 de la clase ``object``.

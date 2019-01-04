@@ -151,9 +151,6 @@ permite corroborar si un objeto es instancia de una clase.
     :ref:`issubclass() <python_fun_issubclass>`.
 
 
-----
-
-
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los 
     siguientes enlaces: :download:`clases.py <../../recursos/leccion9/clases.py>` 
@@ -198,11 +195,40 @@ la declaración de la subclase:
     :language: python
     :lines: 61-98
 
-.. todo:: TODO terminar de escribir esta sección.
+
+.. _python_poo_herencia_multiple_mro:
+
+Method Resolution Order (MRO)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ese es el orden en el cual el método debe heredar en la presencia de herencia múltiple. 
+Usted puede ver el MRO usando el atributo ``__mro__``.
 
 
-----
+>>> JefeCuadrilla.__mro__
+(<class '__main__.JefeCuadrilla'>, 
+<class '__main__.Supervisor'>, 
+<class '__main__.Persona'>, 
+<class '__main__.Destreza'>, 
+<type 'object'>)
 
+>>> Supervisor.__mro__
+(<class '__main__.Supervisor'>, 
+<class '__main__.Persona'>,
+<type 'object'>)
+
+>>> Destreza.__mro__
+(<class '__main__.Destreza'>,
+<type 'object'>)
+
+El *MRO* es calculado en Python de la siguiente forma:
+
+Un método en la llamada derivada es siempre llamada antes de método de la clase base.
+En nuestro ejemplo, la clase ``JefeCuadrilla`` es llamada antes de las clases 
+``Supervisor`` o ``Destreza``. Esas dos clases son llamada antes de 
+la clase ``Persona`` y la clase ``Persona`` es llamada antes de la clase ``object``.
+
+Si hay herencia múltiple como ``JefeCuadrilla(Supervisor, Destreza)``, el método invoca 
+a ``Supervisor`` primero por que ese aparece primero de izquierda a derecha.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los 
@@ -225,9 +251,6 @@ la declaración de la subclase:
     ::
 
         python herencia_multiple.py
-
-
-----
 
 
 .. seealso::
