@@ -1137,16 +1137,28 @@ super
 ~~~~~
 
 La clase ``super`` típicamente es usada al llamar un método de superclase cooperativo.
-La sintaxis son las siguientes:
+Las sintaxis de como usarlo son las siguientes:
 
 ::
 
-    >>> super(type, obj) # devuelve un súper objeto enlazado; requiere isinstance(obj, type)
-    >>> super(type) # devuelve un súper objeto no unido
-    >>> super(type, type2) # devuelve un súper objeto enlazado; requiere issubclass(type2, type)
+    >>> super(type, obj)
+
+El código anterior devuelve un súper objeto enlazado; requiere ``isinstance(obj, type)``.
+
+::
+
+    >>> super(type)
+
+El código anterior devuelve un súper objeto no unido.
+
+::
+
+    >>> super(type, type2)
+
+El código anterior devuelve un súper objeto enlazado; requiere ``issubclass(type2, type)``.
 
 
-Para declarar un método de superclase cooperativo, use este idioma:
+Para declarar un método de superclase cooperativo, use esta sintaxis:
 
 ::
 
@@ -1157,8 +1169,130 @@ Para declarar un método de superclase cooperativo, use este idioma:
         def metodo(self, argumento):
             super(Clase, self).metodo(argumento)
 
-.. todo:: TODO terminar de escribir sobre la clase integrada super.
+Un ejemplo sencillo real se muestra a continuación:
 
+::
+
+    >>> class Mamifero(object):
+    ...     def __init__(self, mamifero):
+    ...         print mamifero, 'es un animal de sangre caliente.'
+    ... 
+    >>> class Perro(Mamifero):
+    ...     def __init__(self):
+    ...         print 'Perro tiene 4 piernas.'
+    ...         super(Perro, self).__init__('Perro')
+    ... 
+    >>> perrito = Perro()
+    Perro tiene 4 piernas.
+    Perro es un animal de sangre caliente.
+    >>> isinstance(perrito, Perro)
+    True
+
+
+Aquí, se llama el método ``__init__`` de la clase ``Mamifero`` (desde la clase 
+``Perro``) usando el código fuente ``super(Perro, self).__init__('Perro')`` en 
+vez de del tradicional ``Mamifero.__init__(self, 'Perro')``.
+
+Como no necesitamos especificar el nombre de la clase base si usamos ``super()``, 
+podemos cambiar fácilmente la clase base para el método ``Perro`` (si es necesario).
+
+A continuación un ejemplo de cambiar la clase base a la clase RazaCanina:
+
+::
+
+    >>> class Mamifero(object):
+    ...     def __init__(self, mamifero):
+    ...         print mamifero, 'es un animal de sangre caliente.'
+    ... 
+    >>> class RazaCanina(Mamifero):
+    ...   def __init__(self, nombre, raza):
+    ...     print raza, 'es la raza del canino.'
+    ...     super(RazaCanina, self).__init__('Perro')
+    ... 
+    >>> class Perro(RazaCanina):
+    ...     def __init__(self, raza):
+    ...         print 'Perro tiene 4 piernas.'
+    ...         super(Perro, self).__init__('Perro', raza)
+    ... 
+    >>> perrito = Perro("Pastor Alemán")
+    Perro tiene 4 piernas.
+    Pastor Alemán es la raza del canino.
+    Perro es un animal de sangre caliente.
+
+El método integrado ``super()`` regresa un objeto proxy, un objeto substituto que 
+tiene la habilidad de llamar al método de la clase base vía delegación. Esto es 
+llamado indirección (habilidad de referenciar objeto base con el método ``super()``).
+
+Desde que la indirección es calculada en tiempo ejecución, usted puede usar para 
+apuntar hacia una clase base diferente en tiempo diferente (si usted lo necesita).
+
+A continuación un ejemplo del uso ``super()`` con 
+:ref:`herencia múltiple <python_poo_herencia_multiple>` de la objetos:
+
+::
+
+    >>> class Animal(object):
+    ...     def __init__(self, animal):
+    ...         print animal, 'es un animal.\n\n',
+    ... 
+    >>> class Mamifero(Animal):
+    ...     def __init__(self, mamifero):
+    ...         print mamifero, 'es un animal de sangre caliente.'
+    ...         super(Mamifero, self).__init__(mamifero)
+    ... 
+    >>> class MamiferoNoVolador(Mamifero):
+    ...     def __init__(self, mamifero):
+    ...         print mamifero, "no puede volar."
+    ...         super(MamiferoNoVolador, self).__init__(mamifero)
+    ... 
+    >>> class MamiferoNoAcuatico(Mamifero):
+    ...     def __init__(self, mamifero):
+    ...         print mamifero, "no puede nadar."
+    ...         super(MamiferoNoAcuatico, self).__init__(mamifero)
+    ... 
+    >>> class Perro(MamiferoNoAcuatico, MamiferoNoVolador):
+    ...     def __init__(self):
+    ...         print 'Perro tiene 4 piernas.\n',
+    ...         super(Perro, self).__init__('Perro')
+    ... 
+    >>> perro = Perro()
+    Perro tiene 4 piernas.
+    Perro no puede nadar.
+    Perro no puede volar.
+    Perro es un animal de sangre caliente.
+    Perro es un animal.
+
+    >>> Perro.__mro__
+    (<class '__main__.Perro'>, 
+    <class '__main__.MamiferoNoAcuatico'>, 
+    <class '__main__.MamiferoNoVolador'>, 
+    <class '__main__.Mamifero'>, 
+    <class '__main__.Animal'>, 
+    <type 'object'>)
+    >>> murcielago = MamiferoNoAcuatico('Murcielago')
+    Murcielago no puede nadar.
+    Murcielago es un animal de sangre caliente.
+    Murcielago es un animal.
+
+    >>> MamiferoNoAcuatico.__mro__
+    (<class '__main__.MamiferoNoAcuatico'>, 
+    <class '__main__.Mamifero'>, 
+    <class '__main__.Animal'>, 
+    <type 'object'>)
+
+El orden en resolver la herencia múltiple esta basado en el principio 
+:ref:`Method Resolution Order (MRO) <python_poo_herencia_multiple_mro>`.
+
+El *MRO* es calculado en Python de la siguiente forma
+
+Un método en la llamada derivada es siempre llamada antes de método de la clase base.
+En nuestro ejemplo, la clase Perro es llamada antes de las clases ``MamiferoNoAcuatico`` 
+o ``MamiferoNoVolador``. Esas dos clases son llamada antes de la clase ``Mamifero`` 
+el cual es llamada antes de la clase ``Animal`` y la clase ``Animal`` es llamada antes 
+de la clase ``object``.
+
+Si hay herencia múltiple como ``Perro(MamiferoNoAcuatico, MamiferoNoVolador)``, el 
+método de ``MamiferoNoAcuatico`` es invocado primero por que ese aparece primero.
 
 .. _python_cls_type:
 
