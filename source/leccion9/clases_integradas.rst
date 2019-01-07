@@ -47,7 +47,7 @@ el final del objeto de destino (o con el tamaño especificado).
 
 El búfer en este caso anterior es una sub-cadena, inicia en la posición 5 con un 
 ancho de 5 caracteres y es no toma espacio de almacenamiento extra - eso referencia 
-a un ``slice`` de una cadena de caracteres.
+a ``cortar`` una cadena de caracteres.
 
 Este ejemplo anterior no es muy útil para cadenas de caracteres cortas como esta, 
 pero eso puede ser necesario cuando usa un gran numero de data. Este ejemplo puede 
@@ -76,8 +76,9 @@ usar un tipo mutable ``bytearray()``:
 Esto puede ser muy útil si usted quiere tener más que una vista en la data y no quiere 
 (o puede) contener múltiples copias en memoria.
 
-Note que el búfer ha sido remplazado por el mejor llamado :ref:`memoryview() <python_cls_memoryview>` 
-en Python 3, aunque se puede usar en Python 2.7.
+Note que el búfer ha sido remplazado por un mejor método llamado 
+:ref:`memoryview() <python_cls_memoryview>` en Python 3, aunque se puede usar en 
+Python 2.7.
 
 Note también que usted no puede implementar una interfaz búfer para sus propios objetos 
 sin profundizando en la API de C, ej. usted no puede hacer eso con puramente con código 
@@ -900,14 +901,60 @@ en el interprete.
 memoryview
 ~~~~~~~~~~
 
-La clase ``memoryview`` crea un nuevo objecto *memoryview* el cual referencias al objecto 
-dado. La sintaxis es la siguiente:
+La clase ``memoryview``  devuelve un objeto *vista de memoria* del argumento dado. 
+
+Antes de introducir a que son las *vistas de memoria*, necesita entender primero 
+sobre del *protocolo Búfer* de Python.
+
+**¿Qué es protocolo Búfer?**
+
+Este protocolo provee una forma de acceder la data interna de un objeto. Esta data 
+interna es un arreglo de memoria o un búfer. El *protocolo Búfer* le permite un objeto 
+para exponer esa data interna (búfers) y el otro para acceder a esos búfers sin tener 
+que copiar intermediamente.
+
+Este protocolo es solamente accesible al usar el nivel API de C y no usando el normal 
+código base. Por lo tanto, para exponer el mismo protocolo a la base de código Python 
+normal, las vistas de memoria están presentes.
+
+
+**¿Qué es una vista de memoria?**
+
+La vista de memoria es una forma segura de exponer el protocolo búfer en Python. Eso 
+le permite a usted acceder a los búfers internos de un objeto para creación de un 
+objeto de vista de memoria.
+
+**¿Por que el protocolo búfer y las vistas de memoria son importantes?**
+
+Necesita recordar que cada vez que ejecuta alguna acción en un objeto (llamar a una 
+función de un objeto, cortar un arreglo), Python necesita crear una copia del objeto.
+
+Si usted tiene una gran data para trabajar con ella (ej. data binaria de una imagen), 
+debería crear innecesariamente copias de enormes trozos de datos, que casi no sirve 
+de nada.
+
+Usando el *protocolo búfer*, puede dar otros accesos al objeto para usar/modificar 
+data grande sin realizar copias de eso. Esto hace que el programa use menos memoria 
+y incremente la velocidad de ejecución.
+
+**¿Como exponer el protocolo búfer usando las vistas de memoria?**
+
+Los objetos de *vista de memoria* son creados usando la sintaxis:
 
 ::
 
-    >>> memoryview(object)
+    >>> memoryview(objecto)
 
-A continuación unos ejemplos básico de su uso:
+El método constructor ``memoryview()`` toma un simple parámetro:
+
+``objecto`` - es el objeto dado como parámetro el cual su data interna es expuesta.
+
+``objecto`` debe ser un tipo el cual soportar el *protocolo búfer* (``bytes``, 
+``bytearray``). Devuelve el valor de un objeto de vista de memoria del objeto dado 
+como parámetro desde el método ``memoryview()``.
+
+A continuación, un ejemplo donde se crea una *vista de memoria* usando el tipo 
+``bytearray`` previamente creado:
 
 ::
 
@@ -927,6 +974,15 @@ A continuación unos ejemplos básico de su uso:
     >>> memoryview(cadena).strides
     (1L,)
     >>> memoryview(cadena).suboffsets
+
+En el ejemplo anterior se crea una *vista de memoria* de un tipo ``bytearray`` 
+mostrando los diversos atributos disponibles. 
+
+Continuando el ejemplo anterior, se crea una *vista de memoria* de un tipo 
+:ref:`buffer <python_cls_buffer>` usando el objeto ``cadena`` previamente creado:
+
+::
+
     >>> cadena_buffer = buffer(cadena, 1)
     >>> memoryview(cadena_buffer)
     <memory at 0x7f6202179cc8>
@@ -944,8 +1000,95 @@ A continuación unos ejemplos básico de su uso:
     (1L,)
     >>> memoryview(cadena_buffer).suboffsets
 
+En el ejemplo anterior se crea una *vista de memoria* de un tipo 
+:ref:`buffer <python_cls_buffer>` mostrando los diversos atributos disponibles. 
 
-.. todo:: TODO terminar de escribir sobre esta clase integrada memoryview.
+A continuación, otro ejemplo donde se crea una *vista de memoria* usando el objeto 
+``bytearray`` previamente creado:
+
+::
+
+    >>> randomBA = bytearray('ABC', 'utf-8')
+    >>> randomBA
+    bytearray(b'ABC')
+    >>> vm = memoryview(randomBA)
+    >>> vm
+    <memory at 0x7fafc7136c30>
+    >>> print vm[0]
+    A
+    >>> print vm[1]
+    B
+    >>> print vm[2]
+    C
+
+Continuando el ejemplo anterior, se puede crear una :ref:`lista <python_list>` desde 
+una *vista de memoria* usando el objeto ``vm`` previamente creado:
+
+::
+
+    >>> list = []
+    >>> for item in range(3): list.append(vm[item])
+    ... 
+    >>> list
+    ['A', 'B', 'C']
+
+Continuando el ejemplo anterior, se puede crear :ref:`cadena de caracteres <python_str>` 
+desde una *vista de memoria* usando el objeto ``vm`` previamente creado:
+
+::
+
+    >>> cad = ""
+    >>> for item in range(3): cad += vm[item]
+    ... 
+    >>> print cad
+    ABC
+
+Aquí, es creada un objeto *vista de memoria* llamado ``vm`` desde un objeto ``bytearray`` 
+llamado ``randomBA``.
+
+Entonces, es accedido al índice 0 posición ``vm`` 'A' y el valor es impreso. Luego, es 
+accedido al índice 1 posición ``vm`` 'B' y el valor es impreso. También, es accedido al 
+índice 2 posición ``vm`` 'C' y el valor es impreso.
+
+Finalmente, es accedido todos los índices del objeto ``vm`` y convertidos a una lista. 
+
+
+A continuación, otro ejemplo donde se modifica la data interna usando vista de memoria:
+
+::
+
+    >>> randomBA = bytearray('ABC', 'utf-8')
+    >>> print 'Antes de actualizar:', randomBA
+    Antes de actualizar: ABC
+    >>> vm = memoryview(randomBA)
+    >>> chr(90)
+    'Z'
+    >>> vm[1] = chr(90)
+    >>> print 'Después de actualizar:', randomBA
+    Después de actualizar: AZC
+
+Aquí, se actualiza el indice 1 de la *vista de memoria* a un valor ASCII - 90 (Z) 
+usando la función :ref:`chr() <python_fun_chr>`. Desde, el objeto de *vista de memoria* 
+``vm`` referencia al mismo búfer/memoria, actualiza el índice en el ``vm`` también actualiza 
+el ``randomBA``.
+
+Desde adentro internamente el tipo ``bytearray`` almacena valores ``ASCII`` para el 
+alfabeto, es decir, cada posición de la lista se debe indicar con su equivalente 
+numérico en la tabla ``ASCII``.
+
+::
+
+    >>> chr(65)
+    'A'
+    >>> chr(66)
+    'B'
+    >>> chr(67)
+    'C'
+    >>> chr(90)
+    'Z'
+
+Entonces se usa la función :ref:`chr() <python_fun_chr>` para indicar su equivalente en 
+la tabla de valores ``ASCII``.
 
 
 .. _python_cls_object:
