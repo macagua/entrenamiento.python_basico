@@ -16,12 +16,14 @@ develop-eggs/
 dist/
 eggs/
 include/
+info/
 local/
 lib/
 lib64/
 parts/
 sdist/
 var/
+venv/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -60,6 +62,3 @@ docs/_build/
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
-
-# Virtualenv
-venv/
