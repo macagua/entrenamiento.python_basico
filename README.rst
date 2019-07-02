@@ -29,7 +29,7 @@ La estructura general de contenidos esta confirmada por los principales archivos
 Obtener y compilar la documentación
 ===================================
 
-El almacenamiento de este material está disponible en un repositorio Git en Github.com 
+El almacenamiento de este material está disponible en un repositorio Git 
 "`entrenamiento.python_basico`_". 
 
 Si usted tiene una credenciales en este servidor y desea convertirse en un colaborador 
@@ -70,7 +70,7 @@ comando:
   $ virtualenv --python=/usr/bin/python venv
   $ source ./venv/bin/activate
 
-Luego instale dependencias Sphinx, ejecutando el siguiente comando:
+Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente comando:
 
 ::
 
@@ -80,7 +80,7 @@ Luego instale dependencias Sphinx, ejecutando el siguiente comando:
 Recursos del entrenamiento
 ==========================
 
-La herramientas Sphinx le permite generar los recursos usado en el entrenamiento, en diversos 
+La herramienta Sphinx le permite generar los recursos usado en el entrenamiento, en diversos 
 formatos, actualmente se tiene bien soportado los siguientes:
 
 
@@ -93,6 +93,9 @@ los siguientes comando:
 ::
 
   (venv)$ make html
+
+Una vez generado el formato HTML se puede abrir desde el directorio ``build/html/index.html``
+con su navegador Web favorito (Mozilla Firefox, Google Chrome, etc).
 
 
 Formato PDF
@@ -109,9 +112,9 @@ siguientes comando:
   (venv)$ source ./venv/bin/activate
   (venv)$ make pdf
 
-Una ves generado el PDF se puede abrir desde el directorio 
+Una vez generado el PDF se puede abrir desde el directorio 
 ``build/latex/entrenamientopython_basico.pdf``
-con cualquiera de sus programas de visor de PDF favorito (Evince, Acrobat Reader, ...).
+con cualquiera de sus programas de visor de PDF favorito (Evince, Acrobat Reader, etc).
 
 
 Estatus de Calidad
