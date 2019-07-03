@@ -44,7 +44,8 @@ los siguientes comando:
 
 ::
 
-  $ sudo apt-get install python-pip python-setuptools git
+  $ sudo apt install python-pip python-setuptools git
+  $ sudo apt install texlive-latex-base texlive-latex-recommended texlive-lang-spanish
   $ sudo pip install virtualenv
 
 
@@ -64,11 +65,9 @@ comando:
 
 ::
 
-  $ sudo apt-get install python-pip python-setuptools git
-  $ sudo pip install virtualenv
   $ cd ~/entrenamiento.python_basico
   $ virtualenv --python=/usr/bin/python venv
-  $ source ./venv/bin/activate
+  (venv)$ source ./venv/bin/activate
 
 Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente comando:
 
@@ -107,9 +106,6 @@ siguientes comando:
 ::
 
 
-  $ cd ~/entrenamiento.python_basico/source
-  $ sudo apt-get install texlive-latex-base texlive-latex-recommended texlive-lang-spanish
-  (venv)$ source ./venv/bin/activate
   (venv)$ make pdf
 
 Una vez generado el PDF se puede abrir desde el directorio 
