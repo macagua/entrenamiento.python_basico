@@ -1,8 +1,6 @@
-# -*- coding: utf8 -*-
-
 """ 
     El fuertemente tipado significa que el tipo de valor no 
-    cambia repentinamente. Un string que contiene solo dígitos 
+    cambia repentinamente. Una cadena que contiene solo dígitos 
     no se convierte mágicamente en un número. Cada cambio de tipo 
     requiere una conversión explícita.
 
@@ -12,13 +10,14 @@
       File "<stdin>", line 1, in <module>
     TypeError: unsupported operand type(s) for +: 'int' and 'str'
     >>> total = valor1 + int(valor2)
-    >>> print "El total es: " + str(total)
+    >>> print ("El total es: " + str(total))
     7
 """
 
-# varible "valor1" es integer, varible "valor2" es string
+# varible "valor1" guarda un valor entero, varible "valor2" guarda un valor cadena
 valor1, valor2 = 2, "5"
-# el metodo int() es para convertir a integer
+# se usa el metodo int() para convertir a entero
 total = valor1 + int(valor2)
-# el metodo str() es para convertir a string
-print "El total es: " + str(total)
+# se usa el metodo str() para convertir a cadena
+print ("El total es: " + str(total))
+
