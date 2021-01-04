@@ -18,11 +18,11 @@ print ("\nClaves de diccionario:", datos_basicos.keys())
 print ("\nValores de diccionario:", datos_basicos.values())
 print ("\nElementos de diccionario:", datos_basicos.items())
 
-#print ("\nDetalle del diccionario con iteritems()")
-#print ("=======================================")
+print ("\nDetalle del diccionario con iteritems()")
+print ("=======================================")
 
-#for key, value in datos_basicos.iteritems():
-#    print('Clave: %s, tiene el valor: %s' % (key, value))
+for key, value in iter(datos_basicos.items()):
+    print('Clave: %s, tiene el valor: %s' % (key, value))
 
 # Ejemplo practico de los diccionarios
 print ("\n\nInscripción de Curso")
