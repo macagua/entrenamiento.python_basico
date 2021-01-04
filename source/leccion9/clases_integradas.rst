@@ -115,6 +115,50 @@ resultante también será correcto en Python 3.0.
     <type 'str'>
 
 
+.. _python_cls_quit:
+
+quit
+~~~~~
+
+Es el método constructor de la clase ``Quitter`` incluida en el módulo ``site`` el 
+cual le permite salir de la consola interactiva Python:
+
+::
+
+    >>> quit
+    Use quit() or Ctrl-D (i.e. EOF) to exit
+    >>> quit()
+    $
+
+De esta forma puede salir de la consola interactiva Python y volviendo al interprete 
+del Shell de comando.
+
+
+.. _python_cls_slice:
+
+slice
+~~~~~
+
+La clase ``slice`` crea un objecto ``slice``, esto es usado por el extendido ``slicing`` 
+por ejemplo:
+
+::
+
+    >>> a = range(20)
+    >>> a[0:10:2]
+    [0, 2, 4, 6, 8]
+
+La sintaxis es la siguiente:
+
+::
+
+    >>> slice(stop)
+    >>> slice(start, stop[, step])
+
+
+.. todo:: TODO escribir sobre esta clase integrada.
+
+
 .. _python_cls_staticmethod:
 
 staticmethod
