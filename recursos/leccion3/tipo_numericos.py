@@ -4,10 +4,6 @@
 entero = 7
 print (entero, type(entero))
 
-# Entero long
-#entero_long = 7L
-#print (entero_long, type(entero_long))
-
 # Coma flotante o reales simple
 float_1, float_2, float_3 = 0.348, 10.5, 1.5e2
 print (float_1, type(float_1))
