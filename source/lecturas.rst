@@ -6,18 +6,16 @@
 Lecturas suplementarias del entrenamiento
 =========================================
 
-Siempre aprender un nuevo lenguaje de programación tiene nuevos retos 
-desde aprender sobre la filosofía del lenguaje y hasta léxicos propios 
-los cuales hacen característico el uso y expresión de sus programas con 
-este nuevo lenguaje, más esto requiere práctica y tiempo para lograr la 
-fluidez en hablar y escribir programas en Python.
+Siempre aprender un nuevo lenguaje de programación tiene nuevos retos desde aprender 
+sobre la filosofía del lenguaje y hasta léxicos propios los cuales hacen característico 
+el uso y expresión de sus programas con este nuevo lenguaje, más esto requiere práctica 
+y tiempo para lograr la fluidez en hablar y escribir programas en Python.
 
-Hay más contenido complementario o detallada que el contenido del entrenamiento 
-de las 10 lecciones cubiertas en este entrenamiento. Al finalizar, yo he 
-compilado una lista de lecturas relacionadas que soporta la información 
-que usted aprende en cada lección. Piensa que esto como materiales 
-suplementarios. Usted puede leerlo en su tiempo libre para ayudar a incrementar 
-tanto la profundidad y amplitud en su conocimiento.
+Hay más contenido complementario o detallada que el contenido del entrenamiento de las 
+10 lecciones cubiertas en este entrenamiento. Al finalizar, yo he compilado una lista 
+de lecturas relacionadas que soporta la información que usted aprende en cada lección. 
+Piensa que esto como materiales suplementarios. Usted puede leerlo en su tiempo libre 
+para ayudar a incrementar tanto la profundidad y amplitud en su conocimiento.
 
 Las lecturas están organizada como las lecciones y sus temas.
 
@@ -45,14 +43,19 @@ Introducción a Python
 
 - `Wikipedia - Python <https://es.wikipedia.org/wiki/Python>`_.
 
-.. seealso::
+- Ver la :numref:`anexos_CjmzDHMHxwU` anexo sobre la *introducción al Lenguaje de Programación*.
 
-    .. figure:: _static/youtube/CjmzDHMHxwU.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación <https://www.youtube.com/watch?v=CjmzDHMHxwU>`_,
-        cortesía de `CodigoFacilito.com`_.
+    .. seealso::
+
+        .. figure:: _static/youtube/CjmzDHMHxwU.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación <https://www.youtube.com/watch?v=CjmzDHMHxwU>`_,
+            cortesía de `CodigoFacilito.com`_.
 
 
 Instalación
@@ -62,30 +65,37 @@ Instalación
 
 - `PyPI - the Python Package Index <https://pypi.org/>`_.
 
-.. seealso::
+- Ver la :numref:`anexos_VTykmPa2KY` anexo sobre la *instalación*.
 
-    .. figure:: _static/youtube/VTykmP-a2KY.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 2 - Instalación <https://www.youtube.com/watch?v=VTykmP-a2KY>`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso::
+
+        .. figure:: _static/youtube/VTykmP-a2KY.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 2 - Instalación <https://www.youtube.com/watch?v=VTykmP-a2KY>`_, cortesía de `CodigoFacilito.com`_.
 
 
 Su primer programa
 ..................
 
-- `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_
+- `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_.
 
-.. seealso::
+- Ver la :numref:`anexos_OtJEj7N9T6k` anexo sobre *su primer programa*.
 
-    .. figure:: _static/youtube/OtJEj7N9T6k.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 3 - Hola Mundo <https://www.youtube.com/watch?v=OtJEj7N9T6k>`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso::
 
+        .. figure:: _static/youtube/OtJEj7N9T6k.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
 
-----
+            Vídeo `Tutorial Python 3 - Hola Mundo <https://www.youtube.com/watch?v=OtJEj7N9T6k>`_, cortesía de `CodigoFacilito.com`_.
 
 
 .. _lectura_extras_sesion2:
@@ -106,8 +116,6 @@ Inmersión al modo interactivo de Python
 - `La librería estándar de Python <https://docs.python.org/2/library/index.html>`_.
 
 - `Guía de aprendizaje de Python <http://pyspanishdoc.sourceforge.net/tut/tut.html>`_.
-
-----
 
 
 .. _lectura_extras_sesion3:
@@ -134,28 +142,38 @@ Operadores aritméticos, tipo enteros y reales
 
 - `Introducción a la programación en Python - clase 1 <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html>`_.
 
-.. seealso:: 
+- Ver la :numref:`anexos_ssnkfbBbcuw` anexo sobre los *operadores aritméticos, tipo enteros y reales*.
 
-    .. figure:: _static/youtube/ssnkfbBbcuw.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos <https://www.youtube.com/watch?v=ssnkfbBbcuw>`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso:: 
+
+        .. figure:: _static/youtube/ssnkfbBbcuw.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos <https://www.youtube.com/watch?v=ssnkfbBbcuw>`_, cortesía de `CodigoFacilito.com`_.
 
 
 Tipo booleanos y cadenas de caracteres 
 ......................................
 
-.. seealso:: 
+- Ver la :numref:`anexos_ZrxcqbFYjiw` anexo sobre los *tipo booleanos y cadenas de caracteres*.
 
-    .. figure:: _static/youtube/ZrxcqbFYjiw.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
-        cortesía de `CodigoFacilito.com`_.
+    .. seealso:: 
 
-.. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
+        .. figure:: _static/youtube/ZrxcqbFYjiw.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
+            cortesía de `CodigoFacilito.com`_.
+
+    .. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
 
 
 Tipo listas
@@ -197,26 +215,36 @@ Condicional if
 
 - `Conditional Expressions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#conditional-expressions>`_.
 
-.. seealso::
+- Ver la :numref:`anexos_hLqKvB7tGWk` anexo sobre las *sentencias condicionales*.
 
-    .. figure:: _static/youtube/hLqKvB7tGWk.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 10 - Sentencias condicionales <https://www.youtube.com/watch?v=hLqKvB7tGWk>`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso::
+
+        .. figure:: _static/youtube/hLqKvB7tGWk.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 10 - Sentencias condicionales <https://www.youtube.com/watch?v=hLqKvB7tGWk>`_, cortesía de `CodigoFacilito.com`_.
 
 
 Operadores lógicos
 ..................
 
-.. seealso:: 
+- Ver la :numref:`anexos_ZrxcqbFYjiw` anexo sobre los *tipo booleanos y cadenas de caracteres*.
 
-    .. figure:: _static/youtube/ZrxcqbFYjiw.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
-        cortesía de `CodigoFacilito.com`_.
+    .. seealso:: 
+
+        .. figure:: _static/youtube/ZrxcqbFYjiw.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
+            cortesía de `CodigoFacilito.com`_.
 
 
 Bucle while
@@ -226,13 +254,18 @@ Bucle while
 
 - `Ciclo while en Python <http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html>`_.
 
-.. seealso::
+- Ver la :numref:`anexos_IyI2ZuOq_xQ` anexo sobre los *bucles*.
 
-    .. figure:: _static/youtube/IyI2ZuOq_xQ.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso::
+
+        .. figure:: _static/youtube/IyI2ZuOq_xQ.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
 
 .. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
 
@@ -242,16 +275,18 @@ Bucle for
 
 - Introducción a `Bucles 'for' <http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-for>`_.
 
-.. seealso::
+- Ver la :numref:`anexos_IyI2ZuOq_xQ` anexo sobre los *bucles*.
 
-    .. figure:: _static/youtube/IyI2ZuOq_xQ.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso::
 
+        .. figure:: _static/youtube/IyI2ZuOq_xQ.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
 
-----
+            Vídeo `Tutorial Python 11 - Bucles`_, cortesía de `CodigoFacilito.com`_.
 
 
 .. _lectura_extras_sesion5:
@@ -269,13 +304,18 @@ Funciones definidas por el usuario
 
 - `Funciones de orden superior <https://github.com/josuemontano/python_intro/wiki/Funciones-de-orden-superior>`_.
 
-.. seealso::
+- Ver la :numref:`anexos__C7Uj7O5o_Q` anexo sobre las *funciones*.
 
-    .. figure:: _static/youtube/_C7Uj7O5o_Q.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 12 - Funciones <https://www.youtube.com/watch?v=_C7Uj7O5o_Q>`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso::
+
+        .. figure:: _static/youtube/_C7Uj7O5o_Q.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 12 - Funciones <https://www.youtube.com/watch?v=_C7Uj7O5o_Q>`_, cortesía de `CodigoFacilito.com`_.
 
 
 Programación estructurada
@@ -297,17 +337,19 @@ Lección 6 - Introspección a la depuración con pdb
 
 - `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://www.pybonacci.org/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
 
+- Ver la :numref:`anexos_N4NtB4r28h0` anexo sobre el *Python Debugger*.
 
-.. seealso::
+.. comments:
 
-    .. figure:: _static/youtube/N4NtB4r28h0.jpg
-        :align: center
-        :width: 60%
+    .. seealso::
 
-        Vídeo `Depurando um programa Python com pdb - Python Debugger <https://www.youtube.com/watch?v=N4NtB4r28h0>`_.
+        .. figure:: _static/youtube/N4NtB4r28h0.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
 
+            Vídeo `Depurando um programa Python com pdb - Python Debugger <https://www.youtube.com/watch?v=N4NtB4r28h0>`_.
 
-----
 
 .. _lectura_extras_sesion7:
 
@@ -322,22 +364,29 @@ Entrada / Salida en Python
 
 - `Python - Entrada / Salida. Ficheros <http://mundogeek.net/archivos/2008/04/02/python-entrada-salida-ficheros/>`_.
 
+- Ver la :numref:`anexos_AzeUCuMvW6I` anexo sobre la *entrada Estándar rawInput*.
 
-.. seealso::
+- Ver la :numref:`anexos_JPXgxK3Oc` anexo sobre la *salida Estándar rawInput*.
 
-    Ver los siguientes vídeos, cortesía de `CodigoFacilito.com`_:
+.. comments:
 
-    .. figure:: _static/youtube/AzeUCuMvW6I.jpg
-        :align: center
-        :width: 60%
+    .. seealso::
 
-        Vídeo `Tutorial Python 30 - Entrada Estándar rawInput <https://www.youtube.com/watch?v=AzeUCuMvW6I>`_.
+        Ver los siguientes vídeos, cortesía de `CodigoFacilito.com`_:
 
-    .. figure:: _static/youtube/JPXgxK3Oc.jpg
-        :align: center
-        :width: 60%
+        .. figure:: _static/youtube/AzeUCuMvW6I.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
 
-        Vídeo `Tutorial Python 31 - Salida Estándar rawInput <https://www.youtube.com/watch?v=B-JPXgxK3Oc>`_.
+            Vídeo `Tutorial Python 30 - Entrada Estándar rawInput <https://www.youtube.com/watch?v=AzeUCuMvW6I>`_.
+
+        .. figure:: _static/youtube/JPXgxK3Oc.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 31 - Salida Estándar rawInput <https://www.youtube.com/watch?v=B-JPXgxK3Oc>`_.
 
 
 Manipulación de archivos
@@ -396,16 +445,18 @@ Programación orientada a objetos
 
 - `What is the meaning of a single and a double underscore before an object name? <https://stackoverflow.com/questions/1301346/what-is-the-meaning-of-a-single-and-a-double-underscore-before-an-object-name>`_.
 
-.. seealso::
+- Ver la :numref:`anexos_VYXdpjCZojA` anexo sobre *Clases y Objetos*.
 
-    .. figure:: _static/youtube/VYXdpjCZojA.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 13 - Clases y Objetos <https://www.youtube.com/watch?v=VYXdpjCZojA>`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso::
 
+        .. figure:: _static/youtube/VYXdpjCZojA.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
 
-----
+            Vídeo `Tutorial Python 13 - Clases y Objetos <https://www.youtube.com/watch?v=VYXdpjCZojA>`_, cortesía de `CodigoFacilito.com`_.
 
 
 .. _lectura_extras_sesion10:
@@ -417,30 +468,43 @@ Lección 10 - Decoradores y la librería estándar
 Iteradores
 ..........
 
-.. seealso::
+- Ver el uso de :ref:`comprensión de listas <lectura_extras_sesion10_list_compre>`.
 
-    Ver los siguientes vídeos, cortesía de `CodigoFacilito.com`_:
+- Ver la :numref:`anexos_tvHbC_OZV14` anexo sobre *Generadores*.
 
-    .. figure:: _static/youtube/87s8XQbUv1k.jpg
-        :align: center
-        :width: 60%
+- Ver la :numref:`anexos_TaIWx9paNIA` anexo sobre *Decoradores*.
 
-        Vídeo `Tutorial Python 25 - Comprensión de Listas`_.
+.. comments:
 
-    .. figure:: _static/youtube/tvHbC_OZV14.jpg
-        :align: center
-        :width: 60%
+    .. seealso::
 
-        Vídeo `Tutorial Python 26 - Generadores <https://www.youtube.com/watch?v=tvHbC_OZV14>`_.
+        Ver los siguientes vídeos, cortesía de `CodigoFacilito.com`_:
 
-    .. figure:: _static/youtube/TaIWx9paNIA.jpg
-        :align: center
-        :width: 60%
+        .. figure:: _static/youtube/87s8XQbUv1k.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
 
-        Vídeo `Tutorial Python 27 - Decoradores <https://www.youtube.com/watch?v=TaIWx9paNIA>`_.
+            Vídeo `Tutorial Python 25 - Comprensión de Listas`_.
+
+        .. figure:: _static/youtube/tvHbC_OZV14.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 26 - Generadores <https://www.youtube.com/watch?v=tvHbC_OZV14>`_.
+
+        .. figure:: _static/youtube/TaIWx9paNIA.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 27 - Decoradores <https://www.youtube.com/watch?v=TaIWx9paNIA>`_.
 
 .. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
 
+
+.. _lectura_extras_sesion10_list_compre:
 
 Listas de comprensión
 .....................
@@ -448,12 +512,17 @@ Listas de comprensión
 
 - `List Comprehensions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#list-comprehensions>`_.
 
-.. seealso::
+- Ver la :numref:`anexos_87s8XQbUv1k` anexo sobre *Comprensión de Listas*.
 
-    .. figure:: _static/youtube/87s8XQbUv1k.jpg
-        :align: center
-        :width: 60%
+.. comments:
 
-        Vídeo `Tutorial Python 25 - Comprensión de Listas`_, cortesía de `CodigoFacilito.com`_.
+    .. seealso::
+
+        .. figure:: _static/youtube/87s8XQbUv1k.jpg
+            :align: center
+            :scale: 60%
+            :width: 60%
+
+            Vídeo `Tutorial Python 25 - Comprensión de Listas`_, cortesía de `CodigoFacilito.com`_.
 
 .. _`CodigoFacilito.com`: https://www.codigofacilito.com/
