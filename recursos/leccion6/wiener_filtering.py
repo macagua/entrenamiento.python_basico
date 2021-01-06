@@ -1,4 +1,5 @@
-""" Wiener filtering a noisy Lena: this module is buggy
+"""
+    Wiener filtering a noisy Lena: this module is buggy
 """
 
 import numpy as np

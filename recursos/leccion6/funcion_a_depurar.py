@@ -9,3 +9,4 @@ def calculo(cedula, *args):
     print cedula
 
 calculo(14522590, 12, 2334)
+
