@@ -411,7 +411,7 @@ la método :ref:`archivo.read() <python_mtd_read>` devuelve una excepción
     ValueError: I/O operation on closed file
 
 
-.. tip:: Para más detalles: http://docs.python.org/tutorial/inputoutput.html
+.. tip:: Para más detalles: https://docs.python.org/2.7/tutorial/inputoutput.html
 
 
 .. _python_mtd_flush:

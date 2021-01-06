@@ -365,7 +365,7 @@ Invoca el menú de ayuda del intérprete de Python:
     Welcome to Python 2.7!  This is the online help utility.
 
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at http://docs.python.org/2.7/tutorial/.
+    the tutorial on the Internet at https://docs.python.org/2.7/tutorial/.
 
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
@@ -439,7 +439,7 @@ Imprime el texto de la licencia.
     BeOpen.com to form the BeOpen PythonLabs team.  In October of the same
     year, the PythonLabs team moved to Digital Creations (now Zope
     Corporation, see http://www.zope.com).  In 2001, the Python Software
-    Foundation (PSF, see http://www.python.org/psf/) was formed, a
+    Foundation (PSF, see https://www.python.org/psf/) was formed, a
     non-profit organization created specifically to own Python-related
     Intellectual Property.  Zope Corporation is a sponsoring member of
     the PSF.

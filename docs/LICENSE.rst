@@ -29,4 +29,4 @@ Under the following terms:
   No additional restrictions — You may not apply legal terms or technological 
   measures that legally restrict others from doing anything the license permits.
 
-Detailed terms of the license: http://creativecommons.org/licenses/by-sa/3.0/ve/
+Detailed terms of the license: https://creativecommons.org/licenses/by-sa/3.0/ve/

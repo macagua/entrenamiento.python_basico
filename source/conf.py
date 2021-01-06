@@ -265,7 +265,7 @@ latex_elements = {
     \usepackage{pmboxdraw}
     \authoraddress{
       \strong{Covantec R.L., Santa Cruz de Mara, Mara, Zulia. 4046.}\\
-      \strong{Telf.} +58-426-771.35.73 / +58-414-979.80.83 / +58-262-879.18.80\\
+      \strong{Telf.} +58-414-979.80.83 / +58-426-771.35.73 / +58-262-879.18.80\\
       \strong{Contactos:} \email{covantec.ve@outlook.com} - 
       \url{https://github.com/Covantec/}
     }

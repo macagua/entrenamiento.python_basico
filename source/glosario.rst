@@ -316,7 +316,7 @@ A continuación una serie de términos usados en las tecnologías Python/Zope/Pl
 .. _`Configuración de Productos Adicionales`: http://localhost:8080/Plone/prefs_install_products_form
 .. _`su instalación`: http://localhost:8080/manage
 .. _`z3c.autoinclude`: https://pypi.org/project/z3c.autoinclude
-.. _`Paste`: https://paste.readthedocs.io/en/latest/
+.. _`Paste`: https://paste.readthedocs.io/en/latest/en/latest/
 .. _`buildout`: https://plone-spanish-docs.readthedocs.io/es/latest/buildout/replicacion_proyectos_python.html
 .. _`ZMI`: https://plone-spanish-docs.readthedocs.io/es/latest/zope/zmi/index.html
 .. _`portal_catalog`: https://plone-spanish-docs.readthedocs.io/es/latest/zope/zmi/index.html#portal-catalog

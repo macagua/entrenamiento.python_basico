@@ -68,7 +68,7 @@ Puede solicitar la ayudar del interprete de Python, ejecutando:
     Welcome to Python 2.7!  This is the online help utility.
 
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at http://docs.python.org/2.7/tutorial/.
+    the tutorial on the Internet at https://docs.python.org/2.7/tutorial/.
 
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
