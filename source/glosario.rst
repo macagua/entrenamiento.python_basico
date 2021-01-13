@@ -6,7 +6,7 @@ Glosario
 ========
 
 :Autor(es): Leonardo J. Caballero G.
-:Correo(s): leonardocaballero@gmail.com
+:Correo(s): leonardoc@plone.org
 :Compatible con: Python 2.x, Python 3.x
 :Fecha: 15 de Diciembre de 2018
 
