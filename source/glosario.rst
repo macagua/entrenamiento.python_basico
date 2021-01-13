@@ -8,7 +8,7 @@ Glosario
 :Autor(es): Leonardo J. Caballero G.
 :Correo(s): leonardoc@plone.org
 :Compatible con: Python 2.x, Python 3.x
-:Fecha: 15 de Diciembre de 2018
+:Fecha: 11 de Enero de 2021
 
 A continuación una serie de términos usados en las tecnologías Python/Zope/Plone.
 

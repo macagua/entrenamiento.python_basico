@@ -11,7 +11,7 @@ Scaffolding en proyectos Python
     :Autor(es): Leonardo J. Caballero G.
     :Correo(s): leonardoc@plone.org
     :Compatible con: Python 2.4 o versiones superiores
-    :Fecha: 08 de Octubre de 2018
+    :Fecha: 11 de Enero de 2021
 
 .. _scaffolding_python:
 
