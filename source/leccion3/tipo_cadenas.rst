@@ -170,7 +170,7 @@ seguido de cualquier carácter ASCII.
 También es posible encerrar una cadena entre triples comillas (simples o dobles). De 
 esta forma puede escribir el texto en varias líneas, y al imprimir la cadena, se 
 respetarán los saltos de línea que se introdujeron sin tener que recurrir a los 
-carácteres escapados y las comillas como los anteriores.
+caracteres escapados y las comillas como los anteriores.
 
 
 .. _python_str_operaciones:

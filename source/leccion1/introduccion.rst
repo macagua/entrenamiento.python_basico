@@ -108,7 +108,7 @@ paquetes de Python* alberga miles de módulos de terceros para Python.
     :align: center
     :width: 70%
 
-    Aplicaciones estan disponibles en el Python Package Index (PyPI).
+    Aplicaciones están disponibles en el Python Package Index (PyPI).
 
 Tanto la biblioteca estándar de Python como los módulos aportados por la comunidad 
 permiten infinitas posibilidades.

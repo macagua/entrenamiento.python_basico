@@ -37,7 +37,7 @@ Enteros
 Los números enteros son aquellos que no tienen decimales, tanto positivos como negativos 
 (además del cero). En Python se pueden representar mediante el tipo ``int`` (de integer, 
 entero) o el tipo ``long`` (largo). La única diferencia es que el tipo long permite 
-almacenarnúmeros más grandes. Es aconsejable no utilizar el tipo ``long`` a menos que
+almacenar números más grandes. Es aconsejable no utilizar el tipo ``long`` a menos que
 sea necesario, para no malgastar memoria.
 
 El tipo ``int`` de Python se implementa a bajo nivel mediante un tipo ``long`` de C. 

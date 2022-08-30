@@ -15,7 +15,7 @@ relacionales (comparaciones entre valores):
 Operador ==
 ...........
 
-El operador ``==`` evalua que los valores sean *iguales* para varios tipos de datos.
+El operador ``==`` evalúa que los valores sean *iguales* para varios tipos de datos.
 
 ::
 
@@ -36,7 +36,7 @@ El operador ``==`` evalua que los valores sean *iguales* para varios tipos de da
 Operador !=
 ...........
 
-El operador ``!=`` evalua si los valores son *distintos*.
+El operador ``!=`` evalúa si los valores son *distintos*.
 
 ::
 
@@ -53,7 +53,7 @@ El operador ``!=`` evalua si los valores son *distintos*.
 Operador <
 ..........
 
-El operador ``<`` evalua si el valor del lado izquierdo es *menor que* el valor del 
+El operador ``<`` evalúa si el valor del lado izquierdo es *menor que* el valor del 
 lado derecho.
 
 ::
@@ -67,7 +67,7 @@ lado derecho.
 Operador >
 ..........
 
-El operador ``>`` evalua si el valor del lado izquierdo es *mayor que* el valor del 
+El operador ``>`` evalúa si el valor del lado izquierdo es *mayor que* el valor del 
 lado derecho.
 
 ::
@@ -81,7 +81,7 @@ lado derecho.
 Operador <=
 ...........
 
-El operador ``<=`` evalua si el valor del lado izquierdo es *menor o igual que* el 
+El operador ``<=`` evalúa si el valor del lado izquierdo es *menor o igual que* el 
 valor del lado derecho.
 
 ::
@@ -95,7 +95,7 @@ valor del lado derecho.
 Operador >=
 ...........
 
-El operador ``>=`` evalua si el valor del lado izquierdo es *mayor o igual que* el 
+El operador ``>=`` evalúa si el valor del lado izquierdo es *mayor o igual que* el 
 valor del lado derecho.
 
 ::
