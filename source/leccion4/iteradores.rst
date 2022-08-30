@@ -54,7 +54,7 @@ Iteradores y secuencias
 Los *iteradores* se usan con los tipos de secuencias estándar. A continuación, 
 se describen algunos ejemplos:
 
-**Iterar sobre la secuencia inmutable cadena de caracter**
+**Iterar sobre la secuencia inmutable cadena de carácter**
 
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de 
 tipo :ref:`cadena de caracteres <python_str>` ``ASCII``:

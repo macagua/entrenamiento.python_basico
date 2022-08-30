@@ -93,7 +93,7 @@ Otros tipos de datos incorporados, se describen a continuación:
 Objectos Type
 -------------
 
-Los objectos Type representan the various object types.  Un objecto type es accedido por 
+Los objectos Type representan los diversos tipos de objetos. Un objecto type es accedido por 
 la función integrada :ref:`type() <python_fun_type>`. No hay operaciones especiales 
 en los tipos. El módulo estándar ``types`` defines los nombres para todos los tipos 
 integrados estándar.
