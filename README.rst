@@ -1,10 +1,10 @@
 .. -*- coding: utf-8 -*-
 
 =========================================================
-Entrenamiento "Programación en Python 2.7 - Nivel básico"
+Entrenamiento "Programación en Python 3.7 - Nivel básico"
 =========================================================
 
-Repositorio de manuales y recursos del entrenamiento "Programación en `Python 2.7`_ - Nivel 
+Repositorio de manuales y recursos del entrenamiento "Programación en `Python 3.7`_ - Nivel 
 básico" realizado por la empresa `Covantec R.L`_.
 
 .. contents :: :local:
@@ -46,7 +46,7 @@ los siguientes comando:
 
   $ sudo apt install python-pip python-setuptools git
   $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils texlive-font-utils texlive-fonts-recommended texlive-latex-extra texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
-  $ sudo pip2.7 install virtualenv
+  $ sudo pip3.7 install virtualenv
 
 
 Descargar repositorio
@@ -142,6 +142,6 @@ directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como el idioma Espa�
 (LICENSE.es.rst).
 
 .. _`Covantec R.L`: https://github.com/Covantec
-.. _`Python 2.7`: https://docs.python.org/2.7/
+.. _`Python 3.7`: https://docs.python.org/3.7/
 .. _`entrenamiento.python_basico`: https://github.com/Covantec/entrenamiento.python_basico
 .. _`ticket de soporte`: https://github.com/Covantec/entrenamiento.python_basico/issues/new

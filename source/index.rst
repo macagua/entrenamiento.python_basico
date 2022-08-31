@@ -4,11 +4,11 @@
    contain the root `toctree` directive.
 
 =========================================
-Programación en Python 2.7 - Nivel básico
+Programación en Python 3.7 - Nivel básico
 =========================================
 
 Repositorio de manuales y recursos del entrenamiento 
-**"Programación en `Python 2.7`_ - Nivel básico"** realizado por 
+**"Programación en `Python 3.7`_ - Nivel básico"** realizado por 
 la empresa `Covantec R.L`_.
 
 .. sidebar:: Sobre este entrenamiento
@@ -71,4 +71,4 @@ Búsqueda
 * :ref:`search`
 
 .. _`Covantec R.L`: https://github.com/Covantec
-.. _`Python 2.7`: https://docs.python.org/2.7/
+.. _`Python 3.7`: https://docs.python.org/3.7/
