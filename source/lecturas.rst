@@ -525,4 +525,4 @@ Listas de comprensión
 
             Vídeo `Tutorial Python 25 - Comprensión de Listas`_, cortesía de `CodigoFacilito.com`_.
 
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+.. _`CodigoFacilito.com`: https://codigofacilito.com/
