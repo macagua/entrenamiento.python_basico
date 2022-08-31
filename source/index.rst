@@ -7,9 +7,9 @@
 Programación en Python 2.7 - Nivel básico
 =========================================
 
-Repositorio de manuales y recursos del entrenamiento 
-**"Programación en `Python 2.7`_ - Nivel básico"** realizado por 
-la empresa `Covantec R.L`_.
+Repositorio de manuales y recursos del entrenamiento
+**"Programación en** `Python 2.7`_ **- Nivel básico"**
+realizado por la empresa `Covantec R.L`_.
 
 .. sidebar:: Sobre este entrenamiento
 
