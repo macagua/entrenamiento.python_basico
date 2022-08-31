@@ -65,7 +65,7 @@ comando:
 
 ::
 
-  $ cd ~/entrenamiento.python_basico
+  $ cd $HOME/entrenamiento.python_basico
   $ virtualenv --python=/usr/bin/python2.7 venv
   (venv)$ source ./venv/bin/activate
 
@@ -106,7 +106,7 @@ siguientes comando:
 ::
 
 
-  (venv)$ make pdf
+  (venv)$ make latexpdf
 
 Una vez generado el PDF se puede abrir desde el directorio 
 ``build/latex/entrenamientopython_basico.pdf``
