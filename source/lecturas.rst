@@ -109,9 +109,9 @@ Inmersión al modo interactivo de Python
 
 - `Una pequeña inmersión al modo interactivo de Python <https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/>`_ de la fundación Cenditel.
 
-- `Guide to Python introspection <https://www.ibm.com/developerworks/linux/library/l-pyint/index.html>`_.
+- `A Guide To Object Introspection in Python <https://www.zeolearn.com/magazine/a-guide-to-object-introspection-in-python>`_.
 
-- `Inmersión en Python <http://www.diveintopython3.net/>`_.
+- `Inmersión en Python <https://diveintopython3.net/>`_.
 
 - `La librería estándar de Python <https://docs.python.org/2/library/index.html>`_.
 
@@ -132,15 +132,15 @@ Variables y constantes
 
 - `Python Variables, Constants and Literals <https://www.programiz.com/python-programming/variables-constants-literals>`_.
 
-- `Built-in Constants — Python 2.7.15 documentation <https://docs.python.org/2/library/constants.html>`_.
+- `Built-in Constants — Python 3.7 documentation <https://docs.python.org/es/3.7/library/constants.html>`_.
 
 
 Operadores aritméticos, tipo enteros y reales
 .............................................
 
-- `orden de precedencia - operadores aritméticos <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html#orden-de-precedencia>`_.
+- `orden de precedencia - operadores aritméticos <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/2014/CursoPython_clase01.html#orden-de-precedencia>`_.
 
-- `Introducción a la programación en Python - clase 1 <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase01.html>`_.
+- `Introducción a la programación en Python - clase 1 <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/2014/CursoPython_clase01.html>`_.
 
 - Ver la :numref:`anexos_ssnkfbBbcuw` anexo sobre los *operadores aritméticos, tipo enteros y reales*.
 
@@ -179,21 +179,21 @@ Tipo booleanos y cadenas de caracteres
 Tipo listas
 ...........
 
-- `Iterate over any sequence - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#iterate-over-any-sequence>`_.
+- `Iterando sobre una secuencia - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#iterando-sobre-una-secuencia>`_.
 
-- `Listas I - clase 3 - Introducción a la programación en Python <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/CursoPython_clase03.html#Listas-I>`_.
+- `Listas I - clase 3 - Introducción a la programación en Python <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/2014/CursoPython_clase03.html#Listas-I>`_.
 
 
 Tipo tuplas
 ...........
 
-- `Keeping track of enumeration number - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#keeping-track-of-enumeration-number>`_.
+- `Seguimiento de una enumeración - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#seguimiento-de-una-enumeracion>`_.
 
 
 Tipo diccionarios
 .................
 
-- `Looping over a dictionary - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#looping-over-a-dictionary>`_.
+- `Bucle sobre un diccionario - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#bucle-sobre-un-diccionario>`_.
 
 
 .. _lectura_extras_sesion4:
@@ -213,7 +213,7 @@ Condicional if
 
 - `Condicionales if y else en Python <http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html>`_.
 
-- `Conditional Expressions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#conditional-expressions>`_.
+- `Expresiones condicionales - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#expresiones-condicionales>`_.
 
 - Ver la :numref:`anexos_hLqKvB7tGWk` anexo sobre las *sentencias condicionales*.
 
@@ -300,7 +300,7 @@ Funciones definidas por el usuario
 
 - `Introducción a Funciones <http://docs.python.org.ar/tutorial/2/controlflow.html#definiendo-funciones>`_ - ¿Por qué?.
 
-- `Defining functions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/functions.html>`_.
+- `Definiendo una función - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/functions.html#definiendo-una-funcion>`_.
 
 - `Funciones de orden superior <https://github.com/josuemontano/python_intro/wiki/Funciones-de-orden-superior>`_.
 
@@ -321,11 +321,11 @@ Funciones definidas por el usuario
 Programación estructurada
 .........................
 
-- `Reusing code: scripts and modules - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/reusing_code.html>`_.
+- `Reusando código: scripts y módulos - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/reusing_code.html>`_.
 
 - `Programación estructurada <https://es.wikipedia.org/wiki/Programación_estructurada>`_.
 
-- `Paseo por la programación estructurada y modular con Python - Rosalía Peña Ros <http://www.aenui.net/ojs/index.php?journal=revision&page=article&op=viewArticle&path%5B%5D=184>`_.
+- `Paseo por la programación estructurada y modular con Python - Rosalía Peña Ros <https://www.scribd.com/document/545079783/articulo-paseo>`_.
 
 
 .. _lectura_extras_sesion6:
@@ -335,7 +335,7 @@ Lección 6 - Introspección a la depuración con pdb
 
 - `pdb — The Python Debugger <https://docs.python.org/2/library/pdb.html>`_.
 
-- `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://www.pybonacci.org/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
+- `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://claudiovz.github.io/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
 
 - Ver la :numref:`anexos_N4NtB4r28h0` anexo sobre el *Python Debugger*.
 
@@ -392,7 +392,7 @@ Entrada / Salida en Python
 Manipulación de archivos
 ........................
 
-- `Input and Output - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/io.html>`_.
+- `Entrada y Salida - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/io.html>`_.
 
 
 .. _lectura_extras_sesion8:
@@ -404,13 +404,13 @@ Lección 8 - Módulos, paquetes y distribución de software
 Módulos Python
 ..............
 
-- `Reusing code: scripts and modules - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/reusing_code.html>`_.
+- `Reusando código: scripts y módulos - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/reusing_code.html>`_.
 
 
 Distribución de Software
 ........................
 
-- `Packaging Python Projects <https://packaging.python.org/tutorials/packaging-projects/>`_.
+- `Packaging Python Projects <https://packaging.python.org/en/latest/tutorials/packaging-projects/>`_.
 
 
 Scaffolding en proyectos Python
@@ -439,7 +439,7 @@ Programación orientada a objetos
 
 - `Clases — Tutorial de Python v2.7.0 <http://docs.python.org.ar/tutorial/2/classes.html>`_.
 
-- `Object-oriented programming (OOP) - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/oop.html>`_.
+- `Programación Orientada a Objetos (POO) - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/oop.html>`_.
 
 - `What's the meaning of underscores (_ & __) in Python variable names? <https://www.youtube.com/watch?v=ALZmCy2u0jQ>`_.
 
@@ -510,7 +510,7 @@ Listas de comprensión
 .....................
 
 
-- `List Comprehensions - Scipy lecture notes <https://www.pybonacci.org/scipy-lecture-notes-ES/intro/language/control_flow.html#list-comprehensions>`_.
+- `Listas por comprensión - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#listas-por-comprension>`_.
 
 - Ver la :numref:`anexos_87s8XQbUv1k` anexo sobre *Comprensión de Listas*.
 
