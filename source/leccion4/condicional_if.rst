@@ -14,7 +14,7 @@ A continuación un de estructura condicional ``if``/``elif``/``else`` completo:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 56-66
+    :lines: 48-58
 
 En el ejemplo anterior usa dos funciones integradas en el interprete Python:
 
@@ -178,56 +178,56 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 5
+    :lines: 3
 
 
 **Ejemplo de operador de comparación Igual**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 13-16
+    :lines: 11-14
 
 
 **Ejemplo de operador de comparación Distinto**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 19-22
+    :lines: 17-20
 
 
 **Ejemplo de operador de comparación Diferente**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 25-28
+    :lines: 17-20
 
 
 **Ejemplo de operador de comparación Menor que**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 31-34
+    :lines: 23-26
 
 
 **Ejemplo de operador de comparación Mayor que**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 37-40
+    :lines: 29-32
 
 
 **Ejemplo de operador de comparación Menor o igual que**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 43-46
+    :lines: 35-38
 
 
 **Ejemplo de operador de comparación Mayor o igual que**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :lines: 49-52
+    :lines: 41-44
 
 
 ----

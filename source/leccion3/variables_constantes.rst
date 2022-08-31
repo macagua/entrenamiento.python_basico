@@ -182,13 +182,13 @@ Crear un archivo llamado ``constantes.py`` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/constantes.py
     :language: python
-    :lines: 5-9
+    :lines: 4-8
 
 Crear un archivo llamado ``main.py`` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/main.py
     :language: python
-    :lines: 4-9
+    :lines: 2-7
 
 Luego ejecuta el programa de la siguiente forma:
 

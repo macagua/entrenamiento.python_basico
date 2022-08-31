@@ -8,7 +8,7 @@ def iva():
     print ("El calculo de IVA es: " + str(calculo) + "\n")
 
 
-def suma(numero1,numero2):
+def suma(numero1, numero2):
     '''función la cual suma dos números'''
     print (numero1 + numero2)
     print ("\n")
@@ -40,7 +40,7 @@ iva()
 mensaje1 = "Suma de dos números"
 print (mensaje1)
 print ("=" * len(mensaje1) + "\n")
-suma(13,37)
+suma(13, 37)
 
 
 mensaje2 = "Sucesión de Fibonacci"
@@ -51,4 +51,3 @@ print ("=" * len(mensaje2) + "\n")
 
 #print ("\nLa sucesión Fibonacci hasta 50 es:", devuelve_fibonacci(50))
 print ("La sucesión Fibonacci hasta 50 es:", devuelve_fibonacci(50))
-

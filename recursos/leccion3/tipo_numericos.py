@@ -4,6 +4,10 @@
 entero = 7
 print (entero, type(entero))
 
+# Entero long
+enterol = 23L
+print (enterol, type(enterol))
+
 # Coma flotante o reales simple
 float_1, float_2, float_3 = 0.348, 10.5, 1.5e2
 print (float_1, type(float_1))
@@ -18,4 +22,3 @@ print (real, type(real))
 # Este número es de tipo Complex
 complejo = 3.14j
 print (complejo, complejo.imag, complejo.real, type(complejo))
-

@@ -79,4 +79,3 @@ while variable > 0:
    if variable == 5:
       continue
    print ("Actual valor de variable:", variable)
-

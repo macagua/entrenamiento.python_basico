@@ -83,4 +83,3 @@ else:
 $ psql -h {server} -p {port} -U {user} -d {db_name}""".format(
         server=db_connection[0], port=db_connection[1], 
         user=db_connection[2], db_name=db_connection[3]))
-

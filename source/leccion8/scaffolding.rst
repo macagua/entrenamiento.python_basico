@@ -231,15 +231,17 @@ Si desea trabajar con algún proyecto de desarrollo basado en esqueletos o plant
 desarrollo y proceso a instalarlo con `easy_install`_ o `PIP`_ (como se explico anteriormente) y siga sus respectivas instrucciones para lograr con éxito la tarea deseada.
 
 
-Descarga código fuente
-......................
+.. comments:
 
-Para descargar el código fuente de este ejemplo ejecute el siguiente 
-comando:
+    Descarga código fuente
+    ......................
 
-.. code-block:: sh
+    Para descargar el código fuente de este ejemplo ejecute el siguiente 
+    comando:
 
-  $ svn co https://svn.plone.org/svn/collective/spanishdocs/tags/0.1rc/src/mini-tutoriales/mipaquetepython/ mipaquetepython
+    .. code-block:: sh
+
+      $ svn co https://svn.plone.org/svn/collective/spanishdocs/tags/0.1rc/src/mini-tutoriales/mipaquetepython/ mipaquetepython
 
 
 Referencias

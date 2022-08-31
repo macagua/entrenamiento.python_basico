@@ -29,7 +29,7 @@ conteo:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
-    :lines: 12-17
+    :lines: 10-15
 
 En este ejemplo tiene un contador con un valor inicial de cero, cada iteración del 
 ``while`` manipula esta variable de manera que incremente su valor en 1, por lo que 
@@ -49,7 +49,7 @@ por Evento:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
-    :lines: 27-37
+    :lines: 25-35
 
 En este casi el evento que se dispara cuando el usuario ingresa el valor ``-1``, 
 causando que el bucle ``while`` se interrumpo o no se inicie.
@@ -67,7 +67,7 @@ El nombre de la sentencia :ref:`else <python_sent_else>` es equivocada, ya que e
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
-    :lines: 47-57
+    :lines: 45-55
 
 La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis 
 que en las demás estructuras de control.
@@ -90,7 +90,7 @@ sentencia ``break``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
-    :lines: 64-70
+    :lines: 62-68
 
 Adicionalmente existe una forma alternativa de interrumpir o cortar los ciclos utilizando 
 la palabra reservada ``break``.
@@ -110,7 +110,7 @@ sentencia ``continue``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
-    :lines: 77-83
+    :lines: 75-81
 
 La sentencia ``continue`` hace que pase de nuevo al principio del bucle aunque no 
 se haya terminado de ejecutar el ciclo anterior.
@@ -128,7 +128,7 @@ con bucle ``while``:
 
 .. literalinclude:: ../../recursos/leccion4/fibonacci.py
     :language: python
-    :lines: 6-9
+    :lines: 4-7
 
 
 ----

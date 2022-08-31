@@ -121,14 +121,14 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
     :language: python
-    :lines: 7-9
+    :lines: 6-8
 
 
 **Ejemplo de operadores booleanos**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
     :language: python
-    :lines: 15-20
+    :lines: 14-19
 
 
 ----

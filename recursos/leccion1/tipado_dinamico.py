@@ -18,4 +18,3 @@ print (variable, type(variable))
 # "variable" guarda un valor string
 variable = "activo"
 print (variable, type(variable))
-

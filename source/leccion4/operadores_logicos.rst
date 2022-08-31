@@ -68,28 +68,28 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
-    :lines: 5
+    :lines: 3
 
 
 **Ejemplo de operador lógico and**:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
-    :lines: 14-18
+    :lines: 11-15
 
 
 **Ejemplo de operador lógico or**:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
-    :lines: 23-29
+    :lines: 20-26
 
 
 **Ejemplo de operador lógico not**:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
-    :lines: 34-38
+    :lines: 31-35
 
 
 ----

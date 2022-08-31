@@ -111,53 +111,53 @@ Ejemplos
 
 A continuación, se presentan algunos ejemplos de su uso:
 
-**Ejemplo de definir variables numéricas**
+**Ejemplo de definir variables de tipo numéricas, cadenas y listas**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
-    :lines: 4-6
+    :lines: 3-5
 
 
 **Ejemplo de operador relacional Igual**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
-    :lines: 9-16
+    :lines: 8-9
 
 
 **Ejemplo de operador relacional Diferente**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
-    :lines: 19-23
+    :lines: 18-19
 
 
 **Ejemplo de operador relacional Menor que**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
-    :lines: 26-27
+    :lines: 25-26
 
 
 **Ejemplo de operador relacional Mayor que**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
-    :lines: 30-31
+    :lines: 29-30
 
 
 **Ejemplo de operador relacional Menor o igual que**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
-    :lines: 34-35
+    :lines: 33-34
 
 
 **Ejemplo de operador relacional Mayor o igual que**
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
-    :lines: 38-39
+    :lines: 37-38
 
 
 ----

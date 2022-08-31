@@ -33,9 +33,9 @@ La sentencia ``def`` es una definición de función usada para crear objetos **f
 definidas por el usuario**.
 
 Una definición de función es una sentencia ejecutable. Su ejecución enlaza el nombre 
-de la función en el namespace local actual a un objecto función (un envoltorio 
+de la función en el *namespace* local actual a un objecto función (un envoltorio 
 alrededor del código ejecutable para la función). Este objeto función contiene una 
-referencia al namespace local global como el namespace global para ser usado cuando 
+referencia al *namespace* local global como el *namespace* global para ser usado cuando 
 la función es llamada.
 
 La definición de función no ejecuta el cuerpo de la función; esto es ejecutado solamente 
@@ -334,14 +334,22 @@ se hace *devolviendo valores*. A continuación, un ejemplo de función usando ``
 
 .. literalinclude:: ../../recursos/leccion5/funciones.py
     :language: python
-    :lines: 13-16
+    :lines: 25-32
 
 Esta función se llama de la siguiente forma:
 
 ::
 
-    >>> suma(23,74)
-    97
+    >>> devuelve_fibonacci(10)
+    [1, 1, 2, 3, 5, 8]
+
+.. comments:
+
+    ::
+
+        >>> suma(23,74)
+        97
+
 
 .. note:: Por defecto, las funciones retorna el valor :ref:`None <python_obj_none>`.
 
@@ -395,7 +403,7 @@ A continuación, se presenta un ejemplo del uso de definir funciones:
 
 .. literalinclude:: ../../recursos/leccion5/funciones.py
     :language: python
-    :lines: 5-10
+    :lines: 3-8
 
 
 **Invocar funciones**
@@ -415,13 +423,13 @@ A continuación, se presenta un ejemplo del uso de funciones con argumentos múl
 
 .. literalinclude:: ../../recursos/leccion5/funciones.py
     :language: python
-    :lines: 13-16
+    :lines: 11-14
 
 Y se llama de la siguiente forma:
 
 ::
 
-    >>> suma(23,74)
+    >>> suma(23, 74)
     97
 
 

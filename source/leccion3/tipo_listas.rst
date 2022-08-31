@@ -331,46 +331,46 @@ Ejemplos
 
 A continuación, se presentan algunos ejemplos de su uso:
 
-**Ejemplo de establecer una colección ordenada/arreglos o vectores**
+**Ejemplo de definir una colección ordenada/arreglos o vectores**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
-    :lines: 9-10
+    :lines: 6-7
 
 
 **Ejemplo de acceder a un elemento especifico de una lista**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
-    :lines: 13-14
+    :lines: 10-11
 
 
-**Ejemplo de acceder a un elemento a una lista anidada**
-
-.. literalinclude:: ../../recursos/leccion3/tipo_listas.py
-    :language: python
-    :lines: 17-18
-
-
-**Ejemplo de establecer nuevo valor de un elemento de lista**
+**Ejemplo de acceder a un elemento en una lista anidada**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
-    :lines: 21-23
+    :lines: 14-15
+
+
+**Ejemplo de definir nuevo valor de un elemento de lista**
+
+.. literalinclude:: ../../recursos/leccion3/tipo_listas.py
+    :language: python
+    :lines: 18-19
 
 
 **Ejemplo de obtener un rango de elemento especifico**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
-    :lines: 26-27
+    :lines: 23-24
 
 
 **Ejemplos de obtener un rango con saltos de elementos específicos**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
-    :lines: 30-33
+    :lines: 27-28
 
 **Ejemplo de iterar sobre cualquier secuencia**
 

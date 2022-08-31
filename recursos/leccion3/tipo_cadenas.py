@@ -3,19 +3,19 @@
     encerrado entre comillas simples ('cadena') o dobles ("cadena").
 """
 
-# Comillas simples
+# Definir comillas simples
 cadena1 = 'Texto entre comillas simples,'
 print (cadena1, type(cadena1))
 
-# Comillas dobles
+# Definir comillas dobles
 cadena2 = "Texto entre comillas dobles,"
 print (cadena2, type(cadena2))
 
-# Cadena con código escapes
+# Definir cadena con código escapes
 cadena3 = 'Texto entre \n\tcomillas simples,'
 print (cadena3, type(cadena3))
 
-# Cadena varias lineas
+# Definir cadena varias lineas
 cadena4 = """Texto linea 1
 linea 2
 linea 3

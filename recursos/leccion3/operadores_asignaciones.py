@@ -26,4 +26,3 @@ print ("Operador **= | El valor de variable 'c' es ", c)
 
 c //= a
 print ("Operador //= | El valor de variable 'c' es ", c)
-

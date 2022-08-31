@@ -59,7 +59,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 5-6
+    :lines: 4-5
 
 
 .. _python_num_entero_long:
@@ -114,7 +114,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 9-10
+    :lines: 8-9
 
 
 ----
@@ -171,18 +171,18 @@ Ejemplo de enteros float
 
 A continuación, se presentan un ejemplo de su uso:
 
-**Ejemplo de definición de tipo entero coma flotante**
+**Ejemplo de definir tipo entero coma flotante**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 13-16
+    :lines: 12-15
 
 
-**Ejemplo de definición de tipo entero coma flotante con exponente en base 10**
+**Ejemplo de definir tipo entero coma flotante con exponente en base 10**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 20-21
+    :lines: 19-20
 
 ----
 
@@ -222,7 +222,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 24-25
+    :lines: 23-24
 
 
 Convertir a numéricos

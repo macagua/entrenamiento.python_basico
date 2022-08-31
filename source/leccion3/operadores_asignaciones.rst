@@ -205,7 +205,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_asignaciones.py
     :language: python
-    :lines: 4-29
+    :lines: 3-28
 
 ----
 

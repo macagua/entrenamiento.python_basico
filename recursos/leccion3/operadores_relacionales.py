@@ -36,4 +36,3 @@ print (h)
 # Mayor o igual que
 g = b1 >= c1
 print (g)
-

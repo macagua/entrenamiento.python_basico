@@ -35,7 +35,7 @@ ejemplo de este concepto:
 
 .. literalinclude:: ../../recursos/leccion1/fuertemente_tipados.py
     :language: python
-    :lines: 19-24
+    :lines: 17-22
 
 
 .. _python_tipado_dinamico:
@@ -49,7 +49,7 @@ A continuación un ejemplo de este concepto:
 
 .. literalinclude:: ../../recursos/leccion1/tipado_dinamico.py
     :language: python
-    :lines: 16-21
+    :lines: 14-20
 
 
 .. _python_multiplataforma:
@@ -67,7 +67,7 @@ su ejecución:
 
   .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en Windows <python_instalacion_windows>`.
 
-- Versiones Python para `Mac OSX (Macintosh) <https://www.python.org/downloads/mac-osx/>`_ 
+- Versiones Python para `macOS (Macintosh) <https://www.python.org/downloads/macos/>`_
   (arquitectura 32bit/64bit en presentación de instalador ejecutable).
 
   .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en una Mac <python_instalacion_mac>`.
@@ -82,14 +82,14 @@ su ejecución:
   la versión "tradicional" de Python (tiene nombre código ``CPython``). Existen un número de 
   implementaciones alternativas que están disponibles a continuación:
 
-    - `IronPython <http://ironpython.net/>`_, Python ejecutando en .NET.
+    - `IronPython <https://ironpython.net/>`_, Python ejecutando en .NET.
 
-    - `Jython <http://www.jython.org/>`_, Python ejecutando en el Java Virtual Machine.
+    - `Jython <https://www.jython.org/>`_, Python ejecutando en el Java Virtual Machine.
 
-    - `PyPy <http://pypy.org/>`_, Una rápida implementación de python con un compilador JIT.
+    - `PyPy <https://www.pypy.org/>`_, Una rápida implementación de python con un compilador JIT.
 
-    - `Stackless Python <http://www.stackless.com/>`_, Una rama del desarrollo del ``CPython`` 
-      que soporta microthreads.
+    - `Stackless Python <https://github.com/stackless-dev/stackless/wiki/>`_, Una rama del desarrollo
+      del ``CPython`` que soporta microthreads.
 
     - `MicroPython <http://micropython.org/>`_, Python ejecutando en micro controladores.
 
@@ -101,7 +101,7 @@ su ejecución:
     - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un 
       completo entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
 
-    - `ActivePython <http://www.activestate.com/activepython/>`_, Python para Solaris, Usted puede 
+    - `ActivePython <https://www.activestate.com/products/python/>`_, Python para Solaris, Usted puede 
       comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
       no de código abierto), o compilar desde una fuente si tiene un compilador de C.
       Los paquetes UNIX tienen una variedad de versiones de Python para una variedad de versiones de 
@@ -186,7 +186,7 @@ También se incluye como un *huevo de pascua*, el cual se puede encontrar, desde
 
 
 .. _`características`: https://es.wikipedia.org/wiki/Python#Características_y_paradigmas
-.. _`multiparadigma`: https://es.wikipedia.org/wiki/Lenguaje_de_programación_multiparadigma
+.. _`multiparadigma`: https://es.wikipedia.org/wiki/Categor%C3%ADa:Lenguajes_de_programaci%C3%B3n_multiparadigma
 .. _`programación estructurada`: https://es.wikipedia.org/wiki/Programación_estructurada
 .. _`programación imperativa`: https://es.wikipedia.org/wiki/Programación_imperativa
 .. _`programación funcional`: https://es.wikipedia.org/wiki/Programación_funcional

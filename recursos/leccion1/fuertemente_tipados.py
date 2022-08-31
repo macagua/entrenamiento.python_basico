@@ -20,4 +20,3 @@ valor1, valor2 = 2, "5"
 total = valor1 + int(valor2)
 # se usa el metodo str() para convertir a cadena
 print ("El total es: " + str(total))
-

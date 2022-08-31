@@ -30,4 +30,3 @@ if (hay_tequeno and hay_fresco):
     print ("Desayuno vergatario!!!")
 else:
     print ("Desayuno ligero")
-

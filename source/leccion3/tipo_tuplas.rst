@@ -86,25 +86,25 @@ Ejemplos
 
 A continuación, se presentan algunos ejemplos de su uso:
 
-**Ejemplo simple de tupla**
+**Ejemplo de definir simple de tupla**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :lines: 9-9
+    :lines: 7-7
 
 
-**Ejemplo de tuplas anidadas**
+**Ejemplo de definir tuplas anidadas**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :lines: 12-12
+    :lines: 10-10
 
 
 **Operación asignar de valores de una tupla en variables**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :lines: 15-15
+    :lines: 13-13
 
 
 **Cuidar seguimiento del número de la numeración**
@@ -129,7 +129,7 @@ Pero, Python provee la palabra reservada ``enumerate`` para esto:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :lines: 43-44
+    :lines: 38-42
 
 
 **Caso real de conexión a BD**
@@ -139,7 +139,7 @@ a una BD:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :lines: 18-38
+    :lines: 16-36
 
 
 Ayuda integrada
