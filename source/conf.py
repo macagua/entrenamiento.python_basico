@@ -401,9 +401,9 @@ epub_exclude_files = ['search.html']
 # Add mappings
 # https://kev.inburke.com/kevin/sphinx-interlinks/
 intersphinx_mapping = {
-#    'python': ('https://docs.python.org/2/', None),
 #    'urllib3': ('http://urllib3.readthedocs.org/en/latest', None),
-    'python3': ('https://docs.python.org/3.7/', None)
+#    'python3': ('https://docs.python.org/3.7/', None)
+    'python2': ('https://docs.python.org/2.7/', None)
 }
 intersphinx_timeout = 120
 
