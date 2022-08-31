@@ -129,7 +129,7 @@ pygments_style = 'sphinx'
 # A string of reStructuredText that will be included at the end of every 
 # source file that is read. 
 rst_epilog = """
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+.. _`CodigoFacilito.com`: https://codigofacilito.com/
 .. |psf| replace:: Python Software Foundation
 """
 
