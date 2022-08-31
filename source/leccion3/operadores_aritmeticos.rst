@@ -182,14 +182,14 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 4
+    :lines: 3
 
 
 **Ejemplo de operador aritmético Suma**, Añade valores a cada lado del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 7
+    :lines: 6
 
 
 **Ejemplo de operador aritmético Resta**, Resta el operando de la derecha del operador 
@@ -197,7 +197,7 @@ del lado izquierdo.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 10
+    :lines: 9
 
 
 **Ejemplo de operador aritmético Multiplicación**, Multiplica los valores de 
@@ -205,7 +205,7 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 13
+    :lines: 12
 
 
 **Ejemplo de operador aritmético Exponente, Realiza el cálculo exponencial** 
@@ -213,21 +213,21 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 16
+    :lines: 15
 
 
 **Ejemplo de operador aritmético División**.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 19
+    :lines: 18
 
 
 **Ejemplo de operador aritmético División entera**.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 22
+    :lines: 21
 
 
 **Ejemplo de operador aritmético Cociente de una división**, la división de operandos 
@@ -236,7 +236,7 @@ decimal.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 26
+    :lines: 25
 
 
 **Ejemplo de operador aritmético Módulo**, el cual divide el operando de la izquierda 
@@ -244,7 +244,7 @@ por el operador del lado derecho y devuelve el resto.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :lines: 30
+    :lines: 29
 
 ----
 

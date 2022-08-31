@@ -1,5 +1,6 @@
 """El diccionario define una relación uno a uno entre claves y valores."""
 
+# Definir un diccionario
 datos_basicos = {
     "nombres":"Leonardo Jose",
     "apellidos":"Caballero Garcia",
@@ -43,4 +44,3 @@ print ("Fecha y lugar de nacimiento:", datetime.datetime.strftime(
 ) + " en " + datos_basicos['lugar_nacimiento'] + ".")
 print ("Nacionalidad:", datos_basicos['nacionalidad'])
 print ("Estado civil:", datos_basicos['estado_civil'])
-

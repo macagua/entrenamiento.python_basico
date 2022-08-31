@@ -751,60 +751,60 @@ Ejemplos
 A continuación, se presentan algunos ejemplos de su uso:
 
 
-**Ejemplo de cadenas de caracteres con comillas simples**
+**Ejemplo de definir cadenas de caracteres con comillas simples**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 9-10
+    :lines: 6-7
 
 
-**Ejemplo de cadenas de caracteres con comillas dobles**
-
-.. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
-    :language: python
-    :lines: 13-14
-
-
-**Ejemplo de cadenas de caracteres con código escapes**
+**Ejemplo de definir cadenas de caracteres con comillas dobles**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 17-18
+    :lines: 10-11
 
 
-**Ejemplo de cadenas de caracteres con varias lineas**
+**Ejemplo de definir cadenas de caracteres con código escapes**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 21-31
+    :lines: 14-15
+
+
+**Ejemplo de definir cadenas de caracteres con varias lineas**
+
+.. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
+    :language: python
+    :lines: 18-28
 
 
 **Ejemplo operadores de repetición de cadenas de caracteres**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 34-35
+    :lines: 32-33
 
 
 **Ejemplo operadores de concatenación de cadenas de caracteres**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 38-40
+    :lines: 36-38
 
 
 **Ejemplo de medir tamaño de la cadena con función "len()"**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 43
+    :lines: 41
 
 
 **Ejemplo de acceder a rango de la cadena**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 46
+    :lines: 44
 
 
 **Ejemplo de consulta de ayuda a la función len**

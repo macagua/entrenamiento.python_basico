@@ -3,7 +3,7 @@
     cada posición puede ser un tipo de datos distinto.
 """
 
-# Colección ordenada / arreglos o vectores
+# Definir una colección ordenada / arreglos o vectores
 lista = [2, "CMS", True, ["Plone", 10]]
 print (lista, type(lista))
 
@@ -11,11 +11,11 @@ print (lista, type(lista))
 l2 = lista[1]
 print (l2)
 
-# Acceder a un elemento a una lista anidada
+# Acceder a un elemento en una lista anidada
 l3 = lista[3][0]
 print (l3)
 
-# Establecer nuevo valor de un elemento de lista
+# Definir nuevo valor de un elemento de lista
 lista[1] = 4
 print (lista)
 lista[1] = "CMS"
@@ -29,4 +29,3 @@ l4 = lista[0:3:2]
 print (l4)
 l5 = lista[1::2]
 print (l5)
-

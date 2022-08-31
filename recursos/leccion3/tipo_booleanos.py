@@ -17,4 +17,3 @@ aOr = True or False
 print ("SI es Verdadero O Falso, es", aOr, "de", type(aOr), "\n")
 aNot = not True
 print ("Si NO es Verdadero, es", aNot, "de", type(aNot), "\n")
-

@@ -8,7 +8,6 @@ print ("Valor de variable 'b':", b)
 # Operador and
 print ("\nOperador and")
 print ("============")
-
 if (a and b):
    print ("Las variables 'a' y 'b' son VERDADERO.")
 else:
@@ -34,4 +33,3 @@ if not(a and b):
    "o la variable 'b' NO es VERDADERA.")
 else:
    print ("Las variables 'a' y 'b' son VERDADERAS.")
-

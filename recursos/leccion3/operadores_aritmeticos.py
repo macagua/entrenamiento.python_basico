@@ -27,4 +27,3 @@ print (a // c)
 # Modulo, Divide el operando de la izquierda por el 
 # operador del lado derecho y devuelve el resto.
 print (7 % 3)
-

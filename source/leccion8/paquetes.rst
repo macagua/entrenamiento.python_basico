@@ -44,13 +44,13 @@ llamado ``utilidades``, dentro de este, cree los siguientes archivos:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/calculos.py
     :language: python
-    :lines: 4-8
+    :lines: 3-9
 
 - Archivo ``impuestos.py`` incluye el siguiente código:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/impuestos.py
     :language: python
-    :lines: 4-13
+    :lines: 3-14
 
 
 Al final tendrá la siguiente estructura del directorios del paquete Python llamado 

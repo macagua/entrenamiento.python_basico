@@ -40,4 +40,3 @@ print ("==================================\n")
 
 for index, item in enumerate(conexion_completa):
     print (index, item)
-
