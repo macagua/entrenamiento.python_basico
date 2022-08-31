@@ -66,7 +66,7 @@ comando:
 ::
 
   $ cd ~/entrenamiento.python_basico
-  $ virtualenv --python=/usr/bin/python2.7 venv
+  $ virtualenv --python=/usr/bin/python3.7 venv
   (venv)$ source ./venv/bin/activate
 
 Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente comando:
