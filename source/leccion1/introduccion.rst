@@ -58,9 +58,9 @@ por lo que se puede usar y distribuir libremente, incluso para uso comercial.
 La licencia 
 de Python es administrada por :ref:`Python Software Foundation <python_psf>`.
 
-- `Aprenda más sobre la licencia <https://docs.python.org/license.html>`_.
+- `Aprenda más sobre la licencia <https://docs.python.org/3/license.html>`_.
 
-- `Licencia Python en OSI <http://opensource.org/licenses/Python-2.0>`_.
+- `Licencia Python en OSI <https://opensource.org/licenses/Python-2.0>`_.
 
 - `Conozca más sobre la Fundación <https://www.python.org/psf-landing/>`_.
 
@@ -172,13 +172,13 @@ Internet Relay Chat - IRC
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Existen muchos canales relacionados con Python en la red Internet Relay Chat (IRC) de Freenode. Todos 
-los canales esta disponibles en el servidor de IRC en `Freenode <http://freenode.net/>`_. Para 
+los canales esta disponibles en el servidor de IRC en `Freenode <https://freenode.net/view/Main_Page>`_. Para 
 conectarse al servidor IRC use *irc.freenode.net* o puede usar la 
 `interfaz web de chat IRC de Freenode <https://webchat.freenode.net/>`_.
 
 Para preguntas cortas, usted puede obtener ayuda inmediata visitando el canal ``#python``. Usted 
 necesitará registrar su apodo con FreeNode, usando la guiá de 
-`instrucciones para registrar apodo <http://freenode.net/kb/answer/registration>`_.
+`instrucciones para registrar apodo <https://old.freenode.net/kb/answer/registration>`_.
 
 .. note:: Mayor información consulte https://www.python.org/community/irc/
 
@@ -214,7 +214,7 @@ comunitario del proyecto Python en Sudamérica.
 
 **Comunidad(es) de Python en Brasil**
     La comunidad Python Brasil reúne grupos de usuarios en todo el Brasil interesados en 
-    difundir e divulgar a lenguaje de programación. Más información visite https://python.org.br
+    difundir e divulgar a lenguaje de programación. Más información visite http://python.org.br
 
 **Comunidad(es) de Python en Chile**
     Una comunidad de amigos apasionados por la tecnología e informática, que busca compartir 
@@ -230,7 +230,7 @@ comunitario del proyecto Python en Sudamérica.
 **Comunidad(es) de Python en Ecuador**
     Somos una comunidad independiente, conformada por entusiastas de Python, con la filosofía 
     común de que el conocimiento debe ser libre. No lucramos con ningún evento, y esperamos 
-    llegar a todos aquellos que desean aprender. Más información visite https://pythonecuador.org/
+    llegar a todos aquellos que desean aprender. Más información visite https://python.ec/
 
 **Comunidad(es) de Python en Perú**
     Comunidad de estudiantes, profesionales e interesados en tener un espacio donde conversar, 
