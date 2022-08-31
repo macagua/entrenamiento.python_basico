@@ -45,7 +45,7 @@ los siguientes comando:
 ::
 
   $ sudo apt install python-pip python-setuptools git
-  $ sudo apt install texlive-latex-base texlive-latex-recommended texlive-lang-spanish
+  $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils texlive-font-utils texlive-fonts-recommended texlive-latex-extra texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
   $ sudo pip install virtualenv
 
 
@@ -66,7 +66,7 @@ comando:
 ::
 
   $ cd ~/entrenamiento.python_basico
-  $ virtualenv --python=/usr/bin/python venv
+  $ virtualenv --python=/usr/bin/python2.7 venv
   (venv)$ source ./venv/bin/activate
 
 Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente comando:
