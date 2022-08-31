@@ -31,9 +31,9 @@ Introducción a Python
 
 - `Pagina Web Oficial <https://www.python.org/>`_.
 
-- `Documentación oficial de Python 2.7 <https://docs.python.org/2.7/>`_.
+- `Documentación oficial de Python 3.7 <https://docs.python.org/es/3.7/>`_.
 
-- `Tutorial de Python 2.7 <http://docs.python.org.ar/tutorial/2/contenido.html>`_.
+- `Tutorial de Python 3.7 <https://docs.python.org/es/3.7/contents.html>`_.
 
 - `Python para programadores con experiencia <http://es.diveintopython.net/odbchelper_divein.html>`_.
 
@@ -113,7 +113,7 @@ Inmersión al modo interactivo de Python
 
 - `Inmersión en Python <https://diveintopython3.net/>`_.
 
-- `La librería estándar de Python <https://docs.python.org/2/library/index.html>`_.
+- `La librería estándar de Python <https://docs.python.org/es/3.7/library/index.html>`_.
 
 - `Guía de aprendizaje de Python <http://pyspanishdoc.sourceforge.net/tut/tut.html>`_.
 
@@ -209,7 +209,7 @@ Condicional if
 
 - `Operadores básicos de Python <http://codigoprogramacion.com/cursos/tutoriales-python/operadores-basicos-de-python.html>`_.
 
-- `Sentencias IF <http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-if>`_.
+- `Sentencias IF <https://docs.python.org/es/3.7/tutorial/controlflow.html#if-statements>`_.
 
 - `Condicionales if y else en Python <http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html>`_.
 
@@ -333,7 +333,7 @@ Programación estructurada
 Lección 6 - Introspección a la depuración con pdb
 -------------------------------------------------
 
-- `pdb — The Python Debugger <https://docs.python.org/2/library/pdb.html>`_.
+- `pdb — The Python Debugger <https://docs.python.org/es/3.7/library/pdb.html>`_.
 
 - `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://claudiovz.github.io/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
 
@@ -437,7 +437,7 @@ Programación orientada a objetos
 
 - `Programación orientada a objetos - Wikipedia <https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos>`_.
 
-- `Clases — Tutorial de Python v2.7.0 <http://docs.python.org.ar/tutorial/2/classes.html>`_.
+- `Clases — Tutorial de Python v3.7 <https://docs.python.org/es/3.7/tutorial/classes.html>`_.
 
 - `Programación Orientada a Objetos (POO) - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/oop.html>`_.
 

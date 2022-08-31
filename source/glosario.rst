@@ -216,7 +216,7 @@ A continuación una serie de términos usados en las tecnologías Python/Zope/Pl
         Entonces el módulo Python se instalará.
 
         .. seealso::
-            - https://docs.python.org/2/install/index.html
+            - https://docs.python.org/es/3.7/install/index.html
     
     Temas / Apariencias
         Por lo general si un producto de Tema esta bien diseñado y implementado

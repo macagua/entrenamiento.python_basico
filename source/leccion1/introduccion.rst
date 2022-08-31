@@ -58,7 +58,7 @@ por lo que se puede usar y distribuir libremente, incluso para uso comercial.
 La licencia 
 de Python es administrada por :ref:`Python Software Foundation <python_psf>`.
 
-- `Aprenda más sobre la licencia <https://docs.python.org/3/license.html>`_.
+- `Aprenda más sobre la licencia <https://docs.python.org/es/3.7/license.html>`_.
 
 - `Licencia Python en OSI <https://opensource.org/licenses/Python-2.0>`_.
 

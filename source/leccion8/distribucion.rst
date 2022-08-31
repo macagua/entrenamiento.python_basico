@@ -170,14 +170,14 @@ el siguiente comando:
     running build
     running build_py
     creating build
-    creating build/lib.linux-x86_64-2.7
-    creating build/lib.linux-x86_64-2.7/tostadas_pipo
-    copying tostadas_pipo/__init__.py -> build/lib.linux-x86_64-2.7/tostadas_pipo
-    copying tostadas_pipo/principal.py -> build/lib.linux-x86_64-2.7/tostadas_pipo
-    creating build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades
-    copying tostadas_pipo/utilidades/__init__.py -> build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades
-    copying tostadas_pipo/utilidades/calculos.py -> build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades
-    copying tostadas_pipo/utilidades/impuestos.py -> build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades
+    creating build/lib.linux-x86_64-3.7
+    creating build/lib.linux-x86_64-3.7/tostadas_pipo
+    copying tostadas_pipo/__init__.py -> build/lib.linux-x86_64-3.7/tostadas_pipo
+    copying tostadas_pipo/principal.py -> build/lib.linux-x86_64-3.7/tostadas_pipo
+    creating build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades
+    copying tostadas_pipo/utilidades/__init__.py -> build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades
+    copying tostadas_pipo/utilidades/calculos.py -> build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades
+    copying tostadas_pipo/utilidades/impuestos.py -> build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades
     not copying tostadas_pipo/principal.py (output up-to-date)
     not copying tostadas_pipo/__init__.py (output up-to-date)
 
@@ -188,7 +188,7 @@ con todo lo necesario para crear su distribución, como se muestra a continuaci�
 ::
 
     build/
-    └── lib.linux-x86_64-2.7
+    └── lib.linux-x86_64-3.7
         └── tostadas_pipo
             ├── __init__.py
             ├── principal.py
@@ -407,12 +407,12 @@ siguiente comando:
     creating build/bdist.linux-x86_64
     creating build/bdist.linux-x86_64/egg
     creating build/bdist.linux-x86_64/egg/tostadas_pipo
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
     creating build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
     byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/principal.py to principal.pyc
     byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/__init__.py to __init__.pyc
     byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades/impuestos.py to impuestos.pyc
@@ -425,7 +425,7 @@ siguiente comando:
     copying tostadas_pipo.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
     copying tostadas_pipo.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
     zip_safe flag not set; analyzing archive contents...
-    creating 'dist/tostadas_pipo-0.1-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+    creating 'dist/tostadas_pipo-0.1-py3.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
     removing 'build/bdist.linux-x86_64/egg' (and everything under it)
 
 De esta forma al terminar la ejecución del comando previo debe tener creado un 
@@ -434,7 +434,7 @@ directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *
 ::
 
     dist/
-    └── tostadas_pipo-0.1-py2.7.egg
+    └── tostadas_pipo-0.1-py3.7.egg
 
 De esta forma ya creo la distribución ``bdist`` del paquete en formato *egg* para 
 su proyecto.
@@ -457,12 +457,12 @@ siguiente comando:
     running install_lib
     creating build/bdist.linux-x86_64/wheel
     creating build/bdist.linux-x86_64/wheel/tostadas_pipo
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo
     creating build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/wheel/tostadas_pipo/utilidades
     running install_egg_info
     running egg_info
     writing tostadas_pipo.egg-info/PKG-INFO
@@ -477,7 +477,7 @@ siguiente comando:
     no previously-included directories found matching 'build'
     no previously-included directories found matching 'dist'
     writing manifest file 'tostadas_pipo.egg-info/SOURCES.txt'
-    Copying tostadas_pipo.egg-info to build/bdist.linux-x86_64/wheel/tostadas_pipo-0.1-py2.7.egg-info
+    Copying tostadas_pipo.egg-info to build/bdist.linux-x86_64/wheel/tostadas_pipo-0.1-py3.7.egg-info
     running install_scripts
     adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
     creating build/bdist.linux-x86_64/wheel/tostadas_pipo-0.1.dist-info/WHEEL
@@ -502,7 +502,7 @@ directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *
 ::
 
     dist/
-    ├── tostadas_pipo-0.1-py2.7.egg
+    ├── tostadas_pipo-0.1-py3.7.egg
     └── tostadas_pipo-0.1-py2-none-any.whl
 
 De esta forma ya creo la distribución ``bdist`` del paquete en formato *whl* para 
@@ -625,12 +625,12 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
     creating build/bdist.linux-x86_64
     creating build/bdist.linux-x86_64/egg
     creating build/bdist.linux-x86_64/egg/tostadas_pipo
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/principal.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo
     creating build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
-    copying build/lib.linux-x86_64-2.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/impuestos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/__init__.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
+    copying build/lib.linux-x86_64-3.7/tostadas_pipo/utilidades/calculos.py -> build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades
     byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/principal.py to principal.pyc
     byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/__init__.py to __init__.pyc
     byte-compiling build/bdist.linux-x86_64/egg/tostadas_pipo/utilidades/impuestos.py to impuestos.pyc
@@ -643,7 +643,7 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
     copying tostadas_pipo.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
     zip_safe flag not set; analyzing archive contents...
     creating dist
-    creating 'dist/tostadas_pipo-0.1-py2.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+    creating 'dist/tostadas_pipo-0.1-py3.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
     adding 'tostadas_pipo/principal.py'
     adding 'tostadas_pipo/principal.pyc'
     adding 'tostadas_pipo/__init__.pyc'
@@ -660,12 +660,12 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
     adding 'EGG-INFO/SOURCES.txt'
     adding 'EGG-INFO/top_level.txt'
     removing 'build/bdist.linux-x86_64/egg' (and everything under it)
-    Processing tostadas_pipo-0.1-py2.7.egg
-    Copying tostadas_pipo-0.1-py2.7.egg to /home/leonardo/.local/lib/python2.7/site-packages
+    Processing tostadas_pipo-0.1-py3.7.egg
+    Copying tostadas_pipo-0.1-py3.7.egg to /home/leonardo/.local/lib/python3.7/site-packages
     Adding tostadas-pipo 0.1 to easy-install.pth file
-    Saving /home/leonardo/.local/lib/python2.7/site-packages/easy-install.pth
+    Saving /home/leonardo/.local/lib/python3.7/site-packages/easy-install.pth
 
-    Installed /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1-py2.7.egg
+    Installed /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1-py3.7.egg
     Processing dependencies for tostadas-pipo==0.1
     Finished processing dependencies for tostadas-pipo==0.1
 
@@ -678,7 +678,7 @@ disponible con el script ``setup.py``.
 .. warning::
 
     Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado en el 
-    directorio ``$HOME/.local/lib/python2.7/site-packages/``.
+    directorio ``$HOME/.local/lib/python3.7/site-packages/``.
 
 ----
 
@@ -730,23 +730,23 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
     pip uninstall tostadas_pipo
     Uninstalling tostadas-pipo-0.1:
       /home/leonardo/.local/bin/tostadas_pipo
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/DESCRIPTION.rst
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/INSTALLER
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/METADATA
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/RECORD
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/WHEEL
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/metadata.json
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.dist-info/top_level.txt
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/__init__.py
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/__init__.pyc
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/principal.py
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/principal.pyc
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/utilidades/__init__.py
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/utilidades/__init__.pyc
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/utilidades/calculos.py
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/utilidades/calculos.pyc
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/utilidades/impuestos.py
-      /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo/utilidades/impuestos.pyc
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/DESCRIPTION.rst
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/INSTALLER
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/METADATA
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/RECORD
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/WHEEL
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/metadata.json
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/top_level.txt
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/__init__.py
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/__init__.pyc
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/principal.py
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/principal.pyc
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/utilidades/__init__.py
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/utilidades/__init__.pyc
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/utilidades/calculos.py
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/utilidades/calculos.pyc
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/utilidades/impuestos.py
+      /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo/utilidades/impuestos.pyc
     Proceed (y/n)? y
       Successfully uninstalled tostadas-pipo-0.1
 
@@ -777,12 +777,12 @@ conocidas son:
     manualmente el paquete instalado:
 
     #. Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado 
-       en el directorio ``$HOME/.local/lib/python2.7/site-packages/`` puede verificar 
+       en el directorio ``$HOME/.local/lib/python3.7/site-packages/`` puede verificar 
        su correcta instalación, ejecute el siguiente comando:
 
         ::
 
-            ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
+            ls -p $HOME/.local/lib/python3.7/site-packages/ | grep "tostadas_pipo"
             tostadas_pipo/
             tostadas_pipo-0.1.egg-info/
 
@@ -794,7 +794,7 @@ conocidas son:
             pip uninstall tostadas_pipo
             DEPRECATION: Uninstalling a distutils installed project (tostadas-pipo) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
             Uninstalling tostadas-pipo-0.1:
-              /home/leonardo/.local/lib/python2.7/site-packages/tostadas_pipo-0.1.egg-info
+              /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.egg-info
             Proceed (y/n)? y
               Successfully uninstalled tostadas-pipo-0.1
 
@@ -807,7 +807,7 @@ conocidas son:
 
         ::
 
-            ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
+            ls -p $HOME/.local/lib/python3.7/site-packages/ | grep "tostadas_pipo"
             tostadas_pipo/
 
        Si el comando previo muestra el resultado **tostadas_pipo**, es el directorio del 
@@ -818,14 +818,14 @@ conocidas son:
 
         ::
 
-            rm -rf $HOME/.local/lib/python2.7/site-packages/tostadas_pipo
+            rm -rf $HOME/.local/lib/python3.7/site-packages/tostadas_pipo
 
     #. Al ejecutar el comando previo, de nuevo verifique que ya fue eliminado de su sistema, 
        ejecutando el siguiente comando:
 
         ::
 
-            ls -p $HOME/.local/lib/python2.7/site-packages/ | grep "tostadas_pipo"
+            ls -p $HOME/.local/lib/python3.7/site-packages/ | grep "tostadas_pipo"
 
        Si el comando previo, no muestra el resultado **tostadas_pipo**, es el directorio del 
        paquete ``tostadas_pipo``, fue eliminado completamente de su sistema. 

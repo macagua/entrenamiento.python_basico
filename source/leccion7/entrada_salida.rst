@@ -207,7 +207,7 @@ de caracteres y variables:
 .. note::
 
     Una documentación completa del control de la salida de Python se encuentra en 
-    https://docs.python.org/2/tutorial/inputoutput.html
+    https://docs.python.org/es/3.7/tutorial/inputoutput.html
 
 
 .. important::

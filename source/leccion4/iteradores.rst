@@ -382,7 +382,7 @@ tipo :ref:`diccionario <python_dict>`, por defecto muestra la clave de la secuen
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> paquete = iter(versiones_plone)
     >>> paquete
     <dictionary-keyiterator object at 0x7fa44b9e99f0>
@@ -410,16 +410,16 @@ método integrado :ref:`itervalues() <python_dict_mtd_itervalues>`:
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> version = iter(versiones_plone.itervalues())
     >>> version
     <dictionary-valueiterator object at 0x7fa44b9e9c00>
     >>> version.next()
-    2.13
+    5.5.2
     >>> version.next()
-    2.7
+    3.7
     >>> version.next()
-    5.1
+    6.0
     >>> version.next()
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -438,16 +438,16 @@ método integrado :ref:`iteritems() <python_dict_mtd_iteritems>`:
 
 ::
 
-    >>> versiones_plone = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones_plone = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> paquete = iter(versiones_plone.iteritems())
     >>> paquete
     <dictionary-itemiterator object at 0x7fa44b9e9b50>
     >>> paquete.next()
-    ('zope', 2.13)
+    ('zope', 5.5.2)
     >>> paquete.next()
-    ('python', 2.7)
+    ('python', 3.7)
     >>> paquete.next()
-    ('plone', 5.1)
+    ('plone', 6.0)
     >>> paquete.next()
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>

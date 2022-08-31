@@ -240,7 +240,7 @@ la lógica ``dir()`` predeterminada y devuelve:
     {'Persona': <class '__main__.Persona'>, 
     '__builtins__': <module '__builtin__' (built-in)>, 
     '__package__': None, '__name__': '__main__', 
-    'os': <module 'os' from '/usr/lib/python2.7/os.pyc'>, 
+    'os': <module 'os' from '/usr/lib/python3.7/os.pyc'>, 
     '__doc__': None}
     >>> dir(Persona)
     ['__class__', '__delattr__', '__dict__', '__doc__', 
@@ -362,19 +362,19 @@ Invoca el menú de ayuda del intérprete de Python:
 
     >>> help()
 
-    Welcome to Python 2.7!  This is the online help utility.
+    Welcome to Python 3.7's help utility!
 
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at https://docs.python.org/2.7/tutorial/.
+    the tutorial on the Internet at https://docs.python.org/3.7/tutorial/.
 
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
     return to the interpreter, just type "quit".
 
-    To get a list of available modules, keywords, or topics, type "modules",
-    "keywords", or "topics".  Each module also comes with a one-line summary
-    of what it does; to list the modules whose summaries contain a given word
-    such as "spam", type "modules spam".
+    To get a list of available modules, keywords, symbols, or topics, type
+    "modules", "keywords", "symbols", or "topics".  Each module also comes
+    with a one-line summary of what it does; to list the modules whose name
+    or summary contain a given string such as "spam", type "modules spam".
 
     help> 
 
@@ -716,7 +716,7 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
             types - Define names for all type symbols known in the standard interpreter.
 
         FILE
-            /usr/lib/python2.7/types.py
+            /usr/lib/python3.7/types.py
 
         MODULE DOCS
             https://docs.python.org/library/types
@@ -1626,7 +1626,7 @@ A continuación uno ejemplo de comparación de cadena de caracteres con operador
     True
     >>> cadena0 is cadena1
     True
-    >>> cadena0, cadena1 = 'python 2.7', 'python 2.7'
+    >>> cadena0, cadena1 = 'python 3.7', 'python 3.7'
     >>> cadena0 is cadena1
     False
 
@@ -2059,33 +2059,33 @@ esta función se usa crear un diccionario:
 
 ::
 
-    >>> dict(python=2.7, zope=2.13, plone=5.1)
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    >>> dict(python=3.7, zope=5.5.2, plone=6.0)
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
 
 También puede crear un diccionario indicando a las claves usando comillas simples:
 
 ::
 
-    >>> {'python': 2.7, 'zope': 2.13, 'plone': 5.1}
-    {'python': 2.7, 'zope': 2, 'plone': 5.1}
-    >>> dict({'python': 2.7, 'zope': 2.13, 'plone': 5.1})
-    {{'python': 2.7, 'zope': 2.13, 'plone': 5.1}
+    >>> {'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
+    {'python': 3.7, 'zope': 2, 'plone': 6.0}
+    >>> dict({'python': 3.7, 'zope': 5.5.2, 'plone': 6.0})
+    {{'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
 
 Convertir desde un grupo de dos :ref:`listas <python_list>` de forma recursiva usando 
 la función :ref:`zip() <python_fun_zip>` a tipo *diccionario*:
 
 ::
 
-    >>> dict(zip(['python', 'zope', 'plone'], [2.7, 2.13, 5.1]))
-    {'python': 2.7, 'zope': 2.13, 'plone': 5.1}
+    >>> dict(zip(['python', 'zope', 'plone'], [3.7, 5.5.2, 6.0]))
+    {'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
 
 Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una 
 :ref:`lista <python_list>` a tipo *diccionario*:
 
 ::
 
-    >>> dict([('zope', 2.13), ('python', 2.7), ('plone', 5.1)])
-    {'plone': 5.1, 'zope': 2.13, 'python': 2.7}
+    >>> dict([('zope', 5.5.2), ('python', 3.7), ('plone', 6.0)])
+    {'plone': 6.0, 'zope': 5.5.2, 'python': 3.7}
 
 
 .. _python_fun_frozenset:
@@ -2260,8 +2260,8 @@ más corta.
 
 ::
 
-    >>> zip(['python', 'zope', 'plone'], [2.7, 2.13, 5.1])
-    [('python', 2.7), ('zope', 2.13), ('plone', 5.1)]
+    >>> zip(['python', 'zope', 'plone'], [3.7, 5.5.2, 6.0])
+    [('python', 3.7), ('zope', 5.5.2), ('plone', 6.0)]
 
 
 ----
@@ -2508,4 +2508,4 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
     La lista de todas las funciones disponibles en el lenguaje Python con la descripción 
     correspondiente se puede encontrar en la siguiente dirección URL: 
 
-    - https://docs.python.org/2/library/functions.html
+    - https://docs.python.org/es/3.7/library/functions.html

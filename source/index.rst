@@ -71,4 +71,4 @@ Búsqueda
 * :ref:`search`
 
 .. _`Covantec R.L`: https://github.com/Covantec
-.. _`Python 3.7`: https://docs.python.org/3.7/
+.. _`Python 3.7`: https://docs.python.org/es/3.7/

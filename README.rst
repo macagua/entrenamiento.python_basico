@@ -142,6 +142,6 @@ directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como el idioma Espa√
 (LICENSE.es.rst).
 
 .. _`Covantec R.L`: https://github.com/Covantec
-.. _`Python 3.7`: https://docs.python.org/3.7/
+.. _`Python 3.7`: https://docs.python.org/es/3.7/
 .. _`entrenamiento.python_basico`: https://github.com/Covantec/entrenamiento.python_basico
 .. _`ticket de soporte`: https://github.com/Covantec/entrenamiento.python_basico/issues/new

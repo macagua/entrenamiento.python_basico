@@ -88,9 +88,9 @@ clave.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0, django=4.1)
     >>> versiones['zope']
-    2.13
+    5.5.2
 
 
 .. _python_dict_opers_setv:
@@ -103,13 +103,13 @@ clave.
 
 ::
 
-    >>> versiones = {'python': 2.7, 'zope': 2.13, 'plone': None}
+    >>> versiones = {'python': 3.7, 'zope': 5.5.2, 'plone': None}
     >>> versiones['plone']
-    >>> versiones['plone'] = 5.1
+    >>> versiones['plone'] = 6.0
     >>> versiones
-    {'python': 2.7, 'zope': 2.13, 'plone': 5.1}
+    {'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
     >>> versiones['plone']
-    5.1
+    6.0
 
 
 .. _python_dict_opers_in:
@@ -122,9 +122,9 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0, django=4.1)
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1, 'django': 2.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
     >>> 'plone' in versiones
     True
     >>> 'flask' in versiones
@@ -152,9 +152,9 @@ Este método remueve todos los elementos desde el **diccionario**.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.clear()
     >>> print versiones
     {}
@@ -169,7 +169,7 @@ Este método devuelve una copia superficial del tipo **diccionario**:
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> otro_versiones = versiones.copy()
     >>> versiones == otro_versiones
     True
@@ -210,9 +210,9 @@ mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_no
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones.get('plone')
-    5.1
+    6.0
     >>> versiones.get('php')
     >>>
 
@@ -227,7 +227,7 @@ enviada como argumento.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones.has_key('plone')
     True
     >>> versiones.has_key('django')
@@ -243,9 +243,9 @@ Este método devuelve una lista de pares de diccionarios (clave, valor), como 2 
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones.items()
-    [('zope', 2.13), ('python', 2.7), ('plone', 5.1)]
+    [('zope', 5.5.2), ('python', 3.7), ('plone', 6.0)]
 
 
 .. _python_dict_mtd_iteritems:
@@ -259,24 +259,24 @@ si llega al final de la posición del **diccionario**.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.iteritems()
     <dictionary-itemiterator object at 0x7fab9dd4bc58>
     >>> for clave,valor in versiones.iteritems():
     ...     print clave,valor
     ... 
-    zope 2.13
-    python 2.7
-    plone 5.1
+    zope 5.5.2
+    python 3.7
+    plone 6.0
     >>> versionesIterador = versiones.iteritems()
     >>> print versionesIterador.next()
-    ('zope', 2.13)
+    ('zope', 5.5.2)
     >>> print versionesIterador.next()
-    ('python', 2.7)
+    ('python', 3.7)
     >>> print versionesIterador.next()
-    ('plone', 5.1)
+    ('plone', 6.0)
     >>> print versionesIterador.next()
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -294,9 +294,9 @@ final de la posición del **diccionario**.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.iterkeys()
     <dictionary-keyiterator object at 0x7fab9dd4bcb0>
     >>> for clave in versiones.iterkeys():
@@ -329,24 +329,24 @@ final de la posición del **diccionario**.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.itervalues()
     <dictionary-valueiterator object at 0x7fab9dd4bc58>
     >>> for valor in versiones.itervalues():
     ...     print valor
     ... 
-    2.13
-    2.7
-    5.1
+    5.5.2
+    3.7
+    6.0
     >>> versionesIterador = versiones.itervalues()
     >>> print versionesIterador.next()
-    2.13
+    5.5.2
     >>> print versionesIterador.next()
-    2.7
+    3.7
     >>> print versionesIterador.next()
-    5.1
+    6.0
     >>> print versionesIterador.next()
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -362,7 +362,7 @@ Este método devuelve una lista de las claves del diccionario:
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones.keys()
     ['zope', 'python', 'plone']
 
@@ -378,13 +378,13 @@ si la **clave** no es encontrada.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.pop('zope')
-    2.13
+    5.5.2
     >>> versiones
-    {'python': 2.7, 'plone': 5.1}
+    {'python': 3.7, 'plone': 6.0}
     >>> versiones.pop('django')
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -402,19 +402,19 @@ el **diccionario** esta vació.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.popitem()
-    ('zope', 2.13)
+    ('zope', 5.5.2)
     >>> versiones
-    {'python': 2.7, 'plone': 5.1}
+    {'python': 3.7, 'plone': 6.0}
     >>> versiones.popitem()
-    ('python', 2.7)
+    ('python', 3.7)
     >>> versiones
-    {'plone': 5.1}
+    {'plone': 6.0}
     >>> versiones.popitem()
-    ('plone', 5.1)
+    ('plone', 6.0)
     >>> versiones
     {}
     >>> versiones.popitem()
@@ -441,24 +441,24 @@ esta en el diccionario:
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> zope = versiones.setdefault('zope')
     >>> print 'Versiones instaladas:', versiones
-    Versiones instaladas: {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    Versiones instaladas: {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> print 'Versión de Zope:', zope
-    Versión de Zope: 2.13
+    Versión de Zope: 5.5.2
 
 A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta 
 en el diccionario:
 
 ::
 
-    >>> paquetes = {'python': 2.7, 'zope': 2.13}
+    >>> paquetes = {'python': 3.7, 'zope': 5.5.2}
     >>> print paquetes
-    {'python': 2.7, 'zope': 2.13}
+    {'python': 3.7, 'zope': 5.5.2}
     >>> plone = paquetes.setdefault('plone')
     >>> print 'paquetes: ', paquetes
-    paquetes:  {'python': 2.7, 'zope': 2.13, 'plone': None}
+    paquetes:  {'python': 3.7, 'zope': 5.5.2, 'plone': None}
     >>> print 'plone: ', plone
     plone:  None
 
@@ -470,14 +470,14 @@ en el diccionario pero esta vez el ``default_value`` es proveído:
 
 ::
 
-    >>> pkgs = {'python': 2.7, 'zope': 2.13, 'plone': None}
+    >>> pkgs = {'python': 3.7, 'zope': 5.5.2, 'plone': None}
     >>> print pkgs
-    {'python': 2.7, 'zope': 2.13, 'plone': None}
-    >>> django = paquetes.setdefault('django', 2.1)
+    {'python': 3.7, 'zope': 5.5.2, 'plone': None}
+    >>> django = paquetes.setdefault('django', 4.1)
     >>> print 'paquetes =', pkgs
-    paquetes = {'python': 2.7, 'zope': 2.13, 'plone': None}
+    paquetes = {'python': 3.7, 'zope': 5.5.2, 'plone': None}
     >>> print 'django =', django
-    django = 2.1
+    django = 4.1
 
 A continuación otro ejemplo en donde puedes agrupar N :ref:`tuplas <python_tuple>` 
 por el valor el cual se repite más y construir un diccionario que cuyas claves son 
@@ -540,12 +540,12 @@ permanece sin cambios.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
-    >>> versiones_adicional = dict(django=2.1)
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
+    >>> versiones_adicional = dict(django=4.1)
     >>> print versiones_adicional
-    {'django': 2.1}
+    {'django': 4.1}
     >>> versiones.update(versiones_adicional)
 
 Como puede apreciar este método no devuelve nada, más si muestra de nuevo el diccionario 
@@ -555,7 +555,7 @@ Como puede apreciar este método no devuelve nada, más si muestra de nuevo el d
 ::
 
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1, 'django': 2.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
 
 
 .. _python_dict_mtd_values:
@@ -567,9 +567,9 @@ Este método devuelve una lista de los valores del diccionario:
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones.values()
-    [2.13, 2.7, 5.1]
+    [5.5.2, 3.7, 6.0]
 
 
 .. _python_dict_mtd_viewitems:
@@ -582,15 +582,15 @@ elementos del diccionario:
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones.viewkeys()
     dict_keys(['zope', 'python', 'plone'])
     >>> for clave,valor in versiones.iteritems():
     ...     print clave,valor
     ... 
-    zope 2.13
-    python 2.7
-    plone 5.1
+    zope 5.5.2
+    python 3.7
+    plone 6.0
 
 
 .. _python_dict_mtd_viewkeys:
@@ -602,7 +602,7 @@ Este método devuelve un objeto proveyendo una vista de las claves del **diccion
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones.viewkeys()
     dict_keys(['zope', 'python', 'plone'])
     >>> for clave in versiones.viewkeys():
@@ -622,15 +622,15 @@ Este método devuelve un objeto proveyendo una vista de los valores del **diccio
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones.viewvalues()
-    dict_values([2.13, 2.7, 5.1])
+    dict_values([5.5.2, 3.7, 6.0])
     >>> for valor in versiones.viewvalues():
     ...     print valor
     ... 
-    2.13
-    2.7
-    5.1
+    5.5.2
+    3.7
+    6.0
 
 
 .. _python_dict_fun:
@@ -652,8 +652,8 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
 ::
 
-    >>> versiones_proyecto1 = dict(python=2.7, zope=2.13, plone=5.1)
-    >>> versiones_proyecto2 = dict(django=2.1, django-filter=1.1.0)
+    >>> versiones_proyecto1 = dict(python=3.7, zope=5.5.2, plone=6.0)
+    >>> versiones_proyecto2 = dict(django=4.1, django-filter=1.1.0)
     >>> print cmp(versiones_proyecto1, versiones_proyecto2)
     1
 
@@ -674,7 +674,7 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> len(versiones)
     3
 
@@ -698,12 +698,12 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
 ::
 
-    >>> versiones = dict(python=2.7, zope=2.13, plone=5.1, django=2.1)
+    >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0, django=4.1)
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1, 'django': 2.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
     >>> del versiones['django']
     >>> print versiones
-    {'zope': 2.13, 'python': 2.7, 'plone': 5.1}
+    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
 
 En el código fuente anterior se usa la sentencia ``del`` para eliminar un elemento del 
 diccionario mediante su respectiva clave.

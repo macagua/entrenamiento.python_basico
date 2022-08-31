@@ -59,7 +59,7 @@ El módulo ``os`` de Python le permite a usted realizar operaciones dependiente 
 *Sistema Operativo* como crear una carpeta, listar contenidos de una carpeta, conocer 
 acerca de un proceso, finalizar un proceso, etc. Este módulo tiene métodos para ver 
 variables de entornos del *Sistema Operativo* con las cuales Python esta trabajando 
-en mucho más. `Aquí <https://docs.python.org/2/library/os.html>`_ la documentación 
+en mucho más. `Aquí <https://docs.python.org/es/3.7/library/os.html>`_ la documentación 
 Python para el módulo ``os``.
 
 A continuación algunos útiles métodos del módulo ``os`` que pueden ayudar a manipular 

@@ -87,4 +87,4 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 .. todo::
     TODO terminar de escribir esta sección.
 
-.. _`La biblioteca estándar Python 2`: https://docs.python.org/2/library/
+.. _`La biblioteca estándar Python 3.7`: https://docs.python.org/es/3.7/library/

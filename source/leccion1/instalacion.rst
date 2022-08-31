@@ -36,9 +36,9 @@ comprobar la correcta instalación  solamente debería ejecutar el comando en la
 
 ::
 
-    python
-    Python 2.7.13 (default, Sep 26 2018, 18:42:22) 
-    [GCC 6.3.0 20170516] on linux2
+    python3.7
+    Python 3.7.3 (default, Jan 22 2021, 20:04:44) 
+    [GCC 8.3.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>> 
 

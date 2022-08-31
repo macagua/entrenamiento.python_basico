@@ -50,9 +50,9 @@ el comando ``python`` de la siguiente forma:
 
 .. code-block:: python
 
-    python
-    Python 2.7.13 (default, Sep 26 2018, 18:42:22)
-    [GCC 6.3.0 20170516] on linux2
+    python3
+    Python 3.7.3 (default, Jan 22 2021, 20:04:44) 
+    [GCC 8.3.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
@@ -65,19 +65,19 @@ Puede solicitar la ayudar del interprete de Python, ejecutando:
     Type help() for interactive help, or help(object) for help about object.
     >>> help()
 
-    Welcome to Python 2.7!  This is the online help utility.
+    Welcome to Python 3.7's help utility!
 
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at https://docs.python.org/2.7/tutorial/.
+    the tutorial on the Internet at https://docs.python.org/3.7/tutorial/.
 
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
     return to the interpreter, just type "quit".
 
-    To get a list of available modules, keywords, or topics, type "modules",
-    "keywords", or "topics".  Each module also comes with a one-line summary
-    of what it does; to list the modules whose summaries contain a given word
-    such as "spam", type "modules spam".
+    To get a list of available modules, keywords, symbols, or topics, type
+    "modules", "keywords", "symbols", or "topics".  Each module also comes
+    with a one-line summary of what it does; to list the modules whose name
+    or summary contain a given string such as "spam", type "modules spam".
 
 
 Para ejecutar la ayuda disponible sobre la sintaxis Python ejecute el
@@ -198,7 +198,7 @@ Entonces consulte la ayuda del módulo ``os``, ejecutando:
         os - OS routines for NT or Posix depending on what system we're on.
 
     FILE
-        /usr/lib/python2.7/os.py
+        /usr/lib/python3.7/os.py
 
     MODULE DOCS
         https://docs.python.org/library/os
@@ -290,7 +290,7 @@ ubicación de la librería importada de la siguiente forma:
 .. code-block:: python
 
     >>> os.__file__
-    '/usr/lib/python2.7/os.pyc'
+    '/usr/lib/python3.7/os.pyc'
     >>>
 
 También puede consultar la documentación de la librería ``os`` ejecutando el
@@ -360,10 +360,10 @@ Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 .. code-block:: sh
 
     ipython
-    Python 2.7.13 (default, Sep 26 2018, 18:42:22) 
+    Python 2.7.16 (default, Oct 10 2019, 22:02:15) 
     Type "copyright", "credits" or "license" for more information.
 
-    IPython 5.8.0 -- An enhanced Interactive Python.
+    IPython 5.10.0 -- An enhanced Interactive Python.
     ?         -> Introduction and overview of IPython's features.
     %quickref -> Quick reference.
     help      -> Python's own help system.
@@ -412,8 +412,8 @@ la librería ``os`` ejecutando el siguiente comando:
 
     In [2]: os?
     Type:        module
-    String form: <module 'os' from '/usr/lib/python2.7/os.pyc'>
-    File:        /usr/lib/python2.7/os.py
+    String form: <module 'os' from '/usr/lib/python3.7/os.pyc'>
+    File:        /usr/lib/python3.7/os.py
     Docstring:
     OS routines for NT or Posix depending on what system we're on.
 
@@ -457,7 +457,7 @@ librería importada
 .. code-block:: python
 
     In [4]: os.__file__
-    Out[4]: '/usr/lib/python2.7/os.pyc'
+    Out[4]: '/usr/lib/python3.7/os.pyc'
 
 
 También puede consultar la documentación de la librería ``os`` de la
@@ -509,7 +509,7 @@ ejecutando el siguiente comando:
         os - OS routines for NT or Posix depending on what system we're on.
 
     FILE
-        /usr/lib/python2.7/os.py
+        /usr/lib/python3.7/os.py
 
     MODULE DOCS
         https://docs.python.org/library/os
@@ -610,7 +610,7 @@ módulos propios escritos en Python que tienes instalado en tu sistema.
 .. _`Javadoc`: https://es.wikipedia.org/wiki/Javadoc
 .. _`diagramas de clases`: https://es.wikipedia.org/wiki/Diagrama_de_clases
 .. _`Sphinx`: https://en.wikipedia.org/wiki/Sphinx_%28documentation_generator%29
-.. _`librería del estándar`: https://docs.python.org/2/library/index.html
+.. _`librería del estándar`: https://docs.python.org/es/3.7/library/index.html
 .. _`modo interactivo`: https://es.wikipedia.org/wiki/Python#Modo_interactivo
 .. _`SciPy`: https://en.wikipedia.org/wiki/SciPy
 .. _`ipython`: https://ipython.readthedocs.io/
