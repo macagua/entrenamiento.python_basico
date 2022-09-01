@@ -23,8 +23,8 @@ otros proyectos Python.
 Cada paquete empaquetado se puede distribuir en su propia pagina de proyecto y al 
 mismo tiempo puede optar a publicar su proyecto en el Python Package Index (PyPI), 
 con el cual si lo publica allí su proyecto estará a su alcance y sino de muchos mas 
-programadores, ya que es un repositorio de software publico, solo con ejecutar el 
-comando ``pip install <paquete>`` lo convierte en una herramienta tremendamente útil 
+programadores, ya que es un repositorio de software publico, solo con ejecutar el
+comando ``pip3.7 install <paquete>`` lo convierte en una herramienta tremendamente útil 
 y probablemente sea una de las razones del éxito de Python entre los que empiezan 
 a programar.
 
@@ -63,7 +63,7 @@ siguiente:
 
 A continuación se detallan el significado y uso de la estructura de directorio anterior:
 
-- ``DIRECTORIO-DEL-PROYECTO`` puede ser cualquiera, no afecta en absoluto, lo que 
+- ``DIRECTORIO-DEL-PROYECTO`` puede ser cualquiera, no afecta en absoluto, lo que
   cuenta es lo que hay dentro.
 
 - ``NOMBRE-DEL-PAQUETE`` tiene que ser el nombre del paquete, si el nombre es 
@@ -481,7 +481,7 @@ siguiente comando:
     running install_scripts
     adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
     creating build/bdist.linux-x86_64/wheel/tostadas_pipo-0.1.dist-info/WHEEL
-    creating 'dist/tostadas_pipo-0.1-py2-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+    creating 'dist/tostadas_pipo-0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
     adding 'tostadas_pipo/__init__.py'
     adding 'tostadas_pipo/principal.py'
     adding 'tostadas_pipo/utilidades/__init__.py'
@@ -503,7 +503,7 @@ directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *
 
     dist/
     ├── tostadas_pipo-0.1-py3.7.egg
-    └── tostadas_pipo-0.1-py2-none-any.whl
+    └── tostadas_pipo-0.1-py3-none-any.whl
 
 De esta forma ya creo la distribución ``bdist`` del paquete en formato *whl* para 
 su proyecto.
@@ -528,7 +528,7 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 ::
 
-    pip install --user dist/tostadas_pipo-0.1.tar.gz
+    pip3.7 install --user dist/tostadas_pipo-0.1.tar.gz
 
 Si al ejecutar el comando anterior muestra el mensaje:
 
@@ -542,13 +542,13 @@ el siguiente comando:
 
 ::
 
-    sudo apt-get install -y python-pip 
+    sudo apt install -y python-pip
 
 De nuevo vuelva a ejecutar en su consola de comando el comando:
 
 ::
 
-    pip install --user dist/tostadas_pipo-0.1.tar.gz
+    pip3.7 install --user dist/tostadas_pipo-0.1.tar.gz
     Processing ./dist/tostadas_pipo-0.1.tar.gz
     Building wheels for collected packages: tostadas-pipo
       Running setup.py bdist_wheel for tostadas-pipo ... done
@@ -572,8 +572,8 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 ::
 
-    pip install --user ./dist/tostadas_pipo-0.1-py2-none-any.whl
-    Processing ./dist/tostadas_pipo-0.1-py2-none-any.whl
+    pip3.7 install --user ./dist/tostadas_pipo-0.1-py3-none-any.whl
+    Processing ./dist/tostadas_pipo-0.1-py3-none-any.whl
     Installing collected packages: tostadas-pipo
     Successfully installed tostadas-pipo-0.1
 
@@ -583,7 +583,7 @@ paquete en el interprete Python usando la herramienta ``pip``.
 ----
 
 .. note::
-    `pip <https://pip.readthedocs.io/>`_, es una herramienta para instalación y 
+    `pip <https://pip.readthedocs.io/>`_, es una herramienta para instalación y
     administración de paquetes Python.
 
 ----
@@ -692,7 +692,7 @@ o binaria de su paquete, ejecute el siguiente comando:
 
 ::
 
-    pip list --user --format=freeze | grep "tostadas"
+    pip3.7 list --user --format=freeze | grep "tostadas"
     tostadas-pipo==0.1
 
 De esta forma la herramienta de gestión de paquete indica que el ``tostadas-pipo`` en su 
@@ -727,7 +727,7 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
 
 ::
 
-    pip uninstall tostadas_pipo
+    pip3.7 uninstall tostadas_pipo
     Uninstalling tostadas-pipo-0.1:
       /home/leonardo/.local/bin/tostadas_pipo
       /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/DESCRIPTION.rst
@@ -758,9 +758,9 @@ conocidas son:
   cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python setup.py install`` 
   desde el :ref:`código del paquete <python_distro_install_source_pkg>`. 
 
-  Instalándolo de esta forma, al momento de desintalarlo usando el comando ``pip uninstall tostadas_pipo`` 
-  este comando removerá solo la metadata, no detrás dejando de la instalación metadata para 
-  determinar que archivos fueron instalados. 
+  Instalándolo de esta forma, al momento de desintalarlo usando el comando ``pip3.7 uninstall tostadas_pipo``
+  este comando removerá solo la metadata, no detrás dejando de la instalación metadata para
+  determinar que archivos fueron instalados.
 
   Entonces para solventar este problema tiene que ir manualmente al directorio ``site-packages`` a 
   eliminar manualmente el paquete que instalo.
@@ -791,7 +791,7 @@ conocidas son:
 
         ::
 
-            pip uninstall tostadas_pipo
+            pip3.7 uninstall tostadas_pipo
             DEPRECATION: Uninstalling a distutils installed project (tostadas-pipo) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
             Uninstalling tostadas-pipo-0.1:
               /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.egg-info

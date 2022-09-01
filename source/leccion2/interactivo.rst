@@ -351,7 +351,7 @@ este programa ejecute el siguiente comando:
 
 .. code-block:: sh
 
-    sudo apt-get install ipython
+    sudo apt install ipython
 
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
@@ -557,8 +557,8 @@ este programa ejecute el siguiente comando:
 
 .. code-block:: sh
 
-    sudo apt-get install python-pip
-    sudo pip install bpython
+    sudo apt install -y python-pip
+    sudo pip3.7 install bpython
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 ``python`` por ``ipython`` de la siguiente forma:

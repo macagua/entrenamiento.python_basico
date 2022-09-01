@@ -44,8 +44,11 @@ los siguientes comando:
 
 ::
 
-  $ sudo apt install python-pip python-setuptools git
-  $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils texlive-font-utils texlive-fonts-recommended texlive-latex-extra texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
+  $ sudo apt update
+  $ sudo apt install -y python-pip python-setuptools git
+  $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils \
+                        texlive-font-utils texlive-fonts-recommended texlive-latex-extra \
+                        texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
   $ sudo pip3.7 install virtualenv
 
 
@@ -73,7 +76,7 @@ Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente coman
 
 ::
 
-  (venv)$ pip install -r requirements.txt
+  (venv)$ pip3.7 install -r requirements.txt
 
 
 Recursos del entrenamiento
@@ -116,7 +119,7 @@ con cualquiera de sus programas de visor de PDF favorito (Evince, Acrobat Reader
 Estatus de Calidad
 ==================
 
-.. image:: https://readthedocs.org/projects/entrenamiento-python-basico/badge/?version=latest
+.. image:: https://readthedocs.org/projects/entrenamiento-python-basico/badge/?version=stable
    :target: http://entrenamiento-python-basico.rtfd.org/
    :align: left
    :alt: entrenamiento-python-basico ReadTheDocs build status
