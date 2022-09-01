@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-"""Instalador para el paquete "tostadas_pipo"."""
+""" Instalador para el paquete "tostadas_pipo". """
 
 from setuptools import setup
 
@@ -29,7 +28,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License",
         # Indique versiones soportas, Python 2, Python 3 o ambos.
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent",
     ],
     keywords="ejemplo instalador paquete tostadas_pipo",

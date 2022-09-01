@@ -40,10 +40,10 @@ elemento ya esta presente.
 ::
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
     >>> set_mutable1.add(22)
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11, 22])
 
 
@@ -57,10 +57,10 @@ Este método remueve todos los elementos desde este **conjunto mutable**.
 ::
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
     >>> set_mutable1.clear()
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([])
 
 
@@ -92,13 +92,13 @@ todos los elementos que están en el primero, pero no en el argumento.
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
-    >>> print set_mutable2
+    >>> print(set_mutable2)
     set([2, 4, 5, 8, 9, 11])
-    >>> print set_mutable1.difference(set_mutable2)
+    >>> print(set_mutable1).difference(set_mutable2)
     set([1, 3, 7])
-    >>> print set_mutable2.difference(set_mutable1)
+    >>> print(set_mutable2.difference(set_mutable1))
     set([8, 9])
 
 
@@ -167,13 +167,13 @@ inmutables**: todos los elementos que están en ambos.
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
-    >>> print set_mutable2
+    >>> print(set_mutable2)
     set([2, 4, 5, 8, 9, 11])
-    >>> print set_mutable1.intersection(set_mutable2)
+    >>> print(set_mutable1).intersection(set_mutable2)
     set([2, 11, 4, 5])
-    >>> print set_mutable2.intersection(set_mutable1)
+    >>> print(set_mutable2.intersection(set_mutable1))
     set([2, 11, 4, 5])
 
 
@@ -219,11 +219,11 @@ Este método devuelve el valor ``True`` si no hay elementos comunes entre los
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
-    >>> print set_mutable2
+    >>> print(set_mutable2)
     set([2, 4, 5, 8, 9, 11])
-    >>> print set_mutable1.isdisjoint(set_mutable2)
+    >>> print(set_mutable1).isdisjoint(set_mutable2)
 
 
 .. _python_set_mtd_issubset:
@@ -239,15 +239,15 @@ Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subcon
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
     >>> set_mutable3 = set([11, 5, 2, 4])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
-    >>> print set_mutable2
+    >>> print(set_mutable2)
     set([2, 4, 5, 8, 9, 11])
-    >>> print set_mutable3
+    >>> print(set_mutable3)
     set([2, 11, 4, 5])
-    >>> print set_mutable2.issubset(set_mutable1)
+    >>> print(set_mutable2.issubset(set_mutable1))
     False
-    >>> print set_mutable3.issubset(set_mutable1)
+    >>> print(set_mutable3.issubset(set_mutable1))
     True
 
 
@@ -264,15 +264,15 @@ es un *superset* del **conjunto mutable** argumento.
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
     >>> set_mutable3 = set([11, 5, 2, 4])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
-    >>> print set_mutable2
+    >>> print(set_mutable2)
     set([2, 4, 5, 8, 9, 11])
-    >>> print set_mutable3
+    >>> print(set_mutable3)
     set([2, 11, 4, 5])
-    >>> print set_mutable1.issuperset(set_mutable2)
+    >>> print(set_mutable1).issuperset(set_mutable2)
     False
-    >>> print set_mutable1.issuperset(set_mutable3)
+    >>> print(set_mutable1).issuperset(set_mutable3)
     True
 
 
@@ -290,21 +290,21 @@ se lanza una excepción :ref:`KeyError <python_exception_keyerror>`.
     >>> paquetes = {'python', 'zope', 'plone', 'django'}
     >>> paquetes
     set(['python', 'zope', 'plone', 'django'])
-    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    >>> print("Valor aleatorio devuelto es:", paquetes.pop())
     Valor aleatorio devuelto es: python
     >>> paquetes
     set(['zope', 'plone', 'django'])
-    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    >>> print("Valor aleatorio devuelto es:", paquetes.pop())
     Valor aleatorio devuelto es: zope
     >>> paquetes
     set(['plone', 'django'])
-    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    >>> print("Valor aleatorio devuelto es:", paquetes.pop())
     Valor aleatorio devuelto es: plone
     >>> paquetes
     set(['django'])
-    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    >>> print("Valor aleatorio devuelto es:", paquetes.pop())
     Valor aleatorio devuelto es: django
-    >>> print "Valor aleatorio devuelto es:", paquetes.pop()
+    >>> print("Valor aleatorio devuelto es:", paquetes.pop())
     Valor aleatorio devuelto es:
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -354,11 +354,11 @@ Este método devuelve todos los elementos que están en un **conjunto mutable** 
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
-    >>> print set_mutable2
+    >>> print(set_mutable2)
     set([2, 4, 5, 8, 9, 11])
-    >>> print set_mutable1.symmetric_difference(set_mutable2)
+    >>> print(set_mutable1).symmetric_difference(set_mutable2)
     set([1, 3, 7, 8, 9])
 
 
@@ -400,11 +400,11 @@ elementos que están en alguno de los **conjuntos mutables** y **conjuntos inmut
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
-    >>> print set_mutable1
+    >>> print(set_mutable1)
     set([1, 2, 3, 4, 5, 7, 11])
-    >>> print set_mutable2
+    >>> print(set_mutable2)
     set([2, 4, 5, 8, 9, 11])
-    >>> print set_mutable1.union(set_mutable2)
+    >>> print(set_mutable1).union(set_mutable2)
     set([1, 2, 3, 4, 5, 7, 8, 9, 11])
 
 
@@ -487,7 +487,7 @@ A continuación, se presentan un ejemplo de conjuntos ``set``:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_conjuntos.py
     :language: python
-    :lines: 9-32
+    :lines: 7-30
 
 
 Conjuntos frozenset
@@ -498,7 +498,7 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
 ::
 
     >>> versiones_plone = frozenset([6, 2.1, 2.5, 3.6, 4, 5, 4, 2.5])
-    >>> print versiones_plone, type(versiones_plone)
+    >>> print(versiones_plone, type(versiones_plone))
     frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
 Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y deben 

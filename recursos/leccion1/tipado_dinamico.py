@@ -4,17 +4,17 @@
     estático donde las variables tienen un tipo.
 
     >>> variable = 11
-    >>> print (variable, type(variable))
+    >>> print(variable, type(variable))
     11 <class 'int'>
     >>> variable = "activo"
-    >>> print (variable, type(variable))
+    >>> print(variable, type(variable))
     activo <class 'str'>
 """
 
 # "variable" guarda un valor integer
 variable = 11
-print (variable, type(variable))
+print(variable, type(variable))
 
 # "variable" guarda un valor string
 variable = "activo"
-print (variable, type(variable))
+print(variable, type(variable))

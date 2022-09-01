@@ -22,7 +22,7 @@ Fecha y hora
     day, month, year = datos_basicos['fecha_nacimiento'][0:2], datos_basicos['fecha_nacimiento'][2:4], datos_basicos['fecha_nacimiento'][4:8]
     import datetime
     fecha_nacimiento = datetime.date(int(year), int(month), int(day))
-    print "Fecha y lugar de nacimiento:", datetime.datetime.strftime(fecha_nacimiento, "%d de %B de %Y") + " en " + datos_basicos['lugar_nacimiento'] + "."
+    print("Fecha y lugar de nacimiento:", datetime.datetime.strftime(fecha_nacimiento, "%d de %B de %Y") + " en " + datos_basicos['lugar_nacimiento'] + ".")
 
     datos_basicos = {
         "nombres":"Leonardo Jose",
@@ -35,7 +35,7 @@ Fecha y hora
     }
 
     import datetime, locale
-    print "Fecha y lugar de nacimiento:", datetime.datetime.strftime(datetime.datetime.strptime(datos_basicos['fecha_nacimiento'], '%d/%m/%Y'), "%d de %B de %Y") + " en " + datos_basicos['lugar_nacimiento'] + "."
+    print("Fecha y lugar de nacimiento:", datetime.datetime.strftime(datetime.datetime.strptime(datos_basicos['fecha_nacimiento'], '%d/%m/%Y'), "%d de %B de %Y") + " en " + datos_basicos['lugar_nacimiento'] + ".")
 
     import locale
     locale.setlocale(locale.LC_TIME,'')

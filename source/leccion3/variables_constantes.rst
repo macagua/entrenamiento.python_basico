@@ -97,11 +97,11 @@ asignando múltiples valores:
 ::
 
     >>> a, b, c = 5, 3.2, "Hola"
-    >>> print a
+    >>> print(a)
     5
-    >>> print b
+    >>> print(b)
     3.2
-    >>> print c
+    >>> print(c)
     'Hola'
 
 Si usted quiere asignar el mismo valor a múltiples variables al mismo tiempo, usted 
@@ -110,11 +110,11 @@ puede hacer lo siguiente:
 ::
 
     >>> x = y = z = True
-    >>> print x
+    >>> print(x)
     True
-    >>> print y
+    >>> print(y)
     True
-    >>> print z
+    >>> print(z)
     True
 
 El segundo programa asigna el mismo valor booleano a todas las tres variables ``x``, 
@@ -444,10 +444,10 @@ globales.
     ...     global variable1
     ...     variable1 = "variable global modificada"
     ... 
-    >>> print variable1
+    >>> print(variable1)
     variable original
     >>> variable_global()
-    >>> print variable1
+    >>> print(variable1)
     variable global modificada
 
 Como se puede ver, después de llamar a la función ``variable_global()``, la variable 

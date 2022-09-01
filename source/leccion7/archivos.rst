@@ -190,7 +190,7 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
 
     >>> archivo = open('datos.txt', 'r')
     >>> for linea in archivo:
-    ...     print linea
+    ...     print(linea)
     ... 
     Este es una prueba 
 
@@ -206,7 +206,7 @@ interactuar de el mismo como se muestra a continuación:
 
 .. literalinclude:: ../../recursos/leccion7/archivo.py
     :language: python
-    :lines: 8-50
+    :lines: 6-48
 
 
 Ayuda integrada

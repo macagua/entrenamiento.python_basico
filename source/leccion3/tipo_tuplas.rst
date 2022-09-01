@@ -31,11 +31,11 @@ aparece en la tupla.
 ::
 
     >>> valores = ("Python", True, "Zope", 5)
-    >>> print "True ->", valores.count(True)
+    >>> print("True ->", valores.count(True))
     True -> 1
-    >>> print "'Zope' ->", valores.count('Zope')
+    >>> print("'Zope' ->", valores.count('Zope'))
     'Zope' -> 1
-    >>> print "5 ->", valores.count(5)
+    >>> print("5 ->", valores.count(5))
     5 -> 1
 
 
@@ -51,9 +51,9 @@ aparición en la tupla.
 ::
 
     >>> valores = ("Python", True, "Zope", 5)
-    >>> print valores.index(True)
+    >>> print(valores.index(True))
     1
-    >>> print valores.index(5)
+    >>> print(valores.index(5))
     3
 
 El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el 
@@ -62,7 +62,7 @@ elemento no se encuentra en la tupla, o en el entorno definido.
 ::
 
     >>> valores = ("Python", True, "Zope", 5)
-    >>> print valores.index(4)
+    >>> print(valores.index(4))
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     ValueError: tuple.index(x): x not in tuple
@@ -119,7 +119,7 @@ Podría usar un bucle ``while`` con un contador o un bucle ``for`` usando la fun
 
     >>> tecnologias = ('Zope', 'Plone', 'Pyramid')
     >>> for i in range(0, len(tecnologias)):
-    ...     print i, tecnologias[i]
+    ...     print(i, tecnologias[i])
     ... 
     0 Zope
     1 Plone

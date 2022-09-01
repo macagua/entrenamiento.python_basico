@@ -67,7 +67,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     /home/macagua/python/entrenamiento/index_error.py in index_error()
           3 def index_error():
           4     lst = list('foobar')
-    ----> 5     print lst[len(lst)]
+    ----> 5     print(lst[len(lst)])
           6 
           7 if __name__ == '__main__':
 
@@ -76,7 +76,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     In [2]: %debug
     > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
           4     lst = list('foobar')
-    ----> 5     print lst[len(lst)]
+    ----> 5     print(lst[len(lst)])
           6 
 
     ipdb> list
@@ -84,7 +84,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
           2 
           3 def index_error():
           4     lst = list('foobar')
-    ----> 5     print lst[len(lst)]
+    ----> 5     print(lst[len(lst)])
           6 
           7 if __name__ == '__main__':
           8     index_error()
@@ -92,7 +92,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
 
     ipdb> len(lst)
     6
-    ipdb> print lst[len(lst)-1]
+    ipdb> print(lst[len(lst)-1])
     r
     ipdb> quit
 
@@ -120,12 +120,12 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     File "index_error.py", line 8, in <module>
         index_error()
     File "index_error.py", line 5, in index_error
-        print lst[len(lst)]
+        print(lst[len(lst)])
     IndexError: list index out of range
     Uncaught exception. Entering post mortem debugging
     Running 'cont' or 'step' will restart the program
     > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
-    -> print lst[len(lst)]
+    -> print(lst[len(lst)])
     (Pdb) 
 
 
@@ -202,7 +202,7 @@ está haciendo correctamente.
          36     l_var = local_var(noisy_img, size=size)
     ---> 37     for i in range(3):
          38         res = noisy_img - denoised_img
-    ipdb> print l_var
+    ipdb> print(l_var)
     [[5868 5379 5316 ..., 5071 4799 5149]
      [5013  363  437 ...,  346  262 4355]
      [5379  410  344 ...,  392  604 3377]
@@ -210,7 +210,7 @@ está haciendo correctamente.
      [ 435  362  308 ...,  275  198 1632]
      [ 548  392  290 ...,  248  263 1653]
      [ 466  789  736 ..., 1835 1725 1940]]
-    ipdb> print l_var.min()
+    ipdb> print(l_var.min())
     0
 
 *Oh dear*, solo ve entero y variación 0. Aquí está nuestro error,

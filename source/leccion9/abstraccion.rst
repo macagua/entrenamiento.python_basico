@@ -71,13 +71,13 @@ los atributos con un prefijo de doble subrayado: ``__atributo``.
     ...         return(total + impuesto)
     ... 
     >>> compra1 = Factura(12, 110)
-    >>> print compra1.unidad
+    >>> print(compra1.unidad)
     12
-    >>> print compra1.precio
+    >>> print(compra1.precio)
     110
-    >>> print compra1.por_pagar(), "bitcoins"
+    >>> print(compra1.por_pagar(), "bitcoins")
     (1570, 'bitcoins')
-    >>> print Factura.__tasa
+    >>> print(Factura.__tasa)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     AttributeError: class Factura has no attribute '__tasa'
@@ -91,7 +91,7 @@ nombres agrega el nombre de la clase:
 
 ::
 
-    >>> print compra1._Factura__tasa
+    >>> print(compra1._Factura__tasa)
     19
     >>> 
 

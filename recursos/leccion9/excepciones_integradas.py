@@ -19,12 +19,12 @@ try:
     linea2 += int(cadenas.strip())
     total = linea1 + linea2
     archivo.close()
-except IOError as (errno, strerror):
-    print "Error E/S ({0}): {1}".format(errno, strerror)
+except IOError as err:
+    print("Error E/S ({0}): {1}".format(err.errno, err.strerror))
 except ValueError:
-    print "No pude convertir el dato a un entero."
+    print("No pude convertir el dato a un entero.")
 except:
-    print "Error inesperado:", sys.exc_info()[0]
+    print("Error inesperado:", sys.exc_info()[0])
     raise
 
-print "El total es:", total
+print("El total es:", total)

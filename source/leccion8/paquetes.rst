@@ -33,7 +33,7 @@ directorio).
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/principal.py
     :language: python
-    :lines: 3-12
+    :lines: 1-10
 
 Seguidamente dentro del directorio ``tostadas_pipo``, cree otro directorio 
 llamado ``utilidades``, dentro de este, cree los siguientes archivos:
@@ -44,13 +44,13 @@ llamado ``utilidades``, dentro de este, cree los siguientes archivos:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/calculos.py
     :language: python
-    :lines: 3-9
+    :lines: 1-7
 
 - Archivo ``impuestos.py`` incluye el siguiente código:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/impuestos.py
     :language: python
-    :lines: 3-14
+    :lines: 1-12
 
 
 Al final tendrá la siguiente estructura del directorios del paquete Python llamado 
@@ -100,7 +100,7 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/calculo_factura_pipo.py
     :language: python
-    :lines: 3-11
+    :lines: 1-9
 
 ----
 

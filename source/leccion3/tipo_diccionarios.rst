@@ -33,7 +33,7 @@ Los diccionarios pueden ser creados colocando una lista separada por coma de par
     ...     "clave3":"Valor 1",
     ...     "clave4":[1,2,3,4]
     ... }
-    >>> print diccionario, type(diccionario)
+    >>> print(diccionario, type(diccionario))
     {'clave4': [1, 2, 3, 4], 'clave1': 234, 
     'clave3': 'Valor 1', 'clave2': True} <type 'dict'>
 
@@ -123,7 +123,7 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 ::
 
     >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0, django=4.1)
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
     >>> 'plone' in versiones
     True
@@ -153,10 +153,10 @@ Este método remueve todos los elementos desde el **diccionario**.
 ::
 
     >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.clear()
-    >>> print versiones
+    >>> print(versiones)
     {}
 
 
@@ -187,7 +187,7 @@ Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de d
 
     >>> secuencia = ('python', 'zope', 'plone')
     >>> versiones = dict.fromkeys(secuencia)
-    >>> print "Nuevo Diccionario : %s" %  str(versiones)
+    >>> print("Nuevo Diccionario : %s" %  str(versiones))
     Nuevo Diccionario : {'python': None, 'zope': None, 'plone': None}
 
 En el ejemplo anterior inicializa los valores de cada clave a ``None``, mas puede 
@@ -196,7 +196,7 @@ inicializar un *valor* común por defecto para cada *clave*:
 ::
 
     >>> versiones = dict.fromkeys(secuencia, 0.1)
-    >>> print "Nuevo Diccionario : %s" %  str(versiones)
+    >>> print("Nuevo Diccionario : %s" %  str(versiones))
     Nuevo Diccionario : {'python': 0.1, 'zope': 0.1, 'plone': 0.1}
 
 
@@ -260,24 +260,24 @@ si llega al final de la posición del **diccionario**.
 ::
 
     >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.iteritems()
     <dictionary-itemiterator object at 0x7fab9dd4bc58>
     >>> for clave,valor in versiones.iteritems():
-    ...     print clave,valor
+    ...     print( )clave,valor)
     ... 
     zope 5.5.2
     python 3.7
     plone 6.0
     >>> versionesIterador = versiones.iteritems()
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     ('zope', 5.5.2)
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     ('python', 3.7)
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     ('plone', 6.0)
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
@@ -295,24 +295,24 @@ final de la posición del **diccionario**.
 ::
 
     >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.iterkeys()
     <dictionary-keyiterator object at 0x7fab9dd4bcb0>
     >>> for clave in versiones.iterkeys():
-    ...     print clave
+    ...     print(clave)
     ... 
     zope
     python
     plone
     >>> versionesIterador = versiones.iterkeys()
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     zope
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     python
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     plone
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
@@ -330,24 +330,24 @@ final de la posición del **diccionario**.
 ::
 
     >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones.itervalues()
     <dictionary-valueiterator object at 0x7fab9dd4bc58>
     >>> for valor in versiones.itervalues():
-    ...     print valor
+    ...     print(valor)
     ... 
     5.5.2
     3.7
     6.0
     >>> versionesIterador = versiones.itervalues()
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     5.5.2
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     3.7
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     6.0
-    >>> print versionesIterador.next()
+    >>> print(versionesIterador.next())
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
@@ -443,9 +443,9 @@ esta en el diccionario:
 
     >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> zope = versiones.setdefault('zope')
-    >>> print 'Versiones instaladas:', versiones
+    >>> print('Versiones instaladas:', versiones)
     Versiones instaladas: {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
-    >>> print 'Versión de Zope:', zope
+    >>> print('Versión de Zope:', zope)
     Versión de Zope: 5.5.2
 
 A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta 
@@ -454,12 +454,12 @@ en el diccionario:
 ::
 
     >>> paquetes = {'python': 3.7, 'zope': 5.5.2}
-    >>> print paquetes
+    >>> print(paquetes)
     {'python': 3.7, 'zope': 5.5.2}
     >>> plone = paquetes.setdefault('plone')
-    >>> print 'paquetes: ', paquetes
+    >>> print('paquetes: ', paquetes)
     paquetes:  {'python': 3.7, 'zope': 5.5.2, 'plone': None}
-    >>> print 'plone: ', plone
+    >>> print('plone: ', plone)
     plone:  None
 
 Si el valor no es proveído, el valor ``default_value`` será el tipo objeto integrado
@@ -471,12 +471,12 @@ en el diccionario pero esta vez el ``default_value`` es proveído:
 ::
 
     >>> pkgs = {'python': 3.7, 'zope': 5.5.2, 'plone': None}
-    >>> print pkgs
+    >>> print(pkgs)
     {'python': 3.7, 'zope': 5.5.2, 'plone': None}
     >>> django = paquetes.setdefault('django', 4.1)
-    >>> print 'paquetes =', pkgs
+    >>> print('paquetes =', pkgs)
     paquetes = {'python': 3.7, 'zope': 5.5.2, 'plone': None}
-    >>> print 'django =', django
+    >>> print('django =', django)
     django = 4.1
 
 A continuación otro ejemplo en donde puedes agrupar N :ref:`tuplas <python_tuple>` 
@@ -499,7 +499,7 @@ los valores mas repetidos y cuyos valores este agrupados en tipo
     ...     else:
     ...         paquetes[clave] = [valor]
     ... 
-    >>> print paquetes
+    >>> print(paquetes)
     {'zope': ['Zope2', 'pytz'], 'plone': ['Plone', 'diazo', 'z3c.form']}
 
 En el tipo tupla ``PKGS`` los elementos mas repetidos son ``'zope'`` y ``'plone'`` 
@@ -519,7 +519,7 @@ A continuación un mejor aprovechamiento implementando el método ``setdefault()
     >>> for clave, valor in PKGS:
     ...     paquetes.setdefault(clave, []).append(valor)
     ... 
-    >>> print paquetes
+    >>> print(paquetes)
     {'zope': ['Zope2', 'pytz'], 'plone': ['Plone', 'diazo', 'z3c.form']}
 
 En el ejemplo anterior puede ver que el aprovechamiento del método ``setdefault()`` 
@@ -541,10 +541,10 @@ permanece sin cambios.
 ::
 
     >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0)
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
     >>> versiones_adicional = dict(django=4.1)
-    >>> print versiones_adicional
+    >>> print(versiones_adicional)
     {'django': 4.1}
     >>> versiones.update(versiones_adicional)
 
@@ -554,7 +554,7 @@ Como puede apreciar este método no devuelve nada, más si muestra de nuevo el d
 
 ::
 
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
 
 
@@ -586,7 +586,7 @@ elementos del diccionario:
     >>> versiones.viewkeys()
     dict_keys(['zope', 'python', 'plone'])
     >>> for clave,valor in versiones.iteritems():
-    ...     print clave,valor
+    ...     print(clave,valor)
     ... 
     zope 5.5.2
     python 3.7
@@ -606,7 +606,7 @@ Este método devuelve un objeto proveyendo una vista de las claves del **diccion
     >>> versiones.viewkeys()
     dict_keys(['zope', 'python', 'plone'])
     >>> for clave in versiones.viewkeys():
-    ...     print clave
+    ...     print(clave)
     ... 
     zope
     python
@@ -626,7 +626,7 @@ Este método devuelve un objeto proveyendo una vista de los valores del **diccio
     >>> versiones.viewvalues()
     dict_values([5.5.2, 3.7, 6.0])
     >>> for valor in versiones.viewvalues():
-    ...     print valor
+    ...     print(valor)
     ... 
     5.5.2
     3.7
@@ -654,7 +654,7 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
     >>> versiones_proyecto1 = dict(python=3.7, zope=5.5.2, plone=6.0)
     >>> versiones_proyecto2 = dict(django=4.1, django-filter=1.1.0)
-    >>> print cmp(versiones_proyecto1, versiones_proyecto2)
+    >>> print(cmp(versiones_proyecto1, versiones_proyecto2))
     1
 
 La función ``cmp()`` es usado en Python para comparar valores y claves de dos 
@@ -699,10 +699,10 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 ::
 
     >>> versiones = dict(python=3.7, zope=5.5.2, plone=6.0, django=4.1)
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
     >>> del versiones['django']
-    >>> print versiones
+    >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
 
 En el código fuente anterior se usa la sentencia ``del`` para eliminar un elemento del 

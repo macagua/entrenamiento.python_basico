@@ -87,7 +87,7 @@ las cuales son menores de edad:
     ... ]
     >>> menores = filter(lambda persona: persona.edad < 18, personas)
     >>> for menor in menores:
-    print menor
+    print(menor)
     Sabrina de 12 años
     Enrique de 3 años
 
@@ -179,7 +179,7 @@ una serie de objetos sin ningún problema:
     ... 
     >>> personas = map(incrementar, personas)
     >>> for persona in personas:
-    ...     print persona
+    ...     print(persona)
     ... 
     Leonardo de 39 años
     Ana de 34 años
@@ -213,7 +213,7 @@ objeto:
     ... 
     >>> personas = map(lambda p: Persona(p.nombre, p.edad+1), personas)
     >>> for persona in personas:
-    ...     print persona
+    ...     print(persona)
     ... 
     Leonardo de 39 años
     Ana de 34 años
@@ -237,7 +237,7 @@ de rendimiento. No es el caso en Python.
 
     >>> import os
     >>> archivos = os.listdir(os.__file__.replace("/os.pyc", "/"))
-    >>> print filter(lambda x: x.startswith('os.'), archivos)
+    >>> print(filter(lambda x: x.startswith('os.'), archivos))
     ['os.pyc', 'os.py']
 
 En el ejemplo anterior se usa el método ``os.__file__`` para obtener la ruta donde 
@@ -291,7 +291,7 @@ filtrar todos los archivos del directorio "*/usr/lib/python3.7/*" por medio del 
 
 ::
 
-    >>> print filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python3.7/'))
+    >>> print(filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python3.7/')))
     ['os.pyc', 'os.py']
 
 Así de esta forma se comprueba que existe el archivo compilado "**os.pyc**" de Python 
@@ -310,7 +310,7 @@ junto con el mismo módulo Python "**os.py**".
         443
         >>> "os.pyc" in archivos
         True
-        >>> print filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python3.7/'))
+        >>> print(filter(lambda x: x.startswith('os.'), os.listdir('/usr/lib/python3.7/')))
         >>> ['os.pyc', 'os.py']
 
 .. commets:
@@ -322,7 +322,7 @@ junto con el mismo módulo Python "**os.py**".
         archivos = os.listdir(os.__file__.replace("/os.pyc", "/"))
         for archivo in archivos:
             if archivo.startswith('os.'):
-                print archivo
+                print(archivo)
 
 .. tip::
     Más detalle consulte la referencia de las expresiones :ref:`lambda <python_expresion_lambda>`.

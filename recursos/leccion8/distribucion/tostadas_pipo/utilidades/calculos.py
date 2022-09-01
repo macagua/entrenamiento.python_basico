@@ -1,5 +1,3 @@
-# -*- coding: utf8 -*-
-
 """ Módulo para cálculos diversos """
 
 def suma_total(monto=0):

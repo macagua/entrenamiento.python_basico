@@ -71,7 +71,7 @@ objeto.
 ::
 
     >>>
-    >>> exec(compile('a=5\nb=7\nprint a+b','','exec'))
+    >>> exec(compile('a=5\nb=7\nprint(a+b)','','exec'))
     12
 
 Aquí, ``exec`` es el modo. El parámetro anterior que eso es el nombre del archivo 
@@ -162,7 +162,7 @@ legibles desde este.
     'intern', 'isinstance', 'issubclass', 'iter', 'len', 
     'license', 'list', 'locals', 'long', 'map', 'max', 'memoryview',
     'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print',
-    'property', 'quit', 'range', 'raw_input', 'reduce', 'reload',
+    'property', 'quit', 'range', 'reduce', 'reload',
     'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted',
     'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr',
     'unicode', 'vars', 'xrange', 'zip']
@@ -197,7 +197,7 @@ la lógica ``dir()`` predeterminada y devuelve:
     ...
     ...
     ... ]
-    >>> print os.__doc__
+    >>> print(os.__doc__)
     OS routines for NT or Posix depending on what system we're on.
 
     This exports:
@@ -217,7 +217,7 @@ la lógica ``dir()`` predeterminada y devuelve:
 ::
 
     >>> class Persona(object):
-    ...     """Clase que representa una Persona"""
+    ...     """ Clase que representa una Persona """
     ...     def __init__(self, cedula, nombre, apellido, sexo):
     ...         """ Constructor de clase Persona """
     ...         self.cedula = cedula
@@ -225,14 +225,14 @@ la lógica ``dir()`` predeterminada y devuelve:
     ...         self.apellido = apellido
     ...         self.sexo = sexo
     ...     def __str__(self):
-    ...         """Devuelve una cadena representativa al Persona"""
+    ...         """ Devuelve una cadena representativa al Persona """
     ...         return "%s: %s %s, %s." % (
     ...             str(self.cedula), self.nombre,
     ...             self.apellido, self.sexo
     ...         )
     ...     def hablar(self, mensaje):
-    ...         """Mostrar mensaje de saludo de Persona"""
-    ...         print mensaje
+    ...         """ Mostrar mensaje de saludo de Persona """
+    ...         print(mensaje)
     ... 
     >>> type(Persona)
     <type 'type'>
@@ -628,7 +628,7 @@ independientemente del rango el cual represente.
 ::
 
     >>> for item in range(5):
-    ...     print item
+    ...     print(item)
     ... 
     0
     1
@@ -636,7 +636,7 @@ independientemente del rango el cual represente.
     3
     4
     >>> for item in xrange(5):
-    ...     print item
+    ...     print(item)
     ... 
     0
     1
@@ -651,7 +651,7 @@ y más eficiente en la memoria.
 
 ::
 
-    >>> print xrange(5)
+    >>> print(xrange(5))
     xrange(5)
     >>> type(xrange(5))
     <type 'xrange'>
@@ -767,7 +767,12 @@ Las funciones de tipos numéricos se describen a continuación:
 input()
 ~~~~~~~
 
-Equivalente a la función ``eval(raw_input(prompt))``
+Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva 
+línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*: 
+``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`. 
+En sistemas Unix, la librería **GNU readline** es usada si es habilitada. El ``prompt`` 
+de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes 
+de leer.
 
 Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar.
 
@@ -817,48 +822,50 @@ entre comillas simples o dobles, como el siguiente ejemplo:
     <type 'str'>
 
 
-.. _python_fun_raw_input:
+.. comments:
 
-raw_input()
-~~~~~~~~~~~
+    .. _python_fun_raw_input:
 
-Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva 
-línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*: 
-``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`. 
-En sistemas Unix, la librería **GNU readline** es usada si es habilitada.  El ``prompt`` 
-de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes 
-de leer.
+    raw_input()
+    ~~~~~~~~~~~
 
-::
+    Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva 
+    línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*: 
+    ``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`. 
+    En sistemas Unix, la librería **GNU readline** es usada si es habilitada.  El ``prompt`` 
+    de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes 
+    de leer.
 
-    >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-    Por favor, ingresa un dato: 2
-    '2'
-    <type 'str'>
-    >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-    Por favor, ingresa un dato: 2.3
-    '2.3'
-    <type 'str'>
-    >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-    Por favor, ingresa un dato: 23L
-    '23L'
-    <type 'str'>
-    >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-    Por favor, ingresa un dato: leonardo
-    'leonardo'
-    <type 'str'>
-    >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-    Por favor, ingresa un dato: "leonardo"
-    '"leonardo"'
-    <type 'str'>
-    >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-    Por favor, ingresa un dato: leonardo caballero
-    'leonardo caballero'
-    <type 'str'>
-    >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-    Por favor, ingresa un dato: "leonardo caballero"
-    '"leonardo caballero"'
-    <type 'str'>
+    ::
+
+        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
+        Por favor, ingresa un dato: 2
+        '2'
+        <type 'str'>
+        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
+        Por favor, ingresa un dato: 2.3
+        '2.3'
+        <type 'str'>
+        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
+        Por favor, ingresa un dato: 23L
+        '23L'
+        <type 'str'>
+        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
+        Por favor, ingresa un dato: leonardo
+        'leonardo'
+        <type 'str'>
+        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
+        Por favor, ingresa un dato: "leonardo"
+        '"leonardo"'
+        <type 'str'>
+        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
+        Por favor, ingresa un dato: leonardo caballero
+        'leonardo caballero'
+        <type 'str'>
+        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
+        Por favor, ingresa un dato: "leonardo caballero"
+        '"leonardo caballero"'
+        <type 'str'>
 
 
 ----
@@ -1472,7 +1479,7 @@ seria de la siguiente forma:
 
 ::
 
-    >>> print format(123,"d")
+    >>> print(format(123,"d"))
     123
 
 A continuación, un ejemplo de un valor :ref:`número float <python_num_float>`, 
@@ -1480,14 +1487,14 @@ seria de la siguiente forma:
 
 ::
 
-    >>> print format(123.456789,"f")
+    >>> print(format(123.456789,"f"))
     123.456789
 
 A continuación, un ejemplo de un valor binario, seria de la siguiente forma:
 
 ::
 
-    >>> print format(10,"b")
+    >>> print(format(10,"b"))
     1010
 
 
@@ -1496,7 +1503,7 @@ con formato especifico, seria de la siguiente forma:
 
 ::
 
-    >>> print format(1234,"*>+7,d")
+    >>> print(format(1234,"*>+7,d"))
     *+1,234
 
 En el ejemplo anterior cuando se formatea el :ref:`número entero <python_num_entero>` 
@@ -1521,7 +1528,7 @@ con formato especifico, seria de la siguiente forma:
 
 ::
 
-    >>> print format(123.4567, "^-09.3f")
+    >>> print(format(123.4567, "^-09.3f"))
     0123.4570
 
 En el ejemplo anterior cuando se formatea el :ref:`número float <python_num_float>` 
@@ -1557,7 +1564,7 @@ siguiente forma:
     ...             return '23'
     ...         return 'Formato nulo'
     ... 
-    >>> print format(Persona(), "edad")
+    >>> print(format(Persona(), "edad"))
     23
 
 En el ejemplo anterior cuando se sobre escribe el método especial ``__format__()`` de 
@@ -2100,10 +2107,10 @@ iterable :ref:`lista <python_list>`:
 ::
 
     >>> versiones = [6, 2.1, 2.5, 3.6, 4, 5, 6, 4, 2.5]
-    >>> print versiones, type(versiones)
+    >>> print(versiones, type(versiones))
     [6, 2.1, 2.5, 3.6, 4, 5, 6, 4, 2.5] <type 'list'>
     >>> versiones_plone = frozenset(versiones)
-    >>> print versiones_plone, type(versiones_plone)
+    >>> print(versiones_plone, type(versiones_plone))
     frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
 
@@ -2154,7 +2161,7 @@ ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_
 ::
 
     >>> lista = list(range(10))
-    >>> print lista
+    >>> print(lista)
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
@@ -2201,7 +2208,7 @@ ejemplo, una tupla podría crearse mediante la función :ref:`range(10) <python_
 ::
 
     >>> tupla = tuple(range(4, 9))
-    >>> print tupla
+    >>> print(tupla)
     (4, 5, 6, 7, 8)
 
 
@@ -2217,10 +2224,10 @@ iterable :ref:`lista <python_list>`:
 ::
 
     >>> versiones = [2.1, 2.5, 3.6, 4, 5, 6, 4]
-    >>> print versiones, type(versiones)
+    >>> print(versiones, type(versiones))
     [2.1, 2.5, 3.6, 4, 5, 6, 4] <type 'list'>
     >>> versiones_plone = set(versiones)
-    >>> print versiones_plone, type(versiones_plone)
+    >>> print(versiones_plone, type(versiones_plone))
     set([2.5, 4, 5, 6, 2.1, 3.6]) <type 'set'>
 
 

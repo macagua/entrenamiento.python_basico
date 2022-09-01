@@ -10,7 +10,7 @@
       File "<stdin>", line 1, in <module>
     TypeError: unsupported operand type(s) for +: 'int' and 'str'
     >>> total = valor1 + int(valor2)
-    >>> print ("El total es: " + str(total))
+    >>> print("El total es: " + str(total))
     7
 """
 
@@ -19,4 +19,4 @@ valor1, valor2 = 2, "5"
 # se usa el metodo int() para convertir a entero
 total = valor1 + int(valor2)
 # se usa el metodo str() para convertir a cadena
-print ("El total es: " + str(total))
+print("El total es: " + str(total))

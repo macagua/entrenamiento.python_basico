@@ -135,7 +135,7 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 
 .. literalinclude:: ../../recursos/leccion8/distribucion/setup.py
     :language: python
-    :lines: 2-44
+    :lines: 1-43
 
 Entonces debe cree la siguiente estructura de directorios, ya hecha para seguir 
 adelante:
@@ -710,7 +710,7 @@ ejecutando el siguiente comando:
 
 ::
 
-    python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print "Función importada " + impuesto_iva14.__doc__[1:36] + "."'
+    python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print("Función importada " + impuesto_iva14.__doc__[1:36] + ".")'
     Función importada Calcula el impuesto del IVA de 14 %.
 
 El comando previo muestra la :ref:`docstring <python_str_docstrings>` de la 

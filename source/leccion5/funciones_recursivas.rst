@@ -25,11 +25,11 @@ hasta cero a partir de un número:
     >>> def cuenta_regresiva(numero):
     ...     numero -= 1
     ...     if numero > 0:
-    ...         print numero
+    ...         print(numero)
     ...         cuenta_regresiva(numero)
     ...     else:
-    ...         print "Boooooooom!"
-    ...     print "Fin de la función", numero
+    ...         print("Boooooooom!")
+    ...     print("Fin de la función", numero)
     ... 
     >>> cuenta_regresiva(5)
     4
@@ -54,13 +54,13 @@ de este tipo de funciones:
 ::
 
     >>> def factorial(numero):
-    ...     print "Valor inicial ->",numero
+    ...     print("Valor inicial ->",numero)
     ...     if numero > 1:
     ...         numero = numero * factorial(numero -1)
-    ...     print "valor final ->",numero
+    ...     print("valor final ->",numero)
     ...     return numero
     ... 
-    >>> print factorial(5)
+    >>> print(factorial(5))
     Valor inicial -> 5
     Valor inicial -> 4
     Valor inicial -> 3

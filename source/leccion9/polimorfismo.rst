@@ -78,7 +78,7 @@ esencia al ámbito de los operadores aritméticos, binarios, de comparación y l
     ... 
     >>> punto1 = Punto(4,6)
     >>> punto2 = Punto(1,-2)
-    >>> print punto1 + punto2
+    >>> print(punto1 + punto2)
     (5, 4)
 
 

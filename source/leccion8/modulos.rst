@@ -21,7 +21,7 @@ llamado ``utilidades.py``:
 
 .. literalinclude:: ../../recursos/leccion8/modulos/utilidades.py
     :language: python
-    :lines: 2-8
+    :lines: 1-7
 
 .. _python_sent_import:
 
@@ -48,7 +48,7 @@ un simple módulo, ``calculo_factura_pipo.py``.
 
 .. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
     :language: python
-    :lines: 3-17
+    :lines: 1-15
 
 Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
 
@@ -77,7 +77,7 @@ sentencias:
     >>> import funciones, os
     >>> archivos = os.listdir(os.path.abspath(
     ...     funciones.__file__).replace("/utilidades.pyc", "/"))
-    >>> print filter(lambda x: x.startswith('funciones.'), archivos)
+    >>> print(filter(lambda x: x.startswith('funciones.'), archivos))
     ['utilidades.py', 'utilidades.pyc']
 
 

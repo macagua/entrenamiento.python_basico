@@ -2,13 +2,13 @@
 
 
 class VenezolanoError(Exception):
-    """Clase base para expresiones Venezolanas."""
+    """ Clase base para expresiones Venezolanas. """
     def __init__(self, evaluar):
         self.evaluar = evaluar
 
 
 class ConoDeLaMadreError(VenezolanoError):
-    """Clase base para la expresión Venezolana central Coño de la madre - CDLM."""
+    """ Clase base para la expresión Venezolana central Coño de la madre - CDLM. """
     def __init__(self, expresion):
         self.expresion = expresion
     def __str__(self):
@@ -16,7 +16,7 @@ class ConoDeLaMadreError(VenezolanoError):
 
 
 class MaduroError(ConoDeLaMadreError):
-    """Excepción lanzada por errores para la expresión CDLM Maduro."""
+    """ Excepción lanzada por errores para la expresión CDLM Maduro. """
     def __init__(self, sentimiento):
         self.sentimiento = sentimiento
     def __str__(self):
@@ -24,7 +24,7 @@ class MaduroError(ConoDeLaMadreError):
 
 
 class CaraETablaError(ConoDeLaMadreError):
-    """Excepción lanzada por errores para la excepción Cara e' Tabla."""
+    """ Excepción lanzada por errores para la excepción Cara e' Tabla. """
     def __init__(self, expresion):
         self.expresion = expresion
     def __str__(self):
@@ -32,7 +32,7 @@ class CaraETablaError(ConoDeLaMadreError):
 
 
 class HijuEPutaError(VenezolanoError):
-    """Excepción lanzada por errores para expresiones Venezolanas Andinas."""
+    """ Excepción lanzada por errores para expresiones Venezolanas Andinas. """
     def __str__(self):
         if self.evaluar < 14:
             return "Uish, si que hijue puta, hace frio!!!\n"
@@ -41,7 +41,7 @@ class HijuEPutaError(VenezolanoError):
 
 
 class PuesError(VenezolanoError):
-    """Excepción lanzada por errores para expresiones Venezolanas Llaneras."""
+    """ Excepción lanzada por errores para expresiones Venezolanas Llaneras. """
     def __str__(self):
         if self.evaluar:
             return "Pues compae!!!\n"
@@ -50,9 +50,9 @@ class PuesError(VenezolanoError):
 
 
 class MaracuchoError(VenezolanoError):
-    """Clase base para expresiones Marachuchas."""
+    """ Clase base para expresiones Marachuchas. """
     def __str__(self):
-        print '\n¿Eres de Maracaibo?'
+        print("\n¿Eres de Maracaibo?")
         if self.evaluar:
             return "Claro primo, cuando voy pa' Maracaibo y empiezo a pasar el puente..."
         else:
@@ -60,7 +60,7 @@ class MaracuchoError(VenezolanoError):
 
 
 class VergaError(MaracuchoError):
-    """Clase base para expresiones del verbo Vergación."""
+    """ Clase base para expresiones del verbo Vergación. """
     def __str__(self):
         if self.evaluar != 150:
             return "\n¡Vergación de error primo, lo fregaste, con el valor {0}.".format(self.evaluar)

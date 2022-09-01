@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #
 # Configuration file for the Sphinx documentation builder.
 #
@@ -20,24 +19,24 @@ sys.path.append(os.path.abspath('sphinxext'))
 
 # -- Project information -----------------------------------------------------
 
-project_namecode = u'entrenamiento.python_basico'
-project_short_name = u'programación en Python - Nivel básico'
+project_namecode = 'entrenamiento.python_basico'
+project_short_name = 'programación en Python - Nivel básico'
 project = project_short_name[0].capitalize() + project_short_name[1:39]
 project_name = project_namecode.replace(".", "")
-project_details = u'Materiales del entrenamiento de {0}'.format(project_short_name)
-publisher = u'Covantec R.L.'
-years= u'2014 - 2019'
-copyright = u'{0}, {1}'.format(years, publisher)
-author = u'Leonardo J. Caballero G.'
+project_details = 'Materiales del entrenamiento de {0}'.format(project_short_name)
+publisher = 'Covantec R.L.'
+years = '2014 - 2022'
+copyright = '{0}, {1}'.format(years, publisher)
+author = 'Leonardo J. Caballero G.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version
-version = u'0.2'
+version = '0.2'
 # The full version, including alpha/beta/rc tags
-release = u'0.2'
+release = '0.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -92,7 +91,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = u'es'
+language = 'es'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -349,7 +348,7 @@ texinfo_documents = [
 epub_title = project_details
 epub_author = author
 epub_publisher = publisher
-epub_copyright = u'{0}, {1}'.format(years, author)
+epub_copyright = '{0}, {1}'.format(years, author)
 
 # The language of the text. It defaults to the language option
 # or 'en' if the language is not set.
@@ -402,7 +401,7 @@ epub_exclude_files = ['search.html']
 # https://kev.inburke.com/kevin/sphinx-interlinks/
 intersphinx_mapping = {
 #    'urllib3': ('http://urllib3.readthedocs.org/en/latest', None),
-    'python3': ('https://docs.python.org/3.7/', None)
+    'python3': ('https://docs.python.org/3.7/', None),
 }
 intersphinx_timeout = 120
 
@@ -418,7 +417,7 @@ todo_emit_warnings = False
 
 # def setup(app):
 #     from sphinx.util.texescape import tex_replacements
-#    print tex_replacements
+#    print(tex_replacements)
 #    tex_replacements.append((u"’", u"'"))
 #    tex_replacements.remove((u"’", r"'"))
 #    tex_replacements.remove(('─', r'-'))

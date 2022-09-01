@@ -103,17 +103,16 @@ Una cadena puede estar precedida por el carácter:
         >>> type(raw)
         <type 'str'>
 
-- ``u``/``U``, el cual indica, que se trata de una cadena que utiliza 
-  codificación :ref:`unicode <python_unicode_cls>`.
+- Python 3.7 soporta cadena que utiliza codificación :ref:`unicode <python_unicode_cls>`.
 
     ::
 
-        >>> saber_mas = u"Atüjaa oo'omüin..."
+        >>> saber_mas = "Atüjaa oo'omüin..."
         >>> type(saber_mas)
-        <type 'unicode'>
-        >>> vocales = U"äóè"
+        <type 'str'>
+        >>> vocales = "äóè"
         >>> type(vocales)
-        <type 'unicode'>
+        <type 'str'>
 
 
 .. _python_str_escape:
@@ -246,7 +245,7 @@ ignorada), o después de finalizar una instrucción válida de código.
     >>> # se definen las variables
     ... a, b = 0, 1
     >>> while b < 100: # mientras b sea menor a 100 itere
-    ...     print b,
+    ...     print(b),
     ...     a, b = b, a + b # se calcula la sucesión Fibonacci
     ... 
     1 1 2 3 5 8 13 21 34 55 89
@@ -282,7 +281,7 @@ una linea:
     ... 
     >>> """Calcula la sucesión 
     ... de números Fibonacci"""
-    'Calcula la sucesi\xc3\xb3n \nde n\xc3\xbameros Fibonacci'
+    'Calcula la sucesión \nde números Fibonacci'
 
 Entonces existen al menos dos (02) alternativas para introducir comentarios multilínea 
 son:
@@ -298,12 +297,12 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
 
 ::
 
-    >>> u"""Calcula la sucesiónde números Fibonacci"""
-    u'Calcula la sucesi\xf3nde n\xfameros Fibonacci'
+    >>> """Calcula la sucesiónde números Fibonacci"""
+    'Calcula la sucesiónde números Fibonacci'
     >>> # se definen las variables
     ... a, b = 0, 1
     >>> while b < 100:
-    ...     print b,
+    ...     print(b),
     ...     # se calcula la sucesión Fibonacci
     ...     a, b = b, a + b
     ... 
@@ -352,7 +351,7 @@ de la declaración.
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
-    ...     print "Hola", arg, "!"
+    ...     print("Hola", arg, "!")
     ... 
     >>> hola("Plone")
     Hola Plone !
@@ -371,7 +370,7 @@ de función ``hola()``:
         El docstring de la función
 
     >>>
-    >>> print hola.__doc__
+    >>> print(hola.__doc__)
     El docstring de la función
 
 
@@ -429,12 +428,12 @@ En el archivo ``mi_modulo.py`` debe contener el siguiente código:
     """El docstring del módulo"""
 
     def despedir():
-        """El docstring de la función despedir"""
-        print "Adiós! desde función despedir() del módulo prueba"
+        """ El docstring de la función despedir """
+        print("Adiós! desde función despedir() del módulo prueba")
 
     def saludar():
-        """El docstring de la función saludar"""
-        print "Hola! desde función saludar() del módulo prueba"
+        """ El docstring de la función saludar """
+        print("Hola! desde función saludar() del módulo prueba")
 
 
 Entonces, usted debe importar el módulo anterior, para consultar la documentación 
@@ -493,11 +492,11 @@ valores:
 
 ::
 
-    >>> print mi_modulo.__name__     # Nombre del módulo
+    >>> print(mi_modulo.__name__)     # Nombre del módulo
     'mi_modulo'
-    >>> print mi_modulo.__doc__      # Docstring del módulo
+    >>> print(mi_modulo.__doc__)      # Docstring del módulo
     'El docstring del módulo'
-    >>> print mi_modulo.__package__  # Nombre del paquete del módulo
+    >>> print(mi_modulo.__package__)  # Nombre del paquete del módulo
 
 
 .. _python_str_formateo:
@@ -523,7 +522,7 @@ necesita ser formateado o convertido. El operador % entonces substituye la frase
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de %s es %f" % (tipo_calculo, valor)
+    >>> print("el resultado de %s es %f" % (tipo_calculo, valor))
     el resultado de raíz cuadrada de dos es 1.414214
 
 También aquí se puede controlar el formato de salida. Por ejemplo, para obtener el 
@@ -533,7 +532,7 @@ valor con 8 dígitos después de la coma:
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de %s es %.8f" % (tipo_calculo, valor)
+    >>> print("el resultado de %s es %.8f" % (tipo_calculo, valor))
     el resultado de raíz cuadrada de dos es 1.41421356
 
 Con esta sintaxis hay que determinar el tipo del objeto:
@@ -555,11 +554,11 @@ A continuación un ejemplo por cada tipo de datos:
 
 ::
 
-    >>> print "CMS: %s, ¿Activar S o N?: %c" % ("Plone", "S")
+    >>> print("CMS: %s, ¿Activar S o N?: %c" % ("Plone", "S"))
     CMS: Plone, ¿Activar S o N?: S
-    >>> print "N. factura: %d, Total a pagar: %f" % (345, 658.23)
+    >>> print("N. factura: %d, Total a pagar: %f" % (345, 658.23))
     N. factura: 345, Total a pagar: 658.230000
-    >>> print "Tipo Octal: %o, Tipo Hexadecimal: %x" % (027, 0x17)
+    >>> print("Tipo Octal: %o, Tipo Hexadecimal: %x" % (027, 0x17))
     Tipo Octal: 27, Tipo Hexadecimal: 17
 
 
@@ -596,7 +595,7 @@ argumentos.
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de {} es {}".format(tipo_calculo, valor)
+    >>> print("el resultado de {} es {}".format(tipo_calculo, valor))
     el resultado de raíz cuadrada de dos es 1.41421356237
 
 También se puede referenciar a partir de la posición de los valores utilizando índices:
@@ -605,7 +604,7 @@ También se puede referenciar a partir de la posición de los valores utilizando
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de {0} es {1}".format(tipo_calculo, valor)
+    >>> print("el resultado de {0} es {1}".format(tipo_calculo, valor))
     el resultado de raíz cuadrada de dos es 1.41421356237
 
 Los objetos también pueden ser referenciados utilizando un identificador con una clave y 
@@ -614,8 +613,8 @@ luego pasarla como argumento al método:
 ::
 
     >>> tipo_calculo = "raíz cuadrada de dos"
-    >>> print "el resultado de {nombre} es {resultado}".format(
-    ...     nombre=tipo_calculo, resultado=2**0.5)
+    >>> print("el resultado de {nombre} es {resultado}".format(
+    ...     nombre=tipo_calculo, resultado=2**0.5))
     el resultado de raíz cuadrada de dos es 1.41421356237
 
 
@@ -628,7 +627,7 @@ sentencia:
 
 ::
 
-    >>> print "{:>30}".format("raíz cuadrada de dos")
+    >>> print("{:>30}".format("raíz cuadrada de dos"))
          raíz cuadrada de dos
 
 Alinear una cadena de caracteres a la izquierda en 30 caracteres (crea espacios a 
@@ -636,7 +635,7 @@ la derecha), con la siguiente sentencia:
 
 ::
 
-    >>> print "{:30}".format("raíz cuadrada de dos")
+    >>> print("{:30}".format("raíz cuadrada de dos"))
     raíz cuadrada de dos         
 
 Alinear una cadena de caracteres al centro en 30 caracteres, con la siguiente 
@@ -644,14 +643,14 @@ sentencia:
 
 ::
 
-    >>> print "{:^30}".format("raíz cuadrada de dos")
+    >>> print("{:^30}".format("raíz cuadrada de dos"))
         raíz cuadrada de dos     
 
 Truncamiento a 9 caracteres, con la siguiente sentencia:
 
 ::
 
-    >>> print "{:.9}".format("raíz cuadrada de dos")
+    >>> print("{:.9}".format("raíz cuadrada de dos"))
     raíz cua
 
 
@@ -660,7 +659,7 @@ de 9, con la siguiente sentencia:
 
 ::
 
-    >>> print "{:>30.9}".format("raíz cuadrada de dos")
+    >>> print("{:>30.9}".format("raíz cuadrada de dos"))
                          raíz cua
 
 
@@ -684,19 +683,19 @@ se imprima con cuatro dígitos después de la coma (``.4``).
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de {0} es {resultado:.4f}".format(
-    ...     tipo_calculo, resultado=valor)
+    >>> print("el resultado de {0} es {resultado:.4f}".format(
+    ...     tipo_calculo, resultado=valor))
     el resultado de raíz cuadrada de dos es 1.4142
 
 Formateo de números enteros, rellenados con espacios, con las siguientes sentencias:
 
 ::
 
-    >>> print "{:4d}".format(10)
+    >>> print("{:4d}".format(10))
       10
-    >>> print "{:4d}".format(100)
+    >>> print("{:4d}".format(100))
      100
-    >>> print "{:4d}".format(1000)
+    >>> print("{:4d}".format(1000))
     1000
 
 
@@ -704,29 +703,29 @@ Formateo de números enteros, rellenados con ceros, con las siguientes sentencia
 
 ::
 
-    >>> print "{:04d}".format(10)
+    >>> print("{:04d}".format(10))
     0010
-    >>> print "{:04d}".format(100)
+    >>> print("{:04d}".format(100))
     0100
-    >>> print "{:04d}".format(1000)
+    >>> print("{:04d}".format(1000))
     1000
 
 Formateo de números flotantes, rellenados con espacios, con las siguientes sentencias:
 
 ::
 
-    >>> print "{:7.3f}".format(3.1415926)
+    >>> print("{:7.3f}".format(3.1415926))
       3.142
-    >>> print "{:7.3f}".format(153.21)
+    >>> print("{:7.3f}".format(153.21))
     153.210
 
 Formateo de números flotantes, rellenados con ceros, con las siguientes sentencias:
 
 ::
 
-    >>> print "{:07.3f}".format(3.1415926)
+    >>> print("{:07.3f}".format(3.1415926))
     003.142
-    >>> print "{:07.3f}".format(153.21)
+    >>> print("{:07.3f}".format(153.21))
     153.210
 
 

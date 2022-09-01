@@ -29,13 +29,6 @@ ejecución estén instalados correctamente y funcionando.
 
 Programa ¡Hola, Mundo! en diversas versiones de Python:
 
-.. _python2_hola_mundo:
-
-**Python 2.x:** ::
-
-  print "Hola Mundo"
-
-
 .. _python3_hola_mundo:
 
 **Python 3.x:** ::

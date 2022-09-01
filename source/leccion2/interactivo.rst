@@ -298,7 +298,7 @@ siguiente comando:
 
 .. code-block:: python
 
-    >>> print os.__doc__
+    >>> print(os.__doc__)
     OS routines for NT or Posix depending on what system we're on.
 
     This exports:
@@ -465,7 +465,7 @@ siguiente forma:
 
 .. code-block:: ipython
 
-    In [5]: print os.__doc__
+    In [5]: print(os.__doc__)
     OS routines for NT or Posix depending on what system we're on.
 
     This exports:
@@ -573,7 +573,7 @@ la documentación y la estructura del lenguaje, con los siguientes comandos de e
 
 .. code-block:: python
 
-    >>> print 'Hola Mundo'
+    >>> print('Hola Mundo')
     Hola Mundo
     >>> for item in xrange(
     +───────────────────────────────────────────────────────────────────────+

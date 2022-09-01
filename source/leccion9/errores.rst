@@ -19,10 +19,10 @@ el tipo de queja más común que tenés cuando todavía estás aprendiendo Pytho
 
 ::
 
-   >>> while True print 'Hola Mundo'
+   >>> while True print('Hola Mundo')
    Traceback (most recent call last):
    ...
-       while True print 'Hola Mundo'
+       while True print('Hola Mundo')
                       ^
    SyntaxError: invalid syntax
 
@@ -98,10 +98,10 @@ señaliza generando la excepción :ref:`KeyboardInterrupt <python_exception_keyb
 
    >>> while True:
    ...     try:
-   ...         x = int(raw_input(u"Por favor ingrese un número: "))
+   ...         x = int(input("Por favor ingrese un número: "))
    ...         break
    ...     except ValueError:
-   ...         print u"Oops!  No era válido. Intente nuevamente..."
+   ...         print("Oops!  No era válido. Intente nuevamente...")
    ...
 
 La sentencia ``try`` funciona de la siguiente manera:
@@ -150,12 +150,12 @@ manejar también la excepción):
        f = open('numeros.txt')
        s = f.readline()
        i = int(s.strip())
-   except IOError as (errno, strerror):
-       print "Error E/S ({0}): {1}".format(errno, strerror)
+   except IOError as err:
+       print("Error E/S ({0}): {1}".format(err.errno, err.strerror))
    except ValueError:
-       print "No pude convertir el dato a un entero."
+       print("No pude convertir el dato a un entero.")
    except:
-       print "Error inesperado:", sys.exc_info()[0]
+       print("Error inesperado:", sys.exc_info()[0])
        raise
 
 
@@ -169,9 +169,9 @@ debe ejecutarse si el *bloque try* no genera una excepción. Por ejemplo:
        try:
            f = open(arg, 'r')
        except IOError:
-           print 'no pude abrir', arg
+           print('no pude abrir', arg)
        else:
-           print arg, 'tiene', len(f.readlines()), 'lineas'
+           print(arg, 'tiene', len(f.readlines()), 'lineas')
            f.close()
 
 El uso de ``else`` es mejor que agregar código adicional en el ``try`` porque evita 
@@ -196,12 +196,12 @@ atributo que se desee:
    >>> try:
    ...    raise Exception('carne', 'huevos')
    ... except Exception as inst:
-   ...    print type(inst)     # la instancia de excepción
-   ...    print inst.args      # argumentos guardados en .args
-   ...    print inst           # __str__ permite imprimir args directamente
-   ...    x, y = inst          # __getitem__ permite usar args directamente
-   ...    print 'x =', x
-   ...    print 'y =', y
+   ...    print(type(inst))     # la instancia de excepción
+   ...    print(inst.args)      # argumentos guardados en .args
+   ...    print(inst)           # __str__ permite imprimir args directamente
+   ...    x, y = inst           # __getitem__ permite usar args directamente
+   ...    print('x =', x)
+   ...    print('y =', y)
    ...
    <type 'exceptions.Exception'>
    ('carne', 'huevos')
@@ -224,7 +224,7 @@ se llaman (inclusive indirectamente) dentro del *bloque try*. Por ejemplo:
    >>> try:
    ...     esto_falla()
    ... except ZeroDivisionError as detail:
-   ...     print 'Manejando error en tiempo de ejecución:', detail
+   ...     print('Manejando error en tiempo de ejecución:', detail)
    ...
    Manejando error en tiempo de ejecución: integer division or modulo by zero
 
@@ -256,7 +256,7 @@ una forma simplificada de la sentencia ``raise`` te permite relanzarla:
    >>> try:
    ...     raise NameError('Hola')
    ... except NameError:
-   ...     print u'Ha sucedido una excepción!'
+   ...     print('Ha sucedido una excepción!')
    ...     raise
    ...
    Ha sucedido una excepción!
@@ -324,7 +324,7 @@ de Python). Las excepciones, típicamente, deberán derivar de la clase
    >>> try:
    ...     raise MiError(2*2)
    ... except MiError as e:
-   ...     print u'Ha ocurrido mi excepción, valor:', e.valor
+   ...     print('Ha ocurrido mi excepción, valor:', e.valor)
    ...
    Ocurrió mi excepción, valor: 4
    >>> raise MiError('oops!')
@@ -397,7 +397,7 @@ limpieza que deben ser ejecutadas bajo ciertas circunstancias. Por ejemplo:
    >>> try:
    ...     raise KeyboardInterrupt
    ... finally:
-   ...     print 'Adiós, Mundo!'
+   ...     print('Adiós, Mundo!')
    ...
    Chau, Mundo!
    Traceback (most recent call last):
@@ -420,11 +420,11 @@ misma sentencia ``try``):
    ...     try:
    ...         resultado = x / y
    ...     except ZeroDivisionError:
-   ...         print "¡división por cero!"
+   ...         print("¡división por cero!")
    ...     else:
-   ...         print "el resultado es", resultado
+   ...         print("el resultado es", resultado)
    ...     finally:
-   ...         print "ejecutando la clausula finally"
+   ...         print("ejecutando la clausula finally")
    ...
    >>> dividir(2, 1)
    el resultado es 2
@@ -462,7 +462,7 @@ pantalla.
 ::
 
    for linea in open("numeros.txt"):
-       print linea
+       print(linea)
 
 
 El problema con este código es que deja el archivo abierto por un periodo de tiempo 
@@ -482,7 +482,7 @@ asegure que siempre se los libera rápido y en forma correcta.
 
    with open("numeros.txt") as f:
        for linea in f:
-           print linea
+           print(linea)
 
 Luego de que la sentencia sea ejecutada, el archivo *f* siempre es cerrado, incluso si 
 se encuentra un problema al procesar las líneas. Otros objetos que provean acciones de 

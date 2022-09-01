@@ -21,7 +21,7 @@ En el ejemplo anterior usa dos funciones integradas en el interprete Python:
 - La función :ref:`int() <python_fun_int>` que convierte el valor ingresado a número 
   entero.
 
-- La función :ref:`raw_input() <python_fun_raw_input>` lee el valor ingresado por la 
+- La función :ref:`input() <python_fun_input>` lee el valor ingresado por la 
   entrada estándar.
 
 El valor es ingresado en la variable ``numero`` comprobará en el sentencia condicional 

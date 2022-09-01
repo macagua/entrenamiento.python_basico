@@ -75,7 +75,7 @@ Un ejemplo simple de función esta seguidamente:
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
-    ...     print "Hola", arg, "!"
+    ...     print("Hola", arg, "!")
     ... 
     >>> hola("Plone")
     Hola Plone !
@@ -195,7 +195,7 @@ comprobación antes de ejecutar el código de la función:
 
     >>> def resta(a=None, b=None):
     ...     if a == None or b == None:
-    ...         print "Error, debes enviar dos números a la función"
+    ...         print("Error, debes enviar dos números a la función")
     ...         return
     ...     return a - b
     ... 
@@ -230,7 +230,7 @@ los parámetros indeterminados por posición:
 
     >>> def indeterminados_posicion(*args):
     ...     for arg in args:
-    ...         print arg
+    ...         print(arg)
     ... 
     >>> indeterminados_posicion(5,"Hola Plone",[1,2,3,4,5])
     5
@@ -248,7 +248,7 @@ definiendo el parámetro con dos asteriscos:
 ::
 
     >>> def indeterminados_nombre(**kwargs):
-    ...     print kwargs
+    ...     print(kwargs)
     ... 
     >>> indeterminados_nombre(n=5, c="Hola Plone", l=[1,2,3,4,5])
     {'c': 'Hola Plone', 'l': [1, 2, 3, 4, 5], 'n': 5}
@@ -260,7 +260,7 @@ cada argumento:
 
     >>> def indeterminados_nombre(**kwargs):
     ...     for kwarg in kwargs:
-    ...         print kwarg, "=>", kwargs[kwarg]
+    ...         print(kwarg, "=>", kwargs[kwarg])
     ... 
     >>> indeterminados_nombre(n=5, c="Hola Plone", l=[1,2,3,4,5])
     c => Hola Plone
@@ -281,9 +281,9 @@ y luego los cuales son por clave y valor:
     ...     total = 0
     ...     for arg in args:
     ...         total += arg
-    ...     print "sumatorio => ", total
+    ...     print("sumatorio => ", total)
     ...     for kwarg in kwargs:
-    ...         print kwarg, "=>", kwargs[kwarg]
+    ...         print(kwarg, "=>", kwargs[kwarg])
     ... 
     >>> super_funcion(50, -1, 1.56, 10, 20, 300, cms="Plone", edad=38)
     sumatorio =>  380.56
@@ -379,11 +379,11 @@ En el código anterior los valores múltiples se tratan en conjunto como una
     >>> prueba()
     ('Plone CMS', 20, [1, 2, 3])
     >>> cadena, numero, lista = prueba()
-    >>> print cadena, type(cadena)
+    >>> print(cadena, type(cadena))
     Plone CMS <type 'str'>
-    >>> print numero, type(numero)
+    >>> print(numero, type(numero))
     20 <type 'int'>
-    >>> print lista, type(lista)
+    >>> print(lista, type(lista))
     [1, 2, 3] <type 'list'>
 
 En el código anterior puede observa como se asignar a distintas variables en base a 

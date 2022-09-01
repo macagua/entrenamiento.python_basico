@@ -148,11 +148,11 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_eoferror:
 
 ``EOFError``
-    Se lanza cuando las funciones internas (:ref:`input() <python_fun_input>` o 
-    :ref:`raw_input() <python_fun_raw_input>`) alcanzan un *end of file* ``EOF`` (final de 
-    archivo) sin leer datos. N.B.: Los métodos :ref:`read() <python_mtd_read>` y 
-    :ref:`readline() <python_mtd_readline>` de los objetos archivo devuelven una cadena 
-    vacía al alcanzar ``EOF``. Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
+    Se lanza cuando la función interna (:ref:`input() <python_fun_input>`)
+    alcanzan un *end of file* ``EOF`` (final de archivo) sin leer datos.
+    N.B.: Los métodos :ref:`read() <python_mtd_read>` y :ref:`readline() <python_mtd_readline>`
+    de los objetos archivo devuelven una cadena vacía al alcanzar ``EOF``.
+    Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 .. _python_exception_floatingpointerror:
@@ -221,8 +221,8 @@ Las siguientes excepciones son las realmente lanzadas.
     combinación de teclas ``Control-C`` o ``DEL``). 
     A lo largo de la ejecución se comprueba si se ha interrumpido regularmente. Las 
     interrupciones ocurridas cuando una función :ref:`input() <python_fun_input>` 
-    o :ref:`raw_input() <python_fun_raw_input>`) espera datos también lanzan esta 
-    excepción. Deriva de la clase raíz :ref:`BaseException <python_exception_baseexceptionerror>`.
+    espera datos también lanzan esta excepción. Deriva de la clase raíz
+    :ref:`BaseException <python_exception_baseexceptionerror>`.
 
 
 .. _python_exception_memoryerror:

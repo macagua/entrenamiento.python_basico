@@ -198,7 +198,7 @@ Los atributos describen el estado de un objeto. Pueden ser de cualquier tipo de 
 
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
-    :lines: 3-8
+    :lines: 1-6
 
 Usted puede probar el código anterior, si lo transcribe en el 
 :ref:`consola interactiva <python_interactivo>` Python como lo siguiente:
@@ -225,14 +225,14 @@ Usted puede probar el código anterior, si lo transcribe en el
     'Caballero'
     >>> macagua.sexo
     'M'
-    >>> print "El objeto de la clase " + macagua.__name__ +"," \
-    ... + macagua.__doc__ + "."
+    >>> print("El objeto de la clase " + macagua.__name__ +"," \
+    ... + macagua.__doc__ + ".")
     El objeto de la clase Persona, Clase que representa una Persona.
-    >>> print "Hola, mucho gusto, mi nombre es '"+ \
+    >>> print("Hola, mucho gusto, mi nombre es '"+ \
     ... macagua.nombre +" "+ \
     ... macagua.apellido +"', \nmi cédula de identidad es '"+  \
     ... macagua.cedula +"', y mi sexo es '"+  \
-    ... macagua.sexo +"'."
+    ... macagua.sexo +"'.")
     Hola, mucho gusto, mi nombre es 'Leonardo Caballero', 
     mi cédula de identidad es 'V-13458796', y mi sexo es 'M'.
 
@@ -294,7 +294,7 @@ Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``,
 
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
-    :lines: 3-12
+    :lines: 1-10
 
 La única diferencia sintáctica entre la definición de un método y la definición de una 
 función es que el primer parámetro del método por convención debe ser el nombre ``self``.
@@ -379,7 +379,7 @@ la cual puede incluir formatos personalizados de presentación del mismo.
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 16-20
+    :lines: 14-18
 
 
 .. _python_mtd_del:
@@ -526,7 +526,7 @@ al instanciar un objeto.
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 9-14
+    :lines: 7-12
 
 
 Función isinstance()

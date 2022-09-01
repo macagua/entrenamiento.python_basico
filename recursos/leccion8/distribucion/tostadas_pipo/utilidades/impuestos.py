@@ -1,5 +1,3 @@
-# -*- coding: utf8 -*-
-
 """ Módulo para cálculos de diversos impuestos """
 
 def impuesto_iva12(monto=0):

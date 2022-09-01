@@ -41,22 +41,22 @@ ejecutando el siguiente comando:
 
 .. code-block:: sh
 
-  (python)$ pip install PasteScript
+  (venv)$ pip install PasteScript
 
 .. note::
 
   No olvidar que estos paquetes han sido instalados con el entorno virtual que
   previamente usted activo, eso quiere decir que los paquetes previamente
   instalados con `easy_install`_ están instalados en el 
-  directorio :file:`~/virtualenv/python/lib/python2.x/site-packages/` en ves del 
-  directorio de su versión de Python de sistema :file:`/usr/lib/python2.x/site-packages/`
+  directorio :file:`~/virtualenv/venv/lib/python3.x/site-packages/` en ves del 
+  directorio de su versión de Python de sistema :file:`/usr/lib/python3.x/site-packages/`
 
 Al finalizar la instalación podrá opcionalmente consultar cuales plantillas
 tiene disponible para usa, ejecutando el siguiente comando: 
 
 .. code-block:: sh
 
-  (python)$ paster create --list-templates
+  (venv)$ paster create --list-templates
     Available templates:
       basic_package:       A basic setuptools-enabled package
       paste_deploy:        A web application deployed through paste.deploy
@@ -65,7 +65,7 @@ Usted puede usar el comando :command:`paster` para crear paquetes Python.
 
 .. code-block:: sh
 
-  (python)$ paster create -t basic_package mipaquetepython
+  (venv)$ paster create -t basic_package mipaquetepython
 
     Selected and implied templates:
 
@@ -92,14 +92,14 @@ Usted puede usar el comando :command:`paster` para crear paquetes Python.
         ./mipaquetepython/mipaquetepython/__init__.py
       Copying setup.cfg to ./mipaquetepython/setup.cfg
       Copying setup.py_tmpl to ./mipaquetepython/setup.py
-    Running /home/macagua/virtualenv/python/bin/python setup.py egg_info
+    Running /home/macagua/virtualenv/venv/bin/python setup.py egg_info
 
 Usted puede verificar el paquete previamente creado y observará como este
 paquete básico ha habilitado el `Setuptools`_. 
 
 .. code-block:: sh
 
-  (python)$ tree mipaquetepython/
+  (venv)$ tree mipaquetepython/
     mipaquetepython/
     |-- mipaquetepython
     |   `-- __init__.py
@@ -117,15 +117,15 @@ Para instalar este paquete ejecute el siguiente comando:
 
 .. code-block:: sh
 
-  (python)$ cd mipaquetepython/mipaquetepython/
-  (python)$ vim app.py
+  (venv)$ cd mipaquetepython/mipaquetepython/
+  (venv)$ vim app.py
 
 Escriba un simple código que solicita un valor y luego lo muestra: 
 
 .. code-block:: python
 
-  var = raw_input("Introduzca alguna frase: ")
-  print "Usted introdujo: ", var
+  var = input("Introduzca alguna frase: ")
+  print("Usted introdujo: ", var)
 
 Guarde los cambios en el archivo :file:`app.py`, luego importe su aplicación 
 :file:`app.py` en el archivo :file:`__init__.py` con el siguiente código fuente: 
@@ -138,7 +138,7 @@ Para comprobar su instalación ejecute el siguiente comando:
 
 .. code-block:: sh
 
-  (python)$ python
+  (venv)$ python
 
 Y realice una importación del paquete ``mipaquetepython`` ejecutando 
 el siguiente comando: 

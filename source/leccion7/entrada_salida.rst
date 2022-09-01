@@ -18,17 +18,19 @@ Entrada estándar
 Para pedir información al usuario, debe utilizar las funciones integradas en el 
 interprete del lenguaje, así como los argumentos de línea de comandos.
 
-**Ejemplo de la función raw_input**:
+.. comments:
 
-La función :ref:`raw_input() <python_fun_raw_input>` siempre devuelve un valor de 
-cadenas de caracteres:
+    **Ejemplo de la función raw_input**:
 
-::
+    La función :ref:`raw_input() <python_fun_raw_input>` siempre devuelve un valor de 
+    cadenas de caracteres:
 
-    >>> nombre = raw_input('Ana: ¿Cómo se llama usted?: ')
-    Ana: ¿Cómo se llama usted?: Leonardo
-    >>> print nombre
-    Leonardo
+    ::
+
+        >>> nombre = raw_input('Ana: ¿Cómo se llama usted?: ')
+        Ana: ¿Cómo se llama usted?: Leonardo
+        >>> print(nombre)
+        Leonardo
 
 **Ejemplo de la función input**:
 
@@ -38,7 +40,7 @@ La función :ref:`input() <python_fun_input>` siempre devuelve un valor numéric
 
     >>> edad = input('Ana: ¿Que edad tiene usted?: ')
     Ana: ¿Que edad tiene usted?: 38
-    >>> print edad
+    >>> print(edad)
     38
 
 .. _python_entrada_script:
@@ -66,7 +68,7 @@ el usuario y en base a condicionales muestra un mensaje.
 
 .. literalinclude:: ../../recursos/leccion7/entrada_salida.py
     :language: python
-    :lines: 14-34
+    :lines: 12-32
 
 
 .. tip::
@@ -89,7 +91,7 @@ contenido:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_argumentos.py
     :language: python
-    :lines: 3-5
+    :lines: 1-3
 
 Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
 
@@ -123,7 +125,7 @@ tipo número:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_dos_argumentos.py
     :language: python
-    :lines: 3-15
+    :lines: 1-13
 
 Si quiere comprobar la validación de cuantos argumentos deben enviarme al script, 
 ejecute el siguiente comando:
@@ -174,7 +176,7 @@ Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``
 
 ::
 
-    >>> print 'Ana: Hola', nombre, ', encantada de conocerte :3'
+    >>> print('Ana: Hola', nombre, ', encantada de conocerte :3')
     Ana: Hola Leonardo , encantado de conocerte :3
 
 
@@ -191,7 +193,7 @@ de caracteres y variables:
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print "el resultado de", tipo_calculo, "es:", valor
+    >>> print("el resultado de", tipo_calculo, "es:", valor)
     el resultado de raíz cuadrada de dos es: 1.41421356237
 
 

@@ -33,7 +33,7 @@ se crea una clase base llamada ``Persona``. A continuación un ejemplo de la cla
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 6-34
+    :lines: 4-32
 
 
 En el ejemplo previo, es donde empieza a crear una clase (lo hace con la palabra 
@@ -48,7 +48,7 @@ La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 6-7
+    :lines: 4-5
 
 El método constructor ``__init__`` es un método especial el cual debe escribir como: 
 ``MiClase(parámetros iniciales si hay cualquiera)``.
@@ -58,15 +58,15 @@ Usted puede llamar esos métodos y atributos con la siguiente notación:
 
 ::
 
-    >>> print persona1.nombre, persona1.apellido
-    >>> print persona1.getGenero(persona1.sexo)
+    >>> print(persona1.nombre, persona1.apellido)
+    >>> print(persona1.getGenero(persona1.sexo))
 
 El método ``__str__`` es un método usando para imprimir la descripción de la instancia 
 de objeto el cual debe mostrar como:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 12
+    :lines: 10
 
 En el anterior código se usan para cierto formato para imprimir la instancia de objeto 
 usando la sentencia ``print``, concatenando el carácter ``\n`` para generar un salto 
@@ -94,7 +94,7 @@ El siguiente es un ejemplo de la clase ``Supervisor`` que derivada de la clase
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 37-58
+    :lines: 35-56
 
 Ahora, se creará una nueva clase ``Supervisor`` con los mismos métodos y atributos 
 como la clase ``Persona``, pero con dos nuevos atributos ``rol`` y ``tareas``. 
@@ -104,28 +104,28 @@ La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 42
+    :lines: 40
 
 Luego que generá la instancia del nuevo objeto ``Supervisor`` llamada ``supervisor1`` 
 se puede imprimir sus detalles de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 47
+    :lines: 45
 
 Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de la 
 clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 50-57
+    :lines: 48-55
 
 Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se puede 
 imprimir de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 60-61
+    :lines: 58-59
 
 El uso de las clases y la programación orientada a objetos, le permite a usted que 
 pueda organizar el código con diferentes clases correspondientes a diferentes objetos 
@@ -137,7 +137,7 @@ clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor`
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 65-71
+    :lines: 63-69
 
 
 Función issubclass()
@@ -193,7 +193,7 @@ la declaración de la subclase:
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 61-98
+    :lines: 59-96
 
 
 .. _python_poo_herencia_multiple_mro:

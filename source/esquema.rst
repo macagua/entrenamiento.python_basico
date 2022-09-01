@@ -92,9 +92,8 @@ Lección 7 - Operaciones de E/S y manipulación de archivos
 
 **Descripción:** Comprender las operaciones de entrada/salida y manipular archivos.
 
-**Práctica:** Ejemplo de la sentencia ``input``, ``raw_input`` y ``print``, además 
-la creación, apertura, lectura, escritura archivos y explorar el resultado en un 
-módulo.
+**Práctica:** Ejemplo de la sentencia ``input`` y ``print``, además la creación,
+apertura, lectura, escritura archivos y explorar el resultado en un módulo.
 
 
 .. _esquema_entrenamiento_leccion8:

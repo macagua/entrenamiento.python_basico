@@ -42,7 +42,7 @@ el final del objeto de destino (o con el tamaño especificado).
     <type 'buffer'>
     >>> cadena_buffer
     <read-only buffer for 0x7f42121d3810, size 5, offset 5 at 0x7f42121d23b0>
-    >>> print cadena_buffer
+    >>> print(cadena_buffer)
     mundo
 
 El búfer en este caso anterior es una sub-cadena, inicia en la posición 5 con un 
@@ -109,7 +109,7 @@ resultante también será correcto en Python 3.0.
 ::
 
     >>> arreglo = bytes("Python es interesante.")
-    >>> print arreglo
+    >>> print(arreglo)
     Python es interesante.
     >>> type(arreglo)
     <type 'str'>
@@ -192,9 +192,9 @@ Para declarar un método estático, a continuación vea el siguiente ejemplo:
     ...     # crea un static method sumaNumeros
     ...     sumaNumeros = staticmethod(sumaNumeros)
     ... 
-    >>> print 'Resultado:', Calculador.sumaNumeros(15, 110)
+    >>> print('Resultado:', Calculador.sumaNumeros(15, 110))
     Resultado: 125
-    >>> print 'Resultado:', Calculador().sumaNumeros(15, 110)
+    >>> print('Resultado:', Calculador().sumaNumeros(15, 110))
     Resultado: 125
 
 En el ejemplo anterior usted puede notar que se llamo al método ``sumaNumeros`` sin 
@@ -226,7 +226,7 @@ a continuación:
     ...     def sumaNumeros(x, y):
     ...         return x + y
     ... 
-    >>> print 'Resultado:', Calculador.sumaNumeros(15, 110)
+    >>> print('Resultado:', Calculador.sumaNumeros(15, 110))
     Resultado: 125
 
 Este código fuente es enteramente idéntico al primer ejemplo (usando ``@staticmethod``), 
@@ -429,7 +429,7 @@ la data antes de cerrar cualquier archivo.
 ::
 
     >>> archivo = open("datos.txt", "wb") # Abre un archivo
-    >>> print "Nombre del archivo: ", archivo.name
+    >>> print("Nombre del archivo: ", archivo.name)
     Nombre del archivo:  datos.txt
     >>> archivo.flush()
     ... # Aquí eso no hace nada, pero usted puede 
@@ -530,7 +530,7 @@ un ejemplo:
 
     >>> archivo = open('datos.txt', 'r')
     >>> contenido = archivo.read()
-    >>> print contenido
+    >>> print(contenido)
     Este es una prueba
     y otra prueba
 
@@ -549,9 +549,9 @@ mientras que una línea en blanco se representa con un carácter de nueva línea
 ::
 
     >>> archivo = open('datos.txt', 'r')
-    >>> print archivo.readline() # lee la linea "Este es una prueba "
-    >>> print archivo.readline() # lee la linea "y otra prueba"
-    >>> print archivo.readline()
+    >>> print(archivo.readline()) # lee la linea "Este es una prueba "
+    >>> print(archivo.readline()) # lee la linea "y otra prueba"
+    >>> print(archivo.readline())
         
     >>> 
 
@@ -567,7 +567,7 @@ El método ``readlines()`` devuelve una lista que contiene todas las líneas del
 
     >>> archivo = open('datos.txt', 'r')
     >>> lineas = archivo.readlines()
-    >>> print lineas
+    >>> print(lineas)
     ['Este es una prueba \n', 'y otra prueba']
 
 
@@ -643,7 +643,7 @@ archivo) y ``2`` (el final del archivo). No hay valor de retorno.
     ... archivo.seek(0,0)
     >>> for elemento in range(1, 6):
     ...    linea = archivo.next()
-    ...    print "Linea No %d - %s" % (elemento, linea)
+    ...    print("Linea No %d - %s" % (elemento, linea))
     ... 
     Linea No 1 - Esta es la 1er linea
 
@@ -828,7 +828,7 @@ del archivo.
 ::
 
     >>> with open("datos.txt",mode="r") as archivo:
-    ...     print "Encoding por defecto:", archivo.encoding
+    ...     print("Encoding por defecto:", archivo.encoding)
     ...     archivo.close()
     ... 
     Encoding por defecto: None
@@ -1058,11 +1058,11 @@ A continuación, otro ejemplo donde se crea una *vista de memoria* usando el obj
     >>> vm = memoryview(randomBA)
     >>> vm
     <memory at 0x7fafc7136c30>
-    >>> print vm[0]
+    >>> print(vm[0])
     A
-    >>> print vm[1]
+    >>> print(vm[1])
     B
-    >>> print vm[2]
+    >>> print(vm[2])
     C
 
 Continuando el ejemplo anterior, se puede crear una :ref:`lista <python_list>` desde 
@@ -1084,7 +1084,7 @@ desde una *vista de memoria* usando el objeto ``vm`` previamente creado:
     >>> cad = ""
     >>> for item in range(3): cad += vm[item]
     ... 
-    >>> print cad
+    >>> print(cad)
     ABC
 
 Aquí, es creada un objeto *vista de memoria* llamado ``vm`` desde un objeto ``bytearray`` 
@@ -1102,13 +1102,13 @@ A continuación, otro ejemplo donde se modifica la data interna usando vista de 
 ::
 
     >>> randomBA = bytearray('ABC', 'utf-8')
-    >>> print 'Antes de actualizar:', randomBA
+    >>> print('Antes de actualizar:', randomBA)
     Antes de actualizar: ABC
     >>> vm = memoryview(randomBA)
     >>> chr(90)
     'Z'
     >>> vm[1] = chr(90)
-    >>> print 'Después de actualizar:', randomBA
+    >>> print('Después de actualizar:', randomBA)
     Después de actualizar: AZC
 
 Aquí, se actualiza el indice 1 de la *vista de memoria* a un valor ASCII - 90 (Z) 
@@ -1188,15 +1188,15 @@ A continuación, un ejemplo sencillo:
     ...         self._nombre = nombre
     ...     
     ...     def getNombre(self):
-    ...         print 'Obteniendo nombre'
+    ...         print('Obteniendo nombre')
     ...         return self._nombre
     ...     
     ...     def setNombre(self, valor):
-    ...         print 'Definiendo nombre a ' + valor
+    ...         print('Definiendo nombre a ' + valor)
     ...         self._nombre = valor
     ...     
     ...     def delNombre(self):
-    ...         print 'Eliminando nombre'
+    ...         print('Eliminando nombre')
     ...         del self._nombre
     ...     
     ...     # Define la property para usar los métodos getNombre, 
@@ -1204,11 +1204,11 @@ A continuación, un ejemplo sencillo:
     ...     nombre = property(getNombre, setNombre, delNombre, 'Atributo property nombre')
     ... 
     >>> persona1 = Persona('Leo')
-    >>> print persona1.nombre
+    >>> print(persona1.nombre)
     Obteniendo nombre
     Leo
     >>> persona1.nombre = 'Leonardo'
-    >>> print persona1.nombre
+    >>> print(persona1.nombre)
     Leonardo
     >>> dir(persona1)
     ['__doc__', '__init__', '__module__', '_nombre', 'delNombre', 
@@ -1218,10 +1218,10 @@ A continuación, un ejemplo sencillo:
     >>> dir(persona1)
     ['__doc__', '__init__', '__module__', 'delNombre', 'getNombre', 
     'nombre', 'setNombre']
-    >>> print persona1.nombre
+    >>> print(persona1.nombre)
     Leonardo
     >>> del persona1.nombre
-    >>> print persona1.nombre
+    >>> print(persona1.nombre)
     Obteniendo nombre
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -1229,7 +1229,7 @@ A continuación, un ejemplo sencillo:
     AttributeError: Persona instance has no attribute '_nombre'
 
 Cuando se elimina ``persona1.delNombre()`` puede notar que ``_nombre`` ya no esta 
-disponible y si se vuelve a imprimir el valor de nombre ``print persona1.nombre`` 
+disponible y si se vuelve a imprimir el valor de nombre ``print(persona1.nombre)`` 
 aun muestra el valor inicializado con el método ``setNombre``, entonces al ejecutar
 ``del persona1.nombre`` se elimina por completo el valor en memoria, luego si intenta 
 mostrar el valor del *atributo property* ``nombre`` lanza 
@@ -1267,32 +1267,32 @@ usted puede usar el decorador Python ``@property`` para asignar el método ``get
     ...     
     ...     @property
     ...     def nombre(self):
-    ...         print 'Obteniendo nombre'
+    ...         print('Obteniendo nombre')
     ...         return self._nombre
     ...     
     ...     @nombre.setter
     ...     def nombre(self, valor):
-    ...         print 'Definiendo nombre a ' + valor
+    ...         print('Definiendo nombre a ' + valor)
     ...         self._nombre = valor
     ...     
     ...     @nombre.deleter
     ...     def nombre(self):
-    ...         print 'Eliminando nombre'
+    ...         print('Eliminando nombre')
     ...         del self._nombre
     ... 
     >>> persona1 = Persona('Leo')
-    >>> print 'El nombre es:', persona1.nombre
+    >>> print('El nombre es:', persona1.nombre)
     El nombre es: Obteniendo nombre
     Leo
     >>> persona1.nombre = 'Leonardo'
-    >>> print persona1.nombre
+    >>> print(persona1.nombre)
     Leonardo
     >>> dir(persona1)
     ['__doc__', '__init__', '__module__', '_nombre', 'nombre']
     >>> del persona1.nombre
     >>> dir(persona1)
     ['__doc__', '__init__', '__module__', '_nombre', 'nombre']
-    >>> print persona1.nombre
+    >>> print(persona1.nombre)
     Obteniendo nombre
     Leo
 
@@ -1362,11 +1362,11 @@ Un ejemplo sencillo real se muestra a continuación:
 
     >>> class Mamifero(object):
     ...     def __init__(self, mamifero):
-    ...         print mamifero, 'es un animal de sangre caliente.'
+    ...         print(mamifero, 'es un animal de sangre caliente.')
     ... 
     >>> class Perro(Mamifero):
     ...     def __init__(self):
-    ...         print 'Perro tiene 4 piernas.'
+    ...         print('Perro tiene 4 piernas.')
     ...         super(Perro, self).__init__('Perro')
     ... 
     >>> perrito = Perro()
@@ -1389,16 +1389,16 @@ A continuación un ejemplo de cambiar la clase base a la clase RazaCanina:
 
     >>> class Mamifero(object):
     ...     def __init__(self, mamifero):
-    ...         print mamifero, 'es un animal de sangre caliente.'
+    ...         print(mamifero, 'es un animal de sangre caliente.')
     ... 
     >>> class RazaCanina(Mamifero):
     ...   def __init__(self, nombre, raza):
-    ...     print raza, 'es la raza del canino.'
+    ...     print(raza, 'es la raza del canino.')
     ...     super(RazaCanina, self).__init__('Perro')
     ... 
     >>> class Perro(RazaCanina):
     ...     def __init__(self, raza):
-    ...         print 'Perro tiene 4 piernas.'
+    ...         print('Perro tiene 4 piernas.')
     ...         super(Perro, self).__init__('Perro', raza)
     ... 
     >>> perrito = Perro("Pastor Alemán")
@@ -1420,26 +1420,26 @@ A continuación un ejemplo del uso ``super()`` con
 
     >>> class Animal(object):
     ...     def __init__(self, animal):
-    ...         print animal, 'es un animal.\n\n',
+    ...         print(animal, 'es un animal.\n\n',)
     ... 
     >>> class Mamifero(Animal):
     ...     def __init__(self, mamifero):
-    ...         print mamifero, 'es un animal de sangre caliente.'
+    ...         print(mamifero, 'es un animal de sangre caliente.')
     ...         super(Mamifero, self).__init__(mamifero)
     ... 
     >>> class MamiferoNoVolador(Mamifero):
     ...     def __init__(self, mamifero):
-    ...         print mamifero, "no puede volar."
+    ...         print(mamifero, "no puede volar.")
     ...         super(MamiferoNoVolador, self).__init__(mamifero)
     ... 
     >>> class MamiferoNoAcuatico(Mamifero):
     ...     def __init__(self, mamifero):
-    ...         print mamifero, "no puede nadar."
+    ...         print(mamifero, "no puede nadar.")
     ...         super(MamiferoNoAcuatico, self).__init__(mamifero)
     ... 
     >>> class Perro(MamiferoNoAcuatico, MamiferoNoVolador):
     ...     def __init__(self):
-    ...         print 'Perro tiene 4 piernas.\n',
+    ...         print('Perro tiene 4 piernas.\n',)
     ...         super(Perro, self).__init__('Perro')
     ... 
     >>> perro = Perro()

@@ -42,7 +42,7 @@ de 2, usando el método tradicional, eso seria así:
     >>> for i in range(4):
     ...     lista.append(i**2)
     ... 
-    >>> print lista
+    >>> print(lista)
     [0, 1, 4, 9]
 
 Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
@@ -65,7 +65,7 @@ tradicional, eso seria así:
     >>> for letra in 'casa':
     ...     lista.append(letra)
     ... 
-    >>> print lista
+    >>> print(lista)
     ['c', 'a', 's', 'a']
 
 
@@ -74,7 +74,7 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 ::
 
     >>> lista = [letra for letra in 'casa']
-    >>> print lista
+    >>> print(lista)
     ['c', 'a', 's', 'a']
 
 Como puede detallar en el ejemplo anterior, gracias a la listas de comprensión 
@@ -95,7 +95,7 @@ números, usando el método tradicional, eso seria así:
     >>> for numero in range(0,11):
     ...     lista.append(numero**2)
     ... 
-    >>> print lista
+    >>> print(lista)
     [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
@@ -103,7 +103,7 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 ::
 
     >>> lista = [numero**2 for numero in range(0,11)]
-    >>> print lista
+    >>> print(lista)
     [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 De este código anterior usted puede aprender que es posible modificar al vuelo 
@@ -122,7 +122,7 @@ usando el método tradicional, eso seria así:
     >>> for numero in range(0,11):
     ...     lista.append(numero**2)
     ... 
-    >>> print lista
+    >>> print(lista)
     [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 
@@ -136,7 +136,7 @@ También, si añade al código anterior, los números del 0 al 10 cuando su mód
     ...     if numero % 2 == 0:
     ...         lista.append(numero)
     ... 
-    >>> print lista
+    >>> print(lista)
     [0, 2, 4, 6, 8, 10]
 
 Entonces el ejemplo anterior donde crear una lista con los todos los múltiples de 
@@ -145,7 +145,7 @@ Entonces el ejemplo anterior donde crear una lista con los todos los múltiples 
 ::
 
     >>> lista = [numero for numero in range(0,11) if numero % 2 == 0 ]
-    >>> print lista
+    >>> print(lista)
     [0, 2, 4, 6, 8, 10]
 
 Para el ejemplo anterior donde crear una lista con los todos los múltiples de 2 
@@ -179,7 +179,7 @@ así:
     ...     if numero % 2 == 0:
     ...         pares.append(numero)
     ... 
-    >>> print pares
+    >>> print(pares)
     [0, 4, 16, 36, 64, 100]
 
 Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
@@ -189,7 +189,7 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
     >>> lista = [numero for numero in 
     ...             [numero**2 for numero in range(0,11)] 
     ...                 if numero % 2 == 0]
-    >>> print lista
+    >>> print(lista)
     [0, 4, 16, 36, 64, 100]
 
 Crear listas a partir de listas anidadas le permite llevar la listas de comprensión 

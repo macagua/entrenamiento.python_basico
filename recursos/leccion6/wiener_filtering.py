@@ -1,6 +1,4 @@
-"""
-    Wiener filtering a noisy Lena: this module is buggy
-"""
+""" Wiener filtering a noisy Lena: this module is buggy """
 
 import numpy as np
 import scipy as sp
@@ -9,8 +7,7 @@ from scipy import signal
 
 
 def local_mean(img, size=3):
-    """ Compute a image of the local average
-    """
+    """ Compute a image of the local average """
     structure_element = np.ones((size, size), dtype=img.dtype)
     l_mean = signal.correlate(img, structure_element, mode='same')
     l_mean /= size**2
@@ -18,8 +15,7 @@ def local_mean(img, size=3):
 
 
 def local_var(img, size=3):
-    """ Compute a image of the local variance
-    """
+    """ Compute a image of the local variance """
     structure_element = np.ones((size, size), dtype=img.dtype)
     l_var = signal.correlate(img**2, structure_element, mode='same')
     l_var /= size**2
@@ -43,8 +39,8 @@ def iterated_wiener(noisy_img, size=3):
         denoised_img += noise_level*res
     return denoised_img
 
-
 ################################################################################
+
 cut = (slice(128, -128), slice(128, -128))
 
 np.random.seed(7)
@@ -59,4 +55,3 @@ denoised_lena = iterated_wiener(noisy_lena)
 pl.matshow(denoised_lena[cut], cmap=pl.cm.gray)
 
 pl.show()
-

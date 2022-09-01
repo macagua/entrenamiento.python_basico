@@ -103,10 +103,10 @@ Este método agrega un elemento al final de una lista.
 ::
 
     >>> versiones_plone = [2.5, 3.6, 4, 5]
-    >>> print versiones_plone 
+    >>> print(versiones_plone)
     [2.5, 3.6, 4, 5]
     >>> versiones_plone.append(6)
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.5, 3.6, 4, 5, 6]
 
 
@@ -121,11 +121,11 @@ aparece en la lista.
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
-    >>> print "6 ->", versiones_plone.count(6)
+    >>> print("6 ->", versiones_plone.count(6))
     6 -> 1
-    >>> print "5 ->", versiones_plone.count(5)
+    >>> print("5 ->", versiones_plone.count(5))
     5 -> 1
-    >>> print "2.5 ->", versiones_plone.count(2.5)
+    >>> print("2.5 ->", versiones_plone.count(2.5))
     2.5 -> 1
 
 
@@ -139,13 +139,13 @@ Este método extiende una lista agregando un iterable al final.
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6]
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6]
     >>> versiones_plone.extend([4])
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4]
     >>> versiones_plone.extend(range(5,7))
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5, 6]
 
 
@@ -160,7 +160,7 @@ aparición en la lista.
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6, 4]
-    >>> print versiones_plone.index(4)
+    >>> print(versiones_plone.index(4))
     3
 
 El método admite como argumento adicional un índice inicial a partir de donde comenzar 
@@ -171,11 +171,11 @@ la búsqueda, opcionalmente también el índice final.
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6, 4]
     >>> versiones_plone[2]
     3.6
-    >>> print versiones_plone.index(4, 2)
+    >>> print(versiones_plone.index(4, 2))
     3
     >>> versiones_plone[3]
     4
-    >>> print versiones_plone.index(4, 5)
+    >>> print(versiones_plone.index(4, 5))
     6
     >>> versiones_plone[6]
     4
@@ -186,7 +186,7 @@ elemento no se encuentra en la lista, o en el entorno definido.
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6, 4]
-    >>> print versiones_plone.index(9)
+    >>> print(versiones_plone.index(9))
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     ValueError: 9 is not in list
@@ -202,10 +202,10 @@ Este método inserta el elemento x en la lista, en el índice i.
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5, 6]
     >>> versiones_plone.insert(2, 3.7)
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.7, 3.6, 4, 5, 6]
 
 
@@ -219,9 +219,9 @@ Este método devuelve el último elemento de la lista, y lo borra de la misma.
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
-    >>> print versiones_plone.pop()
+    >>> print(versiones_plone.pop())
     6
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5]
 
 Opcionalmente puede recibir un argumento numérico, que funciona como índice del 
@@ -230,9 +230,9 @@ elemento (por defecto, -1)
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
-    >>> print versiones_plone.pop(2)
+    >>> print(versiones_plone.pop(2))
     3.6
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 4, 5, 6]
 
 
@@ -246,10 +246,10 @@ Este método recibe como argumento un elemento, y borra su primera aparición en
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5, 6]
     >>> versiones_plone.remove(2.5)
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 3.6, 4, 5, 6]
 
 
@@ -259,7 +259,7 @@ elemento no se encuentra en la lista.
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5, 6]
     >>> versiones_plone.remove(7)
     Traceback (most recent call last):
@@ -277,10 +277,10 @@ Este método invierte el orden de los elementos de una lista.
 ::
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5, 6]
     >>> versiones_plone.reverse()
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [6, 5, 4, 3.6, 2.5, 2.1]
 
 
@@ -294,10 +294,10 @@ Este método ordena los elementos de una lista.
 ::
 
     >>> versiones_plone = [4, 2.5, 5, 3.6, 2.1, 6]
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [4, 2.5, 5, 3.6, 2.1, 6]
     >>> versiones_plone.sort()
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5, 6]
 
 El método ``sort()`` admite la opción ``reverse``, por defecto, con valor ``False``.
@@ -306,7 +306,7 @@ De tener valor ``True``, el ordenamiento se hace en sentido inverso.
 ::
 
     >>> versiones_plone.sort(reverse=True)
-    >>> print versiones_plone
+    >>> print(versiones_plone)
     [6, 5, 4, 3.6, 2.5, 2.1]
 
 
@@ -384,7 +384,7 @@ en un diccionario, lineas en un archivo, ...):
     >>> vocales = 'aeiou'
     >>> for letra in 'hermosa':
     ...     if letra in vocales:
-    ...         print letra,
+    ...         print(letra)
     e o a
 
 *Ejemplo de iterar sobre una lista*
@@ -398,7 +398,7 @@ integrada ``split()``.
     >>> mensaje.split() # retorna una lista
     ['Hola,', 'como', 'estas', 'tu?']
     >>> for palabra in mensaje.split():
-    ...     print palabra
+    ...     print(palabra)
     ...
     Hola,
     como
@@ -415,8 +415,8 @@ con la función integrada :ref:`zip() <python_fun_zip>`.
     >>> preguntas = ['nombre', 'objetivo', 'sistema operativo']
     >>> respuestas = ['Leonardo', 'aprender Python y Plone', 'Linux']
     >>> for pregunta, respuesta in zip(preguntas, respuestas):
-    ...     print '¿Cual es tu {0}?, la respuesta es: {1}.'.format(
-    ...         pregunta, respuesta)
+    ...     print("¿Cual es tu {0}?, la respuesta es: {1}.".format(
+    ...         pregunta, respuesta))
     ... 
     ¿Cual es tu nombre?, la respuesta es: Leonardo.
     ¿Cual es tu objetivo?, la respuesta es: aprender Python y Plone.
