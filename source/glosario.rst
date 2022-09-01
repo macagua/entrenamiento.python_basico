@@ -211,7 +211,7 @@ A continuación una serie de términos usados en las tecnologías Python/Zope/Pl
         Con esto le permite instalar fácilmente paquetes de Python, a menudo es suficiente
         para escribir: ::
 
-            python setup.py install
+            python3.7 setup.py install
 
         Entonces el módulo Python se instalará.
 

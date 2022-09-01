@@ -774,7 +774,7 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
     ::
 
-        python tipo_diccionarios.py
+        python3.7 tipo_diccionarios.py
 
 
 .. seealso::

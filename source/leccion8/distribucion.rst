@@ -166,7 +166,7 @@ el siguiente comando:
 
 ::
 
-    python ./setup.py -v build
+    python3.7 ./setup.py -v build
     running build
     running build_py
     creating build
@@ -222,7 +222,7 @@ archivo **zip**, etc. Para crear una paquete ``sdist``, ejecute el siguiente com
 
 ::
 
-    python ./setup.py -v sdist
+    python3.7 ./setup.py -v sdist
     running sdist
     running egg_info
     creating tostadas_pipo.egg-info
@@ -288,7 +288,7 @@ comando:
 
 ::
 
-    python ./setup.py sdist --formats=zip,gztar,bztar
+    python3.7 ./setup.py sdist --formats=zip,gztar,bztar
     running sdist
     running egg_info
     writing tostadas_pipo.egg-info/PKG-INFO
@@ -386,7 +386,7 @@ siguiente comando:
 
 ::
 
-    python ./setup.py bdist_egg
+    python3.7 ./setup.py bdist_egg
     running bdist_egg
     running egg_info
     writing tostadas_pipo.egg-info/PKG-INFO
@@ -448,7 +448,7 @@ siguiente comando:
 
 ::
 
-    python ./setup.py bdist_wheel
+    python3.7 ./setup.py bdist_wheel
     running bdist_wheel
     running build
     running build_py
@@ -597,7 +597,7 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
 
 ::
 
-    python ./setup.py -v install --user
+    python3.7 ./setup.py -v install --user
     running install
     running bdist_egg
     running egg_info
@@ -710,7 +710,7 @@ ejecutando el siguiente comando:
 
 ::
 
-    python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print("Función importada " + impuesto_iva14.__doc__[1:36] + ".")'
+    python3.7 -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print("Función importada " + impuesto_iva14.__doc__[1:36] + ".")'
     Función importada Calcula el impuesto del IVA de 14 %.
 
 El comando previo muestra la :ref:`docstring <python_str_docstrings>` de la 
@@ -843,7 +843,7 @@ ejecute el comando siguiente:
 
 ::
 
-    python ./setup.py --help-commands
+    python3.7 ./setup.py --help-commands
     Standard commands:
       build             build everything needed to install
       build_py          "build" pure Python modules (copy to build directory)
@@ -894,7 +894,7 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 ::
 
-    python setup.py --help
+    python3.7 setup.py --help
 
 ----
 

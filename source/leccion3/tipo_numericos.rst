@@ -307,7 +307,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     ::
 
-        python tipo_numericos.py
+        python3.7 tipo_numericos.py
 
 
 ----

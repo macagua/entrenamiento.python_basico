@@ -445,7 +445,7 @@ Y se llama de la siguiente forma:
 
     ::
 
-        python funciones.py
+        python3.7 funciones.py
 
 
 .. seealso::

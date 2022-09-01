@@ -127,8 +127,8 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
-        python calculo_factura_pipo.py
-        python tostadas_pipo/principal.py
+        python3.7 calculo_factura_pipo.py
+        python3.7 tostadas_pipo/principal.py
 
 
 ----

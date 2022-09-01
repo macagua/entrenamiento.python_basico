@@ -106,7 +106,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
     ::
 
-        python operadores_logicos.py
+        python3.7 operadores_logicos.py
 
 
 ----

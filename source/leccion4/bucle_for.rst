@@ -110,7 +110,7 @@ que en las demás estructuras de control.
 
     ::
 
-        python bucle_for.py
+        python3.7 bucle_for.py
 
 
 ----

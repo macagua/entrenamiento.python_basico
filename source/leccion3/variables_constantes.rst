@@ -194,7 +194,7 @@ Luego ejecuta el programa de la siguiente forma:
 
 ::
 
-    python main.py
+    python3.7 main.py
 
 Cuando usted ejecuta el programa, la salida será:
 
@@ -478,7 +478,7 @@ precaución.
 
     ::
 
-        python main.py
+        python3.7 main.py
 
 
 ----

@@ -245,7 +245,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
     ::
 
-        python condicional_if.py
+        python3.7 condicional_if.py
 
 
 ----

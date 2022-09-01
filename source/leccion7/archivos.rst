@@ -234,7 +234,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     ::
 
-        python archivo.py
+        python3.7 archivo.py
 
 
 .. seealso::

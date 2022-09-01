@@ -52,14 +52,14 @@ Ejecutar un programa en Windows
 
 Cree un directorio llamado ``proyectos`` la unidad ``C:\`` y dentro
 de este, cree un archivo de texto plano con el siguiente nombre
-``holamundo.py`` y escriba la sintaxis de :ref:`Python 2 <python2_hola_mundo>` 
-o :ref:`Python 3 <python3_hola_mundo>` respectivamente.
+``holamundo.py`` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>`
+respectivamente.
 
 Luego ejecute desde la consola de ``MS-DOS`` el siguiente comando:
 
 ::
 
-  C:\Python27\python C:\proyectos\holamundo.py
+  C:\Python37\python C:\proyectos\holamundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -88,8 +88,7 @@ Ejecutar un programa en Mac OSX
 #. Seleccione ``Texto plano``.
 
 #. En el vacío ``TextEdit`` tipo de ventana en el siguiente programa, tal y
-   como escribe la sintaxis de :ref:`Python 2 <python2_hola_mundo>` o 
-   :ref:`Python 3 <python3_hola_mundo>` respectivamente.
+   como escribe la sintaxis de :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
 #. Desde el archivo de menú en TextEdit.
 
@@ -117,7 +116,7 @@ Ejecutar un programa en Mac OSX
 
 #. Ejecute ``ls`` y presione ``Enter`` y usted debería ver el archivo ``holamundo.py``.
 
-#. Para ejecutar el programa, escriba el siguiente comando ``python holamundo.py`` 
+#. Para ejecutar el programa, escriba el siguiente comando ``python3.7 holamundo.py`` 
    y presione ``Enter``.
 
 #. Usted debe ver la línea *Hola Mundo*.
@@ -132,14 +131,13 @@ Ejecutar un programa en Linux
 
 Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
 y dentro de este, cree un archivo de texto plano con el siguiente
-nombre ``holamundo.py`` y escriba la sintaxis de :ref:`Python 2 <python2_hola_mundo>` 
-o :ref:`Python 3 <python3_hola_mundo>` respectivamente.
+nombre ``holamundo.py`` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
 Luego ejecute desde la consola de comando el siguiente comando:
 
 ::
 
-    python $HOME/proyectos/holamundo.py
+    python3.7 $HOME/proyectos/holamundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -159,7 +157,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
     ::
 
-        python holamundo.py
+        python3.7 holamundo.py
 
 
 ----

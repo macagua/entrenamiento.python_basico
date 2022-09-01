@@ -450,7 +450,7 @@ Usted puede consultar toda la documentación disponible sobre las **listas** des
 
     ::
 
-        python tipo_listas.py
+        python3.7 tipo_listas.py
 
 
 ----

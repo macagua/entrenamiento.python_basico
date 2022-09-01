@@ -164,7 +164,7 @@ Usted puede consultar toda la documentación disponible sobre las **tuplas** des
 
     ::
 
-        python tipo_tuplas.py
+        python3.7 tipo_tuplas.py
 
 
 .. seealso::

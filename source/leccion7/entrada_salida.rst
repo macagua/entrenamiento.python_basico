@@ -97,7 +97,7 @@ Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
 
 ::
 
-    python entrada_argumentos.py
+    python3.7 entrada_argumentos.py
     ['entrada_argumentos.py']
 
 
@@ -110,12 +110,11 @@ y cadenas de caracteres entre comillas dobles, todo separado por espacios:
 
 ::
 
-    python entrada_argumentos.py 300 43.234 "Hola Plone"
+    python3.7 entrada_argumentos.py 300 43.234 "Hola Plone"
     ['entrada_argumentos.py', '300', '43.234', 'Hola Plone']
 
 Cada valor que enviamos al *script* durante la llamada se llama argumento e implica 
-una forma de entrada de datos alternativa sin usar las funciones 
-:ref:`input() <python_fun_input>` y :ref:`raw_input() <python_fun_raw_input>`.
+una forma de entrada de datos alternativa sin usar la función :ref:`input() <python_fun_input>`.
 
 
 A continuación, un ejemplo el cual usa un *script* con la librería ``sys``. El *script*
@@ -132,7 +131,7 @@ ejecute el siguiente comando:
 
 ::
 
-    python entrada_dos_argumentos.py "Hola Plone"
+    python3.7 entrada_dos_argumentos.py "Hola Plone"
     ERROR: Introdujo uno (1) o más de dos (2) argumentos
     SOLUCIÓN: Introduce los argumentos correctamente
     Ejemplo: entrada_dos_argumentos.py "Texto" 5
@@ -142,7 +141,7 @@ argumentos, ejecutando el siguiente comando:
 
 ::
 
-    python entrada_dos_argumentos.py "Hola Plone" 3
+    python3.7 entrada_dos_argumentos.py "Hola Plone" 3
     Hola Plone
     Hola Plone
     Hola Plone
@@ -235,9 +234,9 @@ de caracteres y variables:
 
     ::
 
-        python entrada_salida.py
-        python entrada_argumentos.py
-        python entrada_dos_argumentos.py
+        python3.7 entrada_salida.py
+        python3.7 entrada_argumentos.py
+        python3.7 entrada_dos_argumentos.py
 
 
 .. seealso::

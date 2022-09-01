@@ -551,7 +551,7 @@ permite corroborar si un objeto es instancia de una clase.
 
     ::
 
-        python poo.py
+        python3.7 poo.py
 
 
 .. seealso::

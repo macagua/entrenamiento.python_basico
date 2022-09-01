@@ -103,9 +103,9 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
    En algunas situaciones no podrás usar IPython, por ejemplo para depurar
    un `script` que ha sido llamado desde la línea de comandos. En este caso,
    puedes ejecutar el `script` de la siguiente forma 
-   ``python -m pdb script.py``::
+   ``python3.7 -m pdb script.py``::
 
-    python -m pdb index_error.py
+    python3.7 -m pdb index_error.py
     > /home/macagua/python/entrenamiento/index_error.py(1)<module>()
     -> """Small snippet to raise an IndexError."""
     (Pdb) continue
@@ -383,9 +383,9 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
     ::
 
-        python index_error.py
-        python wiener_filtering.py
-        python funcion_a_depurar.py
+        python3.7 index_error.py
+        python3.7 wiener_filtering.py
+        python3.7 funcion_a_depurar.py
 
 
 ----

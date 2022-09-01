@@ -146,7 +146,7 @@ con bucle ``while``:
 
     ::
 
-        python bucle_while.py
+        python3.7 bucle_while.py
 
 
 ----

@@ -193,7 +193,7 @@ sentencia ``global``, se soluciona el problema.
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
-        python calculo_factura_pipo.py
+        python3.7 calculo_factura_pipo.py
 
 
 ----
