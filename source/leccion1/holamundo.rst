@@ -108,16 +108,16 @@ Ejecutar un programa en macOS
    Se debe dar una lista de todas las carpetas de nivel superior. Usted debe
    ver la carpeta de ``Documentos``.
 
-#. Ejecute ``cd Documentos`` y presione ``Enter``.
+#. Ejecute ``cd Documentos`` y presione la tecla ``Enter``.
 
-#. Ejecute ``ls`` y presione ``Enter`` y debería ver la carpeta ``proyectos``.
+#. Ejecute ``ls`` y presione la tecla ``Enter`` y debería ver la carpeta ``proyectos``.
 
-#. Ejecute ``cd proyectos`` y presione ``Enter``.
+#. Ejecute ``cd proyectos`` y presione la tecla ``Enter``.
 
-#. Ejecute ``ls`` y presione ``Enter`` y usted debería ver el archivo ``holamundo.py``.
+#. Ejecute ``ls`` y presione la tecla ``Enter`` y usted debería ver el archivo ``holamundo.py``.
 
 #. Para ejecutar el programa, escriba el siguiente comando ``python3.7 holamundo.py`` 
-   y presione ``Enter``.
+   y presione la tecla ``Enter``.
 
 #. Usted debe ver la línea *Hola Mundo*.
 
