@@ -43,7 +43,7 @@ Introducción a Python
 
 - `Wikipedia - Python <https://es.wikipedia.org/wiki/Python>`_.
 
-- Ver la :numref:`anexos_CjmzDHMHxwU` anexo sobre la *introducción al Lenguaje de Programación*.
+- Ver el anexo :numref:`anexos_CjmzDHMHxwU` sobre la *introducción al Lenguaje de Programación*.
 
 .. comments:
 
@@ -65,7 +65,7 @@ Instalación
 
 - `PyPI - the Python Package Index <https://pypi.org/>`_.
 
-- Ver la :numref:`anexos_VTykmPa2KY` anexo sobre la *instalación*.
+- Ver el anexo :numref:`anexos_VTykmPa2KY` sobre la *instalación*.
 
 .. comments:
 
@@ -84,7 +84,7 @@ Su primer programa
 
 - `Getting Started with Python <http://www.cs.utexas.edu/~mitra/bytes/start.html>`_.
 
-- Ver la :numref:`anexos_OtJEj7N9T6k` anexo sobre *su primer programa*.
+- Ver el anexo :numref:`anexos_OtJEj7N9T6k` sobre *su primer programa*.
 
 .. comments:
 
@@ -142,7 +142,7 @@ Operadores aritméticos, tipo enteros y reales
 
 - `Introducción a la programación en Python - clase 1 <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/2014/CursoPython_clase01.html>`_.
 
-- Ver la :numref:`anexos_ssnkfbBbcuw` anexo sobre los *operadores aritméticos, tipo enteros y reales*.
+- Ver el anexo :numref:`anexos_ssnkfbBbcuw` sobre los *operadores aritméticos, tipo enteros y reales*.
 
 .. comments:
 
@@ -159,7 +159,7 @@ Operadores aritméticos, tipo enteros y reales
 Tipo booleanos y cadenas de caracteres 
 ......................................
 
-- Ver la :numref:`anexos_ZrxcqbFYjiw` anexo sobre los *tipo booleanos y cadenas de caracteres*.
+- Ver el anexo :numref:`anexos_ZrxcqbFYjiw` sobre los *tipo booleanos y cadenas de caracteres*.
 
 .. comments:
 
@@ -215,7 +215,7 @@ Condicional if
 
 - `Expresiones condicionales - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#expresiones-condicionales>`_.
 
-- Ver la :numref:`anexos_hLqKvB7tGWk` anexo sobre las *sentencias condicionales*.
+- Ver el anexo :numref:`anexos_hLqKvB7tGWk` sobre las *sentencias condicionales*.
 
 .. comments:
 
@@ -232,7 +232,7 @@ Condicional if
 Operadores lógicos
 ..................
 
-- Ver la :numref:`anexos_ZrxcqbFYjiw` anexo sobre los *tipo booleanos y cadenas de caracteres*.
+- Ver el anexo :numref:`anexos_ZrxcqbFYjiw` sobre los *tipo booleanos y cadenas de caracteres*.
 
 .. comments:
 
@@ -254,7 +254,7 @@ Bucle while
 
 - `Ciclo while en Python <http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html>`_.
 
-- Ver la :numref:`anexos_IyI2ZuOq_xQ` anexo sobre los *bucles*.
+- Ver el anexo :numref:`anexos_IyI2ZuOq_xQ` sobre los *bucles*.
 
 .. comments:
 
@@ -275,7 +275,7 @@ Bucle for
 
 - Introducción a `Bucles 'for' <http://docs.python.org.ar/tutorial/2/controlflow.html#la-sentencia-for>`_.
 
-- Ver la :numref:`anexos_IyI2ZuOq_xQ` anexo sobre los *bucles*.
+- Ver el anexo :numref:`anexos_IyI2ZuOq_xQ` sobre los *bucles*.
 
 .. comments:
 
@@ -304,7 +304,7 @@ Funciones definidas por el usuario
 
 - `Funciones de orden superior <https://github.com/josuemontano/python_intro/wiki/Funciones-de-orden-superior>`_.
 
-- Ver la :numref:`anexos__C7Uj7O5o_Q` anexo sobre las *funciones*.
+- Ver el anexo :numref:`anexos__C7Uj7O5o_Q` sobre las *funciones*.
 
 .. comments:
 
@@ -337,7 +337,7 @@ Lección 6 - Introspección a la depuración con pdb
 
 - `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://claudiovz.github.io/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
 
-- Ver la :numref:`anexos_N4NtB4r28h0` anexo sobre el *Python Debugger*.
+- Ver el anexo :numref:`anexos_N4NtB4r28h0` sobre el *Python Debugger*.
 
 .. comments:
 
@@ -364,9 +364,9 @@ Entrada / Salida en Python
 
 - `Python - Entrada / Salida. Ficheros <http://mundogeek.net/archivos/2008/04/02/python-entrada-salida-ficheros/>`_.
 
-- Ver la :numref:`anexos_AzeUCuMvW6I` anexo sobre la *entrada Estándar rawInput*.
+- Ver el anexo :numref:`anexos_AzeUCuMvW6I` sobre la *entrada Estándar rawInput*.
 
-- Ver la :numref:`anexos_JPXgxK3Oc` anexo sobre la *salida Estándar rawInput*.
+- Ver el anexo :numref:`anexos_JPXgxK3Oc` sobre la *salida Estándar rawInput*.
 
 .. comments:
 
@@ -445,7 +445,7 @@ Programación orientada a objetos
 
 - `What is the meaning of a single and a double underscore before an object name? <https://stackoverflow.com/questions/1301346/what-is-the-meaning-of-a-single-and-a-double-underscore-before-an-object-name>`_.
 
-- Ver la :numref:`anexos_VYXdpjCZojA` anexo sobre *Clases y Objetos*.
+- Ver el anexo :numref:`anexos_VYXdpjCZojA` sobre *Clases y Objetos*.
 
 .. comments:
 
@@ -470,9 +470,9 @@ Iteradores
 
 - Ver el uso de :ref:`comprensión de listas <lectura_extras_sesion10_list_compre>`.
 
-- Ver la :numref:`anexos_tvHbC_OZV14` anexo sobre *Generadores*.
+- Ver el anexo :numref:`anexos_tvHbC_OZV14` sobre *Generadores*.
 
-- Ver la :numref:`anexos_TaIWx9paNIA` anexo sobre *Decoradores*.
+- Ver el anexo :numref:`anexos_TaIWx9paNIA` sobre *Decoradores*.
 
 .. comments:
 
@@ -512,7 +512,7 @@ Listas de comprensión
 
 - `Listas por comprensión - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#listas-por-comprension>`_.
 
-- Ver la :numref:`anexos_87s8XQbUv1k` anexo sobre *Comprensión de Listas*.
+- Ver el anexo :numref:`anexos_87s8XQbUv1k` sobre *Comprensión de Listas*.
 
 .. comments:
 
