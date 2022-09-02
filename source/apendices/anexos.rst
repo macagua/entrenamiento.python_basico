@@ -11,7 +11,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_CjmzDHMHxwU:
 
-.. figure:: ../_static/youtube/CjmzDHMHxwU.jpg
+.. figure:: ../_images/youtube/CjmzDHMHxwU.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -22,7 +22,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_VTykmPa2KY:
 
-.. figure:: ../_static/youtube/VTykmP-a2KY.jpg
+.. figure:: ../_images/youtube/VTykmP-a2KY.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -32,7 +32,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_OtJEj7N9T6k:
 
-.. figure:: ../_static/youtube/OtJEj7N9T6k.jpg
+.. figure:: ../_images/youtube/OtJEj7N9T6k.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -42,7 +42,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_ssnkfbBbcuw:
 
-.. figure:: ../_static/youtube/ssnkfbBbcuw.jpg
+.. figure:: ../_images/youtube/ssnkfbBbcuw.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -52,7 +52,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_ZrxcqbFYjiw:
 
-.. figure:: ../_static/youtube/ZrxcqbFYjiw.jpg
+.. figure:: ../_images/youtube/ZrxcqbFYjiw.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -63,7 +63,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_hLqKvB7tGWk:
 
-.. figure:: ../_static/youtube/hLqKvB7tGWk.jpg
+.. figure:: ../_images/youtube/hLqKvB7tGWk.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -73,7 +73,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_IyI2ZuOq_xQ:
 
-.. figure:: ../_static/youtube/IyI2ZuOq_xQ.jpg
+.. figure:: ../_images/youtube/IyI2ZuOq_xQ.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -83,7 +83,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos__C7Uj7O5o_Q:
 
-.. figure:: ../_static/youtube/_C7Uj7O5o_Q.jpg
+.. figure:: ../_images/youtube/_C7Uj7O5o_Q.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -93,7 +93,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_N4NtB4r28h0:
 
-.. figure:: ../_static/youtube/N4NtB4r28h0.jpg
+.. figure:: ../_images/youtube/N4NtB4r28h0.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -103,7 +103,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_AzeUCuMvW6I:
 
-.. figure:: ../_static/youtube/AzeUCuMvW6I.jpg
+.. figure:: ../_images/youtube/AzeUCuMvW6I.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -113,7 +113,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_JPXgxK3Oc:
 
-.. figure:: ../_static/youtube/JPXgxK3Oc.jpg
+.. figure:: ../_images/youtube/JPXgxK3Oc.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -123,7 +123,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_VYXdpjCZojA:
 
-.. figure:: ../_static/youtube/VYXdpjCZojA.jpg
+.. figure:: ../_images/youtube/VYXdpjCZojA.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -133,7 +133,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_87s8XQbUv1k:
 
-.. figure:: ../_static/youtube/87s8XQbUv1k.jpg
+.. figure:: ../_images/youtube/87s8XQbUv1k.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -143,7 +143,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_tvHbC_OZV14:
 
-.. figure:: ../_static/youtube/tvHbC_OZV14.jpg
+.. figure:: ../_images/youtube/tvHbC_OZV14.jpg
     :align: center
     :scale: 60%
     :width: 60%
@@ -153,7 +153,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_TaIWx9paNIA:
 
-.. figure:: ../_static/youtube/TaIWx9paNIA.jpg
+.. figure:: ../_images/youtube/TaIWx9paNIA.jpg
     :align: center
     :scale: 60%
     :width: 60%

@@ -371,7 +371,7 @@ El módulo :ref:`setuptools <python_modulo_setuptools>` y
 construida o built "binary" distribution (``bdist``) de su paquete en formato **egg**, 
 **wheel**, **rpm**, etc. A continuación se describen los mas usados:
 
-.. figure:: ../_static/python_eggs.jpg
+.. figure:: ../_images/python_eggs.jpg
     :align: center
     :width: 50%
 
