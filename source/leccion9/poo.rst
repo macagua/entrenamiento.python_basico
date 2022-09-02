@@ -15,7 +15,7 @@ Muchos de los objetos prediseñados de los lenguajes de programación actuales p
 la agrupación en bibliotecas o librerías, sin embargo, muchos de estos lenguajes 
 permiten al usuario la creación de sus propias bibliotecas.
 
-.. figure:: ../_static/oop.jpg
+.. figure:: ../_images/oop.jpg
     :align: center
     :width: 30%
 
@@ -168,7 +168,7 @@ código usa la sentencia :ref:`pass <python_sent_pass>`. Aunque no es requerido 
 el intérprete, los nombres de las clases se escriben por convención capitalizadas. 
 Las clases pueden (y siempre deberían) tener comentarios.
 
-.. figure:: ../_static/objetos_clases.png
+.. figure:: ../_images/objetos_clases.png
     :align: center
     :width: 50%
 
