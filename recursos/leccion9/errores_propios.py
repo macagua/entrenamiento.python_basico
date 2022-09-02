@@ -1,5 +1,3 @@
-# -*- coding: utf8 -*-
-
 from excepciones_propias import *
 
 

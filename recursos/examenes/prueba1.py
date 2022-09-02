@@ -1,6 +1,5 @@
-# -*- coding: utf8 -*-
-
 import os.path
+
 
 def creararchivo():
     archivo = open(RUTA_ARCHIVO, 'w')
@@ -68,4 +67,3 @@ elif __name__ == "prueba1":
     initialize()
 else:
     print("Este programa esta mal configurado, debes llamar a su modulo....")
-

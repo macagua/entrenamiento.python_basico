@@ -1,5 +1,3 @@
-# -*- coding: utf8 -*-
-
 from utilidades import impuestos
 from utilidades import calculos
 

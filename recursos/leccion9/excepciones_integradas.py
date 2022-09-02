@@ -1,7 +1,6 @@
-# -*- coding: utf8 -*-
-
 import os.path
 import sys
+
 
 RUTA_BASE = os.path.dirname(__file__)
 RUTA_ARCHIVO = os.path.join(RUTA_BASE, 'numeros.txt')

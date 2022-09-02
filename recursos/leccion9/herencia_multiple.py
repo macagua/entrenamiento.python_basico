@@ -1,6 +1,5 @@
-# -*- coding: utf8 -*-
-
 from clases import Destreza, JefeCuadrilla, Obrero
+
 
 # Una instancia de Objeto JefeCuadrilla
 jefe_cuadrilla1 = JefeCuadrilla("V-16987456", "Mario", "Paz", 

@@ -1,6 +1,3 @@
-# -*- coding: utf8 -*-
-
-
 class VenezolanoError(Exception):
     """ Clase base para expresiones Venezolanas. """
     def __init__(self, evaluar):
