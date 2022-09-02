@@ -66,10 +66,10 @@ Usted debe ver la línea *Hola Mundo*.
 Enhorabuena, usted ha ejecutado su primer programa Python.
 
 
-.. _python_ejecutar_macosx:
+.. _python_ejecutar_macos:
 
-Ejecutar un programa en Mac OSX
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ejecutar un programa en macOS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Haga clic en ``Archivo`` y luego la nueva Ventana del ``Finder``.
 
