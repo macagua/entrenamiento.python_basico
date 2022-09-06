@@ -185,12 +185,12 @@ html_theme_options = {
     "version_dropdown": True,
     "version_info": [
         {
-            "version": "https://entrenamiento-python-basico.readthedocs.io/es/stable/",
+            "version": "https://entrenamiento-python-basico.readthedocs.io/es/3.7/",
             "title": "3.7",
             "aliases": [],
         },
         {
-            "version": "https://entrenamiento-python-basico.readthedocs.io/es/latest/",
+            "version": "https://entrenamiento-python-basico.readthedocs.io/es/2.7/",
             "title": "2.7",
             "aliases": [],
         },
