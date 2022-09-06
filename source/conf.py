@@ -18,10 +18,10 @@ sys.path.append(os.path.abspath('sphinxext'))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project_namecode = 'entrenamiento.python_basico'
-project_short_name = 'programación en Python - Nivel básico'
+project_short_name = 'Programación en Python'
 project = project_short_name[0].capitalize() + project_short_name[1:39]
 project_name = project_namecode.replace(".", "")
-project_details = 'Materiales del entrenamiento de {0}'.format(project_short_name)
+project_details = 'Aprende Python desde el nivel más básico'
 publisher = 'Leonardo J. Caballero G.'
 years = '2014 - 2022'
 copyright = '{0}, {1}'.format(years, publisher)
