@@ -49,7 +49,7 @@ los siguientes comando:
   $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils \
                         texlive-font-utils texlive-fonts-recommended texlive-latex-extra \
                         texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
-  $ sudo pip3.7 install virtualenv
+  $ sudo pip3 install virtualenv
 
 
 Descargar repositorio
@@ -69,14 +69,14 @@ comando:
 ::
 
   $ cd ~/entrenamiento.python_basico
-  $ virtualenv --python=/usr/bin/python3.7 venv
+  $ virtualenv --python=/usr/bin/python3 venv
   (venv)$ source ./venv/bin/activate
 
 Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente comando:
 
 ::
 
-  (venv)$ pip3.7 install -r requirements.txt
+  (venv)$ pip3 install -r requirements.txt
 
 
 Recursos del entrenamiento

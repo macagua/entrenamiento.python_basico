@@ -259,7 +259,7 @@ por el operador del lado derecho y devuelve el resto.
     consola de comando, acceda al directorio donde se encuentra el mismo, 
     y ejecute el siguiente comando: ::
 
-        python3.7 operadores_aritmeticos.py
+        python3 operadores_aritmeticos.py
 
 
 ----
@@ -269,3 +269,7 @@ por el operador del lado derecho y devuelve el resto.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

@@ -106,7 +106,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
     ::
 
-        python3.7 operadores_logicos.py
+        python3 operadores_logicos.py
 
 
 ----
@@ -115,3 +115,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

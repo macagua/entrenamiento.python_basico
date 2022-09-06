@@ -220,7 +220,7 @@ de la siguiente forma:
 
     >>> help(file)
 
-Para salir de esa ayuda presione la tecla ``q``.
+Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
@@ -234,10 +234,14 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     ::
 
-        python3.7 archivo.py
+        python3 archivo.py
 
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` del 
     entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

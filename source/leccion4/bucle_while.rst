@@ -146,7 +146,7 @@ con bucle ``while``:
 
     ::
 
-        python3.7 bucle_while.py
+        python3 bucle_while.py
 
 
 ----
@@ -155,3 +155,7 @@ con bucle ``while``:
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

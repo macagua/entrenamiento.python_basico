@@ -536,8 +536,8 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
     ::
 
-        python3.7 excepciones_integradas.py
-        python3.7 errores_propios.py
+        python3 excepciones_integradas.py
+        python3 errores_propios.py
 
 
 ----
@@ -547,3 +547,7 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

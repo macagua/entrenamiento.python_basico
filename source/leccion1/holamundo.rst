@@ -104,20 +104,20 @@ Ejecutar un programa en macOS
 
 #. Seleccione ``Aplicaciones``, a continuación, ``Utilidades y Terminal``.
 
-#. En la ventana ``Terminal`` ejecute ``ls`` y presione la tecla ``Enter``.
+#. En la ventana ``Terminal`` ejecute ``ls`` y presione la tecla :keys:`Enter`.
    Se debe dar una lista de todas las carpetas de nivel superior. Usted debe
    ver la carpeta de ``Documentos``.
 
-#. Ejecute ``cd Documentos`` y presione la tecla ``Enter``.
+#. Ejecute ``cd Documentos`` y presione la tecla :keys:`Enter`.
 
-#. Ejecute ``ls`` y presione la tecla ``Enter`` y debería ver la carpeta ``proyectos``.
+#. Ejecute ``ls`` y presione la tecla :keys:`Enter` y debería ver la carpeta ``proyectos``.
 
-#. Ejecute ``cd proyectos`` y presione la tecla ``Enter``.
+#. Ejecute ``cd proyectos`` y presione la tecla :keys:`Enter`.
 
-#. Ejecute ``ls`` y presione la tecla ``Enter`` y usted debería ver el archivo ``holamundo.py``.
+#. Ejecute ``ls`` y presione la tecla :keys:`Enter` y usted debería ver el archivo ``holamundo.py``.
 
-#. Para ejecutar el programa, escriba el siguiente comando ``python3.7 holamundo.py`` 
-   y presione la tecla ``Enter``.
+#. Para ejecutar el programa, escriba el siguiente comando ``python3 holamundo.py`` 
+   y presione la tecla :keys:`Enter`.
 
 #. Usted debe ver la línea *Hola Mundo*.
 
@@ -137,7 +137,7 @@ Luego ejecute desde la consola de comando el siguiente comando:
 
 ::
 
-    python3.7 $HOME/proyectos/holamundo.py
+    python3 $HOME/proyectos/holamundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -157,7 +157,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
     ::
 
-        python3.7 holamundo.py
+        python3 holamundo.py
 
 
 ----
@@ -166,3 +166,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion2>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

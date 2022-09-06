@@ -59,7 +59,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 4-5
+    :lines: 6-7
 
 
 .. _python_num_entero_long:
@@ -114,7 +114,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 8-9
+    :lines: 10-11
 
 
 ----
@@ -175,14 +175,14 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 12-15
+    :lines: 14-17
 
 
 **Ejemplo de definir tipo entero coma flotante con exponente en base 10**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 19-20
+    :lines: 21-22
 
 ----
 
@@ -222,7 +222,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 23-24
+    :lines: 25-26
 
 
 Convertir a numéricos
@@ -254,7 +254,7 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
     >>> help(int)
 
-Para salir de esa ayuda presione la tecla ``q``.
+Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 Usted puede consultar toda la documentación disponible sobre las **números enteros 
@@ -264,7 +264,7 @@ long** desde la :ref:`consola interactiva <python_interactivo>` de la siguiente 
 
     >>> help(long)
 
-Para salir de esa ayuda presione la tecla ``q``.
+Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 Usted puede consultar toda la documentación disponible sobre las **números coma 
@@ -275,7 +275,7 @@ forma:
 
     >>> help(float)
 
-Para salir de esa ayuda presione la tecla ``q``.
+Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 Usted puede consultar toda la documentación disponible sobre las **números complejos** 
@@ -285,7 +285,7 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
     >>> help(complex)
 
-Para salir de esa ayuda presione la tecla ``q``.
+Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. tip:: 
@@ -307,7 +307,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     ::
 
-        python3.7 tipo_numericos.py
+        python3 tipo_numericos.py
 
 
 ----
@@ -317,3 +317,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

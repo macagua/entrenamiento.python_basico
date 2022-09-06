@@ -1,0 +1,10 @@
+.has-text-centered{
+  text-align:center!important
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+

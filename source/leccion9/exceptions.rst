@@ -218,7 +218,7 @@ Las siguientes excepciones son las realmente lanzadas.
 
 ``KeyboardInterrupt``
     Se lanza cuando el usuario pulsa la tecla de interrupción (normalmente con la 
-    combinación de teclas ``Control-C`` o ``DEL``). 
+    combinación de teclas :keys:`Ctrl+C` o :keys:`DEL`). 
     A lo largo de la ejecución se comprueba si se ha interrumpido regularmente. Las 
     interrupciones ocurridas cuando una función :ref:`input() <python_fun_input>` 
     espera datos también lanzan esta excepción. Deriva de la clase raíz
@@ -499,3 +499,7 @@ Las siguientes excepciones son las realmente lanzadas.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

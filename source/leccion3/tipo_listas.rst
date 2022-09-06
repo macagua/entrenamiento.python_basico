@@ -450,7 +450,7 @@ Usted puede consultar toda la documentación disponible sobre las **listas** des
 
     ::
 
-        python3.7 tipo_listas.py
+        python3 tipo_listas.py
 
 
 ----
@@ -459,3 +459,7 @@ Usted puede consultar toda la documentación disponible sobre las **listas** des
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

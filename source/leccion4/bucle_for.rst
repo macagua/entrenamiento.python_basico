@@ -110,7 +110,7 @@ que en las demás estructuras de control.
 
     ::
 
-        python3.7 bucle_for.py
+        python3 bucle_for.py
 
 
 ----
@@ -119,3 +119,7 @@ que en las demás estructuras de control.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

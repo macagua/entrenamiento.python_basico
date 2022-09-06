@@ -1,0 +1,175 @@
+/* https://www.iamrohit.in/create-simple-responsive-material-design-vcard-html5css3/ */
+
+/*html, body, .root {
+  height: 100%;
+  margin: 0;
+}*/
+
+.root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fefefe; */
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.card {
+  flex-basis: 50ex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  border: 0;
+  border-radius: 0.25ex;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.right {
+  flex: 1.4;
+  flex-grow: 1.4;
+  flex-shrink: 1.4;
+  background-color: #888;
+  border: 0;
+  border-radius: 0 0.25ex 0.25ex 0;
+  background: url('../../_static/macagua.jpg') no-repeat -10.0ex top local;
+  background-size: cover;
+}
+
+.left {
+  flex: 3;
+  flex-grow: 3;
+  flex-shrink: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 2;
+  flex-shrink: 2;
+  flex-grow: 2;
+  flex-basis: 14ex;
+  font-family: 'Roboto';
+  padding-left: 3ex;
+}
+
+.name {
+  font-size: 18pt;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 2ex;
+}
+
+.title {
+  font-size: 11pt;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 1.5ex;
+  color: #666;
+}
+
+.status {
+  font-size: 10pt;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 4ex;
+  color: #444;
+}
+
+.action {
+  flex: 1;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 7ex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #eee;
+}
+
+.icon {
+  font-family: FontAwesome;
+  font-size: 18pt;
+  flex: 1;
+  flex-shrink: 1;
+  flex-grow: 1;
+  color: #aaa;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.4ex 0;
+  background-color: #fff;
+  transition: 0.25s;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes 
+ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.icon:hover {
+  background-color: #eee;
+  border: 0;
+  border-radius: 0.2ex;
+  transition: 0.25s;
+}
+
+.linkedin {
+  color: #0A66C2;
+  margin-left: 1ex;
+}
+
+.github {
+  color: #161B22;
+}
+
+.gitlab {
+  color: #E24329;
+}
+
+.bitbucket {
+  color: #2684FF;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.telegram {
+  margin-right: 1ex;
+  color: #3390EC;
+}

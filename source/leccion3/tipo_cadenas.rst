@@ -869,7 +869,7 @@ Usted puede consultar toda la documentación disponible sobre las
 
     >>> help(str)
 
-Para salir de esa ayuda presione la tecla ``q``.
+Para salir de esa ayuda presione la tecla :keys:`q`.
 
 Usted puede consultar toda la documentación disponible sobre las cadenas de caracteres 
 :ref:`unicode <python_unicode_cls>` desde la :ref:`consola interactiva <python_interactivo>` 
@@ -879,7 +879,7 @@ de la siguiente manera:
 
     >>> help(unicode)
 
-Para salir de esa ayuda presione la tecla ``q``.
+Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 ----
@@ -897,7 +897,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     ::
 
-        python3.7 tipo_cadenas.py
+        python3 tipo_cadenas.py
 
 
 ----
@@ -906,3 +906,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

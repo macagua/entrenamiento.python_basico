@@ -445,10 +445,14 @@ Y se llama de la siguiente forma:
 
     ::
 
-        python3.7 funciones.py
+        python3 funciones.py
 
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion5>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

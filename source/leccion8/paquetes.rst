@@ -127,8 +127,8 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
 
-        python3.7 calculo_factura_pipo.py
-        python3.7 tostadas_pipo/principal.py
+        python3 calculo_factura_pipo.py
+        python3 tostadas_pipo/principal.py
 
 
 ----
@@ -137,3 +137,7 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

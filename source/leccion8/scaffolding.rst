@@ -9,7 +9,7 @@ Scaffolding en proyectos Python
 .. sidebar:: Sobre este artículo
 
     :Autor(es): Leonardo J. Caballero G.
-    :Correo(s): leonardoc@plone.org
+    :Correo(s): :email:`leonardoc@plone.org`
     :Compatible con: Python 2.4 o versiones superiores
     :Fecha: 11 de Enero de 2021
 
@@ -41,7 +41,7 @@ ejecutando el siguiente comando:
 
 .. code-block:: sh
 
-  (venv)$ pip install PasteScript
+  (venv)$ pip3 install PasteScript
 
 .. note::
 
@@ -249,6 +249,10 @@ Referencias
 
 - `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo`_ 
   desde la comunidad de Plone Venezuela.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
 
 .. _`PasteScript`: https://pypi.org/project/PasteScript
 .. _`paste.deploy`: https://pypi.org/project/PasteDeploy

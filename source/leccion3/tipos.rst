@@ -99,3 +99,7 @@ en los tipos. El módulo estándar ``types`` defines los nombres para todos los 
 integrados estándar.
 
 Los tipos son escritos como esto: "<type 'int'>".
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

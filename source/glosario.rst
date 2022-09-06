@@ -6,7 +6,7 @@ Glosario
 ========
 
 :Autor(es): Leonardo J. Caballero G.
-:Correo(s): leonardoc@plone.org
+:Correo(s): :email:`leonardoc@plone.org`
 :Compatible con: Python 2.x, Python 3.x
 :Fecha: 11 de Enero de 2021
 
@@ -211,7 +211,7 @@ A continuación una serie de términos usados en las tecnologías Python/Zope/Pl
         Con esto le permite instalar fácilmente paquetes de Python, a menudo es suficiente
         para escribir: ::
 
-            python3.7 setup.py install
+            python3 setup.py install
 
         Entonces el módulo Python se instalará.
 

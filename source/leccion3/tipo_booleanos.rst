@@ -144,7 +144,7 @@ forma:
 
     >>> help(bool)
 
-Para salir de esa ayuda presione la tecla ``q``.
+Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 ----
@@ -162,7 +162,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     ::
 
-        python3.7 tipo_booleanos.py
+        python3 tipo_booleanos.py
 
 
 ----
@@ -171,3 +171,7 @@ Para salir de esa ayuda presione la tecla ``q``.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

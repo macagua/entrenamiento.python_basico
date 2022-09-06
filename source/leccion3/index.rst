@@ -31,3 +31,7 @@ Python, los cuales se resumieron en esta tabla. A continuación el temario de es
    tipo_tuplas
    tipo_diccionarios
    tipo_conjuntos
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

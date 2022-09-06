@@ -1,5 +1,5 @@
 .. entrenamiento.python_basico documentation master file, created by
-   sphinx-quickstart on Sun Jun  1 01:09:00 2014.
+   sphinx-quickstart on Thu Sep  1 02:33:40 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -7,24 +7,27 @@
 Programación en Python 3.7 - Nivel básico
 =========================================
 
-Repositorio de manuales y recursos del entrenamiento 
-**"Programación en** `Python 3.7`_ - **Nivel básico"** realizado por 
-la empresa `Covantec R.L`_.
+Repositorio de manuales y recursos del entrenamiento **"Programación en** `Python 3.7`_ - 
+**Nivel básico"**.
 
-.. sidebar:: Sobre este entrenamiento
-
-    Para dominar el lenguaje de programación se tiene pensado 
-    como un entrenamiento de 2 a 3 días para las personas que 
-    son nuevas usándolo o los que quieren aprender acerca de 
-    las mejores prácticas actuales del desarrollo en Python.
-    
-    La planificación de este entrenamiento se estima en:
-    
-    - Un entrenamiento de **nivel básico** (*2 a 3 días*) que 
-      cubre los *diez (10) capítulos*.
+.. warning::
+   Si esta buscando los manuales y recursos del entrenamiento **Programación en Python 2.7 - Nivel básico** visite el siguiente enlace: 
+   `https://entrenamiento-python-basico.readthedocs.io/es/latest/ <https://entrenamiento-python-basico.readthedocs.io/es/latest/>`_.
 
 
-Tabla de contenidos:
+.. note::
+
+    Desde lo básico con explicaciones simples pero detalladas.
+
+
+**Tabla de contenidos**
+
+.. tip::
+
+    El curso principal contiene 2 partes que cubren JavaScript como lenguaje de programación y la programación
+    orientada a objeto. También hay series adicionales de artículos temáticos.
+
+
 
 .. toctree::
    :numbered:
@@ -56,11 +59,13 @@ Apéndices
 .. toctree::
    :maxdepth: 1
 
+   acerca_de
    esquema
    lecturas
    apendices/anexos
    apendices/operadores
    glosario
+   copyright
    licencia
    por_mejorar
 
@@ -70,5 +75,4 @@ Búsqueda
 
 * :ref:`search`
 
-.. _`Covantec R.L`: https://github.com/Covantec
 .. _`Python 3.7`: https://docs.python.org/es/3.7/

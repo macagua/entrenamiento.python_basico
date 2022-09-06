@@ -245,7 +245,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
     ::
 
-        python3.7 condicional_if.py
+        python3 condicional_if.py
 
 
 ----
@@ -254,3 +254,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

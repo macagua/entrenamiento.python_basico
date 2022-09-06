@@ -140,7 +140,7 @@ implementado como su dirección).
 El *tipo* de un objeto también es inmutable. El tipo de un objeto determina las 
 operaciones que admite el objeto (por ejemplo, "¿tiene una longitud?") Y también define 
 los valores posibles para los objetos de ese tipo. La función ":ref:`type() <python_fun_type>`" 
-devuelve el tipo de un objeto (que es un objeto en sí mismo). El *valor *de algunos 
+devuelve el tipo de un objeto (que es un objeto en sí mismo). El *valor* de algunos 
 objetos puede cambiar. Se dice que los objetos cuyo valor puede cambiar son *mutables*; 
 los objetos cuyo valor no se puede cambiar una vez que se crean se llaman *immutable*. 
 (El valor de un objeto contenedor inmutable que contiene una referencia a un objeto mutable 
@@ -551,10 +551,14 @@ permite corroborar si un objeto es instancia de una clase.
 
     ::
 
-        python3.7 poo.py
+        python3 poo.py
 
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

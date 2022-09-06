@@ -23,3 +23,7 @@ mostrando ejemplos prácticos y útiles. A continuación el temario de esta lecc
    funciones_recursivas
    funciones_orden_superior
    funciones_integradas
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

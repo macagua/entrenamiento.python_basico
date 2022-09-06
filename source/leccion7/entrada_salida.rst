@@ -97,7 +97,7 @@ Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
 
 ::
 
-    python3.7 entrada_argumentos.py
+    python3 entrada_argumentos.py
     ['entrada_argumentos.py']
 
 
@@ -110,7 +110,7 @@ y cadenas de caracteres entre comillas dobles, todo separado por espacios:
 
 ::
 
-    python3.7 entrada_argumentos.py 300 43.234 "Hola Plone"
+    python3 entrada_argumentos.py 300 43.234 "Hola Plone"
     ['entrada_argumentos.py', '300', '43.234', 'Hola Plone']
 
 Cada valor que enviamos al *script* durante la llamada se llama argumento e implica 
@@ -131,7 +131,7 @@ ejecute el siguiente comando:
 
 ::
 
-    python3.7 entrada_dos_argumentos.py "Hola Plone"
+    python3 entrada_dos_argumentos.py "Hola Plone"
     ERROR: Introdujo uno (1) o más de dos (2) argumentos
     SOLUCIÓN: Introduce los argumentos correctamente
     Ejemplo: entrada_dos_argumentos.py "Texto" 5
@@ -141,7 +141,7 @@ argumentos, ejecutando el siguiente comando:
 
 ::
 
-    python3.7 entrada_dos_argumentos.py "Hola Plone" 3
+    python3 entrada_dos_argumentos.py "Hola Plone" 3
     Hola Plone
     Hola Plone
     Hola Plone
@@ -234,12 +234,16 @@ de caracteres y variables:
 
     ::
 
-        python3.7 entrada_salida.py
-        python3.7 entrada_argumentos.py
-        python3.7 entrada_dos_argumentos.py
+        python3 entrada_salida.py
+        python3 entrada_argumentos.py
+        python3 entrada_dos_argumentos.py
 
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` del 
     entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

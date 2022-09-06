@@ -20,3 +20,7 @@ ejemplos prácticos y útiles. A continuación el temario de esta lección:
    paquetes
    distribucion
    scaffolding
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

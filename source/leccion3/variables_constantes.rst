@@ -194,7 +194,7 @@ Luego ejecuta el programa de la siguiente forma:
 
 ::
 
-    python3.7 main.py
+    python3 main.py
 
 Cuando usted ejecuta el programa, la salida será:
 
@@ -478,7 +478,7 @@ precaución.
 
     ::
 
-        python3.7 main.py
+        python3 main.py
 
 
 ----
@@ -488,3 +488,7 @@ precaución.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

@@ -225,7 +225,7 @@ Entonces consulte la ayuda del módulo ``os``, ejecutando:
         (e.g., split and join).
     :
 
-.. tip:: Presione la tecla ``q`` para salir de la ayuda del módulo ``os``.
+.. tip:: Presione la tecla :keys:`q` para salir de la ayuda del módulo ``os``.
 
 Seguidamente presione la combinación de tecla **Crtl+d** para salir de la ayuda.
 
@@ -536,7 +536,7 @@ ejecutando el siguiente comando:
         (e.g., split and join).
     :
 
-Entonces presione la tecla ``q`` para salir de la ayuda del módulo ``os``.
+Entonces presione la tecla :keys:`q` para salir de la ayuda del módulo ``os``.
 
 Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 
@@ -558,7 +558,7 @@ este programa ejecute el siguiente comando:
 .. code-block:: sh
 
     sudo apt install -y python-pip
-    sudo pip3.7 install bpython
+    sudo pip3 install bpython
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 ``python`` por ``ipython`` de la siguiente forma:
@@ -604,6 +604,10 @@ módulos propios escritos en Python que tienes instalado en tu sistema.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion2>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
 
 
 .. _`Python`: https://www.python.org/ 

@@ -164,10 +164,14 @@ Usted puede consultar toda la documentación disponible sobre las **tuplas** des
 
     ::
 
-        python3.7 tipo_tuplas.py
+        python3 tipo_tuplas.py
 
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html

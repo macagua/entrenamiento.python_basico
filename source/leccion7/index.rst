@@ -19,3 +19,7 @@ esta lección:
 
    entrada_salida
    archivos
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
