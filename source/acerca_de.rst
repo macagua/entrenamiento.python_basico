@@ -13,8 +13,8 @@ Acerca de esta iniciativa
 Acerca del entrenamiento
 ========================
 
-Este entrenamiento realizado por la empresa `Covantec R.L`_, va dirigido a personas novatas en la
-programación o novatos en el lenguajes de programación Python.
+Este entrenamiento fue realizado en sus inicios por la empresa `Covantec R.L`_, el cual iba dirigido a
+personas novatas en la programación o novatos en el lenguajes de programación Python.
 
 
 Novatos en la programación
