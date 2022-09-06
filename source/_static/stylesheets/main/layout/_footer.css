@@ -1,3 +1,8 @@
+.md-copyright {
+    width: auto;
+    text-align: left;
+}
+
 .md-copyright .md-social__note {
   text-align: left;
 }
