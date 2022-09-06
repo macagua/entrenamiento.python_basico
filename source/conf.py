@@ -326,7 +326,7 @@ latex_elements = {
       \strong{Contactos:} \email{leonardocaballero@gmail.com} - 
       \url{https://github.com/macagua}\\
       \strong{Ciudad de Mérida, Estado Mérida, Venezuela. 5101.}\\
-      \strong{Telf.} +58-414-979.80.83 / +58-412-473.53.76
+      \strong{Telf.} +58-412-473.53.76 (WhatsApp / Telegram)
     }
     \let\Verbatim=\OriginalVerbatim
     \let\endVerbatim=\endOriginalVerbatim
