@@ -1,9 +1,0 @@
-Agregar al programa prueba1: 
-
-1- Funciones a cada opción ingresada.
-2- Cada función debe tener descripción mínima de su funcionamiento.
-3- la 1era opción debe calcular IVA de 12% a un para monto suministrado por el usuario.
-4- la 2da opción debe solicitar al usuario el nombre y apellido para concatenar y presentar como nombre completo.
-5- la 3era opción debe poseer múltiples argumentos que defina por defecto la cédula, mas opcionalmente reciba tipo empleado y costo hora empleado y calcule su costo hora.
-6- la 4ta opción debe salir del programa
-

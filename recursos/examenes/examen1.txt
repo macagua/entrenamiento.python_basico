@@ -1,8 +1,0 @@
-Desarrollar un programa Python que permita:  
-
-1- Debe llamarse el programa prueba1.
-2- Debe tener código UTF8.
-3- Inicialización de las variables.
-4- Mostrar un menú de opciones que simule una interfaz de usuario sencilla. 
-5- Permita validar las opciones ingresadas como datos numéricos bajo estructuras condicionales.
-6- Opciones deben ser interactivos y con una opción de salida del programa usando la función exit de la librería sys de Python.

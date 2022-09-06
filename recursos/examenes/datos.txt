@@ -1,5 +1,0 @@
-Ejemplo de archivos en Python
-=============================
-Para guardar datos
-
-FIN============================
