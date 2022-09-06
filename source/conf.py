@@ -32,7 +32,7 @@ author = 'Leonardo J. Caballero G.'
 # built documents.
 #
 # The short X.Y version
-version = '3'
+version = '3.0'
 # The full version, including alpha/beta/rc tags
 release = '3.0'
 
