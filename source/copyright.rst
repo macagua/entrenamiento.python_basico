@@ -23,7 +23,7 @@ Todas esta documentación es licencia por:
 
   * :email:`Leonardo J. Caballero G. <leonardocaballero@gmail.com>`
 
-  .. figure:: _images/soporte_profesional_web.png
+  .. figure:: _images/macagua.png
      :align: center
      :width: 445px
      :height: 240px
