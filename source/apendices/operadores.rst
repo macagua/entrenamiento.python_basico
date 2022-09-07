@@ -196,3 +196,7 @@ Una corta referencia de los *operadores lógicos* se ofrece a continuación:
 .. seealso::
     Usted puede consultar para más información la explicación de cada uno de los 
     :ref:`operadores lógicos <python_opers_logicos>`.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
