@@ -1,17 +1,17 @@
 .. -*- coding: utf-8 -*-
 
 =========================================================
-Entrenamiento "Programación en Python 2.7 - Nivel básico"
+Entrenamiento "Programación en Python - Nivel básico"
 =========================================================
 
-Repositorio de manuales y recursos del entrenamiento "Programación en `Python 2.7`_ - Nivel 
-básico" realizado por la empresa `Covantec R.L`_.
+Repositorio de manuales y recursos del entrenamiento "Programación en `Python`_ - Nivel 
+básico".
 
 .. contents :: :local:
 
 
 Estructura general
-===================
+==================
 
 La estructura general de contenidos esta confirmada por los principales archivos:
 
@@ -45,8 +45,7 @@ los siguientes comando:
 ::
 
   $ sudo apt install python-pip python-setuptools git
-  $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils texlive-font-utils texlive-fonts-recommended texlive-latex-extra texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
-  $ sudo pip2.7 install virtualenv
+  $ sudo pip install virtualenv
 
 
 Descargar repositorio
@@ -97,22 +96,6 @@ Una vez generado el formato HTML se puede abrir desde el directorio ``build/html
 con su navegador Web favorito (Mozilla Firefox, Google Chrome, etc).
 
 
-Formato PDF
------------
-  
-Usted puede generar la documentación en PDF del módulo *1, 2, 3, 4, 5, 6, 7, 8, 9, 10*; ejecute los 
-siguientes comando:
-
-::
-
-
-  (venv)$ make latexpdf
-
-Una vez generado el PDF se puede abrir desde el directorio 
-``build/latex/entrenamientopython_basico.pdf``
-con cualquiera de sus programas de visor de PDF favorito (Evince, Acrobat Reader, etc).
-
-
 Estatus de Calidad
 ==================
 
@@ -142,6 +125,6 @@ directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como el idioma Espa�
 (LICENSE.es.rst).
 
 .. _`Covantec R.L`: https://github.com/Covantec
-.. _`Python 2.7`: https://docs.python.org/2.7/
+.. _`Python 2.7`: https://docs.python.org/
 .. _`entrenamiento.python_basico`: https://github.com/Covantec/entrenamiento.python_basico
 .. _`ticket de soporte`: https://github.com/Covantec/entrenamiento.python_basico/issues/new
