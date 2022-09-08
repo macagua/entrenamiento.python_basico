@@ -116,7 +116,7 @@ con cualquiera de sus programas de visor de PDF favorito (Evince, Acrobat Reader
 Estatus de Calidad
 ==================
 
-.. image:: https://readthedocs.org/projects/entrenamiento-python-basico/badge/?version=latest
+.. image:: https://readthedocs.org/projects/entrenamiento-python-basico/badge/?version=2.7
    :target: http://entrenamiento-python-basico.rtfd.org/
    :align: left
    :alt: entrenamiento-python-basico ReadTheDocs build status
