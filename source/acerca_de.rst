@@ -115,11 +115,8 @@ en el repositorio del entrenamiento. Y obtenga el agradecimiento de todos.
 Contáctenos
 ===========
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed urna venenatis,
-volutpat lacus et, pulvinar felis. Praesent cursus bibendum quam, vel aliquam arcu
-faucibus vitae. Etiam cursus urna vitae dui ullamcorper, blandit imperdiet odio rutrum.
-Morbi at fringilla augue, at scelerisque nulla. Etiam molestie viverra felis, a
-sollicitudin erat vehicula vitae. Quisque diam diam, aliquet quis tortor id, faucibus
-tincidunt quam. Aenean fermentum lobortis ex in viverra.
+
+.. raw:: html
+   :file: _templates/partials/contactenos.html
 
 .. _`Covantec R.L`: https://github.com/Covantec
