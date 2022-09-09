@@ -68,3 +68,5 @@ De nuevo vuelva a ejecutar en su consola de comando el comando ``python3``.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

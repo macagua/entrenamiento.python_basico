@@ -20,3 +20,5 @@ Los decoradores en Python son discutidos y definidos en el PEP-318. https://www.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

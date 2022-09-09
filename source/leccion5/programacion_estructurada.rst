@@ -77,3 +77,5 @@ llamado despectivamente *código espagueti*), cabe citar las siguientes:
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

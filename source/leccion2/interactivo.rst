@@ -609,6 +609,8 @@ módulos propios escritos en Python que tienes instalado en tu sistema.
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
+.. disqus::
+
 
 .. _`Python`: https://www.python.org/ 
 .. _`Javadoc`: https://es.wikipedia.org/wiki/Javadoc

@@ -1505,3 +1505,5 @@ módulo estándar ``types`` define nombres para todos los tipos internos estánd
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

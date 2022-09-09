@@ -467,4 +467,6 @@ iteración.
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
+.. disqus::
+
 .. _`iterator protocol`: https://docs.python.org/dev/library/stdtypes.html#iterator-types

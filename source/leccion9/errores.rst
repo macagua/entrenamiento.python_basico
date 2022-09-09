@@ -551,3 +551,5 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

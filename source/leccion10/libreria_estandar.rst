@@ -91,4 +91,6 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
+.. disqus::
+
 .. _`La biblioteca estándar Python 3.7`: https://docs.python.org/es/3.7/library/

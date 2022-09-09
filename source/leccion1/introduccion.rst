@@ -268,3 +268,5 @@ comunitario del proyecto Python en Sudamérica.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

@@ -548,3 +548,5 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

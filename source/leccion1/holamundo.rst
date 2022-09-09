@@ -170,3 +170,5 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

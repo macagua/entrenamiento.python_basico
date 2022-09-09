@@ -188,6 +188,8 @@ También se incluye como un *huevo de pascua*, el cual se puede encontrar, desde
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
+.. disqus::
+
 
 .. _`características`: https://es.wikipedia.org/wiki/Python#Características_y_paradigmas
 .. _`multiparadigma`: https://es.wikipedia.org/wiki/Categor%C3%ADa:Lenguajes_de_programaci%C3%B3n_multiparadigma

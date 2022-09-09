@@ -68,3 +68,5 @@ Las desventajas del lenguaje Python son las siguientes:
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::

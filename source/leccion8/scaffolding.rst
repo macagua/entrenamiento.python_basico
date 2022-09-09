@@ -254,6 +254,8 @@ Referencias
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
+.. disqus::
+
 .. _`PasteScript`: https://pypi.org/project/PasteScript
 .. _`paste.deploy`: https://pypi.org/project/PasteDeploy
 .. _`Odoo`: https://www.odoo.com/
