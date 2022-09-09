@@ -55,3 +55,6 @@ sphinxcontrib-email==0.3.5
 cssselect==1.1.0
 pyquery==1.4.3
 yasfb==0.8.0
+
+# sphinx-disqus
+sphinx-disqus==1.2.0

@@ -56,7 +56,8 @@ extensions = [
     'sphinx_immaterial',
     'sphinx_immaterial.kbd_keys',
     'sphinxcontrib.email',
-    'yasfb'
+    'yasfb',
+    'sphinx_disqus.disqus',
 ]
 
 # Options for the linkcheck builder
@@ -471,6 +472,11 @@ feed_base_url = 'https://entrenamiento-python-basico.readthedocs.io/es/stable/'
 
 # Set the Feed Author Name.
 feed_author = 'Leonardo Caballero'
+
+# -- Options for disqus extension --------------------------------------------------
+
+# Set disqus site short name.
+disqus_shortname = "entrenamiento-python-basico"
 
 # -- Options for main setup --------------------------------------------------
 
