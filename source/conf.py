@@ -109,7 +109,8 @@ today_fmt = '%d de %B de %Y'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['index_latex.rst']
+exclude_patterns = ['_build','build', 'Thumbs.db', '.DS_Store', 'index_latex.rst']
+
 
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
