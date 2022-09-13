@@ -222,6 +222,7 @@ html_logo = '_static/python_logo_web.png'
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
+# html_favicon = '_static/favicon/favicon-16x16.png'
 html_favicon = '_static/favicon.png'
 
 # A list of CSS files. The entry must be a filename string or a tuple containing
@@ -258,6 +259,8 @@ html_static_path = ['_images', '_static']
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
 html_extra_path = [
+    '_templates/browserconfig.xml',
+    '_templates/manifest.json',
     '_templates/robots.txt'
 ]
 
