@@ -45,7 +45,7 @@ los siguientes comando:
 ::
 
   $ sudo apt update
-  $ sudo apt install -y python-pip python-setuptools git
+  $ sudo apt install -y python3-dev python-pip python-setuptools git
   $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils \
                         texlive-font-utils texlive-fonts-recommended texlive-latex-extra \
                         texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
@@ -82,7 +82,7 @@ Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente coman
 Recursos del entrenamiento
 ==========================
 
-La herramienta Sphinx le permite generar los recursos usado en el entrenamiento, en diversos 
+La herramienta ``Sphinx`` le permite generar los recursos usado en el entrenamiento, en diversos 
 formatos, actualmente se tiene bien soportado los siguientes:
 
 

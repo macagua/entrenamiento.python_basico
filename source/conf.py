@@ -11,10 +11,16 @@
 #
 import os
 import sys
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+# sys.path.insert(0, os.path.abspath('.'))
 sys.path.append(os.path.abspath('sphinxext'))
 
 
 # -- Project information -----------------------------------------------------
+# General information about the project.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project_namecode = 'entrenamiento.python_basico'
@@ -31,9 +37,9 @@ author = 'Leonardo J. Caballero G.'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-# The short X.Y version
+# The short X.Y version.
 version = '3.7'
-# The full version, including alpha/beta/rc tags
+# The full version, including alpha/beta/rc tags.
 release = '3.7.3'
 
 
