@@ -1,0 +1,22 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+
+{% if page and page.meta and (
+  page.meta.git_revision_date_localized or
+  page.meta.revision_date
+) %}
+  {% include "partials/source-file.html" %}
+{% endif %}
+
+{% if page.edit_url %}
+  <a href="{{ page.edit_url }}" title="{{ lang.t('edit.link.title') }}" class="md-content__button md-icon">
+    {% include ".icons/material/pencil.svg" %}
+  </a>
+{% endif %}
+
+{% if "tags" in config.plugins %}
+  {% include "partials/tags.html" %}
+{% endif %}
+
+{{ sphinx_rendered_body }}

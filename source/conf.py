@@ -234,6 +234,7 @@ html_css_files = [
     'https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
     'stylesheets/virtual_business_card.css',
     'stylesheets/soporte_profesional.css',
+    'stylesheets/main/layout/_content.css',
     'stylesheets/main/layout/_footer.css',
     # 'https://example.com/css/custom.css',
     # ('print.css', {'media': 'print'})
