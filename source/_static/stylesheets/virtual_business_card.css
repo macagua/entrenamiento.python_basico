@@ -125,7 +125,7 @@
   transform-origin: 50% 50%;
 }
 
-@keyframes 
+@keyframes
 ripple {
   0% {
     transform: scale(0, 0);
