@@ -6,8 +6,8 @@
 Tipo booleanos
 --------------
 
-El tipo booleano sólo puede tener dos valores: ``True`` (verdadero) y ``False`` (falso). 
-Estos valores son especialmente importantes para las expresiones condicionales y los 
+El tipo booleano sólo puede tener dos valores: ``True`` (verdadero) y ``False`` (falso).
+Estos valores son especialmente importantes para las expresiones condicionales y los
 bucles, como verá más adelante.
 
 +-----------+-----------+---------------------------+-------------+
@@ -18,9 +18,9 @@ bucles, como verá más adelante.
 | ``bool``  | Números   | Valor booleano verdadero. | ``True``    |
 +-----------+-----------+---------------------------+-------------+
 
-En el contexto de las operaciones booleanas, y también cuando las expresiones son 
-usadas bajo sentencias de flujo de control, los siguientes valores son interpretados 
-como ``False``: 
+En el contexto de las operaciones booleanas, y también cuando las expresiones son
+usadas bajo sentencias de flujo de control, los siguientes valores son interpretados
+como ``False``:
 
 - ``False``.
 
@@ -30,8 +30,8 @@ como ``False``:
 
 - :ref:`Cadena de caracteres <python_str>` vaciás.
 
-- Contenedores, incluyendo *cadenas de caracteres*, :ref:`tuplas <python_tuple>`, 
-  :ref:`listas <python_list>`, :ref:`diccionarios <python_dict>` y 
+- Contenedores, incluyendo *cadenas de caracteres*, :ref:`tuplas <python_tuple>`,
+  :ref:`listas <python_list>`, :ref:`diccionarios <python_dict>` y
   :ref:`conjuntos <python_set>` mutables e inmutables.
 
 A continuación, varios ejemplos en códigos de los citado previamente:
@@ -57,13 +57,13 @@ A continuación, varios ejemplos en códigos de los citado previamente:
     >>> ['', ''] == False
     False
 
-Todos los otros valores son interpretados por defecto a ``True``. El operador lógico 
-:ref:`not <python_opers_logicos>` produce ``True`` si su argumento es falso, 
+Todos los otros valores son interpretados por defecto a ``True``. El operador lógico
+:ref:`not <python_opers_logicos>` produce ``True`` si su argumento es falso,
 ``False`` de lo contrario.
 
-Los tipos integrados ``False`` y ``True`` son solamente dos instancias de la clase 
-``bool``. En realidad el tipo ``bool`` es una :ref:`subclase <python_poo_herencia>` 
-del tipo ``int`` o entero plano, es decir, sus valores son ``0`` y ``1`` respectivamente, 
+Los tipos integrados ``False`` y ``True`` son solamente dos instancias de la clase
+``bool``. En realidad el tipo ``bool`` es una :ref:`subclase <python_poo_herencia>`
+del tipo ``int`` o entero plano, es decir, sus valores son ``0`` y ``1`` respectivamente,
 en casi todos los contextos:
 
 ::
@@ -73,9 +73,9 @@ en casi todos los contextos:
     >>> int(True)
     1
 
-En el ejemplo anterior se convierte tipos booleanos a tipo enteros, siempre devuelve sus 
-valores numéricos ``0`` y ``1``. La excepción a la regla anterior sucede cuando un tipo 
-booleano es convertido a un tipo de :ref:`cadenas de caracteres <python_str>`, las cadenas 
+En el ejemplo anterior se convierte tipos booleanos a tipo enteros, siempre devuelve sus
+valores numéricos ``0`` y ``1``. La excepción a la regla anterior sucede cuando un tipo
+booleano es convertido a un tipo de :ref:`cadenas de caracteres <python_str>`, las cadenas
 *'False'* y/o *'True'* son retornadas, respectivamente:
 
 ::
@@ -86,7 +86,7 @@ booleano es convertido a un tipo de :ref:`cadenas de caracteres <python_str>`, l
     'True'
     >>> type(str(True))
     <type 'str'>
-    >>> 
+    >>>
     >>> type(False)
     <type 'bool'>
     >>> str(False)
@@ -95,8 +95,8 @@ booleano es convertido a un tipo de :ref:`cadenas de caracteres <python_str>`, l
     <type 'str'>
 
 
-Puede que esto para usted, no lo entienda mucho, si no conoces los términos de 
-la :ref:`orientación a objetos <python_poo>`, que se tocará más adelante, aunque 
+Puede que esto para usted, no lo entienda mucho, si no conoces los términos de
+la :ref:`orientación a objetos <python_poo>`, que se tocará más adelante, aunque
 tampoco es nada importante.
 
 .. important::
@@ -106,7 +106,7 @@ tampoco es nada importante.
 Convertir a booleanos
 .....................
 
-Para convertir a *tipos booleanos* debe usar la función :ref:`bool() <python_fun_bool>` 
+Para convertir a *tipos booleanos* debe usar la función :ref:`bool() <python_fun_bool>`
 la cual :ref:`esta integrada <python_fun_builtins>` en el interprete Python.
 
 
@@ -137,7 +137,7 @@ Ayuda integrada
 ...............
 
 Usted puede consultar toda la documentación disponible sobre los **booleanos**
-desde la :ref:`consola interactiva <python_interactivo>` de la siguiente 
+desde la :ref:`consola interactiva <python_interactivo>` de la siguiente
 forma:
 
 ::
@@ -151,13 +151,13 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion3/tipo_booleanos.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`tipo_booleanos.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    Para ejecutar el código :file:`tipo_booleanos.py`, abra una
+    consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
     ::
@@ -169,7 +169,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

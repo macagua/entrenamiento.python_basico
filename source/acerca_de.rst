@@ -56,7 +56,7 @@ Sobre el instructor
 ============================
 
 Conseguiste algun error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
-este material, puedes reportarla o solicitar en el siguiente: 
+este material, puedes reportarla o solicitar en el siguiente:
 
 https://bitbucket.org/covantec/entrenamiento.python_basico/issues/new
 
@@ -83,7 +83,7 @@ Esta iniciativa no fuera realidad si el apoyo de las siguientes personas o empre
 Mantenedores del entrenamiento
 ==============================
 
-El repositorio del entrenamiento está disponible en la siguiente dirección: 
+El repositorio del entrenamiento está disponible en la siguiente dirección:
 
    https://bitbucket.org/covantec/entrenamiento.python_basico/
 

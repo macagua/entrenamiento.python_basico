@@ -6,14 +6,14 @@
 Tipo listas
 -----------
 
-En Python tiene varios tipos de datos *compuestos* y dentro de las secuencias, están 
-los tipos de :ref:`cadenas de caracteres <python_str>`. Otro tipo muy importante de 
+En Python tiene varios tipos de datos *compuestos* y dentro de las secuencias, están
+los tipos de :ref:`cadenas de caracteres <python_str>`. Otro tipo muy importante de
 secuencia son las *listas*.
 
-Entre las *secuencias*, el más versátil, es la *lista*, para definir una, usted debe 
-escribir es entre corchetes, separando sus elementos con comas cada uno. 
+Entre las *secuencias*, el más versátil, es la *lista*, para definir una, usted debe
+escribir es entre corchetes, separando sus elementos con comas cada uno.
 
-La lista en Python son variables que almacenan ``arrays``, internamente cada posición 
+La lista en Python son variables que almacenan ``arrays``, internamente cada posición
 puede ser un tipo de datos distinto.
 
 ::
@@ -24,15 +24,15 @@ puede ser un tipo de datos distinto.
 
 Las listas en Python son:
 
-- **heterogéneas**: pueden estar conformadas por elementos de distintos tipo, incluidos 
+- **heterogéneas**: pueden estar conformadas por elementos de distintos tipo, incluidos
   otras listas.
 
 - **mutables**: sus elementos pueden modificarse.
 
-Una lista en Python es una estructura de datos formada por una secuencia ordenada de 
+Una lista en Python es una estructura de datos formada por una secuencia ordenada de
 objetos.
 
-Los elementos de una lista pueden accederse mediante su índice, siendo 0 el índice del 
+Los elementos de una lista pueden accederse mediante su índice, siendo 0 el índice del
 primer elemento.
 
 ::
@@ -42,7 +42,7 @@ primer elemento.
     >>> factura[3]
     1234
 
-La función :ref:`len() <python_fun_len>` devuelve la longitud de la lista (su cantidad 
+La función :ref:`len() <python_fun_len>` devuelve la longitud de la lista (su cantidad
 de elementos).
 
 ::
@@ -50,7 +50,7 @@ de elementos).
     >>> len(factura)
     4
 
-Los índices de una lista inicia entonces de **0** hasta el tamaño de la lista menos uno 
+Los índices de una lista inicia entonces de **0** hasta el tamaño de la lista menos uno
 (``len(factura) - 1``):
 
 ::
@@ -65,7 +65,7 @@ Pueden usarse también índices negativos, siendo **-1** el índice del último 
     >>> factura[-1]
     1234
 
-Los índices negativos van entonces de **-1** (último elemento) a ``-len(factura)`` 
+Los índices negativos van entonces de **-1** (último elemento) a ``-len(factura)``
 (primer elemento).
 
 ::
@@ -81,7 +81,7 @@ A través de los índices, pueden cambiarse los elementos de una lista en el lug
     >>> factura
     ['pan', 'carne', 100, 1234
 
-De esta forma se cambia el valor inicial de un elemento de la lista lo cual hacen 
+De esta forma se cambia el valor inicial de un elemento de la lista lo cual hacen
 una la lista *mutable*
 
 
@@ -115,7 +115,7 @@ Este método agrega un elemento al final de una lista.
 count()
 ~~~~~~~
 
-Este método recibe un elemento como argumento, y cuenta la cantidad de veces que 
+Este método recibe un elemento como argumento, y cuenta la cantidad de veces que
 aparece en la lista.
 
 ::
@@ -154,7 +154,7 @@ Este método extiende una lista agregando un iterable al final.
 index()
 ~~~~~~~
 
-Este método recibe un elemento como argumento, y devuelve el índice de su primera 
+Este método recibe un elemento como argumento, y devuelve el índice de su primera
 aparición en la lista.
 
 ::
@@ -163,7 +163,7 @@ aparición en la lista.
     >>> print(versiones_plone.index(4))
     3
 
-El método admite como argumento adicional un índice inicial a partir de donde comenzar 
+El método admite como argumento adicional un índice inicial a partir de donde comenzar
 la búsqueda, opcionalmente también el índice final.
 
 ::
@@ -180,7 +180,7 @@ la búsqueda, opcionalmente también el índice final.
     >>> versiones_plone[6]
     4
 
-El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el 
+El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el
 elemento no se encuentra en la lista, o en el entorno definido.
 
 ::
@@ -224,7 +224,7 @@ Este método devuelve el último elemento de la lista, y lo borra de la misma.
     >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5]
 
-Opcionalmente puede recibir un argumento numérico, que funciona como índice del 
+Opcionalmente puede recibir un argumento numérico, que funciona como índice del
 elemento (por defecto, -1)
 
 ::
@@ -253,7 +253,7 @@ Este método recibe como argumento un elemento, y borra su primera aparición en
     [2.1, 3.6, 4, 5, 6]
 
 
-El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el 
+El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el
 elemento no se encuentra en la lista.
 
 ::
@@ -313,11 +313,11 @@ De tener valor ``True``, el ordenamiento se hace en sentido inverso.
 Convertir a listas
 ..................
 
-Para convertir a *tipos listas* debe usar la función :ref:`list() <python_fun_list>` 
+Para convertir a *tipos listas* debe usar la función :ref:`list() <python_fun_list>`
 la cual :ref:`esta integrada <python_fun_builtins>` en el interprete Python.
 
-.. tip:: 
-    Para más información consulte las funciones integradas para 
+.. tip::
+    Para más información consulte las funciones integradas para
     :ref:`operaciones de secuencias <python_fun_builtins_secuencias>`.
 
 
@@ -374,7 +374,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 **Ejemplo de iterar sobre cualquier secuencia**
 
-Usted puede iterar sobre cualquier secuencia (cadenas de caracteres, lista, claves 
+Usted puede iterar sobre cualquier secuencia (cadenas de caracteres, lista, claves
 en un diccionario, lineas en un archivo, ...):
 
 *Ejemplo de iterar sobre una cadenas de caracteres*
@@ -389,7 +389,7 @@ en un diccionario, lineas en un archivo, ...):
 
 *Ejemplo de iterar sobre una lista*
 
-Para separar una cadena en frases, los valores pueden separarse con la función 
+Para separar una cadena en frases, los valores pueden separarse con la función
 integrada ``split()``.
 
 ::
@@ -407,7 +407,7 @@ integrada ``split()``.
 
 *Ejemplo de iterar sobre dos o más secuencias*
 
-Para iterar sobre dos o más secuencias al mismo tiempo, los valores pueden emparejarse 
+Para iterar sobre dos o más secuencias al mismo tiempo, los valores pueden emparejarse
 con la función integrada :ref:`zip() <python_fun_zip>`.
 
 ::
@@ -417,7 +417,7 @@ con la función integrada :ref:`zip() <python_fun_zip>`.
     >>> for pregunta, respuesta in zip(preguntas, respuestas):
     ...     print("¿Cual es tu {0}?, la respuesta es: {1}.".format(
     ...         pregunta, respuesta))
-    ... 
+    ...
     ¿Cual es tu nombre?, la respuesta es: Leonardo.
     ¿Cual es tu objetivo?, la respuesta es: aprender Python y Plone.
     ¿Cual es tu sistema operativo?, la respuesta es: Linux.
@@ -429,7 +429,7 @@ con la función integrada :ref:`zip() <python_fun_zip>`.
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la documentación disponible sobre las **listas** desde la 
+Usted puede consultar toda la documentación disponible sobre las **listas** desde la
 :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
 ::
@@ -440,12 +440,12 @@ Usted puede consultar toda la documentación disponible sobre las **listas** des
 ----
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion3/tipo_listas.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`tipo_listas.py`, abra una consola de comando, 
+    Para ejecutar el código :file:`tipo_listas.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     ::
@@ -457,7 +457,7 @@ Usted puede consultar toda la documentación disponible sobre las **listas** des
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

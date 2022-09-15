@@ -41,8 +41,8 @@ Programa ¡Hola, Mundo! en diversas versiones de Python:
 Ejecución
 .........
 
-Dependiendo del sistema operativo que este usando debe realizar procedimientos 
-distintos para cada plataforma cuando usted quiere escribir y ejecutar un programa 
+Dependiendo del sistema operativo que este usando debe realizar procedimientos
+distintos para cada plataforma cuando usted quiere escribir y ejecutar un programa
 Python. A continuación un procedimiento básico para las principales plataformas:
 
 .. _python_ejecutar_windows:
@@ -116,7 +116,7 @@ Ejecutar un programa en macOS
 
 #. Ejecute ``ls`` y presione la tecla :keys:`Enter` y usted debería ver el archivo ``holamundo.py``.
 
-#. Para ejecutar el programa, escriba el siguiente comando ``python3 holamundo.py`` 
+#. Para ejecutar el programa, escriba el siguiente comando ``python3 holamundo.py``
    y presione la tecla :keys:`Enter`.
 
 #. Usted debe ver la línea *Hola Mundo*.
@@ -146,13 +146,13 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 ----
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion1/holamundo.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`holamundo.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    Para ejecutar el código :file:`holamundo.py`, abra una
+    consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
     ::
@@ -164,7 +164,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion2>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion2>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

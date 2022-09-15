@@ -6,7 +6,7 @@
 Operadores relacionales
 -----------------------
 
-Los valores booleanos son además el resultado de expresiones que utilizan operadores 
+Los valores booleanos son además el resultado de expresiones que utilizan operadores
 relacionales (comparaciones entre valores):
 
 
@@ -53,7 +53,7 @@ El operador ``!=`` evalúa si los valores son *distintos*.
 Operador <
 ..........
 
-El operador ``<`` evalúa si el valor del lado izquierdo es *menor que* el valor del 
+El operador ``<`` evalúa si el valor del lado izquierdo es *menor que* el valor del
 lado derecho.
 
 ::
@@ -67,7 +67,7 @@ lado derecho.
 Operador >
 ..........
 
-El operador ``>`` evalúa si el valor del lado izquierdo es *mayor que* el valor del 
+El operador ``>`` evalúa si el valor del lado izquierdo es *mayor que* el valor del
 lado derecho.
 
 ::
@@ -81,7 +81,7 @@ lado derecho.
 Operador <=
 ...........
 
-El operador ``<=`` evalúa si el valor del lado izquierdo es *menor o igual que* el 
+El operador ``<=`` evalúa si el valor del lado izquierdo es *menor o igual que* el
 valor del lado derecho.
 
 ::
@@ -95,7 +95,7 @@ valor del lado derecho.
 Operador >=
 ...........
 
-El operador ``>=`` evalúa si el valor del lado izquierdo es *mayor o igual que* el 
+El operador ``>=`` evalúa si el valor del lado izquierdo es *mayor o igual que* el
 valor del lado derecho.
 
 ::
@@ -164,13 +164,13 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion3/operadores_relacionales.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`operadores_relacionales.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    Para ejecutar el código :file:`operadores_relacionales.py`, abra una
+    consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
     ::
@@ -183,7 +183,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

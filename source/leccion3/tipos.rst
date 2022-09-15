@@ -6,22 +6,22 @@
 Jerarquía de tipos estándar
 ===========================
 
-A continuación se muestra una lista de los tipos que están integrados en Python. Los 
-módulos de extensión (escritos en C, Java u otros lenguajes, dependiendo de la 
-implementación) pueden definir tipos adicionales. Las versiones futuras de Python 
-pueden agregar tipos a la jerarquía de tipos (por ejemplo, números racionales, arrays 
+A continuación se muestra una lista de los tipos que están integrados en Python. Los
+módulos de extensión (escritos en C, Java u otros lenguajes, dependiendo de la
+implementación) pueden definir tipos adicionales. Las versiones futuras de Python
+pueden agregar tipos a la jerarquía de tipos (por ejemplo, números racionales, arrays
 de enteros almacenados eficientemente, etc.).
 
-Algunas de las descripciones de tipo a continuación contienen un párrafo que 
-enumera los "atributos especiales". Estos son atributos que proporcionan acceso a 
-la implementación y no están destinados para uso general. Su definición puede cambiar 
+Algunas de las descripciones de tipo a continuación contienen un párrafo que
+enumera los "atributos especiales". Estos son atributos que proporcionan acceso a
+la implementación y no están destinados para uso general. Su definición puede cambiar
 en el futuro.
 
-En Python tiene varios tipos de datos *compuestos* estándar disponibles por defecto en 
-el interprete, como los tipos *numéricos*, *secuencias*, *mapeos* y *conjuntos* usados 
+En Python tiene varios tipos de datos *compuestos* estándar disponibles por defecto en
+el interprete, como los tipos *numéricos*, *secuencias*, *mapeos* y *conjuntos* usados
 para agrupar otros valores.
 
-Para el caso de las estructuras de datos se usan variables y constantes las cuales usan 
+Para el caso de las estructuras de datos se usan variables y constantes las cuales usan
 operadores para tratar los tipos de datos estándar.
 
 
@@ -93,9 +93,9 @@ Otros tipos de datos incorporados, se describen a continuación:
 Objectos Type
 -------------
 
-Los objectos Type representan los diversos tipos de objetos. Un objecto type es accedido por 
-la función integrada :ref:`type() <python_fun_type>`. No hay operaciones especiales 
-en los tipos. El módulo estándar ``types`` defines los nombres para todos los tipos 
+Los objectos Type representan los diversos tipos de objetos. Un objecto type es accedido por
+la función integrada :ref:`type() <python_fun_type>`. No hay operaciones especiales
+en los tipos. El módulo estándar ``types`` defines los nombres para todos los tipos
 integrados estándar.
 
 Los tipos son escritos como esto: "<type 'int'>".

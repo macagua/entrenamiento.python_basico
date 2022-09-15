@@ -6,8 +6,8 @@
 Esquema del entrenamiento
 =========================
 
-Este entrenamiento toma 10 lecciones. Cada lección contiene material de lectura 
-y ejercicios que usted tendrá que escribir en el interprete Python. Cada lección 
+Este entrenamiento toma 10 lecciones. Cada lección contiene material de lectura
+y ejercicios que usted tendrá que escribir en el interprete Python. Cada lección
 aprendida están asociadas entre si mismas.
 
 
@@ -16,10 +16,10 @@ aprendida están asociadas entre si mismas.
 Lección 1 - Introducción al lenguaje Python
 -------------------------------------------
 
-**Descripción:** Sensibilizar sobre la filosofía del lenguaje, su historia y evolución, 
+**Descripción:** Sensibilizar sobre la filosofía del lenguaje, su historia y evolución,
 casos de éxitos.
 
-**Práctica:** Exponer los fundamentos sobre el lenguaje Python, comentar sobre usos e 
+**Práctica:** Exponer los fundamentos sobre el lenguaje Python, comentar sobre usos e
 implementaciones exitosas a nivel regional, nivel nacional y nivel mundial.
 
 
@@ -30,8 +30,8 @@ Lección 2 - Introspección del lenguaje Python
 
 **Descripción:** Conocer las capacidades de introspección que ofrece el lenguaje.
 
-**Práctica:** Acceder al interprete Python demostrando la documentación propia integrada, 
-analizar las estructuras de datos, métodos, clases y demás elementos disponibles del 
+**Práctica:** Acceder al interprete Python demostrando la documentación propia integrada,
+analizar las estructuras de datos, métodos, clases y demás elementos disponibles del
 lenguaje. Instalar el paquete ``ipython`` y conocer sus ventajas.
 
 
@@ -40,11 +40,11 @@ lenguaje. Instalar el paquete ``ipython`` y conocer sus ventajas.
 Lección 3 - Tipos y estructuras de datos
 ----------------------------------------
 
-**Descripción:** Comprender la creación y asignación de tipos primitivos (variables 
-numéricas, cadenas de texto con sus operaciones; tipos compuestos (listas, tuplas, 
+**Descripción:** Comprender la creación y asignación de tipos primitivos (variables
+numéricas, cadenas de texto con sus operaciones; tipos compuestos (listas, tuplas,
 diccionarios).
 
-**Práctica:** Ejemplos de creación y asignación de variables numéricas, cadenas de 
+**Práctica:** Ejemplos de creación y asignación de variables numéricas, cadenas de
 texto, listas, tuplas, diccionarios y explorar el resultado desde el interprete Python.
 
 
@@ -53,12 +53,12 @@ texto, listas, tuplas, diccionarios y explorar el resultado desde el interprete 
 Lección 4 - Bloques de código y estructuras de control
 ------------------------------------------------------
 
-**Descripción:** Comprender las estructuras de control como ``if`` (``elif``, ``else``); 
-``for``, ``while`` (``else``, ``break``, ``continue``, ``pass``); las funciones 
-:ref:`range() <python_fun_range>` y :ref:`xrange() <python_fun_xrange>`; ademas de los 
+**Descripción:** Comprender las estructuras de control como ``if`` (``elif``, ``else``);
+``for``, ``while`` (``else``, ``break``, ``continue``, ``pass``); las funciones
+:ref:`range() <python_fun_range>` y :ref:`xrange() <python_fun_xrange>`; ademas de los
 tipos :ref:`iteradores() <python_iter>`.
 
-**Práctica:** Ejemplos de creación a estructuras condicionales, repetitivas y funciones 
+**Práctica:** Ejemplos de creación a estructuras condicionales, repetitivas y funciones
 propias y explorar el resultado desde el interprete Python.
 
 
@@ -67,10 +67,10 @@ propias y explorar el resultado desde el interprete Python.
 Lección 5 - Funciones y programación estructurada
 -------------------------------------------------
 
-**Descripción:** Comprender el uso de las funciones y el paradigma de programación 
+**Descripción:** Comprender el uso de las funciones y el paradigma de programación
 estructurada.
 
-**Práctica:** Ejemplos de creación e uso de funciones, programar estructuradamente y 
+**Práctica:** Ejemplos de creación e uso de funciones, programar estructuradamente y
 explorar el resultado desde el interprete Python.
 
 
@@ -81,7 +81,7 @@ Lección 6 - Introspección a la depuración con pdb
 
 **Descripción:** Conocer las capacidades de depuración que ofrece el lenguaje.
 
-**Práctica:** Ejemplo de uso de la herramienta ``pdb`` y explorar el resultado en 
+**Práctica:** Ejemplo de uso de la herramienta ``pdb`` y explorar el resultado en
 un módulo.
 
 
@@ -101,11 +101,11 @@ apertura, lectura, escritura archivos y explorar el resultado en un módulo.
 Lección 8 - Módulos, paquetes y distribución de software
 --------------------------------------------------------
 
-**Descripción:** Comprender la creación de módulos, paquetes y distribución de 
+**Descripción:** Comprender la creación de módulos, paquetes y distribución de
 software Python e implementación de estos en sus propios desarrollos.
 
-**Práctica:** Ejemplo de creación de módulos, paquetes y distribución de software 
-Python organizando su código en estas estructuras de programas y explorar el 
+**Práctica:** Ejemplo de creación de módulos, paquetes y distribución de software
+Python organizando su código en estas estructuras de programas y explorar el
 resultado en un módulo y paquete en el sistema de archivos.
 
 
@@ -114,11 +114,11 @@ resultado en un módulo y paquete en el sistema de archivos.
 Lección 9 - Manejos de errores y orientación a objetos
 ------------------------------------------------------
 
-**Descripción:** Comprender el manejos de errores (``try``, ``except``, ``else``, 
-``finally``, y ``raise``) y el paradigma de programación orientada a objetos (clases, 
+**Descripción:** Comprender el manejos de errores (``try``, ``except``, ``else``,
+``finally``, y ``raise``) y el paradigma de programación orientada a objetos (clases,
 herencia simple y múltiple, sobrecarga de métodos).
 
-**Práctica:** Ejemplo de creación de clases, atributos, comportamientos, manipulación 
+**Práctica:** Ejemplo de creación de clases, atributos, comportamientos, manipulación
 de errores en Python y explorar el resultado en un paquete en el sistema de archivos.
 
 
@@ -127,9 +127,9 @@ de errores en Python y explorar el resultado en un paquete en el sistema de arch
 Lección 10 - Decoradores y la librería estándar
 -----------------------------------------------
 
-**Descripción:** Comprender el uso de decoradores y los diversos módulos adicionales 
+**Descripción:** Comprender el uso de decoradores y los diversos módulos adicionales
 de la librería estándar de Python.
 
-**Práctica:** Ejemplo de uso de decoradores y módulos adicionales útiles de la 
-biblioteca estándar explorando el resultado en un paquete Python en el sistema de 
+**Práctica:** Ejemplo de uso de decoradores y módulos adicionales útiles de la
+biblioteca estándar explorando el resultado en un paquete Python en el sistema de
 archivos.

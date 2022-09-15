@@ -66,7 +66,7 @@ Una corta referencia de los *operadores de asignación* se ofrece a continuació
 +--------------+-----------------------------------+---------------------+
 
 .. seealso::
-    Usted puede consultar para más información la explicación de cada uno de los 
+    Usted puede consultar para más información la explicación de cada uno de los
     :ref:`operadores de asignaciones <python_opers_asignaciones>`.
 
 
@@ -121,7 +121,7 @@ Una corta referencia de los *operadores aritméticos* se ofrece a continuación:
 
 
 .. seealso::
-    Usted puede consultar para más información la explicación de cada uno de los 
+    Usted puede consultar para más información la explicación de cada uno de los
     :ref:`operadores aritméticos <python_opers_aritmeticos>`.
 
 
@@ -165,7 +165,7 @@ Una corta referencia de los *operadores relacionales* se ofrece a continuación:
 +----------------+----------------------------+------------------+
 
 .. seealso::
-    Usted puede consultar para más información la explicación de cada uno de los 
+    Usted puede consultar para más información la explicación de cada uno de los
     :ref:`operadores relacionales <python_opers_relacionales>`.
 
 
@@ -194,7 +194,7 @@ Una corta referencia de los *operadores lógicos* se ofrece a continuación:
 +----------------+--------------------+------------------------+
 
 .. seealso::
-    Usted puede consultar para más información la explicación de cada uno de los 
+    Usted puede consultar para más información la explicación de cada uno de los
     :ref:`operadores lógicos <python_opers_logicos>`.
 
 

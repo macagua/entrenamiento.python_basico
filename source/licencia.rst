@@ -13,7 +13,7 @@ Reconocimiento-CompartirIgual 3.0 Venezuela de Creative Commons
 
 .. sidebar:: Sobre esta licencia
 
-    Esta documentación se distribuye bajo los términos de la licencia 
+    Esta documentación se distribuye bajo los términos de la licencia
     `Reconocimiento-CompartirIgual 3.0 Venezuela de Creative Commons`_.
 
     .. figure:: _images/creativecommons_by-sa_3.0.png

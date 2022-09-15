@@ -6,7 +6,7 @@
 Tipo conjuntos
 --------------
 
-Un conjunto, es una colección no ordenada y sin elementos repetidos. Los usos básicos 
+Un conjunto, es una colección no ordenada y sin elementos repetidos. Los usos básicos
 de éstos incluyen verificación de pertenencia y eliminación de entradas duplicadas.
 
 +---------------+-----------+-------------------------+-------------------------------------+
@@ -25,7 +25,7 @@ de éstos incluyen verificación de pertenencia y eliminación de entradas dupli
 Métodos
 .......
 
-Los objetos de tipo **conjunto mutable** y **conjunto inmutable** integra una serie de 
+Los objetos de tipo **conjunto mutable** y **conjunto inmutable** integra una serie de
 métodos integrados a continuación:
 
 
@@ -34,7 +34,7 @@ métodos integrados a continuación:
 add()
 ~~~~~
 
-Este método agrega un elemento a un **conjunto mutable**. Esto no tiene efecto si el 
+Este método agrega un elemento a un **conjunto mutable**. Esto no tiene efecto si el
 elemento ya esta presente.
 
 ::
@@ -69,7 +69,7 @@ Este método remueve todos los elementos desde este **conjunto mutable**.
 copy()
 ~~~~~~
 
-Este método devuelve una copia superficial del tipo **conjunto mutable** o 
+Este método devuelve una copia superficial del tipo **conjunto mutable** o
 **conjunto inmutable**:
 
 ::
@@ -85,7 +85,7 @@ Este método devuelve una copia superficial del tipo **conjunto mutable** o
 difference()
 ~~~~~~~~~~~~
 
-Este método devuelve la diferencia entre dos **conjunto mutable** o **conjunto inmutable**: 
+Este método devuelve la diferencia entre dos **conjunto mutable** o **conjunto inmutable**:
 todos los elementos que están en el primero, pero no en el argumento.
 
 ::
@@ -107,7 +107,7 @@ todos los elementos que están en el primero, pero no en el argumento.
 difference_update()
 ~~~~~~~~~~~~~~~~~~~
 
-Este método actualiza un tipo **conjunto mutable** llamando al método 
+Este método actualiza un tipo **conjunto mutable** llamando al método
 ``difference_update()`` con la diferencia de los conjuntos.
 
 ::
@@ -122,8 +122,8 @@ Este método actualiza un tipo **conjunto mutable** llamando al método
     >>> proyecto1
     set(['pytz', 'Zope2', 'ZODB3'])
 
-Si ``proyecto1`` y ``proyecto2`` son dos conjuntos. La diferencia del conjunto 
-``proyecto1`` y conjunto ``proyecto2`` es un conjunto de elementos que existen 
+Si ``proyecto1`` y ``proyecto2`` son dos conjuntos. La diferencia del conjunto
+``proyecto1`` y conjunto ``proyecto2`` es un conjunto de elementos que existen
 solamente en el conjunto ``proyecto1`` pero no en el conjunto ``proyecto2``.
 
 
@@ -132,7 +132,7 @@ solamente en el conjunto ``proyecto1`` pero no en el conjunto ``proyecto2``.
 discard()
 ~~~~~~~~~
 
-Este método remueve un elemento desde un **conjunto mutable** si esta presente. 
+Este método remueve un elemento desde un **conjunto mutable** si esta presente.
 
 
 ::
@@ -144,7 +144,7 @@ Este método remueve un elemento desde un **conjunto mutable** si esta presente.
     >>> paquetes
     set(['python', 'zope', 'plone'])
 
-El **conjunto mutable** permanece sin cambio si el elemento pasado como argumento 
+El **conjunto mutable** permanece sin cambio si el elemento pasado como argumento
 al método ``discard()`` no existe.
 
 ::
@@ -160,7 +160,7 @@ al método ``discard()`` no existe.
 intersection()
 ~~~~~~~~~~~~~~
 
-Este método devuelve la intersección entre los **conjuntos mutables** o **conjuntos 
+Este método devuelve la intersección entre los **conjuntos mutables** o **conjuntos
 inmutables**: todos los elementos que están en ambos.
 
 ::
@@ -182,10 +182,10 @@ inmutables**: todos los elementos que están en ambos.
 intersection_update()
 ~~~~~~~~~~~~~~~~~~~~~
 
-Este método actualiza un **conjunto mutable** con la intersección de ese mismo y otro 
+Este método actualiza un **conjunto mutable** con la intersección de ese mismo y otro
 **conjunto mutable**.
 
-El método ``intersection_update()`` le permite arbitrariamente varios numero de 
+El método ``intersection_update()`` le permite arbitrariamente varios numero de
 argumentos (conjuntos).
 
 ::
@@ -203,7 +203,7 @@ argumentos (conjuntos).
     >>> proyecto3
     set(['python'])
 
-La intersección de dos o mas conjuntos es el conjunto de elemento el cual es común a 
+La intersección de dos o mas conjuntos es el conjunto de elemento el cual es común a
 todos los conjuntos.
 
 
@@ -212,7 +212,7 @@ todos los conjuntos.
 isdisjoint()
 ~~~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si no hay elementos comunes entre los 
+Este método devuelve el valor ``True`` si no hay elementos comunes entre los
 **conjuntos mutables** o **conjuntos inmutables**.
 
 ::
@@ -231,7 +231,7 @@ Este método devuelve el valor ``True`` si no hay elementos comunes entre los
 issubset()
 ~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subconjunto* del 
+Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subconjunto* del
 **conjunto mutable** o del **conjunto inmutable** argumento.
 
 ::
@@ -256,7 +256,7 @@ Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subcon
 issuperset()
 ~~~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si el **conjunto mutable** o el **conjunto inmutable** 
+Este método devuelve el valor ``True`` si el **conjunto mutable** o el **conjunto inmutable**
 es un *superset* del **conjunto mutable** argumento.
 
 ::
@@ -281,8 +281,8 @@ es un *superset* del **conjunto mutable** argumento.
 pop()
 ~~~~~
 
-Este método remueve arbitrariamente y devuelve un elemento de **conjunto mutable**. 
-El método ``pop()`` no toma ningún argumento. Si el **conjunto mutable** esta vacío 
+Este método remueve arbitrariamente y devuelve un elemento de **conjunto mutable**.
+El método ``pop()`` no toma ningún argumento. Si el **conjunto mutable** esta vacío
 se lanza una excepción :ref:`KeyError <python_exception_keyerror>`.
 
 ::
@@ -310,7 +310,7 @@ se lanza una excepción :ref:`KeyError <python_exception_keyerror>`.
       File "<stdin>", line 1, in <module>
     KeyError: 'pop from an empty set'
 
-Tenga en cuenta que usted podría obtener diferente salida devueltas usando el método 
+Tenga en cuenta que usted podría obtener diferente salida devueltas usando el método
 ``pop()`` por que remueve aleatoriamente un elemento.
 
 
@@ -319,8 +319,8 @@ Tenga en cuenta que usted podría obtener diferente salida devueltas usando el m
 remove()
 ~~~~~~~~
 
-Este método busca y remueve un elemento de un **conjunto mutable**, si debe ser un 
-miembro. 
+Este método busca y remueve un elemento de un **conjunto mutable**, si debe ser un
+miembro.
 
 ::
 
@@ -331,14 +331,14 @@ miembro.
     >>> paquetes
     set(['python', 'zope', 'plone'])
 
-Si el elemento no es existe en el **conjunto mutable**, lanza una excepción 
-:ref:`KeyError <python_exception_keyerror>`. Usted puede usar el método 
-:ref:`discard() <python_set_mtd_discard>` si usted no quiere este error. El 
-**conjunto mutable** permanece sin cambio si el elemento pasado al método ``discard()`` 
+Si el elemento no es existe en el **conjunto mutable**, lanza una excepción
+:ref:`KeyError <python_exception_keyerror>`. Usted puede usar el método
+:ref:`discard() <python_set_mtd_discard>` si usted no quiere este error. El
+**conjunto mutable** permanece sin cambio si el elemento pasado al método ``discard()``
 no existe.
 
-Un conjunto es una colección desordenada de elementos. Si usted quiere remover 
-arbitrariamente elemento un conjunto, usted puede usar el método 
+Un conjunto es una colección desordenada de elementos. Si usted quiere remover
+arbitrariamente elemento un conjunto, usted puede usar el método
 :ref:`pop() <python_set_mtd_pop>`.
 
 
@@ -347,7 +347,7 @@ arbitrariamente elemento un conjunto, usted puede usar el método
 symmetric_difference()
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Este método devuelve todos los elementos que están en un **conjunto mutable** e 
+Este método devuelve todos los elementos que están en un **conjunto mutable** e
 **conjunto inmutable** u otro, pero no en ambos.
 
 ::
@@ -367,10 +367,10 @@ Este método devuelve todos los elementos que están en un **conjunto mutable** 
 symmetric_difference_update()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Este método actualiza un **conjunto mutable** llamando al método 
+Este método actualiza un **conjunto mutable** llamando al método
 ``symmetric_difference_update()`` con los conjuntos de diferencia simétrica.
 
-La diferencia simétrica de dos conjuntos es el conjunto de elementos que están en 
+La diferencia simétrica de dos conjuntos es el conjunto de elementos que están en
 cualquiera de los conjuntos pero no en ambos.
 
 ::
@@ -385,7 +385,7 @@ cualquiera de los conjuntos pero no en ambos.
     >>> proyecto1
     set(['python', 'zope', 'pyramid', 'plone'])
 
-El método ``symmetric_difference_update()`` toma un argumento simple de un tipo 
+El método ``symmetric_difference_update()`` toma un argumento simple de un tipo
 **conjunto mutable**.
 
 .. _python_set_mtd_union:
@@ -393,7 +393,7 @@ El método ``symmetric_difference_update()`` toma un argumento simple de un tipo
 union()
 ~~~~~~~
 
-Este método devuelve un **conjunto mutable** y **conjunto inmutable** con todos los 
+Este método devuelve un **conjunto mutable** y **conjunto inmutable** con todos los
 elementos que están en alguno de los **conjuntos mutables** y **conjuntos inmutables**.
 
 ::
@@ -413,12 +413,12 @@ elementos que están en alguno de los **conjuntos mutables** y **conjuntos inmut
 update()
 ~~~~~~~~
 
-Este método agrega elementos desde un **conjunto mutable** (pasando como un argumento) 
-un tipo :ref:`tupla <python_tuple>`, un tipo :ref:`lista <python_list>`, un tipo 
-:ref:`diccionario <python_dict>` o un tipo **conjunto mutable** llamado con el método 
+Este método agrega elementos desde un **conjunto mutable** (pasando como un argumento)
+un tipo :ref:`tupla <python_tuple>`, un tipo :ref:`lista <python_list>`, un tipo
+:ref:`diccionario <python_dict>` o un tipo **conjunto mutable** llamado con el método
 ``update()``.
 
-A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable** 
+A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable**
 usando otro tipo **conjunto mutable**:
 
 ::
@@ -433,7 +433,7 @@ usando otro tipo **conjunto mutable**:
     >>> versiones_plone
     set([2.5, 3.6, 4, 6, 5.1, 2.1])
 
-A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable** 
+A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable**
 usando otro tipo :ref:`cadena de caracteres <python_str>`:
 
 ::
@@ -446,7 +446,7 @@ usando otro tipo :ref:`cadena de caracteres <python_str>`:
     >>> conjunto
     set(['a', 1, 2, 'b', 'c'])
 
-A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable** 
+A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable**
 usando otro tipo :ref:`diccionario <python_dict>`:
 
 ::
@@ -465,12 +465,12 @@ usando otro tipo :ref:`diccionario <python_dict>`:
 Convertir a conjuntos
 .....................
 
-Para convertir a *tipos conjuntos* debe usar las funciones :ref:`set() <python_fun_set>` 
-y :ref:`frozenset() <python_fun_frozenset>`, las cuales 
+Para convertir a *tipos conjuntos* debe usar las funciones :ref:`set() <python_fun_set>`
+y :ref:`frozenset() <python_fun_frozenset>`, las cuales
 :ref:`están integradas <python_fun_builtins>` en el interprete Python.
 
-.. tip:: 
-    Para más información consulte las funciones integradas para 
+.. tip::
+    Para más información consulte las funciones integradas para
     :ref:`operaciones de secuencias <python_fun_builtins_secuencias>`.
 
 
@@ -487,7 +487,7 @@ A continuación, se presentan un ejemplo de conjuntos ``set``:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_conjuntos.py
     :language: python
-    :lines: 7-30
+    :lines: 7-29
 
 
 Conjuntos frozenset
@@ -501,22 +501,22 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
     >>> print(versiones_plone, type(versiones_plone))
     frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
-Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y deben 
-ser objetos inmutables: números, cadenas de caracteres, tuplas y sets inmutables, 
+Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y deben
+ser objetos inmutables: números, cadenas de caracteres, tuplas y sets inmutables,
 pero no listas ni sets mutables.
 
 
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la documentación disponible sobre los **conjuntos set** 
+Usted puede consultar toda la documentación disponible sobre los **conjuntos set**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
 ::
 
     >>> help(set)
 
-Usted puede consultar toda la documentación disponible sobre los **conjuntos frozenset** 
+Usted puede consultar toda la documentación disponible sobre los **conjuntos frozenset**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
 ::
@@ -527,12 +527,12 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion3/tipo_conjuntos.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`tipo_conjuntos.py`, abra una consola de comando, 
+    Para ejecutar el código :file:`tipo_conjuntos.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     ::
@@ -542,7 +542,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

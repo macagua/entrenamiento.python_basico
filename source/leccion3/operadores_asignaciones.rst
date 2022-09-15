@@ -6,11 +6,11 @@
 Operadores de asignaciones
 --------------------------
 
-Los operadores de asignación se utilizan para 
+Los operadores de asignación se utilizan para
 
 
-Existe en Python todo un grupo de operadores los cuales le permiten básicamente asignar 
-un valor a una variable, usando el operador "``=``". Con estos operadores pueden aplicar 
+Existe en Python todo un grupo de operadores los cuales le permiten básicamente asignar
+un valor a una variable, usando el operador "``=``". Con estos operadores pueden aplicar
 la técnica denominada :ref:`asignación aumentada <python_asignacion_aumentada>`.
 
 
@@ -19,7 +19,7 @@ la técnica denominada :ref:`asignación aumentada <python_asignacion_aumentada>
 Operador =
 ..........
 
-El operador *igual a*, (``=``), es el más simple de todos y asigna a la variable del 
+El operador *igual a*, (``=``), es el más simple de todos y asigna a la variable del
 lado izquierdo cualquier variable o resultado del lado derecho.
 
 
@@ -35,7 +35,7 @@ El operador ``+=`` suma a la variable del lado izquierdo el valor del lado derec
     >>> r = 5; r += 10; r
     15
 
-En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r += 10``, entonces 
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r += 10``, entonces
 la variable "``r``" sera igual a ``15``. Su equivalente seria el siguiente:
 
 ::
@@ -56,7 +56,7 @@ El operador ``-=`` resta a la variable del lado izquierdo el valor del lado dere
     >>> r = 5; r -= 10; r
     -5
 
-En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r -= 10``, entonces 
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r -= 10``, entonces
 la variable "``r``" sera igual a ``-5``. Su equivalente seria el siguiente:
 
 ::
@@ -77,7 +77,7 @@ El operador ``*=`` multiplica a la variable del lado izquierdo el valor del lad
     >>> r = 5; r *= 10; r
     50
 
-En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r *= 10``, entonces 
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r *= 10``, entonces
 la variable "``r``" sera igual a ``50``. Su equivalente seria el siguiente:
 
 ::
@@ -98,7 +98,7 @@ El operador ``/=`` divide a la variable del lado izquierdo el valor del lado der
     >>> r = 5; r /= 10; r
     0
 
-En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r /= 10``, entonces 
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r /= 10``, entonces
 la variable "``r``" sera igual a ``0``. Su equivalente seria el siguiente:
 
 ::
@@ -112,7 +112,7 @@ la variable "``r``" sera igual a ``0``. Su equivalente seria el siguiente:
 Operador \**=
 .............
 
-El operador ``**=`` calcula el exponente a la variable del lado izquierdo el valor del 
+El operador ``**=`` calcula el exponente a la variable del lado izquierdo el valor del
 lado derecho.
 
 ::
@@ -120,7 +120,7 @@ lado derecho.
     >>> r = 5; r **= 10; r
     9765625
 
-En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r **= 10``, entonces 
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r **= 10``, entonces
 la variable "``r``" sera igual a ``9765625``. Su equivalente seria el siguiente:
 
 ::
@@ -134,7 +134,7 @@ la variable "``r``" sera igual a ``9765625``. Su equivalente seria el siguiente:
 Operador //=
 ............
 
-El operador ``//=`` calcula la división entera a la variable del lado izquierdo el valor 
+El operador ``//=`` calcula la división entera a la variable del lado izquierdo el valor
 del lado derecho.
 
 ::
@@ -142,7 +142,7 @@ del lado derecho.
     >>> r = 5; r //= 10; r
     0
 
-En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r //= 10``, entonces 
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r //= 10``, entonces
 la variable "``r``" sera igual a ``0``. Su equivalente seria el siguiente:
 
 ::
@@ -156,7 +156,7 @@ la variable "``r``" sera igual a ``0``. Su equivalente seria el siguiente:
 Operador %=
 ...........
 
-El operador ``%=`` devuelve el resto de la división a la variable del lado izquierdo el 
+El operador ``%=`` devuelve el resto de la división a la variable del lado izquierdo el
 valor del lado derecho.
 
 ::
@@ -164,7 +164,7 @@ valor del lado derecho.
     >>> r = 5; r %= 10; r
     5
 
-En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r %= 10``, entonces 
+En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r %= 10``, entonces
 la variable "``r``" sera igual a ``5``. Su equivalente seria el siguiente:
 
 ::
@@ -178,21 +178,21 @@ la variable "``r``" sera igual a ``5``. Su equivalente seria el siguiente:
 Asignación aumentada
 ....................
 
-Es frecuente que una variable tenga que ser definida de nuevo en función de sí misma. 
+Es frecuente que una variable tenga que ser definida de nuevo en función de sí misma.
 Normalmente usted escribir la siguiente sintaxis:
 
 ::
 
     >>> contador = contador + 1
 
-El código anterior, se puede abreviar a su equivalente, usando la asignación aumentada, 
+El código anterior, se puede abreviar a su equivalente, usando la asignación aumentada,
 de la siguiente manera:
 
 ::
 
     >>> contador += 1
 
-El código anterior, no sólo es más corto de escribir, sino también más eficiente en 
+El código anterior, no sólo es más corto de escribir, sino también más eficiente en
 tiempo de ejecución.
 
 
@@ -210,14 +210,14 @@ A continuación, se presentan algunos ejemplos de su uso:
 ----
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion3/operadores_asignaciones.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`operadores_asignaciones.py`, abra una consola de 
-    comando, acceda al directorio donde se encuentra el mismo, y ejecute el siguiente 
-    comando: 
+    Para ejecutar el código :file:`operadores_asignaciones.py`, abra una consola de
+    comando, acceda al directorio donde se encuentra el mismo, y ejecute el siguiente
+    comando:
 
     ::
 
@@ -229,7 +229,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

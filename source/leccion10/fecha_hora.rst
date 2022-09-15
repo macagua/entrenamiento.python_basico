@@ -54,7 +54,7 @@ Fecha y hora
     Out[3]: 'Diciembre'
 
     In [4]: dir(locale)
-    Out[4]: 
+    Out[4]:
     ['ABDAY_1',
      'ABDAY_2',
      'ABDAY_3',

@@ -7,27 +7,27 @@
 Programación en Python - Nivel básico
 =====================================
 
-Repositorio de manuales y recursos del entrenamiento 
-**"Programación en Python - Nivel básico"** realizado por 
+Repositorio de manuales y recursos del entrenamiento
+**"Programación en Python - Nivel básico"** realizado por
 la empresa `Covantec R.L <https://github.com/Covantec>`_.
 
 .. sidebar:: Sobre este entrenamiento
 
-    Para dominar el lenguaje de programación se tiene pensado 
-    como un entrenamiento de 2 a 3 días para las personas que 
-    son nuevas usándolo o los que quieren aprender acerca de 
+    Para dominar el lenguaje de programación se tiene pensado
+    como un entrenamiento de 2 a 3 días para las personas que
+    son nuevas usándolo o los que quieren aprender acerca de
     las mejores prácticas actuales del desarrollo en Python.
-    
+
     La planificación de este entrenamiento se estima en:
-    
-    - Un entrenamiento de **nivel básico** (*2 a 3 días*) que 
+
+    - Un entrenamiento de **nivel básico** (*2 a 3 días*) que
       cubre los *diez (10) capítulos*.
 
 .. warning::
-   Tenga en cuenta que este documento no está completo sin 
-   la palabra hablada de un instructor a pesar de que tratamos 
-   de incluir las partes más importantes de lo que enseñamos 
-   en la narrativa no puede considerarse completa sin la 
+   Tenga en cuenta que este documento no está completo sin
+   la palabra hablada de un instructor a pesar de que tratamos
+   de incluir las partes más importantes de lo que enseñamos
+   en la narrativa no puede considerarse completa sin la
    palabra hablada.
 
 

@@ -6,7 +6,7 @@
 Instalación
 -----------
 
-Debido al soporte :ref:`multiplataforma <python_multiplataforma>` de Python, se ofrecen 
+Debido al soporte :ref:`multiplataforma <python_multiplataforma>` de Python, se ofrecen
 ciertos recursos para los sistemas operativos más populares:
 
 
@@ -31,16 +31,16 @@ Instalando Python en una Mac
 Instalando Python en un Linux
 .............................
 
-En una distribución estándar Linux dispone por defecto el interprete Python instalado, para 
-comprobar la correcta instalación  solamente debería ejecutar el comando en la consola: 
+En una distribución estándar Linux dispone por defecto el interprete Python instalado, para
+comprobar la correcta instalación  solamente debería ejecutar el comando en la consola:
 
 ::
 
     python3
-    Python 3.7.3 (default, Jan 22 2021, 20:04:44) 
+    Python 3.7.3 (default, Jan 22 2021, 20:04:44)
     [GCC 8.3.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
-    >>> 
+    >>>
 
 Si le muestra los mensajes anteriores esta correctamente instalado el interprete Python en su Linux.
 
@@ -49,7 +49,7 @@ Si al ejecutar el comando anterior muestra el mensaje: ::
     python3
     bash: python: no se encontró la orden
 
-Esto es debido a que no tiene instalado el interprete, así que debe ejecutar el siguiente comando: 
+Esto es debido a que no tiene instalado el interprete, así que debe ejecutar el siguiente comando:
 
 ::
 
@@ -62,7 +62,7 @@ De nuevo vuelva a ejecutar en su consola de comando el comando ``python3``.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion1>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

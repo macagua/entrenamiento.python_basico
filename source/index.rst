@@ -7,11 +7,11 @@
 Programación en Python 3.7 - Nivel básico
 =========================================
 
-Repositorio de manuales y recursos del entrenamiento **"Programación en** `Python 3.7`_ - 
+Repositorio de manuales y recursos del entrenamiento **"Programación en** `Python 3.7`_ -
 **Nivel básico"**.
 
 .. warning::
-   Si esta buscando los manuales y recursos del entrenamiento **Programación en Python 2.7 - Nivel básico** visite el siguiente enlace: 
+   Si esta buscando los manuales y recursos del entrenamiento **Programación en Python 2.7 - Nivel básico** visite el siguiente enlace:
    `https://entrenamiento-python-basico.readthedocs.io/es/latest/ <https://entrenamiento-python-basico.readthedocs.io/es/latest/>`_.
 
 
@@ -46,10 +46,10 @@ Repositorio de manuales y recursos del entrenamiento **"Programación en** `Pyth
 
 
 .. warning::
-   Tenga en cuenta que este documento no está completo sin 
-   la palabra hablada de un instructor a pesar de que tratamos 
-   de incluir las partes más importantes de lo que enseñamos 
-   en la narrativa no puede considerarse completa sin la 
+   Tenga en cuenta que este documento no está completo sin
+   la palabra hablada de un instructor a pesar de que tratamos
+   de incluir las partes más importantes de lo que enseñamos
+   en la narrativa no puede considerarse completa sin la
    palabra hablada.
 
 

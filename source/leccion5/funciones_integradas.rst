@@ -7,8 +7,8 @@ Funciones integradas
 --------------------
 
 
-El interprete Python tiene un número de funciones integradas (built-in) dentro del 
-módulo ``__builtins__``, las cuales están siempre disponibles. Estas funciones están 
+El interprete Python tiene un número de funciones integradas (built-in) dentro del
+módulo ``__builtins__``, las cuales están siempre disponibles. Estas funciones están
 listadas en orden alfabéticos a continuación:
 
 
@@ -25,14 +25,14 @@ Las funciones de uso general se describen a continuación:
 apply()
 ~~~~~~~
 
-La función ``apply()`` devuelve el resultado de una función o objeto clase llamado 
+La función ``apply()`` devuelve el resultado de una función o objeto clase llamado
 con argumentos soportados.
 
 ::
 
     >>> def demo(valor1, valor2, valor3=None):
     ...     return valor1, valor2, valor3
-    ... 
+    ...
     >>> apply(demo, (1, 2), {'valor3': 3})
     (1, 2, 3)
 
@@ -55,7 +55,7 @@ La función ``callable()`` le indica si un objecto puede ser llamado.
     >>> callable(list)
     True
 
-Una función se puede llamar, una lista no se puede llamar. Incluso la función integrada 
+Una función se puede llamar, una lista no se puede llamar. Incluso la función integrada
 ``callable()`` se puede llamar.
 
 
@@ -64,8 +64,8 @@ Una función se puede llamar, una lista no se puede llamar. Incluso la función 
 compile()
 ~~~~~~~~~
 
-La función ``compile()`` devuelve un código objeto Python. Usted usa la función 
-integrada Python para convertir de la cadena de caracteres de código al código 
+La función ``compile()`` devuelve un código objeto Python. Usted usa la función
+integrada Python para convertir de la cadena de caracteres de código al código
 objeto.
 
 ::
@@ -74,8 +74,8 @@ objeto.
     >>> exec(compile('a=5\nb=7\nprint(a+b)','','exec'))
     12
 
-Aquí, ``exec`` es el modo. El parámetro anterior que eso es el nombre del archivo 
-para la forma del archivo el cual el código es leído. Finalmente, es ejecutado 
+Aquí, ``exec`` es el modo. El parámetro anterior que eso es el nombre del archivo
+para la forma del archivo el cual el código es leído. Finalmente, es ejecutado
 usando la función ``exec()``.
 
 
@@ -129,37 +129,37 @@ Si es llamado sin argumentos, devuelve los nombres en el ámbito actual.
     ['__builtins__', '__doc__', '__name__', '__package__']
 
 
-De lo contrario, devuelve una lista alfabética de nombres que comprende 
-(alguno(s) de) los atributos de un objeto dato, y de los atributos 
+De lo contrario, devuelve una lista alfabética de nombres que comprende
+(alguno(s) de) los atributos de un objeto dato, y de los atributos
 legibles desde este.
 
 ::
 
     >>> dir(__builtins__)
     ['ArithmeticError', 'AssertionError', 'AttributeError',
-    'BaseException', 'BufferError', 'BytesWarning', 
-    'DeprecationWarning', 'EOFError', 'Ellipsis', 
+    'BaseException', 'BufferError', 'BytesWarning',
+    'DeprecationWarning', 'EOFError', 'Ellipsis',
     'EnvironmentError', 'Exception', 'False', 'FloatingPointError',
     'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError',
     'ImportWarning', 'IndentationError', 'IndexError', 'KeyError',
     'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError',
-    'None', 'NotImplemented', 'NotImplementedError', 'OSError', 
+    'None', 'NotImplemented', 'NotImplementedError', 'OSError',
     'OverflowError', 'PendingDeprecationWarning', 'ReferenceError',
-    'RuntimeError', 'RuntimeWarning', 'StandardError', 
-    'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 
-    'SystemExit', 'TabError', 'True', 'TypeError', 
-    'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 
-    'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 
-    'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', 
-    '_', '__debug__', '__doc__', '__import__', '__name__', 
-    '__package__', 'abs', 'all', 'any', 'apply', 'basestring', 
-    'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable', 
-    'chr', 'classmethod', 'cmp', 'coerce', 'compile', 'complex', 
+    'RuntimeError', 'RuntimeWarning', 'StandardError',
+    'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError',
+    'SystemExit', 'TabError', 'True', 'TypeError',
+    'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError',
+    'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning',
+    'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError',
+    '_', '__debug__', '__doc__', '__import__', '__name__',
+    '__package__', 'abs', 'all', 'any', 'apply', 'basestring',
+    'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable',
+    'chr', 'classmethod', 'cmp', 'coerce', 'compile', 'complex',
     'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod',
     'enumerate', 'eval', 'execfile', 'exit', 'file', 'filter',
-    'float', 'format', 'frozenset', 'getattr', 'globals', 
-    'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 
-    'intern', 'isinstance', 'issubclass', 'iter', 'len', 
+    'float', 'format', 'frozenset', 'getattr', 'globals',
+    'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int',
+    'intern', 'isinstance', 'issubclass', 'iter', 'len',
     'license', 'list', 'locals', 'long', 'map', 'max', 'memoryview',
     'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print',
     'property', 'quit', 'range', 'reduce', 'reload',
@@ -167,7 +167,7 @@ legibles desde este.
     'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr',
     'unicode', 'vars', 'xrange', 'zip']
 
-Si el objeto soporta un método llamado ``__dir__``, ese será usado; de lo contrario se usa 
+Si el objeto soporta un método llamado ``__dir__``, ese será usado; de lo contrario se usa
 la lógica ``dir()`` predeterminada y devuelve:
 
 - para un objeto módulo: los atributos del módulo.
@@ -178,22 +178,22 @@ la lógica ``dir()`` predeterminada y devuelve:
     >>> type(os)
     <type 'module'>
     >>> dir(os)
-    ['EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 
-    'EX_NOHOST', 'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER', 
-    'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL', 
-    'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE', 
-    'F_OK', 'NGROUPS_MAX', 'O_APPEND', 'O_ASYNC', 'O_CREAT', 
-    'O_DIRECT', 'O_DIRECTORY', 'O_DSYNC', 'O_EXCL', 'O_LARGEFILE', 
-    'O_NDELAY', 'O_NOATIME', 'O_NOCTTY', 'O_NOFOLLOW', 'O_NONBLOCK', 
-    'O_RDONLY', 'O_RDWR', 'O_RSYNC', 'O_SYNC', 'O_TRUNC', 'O_WRONLY', 
-    'P_NOWAIT', 'P_NOWAITO', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END', 
-    'SEEK_SET', 'ST_APPEND', 'ST_MANDLOCK', 'ST_NOATIME', 'ST_NODEV', 
-    'ST_NODIRATIME', 'ST_NOEXEC', 'ST_NOSUID', 'ST_RDONLY', 
-    'ST_RELATIME', 'ST_SYNCHRONOUS', 'ST_WRITE', 'TMP_MAX', 'UserDict', 
-    'WCONTINUED', 'WCOREDUMP', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED', 
-    'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WSTOPSIG', 'WTERMSIG', 
-    'WUNTRACED', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', 
-    '__doc__', '__file__', '__name__', 
+    ['EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR',
+    'EX_NOHOST', 'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER',
+    'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL',
+    'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE',
+    'F_OK', 'NGROUPS_MAX', 'O_APPEND', 'O_ASYNC', 'O_CREAT',
+    'O_DIRECT', 'O_DIRECTORY', 'O_DSYNC', 'O_EXCL', 'O_LARGEFILE',
+    'O_NDELAY', 'O_NOATIME', 'O_NOCTTY', 'O_NOFOLLOW', 'O_NONBLOCK',
+    'O_RDONLY', 'O_RDWR', 'O_RSYNC', 'O_SYNC', 'O_TRUNC', 'O_WRONLY',
+    'P_NOWAIT', 'P_NOWAITO', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END',
+    'SEEK_SET', 'ST_APPEND', 'ST_MANDLOCK', 'ST_NOATIME', 'ST_NODEV',
+    'ST_NODIRATIME', 'ST_NOEXEC', 'ST_NOSUID', 'ST_RDONLY',
+    'ST_RELATIME', 'ST_SYNCHRONOUS', 'ST_WRITE', 'TMP_MAX', 'UserDict',
+    'WCONTINUED', 'WCOREDUMP', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED',
+    'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WSTOPSIG', 'WTERMSIG',
+    'WUNTRACED', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__',
+    '__doc__', '__file__', '__name__',
     ...
     ...
     ... ]
@@ -233,29 +233,29 @@ la lógica ``dir()`` predeterminada y devuelve:
     ...     def hablar(self, mensaje):
     ...         """ Mostrar mensaje de saludo de Persona """
     ...         print(mensaje)
-    ... 
+    ...
     >>> type(Persona)
     <type 'type'>
     >>> vars()
-    {'Persona': <class '__main__.Persona'>, 
-    '__builtins__': <module '__builtin__' (built-in)>, 
-    '__package__': None, '__name__': '__main__', 
-    'os': <module 'os' from '/usr/lib/python3.7/os.pyc'>, 
+    {'Persona': <class '__main__.Persona'>,
+    '__builtins__': <module '__builtin__' (built-in)>,
+    '__package__': None, '__name__': '__main__',
+    'os': <module 'os' from '/usr/lib/python3.7/os.pyc'>,
     '__doc__': None}
     >>> dir(Persona)
-    ['__class__', '__delattr__', '__dict__', '__doc__', 
-    '__format__', '__getattribute__', '__hash__', 
-    '__init__', '__module__', '__new__', '__reduce__', 
-    '__reduce_ex__', '__repr__', '__setattr__', 
-    '__sizeof__', '__str__', '__subclasshook__', 
+    ['__class__', '__delattr__', '__dict__', '__doc__',
+    '__format__', '__getattribute__', '__hash__',
+    '__init__', '__module__', '__new__', '__reduce__',
+    '__reduce_ex__', '__repr__', '__setattr__',
+    '__sizeof__', '__str__', '__subclasshook__',
     '__weakref__', 'hablar']
     >>> Persona.__dict__
-    dict_proxy({'__module__': '__main__', 
-    '__str__': <function __str__ at 0x7fab8aaad758>, 
-    '__dict__': <attribute '__dict__' of 'Persona' objects>, 
-    'hablar': <function hablar at 0x7fab8aaad7d0>, 
-    '__weakref__': <attribute '__weakref__' of 'Persona' objects>, 
-    '__doc__': ' Clase que representa una persona. ', 
+    dict_proxy({'__module__': '__main__',
+    '__str__': <function __str__ at 0x7fab8aaad758>,
+    '__dict__': <attribute '__dict__' of 'Persona' objects>,
+    'hablar': <function hablar at 0x7fab8aaad7d0>,
+    '__weakref__': <attribute '__weakref__' of 'Persona' objects>,
+    '__doc__': ' Clase que representa una persona. ',
     '__init__': <function __init__ at 0x7fab8aaad6e0>})
     >>> Persona.__doc__
     ' Clase que representa una persona. '
@@ -272,20 +272,20 @@ la lógica ``dir()`` predeterminada y devuelve:
     >>> type(int)
     <type 'type'>
     >>> dir(int)
-    ['__abs__', '__add__', '__and__', '__class__', '__cmp__', 
-    '__coerce__', '__delattr__', '__div__', '__divmod__', 
-    '__doc__', '__float__', '__floordiv__', '__format__', 
-    '__getattribute__', '__getnewargs__', '__hash__', '__hex__', 
-    '__index__', '__init__', '__int__', '__invert__', '__long__', 
-    '__lshift__', '__mod__', '__mul__', '__neg__', '__new__', 
-    '__nonzero__', '__oct__', '__or__', '__pos__', '__pow__', 
-    '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__', 
-    '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', 
-    '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__', 
-    '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', 
-    '__setattr__', '__sizeof__', '__str__', '__sub__', 
-    '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 
-    'bit_length', 'conjugate', 'denominator', 'imag', 'numerator', 
+    ['__abs__', '__add__', '__and__', '__class__', '__cmp__',
+    '__coerce__', '__delattr__', '__div__', '__divmod__',
+    '__doc__', '__float__', '__floordiv__', '__format__',
+    '__getattribute__', '__getnewargs__', '__hash__', '__hex__',
+    '__index__', '__init__', '__int__', '__invert__', '__long__',
+    '__lshift__', '__mod__', '__mul__', '__neg__', '__new__',
+    '__nonzero__', '__oct__', '__or__', '__pos__', '__pow__',
+    '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__',
+    '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__',
+    '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__',
+    '__rshift__', '__rsub__', '__rtruediv__', '__rxor__',
+    '__setattr__', '__sizeof__', '__str__', '__sub__',
+    '__subclasshook__', '__truediv__', '__trunc__', '__xor__',
+    'bit_length', 'conjugate', 'denominator', 'imag', 'numerator',
     'real']
 
 
@@ -294,7 +294,7 @@ la lógica ``dir()`` predeterminada y devuelve:
 eval()
 ~~~~~~
 
-Evalúa una cadena como una expresión: 
+Evalúa una cadena como una expresión:
 
 ::
 
@@ -315,9 +315,9 @@ Ademas si se han definido anteriormente variables las acepta como parámetros:
 execfile()
 ~~~~~~~~~~
 
-La función ``execfile()`` lee y ejecuta un script Python desde un archivo. Los 
-``globals`` y ``locals`` son diccionarios, por defecto a los actuales  ``globals`` 
-y ``locals``.  Si solamente ``globals`` es dado, ``locals`` es por defecto a la 
+La función ``execfile()`` lee y ejecuta un script Python desde un archivo. Los
+``globals`` y ``locals`` son diccionarios, por defecto a los actuales  ``globals``
+y ``locals``.  Si solamente ``globals`` es dado, ``locals`` es por defecto a la
 misma.
 
 ::
@@ -331,23 +331,23 @@ misma.
 globals()
 ~~~~~~~~~
 
-La función ``globals()`` devuelve un diccionario conteniendo ámbito actual global de 
+La función ``globals()`` devuelve un diccionario conteniendo ámbito actual global de
 las variables.
 
 ::
 
     >>> globals()
-    {'__builtins__': <module '__builtin__' (built-in)>, 
+    {'__builtins__': <module '__builtin__' (built-in)>,
     '__package__': None, '__name__': '__main__', '__doc__': None}
 
 
-La función ``globals()`` puede ser usada para devolver los nombres en el ``namespaces`` 
+La función ``globals()`` puede ser usada para devolver los nombres en el ``namespaces``
 global dependiendo en la locación desde donde ella es llamada.
 
-Si la función ``globals()`` es llamada desde una función, eso devolverá todos los nombres 
+Si la función ``globals()`` es llamada desde una función, eso devolverá todos los nombres
 que pueden ser accesibles globalmente desde esa función.
 
-El tipo de dato devuelto por función es un tipo diccionario. Por lo tanto, los nombres 
+El tipo de dato devuelto por función es un tipo diccionario. Por lo tanto, los nombres
 pueden ser extraídos usando la función integrada ``keys()``.
 
 
@@ -376,7 +376,7 @@ Invoca el menú de ayuda del intérprete de Python:
     with a one-line summary of what it does; to list the modules whose name
     or summary contain a given string such as "spam", type "modules spam".
 
-    help> 
+    help>
 
 
 .. _python_fun_id:
@@ -384,8 +384,8 @@ Invoca el menú de ayuda del intérprete de Python:
 id()
 ~~~~
 
-La función ``id()`` devuelve la identidad de un objecto. Esto garantiza ser el único 
-entre objetos simultáneamente existentes. (Sugerencia: es la dirección de memoria del 
+La función ``id()`` devuelve la identidad de un objecto. Esto garantiza ser el único
+entre objetos simultáneamente existentes. (Sugerencia: es la dirección de memoria del
 objeto).
 
 ::
@@ -445,7 +445,7 @@ Imprime el texto de la licencia.
     the PSF.
 
     All Python releases are Open Source (see http://www.opensource.org for
-    Hit Return for more, or q (and Return) to quit: 
+    Hit Return for more, or q (and Return) to quit:
 
 
 .. _python_fun_locals:
@@ -453,22 +453,22 @@ Imprime el texto de la licencia.
 locals()
 ~~~~~~~~
 
-La función ``locals()`` devuelve un diccionario conteniendo ámbito actual local de 
+La función ``locals()`` devuelve un diccionario conteniendo ámbito actual local de
 las variables.
 
 ::
 
     >>> locals()
-    {'__builtins__': <module '__builtin__' (built-in)>, 
+    {'__builtins__': <module '__builtin__' (built-in)>,
     '__package__': None, '__name__': '__main__', '__doc__': None}
 
-La función ``locals()`` puede ser usadas para devolver los nombres en el ``namespaces`` 
+La función ``locals()`` puede ser usadas para devolver los nombres en el ``namespaces``
 local dependiendo en la locación desde donde ella es llamada.
 
-Si la función ``locals()`` es llamada desde una función, eso devolverá todos los nombres 
+Si la función ``locals()`` es llamada desde una función, eso devolverá todos los nombres
 que pueden ser accesibles localmente desde esa función.
 
-El tipo de dato devuelto por la función es un tipo diccionario. Por lo tanto, los nombres 
+El tipo de dato devuelto por la función es un tipo diccionario. Por lo tanto, los nombres
 pueden ser extraídos usando la función integrada ``keys()``.
 
 
@@ -478,9 +478,9 @@ open()
 ~~~~~~
 
 La función ``open()`` es definida dentro del modulo integrado ``io``, esta le permite
-:ref:`abrir un archivo <python_abrir_archivo>` usando el tipo objeto ``file``, devuelve 
-un objeto del tipo :ref:`file <python_cls_file>` (ej. *archivo*), y se llama 
-habitualmente con de dos a tres argumentos: 
+:ref:`abrir un archivo <python_abrir_archivo>` usando el tipo objeto ``file``, devuelve
+un objeto del tipo :ref:`file <python_cls_file>` (ej. *archivo*), y se llama
+habitualmente con de dos a tres argumentos:
 
 ::
 
@@ -488,10 +488,10 @@ habitualmente con de dos a tres argumentos:
 
 Los argumentos son:
 
-- ``nombre``, es una :ref:`cadena de caracteres <python_str>` que indica el *nombre de archivo* 
+- ``nombre``, es una :ref:`cadena de caracteres <python_str>` que indica el *nombre de archivo*
   (incluso ruta relativa o absoluta).
 
-- ``modo``, es una cadena de unos pocos caracteres describiendo la forma en 
+- ``modo``, es una cadena de unos pocos caracteres describiendo la forma en
   la que se usará el archivo, como se indica a continuación:
 
   +----------+-----------------------------------------------------------+
@@ -517,7 +517,7 @@ Los argumentos son:
   |          | Python.                                                   |
   +----------+-----------------------------------------------------------+
 
-- ``buffering``, si este argumento es dado, 0 significa sin búfer, 1 significa búfer 
+- ``buffering``, si este argumento es dado, 0 significa sin búfer, 1 significa búfer
   de línea y los números más grandes especifican el tamaño del búfer.
 
 Para crear y abrir un archivo, seria así:
@@ -529,20 +529,20 @@ Para crear y abrir un archivo, seria así:
     <type 'file'>
 
 
-El archivo será creado si no existe cuando es abierto para escribir 
-o agregar data. Es archivo sera truncado cuando es abierto para escritura. 
+El archivo será creado si no existe cuando es abierto para escribir
+o agregar data. Es archivo sera truncado cuando es abierto para escritura.
 
-Agregue una 'U' a modo para abrir el archivo para la entrada con soporte de 
-nueva línea universal. Cualquier línea que termine en el archivo de entrada 
-se verá como '\n' en Python. Además, un archivo así abierto gana el atributo 
-``newlines``; el valor para este atributo es uno de Ninguno (aún no se ha 
-leído una nueva línea), ``\r``, ``\n``, ``\r\n`` o una tupla que contiene 
+Agregue una 'U' a modo para abrir el archivo para la entrada con soporte de
+nueva línea universal. Cualquier línea que termine en el archivo de entrada
+se verá como '\n' en Python. Además, un archivo así abierto gana el atributo
+``newlines``; el valor para este atributo es uno de Ninguno (aún no se ha
+leído una nueva línea), ``\r``, ``\n``, ``\r\n`` o una tupla que contiene
 todos los tipos de nueva línea que se han visto.
 
 
 .. tip::
 
-    Ver para futura información desde el :ref:`modo interactivo <python_interactivo>` 
+    Ver para futura información desde el :ref:`modo interactivo <python_interactivo>`
     Python, lo siguiente:
 
     ::
@@ -555,7 +555,7 @@ todos los tipos de nueva línea que se han visto.
 range()
 ~~~~~~~
 
-La función ``range()`` devuelve una lista conteniendo una progresión aritmética 
+La función ``range()`` devuelve una lista conteniendo una progresión aritmética
 de enteros.
 
 range(inicio, detener[, paso]) -> lista de enteros
@@ -567,7 +567,7 @@ range(inicio, detener[, paso]) -> lista de enteros
 
 ``range(i, j)`` devuelve ``[i, i+1, i+2, ..., j-1]``; inicia (!) por defecto en **0**.
 
-Cuando el ``paso`` es definido como un tercer argumento, ese especifica el incremento 
+Cuando el ``paso`` es definido como un tercer argumento, ese especifica el incremento
 (o decremento).
 
     ::
@@ -575,7 +575,7 @@ Cuando el ``paso`` es definido como un tercer argumento, ese especifica el incre
         >>> range(3,9,2)
         [3, 5, 7]
 
-En el ejemplo anterior, la función ``range(3,9,2)`` devuelve **[3, 5, 7]**, es decir, 
+En el ejemplo anterior, la función ``range(3,9,2)`` devuelve **[3, 5, 7]**, es decir,
 el rango inicia en **3** y termina en **9** incrementando cada **2** números.
 
 range(detener) -> lista de enteros
@@ -585,7 +585,7 @@ range(detener) -> lista de enteros
         >>> range(4)
         [0, 1, 2, 3]
 
-En el ejemplo anterior, la función ``range(4)`` devuelve **[0, 1, 2, 3]**. ¡El punto 
+En el ejemplo anterior, la función ``range(4)`` devuelve **[0, 1, 2, 3]**. ¡El punto
 final es omitido! Hay exactamente los indices validos para una lista de **4** elementos.
 
 
@@ -594,19 +594,19 @@ final es omitido! Hay exactamente los indices validos para una lista de **4** el
 reload()
 ~~~~~~~~
 
-Cuando el modulo es importado dentro de un script, el código en la porción del nivel 
+Cuando el modulo es importado dentro de un script, el código en la porción del nivel
 superior de un modulo es ejecutado solamente una vez.
 
-Por lo tanto, si usted quiere volver a ejecutar la porción del nivel superior el código 
-de un modulo, usted puede usar la función ``reload()``. Esta función importa otra vez 
+Por lo tanto, si usted quiere volver a ejecutar la porción del nivel superior el código
+de un modulo, usted puede usar la función ``reload()``. Esta función importa otra vez
 un modulo previamente importado. La sintaxis de la función ``reload()`` es la siguiente:
 
 ::
 
     >>> reload(module_name)
 
-Aquí, ``module_name`` es el nombre del modulo que usted quiere volver a cargar y no la 
-:ref:`cadena de caracteres <python_str>` contendiente el nombre del modulo. Por ejemplo, 
+Aquí, ``module_name`` es el nombre del modulo que usted quiere volver a cargar y no la
+:ref:`cadena de caracteres <python_str>` contendiente el nombre del modulo. Por ejemplo,
 para recargar el modulo ``clases.py``, debe hacer lo siguiente:
 
 ::
@@ -620,16 +620,16 @@ para recargar el modulo ``clases.py``, debe hacer lo siguiente:
 xrange()
 ~~~~~~~~
 
-El tipo ``xrange`` es un tipo secuencia inmutable utilizada normalmente en bucles. La 
-ventaja de la función ``xrange()`` sobre la función ``range()``, es que devuelve 
-un objeto ``xrange`` el cual ocupa siempre la misma cantidad de memoria, 
-independientemente del rango el cual represente. 
+El tipo ``xrange`` es un tipo secuencia inmutable utilizada normalmente en bucles. La
+ventaja de la función ``xrange()`` sobre la función ``range()``, es que devuelve
+un objeto ``xrange`` el cual ocupa siempre la misma cantidad de memoria,
+independientemente del rango el cual represente.
 
 ::
 
     >>> for item in range(5):
     ...     print(item)
-    ... 
+    ...
     0
     1
     2
@@ -637,7 +637,7 @@ independientemente del rango el cual represente.
     4
     >>> for item in xrange(5):
     ...     print(item)
-    ... 
+    ...
     0
     1
     2
@@ -645,8 +645,8 @@ independientemente del rango el cual represente.
     4
     >>>
 
-Como la función ``xrange()``, devuelve un objeto el cual genera los números en el 
-rango a demanda. Para bucles, esto es un poco mas rápido que la función ``range()`` 
+Como la función ``xrange()``, devuelve un objeto el cual genera los números en el
+rango a demanda. Para bucles, esto es un poco mas rápido que la función ``range()``
 y más eficiente en la memoria.
 
 ::
@@ -656,15 +656,15 @@ y más eficiente en la memoria.
     >>> type(xrange(5))
     <type 'xrange'>
     >>> dir(xrange(5))
-    ['__class__', '__delattr__', '__doc__', '__format__', 
-    '__getattribute__', '__getitem__', '__hash__', '__init__', 
-    '__iter__', '__len__', '__new__', '__reduce__', '__reduce_ex__', 
-    '__repr__', '__reversed__', '__setattr__', '__sizeof__', 
+    ['__class__', '__delattr__', '__doc__', '__format__',
+    '__getattribute__', '__getitem__', '__hash__', '__init__',
+    '__iter__', '__len__', '__new__', '__reduce__', '__reduce_ex__',
+    '__repr__', '__reversed__', '__setattr__', '__sizeof__',
     '__str__', '__subclasshook__']
 
-La ventaja de la función ``xrange()`` es *excepto* en hardware impedido en cuestión 
-de memoria (por ejemplo, MS-DOS) o cuando nunca se utilizan todos los elementos 
-del rango (por ejemplo, porque se suele interrumpir la ejecución del bucle con la 
+La ventaja de la función ``xrange()`` es *excepto* en hardware impedido en cuestión
+de memoria (por ejemplo, MS-DOS) o cuando nunca se utilizan todos los elementos
+del rango (por ejemplo, porque se suele interrumpir la ejecución del bucle con la
 sentencia :ref:`break <python_sent_break>`).
 
 
@@ -701,8 +701,8 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
 
 .. tip::
 
-    La función ``type()`` devuelve el tipo del objeto, en base al modulo integrado 
-    ``types``, el cual define los nombres para todos los símbolos tipo conocidos 
+    La función ``type()`` devuelve el tipo del objeto, en base al modulo integrado
+    ``types``, el cual define los nombres para todos los símbolos tipo conocidos
     en el interprete estándar.
 
     ::
@@ -729,7 +729,7 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
                 __builtin__.str
                 __builtin__.unicode
 
-        >>> 
+        >>>
 
 
 .. _python_fun_vars:
@@ -737,17 +737,17 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
 vars()
 ~~~~~~
 
-La función ``vars()`` devuelve un diccionario conteniendo ámbito actual de las 
+La función ``vars()`` devuelve un diccionario conteniendo ámbito actual de las
 variables.
 
 ::
 
     >>> vars()
-    {'__builtins__': <module '__builtin__' (built-in)>, '__package__': 
+    {'__builtins__': <module '__builtin__' (built-in)>, '__package__':
     None, '__name__': '__main__', '__doc__': None}
 
 
-La función ``vars()`` sin argumentos, equivale a la función :ref:`locals() <python_fun_locals>`. 
+La función ``vars()`` sin argumentos, equivale a la función :ref:`locals() <python_fun_locals>`.
 Si se llama con un argumento equivale a la sentencia ``object.__dict__``.
 
 
@@ -767,11 +767,11 @@ Las funciones de tipos numéricos se describen a continuación:
 input()
 ~~~~~~~
 
-Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva 
-línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*: 
-``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`. 
-En sistemas Unix, la librería **GNU readline** es usada si es habilitada. El ``prompt`` 
-de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes 
+Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva
+línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*:
+``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`.
+En sistemas Unix, la librería **GNU readline** es usada si es habilitada. El ``prompt``
+de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes
 de leer.
 
 Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar.
@@ -792,8 +792,8 @@ Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar.
     <type 'long'>
 
 
-En el caso que quiera ingresar una :ref:`cadena de caracteres <python_str>` desde la 
-entrada estándar usando la función ``input()``, debe colocar la cadena de caracteres 
+En el caso que quiera ingresar una :ref:`cadena de caracteres <python_str>` desde la
+entrada estándar usando la función ``input()``, debe colocar la cadena de caracteres
 entre comillas simples o dobles, como el siguiente ejemplo:
 
 ::
@@ -829,11 +829,11 @@ entre comillas simples o dobles, como el siguiente ejemplo:
     raw_input()
     ~~~~~~~~~~~
 
-    Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva 
-    línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*: 
-    ``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`. 
-    En sistemas Unix, la librería **GNU readline** es usada si es habilitada.  El ``prompt`` 
-    de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes 
+    Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva
+    línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*:
+    ``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`.
+    En sistemas Unix, la librería **GNU readline** es usada si es habilitada.  El ``prompt``
+    de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes
     de leer.
 
     ::
@@ -902,7 +902,7 @@ Devuelve el valor absoluto de un número (entero o de coma flotante).
 bin()
 ~~~~~
 
-Devuelve una representación binaria de un :ref:`número entero <python_num_entero>` 
+Devuelve una representación binaria de un :ref:`número entero <python_num_entero>`
 o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a binario.
 
 ::
@@ -916,7 +916,7 @@ o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero 
 cmp()
 ~~~~~
 
-La función ``cmp()`` devuelve un valor negativo si ``x<y``, un valor cero si ``x==y``, 
+La función ``cmp()`` devuelve un valor negativo si ``x<y``, un valor cero si ``x==y``,
 un valor positivo si ``x>y``:
 
 ::
@@ -934,11 +934,11 @@ un valor positivo si ``x>y``:
 complex()
 ~~~~~~~~~
 
-La función ``complex()`` devuelve un número complejo ``complex``. Es un constructor, 
-que crea un :ref:`entero complex <python_num_complex>` a partir de un 
-:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
-:ref:`entero float <python_num_float>` (cadenas de caracteres formadas por números y 
-hasta un punto), o una :ref:`cadena de caracteres <python_str>` que sean coherentes 
+La función ``complex()`` devuelve un número complejo ``complex``. Es un constructor,
+que crea un :ref:`entero complex <python_num_complex>` a partir de un
+:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`,
+:ref:`entero float <python_num_float>` (cadenas de caracteres formadas por números y
+hasta un punto), o una :ref:`cadena de caracteres <python_str>` que sean coherentes
 con un número entero.
 
 ::
@@ -954,8 +954,8 @@ con un número entero.
     >>> complex("23.6")
     (23.6+0j)
 
-La función ``complex()`` sólo procesa correctamente cadenas que contengan 
-exclusivamente números.Si la cadena contiene cualquier otro carácter, la 
+La función ``complex()`` sólo procesa correctamente cadenas que contengan
+exclusivamente números.Si la cadena contiene cualquier otro carácter, la
 función devuelve una excepción :ref:`ValueError <python_exception_valueerror>`.
 
 ::
@@ -971,7 +971,7 @@ función devuelve una excepción :ref:`ValueError <python_exception_valueerror>`
 divmod()
 ~~~~~~~~
 
-Debe recibir dos argumentos numéricos, y devuelve dos valores: resultado de 
+Debe recibir dos argumentos numéricos, y devuelve dos valores: resultado de
 la división entera, y el resto.
 
 ::
@@ -985,11 +985,11 @@ la división entera, y el resto.
 float()
 ~~~~~~~
 
-La función ``float()`` devuelve un número coma flotante ``float``. Es un constructor, 
-que crea un :ref:`coma flotante <python_num_float>` a partir de un 
-:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`, 
-:ref:`entero float <python_num_float>` (cadenas de caracteres formadas por 
-números y hasta un punto) o una :ref:`cadena de caracteres <python_str>` que sean 
+La función ``float()`` devuelve un número coma flotante ``float``. Es un constructor,
+que crea un :ref:`coma flotante <python_num_float>` a partir de un
+:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`,
+:ref:`entero float <python_num_float>` (cadenas de caracteres formadas por
+números y hasta un punto) o una :ref:`cadena de caracteres <python_str>` que sean
 coherentes con un número entero.
 
 ::
@@ -1011,8 +1011,8 @@ coherentes con un número entero.
 hex()
 ~~~~~
 
-Devuelve una representación hexadecimal de un :ref:`número entero <python_num_entero>` 
-o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a 
+Devuelve una representación hexadecimal de un :ref:`número entero <python_num_entero>`
+o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a
 hexadecimal.
 
 ::
@@ -1026,9 +1026,9 @@ hexadecimal.
 int()
 ~~~~~
 
-La función ``int()`` devuelve un número entero. Es un constructor, que crea un 
-:ref:`entero <python_num_entero>` a partir de un :ref:`entero float <python_num_float>`, 
-:ref:`entero complex <python_num_complex>` o una 
+La función ``int()`` devuelve un número entero. Es un constructor, que crea un
+:ref:`entero <python_num_entero>` a partir de un :ref:`entero float <python_num_float>`,
+:ref:`entero complex <python_num_complex>` o una
 :ref:`cadena de caracteres <python_str>` que sean coherentes con un número entero.
 
 
@@ -1045,8 +1045,8 @@ También puede convertir una cadena de caracteres a un número entero.
     23
 
 
-La función ``int()`` sólo procesa correctamente cadenas que contengan exclusivamente 
-números. Si la cadena contiene cualquier otro carácter, la función devuelve una 
+La función ``int()`` sólo procesa correctamente cadenas que contengan exclusivamente
+números. Si la cadena contiene cualquier otro carácter, la función devuelve una
 excepción :ref:`ValueError <python_exception_valueerror>`.
 
 ::
@@ -1067,10 +1067,10 @@ excepción :ref:`ValueError <python_exception_valueerror>`.
 long()
 ~~~~~~
 
-La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea 
-un :ref:`entero long <python_num_entero_long>` a partir de un 
-:ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>` 
-o una :ref:`cadena de caracteres <python_str>` que sean coherentes con un número 
+La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea
+un :ref:`entero long <python_num_entero_long>` a partir de un
+:ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>`
+o una :ref:`cadena de caracteres <python_str>` que sean coherentes con un número
 entero.
 
 ::
@@ -1088,8 +1088,8 @@ También puede convertir una cadena de caracteres a un número entero.
     23
 
 
-La función ``long()`` sólo procesa correctamente cadenas que contengan exclusivamente 
-números. Si la cadena contiene cualquier otro carácter, la función devuelve una 
+La función ``long()`` sólo procesa correctamente cadenas que contengan exclusivamente
+números. Si la cadena contiene cualquier otro carácter, la función devuelve una
 excepción :ref:`ValueError <python_exception_valueerror>`.
 
 ::
@@ -1124,8 +1124,8 @@ Si recibe más de un argumento, devuelve el mayor de ellos.
     <type 'str'>
 
 
-Si recibe un solo argumento, devuelve el mayor de sus elementos. Debe ser un objeto 
-iterable; puede ser una :ref:`cadena de caracteres <python_str>`, o alguno de los 
+Si recibe un solo argumento, devuelve el mayor de sus elementos. Debe ser un objeto
+iterable; puede ser una :ref:`cadena de caracteres <python_str>`, o alguno de los
 otros tipos de secuencia o colección.
 
 ::
@@ -1160,7 +1160,7 @@ Tiene un comportamiento similar a ``max()``, pero devuelve el mínimo.
 pow()
 ~~~~~
 
-La función ``pow()`` si recibe dos (02) argumentos, eleva el primero argumento 
+La función ``pow()`` si recibe dos (02) argumentos, eleva el primero argumento
 a la potencia del segundo argumento.
 
 ::
@@ -1185,8 +1185,8 @@ Si recibe un tercer argumento opcional, éste funciona como módulo.
 reduce()
 ~~~~~~~~
 
-La función ``reduce()`` aplica una función de dos argumentos de forma acumulativa a 
-los elementos de un tipo de secuencia, de izquierda a derecha, para reducir la 
+La función ``reduce()`` aplica una función de dos argumentos de forma acumulativa a
+los elementos de un tipo de secuencia, de izquierda a derecha, para reducir la
 secuencia a un solo valor. La sintaxis seria la siguiente:
 
 ::
@@ -1202,10 +1202,10 @@ A continuación un ejemplo:
     >>> ((((1+2)+3)+4)+5)
     15
 
-En el ejemplo anterior, calcula el siguiente calculo ``((((1+2)+3)+4)+5)``. 
+En el ejemplo anterior, calcula el siguiente calculo ``((((1+2)+3)+4)+5)``.
 
-Si el argumento ``inicial`` está presente, se coloca antes de los elementos de la 
-secuencia en el cálculo y sirve como valor predeterminado cuando la secuencia está 
+Si el argumento ``inicial`` está presente, se coloca antes de los elementos de la
+secuencia en el cálculo y sirve como valor predeterminado cuando la secuencia está
 vacía.
 
 ::
@@ -1213,7 +1213,7 @@ vacía.
     >>> reduce(lambda x, y: x + y, [1, 2, 3, 4, 5], 5 * 5)
     40
 
-En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es 
+En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es
 la lista ``[1, 2, 3, 4, 5]`` y el argumento ``inicial`` es ``5 * 5``
 
 ::
@@ -1221,7 +1221,7 @@ la lista ``[1, 2, 3, 4, 5]`` y el argumento ``inicial`` es ``5 * 5``
     >>> reduce(lambda x, y: x + y, [0, 0, 0, 0, 0], 5 * 5)
     25
 
-En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es 
+En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es
 la lista ``[0, 0, 0, 0, 0]`` y el argumento ``inicial`` es ``5 * 5``
 
 
@@ -1230,11 +1230,11 @@ la lista ``[0, 0, 0, 0, 0]`` y el argumento ``inicial`` es ``5 * 5``
 round()
 ~~~~~~~
 
-La función ``round()`` redondea un número flotante a una precisión dada en 
-dígitos decimal (por defecto 0 dígitos). Esto siempre devuelve un número 
+La función ``round()`` redondea un número flotante a una precisión dada en
+dígitos decimal (por defecto 0 dígitos). Esto siempre devuelve un número
 flotante. La precisión tal vez sea negativa.
 
-En el siguiente ejemplo redondeo de un número flotante a entero, mayor o 
+En el siguiente ejemplo redondeo de un número flotante a entero, mayor o
 igual a *.5* al alza:
 
 ::
@@ -1242,7 +1242,7 @@ igual a *.5* al alza:
     >>> round(5.5)
     6.0
 
-En este otro ejemplo redondeo de un número flotante a entero, menor de *.5* 
+En este otro ejemplo redondeo de un número flotante a entero, menor de *.5*
 a la baja:
 
 ::
@@ -1256,7 +1256,7 @@ a la baja:
 sum()
 ~~~~~
 
-La función ``sum()`` devuelve una lista ordenada de los elementos de la secuencia 
+La función ``sum()`` devuelve una lista ordenada de los elementos de la secuencia
 que recibe como argumento (lista o cadena). La secuencia original no es modificada.
 
 ::
@@ -1271,7 +1271,7 @@ que recibe como argumento (lista o cadena). La secuencia original no es modifica
 oct()
 ~~~~~
 
-La función ``oct()`` convierte un número entero en una cadena en base octal, 
+La función ``oct()`` convierte un número entero en una cadena en base octal,
 antecedida del prefijo *'0'*.
 
 ::
@@ -1298,8 +1298,8 @@ Las funciones de tipos :ref:`booleanos <python_bool>` se describen a continuaci�
 bool()
 ~~~~~~
 
-La función ``bool()``, es un constructor, el cual crea un tipo de datos 
-:ref:`booleanos <python_bool>`, devuelve un tipo booleano ``True`` cuando el 
+La función ``bool()``, es un constructor, el cual crea un tipo de datos
+:ref:`booleanos <python_bool>`, devuelve un tipo booleano ``True`` cuando el
 argumento dado es ``True``, de lo contrario ``False``.
 
 ::
@@ -1318,7 +1318,7 @@ Convertir desde un tipo :ref:`entero <python_numericos>` a tipo *booleano*:
     >>> bool(1)
     True
 
-Convertir desde un tipo :ref:`entero float <python_num_float>` de forma recursiva 
+Convertir desde un tipo :ref:`entero float <python_num_float>` de forma recursiva
 usando la función :ref:`int() <python_fun_int>` a tipo *booleano*:
 
 ::
@@ -1328,8 +1328,8 @@ usando la función :ref:`int() <python_fun_int>` a tipo *booleano*:
     >>> bool(int(1.0))
     True
 
-Convertir desde un tipo :ref:`cadena de caracteres <python_str>` de forma recursiva 
-usando la función :ref:`str() <python_fun_str>` y la función :ref:`int() <python_fun_int>` 
+Convertir desde un tipo :ref:`cadena de caracteres <python_str>` de forma recursiva
+usando la función :ref:`str() <python_fun_str>` y la función :ref:`int() <python_fun_int>`
 a tipo *booleano*:
 
 ::
@@ -1347,7 +1347,7 @@ a tipo *booleano*:
 Funciones de cadenas de caracteres
 ..................................
 
-Las funciones de tipos :ref:`cadena de caracteres <python_str>` se describen a 
+Las funciones de tipos :ref:`cadena de caracteres <python_str>` se describen a
 continuación:
 
 
@@ -1356,8 +1356,8 @@ continuación:
 capitalize()
 ~~~~~~~~~~~~
 
-La función ``capitalize()`` devuelve una :ref:`cadenas de caracteres <python_str>` 
-con MAYÚSCULA la primera palabra. 
+La función ``capitalize()`` devuelve una :ref:`cadenas de caracteres <python_str>`
+con MAYÚSCULA la primera palabra.
 
 ::
 
@@ -1370,8 +1370,8 @@ con MAYÚSCULA la primera palabra.
 chr()
 ~~~~~
 
-La función ``chr()`` recibe como argumento un entero, y devuelve una cadena con 
-el carácter cuyo código *Unicode* corresponde a ese valor. El rango válido para 
+La función ``chr()`` recibe como argumento un entero, y devuelve una cadena con
+el carácter cuyo código *Unicode* corresponde a ese valor. El rango válido para
 el argumento es de 0 a 256.
 
 ::
@@ -1391,8 +1391,8 @@ el argumento es de 0 a 256.
 endswith()
 ~~~~~~~~~~
 
-La función ``endswith()`` devuelve un valor booleano ``True`` o ``False`` 
-si coincide que la cadena termine con el criterio enviado por parámetros 
+La función ``endswith()`` devuelve un valor booleano ``True`` o ``False``
+si coincide que la cadena termine con el criterio enviado por parámetros
 en la función.
 
 ::
@@ -1408,8 +1408,8 @@ en la función.
 expandtabs()
 ~~~~~~~~~~~~
 
-La función ``expandtabs()`` devuelve una copia de la :ref:`cadena de caracteres <python_str>` 
-donde todos los caracteres ``tab`` (tabulación) son remplazados por uno o más espacios, 
+La función ``expandtabs()`` devuelve una copia de la :ref:`cadena de caracteres <python_str>`
+donde todos los caracteres ``tab`` (tabulación) son remplazados por uno o más espacios,
 depende en la actual columna y el tamaño del tab dado.
 
 ::
@@ -1432,8 +1432,8 @@ Usted puede indicar el tamaño de la tecla ``tab`` vía parámetro de la funció
 find()
 ~~~~~~
 
-La función ``find()`` devuelve un valor numérico ``0`` si encuentra el criterio 
-de búsqueda o ``-1`` si no coincide el criterio de búsqueda enviado por parámetros 
+La función ``find()`` devuelve un valor numérico ``0`` si encuentra el criterio
+de búsqueda o ``-1`` si no coincide el criterio de búsqueda enviado por parámetros
 en la función.
 
 ::
@@ -1449,17 +1449,17 @@ en la función.
 format()
 ~~~~~~~~
 
-La función integrada ``format()`` devuelve una representación formateada de un valor 
+La función integrada ``format()`` devuelve una representación formateada de un valor
 dato controlado por el especificador de formato.
 
-La función integrada ``format()`` es similar al :ref:`método format() <python_mtd_format>` 
-disponible en el tipo de :ref:`cadena de caracteres <python_str>`. Internamente, 
+La función integrada ``format()`` es similar al :ref:`método format() <python_mtd_format>`
+disponible en el tipo de :ref:`cadena de caracteres <python_str>`. Internamente,
 ambos llaman al método ``__format__()`` de un objecto.
 
-Mientras, la función integrada ``format()`` es una implementación de bajo nivel para 
-formatear un objeto usando ``__format__()`` internamente, el 
-:ref:`método format() <python_mtd_format>` del tipo de cadena de caracteres es una 
-implementación de alto nivel disponible para ejecutar operaciones de formateo complejas 
+Mientras, la función integrada ``format()`` es una implementación de bajo nivel para
+formatear un objeto usando ``__format__()`` internamente, el
+:ref:`método format() <python_mtd_format>` del tipo de cadena de caracteres es una
+implementación de alto nivel disponible para ejecutar operaciones de formateo complejas
 en múltiples objeto de :ref:`cadena de caracteres <python_str>`.
 
 La sintaxis de la función integrada ``format()`` es:
@@ -1474,7 +1474,7 @@ La a función integrada ``format()`` toma dos parámetros:
 
 - format_spec - La especificación en como el valor debe ser formateado.
 
-A continuación, un ejemplo de un valor :ref:`número entero <python_num_entero>`, 
+A continuación, un ejemplo de un valor :ref:`número entero <python_num_entero>`,
 seria de la siguiente forma:
 
 ::
@@ -1482,7 +1482,7 @@ seria de la siguiente forma:
     >>> print(format(123,"d"))
     123
 
-A continuación, un ejemplo de un valor :ref:`número float <python_num_float>`, 
+A continuación, un ejemplo de un valor :ref:`número float <python_num_float>`,
 seria de la siguiente forma:
 
 ::
@@ -1498,7 +1498,7 @@ A continuación, un ejemplo de un valor binario, seria de la siguiente forma:
     1010
 
 
-A continuación, un ejemplo de un valor :ref:`número entero <python_num_entero>` 
+A continuación, un ejemplo de un valor :ref:`número entero <python_num_entero>`
 con formato especifico, seria de la siguiente forma:
 
 ::
@@ -1506,24 +1506,24 @@ con formato especifico, seria de la siguiente forma:
     >>> print(format(1234,"*>+7,d"))
     *+1,234
 
-En el ejemplo anterior cuando se formatea el :ref:`número entero <python_num_entero>` 
-*1234*, usted especifico el especificador de formato ``*<+7,d``. Seguidamente, se 
+En el ejemplo anterior cuando se formatea el :ref:`número entero <python_num_entero>`
+*1234*, usted especifico el especificador de formato ``*<+7,d``. Seguidamente, se
 describe cada opción a continuación:
 
-- ``*`` Es la opción del carácter de relleno, el cual rellena los espacio vacío después 
+- ``*`` Es la opción del carácter de relleno, el cual rellena los espacio vacío después
   del formato.
-- ``>`` Es la opción de alineación a la derecha, el cual alinea la cadena de caracteres 
+- ``>`` Es la opción de alineación a la derecha, el cual alinea la cadena de caracteres
   de salida a la derecha.
-- ``+`` Es la opción de signo, el cual obliga al número a ser firmado (con un signo a 
+- ``+`` Es la opción de signo, el cual obliga al número a ser firmado (con un signo a
   su izquierda).
-- ``7`` Es la opción ancho, el cual obliga el número que tome un mínimo de ancho de 7, 
+- ``7`` Es la opción ancho, el cual obliga el número que tome un mínimo de ancho de 7,
   otros espacios serán rellenado por el carácter de relleno.
-- ``,`` Ese es el operador miles, el cual coloca un carácter coma entre todos los números 
+- ``,`` Ese es el operador miles, el cual coloca un carácter coma entre todos los números
   miles.
-- ``d`` Es la opción tipo que especifica que el número es un 
+- ``d`` Es la opción tipo que especifica que el número es un
   :ref:`número entero <python_num_entero>`.
 
-A continuación, un ejemplo de un valor :ref:`número float <python_num_float>` 
+A continuación, un ejemplo de un valor :ref:`número float <python_num_float>`
 con formato especifico, seria de la siguiente forma:
 
 ::
@@ -1531,29 +1531,29 @@ con formato especifico, seria de la siguiente forma:
     >>> print(format(123.4567, "^-09.3f"))
     0123.4570
 
-En el ejemplo anterior cuando se formatea el :ref:`número float <python_num_float>` 
-*123.4567*, usted especifico el especificador de formato ``^-09.3f``. Seguidamente, se 
+En el ejemplo anterior cuando se formatea el :ref:`número float <python_num_float>`
+*123.4567*, usted especifico el especificador de formato ``^-09.3f``. Seguidamente, se
 describe cada opción a continuación:
 
-- ``^`` Es la opción de alineación centrar, el cual alinea la cadena de 
-  caracteres de salida al centro del espacio restante. 
+- ``^`` Es la opción de alineación centrar, el cual alinea la cadena de
+  caracteres de salida al centro del espacio restante.
 
-- ``-`` Es la opción de signo el cual obliga solo a los números negativos a mostrar 
+- ``-`` Es la opción de signo el cual obliga solo a los números negativos a mostrar
   el signo.
 
 - ``0`` Ese es el carácter, el cual es colocado en lugar de los espacios vacíos.
 
-- ``9`` Es la opción de ancho, el cual establece el ancho mínimo del número en 9 
+- ``9`` Es la opción de ancho, el cual establece el ancho mínimo del número en 9
   (incluido el punto decimal, la coma y el signo de miles).
 
-- ``.3`` Ese es el operador de precisión que define la precisión del número 
+- ``.3`` Ese es el operador de precisión que define la precisión del número
   flotante dado a 3 lugares.
 
-- ``f`` Es la opción tipo que especifica que el número es un 
+- ``f`` Es la opción tipo que especifica que el número es un
   :ref:`número float <python_num_float>`.
 
-A continuación, un ejemplo de usar la función ``format()`` sobre escribiendo el método 
-especial ``__format__()`` de una :ref:`clase <python_metodos_especiales>`, seria de la 
+A continuación, un ejemplo de usar la función ``format()`` sobre escribiendo el método
+especial ``__format__()`` de una :ref:`clase <python_metodos_especiales>`, seria de la
 siguiente forma:
 
 ::
@@ -1563,17 +1563,17 @@ siguiente forma:
     ...         if(formato == 'edad'):
     ...             return '23'
     ...         return 'Formato nulo'
-    ... 
+    ...
     >>> print(format(Persona(), "edad"))
     23
 
-En el ejemplo anterior cuando se sobre escribe el método especial ``__format__()`` de 
-la clase ``Persona``. Ese ahora acepta el argumento del método llamado ``edad`` el 
-cual devuelve *23*. 
+En el ejemplo anterior cuando se sobre escribe el método especial ``__format__()`` de
+la clase ``Persona``. Ese ahora acepta el argumento del método llamado ``edad`` el
+cual devuelve *23*.
 
-El método ``format()`` internamente ejecuta ``Persona().__format__("edad")``, el cual 
-devuelve el mensaje *23*. Si no hay formato especificado, el mensaje devuelto es 
-*Formato nulo*. 
+El método ``format()`` internamente ejecuta ``Persona().__format__("edad")``, el cual
+devuelve el mensaje *23*. Si no hay formato especificado, el mensaje devuelto es
+*Formato nulo*.
 
 
 .. _python_fun_index:
@@ -1581,7 +1581,7 @@ devuelve el mensaje *23*. Si no hay formato especificado, el mensaje devuelto es
 index()
 ~~~~~~~
 
-La función ``index()`` es como la función ``find()`` pero arroja una excepción 
+La función ``index()`` es como la función ``find()`` pero arroja una excepción
 :ref:`ValueError <python_exception_valueerror>` cuando la sub-cadena no es encontrada.
 
 ::
@@ -1601,27 +1601,27 @@ La función ``index()`` es como la función ``find()`` pero arroja una excepció
 intern()
 ~~~~~~~~
 
-La función ``intern()`` introduce la cadena en la tabla de cadenas internadas (si no 
-está ya allí). Esto ingresa la cadena en la tabla (global) de cadenas internas cuyo 
-propósito es acelerar las búsquedas en el tipo diccionario. 
+La función ``intern()`` introduce la cadena en la tabla de cadenas internadas (si no
+está ya allí). Esto ingresa la cadena en la tabla (global) de cadenas internas cuyo
+propósito es acelerar las búsquedas en el tipo diccionario.
 
-Al utilizar la función ``intern()``, se asegura de que nunca cree dos objetos de cadena 
-de caracteres que tengan el mismo valor: cuando solicita la creación de un segundo 
-objeto de cadena de caracteres con el mismo valor que un objeto de cadena existente, 
-recibe una referencia al objeto de cadena preexistente. De esta manera, estás ahorrando 
-memoria. Además, la comparación de objetos de cadena de caracteres ahora es muy eficiente 
-porque se lleva a cabo comparando las direcciones de memoria de los dos objetos de 
+Al utilizar la función ``intern()``, se asegura de que nunca cree dos objetos de cadena
+de caracteres que tengan el mismo valor: cuando solicita la creación de un segundo
+objeto de cadena de caracteres con el mismo valor que un objeto de cadena existente,
+recibe una referencia al objeto de cadena preexistente. De esta manera, estás ahorrando
+memoria. Además, la comparación de objetos de cadena de caracteres ahora es muy eficiente
+porque se lleva a cabo comparando las direcciones de memoria de los dos objetos de
 cadena de caracteres en lugar de su contenido.
 
-Esencialmente, la función ``intern()`` busca (o almacena si no está presente) la 
-cadena de caracteres en una colección de cadenas de caracteres internadas, por lo 
-que todas las instancias internadas compartirán la misma identidad. Cambia el costo 
-único de buscar esta cadena de caracteres para realizar comparaciones más rápidas 
-(la comparación puede devolver ``True`` después de solo verificar la identidad, en 
+Esencialmente, la función ``intern()`` busca (o almacena si no está presente) la
+cadena de caracteres en una colección de cadenas de caracteres internadas, por lo
+que todas las instancias internadas compartirán la misma identidad. Cambia el costo
+único de buscar esta cadena de caracteres para realizar comparaciones más rápidas
+(la comparación puede devolver ``True`` después de solo verificar la identidad, en
 lugar de tener que comparar cada carácter), y reducir el uso de la memoria.
 
-Sin embargo, Python internará automáticamente cadenas de caracteres que sean pequeñas 
-o que parezcan identificadores, por lo que es posible que no obtengas ninguna mejora 
+Sin embargo, Python internará automáticamente cadenas de caracteres que sean pequeñas
+o que parezcan identificadores, por lo que es posible que no obtengas ninguna mejora
 porque tus cadenas de caracteres ya están internadas entre bastidores.
 
 A continuación uno ejemplo de comparación de cadena de caracteres con operadores de relacionales:
@@ -1637,7 +1637,7 @@ A continuación uno ejemplo de comparación de cadena de caracteres con operador
     >>> cadena0 is cadena1
     False
 
-A continuación uno ejemplo de comparación de cadena de caracteres con el operador 
+A continuación uno ejemplo de comparación de cadena de caracteres con el operador
 :ref:`is <python_opers_is>`:
 
 ::
@@ -1657,7 +1657,7 @@ A continuación uno ejemplo de comparación de cadena de caracteres con el opera
 isalnum()
 ~~~~~~~~~
 
-La función ``isalnum()`` devuelve un valor booleano ``True`` o ``False`` 
+La función ``isalnum()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena contenga caracteres alfanuméricos.
 
 ::
@@ -1673,7 +1673,7 @@ si coincide que la cadena contenga caracteres alfanuméricos.
 isalpha()
 ~~~~~~~~~
 
-La función ``isalpha()`` devuelve un valor booleano ``True`` o ``False`` 
+La función ``isalpha()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena contenga caracteres alfabéticos.
 
 ::
@@ -1689,7 +1689,7 @@ si coincide que la cadena contenga caracteres alfabéticos.
 isdigit()
 ~~~~~~~~~
 
-La función ``isdigit()`` devuelve un valor booleano ``True`` o ``False`` 
+La función ``isdigit()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena contenga caracteres dígitos.
 
 
@@ -1706,7 +1706,7 @@ si coincide que la cadena contenga caracteres dígitos.
 islower()
 ~~~~~~~~~
 
-La función ``islower()`` devuelve un valor booleano ``True`` o ``False`` 
+La función ``islower()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena contenga caracteres en MINÚSCULAS.
 
 ::
@@ -1722,8 +1722,8 @@ si coincide que la cadena contenga caracteres en MINÚSCULAS.
 istitle()
 ~~~~~~~~~
 
-La función ``istitle()`` devuelve un valor booleano ``True`` o ``False`` si coincide 
-que la :ref:`cadena de caracteres <python_str>` sean capitales en cada palabra. 
+La función ``istitle()`` devuelve un valor booleano ``True`` o ``False`` si coincide
+que la :ref:`cadena de caracteres <python_str>` sean capitales en cada palabra.
 
 ::
 
@@ -1738,7 +1738,7 @@ que la :ref:`cadena de caracteres <python_str>` sean capitales en cada palabra.
 isspace()
 ~~~~~~~~~
 
-La función ``isspace()`` devuelve un valor booleano ``True`` o ``False`` si no es 
+La función ``isspace()`` devuelve un valor booleano ``True`` o ``False`` si no es
 vacía, y todos sus caracteres son espacios en blanco.
 
 ::
@@ -1758,8 +1758,8 @@ vacía, y todos sus caracteres son espacios en blanco.
 isupper()
 ~~~~~~~~~
 
-La función ``isupper()`` devuelve un valor booleano ``True`` o ``False`` si coincide 
-que la :ref:`cadena de caracteres <python_str>` estén en MAYÚSCULAS en cada palabra. 
+La función ``isupper()`` devuelve un valor booleano ``True`` o ``False`` si coincide
+que la :ref:`cadena de caracteres <python_str>` estén en MAYÚSCULAS en cada palabra.
 
 ::
 
@@ -1774,10 +1774,10 @@ que la :ref:`cadena de caracteres <python_str>` estén en MAYÚSCULAS en cada pa
 lstrip()
 ~~~~~~~~
 
-La función ``lstrip()`` devuelve una copia de la :ref:`cadena de caracteres <python_str>` 
-con el espacio en blanco inicial eliminado. Si se dan la cadena de caracteres y no es 
-:ref:`None <python_obj_none>`, elimina los caracteres en la cadena de caracteres en su 
-lugar. Si la cadena de caracteres son ``unicode``, serán convertidas a ``unicode`` antes 
+La función ``lstrip()`` devuelve una copia de la :ref:`cadena de caracteres <python_str>`
+con el espacio en blanco inicial eliminado. Si se dan la cadena de caracteres y no es
+:ref:`None <python_obj_none>`, elimina los caracteres en la cadena de caracteres en su
+lugar. Si la cadena de caracteres son ``unicode``, serán convertidas a ``unicode`` antes
 de eliminar.
 
 ::
@@ -1791,8 +1791,8 @@ de eliminar.
 lower()
 ~~~~~~~
 
-La función ``lower()`` devuelve una :ref:`cadenas de caracteres <python_str>` con MINÚSCULAS 
-en cada palabra. 
+La función ``lower()`` devuelve una :ref:`cadenas de caracteres <python_str>` con MINÚSCULAS
+en cada palabra.
 
 ::
 
@@ -1805,7 +1805,7 @@ en cada palabra.
 ord()
 ~~~~~
 
-La función ``ord()`` es el inverso de :ref:`chr() <python_fun_chr>` dada una 
+La función ``ord()`` es el inverso de :ref:`chr() <python_fun_chr>` dada una
 cadena representando un carácter Unicode, devuelve el entero del código correspondiente.
 
 ::
@@ -1825,8 +1825,8 @@ cadena representando un carácter Unicode, devuelve el entero del código corres
 replace()
 ~~~~~~~~~
 
-La función ``replace()`` si encuentra el criterio de la búsqueda de la 
-sub-cadena o la remplaza con la nueva sub-cadena enviado por parámetros 
+La función ``replace()`` si encuentra el criterio de la búsqueda de la
+sub-cadena o la remplaza con la nueva sub-cadena enviado por parámetros
 en la función.
 
 ::
@@ -1840,8 +1840,8 @@ en la función.
 split()
 ~~~~~~~
 
-La función ``split()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>` 
-separada por cada indice de la lista. 
+La función ``split()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>`
+separada por cada indice de la lista.
 
 ::
 
@@ -1854,7 +1854,7 @@ separada por cada indice de la lista.
 splitlines()
 ~~~~~~~~~~~~
 
-La función ``splitlines()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>` 
+La función ``splitlines()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>`
 separada por cada salto de linea en cada indice de la lista.
 
 ::
@@ -1868,8 +1868,8 @@ separada por cada salto de linea en cada indice de la lista.
 startswith()
 ~~~~~~~~~~~~
 
-La función ``startswith()`` devuelve un valor booleano ``True`` o ``False`` 
-si coincide que la cadena inicie con el criterio enviado por parámetros 
+La función ``startswith()`` devuelve un valor booleano ``True`` o ``False``
+si coincide que la cadena inicie con el criterio enviado por parámetros
 en la función.
 
 ::
@@ -1885,10 +1885,10 @@ en la función.
 str()
 ~~~~~
 
-La función ``str()`` es el constructor del tipo de :ref:`cadenas de caracteres <python_str>`, 
-se usa crear una *carácter* o *cadenas de caracteres* mediante la misma función ``str()``. 
+La función ``str()`` es el constructor del tipo de :ref:`cadenas de caracteres <python_str>`,
+se usa crear una *carácter* o *cadenas de caracteres* mediante la misma función ``str()``.
 
-Puede convertir un :ref:`número entero <python_num_entero>` a una *cadena de caracteres*, 
+Puede convertir un :ref:`número entero <python_num_entero>` a una *cadena de caracteres*,
 de la siguiente forma:
 
 ::
@@ -1896,7 +1896,7 @@ de la siguiente forma:
     >>> str(2)
     '2'
 
-Puede convertir un :ref:`número float <python_num_float>` a una *cadena de caracteres*, 
+Puede convertir un :ref:`número float <python_num_float>` a una *cadena de caracteres*,
 de la siguiente forma:
 
 ::
@@ -1906,7 +1906,7 @@ de la siguiente forma:
     >>> str(-2.5)
     '-2.5'
 
-Puede convertir un :ref:`número complex <python_num_complex>` a una *cadena de caracteres*, 
+Puede convertir un :ref:`número complex <python_num_complex>` a una *cadena de caracteres*,
 de la siguiente forma:
 
 ::
@@ -1914,7 +1914,7 @@ de la siguiente forma:
     >>> str(2.3+0j)
     '(2.3+0j)'
 
-Puede convertir un tipo :ref:`booleano <python_bool>` a una *cadena de caracteres*, 
+Puede convertir un tipo :ref:`booleano <python_bool>` a una *cadena de caracteres*,
 de la siguiente forma:
 
 ::
@@ -1930,7 +1930,7 @@ de la siguiente forma:
 swapcase()
 ~~~~~~~~~~
 
-La función ``swapcase()`` devuelve una :ref:`cadenas de caracteres <python_str>` 
+La función ``swapcase()`` devuelve una :ref:`cadenas de caracteres <python_str>`
 convertida al opuesto sea MAYÚSCULAS o MINÚSCULAS.
 
 ::
@@ -1946,8 +1946,8 @@ convertida al opuesto sea MAYÚSCULAS o MINÚSCULAS.
 title()
 ~~~~~~~
 
-La función ``title()`` devuelve una :ref:`cadenas de caracteres <python_str>` con 
-capitales en cada palabra. 
+La función ``title()`` devuelve una :ref:`cadenas de caracteres <python_str>` con
+capitales en cada palabra.
 
 ::
 
@@ -1960,7 +1960,7 @@ capitales en cada palabra.
 unichr()
 ~~~~~~~~
 
-La función ``unichr()`` devuelve una *cadena de caracteres* *Unicode* de un carácter 
+La función ``unichr()`` devuelve una *cadena de caracteres* *Unicode* de un carácter
 con un numero entero.
 
 ::
@@ -1980,8 +1980,8 @@ con un numero entero.
 upper()
 ~~~~~~~
 
-La función ``upper()`` devuelve una :ref:`cadenas de caracteres <python_str>` con 
-MAYÚSCULAS en cada palabra. 
+La función ``upper()`` devuelve una :ref:`cadenas de caracteres <python_str>` con
+MAYÚSCULAS en cada palabra.
 
 ::
 
@@ -2005,9 +2005,9 @@ Las funciones de secuencias se describen a continuación:
 all()
 ~~~~~
 
-La función ``all()`` toma un contenedor como un argumento. Esta devuelve las funciones 
-integradas ``True`` si todo los valores en el objeto iterable python tienen un valor 
-de tipo :ref:`booleano <python_bool>` igual a ``True``. Un valor vacío tiene un tipo 
+La función ``all()`` toma un contenedor como un argumento. Esta devuelve las funciones
+integradas ``True`` si todo los valores en el objeto iterable python tienen un valor
+de tipo :ref:`booleano <python_bool>` igual a ``True``. Un valor vacío tiene un tipo
 :ref:`booleano <python_bool>` igual a ``False``.
 
 ::
@@ -2023,7 +2023,7 @@ de tipo :ref:`booleano <python_bool>` igual a ``True``. Un valor vacío tiene un
 any()
 ~~~~~
 
-La función ``any()`` ese toma un argumento y devuelve ``True`` incluso si, un valor en 
+La función ``any()`` ese toma un argumento y devuelve ``True`` incluso si, un valor en
 el objeto iterable tiene un valor de tipo :ref:`booleano <python_bool>` igual a ``True``.
 
 ::
@@ -2043,9 +2043,9 @@ el objeto iterable tiene un valor de tipo :ref:`booleano <python_bool>` igual a 
 coerce()
 ~~~~~~~~
 
-La función ``coerce()`` devuelve una tupla que consta de los dos argumentos numéricos 
-convertidos en un tipo común, utilizando las mismas reglas que las operaciones 
-aritméticas. Si la coerción no es posible, levante una excepción 
+La función ``coerce()`` devuelve una tupla que consta de los dos argumentos numéricos
+convertidos en un tipo común, utilizando las mismas reglas que las operaciones
+aritméticas. Si la coerción no es posible, levante una excepción
 :ref:`TypeError <python_exception_typeerror>`.
 
 ::
@@ -2061,7 +2061,7 @@ aritméticas. Si la coerción no es posible, levante una excepción
 dict()
 ~~~~~~
 
-La función ``dict()`` es el constructor del tipo de :ref:`diccionario <python_dict>`, 
+La función ``dict()`` es el constructor del tipo de :ref:`diccionario <python_dict>`,
 esta función se usa crear un diccionario:
 
 ::
@@ -2078,7 +2078,7 @@ También puede crear un diccionario indicando a las claves usando comillas simpl
     >>> dict({'python': 3.7, 'zope': 5.5.2, 'plone': 6.0})
     {{'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
 
-Convertir desde un grupo de dos :ref:`listas <python_list>` de forma recursiva usando 
+Convertir desde un grupo de dos :ref:`listas <python_list>` de forma recursiva usando
 la función :ref:`zip() <python_fun_zip>` a tipo *diccionario*:
 
 ::
@@ -2086,7 +2086,7 @@ la función :ref:`zip() <python_fun_zip>` a tipo *diccionario*:
     >>> dict(zip(['python', 'zope', 'plone'], [3.7, 5.5.2, 6.0]))
     {'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
 
-Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una 
+Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una
 :ref:`lista <python_list>` a tipo *diccionario*:
 
 ::
@@ -2100,8 +2100,8 @@ Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una
 frozenset()
 ~~~~~~~~~~~
 
-La función ``frozenset()`` es el constructor del tipo de :ref:`conjuntos <python_set>`, 
-se usa crear un conjunto *inmutable* mediante la misma función ``frozenset()`` de un objeto 
+La función ``frozenset()`` es el constructor del tipo de :ref:`conjuntos <python_set>`,
+se usa crear un conjunto *inmutable* mediante la misma función ``frozenset()`` de un objeto
 iterable :ref:`lista <python_list>`:
 
 ::
@@ -2119,7 +2119,7 @@ iterable :ref:`lista <python_list>`:
 iter()
 ~~~~~~
 
-La función ``iter()`` obtiene un :ref:`iterador <python_iter>` de un objeto. En la 
+La función ``iter()`` obtiene un :ref:`iterador <python_iter>` de un objeto. En la
 primera forma, el argumento debe proporcionar su propio *iterador*, o ser una secuencia.
 
 ::
@@ -2142,10 +2142,10 @@ primera forma, el argumento debe proporcionar su propio *iterador*, o ser una se
       File "<stdin>", line 1, in <module>
     StopIteration
 
-En el ejemplo anterior, cuando se itera en la secuencia de tipo 
-:ref:`cadena de caracteres <python_str>`, al llegar al final mediante el iterador 
-llamado ``elemento`` se llama a la excepción 
-:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+En el ejemplo anterior, cuando se itera en la secuencia de tipo
+:ref:`cadena de caracteres <python_str>`, al llegar al final mediante el iterador
+llamado ``elemento`` se llama a la excepción
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la
 iteración.
 
 
@@ -2154,8 +2154,8 @@ iteración.
 list()
 ~~~~~~
 
-La función ``list()`` es el constructor del tipo de :ref:`lista <python_list>`, 
-se usa crear una lista mediante la misma función ``list()`` de un iterable. Por 
+La función ``list()`` es el constructor del tipo de :ref:`lista <python_list>`,
+se usa crear una lista mediante la misma función ``list()`` de un iterable. Por
 ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
 
 ::
@@ -2190,9 +2190,9 @@ La función ``next()`` devuelve el próximo elemento desde un :ref:`iterador <py
       File "<stdin>", line 1, in <module>
     StopIteration
 
-En el ejemplo anterior, cuando se itera en la secuencia de tipo :ref:`lista <python_list>`, 
-al llegar al final mediante el iterador llamado ``elemento`` se llama a la excepción 
-:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la 
+En el ejemplo anterior, cuando se itera en la secuencia de tipo :ref:`lista <python_list>`,
+al llegar al final mediante el iterador llamado ``elemento`` se llama a la excepción
+:ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la
 iteración.
 
 
@@ -2201,8 +2201,8 @@ iteración.
 tuple()
 ~~~~~~~
 
-La función ``tuple()`` es el constructor del tipo de :ref:`tuplas <python_tuple>`, 
-se usa crear una tupla mediante la misma función ``tuple()`` de un iterable. Por 
+La función ``tuple()`` es el constructor del tipo de :ref:`tuplas <python_tuple>`,
+se usa crear una tupla mediante la misma función ``tuple()`` de un iterable. Por
 ejemplo, una tupla podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
 
 ::
@@ -2217,8 +2217,8 @@ ejemplo, una tupla podría crearse mediante la función :ref:`range(10) <python_
 set()
 ~~~~~
 
-La función ``set()`` es el constructor del tipo de :ref:`conjuntos <python_set>`, 
-se usa crear un conjunto *mutable* mediante la misma función ``set()`` de un objeto 
+La función ``set()`` es el constructor del tipo de :ref:`conjuntos <python_set>`,
+se usa crear un conjunto *mutable* mediante la misma función ``set()`` de un objeto
 iterable :ref:`lista <python_list>`:
 
 ::
@@ -2236,8 +2236,8 @@ iterable :ref:`lista <python_list>`:
 sorted()
 ~~~~~~~~
 
-La función ``sorted()`` devuelve una lista ordenada de los elementos del tipo secuencia 
-que recibe como argumento (lista o cadena de caracteres). La secuencia original no es 
+La función ``sorted()`` devuelve una lista ordenada de los elementos del tipo secuencia
+que recibe como argumento (lista o cadena de caracteres). La secuencia original no es
 modificada.
 
 ::
@@ -2246,7 +2246,7 @@ modificada.
     >>> sorted(lista)
     [7, 13, 23, 37]
 
-La función ``sorted()`` siempre devuelve una lista, aunque reciba como argumento una 
+La función ``sorted()`` siempre devuelve una lista, aunque reciba como argumento una
 :ref:`cadena de caracteres <python_str>`.
 
 ::
@@ -2260,9 +2260,9 @@ La función ``sorted()`` siempre devuelve una lista, aunque reciba como argument
 zip()
 ~~~~~
 
-La función ``zip()`` devuelve una lista de :ref:`tuplas <python_tuple>`, donde cada 
-tupla contiene el elemento i-th desde cada una de los tipos de secuencias de argumento. 
-La lista devuelta es truncada en longitud a la longitud de la secuencia de argumentos 
+La función ``zip()`` devuelve una lista de :ref:`tuplas <python_tuple>`, donde cada
+tupla contiene el elemento i-th desde cada una de los tipos de secuencias de argumento.
+La lista devuelta es truncada en longitud a la longitud de la secuencia de argumentos
 más corta.
 
 ::
@@ -2287,7 +2287,7 @@ Las funciones de objetos se describen a continuación:
 delattr()
 ~~~~~~~~~
 
-La función ``delattr()`` elimina un atributo con nombre en un objeto; 
+La función ``delattr()`` elimina un atributo con nombre en un objeto;
 ``delattr(x, 'y')`` es equivalente a ``del x.y``.
 
 ::
@@ -2298,7 +2298,7 @@ La función ``delattr()`` elimina un atributo con nombre en un objeto;
     ...     nombre = "Leonardo"
     ...     apellido = "Caballero"
     ...     sexo = "M"
-    ... 
+    ...
     >>> macagua = Persona()
     >>> macagua.sexo
     'M'
@@ -2314,9 +2314,9 @@ La función ``delattr()`` elimina un atributo con nombre en un objeto;
 getattr()
 ~~~~~~~~~
 
-La función ``getattr()`` obtiene un atributo nombrado desde un objeto; de la siguiente 
-forma ``getattr(instancia, 'atributo')``  el cual es equivalente a ``instancia.atributo``. 
-Cuando un argumento predeterminado es dato, es es devuelto cuando el atributo no existe; 
+La función ``getattr()`` obtiene un atributo nombrado desde un objeto; de la siguiente
+forma ``getattr(instancia, 'atributo')``  el cual es equivalente a ``instancia.atributo``.
+Cuando un argumento predeterminado es dato, es es devuelto cuando el atributo no existe;
 sin eso, una excepción es lanzada en ese caso.
 
 ::
@@ -2327,7 +2327,7 @@ sin eso, una excepción es lanzada en ese caso.
     ...     nombre = "Leonardo"
     ...     apellido = "Caballero"
     ...     sexo = "M"
-    ... 
+    ...
     >>> macagua = Persona()
     >>> getattr(macagua,'sexo')
     'M'
@@ -2339,8 +2339,8 @@ sin eso, una excepción es lanzada en ese caso.
 hasattr()
 ~~~~~~~~~
 
-La función ``hasattr()`` devuelve un tipo booleano cuando el objeto tiene un atributo 
-con el nombre dado. (Esta hecho llamando a la función ``getattr(instancia, atributo)`` 
+La función ``hasattr()`` devuelve un tipo booleano cuando el objeto tiene un atributo
+con el nombre dado. (Esta hecho llamando a la función ``getattr(instancia, atributo)``
 y capturar excepciones.)
 
 ::
@@ -2351,7 +2351,7 @@ y capturar excepciones.)
     ...     nombre = "Leonardo"
     ...     apellido = "Caballero"
     ...     sexo = "M"
-    ... 
+    ...
     >>> macagua = Persona()
     >>> hasattr(macagua, 'nombre')
     True
@@ -2370,7 +2370,7 @@ y capturar excepciones.)
 hash()
 ~~~~~~
 
-La función ``hash()`` devuelve un valor hash de tipo entero para el objeto. 
+La función ``hash()`` devuelve un valor hash de tipo entero para el objeto.
 
 ::
 
@@ -2380,7 +2380,7 @@ La función ``hash()`` devuelve un valor hash de tipo entero para el objeto.
     ...     nombre = "Leonardo"
     ...     apellido = "Caballero"
     ...     sexo = "M"
-    ... 
+    ...
     >>> macagua = Persona
     >>> type(macagua)
     <type 'classobj'>
@@ -2406,14 +2406,14 @@ Lo contrario no es necesariamente cierto, pero es probable.
 isinstance()
 ~~~~~~~~~~~~
 
-La función ``isinstance()`` le permite corroborar si un objeto es una 
-:ref:`instancia <python_instancias>` de una clase. 
+La función ``isinstance()`` le permite corroborar si un objeto es una
+:ref:`instancia <python_instancias>` de una clase.
 
 ::
 
     isinstance(objeto, tipo)
 
-Esta función devuelve ``True`` si el objeto especificado es del tipo especificado, 
+Esta función devuelve ``True`` si el objeto especificado es del tipo especificado,
 de lo contrario ``False``.
 
 Los parámetros son:
@@ -2431,7 +2431,7 @@ Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es 
+Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es
 uno de los tipos en la tupla.
 
 ::
@@ -2442,8 +2442,8 @@ uno de los tipos en la tupla.
 
 Aquí puede decir que ``persona1`` es una instancia de la clase ``Persona``.
 
-Las clases dan la posibilidad de crear estructuras de datos más complejas. En el 
-ejemplo, una clase ``Persona`` que realizará un seguimiento del ``cedula``, 
+Las clases dan la posibilidad de crear estructuras de datos más complejas. En el
+ejemplo, una clase ``Persona`` que realizará un seguimiento del ``cedula``,
 ``nombre``, ``apellido`` y ``sexo`` (que pasará como atributos).
 
 
@@ -2452,17 +2452,17 @@ ejemplo, una clase ``Persona`` que realizará un seguimiento del ``cedula``,
 issubclass()
 ~~~~~~~~~~~~
 
-La función ``issubclass()`` le permite corroborar si un objeto es instancia de una 
-clase. 
+La función ``issubclass()`` le permite corroborar si un objeto es instancia de una
+clase.
 
 ::
 
     issubclass(subclase, clase)
 
-Esta función devuelve ``True`` si la clase especificada es una subclase de la clase 
+Esta función devuelve ``True`` si la clase especificada es una subclase de la clase
 base, de lo contrario ``False``.
 
-Un ejemplo de uso con la subclase ``Supervisor`` que deriva de la clase ``Persona`` 
+Un ejemplo de uso con la subclase ``Supervisor`` que deriva de la clase ``Persona``
 seria como lo siguiente:
 
 ::
@@ -2472,7 +2472,7 @@ seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es 
+Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es
 uno de los tipos en la tupla.
 
 ::
@@ -2483,8 +2483,8 @@ uno de los tipos en la tupla.
 
 Aquí puede decir que ``sV1`` es una subclase derivada de la clase ``Persona``.
 
-Las clases dan la posibilidad de crear estructuras de datos más complejas. En el ejemplo, 
-una clase ``Persona`` que realizará un seguimiento del ``cedula``, ``nombre``, ``apellido`` 
+Las clases dan la posibilidad de crear estructuras de datos más complejas. En el ejemplo,
+una clase ``Persona`` que realizará un seguimiento del ``cedula``, ``nombre``, ``apellido``
 y ``sexo`` (que pasará como atributos).
 
 
@@ -2493,7 +2493,7 @@ y ``sexo`` (que pasará como atributos).
 setattr()
 ~~~~~~~~~
 
-La función ``setattr()`` establecer un atributo con nombre en un objeto; 
+La función ``setattr()`` establecer un atributo con nombre en un objeto;
 ``setattr(x, 'y', v)`` es equivalente a ``x.y = v``.
 
 ::
@@ -2504,7 +2504,7 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
     ...     nombre = "Leonardo"
     ...     apellido = "Caballero"
     ...     sexo = "M"
-    ... 
+    ...
     >>> setattr(macagua, 'email', 'leonardoc@plone.org')
     >>> getattr(macagua,'email')
     'leonardoc@plone.org'
@@ -2512,8 +2512,8 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
 
 .. important::
 
-    La lista de todas las funciones disponibles en el lenguaje Python con la descripción 
-    correspondiente se puede encontrar en la siguiente dirección URL: 
+    La lista de todas las funciones disponibles en el lenguaje Python con la descripción
+    correspondiente se puede encontrar en la siguiente dirección URL:
 
     - https://docs.python.org/es/3.7/library/functions.html
 

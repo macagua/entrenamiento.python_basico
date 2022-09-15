@@ -28,7 +28,7 @@ Te permite:
 
 .. topic:: **print**
 
-    Sí, las declaraciones ``print`` sirven como herramienta de depuración. 
+    Sí, las declaraciones ``print`` sirven como herramienta de depuración.
     Sin embargo, para inspeccionar en tiempo de ejecución es más
     eficiente usar el depurador.
 
@@ -59,16 +59,16 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     ---------------------------------------------------------------------------
     IndexError                                Traceback (most recent call last)
     /home/macagua/python/entrenamiento/index_error.py in <module>()
-          6 
+          6
           7 if __name__ == '__main__':
     ----> 8     index_error()
-          9 
+          9
 
     /home/macagua/python/entrenamiento/index_error.py in index_error()
           3 def index_error():
           4     lst = list('foobar')
     ----> 5     print(lst[len(lst)])
-          6 
+          6
           7 if __name__ == '__main__':
 
     IndexError: list index out of range
@@ -77,18 +77,18 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
           4     lst = list('foobar')
     ----> 5     print(lst[len(lst)])
-          6 
+          6
 
     ipdb> list
           1 """Small snippet to raise an IndexError."""
-          2 
+          2
           3 def index_error():
           4     lst = list('foobar')
     ----> 5     print(lst[len(lst)])
-          6 
+          6
           7 if __name__ == '__main__':
           8     index_error()
-          9 
+          9
 
     ipdb> len(lst)
     6
@@ -96,13 +96,13 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     r
     ipdb> quit
 
-    In [3]: 
+    In [3]:
 
 .. topic:: Depuración post-mortem sin ipython
 
    En algunas situaciones no podrás usar IPython, por ejemplo para depurar
    un `script` que ha sido llamado desde la línea de comandos. En este caso,
-   puedes ejecutar el `script` de la siguiente forma 
+   puedes ejecutar el `script` de la siguiente forma
    ``python3 -m pdb script.py``::
 
     python3 -m pdb index_error.py
@@ -126,7 +126,7 @@ En este caso esta depurando el fichero :download:`index_error.py <../../recursos
     Running 'cont' or 'step' will restart the program
     > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
     -> print(lst[len(lst)])
-    (Pdb) 
+    (Pdb)
 
 
 Ejecución paso a paso
@@ -156,7 +156,7 @@ está haciendo correctamente.
 
     ipdb> n
     > /home/macagua/python/entrenamiento/wiener_filtering.py(4)<module>()
-          3 
+          3
     1---> 4 import numpy as np
           5 import scipy as sp
 
@@ -206,7 +206,7 @@ está haciendo correctamente.
     [[5868 5379 5316 ..., 5071 4799 5149]
      [5013  363  437 ...,  346  262 4355]
      [5379  410  344 ...,  392  604 3377]
-     ..., 
+     ...,
      [ 435  362  308 ...,  275  198 1632]
      [ 548  392  290 ...,  248  263 1653]
      [ 466  789  736 ..., 1835 1725 1940]]
@@ -218,7 +218,7 @@ estamos haciendo aritmética con enteros.
 
 .. topic:: Lanzando excepciones en errores numéricos
 
-    Cuando ejecuta el fichero :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`, 
+    Cuando ejecuta el fichero :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`,
     se lanzarán los siguientes avisos:
 
     .. sourcecode:: ipython
@@ -238,7 +238,7 @@ estamos haciendo aritmética con enteros.
         In [4]: %run wiener_filtering.py
         ---------------------------------------------------------------------------
         FloatingPointError                        Traceback (most recent call last)
-        /home/macagua/venv/lib/python3.7/site-packages/IPython/utils/py3compat.pyc 
+        /home/macagua/venv/lib/python3.7/site-packages/IPython/utils/py3compat.pyc
         in execfile(fname, *where)
             176             else:
             177                 filename = fname
@@ -246,12 +246,12 @@ estamos haciendo aritmética con enteros.
 
         /home/macagua/python/entrenamiento/wiener_filtering.py in <module>()
              55 pl.matshow(noisy_lena[cut], cmap=pl.cm.gray)
-             56 
+             56
         ---> 57 denoised_lena = iterated_wiener(noisy_lena)
              58 pl.matshow(denoised_lena[cut], cmap=pl.cm.gray)
-             59 
+             59
 
-        /home/macagua/python/entrenamiento/wiener_filtering.py in 
+        /home/macagua/python/entrenamiento/wiener_filtering.py in
         iterated_wiener(noisy_img, size)
              38         res = noisy_img - denoised_img
              39         noise = (res**2).sum()/res.size
@@ -267,7 +267,7 @@ Otras formas de comenzar una depuración
 * **Lanzar una excepción "break point" a lo pobre**
 
   Si encuentras tedioso el tener que anotar el número de línea para colocar
-  un *break point*, puedes lanzar una excepción en el punto que quieres 
+  un *break point*, puedes lanzar una excepción en el punto que quieres
   inspeccionar y usar la 'magia' ``%debug`` de ``ipython``. Destacar que en este
   caso no puedes moverte por el código y continuar después la ejecución.
 
@@ -297,14 +297,14 @@ Otras formas de comenzar una depuración
 
 .. topic:: Depuradores gráficos y alternativas
 
-    * Quizá encuentres más conveniente usar un depurador gráfico como  
-      `winpdb <https://pypi.org/project/winpdb/>`_. para inspeccionar saltas a través del 
+    * Quizá encuentres más conveniente usar un depurador gráfico como
+      `winpdb <https://pypi.org/project/winpdb/>`_. para inspeccionar saltas a través del
       código e inspeccionar las variables
 
-    * De forma alternativa, `pudb <https://pypi.org/project/pudb>`_ es un 
+    * De forma alternativa, `pudb <https://pypi.org/project/pudb>`_ es un
       buen depurador semi-gráfico con una interfaz de texto en la consola.
 
-    * También, estaría bien echarle un ojo al proyecto 
+    * También, estaría bien echarle un ojo al proyecto
       `pydbgr <https://code.google.com/archive/p/pydbgr>`_
 
 Comandos del depurador e interacciones
@@ -324,7 +324,7 @@ Comandos del depurador e interacciones
 .. warning:: **Los comandos de depuración no son código Python**
 
     No puedes nombrar a las variables de la forma que quieras. Por ejemplo,
-    si esta dentro del depurador no podrá sobrescribir a las variables con el 
+    si esta dentro del depurador no podrá sobrescribir a las variables con el
     mismo y, por tanto, **habrá que usar diferentes nombres para las
     variables cuando este tecleando código en el depurador**.
 
@@ -359,17 +359,17 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic en los 
-    siguientes enlaces: :download:`index_error.py <../../recursos/leccion6/index_error.py>` 
-    y :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`. 
-    Adicional se incluye otro código de ejemplo muy simple 
-    :download:`funcion_a_depurar.py <../../recursos/leccion6/funcion_a_depurar.py>` 
+    Usted puede descargar el código usado en esta sección haciendo clic en los
+    siguientes enlaces: :download:`index_error.py <../../recursos/leccion6/index_error.py>`
+    y :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
+    Adicional se incluye otro código de ejemplo muy simple
+    :download:`funcion_a_depurar.py <../../recursos/leccion6/funcion_a_depurar.py>`
     usando la función ``set_trace()`` del paquete ``pdb``.
 
 
 .. tip::
-    Para ejecutar el código :file:`index_error.py`, :file:`wiener_filtering.py` 
-    y :file:`funcion_a_depurar.py`, abra una consola de comando, acceda al directorio 
+    Para ejecutar el código :file:`index_error.py`, :file:`wiener_filtering.py`
+    y :file:`funcion_a_depurar.py`, abra una consola de comando, acceda al directorio
     donde se encuentra ambos programas:
 
     ::
@@ -392,7 +392,7 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion6>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion6>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

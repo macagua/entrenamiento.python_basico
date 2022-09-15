@@ -6,9 +6,9 @@
 Distribución de Software
 ------------------------
 
-La distribución de código Python, le permite hacer portable de forma amigable usando 
-herramienta de gestión de paquetes Python como la herramienta ``pip``. Esta labor se 
-hace mediante el módulo :ref:`distutils <python_modulo_distutils>`, y más 
+La distribución de código Python, le permite hacer portable de forma amigable usando
+herramienta de gestión de paquetes Python como la herramienta ``pip``. Esta labor se
+hace mediante el módulo :ref:`distutils <python_modulo_distutils>`, y más
 reciente incorporando el módulo :ref:`setuptools <python_modulo_setuptools>`.
 
 
@@ -17,15 +17,15 @@ reciente incorporando el módulo :ref:`setuptools <python_modulo_setuptools>`.
 Módulo distutils
 ................
 
-Permite "empacar" el código de un proyecto de software para ser redistribuido en 
-otros proyectos Python. 
+Permite "empacar" el código de un proyecto de software para ser redistribuido en
+otros proyectos Python.
 
-Cada paquete empaquetado se puede distribuir en su propia pagina de proyecto y al 
-mismo tiempo puede optar a publicar su proyecto en el Python Package Index (PyPI), 
-con el cual si lo publica allí su proyecto estará a su alcance y sino de muchos mas 
+Cada paquete empaquetado se puede distribuir en su propia pagina de proyecto y al
+mismo tiempo puede optar a publicar su proyecto en el Python Package Index (PyPI),
+con el cual si lo publica allí su proyecto estará a su alcance y sino de muchos mas
 programadores, ya que es un repositorio de software publico, solo con ejecutar el
-comando ``pip3 install <paquete>`` lo convierte en una herramienta tremendamente útil 
-y probablemente sea una de las razones del éxito de Python entre los que empiezan 
+comando ``pip3 install <paquete>`` lo convierte en una herramienta tremendamente útil
+y probablemente sea una de las razones del éxito de Python entre los que empiezan
 a programar.
 
 
@@ -34,7 +34,7 @@ a programar.
 Módulo setuptools
 .................
 
-El módulo ``setuptools``, incorpora varias extensiones al módulo ``distutils`` para 
+El módulo ``setuptools``, incorpora varias extensiones al módulo ``distutils`` para
 distribuciones de software grandes o complejas.
 
 
@@ -43,7 +43,7 @@ distribuciones de software grandes o complejas.
 Estructura de proyecto
 ......................
 
-Para poder empaquetar un proyecto necesita como mínimo la estructura de archivos 
+Para poder empaquetar un proyecto necesita como mínimo la estructura de archivos
 siguiente:
 
 ::
@@ -66,16 +66,16 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 - ``DIRECTORIO-DEL-PROYECTO`` puede ser cualquiera, no afecta en absoluto, lo que
   cuenta es lo que hay dentro.
 
-- ``NOMBRE-DEL-PAQUETE`` tiene que ser el nombre del paquete, si el nombre es 
-  ``tostadas_pipo``, este directorio tiene que llamarse también ``tostadas_pipo``. 
+- ``NOMBRE-DEL-PAQUETE`` tiene que ser el nombre del paquete, si el nombre es
+  ``tostadas_pipo``, este directorio tiene que llamarse también ``tostadas_pipo``.
   Y esto es así. Dentro estarán todos los archivos que forman la librería.
 
-- ``LICENSE``: es el archivo donde se define los términos de licencia usado en su 
-  proyecto. Es muy importate que cada paquete cargado a PyPI incluirle una copia de 
-  los términos de licencia. Esto le dice a los usuario quien instala el paquete los 
-  términos bajos los cuales pueden usarlo en su paquete. Para ayuda a seleccionar 
-  una licencia, consulte https://choosealicense.com/. Una vez tenga seleccionado una 
-  licencia abra el archivo ``LICENSE`` e ingrese el texto de la licencia. Por ejemplo, 
+- ``LICENSE``: es el archivo donde se define los términos de licencia usado en su
+  proyecto. Es muy importate que cada paquete cargado a PyPI incluirle una copia de
+  los términos de licencia. Esto le dice a los usuario quien instala el paquete los
+  términos bajos los cuales pueden usarlo en su paquete. Para ayuda a seleccionar
+  una licencia, consulte https://choosealicense.com/. Una vez tenga seleccionado una
+  licencia abra el archivo ``LICENSE`` e ingrese el texto de la licencia. Por ejemplo,
   si usted elije la licencia GPL:
 
   ::
@@ -101,8 +101,8 @@ A continuación se detallan el significado y uso de la estructura de directorio 
     MA 02111-1307 USA.
 
 
-- ``MANIFEST.in``: es el archivo donde se define los criterios de inclusión 
-  y exclusión de archivos a su distribución de código fuente de su proyecto. 
+- ``MANIFEST.in``: es el archivo donde se define los criterios de inclusión
+  y exclusión de archivos a su distribución de código fuente de su proyecto.
   Este archivo incluye la configuración del paquete como se indica a continuación:
 
 
@@ -111,9 +111,9 @@ A continuación se detallan el significado y uso de la estructura de directorio 
     :lines: 1-7
 
 
-- ``README.txt``: es el archivo donde se define la documentación general del paquete, 
-  este archivo es importante debido a que no solo es usado localmente en un copia 
-  descargada, sino como información usada el en sitio de PyPI. Entonces abra el archivo 
+- ``README.txt``: es el archivo donde se define la documentación general del paquete,
+  este archivo es importante debido a que no solo es usado localmente en un copia
+  descargada, sino como información usada el en sitio de PyPI. Entonces abra el archivo
   ``README.txt`` e ingrese el siguiente contenido. Usted puede personalizarlo como quiera:
 
   ::
@@ -122,25 +122,25 @@ A continuación se detallan el significado y uso de la estructura de directorio 
     NOMBRE-DEL-PAQUETE
     ==================
 
-    Este es un ejemplo simple de un paquete Python. 
+    Este es un ejemplo simple de un paquete Python.
 
-    Usted puede usar para escribir este contenido la guía 
+    Usted puede usar para escribir este contenido la guía
     `Restructured Text (reST) and Sphinx CheatSheet <http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html>`_.
 
 
-- ``setup.py``: es el archivo donde se define el paquete, el formato es el mismo 
-  para el módulo :ref:`setuptools <python_modulo_setuptools>` y para el módulo 
-  :ref:`distutils <python_modulo_distutils>`. Lo puede ver a continuación. Este 
+- ``setup.py``: es el archivo donde se define el paquete, el formato es el mismo
+  para el módulo :ref:`setuptools <python_modulo_setuptools>` y para el módulo
+  :ref:`distutils <python_modulo_distutils>`. Lo puede ver a continuación. Este
   archivo incluye la configuración del paquete como se indica a continuación:
 
 .. literalinclude:: ../../recursos/leccion8/distribucion/setup.py
     :language: python
-    :lines: 1-43
+    :lines: 1-39
 
-Entonces debe cree la siguiente estructura de directorios, ya hecha para seguir 
+Entonces debe cree la siguiente estructura de directorios, ya hecha para seguir
 adelante:
 
-:: 
+::
 
     distribucion/
     ├── LICENSE
@@ -161,7 +161,7 @@ adelante:
 Construir dependencias
 ......................
 
-Para construir cualquier cosas requeridas para instalar el paquete, ejecutando 
+Para construir cualquier cosas requeridas para instalar el paquete, ejecutando
 el siguiente comando:
 
 ::
@@ -181,8 +181,8 @@ el siguiente comando:
     not copying tostadas_pipo/principal.py (output up-to-date)
     not copying tostadas_pipo/__init__.py (output up-to-date)
 
-De esta forma al terminar la ejecución del comando previo debe tener creado un 
-directorio llamado ``build`` e incluyendo el paquete ``tostadas_pipo`` construido 
+De esta forma al terminar la ejecución del comando previo debe tener creado un
+directorio llamado ``build`` e incluyendo el paquete ``tostadas_pipo`` construido
 con todo lo necesario para crear su distribución, como se muestra a continuación:
 
 ::
@@ -197,7 +197,7 @@ con todo lo necesario para crear su distribución, como se muestra a continuaci�
                 ├── impuestos.py
                 └── __init__.py
 
-De esta forma ya construyo el paquete ``tostadas_pipo``  y todas las cosas necesarias 
+De esta forma ya construyo el paquete ``tostadas_pipo``  y todas las cosas necesarias
 para crear su distribución de código fuente o binaria para su proyecto.
 
 
@@ -206,7 +206,7 @@ para crear su distribución de código fuente o binaria para su proyecto.
 Crear paquete
 ...............
 
-Usted puede crear diversos tipos de formatos de instalación y distribución de sus 
+Usted puede crear diversos tipos de formatos de instalación y distribución de sus
 paquetes Python, a continuación se describen los mas usados:
 
 
@@ -215,9 +215,9 @@ paquetes Python, a continuación se describen los mas usados:
 Distribución código fuente
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y 
-:ref:`distutils <python_modulo_distutils>` le permiten crear una distribución de código 
-fuente o source distribution (``sdist``) de su paquete en formatos como **tarball**, 
+Tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y
+:ref:`distutils <python_modulo_distutils>` le permiten crear una distribución de código
+fuente o source distribution (``sdist``) de su paquete en formatos como **tarball**,
 archivo **zip**, etc. Para crear una paquete ``sdist``, ejecute el siguiente comando:
 
 ::
@@ -269,8 +269,8 @@ archivo **zip**, etc. Para crear una paquete ``sdist``, ejecute el siguiente com
     Creating tar archive
     removing 'tostadas_pipo-0.1' (and everything under it)
 
-De esta forma al terminar la ejecución del comando previo debe tener creado un 
-directorio llamado ``dist`` e incluyendo el paquete en formato de archivo tarball 
+De esta forma al terminar la ejecución del comando previo debe tener creado un
+directorio llamado ``dist`` e incluyendo el paquete en formato de archivo tarball
 comprimido en *gztar*, como se muestra a continuación:
 
 ::
@@ -278,12 +278,12 @@ comprimido en *gztar*, como se muestra a continuación:
     dist/
     └── tostadas_pipo-0.1.tar.gz
 
-Por defecto, tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y 
-:ref:`distutils <python_modulo_distutils>` creá el paquete en formato de archivo tarball 
+Por defecto, tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y
+:ref:`distutils <python_modulo_distutils>` creá el paquete en formato de archivo tarball
 comprimido usando *gztar*.).
 
-Usted puede cambiar el formato de paquete a crear de su distribución de código fuente de 
-su paquete (en formato archivo **tarball**, archivo **zip**, etc.), ejecute el siguiente 
+Usted puede cambiar el formato de paquete a crear de su distribución de código fuente de
+su paquete (en formato archivo **tarball**, archivo **zip**, etc.), ejecute el siguiente
 comando:
 
 ::
@@ -346,8 +346,8 @@ comando:
     removing 'tostadas_pipo-0.1' (and everything under it)
 
 
-De esta forma al terminar la ejecución del comando previo debe tener creado un 
-directorio llamado ``dist`` e incluyendo los tres paquetes en formatos de archivos 
+De esta forma al terminar la ejecución del comando previo debe tener creado un
+directorio llamado ``dist`` e incluyendo los tres paquetes en formatos de archivos
 tarball comprimido en *gzip/bzip2* y archivo comprimido en *zip*.
 
 ::
@@ -357,7 +357,7 @@ tarball comprimido en *gzip/bzip2* y archivo comprimido en *zip*.
     ├── tostadas_pipo-0.1.tar.gz
     └── tostadas_pipo-0.1.zip
 
-De esta forma ya creo el(los) paquete(s) en diversos formato de distribución 
+De esta forma ya creo el(los) paquete(s) en diversos formato de distribución
 de código fuente para su proyecto.
 
 
@@ -366,9 +366,9 @@ de código fuente para su proyecto.
 Distribución binaria
 ~~~~~~~~~~~~~~~~~~~~
 
-El módulo :ref:`setuptools <python_modulo_setuptools>` y 
-:ref:`distutils <python_modulo_distutils>` le permiten crear una distribución binaria 
-construida o built "binary" distribution (``bdist``) de su paquete en formato **egg**, 
+El módulo :ref:`setuptools <python_modulo_setuptools>` y
+:ref:`distutils <python_modulo_distutils>` le permiten crear una distribución binaria
+construida o built "binary" distribution (``bdist``) de su paquete en formato **egg**,
 **wheel**, **rpm**, etc. A continuación se describen los mas usados:
 
 .. figure:: ../_images/python_eggs.jpg
@@ -381,7 +381,7 @@ construida o built "binary" distribution (``bdist``) de su paquete en formato **
 Egg
 ````
 
-Para crear una distribución ``bdist`` de su paquete en formato ``egg``, ejecute el 
+Para crear una distribución ``bdist`` de su paquete en formato ``egg``, ejecute el
 siguiente comando:
 
 ::
@@ -428,7 +428,7 @@ siguiente comando:
     creating 'dist/tostadas_pipo-0.1-py3.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
     removing 'build/bdist.linux-x86_64/egg' (and everything under it)
 
-De esta forma al terminar la ejecución del comando previo debe tener creado un 
+De esta forma al terminar la ejecución del comando previo debe tener creado un
 directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *egg*.
 
 ::
@@ -436,14 +436,14 @@ directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *
     dist/
     └── tostadas_pipo-0.1-py3.7.egg
 
-De esta forma ya creo la distribución ``bdist`` del paquete en formato *egg* para 
+De esta forma ya creo la distribución ``bdist`` del paquete en formato *egg* para
 su proyecto.
 
 
 Wheel
 `````
 
-Para crear una distribución ``bdist`` de su paquete en formato **wheel**, ejecute el 
+Para crear una distribución ``bdist`` de su paquete en formato **wheel**, ejecute el
 siguiente comando:
 
 ::
@@ -496,7 +496,7 @@ siguiente comando:
     removing build/bdist.linux-x86_64/wheel
 
 
-De esta forma al terminar la ejecución del comando previo debe tener creado un 
+De esta forma al terminar la ejecución del comando previo debe tener creado un
 directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *whl*.
 
 ::
@@ -505,7 +505,7 @@ directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *
     ├── tostadas_pipo-0.1-py3.7.egg
     └── tostadas_pipo-0.1-py3-none-any.whl
 
-De esta forma ya creo la distribución ``bdist`` del paquete en formato *whl* para 
+De esta forma ya creo la distribución ``bdist`` del paquete en formato *whl* para
 su proyecto.
 
 
@@ -514,7 +514,7 @@ su proyecto.
 Instalar paquete
 ................
 
-Para instalar el paquete de su proyecto, hay dos formas de instalación disponibles 
+Para instalar el paquete de su proyecto, hay dos formas de instalación disponibles
 a continuación:
 
 
@@ -523,7 +523,7 @@ a continuación:
 Instalar distribución código fuente
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Para instalar una distribución código fuente de su paquete previamente creado, se 
+Para instalar una distribución código fuente de su paquete previamente creado, se
 realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 ::
@@ -537,7 +537,7 @@ Si al ejecutar el comando anterior muestra el mensaje:
       pip
       bash: pip: no se encontró la orden
 
-Esto es debido a que no tiene instalado dicha herramienta, así que debe ejecutar 
+Esto es debido a que no tiene instalado dicha herramienta, así que debe ejecutar
 el siguiente comando:
 
 ::
@@ -558,7 +558,7 @@ De nuevo vuelva a ejecutar en su consola de comando el comando:
     Successfully installed tostadas-pipo-0.1
 
 
-De esta forma tiene instalado una distribución código fuente en formato **tarball** 
+De esta forma tiene instalado una distribución código fuente en formato **tarball**
 de su paquete en el interprete Python usando la herramienta ``pip``.
 
 
@@ -567,7 +567,7 @@ de su paquete en el interprete Python usando la herramienta ``pip``.
 Instalar distribución binaria
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Para instalar una distribución binaria de su paquete previamente creado, se 
+Para instalar una distribución binaria de su paquete previamente creado, se
 realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 ::
@@ -577,7 +577,7 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
     Installing collected packages: tostadas-pipo
     Successfully installed tostadas-pipo-0.1
 
-De esta forma tiene instalado una distribución binaria en formato **wheel** de su 
+De esta forma tiene instalado una distribución binaria en formato **wheel** de su
 paquete en el interprete Python usando la herramienta ``pip``.
 
 ----
@@ -670,14 +670,14 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
     Finished processing dependencies for tostadas-pipo==0.1
 
 
-De esta forma tiene instalado su paquete en su interprete Python usando el comando ``install`` 
+De esta forma tiene instalado su paquete en su interprete Python usando el comando ``install``
 disponible con el script ``setup.py``.
 
 ----
 
 .. warning::
 
-    Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado en el 
+    Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado en el
     directorio ``$HOME/.local/lib/python3.7/site-packages/``.
 
 ----
@@ -687,7 +687,7 @@ disponible con el script ``setup.py``.
 Comprobar la instalación
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Usted puede comprobar luego de realizar la instalación de la distribución de código fuente 
+Usted puede comprobar luego de realizar la instalación de la distribución de código fuente
 o binaria de su paquete, ejecute el siguiente comando:
 
 ::
@@ -695,7 +695,7 @@ o binaria de su paquete, ejecute el siguiente comando:
     pip3 list --user --format=freeze | grep "tostadas"
     tostadas-pipo==0.1
 
-De esta forma la herramienta de gestión de paquete indica que el ``tostadas-pipo`` en su 
+De esta forma la herramienta de gestión de paquete indica que el ``tostadas-pipo`` en su
 versión **0.1** esta instalado en su interprete Python.
 
 
@@ -704,17 +704,17 @@ versión **0.1** esta instalado en su interprete Python.
 Usar paquete
 ............
 
-Usar el paquete ``tostadas_pipo-0.1``, recuerde que debe usarlo como una librería, 
-entonces puede probar el correcto funcionamiento del paquete, importando este, 
+Usar el paquete ``tostadas_pipo-0.1``, recuerde que debe usarlo como una librería,
+entonces puede probar el correcto funcionamiento del paquete, importando este,
 ejecutando el siguiente comando:
 
 ::
 
     python3 -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print("Función importada " + impuesto_iva14.__doc__[1:36] + ".")'
-    Función importada Calcula el impuesto del IVA de 14 %.
+    Función importada Calcula el impuesto del IVA de 14%.
 
-El comando previo muestra la :ref:`docstring <python_str_docstrings>` de la 
-función importada ``impuesto_iva14`` sino muestra ningún mensaje de error, el 
+El comando previo muestra la :ref:`docstring <python_str_docstrings>` de la
+función importada ``impuesto_iva14`` sino muestra ningún mensaje de error, el
 paquete ``tostadas_pipo-0.1`` se instalo correctamente.
 
 
@@ -751,18 +751,18 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
       Successfully uninstalled tostadas-pipo-0.1
 
 
-``pip`` esta habilitado a desinstalar la mayoría de paquetes instalados. Las excepciones 
+``pip`` esta habilitado a desinstalar la mayoría de paquetes instalados. Las excepciones
 conocidas son:
 
-- Los paquetes basado en solamente en el módulo :ref:`distutils <python_modulo_distutils>` los 
-  cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python setup.py install`` 
-  desde el :ref:`código del paquete <python_distro_install_source_pkg>`. 
+- Los paquetes basado en solamente en el módulo :ref:`distutils <python_modulo_distutils>` los
+  cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python setup.py install``
+  desde el :ref:`código del paquete <python_distro_install_source_pkg>`.
 
   Instalándolo de esta forma, al momento de desintalarlo usando el comando ``pip3 uninstall tostadas_pipo``
   este comando removerá solo la metadata, no detrás dejando de la instalación metadata para
   determinar que archivos fueron instalados.
 
-  Entonces para solventar este problema tiene que ir manualmente al directorio ``site-packages`` a 
+  Entonces para solventar este problema tiene que ir manualmente al directorio ``site-packages`` a
   eliminar manualmente el paquete que instalo.
 
   .. warning::
@@ -773,11 +773,11 @@ conocidas son:
 
 .. comments:
 
-    Si alguno de esos casos previos es el suyo, debe seguir los siguientes pasos para eliminar 
+    Si alguno de esos casos previos es el suyo, debe seguir los siguientes pasos para eliminar
     manualmente el paquete instalado:
 
-    #. Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado 
-       en el directorio ``$HOME/.local/lib/python3.7/site-packages/`` puede verificar 
+    #. Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado
+       en el directorio ``$HOME/.local/lib/python3.7/site-packages/`` puede verificar
        su correcta instalación, ejecute el siguiente comando:
 
         ::
@@ -786,8 +786,8 @@ conocidas son:
             tostadas_pipo/
             tostadas_pipo-0.1.egg-info/
 
-    #. Para eliminar el paquete usando la herramienta ``pip``, ejecute el siguiente 
-       comando: 
+    #. Para eliminar el paquete usando la herramienta ``pip``, ejecute el siguiente
+       comando:
 
         ::
 
@@ -798,11 +798,11 @@ conocidas son:
             Proceed (y/n)? y
               Successfully uninstalled tostadas-pipo-0.1
 
-       Aunque ``pip`` indique **Successfully uninstalled tostadas-pipo-0.1**, no es cierto, 
-       solo removió el directorio ``tostadas_pipo-0.1.egg-info`` y dejo instalado el 
+       Aunque ``pip`` indique **Successfully uninstalled tostadas-pipo-0.1**, no es cierto,
+       solo removió el directorio ``tostadas_pipo-0.1.egg-info`` y dejo instalado el
        directorio del paquete ``tostadas_pipo``.
 
-    #. Luego de ejecutar el comando previo, puede verificar si aun instalado el paquete 
+    #. Luego de ejecutar el comando previo, puede verificar si aun instalado el paquete
        parcialmente, con el siguiente comando:
 
         ::
@@ -810,25 +810,25 @@ conocidas son:
             ls -p $HOME/.local/lib/python3.7/site-packages/ | grep "tostadas_pipo"
             tostadas_pipo/
 
-       Si el comando previo muestra el resultado **tostadas_pipo**, es el directorio del 
-       paquete ``tostadas_pipo``, el cual no se ha eliminado. 
+       Si el comando previo muestra el resultado **tostadas_pipo**, es el directorio del
+       paquete ``tostadas_pipo``, el cual no se ha eliminado.
 
-    #. Entonces tiene que eliminar manualmente el directorio aun encontrado ejecutando el 
+    #. Entonces tiene que eliminar manualmente el directorio aun encontrado ejecutando el
        siguiente comando:
 
         ::
 
             rm -rf $HOME/.local/lib/python3.7/site-packages/tostadas_pipo
 
-    #. Al ejecutar el comando previo, de nuevo verifique que ya fue eliminado de su sistema, 
+    #. Al ejecutar el comando previo, de nuevo verifique que ya fue eliminado de su sistema,
        ejecutando el siguiente comando:
 
         ::
 
             ls -p $HOME/.local/lib/python3.7/site-packages/ | grep "tostadas_pipo"
 
-       Si el comando previo, no muestra el resultado **tostadas_pipo**, es el directorio del 
-       paquete ``tostadas_pipo``, fue eliminado completamente de su sistema. 
+       Si el comando previo, no muestra el resultado **tostadas_pipo**, es el directorio del
+       paquete ``tostadas_pipo``, fue eliminado completamente de su sistema.
 
 De esta forma ya tiene eliminado su paquete de forma manual de su sistema.
 
@@ -837,8 +837,8 @@ De esta forma ya tiene eliminado su paquete de forma manual de su sistema.
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la ayuda comandos disponibles del módulo 
-:ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>`, 
+Usted puede consultar toda la ayuda comandos disponibles del módulo
+:ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>`,
 ejecute el comando siguiente:
 
 ::
@@ -889,7 +889,7 @@ ejecute el comando siguiente:
        or: setup.py --help-commands
        or: setup.py cmd --help
 
-Para consultar toda la ayuda del módulo :ref:`setuptools <python_modulo_setuptools>` 
+Para consultar toda la ayuda del módulo :ref:`setuptools <python_modulo_setuptools>`
 y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 ::
@@ -900,22 +900,22 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección, haciendo clic en el 
+    Usted puede descargar el código usado en esta sección, haciendo clic en el
     siguiente enlace: :download:`distribucion.zip <../../recursos/leccion8/distribucion.zip>`.
 
 
 .. tip::
-    Para poder definir un instalador y construirlo para así poder hacer que su proyecto 
-    se pueda distribuir de forma más fácil debe crear la 
-    :ref:`estructura de proyecto <python_estructura_proyecto>` usando el código descomprimido 
-    del archivo :file:`distribucion.zip`, siga los pasos para construir los archivos, 
+    Para poder definir un instalador y construirlo para así poder hacer que su proyecto
+    se pueda distribuir de forma más fácil debe crear la
+    :ref:`estructura de proyecto <python_estructura_proyecto>` usando el código descomprimido
+    del archivo :file:`distribucion.zip`, siga los pasos para construir los archivos,
     crear el instalador y probar su instalación.
 
 ----
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

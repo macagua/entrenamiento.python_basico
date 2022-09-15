@@ -14,14 +14,14 @@ El diccionario, define una relación uno a uno entre claves y valores.
 | ``dict``  | Mapeos   | Mutable, sin orden. | ``{'cms':"Plone", 'version':5}`` |
 +-----------+----------+---------------------+----------------------------------+
 
-Un objeto *mapping* mapea valores *hashable* a objetos arbitrariamente. Los objetos 
-Mapeos son objetos mutable. El **diccionario** es el único tipo de mapeo estándar 
-actual. Para otro contenedores ver los integrados en las clases ":ref:`lista <python_list>`", 
-":ref:`conjuntos <python_set>`", y ":ref:`tupla <python_tuple>`", y el modulo 
+Un objeto *mapping* mapea valores *hashable* a objetos arbitrariamente. Los objetos
+Mapeos son objetos mutable. El **diccionario** es el único tipo de mapeo estándar
+actual. Para otro contenedores ver los integrados en las clases ":ref:`lista <python_list>`",
+":ref:`conjuntos <python_set>`", y ":ref:`tupla <python_tuple>`", y el modulo
 "``collections``".
 
-Los diccionarios pueden ser creados colocando una lista separada por coma de pares 
-"key:value" entre ``{}``, por ejemplo: "``{'python': 27, 'plone': 51}``" o 
+Los diccionarios pueden ser creados colocando una lista separada por coma de pares
+"key:value" entre ``{}``, por ejemplo: "``{'python': 27, 'plone': 51}``" o
 "``{27:'python', 51:'plone'}``", o por el constructor ":ref:`dict() <python_fun_dict>`".
 
 
@@ -34,10 +34,10 @@ Los diccionarios pueden ser creados colocando una lista separada por coma de par
     ...     "clave4":[1,2,3,4]
     ... }
     >>> print(diccionario, type(diccionario))
-    {'clave4': [1, 2, 3, 4], 'clave1': 234, 
+    {'clave4': [1, 2, 3, 4], 'clave1': 234,
     'clave3': 'Valor 1', 'clave2': True} <type 'dict'>
 
-Usted puede acceder a los valores del diccionario usando cada su clave, se presenta 
+Usted puede acceder a los valores del diccionario usando cada su clave, se presenta
 unos ejemplos a continuación:
 
 ::
@@ -51,9 +51,9 @@ unos ejemplos a continuación:
     >>> diccionario['clave4']
     [1, 2, 3, 4]
 
-Un diccionario puede almacenar los diversos tipos de datos integrados en Python usando 
-la función :ref:`type() <python_fun_type>`, usted puede pasar el diccionario con la 
-clave que usted desea determinar el tipo de dato, se presenta unos ejemplos a 
+Un diccionario puede almacenar los diversos tipos de datos integrados en Python usando
+la función :ref:`type() <python_fun_type>`, usted puede pasar el diccionario con la
+clave que usted desea determinar el tipo de dato, se presenta unos ejemplos a
 continuación:
 
 ::
@@ -73,8 +73,8 @@ continuación:
 Operaciones
 ...........
 
-Los objetos de tipo **diccionario** permite una serie de operaciones usando operadores 
-integrados en el interprete Python para su tratamiento, a continuación algunos de 
+Los objetos de tipo **diccionario** permite una serie de operaciones usando operadores
+integrados en el interprete Python para su tratamiento, a continuación algunos de
 estos:
 
 
@@ -83,7 +83,7 @@ estos:
 Acceder a valor de clave
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Esta operación le permite acceder a un valor especifico del *diccionario* mediante su 
+Esta operación le permite acceder a un valor especifico del *diccionario* mediante su
 clave.
 
 ::
@@ -98,7 +98,7 @@ clave.
 Asignar valor a clave
 ~~~~~~~~~~~~~~~~~~~~~
 
-Esta operación le permite asignar el valor especifico del *diccionario* mediante su 
+Esta operación le permite asignar el valor especifico del *diccionario* mediante su
 clave.
 
 ::
@@ -117,7 +117,7 @@ clave.
 Iteración in
 ~~~~~~~~~~~~
 
-Este operador es el mismo operador integrado :ref:`in <python_opers_in>` en el 
+Este operador es el mismo operador integrado :ref:`in <python_opers_in>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
 ::
@@ -130,7 +130,7 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
     >>> 'flask' in versiones
     False
 
-En el ejemplo anterior este operador devuelve ``True`` si la clave esta en el diccionario 
+En el ejemplo anterior este operador devuelve ``True`` si la clave esta en el diccionario
 ``versiones``, de lo contrario devuelve ``False``.
 
 
@@ -139,7 +139,7 @@ En el ejemplo anterior este operador devuelve ``True`` si la clave esta en el di
 Métodos
 .......
 
-Los objetos de tipo **diccionario** integra una serie de métodos integrados a 
+Los objetos de tipo **diccionario** integra una serie de métodos integrados a
 continuación:
 
 
@@ -180,7 +180,7 @@ Este método devuelve una copia superficial del tipo **diccionario**:
 fromkeys()
 ~~~~~~~~~~
 
-Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de dato 
+Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de dato
 *secuencia*. El valor de ``value`` por defecto es el tipo :ref:`None <python_obj_none>`.
 
 ::
@@ -190,7 +190,7 @@ Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de d
     >>> print("Nuevo Diccionario : %s" %  str(versiones))
     Nuevo Diccionario : {'python': None, 'zope': None, 'plone': None}
 
-En el ejemplo anterior inicializa los valores de cada clave a ``None``, mas puede 
+En el ejemplo anterior inicializa los valores de cada clave a ``None``, mas puede
 inicializar un *valor* común por defecto para cada *clave*:
 
 ::
@@ -205,8 +205,8 @@ inicializar un *valor* común por defecto para cada *clave*:
 get()
 ~~~~~
 
-Este método devuelve el valor en base a una coincidencia de búsqueda en un diccionario 
-mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_none>`. 
+Este método devuelve el valor en base a una coincidencia de búsqueda en un diccionario
+mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_none>`.
 
 ::
 
@@ -222,7 +222,7 @@ mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_no
 has_key()
 ~~~~~~~~~
 
-Este método devuelve el valor ``True`` si el diccionario tiene presente la clave 
+Este método devuelve el valor ``True`` si el diccionario tiene presente la clave
 enviada como argumento.
 
 ::
@@ -253,8 +253,8 @@ Este método devuelve una lista de pares de diccionarios (clave, valor), como 2 
 iteritems()
 ~~~~~~~~~~~
 
-Este método devuelve un :ref:`iterador <python_iter>` sobre los elementos (clave, valor) 
-del diccionario. Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` 
+Este método devuelve un :ref:`iterador <python_iter>` sobre los elementos (clave, valor)
+del diccionario. Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>`
 si llega al final de la posición del **diccionario**.
 
 ::
@@ -266,7 +266,7 @@ si llega al final de la posición del **diccionario**.
     <dictionary-itemiterator object at 0x7fab9dd4bc58>
     >>> for clave,valor in versiones.iteritems():
     ...     print( )clave,valor)
-    ... 
+    ...
     zope 5.5.2
     python 3.7
     plone 6.0
@@ -288,8 +288,8 @@ si llega al final de la posición del **diccionario**.
 iterkeys()
 ~~~~~~~~~~
 
-Este método devuelve un :ref:`iterador <python_iter>` sobre las claves del diccionario. 
-Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al 
+Este método devuelve un :ref:`iterador <python_iter>` sobre las claves del diccionario.
+Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al
 final de la posición del **diccionario**.
 
 ::
@@ -301,7 +301,7 @@ final de la posición del **diccionario**.
     <dictionary-keyiterator object at 0x7fab9dd4bcb0>
     >>> for clave in versiones.iterkeys():
     ...     print(clave)
-    ... 
+    ...
     zope
     python
     plone
@@ -323,8 +323,8 @@ final de la posición del **diccionario**.
 itervalues()
 ~~~~~~~~~~~~
 
-Este método devuelve un :ref:`iterador <python_iter>` sobre los valores del diccionario. 
-Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al 
+Este método devuelve un :ref:`iterador <python_iter>` sobre los valores del diccionario.
+Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al
 final de la posición del **diccionario**.
 
 ::
@@ -336,7 +336,7 @@ final de la posición del **diccionario**.
     <dictionary-valueiterator object at 0x7fab9dd4bc58>
     >>> for valor in versiones.itervalues():
     ...     print(valor)
-    ... 
+    ...
     5.5.2
     3.7
     6.0
@@ -372,8 +372,8 @@ Este método devuelve una lista de las claves del diccionario:
 pop()
 ~~~~~
 
-Este método remueve específicamente una clave de **diccionario** y devuelve valor 
-correspondiente. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` 
+Este método remueve específicamente una clave de **diccionario** y devuelve valor
+correspondiente. Lanza una excepción :ref:`KeyError <python_exception_keyerror>`
 si la **clave** no es encontrada.
 
 ::
@@ -396,8 +396,8 @@ si la **clave** no es encontrada.
 popitem()
 ~~~~~~~~~
 
-Este método remueve y devuelve algún par (clave, valor) del **diccionario** como 
-una 2 tuplas. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si 
+Este método remueve y devuelve algún par (clave, valor) del **diccionario** como
+una 2 tuplas. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si
 el **diccionario** esta vació.
 
 ::
@@ -428,15 +428,15 @@ el **diccionario** esta vació.
 setdefault()
 ~~~~~~~~~~~~
 
-Este método es similar a :ref:`get(key, default_value) <python_dict_mtd_get>`, pero además 
-asigna la clave ``key`` al valor por ``default_value`` para la clave si esta no se encuentra 
+Este método es similar a :ref:`get(key, default_value) <python_dict_mtd_get>`, pero además
+asigna la clave ``key`` al valor por ``default_value`` para la clave si esta no se encuentra
 en el **diccionario**.
 
 ::
 
     D.setdefault(key[,default_value])
 
-A continuación un ejemplo de como trabaja el método ``setdefault()`` cuando la clave 
+A continuación un ejemplo de como trabaja el método ``setdefault()`` cuando la clave
 esta en el diccionario:
 
 ::
@@ -448,7 +448,7 @@ esta en el diccionario:
     >>> print('Versión de Zope:', zope)
     Versión de Zope: 5.5.2
 
-A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta 
+A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta
 en el diccionario:
 
 ::
@@ -463,9 +463,9 @@ en el diccionario:
     plone:  None
 
 Si el valor no es proveído, el valor ``default_value`` será el tipo objeto integrado
-:ref:`None <python_obj_none>`. 
+:ref:`None <python_obj_none>`.
 
-A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta 
+A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta
 en el diccionario pero esta vez el ``default_value`` es proveído:
 
 ::
@@ -479,9 +479,9 @@ en el diccionario pero esta vez el ``default_value`` es proveído:
     >>> print('django =', django)
     django = 4.1
 
-A continuación otro ejemplo en donde puedes agrupar N :ref:`tuplas <python_tuple>` 
-por el valor el cual se repite más y construir un diccionario que cuyas claves son 
-los valores mas repetidos y cuyos valores este agrupados en tipo 
+A continuación otro ejemplo en donde puedes agrupar N :ref:`tuplas <python_tuple>`
+por el valor el cual se repite más y construir un diccionario que cuyas claves son
+los valores mas repetidos y cuyos valores este agrupados en tipo
 :ref:`listas <python_list>`:
 
 ::
@@ -491,20 +491,20 @@ los valores mas repetidos y cuyos valores este agrupados en tipo
     ...        ('plone', 'Plone'),
     ...        ('plone', 'diazo'),
     ...        ('plone', 'z3c.form'),)
-    >>> 
+    >>>
     >>> paquetes = {}
     >>> for clave, valor in PKGS:
     ...     if paquetes.has_key(clave):
     ...         paquetes[clave].append(valor)
     ...     else:
     ...         paquetes[clave] = [valor]
-    ... 
+    ...
     >>> print(paquetes)
     {'zope': ['Zope2', 'pytz'], 'plone': ['Plone', 'diazo', 'z3c.form']}
 
-En el tipo tupla ``PKGS`` los elementos mas repetidos son ``'zope'`` y ``'plone'`` 
-estos se convierten en clave del diccionario ``paquetes`` y los otros elementos se 
-agrepan en listas como sus respectivos valores. 
+En el tipo tupla ``PKGS`` los elementos mas repetidos son ``'zope'`` y ``'plone'``
+estos se convierten en clave del diccionario ``paquetes`` y los otros elementos se
+agrepan en listas como sus respectivos valores.
 
 A continuación un mejor aprovechamiento implementando el método ``setdefault()``:
 
@@ -518,11 +518,11 @@ A continuación un mejor aprovechamiento implementando el método ``setdefault()
     >>> paquetes = {}
     >>> for clave, valor in PKGS:
     ...     paquetes.setdefault(clave, []).append(valor)
-    ... 
+    ...
     >>> print(paquetes)
     {'zope': ['Zope2', 'pytz'], 'plone': ['Plone', 'diazo', 'z3c.form']}
 
-En el ejemplo anterior puede ver que el aprovechamiento del método ``setdefault()`` 
+En el ejemplo anterior puede ver que el aprovechamiento del método ``setdefault()``
 a comparación de no usar el respectivo método.
 
 
@@ -531,11 +531,11 @@ a comparación de no usar el respectivo método.
 update()
 ~~~~~~~~
 
-Este método actualiza un **diccionario** agregando los pares clave-valores en un 
+Este método actualiza un **diccionario** agregando los pares clave-valores en un
 segundo diccionario. Este método no devuelve nada.
 
-El método ``update()`` toma un diccionario o un objeto iterable de pares clave/valor 
-(generalmente tuplas). Si se llama a ``update()`` sin pasar parámetros, el diccionario 
+El método ``update()`` toma un diccionario o un objeto iterable de pares clave/valor
+(generalmente tuplas). Si se llama a ``update()`` sin pasar parámetros, el diccionario
 permanece sin cambios.
 
 ::
@@ -548,8 +548,8 @@ permanece sin cambios.
     {'django': 4.1}
     >>> versiones.update(versiones_adicional)
 
-Como puede apreciar este método no devuelve nada, más si muestra de nuevo el diccionario 
-``versiones`` puede ver que este fue actualizado con el otro diccionario 
+Como puede apreciar este método no devuelve nada, más si muestra de nuevo el diccionario
+``versiones`` puede ver que este fue actualizado con el otro diccionario
 ``versiones_adicional``.
 
 ::
@@ -577,7 +577,7 @@ Este método devuelve una lista de los valores del diccionario:
 viewitems()
 ~~~~~~~~~~~
 
-Este método devuelve un objeto como un conjunto mutable proveyendo una vista en los 
+Este método devuelve un objeto como un conjunto mutable proveyendo una vista en los
 elementos del diccionario:
 
 ::
@@ -587,7 +587,7 @@ elementos del diccionario:
     dict_keys(['zope', 'python', 'plone'])
     >>> for clave,valor in versiones.iteritems():
     ...     print(clave,valor)
-    ... 
+    ...
     zope 5.5.2
     python 3.7
     plone 6.0
@@ -607,7 +607,7 @@ Este método devuelve un objeto proveyendo una vista de las claves del **diccion
     dict_keys(['zope', 'python', 'plone'])
     >>> for clave in versiones.viewkeys():
     ...     print(clave)
-    ... 
+    ...
     zope
     python
     plone
@@ -627,7 +627,7 @@ Este método devuelve un objeto proveyendo una vista de los valores del **diccio
     dict_values([5.5.2, 3.7, 6.0])
     >>> for valor in versiones.viewvalues():
     ...     print(valor)
-    ... 
+    ...
     5.5.2
     3.7
     6.0
@@ -638,8 +638,8 @@ Este método devuelve un objeto proveyendo una vista de los valores del **diccio
 Funciones
 .........
 
-Los objetos de tipo **diccionario** tienen disponibles una serie de *funciones* 
-integradas en el interprete Python para su tratamiento, a continuación algunas 
+Los objetos de tipo **diccionario** tienen disponibles una serie de *funciones*
+integradas en el interprete Python para su tratamiento, a continuación algunas
 de estas:
 
 .. _python_dict_fun_cmp:
@@ -647,7 +647,7 @@ de estas:
 cmp()
 ~~~~~
 
-Esta función es la misma función integrada :ref:`cmp() <python_fun_cmp>` en el 
+Esta función es la misma función integrada :ref:`cmp() <python_fun_cmp>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
 ::
@@ -657,10 +657,10 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
     >>> print(cmp(versiones_proyecto1, versiones_proyecto2))
     1
 
-La función ``cmp()`` es usado en Python para comparar valores y claves de dos 
-diccionarios. Si la función devuelve el valor ``0`` si ambos diccionarios son 
-igual, devuelve el valor ``1`` si el primer diccionario es mayor que el segundo 
-diccionario y devuelve el valor ``-1`` si el primer diccionario es menor que el 
+La función ``cmp()`` es usado en Python para comparar valores y claves de dos
+diccionarios. Si la función devuelve el valor ``0`` si ambos diccionarios son
+igual, devuelve el valor ``1`` si el primer diccionario es mayor que el segundo
+diccionario y devuelve el valor ``-1`` si el primer diccionario es menor que el
 segundo diccionario.
 
 
@@ -669,7 +669,7 @@ segundo diccionario.
 len()
 ~~~~~
 
-Esta función es la misma función integrada :ref:`len() <python_fun_len>` en el 
+Esta función es la misma función integrada :ref:`len() <python_fun_len>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
 ::
@@ -684,8 +684,8 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 Sentencias
 ..........
 
-Los objetos de tipo **diccionario** tienen disponibles una serie de *sentencias* 
-integradas en el interprete Python para su tratamiento, a continuación algunas 
+Los objetos de tipo **diccionario** tienen disponibles una serie de *sentencias*
+integradas en el interprete Python para su tratamiento, a continuación algunas
 de estas:
 
 .. _python_dict_snt_del:
@@ -693,7 +693,7 @@ de estas:
 del
 ~~~
 
-Esta sentencia es la misma sentencia integrada :ref:`del <python_sent_del>` en el 
+Esta sentencia es la misma sentencia integrada :ref:`del <python_sent_del>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
 ::
@@ -705,18 +705,18 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
     >>> print(versiones)
     {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
 
-En el código fuente anterior se usa la sentencia ``del`` para eliminar un elemento del 
+En el código fuente anterior se usa la sentencia ``del`` para eliminar un elemento del
 diccionario mediante su respectiva clave.
 
 
 Convertir a diccionarios
 ........................
 
-Para convertir a *tipos diccionarios* debe usar la función :ref:`dict() <python_fun_dict>` 
+Para convertir a *tipos diccionarios* debe usar la función :ref:`dict() <python_fun_dict>`
 la cual :ref:`esta integrada <python_fun_builtins>` en el interprete Python.
 
-.. tip:: 
-    Para más información consulte las funciones integradas para 
+.. tip::
+    Para más información consulte las funciones integradas para
     :ref:`operaciones de secuencias <python_fun_builtins_secuencias>`.
 
 
@@ -755,7 +755,7 @@ A continuación, se presentan un ejemplo de su uso:
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la documentación disponible sobre los **diccionarios** 
+Usted puede consultar toda la documentación disponible sobre los **diccionarios**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
 ::
@@ -764,12 +764,12 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion3/tipo_diccionarios.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`tipo_diccionarios.py`, abra una consola de comando, 
+    Para ejecutar el código :file:`tipo_diccionarios.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     ::
@@ -779,7 +779,7 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

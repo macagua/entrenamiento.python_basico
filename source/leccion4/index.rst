@@ -6,12 +6,12 @@
 Bloques de código y estructuras de control
 ==========================================
 
-En Python tiene las estructuras de control como ``if`` (``elif``, ``else``); ``for``, 
-``while`` (``else``, ``break``, ``continue``, ``pass``); las funciones 
-:ref:`range() <python_fun_range>` y :ref:`xrange() <python_fun_xrange>`; ademas de los 
+En Python tiene las estructuras de control como ``if`` (``elif``, ``else``); ``for``,
+``while`` (``else``, ``break``, ``continue``, ``pass``); las funciones
+:ref:`range() <python_fun_range>` y :ref:`xrange() <python_fun_xrange>`; ademas de los
 tipos :ref:`iteradores <python_iter>`.
 
-En esta lección se describen las estructuras de control del lenguaje Python, mostrando 
+En esta lección se describen las estructuras de control del lenguaje Python, mostrando
 ejemplos prácticos y útiles. A continuación el temario de esta lección:
 
 

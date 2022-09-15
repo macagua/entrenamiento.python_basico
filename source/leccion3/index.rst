@@ -6,14 +6,14 @@
 Tipos y estructuras de datos
 ============================
 
-En Python tiene varios tipos de datos *compuestos* estándar disponibles por defecto en 
-el interprete, como los tipos *numéricos*, *secuencias*, *mapeos* y *conjuntos* usados 
+En Python tiene varios tipos de datos *compuestos* estándar disponibles por defecto en
+el interprete, como los tipos *numéricos*, *secuencias*, *mapeos* y *conjuntos* usados
 para agrupar otros valores.
 
-Para el caso de las estructuras de datos se usan variables y constantes las cuales usan 
+Para el caso de las estructuras de datos se usan variables y constantes las cuales usan
 operadores para tratar los tipos de datos estándar.
 
-En esta lección se describen las variables, operadores y sus tipos de datos en el lenguaje 
+En esta lección se describen las variables, operadores y sus tipos de datos en el lenguaje
 Python, los cuales se resumieron en esta tabla. A continuación el temario de esta lección:
 
 .. toctree::

@@ -6,7 +6,7 @@
 Operadores lógicos
 ------------------
 
-Estos son los distintos tipos de operadores con los que puede trabajar con valores 
+Estos son los distintos tipos de operadores con los que puede trabajar con valores
 booleanos, los llamados operadores lógicos o condicionales:
 
 
@@ -48,7 +48,7 @@ El operador ``not`` devuelve el valor *opuesto* la valor booleano.
     >>> not True
     False
 
-Si la expresión es ``True`` el valor devuelto es ``False``, de lo contrario si la 
+Si la expresión es ``True`` el valor devuelto es ``False``, de lo contrario si la
 expresión es ``False`` el valor devuelto es ``True``.
 
 ::
@@ -96,12 +96,12 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion4/operadores_logicos.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`operadores_logicos.py`, abra una consola de comando, 
+    Para ejecutar el código :file:`operadores_logicos.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     ::
@@ -113,7 +113,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

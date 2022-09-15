@@ -6,11 +6,11 @@
 Módulos, paquetes y distribución de software
 ============================================
 
-En Python las diversas aplicaciones Python se encuentran dentro de módulos y paquetes 
+En Python las diversas aplicaciones Python se encuentran dentro de módulos y paquetes
 los cuales los contienen el sistema de ficheros.
 
 En esta lección se describen como crear módulos y paquetes, luego se enseña a usar las
-practicas de scaffolding de paquetes Python con mecanismo de instalación, mostrando 
+practicas de scaffolding de paquetes Python con mecanismo de instalación, mostrando
 ejemplos prácticos y útiles. A continuación el temario de esta lección:
 
 .. toctree::

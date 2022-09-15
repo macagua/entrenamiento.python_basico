@@ -57,7 +57,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
     :scale: 60%
     :width: 60%
 
-    Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas <https://www.youtube.com/watch?v=ZrxcqbFYjiw>`_, 
+    Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas <https://www.youtube.com/watch?v=ZrxcqbFYjiw>`_,
     cortesía de `CodigoFacilito.com`_.
 
 

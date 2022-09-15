@@ -6,10 +6,10 @@
 Polimorfismo
 ------------
 
-La técnica de polimorfismo de la :ref:`POO <python_poo>` significa la 
-capacidad de tomar más de una forma. Una operación puede presentar diferentes 
-comportamientos en diferentes instancias. El comportamiento depende de los 
-tipos de datos utilizados en la operación. El polimorfismo es ampliamente 
+La técnica de polimorfismo de la :ref:`POO <python_poo>` significa la
+capacidad de tomar más de una forma. Una operación puede presentar diferentes
+comportamientos en diferentes instancias. El comportamiento depende de los
+tipos de datos utilizados en la operación. El polimorfismo es ampliamente
 utilizado en la aplicación de la herencia.
 
 .. todo::
@@ -21,10 +21,10 @@ utilizado en la aplicación de la herencia.
 Sobrecarga de métodos
 .....................
 
-La *sobrecarga de métodos* es también es conocida por *Overriding Methods*, 
-le permite sustituir un método proveniente de la Clase Base, en la Clase 
-Derivada debe definir un método con la **misma forma** (es decir, mismo 
-nombre de método y mismo número de parámetros que como está definido en la 
+La *sobrecarga de métodos* es también es conocida por *Overriding Methods*,
+le permite sustituir un método proveniente de la Clase Base, en la Clase
+Derivada debe definir un método con la **misma forma** (es decir, mismo
+nombre de método y mismo número de parámetros que como está definido en la
 Clase Base).
 
 ::
@@ -34,25 +34,25 @@ Clase Base).
     ...         self.cedula = 13765890
     ...     def mensaje(self):
     ...         print("mensaje desde la clase Persona")
-    ... 
+    ...
     >>> class Obrero(Persona):
     ...     def __init__(self):
     ...         self.__especialista = 1
     ...     def mensaje(self):
     ...         print("mensaje desde la clase Obrero")
-    ... 
+    ...
     >>> obrero_planta = Obrero()
     >>> obrero_planta.mensaje()
     mensaje desde la clase Obrero
-    >>> 
+    >>>
 
 
-Lo que se logra definiendo el método ``mensaje()`` en la Clase Derivada 
-(``Obrero``) se conoce como **Método Overriding** (cuando se cree el objeto 
-(en este caso ``obrero_planta`` y se llame al método ``mensaje()``, este será 
-tomado de la propia clase y no de la Clase Base ``Persona``). Si **comenta 
-o borra** el método ``mensaje()`` de la clase ``Obrero`` (Clase Derivada) 
-y corre nuevamente el código, el método llamado será el ``mensaje()`` de la 
+Lo que se logra definiendo el método ``mensaje()`` en la Clase Derivada
+(``Obrero``) se conoce como **Método Overriding** (cuando se cree el objeto
+(en este caso ``obrero_planta`` y se llame al método ``mensaje()``, este será
+tomado de la propia clase y no de la Clase Base ``Persona``). Si **comenta
+o borra** el método ``mensaje()`` de la clase ``Obrero`` (Clase Derivada)
+y corre nuevamente el código, el método llamado será el ``mensaje()`` de la
 Clase Base ``Persona``.
 
 
@@ -61,8 +61,8 @@ Clase Base ``Persona``.
 Sobrecarga de Operadores
 ........................
 
-La *sobrecarga de operadores* es también es conocida por *Overloading Operators*, 
-trata básicamente de lo mismo que la **sobrecarga de métodos** pero pertenece en 
+La *sobrecarga de operadores* es también es conocida por *Overloading Operators*,
+trata básicamente de lo mismo que la **sobrecarga de métodos** pero pertenece en
 esencia al ámbito de los operadores aritméticos, binarios, de comparación y lógicos.
 
 ::
@@ -75,7 +75,7 @@ esencia al ámbito de los operadores aritméticos, binarios, de comparación y l
     ...         x = self.x + other.x
     ...         y = self.y + other.y
     ...         return x, y
-    ... 
+    ...
     >>> punto1 = Punto(4,6)
     >>> punto2 = Punto(1,-2)
     >>> print(punto1 + punto2)
@@ -86,7 +86,7 @@ esencia al ámbito de los operadores aritméticos, binarios, de comparación y l
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

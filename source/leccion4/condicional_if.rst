@@ -6,8 +6,8 @@
 Condicional if
 --------------
 
-La sentencia condicional ``if`` se usa para tomar decisiones, este evaluá básicamente 
-una operación lógica, es decir una expresión que de como resultado ``True`` o ``False``, 
+La sentencia condicional ``if`` se usa para tomar decisiones, este evaluá básicamente
+una operación lógica, es decir una expresión que de como resultado ``True`` o ``False``,
 y ejecuta la pieza de código siguiente siempre y cuando el resultado sea verdadero.
 
 A continuación un de estructura condicional ``if``/``elif``/``else`` completo:
@@ -18,17 +18,17 @@ A continuación un de estructura condicional ``if``/``elif``/``else`` completo:
 
 En el ejemplo anterior usa dos funciones integradas en el interprete Python:
 
-- La función :ref:`int() <python_fun_int>` que convierte el valor ingresado a número 
+- La función :ref:`int() <python_fun_int>` que convierte el valor ingresado a número
   entero.
 
-- La función :ref:`input() <python_fun_input>` lee el valor ingresado por la 
+- La función :ref:`input() <python_fun_input>` lee el valor ingresado por la
   entrada estándar.
 
-El valor es ingresado en la variable ``numero`` comprobará en el sentencia condicional 
-``if``, si la comprobación devuelve ``False`` intentará con el siguiente bloque 
-condicional ``elif``, si la comprobación devuelve ``False`` nuevamente intentará con el 
-siguiente bloque condicional ``elif`` si de nuevo la comprobación devuelve ``False`` por 
-ultimo intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin 
+El valor es ingresado en la variable ``numero`` comprobará en el sentencia condicional
+``if``, si la comprobación devuelve ``False`` intentará con el siguiente bloque
+condicional ``elif``, si la comprobación devuelve ``False`` nuevamente intentará con el
+siguiente bloque condicional ``elif`` si de nuevo la comprobación devuelve ``False`` por
+ultimo intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
 comprobación.
 
 
@@ -37,8 +37,8 @@ comprobación.
 Sentencia if
 ............
 
-La sentencia ``if EXPRESION``, significa, **Si** se cumple la 
-:ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 
+La sentencia ``if EXPRESION``, significa, **Si** se cumple la
+:ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de
 sentencias seguidas.
 
 
@@ -47,8 +47,8 @@ sentencias seguidas.
 Sentencia elif
 ..............
 
-La sentencia ``elif EXPRESION``, significa, **De lo contrario Si** se cumple la 
-:ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de 
+La sentencia ``elif EXPRESION``, significa, **De lo contrario Si** se cumple la
+:ref:`expresión condicional <python_expresiones_condicional>` se ejecuta el bloque de
 sentencias seguidas.
 
 
@@ -57,8 +57,8 @@ sentencias seguidas.
 Sentencia else
 ..............
 
-La sentencia ``else``, significa, **De lo contrario** se cumple sin evaluar ninguna 
-:ref:`expresión condicional <python_expresiones_condicional>` y ejecuta el bloque de 
+La sentencia ``else``, significa, **De lo contrario** se cumple sin evaluar ninguna
+:ref:`expresión condicional <python_expresiones_condicional>` y ejecuta el bloque de
 sentencias seguidas.
 
 
@@ -67,7 +67,7 @@ sentencias seguidas.
 Operador is
 ...........
 
-El operador ``is``, significa, que prueba identidad: ambos lados de la expresión 
+El operador ``is``, significa, que prueba identidad: ambos lados de la expresión
 condicional debe ser el mismo objecto:
 
 ::
@@ -84,7 +84,7 @@ condicional debe ser el mismo objecto:
 Operador in
 ...........
 
-El operador ``in``, significa, para cualquier colección del valor del lado izquierdo 
+El operador ``in``, significa, para cualquier colección del valor del lado izquierdo
 contenga el valor del lado derecho:
 
 ::
@@ -95,7 +95,7 @@ contenga el valor del lado derecho:
     >>> 5 in b
     False
 
-En el ejemplo anterior, si ``b`` es una lista, este prueba que ``2`` y ``5`` sean 
+En el ejemplo anterior, si ``b`` es una lista, este prueba que ``2`` y ``5`` sean
 elementos de la lista ``b``.
 
 
@@ -104,7 +104,7 @@ elementos de la lista ``b``.
 Operador not in
 ................
 
-El operador ``not in``, el contrario de operador :ref:`in <python_opers_in>`, devuelve 
+El operador ``not in``, el contrario de operador :ref:`in <python_opers_in>`, devuelve
 ``True`` cuando un elemento no está en una secuencia.
 
 ::
@@ -115,7 +115,7 @@ El operador ``not in``, el contrario de operador :ref:`in <python_opers_in>`, de
     >>> 1 not in b
     False
 
-En el ejemplo anterior, si ``b`` es una lista, este prueba que ``4`` y ``1`` sean 
+En el ejemplo anterior, si ``b`` es una lista, este prueba que ``4`` y ``1`` sean
 elementos de la lista ``b``.
 
 
@@ -130,13 +130,13 @@ Estos son los distintos tipos de expresiones condicionales:
 Expresión if
 ~~~~~~~~~~~~
 
-La expresión de la sentencia ``if`` se evaluá a ``False`` cuando se cumple las 
+La expresión de la sentencia ``if`` se evaluá a ``False`` cuando se cumple las
 siguientes expresiones están presente:
 
 - Cualquier numero igual a cero (0, 0.0, 0+0j).
 
-- Un contenedor vació (:ref:`lista <python_list>`, :ref:`tupla <python_tuple>`, 
-  :ref:`conjunto <python_set>`, :ref:`diccionario <python_dict>`). 
+- Un contenedor vació (:ref:`lista <python_list>`, :ref:`tupla <python_tuple>`,
+  :ref:`conjunto <python_set>`, :ref:`diccionario <python_dict>`).
 
 - ``False``, ``None``.
 
@@ -234,13 +234,13 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion4/condicional_if.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`condicional_if.py`, abra una 
-    consola de comando, acceda al directorio donde se encuentra el mismo, 
+    Para ejecutar el código :file:`condicional_if.py`, abra una
+    consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
     ::
@@ -252,7 +252,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

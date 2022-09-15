@@ -6,9 +6,9 @@
 Inmersión al modo interactivo
 -----------------------------
 
-La *inmersión al modo interactivo* le permite a cualquier usuario el cual **NUNCA** 
-ha trabajando con el interprete de `Python`_ pueda tener un primer acercamiento 
-**SIN PROGRAMAR**, solamente con conocer el uso del interprete y sus comandos básicos 
+La *inmersión al modo interactivo* le permite a cualquier usuario el cual **NUNCA**
+ha trabajando con el interprete de `Python`_ pueda tener un primer acercamiento
+**SIN PROGRAMAR**, solamente con conocer el uso del interprete y sus comandos básicos
 usando la técnica de introspección.
 
 .. _python_introspeccion:
@@ -16,9 +16,9 @@ usando la técnica de introspección.
 Introspección en Python
 .......................
 
-En Python como usted lo ira entendiendo **todo en Python es un objeto**, y la 
-técnica de introspección, no es más que código el cual examina como objetos 
-otros módulos y funciones en memoria, obtiene información sobre ellos y los 
+En Python como usted lo ira entendiendo **todo en Python es un objeto**, y la
+técnica de introspección, no es más que código el cual examina como objetos
+otros módulos y funciones en memoria, obtiene información sobre ellos y los
 que los maneja.
 
 De paso, usted podrá definir las funciones sin nombre, las llamará a
@@ -36,7 +36,7 @@ factores:
   introspección del lenguaje.
 
 - Disponibilidad de consultar la documentación del lenguaje desde el
-  interprete, por mucho tiempo no estaba disponible documentación tipo 
+  interprete, por mucho tiempo no estaba disponible documentación tipo
   `Javadoc`_ o `diagramas de clases`_ del propio lenguaje por lo cual
   muchas programadores **Python** se acostumbraron a estudiar su código de
   esta forma, así que le recomiendo que use el interprete ``python`` para
@@ -46,12 +46,12 @@ factores:
   documentación desde los códigos fuentes Python como `Sphinx`_.
 
 La forma mas fácil es iniciar tu relación con Python simplemente ejecutando
-el comando ``python`` de la siguiente forma: 
+el comando ``python`` de la siguiente forma:
 
-.. code-block:: python
+.. code-block:: pycon
 
     python3
-    Python 3.7.3 (default, Jan 22 2021, 20:04:44) 
+    Python 3.7.3 (default, Jan 22 2021, 20:04:44)
     [GCC 8.3.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
@@ -59,7 +59,7 @@ el comando ``python`` de la siguiente forma:
 
 Puede solicitar la ayudar del interprete de Python, ejecutando:
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> help
     Type help() for interactive help, or help(object) for help about object.
@@ -83,7 +83,7 @@ Puede solicitar la ayudar del interprete de Python, ejecutando:
 Para ejecutar la ayuda disponible sobre la sintaxis Python ejecute el
 siguiente comando:
 
-.. code-block:: python
+.. code-block:: pycon
 
     help> modules
 
@@ -232,7 +232,7 @@ Seguidamente presione la combinación de tecla **Crtl+d** para salir de la ayuda
 Luego realice la importación de la `librería del estándar`_ Python llamada
 ``os``, con el siguiente comando:
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> import os
     >>>
@@ -242,7 +242,7 @@ Previamente importada la librería usted puede usar la función ``dir()`` para
 listar o descubrir que atributos, métodos de la clase están disponibles con
 la importación
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> dir(os)
     ['EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 'EX_NOHOST',
@@ -287,7 +287,7 @@ la importación
 Otro ejemplo de uso, es poder usar el método ``file`` para determinar la
 ubicación de la librería importada de la siguiente forma:
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> os.__file__
     '/usr/lib/python3.7/os.pyc'
@@ -296,7 +296,7 @@ ubicación de la librería importada de la siguiente forma:
 También puede consultar la documentación de la librería ``os`` ejecutando el
 siguiente comando:
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> print(os.__doc__)
     OS routines for NT or Posix depending on what system we're on.
@@ -325,7 +325,7 @@ siguiente comando:
 
 Ejecute el comando exit() para salir del interprete...
 
-.. code-block:: python
+.. code-block:: pycon
 
     >>> exit()
 
@@ -360,7 +360,7 @@ Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 .. code-block:: sh
 
     ipython
-    Python 2.7.16 (default, Oct 10 2019, 22:02:15) 
+    Python 2.7.16 (default, Oct 10 2019, 22:02:15)
     Type "copyright", "credits" or "license" for more information.
 
     IPython 5.10.0 -- An enhanced Interactive Python.
@@ -375,7 +375,7 @@ Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
 ``dir`` y se ejecuta de la siguiente forma:
 
-.. code-block:: python
+.. code-block:: pycon
 
     In [1]: help(dir)
     Help on built-in function dir in module __builtin__:
@@ -384,7 +384,7 @@ Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
         dir([object]) -> list of strings
 
         Return an alphabetized list of names comprising (some of) the
-        attributes of the given object, and of attributes reachable 
+        attributes of the given object, and of attributes reachable
         from it:
 
         No argument:  the names in the current scope.
@@ -400,7 +400,7 @@ Entonces presione la tecla **q** para salir de la ayuda de la función ``dir()``
 De nuevo realice la importación de la librería del estándar Python llamada
 ``os``.
 
-.. code-block:: python
+.. code-block:: pycon
 
     In [2]: import os
 
@@ -439,11 +439,11 @@ la librería ``os`` ejecutando el siguiente comando:
 
 
 Escriba la librería *os.* y luego escribe dos **underscore** y presione *dos
-veces la tecla tabular* para usar la completado automático del interprete al 
+veces la tecla tabular* para usar la completado automático del interprete al
 `estilo de completación de lineas de comandos`_ en el shell UNIX/Linux para
 ayudar a la introspección del lenguaje y sus librerías.
 
-.. code-block:: python
+.. code-block:: pycon
 
     In [3]: os.__
     os.__all__      os.__file__
@@ -454,7 +454,7 @@ ayudar a la introspección del lenguaje y sus librerías.
 De nuevo ejecute el método ``file`` para determinar la ubicación de la
 librería importada
 
-.. code-block:: python
+.. code-block:: pycon
 
     In [4]: os.__file__
     Out[4]: '/usr/lib/python3.7/os.pyc'
@@ -493,8 +493,8 @@ Otro ejemplo es imprimir el **nombre de la clase** con el siguiente comando:
 
 .. code-block:: python
 
-    In [6]: os.__name__
-    Out[6]: 'os'
+    In[6]: os.__name__
+    Out[6]: "os"
 
 
 Y otra forma de consultar la documentación de la librería ``os`` es
@@ -549,7 +549,7 @@ Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 Interprete bpython
 ..................
 
-Alternativamente puedes usar el paquete `bpython` que mejora aun mas la experiencia 
+Alternativamente puedes usar el paquete `bpython` que mejora aun mas la experiencia
 de trabajo con el paquete `ipython`.
 
 Para mayor información visite su página principal de `interprete bpython`_ y si necesita instalar
@@ -566,12 +566,12 @@ Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 .. code-block:: sh
 
     bpython
-    
 
-Dentro de interprete Python puede apreciar que ofrece otra forma de presentar 
+
+Dentro de interprete Python puede apreciar que ofrece otra forma de presentar
 la documentación y la estructura del lenguaje, con los siguientes comandos de ejemplos:
 
-.. code-block:: python
+.. code-block:: ipython
 
     >>> print('Hola Mundo')
     Hola Mundo
@@ -592,9 +592,9 @@ Conclusiones
 ............
 
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
-aprender a conocer como manejarse en shell de Python y en el modo interactivo 
-usando el paquete ``ipython`` y otros adicionales como ``bpython``, con el fin 
-de conocer a través de la introspección del lenguaje, las librerías estándar y 
+aprender a conocer como manejarse en shell de Python y en el modo interactivo
+usando el paquete ``ipython`` y otros adicionales como ``bpython``, con el fin
+de conocer a través de la introspección del lenguaje, las librerías estándar y
 módulos propios escritos en Python que tienes instalado en tu sistema.
 
 
@@ -602,7 +602,7 @@ módulos propios escritos en Python que tienes instalado en tu sistema.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion2>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion2>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
@@ -612,7 +612,7 @@ módulos propios escritos en Python que tienes instalado en tu sistema.
 .. disqus::
 
 
-.. _`Python`: https://www.python.org/ 
+.. _`Python`: https://www.python.org/
 .. _`Javadoc`: https://es.wikipedia.org/wiki/Javadoc
 .. _`diagramas de clases`: https://es.wikipedia.org/wiki/Diagrama_de_clases
 .. _`Sphinx`: https://en.wikipedia.org/wiki/Sphinx_%28documentation_generator%29

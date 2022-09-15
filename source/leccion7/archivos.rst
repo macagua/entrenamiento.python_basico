@@ -6,10 +6,10 @@
 Manipulación de archivos
 ------------------------
 
-Para escribir o leer cadenas de caracteres para/desde archivos (otros tipos deben ser 
-convertidas a cadenas de caracteres). Para esto Python incorpora un tipo integrado 
-llamado :ref:`file <python_cls_file>`, el cual es manipulado mediante un objeto archivo 
-el cual fue generado a través de una función integrada en Python, a continuación se 
+Para escribir o leer cadenas de caracteres para/desde archivos (otros tipos deben ser
+convertidas a cadenas de caracteres). Para esto Python incorpora un tipo integrado
+llamado :ref:`file <python_cls_file>`, el cual es manipulado mediante un objeto archivo
+el cual fue generado a través de una función integrada en Python, a continuación se
 describen los procesos típicos y sus referencias a funciones propias del lenguaje:
 
 
@@ -18,7 +18,7 @@ describen los procesos típicos y sus referencias a funciones propias del lengua
 Abrir archivo
 .............
 
-La forma preferida para abrir un archivo es usando la función integrada 
+La forma preferida para abrir un archivo es usando la función integrada
 :ref:`open() <python_fun_open>`.
 
 
@@ -27,9 +27,9 @@ La forma preferida para abrir un archivo es usando la función integrada
 Leer archivo
 ............
 
-La forma preferida para leer un archivo es usando algunas de los métodos del tipo objeto 
-:ref:`file <python_cls_file>` como :ref:`read() <python_mtd_read>`, 
-:ref:`readline() <python_mtd_readline>` y :ref:`readlines() <python_mtd_readlines>`. 
+La forma preferida para leer un archivo es usando algunas de los métodos del tipo objeto
+:ref:`file <python_cls_file>` como :ref:`read() <python_mtd_read>`,
+:ref:`readline() <python_mtd_readline>` y :ref:`readlines() <python_mtd_readlines>`.
 
 
 .. _python_escribir_archivo:
@@ -37,7 +37,7 @@ La forma preferida para leer un archivo es usando algunas de los métodos del ti
 Escribir archivo
 ................
 
-La forma preferida para escribir un archivo es usando el método del tipo objeto 
+La forma preferida para escribir un archivo es usando el método del tipo objeto
 :ref:`file <python_cls_file>` llamado :ref:`write() <python_mtd_write>`.
 
 
@@ -46,7 +46,7 @@ La forma preferida para escribir un archivo es usando el método del tipo objeto
 Cerrar archivo
 ..............
 
-La forma preferida para cerrar un archivo es usando el método del tipo objeto 
+La forma preferida para cerrar un archivo es usando el método del tipo objeto
 :ref:`file <python_cls_file>` llamado :ref:`close() <python_mtd_close>`.
 
 
@@ -55,14 +55,14 @@ La forma preferida para cerrar un archivo es usando el método del tipo objeto
 Archivos con modulo os
 ......................
 
-El módulo ``os`` de Python le permite a usted realizar operaciones dependiente del 
-*Sistema Operativo* como crear una carpeta, listar contenidos de una carpeta, conocer 
-acerca de un proceso, finalizar un proceso, etc. Este módulo tiene métodos para ver 
-variables de entornos del *Sistema Operativo* con las cuales Python esta trabajando 
-en mucho más. `Aquí <https://docs.python.org/es/3.7/library/os.html>`_ la documentación 
+El módulo ``os`` de Python le permite a usted realizar operaciones dependiente del
+*Sistema Operativo* como crear una carpeta, listar contenidos de una carpeta, conocer
+acerca de un proceso, finalizar un proceso, etc. Este módulo tiene métodos para ver
+variables de entornos del *Sistema Operativo* con las cuales Python esta trabajando
+en mucho más. `Aquí <https://docs.python.org/es/3.7/library/os.html>`_ la documentación
 Python para el módulo ``os``.
 
-A continuación algunos útiles métodos del módulo ``os`` que pueden ayudar a manipular 
+A continuación algunos útiles métodos del módulo ``os`` que pueden ayudar a manipular
 archivos y carpeta en su programa Python:
 
 Crear una nueva carpeta
@@ -170,7 +170,7 @@ Eliminar una carpeta
       File "<stdin>", line 1, in <module>
     OSError: [Errno 2] No such file or directory: 'Ana_Carolina'
 
-Lanza una excepción :ref:`OSError <python_exception_oserror>` cuando intenta acceder 
+Lanza una excepción :ref:`OSError <python_exception_oserror>` cuando intenta acceder
 al directorio que previamente elimino y este no encuentra.
 
 
@@ -179,7 +179,7 @@ al directorio que previamente elimino y este no encuentra.
 Ejemplos de archivos
 ....................
 
-A continuación, se presentan algunos ejemplos del uso del tipo objeto 
+A continuación, se presentan algunos ejemplos del uso del tipo objeto
 :ref:`file <python_cls_file>`:
 
 **Ejemplo de iterar un archivo para leerlo**
@@ -191,8 +191,8 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
     >>> archivo = open('datos.txt', 'r')
     >>> for linea in archivo:
     ...     print(linea)
-    ... 
-    Este es una prueba 
+    ...
+    Este es una prueba
 
     y otra prueba
     >>> archivo.close()
@@ -200,20 +200,20 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
 
 **Ejemplo de iterar un archivo con escritura y lectura**
 
-Usted puede manipular un archivo con permisos de escritura y lectura, ademas de 
+Usted puede manipular un archivo con permisos de escritura y lectura, ademas de
 interactuar de el mismo como se muestra a continuación:
 
 
 .. literalinclude:: ../../recursos/leccion7/archivo.py
     :language: python
-    :lines: 6-48
+    :lines: 6-46
 
 
 Ayuda integrada
 ...............
 
-Usted puede consultar toda la documentación disponible sobre los tipos objeto 
-:ref:`file <python_cls_file>` desde la :ref:`consola interactiva <python_interactivo>` 
+Usted puede consultar toda la documentación disponible sobre los tipos objeto
+:ref:`file <python_cls_file>` desde la :ref:`consola interactiva <python_interactivo>`
 de la siguiente forma:
 
 ::
@@ -224,12 +224,12 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic 
+    Usted puede descargar el código usado en esta sección haciendo clic
     :download:`aquí <../../recursos/leccion7/archivo.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`archivo.py`, abra una consola de comando, acceda al 
+    Para ejecutar el código :file:`archivo.py`, abra una consola de comando, acceda al
     directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     ::
@@ -239,7 +239,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` del 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` del
     entrenamiento para ampliar su conocimiento en esta temática.
 
 

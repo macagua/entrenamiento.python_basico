@@ -28,16 +28,16 @@ existente diversos *esqueletos* orientados a tipos de desarrollos específicos.
 ¿Qué es PasteScript?
 ....................
 
-Es una herramienta de linea de comando basada en plugins que le permiten crear 
-estructuras de paquetes de proyectos Python además sirve aplicaciones web, con 
+Es una herramienta de linea de comando basada en plugins que le permiten crear
+estructuras de paquetes de proyectos Python además sirve aplicaciones web, con
 configuraciones basadas en `paste.deploy`_.
 
 
 Instalación
 ~~~~~~~~~~~
 
-Dentro de su `entorno virtual`_ activado debe instalar el paquete `PasteScript`_, 
-ejecutando el siguiente comando: 
+Dentro de su `entorno virtual`_ activado debe instalar el paquete `PasteScript`_,
+ejecutando el siguiente comando:
 
 .. code-block:: sh
 
@@ -47,12 +47,12 @@ ejecutando el siguiente comando:
 
   No olvidar que estos paquetes han sido instalados con el entorno virtual que
   previamente usted activo, eso quiere decir que los paquetes previamente
-  instalados con `easy_install`_ están instalados en el 
-  directorio :file:`~/virtualenv/venv/lib/python3.x/site-packages/` en ves del 
+  instalados con `easy_install`_ están instalados en el
+  directorio :file:`~/virtualenv/venv/lib/python3.x/site-packages/` en ves del
   directorio de su versión de Python de sistema :file:`/usr/lib/python3.x/site-packages/`
 
 Al finalizar la instalación podrá opcionalmente consultar cuales plantillas
-tiene disponible para usa, ejecutando el siguiente comando: 
+tiene disponible para usa, ejecutando el siguiente comando:
 
 .. code-block:: sh
 
@@ -95,7 +95,7 @@ Usted puede usar el comando :command:`paster` para crear paquetes Python.
     Running /home/macagua/virtualenv/venv/bin/python setup.py egg_info
 
 Usted puede verificar el paquete previamente creado y observará como este
-paquete básico ha habilitado el `Setuptools`_. 
+paquete básico ha habilitado el `Setuptools`_.
 
 .. code-block:: sh
 
@@ -120,15 +120,15 @@ Para instalar este paquete ejecute el siguiente comando:
   (venv)$ cd mipaquetepython/mipaquetepython/
   (venv)$ vim app.py
 
-Escriba un simple código que solicita un valor y luego lo muestra: 
+Escriba un simple código que solicita un valor y luego lo muestra:
 
 .. code-block:: python
 
   var = input("Introduzca alguna frase: ")
   print("Usted introdujo: ", var)
 
-Guarde los cambios en el archivo :file:`app.py`, luego importe su aplicación 
-:file:`app.py` en el archivo :file:`__init__.py` con el siguiente código fuente: 
+Guarde los cambios en el archivo :file:`app.py`, luego importe su aplicación
+:file:`app.py` en el archivo :file:`__init__.py` con el siguiente código fuente:
 
 .. code-block:: python
 
@@ -140,10 +140,10 @@ Para comprobar su instalación ejecute el siguiente comando:
 
   (venv)$ python
 
-Y realice una importación del paquete ``mipaquetepython`` ejecutando 
-el siguiente comando: 
+Y realice una importación del paquete ``mipaquetepython`` ejecutando
+el siguiente comando:
 
-.. code-block:: python
+.. code-block:: pycon
 
   >>> import mipaquetepython
   Introduzca alguna frase: Esta cadena
@@ -170,17 +170,17 @@ A continuación se muestran algunos esqueletos útiles:
 
   .. note::
       `Django`_, es un Framework Web Python, de propósito general.
-      
-  - `django-project-templates`_, plantillas Paster para crear proyectos 
+
+  - `django-project-templates`_, plantillas Paster para crear proyectos
     Django.
 
-  - `fez.djangoskel`_, es una colección de plantillas Paster para crear 
+  - `fez.djangoskel`_, es una colección de plantillas Paster para crear
     aplicaciones Django como :term:`paquetes Egg`.
 
-  - `django-harness`_, es una aplicación destinada a simplificar las 
-    tareas típicas relacionadas con la creación de un sitio web hechos 
-    con Django, el mantenimiento de varias instalaciones (local, producción, 
-    etc) y cuidando su instalación global y su estructura de "esqueleto" 
+  - `django-harness`_, es una aplicación destinada a simplificar las
+    tareas típicas relacionadas con la creación de un sitio web hechos
+    con Django, el mantenimiento de varias instalaciones (local, producción,
+    etc) y cuidando su instalación global y su estructura de "esqueleto"
     actualizado del sitio de manera fácil.
 
   - `lfc-skel`_, Provee una plantilla para crear una aplicación `django-lfc`_ CMS.
@@ -189,27 +189,27 @@ A continuación se muestran algunos esqueletos útiles:
 
   .. note::
       `Pylons`_, es un Framework Web Python, de propósito general.
-      
-  - `Pylons`_, al instalarse usando la utilidad `easy_install`_ 
+
+  - `Pylons`_, al instalarse usando la utilidad `easy_install`_
     instala dos plantillas de proyectos Pylons.
 
-  - `PylonsTemplates`_, le ofrece plantillas adicionales ``paster`` para aplicaciones 
+  - `PylonsTemplates`_, le ofrece plantillas adicionales ``paster`` para aplicaciones
     Pylons, incluyendo implementación de ``repoze.what``.
 
-  - `BlastOff`_, Una plantilla de aplicación `Pylons`_ que proporciona un 
-    esqueleto de entorno de trabajo configurado con ``SQLAlchemy``, ``mako``, 
-    ``repoze.who``, ``ToscaWidgets``, ``TurboMail``, ``WebFlash`` y (opcionalmente) 
-    ``SchemaBot``. La aplicación generada esta previamente configurada con 
-    autenticación, inicio de sesión y formularios de registro, y (opcionalmente) 
-    confirmación de correo electrónico. ``BlastOff`` ayudar a acelerar el desarrollo 
-    de aplicaciones en Pylons por que genera un proyecto con una serie de dependencias 
+  - `BlastOff`_, Una plantilla de aplicación `Pylons`_ que proporciona un
+    esqueleto de entorno de trabajo configurado con ``SQLAlchemy``, ``mako``,
+    ``repoze.who``, ``ToscaWidgets``, ``TurboMail``, ``WebFlash`` y (opcionalmente)
+    ``SchemaBot``. La aplicación generada esta previamente configurada con
+    autenticación, inicio de sesión y formularios de registro, y (opcionalmente)
+    confirmación de correo electrónico. ``BlastOff`` ayudar a acelerar el desarrollo
+    de aplicaciones en Pylons por que genera un proyecto con una serie de dependencias
     configuraciones previamente.
 
 - **Esqueletos de proyectos CherryPy**:
 
   .. note::
       `CherryPy`_, es un MicroFramework Web Python, de propósito general.
-      
+
   - `CherryPaste`_, Usar CherryPy dentro Paste.
 
 - **Esqueletos de proyectos Trac**:
@@ -217,7 +217,7 @@ A continuación se muestran algunos esqueletos útiles:
   .. note::
       `Trac`_, es un sistema de gestión de proyectos de desarrollos de software.
 
-  - `TracLegosScript`_, TracLegos es un software diseñado para ofrecer plantillas 
+  - `TracLegosScript`_, TracLegos es un software diseñado para ofrecer plantillas
     para proyectos Trac y asiste con la creación de proyecto trac.
 
   - `trac_project`_, Plantilla de proyecto Trac de software de código abierto.
@@ -236,7 +236,7 @@ desarrollo y proceso a instalarlo con `easy_install`_ o `PIP`_ (como se explico 
     Descarga código fuente
     ......................
 
-    Para descargar el código fuente de este ejemplo ejecute el siguiente 
+    Para descargar el código fuente de este ejemplo ejecute el siguiente
     comando:
 
     .. code-block:: sh
@@ -247,7 +247,7 @@ desarrollo y proceso a instalarlo con `easy_install`_ o `PIP`_ (como se explico 
 Referencias
 ...........
 
-- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo`_ 
+- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo`_
   desde la comunidad de Plone Venezuela.
 
 

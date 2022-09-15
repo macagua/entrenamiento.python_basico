@@ -6,18 +6,18 @@
 Funciones recursivas
 --------------------
 
-Las funciones recursivas son funciones que se llaman a sí mismas durante su propia 
-ejecución. Ellas funcionan de forma similar a las iteraciones, pero debe encargarse 
-de planificar el momento en que dejan de llamarse a sí mismas o tendrá una función 
+Las funciones recursivas son funciones que se llaman a sí mismas durante su propia
+ejecución. Ellas funcionan de forma similar a las iteraciones, pero debe encargarse
+de planificar el momento en que dejan de llamarse a sí mismas o tendrá una función
 recursiva infinita.
 
-Estas funciones se estilan utilizar para dividir una tarea en sub-tareas más simples 
+Estas funciones se estilan utilizar para dividir una tarea en sub-tareas más simples
 de forma que sea más fácil abordar el problema y solucionarlo.
 
 Función recursiva sin retorno
 .............................
 
-Un ejemplo de una función recursiva sin retorno, es el ejemplo de cuenta regresiva 
+Un ejemplo de una función recursiva sin retorno, es el ejemplo de cuenta regresiva
 hasta cero a partir de un número:
 
 ::
@@ -30,7 +30,7 @@ hasta cero a partir de un número:
     ...     else:
     ...         print("Boooooooom!")
     ...     print("Fin de la función", numero)
-    ... 
+    ...
     >>> cuenta_regresiva(5)
     4
     3
@@ -46,9 +46,9 @@ hasta cero a partir de un número:
 Función recursiva con retorno
 .............................
 
-Un ejemplo de una función recursiva con retorno, es el ejemplo del calculo del 
-factorial de un número corresponde al producto de todos los números desde 1 hasta 
-el propio número. Es el ejemplo con retorno más utilizado para mostrar la utilidad 
+Un ejemplo de una función recursiva con retorno, es el ejemplo del calculo del
+factorial de un número corresponde al producto de todos los números desde 1 hasta
+el propio número. Es el ejemplo con retorno más utilizado para mostrar la utilidad
 de este tipo de funciones:
 
 ::
@@ -59,7 +59,7 @@ de este tipo de funciones:
     ...         numero = numero * factorial(numero -1)
     ...     print("valor final ->",numero)
     ...     return numero
-    ... 
+    ...
     >>> print(factorial(5))
     Valor inicial -> 5
     Valor inicial -> 4
@@ -80,7 +80,7 @@ de este tipo de funciones:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion5>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion5>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

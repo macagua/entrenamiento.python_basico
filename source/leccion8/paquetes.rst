@@ -6,8 +6,8 @@
 Paquetes Python
 ---------------
 
-Los paquetes pueden contener módulos y otros paquetes. Son directorios. 
-El único requisito es que contengan un archivo llamado ``__init__.py``. 
+Los paquetes pueden contener módulos y otros paquetes. Son directorios.
+El único requisito es que contengan un archivo llamado ``__init__.py``.
 Este archivo puede estar vacío.
 
 
@@ -16,15 +16,15 @@ Este archivo puede estar vacío.
 Sentencia from
 ..............
 
-La sentencia ``from`` se utiliza en conjunto a la previa sentencia 
+La sentencia ``from`` se utiliza en conjunto a la previa sentencia
 :ref:`import <python_sent_import>` para importar un módulo.
 
 ::
 
     >>> from utilidades import suma_total
 
-Por ejemplo, cree un directorio llamado ``tostadas_pipo``, que contiene 
-los archivos llamados ``__init__.py``, ``principal.py`` (dentro del mismo 
+Por ejemplo, cree un directorio llamado ``tostadas_pipo``, que contiene
+los archivos llamados ``__init__.py``, ``principal.py`` (dentro del mismo
 directorio).
 
 - Archivo ``__init__.py``, este archivo no tiene ningún contenido.
@@ -35,7 +35,7 @@ directorio).
     :language: python
     :lines: 1-10
 
-Seguidamente dentro del directorio ``tostadas_pipo``, cree otro directorio 
+Seguidamente dentro del directorio ``tostadas_pipo``, cree otro directorio
 llamado ``utilidades``, dentro de este, cree los siguientes archivos:
 
 - Archivo ``__init__.py``, este archivo no tiene ningún contenido.
@@ -53,7 +53,7 @@ llamado ``utilidades``, dentro de este, cree los siguientes archivos:
     :lines: 1-12
 
 
-Al final tendrá la siguiente estructura del directorios del paquete Python llamado 
+Al final tendrá la siguiente estructura del directorios del paquete Python llamado
 ``tostadas_pipo``, como se describe a continuación:
 
 ::
@@ -66,7 +66,7 @@ Al final tendrá la siguiente estructura del directorios del paquete Python llam
         ├── impuestos.py
         └── __init__.py
 
-Entonces realizar importaciones desde una estructura de directorios mas completa 
+Entonces realizar importaciones desde una estructura de directorios mas completa
 se realiza de las siguientes formas:
 
 - Importar todos los módulo el sub-paquete ``utilidades``, ejecutando:
@@ -78,7 +78,7 @@ se realiza de las siguientes formas:
     from tostadas_pipo.utilidades import *
 
 
-- Importar el módulo ``calculos.py`` desde el sub-paquete ``utilidades``, 
+- Importar el módulo ``calculos.py`` desde el sub-paquete ``utilidades``,
   ejecutando:
 
 ::
@@ -86,14 +86,14 @@ se realiza de las siguientes formas:
     from tostadas_pipo.utilidades import calculos
 
 
-- Importar la función ``impuesto_iva14()`` desde el módulo ``impuestos.py`` en el 
+- Importar la función ``impuesto_iva14()`` desde el módulo ``impuestos.py`` en el
   sub-paquete ``utilidades``, ejecutando:
 
 ::
 
     from tostadas_pipo.utilidades.impuestos import impuesto_iva14
 
-Por ejemplo, cree un módulo llamado ``calculo_factura_pipo.py``, que 
+Por ejemplo, cree un módulo llamado ``calculo_factura_pipo.py``, que
 contiene las importaciones del paquete  ``tostadas_pipo``:
 
 - Archivo ``calculo_factura_pipo.py`` incluye el siguiente código:
@@ -105,14 +105,14 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 ----
 
 .. important::
-    Usted puede descargar el código usado en esta sección, haciendo clic en el 
+    Usted puede descargar el código usado en esta sección, haciendo clic en el
     siguiente enlace: :download:`paquetes.zip <../../recursos/leccion8/paquetes.zip>`.
 
 
 .. tip::
-    Para ejecutar el código incluido en el archivo :file:`paquetes.zip` debe 
-    descomprimirlo, abra una consola de comando, acceda al directorio donde 
-    se encuentra el archivo descomprimido, de la siguiente forma: 
+    Para ejecutar el código incluido en el archivo :file:`paquetes.zip` debe
+    descomprimirlo, abra una consola de comando, acceda al directorio donde
+    se encuentra el archivo descomprimido, de la siguiente forma:
 
     ::
 
@@ -135,7 +135,7 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>` 
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

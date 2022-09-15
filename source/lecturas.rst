@@ -6,15 +6,15 @@
 Lecturas suplementarias del entrenamiento
 =========================================
 
-Siempre aprender un nuevo lenguaje de programación tiene nuevos retos desde aprender 
-sobre la filosofía del lenguaje y hasta léxicos propios los cuales hacen característico 
-el uso y expresión de sus programas con este nuevo lenguaje, más esto requiere práctica 
+Siempre aprender un nuevo lenguaje de programación tiene nuevos retos desde aprender
+sobre la filosofía del lenguaje y hasta léxicos propios los cuales hacen característico
+el uso y expresión de sus programas con este nuevo lenguaje, más esto requiere práctica
 y tiempo para lograr la fluidez en hablar y escribir programas en Python.
 
-Hay más contenido complementario o detallada que el contenido del entrenamiento de las 
-10 lecciones cubiertas en este entrenamiento. Al finalizar, yo he compilado una lista 
-de lecturas relacionadas que soporta la información que usted aprende en cada lección. 
-Piensa que esto como materiales suplementarios. Usted puede leerlo en su tiempo libre 
+Hay más contenido complementario o detallada que el contenido del entrenamiento de las
+10 lecciones cubiertas en este entrenamiento. Al finalizar, yo he compilado una lista
+de lecturas relacionadas que soporta la información que usted aprende en cada lección.
+Piensa que esto como materiales suplementarios. Usted puede leerlo en su tiempo libre
 para ayudar a incrementar tanto la profundidad y amplitud en su conocimiento.
 
 Las lecturas están organizada como las lecciones y sus temas.
@@ -146,7 +146,7 @@ Operadores aritméticos, tipo enteros y reales
 
 .. comments:
 
-    .. seealso:: 
+    .. seealso::
 
         .. figure:: _static/youtube/ssnkfbBbcuw.jpg
             :align: center
@@ -156,21 +156,21 @@ Operadores aritméticos, tipo enteros y reales
             Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos <https://www.youtube.com/watch?v=ssnkfbBbcuw>`_, cortesía de `CodigoFacilito.com`_.
 
 
-Tipo booleanos y cadenas de caracteres 
+Tipo booleanos y cadenas de caracteres
 ......................................
 
 - Ver el anexo :numref:`anexos_ZrxcqbFYjiw` sobre los *tipo booleanos y cadenas de caracteres*.
 
 .. comments:
 
-    .. seealso:: 
+    .. seealso::
 
         .. figure:: _static/youtube/ZrxcqbFYjiw.jpg
             :align: center
             :scale: 60%
             :width: 60%
 
-            Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
+            Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_,
             cortesía de `CodigoFacilito.com`_.
 
     .. _`Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`: https://www.youtube.com/watch?v=ZrxcqbFYjiw
@@ -236,14 +236,14 @@ Operadores lógicos
 
 .. comments:
 
-    .. seealso:: 
+    .. seealso::
 
         .. figure:: _static/youtube/ZrxcqbFYjiw.jpg
             :align: center
             :scale: 60%
             :width: 60%
 
-            Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_, 
+            Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas`_,
             cortesía de `CodigoFacilito.com`_.
 
 
@@ -416,7 +416,7 @@ Distribución de Software
 Scaffolding en proyectos Python
 ...............................
 
-- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo <https://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout>`_ 
+- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo <https://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout>`_
   desde la comunidad de Plone Venezuela.
 
 
