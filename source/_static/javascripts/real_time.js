@@ -1,25 +1,21 @@
 // https://dev.to/atif_dev/get-real-time-date-and-time-using-javascript-5eep
-// https://codepen.io/Atitemp/pen/xxqGXOO
-const getCurrentTime = () => {
+// https://www.twilio.com/blog/converting-formatting-dates-timezones-javascript
+//--------------------------------------------------
+// Get Current Time from a specific Time Zone START
+//--------------------------------------------------
+$(document).ready(function(){
     if ( document.getElementById("time") ) {
-        let currentTimeDate = new Date();
-
-        var hours = currentTimeDate.getHours();
-        var minutes = currentTimeDate.getMinutes();
-        minutes = minutes < 10 ? '0'+minutes : minutes;
-
-        var AMPM = hours >= 12 ? 'PM' : 'AM';
-
-        if ( hours === 12 ) {
-            hours = 12;
-        } else {
-            hours = hours%12;
-        }
-
-        var currentTime = `${hours}:${minutes}${AMPM}`;
-        document.getElementById("time").innerHTML = currentTime;
+        const now = new Date();
+        const currentTime = new Intl.DateTimeFormat('es-ES', {
+          hour: 'numeric',
+          hour12: true,
+          minute: 'numeric',
+          timeZone: 'America/Caracas',
+        });
+        document.getElementById("time").innerHTML = currentTime.format(now);
         setTimeout(getCurrentTime, 500);
     }
-}
-// Call getCurrentTime function
-getCurrentTime();
+});
+//--------------------------------------------------
+// Get Current Time from a specific Time Zone END
+//--------------------------------------------------
