@@ -12,7 +12,7 @@ print(c - a)
 print(d * c)
 
 # Exponente, Realiza el cálculo exponencial (potencia) de los operadores
-print(c ** 2)
+print(c**2)
 
 # División
 print(float(c) / a)
@@ -20,10 +20,10 @@ print(float(c) / a)
 # División entera
 print(7 / 3)
 
-# Cociente de una división, La división de operandos que el resultado es el cociente 
+# Cociente de una división, La división de operandos que el resultado es el cociente
 # en el cual se eliminan los dígitos después del punto decimal.
 print(a // c)
 
-# Modulo, Divide el operando de la izquierda por el 
+# Modulo, Divide el operando de la izquierda por el
 # operador del lado derecho y devuelve el resto.
 print(7 % 3)

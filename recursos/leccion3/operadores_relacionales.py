@@ -1,8 +1,8 @@
 """ Operadores relacionales o comparación """
 
 a, b, a1, b1, c1 = 5, 5, 7, 3, 3
-cadena1, cadena2 = 'Hola', 'Adiós'
-lista1, lista2 = [1, 'Lista Python', 23], [11, 'Lista Python', 23]
+cadena1, cadena2 = "Hola", "Adiós"
+lista1, lista2 = [1, "Lista Python", 23], [11, "Lista Python", 23]
 
 # Igual
 c = a == b

@@ -7,7 +7,7 @@ entero = 7
 print(entero, type(entero))
 
 # Entero long
-enterol = 0xffffffffffffffff
+enterol = 0xFFFFFFFFFFFFFFFF
 print(sys.getsizeof(enterol), type(enterol))
 
 # Coma flotante o reales simple

@@ -1,10 +1,10 @@
 """
-    Una cadena de caracteres, no es más que varios caracteres 
+    Una cadena de caracteres, no es más que varios caracteres
     encerrado entre comillas simples ('cadena') o dobles ("cadena").
 """
 
 # Definir comillas simples
-cadena1 = 'Texto entre comillas simples,'
+cadena1 = "Texto entre comillas simples,"
 print(cadena1, type(cadena1))
 
 # Definir comillas dobles
@@ -12,7 +12,7 @@ cadena2 = "Texto entre comillas dobles,"
 print(cadena2, type(cadena2))
 
 # Definir cadena con código escapes
-cadena3 = 'Texto entre \n\tcomillas simples,'
+cadena3 = "Texto entre \n\tcomillas simples,"
 print(cadena3, type(cadena3))
 
 # Definir cadena varias lineas
@@ -44,5 +44,8 @@ print("El tamaño de la cadena es:", len(nombre_completo))
 print("Acceso a rango de cadena: ", nombre_completo[3:13])
 
 # Formato de impresión de cadena usando la función format()
-print("El nombre es '{nombre}', con un tamaño de la cadena es: {tamano} ".format(
-    nombre=nombre_completo, tamano=len(nombre_completo)))
+print(
+    "El nombre es '{nombre}', con un tamaño de la cadena es: {tamano} ".format(
+        nombre=nombre_completo, tamano=len(nombre_completo)
+    )
+)

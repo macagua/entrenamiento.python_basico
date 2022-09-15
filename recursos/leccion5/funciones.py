@@ -1,19 +1,20 @@
 """ Funciones en Python """
 
+
 def iva():
-    """ Función básica para el calculo del IVA """
+    """Función básica para el calculo del IVA"""
     iva = 12
-    costo = int(input('¿Cual es el monto a calcular?: '))
+    costo = int(input("¿Cual es el monto a calcular?: "))
     calculo = costo * iva / 100
     print("El calculo de IVA es: " + str(calculo) + "\n")
 
 
 def suma(numero1, numero2):
-    """ Función la cual suma dos números """
+    """Función la cual suma dos números"""
     print(str(numero1 + numero2) + "\n")
 
 
-#def imprime_fibonacci(n):
+# def imprime_fibonacci(n):
 #    """ Escribe la sucesión Fibonacci hasta n """
 #    a, b = 0, 1
 #    while b < n:
@@ -21,8 +22,8 @@ def suma(numero1, numero2):
 #        a, b = b, a + b
 
 
-def devuelve_fibonacci(n): 
-    """ Devuelve la sucesión Fibonacci hasta n """
+def devuelve_fibonacci(n):
+    """Devuelve la sucesión Fibonacci hasta n"""
     resultado = []
     a, b = 0, 1
     while b < n:
@@ -45,6 +46,6 @@ mensaje2 = "Sucesión de Fibonacci"
 print(mensaje2)
 print("=" * len(mensaje2))
 
-#print("La sucesión Fibonacci hasta 10 es:", imprime_fibonacci(10))
-#print("\nLa sucesión Fibonacci hasta 50 es:", devuelve_fibonacci(50))
+# print("La sucesión Fibonacci hasta 10 es:", imprime_fibonacci(10))
+# print("\nLa sucesión Fibonacci hasta 50 es:", devuelve_fibonacci(50))
 print("La sucesión Fibonacci hasta 50 es:", devuelve_fibonacci(50))

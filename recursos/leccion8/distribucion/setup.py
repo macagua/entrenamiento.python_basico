@@ -2,11 +2,7 @@
 
 from setuptools import setup
 
-long_description = (
-    open('README.txt').read()
-    + '\n' +
-    open('LICENSE').read()
-    + '\n')
+long_description = open("README.txt").read() + "\n" + open("LICENSE").read() + "\n"
 
 setup(
     name="tostadas_pipo",

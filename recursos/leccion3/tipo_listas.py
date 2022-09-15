@@ -1,5 +1,5 @@
 """
-    La lista son variables que almacenan arrays, internamente 
+    La lista son variables que almacenan arrays, internamente
     cada posición puede ser un tipo de datos distinto.
 """
 

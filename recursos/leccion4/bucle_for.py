@@ -7,13 +7,12 @@ print("==================================\n")
 print("Ejemplo: Itera una lista de animales\n")
 
 # Definir lista
-animales = ['gato', 'perro', 'serpiente']
+animales = ["gato", "perro", "serpiente"]
 for animal in animales:
-    print("El animal es: {0}, tamaño de palabra es: {1}".format(
-        animal, len(animal)))
+    print(f"El animal es: {animal}, tamaño de palabra es: {len(animal)}")
 
 
-# Si se necesita iterar sobre una secuencia de números. 
+# Si se necesita iterar sobre una secuencia de números.
 # Generar una lista conteniendo progresiones aritméticos
 print("\nFunción range()")
 print("===============\n")
@@ -27,12 +26,11 @@ print("================================================\n")
 
 print("Ejemplo: Itera un cadena de caracteres con rango dinámico\n")
 
-oracion = 'Mary entiende muy bien Python'
-frases = oracion.split() # convierte a una lista cada palabra
+oracion = "Mary entiende muy bien Python"
+frases = oracion.split()  # convierte a una lista cada palabra
 print("La oración analizada es:", oracion, ".\n")
 for palabra in range(len(frases)):
-    print("Palabra: {0}, en la frase su posición es: {1}".format(
-        frases[palabra], palabra))
+    print(f"Palabra: {frases[palabra]}, en la frase su posición es: {palabra}")
 
 
 # Bucle 'for' con estructura 'ẗupla'
@@ -41,7 +39,7 @@ print("==================================\n")
 
 print("Ejemplo: Itera una tupla de parámetros\n")
 
-conexion_bd = "127.0.0.1","root","123456","nomina"
+conexion_bd = "127.0.0.1", "root", "123456", "nomina"
 for parametro in conexion_bd:
     print(parametro)
 
@@ -53,13 +51,13 @@ print("========================================\n")
 print("Ejemplo: Itera un diccionario de datos básicos\n")
 
 datos_basicos = {
-    "nombres":"Leonardo Jose",
-    "apellidos":"Caballero Garcia",
-    "cedula":"26938401",
-    "fecha_nacimiento":"03/12/1980",
-    "lugar_nacimiento":"Maracaibo, Zulia, Venezuela",
-    "nacionalidad":"Venezolana",
-    "estado_civil":"Soltero"
+    "nombres": "Leonardo Jose",
+    "apellidos": "Caballero Garcia",
+    "cedula": "26938401",
+    "fecha_nacimiento": "03/12/1980",
+    "lugar_nacimiento": "Maracaibo, Zulia, Venezuela",
+    "nacionalidad": "Venezolana",
+    "estado_civil": "Soltero",
 }
 clave = datos_basicos.keys()
 valor = datos_basicos.values()
@@ -75,11 +73,16 @@ print("================================\n")
 
 print("Ejemplo: Itera un tupla con datos de conexión a base de datos\n")
 
-db_connection = "127.0.0.1","5432","root","nomina"
+db_connection = "127.0.0.1", "5432", "root", "nomina"
 for parametro in db_connection:
     print(parametro)
 else:
-    print("""El comando PostgreSQL es: 
+    print(
+        """El comando PostgreSQL es:
 $ psql -h {server} -p {port} -U {user} -d {db_name}""".format(
-        server=db_connection[0], port=db_connection[1], 
-        user=db_connection[2], db_name=db_connection[3]))
+            server=db_connection[0],
+            port=db_connection[1],
+            user=db_connection[2],
+            db_name=db_connection[3],
+        )
+    )

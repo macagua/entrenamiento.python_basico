@@ -6,4 +6,4 @@ monto_suma = int(input("Introduzca un monto entero a sumar: "))
 
 suma = impuesto_iva14(monto) + calculos.suma_total(monto_suma)
 
-print("Total a Facturar: {0} BsS, con IVA 14%.".format(suma))
+print(f"Total a Facturar: {suma} Bs (VES), con IVA 14%.")
