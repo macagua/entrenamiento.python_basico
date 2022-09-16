@@ -5,15 +5,18 @@
 //--------------------------------------------------
 $(document).ready(function(){
     if ( document.getElementById("time") ) {
-        const now = new Date();
-        const currentTime = new Intl.DateTimeFormat('es-ES', {
-          hour: 'numeric',
-          hour12: true,
-          minute: 'numeric',
-          timeZone: 'America/Caracas',
-        });
-        document.getElementById("time").innerHTML = currentTime.format(now);
-        setTimeout(getCurrentTime, 500);
+        const getCurrentTime = () => {
+            const now = new Date();
+            const locale = new Intl.Locale('es-VE');
+            const currentTime = new Intl.DateTimeFormat(locale.baseName, {
+                hour: 'numeric',
+                hour12: true,
+                minute: 'numeric',
+                timeZone: locale.timeZones,
+            });
+            document.getElementById("time").innerHTML = currentTime.format(now);
+            setTimeout(getCurrentTime, 500);
+        }
     }
 });
 //--------------------------------------------------
