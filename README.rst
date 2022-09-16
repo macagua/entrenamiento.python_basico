@@ -76,7 +76,7 @@ Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente coman
 
 ::
 
-  (venv)$ pip3 install -r requirements.txt
+  (venv)$ pip3 install -r requirements-dev.txt
 
 
 Recursos del entrenamiento
