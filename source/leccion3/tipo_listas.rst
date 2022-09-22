@@ -16,11 +16,11 @@ escribir es entre corchetes, separando sus elementos con comas cada uno.
 La lista en Python son variables que almacenan ``arrays``, internamente cada posición
 puede ser un tipo de datos distinto.
 
-::
+.. code-block:: pycon
 
-   >>> factura = ['pan', 'huevos', 100, 1234]
-   >>> factura
-   ['pan', 'huevos', 100, 1234]
+    >>> factura = ["pan", "huevos", 100, 1234]
+    >>> factura
+    ['pan', 'huevos', 100, 1234]
 
 Las listas en Python son:
 
@@ -35,7 +35,7 @@ objetos.
 Los elementos de una lista pueden accederse mediante su índice, siendo 0 el índice del
 primer elemento.
 
-::
+.. code-block:: pycon
 
     >>> factura[0]
     'pan'
@@ -45,7 +45,7 @@ primer elemento.
 La función :ref:`len() <python_fun_len>` devuelve la longitud de la lista (su cantidad
 de elementos).
 
-::
+.. code-block:: pycon
 
     >>> len(factura)
     4
@@ -53,14 +53,14 @@ de elementos).
 Los índices de una lista inicia entonces de **0** hasta el tamaño de la lista menos uno
 (``len(factura) - 1``):
 
-::
+.. code-block:: pycon
 
     >>> len(factura) - 1
     3
 
 Pueden usarse también índices negativos, siendo **-1** el índice del último elemento.
 
-::
+.. code-block:: pycon
 
     >>> factura[-1]
     1234
@@ -68,14 +68,14 @@ Pueden usarse también índices negativos, siendo **-1** el índice del último 
 Los índices negativos van entonces de **-1** (último elemento) a ``-len(factura)``
 (primer elemento).
 
-::
+.. code-block:: pycon
 
     >>> factura[-len(factura)]
     'pan'
 
 A través de los índices, pueden cambiarse los elementos de una lista en el lugar.
 
-::
+.. code-block:: pycon
 
     >>> factura[1] = "carne"
     >>> factura
@@ -100,7 +100,7 @@ append()
 
 Este método agrega un elemento al final de una lista.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.5, 3.6, 4, 5]
     >>> print(versiones_plone)
@@ -118,7 +118,7 @@ count()
 Este método recibe un elemento como argumento, y cuenta la cantidad de veces que
 aparece en la lista.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> print("6 ->", versiones_plone.count(6))
@@ -136,7 +136,7 @@ extend()
 
 Este método extiende una lista agregando un iterable al final.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6]
     >>> print(versiones_plone)
@@ -144,7 +144,7 @@ Este método extiende una lista agregando un iterable al final.
     >>> versiones_plone.extend([4])
     >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4]
-    >>> versiones_plone.extend(range(5,7))
+    >>> versiones_plone.extend(range(5, 7))
     >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5, 6]
 
@@ -157,7 +157,7 @@ index()
 Este método recibe un elemento como argumento, y devuelve el índice de su primera
 aparición en la lista.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6, 4]
     >>> print(versiones_plone.index(4))
@@ -166,7 +166,7 @@ aparición en la lista.
 El método admite como argumento adicional un índice inicial a partir de donde comenzar
 la búsqueda, opcionalmente también el índice final.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6, 4]
     >>> versiones_plone[2]
@@ -183,7 +183,7 @@ la búsqueda, opcionalmente también el índice final.
 El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el
 elemento no se encuentra en la lista, o en el entorno definido.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6, 4]
     >>> print(versiones_plone.index(9))
@@ -199,7 +199,7 @@ insert()
 
 Este método inserta el elemento x en la lista, en el índice i.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> print(versiones_plone)
@@ -216,7 +216,7 @@ pop()
 
 Este método devuelve el último elemento de la lista, y lo borra de la misma.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> print(versiones_plone.pop())
@@ -227,7 +227,7 @@ Este método devuelve el último elemento de la lista, y lo borra de la misma.
 Opcionalmente puede recibir un argumento numérico, que funciona como índice del
 elemento (por defecto, -1)
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> print(versiones_plone.pop(2))
@@ -243,7 +243,7 @@ remove()
 
 Este método recibe como argumento un elemento, y borra su primera aparición en la lista.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> print(versiones_plone)
@@ -256,7 +256,7 @@ Este método recibe como argumento un elemento, y borra su primera aparición en
 El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el
 elemento no se encuentra en la lista.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> print(versiones_plone)
@@ -274,7 +274,7 @@ reverse()
 
 Este método invierte el orden de los elementos de una lista.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> print(versiones_plone)
@@ -291,7 +291,7 @@ sort()
 
 Este método ordena los elementos de una lista.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [4, 2.5, 5, 3.6, 2.1, 6]
     >>> print(versiones_plone)
@@ -303,7 +303,7 @@ Este método ordena los elementos de una lista.
 El método ``sort()`` admite la opción ``reverse``, por defecto, con valor ``False``.
 De tener valor ``True``, el ordenamiento se hace en sentido inverso.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone.sort(reverse=True)
     >>> print(versiones_plone)
@@ -379,12 +379,13 @@ en un diccionario, lineas en un archivo, ...):
 
 *Ejemplo de iterar sobre una cadenas de caracteres*
 
-::
+.. code-block:: pycon
 
-    >>> vocales = 'aeiou'
-    >>> for letra in 'hermosa':
+    >>> vocales = "aeiou"
+    >>> for letra in "hermosa":
     ...     if letra in vocales:
     ...         print(letra)
+    ...
     e o a
 
 *Ejemplo de iterar sobre una lista*
@@ -392,10 +393,10 @@ en un diccionario, lineas en un archivo, ...):
 Para separar una cadena en frases, los valores pueden separarse con la función
 integrada ``split()``.
 
-::
+.. code-block:: pycon
 
     >>> mensaje = "Hola, como estas tu?"
-    >>> mensaje.split() # retorna una lista
+    >>> mensaje.split()  # retorna una lista
     ['Hola,', 'como', 'estas', 'tu?']
     >>> for palabra in mensaje.split():
     ...     print(palabra)
@@ -410,13 +411,12 @@ integrada ``split()``.
 Para iterar sobre dos o más secuencias al mismo tiempo, los valores pueden emparejarse
 con la función integrada :ref:`zip() <python_fun_zip>`.
 
-::
+.. code-block:: pycon
 
-    >>> preguntas = ['nombre', 'objetivo', 'sistema operativo']
-    >>> respuestas = ['Leonardo', 'aprender Python y Plone', 'Linux']
+    >>> preguntas = ["nombre", "objetivo", "sistema operativo"]
+    >>> respuestas = ["Leonardo", "aprender Python y Plone", "Linux"]
     >>> for pregunta, respuesta in zip(preguntas, respuestas):
-    ...     print("¿Cual es tu {0}?, la respuesta es: {1}.".format(
-    ...         pregunta, respuesta))
+    ...     print("¿Cual es tu {0}?, la respuesta es: {1}.".format(pregunta, respuesta))
     ...
     ¿Cual es tu nombre?, la respuesta es: Leonardo.
     ¿Cual es tu objetivo?, la respuesta es: aprender Python y Plone.
@@ -432,7 +432,7 @@ Ayuda integrada
 Usted puede consultar toda la documentación disponible sobre las **listas** desde la
 :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> help(list)
 
@@ -448,7 +448,7 @@ Usted puede consultar toda la documentación disponible sobre las **listas** des
     Para ejecutar el código :file:`tipo_listas.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 tipo_listas.py
 

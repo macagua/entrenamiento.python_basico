@@ -36,7 +36,7 @@ como ``False``:
 
 A continuación, varios ejemplos en códigos de los citado previamente:
 
-::
+.. code-block:: pycon
 
     >>> False
     False
@@ -54,7 +54,7 @@ A continuación, varios ejemplos en códigos de los citado previamente:
     False
     >>> {} == False
     False
-    >>> ['', ''] == False
+    >>> ["", ""] == False
     False
 
 Todos los otros valores son interpretados por defecto a ``True``. El operador lógico
@@ -66,7 +66,7 @@ Los tipos integrados ``False`` y ``True`` son solamente dos instancias de la cla
 del tipo ``int`` o entero plano, es decir, sus valores son ``0`` y ``1`` respectivamente,
 en casi todos los contextos:
 
-::
+.. code-block:: pycon
 
     >>> int(False)
     0
@@ -78,7 +78,7 @@ valores numéricos ``0`` y ``1``. La excepción a la regla anterior sucede cuand
 booleano es convertido a un tipo de :ref:`cadenas de caracteres <python_str>`, las cadenas
 *'False'* y/o *'True'* son retornadas, respectivamente:
 
-::
+.. code-block:: pycon
 
     >>> type(True)
     <type 'bool'>
@@ -140,7 +140,7 @@ Usted puede consultar toda la documentación disponible sobre los **booleanos**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente
 forma:
 
-::
+.. code-block:: pycon
 
     >>> help(bool)
 
@@ -160,7 +160,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
     consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 tipo_booleanos.py
 

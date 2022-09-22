@@ -39,7 +39,7 @@ Instalación
 Dentro de su `entorno virtual`_ activado debe instalar el paquete `PasteScript`_,
 ejecutando el siguiente comando:
 
-.. code-block:: sh
+.. code-block:: console
 
   (venv)$ pip3 install PasteScript
 
@@ -54,7 +54,7 @@ ejecutando el siguiente comando:
 Al finalizar la instalación podrá opcionalmente consultar cuales plantillas
 tiene disponible para usa, ejecutando el siguiente comando:
 
-.. code-block:: sh
+.. code-block:: console
 
   (venv)$ paster create --list-templates
     Available templates:
@@ -63,7 +63,7 @@ tiene disponible para usa, ejecutando el siguiente comando:
 
 Usted puede usar el comando :command:`paster` para crear paquetes Python.
 
-.. code-block:: sh
+.. code-block:: console
 
   (venv)$ paster create -t basic_package mipaquetepython
 
@@ -97,7 +97,7 @@ Usted puede usar el comando :command:`paster` para crear paquetes Python.
 Usted puede verificar el paquete previamente creado y observará como este
 paquete básico ha habilitado el `Setuptools`_.
 
-.. code-block:: sh
+.. code-block:: console
 
   (venv)$ tree mipaquetepython/
     mipaquetepython/
@@ -115,7 +115,7 @@ paquete básico ha habilitado el `Setuptools`_.
 
 Para instalar este paquete ejecute el siguiente comando:
 
-.. code-block:: sh
+.. code-block:: console
 
   (venv)$ cd mipaquetepython/mipaquetepython/
   (venv)$ vim app.py
@@ -136,7 +136,7 @@ Guarde los cambios en el archivo :file:`app.py`, luego importe su aplicación
 
 Para comprobar su instalación ejecute el siguiente comando:
 
-.. code-block:: sh
+.. code-block:: console
 
   (venv)$ python
 
@@ -239,7 +239,7 @@ desarrollo y proceso a instalarlo con `easy_install`_ o `PIP`_ (como se explico 
     Para descargar el código fuente de este ejemplo ejecute el siguiente
     comando:
 
-    .. code-block:: sh
+    .. code-block:: console
 
       $ svn co https://svn.plone.org/svn/collective/spanishdocs/tags/0.1rc/src/mini-tutoriales/mipaquetepython/ mipaquetepython
 

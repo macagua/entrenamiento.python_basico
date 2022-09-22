@@ -50,13 +50,13 @@ A continuación, se creará un par de variables a modo de ejemplo. Una de tipo
 :ref:`cadenas de caracteres <python_str>` y una de tipo
 :ref:`entero <python_num_entero>`:
 
-::
+.. code-block:: pycon
 
-    >>> c = "Hola Mundo" # cadenas de caracteres
-    >>> type(c) # comprobar tipo de dato
+    >>> c = "Hola Mundo"  # cadenas de caracteres
+    >>> type(c)  # comprobar tipo de dato
     <type 'str'>
-    >>> e = 23 # número entero
-    >>> type(e) # comprobar tipo de dato
+    >>> e = 23  # número entero
+    >>> type(e)  # comprobar tipo de dato
     <type 'int'>
 
 Como puede ver en Python, a diferencia de muchos otros lenguajes, no se declara el
@@ -80,9 +80,9 @@ cuales se tratarán más adelante.
 A continuación, se cambiará el valor para una variable de tipo
 :ref:`cadenas de caracteres <python_str>` a modo de ejemplo:
 
-::
+.. code-block:: pycon
 
-    >>> c = "Hola Plone" # cadenas de caracteres
+    >>> c = "Hola Plone"  # cadenas de caracteres
     >>> c
     'Hola Plone'
 
@@ -94,7 +94,7 @@ A continuación, se creará múltiples variables (:ref:`entero <python_num_enter
 :ref:`coma flotante <python_num_float>`, :ref:`cadenas de caracteres <python_str>`)
 asignando múltiples valores:
 
-::
+.. code-block:: pycon
 
     >>> a, b, c = 5, 3.2, "Hola"
     >>> print(a)
@@ -107,7 +107,7 @@ asignando múltiples valores:
 Si usted quiere asignar el mismo valor a múltiples variables al mismo tiempo, usted
 puede hacer lo siguiente:
 
-::
+.. code-block:: pycon
 
     >>> x = y = z = True
     >>> print(x)
@@ -192,13 +192,13 @@ Crear un archivo llamado ``main.py`` con el siguiente contenido:
 
 Luego ejecuta el programa de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     python3 main.py
 
 Cuando usted ejecuta el programa, la salida será:
 
-::
+.. code-block:: pycon
 
     scp -v -P 3307 root@127.0.0.1:/root/webapp/db.sql /srv/backup
 
@@ -294,17 +294,17 @@ para el que han sido creadas. Estas son:
 Puede verificar si una palabra esta reservada utilizando el módulo integrado
 ``keyword``, de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> import keyword
-    >>> keyword.iskeyword('as')
+    >>> keyword.iskeyword("as")
     True
-    >>> keyword.iskeyword('x')
+    >>> keyword.iskeyword("x")
     False
 
 Para obtener una lista de todas las palabras reservadas
 
-::
+.. code-block:: pycon
 
     >>> import keyword
     >>> keyword.kwlist
@@ -360,17 +360,17 @@ Sentencia del
 La sentencia ``del`` se define recursivamente muy similar a la forma en el cual se
 define la asignación. A continuación unos ejemplos donde se inicializan variables:
 
-::
+.. code-block:: pycon
 
-    >>> cadena, numero, lista = "Hola Plone", 123456, [7,8,9,0]
+    >>> cadena, numero, lista = "Hola Plone", 123456, [7, 8, 9, 0]
     >>> tupla = (11, "Chao Plone", True, None)
-    >>> diccionario = {"nombre":"Leonardo","apellido":"Caballero"}
+    >>> diccionario = {"nombre": "Leonardo", "apellido": "Caballero"}
 
 Luego de inicializar las variables del código anterior, usted puede usar la función
 :ref:`vars() <python_fun_vars>` para obtener un diccionario conteniendo ámbito
 actual de las variables, ejecutando:
 
-::
+.. code-block:: pycon
 
     >>> vars()
     {'tupla': (11, 'Chao Plone', True, None),
@@ -382,7 +382,7 @@ actual de las variables, ejecutando:
 
 Si desea eliminar la referencia a la variable ``cadena``, ejecuta:
 
-::
+.. code-block:: pycon
 
     >>> del cadena
     >>> vars()
@@ -399,7 +399,7 @@ incluso al volver a la función :ref:`vars() <python_fun_vars>` ya no sale en el
 La eliminación de una lista de objetivos elimina recursivamente cada objetivo, de
 izquierda a derecha.
 
-::
+.. code-block:: pycon
 
     >>> del numero, lista, tupla, diccionario
     >>> vars()
@@ -437,7 +437,7 @@ globales. Eso podría ser imposible asignar a una variable global sin la sentenc
 ``global``, aunque las variables libres pueden referirse a globales sin ser declaradas
 globales.
 
-::
+.. code-block:: pycon
 
     >>> variable1 = "variable original"
     >>> def variable_global():
@@ -476,7 +476,7 @@ precaución.
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 main.py
 

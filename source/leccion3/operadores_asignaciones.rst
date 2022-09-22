@@ -30,17 +30,21 @@ Operador +=
 
 El operador ``+=`` suma a la variable del lado izquierdo el valor del lado derecho.
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r += 10; r
+    >>> r = 5
+    ... r += 10
+    ... r
     15
 
 En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r += 10``, entonces
 la variable "``r``" sera igual a ``15``. Su equivalente seria el siguiente:
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r = r + 10; r
+    >>> r = 5
+    ... r = r + 10
+    ... r
     15
 
 
@@ -51,17 +55,21 @@ Operador -=
 
 El operador ``-=`` resta a la variable del lado izquierdo el valor del lado derecho.
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r -= 10; r
+    >>> r = 5
+    ... r -= 10
+    ... r
     -5
 
 En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r -= 10``, entonces
 la variable "``r``" sera igual a ``-5``. Su equivalente seria el siguiente:
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r = r - 10; r
+    >>> r = 5
+    ... r = r - 10
+    ... r
     -5
 
 
@@ -72,17 +80,21 @@ Operador \*=
 
 El operador ``*=`` multiplica a la variable del lado izquierdo el valor del lado derecho.
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r *= 10; r
+    >>> r = 5
+    ... r *= 10
+    ... r
     50
 
 En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r *= 10``, entonces
 la variable "``r``" sera igual a ``50``. Su equivalente seria el siguiente:
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r = r * 10; r
+    >>> r = 5
+    ... r = r * 10
+    ... r
     50
 
 
@@ -93,17 +105,21 @@ Operador /=
 
 El operador ``/=`` divide a la variable del lado izquierdo el valor del lado derecho.
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r /= 10; r
+    >>> r = 5
+    ... r /= 10
+    ... r
     0
 
 En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r /= 10``, entonces
 la variable "``r``" sera igual a ``0``. Su equivalente seria el siguiente:
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r = r / 10; r
+    >>> r = 5
+    ... r = r / 10
+    ... r
     0
 
 
@@ -115,17 +131,21 @@ Operador \**=
 El operador ``**=`` calcula el exponente a la variable del lado izquierdo el valor del
 lado derecho.
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r **= 10; r
+    >>> r = 5
+    ... r **= 10
+    ... r
     9765625
 
 En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r **= 10``, entonces
 la variable "``r``" sera igual a ``9765625``. Su equivalente seria el siguiente:
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r = r ** 10; r
+    >>> r = 5
+    ... r = r**10
+    ... r
     9765625
 
 
@@ -137,17 +157,21 @@ Operador //=
 El operador ``//=`` calcula la división entera a la variable del lado izquierdo el valor
 del lado derecho.
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r //= 10; r
+    >>> r = 5
+    ... r //= 10
+    ... r
     0
 
 En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r //= 10``, entonces
 la variable "``r``" sera igual a ``0``. Su equivalente seria el siguiente:
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r = r // 10; r
+    >>> r = 5
+    ... r = r // 10
+    ... r
     0
 
 
@@ -159,17 +183,21 @@ Operador %=
 El operador ``%=`` devuelve el resto de la división a la variable del lado izquierdo el
 valor del lado derecho.
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r %= 10; r
+    >>> r = 5
+    ... r %= 10
+    ... r
     5
 
 En el ejemplo anterior si la variable "``r``" es igual a ``5`` y ``r %= 10``, entonces
 la variable "``r``" sera igual a ``5``. Su equivalente seria el siguiente:
 
-::
+.. code-block:: pycon
 
-    >>> r = 5; r = r % 10; r
+    >>> r = 5
+    ... r = r % 10
+    ... r
     5
 
 
@@ -181,14 +209,14 @@ Asignación aumentada
 Es frecuente que una variable tenga que ser definida de nuevo en función de sí misma.
 Normalmente usted escribir la siguiente sintaxis:
 
-::
+.. code-block:: pycon
 
     >>> contador = contador + 1
 
 El código anterior, se puede abreviar a su equivalente, usando la asignación aumentada,
 de la siguiente manera:
 
-::
+.. code-block:: pycon
 
     >>> contador += 1
 
@@ -219,7 +247,7 @@ A continuación, se presentan algunos ejemplos de su uso:
     comando, acceda al directorio donde se encuentra el mismo, y ejecute el siguiente
     comando:
 
-    ::
+    .. code-block:: console
 
         python operadores_asignaciones.py
 

@@ -28,12 +28,12 @@ count()
 Este método recibe un elemento como argumento, y cuenta la cantidad de veces que
 aparece en la tupla.
 
-::
+.. code-block:: pycon
 
     >>> valores = ("Python", True, "Zope", 5)
     >>> print("True ->", valores.count(True))
     True -> 1
-    >>> print("'Zope' ->", valores.count('Zope'))
+    >>> print("'Zope' ->", valores.count("Zope"))
     'Zope' -> 1
     >>> print("5 ->", valores.count(5))
     5 -> 1
@@ -48,7 +48,7 @@ Comparte el mismo método :ref:`index() <python_list_mtd_index>` del tipo lista.
 Este método recibe un elemento como argumento, y devuelve el índice de su primera
 aparición en la tupla.
 
-::
+.. code-block:: pycon
 
     >>> valores = ("Python", True, "Zope", 5)
     >>> print(valores.index(True))
@@ -59,7 +59,7 @@ aparición en la tupla.
 El método devuelve un excepción :ref:`ValueError <python_exception_valueerror>` si el
 elemento no se encuentra en la tupla, o en el entorno definido.
 
-::
+.. code-block:: pycon
 
     >>> valores = ("Python", True, "Zope", 5)
     >>> print(valores.index(4))
@@ -115,9 +115,9 @@ numeración de un elemento.
 Podría usar un bucle ``while`` con un contador o un bucle ``for`` usando la función
 :ref:`range() <python_fun_range>` y la función :ref:`len() <python_fun_len>`:
 
-::
+.. code-block:: pycon
 
-    >>> tecnologias = ('Zope', 'Plone', 'Pyramid')
+    >>> tecnologias = ("Zope", "Plone", "Pyramid")
     >>> for i in range(0, len(tecnologias)):
     ...     print(i, tecnologias[i])
     ...
@@ -148,7 +148,7 @@ Ayuda integrada
 Usted puede consultar toda la documentación disponible sobre las **tuplas** desde la
 :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> help(tuple)
 
@@ -162,7 +162,7 @@ Usted puede consultar toda la documentación disponible sobre las **tuplas** des
     Para ejecutar el código :file:`tipo_tuplas.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 tipo_tuplas.py
 

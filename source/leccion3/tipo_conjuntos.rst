@@ -37,7 +37,7 @@ add()
 Este método agrega un elemento a un **conjunto mutable**. Esto no tiene efecto si el
 elemento ya esta presente.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> print(set_mutable1)
@@ -54,7 +54,7 @@ clear()
 
 Este método remueve todos los elementos desde este **conjunto mutable**.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> print(set_mutable1)
@@ -72,9 +72,9 @@ copy()
 Este método devuelve una copia superficial del tipo **conjunto mutable** o
 **conjunto inmutable**:
 
-::
+.. code-block:: pycon
 
-    >>> set_mutable = set([4.0, 'Carro', True])
+    >>> set_mutable = set([4.0, "Carro", True])
     >>> otro_set_mutable = set_mutable.copy()
     >>> set_mutable == otro_set_mutable
     True
@@ -88,7 +88,7 @@ difference()
 Este método devuelve la diferencia entre dos **conjunto mutable** o **conjunto inmutable**:
 todos los elementos que están en el primero, pero no en el argumento.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
@@ -110,17 +110,17 @@ difference_update()
 Este método actualiza un tipo **conjunto mutable** llamando al método
 ``difference_update()`` con la diferencia de los conjuntos.
 
-::
+.. code-block:: pycon
 
-    >>> proyecto1 = {'python', 'Zope2', 'ZODB3', 'pytz'}
+    >>> proyecto1 = {"python", "Zope", "ZODB3", "zope.pagetemplate"}
     >>> proyecto1
-    set(['python', 'pytz', 'Zope2', 'ZODB3'])
-    >>> proyecto2 = {'python', 'Plone', 'diazo'}
+    set(['python', 'zope.pagetemplate', 'Zope', 'ZODB3'])
+    >>> proyecto2 = {"python", "Plone", "plone.volto"}
     >>> proyecto2
-    set(['python', 'diazo', 'Plone'])
+    set(['python', 'plone.volto', 'Plone'])
     >>> proyecto1.difference_update(proyecto2)
     >>> proyecto1
-    set(['pytz', 'Zope2', 'ZODB3'])
+    set(['zope.pagetemplate', 'Zope', 'ZODB3'])
 
 Si ``proyecto1`` y ``proyecto2`` son dos conjuntos. La diferencia del conjunto
 ``proyecto1`` y conjunto ``proyecto2`` es un conjunto de elementos que existen
@@ -135,22 +135,22 @@ discard()
 Este método remueve un elemento desde un **conjunto mutable** si esta presente.
 
 
-::
+.. code-block:: pycon
 
-    >>> paquetes = {'python', 'zope', 'plone', 'django'}
+    >>> paquetes = {"python", "zope", "plone", "django"}
     >>> paquetes
     set(['python', 'zope', 'plone', 'django'])
-    >>> paquetes.discard('django')
+    >>> paquetes.discard("django")
     >>> paquetes
     set(['python', 'zope', 'plone'])
 
 El **conjunto mutable** permanece sin cambio si el elemento pasado como argumento
 al método ``discard()`` no existe.
 
-::
+.. code-block:: pycon
 
-    >>> paquetes = {'python', 'zope', 'plone', 'django'}
-    >>> paquetes.discard('php')
+    >>> paquetes = {"python", "zope", "plone", "django"}
+    >>> paquetes.discard("php")
     >>> paquetes
     set(['python', 'zope', 'plone'])
 
@@ -163,7 +163,7 @@ intersection()
 Este método devuelve la intersección entre los **conjuntos mutables** o **conjuntos
 inmutables**: todos los elementos que están en ambos.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
@@ -188,15 +188,15 @@ Este método actualiza un **conjunto mutable** con la intersección de ese mismo
 El método ``intersection_update()`` le permite arbitrariamente varios numero de
 argumentos (conjuntos).
 
-::
+.. code-block:: pycon
 
-    >>> proyecto1 = {'python', 'Zope2', 'pytz'}
+    >>> proyecto1 = {"python", "Zope", "zope.pagetemplate"}
     >>> proyecto1
-    set(['python', 'pytz', 'Zope2'])
-    >>> proyecto2 = {'python', 'Plone', 'diazo', 'z3c.form'}
+    set(['python', 'zope.pagetemplate', 'Zope'])
+    >>> proyecto2 = {"python", "Plone", "plone.volto", "plone.restapi"}
     >>> proyecto2
-    set(['python', 'z3c.form', 'diazo', 'Plone'])
-    >>> proyecto3 = {'python', 'django', 'django-filter'}
+    set(['python', 'plone.restapi', 'plone.volto', 'Plone'])
+    >>> proyecto3 = {"python", "django", "django-filter"}
     >>> proyecto3
     set(['python', 'django-filter', 'django'])
     >>> proyecto3.intersection_update(proyecto1, proyecto2)
@@ -215,7 +215,7 @@ isdisjoint()
 Este método devuelve el valor ``True`` si no hay elementos comunes entre los
 **conjuntos mutables** o **conjuntos inmutables**.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
@@ -234,7 +234,7 @@ issubset()
 Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subconjunto* del
 **conjunto mutable** o del **conjunto inmutable** argumento.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
@@ -259,7 +259,7 @@ issuperset()
 Este método devuelve el valor ``True`` si el **conjunto mutable** o el **conjunto inmutable**
 es un *superset* del **conjunto mutable** argumento.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
@@ -285,9 +285,9 @@ Este método remueve arbitrariamente y devuelve un elemento de **conjunto mutabl
 El método ``pop()`` no toma ningún argumento. Si el **conjunto mutable** esta vacío
 se lanza una excepción :ref:`KeyError <python_exception_keyerror>`.
 
-::
+.. code-block:: pycon
 
-    >>> paquetes = {'python', 'zope', 'plone', 'django'}
+    >>> paquetes = {"python", "zope", "plone", "django"}
     >>> paquetes
     set(['python', 'zope', 'plone', 'django'])
     >>> print("Valor aleatorio devuelto es:", paquetes.pop())
@@ -322,12 +322,12 @@ remove()
 Este método busca y remueve un elemento de un **conjunto mutable**, si debe ser un
 miembro.
 
-::
+.. code-block:: pycon
 
-    >>> paquetes = {'python', 'zope', 'plone', 'django'}
+    >>> paquetes = {"python", "zope", "plone", "django"}
     >>> paquetes
     set(['python', 'zope', 'plone', 'django'])
-    >>> paquetes.remove('django')
+    >>> paquetes.remove("django")
     >>> paquetes
     set(['python', 'zope', 'plone'])
 
@@ -350,7 +350,7 @@ symmetric_difference()
 Este método devuelve todos los elementos que están en un **conjunto mutable** e
 **conjunto inmutable** u otro, pero no en ambos.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
@@ -373,12 +373,12 @@ Este método actualiza un **conjunto mutable** llamando al método
 La diferencia simétrica de dos conjuntos es el conjunto de elementos que están en
 cualquiera de los conjuntos pero no en ambos.
 
-::
+.. code-block:: pycon
 
-    >>> proyecto1 = {'python', 'plone', 'django'}
+    >>> proyecto1 = {"python", "plone", "django"}
     >>> proyecto1
     set(['python', 'plone', 'django'])
-    >>> proyecto2 = {'django', 'zope', 'pyramid'}
+    >>> proyecto2 = {"django", "zope", "pyramid"}
     >>> proyecto2
     set(['zope', 'pyramid', 'django'])
     >>> proyecto1.symmetric_difference_update(proyecto2)
@@ -396,7 +396,7 @@ union()
 Este método devuelve un **conjunto mutable** y **conjunto inmutable** con todos los
 elementos que están en alguno de los **conjuntos mutables** y **conjuntos inmutables**.
 
-::
+.. code-block:: pycon
 
     >>> set_mutable1 = set([4, 3, 11, 7, 5, 2, 1, 4])
     >>> set_mutable2 = set([11, 5, 9, 2, 4, 8])
@@ -421,7 +421,7 @@ un tipo :ref:`tupla <python_tuple>`, un tipo :ref:`lista <python_list>`, un tipo
 A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable**
 usando otro tipo **conjunto mutable**:
 
-::
+.. code-block:: pycon
 
     >>> version_plone_dev = set([5.1, 6])
     >>> version_plone_dev
@@ -436,9 +436,9 @@ usando otro tipo **conjunto mutable**:
 A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable**
 usando otro tipo :ref:`cadena de caracteres <python_str>`:
 
-::
+.. code-block:: pycon
 
-    >>> cadena = 'abc'
+    >>> cadena = "abc"
     >>> cadena
     'abc'
     >>> conjunto = {1, 2}
@@ -449,12 +449,12 @@ usando otro tipo :ref:`cadena de caracteres <python_str>`:
 A continuación un ejemplo de agregar nuevos elementos un tipo **conjunto mutable**
 usando otro tipo :ref:`diccionario <python_dict>`:
 
-::
+.. code-block:: pycon
 
-    >>> diccionario = {'key': 1, 2:'lock'}
+    >>> diccionario = {"key": 1, 2: "lock"}
     >>> diccionario.viewitems()
     dict_items([(2, 'lock'), ('key', 1)])
-    >>> conjunto = {'a', 'b'}
+    >>> conjunto = {"a", "b"}
     >>> conjunto.update(diccionario)
     >>> conjunto
     set(['a', 2, 'b', 'key'])
@@ -495,7 +495,7 @@ Conjuntos frozenset
 
 A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = frozenset([6, 2.1, 2.5, 3.6, 4, 5, 4, 2.5])
     >>> print(versiones_plone, type(versiones_plone))
@@ -512,14 +512,14 @@ Ayuda integrada
 Usted puede consultar toda la documentación disponible sobre los **conjuntos set**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> help(set)
 
 Usted puede consultar toda la documentación disponible sobre los **conjuntos frozenset**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> help(frozenset)
 
@@ -535,7 +535,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
     Para ejecutar el código :file:`tipo_conjuntos.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 tipo_conjuntos.py
 

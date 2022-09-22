@@ -17,9 +17,9 @@ Cadenas cortas
 
 Son caracteres encerrado entre comillas simples (``'``) o dobles (``"``).
 
-::
+.. code-block:: pycon
 
-    >>> 'Hola Mundo'
+    >>> "Hola Mundo"
     'Hola Mundo'
 
 
@@ -31,11 +31,11 @@ Cadenas largas
 Son caracteres encerrados entre grupo comillas triples simples (``'''``) o dobles
 (``"""``), están son generalmente son referenciadas como *cadenas de triple comillas*.
 
-::
+.. code-block:: pycon
 
     >>> """Clase que representa una Persona"""
     'Clase que representa una Persona'
-    >>> '''Clase que representa un Supervisor'''
+    >>> """Clase que representa un Supervisor"""
     'Clase que representa un Supervisor'
 
 
@@ -63,9 +63,9 @@ str
 
 Son *secuencias inmutables* de cadenas de caracteres con soporte a caracteres ``ASCII``.
 
-::
+.. code-block:: pycon
 
-    >>> 'Hola Mundo'
+    >>> "Hola Mundo"
     'Hola Mundo'
     >>> "Hola Mundo"
     'Hola Mundo'
@@ -78,9 +78,9 @@ unicode
 
 Son *secuencias inmutables* de cadenas de caracteres con soporte a caracteres ``Unicode``.
 
-::
+.. code-block:: pycon
 
-    >>> u'Jekechitü'
+    >>> "Jekechitü"
     u'Jekechit\xfc'
 
 
@@ -97,7 +97,7 @@ Una cadena puede estar precedida por el carácter:
   sus contrapartidas. Esto es especialmente útil, por ejemplo, para usar las
   expresiones regulares.
 
-    ::
+    .. code-block:: pycon
 
         >>> raw = r"\t\nHola Plone\n"
         >>> type(raw)
@@ -105,7 +105,7 @@ Una cadena puede estar precedida por el carácter:
 
 - Python 3.7 soporta cadena que utiliza codificación :ref:`unicode <python_unicode_cls>`.
 
-    ::
+    .. code-block:: pycon
 
         >>> saber_mas = "Atüjaa oo'omüin..."
         >>> type(saber_mas)
@@ -182,7 +182,7 @@ Las cadenas también admiten operadores aritméticos como los siguientes:
 - El operador :ref:`suma <python_opers_arit_suma>` para realizar concatenación de
   cadenas de caracteres:
 
-  ::
+  .. code-block:: pycon
 
       >>> a, b = "uno", "dos"
       >>> a + b
@@ -191,7 +191,7 @@ Las cadenas también admiten operadores aritméticos como los siguientes:
 - El operador :ref:`multiplicación <python_opers_arit_multi>` para repetir la cadena
   de caracteres por N veces definidas en la multiplicación:
 
-  ::
+  .. code-block:: pycon
 
       >>> c = "tres"
       >>> c * 3
@@ -228,25 +228,23 @@ El signo para indicar el comienzo de un comentario en Python es el carácter num
 ``#``, a partir del cual y hasta el fin de la línea, todo se considera un comentario y
 es ignorado por el intérprete Python.
 
-::
+.. code-block:: pycon
 
     >>> # comentarios en linea
-    ...
     >>>
 
 El carácter ``#`` puede estar al comienzo de línea (en cuyo caso toda la línea será
 ignorada), o después de finalizar una instrucción válida de código.
 
-::
+.. code-block:: pycon
 
     >>> # Programa que calcula la sucesión
     ... # de números Fibonacci
-    ...
     >>> # se definen las variables
     ... a, b = 0, 1
-    >>> while b < 100: # mientras b sea menor a 100 itere
+    >>> while b < 100:  # mientras b sea menor a 100 itere
     ...     print(b),
-    ...     a, b = b, a + b # se calcula la sucesión Fibonacci
+    ...     a, b = b, a + b  # se calcula la sucesión Fibonacci
     ...
     1 1 2 3 5 8 13 21 34 55 89
 
@@ -263,22 +261,21 @@ van entre triples comillas (simples o dobles), esto tiene el inconveniente que, 
 no genera código ejecutable, el bloque delimitado no es ignorado por el intérprete
 Python, que crea el correspondiente objeto de tipo :ref:`cadena de caracteres <python_str>`.
 
-::
+.. code-block:: pycon
 
     >>> """comentarios en varias lineas"""
     'comentarios en varias lineas'
-    >>> '''comentarios en varias lineas'''
+    >>> """comentarios en varias lineas"""
     'comentarios en varias lineas'
 
 
 A continuación, una comparación entre comentarios multilínea y comentarios en solo
 una linea:
 
-::
+.. code-block:: pycon
 
     >>> # Calcula la sucesión
     ... # de números Fibonacci
-    ...
     >>> """Calcula la sucesión
     ... de números Fibonacci"""
     'Calcula la sucesión \nde números Fibonacci'
@@ -295,7 +292,7 @@ son:
 
 A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
 
-::
+.. code-block:: pycon
 
     >>> """Calcula la sucesiónde números Fibonacci"""
     'Calcula la sucesiónde números Fibonacci'
@@ -347,7 +344,7 @@ Python implementa un sistema muy sencillo para establecer el valor de las ``docs
 en las funciones, únicamente tiene que crear un comentario en la primera línea después
 de la declaración.
 
-::
+.. code-block:: pycon
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
@@ -360,7 +357,7 @@ Puede puede consultar la documentación de la función ``hola()`` debe utilizar 
 función integrada :ref:`help() <python_fun_help>` y pasarle el argumento del objeto
 de función ``hola()``:
 
-::
+.. code-block:: pycon
 
     >>> help(hola)
 
@@ -380,14 +377,12 @@ Clases y métodos
 De la misma forma puede establecer la documentación de la clase después de la
 definición, y de los métodos, como si fueran funciones:
 
-::
+.. code-block:: pycon
 
     >>> class Clase:
-    ...
     ...     """El docstring de la clase"""
     ...     def __init__(self):
     ...         """El docstring del método constructor de clase"""
-    ...
     ...     def metodo(self):
     ...         """El docstring del método de clase"""
     ...
@@ -423,7 +418,7 @@ Cuando tiene un script o módulo, la primera línea del mismo hará referencia a
 
 En el archivo ``mi_modulo.py`` debe contener el siguiente código:
 
-::
+.. code-block:: pycon
 
     """El docstring del módulo"""
 
@@ -441,7 +436,7 @@ del módulo ``mi_modulo`` debe utilizar la función integrada
 :ref:`help() <python_fun_help>` y pasarle el argumento el nombre de módulo
 ``mi_modulo``, de la siguiente manera:
 
-::
+.. code-block:: pycon
 
     >>> import mi_modulo
     >>> help(mi_modulo)
@@ -461,7 +456,7 @@ módulo ``mi_modulo``, usando la función integrada :ref:`help() <python_fun_hel
 y pasarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir,
 ``mi_modulo.despedir``, de la siguiente manera:
 
-::
+.. code-block:: pycon
 
     >>> help(mi_modulo.despedir)
 
@@ -473,7 +468,7 @@ y pasarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir,
 Opcionalmente , usted puede listar las variables y funciones del módulo con la función
 ``dir()``, de la siguiente manera:
 
-::
+.. code-block:: pycon
 
     >>> dir(mi_modulo)
     ['__builtins__',
@@ -490,11 +485,11 @@ Opcionalmente , usted puede listar las variables y funciones del módulo con la 
 Como puede apreciar, muchas de estas variables son especiales, puede comprobar sus
 valores:
 
-::
+.. code-block:: pycon
 
-    >>> print(mi_modulo.__name__)     # Nombre del módulo
+    >>> print(mi_modulo.__name__)  # Nombre del módulo
     'mi_modulo'
-    >>> print(mi_modulo.__doc__)      # Docstring del módulo
+    >>> print(mi_modulo.__doc__)  # Docstring del módulo
     'El docstring del módulo'
     >>> print(mi_modulo.__package__)  # Nombre del paquete del módulo
 
@@ -518,7 +513,7 @@ operador de interpolación. Usted necesitará proveer el % seguido por el tipo q
 necesita ser formateado o convertido. El operador % entonces substituye la frase
 '%tipodato' con cero o mas elementos del tipo de datos especificado:
 
-::
+.. code-block:: pycon
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
@@ -528,7 +523,7 @@ necesita ser formateado o convertido. El operador % entonces substituye la frase
 También aquí se puede controlar el formato de salida. Por ejemplo, para obtener el
 valor con 8 dígitos después de la coma:
 
-::
+.. code-block:: pycon
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
@@ -552,7 +547,7 @@ Con esta sintaxis hay que determinar el tipo del objeto:
 
 A continuación un ejemplo por cada tipo de datos:
 
-::
+.. code-block:: pycon
 
     >>> print("CMS: %s, ¿Activar S o N?: %c" % ("Plone", "S"))
     CMS: Plone, ¿Activar S o N?: S
@@ -591,7 +586,7 @@ Esto es una forma más clara y elegante es referenciar objetos dentro de la mism
 cadena, y usar este *método* para sustituirlos con los objetos que se le pasan como
 argumentos.
 
-::
+.. code-block:: pycon
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
@@ -600,7 +595,7 @@ argumentos.
 
 También se puede referenciar a partir de la posición de los valores utilizando índices:
 
-::
+.. code-block:: pycon
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
@@ -610,11 +605,14 @@ También se puede referenciar a partir de la posición de los valores utilizando
 Los objetos también pueden ser referenciados utilizando un identificador con una clave y
 luego pasarla como argumento al método:
 
-::
+.. code-block:: pycon
 
     >>> tipo_calculo = "raíz cuadrada de dos"
-    >>> print("el resultado de {nombre} es {resultado}".format(
-    ...     nombre=tipo_calculo, resultado=2**0.5))
+    >>> print(
+    ...     "el resultado de {nombre} es {resultado}".format(
+    ...         nombre=tipo_calculo, resultado=2**0.5
+    ...     )
+    ... )
     el resultado de raíz cuadrada de dos es 1.41421356237
 
 
@@ -625,7 +623,7 @@ Este método soporta muchas técnicas de formateo, aquí algunos ejemplos:
 Alinear una cadena de caracteres a la derecha en 30 caracteres, con la siguiente
 sentencia:
 
-::
+.. code-block:: pycon
 
     >>> print("{:>30}".format("raíz cuadrada de dos"))
          raíz cuadrada de dos
@@ -633,7 +631,7 @@ sentencia:
 Alinear una cadena de caracteres a la izquierda en 30 caracteres (crea espacios a
 la derecha), con la siguiente sentencia:
 
-::
+.. code-block:: pycon
 
     >>> print("{:30}".format("raíz cuadrada de dos"))
     raíz cuadrada de dos
@@ -641,14 +639,14 @@ la derecha), con la siguiente sentencia:
 Alinear una cadena de caracteres al centro en 30 caracteres, con la siguiente
 sentencia:
 
-::
+.. code-block:: pycon
 
     >>> print("{:^30}".format("raíz cuadrada de dos"))
         raíz cuadrada de dos
 
 Truncamiento a 9 caracteres, con la siguiente sentencia:
 
-::
+.. code-block:: pycon
 
     >>> print("{:.9}".format("raíz cuadrada de dos"))
     raíz cua
@@ -657,7 +655,7 @@ Truncamiento a 9 caracteres, con la siguiente sentencia:
 Alinear una cadena de caracteres a la derecha en 30 caracteres con truncamiento
 de 9, con la siguiente sentencia:
 
-::
+.. code-block:: pycon
 
     >>> print("{:>30.9}".format("raíz cuadrada de dos"))
                          raíz cua
@@ -679,17 +677,16 @@ Esto permite controlar el formato de impresión del objeto. Por ejemplo, usted p
 utilizar la expresión ``.4f`` para determinar que un número de coma flotante (``f``)
 se imprima con cuatro dígitos después de la coma (``.4``).
 
-::
+.. code-block:: pycon
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print("el resultado de {0} es {resultado:.4f}".format(
-    ...     tipo_calculo, resultado=valor))
+    >>> print("el resultado de {0} es {resultado:.4f}".format(tipo_calculo, resultado=valor))
     el resultado de raíz cuadrada de dos es 1.4142
 
 Formateo de números enteros, rellenados con espacios, con las siguientes sentencias:
 
-::
+.. code-block:: pycon
 
     >>> print("{:4d}".format(10))
       10
@@ -701,7 +698,7 @@ Formateo de números enteros, rellenados con espacios, con las siguientes senten
 
 Formateo de números enteros, rellenados con ceros, con las siguientes sentencias:
 
-::
+.. code-block:: pycon
 
     >>> print("{:04d}".format(10))
     0010
@@ -712,7 +709,7 @@ Formateo de números enteros, rellenados con ceros, con las siguientes sentencia
 
 Formateo de números flotantes, rellenados con espacios, con las siguientes sentencias:
 
-::
+.. code-block:: pycon
 
     >>> print("{:7.3f}".format(3.1415926))
       3.142
@@ -721,7 +718,7 @@ Formateo de números flotantes, rellenados con espacios, con las siguientes sent
 
 Formateo de números flotantes, rellenados con ceros, con las siguientes sentencias:
 
-::
+.. code-block:: pycon
 
     >>> print("{:07.3f}".format(3.1415926))
     003.142
@@ -808,7 +805,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 **Ejemplo de consulta de ayuda a la función len**
 
-::
+.. code-block:: pycon
 
     >>> help(len)
 
@@ -822,7 +819,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 **Ejemplo de consulta de ayuda a la clase int**
 
-::
+.. code-block:: pycon
 
     >>> help(int)
 
@@ -839,7 +836,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 **Ejemplo de consulta de ayuda del módulo**
 
-::
+.. code-block:: pycon
 
     >>> import datetime
     >>> help(datetime)
@@ -865,7 +862,7 @@ Usted puede consultar toda la documentación disponible sobre las
 :ref:`cadenas de caracteres <python_str_cls>` desde la
 :ref:`consola interactiva <python_interactivo>` de la siguiente manera:
 
-::
+.. code-block:: pycon
 
     >>> help(str)
 
@@ -875,7 +872,7 @@ Usted puede consultar toda la documentación disponible sobre las cadenas de car
 :ref:`unicode <python_unicode_cls>` desde la :ref:`consola interactiva <python_interactivo>`
 de la siguiente manera:
 
-::
+.. code-block:: pycon
 
     >>> help(unicode)
 
@@ -895,7 +892,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
     consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 tipo_cadenas.py
 

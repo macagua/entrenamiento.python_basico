@@ -189,7 +189,7 @@ siguiente comando:
 
 Entonces consulte la ayuda del módulo ``os``, ejecutando:
 
-::
+.. code-block:: pycon
 
     help> os
     Help on module os:
@@ -349,7 +349,7 @@ Según Wikipedia
 Para mayor información visite su página principal de `ipython`_ y si necesita instalar
 este programa ejecute el siguiente comando:
 
-.. code-block:: sh
+.. code-block:: console
 
     sudo apt install ipython
 
@@ -357,7 +357,7 @@ este programa ejecute el siguiente comando:
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 ``python`` por ``ipython`` de la siguiente forma:
 
-.. code-block:: sh
+.. code-block:: console
 
     ipython
     Python 2.7.16 (default, Oct 10 2019, 22:02:15)
@@ -555,7 +555,7 @@ de trabajo con el paquete `ipython`.
 Para mayor información visite su página principal de `interprete bpython`_ y si necesita instalar
 este programa ejecute el siguiente comando:
 
-.. code-block:: sh
+.. code-block:: console
 
     sudo apt install -y python-pip
     sudo pip3 install bpython
@@ -563,7 +563,7 @@ este programa ejecute el siguiente comando:
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 ``python`` por ``ipython`` de la siguiente forma:
 
-.. code-block:: sh
+.. code-block:: console
 
     bpython
 

@@ -73,7 +73,7 @@ por la memoria disponible en la máquina.
 Al asignar un número a una variable esta pasará a tener tipo ``int``, a menos que el
 número sea tan grande como para requerir el uso del tipo ``long``.
 
-::
+.. code-block:: pycon
 
     >>> entero = 23
     >>> type(entero)
@@ -82,9 +82,9 @@ número sea tan grande como para requerir el uso del tipo ``long``.
 También puede indicar a Python que un número se almacene usando ``long`` añadiendo
 una *L* al final:
 
-::
+.. code-block:: pycon
 
-    >>> entero = 23L
+    >>> entero = 23l
     >>> type(entero)
     <type 'long'>
 
@@ -92,14 +92,14 @@ una *L* al final:
 El literal que se asigna a la variable también se puede expresar como un ``octal``,
 anteponiendo un cero:
 
-::
+.. code-block:: pycon
 
     # 027 octal = 23 en base 10
     entero = 027
 
 o bien en hexadecimal, anteponiendo un ``0x``:
 
-::
+.. code-block:: pycon
 
     # 0x17 hexadecimal = 23 en base 10
     entero = 0x17
@@ -152,14 +152,14 @@ no son precisos (ni en este ni en otros lenguajes de programación).
 Para representar un número real en Python se escribe primero la parte entera, seguido
 de un punto y por último la parte decimal.
 
-::
+.. code-block:: pycon
 
     real = 0.2703
 
 También se puede utilizar notación científica, y añadir una e (de exponente) para
 indicar un exponente en base 10. Por ejemplo:
 
-::
+.. code-block:: pycon
 
     real = 0.1e-3
 
@@ -208,7 +208,7 @@ parte imaginaria.
 
 Los números complejos en Python se representan de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     complejo = 2.1 + 7.8j
 
@@ -250,7 +250,7 @@ Ayuda integrada
 Usted puede consultar toda la documentación disponible sobre las **números enteros**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> help(int)
 
@@ -260,7 +260,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 Usted puede consultar toda la documentación disponible sobre las **números enteros
 long** desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> help(long)
 
@@ -271,7 +271,7 @@ Usted puede consultar toda la documentación disponible sobre las **números com
 flotante** desde la :ref:`consola interactiva <python_interactivo>` de la siguiente
 forma:
 
-::
+.. code-block:: pycon
 
     >>> help(float)
 
@@ -281,7 +281,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 Usted puede consultar toda la documentación disponible sobre las **números complejos**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> help(complex)
 
@@ -305,7 +305,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
     Para ejecutar el código :file:`tipo_numericos.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 tipo_numericos.py
 

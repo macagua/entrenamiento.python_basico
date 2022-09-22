@@ -17,7 +17,7 @@ Operador ==
 
 El operador ``==`` evalúa que los valores sean *iguales* para varios tipos de datos.
 
-::
+.. code-block:: pycon
 
     >>> 5 == 3
     False
@@ -38,7 +38,7 @@ Operador !=
 
 El operador ``!=`` evalúa si los valores son *distintos*.
 
-::
+.. code-block:: pycon
 
     >>> 5 != 3
     True
@@ -56,7 +56,7 @@ Operador <
 El operador ``<`` evalúa si el valor del lado izquierdo es *menor que* el valor del
 lado derecho.
 
-::
+.. code-block:: pycon
 
     >>> 5 < 3
     False
@@ -70,7 +70,7 @@ Operador >
 El operador ``>`` evalúa si el valor del lado izquierdo es *mayor que* el valor del
 lado derecho.
 
-::
+.. code-block:: pycon
 
     >>> 5 > 3
     True
@@ -84,7 +84,7 @@ Operador <=
 El operador ``<=`` evalúa si el valor del lado izquierdo es *menor o igual que* el
 valor del lado derecho.
 
-::
+.. code-block:: pycon
 
     >>> 5 <= 3
     False
@@ -98,7 +98,7 @@ Operador >=
 El operador ``>=`` evalúa si el valor del lado izquierdo es *mayor o igual que* el
 valor del lado derecho.
 
-::
+.. code-block:: pycon
 
     >>> 5 >= 3
     True
@@ -173,7 +173,7 @@ A continuación, se presentan algunos ejemplos de su uso:
     consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python operadores_relacionales.py
 

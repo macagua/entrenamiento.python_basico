@@ -144,7 +144,7 @@ con bucle ``while``:
     consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 bucle_while.py
 

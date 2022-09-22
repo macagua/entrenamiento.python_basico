@@ -17,7 +17,7 @@ Operador Suma
 
 El operador ``+`` suma los valores de tipo de datos numéricos.
 
-::
+.. code-block:: pycon
 
     >>> 3 + 2
     5
@@ -30,7 +30,7 @@ Operador Resta
 
 El operador ``-`` resta los valores de tipo de datos numéricos.
 
-::
+.. code-block:: pycon
 
     >>> 4 - 7
     -3
@@ -43,7 +43,7 @@ Operador Negación
 
 El operador ``-`` asigna un valor negativo a un tipo de datos numéricos.
 
-::
+.. code-block:: pycon
 
     >>> -7
     -7
@@ -56,7 +56,7 @@ Operador Multiplicación
 
 El operador ``*`` multiplica los valores de tipo de datos numéricos.
 
-::
+.. code-block:: pycon
 
     >>> 2 * 6
     12
@@ -69,9 +69,9 @@ Operador Exponente
 
 El operador ``**`` calcula el exponente entre valores de tipo de datos numéricos.
 
-::
+.. code-block:: pycon
 
-    >>> 2 ** 6
+    >>> 2**6
     64
 
 
@@ -82,7 +82,7 @@ Operador división
 
 El operador *división* el resultado que se devuelve es un número real.
 
-::
+.. code-block:: pycon
 
     >>> 3.5 / 2
     1.75
@@ -95,7 +95,7 @@ Operador división entera
 
 El operador *división entera* el resultado que se devuelve es solo la parte entera.
 
-::
+.. code-block:: pycon
 
     >>> 3.5 // 22
     1.0
@@ -107,14 +107,14 @@ el resultado de, por ejemplo, ``3 / 2`` y ``3 // 2`` sería el mismo: ``1``.
 Si quisiéramos obtener los decimales necesitaríamos que al menos uno de los operandos
 fuera un número real, bien indicando los decimales:
 
-::
+.. code-block:: pycon
 
     r = 3.0 / 2
 
 O bien utilizando la función :ref:`float() <python_fun_float>` para convertir a
 entero coma flotante o real:
 
-::
+.. code-block:: pycon
 
     r = float(3) / 2
 
@@ -131,7 +131,7 @@ El operador *módulo* no hace otra cosa que devolver el resto de la división en
 los dos operandos. En el ejemplo, ``7 / 2`` sería ``3``, con ``1`` de resto, luego
 el *módulo* es ``1``.
 
-::
+.. code-block:: pycon
 
     >>> 7 % 2
     1
@@ -154,9 +154,9 @@ El orden de precedencia de ejecución de los operadores aritméticos es:
 
 Eso quiere decir que se debe usar así:
 
-::
+.. code-block:: pycon
 
-    >>> 2**1/12
+    >>> 2**1 / 12
     0.16666666666666666
     >>>
 
@@ -164,9 +164,9 @@ Más igualmente usted puede omitir este orden de precedencia de ejecución de lo
 operadores aritméticos usando paréntesis ``()``  anidados entre cada nivel calculo,
 por ejemplo:
 
-::
+.. code-block:: pycon
 
-    >>> 2**(1/12)
+    >>> 2 ** (1 / 12)
     1.0594630943592953
     >>>
 
