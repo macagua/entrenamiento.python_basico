@@ -408,7 +408,7 @@ De nuevo realice la importación de la librería del estándar Python llamada
 También consultar los detalles acerca del 'objeto' para esto use como ejemplo
 la librería ``os`` ejecutando el siguiente comando:
 
-.. code-block:: ipython
+.. code-block:: pycon
 
     In [2]: os?
     Type:        module
@@ -463,7 +463,7 @@ librería importada
 También puede consultar la documentación de la librería ``os`` de la
 siguiente forma:
 
-.. code-block:: ipython
+.. code-block:: pycon
 
     In [5]: print(os.__doc__)
     OS routines for NT or Posix depending on what system we're on.
@@ -500,7 +500,7 @@ Otro ejemplo es imprimir el **nombre de la clase** con el siguiente comando:
 Y otra forma de consultar la documentación de la librería ``os`` es
 ejecutando el siguiente comando:
 
-.. code-block:: ipython
+.. code-block:: pycon
 
     In [7]: help(os)
     Help on module os:
@@ -540,7 +540,7 @@ Entonces presione la tecla :keys:`q` para salir de la ayuda del módulo ``os``.
 
 Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 
-.. code-block:: ipython
+.. code-block:: pycon
 
     In [8]: exit()
     Do you really want to exit ([y]/n)? y
@@ -552,8 +552,8 @@ Interprete bpython
 Alternativamente puedes usar el paquete `bpython` que mejora aun mas la experiencia
 de trabajo con el paquete `ipython`.
 
-Para mayor información visite su página principal de `interprete bpython`_ y si necesita instalar
-este programa ejecute el siguiente comando:
+Para mayor información visite su página principal de `interprete bpython`_ y si necesita
+instalar este programa ejecute el siguiente comando:
 
 .. code-block:: console
 
@@ -571,7 +571,7 @@ Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 Dentro de interprete Python puede apreciar que ofrece otra forma de presentar
 la documentación y la estructura del lenguaje, con los siguientes comandos de ejemplos:
 
-.. code-block:: ipython
+.. code-block:: console
 
     >>> print('Hola Mundo')
     Hola Mundo

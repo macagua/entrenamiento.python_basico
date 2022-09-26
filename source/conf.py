@@ -112,7 +112,6 @@ today_fmt = "%d de %B de %Y"
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "build", "Thumbs.db", ".DS_Store", "index_latex.rst"]
 
-
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
 show_authors = True
