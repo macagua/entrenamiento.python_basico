@@ -519,7 +519,7 @@ quizdown_config = {
     "locale": "es",
 }
 
-# -- Options for yasfb extension -------------------------------
+# -- Options for yasfb extension ---------------------------------------------
 
 # Set the Feed Base Url.
 feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3.7/"
@@ -527,7 +527,7 @@ feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3.7/"
 # Set the Feed Author Name.
 feed_author = "Leonardo Caballero"
 
-# -- Options for disqus extension --------------------------------------------------
+# -- Options for disqus extension --------------------------------------------
 
 # Set disqus site short name.
 disqus_shortname = "entrenamiento-python-basico"
