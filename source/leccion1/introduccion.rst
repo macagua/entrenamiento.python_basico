@@ -27,13 +27,13 @@ Bajos.
     :align: center
     :width: 40%
 
-    Guido van Rossum en 2006.
+    Guido van Rossum en la convención OSCON 2006.
 
 
-Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java
-1991). Toma características de lenguajes predecesores, incluso, compatibilizando la
-solución de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de
-una variable: desde el entorno interactivo escribiendo su nombre (como en Basic), usando
+Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 1991).
+Toma características de lenguajes predecesores, incluso, compatibilizando la solución
+de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de una
+variable: desde el entorno interactivo escribiendo su nombre (como en Basic), usando
 la función ``print``, con concatenación de elementos (al estilo del ``write`` de Pascal)
 o bien con patrones de formato (al estilo del ``printf`` de C).
 
@@ -55,8 +55,7 @@ por lo que se puede usar y distribuir libremente, incluso para uso comercial.
 
     Logotipo de la Open Source Initiative.
 
-La licencia
-de Python es administrada por :ref:`Python Software Foundation <python_psf>`.
+La licencia de Python es administrada por :ref:`Python Software Foundation <python_psf>`.
 
 - `Aprenda más sobre la licencia <https://docs.python.org/es/3.7/license.html>`_.
 
@@ -140,7 +139,7 @@ a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.
     :align: center
     :width: 70%
 
-    Comunidad Python reunidad en la PyCon 2018 in Cleveland, Ohio.
+    Comunidad Python reunida en la PyCon 2018 en Cleveland, Ohio.
 
 
 Declaración de Diversidad
@@ -257,6 +256,18 @@ comunitario del proyecto Python en Sudamérica.
     uso y promoviendo para tal fin, el uso del lenguaje de programación Python y las tecnologías
     asociadas a éste. Más información visite http://pyve.github.io/
 
+
+----
+
+.. _python_intro_quiz:
+
+Prueba
+......
+
+A continuación, presentamos una serie de preguntas para que validez usted mismo los conocimientos
+adquiridos en esta sección de la lección.
+
+.. include:: ../_quizzes/leccion1/introduccion.rst
 
 ----
 

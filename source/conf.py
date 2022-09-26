@@ -62,6 +62,7 @@ extensions = [
     "sphinx_immaterial",
     "sphinx_immaterial.kbd_keys",
     "sphinxcontrib.email",
+    "sphinxcontrib.quizdown",
     "yasfb",
     "sphinx_disqus.disqus",
 ]
@@ -495,6 +496,28 @@ todo_emit_warnings = False
 
 # Set True to automatically obfuscate all mailto links.
 email_automode = True
+
+# -- Options for quizdown extension ------------------------------------------
+
+# Global options passed to the quizdown library
+quizdown_config = {
+    # quizdown javascript
+    "quizdown_js": "https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js",
+    # detect and convert all divs with class quizdown
+    "start_on_load": True,
+    # shuffle answers for each question
+    "shuffle_answers": True,
+    # shuffle questions for each quiz
+    "shuffle_questions": True,
+    # primary CSS color
+    "primary_color": "#FF851B",
+    # secondary CSS color
+    "secondary_color": "#DDDDDD",
+    # text color of interactive elements
+    "text_color": "black",
+    # language of text in user interface
+    "locale": "es",
+}
 
 # -- Options for yasfb extension -------------------------------
 
