@@ -17,3 +17,6 @@ virtualenv==20.16.5
 # https://pypi.org/project/pyupgrade/
 pyupgrade==2.37.3
 tokenize-rt==4.2.1
+
+# https://pypi.org/project/sphinx-lint/
+sphinx-lint==0.6.1
