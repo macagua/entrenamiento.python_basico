@@ -6,7 +6,7 @@ Licencia Creative Commons Atribución-CompartirIgual 3.0 Venezuela (CC BY-SA 3.0
 
 Usted es libre de:
 
-  * Compartir — copiar y redistribuir el material en cualquier medio 
+  * Compartir — copiar y redistribuir el material en cualquier medio
     o formato.
 
   * Adaptar — remezclar, transformar y crear a partir del material.
