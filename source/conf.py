@@ -12,10 +12,15 @@
 import os
 import sys
 
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+# sys.path.insert(0, os.path.abspath('.'))
 sys.path.append(os.path.abspath("sphinxext"))
 
 
 # -- Project information -----------------------------------------------------
+# General information about the project.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project_namecode = "entrenamiento.python_basico"
@@ -32,10 +37,10 @@ author = "Leonardo J. Caballero G."
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-# The short X.Y version
-version = "3.0"
-# The full version, including alpha/beta/rc tags
-release = "3.0"
+# The short X.Y version.
+version = "3.7"
+# The full version, including alpha/beta/rc tags.
+release = "3.7.3"
 
 
 # -- General configuration ---------------------------------------------------
@@ -93,7 +98,7 @@ today_fmt = "%d de %B de %Y"
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-# exclude_patterns = ['index_latex.rst']
+# exclude_patterns = ["_build", "build", "Thumbs.db", ".DS_Store"]
 
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
@@ -208,7 +213,7 @@ html_css_files = [
 # The attributes is used for attributes of <script> tag. It defaults to an empty list.
 html_js_files = [
     "https://code.jquery.com/jquery-latest.min.js",
-    # 'javascripts/real_time.js'
+    # "javascripts/real_time.js"
 ]
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -263,7 +268,7 @@ html_show_sphinx = False
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
-# html_use_opensearch = 'entrenamiento-python-basico.readthedocs.io'
+# html_use_opensearch = "entrenamiento-python-basico.readthedocs.io"
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 # html_file_suffix = None
