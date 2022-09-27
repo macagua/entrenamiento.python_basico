@@ -101,6 +101,15 @@ agradecimiento de todos.
 Colaboradores del entrenamiento
 ===============================
 
+¡GRACIAS A LOS COLABORADORES DE ESTA INICIATIVA!
+
+.. contributors:: Covantec/entrenamiento.python_basico
+   :avatars:
+   :exclude: dependabot[bot]
+
+.. todo::
+    TODO corregir alineación de avatar de los colaboradores.
+
 La lista debajo incluye todos los colaboradores y autores con al menos 10 líneas en
 el tutorial. La lista completa de colaboradores está disponible en el repositorio.
 
