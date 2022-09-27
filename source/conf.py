@@ -153,12 +153,12 @@ html_theme = "sphinx_immaterial"
 # documentation.
 #
 html_theme_options = {
-    "edit_uri": "src/3.7/source",
-    "repo_url": "https://bitbucket.org/covantec/entrenamiento.python_basico",
+    "edit_uri": "edit/3.7/source",
+    "repo_url": "https://github.com/Covantec/entrenamiento.python_basico",
     "repo_name": "entrenamiento.python_basico",
-    "repo_type": "bitbucket",
+    "repo_type": "github",
     "icon": {
-        "repo": "fontawesome/brands/bitbucket",
+        "repo": "fontawesome/brands/github",
     },
     "features": [
         "navigation.expand",

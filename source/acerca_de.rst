@@ -50,17 +50,6 @@ Sobre el instructor
    :file: _templates/partials/virtual_business_card.html
 
 
-.. _reportes_bug_typo_idea:
-
-¿Bug o typo? ¿Una gran idea?
-============================
-
-Conseguiste algun error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
-este material, puedes reportarla o solicitar en el siguiente:
-
-https://bitbucket.org/covantec/entrenamiento.python_basico/issues/new
-
-
 .. _el_equipo:
 
 Patrocinantes
@@ -85,15 +74,17 @@ Mantenedores del entrenamiento
 
 El repositorio del entrenamiento está disponible en la siguiente dirección:
 
-   https://bitbucket.org/covantec/entrenamiento.python_basico/
+   https://github.com/Covantec/entrenamiento.python_basico/
 
 Es muy fácil entrar en la lista. Simplemente contacta a algunos de los siguientes
 mantenedores del repositorio, para acordar una reunión y formas de colaboración en
 mantener estos recursos de aprendizajes para este entrenamiento. Y obtenga el
 agradecimiento de todos.
 
-
-* `Leonardo J. Caballero G. <#sobre-el-instructor>`_.
+.. contributors:: Covantec/entrenamiento.python_basico
+   :avatars:
+   :limit: 1
+   :exclude: dependabot[bot]
 
 
 .. _colaboradores:
@@ -103,17 +94,15 @@ Colaboradores del entrenamiento
 
 ¡GRACIAS A LOS COLABORADORES DE ESTA INICIATIVA!
 
+La lista debajo incluye todos los colaboradores y autores con al menos 10 líneas en
+el tutorial. La lista completa de colaboradores está disponible en el repositorio.
+
 .. contributors:: Covantec/entrenamiento.python_basico
    :avatars:
    :exclude: dependabot[bot]
 
 .. todo::
     TODO corregir alineación de avatar de los colaboradores.
-
-La lista debajo incluye todos los colaboradores y autores con al menos 10 líneas en
-el tutorial. La lista completa de colaboradores está disponible en el repositorio.
-
-* `Leonardo J. Caballero G. <#sobre-el-instructor>`_.
 
 Es muy fácil entrar en la lista. Simplemente escriba un artículo o proponga cambios
 en el repositorio del entrenamiento. Y obtenga el agradecimiento de todos.
@@ -129,9 +118,14 @@ Contribuir
 
 ¡Gracias por considerar contribuir a esta documentación!
 
-* Consulte el `issue tracker <https://github.com/Covantec/entrenamiento.python_basico/issues>`_ para obtener una lista de funciones que nos gustaría agregar en el futuro.
+Conseguiste algun error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
+este material, puedes reportarla o solicitarla en:
 
-* Siéntase libre de proponer nuevas funciones o informar errores, describiendo cómo desea que se comporte la documentación.
+* Consulte el `issue tracker <https://github.com/Covantec/entrenamiento.python_basico/issues>`_ para obtener
+  una lista de funciones que nos gustaría agregar en el futuro.
+
+* Siéntase libre de proponer nuevas funciones o informar errores, describiendo cómo desea que se comporte la
+  documentación.
 
 * Háganos saber en el mismo problema si desea enviar un pull-request ❤️
 
