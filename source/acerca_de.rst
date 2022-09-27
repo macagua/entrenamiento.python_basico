@@ -118,6 +118,23 @@ el tutorial. La lista completa de colaboradores está disponible en el repositor
 Es muy fácil entrar en la lista. Simplemente escriba un artículo o proponga cambios
 en el repositorio del entrenamiento. Y obtenga el agradecimiento de todos.
 
+¡Animamos las contribuciones públicas! Consulte la sección :ref:`Contribuir <contribuir>`
+para obtener detalles sobre nuestro código de conducta y proceso de desarrollo.
+
+
+.. _contribuir:
+
+Contribuir
+==========
+
+¡Gracias por considerar contribuir a esta documentación!
+
+* Consulte el `issue tracker <https://github.com/Covantec/entrenamiento.python_basico/issues>`_ para obtener una lista de funciones que nos gustaría agregar en el futuro.
+
+* Siéntase libre de proponer nuevas funciones o informar errores, describiendo cómo desea que se comporte la documentación.
+
+* Háganos saber en el mismo problema si desea enviar un pull-request ❤️
+
 
 .. _contactenos:
 
