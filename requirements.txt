@@ -61,3 +61,6 @@ sphinx-disqus==1.2.0
 
 # https://github.com/bonartm/sphinxcontrib-quizdown
 sphinxcontrib-quizdown @ git+https://github.com/bonartm/sphinxcontrib-quizdown.git@d9f24a7a2305ad5b196e06597b1779c9414d1d85
+
+# https://pypi.org/project/sphinx_contributors/
+sphinx-contributors==0.2.6
