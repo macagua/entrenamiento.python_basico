@@ -3,13 +3,12 @@
 
 .. _python_leccion10:
 
-Decoradores y la librería estándar
-==================================
+Listas de comprensión y la librería estándar
+============================================
 
 .. toctree::
    :maxdepth: 2
 
-   decoradores
    listas_comprension
    libreria_estandar
    fecha_hora
