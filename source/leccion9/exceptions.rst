@@ -305,7 +305,7 @@ Las siguientes excepciones son las realmente lanzadas.
     los atributos ``filename`` (nombre del archivo), ``lineno`` (nº de línea),
     ``offset`` (nº de columna) y ``text`` (texto), que ofrecen un acceso más fácil a
     los detalles. En las excepciones de cadena, el valor asociado suele ser una tupla
-    de la forma (mensaje, (nombreFichero, numLinea, columna, texto)). En las excepciones
+    de la forma (mensaje, (nombreArchivo, numLinea, columna, texto)). En las excepciones
     de clase, ``str()`` sólo devuelve el mensaje. Deriva de la clase raíz
     :ref:`StandardError <python_exception_standarderror>`.
 

@@ -51,7 +51,7 @@ Postmortem
 
 **Situación**: Estás trabajando en ``ipython`` y obtienes un error (`traceback`).
 
-En este caso esta depurando el fichero :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`. Escribe ``%debug`` y entrarás en el depurador.
+En este caso esta depurando el archivo :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`. Escribe ``%debug`` y entrarás en el depurador.
 
 .. sourcecode:: ipython
 
@@ -218,7 +218,7 @@ estamos haciendo aritmética con enteros.
 
 .. topic:: Lanzando excepciones en errores numéricos
 
-    Cuando ejecuta el fichero :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`,
+    Cuando ejecuta el archivo :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`,
     se lanzarán los siguientes avisos:
 
     .. sourcecode:: ipython
