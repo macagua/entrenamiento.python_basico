@@ -12,6 +12,7 @@ __pycache__/
 env/
 bin/
 build/
+bnk/
 develop-eggs/
 dist/
 eggs/
@@ -24,6 +25,8 @@ parts/
 sdist/
 var/
 venv/
+py3.7/
+*.bnk
 *.egg-info/
 .installed.cfg
 *.egg
