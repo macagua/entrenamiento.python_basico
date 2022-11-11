@@ -48,9 +48,9 @@ factores:
 La forma mas fácil es iniciar tu relación con Python simplemente ejecutando
 el comando ``python`` de la siguiente forma:
 
-.. code-block:: pycon
+.. code-block:: console
 
-    python3
+    $ python3
     Python 3.7.3 (default, Jan 22 2021, 20:04:44)
     [GCC 8.3.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
@@ -427,7 +427,7 @@ este programa ejecute el siguiente comando:
 
 .. code-block:: console
 
-    sudo apt install ipython
+    $ sudo apt install ipython
 
 
 Sustituya el comando ``python3`` por ``ipython3`` de la siguiente forma:
@@ -562,7 +562,7 @@ siguiente forma:
 
 Otro ejemplo es imprimir el **nombre de la clase** con el siguiente comando:
 
-.. code-block:: python
+.. code-block:: pycon
 
     In[6]: os.__name__
     Out[6]: "os"
@@ -631,15 +631,15 @@ instalar este programa ejecute el siguiente comando:
 
 .. code-block:: console
 
-    sudo apt install -y python-pip
-    sudo pip3 install bpython
+    $ sudo apt install -y python-pip
+    $ sudo pip3 install bpython
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 ``python`` por ``ipython`` de la siguiente forma:
 
 .. code-block:: console
 
-    bpython
+    $ bpython
 
 
 Dentro de interprete Python puede apreciar que ofrece otra forma de presentar
