@@ -11,7 +11,7 @@ pero sin modificarla. También, esto es llamado meta-programación, por que part
 programa trata de modificar a otro al momento de compilar.
 
 Los decoradores son una funcionalidad relativamente importante en Python son definidos
-en el PEP-318. https://www.python.org/dev/peps/pep-0318/
+en el PEP-318. https://peps.python.org/pep-0318/
 
 Se podría decir que son funciones que modifican la funcionalidad de otras funciones,
 y ayudan a hacer el código más corto y Pytónico. A continuación vera lo que son, cómo

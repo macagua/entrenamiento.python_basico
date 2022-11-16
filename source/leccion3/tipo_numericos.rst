@@ -140,7 +140,7 @@ representación interna. Pero como muchos sabréis esta tiene sus limitaciones,
 impuestas por el hardware.
 
 Por eso desde Python 2.4 cuenta también con un nuevo tipo
-`Decimal <https://www.python.org/dev/peps/pep-0327/>`_, para el caso de que se necesite
+`Decimal <https://peps.python.org/pep-0327/>`_, para el caso de que se necesite
 representar fracciones de forma más precisa. Sin embargo este tipo está fuera del
 alcance de este tutorial, y sólo es necesario para el ámbito de la programación
 científica y otros relacionados.
@@ -315,7 +315,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

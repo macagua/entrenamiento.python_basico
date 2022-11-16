@@ -228,20 +228,8 @@ Recomendaciones
 
 Si desea trabajar con algún proyecto de desarrollo basado en esqueletos o plantillas
 ``paster`` y Buildout simplemente seleccione cual esqueleto va a utilizar para su
-desarrollo y proceso a instalarlo con `easy_install`_ o `PIP`_ (como se explico anteriormente) y siga sus respectivas instrucciones para lograr con éxito la tarea deseada.
-
-
-.. comments:
-
-    Descarga código fuente
-    ......................
-
-    Para descargar el código fuente de este ejemplo ejecute el siguiente
-    comando:
-
-    .. code-block:: console
-
-      $ svn co https://svn.plone.org/svn/collective/spanishdocs/tags/0.1rc/src/mini-tutoriales/mipaquetepython/ mipaquetepython
+desarrollo y proceso a instalarlo con `easy_install`_ o `PIP`_ (como se explico anteriormente)
+y siga sus respectivas instrucciones para lograr con éxito la tarea deseada.
 
 
 Referencias

@@ -28,9 +28,9 @@ al objeto dado. El búfer hará referencia a una porción del objeto de destino 
 inicio del objeto (o en el desplazamiento especificado). La división se extenderá hasta
 el final del objeto de destino (o con el tamaño especificado).
 
-::
+.. code-block:: pycon
 
-    >>> cadena = 'Hola mundo'
+    >>> cadena = "Hola mundo"
     >>> cadena
     'Hola mundo'
     >>> cadena[5:10]
@@ -53,7 +53,7 @@ Este ejemplo anterior no es muy útil para cadenas de caracteres cortas como est
 pero eso puede ser necesario cuando usa un gran numero de data. Este ejemplo puede
 usar un tipo mutable ``bytearray()``:
 
-::
+.. code-block:: pycon
 
     >>> cadena = bytearray(1000000)
     >>> type(cadena)
@@ -106,7 +106,7 @@ el código 2.x pretende que las cadenas contengan caracteres o bytes de 8 bits; 
 puede usar ``bytes`` o ``str`` para representar exactamente su intención, y el código
 resultante también será correcto en Python 3.0.
 
-::
+.. code-block:: pycon
 
     >>> arreglo = bytes("Python es interesante.")
     >>> print(arreglo)
@@ -123,7 +123,7 @@ quit
 Es el método constructor de la clase ``Quitter`` incluida en el módulo ``site`` el
 cual le permite salir de la consola interactiva Python:
 
-::
+.. code-block:: pycon
 
     >>> quit
     Use quit() or Ctrl-D (i.e. EOF) to exit
@@ -142,7 +142,7 @@ slice
 La clase ``slice`` crea un objecto ``slice``, esto es usado por el extendido ``slicing``
 por ejemplo:
 
-::
+.. code-block:: pycon
 
     >>> a = range(20)
     >>> a[0:10:2]
@@ -184,7 +184,7 @@ estático no recibe un primer argumento implícito. La sintaxis es la siguiente:
 
 Para declarar un método estático, a continuación vea el siguiente ejemplo:
 
-::
+.. code-block:: pycon
 
     >>> class Calculador:
     ...     def sumaNumeros(x, y):
@@ -192,9 +192,9 @@ Para declarar un método estático, a continuación vea el siguiente ejemplo:
     ...     # crea un static method sumaNumeros
     ...     sumaNumeros = staticmethod(sumaNumeros)
     ...
-    >>> print('Resultado:', Calculador.sumaNumeros(15, 110))
+    >>> print("Resultado:", Calculador.sumaNumeros(15, 110))
     Resultado: 125
-    >>> print('Resultado:', Calculador().sumaNumeros(15, 110))
+    >>> print("Resultado:", Calculador().sumaNumeros(15, 110))
     Resultado: 125
 
 En el ejemplo anterior usted puede notar que se llamo al método ``sumaNumeros`` sin
@@ -219,14 +219,14 @@ La clase ``staticmethod`` introduce un cambio en la versión 2.4, agregando sint
 Un ejemplo del uso de :ref:`decoradores <python_decoradores>` para ``staticmethod``
 a continuación:
 
-::
+.. code-block:: pycon
 
     >>> class Calculador:
     ...     @staticmethod
     ...     def sumaNumeros(x, y):
     ...         return x + y
     ...
-    >>> print('Resultado:', Calculador.sumaNumeros(15, 110))
+    >>> print("Resultado:", Calculador.sumaNumeros(15, 110))
     Resultado: 125
 
 Este código fuente es enteramente idéntico al primer ejemplo (usando ``@staticmethod``),
@@ -234,32 +234,6 @@ solo que no usa la agradable sintaxis de :ref:`decorador <python_decoradores>`.
 
 Finalmente, se usa el método ``staticmethod()`` escasamente. Hay muchas situaciones donde los
 métodos estáticos son necesarios en Python.
-
-.. comments:
-
-    .. _python_cls_builtins_bool:
-
-    Clases de booleanos
-    ...................
-
-    Las clases de tipos :ref:`booleanos <python_bool>` se describen a continuación:
-
-
-    .. _python_clase_bool:
-
-    bool()
-    ~~~~~~
-
-    La clase ``bool()``, es un constructor, el cual crea un tipo de datos
-    :ref:`booleanos <python_bool>`, devuelve un tipo booleano ``True`` cuando el
-    argumento dado es ``True``, de lo contrario ``False``.
-
-    ::
-
-        >>> bool(True)
-        True
-        >>> bool()
-        False
 
 
 .. _python_cls_builtins_secue:
@@ -285,7 +259,7 @@ Cuando la iteración de la secuencia llega al final se llama a la excepción
 El objeto enumerate es muy útil para obtener una lista indexada como:
 ``(0, seq[0]), (1, seq[1]), (2, seq[2]), ...``.
 
-::
+.. code-block:: pycon
 
     >>> enumerar = enumerate(xrange(3))
     >>> enumerar.next()
@@ -305,7 +279,7 @@ integrada :ref:`xrange() <python_fun_xrange>`.
 A continuación se le pasa el parámetro de *inicio* con el valor *1* de la secuencia
 generada por la clase ``enumerate``:
 
-::
+.. code-block:: pycon
 
     >>> enumerar = enumerate(xrange(3), 1)
     >>> enumerar.next()
@@ -333,7 +307,7 @@ valores de la secuencia, cuando la iteración de la secuencia llega al final se 
 a la excepción :ref:`StopIteration <python_exception_stopiteration>` y se causa el
 detener la iteración.
 
-::
+.. code-block:: pycon
 
     >>> inversa = reversed(xrange(3))
     >>> inversa.next()
@@ -393,16 +367,16 @@ Está permitido llamar a ``close()`` más de una vez.
 Una vez que se terminó de usar el archivo es necesario cerrarlo, para liberar los
 recursos tomados por el manejo del archivo. Eso se hace con la sentencia ``archivo.close()``:
 
-::
+.. code-block:: pycon
 
-    >>> archivo.close() # cierra el archivo datos.txt
+    >>> archivo.close()  # cierra el archivo datos.txt
 
 
 Luego de lo cual no se puede acceder al archivo ``datos.txt``, si intenta una llamada a
 la método :ref:`archivo.read() <python_mtd_read>` devuelve una excepción
 :ref:`ValueError <python_exception_valueerror>`, porque el archivo está cerrado:
 
-::
+.. code-block:: pycon
 
     >>> archivo.close()
     >>> archivo.read()
@@ -426,15 +400,15 @@ a los archivos.
 Python automáticamente flushes los archivos cuando son cerrados. Pero usted podría to flush
 la data antes de cerrar cualquier archivo.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open("datos.txt", "wb") # Abre un archivo
+    >>> archivo = open("datos.txt", "wb")  # Abre un archivo
     >>> print("Nombre del archivo: ", archivo.name)
     Nombre del archivo:  datos.txt
     >>> archivo.flush()
     ... # Aquí eso no hace nada, pero usted puede
     ... # llamarlo con la operación read.
-    >>> archivo.close() # Cerrar archivo abierto
+    >>> archivo.close()  # Cerrar archivo abierto
 
 
 .. _python_mtd_isatty:
@@ -449,9 +423,9 @@ El método ``isatty()`` devuelve ``True`` si el archivo está conectado a un dis
     Si un objeto similar a los archivos no está asociado a un archivo real, no debe
     implementar este método.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'r')
+    >>> archivo = open("datos.txt", "r")
     >>> archivo.isatty()
     False
 
@@ -470,9 +444,9 @@ por ejemplo, el módulo ``fcntl`` o ``os.read()`` y similares.
     Si un objeto similar a los archivos no tiene un descriptor de archivo, no debe
     implementar este método.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open("datos.txt",mode="r")
+    >>> archivo = open("datos.txt", mode="r")
     >>> archivo.fileno()
     6
 
@@ -486,9 +460,9 @@ el próximo valor, cuando la iteración del archivo llega al final se llama a la
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la
 iteración.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('/etc/hostname')
+    >>> archivo = open("/etc/hostname")
     >>> archivo
     <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
     >>> archivo.__iter__()
@@ -515,9 +489,9 @@ El método ``read()`` permite leer el contenido del archivo. El argumento es opc
 y si no se especifica (o es -1) devuelve el contenido de todo el archivo. Una vez que
 se leyó todo el archivo, una nueva llamada a la función devuelve una cadena vacía ('').
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'r')
+    >>> archivo = open("datos.txt", "r")
     >>> archivo.read()
     'Este es una prueba \ny otra prueba'
     >>> archivo.read()
@@ -526,9 +500,9 @@ se leyó todo el archivo, una nueva llamada a la función devuelve una cadena va
 Si desea recibir una salida formateada por consola leyendo un archivo, a continuación
 un ejemplo:
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'r')
+    >>> archivo = open("datos.txt", "r")
     >>> contenido = archivo.read()
     >>> print(contenido)
     Este es una prueba
@@ -546,11 +520,11 @@ no termina con el carácter de nueva línea). Esto hace que el valor de retorno 
 ambiguo. Si devuelve una cadena de caracteres vacía se alcanzó el fin del archivo,
 mientras que una línea en blanco se representa con un carácter de nueva línea.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'r')
-    >>> print(archivo.readline()) # lee la linea "Este es una prueba "
-    >>> print(archivo.readline()) # lee la linea "y otra prueba"
+    >>> archivo = open("datos.txt", "r")
+    >>> print(archivo.readline())  # lee la linea "Este es una prueba "
+    >>> print(archivo.readline())  # lee la linea "y otra prueba"
     >>> print(archivo.readline())
 
     >>>
@@ -563,9 +537,9 @@ readlines()
 
 El método ``readlines()`` devuelve una lista que contiene todas las líneas del archivo.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'r')
+    >>> archivo = open("datos.txt", "r")
     >>> lineas = archivo.readlines()
     >>> print(lineas)
     ['Este es una prueba \n', 'y otra prueba']
@@ -588,14 +562,17 @@ El método ``seek()`` lleva la siguiente nomenclatura:
 A continuación, un ejemplo que escribir y leer el archivo ``datos.txt`` agregando una
 lista de lineas al principio del archivo, como al final del archivo:
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
-    >>> lista_de_lineas = ["Esta es la 1er linea", \
-    ...     "Esta es la 2da linea", "Esta es la 3era linea"]
+    >>> archivo = open("datos.txt", "w")
+    >>> lista_de_lineas = [
+    ...     "Esta es la 1er linea",
+    ...     "Esta es la 2da linea",
+    ...     "Esta es la 3era linea",
+    ... ]
     >>> archivo.writelines("\n".join(lista_de_lineas))
     >>> archivo.close()
-    >>> archivo = open('datos.txt', 'r')
+    >>> archivo = open("datos.txt", "r")
     >>> archivo.next()
     'Esta es la 1er linea\n'
     >>> archivo.seek(8)
@@ -619,31 +596,33 @@ El argumento ``punto_referencia`` es opcional, con un valor predeterminado de ``
 el principio del archivo); otros valores posibles son ``1`` (la posición actual del
 archivo) y ``2`` (el final del archivo). No hay valor de retorno.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
-    >>> lista_de_lineas = ["Esta es la 1er linea", \
-    ...     "Esta es la 2da linea", "Esta es la 3era linea"]
+    >>> archivo = open("datos.txt", "w")
+    >>> lista_de_lineas = [
+    ...     "Esta es la 1er linea",
+    ...     "Esta es la 2da linea",
+    ...     "Esta es la 3era linea",
+    ... ]
     >>> archivo.writelines("\n".join(lista_de_lineas))
     >>> archivo.close()
-    >>> archivo = open('datos.txt', 'r')
+    >>> archivo = open("datos.txt", "r")
     >>> archivo.next()
     'Esta es la 1er linea\n'
     >>> archivo.seek(8)
     >>> archivo.next()
     'la 1er linea\n'
     >>> archivo.close()
-    >>> archivo = open('datos.txt', 'rw+')
-    >>> nuevas_lineas = ["\nEsta es la 4ta linea", \
-    ...     "Esta es la 5ta linea"]
+    >>> archivo = open("datos.txt", "rw+")
+    >>> nuevas_lineas = ["\nEsta es la 4ta linea", "Esta es la 5ta linea"]
     >>> # Escribe la secuencia de la lineas al final del archivo.
     ... archivo.seek(0, 2)
     >>> archivo.writelines("\n".join(nuevas_lineas))
     >>> # Ahora lea completamente el archivo desde el inicio.
-    ... archivo.seek(0,0)
+    ... archivo.seek(0, 0)
     >>> for elemento in range(1, 6):
-    ...    linea = archivo.next()
-    ...    print("Linea No %d - %s" % (elemento, linea))
+    ...     linea = archivo.next()
+    ...     print("Linea No %d - %s" % (elemento, linea))
     ...
     Linea No 1 - Esta es la 1er linea
 
@@ -672,9 +651,9 @@ tell()
 El método ``tell()`` devuelve la posición actual del archivo, como la función del
 lenguaje C ``ftell()`` de la librería ``stdio``.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('/etc/hostname')
+    >>> archivo = open("/etc/hostname")
     >>> archivo.tell()
     0
     >>> linea = iter(archivo)
@@ -682,7 +661,7 @@ lenguaje C ``ftell()`` de la librería ``stdio``.
     'debacagua9\n'
     >>> archivo.tell()
     11
-    >>> len('debacagua9\n')
+    >>> len("debacagua9\n")
     11
     >>> linea.next()
     Traceback (most recent call last):
@@ -700,13 +679,13 @@ Cuando la iteración de la secuencia llega al final se llama a la excepción
 truncate()
 """"""""""
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
-    >>> archivo.write('Este es una prueba \ny otra prueba')
+    >>> archivo = open("datos.txt", "w")
+    >>> archivo.write("Este es una prueba \ny otra prueba")
     >>> archivo.truncate(20)
     >>> archivo.close()
-    >>> archivo = open('datos.txt', 'r')
+    >>> archivo = open("datos.txt", "r")
     >>> archivo.read()
     'Este es una prueba \n'
 
@@ -727,11 +706,11 @@ y devuelve la cantidad de caracteres escritos.
 Para escribir algo que no sea una cadena de caracteres, antes se debe convertir a
 cadena de caracteres.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
+    >>> archivo = open("datos.txt", "w")
     >>> # escribe el archivo datos.txt
-    ... archivo.write('Este es una prueba \ny otra prueba')
+    ... archivo.write("Este es una prueba \ny otra prueba")
     >>>
 
 
@@ -744,12 +723,15 @@ El método ``writelines()`` escribe una lista de cadenas al archivo. No se devue
 ningún valor. El nombre es paralelo a ``readlines()``, ``writelines()`` no añade
 separadores de línea.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
-    >>> lista_de_lineas = ['Plone es el más poderoso, ', \
-    ...     'escalable, seguro ', 'y longevo CMS, ', \
-    ...     'escrito en Python.']
+    >>> archivo = open("datos.txt", "w")
+    >>> lista_de_lineas = [
+    ...     "Plone es el más poderoso, ",
+    ...     "escalable, seguro ",
+    ...     "y longevo CMS, ",
+    ...     "escrito en Python.",
+    ... ]
     >>> archivo.writelines("\n".join(lista_de_lineas))
     >>> archivo.close()
 
@@ -772,9 +754,9 @@ El atributo ``closed`` del objeto :ref:`file <python_cls_file>` de tipo
 que se cambia mediante el método :ref:`close() <python_mtd_close>`. Puede no estar
 disponible en todos los objetos con interfaz tipo archivo.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
+    >>> archivo = open("datos.txt", "w")
     >>> archivo.closed
     False
     >>> archivo.close()
@@ -792,9 +774,9 @@ archivo. Si se creó el archivo con la función integrada :ref:`open() <python_f
 será el valor del parámetro ``mode``. Es un atributo de sólo lectura y puede no estar
 disponible en todos los objetos con interfaz tipo archivo.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
+    >>> archivo = open("datos.txt", "w")
     >>> archivo.mode
     'w'
 
@@ -810,9 +792,9 @@ el nombre del archivo. En caso contrario, alguna cadena que indique el origen de
 de la forma "<...>". Es un atributo de sólo lectura y puede no estar disponible en todos
 los objetos con interfaz tipo archivo.
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
+    >>> archivo = open("datos.txt", "w")
     >>> archivo.name
     'datos.txt'
 
@@ -825,9 +807,9 @@ encoding
 El atributo ``encoding`` del objeto :ref:`file <python_cls_file>`, es el encoding
 del archivo.
 
-::
+.. code-block:: pycon
 
-    >>> with open("datos.txt",mode="r") as archivo:
+    >>> with open("datos.txt", mode="r") as archivo:
     ...     print("Encoding por defecto:", archivo.encoding)
     ...     archivo.close()
     ...
@@ -853,10 +835,10 @@ escribible.
 Nota: Este atributo no se usa para controlar la sentencia ``print``, sino para permitir
 que la implementación de ``print`` lleve la cuenta de su estado interno.
 
-::
+.. code-block:: pycon
 
     >>>
-    >>> archivo = open('datos.txt', 'w')
+    >>> archivo = open("datos.txt", "w")
     >>> archivo.softspace
     0
 
@@ -880,11 +862,11 @@ instancia recibe la instancia. La sintaxis es la siguiente:
 
 ::
 
-    >>> classmethod(function) -> método
+    classmethod(function) -> método
 
 Para declarar un método de clase, a continuación vea el siguiente ejemplo:
 
-::
+.. code-block:: pycon
 
     >>> def sumaNumeros(cls, x, y):
     ...     return x + y
@@ -915,7 +897,7 @@ La clase ``classmethod`` introduce un cambio en la versión 2.4, agregando sinta
 Un ejemplo del uso de :ref:`decoradores <python_decoradores>` para ``classmethod``
 a continuación:
 
-::
+.. code-block:: pycon
 
     >>> class Clase:
     ...     @classmethod
@@ -985,7 +967,7 @@ y incremente la velocidad de ejecución.
 
 Los objetos de *vista de memoria* son creados usando la sintaxis:
 
-::
+.. code-block:: pycon
 
     >>> memoryview(objecto)
 
@@ -1000,7 +982,7 @@ como parámetro desde el método ``memoryview()``.
 A continuación, un ejemplo donde se crea una *vista de memoria* usando el tipo
 ``bytearray`` previamente creado:
 
-::
+.. code-block:: pycon
 
     >>> cadena = bytearray(1000000)
     >>> memoryview(cadena)
@@ -1025,7 +1007,7 @@ mostrando los diversos atributos disponibles.
 Continuando el ejemplo anterior, se crea una *vista de memoria* de un tipo
 :ref:`buffer <python_cls_buffer>` usando el objeto ``cadena`` previamente creado:
 
-::
+.. code-block:: pycon
 
     >>> cadena_buffer = buffer(cadena, 1)
     >>> memoryview(cadena_buffer)
@@ -1050,9 +1032,9 @@ En el ejemplo anterior se crea una *vista de memoria* de un tipo
 A continuación, otro ejemplo donde se crea una *vista de memoria* usando el objeto
 ``bytearray`` previamente creado:
 
-::
+.. code-block:: pycon
 
-    >>> randomBA = bytearray('ABC', 'utf-8')
+    >>> randomBA = bytearray("ABC", "utf-8")
     >>> randomBA
     bytearray(b'ABC')
     >>> vm = memoryview(randomBA)
@@ -1068,10 +1050,11 @@ A continuación, otro ejemplo donde se crea una *vista de memoria* usando el obj
 Continuando el ejemplo anterior, se puede crear una :ref:`lista <python_list>` desde
 una *vista de memoria* usando el objeto ``vm`` previamente creado:
 
-::
+.. code-block:: pycon
 
     >>> list = []
-    >>> for item in range(3): list.append(vm[item])
+    >>> for item in range(3):
+    ...     list.append(vm[item])
     ...
     >>> list
     ['A', 'B', 'C']
@@ -1079,10 +1062,11 @@ una *vista de memoria* usando el objeto ``vm`` previamente creado:
 Continuando el ejemplo anterior, se puede crear :ref:`cadena de caracteres <python_str>`
 desde una *vista de memoria* usando el objeto ``vm`` previamente creado:
 
-::
+.. code-block:: pycon
 
     >>> cad = ""
-    >>> for item in range(3): cad += vm[item]
+    >>> for item in range(3):
+    ...     cad += vm[item]
     ...
     >>> print(cad)
     ABC
@@ -1099,16 +1083,16 @@ Finalmente, es accedido todos los índices del objeto ``vm`` y convertidos a una
 
 A continuación, otro ejemplo donde se modifica la data interna usando vista de memoria:
 
-::
+.. code-block:: pycon
 
-    >>> randomBA = bytearray('ABC', 'utf-8')
-    >>> print('Antes de actualizar:', randomBA)
+    >>> randomBA = bytearray("ABC", "utf-8")
+    >>> print("Antes de actualizar:", randomBA)
     Antes de actualizar: ABC
     >>> vm = memoryview(randomBA)
     >>> chr(90)
     'Z'
     >>> vm[1] = chr(90)
-    >>> print('Después de actualizar:', randomBA)
+    >>> print("Después de actualizar:", randomBA)
     Después de actualizar: AZC
 
 Aquí, se actualiza el indice 1 de la *vista de memoria* a un valor ASCII - 90 (Z)
@@ -1120,7 +1104,7 @@ Desde adentro internamente el tipo ``bytearray`` almacena valores ``ASCII`` para
 alfabeto, es decir, cada posición de la lista se debe indicar con su equivalente
 numérico en la tabla ``ASCII``.
 
-::
+.. code-block:: pycon
 
     >>> chr(65)
     'A'
@@ -1148,7 +1132,7 @@ Todo, incluyendo las clases y tipos de Python son instancias de ``object``. Para
 corroborar si un objeto es instancia de una clase se utiliza la función
 :ref:`isinstance() <python_fun_isinstance>`.
 
-::
+.. code-block:: pycon
 
     >>> object
     <type 'object'>
@@ -1162,10 +1146,9 @@ property
 La clase ``property`` típicamente es usado para definir un atributo property.
 La sintaxis es la siguiente:
 
-::
+.. code-block:: pycon
 
-    >>> property(fget=None, fset=None,
-    ...     fdel=None, doc=None) # devuelve atributo property
+    >>> property(fget=None, fset=None, fdel=None, doc=None)  # devuelve atributo property
 
 El parámetro ``fget`` es una función a ser usada para obtener un valor de un atributo,
 y igualmente el parámetro ``fset`` es una función para definir el valor de un atributo,
@@ -1181,33 +1164,29 @@ de la función ``getter``.
 
 A continuación, un ejemplo sencillo:
 
-::
+.. code-block:: pycon
 
     >>> class Persona:
     ...     def __init__(self, nombre):
     ...         self._nombre = nombre
-    ...
     ...     def getNombre(self):
-    ...         print('Obteniendo nombre')
+    ...         print("Obteniendo nombre")
     ...         return self._nombre
-    ...
     ...     def setNombre(self, valor):
-    ...         print('Definiendo nombre a ' + valor)
+    ...         print("Definiendo nombre a " + valor)
     ...         self._nombre = valor
-    ...
     ...     def delNombre(self):
-    ...         print('Eliminando nombre')
+    ...         print("Eliminando nombre")
     ...         del self._nombre
-    ...
     ...     # Define la property para usar los métodos getNombre,
     ...     # setNombre y delNombre
-    ...     nombre = property(getNombre, setNombre, delNombre, 'Atributo property nombre')
+    ...     nombre = property(getNombre, setNombre, delNombre, "Atributo property nombre")
     ...
-    >>> persona1 = Persona('Leo')
+    >>> persona1 = Persona("Leo")
     >>> print(persona1.nombre)
     Obteniendo nombre
     Leo
-    >>> persona1.nombre = 'Leonardo'
+    >>> persona1.nombre = "Leonardo"
     >>> print(persona1.nombre)
     Leonardo
     >>> dir(persona1)
@@ -1259,32 +1238,29 @@ A continuación se creará un *atributo property* con métodos ``getter``, ``set
 usted puede usar el decorador Python ``@property`` para asignar el método ``getter``,
 ``setter`` y ``deleter``:
 
-::
+.. code-block:: pycon
 
     >>> class Persona:
     ...     def __init__(self, nombre):
     ...         self._nombre = nombre
-    ...
     ...     @property
     ...     def nombre(self):
-    ...         print('Obteniendo nombre')
+    ...         print("Obteniendo nombre")
     ...         return self._nombre
-    ...
     ...     @nombre.setter
     ...     def nombre(self, valor):
-    ...         print('Definiendo nombre a ' + valor)
+    ...         print("Definiendo nombre a " + valor)
     ...         self._nombre = valor
-    ...
     ...     @nombre.deleter
     ...     def nombre(self):
-    ...         print('Eliminando nombre')
+    ...         print("Eliminando nombre")
     ...         del self._nombre
     ...
-    >>> persona1 = Persona('Leo')
-    >>> print('El nombre es:', persona1.nombre)
+    >>> persona1 = Persona("Leo")
+    >>> print("El nombre es:", persona1.nombre)
     El nombre es: Obteniendo nombre
     Leo
-    >>> persona1.nombre = 'Leonardo'
+    >>> persona1.nombre = "Leonardo"
     >>> print(persona1.nombre)
     Leonardo
     >>> dir(persona1)
@@ -1326,19 +1302,19 @@ super
 La clase ``super`` típicamente es usada al llamar un método de superclase cooperativo.
 Las sintaxis de como usarlo son las siguientes:
 
-::
+.. code-block:: pycon
 
     >>> super(type, obj)
 
 El código anterior devuelve un súper objeto enlazado; requiere ``isinstance(obj, type)``.
 
-::
+.. code-block:: pycon
 
     >>> super(type)
 
 El código anterior devuelve un súper objeto no unido.
 
-::
+.. code-block:: pycon
 
     >>> super(type, type2)
 
@@ -1358,16 +1334,16 @@ Para declarar un método de superclase cooperativo, use esta sintaxis:
 
 Un ejemplo sencillo real se muestra a continuación:
 
-::
+.. code-block:: pycon
 
     >>> class Mamifero(object):
     ...     def __init__(self, mamifero):
-    ...         print(mamifero, 'es un animal de sangre caliente.')
+    ...         print(mamifero, "es un animal de sangre caliente.")
     ...
     >>> class Perro(Mamifero):
     ...     def __init__(self):
-    ...         print('Perro tiene 4 piernas.')
-    ...         super(Perro, self).__init__('Perro')
+    ...         print("Perro tiene 4 piernas.")
+    ...         super(Perro, self).__init__("Perro")
     ...
     >>> perrito = Perro()
     Perro tiene 4 piernas.
@@ -1385,21 +1361,21 @@ podemos cambiar fácilmente la clase base para el método ``Perro`` (si es neces
 
 A continuación un ejemplo de cambiar la clase base a la clase RazaCanina:
 
-::
+.. code-block:: pycon
 
     >>> class Mamifero(object):
     ...     def __init__(self, mamifero):
-    ...         print(mamifero, 'es un animal de sangre caliente.')
+    ...         print(mamifero, "es un animal de sangre caliente.")
     ...
     >>> class RazaCanina(Mamifero):
-    ...   def __init__(self, nombre, raza):
-    ...     print(raza, 'es la raza del canino.')
-    ...     super(RazaCanina, self).__init__('Perro')
+    ...     def __init__(self, nombre, raza):
+    ...         print(raza, "es la raza del canino.")
+    ...         super(RazaCanina, self).__init__("Perro")
     ...
     >>> class Perro(RazaCanina):
     ...     def __init__(self, raza):
-    ...         print('Perro tiene 4 piernas.')
-    ...         super(Perro, self).__init__('Perro', raza)
+    ...         print("Perro tiene 4 piernas.")
+    ...         super(Perro, self).__init__("Perro", raza)
     ...
     >>> perrito = Perro("Pastor Alemán")
     Perro tiene 4 piernas.
@@ -1416,15 +1392,18 @@ apuntar hacia una clase base diferente en tiempo diferente (si usted lo necesita
 A continuación un ejemplo del uso ``super()`` con
 :ref:`herencia múltiple <python_poo_herencia_multiple>` de la objetos:
 
-::
+.. code-block:: pycon
 
     >>> class Animal(object):
     ...     def __init__(self, animal):
-    ...         print(animal, 'es un animal.\n\n',)
+    ...         print(
+    ...             animal,
+    ...             "es un animal.\n\n",
+    ...         )
     ...
     >>> class Mamifero(Animal):
     ...     def __init__(self, mamifero):
-    ...         print(mamifero, 'es un animal de sangre caliente.')
+    ...         print(mamifero, "es un animal de sangre caliente.")
     ...         super(Mamifero, self).__init__(mamifero)
     ...
     >>> class MamiferoNoVolador(Mamifero):
@@ -1439,8 +1418,10 @@ A continuación un ejemplo del uso ``super()`` con
     ...
     >>> class Perro(MamiferoNoAcuatico, MamiferoNoVolador):
     ...     def __init__(self):
-    ...         print('Perro tiene 4 piernas.\n',)
-    ...         super(Perro, self).__init__('Perro')
+    ...         print(
+    ...             "Perro tiene 4 piernas.\n",
+    ...         )
+    ...         super(Perro, self).__init__("Perro")
     ...
     >>> perro = Perro()
     Perro tiene 4 piernas.
@@ -1456,7 +1437,7 @@ A continuación un ejemplo del uso ``super()`` con
     <class '__main__.Mamifero'>,
     <class '__main__.Animal'>,
     <type 'object'>)
-    >>> murcielago = MamiferoNoAcuatico('Murcielago')
+    >>> murcielago = MamiferoNoAcuatico("Murcielago")
     Murcielago no puede nadar.
     Murcielago es un animal de sangre caliente.
     Murcielago es un animal.
@@ -1491,7 +1472,7 @@ El tipo de un objeto es accesible mediante la función integrada
 :ref:`type() <python_fun_type>`. No hay operaciones especiales sobre los tipos. El
 módulo estándar ``types`` define nombres para todos los tipos internos estándar.
 
-::
+.. code-block:: pycon
 
     >>> type(type)
     <type 'type'>
@@ -1499,7 +1480,7 @@ módulo estándar ``types`` define nombres para todos los tipos internos estánd
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

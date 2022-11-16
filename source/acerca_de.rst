@@ -74,14 +74,14 @@ Mantenedores del entrenamiento
 
 El repositorio del entrenamiento está disponible en la siguiente dirección:
 
-   https://github.com/Covantec/entrenamiento.python_basico/
+   https://github.com/macagua/entrenamiento.python_basico/
 
 Es muy fácil entrar en la lista. Simplemente contacta a algunos de los siguientes
 mantenedores del repositorio, para acordar una reunión y formas de colaboración en
 mantener estos recursos de aprendizajes para este entrenamiento. Y obtenga el
 agradecimiento de todos.
 
-.. contributors:: Covantec/entrenamiento.python_basico
+.. contributors:: macagua/entrenamiento.python_basico
    :avatars:
    :limit: 1
    :exclude: dependabot[bot]
@@ -97,7 +97,7 @@ Colaboradores del entrenamiento
 La lista debajo incluye todos los colaboradores y autores con al menos 10 líneas en
 el tutorial. La lista completa de colaboradores está disponible en el repositorio.
 
-.. contributors:: Covantec/entrenamiento.python_basico
+.. contributors:: macagua/entrenamiento.python_basico
    :avatars:
    :exclude: dependabot[bot]
 
@@ -121,7 +121,7 @@ Contribuir
 Conseguiste algun error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
 este material, puedes reportarla o solicitarla en:
 
-* Consulte el `issue tracker <https://github.com/Covantec/entrenamiento.python_basico/issues>`_ para obtener
+* Consulte el `issue tracker <https://github.com/macagua/entrenamiento.python_basico/issues>`_ para obtener
   una lista de funciones que nos gustaría agregar en el futuro.
 
 * Siéntase libre de proponer nuevas funciones o informar errores, describiendo cómo desea que se comporte la

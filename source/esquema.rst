@@ -67,10 +67,10 @@ propias y explorar el resultado desde el interprete Python.
 Lección 5 - Funciones y programación estructurada
 -------------------------------------------------
 
-**Descripción:** Comprender el uso de las funciones y el paradigma de programación
-estructurada.
+**Descripción:** Comprender el uso de las funciones, decoradores y el paradigma de
+programación estructurada.
 
-**Práctica:** Ejemplos de creación e uso de funciones, programar estructuradamente y
+**Práctica:** Ejemplos de creación e uso de funciones, programar de forma estructurada y
 explorar el resultado desde el interprete Python.
 
 
@@ -124,12 +124,12 @@ de errores en Python y explorar el resultado en un paquete en el sistema de arch
 
 .. _esquema_entrenamiento_leccion10:
 
-Lección 10 - Decoradores y la librería estándar
------------------------------------------------
+Lección 10 - Uso prácticos de la librería estándar
+--------------------------------------------------
 
-**Descripción:** Comprender el uso de decoradores y los diversos módulos adicionales
-de la librería estándar de Python.
+**Descripción:** Comprender el uso de los módulos incorporados en la librería estándar
+de Python.
 
 **Práctica:** Ejemplo de uso de decoradores y módulos adicionales útiles de la
-biblioteca estándar explorando el resultado en un paquete Python en el sistema de
+librería estándar explorando el resultado en un paquete Python en el sistema de
 archivos.

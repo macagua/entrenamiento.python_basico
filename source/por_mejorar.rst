@@ -1,3 +1,5 @@
+.. _todo:
+
 Tareas pendientes
 =================
 

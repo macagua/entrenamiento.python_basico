@@ -381,7 +381,7 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
     Si tiene la estructura de archivo previa, entonces ejecute por separado cada comando:
 
-    ::
+    .. code-block:: console
 
         python3 index_error.py
         python3 wiener_filtering.py
@@ -392,7 +392,7 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion6>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion6>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

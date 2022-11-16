@@ -20,7 +20,7 @@ objeto ``elipsis`` a través del nombre incorporado "``Ellipsis``". Se utiliza p
 indicar la presencia de la sintaxis "``...``" en una porción o  la notación de corte
 extendida. Su valor de verdad es ``True``.
 
-::
+.. code-block:: pycon
 
     >>> type(Ellipsis)
     <type 'ellipsis'>
@@ -37,7 +37,7 @@ objeto a través del nombre incorporado "``None``". Se utiliza para indicar la a
 de un valor en muchas situaciones, por ejemplo, se devuelve desde las funciones que no
 devuelven nada explícitamente. Su valor de verdad es ``False``.
 
-::
+.. code-block:: pycon
 
     >>> type(None)
     <type 'NoneType'>
@@ -55,7 +55,7 @@ pueden devolver este valor si no implementan la operación para los operandos
 proporcionados. (El intérprete luego intentará la operación reflejada, o algún otro
 respaldo "``fallback``", dependiendo del operador). Su valor de verdad es ``True``.
 
-::
+.. code-block:: pycon
 
     >>> type(NotImplemented)
     <type 'NotImplementedType'>
@@ -63,7 +63,7 @@ respaldo "``fallback``", dependiendo del operador). Su valor de verdad es ``True
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

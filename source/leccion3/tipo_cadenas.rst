@@ -326,7 +326,7 @@ Docstrings
 En Python todos los objetos cuentan con una variable especial llamada ``__doc__``, gracias
 a la cual puede describir para qué sirven los objetos y cómo se usan. Estas variables
 reciben el nombre de ``docstrings``, o
-`cadenas de documentación <http://docs.python.org.ar/tutorial/2/controlflow.html#tut-docstrings>`_.
+`cadenas de documentación <https://docs.python.org/es/3.7/tutorial/controlflow.html#tut-docstrings>`_.
 
 Ten en cuenta, una buena documentación siempre dará respuesta a las dos preguntas:
 
@@ -901,7 +901,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

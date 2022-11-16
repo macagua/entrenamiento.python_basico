@@ -62,7 +62,7 @@ De nuevo vuelva a ejecutar en su consola de comando el comando ``python3``.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion1>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

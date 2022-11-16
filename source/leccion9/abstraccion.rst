@@ -58,7 +58,7 @@ los atributos de un objeto pueden ocultarse (superficialmente) para que no sean
 accedidos desde fuera de la definición de una clase. Para ello, es necesario nombrar
 los atributos con un prefijo de doble subrayado: ``__atributo``.
 
-::
+.. code-block:: pycon
 
     >>> class Factura:
     ...     __tasa = 19
@@ -68,7 +68,7 @@ los atributos con un prefijo de doble subrayado: ``__atributo``.
     ...     def por_pagar(self):
     ...         total = self.unidad * self.precio
     ...         impuesto = total * Factura.__tasa / 100
-    ...         return(total + impuesto)
+    ...         return total + impuesto
     ...
     >>> compra1 = Factura(12, 110)
     >>> print(compra1.unidad)
@@ -89,7 +89,7 @@ nombres agrega el nombre de la clase:
 
     ``objeto._NombreClase__NombreAtributo``
 
-::
+.. code-block:: pycon
 
     >>> print(compra1._Factura__tasa)
     19
@@ -103,7 +103,7 @@ nombres agrega el nombre de la clase:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

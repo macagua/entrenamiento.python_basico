@@ -19,7 +19,7 @@ Sentencia from
 La sentencia ``from`` se utiliza en conjunto a la previa sentencia
 :ref:`import <python_sent_import>` para importar un módulo.
 
-::
+.. code-block:: pycon
 
     >>> from utilidades import suma_total
 
@@ -56,7 +56,7 @@ llamado ``utilidades``, dentro de este, cree los siguientes archivos:
 Al final tendrá la siguiente estructura del directorios del paquete Python llamado
 ``tostadas_pipo``, como se describe a continuación:
 
-::
+.. code-block:: console
 
     tostadas_pipo/
     ├── __init__.py
@@ -71,7 +71,7 @@ se realiza de las siguientes formas:
 
 - Importar todos los módulo el sub-paquete ``utilidades``, ejecutando:
 
-::
+.. code-block:: python
 
     import tostadas_pipo.utilidades
     from tostadas_pipo import utilidades
@@ -81,7 +81,7 @@ se realiza de las siguientes formas:
 - Importar el módulo ``calculos.py`` desde el sub-paquete ``utilidades``,
   ejecutando:
 
-::
+.. code-block:: python
 
     from tostadas_pipo.utilidades import calculos
 
@@ -89,7 +89,7 @@ se realiza de las siguientes formas:
 - Importar la función ``impuesto_iva14()`` desde el módulo ``impuestos.py`` en el
   sub-paquete ``utilidades``, ejecutando:
 
-::
+.. code-block:: python
 
     from tostadas_pipo.utilidades.impuestos import impuesto_iva14
 
@@ -135,7 +135,7 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

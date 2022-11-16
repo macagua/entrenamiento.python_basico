@@ -78,6 +78,7 @@ linkcheck_ignore = [
     r"http://whatever.herokuapp.com",
     r"http://example.com/news",
     r"http://example.com\d+/",
+    r"acerca_de.html#sobre-el-instructor",
 ]
 linkcheck_anchors = False
 linkcheck_timeout = 30

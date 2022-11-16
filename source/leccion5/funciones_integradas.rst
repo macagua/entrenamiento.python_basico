@@ -28,12 +28,12 @@ apply()
 La función ``apply()`` devuelve el resultado de una función o objeto clase llamado
 con argumentos soportados.
 
-::
+.. code-block:: pycon
 
     >>> def demo(valor1, valor2, valor3=None):
     ...     return valor1, valor2, valor3
     ...
-    >>> apply(demo, (1, 2), {'valor3': 3})
+    >>> apply(demo, (1, 2), {"valor3": 3})
     (1, 2, 3)
 
 
@@ -44,9 +44,9 @@ callable()
 
 La función ``callable()`` le indica si un objecto puede ser llamado.
 
-::
+.. code-block:: pycon
 
-    >>> callable([1,2,3])
+    >>> callable([1, 2, 3])
     False
     >>> callable(callable)
     True
@@ -68,10 +68,10 @@ La función ``compile()`` devuelve un código objeto Python. Usted usa la funci�
 integrada Python para convertir de la cadena de caracteres de código al código
 objeto.
 
-::
+.. code-block:: pycon
 
     >>>
-    >>> exec(compile('a=5\nb=7\nprint(a+b)','','exec'))
+    >>> exec(compile("a=5\nb=7\nprint(a+b)", "", "exec"))
     12
 
 Aquí, ``exec`` es el modo. El parámetro anterior que eso es el nombre del archivo
@@ -86,7 +86,7 @@ credits()
 
 Imprime el texto de la lista de contribuidores.
 
-::
+.. code-block:: pycon
 
     >>> credits()
         Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
@@ -100,7 +100,7 @@ copyright()
 
 Imprime el texto de la nota de copyright.
 
-::
+.. code-block:: pycon
 
     >>> copyright()
     Copyright (c) 2001-2016 Python Software Foundation.
@@ -123,7 +123,7 @@ dir()
 
 Si es llamado sin argumentos, devuelve los nombres en el ámbito actual.
 
-::
+.. code-block:: pycon
 
     >>> dir()
     ['__builtins__', '__doc__', '__name__', '__package__']
@@ -133,7 +133,7 @@ De lo contrario, devuelve una lista alfabética de nombres que comprende
 (alguno(s) de) los atributos de un objeto dato, y de los atributos
 legibles desde este.
 
-::
+.. code-block:: pycon
 
     >>> dir(__builtins__)
     ['ArithmeticError', 'AssertionError', 'AttributeError',
@@ -172,7 +172,7 @@ la lógica ``dir()`` predeterminada y devuelve:
 
 - para un objeto módulo: los atributos del módulo.
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> type(os)
@@ -214,24 +214,26 @@ la lógica ``dir()`` predeterminada y devuelve:
 - para un objeto clase: sus atributos, y recursivamente los atributos
   de sus clases bases.
 
-::
+.. code-block:: pycon
 
     >>> class Persona(object):
-    ...     """ Clase que representa una Persona """
+    ...     """Clase que representa una Persona"""
     ...     def __init__(self, cedula, nombre, apellido, sexo):
-    ...         """ Constructor de clase Persona """
+    ...         """Constructor de clase Persona"""
     ...         self.cedula = cedula
     ...         self.nombre = nombre
     ...         self.apellido = apellido
     ...         self.sexo = sexo
     ...     def __str__(self):
-    ...         """ Devuelve una cadena representativa al Persona """
+    ...         """Devuelve una cadena representativa al Persona"""
     ...         return "%s: %s %s, %s." % (
-    ...             str(self.cedula), self.nombre,
-    ...             self.apellido, self.sexo
+    ...             str(self.cedula),
+    ...             self.nombre,
+    ...             self.apellido,
+    ...             self.sexo,
     ...         )
     ...     def hablar(self, mensaje):
-    ...         """ Mostrar mensaje de saludo de Persona """
+    ...         """Mostrar mensaje de saludo de Persona"""
     ...         print(mensaje)
     ...
     >>> type(Persona)
@@ -267,7 +269,7 @@ la lógica ``dir()`` predeterminada y devuelve:
 - para cualquier otro objecto: sus atributos, sus atributos de clases, y
   recursivamente los atributos de esas clases bases de las clases.
 
-::
+.. code-block:: pycon
 
     >>> type(int)
     <type 'type'>
@@ -296,17 +298,17 @@ eval()
 
 Evalúa una cadena como una expresión:
 
-::
+.. code-block:: pycon
 
-    >>> eval('2 + 5')
+    >>> eval("2 + 5")
     7
 
 Ademas si se han definido anteriormente variables las acepta como parámetros:
 
-::
+.. code-block:: pycon
 
     >>> numero = 10
-    >>> eval('numero * 10 - 5')
+    >>> eval("numero * 10 - 5")
     95
 
 
@@ -320,9 +322,9 @@ La función ``execfile()`` lee y ejecuta un script Python desde un archivo. Los
 y ``locals``.  Si solamente ``globals`` es dado, ``locals`` es por defecto a la
 misma.
 
-::
+.. code-block:: pycon
 
-    >>> execfile('./holamundo.py')
+    >>> execfile("./holamundo.py")
     Hola Mundo
 
 
@@ -334,7 +336,7 @@ globals()
 La función ``globals()`` devuelve un diccionario conteniendo ámbito actual global de
 las variables.
 
-::
+.. code-block:: pycon
 
     >>> globals()
     {'__builtins__': <module '__builtin__' (built-in)>,
@@ -358,7 +360,7 @@ help()
 
 Invoca el menú de ayuda del intérprete de Python:
 
-::
+.. code-block:: pycon
 
     >>> help()
 
@@ -388,7 +390,7 @@ La función ``id()`` devuelve la identidad de un objecto. Esto garantiza ser el 
 entre objetos simultáneamente existentes. (Sugerencia: es la dirección de memoria del
 objeto).
 
-::
+.. code-block:: pycon
 
     >>> lista = range(5)
     >>> lista
@@ -404,7 +406,7 @@ len()
 
 Devuelve el número de elementos de un tipo de secuencia o colección.
 
-::
+.. code-block:: pycon
 
     >>> len("leonardo caballero")
     18
@@ -417,7 +419,7 @@ license()
 
 Imprime el texto de la licencia.
 
-::
+.. code-block:: pycon
 
     >>> license
     Type license() to see the full license text
@@ -456,7 +458,7 @@ locals()
 La función ``locals()`` devuelve un diccionario conteniendo ámbito actual local de
 las variables.
 
-::
+.. code-block:: pycon
 
     >>> locals()
     {'__builtins__': <module '__builtin__' (built-in)>,
@@ -522,9 +524,9 @@ Los argumentos son:
 
 Para crear y abrir un archivo, seria así:
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'w')
+    >>> archivo = open("datos.txt", "w")
     >>> type(archivo)
     <type 'file'>
 
@@ -545,7 +547,7 @@ todos los tipos de nueva línea que se han visto.
     Ver para futura información desde el :ref:`modo interactivo <python_interactivo>`
     Python, lo siguiente:
 
-    ::
+.. code-block:: pycon
 
         >>> file.__doc__
 
@@ -558,32 +560,37 @@ range()
 La función ``range()`` devuelve una lista conteniendo una progresión aritmética
 de enteros.
 
-range(inicio, detener[, paso]) -> lista de enteros
+::
 
-    ::
+    range(inicio, detener[, paso]) -> lista de enteros
 
-        >>> range(3,9)
-        [3, 4, 5, 6, 7, 8]
+.. code-block:: pycon
+
+    >>> range(3, 9)
+    [3, 4, 5, 6, 7, 8]
 
 ``range(i, j)`` devuelve ``[i, i+1, i+2, ..., j-1]``; inicia (!) por defecto en **0**.
 
 Cuando el ``paso`` es definido como un tercer argumento, ese especifica el incremento
 (o decremento).
 
-    ::
+.. code-block:: pycon
 
-        >>> range(3,9,2)
-        [3, 5, 7]
+    >>> range(3, 9, 2)
+    [3, 5, 7]
 
 En el ejemplo anterior, la función ``range(3,9,2)`` devuelve **[3, 5, 7]**, es decir,
 el rango inicia en **3** y termina en **9** incrementando cada **2** números.
 
-range(detener) -> lista de enteros
+::
 
-    ::
+    range(detener) -> lista de enteros
 
-        >>> range(4)
-        [0, 1, 2, 3]
+
+.. code-block:: console
+
+    >>> range(4)
+    [0, 1, 2, 3]
 
 En el ejemplo anterior, la función ``range(4)`` devuelve **[0, 1, 2, 3]**. ¡El punto
 final es omitido! Hay exactamente los indices validos para una lista de **4** elementos.
@@ -601,7 +608,7 @@ Por lo tanto, si usted quiere volver a ejecutar la porción del nivel superior e
 de un modulo, usted puede usar la función ``reload()``. Esta función importa otra vez
 un modulo previamente importado. La sintaxis de la función ``reload()`` es la siguiente:
 
-::
+.. code-block:: pycon
 
     >>> reload(module_name)
 
@@ -609,7 +616,7 @@ Aquí, ``module_name`` es el nombre del modulo que usted quiere volver a cargar 
 :ref:`cadena de caracteres <python_str>` contendiente el nombre del modulo. Por ejemplo,
 para recargar el modulo ``clases.py``, debe hacer lo siguiente:
 
-::
+.. code-block:: pycon
 
     >>> import clases
     >>> reload(clases)
@@ -625,7 +632,7 @@ ventaja de la función ``xrange()`` sobre la función ``range()``, es que devuel
 un objeto ``xrange`` el cual ocupa siempre la misma cantidad de memoria,
 independientemente del rango el cual represente.
 
-::
+.. code-block:: pycon
 
     >>> for item in range(5):
     ...     print(item)
@@ -649,7 +656,7 @@ Como la función ``xrange()``, devuelve un objeto el cual genera los números en
 rango a demanda. Para bucles, esto es un poco mas rápido que la función ``range()``
 y más eficiente en la memoria.
 
-::
+.. code-block:: pycon
 
     >>> print(xrange(5))
     xrange(5)
@@ -675,7 +682,7 @@ type()
 
 La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
 
-::
+.. code-block:: pycon
 
     >>> type(2)
     <type 'int'>
@@ -705,7 +712,7 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
     ``types``, el cual define los nombres para todos los símbolos tipo conocidos
     en el interprete estándar.
 
-    ::
+    .. code-block:: pycon
 
         >>> import types
         >>> help(types)
@@ -740,7 +747,7 @@ vars()
 La función ``vars()`` devuelve un diccionario conteniendo ámbito actual de las
 variables.
 
-::
+.. code-block:: pycon
 
     >>> vars()
     {'__builtins__': <module '__builtin__' (built-in)>, '__package__':
@@ -776,17 +783,23 @@ de leer.
 
 Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar.
 
-::
+.. code-block:: pycon
 
-    >>> dato = input("Por favor, ingresa un dato: "); dato; type(dato)
+    >>> dato = input("Por favor, ingresa un dato: ")
+    ... dato
+    ... type(dato)
     Por favor, ingresa un dato: 2
     2
     <type 'int'>
-    >>> dato = input("Por favor, ingresa un dato: "); dato; type(dato)
+    >>> dato = input("Por favor, ingresa un dato: ")
+    ... dato
+    ... type(dato)
     Por favor, ingresa un dato: 23.4
     23.4
     <type 'float'>
-    >>> dato = input("Por favor, ingresa un dato: "); dato; type(dato)
+    >>> dato = input("Por favor, ingresa un dato: ")
+    ... dato
+    ... type(dato)
     Por favor, ingresa un dato: 23L
     23L
     <type 'long'>
@@ -796,19 +809,25 @@ En el caso que quiera ingresar una :ref:`cadena de caracteres <python_str>` desd
 entrada estándar usando la función ``input()``, debe colocar la cadena de caracteres
 entre comillas simples o dobles, como el siguiente ejemplo:
 
-::
+.. code-block:: pycon
 
-    >>> dato = input("Por favor, ingresa un dato: "); dato; type(dato)
+    >>> dato = input("Por favor, ingresa un dato: ")
+    ... dato
+    ... type(dato)
     Por favor, ingresa un dato: leonardo
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
       File "<string>", line 1, in <module>
     NameError: name 'leonardo' is not defined
-    >>> dato = input("Por favor, ingresa un dato: "); dato; type(dato)
+    >>> dato = input("Por favor, ingresa un dato: ")
+    ... dato
+    ... type(dato)
     Por favor, ingresa un dato: "leonardo"
     'leonardo'
     <type 'str'>
-    >>> dato = input("Por favor, ingresa un dato: "); dato; type(dato)
+    >>> dato = input("Por favor, ingresa un dato: ")
+    ... dato
+    ... type(dato)
     Por favor, ingresa un dato: leonardo caballero
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -816,56 +835,12 @@ entre comillas simples o dobles, como el siguiente ejemplo:
         leonardo caballero
                          ^
     SyntaxError: unexpected EOF while parsing
-    >>> dato = input("Por favor, ingresa un dato: "); dato; type(dato)
+    >>> dato = input("Por favor, ingresa un dato: ")
+    ... dato
+    ... type(dato)
     Por favor, ingresa un dato: "leonardo caballero"
     'leonardo caballero'
     <type 'str'>
-
-
-.. comments:
-
-    .. _python_fun_raw_input:
-
-    raw_input()
-    ~~~~~~~~~~~
-
-    Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar. La nueva
-    línea final es despojada. Si el usuario indica un EOF (*Unix*: ``Ctl-D``, *Windows*:
-    ``Ctl-Z+Return``), lanza una excepción :ref:`EOFError <python_exception_eoferror>`.
-    En sistemas Unix, la librería **GNU readline** es usada si es habilitada.  El ``prompt``
-    de la cadena de caracteres, si es dado, es impreso sin una nueva línea final antes
-    de leer.
-
-    ::
-
-        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-        Por favor, ingresa un dato: 2
-        '2'
-        <type 'str'>
-        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-        Por favor, ingresa un dato: 2.3
-        '2.3'
-        <type 'str'>
-        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-        Por favor, ingresa un dato: 23L
-        '23L'
-        <type 'str'>
-        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-        Por favor, ingresa un dato: leonardo
-        'leonardo'
-        <type 'str'>
-        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-        Por favor, ingresa un dato: "leonardo"
-        '"leonardo"'
-        <type 'str'>
-        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-        Por favor, ingresa un dato: leonardo caballero
-        'leonardo caballero'
-        <type 'str'>
-        >>> dato = raw_input("Por favor, ingresa un dato: "); dato; type(dato)
-        Por favor, ingresa un dato: "leonardo caballero"
-        '"leonardo caballero"'
-        <type 'str'>
 
 
 ----
@@ -887,7 +862,7 @@ abs()
 
 Devuelve el valor absoluto de un número (entero o de coma flotante).
 
-::
+.. code-block:: pycon
 
     >>> abs(3)
     3
@@ -905,7 +880,7 @@ bin()
 Devuelve una representación binaria de un :ref:`número entero <python_num_entero>`
 o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a binario.
 
-::
+.. code-block:: pycon
 
     >>> bin(10)
     '0b1010'
@@ -919,13 +894,13 @@ cmp()
 La función ``cmp()`` devuelve un valor negativo si ``x<y``, un valor cero si ``x==y``,
 un valor positivo si ``x>y``:
 
-::
+.. code-block:: pycon
 
-    >>> cmp(1,2)
+    >>> cmp(1, 2)
     -1
-    >>> cmp(2,2)
+    >>> cmp(2, 2)
     0
-    >>> cmp(2,1)
+    >>> cmp(2, 1)
     1
 
 
@@ -941,11 +916,11 @@ que crea un :ref:`entero complex <python_num_complex>` a partir de un
 hasta un punto), o una :ref:`cadena de caracteres <python_str>` que sean coherentes
 con un número entero.
 
-::
+.. code-block:: pycon
 
     >>> complex(23)
     (23+0j)
-    >>> complex(23L)
+    >>> complex(23l)
     (23+0j)
     >>> complex(23.4)
     (23.4+0j)
@@ -958,7 +933,7 @@ La función ``complex()`` sólo procesa correctamente cadenas que contengan
 exclusivamente números.Si la cadena contiene cualquier otro carácter, la
 función devuelve una excepción :ref:`ValueError <python_exception_valueerror>`.
 
-::
+.. code-block:: pycon
 
     >>> complex("qwerty")
     Traceback (most recent call last):
@@ -974,7 +949,7 @@ divmod()
 Debe recibir dos argumentos numéricos, y devuelve dos valores: resultado de
 la división entera, y el resto.
 
-::
+.. code-block:: pycon
 
     >>> divmod(22, 4)
     (5, 2)
@@ -992,11 +967,11 @@ que crea un :ref:`coma flotante <python_num_float>` a partir de un
 números y hasta un punto) o una :ref:`cadena de caracteres <python_str>` que sean
 coherentes con un número entero.
 
-::
+.. code-block:: pycon
 
     >>> float(2)
     2.0
-    >>> float(23L)
+    >>> float(23l)
     23.0
     >>> float(2.5)
     2.5
@@ -1015,7 +990,7 @@ Devuelve una representación hexadecimal de un :ref:`número entero <python_num_
 o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a
 hexadecimal.
 
-::
+.. code-block:: pycon
 
     >>> hex(10)
     '0xa'
@@ -1032,14 +1007,14 @@ La función ``int()`` devuelve un número entero. Es un constructor, que crea un
 :ref:`cadena de caracteres <python_str>` que sean coherentes con un número entero.
 
 
-::
+.. code-block:: pycon
 
     >>> int(2.5)
     2
 
 También puede convertir una cadena de caracteres a un número entero.
 
-::
+.. code-block:: pycon
 
     >>> int("23")
     23
@@ -1049,7 +1024,7 @@ La función ``int()`` sólo procesa correctamente cadenas que contengan exclusiv
 números. Si la cadena contiene cualquier otro carácter, la función devuelve una
 excepción :ref:`ValueError <python_exception_valueerror>`.
 
-::
+.. code-block:: pycon
 
     >>> int("2.5")
     Traceback (most recent call last):
@@ -1073,7 +1048,7 @@ un :ref:`entero long <python_num_entero_long>` a partir de un
 o una :ref:`cadena de caracteres <python_str>` que sean coherentes con un número
 entero.
 
-::
+.. code-block:: pycon
 
     >>> long(23)
     23L
@@ -1082,7 +1057,7 @@ entero.
 
 También puede convertir una cadena de caracteres a un número entero.
 
-::
+.. code-block:: pycon
 
     >>> long("23")
     23
@@ -1092,7 +1067,7 @@ La función ``long()`` sólo procesa correctamente cadenas que contengan exclusi
 números. Si la cadena contiene cualquier otro carácter, la función devuelve una
 excepción :ref:`ValueError <python_exception_valueerror>`.
 
-::
+.. code-block:: pycon
 
     >>> long("23.4")
     Traceback (most recent call last):
@@ -1112,7 +1087,7 @@ max()
 
 Si recibe más de un argumento, devuelve el mayor de ellos.
 
-::
+.. code-block:: pycon
 
     >>> max(23, 12, 145, 88)
     145
@@ -1128,7 +1103,7 @@ Si recibe un solo argumento, devuelve el mayor de sus elementos. Debe ser un obj
 iterable; puede ser una :ref:`cadena de caracteres <python_str>`, o alguno de los
 otros tipos de secuencia o colección.
 
-::
+.. code-block:: pycon
 
     >>> max("Hola, Plone")
     'o'
@@ -1143,7 +1118,7 @@ min()
 
 Tiene un comportamiento similar a ``max()``, pero devuelve el mínimo.
 
-::
+.. code-block:: pycon
 
     >>> min(23, 12, 145, 88)
     12
@@ -1163,7 +1138,7 @@ pow()
 La función ``pow()`` si recibe dos (02) argumentos, eleva el primero argumento
 a la potencia del segundo argumento.
 
-::
+.. code-block:: pycon
 
     >>> pow(2, 3)
     8
@@ -1174,7 +1149,7 @@ a la potencia del segundo argumento.
 
 Si recibe un tercer argumento opcional, éste funciona como módulo.
 
-::
+.. code-block:: pycon
 
     >>> pow(2, 3, 3)
     2
@@ -1191,15 +1166,15 @@ secuencia a un solo valor. La sintaxis seria la siguiente:
 
 ::
 
-    >>> reduce(funcion, secuencia[, inicial]) -> valor
+    reduce(funcion, secuencia[, inicial]) -> valor
 
 A continuación un ejemplo:
 
-::
+.. code-block:: pycon
 
     >>> reduce(lambda x, y: x + y, [1, 2, 3, 4, 5])
     15
-    >>> ((((1+2)+3)+4)+5)
+    >>> ((((1 + 2) + 3) + 4) + 5)
     15
 
 En el ejemplo anterior, calcula el siguiente calculo ``((((1+2)+3)+4)+5)``.
@@ -1208,7 +1183,7 @@ Si el argumento ``inicial`` está presente, se coloca antes de los elementos de 
 secuencia en el cálculo y sirve como valor predeterminado cuando la secuencia está
 vacía.
 
-::
+.. code-block:: pycon
 
     >>> reduce(lambda x, y: x + y, [1, 2, 3, 4, 5], 5 * 5)
     40
@@ -1216,7 +1191,7 @@ vacía.
 En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es
 la lista ``[1, 2, 3, 4, 5]`` y el argumento ``inicial`` es ``5 * 5``
 
-::
+.. code-block:: pycon
 
     >>> reduce(lambda x, y: x + y, [0, 0, 0, 0, 0], 5 * 5)
     25
@@ -1237,7 +1212,7 @@ flotante. La precisión tal vez sea negativa.
 En el siguiente ejemplo redondeo de un número flotante a entero, mayor o
 igual a *.5* al alza:
 
-::
+.. code-block:: pycon
 
     >>> round(5.5)
     6.0
@@ -1245,7 +1220,7 @@ igual a *.5* al alza:
 En este otro ejemplo redondeo de un número flotante a entero, menor de *.5*
 a la baja:
 
-::
+.. code-block:: pycon
 
     >>> round(5.4)
     5.0
@@ -1259,7 +1234,7 @@ sum()
 La función ``sum()`` devuelve una lista ordenada de los elementos de la secuencia
 que recibe como argumento (lista o cadena). La secuencia original no es modificada.
 
-::
+.. code-block:: pycon
 
     >>> lista = [1, 2, 3, 4]
     >>> sum(lista)
@@ -1274,7 +1249,7 @@ oct()
 La función ``oct()`` convierte un número entero en una cadena en base octal,
 antecedida del prefijo *'0'*.
 
-::
+.. code-block:: pycon
 
     >>> oct(8)
     '010'
@@ -1302,7 +1277,7 @@ La función ``bool()``, es un constructor, el cual crea un tipo de datos
 :ref:`booleanos <python_bool>`, devuelve un tipo booleano ``True`` cuando el
 argumento dado es ``True``, de lo contrario ``False``.
 
-::
+.. code-block:: pycon
 
     >>> bool()
     False
@@ -1311,7 +1286,7 @@ argumento dado es ``True``, de lo contrario ``False``.
 
 Convertir desde un tipo :ref:`entero <python_numericos>` a tipo *booleano*:
 
-::
+.. code-block:: pycon
 
     >>> bool(0)
     False
@@ -1321,7 +1296,7 @@ Convertir desde un tipo :ref:`entero <python_numericos>` a tipo *booleano*:
 Convertir desde un tipo :ref:`entero float <python_num_float>` de forma recursiva
 usando la función :ref:`int() <python_fun_int>` a tipo *booleano*:
 
-::
+.. code-block:: pycon
 
     >>> bool(int(0.1))
     False
@@ -1332,11 +1307,11 @@ Convertir desde un tipo :ref:`cadena de caracteres <python_str>` de forma recurs
 usando la función :ref:`str() <python_fun_str>` y la función :ref:`int() <python_fun_int>`
 a tipo *booleano*:
 
-::
+.. code-block:: pycon
 
-    >>> bool(int(str('0')))
+    >>> bool(int(str("0")))
     False
-    >>> bool(int(str('1')))
+    >>> bool(int(str("1")))
     True
 
 ----
@@ -1359,9 +1334,9 @@ capitalize()
 La función ``capitalize()`` devuelve una :ref:`cadenas de caracteres <python_str>`
 con MAYÚSCULA la primera palabra.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.capitalize()
+    >>> "leonardo caballero".capitalize()
     'Leonardo caballero'
 
 
@@ -1374,7 +1349,7 @@ La función ``chr()`` recibe como argumento un entero, y devuelve una cadena con
 el carácter cuyo código *Unicode* corresponde a ese valor. El rango válido para
 el argumento es de 0 a 256.
 
-::
+.. code-block:: pycon
 
     >>> chr(64)
     '@'
@@ -1395,11 +1370,11 @@ La función ``endswith()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena termine con el criterio enviado por parámetros
 en la función.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.endswith("do")
+    >>> "leonardo caballero".endswith("do")
     False
-    >>> 'leonardo caballero'.endswith("ro")
+    >>> "leonardo caballero".endswith("ro")
     True
 
 
@@ -1412,18 +1387,18 @@ La función ``expandtabs()`` devuelve una copia de la :ref:`cadena de caracteres
 donde todos los caracteres ``tab`` (tabulación) son remplazados por uno o más espacios,
 depende en la actual columna y el tamaño del tab dado.
 
-::
+.. code-block:: pycon
 
-    >>> 'Leonardo Caballero\tPython Developer\tleonardoc@plone.org'.expandtabs()
+    >>> "Leonardo Caballero\tPython Developer\tleonardoc@plone.org".expandtabs()
     'Leonardo Caballero      Python Developer        leonardoc@plone.org'
 
 Usted puede indicar el tamaño de la tecla ``tab`` vía parámetro de la función:
 
-::
+.. code-block:: pycon
 
-    >>> 'Leonardo Caballero\tPython Developer\tleonardoc@plone.org'.expandtabs(4)
+    >>> "Leonardo Caballero\tPython Developer\tleonardoc@plone.org".expandtabs(4)
     'Leonardo Caballero  Python Developer    leonardoc@plone.org'
-    >>> 'Leonardo Caballero\tPython Developer\tleonardoc@plone.org'.expandtabs(2)
+    >>> "Leonardo Caballero\tPython Developer\tleonardoc@plone.org".expandtabs(2)
     'Leonardo Caballero  Python Developer  leonardoc@plone.org'
 
 
@@ -1436,11 +1411,11 @@ La función ``find()`` devuelve un valor numérico ``0`` si encuentra el criteri
 de búsqueda o ``-1`` si no coincide el criterio de búsqueda enviado por parámetros
 en la función.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.find("leo")
+    >>> "leonardo caballero".find("leo")
     0
-    >>> 'leonardo caballero'.find("ana")
+    >>> "leonardo caballero".find("ana")
     -1
 
 
@@ -1470,40 +1445,40 @@ La sintaxis de la función integrada ``format()`` es:
 
 La a función integrada ``format()`` toma dos parámetros:
 
-- value - valor que necesita formatear.
+- ``value`` - valor que necesita formatear.
 
-- format_spec - La especificación en como el valor debe ser formateado.
+- ``format_spec`` - La especificación en como el valor debe ser formateado.
 
 A continuación, un ejemplo de un valor :ref:`número entero <python_num_entero>`,
 seria de la siguiente forma:
 
-::
+.. code-block:: pycon
 
-    >>> print(format(123,"d"))
+    >>> print(format(123, "d"))
     123
 
 A continuación, un ejemplo de un valor :ref:`número float <python_num_float>`,
 seria de la siguiente forma:
 
-::
+.. code-block:: pycon
 
-    >>> print(format(123.456789,"f"))
+    >>> print(format(123.456789, "f"))
     123.456789
 
 A continuación, un ejemplo de un valor binario, seria de la siguiente forma:
 
-::
+.. code-block:: pycon
 
-    >>> print(format(10,"b"))
+    >>> print(format(10, "b"))
     1010
 
 
 A continuación, un ejemplo de un valor :ref:`número entero <python_num_entero>`
 con formato especifico, seria de la siguiente forma:
 
-::
+.. code-block:: pycon
 
-    >>> print(format(1234,"*>+7,d"))
+    >>> print(format(1234, "*>+7,d"))
     *+1,234
 
 En el ejemplo anterior cuando se formatea el :ref:`número entero <python_num_entero>`
@@ -1526,7 +1501,7 @@ describe cada opción a continuación:
 A continuación, un ejemplo de un valor :ref:`número float <python_num_float>`
 con formato especifico, seria de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> print(format(123.4567, "^-09.3f"))
     0123.4570
@@ -1556,13 +1531,13 @@ A continuación, un ejemplo de usar la función ``format()`` sobre escribiendo e
 especial ``__format__()`` de una :ref:`clase <python_metodos_especiales>`, seria de la
 siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> class Persona:
     ...     def __format__(self, formato):
-    ...         if(formato == 'edad'):
-    ...             return '23'
-    ...         return 'Formato nulo'
+    ...         if formato == "edad":
+    ...             return "23"
+    ...         return "Formato nulo"
     ...
     >>> print(format(Persona(), "edad"))
     23
@@ -1584,15 +1559,15 @@ index()
 La función ``index()`` es como la función ``find()`` pero arroja una excepción
 :ref:`ValueError <python_exception_valueerror>` cuando la sub-cadena no es encontrada.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.index("leo")
+    >>> "leonardo caballero".index("leo")
     0
-    >>> 'leonardo caballero'.index("ana")
+    >>> "leonardo caballero".index("ana")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     ValueError: substring not found
-    >>> 'leonardo caballero'.index(" ca")
+    >>> "leonardo caballero".index(" ca")
     8
 
 
@@ -1626,28 +1601,28 @@ porque tus cadenas de caracteres ya están internadas entre bastidores.
 
 A continuación uno ejemplo de comparación de cadena de caracteres con operadores de relacionales:
 
-::
+.. code-block:: pycon
 
-    >>> cadena0, cadena1 = 'python', 'python'
+    >>> cadena0, cadena1 = "python", "python"
     >>> cadena0 == cadena1
     True
     >>> cadena0 is cadena1
     True
-    >>> cadena0, cadena1 = 'python 3.7', 'python 3.7'
+    >>> cadena0, cadena1 = "python 3.7", "python 3.7"
     >>> cadena0 is cadena1
     False
 
 A continuación uno ejemplo de comparación de cadena de caracteres con el operador
 :ref:`is <python_opers_is>`:
 
-::
+.. code-block:: pycon
 
     >>>
-    >>> cadena0 = intern('plone cms')
-    >>> cadena1 = 'plone cms'
+    >>> cadena0 = intern("plone cms")
+    >>> cadena1 = "plone cms"
     >>> cadena0 is cadena1
     False
-    >>> cadena1 = intern('plone cms')
+    >>> cadena1 = intern("plone cms")
     >>> cadena0 is cadena1
     True
 
@@ -1660,11 +1635,11 @@ isalnum()
 La función ``isalnum()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena contenga caracteres alfanuméricos.
 
-::
+.. code-block:: pycon
 
-    >>> '23456987'.isalnum()
+    >>> "23456987".isalnum()
     True
-    >>> 'V-23456987'.isalnum()
+    >>> "V-23456987".isalnum()
     False
 
 
@@ -1676,11 +1651,11 @@ isalpha()
 La función ``isalpha()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena contenga caracteres alfabéticos.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo'.isalpha()
+    >>> "leonardo".isalpha()
     True
-    >>> 'leonardo caballero'.isalpha()
+    >>> "leonardo caballero".isalpha()
     False
 
 
@@ -1693,11 +1668,11 @@ La función ``isdigit()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena contenga caracteres dígitos.
 
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.isdigit()
+    >>> "leonardo caballero".isdigit()
     False
-    >>> '23456987'.isdigit()
+    >>> "23456987".isdigit()
     True
 
 
@@ -1709,11 +1684,11 @@ islower()
 La función ``islower()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena contenga caracteres en MINÚSCULAS.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.islower()
+    >>> "leonardo caballero".islower()
     True
-    >>> 'leonardo CABALLERO'.islower()
+    >>> "leonardo CABALLERO".islower()
     False
 
 
@@ -1725,7 +1700,7 @@ istitle()
 La función ``istitle()`` devuelve un valor booleano ``True`` o ``False`` si coincide
 que la :ref:`cadena de caracteres <python_str>` sean capitales en cada palabra.
 
-::
+.. code-block:: pycon
 
     >>> "leonardo caballero".title()
     'Leonardo Caballero'
@@ -1741,7 +1716,7 @@ isspace()
 La función ``isspace()`` devuelve un valor booleano ``True`` o ``False`` si no es
 vacía, y todos sus caracteres son espacios en blanco.
 
-::
+.. code-block:: pycon
 
     >>> " ".isspace()
     True
@@ -1761,11 +1736,11 @@ isupper()
 La función ``isupper()`` devuelve un valor booleano ``True`` o ``False`` si coincide
 que la :ref:`cadena de caracteres <python_str>` estén en MAYÚSCULAS en cada palabra.
 
-::
+.. code-block:: pycon
 
-    >>> 'LEONARDO CABALLERO'.isupper()
+    >>> "LEONARDO CABALLERO".isupper()
     True
-    >>> 'LEONARDO caballero'.isupper()
+    >>> "LEONARDO caballero".isupper()
     False
 
 
@@ -1780,7 +1755,7 @@ con el espacio en blanco inicial eliminado. Si se dan la cadena de caracteres y 
 lugar. Si la cadena de caracteres son ``unicode``, serán convertidas a ``unicode`` antes
 de eliminar.
 
-::
+.. code-block:: pycon
 
     >>> " leonardo caballero ".lstrip()
     'leonardo caballero '
@@ -1794,9 +1769,9 @@ lower()
 La función ``lower()`` devuelve una :ref:`cadenas de caracteres <python_str>` con MINÚSCULAS
 en cada palabra.
 
-::
+.. code-block:: pycon
 
-    >>> 'LEONARDO CABALLERO'.lower()
+    >>> "LEONARDO CABALLERO".lower()
     'leonardo caballero'
 
 
@@ -1808,15 +1783,15 @@ ord()
 La función ``ord()`` es el inverso de :ref:`chr() <python_fun_chr>` dada una
 cadena representando un carácter Unicode, devuelve el entero del código correspondiente.
 
-::
+.. code-block:: pycon
 
-    >>> ord('@')
+    >>> ord("@")
     64
-    >>> ord('$')
+    >>> ord("$")
     36
-    >>> ord('^')
+    >>> ord("^")
     94
-    >>> ord('~')
+    >>> ord("~")
     126
 
 
@@ -1829,9 +1804,9 @@ La función ``replace()`` si encuentra el criterio de la búsqueda de la
 sub-cadena o la remplaza con la nueva sub-cadena enviado por parámetros
 en la función.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.replace(" cab", " Cab")
+    >>> "leonardo caballero".replace(" cab", " Cab")
     'leonardo Caballero'
 
 
@@ -1843,9 +1818,9 @@ split()
 La función ``split()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>`
 separada por cada indice de la lista.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.split()
+    >>> "leonardo caballero".split()
     ['leonardo', 'caballero']
 
 
@@ -1857,9 +1832,9 @@ splitlines()
 La función ``splitlines()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>`
 separada por cada salto de linea en cada indice de la lista.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo jose\ncaballero garcia'.splitlines()
+    >>> "leonardo jose\ncaballero garcia".splitlines()
     ['leonardo jose', 'caballero garcia']
 
 
@@ -1872,11 +1847,11 @@ La función ``startswith()`` devuelve un valor booleano ``True`` o ``False``
 si coincide que la cadena inicie con el criterio enviado por parámetros
 en la función.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.startswith("ca")
+    >>> "leonardo caballero".startswith("ca")
     False
-    >>> 'leonardo caballero'.startswith("leo")
+    >>> "leonardo caballero".startswith("leo")
     True
 
 
@@ -1891,7 +1866,7 @@ se usa crear una *carácter* o *cadenas de caracteres* mediante la misma funció
 Puede convertir un :ref:`número entero <python_num_entero>` a una *cadena de caracteres*,
 de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> str(2)
     '2'
@@ -1899,7 +1874,7 @@ de la siguiente forma:
 Puede convertir un :ref:`número float <python_num_float>` a una *cadena de caracteres*,
 de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> str(2.5)
     '2.5'
@@ -1909,15 +1884,15 @@ de la siguiente forma:
 Puede convertir un :ref:`número complex <python_num_complex>` a una *cadena de caracteres*,
 de la siguiente forma:
 
-::
+.. code-block:: pycon
 
-    >>> str(2.3+0j)
+    >>> str(2.3 + 0j)
     '(2.3+0j)'
 
 Puede convertir un tipo :ref:`booleano <python_bool>` a una *cadena de caracteres*,
 de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> str(True)
     'True'
@@ -1933,11 +1908,11 @@ swapcase()
 La función ``swapcase()`` devuelve una :ref:`cadenas de caracteres <python_str>`
 convertida al opuesto sea MAYÚSCULAS o MINÚSCULAS.
 
-::
+.. code-block:: pycon
 
-    >>> 'leonardo caballero'.swapcase()
+    >>> "leonardo caballero".swapcase()
     'LEONARDO CABALLERO'
-    >>> 'LEONARDO CABALLERO'.swapcase()
+    >>> "LEONARDO CABALLERO".swapcase()
     'leonardo caballero'
 
 
@@ -1949,7 +1924,7 @@ title()
 La función ``title()`` devuelve una :ref:`cadenas de caracteres <python_str>` con
 capitales en cada palabra.
 
-::
+.. code-block:: pycon
 
     >>> "leonardo caballero".title()
     'Leonardo Caballero'
@@ -1963,7 +1938,7 @@ unichr()
 La función ``unichr()`` devuelve una *cadena de caracteres* *Unicode* de un carácter
 con un numero entero.
 
-::
+.. code-block:: pycon
 
     >>> unichr(64)
     u'@'
@@ -1983,7 +1958,7 @@ upper()
 La función ``upper()`` devuelve una :ref:`cadenas de caracteres <python_str>` con
 MAYÚSCULAS en cada palabra.
 
-::
+.. code-block:: pycon
 
     >>> "leonardo caballero".upper()
     'LEONARDO CABALLERO'
@@ -2010,11 +1985,11 @@ integradas ``True`` si todo los valores en el objeto iterable python tienen un v
 de tipo :ref:`booleano <python_bool>` igual a ``True``. Un valor vacío tiene un tipo
 :ref:`booleano <python_bool>` igual a ``False``.
 
-::
+.. code-block:: pycon
 
-    >>> all([' ',' ',' '])
+    >>> all([" ", " ", " "])
     True
-    >>> all({'*','',''})
+    >>> all({"*", "", ""})
     False
 
 
@@ -2026,11 +2001,11 @@ any()
 La función ``any()`` ese toma un argumento y devuelve ``True`` incluso si, un valor en
 el objeto iterable tiene un valor de tipo :ref:`booleano <python_bool>` igual a ``True``.
 
-::
+.. code-block:: pycon
 
-    >>> any((1,0,0))
+    >>> any((1, 0, 0))
     True
-    >>> any((0,0,0))
+    >>> any((0, 0, 0))
     False
     >>> any(range(5))
     True
@@ -2048,7 +2023,7 @@ convertidos en un tipo común, utilizando las mismas reglas que las operaciones
 aritméticas. Si la coerción no es posible, levante una excepción
 :ref:`TypeError <python_exception_typeerror>`.
 
-::
+.. code-block:: pycon
 
     >>> coerce(3, 4)
     (3, 4)
@@ -2064,35 +2039,35 @@ dict()
 La función ``dict()`` es el constructor del tipo de :ref:`diccionario <python_dict>`,
 esta función se usa crear un diccionario:
 
-::
+.. code-block:: pycon
 
-    >>> dict(python=3.7, zope=5.5.2, plone=6.0)
-    {'zope': 5.5.2, 'python': 3.7, 'plone': 6.0}
+    >>> dict(python=3.7, zope=5.2, plone=6.0)
+    {'zope': 5.2, 'python': 3.7, 'plone': 6.0}
 
 También puede crear un diccionario indicando a las claves usando comillas simples:
 
-::
+.. code-block:: pycon
 
-    >>> {'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
+    >>> {"python": 3.7, "zope": 5.2, "plone": 6.0}
     {'python': 3.7, 'zope': 2, 'plone': 6.0}
-    >>> dict({'python': 3.7, 'zope': 5.5.2, 'plone': 6.0})
-    {{'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
+    >>> dict({"python": 3.7, "zope": 5.2, "plone": 6.0})
+    {{'python': 3.7, 'zope': 5.2, 'plone': 6.0}
 
 Convertir desde un grupo de dos :ref:`listas <python_list>` de forma recursiva usando
 la función :ref:`zip() <python_fun_zip>` a tipo *diccionario*:
 
-::
+.. code-block:: pycon
 
-    >>> dict(zip(['python', 'zope', 'plone'], [3.7, 5.5.2, 6.0]))
-    {'python': 3.7, 'zope': 5.5.2, 'plone': 6.0}
+    >>> dict(zip(["python", "zope", "plone"], [3.7, 5.2, 6.0]))
+    {'python': 3.7, 'zope': 5.2, 'plone': 6.0}
 
 Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una
 :ref:`lista <python_list>` a tipo *diccionario*:
 
-::
+.. code-block:: pycon
 
-    >>> dict([('zope', 5.5.2), ('python', 3.7), ('plone', 6.0)])
-    {'plone': 6.0, 'zope': 5.5.2, 'python': 3.7}
+    >>> dict([("zope", 5.2), ("python", 3.7), ("plone", 6.0)])
+    {'plone': 6.0, 'zope': 5.2, 'python': 3.7}
 
 
 .. _python_fun_frozenset:
@@ -2104,7 +2079,7 @@ La función ``frozenset()`` es el constructor del tipo de :ref:`conjuntos <pytho
 se usa crear un conjunto *inmutable* mediante la misma función ``frozenset()`` de un objeto
 iterable :ref:`lista <python_list>`:
 
-::
+.. code-block:: pycon
 
     >>> versiones = [6, 2.1, 2.5, 3.6, 4, 5, 6, 4, 2.5]
     >>> print(versiones, type(versiones))
@@ -2122,7 +2097,7 @@ iter()
 La función ``iter()`` obtiene un :ref:`iterador <python_iter>` de un objeto. En la
 primera forma, el argumento debe proporcionar su propio *iterador*, o ser una secuencia.
 
-::
+.. code-block:: pycon
 
     >>> elemento = iter("Plone")
     >>> elemento
@@ -2158,7 +2133,7 @@ La función ``list()`` es el constructor del tipo de :ref:`lista <python_list>`,
 se usa crear una lista mediante la misma función ``list()`` de un iterable. Por
 ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
 
-::
+.. code-block:: pycon
 
     >>> lista = list(range(10))
     >>> print(lista)
@@ -2172,9 +2147,9 @@ next()
 
 La función ``next()`` devuelve el próximo elemento desde un :ref:`iterador <python_iter>`.
 
-::
+.. code-block:: pycon
 
-    >>> elemento = iter([1,2,3,4,5])
+    >>> elemento = iter([1, 2, 3, 4, 5])
     >>> next(elemento)
     1
     >>> next(elemento)
@@ -2205,7 +2180,7 @@ La función ``tuple()`` es el constructor del tipo de :ref:`tuplas <python_tuple
 se usa crear una tupla mediante la misma función ``tuple()`` de un iterable. Por
 ejemplo, una tupla podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
 
-::
+.. code-block:: pycon
 
     >>> tupla = tuple(range(4, 9))
     >>> print(tupla)
@@ -2221,7 +2196,7 @@ La función ``set()`` es el constructor del tipo de :ref:`conjuntos <python_set>
 se usa crear un conjunto *mutable* mediante la misma función ``set()`` de un objeto
 iterable :ref:`lista <python_list>`:
 
-::
+.. code-block:: pycon
 
     >>> versiones = [2.1, 2.5, 3.6, 4, 5, 6, 4]
     >>> print(versiones, type(versiones))
@@ -2240,7 +2215,7 @@ La función ``sorted()`` devuelve una lista ordenada de los elementos del tipo s
 que recibe como argumento (lista o cadena de caracteres). La secuencia original no es
 modificada.
 
-::
+.. code-block:: pycon
 
     >>> lista = [23, 13, 7, 37]
     >>> sorted(lista)
@@ -2249,7 +2224,7 @@ modificada.
 La función ``sorted()`` siempre devuelve una lista, aunque reciba como argumento una
 :ref:`cadena de caracteres <python_str>`.
 
-::
+.. code-block:: pycon
 
     >>> cadena = "asdlk"
     >>> sorted(cadena)
@@ -2265,10 +2240,10 @@ tupla contiene el elemento i-th desde cada una de los tipos de secuencias de arg
 La lista devuelta es truncada en longitud a la longitud de la secuencia de argumentos
 más corta.
 
-::
+.. code-block:: pycon
 
-    >>> zip(['python', 'zope', 'plone'], [3.7, 5.5.2, 6.0])
-    [('python', 3.7), ('zope', 5.5.2), ('plone', 6.0)]
+    >>> zip(["python", "zope", "plone"], [3.7, 5.2, 6.0])
+    [('python', 3.7), ('zope', 5.2), ('plone', 6.0)]
 
 
 ----
@@ -2290,7 +2265,7 @@ delattr()
 La función ``delattr()`` elimina un atributo con nombre en un objeto;
 ``delattr(x, 'y')`` es equivalente a ``del x.y``.
 
-::
+.. code-block:: pycon
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -2302,7 +2277,7 @@ La función ``delattr()`` elimina un atributo con nombre en un objeto;
     >>> macagua = Persona()
     >>> macagua.sexo
     'M'
-    >>> delattr(Persona,'sexo')
+    >>> delattr(Persona, "sexo")
     >>> macagua.sexo
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -2319,7 +2294,7 @@ forma ``getattr(instancia, 'atributo')``  el cual es equivalente a ``instancia.a
 Cuando un argumento predeterminado es dato, es es devuelto cuando el atributo no existe;
 sin eso, una excepción es lanzada en ese caso.
 
-::
+.. code-block:: pycon
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -2329,7 +2304,7 @@ sin eso, una excepción es lanzada en ese caso.
     ...     sexo = "M"
     ...
     >>> macagua = Persona()
-    >>> getattr(macagua,'sexo')
+    >>> getattr(macagua, "sexo")
     'M'
     >>> macagua.sexo
     'M'
@@ -2343,7 +2318,7 @@ La función ``hasattr()`` devuelve un tipo booleano cuando el objeto tiene un at
 con el nombre dado. (Esta hecho llamando a la función ``getattr(instancia, atributo)``
 y capturar excepciones.)
 
-::
+.. code-block:: pycon
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -2353,15 +2328,15 @@ y capturar excepciones.)
     ...     sexo = "M"
     ...
     >>> macagua = Persona()
-    >>> hasattr(macagua, 'nombre')
+    >>> hasattr(macagua, "nombre")
     True
-    >>> hasattr(macagua, 'apellido')
+    >>> hasattr(macagua, "apellido")
     True
-    >>> hasattr(macagua, 'cedula')
+    >>> hasattr(macagua, "cedula")
     True
-    >>> hasattr(macagua, 'sexo')
+    >>> hasattr(macagua, "sexo")
     True
-    >>> hasattr(macagua, 'email')
+    >>> hasattr(macagua, "email")
     False
 
 
@@ -2372,7 +2347,7 @@ hash()
 
 La función ``hash()`` devuelve un valor hash de tipo entero para el objeto.
 
-::
+.. code-block:: pycon
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -2387,7 +2362,7 @@ La función ``hash()`` devuelve un valor hash de tipo entero para el objeto.
 
 Dos objetos con el mismo valor tienen el mismo valor hash.
 
-::
+.. code-block:: pycon
 
     >>> type(Persona)
     <type 'classobj'>
@@ -2409,7 +2384,7 @@ isinstance()
 La función ``isinstance()`` le permite corroborar si un objeto es una
 :ref:`instancia <python_instancias>` de una clase.
 
-::
+.. code-block:: pycon
 
     isinstance(objeto, tipo)
 
@@ -2424,7 +2399,7 @@ Los parámetros son:
 
 Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
 
-::
+.. code-block:: pycon
 
     >>> persona1 = Persona("V-13458796", "Leonardo", "Caballero", "M")
     >>> isinstance(persona1, Persona)
@@ -2434,7 +2409,7 @@ Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
 Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es
 uno de los tipos en la tupla.
 
-::
+.. code-block:: pycon
 
     >>> persona1 = Persona("V-13458796", "Leonardo", "Caballero", "M")
     >>> isinstance(persona1, (Persona, int))
@@ -2455,7 +2430,7 @@ issubclass()
 La función ``issubclass()`` le permite corroborar si un objeto es instancia de una
 clase.
 
-::
+.. code-block:: python
 
     issubclass(subclase, clase)
 
@@ -2465,7 +2440,7 @@ base, de lo contrario ``False``.
 Un ejemplo de uso con la subclase ``Supervisor`` que deriva de la clase ``Persona``
 seria como lo siguiente:
 
-::
+.. code-block:: pycon
 
     >>> sV1 = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
     >>> issubclass(sV1, Persona)
@@ -2475,7 +2450,7 @@ seria como lo siguiente:
 Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es
 uno de los tipos en la tupla.
 
-::
+.. code-block:: pycon
 
     >>> sV1 = Supervisor("V-16987456", "Jen", "Paz", "D", "Chivo")
     >>> issubclass(sV1, (Persona, Empleado, Supervisor, Destreza))
@@ -2496,7 +2471,7 @@ setattr()
 La función ``setattr()`` establecer un atributo con nombre en un objeto;
 ``setattr(x, 'y', v)`` es equivalente a ``x.y = v``.
 
-::
+.. code-block:: pycon
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -2505,8 +2480,8 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
     ...     apellido = "Caballero"
     ...     sexo = "M"
     ...
-    >>> setattr(macagua, 'email', 'leonardoc@plone.org')
-    >>> getattr(macagua,'email')
+    >>> setattr(macagua, "email", "leonardoc@plone.org")
+    >>> getattr(macagua, "email")
     'leonardoc@plone.org'
 
 

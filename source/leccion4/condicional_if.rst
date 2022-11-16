@@ -70,9 +70,9 @@ Operador is
 El operador ``is``, significa, que prueba identidad: ambos lados de la expresión
 condicional debe ser el mismo objecto:
 
-::
+.. code-block:: pycon
 
-    >>> 1 is 1.
+    >>> 1 is 1.0
     False
     >>> a, b = 1, 1
     >>> a is b
@@ -87,7 +87,7 @@ Operador in
 El operador ``in``, significa, para cualquier colección del valor del lado izquierdo
 contenga el valor del lado derecho:
 
-::
+.. code-block:: pycon
 
     >>> b = [1, 2, 3]
     >>> 2 in b
@@ -107,7 +107,7 @@ Operador not in
 El operador ``not in``, el contrario de operador :ref:`in <python_opers_in>`, devuelve
 ``True`` cuando un elemento no está en una secuencia.
 
-::
+.. code-block:: pycon
 
     >>> b = [1, 2, 3]
     >>> 4 not in b
@@ -243,7 +243,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
     consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 condicional_if.py
 
@@ -252,7 +252,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

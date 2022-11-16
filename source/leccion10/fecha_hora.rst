@@ -209,6 +209,14 @@ Fecha y hora
 .. todo::
     TODO escribir esta sección.
 
+
+----
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
 .. _`Formatting Python Dates According to Locale`: http://www.skybert.net/python/formatting-python-dates-according-to-locale/
 
 

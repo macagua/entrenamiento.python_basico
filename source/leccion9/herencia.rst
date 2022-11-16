@@ -56,7 +56,7 @@ El método constructor ``__init__`` es un método especial el cual debe escribir
 Usted puede llamar esos métodos y atributos con la siguiente notación:
 ``claseinstancia.metodo`` o ``claseinstancia.atributo``.
 
-::
+.. code-block:: pycon
 
     >>> print(persona1.nombre, persona1.apellido)
     >>> print(persona1.getGenero(persona1.sexo))
@@ -169,7 +169,7 @@ permite corroborar si un objeto es instancia de una clase.
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 herencia_simple.py
 
@@ -248,14 +248,14 @@ a ``Supervisor`` primero por que ese aparece primero de izquierda a derecha.
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 herencia_multiple.py
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

@@ -19,12 +19,12 @@ el tipo de queja más común que tenés cuando todavía estás aprendiendo Pytho
 
 ::
 
-   >>> while True print('Hola Mundo')
-   Traceback (most recent call last):
-   ...
-       while True print('Hola Mundo')
+    >>> while True print('Hola Mundo')
+    Traceback (most recent call last):
+    ...
+        while True print('Hola Mundo')
                       ^
-   SyntaxError: invalid syntax
+    SyntaxError: invalid syntax
 
 El intérprete repite la línea culpable y muestra una pequeña 'flecha' que apunta al
 primer lugar donde se detectó el error. Este es causado por (o al menos detectado en)
@@ -44,20 +44,20 @@ manejarlos en los programas en Python. Sin embargo, la mayoría de las excepcion
 no son manejadas por los programas, y resultan en mensajes de error como los
 mostrados aquí:
 
-::
+.. code-block:: pycon
 
-   >>> 10 * (1/0)
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in ?
-   ZeroDivisionError: integer division or modulo by zero
-   >>> 4 + spam*3
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in ?
-   NameError: name 'spam' is not defined
-   >>> '2' + 2
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in ?
-   TypeError: cannot concatenate 'str' and 'int' objects
+    >>> 10 * (1 / 0)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in ?
+    ZeroDivisionError: integer division or modulo by zero
+    >>> 4 + spam * 3
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in ?
+    NameError: name 'spam' is not defined
+    >>> "2" + 2
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in ?
+    TypeError: cannot concatenate 'str' and 'int' objects
 
 
 La última línea de los mensajes de error indica qué sucedió. Las excepciones vienen
@@ -94,15 +94,15 @@ permite al usuario interrumpir el programa (usando :kbd:`Control-C` o lo que sea
 el sistema operativo soporte); notá que una interrupción generada por el usuario se
 señaliza generando la excepción :ref:`KeyboardInterrupt <python_exception_keyboardinterrupterror>`.
 
-::
+.. code-block:: pycon
 
-   >>> while True:
-   ...     try:
-   ...         x = int(input("Por favor ingrese un número: "))
-   ...         break
-   ...     except ValueError:
-   ...         print("Oops!  No era válido. Intente nuevamente...")
-   ...
+    >>> while True:
+    ...     try:
+    ...         x = int(input("Por favor ingrese un número: "))
+    ...         break
+    ...     except ValueError:
+    ...         print("Oops!  No era válido. Intente nuevamente...")
+    ...
 
 La sentencia ``try`` funciona de la siguiente manera:
 
@@ -132,8 +132,8 @@ nombrar múltiples excepciones usando paréntesis, por ejemplo:
 
 ::
 
-   ... except (RuntimeError, TypeError, NameError):
-   ...     pass
+    ... except (RuntimeError, TypeError, NameError):
+    ...     pass
 
 
 El último ``except`` puede omitir nombrar qué excepción captura, para servir
@@ -142,37 +142,37 @@ ocultar un error real de programación. También puede usarse para mostrar un
 mensaje de error y luego re-generar la excepción (permitiéndole al que llama,
 manejar también la excepción):
 
-::
+.. code-block:: pycon
 
-   import sys
+    import sys
 
-   try:
-       f = open('numeros.txt')
-       s = f.readline()
-       i = int(s.strip())
-   except IOError as err:
-       print("Error E/S ({0}): {1}".format(err.errno, err.strerror))
-   except ValueError:
-       print("No pude convertir el dato a un entero.")
-   except:
-       print("Error inesperado:", sys.exc_info()[0])
-       raise
+    try:
+        f = open('numeros.txt')
+        s = f.readline()
+        i = int(s.strip())
+    except IOError as err:
+        print("Error E/S ({0}): {1}".format(err.errno, err.strerror))
+    except ValueError:
+        print("No pude convertir el dato a un entero.")
+    except:
+        print("Error inesperado:", sys.exc_info()[0])
+        raise
 
 
 Las declaraciones ``try`` ... ``except`` tienen un *bloque else* opcional, el cual,
 cuando está presente, debe seguir a los ``except``. Es útil para aquel código que
 debe ejecutarse si el *bloque try* no genera una excepción. Por ejemplo:
 
-::
+.. code-block:: pycon
 
-   for arg in sys.argv[1:]:
-       try:
-           f = open(arg, 'r')
-       except IOError:
-           print('no pude abrir', arg)
-       else:
-           print(arg, 'tiene', len(f.readlines()), 'lineas')
-           f.close()
+    for arg in sys.argv[1:]:
+        try:
+            f = open(arg, 'r')
+        except IOError:
+            print('no pude abrir', arg)
+        else:
+            print(arg, 'tiene', len(f.readlines()), 'lineas')
+            f.close()
 
 El uso de ``else`` es mejor que agregar código adicional en el ``try`` porque evita
 capturar accidentalmente una excepción que no fue generada por el código que está
@@ -191,23 +191,23 @@ a ``.args``.
 Uno también puede instanciar una excepción antes de generarla, y agregarle cualquier
 atributo que se desee:
 
-::
+.. code-block:: pycon
 
-   >>> try:
-   ...    raise Exception('carne', 'huevos')
-   ... except Exception as inst:
-   ...    print(type(inst))     # la instancia de excepción
-   ...    print(inst.args)      # argumentos guardados en .args
-   ...    print(inst)           # __str__ permite imprimir args directamente
-   ...    x, y = inst           # __getitem__ permite usar args directamente
-   ...    print('x =', x)
-   ...    print('y =', y)
-   ...
-   <type 'exceptions.Exception'>
-   ('carne', 'huevos')
-   ('carne', 'huevos')
-   x = carne
-   y = huevos
+    >>> try:
+    ...     raise Exception("carne", "huevos")
+    ... except Exception as inst:
+    ...     print(type(inst))  # la instancia de excepción
+    ...     print(inst.args)  # argumentos guardados en .args
+    ...     print(inst)  # __str__ permite imprimir args directamente
+    ...     x, y = inst  # __getitem__ permite usar args directamente
+    ...     print("x =", x)
+    ...     print("y =", y)
+    ...
+    <type 'exceptions.Exception'>
+    ('carne', 'huevos')
+    ('carne', 'huevos')
+    x = carne
+    y = huevos
 
 Si una excepción tiene un argumento, este se imprime como la última parte (el 'detalle')
 del mensaje para las excepciones que no están manejadas.
@@ -216,17 +216,17 @@ Los manejadores de excepciones no manejan solamente las excepciones que ocurren 
 *bloque try*, también manejan las excepciones que ocurren dentro de las funciones que
 se llaman (inclusive indirectamente) dentro del *bloque try*. Por ejemplo:
 
-::
+.. code-block:: pycon
 
-   >>> def esto_falla():
-   ...     x = 1/0
-   ...
-   >>> try:
-   ...     esto_falla()
-   ... except ZeroDivisionError as detail:
-   ...     print('Manejando error en tiempo de ejecución:', detail)
-   ...
-   Manejando error en tiempo de ejecución: integer division or modulo by zero
+    >>> def esto_falla():
+    ...     x = 1 / 0
+    ...
+    >>> try:
+    ...     esto_falla()
+    ... except ZeroDivisionError as detail:
+    ...     print("Manejando error en tiempo de ejecución:", detail)
+    ...
+    Manejando error en tiempo de ejecución: integer division or modulo by zero
 
 
 .. _python_sent_raise:
@@ -237,12 +237,12 @@ Levantando excepciones
 La sentencia ``raise`` permite al programador forzar a que ocurra una excepción
 específica. Por ejemplo:
 
-::
+.. code-block:: pycon
 
-   >>> raise NameError('Hola')
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in ?
-   NameError: Hola
+    >>> raise NameError("Hola")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in ?
+    NameError: Hola
 
 El único argumento a ``raise`` indica la excepción a generarse. Tiene que ser o
 una instancia de excepción, o una clase de excepción (una clase que hereda de
@@ -251,18 +251,18 @@ una instancia de excepción, o una clase de excepción (una clase que hereda de
 Si necesitás determinar cuando una excepción fue lanzada pero no querés manejarla,
 una forma simplificada de la sentencia ``raise`` te permite relanzarla:
 
-::
+.. code-block:: pycon
 
-   >>> try:
-   ...     raise NameError('Hola')
-   ... except NameError:
-   ...     print('Ha sucedido una excepción!')
-   ...     raise
-   ...
-   Ha sucedido una excepción!
-   Traceback (most recent call last):
-     File "<stdin>", line 2, in ?
-   NameError: Hola
+    >>> try:
+    ...     raise NameError("Hola")
+    ... except NameError:
+    ...     print("Ha sucedido una excepción!")
+    ...     raise
+    ...
+    Ha sucedido una excepción!
+    Traceback (most recent call last):
+      File "<stdin>", line 2, in ?
+    NameError: Hola
 
 
 .. _python_sent_assert:
@@ -275,17 +275,17 @@ depuración dentro de un programa:
 
 La forma simple, "assert expression", es equivalente a:
 
-::
+.. code-block:: pycon
 
-   if __debug__:
-       if not expression: raise AssertionError
+    if __debug__:
+        if not expression: raise AssertionError
 
 La forma extendida, "assert expression1, expression2", es equivalente a:
 
-::
+.. code-block:: pycon
 
-   if __debug__:
-       if not expression1: raise AssertionError(expression2)
+    if __debug__:
+        if not expression1: raise AssertionError(expression2)
 
 Estas equivalencias suponen que ``__debug__`` y la excepción
 ":ref:`AssertionError <python_exception_assertionerror>`" se refieren a las
@@ -313,24 +313,24 @@ Los programas pueden nombrar sus propias excepciones creando una nueva clase exc
 de Python). Las excepciones, típicamente, deberán derivar de la clase
 :ref:`Exception <python_exception>`, directa o indirectamente. Por ejemplo:
 
-::
+.. code-block:: pycon
 
-   >>> class MiError(Exception):
-   ...     def __init__(self, valor):
-   ...         self.valor = valor
-   ...     def __str__(self):
-   ...         return repr(self.valor)
-   ...
-   >>> try:
-   ...     raise MiError(2*2)
-   ... except MiError as e:
-   ...     print('Ha ocurrido mi excepción, valor:', e.valor)
-   ...
-   Ocurrió mi excepción, valor: 4
-   >>> raise MiError('oops!')
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in ?
-   __main__.MiError: 'oops!'
+    >>> class MiError(Exception):
+    ...     def __init__(self, valor):
+    ...         self.valor = valor
+    ...     def __str__(self):
+    ...         return repr(self.valor)
+    ...
+    >>> try:
+    ...     raise MiError(2 * 2)
+    ... except MiError as e:
+    ...     print("Ha ocurrido mi excepción, valor:", e.valor)
+    ...
+    Ocurrió mi excepción, valor: 4
+    >>> raise MiError("oops!")
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in ?
+    __main__.MiError: 'oops!'
 
 En este ejemplo, el método :meth:`__init__` de :ref:`Exception <python_exception>`
 fue sobrescrito. El nuevo comportamiento simplemente crea el atributo *valor*.
@@ -344,37 +344,37 @@ Al crear un módulo que puede lanzar varios errores distintos, una práctica com
 crear una clase base para excepciones definidas en ese módulo y extenderla para crear
 clases excepciones específicas para distintas condiciones de error:
 
-::
+.. code-block:: pycon
 
-   class Error(Exception):
-       """Clase base para excepciones en el módulo."""
-       pass
+    class Error(Exception):
+        """Clase base para excepciones en el módulo."""
+        pass
 
-   class EntradaError(Error):
-       """Exception lanzada por errores en las entradas.
+    class EntradaError(Error):
+        """Exception lanzada por errores en las entradas.
 
-       Atributos:
-           expresion -- expresión de entrada en la que ocurre el error
-           mensaje -- explicación del error
-       """
+        Atributos:
+            expresion -- expresión de entrada en la que ocurre el error
+            mensaje -- explicación del error
+        """
 
-       def __init__(self, expresion, mensaje):
-           self.expresion = expresion
-           self.mensaje = mensaje
+        def __init__(self, expresion, mensaje):
+            self.expresion = expresion
+            self.mensaje = mensaje
 
-   class TransicionError(Error):
-       """Lanzada cuando una operación intenta una
+    class TransicionError(Error):
+        """Lanzada cuando una operación intenta una
           transición de estado no permitida.
 
-       Atributos:
-           previo -- estado al principio de la transición
-           siguiente -- nuevo estado intentado
-           mensaje -- explicación de porque la transición no esta permitida
-       """
-       def __init__(self, previo, siguiente, mensaje):
-           self.previo = previo
-           self.siguiente = siguiente
-           self.mensaje = mensaje
+        Atributos:
+            previo -- estado al principio de la transición
+            siguiente -- nuevo estado intentado
+            mensaje -- explicación de porque la transición no esta permitida
+        """
+        def __init__(self, previo, siguiente, mensaje):
+            self.previo = previo
+            self.siguiente = siguiente
+            self.mensaje = mensaje
 
 La mayoría de las excepciones son definidas con nombres que terminan en "Error",
 similares a los nombres de las excepciones estándar.
@@ -392,17 +392,17 @@ Definiendo acciones de limpieza
 La sentencia ``try`` tiene otra sentencia opcional que intenta definir acciones de
 limpieza que deben ser ejecutadas bajo ciertas circunstancias. Por ejemplo:
 
-::
+.. code-block:: pycon
 
-   >>> try:
-   ...     raise KeyboardInterrupt
-   ... finally:
-   ...     print('Adiós, Mundo!')
-   ...
-   Chau, Mundo!
-   Traceback (most recent call last):
-     File "<stdin>", line 2, in ?
-   KeyboardInterrupt
+    >>> try:
+    ...     raise KeyboardInterrupt
+    ... finally:
+    ...     print("Adiós, Mundo!")
+    ...
+    Chau, Mundo!
+    Traceback (most recent call last):
+      File "<stdin>", line 2, in ?
+    KeyboardInterrupt
 
 
 Una *sentencia finally* siempre es ejecutada antes de salir de la sentencia ``try``,
@@ -414,30 +414,30 @@ cualquier otra sentencia de la sentencia ``try`` es dejada vía ``break``, ``con
 or ``return``. Un ejemplo más complicado (sentencias ``except`` y ``finally`` en la
 misma sentencia ``try``):
 
-::
+.. code-block:: pycon
 
-   >>> def dividir(x, y):
-   ...     try:
-   ...         resultado = x / y
-   ...     except ZeroDivisionError:
-   ...         print("¡división por cero!")
-   ...     else:
-   ...         print("el resultado es", resultado)
-   ...     finally:
-   ...         print("ejecutando la clausula finally")
-   ...
-   >>> dividir(2, 1)
-   el resultado es 2
-   ejecutando la clausula finally
-   >>> dividir(2, 0)
-   ¡división por cero!
-   ejecutando la clausula finally
-   >>> divide("2", "1")
-   ejecutando la clausula finally
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in ?
-     File "<stdin>", line 3, in divide
-   TypeError: unsupported operand type(s) for /: 'str' and 'str'
+    >>> def dividir(x, y):
+    ...     try:
+    ...         resultado = x / y
+    ...     except ZeroDivisionError:
+    ...         print("¡división por cero!")
+    ...     else:
+    ...         print("el resultado es", resultado)
+    ...     finally:
+    ...         print("ejecutando la clausula finally")
+    ...
+    >>> dividir(2, 1)
+    el resultado es 2
+    ejecutando la clausula finally
+    >>> dividir(2, 0)
+    ¡división por cero!
+    ejecutando la clausula finally
+    >>> divide("2", "1")
+    ejecutando la clausula finally
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in ?
+      File "<stdin>", line 3, in divide
+    TypeError: unsupported operand type(s) for /: 'str' and 'str'
 
 
 Como puedes ver, la sentencia ``finally`` es ejecutada siempre. La excepción
@@ -459,10 +459,10 @@ objeto hayan sido exitosas o no. Mirá el siguiente ejemplo, que intenta
 :ref:`abrir un archivo <python_manipular_archivo>` e imprimir su contenido en la
 pantalla.
 
-::
+.. code-block:: pycon
 
-   for linea in open("numeros.txt"):
-       print(linea)
+    for linea in open("numeros.txt"):
+        print(linea)
 
 
 El problema con este código es que deja el archivo abierto por un periodo de tiempo
@@ -478,11 +478,11 @@ Sentencia with
 La sentencia ``with`` permite que objetos como archivos sean usados de una forma que
 asegure que siempre se los libera rápido y en forma correcta.
 
-::
+.. code-block:: pycon
 
-   with open("numeros.txt") as f:
-       for linea in f:
-           print(linea)
+    with open("numeros.txt") as f:
+        for linea in f:
+            print(linea)
 
 Luego de que la sentencia sea ejecutada, el archivo *f* siempre es cerrado, incluso si
 se encuentra un problema al procesar las líneas. Otros objetos que provean acciones de
@@ -498,11 +498,11 @@ también se le conozca como *trazado de pila*, porque lista las funciones en el 
 cual son almacenadas en la
 `pila de llamadas <https://es.wikipedia.org/wiki/Pila_(estructura_de_datos)#Pila_de_llamadas>`_.
 
-El módulo integrado `traceback <https://docs.python.org/library/traceback>`_ incorpora el
+El módulo integrado `traceback <https://docs.python.org/3/library/traceback.html>`_ incorpora el
 comportamiento de ``Traceback`` o *trazado inverso* ya que extrae, formatea e imprime información
 acerca de *trazado del stack* de los errores y excepciones en Python.
 
-::
+.. code-block:: pycon
 
     >>> import traceback
     >>> traceback.__doc__
@@ -534,7 +534,7 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 excepciones_integradas.py
         python3 errores_propios.py
@@ -545,7 +545,7 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

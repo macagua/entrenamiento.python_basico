@@ -18,27 +18,13 @@ Entrada estándar
 Para pedir información al usuario, debe utilizar las funciones integradas en el
 interprete del lenguaje, así como los argumentos de línea de comandos.
 
-.. comments:
-
-    **Ejemplo de la función raw_input**:
-
-    La función :ref:`raw_input() <python_fun_raw_input>` siempre devuelve un valor de
-    cadenas de caracteres:
-
-    ::
-
-        >>> nombre = raw_input('Ana: ¿Cómo se llama usted?: ')
-        Ana: ¿Cómo se llama usted?: Leonardo
-        >>> print(nombre)
-        Leonardo
-
 **Ejemplo de la función input**:
 
 La función :ref:`input() <python_fun_input>` siempre devuelve un valor numérico:
 
-::
+.. code-block:: pycon
 
-    >>> edad = input('Ana: ¿Que edad tiene usted?: ')
+    >>> edad = input("Ana: ¿Que edad tiene usted?: ")
     Ana: ¿Que edad tiene usted?: 38
     >>> print(edad)
     38
@@ -95,7 +81,7 @@ contenido:
 
 Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
 
-::
+.. code-block:: console
 
     python3 entrada_argumentos.py
     ['entrada_argumentos.py']
@@ -108,7 +94,7 @@ del *script*. Entonces, el primer argumento de la lista ``sys.argv`` (es decir,
 Ahora si intenta ejecutar el *script* de nuevo pasando algunos valores como números
 y cadenas de caracteres entre comillas dobles, todo separado por espacios:
 
-::
+.. code-block:: console
 
     python3 entrada_argumentos.py 300 43.234 "Hola Plone"
     ['entrada_argumentos.py', '300', '43.234', 'Hola Plone']
@@ -129,7 +115,7 @@ tipo número:
 Si quiere comprobar la validación de cuantos argumentos deben enviarme al script,
 ejecute el siguiente comando:
 
-::
+.. code-block:: console
 
     python3 entrada_dos_argumentos.py "Hola Plone"
     ERROR: Introdujo uno (1) o más de dos (2) argumentos
@@ -139,7 +125,7 @@ ejecute el siguiente comando:
 Ahora si intenta ejecutar el *script* ``entrada_dos_argumentos.py`` con solo dos (2)
 argumentos, ejecutando el siguiente comando:
 
-::
+.. code-block:: console
 
     python3 entrada_dos_argumentos.py "Hola Plone" 3
     Hola Plone
@@ -173,9 +159,9 @@ Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``
 
 **Ejemplo del uso de la sentencia print**:
 
-::
+.. code-block:: pycon
 
-    >>> print('Ana: Hola', nombre, ', encantada de conocerte :3')
+    >>> print("Ana: Hola", nombre, ", encantada de conocerte :3")
     Ana: Hola Leonardo , encantado de conocerte :3
 
 
@@ -188,7 +174,7 @@ Formato de impresión de cadenas
 En la sentencia ``print`` se pueden usar el formato de impresión alternando las cadenas
 de caracteres y variables:
 
-::
+.. code-block:: pycon
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
@@ -232,7 +218,7 @@ de caracteres y variables:
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 entrada_salida.py
         python3 entrada_argumentos.py
@@ -241,7 +227,7 @@ de caracteres y variables:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` del
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion7>` del
     entrenamiento para ampliar su conocimiento en esta temática.
 
 

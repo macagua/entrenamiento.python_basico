@@ -36,7 +36,7 @@ Ejemplo 1
 Si requiere crear una lista de 4 elementos y cada elemento calcularle la potencia
 de 2, usando el método tradicional, eso seria así:
 
-::
+.. code-block:: pycon
 
     >>> lista = []
     >>> for i in range(4):
@@ -47,7 +47,7 @@ de 2, usando el método tradicional, eso seria así:
 
 Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 
-::
+.. code-block:: pycon
 
     >>> [i**2 for i in range(4)]
     [0, 1, 4, 9]
@@ -59,10 +59,10 @@ Ejemplo 2
 A continuación se crear una lista con las letras de una palabra, usando el método
 tradicional, eso seria así:
 
-::
+.. code-block:: pycon
 
     >>> lista = []
-    >>> for letra in 'casa':
+    >>> for letra in "casa":
     ...     lista.append(letra)
     ...
     >>> print(lista)
@@ -71,9 +71,9 @@ tradicional, eso seria así:
 
 Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 
-::
+.. code-block:: pycon
 
-    >>> lista = [letra for letra in 'casa']
+    >>> lista = [letra for letra in "casa"]
     >>> print(lista)
     ['c', 'a', 's', 'a']
 
@@ -89,10 +89,10 @@ Ejemplo 3
 A continuación se crear una lista con las potencias de 2 de los primeros 10
 números, usando el método tradicional, eso seria así:
 
-::
+.. code-block:: pycon
 
     >>> lista = []
-    >>> for numero in range(0,11):
+    >>> for numero in range(0, 11):
     ...     lista.append(numero**2)
     ...
     >>> print(lista)
@@ -100,9 +100,9 @@ números, usando el método tradicional, eso seria así:
 
 Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 
-::
+.. code-block:: pycon
 
-    >>> lista = [numero**2 for numero in range(0,11)]
+    >>> lista = [numero**2 for numero in range(0, 11)]
     >>> print(lista)
     [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
@@ -116,10 +116,10 @@ Ejemplo 4
 A continuación se crear una lista con los todos los múltiples de 2 entre 0 y 10,
 usando el método tradicional, eso seria así:
 
-::
+.. code-block:: pycon
 
     >>> lista = []
-    >>> for numero in range(0,11):
+    >>> for numero in range(0, 11):
     ...     lista.append(numero**2)
     ...
     >>> print(lista)
@@ -129,10 +129,10 @@ usando el método tradicional, eso seria así:
 También, si añade al código anterior, los números del 0 al 10 cuando su módulo de
 2 sea 0 usando el método tradicional, eso seria así:
 
-::
+.. code-block:: pycon
 
     >>> lista = []
-    >>> for numero in range(0,11):
+    >>> for numero in range(0, 11):
     ...     if numero % 2 == 0:
     ...         lista.append(numero)
     ...
@@ -142,9 +142,9 @@ También, si añade al código anterior, los números del 0 al 10 cuando su mód
 Entonces el ejemplo anterior donde crear una lista con los todos los múltiples de
 2 entre 0 y 10, usando listas de comprensión, eso seria así:
 
-::
+.. code-block:: pycon
 
-    >>> lista = [numero for numero in range(0,11) if numero % 2 == 0 ]
+    >>> lista = [numero for numero in range(0, 11) if numero % 2 == 0]
     >>> print(lista)
     [0, 2, 4, 6, 8, 10]
 
@@ -152,9 +152,9 @@ Para el ejemplo anterior donde crear una lista con los todos los múltiples de 2
 entre 0 y 10 cuando su módulo de 2 sea 0, usando listas de comprensión, eso seria
 así:
 
-::
+.. code-block:: pycon
 
-    >>> [numero for numero in range(0,11) if numero % 2 == 0 ]
+    >>> [numero for numero in range(0, 11) if numero % 2 == 0]
     [0, 2, 4, 6, 8, 10]
 
 En este caso puede observar que incluso puede marcar una condición justo al final
@@ -168,10 +168,10 @@ A continuación se crear una lista de pares a partir de otra lista creada con la
 potencias de 2 de los primeros 10 números, usando el método tradicional, eso seria
 así:
 
-::
+.. code-block:: pycon
 
     >>> lista = []
-    >>> for numero in range(0,11):
+    >>> for numero in range(0, 11):
     ...     lista.append(numero**2)
     ...
     >>> pares = []
@@ -184,11 +184,11 @@ así:
 
 Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 
-::
+.. code-block:: pycon
 
-    >>> lista = [numero for numero in
-    ...             [numero**2 for numero in range(0,11)]
-    ...                 if numero % 2 == 0]
+    >>> lista = [
+    ...     numero for numero in [numero**2 for numero in range(0, 11)] if numero % 2 == 0
+    ... ]
     >>> print(lista)
     [0, 4, 16, 36, 64, 100]
 
@@ -207,7 +207,7 @@ Usando Listas de comprensión con Archivos
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion10>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

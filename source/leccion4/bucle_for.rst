@@ -117,7 +117,7 @@ que en las demás estructuras de control.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

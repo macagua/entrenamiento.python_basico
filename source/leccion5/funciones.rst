@@ -43,12 +43,12 @@ cuando la función es llamada.
 
 La sintaxis para una definición de función en Python es:
 
-::
+.. code-block:: python
 
     def NOMBRE(LISTA_DE_PARAMETROS):
         """DOCSTRING_DE_FUNCION"""
         SENTENCIAS
-        RETURN [EXPRESION]
+        return [EXPRESION]
 
 A continuación se detallan el significado de pseudo código fuente anterior:
 
@@ -63,7 +63,7 @@ A continuación se detallan el significado de pseudo código fuente anterior:
 - ``SENTENCIAS``, es el bloque de sentencias en código fuente Python que realizar
   cierta operación dada.
 
-- ``RETURN``, es la :ref:`sentencia return <python_sent_return>` en código
+- ``return``, es la :ref:`sentencia return <python_sent_return>` en código
   Python.
 
 - ``EXPRESION``, es la expresión o variable que devuelve la sentencia ``return``.
@@ -71,7 +71,7 @@ A continuación se detallan el significado de pseudo código fuente anterior:
 
 Un ejemplo simple de función esta seguidamente:
 
-::
+.. code-block:: pycon
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
@@ -140,7 +140,7 @@ Por posición
 Cuando enviá argumentos a una función, estos se reciben por orden en los parámetros
 definidos. Se dice por tanto que son argumentos por posición:
 
-::
+.. code-block:: pycon
 
     >>> def resta(a, b):
     ...     return a - b
@@ -159,12 +159,12 @@ Por nombre
 Sin embargo es posible evadir el orden de los parámetros si indica durante la llamada
 que valor tiene cada parámetro a partir de su nombre:
 
-::
+.. code-block:: pycon
 
     >>> def resta(a, b):
     ...     return a - b
     ...
-    >>> (b=30, a=10)
+    >>> resta(b=30, a=10)
     -20
 
 
@@ -175,7 +175,7 @@ Al momento de llamar una función la cual tiene definidos unos parámetros, si n
 los argumentos correctamente provocará una excepción
 :ref:`TypeError <python_exception_typeerror>`:
 
-::
+.. code-block:: pycon
 
     >>> resta()
     Traceback (most recent call last):
@@ -191,7 +191,7 @@ al momento de la llamada a una función sin argumentos, entonces usted puede asi
 unos valores por defecto nulos a los parámetros, de esa forma puede hacer una
 comprobación antes de ejecutar el código de la función:
 
-::
+.. code-block:: pycon
 
     >>> def resta(a=None, b=None):
     ...     if a == None or b == None:
@@ -226,13 +226,13 @@ Usted debe crear una lista dinámica de argumentos, es decir, un tipo
 :ref:`tupla <python_tuple>`, definiendo el parámetro con un asterisco, para recibir
 los parámetros indeterminados por posición:
 
-::
+.. code-block:: pycon
 
     >>> def indeterminados_posicion(*args):
     ...     for arg in args:
     ...         print(arg)
     ...
-    >>> indeterminados_posicion(5,"Hola Plone",[1,2,3,4,5])
+    >>> indeterminados_posicion(5, "Hola Plone", [1, 2, 3, 4, 5])
     5
     Hola Plone
     [1, 2, 3, 4, 5]
@@ -245,24 +245,24 @@ Para recibir un número indeterminado de parámetros por nombre (clave-valor o e
 inglés *keyword args*), usted debe crear un diccionario dinámico de argumentos
 definiendo el parámetro con dos asteriscos:
 
-::
+.. code-block:: pycon
 
     >>> def indeterminados_nombre(**kwargs):
     ...     print(kwargs)
     ...
-    >>> indeterminados_nombre(n=5, c="Hola Plone", l=[1,2,3,4,5])
+    >>> indeterminados_nombre(n=5, c="Hola Plone", l=[1, 2, 3, 4, 5])
     {'c': 'Hola Plone', 'l': [1, 2, 3, 4, 5], 'n': 5}
 
 Al recibirse como un diccionario, puede iterarlo y mostrar la clave y valor de
 cada argumento:
 
-::
+.. code-block:: pycon
 
     >>> def indeterminados_nombre(**kwargs):
     ...     for kwarg in kwargs:
     ...         print(kwarg, "=>", kwargs[kwarg])
     ...
-    >>> indeterminados_nombre(n=5, c="Hola Plone", l=[1,2,3,4,5])
+    >>> indeterminados_nombre(n=5, c="Hola Plone", l=[1, 2, 3, 4, 5])
     c => Hola Plone
     l => [1, 2, 3, 4, 5]
     n => 5
@@ -275,9 +275,9 @@ Si requiere aceptar ambos tipos de parámetros simultáneamente en una función,
 debe crear ambas colecciones dinámicas. Primero los argumentos indeterminados por valor
 y luego los cuales son por clave y valor:
 
-::
+.. code-block:: pycon
 
-    >>> def super_funcion(*args,**kwargs):
+    >>> def super_funcion(*args, **kwargs):
     ...     total = 0
     ...     for arg in args:
     ...         total += arg
@@ -306,17 +306,19 @@ Es una operación nula --- cuando es ejecutada, nada sucede. Eso es útil como u
 contenedor cuando una sentencia es requerida sintácticamente, pero no necesita
 código que ser ejecutado, por ejemplo:
 
-::
+.. code-block:: pycon
 
     >>> # una función que no hace nada (aun)
-    ... def consultar_nombre_genero(letra_genero): pass
+    ... def consultar_nombre_genero(letra_genero):
+    ...     pass
     ...
     >>> type(consultar_nombre_genero)
     <type 'function'>
     >>> consultar_nombre_genero("M")
     >>>
     >>> # una clase sin ningún método (aun)
-    ... class Persona: pass
+    ... class Persona:
+    ...     pass
     ...
     >>> macagua = Persona
     >>> type(macagua)
@@ -338,17 +340,10 @@ se hace *devolviendo valores*. A continuación, un ejemplo de función usando ``
 
 Esta función se llama de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> devuelve_fibonacci(10)
     [1, 1, 2, 3, 5, 8]
-
-.. comments:
-
-    ::
-
-        >>> suma(23,74)
-        97
 
 
 .. note:: Por defecto, las funciones retorna el valor :ref:`None <python_obj_none>`.
@@ -360,10 +355,10 @@ Retorno múltiple
 Una característica interesante, es la posibilidad de devolver valores múltiples
 separados por comas:
 
-::
+.. code-block:: pycon
 
     >>> def prueba():
-    ...     return "Plone CMS", 20, [1,2,3]
+    ...     return "Plone CMS", 20, [1, 2, 3]
     ...
     >>> prueba()
     ('Plone CMS', 20, [1, 2, 3])
@@ -371,10 +366,10 @@ separados por comas:
 En el código anterior los valores múltiples se tratan en conjunto como una
 :ref:`tupla <python_tuple>` inmutable y se pueden reasignar a distintas variables:
 
-::
+.. code-block:: pycon
 
     >>> def prueba():
-    ...     return "Plone CMS", 20, [1,2,3]
+    ...     return "Plone CMS", 20, [1, 2, 3]
     ...
     >>> prueba()
     ('Plone CMS', 20, [1, 2, 3])
@@ -410,7 +405,7 @@ A continuación, se presenta un ejemplo del uso de definir funciones:
 
 A continuación, se presenta un ejemplo del uso de llamar funciones:
 
-::
+.. code-block:: pycon
 
     >>> iva()
     ¿Cual es el monto a calcular?: 300
@@ -427,7 +422,7 @@ A continuación, se presenta un ejemplo del uso de funciones con argumentos múl
 
 Y se llama de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> suma(23, 74)
     97
@@ -443,14 +438,14 @@ Y se llama de la siguiente forma:
     consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 funciones.py
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion5>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion5>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

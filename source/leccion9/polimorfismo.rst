@@ -27,9 +27,9 @@ Derivada debe definir un método con la **misma forma** (es decir, mismo
 nombre de método y mismo número de parámetros que como está definido en la
 Clase Base).
 
-::
+.. code-block:: pycon
 
-    >>> class Persona():
+    >>> class Persona:
     ...     def __init__(self):
     ...         self.cedula = 13765890
     ...     def mensaje(self):
@@ -65,19 +65,19 @@ La *sobrecarga de operadores* es también es conocida por *Overloading Operators
 trata básicamente de lo mismo que la **sobrecarga de métodos** pero pertenece en
 esencia al ámbito de los operadores aritméticos, binarios, de comparación y lógicos.
 
-::
+.. code-block:: pycon
 
     >>> class Punto:
-    ...     def __init__(self,x = 0,y = 0):
+    ...     def __init__(self, x=0, y=0):
     ...         self.x = x
     ...         self.y = y
-    ...     def __add__(self,other):
+    ...     def __add__(self, other):
     ...         x = self.x + other.x
     ...         y = self.y + other.y
     ...         return x, y
     ...
-    >>> punto1 = Punto(4,6)
-    >>> punto2 = Punto(1,-2)
+    >>> punto1 = Punto(4, 6)
+    >>> punto2 = Punto(1, -2)
     >>> print(punto1 + punto2)
     (5, 4)
 
@@ -86,7 +86,7 @@ esencia al ámbito de los operadores aritméticos, binarios, de comparación y l
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

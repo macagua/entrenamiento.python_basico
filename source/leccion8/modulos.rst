@@ -33,7 +33,7 @@ cualquier archivo de código Python como un módulo ejecutando esta sentencia
 en otro archivo de código Python. La sentencia ``import`` tiene la siguiente
 sintaxis:
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> import re, datetime
@@ -54,9 +54,9 @@ Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
 
 ::
 
-    Importo el modulo 'utilidades.pyc'
+    Importo el modulo ``utilidades.pyc``
 
-    Función 'suma_total' del módulo 'utilidades.pyc' llamado y mostró:
+    Función ``suma_total`` del módulo ``utilidades.pyc`` llamado y mostró:
     Ingrese un monto: 56987
     Monto total a facturar: 57007 Bs (VES).
 
@@ -72,12 +72,13 @@ Esto se debe al código objeto compilado que genera en el mismo directorio del
 módulo que cargo con la extensión de archivo **.pyc**, ejecutando las siguientes
 sentencias:
 
-::
+.. code-block:: pycon
 
     >>> import funciones, os
-    >>> archivos = os.listdir(os.path.abspath(
-    ...     funciones.__file__).replace("/utilidades.pyc", "/"))
-    >>> print(filter(lambda x: x.startswith('funciones.'), archivos))
+    >>> archivos = os.listdir(
+    ...     os.path.abspath(funciones.__file__).replace("/utilidades.pyc", "/")
+    ... )
+    >>> print(filter(lambda x: x.startswith("funciones."), archivos))
     ['utilidades.py', 'utilidades.pyc']
 
 
@@ -118,13 +119,13 @@ variable ``PATH``.
 
 Así es una típica definición de ``PYTHONPATH`` desde un sistema Windows, ejecutando:
 
-::
+.. code-block:: console
 
     set PYTHONPATH = C:\python20\lib;
 
 Así es una típica definición de ``PYTHONPATH`` desde un sistema UNIX, ejecutando:
 
-::
+.. code-block:: console
 
     set PYTHONPATH = /usr/local/lib/python
 
@@ -154,7 +155,7 @@ que cualquier variable asignada a un valor en una función es local.
 Por lo tanto, para asignar un valor a una variable global dentro de una función, primero
 debe usar la sentencia :ref:`global <python_sent_global>`.
 
-::
+.. code-block:: pycon
 
     >>> global nombre
     >>> nombre
@@ -200,7 +201,7 @@ sentencia ``global``, se soluciona el problema.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

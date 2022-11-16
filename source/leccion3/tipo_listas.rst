@@ -457,7 +457,7 @@ Usted puede consultar toda la documentación disponible sobre las **listas** des
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

@@ -20,7 +20,7 @@ Función recursiva sin retorno
 Un ejemplo de una función recursiva sin retorno, es el ejemplo de cuenta regresiva
 hasta cero a partir de un número:
 
-::
+.. code-block:: pycon
 
     >>> def cuenta_regresiva(numero):
     ...     numero -= 1
@@ -51,13 +51,13 @@ factorial de un número corresponde al producto de todos los números desde 1 ha
 el propio número. Es el ejemplo con retorno más utilizado para mostrar la utilidad
 de este tipo de funciones:
 
-::
+.. code-block:: pycon
 
     >>> def factorial(numero):
-    ...     print("Valor inicial ->",numero)
+    ...     print("Valor inicial ->", numero)
     ...     if numero > 1:
-    ...         numero = numero * factorial(numero -1)
-    ...     print("valor final ->",numero)
+    ...         numero = numero * factorial(numero - 1)
+    ...     print("valor final ->", numero)
     ...     return numero
     ...
     >>> print(factorial(5))
@@ -80,7 +80,7 @@ de este tipo de funciones:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion5>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion5>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

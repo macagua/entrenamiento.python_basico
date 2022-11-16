@@ -209,7 +209,7 @@ comunitario del proyecto Python en Sudamérica.
 **Comunidad(es) de Python en Argentina**
     Nuestro objetivo es nuclear a los usuarios de Python. Pretendemos llegar a personas y
     empresas, promover el uso de Python e intercambiar información. Más información
-    visite http://www.python.org.ar/
+    visite https://www.python.org.ar/
 
 **Comunidad(es) de Python en Brasil**
     La comunidad Python Brasil reúne grupos de usuarios en todo el Brasil interesados en
@@ -219,7 +219,7 @@ comunitario del proyecto Python en Sudamérica.
     Una comunidad de amigos apasionados por la tecnología e informática, que busca compartir
     conocimiento de forma libre y sin fines de lucro, con el fin de fortalecer a los miembros
     de la comunidad para generar un impacto positivo en la región. Más información visite
-    https://pythonchile.cl/comunidad/
+    https://pythonchile.cl/
 
 **Comunidad(es) de Python en Colombia**
     Somos una comunidad enfocada en extender en el territorio nacional el uso y aprendizaje de
@@ -234,7 +234,7 @@ comunitario del proyecto Python en Sudamérica.
 **Comunidad(es) de Python en Perú**
     Comunidad de estudiantes, profesionales e interesados en tener un espacio donde conversar,
     preguntar e intercambiar ideas todo acerca del lenguaje de programación Python. Más
-    información visite https://www.meetup.com/es/pythonperu/
+    información visite https://www.facebook.com/groups/495963587131551/
 
 **Comunidad(es) de Python en Paraguay**
     Las comunidades de Python están presentes en todo el mundo, con el objeto de apoyar a los
@@ -246,7 +246,7 @@ comunitario del proyecto Python en Sudamérica.
     información visite https://pythonpy.org
 
 **Comunidad(es) de Python en Uruguay**
-    Para más información visite https://python.uy
+    Para más información visite https://uy.pyladies.com/
 
 **Comunidad(es) de Python en Venezuela**
     La Fundación Python de Venezuela (FPyVE) es una organización sin fines de lucro creada
@@ -254,7 +254,7 @@ comunitario del proyecto Python en Sudamérica.
     principal es el desarrollo, ejecución y/o consultoría de proyectos científicos, tecnológicos
     y productivos, para cumplir fines de interés público en torno al desarrollo Nacional, haciendo
     uso y promoviendo para tal fin, el uso del lenguaje de programación Python y las tecnologías
-    asociadas a éste. Más información visite http://pyve.github.io/
+    asociadas a éste. Más información visite https://python.org.ve/
 
 
 ----
@@ -273,7 +273,7 @@ adquiridos en esta sección de la lección.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion1>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

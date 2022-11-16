@@ -76,6 +76,14 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 
 - Acceso a dispositivos de audio compatibles con Open Sound System - OSS, la librería `ossaudiodev`_.
 
+
+----
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

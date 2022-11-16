@@ -33,26 +33,6 @@ A continuación una serie de términos usados en las tecnologías Python/Zope/Pl
     Cheese shop
         Ver :term:`PyPI`.
 
-    Collective
-        Es un repositorio de código comunitario, para Productos Plone y productos
-        de terceros, y es un sitio muy útil para buscar la ultima versión de código
-        fuente del producto para cientos de productos de terceros a Plone. Los
-        desarrolladores de nuevos productos de Plone son animados a compartir su
-        código a través de Collective para que otros puedan encontrarlo, usarlo, y
-        contribuir con correcciones / mejoras.
-
-        En la actualidad la comunidad ofrece dos repositorio Collective un basado
-        en **Git** y otro **Subversion**.
-
-        Si usted quiere publicar un nuevo producto en el repositorio *Git de Collective*
-        de Plone necesita `obtener acceso de escritura`_ y seguir las reglas en
-        github/collective, también puede consultarlo en la cuenta en `github.com`_.
-
-        Si usted quiere publicar un nuevo producto en el repositorio *Subversion de
-        Collective* de Plone necesita `obtener acceso de escritura al repositorio`_
-        y `crear su estructura básica de repositorio`_ para su producto, también
-        puede consultarlo vía Web consulte el siguiente `enlace`_.
-
     Declaración ZCML
         El uso concreto de una :term:`Directiva ZCML` dentro de un archivo :term:`ZCML`.
 
@@ -306,12 +286,7 @@ A continuación una serie de términos usados en las tecnologías Python/Zope/Pl
 .. _`Third-Party Products`: https://docs.plone.org/develop/addons/
 .. _`Products.CMFPlone`: https://pypi.org/project/Products.CMFPlone
 .. _`sitio web de PEAK`: http://peak.telecommunity.com/DevCenter/setuptools
-.. _`obtener acceso de escritura al repositorio`: https://old.plone.org/countries/conosur/documentacion/obtener-acceso-de-escritura-al-repositorio-svn-de-plone
-.. _`crear su estructura básica de repositorio`: https://old.plone.org/countries/conosur/documentacion/crear-un-nuevo-proyecto-en-el-repositorio-collective-de-plone
-.. _`enlace`: https://svn.plone.org/svn/collective/
-.. _`obtener acceso de escritura`: https://collective.github.io/
 .. _`seguir las reglas en github/collective`: https://collective.github.io/
-.. _`github.com`: https://github.com/collective
 .. _`Configuración de Temas`: http://localhost:8080/Plone/@@skins-controlpanel
 .. _`Configuración de Productos Adicionales`: http://localhost:8080/Plone/prefs_install_products_form
 .. _`su instalación`: http://localhost:8080/manage

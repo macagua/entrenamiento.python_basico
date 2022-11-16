@@ -60,11 +60,12 @@ Expresión lambda
 Si deconstruye una función sencilla, puede llegar a una función ``lambda``. Por ejemplo
 la siguiente función es para doblar un valor de un número:
 
-::
+.. code-block:: pycon
 
     >>> def doblar(numero):
-    ...     resultado = numero*2
+    ...     resultado = numero * 2
     ...     return resultado
+    ...
 
     >>> doblar(2)
     4
@@ -74,10 +75,11 @@ la siguiente función es para doblar un valor de un número:
 
 Si el código fuente anterior se simplifica se verá, de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> def doblar(numero):
-    ...     return numero*2
+    ...     return numero * 2
+    ...
 
     >>> doblar(2)
     4
@@ -88,11 +90,13 @@ Si el código fuente anterior se simplifica se verá, de la siguiente forma:
 Usted puede todavía simplificar más, escribirlo todo en una sola línea, de la
 siguiente forma:
 
-::
+.. code-block:: pycon
 
-    >>> def doblar(numero): return numero*2
+    >>> def doblar(numero):
+    ...     return numero * 2
+    ...
 
-    >>> lambda numero: numero*2
+    >>> lambda numero: numero * 2
     <function <lambda> at 0x7f1023944e60>
     >>> doblar(2)
     4
@@ -103,9 +107,9 @@ siguiente forma:
 Esta notación simple es la que una función ``lambda`` intenta replicar, observe,
 a continuación se va a convertir la función en una función anónima:
 
-::
+.. code-block:: pycon
 
-    >>> lambda numero: numero*2
+    >>> lambda numero: numero * 2
     <function <lambda> at 0x7f1023944e60>
 
 En este ejemplo tiene una función anónima con una entrada que recibe ``numero``,
@@ -114,9 +118,9 @@ y una salida que devuelve ``numero * 2``.
 Lo único que necesita hacer para utilizarla es guardarla en una variable y utilizarla
 tal como haría con una función normal:
 
-::
+.. code-block:: pycon
 
-    >>> doblar = lambda numero: numero*2
+    >>> doblar = lambda numero: numero * 2
     >>> doblar(2)
     4
     >>> type(doblar)
@@ -143,9 +147,9 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 A continuación, se presenta un ejemplo para comprobar si un número es impar:
 
-::
+.. code-block:: pycon
 
-    >>> impar = lambda numero: numero%2 != 0
+    >>> impar = lambda numero: numero % 2 != 0
     >>> impar(5)
     True
 
@@ -155,7 +159,7 @@ A continuación, se presenta un ejemplo para comprobar si un número es impar:
 A continuación, se presenta un ejemplo para darle la vuelta a una cadena rebanándola
 en sentido inverso:
 
-::
+.. code-block:: pycon
 
     >>> revertir = lambda cadena: cadena[::-1]
     >>> revertir("Plone")
@@ -169,16 +173,16 @@ en sentido inverso:
 A continuación, se presenta un ejemplo para varios parámetros, por ejemplo para
 sumar dos números:
 
-::
+.. code-block:: pycon
 
-    >>> sumar = lambda x,y: x+y
-    >>> sumar(5,2)
+    >>> sumar = lambda x, y: x + y
+    >>> sumar(5, 2)
     7
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion5>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion5>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

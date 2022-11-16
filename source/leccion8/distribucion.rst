@@ -164,7 +164,7 @@ Construir dependencias
 Para construir cualquier cosas requeridas para instalar el paquete, ejecutando
 el siguiente comando:
 
-::
+.. code-block:: console
 
     python3 ./setup.py -v build
     running build
@@ -220,7 +220,7 @@ Tanto el módulo :ref:`setuptools <python_modulo_setuptools>` y
 fuente o source distribution (``sdist``) de su paquete en formatos como **tarball**,
 archivo **zip**, etc. Para crear una paquete ``sdist``, ejecute el siguiente comando:
 
-::
+.. code-block:: console
 
     python3 ./setup.py -v sdist
     running sdist
@@ -286,7 +286,7 @@ Usted puede cambiar el formato de paquete a crear de su distribución de código
 su paquete (en formato archivo **tarball**, archivo **zip**, etc.), ejecute el siguiente
 comando:
 
-::
+.. code-block:: console
 
     python3 ./setup.py sdist --formats=zip,gztar,bztar
     running sdist
@@ -371,7 +371,7 @@ El módulo :ref:`setuptools <python_modulo_setuptools>` y
 construida o built "binary" distribution (``bdist``) de su paquete en formato **egg**,
 **wheel**, **rpm**, etc. A continuación se describen los mas usados:
 
-.. figure:: ../_images/python_eggs.jpg
+.. figure:: ../_static/images/python_eggs.jpg
     :align: center
     :width: 50%
 
@@ -384,7 +384,7 @@ Egg
 Para crear una distribución ``bdist`` de su paquete en formato ``egg``, ejecute el
 siguiente comando:
 
-::
+.. code-block:: console
 
     python3 ./setup.py bdist_egg
     running bdist_egg
@@ -446,7 +446,7 @@ Wheel
 Para crear una distribución ``bdist`` de su paquete en formato **wheel**, ejecute el
 siguiente comando:
 
-::
+.. code-block:: console
 
     python3 ./setup.py bdist_wheel
     running bdist_wheel
@@ -526,27 +526,27 @@ Instalar distribución código fuente
 Para instalar una distribución código fuente de su paquete previamente creado, se
 realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
-::
+.. code-block:: console
 
     pip3 install --user dist/tostadas_pipo-0.1.tar.gz
 
 Si al ejecutar el comando anterior muestra el mensaje:
 
-::
+.. code-block:: console
 
-      pip
-      bash: pip: no se encontró la orden
+    pip
+    bash: pip: no se encontró la orden
 
 Esto es debido a que no tiene instalado dicha herramienta, así que debe ejecutar
 el siguiente comando:
 
-::
+.. code-block:: console
 
     sudo apt install -y python-pip
 
 De nuevo vuelva a ejecutar en su consola de comando el comando:
 
-::
+.. code-block:: console
 
     pip3 install --user dist/tostadas_pipo-0.1.tar.gz
     Processing ./dist/tostadas_pipo-0.1.tar.gz
@@ -570,7 +570,7 @@ Instalar distribución binaria
 Para instalar una distribución binaria de su paquete previamente creado, se
 realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
-::
+.. code-block:: console
 
     pip3 install --user ./dist/tostadas_pipo-0.1-py3-none-any.whl
     Processing ./dist/tostadas_pipo-0.1-py3-none-any.whl
@@ -583,7 +583,7 @@ paquete en el interprete Python usando la herramienta ``pip``.
 ----
 
 .. note::
-    `pip <https://pip.readthedocs.io/>`_, es una herramienta para instalación y
+    `pip <https://pip.pypa.io/en/stable/>`_, es una herramienta para instalación y
     administración de paquetes Python.
 
 ----
@@ -595,7 +595,7 @@ Instalar de código de proyecto
 
 Para instalar el paquete desde el código de proyecto, ejecute el siguiente comando:
 
-::
+.. code-block:: console
 
     python3 ./setup.py -v install --user
     running install
@@ -690,7 +690,7 @@ Comprobar la instalación
 Usted puede comprobar luego de realizar la instalación de la distribución de código fuente
 o binaria de su paquete, ejecute el siguiente comando:
 
-::
+.. code-block:: console
 
     pip3 list --user --format=freeze | grep "tostadas"
     tostadas-pipo==0.1
@@ -708,7 +708,7 @@ Usar el paquete ``tostadas_pipo-0.1``, recuerde que debe usarlo como una librer�
 entonces puede probar el correcto funcionamiento del paquete, importando este,
 ejecutando el siguiente comando:
 
-::
+.. code-block:: console
 
     python3 -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print("Función importada " + impuesto_iva14.__doc__[1:36] + ".")'
     Función importada Calcula el impuesto del IVA de 14%.
@@ -725,7 +725,7 @@ Eliminar paquete
 
 Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comando:
 
-::
+.. code-block:: console
 
     pip3 uninstall tostadas_pipo
     Uninstalling tostadas-pipo-0.1:
@@ -771,67 +771,7 @@ conocidas son:
 
 - Los scripts wrappers instalados ejecutando el comando ``python setup.py develop``.
 
-.. comments:
-
-    Si alguno de esos casos previos es el suyo, debe seguir los siguientes pasos para eliminar
-    manualmente el paquete instalado:
-
-    #. Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado
-       en el directorio ``$HOME/.local/lib/python3.7/site-packages/`` puede verificar
-       su correcta instalación, ejecute el siguiente comando:
-
-        ::
-
-            ls -p $HOME/.local/lib/python3.7/site-packages/ | grep "tostadas_pipo"
-            tostadas_pipo/
-            tostadas_pipo-0.1.egg-info/
-
-    #. Para eliminar el paquete usando la herramienta ``pip``, ejecute el siguiente
-       comando:
-
-        ::
-
-            pip3 uninstall tostadas_pipo
-            DEPRECATION: Uninstalling a distutils installed project (tostadas-pipo) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
-            Uninstalling tostadas-pipo-0.1:
-              /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.egg-info
-            Proceed (y/n)? y
-              Successfully uninstalled tostadas-pipo-0.1
-
-       Aunque ``pip`` indique **Successfully uninstalled tostadas-pipo-0.1**, no es cierto,
-       solo removió el directorio ``tostadas_pipo-0.1.egg-info`` y dejo instalado el
-       directorio del paquete ``tostadas_pipo``.
-
-    #. Luego de ejecutar el comando previo, puede verificar si aun instalado el paquete
-       parcialmente, con el siguiente comando:
-
-        ::
-
-            ls -p $HOME/.local/lib/python3.7/site-packages/ | grep "tostadas_pipo"
-            tostadas_pipo/
-
-       Si el comando previo muestra el resultado **tostadas_pipo**, es el directorio del
-       paquete ``tostadas_pipo``, el cual no se ha eliminado.
-
-    #. Entonces tiene que eliminar manualmente el directorio aun encontrado ejecutando el
-       siguiente comando:
-
-        ::
-
-            rm -rf $HOME/.local/lib/python3.7/site-packages/tostadas_pipo
-
-    #. Al ejecutar el comando previo, de nuevo verifique que ya fue eliminado de su sistema,
-       ejecutando el siguiente comando:
-
-        ::
-
-            ls -p $HOME/.local/lib/python3.7/site-packages/ | grep "tostadas_pipo"
-
-       Si el comando previo, no muestra el resultado **tostadas_pipo**, es el directorio del
-       paquete ``tostadas_pipo``, fue eliminado completamente de su sistema.
-
 De esta forma ya tiene eliminado su paquete de forma manual de su sistema.
-
 
 
 Ayuda integrada
@@ -841,7 +781,7 @@ Usted puede consultar toda la ayuda comandos disponibles del módulo
 :ref:`setuptools <python_modulo_setuptools>` y :ref:`distutils <python_modulo_distutils>`,
 ejecute el comando siguiente:
 
-::
+.. code-block:: console
 
     python3 ./setup.py --help-commands
     Standard commands:
@@ -892,7 +832,7 @@ ejecute el comando siguiente:
 Para consultar toda la ayuda del módulo :ref:`setuptools <python_modulo_setuptools>`
 y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
-::
+.. code-block:: console
 
     python3 setup.py --help
 
@@ -915,7 +855,7 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion8>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

@@ -57,9 +57,9 @@ respectivamente.
 
 Luego ejecute desde la consola de ``MS-DOS`` el siguiente comando:
 
-::
+.. code-block:: console
 
-  C:\Python37\python C:\proyectos\holamundo.py
+    C:\Python37\python C:\proyectos\holamundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -135,7 +135,7 @@ nombre ``holamundo.py`` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mu
 
 Luego ejecute desde la consola de comando el siguiente comando:
 
-::
+.. code-block:: console
 
     python3 $HOME/proyectos/holamundo.py
 
@@ -155,7 +155,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
     consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 holamundo.py
 
@@ -164,7 +164,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion2>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

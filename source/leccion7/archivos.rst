@@ -67,7 +67,7 @@ archivos y carpeta en su programa Python:
 
 Crear una nueva carpeta
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> os.makedirs("Ana_Poleo")
@@ -75,7 +75,7 @@ Crear una nueva carpeta
 
 Listar el contenidos de una carpeta
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> os.listdir("./")
@@ -84,7 +84,7 @@ Listar el contenidos de una carpeta
 
 Mostrar el actual directorio de trabajo
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> os.getcwd()
@@ -93,7 +93,7 @@ Mostrar el actual directorio de trabajo
 
 Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> os.path.getsize("Ana_Poleo")
@@ -103,7 +103,7 @@ Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
 
 ¿Es un archivo el parámetro pasado?
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> os.path.isfile("Ana_Poleo")
@@ -112,7 +112,7 @@ Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
 
 ¿Es una carpeta el parámetro pasado?
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> os.path.isdir("Ana_Poleo")
@@ -121,7 +121,7 @@ Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
 
 Cambiar directorio/carpeta
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> os.chdir("Ana_Poleo")
@@ -136,33 +136,33 @@ Cambiar directorio/carpeta
 
 Renombrar un archivo
 
-::
+.. code-block:: pycon
 
     >>> import os
-    >>> os.rename("Ana_Poleo","Ana_Carolina")
+    >>> os.rename("Ana_Poleo", "Ana_Carolina")
     >>> os.listdir("./")
     ['Ana_Carolina']
 
 Eliminar un archivo
 
-::
+.. code-block:: pycon
 
     >>> import os
     >>> os.chdir("Ana_Carolina")
-    >>> archivo = open(os.getcwd()+'/datos.txt', 'w')
+    >>> archivo = open(os.getcwd() + "/datos.txt", "w")
     >>> archivo.write("Se Feliz!")
     >>> archivo.close()
     >>> os.getcwd()
     '/home/usuario/python/Ana_Carolina'
     >>> os.listdir("./")
     ['datos.txt']
-    >>> os.remove(os.getcwd()+"/datos.txt")
+    >>> os.remove(os.getcwd() + "/datos.txt")
     >>> os.listdir("./")
     []
 
 Eliminar una carpeta
 
-::
+.. code-block:: pycon
 
     >>> os.rmdir("Ana_Carolina")
     >>> os.chdir("Ana_Carolina")
@@ -186,9 +186,9 @@ A continuación, se presentan algunos ejemplos del uso del tipo objeto
 
 Usted puede iterar sobre un archivo como se muestra a continuación:
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('datos.txt', 'r')
+    >>> archivo = open("datos.txt", "r")
     >>> for linea in archivo:
     ...     print(linea)
     ...
@@ -216,7 +216,7 @@ Usted puede consultar toda la documentación disponible sobre los tipos objeto
 :ref:`file <python_cls_file>` desde la :ref:`consola interactiva <python_interactivo>`
 de la siguiente forma:
 
-::
+.. code-block:: pycon
 
     >>> help(file)
 
@@ -232,14 +232,14 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
     Para ejecutar el código :file:`archivo.py`, abra una consola de comando, acceda al
     directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 archivo.py
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion7>` del
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion7>` del
     entrenamiento para ampliar su conocimiento en esta temática.
 
 

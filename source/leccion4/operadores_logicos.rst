@@ -17,7 +17,7 @@ Operador and
 
 El operador ``and`` evalúa si el valor del lado izquierdo y el lado derecho *se cumple*.
 
-::
+.. code-block:: pycon
 
     >>> True and False
     False
@@ -30,7 +30,7 @@ Operador or
 
 El operador ``or`` evalúa si el valor del lado izquierdo o el lado derecho *se cumple*.
 
-::
+.. code-block:: pycon
 
     >>> True or False
     True
@@ -43,7 +43,7 @@ Operador not
 
 El operador ``not`` devuelve el valor *opuesto* la valor booleano.
 
-::
+.. code-block:: pycon
 
     >>> not True
     False
@@ -51,7 +51,7 @@ El operador ``not`` devuelve el valor *opuesto* la valor booleano.
 Si la expresión es ``True`` el valor devuelto es ``False``, de lo contrario si la
 expresión es ``False`` el valor devuelto es ``True``.
 
-::
+.. code-block:: pycon
 
     >>> not False
     True
@@ -104,7 +104,7 @@ A continuación, se presentan algunos ejemplos de su uso:
     Para ejecutar el código :file:`operadores_logicos.py`, abra una consola de comando,
     acceda al directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
-    ::
+    .. code-block:: console
 
         python3 operadores_logicos.py
 
@@ -113,7 +113,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

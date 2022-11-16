@@ -25,9 +25,9 @@ anteriormente.
 A continuación el uso de iteradores usando del método especial ``__iter__()`` incluido
 en el *objeto integrado* :ref:`file <python_cls_file>`:
 
-::
+.. code-block:: pycon
 
-    >>> archivo = open('/etc/hostname')
+    >>> archivo = open("/etc/hostname")
     >>> archivo
     <open file '/etc/hostname', mode 'r' at 0x7fa44ba379c0>
     >>> archivo.__iter__()
@@ -59,9 +59,9 @@ se describen algunos ejemplos:
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de
 tipo :ref:`cadena de caracteres <python_str>` ``ASCII``:
 
-::
+.. code-block:: pycon
 
-    >>> frase = 'Hola Mundo'
+    >>> frase = "Hola Mundo"
     >>> letra = iter(frase)
     >>> letra.next()
     'H'
@@ -98,9 +98,9 @@ iteración.
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de
 tipo :ref:`cadena de caracteres <python_unicode_cls>` ``Unicode``:
 
-::
+.. code-block:: pycon
 
-    >>> frase = u'Jekechitü'
+    >>> frase = u"Jekechitü"
     >>> letra = iter(frase)
     >>> letra.next()
     u'J'
@@ -135,7 +135,7 @@ iteración.
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable* de
 tipo :ref:`tupla <python_tuple>`:
 
-::
+.. code-block:: pycon
 
     >>> valores = ("Python", True, "Zope", 5)
     >>> valores
@@ -167,7 +167,7 @@ iteración.
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable*
 con la función integrada :ref:`xrange() <python_fun_xrange>`:
 
-::
+.. code-block:: pycon
 
     >>> lista = iter(xrange(5))
     >>> lista
@@ -196,7 +196,7 @@ y se causa el detener la iteración.
 A continuación, un ejemplo del uso de los iteradores con la secuencia *mutable* de
 tipo :ref:`lista <python_list>`:
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> iter(versiones_plone)
@@ -229,7 +229,7 @@ iteración.
 Usted puede devolver un objeto iterador en orden inverso sobre una secuencia *mutable* de
 tipo :ref:`lista <python_list>` usando su función integrada ``__reversed__()``.
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> versiones_plone.__reversed__()
@@ -260,7 +260,7 @@ iteración.
 También puede acceder al uso del método especial ``__iter__()`` incluido en la
 secuencia *mutable* del tipo integrado :ref:`lista <python_list>`:
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = [2.1, 2.5, 3.6, 4, 5, 6]
     >>> versiones_plone.__iter__()
@@ -271,7 +271,7 @@ secuencia *mutable* del tipo integrado :ref:`lista <python_list>`:
 A continuación, un ejemplo del uso de los iteradores con la secuencia *mutable*
 de la función integrada :ref:`range() <python_fun_range>`:
 
-::
+.. code-block:: pycon
 
     >>> lista = iter(range(5))
     >>> lista
@@ -307,7 +307,7 @@ se describen algunos ejemplos:
 A continuación, un ejemplo del uso de los iteradores con el conjunto *mutable* de
 tipo :ref:`conjuntos <python_set>`:
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = set([2.1, 2.5, 3.6, 4, 5, 6, 4])
     >>> version = iter(versiones_plone)
@@ -340,7 +340,7 @@ iteración.
 A continuación, un ejemplo del uso de los iteradores con el conjunto *inmutable* de
 tipo :ref:`conjuntos <python_set>`:
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = frozenset([6, 2.1, 2.5, 3.6, 4, 5, 4, 2.5])
     >>> version = iter(versiones_plone)
@@ -382,7 +382,7 @@ tipo :ref:`diccionario <python_dict>`, por defecto muestra la clave de la secuen
 
 ::
 
-    >>> versiones_plone = dict(python=3.7, zope=5.5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
     >>> paquete = iter(versiones_plone)
     >>> paquete
     <dictionary-keyiterator object at 0x7fa44b9e99f0>
@@ -396,6 +396,7 @@ tipo :ref:`diccionario <python_dict>`, por defecto muestra la clave de la secuen
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
+    >>>
 
 En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al
 llegar al final mediante el iterador ``paquete`` se llama a la excepción
@@ -410,12 +411,12 @@ método integrado :ref:`itervalues() <python_dict_mtd_itervalues>`:
 
 ::
 
-    >>> versiones_plone = dict(python=3.7, zope=5.5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
     >>> version = iter(versiones_plone.itervalues())
     >>> version
     <dictionary-valueiterator object at 0x7fa44b9e9c00>
     >>> version.next()
-    5.5.2
+    5.2
     >>> version.next()
     3.7
     >>> version.next()
@@ -424,6 +425,7 @@ método integrado :ref:`itervalues() <python_dict_mtd_itervalues>`:
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
+    >>>
 
 En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al
 llegar al final mediante el iterador ``version`` se llama a la excepción
@@ -438,12 +440,12 @@ método integrado :ref:`iteritems() <python_dict_mtd_iteritems>`:
 
 ::
 
-    >>> versiones_plone = dict(python=3.7, zope=5.5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
     >>> paquete = iter(versiones_plone.iteritems())
     >>> paquete
     <dictionary-itemiterator object at 0x7fa44b9e9b50>
     >>> paquete.next()
-    ('zope', 5.5.2)
+    ('zope', 5.2)
     >>> paquete.next()
     ('python', 3.7)
     >>> paquete.next()
@@ -452,6 +454,7 @@ método integrado :ref:`iteritems() <python_dict_mtd_iteritems>`:
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
+    >>>
 
 En el ejemplo anterior, cuando se itera en la secuencia ``versiones_plone``, al
 llegar al final mediante el iterador ``paquete`` se llama a la excepción
@@ -460,7 +463,7 @@ iteración.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_sesion10>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

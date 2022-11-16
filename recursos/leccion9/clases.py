@@ -75,8 +75,8 @@ class Destreza:
 
     def __str__(self):
         """Devuelve una cadena representativa de la Destreza"""
-        return """Destreza en el área %s con la herramienta %s,
-        tiene %s años de experiencia.""" % (
+        return """Destreza en el área {} con la herramienta {},
+        tiene {} años de experiencia.""".format(
             str(self.area),
             self.experiencia,
             self.herramienta,

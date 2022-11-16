@@ -180,9 +180,17 @@ Los principios están listados a continuación:
 También se incluye como un *huevo de pascua*, el cual se puede encontrar, desde el
 :ref:`intérprete de Python <python_interactivo>`, ingresar la siguiente sentencia:
 
-::
+.. code-block:: pycon
 
     >>> import this
+
+
+----
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
 
 
 .. raw:: html
