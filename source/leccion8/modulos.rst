@@ -192,9 +192,11 @@ sentencia ``global``, se soluciona el problema.
         ├── utilidades.py
         └── calculo_factura_pipo.py
 
-    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
-        python3 calculo_factura_pipo.py
+    .. code-block:: console
+
+        $ python3 calculo_factura_pipo.py
 
 
 ----

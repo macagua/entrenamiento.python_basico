@@ -86,14 +86,14 @@ Ejemplos
 
 A continuación, se presentan algunos ejemplos de su uso:
 
-**Ejemplo de definir simple de tupla**
+**Definir simple de tupla**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
     :lines: 7-7
 
 
-**Ejemplo de definir tuplas anidadas**
+**Definir tuplas anidadas**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
@@ -127,9 +127,16 @@ Podría usar un bucle ``while`` con un contador o un bucle ``for`` usando la fun
 
 Pero, Python provee la palabra reservada ``enumerate`` para esto:
 
-.. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
-    :language: python
-    :lines: 38-42
+.. code-block:: pycon
+
+    >>> tecnologias = ("Zope", "Plone", "Pyramid")
+    >>> for contador, tecnologia in enumerate(tecnologias, start=1):
+    ...     print(contador, tecnologia)
+    ...
+    1 Zope
+    2 Plone
+    3 Pyramid
+    >>>
 
 
 **Caso real de conexión a BD**
@@ -139,7 +146,28 @@ a una BD:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :lines: 16-36
+    :lines: 18-43
+
+Este script da como resultado el siguiente mensaje:
+
+.. code-block:: console
+
+    Definiendo conexión a BD MySQL
+    ==============================
+
+    Conexión típica: ('127.0.0.1', 'root', 'qwerty', 'nomina') <class 'tuple'>
+
+    Conexión con parámetros adicionales: (('127.0.0.1', 'root', 'qwerty', 'nomina'), '3307', '10') <class 'tuple'> 
+
+    IP de la BD: 127.0.0.1
+    Usuario de la BD: root
+    Contraseña de la BD: qwerty
+    Nombre de la BD: nomina
+    Puerto de conexión: 3307
+    Tiempo de espera en conexión: 10
+
+    Más información acerca de MySQL y Python http://mysql-python.sf.net/MySQLdb.html
+
 
 
 Ayuda integrada

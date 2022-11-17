@@ -331,53 +331,53 @@ Ejemplos
 
 A continuación, se presentan algunos ejemplos de su uso:
 
-**Ejemplo de definir una colección ordenada/arreglos o vectores**
+**Definir una colección ordenada/arreglos o vectores**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
-    :lines: 6-7
+    :lines: 7-8
 
 
-**Ejemplo de acceder a un elemento especifico de una lista**
-
-.. literalinclude:: ../../recursos/leccion3/tipo_listas.py
-    :language: python
-    :lines: 10-11
-
-
-**Ejemplo de acceder a un elemento en una lista anidada**
+**Acceder a un elemento especifico de una lista**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
-    :lines: 14-15
+    :lines: 11-12
 
 
-**Ejemplo de definir nuevo valor de un elemento de lista**
+**Acceder a un elemento en una lista anidada**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
-    :lines: 18-19
+    :lines: 15-16
 
 
-**Ejemplo de obtener un rango de elemento especifico**
+**Definir nuevo valor de un elemento de lista**
+
+.. literalinclude:: ../../recursos/leccion3/tipo_listas.py
+    :language: python
+    :lines: 19-21
+
+
+**Obtener un rango de elemento especifico**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
     :lines: 23-24
 
 
-**Ejemplos de obtener un rango con saltos de elementos específicos**
+**Obtener un rango con saltos de elementos específicos**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
     :lines: 27-28
 
-**Ejemplo de iterar sobre cualquier secuencia**
+**Iterar sobre cualquier secuencia**
 
 Usted puede iterar sobre cualquier secuencia (cadenas de caracteres, lista, claves
 en un diccionario, lineas en un archivo, ...):
 
-*Ejemplo de iterar sobre una cadenas de caracteres*
+*Iterar sobre una cadenas de caracteres*
 
 .. code-block:: pycon
 
@@ -388,7 +388,7 @@ en un diccionario, lineas en un archivo, ...):
     ...
     e o a
 
-*Ejemplo de iterar sobre una lista*
+*Iterar sobre una lista*
 
 Para separar una cadena en frases, los valores pueden separarse con la función
 integrada ``split()``.
@@ -406,7 +406,7 @@ integrada ``split()``.
     estas
     tu?
 
-*Ejemplo de iterar sobre dos o más secuencias*
+*Iterar sobre dos o más secuencias*
 
 Para iterar sobre dos o más secuencias al mismo tiempo, los valores pueden emparejarse
 con la función integrada :ref:`zip() <python_fun_zip>`.

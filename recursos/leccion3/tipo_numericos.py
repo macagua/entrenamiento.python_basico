@@ -1,12 +1,11 @@
 """ Ejemplo del uso del numero enteros """
 
-import sys
-
 # Entero int
 entero = 7
 print(entero, type(entero))
 
 # Entero long
+import sys
 enterol = 0xFFFFFFFFFFFFFFFF
 print(sys.getsizeof(enterol), type(enterol))
 

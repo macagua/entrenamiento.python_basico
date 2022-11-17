@@ -380,7 +380,7 @@ se describen algunos ejemplos:
 A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo*,
 tipo :ref:`diccionario <python_dict>`, por defecto muestra la clave de la secuencia:
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
     >>> paquete = iter(versiones_plone)
@@ -409,7 +409,7 @@ A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo
 tipo :ref:`diccionario <python_dict>` para mostrar el valor de una clave usando el
 método integrado :ref:`itervalues() <python_dict_mtd_itervalues>`:
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
     >>> version = iter(versiones_plone.itervalues())
@@ -438,7 +438,7 @@ A continuación, un ejemplo del uso de los iteradores con la secuencia de *mapeo
 tipo :ref:`diccionario <python_dict>` para mostrar el par clave/valor usando el
 método integrado :ref:`iteritems() <python_dict_mtd_iteritems>`:
 
-::
+.. code-block:: pycon
 
     >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
     >>> paquete = iter(versiones_plone.iteritems())

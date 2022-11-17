@@ -727,25 +727,25 @@ Ejemplos
 
 A continuación, se presentan un ejemplo de su uso:
 
-**Ejemplo de definir un diccionario**
+**Definir un diccionario**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
     :lines: 4-12
 
-**Ejemplo de operaciones con tipo diccionario con funciones propias**
+**Operaciones con tipo diccionario con funciones propias**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
     :lines: 18-20
 
-**Ejemplo de iteración avanzada sobre diccionarios con función iteritems**
+**Iteración avanzada sobre diccionarios con función iteritems**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
     :lines: 25-26
 
-**Ejemplo real de usar tipo diccionario**
+**Caso real de usar tipo diccionario**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python

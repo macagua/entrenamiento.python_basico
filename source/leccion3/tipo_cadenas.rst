@@ -747,32 +747,32 @@ Ejemplos
 A continuación, se presentan algunos ejemplos de su uso:
 
 
-**Ejemplo de definir cadenas de caracteres con comillas simples**
+**Definir cadenas de caracteres con comillas simples**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 6-7
+    :lines: 7-8
 
 
-**Ejemplo de definir cadenas de caracteres con comillas dobles**
-
-.. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
-    :language: python
-    :lines: 10-11
-
-
-**Ejemplo de definir cadenas de caracteres con código escapes**
+**Definir cadenas de caracteres con comillas dobles**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 14-15
+    :lines: 11-12
 
 
-**Ejemplo de definir cadenas de caracteres con varias lineas**
+**Definir cadenas de caracteres con código escapes**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
-    :lines: 18-28
+    :lines: 15-16
+
+
+**Definir cadenas de caracteres con varias lineas**
+
+.. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
+    :language: python
+    :lines: 19-29
 
 
 **Ejemplo operadores de repetición de cadenas de caracteres**
@@ -789,21 +789,21 @@ A continuación, se presentan algunos ejemplos de su uso:
     :lines: 36-38
 
 
-**Ejemplo de medir tamaño de la cadena con función "len()"**
+**Calcular el tamaño de la cadena con función "len()"**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :lines: 41
 
 
-**Ejemplo de acceder a rango de la cadena**
+**Acceder a rango de la cadena**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :lines: 44
 
 
-**Ejemplo de consulta de ayuda a la función len**
+**Consulta de ayuda a la función len**
 
 .. code-block:: pycon
 
@@ -817,7 +817,7 @@ A continuación, se presentan algunos ejemplos de su uso:
         Return the number of items of a sequence or collection.
 
 
-**Ejemplo de consulta de ayuda a la clase int**
+**Consulta de ayuda a la clase int**
 
 .. code-block:: pycon
 
@@ -834,7 +834,7 @@ A continuación, se presentan algunos ejemplos de su uso:
      |  If x is outside the integer range, the function returns a long instead.
 
 
-**Ejemplo de consulta de ayuda del módulo**
+**Consulta de ayuda del módulo**
 
 .. code-block:: pycon
 

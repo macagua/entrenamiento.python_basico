@@ -274,14 +274,14 @@ El objeto enumerate es muy útil para obtener una lista indexada como:
     StopIteration
 
 En el ejemplo anterior usa una secuencia numérica de 3 elementos generada por la función
-integrada :ref:`xrange() <python_fun_xrange>`.
+integrada :ref:`range() <python_fun_range>`.
 
 A continuación se le pasa el parámetro de *inicio* con el valor *1* de la secuencia
 generada por la clase ``enumerate``:
 
 .. code-block:: pycon
 
-    >>> enumerar = enumerate(xrange(3), 1)
+    >>> enumerar = enumerate(range(3), 1)
     >>> enumerar.next()
     (1, 0)
     >>> enumerar.next()
@@ -294,7 +294,7 @@ generada por la clase ``enumerate``:
     StopIteration
 
 En el ejemplo anterior usa una secuencia numérica de 3 elementos generada con el valor
-inicial de *1* por la función integrada :ref:`xrange() <python_fun_xrange>`.
+inicial de *1* por la función integrada :ref:`range() <python_fun_range>`.
 
 
 .. _python_cls_reversed:
@@ -322,7 +322,7 @@ detener la iteración.
     StopIteration
 
 En el ejemplo anterior usa una secuencia numérica de 3 elementos generada por la
-función integrada :ref:`xrange() <python_fun_xrange>`.
+función integrada :ref:`range() <python_fun_range>`.
 
 
 .. _python_cls_builtins_archivos:

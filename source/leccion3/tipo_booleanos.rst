@@ -117,14 +117,14 @@ Ejemplos
 
 A continuación, se presentan algunos ejemplos de su uso:
 
-**Ejemplo de tipos de datos booleanos**
+**Tipos de datos booleanos**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
     :language: python
     :lines: 6-8
 
 
-**Ejemplo de operadores booleanos**
+**Operadores booleanos**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
     :language: python

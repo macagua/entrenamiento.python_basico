@@ -34,9 +34,9 @@ Instalando Python en un Linux
 En una distribución estándar Linux dispone por defecto el interprete Python instalado, para
 comprobar la correcta instalación  solamente debería ejecutar el comando en la consola:
 
-::
+.. code-block:: console
 
-    python3
+    $ python3
     Python 3.7.3 (default, Jan 22 2021, 20:04:44)
     [GCC 8.3.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
@@ -44,16 +44,18 @@ comprobar la correcta instalación  solamente debería ejecutar el comando en la
 
 Si le muestra los mensajes anteriores esta correctamente instalado el interprete Python en su Linux.
 
-Si al ejecutar el comando anterior muestra el mensaje: ::
+Si al ejecutar el comando anterior muestra el mensaje:
 
-    python3
+.. code-block:: console
+
+    $ python3
     bash: python: no se encontró la orden
 
 Esto es debido a que no tiene instalado el interprete, así que debe ejecutar el siguiente comando:
 
-::
+.. code-block:: console
 
-    sudo apt install -y python-dev
+    $ sudo apt install -y python-dev
 
 De nuevo vuelva a ejecutar en su consola de comando el comando ``python3``.
 

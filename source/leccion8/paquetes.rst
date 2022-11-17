@@ -125,10 +125,12 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
             ├── impuestos.py
             └── __init__.py
 
-    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando: ::
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
-        python3 calculo_factura_pipo.py
-        python3 tostadas_pipo/principal.py
+    .. code-block:: console
+
+        $ python3 calculo_factura_pipo.py
+        $ python3 tostadas_pipo/principal.py
 
 
 ----

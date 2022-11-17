@@ -12,7 +12,6 @@ otra = tupla, (1, 2, 3, 4, 5)
 # Operación asignación de valores de una tupla en variables
 x, y, z = tupla
 
-
 print("Definiendo conexión a BD MySQL")
 print("==============================\n")
 
@@ -22,17 +21,14 @@ conexion_bd = (
     "qwerty",
     "nomina",
 )
-print("Conexión típica:", conexion_bd)
-print(type(conexion_bd))
+print("Conexión típica:", conexion_bd, type(conexion_bd))
+
 conexion_completa = (
     conexion_bd,
     "3307",
     "10",
 )
-print("\nConexión con parámetros adicionales:", conexion_completa)
-print(str(type(conexion_completa)) + "\n")
-
-# print("\n")
+print("\nConexión con parámetros adicionales:", conexion_completa, type(conexion_completa), "\n")
 
 print("IP de la BD:", conexion_completa[0][0])
 print("Usuario de la BD:", conexion_completa[0][1])
