@@ -6,6 +6,7 @@ print(entero, type(entero))
 
 # Entero long
 import sys
+
 enterol = 0xFFFFFFFFFFFFFFFF
 print(sys.getsizeof(enterol), type(enterol))
 

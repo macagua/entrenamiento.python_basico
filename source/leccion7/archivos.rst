@@ -65,7 +65,7 @@ Python para el módulo ``os``.
 A continuación algunos útiles métodos del módulo ``os`` que pueden ayudar a manipular
 archivos y carpeta en su programa Python:
 
-Crear una nueva carpeta
+*Crear una nueva carpeta*
 
 .. code-block:: pycon
 
@@ -73,7 +73,7 @@ Crear una nueva carpeta
     >>> os.makedirs("Ana_Poleo")
 
 
-Listar el contenidos de una carpeta
+*Listar el contenidos de una carpeta*
 
 .. code-block:: pycon
 
@@ -82,7 +82,7 @@ Listar el contenidos de una carpeta
     ['Ana_Poleo']
 
 
-Mostrar el actual directorio de trabajo
+*Mostrar el actual directorio de trabajo*
 
 .. code-block:: pycon
 
@@ -91,7 +91,7 @@ Mostrar el actual directorio de trabajo
     '/home/usuario/python/'
 
 
-Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
+*Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro*
 
 .. code-block:: pycon
 
@@ -100,8 +100,7 @@ Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
     4096
 
 
-
-¿Es un archivo el parámetro pasado?
+*¿Es un archivo el parámetro pasado?*
 
 .. code-block:: pycon
 
@@ -110,7 +109,7 @@ Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
     False
 
 
-¿Es una carpeta el parámetro pasado?
+*¿Es una carpeta el parámetro pasado?*
 
 .. code-block:: pycon
 
@@ -119,7 +118,7 @@ Mostrar el tamaño del archivo en ``bytes`` del archivo pasado en parámetro
     True
 
 
-Cambiar directorio/carpeta
+*Cambiar de directorio*
 
 .. code-block:: pycon
 
@@ -134,7 +133,7 @@ Cambiar directorio/carpeta
     '/home/usuario/python'
 
 
-Renombrar un archivo
+*Renombrar un archivo*
 
 .. code-block:: pycon
 
@@ -143,7 +142,8 @@ Renombrar un archivo
     >>> os.listdir("./")
     ['Ana_Carolina']
 
-Eliminar un archivo
+
+*Eliminar un archivo*
 
 .. code-block:: pycon
 
@@ -160,7 +160,8 @@ Eliminar un archivo
     >>> os.listdir("./")
     []
 
-Eliminar una carpeta
+
+*Eliminar una carpeta*
 
 .. code-block:: pycon
 
@@ -182,7 +183,7 @@ Ejemplos de archivos
 A continuación, se presentan algunos ejemplos del uso del tipo objeto
 :ref:`file <python_cls_file>`:
 
-**Ejemplo de iterar un archivo para leerlo**
+**Iterar un archivo para leerlo**
 
 Usted puede iterar sobre un archivo como se muestra a continuación:
 
@@ -198,7 +199,7 @@ Usted puede iterar sobre un archivo como se muestra a continuación:
     >>> archivo.close()
 
 
-**Ejemplo de iterar un archivo con escritura y lectura**
+**Iterar un archivo con escritura y lectura**
 
 Usted puede manipular un archivo con permisos de escritura y lectura, ademas de
 interactuar de el mismo como se muestra a continuación:
@@ -234,7 +235,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        python3 archivo.py
+        $ python archivo.py
 
 
 .. seealso::

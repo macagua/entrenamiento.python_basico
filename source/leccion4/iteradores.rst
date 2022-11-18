@@ -162,14 +162,14 @@ final mediante el iterador ``valor`` se llama a la excepción
 :ref:`StopIteration <python_exception_stopiteration>` y se causa el detener la
 iteración.
 
-**Iterar sobre la función inmutable xrange**
+**Iterar sobre la función inmutable range**
 
 A continuación, un ejemplo del uso de los iteradores con la secuencia *inmutable*
-con la función integrada :ref:`xrange() <python_fun_xrange>`:
+con la función integrada :ref:`range() <python_fun_range>`:
 
 .. code-block:: pycon
 
-    >>> lista = iter(xrange(5))
+    >>> lista = iter(range(5))
     >>> lista
     <rangeiterator object at 0x7fa44b9fb7b0>
     >>> lista.next()

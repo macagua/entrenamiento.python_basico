@@ -175,14 +175,14 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 13-16
+    :lines: 14-17
 
 
 **Definir tipo entero coma flotante con exponente en base 10**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 20-21
+    :lines: 21-22
 
 ----
 
@@ -222,7 +222,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
-    :lines: 24-25
+    :lines: 25-26
 
 
 Convertir a numéricos
@@ -307,7 +307,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        python3 tipo_numericos.py
+        $ python tipo_numericos.py
 
 
 ----

@@ -72,7 +72,7 @@ Vea el siguiente ejemplo:
     >>> # Esto muestra como cada vez que llamas a la función hola()
     ... # se llama en realidad también a saluda() y bienvenida()
     ... # Sin embargo estas dos últimas funciones no están accesibles
-    ... # fuera de hola(). Si lo intenta, tendra un error.
+    ... # fuera de hola(). Si lo intenta, tendrá un error.
     >>> saluda()
     'Hola Plone'
     >>>
@@ -211,9 +211,9 @@ Una vez visto esto, hay un pequeño problema con el código. Si ejecuta lo sigui
     >>>
 
 
-Se encontra con un comportamiento un tanto inesperado. Nuestra función es
+Se encontró con un comportamiento un tanto inesperado. La función es
 ``funcion_a_decorar`` pero al haberla envuelto con el decorador es en realidad
-``envuelve_la_funcion``, por lo que sobreescribe el nombre y el *docstring* de la misma,
+``envuelve_la_funcion``, por lo que sobrescribe el nombre y el *docstring* de la misma,
 algo que no es muy conveniente.
 
 Por suerte, Python nos da una forma de arreglar este problema usando ``functools.wraps``.
@@ -388,7 +388,7 @@ Al llegar a este punto ya tiene el decorador ``log_it`` creado en el apartado an
 funcionando en producción, pero algunas partes de la aplicación son críticas, y si
 se produce un fallo este necesitará atención inmediata. En el caso supuesto que en
 determinadas ocasiones quieres simplemente escribir en el *log* (como se hecho),
-pero en otras quieres que se envíe un correo. En una aplicación como esta podria
+pero en otras quieres que se envíe un correo. En una aplicación como esta podría
 usar la herencia, pero hasta ahora sólo ha usado decoradores.
 
 Por suerte, las clases también pueden ser usadas para crear decoradores. Vuelva
@@ -407,7 +407,7 @@ definir ``log_it``, pero en este caso como una clase en vez de con una función.
     ...         with open(self._logfile, "a") as opened_file:
     ...             # Escribe el contenido
     ...             opened_file.write(log_string + "\n")
-    ...         # Envia una notificación (ver método)
+    ...         # Envía una notificación (ver método)
     ...         self.notify()
     ...         # Devuelve la función base
     ...         return self.function(*args)
@@ -435,7 +435,7 @@ la función puede ser envuelta de la misma forma que viene usando hasta ahora, u
 
 
 Ahora, va a crear una subclase de *log_it* para añadir la funcionalidad de enviar un
-correo electrónico. Envie el correo electrónico de manera ficticia.
+correo electrónico. Envié el correo electrónico de manera ficticia.
 
 .. code:: pycon
 
@@ -447,7 +447,7 @@ correo electrónico. Envie el correo electrónico de manera ficticia.
     ...         self.email = email
     ...         super(email_log_it, self).__init__(*args, **kwargs)
     ...     def notify(self):
-    ...         # Envia un correo electrónico a self.email
+    ...         # Envía un correo electrónico a self.email
     ...         # Código para enviar correo electrónico
     ...         # ...
     ...         pass

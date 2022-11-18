@@ -18,7 +18,7 @@ Entrada estándar
 Para pedir información al usuario, debe utilizar las funciones integradas en el
 interprete del lenguaje, así como los argumentos de línea de comandos.
 
-**Ejemplo de la función input**:
+**Definir la función input**:
 
 La función :ref:`input() <python_fun_input>` siempre devuelve un valor numérico:
 
@@ -83,7 +83,7 @@ Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
 
 .. code-block:: console
 
-    python3 entrada_argumentos.py
+    $ python entrada_argumentos.py
     ['entrada_argumentos.py']
 
 
@@ -96,7 +96,7 @@ y cadenas de caracteres entre comillas dobles, todo separado por espacios:
 
 .. code-block:: console
 
-    python3 entrada_argumentos.py 300 43.234 "Hola Plone"
+    $ python entrada_argumentos.py 300 43.234 "Hola Plone"
     ['entrada_argumentos.py', '300', '43.234', 'Hola Plone']
 
 Cada valor que enviamos al *script* durante la llamada se llama argumento e implica
@@ -117,7 +117,7 @@ ejecute el siguiente comando:
 
 .. code-block:: console
 
-    python3 entrada_dos_argumentos.py "Hola Plone"
+    $ python entrada_dos_argumentos.py "Hola Plone"
     ERROR: Introdujo uno (1) o más de dos (2) argumentos
     SOLUCIÓN: Introduce los argumentos correctamente
     Ejemplo: entrada_dos_argumentos.py "Texto" 5
@@ -127,7 +127,7 @@ argumentos, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    python3 entrada_dos_argumentos.py "Hola Plone" 3
+    $ python entrada_dos_argumentos.py "Hola Plone" 3
     Hola Plone
     Hola Plone
     Hola Plone
@@ -220,9 +220,9 @@ de caracteres y variables:
 
     .. code-block:: console
 
-        python3 entrada_salida.py
-        python3 entrada_argumentos.py
-        python3 entrada_dos_argumentos.py
+        $ python entrada_salida.py
+        $ python entrada_argumentos.py
+        $ python entrada_dos_argumentos.py
 
 
 .. seealso::

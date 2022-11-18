@@ -103,30 +103,36 @@ En este caso esta depurando el archivo :download:`index_error.py <../../recursos
    En algunas situaciones no podrás usar IPython, por ejemplo para depurar
    un `script` que ha sido llamado desde la línea de comandos. En este caso,
    puedes ejecutar el `script` de la siguiente forma
-   ``python3 -m pdb script.py``::
+   ``python -m pdb script.py``:
 
-    python3 -m pdb index_error.py
-    > /home/macagua/python/entrenamiento/index_error.py(1)<module>()
-    -> """Small snippet to raise an IndexError."""
-    (Pdb) continue
-    Traceback (most recent call last):
-    File "/usr/lib/python3.7/pdb.py", line 1296, in main
-        pdb._runscript(mainpyfile)
-    File "/usr/lib/python3.7/pdb.py", line 1215, in _runscript
-        self.run(statement)
-    File "/usr/lib/python3.7/bdb.py", line 372, in run
-        exec cmd in globals, locals
-    File "<string>", line 1, in <module>
-    File "index_error.py", line 8, in <module>
-        index_error()
-    File "index_error.py", line 5, in index_error
-        print(lst[len(lst)])
-    IndexError: list index out of range
-    Uncaught exception. Entering post mortem debugging
-    Running 'cont' or 'step' will restart the program
-    > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
-    -> print(lst[len(lst)])
-    (Pdb)
+    .. sourcecode:: console
+
+      $ python -m pdb index_error.py
+    
+
+    .. sourcecode:: python
+
+        > /home/macagua/python/entrenamiento/index_error.py(1)<module>()
+        -> """Small snippet to raise an IndexError."""
+        (Pdb) continue
+        Traceback (most recent call last):
+        File "/usr/lib/python3.7/pdb.py", line 1296, in main
+            pdb._runscript(mainpyfile)
+        File "/usr/lib/python3.7/pdb.py", line 1215, in _runscript
+            self.run(statement)
+        File "/usr/lib/python3.7/bdb.py", line 372, in run
+            exec cmd in globals, locals
+        File "<string>", line 1, in <module>
+        File "index_error.py", line 8, in <module>
+            index_error()
+        File "index_error.py", line 5, in index_error
+            print(lst[len(lst)])
+        IndexError: list index out of range
+        Uncaught exception. Entering post mortem debugging
+        Running 'cont' or 'step' will restart the program
+        > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
+        -> print(lst[len(lst)])
+        (Pdb)
 
 
 Ejecución paso a paso
@@ -284,13 +290,17 @@ Otras formas de comenzar una depuración
 
 * **Llamando explícitamente al depurador**
 
-  Inserta la siguiente línea donde quieres que salte el depurador::
+  Inserta la siguiente línea donde quieres que salte el depurador:
 
-    import pdb; pdb.set_trace()
+  .. code-block:: python
+
+      import pdb
+      pdb.set_trace()
+
 
 .. warning::
 
-    Cuandos e ejecutan ``nosetests``, se captura la salida y parecerá
+    Cuando se ejecutan ``nosetests``, se captura la salida y parecerá
     que el depurador no está funcionando. Para evitar esto simplemente ejecuta
     los ``nosetests`` con la etiqueta ``-s``.
 
@@ -305,7 +315,7 @@ Otras formas de comenzar una depuración
       buen depurador semi-gráfico con una interfaz de texto en la consola.
 
     * También, estaría bien echarle un ojo al proyecto
-      `pydbgr <https://code.google.com/archive/p/pydbgr>`_
+      `pydbgr <https://pypi.org/project/pydbgr/>`_
 
 Comandos del depurador e interacciones
 ......................................
@@ -383,9 +393,9 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
     .. code-block:: console
 
-        python3 index_error.py
-        python3 wiener_filtering.py
-        python3 funcion_a_depurar.py
+        $ python index_error.py
+        $ python wiener_filtering.py
+        $ python funcion_a_depurar.py
 
 
 ----

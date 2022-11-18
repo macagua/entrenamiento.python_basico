@@ -192,7 +192,7 @@ Usted puede consultar toda la documentación disponible sobre las **tuplas** des
 
     .. code-block:: console
 
-        python3 tipo_tuplas.py
+        $ python tipo_tuplas.py
 
 
 .. seealso::

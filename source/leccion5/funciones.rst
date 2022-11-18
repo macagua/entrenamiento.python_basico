@@ -137,7 +137,7 @@ pero durante la llamada los valores que se envían se denominan argumentos.
 Por posición
 ~~~~~~~~~~~~
 
-Cuando enviá argumentos a una función, estos se reciben por orden en los parámetros
+Cuando envía argumentos a una función, estos se reciben por orden en los parámetros
 definidos. Se dice por tanto que son argumentos por posición:
 
 .. code-block:: pycon
@@ -398,7 +398,7 @@ A continuación, se presenta un ejemplo del uso de definir funciones:
 
 .. literalinclude:: ../../recursos/leccion5/funciones.py
     :language: python
-    :lines: 3-8
+    :lines: 4-9
 
 
 **Invocar funciones**
@@ -418,7 +418,7 @@ A continuación, se presenta un ejemplo del uso de funciones con argumentos múl
 
 .. literalinclude:: ../../recursos/leccion5/funciones.py
     :language: python
-    :lines: 11-14
+    :lines: 12-14
 
 Y se llama de la siguiente forma:
 
@@ -440,7 +440,7 @@ Y se llama de la siguiente forma:
 
     .. code-block:: console
 
-        python3 funciones.py
+        $ python funciones.py
 
 
 .. seealso::

@@ -10,7 +10,7 @@ Scaffolding en proyectos Python
 
     :Autor(es): Leonardo J. Caballero G.
     :Correo(s): :email:`leonardoc@plone.org`
-    :Compatible con: Python 2.4 o versiones superiores
+    :Compatible con: Python 3.7 o versiones superiores
     :Fecha: 11 de Enero de 2021
 
 .. _scaffolding_python:
@@ -41,7 +41,7 @@ ejecutando el siguiente comando:
 
 .. code-block:: console
 
-  (venv)$ pip3 install PasteScript
+  (venv)$ pip install PasteScript
 
 .. note::
 

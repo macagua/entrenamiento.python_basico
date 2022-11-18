@@ -622,59 +622,6 @@ para recargar el modulo ``clases.py``, debe hacer lo siguiente:
     >>> reload(clases)
 
 
-.. _python_fun_xrange:
-
-xrange()
-~~~~~~~~
-
-El tipo ``xrange`` es un tipo secuencia inmutable utilizada normalmente en bucles. La
-ventaja de la función ``xrange()`` sobre la función ``range()``, es que devuelve
-un objeto ``xrange`` el cual ocupa siempre la misma cantidad de memoria,
-independientemente del rango el cual represente.
-
-.. code-block:: pycon
-
-    >>> for item in range(5):
-    ...     print(item)
-    ...
-    0
-    1
-    2
-    3
-    4
-    >>> for item in xrange(5):
-    ...     print(item)
-    ...
-    0
-    1
-    2
-    3
-    4
-    >>>
-
-Como la función ``xrange()``, devuelve un objeto el cual genera los números en el
-rango a demanda. Para bucles, esto es un poco mas rápido que la función ``range()``
-y más eficiente en la memoria.
-
-.. code-block:: pycon
-
-    >>> print(xrange(5))
-    xrange(5)
-    >>> type(xrange(5))
-    <type 'xrange'>
-    >>> dir(xrange(5))
-    ['__class__', '__delattr__', '__doc__', '__format__',
-    '__getattribute__', '__getitem__', '__hash__', '__init__',
-    '__iter__', '__len__', '__new__', '__reduce__', '__reduce_ex__',
-    '__repr__', '__reversed__', '__setattr__', '__sizeof__',
-    '__str__', '__subclasshook__']
-
-La ventaja de la función ``xrange()`` es *excepto* en hardware impedido en cuestión
-de memoria (por ejemplo, MS-DOS) o cuando nunca se utilizan todos los elementos
-del rango (por ejemplo, porque se suele interrumpir la ejecución del bucle con la
-sentencia :ref:`break <python_sent_break>`).
-
-
 .. _python_fun_type:
 
 type()
@@ -930,7 +877,7 @@ con un número entero.
     (23.6+0j)
 
 La función ``complex()`` sólo procesa correctamente cadenas que contengan
-exclusivamente números.Si la cadena contiene cualquier otro carácter, la
+exclusivamente números. Si la cadena contiene cualquier otro carácter, la
 función devuelve una excepción :ref:`ValueError <python_exception_valueerror>`.
 
 .. code-block:: pycon

@@ -537,7 +537,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        python3 tipo_conjuntos.py
+        $ python tipo_conjuntos.py
 
 
 .. seealso::

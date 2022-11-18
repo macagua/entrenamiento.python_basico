@@ -261,7 +261,7 @@ por el operador del lado derecho y devuelve el resto.
     
     .. code-block:: console
 
-        python3 operadores_aritmeticos.py
+        $ python operadores_aritmeticos.py
 
 
 ----

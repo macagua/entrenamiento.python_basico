@@ -6,7 +6,7 @@
 Condicional if
 --------------
 
-La sentencia condicional ``if`` se usa para tomar decisiones, este evaluá básicamente
+La sentencia condicional ``if`` se usa para tomar decisiones, este evalúa básicamente
 una operación lógica, es decir una expresión que de como resultado ``True`` o ``False``,
 y ejecuta la pieza de código siguiente siempre y cuando el resultado sea verdadero.
 
@@ -130,7 +130,7 @@ Estos son los distintos tipos de expresiones condicionales:
 Expresión if
 ~~~~~~~~~~~~
 
-La expresión de la sentencia ``if`` se evaluá a ``False`` cuando se cumple las
+La expresión de la sentencia ``if`` se evalúa a ``False`` cuando se cumple las
 siguientes expresiones están presente:
 
 - Cualquier numero igual a cero (0, 0.0, 0+0j).
@@ -181,49 +181,49 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
     :lines: 3
 
 
-**Ejemplo de operador de comparación Igual**:
+**Operador de comparación Igual**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
     :lines: 11-14
 
 
-**Ejemplo de operador de comparación Distinto**:
+**Operador de comparación Distinto**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
     :lines: 17-20
 
 
-**Ejemplo de operador de comparación Diferente**:
+**Operador de comparación Diferente**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
     :lines: 17-20
 
 
-**Ejemplo de operador de comparación Menor que**:
+**Operador de comparación Menor que**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
     :lines: 23-26
 
 
-**Ejemplo de operador de comparación Mayor que**:
+**Operador de comparación Mayor que**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
     :lines: 29-32
 
 
-**Ejemplo de operador de comparación Menor o igual que**:
+**Operador de comparación Menor o igual que**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
     :lines: 35-38
 
 
-**Ejemplo de operador de comparación Mayor o igual que**:
+**Operador de comparación Mayor o igual que**:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
@@ -245,7 +245,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
     .. code-block:: console
 
-        python3 condicional_if.py
+        $ python condicional_if.py
 
 
 ----

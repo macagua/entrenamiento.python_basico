@@ -34,15 +34,19 @@ quedando únicamente con los números múltiples de 5, eso seria así:
 .. code-block:: pycon
 
     >>> # Primero declaramos una función condicional
-    def multiple(numero):
-    # Comprobamos si un numero es múltiple de cinco
-    if numero % 5 == 0:
-        # Sólo devolvemos True si lo es
-        return True
+    >>> def multiple(numero):
+    ... # Comprobamos si un numero es múltiple de cinco
+    ... if numero % 5 == 0:
+    ...     # Sólo devolvemos True si lo es
+    ...     return True
 
     >>> numeros = [2, 5, 10, 23, 50, 33]
-    >>> filter(multiple, numeros)
-    [5, 10, 50]
+    >>> for numero in filter(multiple, numeros):
+    ...     print(numero)
+    5
+    10
+    50
+    >>> 
 
 Si ejecuta el filtro obtiene una lista los números múltiples de 5. Por tanto cuando
 utiliza la función ``filter()`` tiene que enviar una función condicional, para esto,
@@ -51,8 +55,13 @@ puede utilizar una función anónima ``lambda``, como se muestra a continuación
 .. code-block:: pycon
 
     >>> numeros = [2, 5, 10, 23, 50, 33]
-    >>> filter(lambda numero: numero % 5 == 0, numeros)
-    [5, 10, 50]
+    >>> for i in filter(lambda numero: numero % 5 == 0, numeros):
+    ...     print(i)
+    ...
+    5
+    10
+    50
+    >>> 
 
 Así, en una sola línea ha definido y ejecutado el filtro utilizando una función
 condicional anónima y devolviendo una lista de números.

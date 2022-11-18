@@ -171,7 +171,7 @@ permite corroborar si un objeto es instancia de una clase.
 
     .. code-block:: console
 
-        python3 herencia_simple.py
+        $ python herencia_simple.py
 
 
 .. _python_poo_herencia_multiple:
@@ -250,7 +250,7 @@ a ``Supervisor`` primero por que ese aparece primero de izquierda a derecha.
 
     .. code-block:: console
 
-        python3 herencia_multiple.py
+        $ python herencia_multiple.py
 
 
 .. seealso::

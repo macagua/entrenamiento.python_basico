@@ -44,7 +44,7 @@ Ejemplos de variables
 
 A continuación, se presentan algunos ejemplos del uso de *variables*:
 
-**Ejemplo de asignar valor a variable**
+**Asignar valor a variable**
 
 A continuación, se creará un par de variables a modo de ejemplo. Una de tipo
 :ref:`cadenas de caracteres <python_str>` y una de tipo
@@ -75,7 +75,7 @@ cuales se tratarán más adelante.
 
 ----
 
-**Ejemplo de cambiar valor a variable**
+**Cambiar valor a variable**
 
 A continuación, se cambiará el valor para una variable de tipo
 :ref:`cadenas de caracteres <python_str>` a modo de ejemplo:
@@ -88,7 +88,7 @@ A continuación, se cambiará el valor para una variable de tipo
 
 ----
 
-**Ejemplo de asignar múltiples valores a a múltiples variables**
+**Asignar múltiples valores a a múltiples variables**
 
 A continuación, se creará múltiples variables (:ref:`entero <python_num_entero>`,
 :ref:`coma flotante <python_num_float>`, :ref:`cadenas de caracteres <python_str>`)
@@ -176,7 +176,7 @@ Ejemplo de constantes
 
 A continuación, se presentan algunos ejemplos del uso de *constantes*:
 
-**Ejemplo de constantes desde un módulo externo**
+**Definir constantes desde un módulo externo**
 
 Crear un archivo llamado ``constantes.py`` con el siguiente contenido:
 
@@ -194,7 +194,7 @@ Luego ejecuta el programa de la siguiente forma:
 
 .. code-block:: pycon
 
-    python3 main.py
+    $ python main.py
 
 Cuando usted ejecuta el programa, la salida será:
 
@@ -343,7 +343,7 @@ y :ref:`constantes <python_constante>`:
 
     - CapWords
 
-- Los nombres que comienzan con guión bajo (simple ``_`` o doble ``__``) se reservan para
+- Los nombres que comienzan con guion bajo (simple ``_`` o doble ``__``) se reservan para
   variables con significado especial
 
 - No pueden usarse como identificadores, las :ref:`palabras reservadas <python_palabras_reservadas>` .
@@ -478,7 +478,7 @@ precaución.
 
     .. code-block:: console
 
-        python3 main.py
+        $ python main.py
 
 
 ----

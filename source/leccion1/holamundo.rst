@@ -116,7 +116,7 @@ Ejecutar un programa en macOS
 
 #. Ejecute ``ls`` y presione la tecla :keys:`Enter` y usted debería ver el archivo ``holamundo.py``.
 
-#. Para ejecutar el programa, escriba el siguiente comando ``python3 holamundo.py``
+#. Para ejecutar el programa, escriba el siguiente comando ``python holamundo.py``
    y presione la tecla :keys:`Enter`.
 
 #. Usted debe ver la línea *Hola Mundo*.
@@ -137,7 +137,7 @@ Luego ejecute desde la consola de comando el siguiente comando:
 
 .. code-block:: console
 
-    python3 $HOME/proyectos/holamundo.py
+    $ python $HOME/proyectos/holamundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -157,7 +157,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
     .. code-block:: console
 
-        python3 holamundo.py
+        $ python holamundo.py
 
 
 ----

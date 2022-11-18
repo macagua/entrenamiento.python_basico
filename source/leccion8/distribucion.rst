@@ -24,7 +24,7 @@ Cada paquete empaquetado se puede distribuir en su propia pagina de proyecto y a
 mismo tiempo puede optar a publicar su proyecto en el Python Package Index (PyPI),
 con el cual si lo publica allí su proyecto estará a su alcance y sino de muchos mas
 programadores, ya que es un repositorio de software publico, solo con ejecutar el
-comando ``pip3 install <paquete>`` lo convierte en una herramienta tremendamente útil
+comando ``pip install <paquete>`` lo convierte en una herramienta tremendamente útil
 y probablemente sea una de las razones del éxito de Python entre los que empiezan
 a programar.
 
@@ -166,7 +166,7 @@ el siguiente comando:
 
 .. code-block:: console
 
-    python3 ./setup.py -v build
+    $ python ./setup.py -v build
     running build
     running build_py
     creating build
@@ -222,7 +222,7 @@ archivo **zip**, etc. Para crear una paquete ``sdist``, ejecute el siguiente com
 
 .. code-block:: console
 
-    python3 ./setup.py -v sdist
+    $ python ./setup.py -v sdist
     running sdist
     running egg_info
     creating tostadas_pipo.egg-info
@@ -288,7 +288,7 @@ comando:
 
 .. code-block:: console
 
-    python3 ./setup.py sdist --formats=zip,gztar,bztar
+    $ python ./setup.py sdist --formats=zip,gztar,bztar
     running sdist
     running egg_info
     writing tostadas_pipo.egg-info/PKG-INFO
@@ -386,7 +386,7 @@ siguiente comando:
 
 .. code-block:: console
 
-    python3 ./setup.py bdist_egg
+    $ python ./setup.py bdist_egg
     running bdist_egg
     running egg_info
     writing tostadas_pipo.egg-info/PKG-INFO
@@ -448,7 +448,7 @@ siguiente comando:
 
 .. code-block:: console
 
-    python3 ./setup.py bdist_wheel
+    $ python ./setup.py bdist_wheel
     running bdist_wheel
     running build
     running build_py
@@ -528,7 +528,7 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    pip3 install --user dist/tostadas_pipo-0.1.tar.gz
+    pip install --user dist/tostadas_pipo-0.1.tar.gz
 
 Si al ejecutar el comando anterior muestra el mensaje:
 
@@ -548,7 +548,7 @@ De nuevo vuelva a ejecutar en su consola de comando el comando:
 
 .. code-block:: console
 
-    pip3 install --user dist/tostadas_pipo-0.1.tar.gz
+    pip install --user dist/tostadas_pipo-0.1.tar.gz
     Processing ./dist/tostadas_pipo-0.1.tar.gz
     Building wheels for collected packages: tostadas-pipo
       Running setup.py bdist_wheel for tostadas-pipo ... done
@@ -572,7 +572,7 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    pip3 install --user ./dist/tostadas_pipo-0.1-py3-none-any.whl
+    pip install --user ./dist/tostadas_pipo-0.1-py3-none-any.whl
     Processing ./dist/tostadas_pipo-0.1-py3-none-any.whl
     Installing collected packages: tostadas-pipo
     Successfully installed tostadas-pipo-0.1
@@ -597,7 +597,7 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
 
 .. code-block:: console
 
-    python3 ./setup.py -v install --user
+    $ python ./setup.py -v install --user
     running install
     running bdist_egg
     running egg_info
@@ -692,7 +692,7 @@ o binaria de su paquete, ejecute el siguiente comando:
 
 .. code-block:: console
 
-    pip3 list --user --format=freeze | grep "tostadas"
+    pip list --user --format=freeze | grep "tostadas"
     tostadas-pipo==0.1
 
 De esta forma la herramienta de gestión de paquete indica que el ``tostadas-pipo`` en su
@@ -710,7 +710,7 @@ ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    python3 -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print("Función importada " + impuesto_iva14.__doc__[1:36] + ".")'
+    $ python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print("Función importada " + impuesto_iva14.__doc__[1:36] + ".")'
     Función importada Calcula el impuesto del IVA de 14%.
 
 El comando previo muestra la :ref:`docstring <python_str_docstrings>` de la
@@ -727,7 +727,7 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
 
 .. code-block:: console
 
-    pip3 uninstall tostadas_pipo
+    pip uninstall tostadas_pipo
     Uninstalling tostadas-pipo-0.1:
       /home/leonardo/.local/bin/tostadas_pipo
       /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/DESCRIPTION.rst
@@ -758,7 +758,7 @@ conocidas son:
   cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python setup.py install``
   desde el :ref:`código del paquete <python_distro_install_source_pkg>`.
 
-  Instalándolo de esta forma, al momento de desintalarlo usando el comando ``pip3 uninstall tostadas_pipo``
+  Instalándolo de esta forma, al momento de desintalarlo usando el comando ``pip uninstall tostadas_pipo``
   este comando removerá solo la metadata, no detrás dejando de la instalación metadata para
   determinar que archivos fueron instalados.
 
@@ -783,7 +783,7 @@ ejecute el comando siguiente:
 
 .. code-block:: console
 
-    python3 ./setup.py --help-commands
+    $ python ./setup.py --help-commands
     Standard commands:
       build             build everything needed to install
       build_py          "build" pure Python modules (copy to build directory)
@@ -834,7 +834,7 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 .. code-block:: console
 
-    python3 setup.py --help
+    $ python setup.py --help
 
 ----
 

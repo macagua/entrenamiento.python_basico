@@ -554,7 +554,7 @@ permite corroborar si un objeto es instancia de una clase.
 
     .. code-block:: console
 
-        python3 poo.py
+        $ python poo.py
 
 
 .. seealso::

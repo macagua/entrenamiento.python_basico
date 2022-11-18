@@ -29,7 +29,7 @@ estructuras de datos :ref:`listas <python_list>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
-    :lines: 10-13
+    :lines: 10-12
 
 
 Bucle 'for' con Listas y función 'range'
@@ -41,7 +41,7 @@ estructuras de datos :ref:`listas <python_list>` con la función
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
-    :lines: 30-35
+    :lines: 29-33
 
 Si se necesita iterar sobre una secuencia de números. Genera una lista conteniendo
 progresiones aritméticos, por ejemplo, como se hace en el fragmento de código fuente
@@ -56,7 +56,7 @@ estructuras de datos :ref:`Tuplas <python_tuple>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
-    :lines: 44-46
+    :lines: 42-44
 
 El ejemplo anterior itera una :ref:`tupla <python_tuple>` de parámetros.
 
@@ -69,7 +69,7 @@ estructuras de datos :ref:`diccionarios <python_dict>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
-    :lines: 55-69
+    :lines: 53-67
 
 El ejemplo anterior itera un :ref:`diccionario <python_dict>` con datos
 básicos de una persona.
@@ -89,7 +89,7 @@ expresión condicional del bucle ``for`` sea ``False``, (a comparación de la
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
-    :lines: 78-85
+    :lines: 76-88
 
 La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis
 que en las demás estructuras de control.
@@ -110,7 +110,7 @@ que en las demás estructuras de control.
 
     .. code-block:: console
 
-        python3 bucle_for.py
+        $ python bucle_for.py
 
 
 ----

@@ -774,7 +774,7 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
     .. code-block:: console
 
-        python3 tipo_diccionarios.py
+        $ python tipo_diccionarios.py
 
 
 .. seealso::

@@ -28,7 +28,12 @@ conexion_completa = (
     "3307",
     "10",
 )
-print("\nConexión con parámetros adicionales:", conexion_completa, type(conexion_completa), "\n")
+print(
+    "\nConexión con parámetros adicionales:",
+    conexion_completa,
+    type(conexion_completa),
+    "\n",
+)
 
 print("IP de la BD:", conexion_completa[0][0])
 print("Usuario de la BD:", conexion_completa[0][1])

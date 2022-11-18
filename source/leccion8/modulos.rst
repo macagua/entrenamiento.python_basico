@@ -196,7 +196,7 @@ sentencia ``global``, se soluciona el problema.
 
     .. code-block:: console
 
-        $ python3 calculo_factura_pipo.py
+        $ python calculo_factura_pipo.py
 
 
 ----

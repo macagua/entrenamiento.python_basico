@@ -536,8 +536,8 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
     .. code-block:: console
 
-        python3 excepciones_integradas.py
-        python3 errores_propios.py
+        $ python excepciones_integradas.py
+        $ python errores_propios.py
 
 
 ----

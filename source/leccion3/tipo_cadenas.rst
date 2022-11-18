@@ -294,8 +294,8 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
 
 .. code-block:: pycon
 
-    >>> """Calcula la sucesiónde números Fibonacci"""
-    'Calcula la sucesiónde números Fibonacci'
+    >>> """Calcula la sucesión de números Fibonacci"""
+    'Calcula la sucesión de números Fibonacci'
     >>> # se definen las variables
     ... a, b = 0, 1
     >>> while b < 100:
@@ -894,7 +894,7 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        python3 tipo_cadenas.py
+        $ python tipo_cadenas.py
 
 
 ----

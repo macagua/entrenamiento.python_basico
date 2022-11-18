@@ -430,11 +430,11 @@ este programa ejecute el siguiente comando:
     $ sudo apt install ipython
 
 
-Sustituya el comando ``python3`` por ``ipython3`` de la siguiente forma:
+Sustituya el comando ``python`` por ``ipython`` de la siguiente forma:
 
 .. code-block:: console
 
-    $ ipython3
+    $ ipython
     Python 3.7.3 (default, Oct 31 2022, 14:04:00)
     Type 'copyright', 'credits' or 'license' for more information
     IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
@@ -632,7 +632,7 @@ instalar este programa ejecute el siguiente comando:
 .. code-block:: console
 
     $ sudo apt install -y python-pip
-    $ sudo pip3 install bpython
+    $ sudo pip install bpython
 
 Luego cierra sesión de **root** y vuelve al usuario y sustituya el comando
 ``python`` por ``ipython`` de la siguiente forma:

@@ -123,12 +123,12 @@ Ejemplos
 Sucesión de Fibonacci
 ~~~~~~~~~~~~~~~~~~~~~
 
-Ejemplo de la `Sucesión de Fibonacci <https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci>`_
+Definir la `Sucesión de Fibonacci <https://es.wikipedia.org/wiki/Sucesión_de_Fibonacci>`_
 con bucle ``while``:
 
 .. literalinclude:: ../../recursos/leccion4/fibonacci.py
     :language: python
-    :lines: 4-7
+    :lines: 4-9
 
 
 ----
@@ -146,7 +146,7 @@ con bucle ``while``:
 
     .. code-block:: console
 
-        python3 bucle_while.py
+        $ python bucle_while.py
 
 
 ----

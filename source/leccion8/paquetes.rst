@@ -129,8 +129,8 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
     .. code-block:: console
 
-        $ python3 calculo_factura_pipo.py
-        $ python3 tostadas_pipo/principal.py
+        $ python calculo_factura_pipo.py
+        $ python tostadas_pipo/principal.py
 
 
 ----

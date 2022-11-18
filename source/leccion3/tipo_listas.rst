@@ -450,7 +450,7 @@ Usted puede consultar toda la documentación disponible sobre las **listas** des
 
     .. code-block:: console
 
-        python3 tipo_listas.py
+        $ python tipo_listas.py
 
 
 ----
