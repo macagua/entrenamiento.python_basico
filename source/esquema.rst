@@ -17,7 +17,7 @@ Lección 1 - Introducción al lenguaje Python
 -------------------------------------------
 
 **Descripción:** Sensibilizar sobre la filosofía del lenguaje, su historia y evolución,
-casos de éxitos.
+casos de éxitos, recrear el ambiente de desarrollo.
 
 **Práctica:** Exponer los fundamentos sobre el lenguaje Python, comentar sobre usos e
 implementaciones exitosas a nivel regional, nivel nacional y nivel mundial.
@@ -54,11 +54,10 @@ Lección 4 - Bloques de código y estructuras de control
 ------------------------------------------------------
 
 **Descripción:** Comprender las estructuras de control como ``if`` (``elif``, ``else``);
-``for``, ``while`` (``else``, ``break``, ``continue``, ``pass``); las funciones
-:ref:`range() <python_fun_range>` y :ref:`xrange() <python_fun_xrange>`; ademas de los
-tipos :ref:`iteradores() <python_iter>`.
+``for``, ``while`` (``else``, ``break``, ``continue``, ``pass``); la función iterador
+:ref:`range() <python_fun_range>`; y los diversos tipos :ref:`iteradores() <python_iter>`.
 
-**Práctica:** Ejemplos de creación a estructuras condicionales, repetitivas y funciones
+**Práctica:** Creación a estructuras condicionales, repetitivas y funciones
 propias y explorar el resultado desde el interprete Python.
 
 
@@ -103,7 +102,7 @@ Lección 8 - Módulos, paquetes y distribución de software
 **Descripción:** Comprender la creación de módulos, paquetes y distribución de
 software Python e implementación de estos en sus propios desarrollos.
 
-**Práctica:** Ejemplo de creación de módulos, paquetes y distribución de software
+**Práctica:** Creación de módulos, paquetes y distribución de software
 Python organizando su código en estas estructuras de programas y explorar el
 resultado en un módulo y paquete en el sistema de archivos.
 
