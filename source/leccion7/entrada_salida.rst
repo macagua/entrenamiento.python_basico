@@ -178,7 +178,7 @@ de caracteres y variables:
 
     >>> tipo_calculo = "raíz cuadrada de dos"
     >>> valor = 2**0.5
-    >>> print("el resultado de", tipo_calculo, "es:", valor)
+    >>> print(f"el resultado de {tipo_calculo} es: {valor}")
     el resultado de raíz cuadrada de dos es: 1.41421356237
 
 
