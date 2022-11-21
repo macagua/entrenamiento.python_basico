@@ -130,6 +130,6 @@ Lección 10 - Uso prácticos de la librería estándar
 **Descripción:** Comprender el uso de los módulos incorporados en la librería estándar
 de Python.
 
-**Práctica:** Ejemplo de uso de decoradores y módulos adicionales útiles de la
+**Práctica:** Creación e uso de los módulos ``datetime``, ``locale``, ``email``, ``json``, de la
 librería estándar explorando el resultado en un paquete Python en el sistema de
 archivos.

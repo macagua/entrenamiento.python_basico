@@ -11,7 +11,10 @@ Listas de comprensión y la librería estándar
 
    listas_comprension
    libreria_estandar
-   fecha_hora
+   datetime
+   locale
+   email
+   json
 
 
 .. raw:: html

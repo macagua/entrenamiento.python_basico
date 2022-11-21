@@ -3,10 +3,10 @@
 
 .. _python_libreria_estandar:
 
-La librería estándar Python
----------------------------
+Librería estándar Python
+------------------------
 
-La librería estándar Python 2 incluye los siguientes módulos y librerías:
+La librería estándar Python 3 incluye los siguientes módulos y librerías:
 
 - :ref:`Funciones integradas <python_fun_builtins>` y funciones integradas no esenciales
 
@@ -24,7 +24,7 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 
 - Acceso a archivos y directorios, incluye 12 librerías, como `os.path`_, `fileinput`_ y otros.
 
-- Persistencia de datos, incluye 13 librerías, como `pickle`_, `sqlite3`_ y otros.
+- Persistencia de datos, incluye 13 librerías, como :ref:`pickle <python_modulo_pickle>`, :ref:`sqlite3 <python_modulo_sqlite3>` y otros.
 
 - Compresión de datos y de archivo, incluye 5 librerías, como `zlib`_, `gzip`_ y otros.
 
@@ -38,7 +38,7 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 
 - Comunicación entre procesos y redes, incluye 7 librerías, como `subprocess`_, `socket`_ y otros.
 
-- Manejo de datos de Internet, incluye 16 librerías, como `email`_, `json`_ y otros.
+- Manejo de datos de Internet, incluye 16 librerías, como :ref:`email <python_modulo_email>`, :ref:`json <python_modulo_json>` y otros.
 
 - Procesamiento de marcado estructurado, incluye 15 librerías, como `html.parser`_, `html.entities`_ y otros.
 
@@ -54,7 +54,7 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 
 - Herramientas de desarrollo, incluye 6 librerías, como `unittest`_, `test`_ y otros.
 
-- Depuración y Profiling, incluye 7 librerías, como :ref:`pdb <python_pdb>`, `trace`_ y otros.
+- Depuración y Profiling, incluye 7 librerías, como :ref:`pdb <python_modulo_pdb>`, `trace`_ y otros.
 
 - Empaquetado y distribución de software, incluye las librerías `distutils`_ y `ensurepip`_.
 
@@ -98,8 +98,6 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 .. _`math`: https://docs.python.org/es/3.7/library/math.html
 .. _`os.path`: https://docs.python.org/es/3.7/library/os.path.html
 .. _`fileinput`: https://docs.python.org/es/3.7/library/fileinput.html
-.. _`pickle`: https://docs.python.org/es/3.7/library/pickle.html
-.. _`sqlite3`: https://docs.python.org/es/3.7/library/sqlite3.html
 .. _`zlib`: https://docs.python.org/es/3.7/library/zlib.html
 .. _`gzip`: https://docs.python.org/es/3.7/library/gzip.html
 .. _`csv`: https://docs.python.org/es/3.7/library/csv.html
@@ -112,8 +110,6 @@ La librería estándar Python 2 incluye los siguientes módulos y librerías:
 .. _`readline`: https://docs.python.org/es/3.7/library/readline.html
 .. _`subprocess`: https://docs.python.org/es/3.7/library/subprocess.html
 .. _`socket`: https://docs.python.org/es/3.7/library/socket.html
-.. _`email`: https://docs.python.org/es/3.7/library/email.html
-.. _`json`: https://docs.python.org/es/3.7/library/json.html
 .. _`html.entities`: https://docs.python.org/es/3.7/library/html.entities.html
 .. _`html.parser`: https://docs.python.org/es/3.7/library/html.parser.html
 .. _`cgi`: https://docs.python.org/es/3.7/library/cgi.html
