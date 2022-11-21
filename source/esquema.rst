@@ -70,7 +70,7 @@ Lección 5 - Funciones y programación estructurada
 **Descripción:** Comprender el uso de las funciones, decoradores y el paradigma de
 programación estructurada.
 
-**Práctica:** Ejemplos de creación e uso de funciones, programar de forma estructurada y
+**Práctica:** Creación e uso de funciones, programar de forma estructurada y
 explorar el resultado desde el interprete Python.
 
 

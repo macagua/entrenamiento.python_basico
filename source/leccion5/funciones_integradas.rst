@@ -165,7 +165,7 @@ legibles desde este.
     'property', 'quit', 'range', 'reduce', 'reload',
     'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted',
     'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr',
-    'unicode', 'vars', 'xrange', 'zip']
+    'unicode', 'vars', 'zip']
 
 Si el objeto soporta un método llamado ``__dir__``, ese será usado; de lo contrario se usa
 la lógica ``dir()`` predeterminada y devuelve:
