@@ -157,7 +157,7 @@ Este script da como resultado el siguiente mensaje:
 
     Conexión típica: ('127.0.0.1', 'root', 'qwerty', 'nomina') <class 'tuple'>
 
-    Conexión con parámetros adicionales: (('127.0.0.1', 'root', 'qwerty', 'nomina'), '3307', '10') <class 'tuple'> 
+    Conexión con parámetros adicionales: (('127.0.0.1', 'root', 'qwerty', 'nomina'), '3307', '10') <class 'tuple'>
 
     IP de la BD: 127.0.0.1
     Usuario de la BD: root

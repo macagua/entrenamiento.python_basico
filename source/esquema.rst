@@ -44,7 +44,7 @@ Lección 3 - Tipos y estructuras de datos
 numéricas, cadenas de texto con sus operaciones; tipos compuestos (listas, tuplas,
 diccionarios).
 
-**Práctica:** Ejemplos de creación y asignación de variables numéricas, cadenas de
+**Práctica:** Creación y asignación de variables numéricas, cadenas de
 texto, listas, tuplas, diccionarios y explorar el resultado desde el interprete Python.
 
 

@@ -258,7 +258,7 @@ por el operador del lado derecho y devuelve el resto.
     Para ejecutar el código :file:`operadores_aritmeticos.py`, abra una
     consola de comando, acceda al directorio donde se encuentra el mismo,
     y ejecute el siguiente comando:
-    
+
     .. code-block:: console
 
         $ python operadores_aritmeticos.py
