@@ -21,7 +21,7 @@ llamado ``utilidades.py``:
 
 .. literalinclude:: ../../recursos/leccion8/modulos/utilidades.py
     :language: python
-    :lines: 1-7
+    :lines: 1-8
 
 .. _python_sent_import:
 
@@ -48,7 +48,7 @@ un simple módulo, ``calculo_factura_pipo.py``.
 
 .. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
     :language: python
-    :lines: 1-15
+    :lines: 1-22
 
 Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
 

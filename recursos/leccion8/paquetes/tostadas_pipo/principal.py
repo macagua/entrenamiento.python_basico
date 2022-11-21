@@ -1,9 +1,9 @@
-from utilidades import impuestos
-from utilidades import calculos
+from utilidades import calculos, impuestos
 
 monto = int(input("Introduzca un monto entero: "))
+impuesto = int(input("Introduzca un numero del impuesto: "))
 # Llama función definida en el módulo "impuestos"
-print("El impuesto IVA de 12%:", impuestos.impuesto_iva12(monto))
+print(f"El impuesto IVA de {impuesto}%: {impuestos.impuesto_iva(monto, impuesto)}")
 
 suma = int(input("Introduzca un monto entero a sumar: "))
 # Llama función definida en el módulo "calculos"

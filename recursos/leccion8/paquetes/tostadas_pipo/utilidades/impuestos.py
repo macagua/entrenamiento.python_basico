@@ -1,13 +1,7 @@
-""" Módulo para cálculos de diversos impuestos """
+""" Módulo para calcular el impuesto """
 
 
-def impuesto_iva12(monto=0):
-    """Calcula el impuesto del IVA de 12%"""
-    total = (monto * 12) / 100
-    return total
-
-
-def impuesto_iva14(monto=0):
-    """Calcula el impuesto del IVA de 14%"""
-    total = (monto * 14) / 100
+def impuesto_iva(monto=0, impuesto=12):
+    """Calcula el impuesto del IVA"""
+    total = (monto * impuesto) / 100
     return total

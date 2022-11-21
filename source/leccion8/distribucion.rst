@@ -572,7 +572,7 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    pip install --user ./dist/tostadas_pipo-0.1-py3-none-any.whl
+    $ pip install --user ./dist/tostadas_pipo-0.1-py3-none-any.whl
     Processing ./dist/tostadas_pipo-0.1-py3-none-any.whl
     Installing collected packages: tostadas-pipo
     Successfully installed tostadas-pipo-0.1
@@ -692,7 +692,7 @@ o binaria de su paquete, ejecute el siguiente comando:
 
 .. code-block:: console
 
-    pip list --user --format=freeze | grep "tostadas"
+    $ pip list --user --format=freeze | grep "tostadas"
     tostadas-pipo==0.1
 
 De esta forma la herramienta de gestión de paquete indica que el ``tostadas-pipo`` en su
@@ -710,11 +710,11 @@ ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    $ python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva14; print("Función importada " + impuesto_iva14.__doc__[1:36] + ".")'
+    $ python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva; print("Función importada " + impuesto_iva.__doc__[1:36] + ".")'
     Función importada Calcula el impuesto del IVA de 14%.
 
 El comando previo muestra la :ref:`docstring <python_str_docstrings>` de la
-función importada ``impuesto_iva14`` sino muestra ningún mensaje de error, el
+función importada ``impuesto_iva`` sino muestra ningún mensaje de error, el
 paquete ``tostadas_pipo-0.1`` se instalo correctamente.
 
 
@@ -727,7 +727,7 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
 
 .. code-block:: console
 
-    pip uninstall tostadas_pipo
+    $ pip uninstall tostadas_pipo
     Uninstalling tostadas-pipo-0.1:
       /home/leonardo/.local/bin/tostadas_pipo
       /home/leonardo/.local/lib/python3.7/site-packages/tostadas_pipo-0.1.dist-info/DESCRIPTION.rst

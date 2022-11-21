@@ -44,13 +44,13 @@ llamado ``utilidades``, dentro de este, cree los siguientes archivos:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/calculos.py
     :language: python
-    :lines: 1-7
+    :lines: 1-8
 
 - Archivo ``impuestos.py`` incluye el siguiente código:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/impuestos.py
     :language: python
-    :lines: 1-12
+    :lines: 1-7
 
 
 Al final tendrá la siguiente estructura del directorios del paquete Python llamado
@@ -86,12 +86,12 @@ se realiza de las siguientes formas:
     from tostadas_pipo.utilidades import calculos
 
 
-- Importar la función ``impuesto_iva14()`` desde el módulo ``impuestos.py`` en el
+- Importar la función ``impuesto_iva()`` desde el módulo ``impuestos.py`` en el
   sub-paquete ``utilidades``, ejecutando:
 
 .. code-block:: python
 
-    from tostadas_pipo.utilidades.impuestos import impuesto_iva14
+    from tostadas_pipo.utilidades.impuestos import impuesto_iva
 
 Por ejemplo, cree un módulo llamado ``calculo_factura_pipo.py``, que
 contiene las importaciones del paquete  ``tostadas_pipo``:
