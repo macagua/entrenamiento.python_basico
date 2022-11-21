@@ -29,12 +29,14 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 strftime
 ~~~~~~~~
 
+``strftime`` es un formateador de cadenas, esto formateará un objeto de fecha y hora en
+formato de cadena.
+
 Los objetos ``date``, ``datetime``, y ``time`` admiten un método ``strftime(format)``,
-para crear una cadena que represente el tiempo bajo el control de una cadena de caracteres
-de formato explícito.
+para crear una cadena que represente el objeto de fecha y hora bajo el control de una
+:ref:`cadena de caracteres <python_str>` de formato explícito.
 
-
-.. literalinclude:: ../../recursos/leccion10/datetime_strptime.py
+.. literalinclude:: ../../recursos/leccion10/datetime_strftime.py
     :language: python
     :linenos:
     :lines: 1-19
@@ -51,8 +53,12 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 strptime
 ~~~~~~~~
 
+
+``strptime`` es un analizador de cadenas, esto convertirá un formato de cadena a un objeto
+de fecha y hora.
+
 El método de clase ``datetime.strptime()`` crea un objeto ``datetime`` a partir de una
-cadena que representa una fecha y hora y una cadena de formato correspondiente.
+:ref:`cadena <python_str>` que representa una fecha y hora y una cadena de formato correspondiente.
 
 .. literalinclude:: ../../recursos/leccion10/datetime_strptime.py
     :language: python
