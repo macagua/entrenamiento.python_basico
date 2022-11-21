@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_pdb:
+.. _python_modulo_pdb:
 
 Depuración con pdb
 ------------------
@@ -9,8 +9,7 @@ Depuración con pdb
 En este tutorial se exploran herramientas que ayudan a entender tu
 código: depuración para encontrar y corregir *bugs* (errores).
 
-El depurador python, ``pdb``:
-`https://docs.python.org/es/3.7/library/pdb.html <https://docs.python.org/es/3.7/library/pdb.html>`_,
+El depurador python, `pdb <https://docs.python.org/es/3.7/library/pdb.html>`_,
 te permite inspeccionar tu código de forma interactiva.
 
 Te permite:
@@ -105,34 +104,35 @@ En este caso esta depurando el archivo :download:`index_error.py <../../recursos
    puedes ejecutar el `script` de la siguiente forma
    ``python -m pdb script.py``:
 
-    .. sourcecode:: console
+   .. sourcecode:: console
 
       $ python -m pdb index_error.py
-    
 
-    .. sourcecode:: python
+   Este comando anterior muestra lo siguiente:
 
-        > /home/macagua/python/entrenamiento/index_error.py(1)<module>()
-        -> """Small snippet to raise an IndexError."""
-        (Pdb) continue
-        Traceback (most recent call last):
-        File "/usr/lib/python3.7/pdb.py", line 1296, in main
-            pdb._runscript(mainpyfile)
-        File "/usr/lib/python3.7/pdb.py", line 1215, in _runscript
-            self.run(statement)
-        File "/usr/lib/python3.7/bdb.py", line 372, in run
-            exec cmd in globals, locals
-        File "<string>", line 1, in <module>
-        File "index_error.py", line 8, in <module>
-            index_error()
-        File "index_error.py", line 5, in index_error
-            print(lst[len(lst)])
-        IndexError: list index out of range
-        Uncaught exception. Entering post mortem debugging
-        Running 'cont' or 'step' will restart the program
-        > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
-        -> print(lst[len(lst)])
-        (Pdb)
+   ::
+
+      > /home/macagua/python/entrenamiento/index_error.py(1)<module>()
+      -> """Small snippet to raise an IndexError."""
+      (Pdb) continue
+      Traceback (most recent call last):
+      File "/usr/lib/python3.7/pdb.py", line 1296, in main
+          pdb._runscript(mainpyfile)
+      File "/usr/lib/python3.7/pdb.py", line 1215, in _runscript
+          self.run(statement)
+      File "/usr/lib/python3.7/bdb.py", line 372, in run
+          exec cmd in globals, locals
+      File "<string>", line 1, in <module>
+      File "index_error.py", line 8, in <module>
+          index_error()
+      File "index_error.py", line 5, in index_error
+          print(lst[len(lst)])
+      IndexError: list index out of range
+      Uncaught exception. Entering post mortem debugging
+      Running 'cont' or 'step' will restart the program
+      > /home/macagua/python/entrenamiento/index_error.py(5)index_error()
+      -> print(lst[len(lst)])
+      (Pdb)
 
 
 Ejecución paso a paso
@@ -295,6 +295,7 @@ Otras formas de comenzar una depuración
   .. code-block:: python
 
       import pdb
+
       pdb.set_trace()
 
 

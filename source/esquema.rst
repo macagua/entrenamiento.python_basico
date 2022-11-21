@@ -81,8 +81,7 @@ Lección 6 - Introspección a la depuración con pdb
 
 **Descripción:** Conocer las capacidades de depuración que ofrece el lenguaje.
 
-**Práctica:** Ejemplo de uso de la herramienta ``pdb`` y explorar el resultado en
-un módulo.
+**Práctica:** Uso de la herramienta ``pdb`` y explorar el resultado en un módulo.
 
 
 .. _esquema_entrenamiento_leccion7:
