@@ -45,7 +45,7 @@ los siguientes comando:
 ::
 
   $ sudo apt update
-  $ sudo apt install -y python3-dev python-pip python-setuptools git
+  $ sudo apt install -y python3-dev python3-pip python-setuptools git
   $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils \
                         texlive-font-utils texlive-fonts-recommended texlive-latex-extra \
                         texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
@@ -76,7 +76,7 @@ Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente coman
 
 ::
 
-  (venv)$ pip3 install -r requirements-dev.txt
+  (venv)$ pip install -r requirements-dev.txt
 
 
 Recursos del entrenamiento
@@ -89,8 +89,8 @@ en diversos formatos, actualmente se tiene bien soportado los siguientes:
 Formato HTML
 ------------
 
-Usted puede generar la documentación en HTML del módulo *1, 2, 3, 4, 5, 6, 7, 8, 9, 10*; ejecute
-los siguientes comando:
+Usted puede generar la documentación en HTML de los módulos *1, 2, 3, 4, 5, 6, 7, 8, 9, 10*;
+ejecute los siguientes comando:
 
 ::
 
@@ -103,7 +103,7 @@ con su navegador Web favorito (Mozilla Firefox, Google Chrome, etc).
 Formato PDF
 -----------
 
-Usted puede generar la documentación en PDF del módulo *1, 2, 3, 4, 5, 6, 7, 8, 9, 10*;
+Usted puede generar la documentación en PDF de los módulos *1, 2, 3, 4, 5, 6, 7, 8, 9, 10*;
 ejecute los siguientes comando:
 
 ::
