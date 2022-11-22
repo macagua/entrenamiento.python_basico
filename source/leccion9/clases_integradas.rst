@@ -261,14 +261,14 @@ El objeto enumerate es muy útil para obtener una lista indexada como:
 
 .. code-block:: pycon
 
-    >>> enumerar = enumerate(xrange(3))
-    >>> enumerar.next()
+    >>> enumerar = enumerate(range(3))
+    >>> next(enumerar)
     (0, 0)
-    >>> enumerar.next()
+    >>> next(enumerar)
     (1, 1)
-    >>> enumerar.next()
+    >>> next(enumerar)
     (2, 2)
-    >>> enumerar.next()
+    >>> next(enumerar)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
@@ -282,13 +282,13 @@ generada por la clase ``enumerate``:
 .. code-block:: pycon
 
     >>> enumerar = enumerate(range(3), 1)
-    >>> enumerar.next()
+    >>> next(enumerar)
     (1, 0)
-    >>> enumerar.next()
+    >>> next(enumerar)
     (2, 1)
-    >>> enumerar.next()
+    >>> next(enumerar)
     (3, 2)
-    >>> enumerar.next()
+    >>> next(enumerar)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
@@ -309,14 +309,14 @@ detener la iteración.
 
 .. code-block:: pycon
 
-    >>> inversa = reversed(xrange(3))
-    >>> inversa.next()
+    >>> inversa = reversed(range(3))
+    >>> next(inversa)
     2
-    >>> inversa.next()
+    >>> next(inversa)
     1
-    >>> inversa.next()
+    >>> next(inversa)
     0
-    >>> inversa.next()
+    >>> next(inversa)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
@@ -472,9 +472,9 @@ iteración.
     >>> archivo is archivo.__iter__()
     True
     >>> linea = archivo.__iter__()
-    >>> linea.next()
+    >>> next(linea)
     'laptop\n'
-    >>> linea.next()
+    >>> next(linea)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
@@ -573,16 +573,16 @@ lista de lineas al principio del archivo, como al final del archivo:
     >>> archivo.writelines("\n".join(lista_de_lineas))
     >>> archivo.close()
     >>> archivo = open("datos.txt", "r")
-    >>> archivo.next()
+    >>> next(archivo)
     'Esta es la 1er linea\n'
     >>> archivo.seek(8)
-    >>> archivo.next()
+    >>> next(archivo)
     'la 1er linea\n'
-    >>> archivo.next()
+    >>> next(archivo)
     'Esta es la 2da linea\n'
-    >>> archivo.next()
+    >>> next(archivo)
     'Esta es la 3era linea'
-    >>> archivo.next()
+    >>> next(archivo)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
@@ -607,10 +607,10 @@ archivo) y ``2`` (el final del archivo). No hay valor de retorno.
     >>> archivo.writelines("\n".join(lista_de_lineas))
     >>> archivo.close()
     >>> archivo = open("datos.txt", "r")
-    >>> archivo.next()
+    >>> next(archivo)
     'Esta es la 1er linea\n'
     >>> archivo.seek(8)
-    >>> archivo.next()
+    >>> next(archivo)
     'la 1er linea\n'
     >>> archivo.close()
     >>> archivo = open("datos.txt", "rw+")
@@ -621,7 +621,7 @@ archivo) y ``2`` (el final del archivo). No hay valor de retorno.
     >>> # Ahora lea completamente el archivo desde el inicio.
     ... archivo.seek(0, 0)
     >>> for elemento in range(1, 6):
-    ...     linea = archivo.next()
+    ...     linea = next(archivo)
     ...     print("Linea No %d - %s" % (elemento, linea))
     ...
     Linea No 1 - Esta es la 1er linea
@@ -657,13 +657,13 @@ lenguaje C ``ftell()`` de la librería ``stdio``.
     >>> archivo.tell()
     0
     >>> linea = iter(archivo)
-    >>> linea.next()
+    >>> next(linea)
     'debacagua9\n'
     >>> archivo.tell()
     11
     >>> len("debacagua9\n")
     11
-    >>> linea.next()
+    >>> next(linea)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration

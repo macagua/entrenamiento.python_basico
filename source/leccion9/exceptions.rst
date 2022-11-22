@@ -290,7 +290,7 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_stopiteration:
 
 ``StopIteration``
-    Se lanza cuando se indica el final desde ``iterator.next()``. Deriva de la excepción
+    Se lanza cuando se indica el final desde ``next(iterator)``. Deriva de la excepción
     :ref:`Exception <python_exception>`.
 
 

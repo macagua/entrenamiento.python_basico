@@ -2048,18 +2048,18 @@ primera forma, el argumento debe proporcionar su propio *iterador*, o ser una se
 
     >>> elemento = iter("Plone")
     >>> elemento
-    <iterator object at 0x7eff6ce10250>
-    >>> elemento.next()
+    <str_iterator object at 0x7f71666f85b0>
+    >>> next(elemento)
     'P'
-    >>> elemento.next()
+    >>> next(elemento)
     'l'
-    >>> elemento.next()
+    >>> next(elemento)
     'o'
-    >>> elemento.next()
+    >>> next(elemento)
     'n'
-    >>> elemento.next()
+    >>> next(elemento)
     'e'
-    >>> elemento.next()
+    >>> next(elemento)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     StopIteration
