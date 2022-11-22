@@ -142,12 +142,12 @@ ocultar un error real de programación. También puede usarse para mostrar un
 mensaje de error y luego re-generar la excepción (permitiéndole al que llama,
 manejar también la excepción):
 
-.. code-block:: pycon
+.. code-block:: python
 
     import sys
 
     try:
-        f = open('numeros.txt')
+        f = open("numeros.txt")
         s = f.readline()
         i = int(s.strip())
     except IOError as err:
@@ -163,15 +163,15 @@ Las declaraciones ``try`` ... ``except`` tienen un *bloque else* opcional, el cu
 cuando está presente, debe seguir a los ``except``. Es útil para aquel código que
 debe ejecutarse si el *bloque try* no genera una excepción. Por ejemplo:
 
-.. code-block:: pycon
+.. code-block:: python
 
     for arg in sys.argv[1:]:
         try:
-            f = open(arg, 'r')
+            f = open(arg, "r")
         except IOError:
-            print('no pude abrir', arg)
+            print("no pude abrir", arg)
         else:
-            print(arg, 'tiene', len(f.readlines()), 'lineas')
+            print(arg, "tiene", len(f.readlines()), "lineas")
             f.close()
 
 El uso de ``else`` es mejor que agregar código adicional en el ``try`` porque evita
@@ -275,17 +275,19 @@ depuración dentro de un programa:
 
 La forma simple, "assert expression", es equivalente a:
 
-.. code-block:: pycon
+.. code-block:: python
 
     if __debug__:
-        if not expression: raise AssertionError
+        if not expression:
+            raise AssertionError
 
 La forma extendida, "assert expression1, expression2", es equivalente a:
 
-.. code-block:: pycon
+.. code-block:: python
 
     if __debug__:
-        if not expression1: raise AssertionError(expression2)
+        if not expression1:
+            raise AssertionError(expression2)
 
 Estas equivalencias suponen que ``__debug__`` y la excepción
 ":ref:`AssertionError <python_exception_assertionerror>`" se refieren a las
@@ -344,11 +346,13 @@ Al crear un módulo que puede lanzar varios errores distintos, una práctica com
 crear una clase base para excepciones definidas en ese módulo y extenderla para crear
 clases excepciones específicas para distintas condiciones de error:
 
-.. code-block:: pycon
+.. code-block:: python
 
     class Error(Exception):
         """Clase base para excepciones en el módulo."""
+
         pass
+
 
     class EntradaError(Error):
         """Exception lanzada por errores en las entradas.
@@ -362,6 +366,7 @@ clases excepciones específicas para distintas condiciones de error:
             self.expresion = expresion
             self.mensaje = mensaje
 
+
     class TransicionError(Error):
         """Lanzada cuando una operación intenta una
           transición de estado no permitida.
@@ -371,6 +376,7 @@ clases excepciones específicas para distintas condiciones de error:
             siguiente -- nuevo estado intentado
             mensaje -- explicación de porque la transición no esta permitida
         """
+
         def __init__(self, previo, siguiente, mensaje):
             self.previo = previo
             self.siguiente = siguiente
@@ -459,7 +465,7 @@ objeto hayan sido exitosas o no. Mirá el siguiente ejemplo, que intenta
 :ref:`abrir un archivo <python_manipular_archivo>` e imprimir su contenido en la
 pantalla.
 
-.. code-block:: pycon
+.. code-block:: python
 
     for linea in open("numeros.txt"):
         print(linea)
@@ -478,7 +484,7 @@ Sentencia with
 La sentencia ``with`` permite que objetos como archivos sean usados de una forma que
 asegure que siempre se los libera rápido y en forma correcta.
 
-.. code-block:: pycon
+.. code-block:: python
 
     with open("numeros.txt") as f:
         for linea in f:
