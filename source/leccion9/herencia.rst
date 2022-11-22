@@ -33,7 +33,7 @@ se crea una clase base llamada ``Persona``. A continuación un ejemplo de la cla
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 4-32
+    :lines: 4-36
 
 
 En el ejemplo previo, es donde empieza a crear una clase (lo hace con la palabra
@@ -42,7 +42,7 @@ palabra que se encuentra dentro de los paréntesis este hace referencia al objet
 :ref:`object <python_cls_object>`, usando para indicar la clase de la cual precede.
 
 La clase ``Persona`` tiene los métodos ``__init__``, ``__str__``, ``hablar``
-y ``getGenero``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``.
+y ``obtener_genero``. Sus atributos son ``cedula``, ``nombre``, ``apellido`` y ``sexo``.
 
 La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
 
@@ -59,7 +59,7 @@ Usted puede llamar esos métodos y atributos con la siguiente notación:
 .. code-block:: pycon
 
     >>> print(persona1.nombre, persona1.apellido)
-    >>> print(persona1.getGenero(persona1.sexo))
+    >>> print(persona1.obtener_genero(persona1.sexo))
 
 El método ``__str__`` es un método usando para imprimir la descripción de la instancia
 de objeto el cual debe mostrar como:
@@ -94,7 +94,7 @@ El siguiente es un ejemplo de la clase ``Supervisor`` que derivada de la clase
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :lines: 35-56
+    :lines: 39-64
 
 Ahora, se creará una nueva clase ``Supervisor`` con los mismos métodos y atributos
 como la clase ``Persona``, pero con dos nuevos atributos ``rol`` y ``tareas``.
@@ -104,36 +104,37 @@ La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 39
+    :lines: 58
 
-Luego que generá la instancia del nuevo objeto ``Supervisor`` llamada ``supervisor1``
+Luego que genera la instancia del nuevo objeto ``Supervisor`` llamada ``supervisor1``
 se puede imprimir sus detalles de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 44
+    :lines: 63
 
 Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de la
 clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 47-54
+    :lines: 66-75
 
 Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se puede
 imprimir de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
-    :lines: 57-58
+    :lines: 78-79
 
-El uso de las clases y la programación orientada a objetos, le permite a usted que
-pueda organizar el código con diferentes clases correspondientes a diferentes objetos
-que encontrará (una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``,
-etc.), con sus propios métodos y atributos. Luego puede usar la herencia para considerar
-las variaciones en torno a una clase base y reutilizar el código. Ej.: a partir de una
-clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor``,
-``JefeCuadrilla``, ``Obrero``, etc.
+.. note::
+    El uso de las clases y la programación orientada a objetos, le permite a usted que
+    pueda organizar el código con diferentes clases correspondientes a diferentes objetos
+    que encontrará (una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``,
+    etc.), con sus propios métodos y atributos. Luego puede usar la herencia para considerar
+    las variaciones en torno a una clase base y reutilizar el código. Ej.: a partir de una
+    clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor``,
+    ``JefeCuadrilla``, ``Obrero``, etc.
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python

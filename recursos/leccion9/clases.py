@@ -18,14 +18,14 @@ class Persona:
             str(self.cedula),
             self.nombre,
             self.apellido,
-            self.getGenero(self.sexo),
+            self.obtener_genero(self.sexo),
         )
 
     def hablar(self, mensaje):
         """Mostrar mensaje de saludo de Persona"""
         return mensaje
 
-    def getGenero(self, sexo):
+    def obtener_genero(self, sexo):
         """Mostrar el genero de la Persona"""
         genero = ("Masculino", "Femenino")
         if sexo == "M":

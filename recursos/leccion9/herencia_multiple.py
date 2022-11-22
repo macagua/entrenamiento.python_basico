@@ -21,9 +21,9 @@ print(len(jefe_cuadrilla1.__doc__[28:46]) * "=")
 print("\n" + str(jefe_cuadrilla1) + "\n")
 
 # Atributo(s) y Método(s) heredado de la clase Persona
-print(f"- Cedula de identidad: {jefe_cuadrilla1.cedula}.")
+print(f"- Cédula de identidad: {jefe_cuadrilla1.cedula}.")
 print(f"- Nombre completo: {jefe_cuadrilla1.nombre} {jefe_cuadrilla1.apellido}.")
-print(f"- Genero: {jefe_cuadrilla1.getGenero(jefe_cuadrilla1.sexo)}.")
+print(f"- Genero: {jefe_cuadrilla1.obtener_genero(jefe_cuadrilla1.sexo)}.")
 print(
     "- {} {} dijo: {}".format(
         jefe_cuadrilla1.nombre,
@@ -53,7 +53,7 @@ estoy la cuadrilla '{}'.""".format(
         jefe_cuadrilla1.__doc__[28:46].lower(),
         (jefe_cuadrilla1.nombre + " " + jefe_cuadrilla1.apellido),
         jefe_cuadrilla1.rol,
-        jefe_cuadrilla1.getGenero(jefe_cuadrilla1.sexo),
+        jefe_cuadrilla1.obtener_genero(jefe_cuadrilla1.sexo),
         jefe_cuadrilla1.cuadrilla,
     )
 )
@@ -69,9 +69,9 @@ print(len(obrero1.__doc__[37:44]) * "=")
 print("\n" + str(obrero1) + "\n")
 
 # Atributo(s) y Método(s) heredado de la clase Persona
-print(f"- Cedula de identidad: {obrero1.cedula}.")
+print(f"- Cédula de identidad: {obrero1.cedula}.")
 print(f"- Nombre completo: {obrero1.nombre} {obrero1.apellido}.")
-print(f"- Genero: {obrero1.getGenero(obrero1.sexo)}.")
+print(f"- Genero: {obrero1.obtener_genero(obrero1.sexo)}.")
 print(
     "- {} {} dijo: {}".format(
         obrero1.nombre, obrero1.apellido, obrero1.hablar("Hola Cilita ;-)")
@@ -95,7 +95,7 @@ usando la herramienta '{}' tengo '{}' años de experiencia,
 ademas soy un '{}'.""".format(
         obrero1.__doc__[37:44].lower(),
         (obrero1.nombre + " " + obrero1.apellido),
-        obrero1.getGenero(obrero1.sexo),
+        obrero1.obtener_genero(obrero1.sexo),
         obrero1.area,
         obrero1.herramienta,
         obrero1.experiencia,

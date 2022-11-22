@@ -9,9 +9,9 @@ print(len(persona1.__doc__[25:34]) * "=")
 
 print("\n" + str(persona1) + "\n")
 
-print(f"- Cedula de identidad: {persona1.cedula}.")
+print(f"- Cédula de identidad: {persona1.cedula}.")
 print(f"- Nombre completo: {persona1.nombre} {persona1.apellido}.")
-print(f"- Genero: {persona1.getGenero(persona1.sexo)}.")
+print(f"- Genero: {persona1.obtener_genero(persona1.sexo)}.")
 print(
     "- {} {} dijo: {}".format(
         persona1.nombre, persona1.apellido, persona1.hablar("Hola Ana :-*")
@@ -34,9 +34,11 @@ print((len(persona1.__doc__[25:34]) + 5) * "-")
 
 print("\n" + str(persona2) + "\n")
 
-print(f"- Cedula de identidad: {persona2.cedula}.")
+print(f"- Cédula de identidad: {persona2.cedula}.")
 print(f"- Nombre completo: {persona2.nombre} {persona2.apellido}.")
-print("- Genero: {}.".format(persona2.getGenero(persona2.__getattribute__("sexo"))))
+print(
+    "- Genero: {}.".format(persona2.obtener_genero(persona2.__getattribute__("sexo")))
+)
 print(
     "- {} {} dijo: {}".format(
         persona2.nombre, persona2.apellido, persona2.hablar("Hola Leonardo ^_^")
@@ -63,9 +65,9 @@ print(len(supervisor1.__doc__[26:37]) * "=")
 print("\n" + str(supervisor1) + "\n")
 
 # Atributo(s) y Método(s) heredado de la clase Persona
-print(f"- Cedula de identidad: {supervisor1.cedula}.")
+print(f"- Cédula de identidad: {supervisor1.cedula}.")
 print(f"- Nombre completo: {supervisor1.nombre} {supervisor1.apellido}.")
-print(f"- Genero: {supervisor1.getGenero(supervisor1.sexo)}.")
+print(f"- Genero: {supervisor1.obtener_genero(supervisor1.sexo)}.")
 print(
     "- {} {} dijo: {}".format(
         supervisor1.nombre,
@@ -88,7 +90,7 @@ asignadas '{}'.""".format(
         supervisor1.nombre,
         supervisor1.apellido,
         supervisor1.cedula,
-        supervisor1.getGenero(supervisor1.sexo),
+        supervisor1.obtener_genero(supervisor1.sexo),
         supervisor1.rol,
         supervisor1.consulta_tareas(),
     )
