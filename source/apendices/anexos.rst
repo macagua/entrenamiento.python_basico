@@ -9,153 +9,282 @@ Anexos del entrenamiento
 A continuación varios material multimedia anexos a las lecciones del entrenamiento:
 
 
-.. _anexos_CjmzDHMHxwU:
+.. _anexos_mGH1uooFhGs:
 
-.. figure:: ../_images/youtube/CjmzDHMHxwU.jpg
+.. figure:: ../_static/images/youtube/mGH1uooFhGs.jpg
+    :target: https://www.youtube.com/watch?v=mGH1uooFhGs
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 1 - Introducción al Lenguaje de Programación <https://www.youtube.com/watch?v=CjmzDHMHxwU>`_,
+    Vídeo `1.- Curso Python - Introducción <https://www.youtube.com/watch?v=mGH1uooFhGs>`_,
     cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_VTykmPa2KY:
+.. _anexos_Sk59ji0hZFg:
 
-.. figure:: ../_images/youtube/VTykmP-a2KY.jpg
+.. figure:: ../_static/images/youtube/Sk59ji0hZFg.jpg
+    :target: https://www.youtube.com/watch?v=Sk59ji0hZFg
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 2 - Instalación <https://www.youtube.com/watch?v=VTykmP-a2KY>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `2.- Curso Python - Instalación <https://www.youtube.com/watch?v=Sk59ji0hZFg>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_OtJEj7N9T6k:
+.. _anexos_vDa5Vt002IY:
 
-.. figure:: ../_images/youtube/OtJEj7N9T6k.jpg
+.. figure:: ../_static/images/youtube/vDa5Vt002IY.jpg
+    :target: https://www.youtube.com/watch?v=vDa5Vt002IY
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 3 - Hola Mundo <https://www.youtube.com/watch?v=OtJEj7N9T6k>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `3.- Curso Python - Variables <https://www.youtube.com/watch?v=vDa5Vt002IY>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_ssnkfbBbcuw:
+.. _anexos_9YaC2_GdmJ8:
 
-.. figure:: ../_images/youtube/ssnkfbBbcuw.jpg
+.. figure:: ../_static/images/youtube/9YaC2_GdmJ8.jpg
+    :target: https://www.youtube.com/watch?v=9YaC2_GdmJ8
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 4 - Enteros, reales y operadores aritméticos <https://www.youtube.com/watch?v=ssnkfbBbcuw>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `4.- Curso Python - Enteros <https://www.youtube.com/watch?v=9YaC2_GdmJ8>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_ZrxcqbFYjiw:
+.. _anexos_ZqGynv-wgWg:
 
-.. figure:: ../_images/youtube/ZrxcqbFYjiw.jpg
+.. figure:: ../_static/images/youtube/ZqGynv-wgWg.jpg
+    :target: https://www.youtube.com/watch?v=ZqGynv-wgWg
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 5 - Booleanos, operadores lógicos y cadenas <https://www.youtube.com/watch?v=ZrxcqbFYjiw>`_,
-    cortesía de `CodigoFacilito.com`_.
+    Vídeo `5.- Curso Python - Strings <https://www.youtube.com/watch?v=ZqGynv-wgWg>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_hLqKvB7tGWk:
+.. _anexos_XefbjfEDN-U:
 
-.. figure:: ../_images/youtube/hLqKvB7tGWk.jpg
+.. figure:: ../_static/images/youtube/XefbjfEDN-U.jpg
+    :target: https://www.youtube.com/watch?v=XefbjfEDN-U
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 10 - Sentencias condicionales <https://www.youtube.com/watch?v=hLqKvB7tGWk>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `6.- Curso Python - Strings como listas <https://www.youtube.com/watch?v=XefbjfEDN-U>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_IyI2ZuOq_xQ:
+.. _anexos_I1a7piALq60:
 
-.. figure:: ../_images/youtube/IyI2ZuOq_xQ.jpg
+.. figure:: ../_static/images/youtube/I1a7piALq60.jpg
+    :target: https://www.youtube.com/watch?v=I1a7piALq60
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 11 - Bucles <https://www.youtube.com/watch?v=IyI2ZuOq_xQ>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `7.- Curso Python - Métodos de cadenas <https://www.youtube.com/watch?v=I1a7piALq60>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos__C7Uj7O5o_Q:
+.. _anexos_sQ9iP7HhYJo:
 
-.. figure:: ../_images/youtube/_C7Uj7O5o_Q.jpg
+.. figure:: ../_static/images/youtube/sQ9iP7HhYJo.jpg
+    :target: https://www.youtube.com/watch?v=sQ9iP7HhYJo
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 12 - Funciones <https://www.youtube.com/watch?v=_C7Uj7O5o_Q>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `8.- Curso Python - Listas <https://www.youtube.com/watch?v=sQ9iP7HhYJo>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_N4NtB4r28h0:
+.. _anexos_DI8IHc3V-HQ:
 
-.. figure:: ../_images/youtube/N4NtB4r28h0.jpg
+.. figure:: ../_static/images/youtube/DI8IHc3V-HQ.jpg
+    :target: https://www.youtube.com/watch?v=DI8IHc3V-HQ
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Depurando um programa Python com pdb - Python Debugger <https://www.youtube.com/watch?v=N4NtB4r28h0>`_, cortesía de *Youtube*.
+    Vídeo `9.- Curso Python - Tuplas <https://www.youtube.com/watch?v=DI8IHc3V-HQ>`_, cortesía de *Youtube*.
 
 
-.. _anexos_AzeUCuMvW6I:
+.. _anexos__UELgsIxE7g:
 
-.. figure:: ../_images/youtube/AzeUCuMvW6I.jpg
+.. figure:: ../_static/images/youtube/_UELgsIxE7g.jpg
+    :target: https://www.youtube.com/watch?v=_UELgsIxE7g
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 30 - Entrada Estándar rawInput <https://www.youtube.com/watch?v=AzeUCuMvW6I>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `10.- Curso Python - Diccionarios <https://www.youtube.com/watch?v=_UELgsIxE7g>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_JPXgxK3Oc:
+.. _anexos_BJXCnAd6pdM:
 
-.. figure:: ../_images/youtube/JPXgxK3Oc.jpg
+.. figure:: ../_static/images/youtube/BJXCnAd6pdM.jpg
+    :target: https://www.youtube.com/watch?v=BJXCnAd6pdM
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 31 - Salida Estándar rawInput <https://www.youtube.com/watch?v=B-JPXgxK3Oc>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `11.- Curso Python - Condicionales <https://www.youtube.com/watch?v=BJXCnAd6pdM>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_VYXdpjCZojA:
+.. _anexos_u6Hqs0bL_Ew:
 
-.. figure:: ../_images/youtube/VYXdpjCZojA.jpg
+.. figure:: ../_static/images/youtube/u6Hqs0bL_Ew.jpg
+    :target: https://www.youtube.com/watch?v=u6Hqs0bL_Ew
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 13 - Clases y Objetos <https://www.youtube.com/watch?v=VYXdpjCZojA>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `12.- Curso Python - While <https://www.youtube.com/watch?v=u6Hqs0bL_Ew>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_87s8XQbUv1k:
+.. _anexos_aqnjB3dydik:
 
-.. figure:: ../_images/youtube/87s8XQbUv1k.jpg
+.. figure:: ../_static/images/youtube/aqnjB3dydik.jpg
+    :target: https://www.youtube.com/watch?v=aqnjB3dydik
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 25 - Comprensión de Listas <https://www.youtube.com/watch?v=87s8XQbUv1k>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `13.- Curso Python - For <https://www.youtube.com/watch?v=aqnjB3dydik>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_tvHbC_OZV14:
+.. _anexos_Z-8Khdd2BUQ:
 
-.. figure:: ../_images/youtube/tvHbC_OZV14.jpg
+.. figure:: ../_static/images/youtube/Z-8Khdd2BUQ.jpg
+    :target: https://www.youtube.com/watch?v=Z-8Khdd2BUQ
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 26 - Generadores <https://www.youtube.com/watch?v=tvHbC_OZV14>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `14.- Curso Python - List Comprehension <https://www.youtube.com/watch?v=Z-8Khdd2BUQ>`_, cortesía de `CodigoFacilito.com`_.
 
 
-.. _anexos_TaIWx9paNIA:
+.. _anexos_hF85etcCghY:
 
-.. figure:: ../_images/youtube/TaIWx9paNIA.jpg
+.. figure:: ../_static/images/youtube/hF85etcCghY.jpg
+    :target: https://www.youtube.com/watch?v=hF85etcCghY
     :align: center
-    :scale: 60%
-    :width: 60%
 
-    Vídeo `Tutorial Python 27 - Decoradores <https://www.youtube.com/watch?v=TaIWx9paNIA>`_, cortesía de `CodigoFacilito.com`_.
+    Vídeo `15.- Curso Python - Funciones parte 1 <https://www.youtube.com/watch?v=hF85etcCghY>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_vMTV0hY2jio:
+
+.. figure:: ../_static/images/youtube/vMTV0hY2jio.jpg
+    :target: https://www.youtube.com/watch?v=vMTV0hY2jio
+    :align: center
+
+    Vídeo `16.- Curso Python - Funciones parte 2 <https://www.youtube.com/watch?v=vMTV0hY2jio>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_munC0mVXPWk:
+
+.. figure:: ../_static/images/youtube/munC0mVXPWk.jpg
+    :target: https://www.youtube.com/watch?v=munC0mVXPWk
+    :align: center
+
+    Vídeo `17.- Curso Python - Variables Globales <https://www.youtube.com/watch?v=munC0mVXPWk>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_PeWKpuFpGZA:
+
+.. figure:: ../_static/images/youtube/PeWKpuFpGZA.jpg
+    :target: https://www.youtube.com/watch?v=PeWKpuFpGZA
+    :align: center
+
+    Vídeo `18.- Curso Python - Argumentos <https://www.youtube.com/watch?v=PeWKpuFpGZA>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_cJ9zcR1uTt8:
+
+.. figure:: ../_static/images/youtube/cJ9zcR1uTt8.jpg
+    :target: https://www.youtube.com/watch?v=cJ9zcR1uTt8
+    :align: center
+
+    Vídeo `19.- Curso Python - Lambdas <https://www.youtube.com/watch?v=cJ9zcR1uTt8>`_, cortesía de `CodigoFacilito.com`_.
+
+
+
+
+.. _anexos_S0Lfm_rEQ2A:
+
+.. figure:: ../_static/images/youtube/S0Lfm_rEQ2A.jpg
+    :target: https://www.youtube.com/watch?v=S0Lfm_rEQ2A
+    :align: center
+
+    Vídeo `20.- Curso Python - Funciones Anidadas <https://www.youtube.com/watch?v=S0Lfm_rEQ2A>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_c9J7FHLjBds:
+
+.. figure:: ../_static/images/youtube/c9J7FHLjBds.jpg
+    :target: https://www.youtube.com/watch?v=c9J7FHLjBds
+    :align: center
+
+    Vídeo `21.- Curso Python - Decoradores <https://www.youtube.com/watch?v=c9J7FHLjBds>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_536fB1qvSeE:
+
+.. figure:: ../_static/images/youtube/536fB1qvSeE.jpg
+    :target: https://www.youtube.com/watch?v=536fB1qvSeE
+    :align: center
+
+    Vídeo `22.- Curso Python - Generadores <https://www.youtube.com/watch?v=536fB1qvSeE>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_2KL-mJ4n1k4:
+
+.. figure:: ../_static/images/youtube/2KL-mJ4n1k4.jpg
+    :target: https://www.youtube.com/watch?v=2KL-mJ4n1k4
+    :align: center
+
+    Vídeo `23.- Curso Python - Docstring <https://www.youtube.com/watch?v=2KL-mJ4n1k4>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos__4QUMUlI2S8:
+
+.. figure:: ../_static/images/youtube/_4QUMUlI2S8.jpg
+    :target: https://www.youtube.com/watch?v=_4QUMUlI2S8
+    :align: center
+
+    Vídeo `24.- Curso Python - Módulo <https://www.youtube.com/watch?v=_4QUMUlI2S8>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_S0wU4tqP6Bs:
+
+.. figure:: ../_static/images/youtube/S0wU4tqP6Bs.jpg
+    :target: https://www.youtube.com/watch?v=S0wU4tqP6Bs
+    :align: center
+
+    Vídeo `25.- Curso Python - Módulos Parte 2 <https://www.youtube.com/watch?v=S0wU4tqP6Bs>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_t4Vsv8WAnUM:
+
+.. figure:: ../_static/images/youtube/t4Vsv8WAnUM.jpg
+    :target: https://www.youtube.com/watch?v=t4Vsv8WAnUM
+    :align: center
+
+    Vídeo `26.- Curso Python - Estructura Módulo <https://www.youtube.com/watch?v=t4Vsv8WAnUM>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_yTvw1dVcER8:
+
+.. figure:: ../_static/images/youtube/yTvw1dVcER8.jpg
+    :target: https://www.youtube.com/watch?v=yTvw1dVcER8
+    :align: center
+
+    Vídeo `27.- Curso Python - Name <https://www.youtube.com/watch?v=yTvw1dVcER8>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_44D-QCg-YEw:
+
+.. figure:: ../_static/images/youtube/44D-QCg-YEw.jpg
+    :target: https://www.youtube.com/watch?v=44D-QCg-YEw
+    :align: center
+
+    Vídeo `28.- Curso Python - Librerías <https://www.youtube.com/watch?v=44D-QCg-YEw>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_l7Aj6RhJx8g:
+
+.. figure:: ../_static/images/youtube/l7Aj6RhJx8g.jpg
+    :target: https://www.youtube.com/watch?v=l7Aj6RhJx8g
+    :align: center
+
+    Vídeo `29.- Curso Python - Argv <https://www.youtube.com/watch?v=l7Aj6RhJx8g>`_, cortesía de `CodigoFacilito.com`_.
+
+.. _anexos_sNTowPB4YHI:
+
+.. figure:: ../_static/images/youtube/sNTowPB4YHI.jpg
+    :target: https://www.youtube.com/watch?v=sNTowPB4YHI
+    :align: center
+
+    Vídeo `30.- Curso Python - Excepciones <https://www.youtube.com/watch?v=sNTowPB4YHI>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_vdz9HGfFguc:
+
+.. figure:: ../_static/images/youtube/vdz9HGfFguc.jpg
+    :target: https://www.youtube.com/watch?v=vdz9HGfFguc
+    :align: center
+
+    Vídeo `31.- Curso Python - Clases y Objetos <https://www.youtube.com/watch?v=vdz9HGfFguc>`_, cortesía de `CodigoFacilito.com`_.

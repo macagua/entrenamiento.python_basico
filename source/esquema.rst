@@ -116,8 +116,8 @@ Lección 9 - Manejos de errores y orientación a objetos
 ``finally``, y ``raise``) y el paradigma de programación orientada a objetos (clases,
 herencia simple y múltiple, sobrecarga de métodos).
 
-**Práctica:** Ejemplo de creación de clases, atributos, comportamientos, manipulación
-de errores en Python y explorar el resultado en un paquete en el sistema de archivos.
+**Práctica:** Creación de clases, atributos, comportamientos, manipulación de errores
+en Python y explorar el resultado en un paquete en el sistema de archivos.
 
 
 .. _esquema_entrenamiento_leccion10:
