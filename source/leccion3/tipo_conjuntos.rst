@@ -452,12 +452,12 @@ usando otro tipo :ref:`diccionario <python_dict>`:
 .. code-block:: pycon
 
     >>> diccionario = {"key": 1, 2: "lock"}
-    >>> diccionario.viewitems()
-    dict_items([(2, 'lock'), ('key', 1)])
+    >>> diccionario.items()
+    dict_items([('key', 1), (2, 'lock')])
     >>> conjunto = {"a", "b"}
     >>> conjunto.update(diccionario)
     >>> conjunto
-    set(['a', 2, 'b', 'key'])
+    {'a', 2, 'key', 'b'}
 
 
 .. _python_set_convertir:
@@ -487,6 +487,7 @@ A continuación, se presentan un ejemplo de conjuntos ``set``:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_conjuntos.py
     :language: python
+    :linenos:
     :lines: 7-29
 
 
@@ -502,8 +503,8 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
     frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
 Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y deben
-ser objetos inmutables: números, cadenas de caracteres, tuplas y sets inmutables,
-pero no listas ni sets mutables.
+ser objetos inmutables: :ref:`números <python_int>`, :ref:`cadena de caracteres <python_str>`, :ref:`tuplas <python_tuple>` y sets inmutables,
+pero no :ref:`listas <python_list>` ni sets mutables.
 
 
 Ayuda integrada

@@ -13,7 +13,7 @@ Variables
 .........
 
 Es un nombre que se refiere a un objeto que reside en la memoria. El objeto puede ser
-de alguno de los tipos vistos (número o cadena de texto), o alguno de los otros tipos
+de alguno de los tipos vistos (número o :ref:`cadena de caracteres <python_str>`), o alguno de los otros tipos
 existentes en Python.
 
 Cada variable debe tener un nombre único llamado identificador. Eso es muy de ayuda
@@ -182,12 +182,14 @@ Crear un archivo llamado ``constantes.py`` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/constantes.py
     :language: python
+    :linenos:
     :lines: 4-8
 
 Crear un archivo llamado ``main.py`` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/main.py
     :language: python
+    :linenos:
     :lines: 2-12
 
 Luego ejecuta el programa de la siguiente forma:
@@ -367,7 +369,7 @@ define la asignación. A continuación unos ejemplos donde se inicializan variab
     >>> diccionario = {"nombre": "Leonardo", "apellido": "Caballero"}
 
 Luego de inicializar las variables del código anterior, usted puede usar la función
-:ref:`vars() <python_fun_vars>` para obtener un diccionario conteniendo ámbito
+:ref:`vars() <python_fun_vars>` para obtener un :ref:`diccionario <python_dict>` conteniendo ámbito
 actual de las variables, ejecutando:
 
 .. code-block:: pycon
@@ -407,7 +409,7 @@ izquierda a derecha.
     '__package__': None, '__name__': '__main__', '__doc__': None}
 
 Como pudo ver en el ejemplo anterior que elimino las referencias a las variables ``numero``,
-``lista``, ``tupla``, ``diccionario`` que incluso al volver a la función
+:ref:`lista <python_list>`, :ref:`tupla <python_tuple>`, :ref:`diccionario <python_dict>` que incluso al volver a la función
 :ref:`vars() <python_fun_vars>` ya no están en el ámbito de variables disponibles.
 
 La eliminación de un nombre elimina el enlace de ese nombre del espacio de nombres

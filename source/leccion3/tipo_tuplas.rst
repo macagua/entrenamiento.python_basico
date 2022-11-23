@@ -44,9 +44,9 @@ aparece en la tupla.
 index()
 ~~~~~~~
 
-Comparte el mismo método :ref:`index() <python_list_mtd_index>` del tipo lista.
+Comparte el mismo método :ref:`index() <python_list_mtd_index>` del tipo :ref:`lista <python_list>`.
 Este método recibe un elemento como argumento, y devuelve el índice de su primera
-aparición en la tupla.
+aparición en la :ref:`tupla <python_tuple>`.
 
 .. code-block:: pycon
 
@@ -90,6 +90,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
+    :linenos:
     :lines: 7-7
 
 
@@ -97,6 +98,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
+    :linenos:
     :lines: 10-10
 
 
@@ -104,6 +106,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
+    :linenos:
     :lines: 13-13
 
 
@@ -112,7 +115,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 Una tarea común es iterar sobre una secuencia mientras cuidas el seguimiento de la
 numeración de un elemento.
 
-Podría usar un bucle ``while`` con un contador o un bucle ``for`` usando la función
+Podría usar un bucle :ref:`while <python_bucle_while>` con un contador o un bucle :ref:`for <python_bucle_for>` usando la función
 :ref:`range() <python_fun_range>` y la función :ref:`len() <python_fun_len>`:
 
 .. code-block:: pycon
@@ -146,6 +149,7 @@ a una BD:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
+    :linenos:
     :lines: 18-43
 
 Este script da como resultado el siguiente mensaje:

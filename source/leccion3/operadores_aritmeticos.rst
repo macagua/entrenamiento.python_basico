@@ -118,7 +118,7 @@ entero coma flotante o real:
 
     r = float(3) / 2
 
-Esto es así porque cuando se mezclan tipos de números, Python convierte todos los
+Esto es así porque cuando se mezclan tipos de :ref:`números <python_int>`, Python convierte todos los
 operandos al tipo más complejo de entre los tipos de los operandos.
 
 
@@ -182,6 +182,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 3
 
 
@@ -189,6 +190,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 6
 
 
@@ -197,6 +199,7 @@ del lado izquierdo.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 9
 
 
@@ -205,6 +208,7 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 12
 
 
@@ -213,6 +217,7 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 15
 
 
@@ -220,6 +225,7 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 18
 
 
@@ -227,6 +233,7 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 21
 
 
@@ -236,6 +243,7 @@ decimal.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 25
 
 
@@ -244,6 +252,7 @@ por el operador del lado derecho y devuelve el resto.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
+    :linenos:
     :lines: 29
 
 ----

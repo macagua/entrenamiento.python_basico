@@ -108,6 +108,7 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 
 .. literalinclude:: ../../recursos/leccion8/distribucion/MANIFEST.in
     :language: text
+    :linenos:
     :lines: 1-7
 
 
@@ -135,6 +136,7 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 
 .. literalinclude:: ../../recursos/leccion8/distribucion/setup.py
     :language: python
+    :linenos:
     :lines: 1-39
 
 Entonces debe cree la siguiente estructura de directorios, ya hecha para seguir

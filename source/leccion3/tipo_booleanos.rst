@@ -26,11 +26,11 @@ como ``False``:
 
 - :ref:`None <python_obj_none>`.
 
-- :ref:`Número cero <python_numericos>` en todos los tipos.
+- :ref:`Número cero <python_int>` en todos los tipos.
 
-- :ref:`Cadena de caracteres <python_str>` vaciás.
+- :ref:`Cadena de caracteres <python_str>` vacías.
 
-- Contenedores, incluyendo *cadenas de caracteres*, :ref:`tuplas <python_tuple>`,
+- Contenedores, incluyendo :ref:`cadenas de caracteres <python_str>`, :ref:`tuplas <python_tuple>`,
   :ref:`listas <python_list>`, :ref:`diccionarios <python_dict>` y
   :ref:`conjuntos <python_set>` mutables e inmutables.
 
@@ -121,6 +121,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
     :language: python
+    :linenos:
     :lines: 6-8
 
 
@@ -128,6 +129,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_booleanos.py
     :language: python
+    :linenos:
     :lines: 14-19
 
 

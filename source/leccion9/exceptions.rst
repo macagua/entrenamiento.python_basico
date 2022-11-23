@@ -30,7 +30,7 @@ nunca son equivalentes, aunque tengan el mismo nombre.
 Las excepciones internas enumeradas a continuación pueden ser generadas por el
 intérprete o por funciones internas. Excepto en los casos mencionados, tienen un
 ``valor asociado`` indicando en detalle la causa del error. Este valor puede ser
-una cadena o tupla de varios elementos informativos (es decir, un código de error
+una cadena o :ref:`tupla <python_tuple>` de varios elementos informativos (es decir, un código de error
 y una cadena que explica el código). El valor asociado es el segundo argumento a
 la sentencia ``raise``. En las cadenas de excepción, el propio valor asociado se
 almacenará en la variable nombrada como el segundo argumento de la sentencia ``except``
@@ -68,7 +68,7 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
     argumentos al constructor. Si se usa como secuencia, accede a los argumentos
     proporcionados al constructor (útil para compatibilidad con código antiguo). Los
     argumentos también están disponibles en el atributo ``args`` de la instancia,
-    como tupla.
+    como :ref:`tupla <python_tuple>`.
 
 
 .. _python_exception_standarderror:
@@ -93,7 +93,7 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
 
 ``LookupError``
     La clase base de las excepciones lanzadas cuando una clave o índice utilizado en
-    una correspondencia (diccionario) o secuencia son incorrectos:
+    una correspondencia (:ref:`diccionario <python_dict>`) o secuencia son incorrectos:
     :ref:`IndexError <python_exception_indexerror>`, :ref:`KeyError <python_exception_keyerror>`.
     Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
@@ -103,21 +103,21 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
 ``EnvironmentError``
     La clase base de las excepciones que pueden ocurrir fuera del sistema Python:
     :ref:`IOError <python_exception_ioerror>`, :ref:`OSError <python_exception_oserror>`.
-    Cuando se crean excepciones de este tipo con una tupla de dos valores, el
+    Cuando se crean excepciones de este tipo con una :ref:`tupla <python_tuple>` de dos valores, el
     primer elemento queda disponible en el atributo ``errno`` de la instancia (se
     supone que es un número de error) y el segundo en el atributo ``strerror`` (suele
-    ser el mensaje de error asociado). La propia tupla está disponible en el atributo
+    ser el mensaje de error asociado). La propia :ref:`tupla <python_tuple>` está disponible en el atributo
     ``args``.
-    Cuando se instancia una excepción ``EnvironmentError`` con una tupla de tres
+    Cuando se instancia una excepción ``EnvironmentError`` con una :ref:`tupla <python_tuple>` de tres
     elementos, los primeros dos quedan disponibles como en el caso de dos elementos y
     el tercero queda en el atributo ``filename``. Sin embargo, por compatibilidad con
-    sistemas anteriores, el atributo ``args`` contiene sólo una tupla de dos elementos
+    sistemas anteriores, el atributo ``args`` contiene sólo una :ref:`tupla <python_tuple>` de dos elementos
     de los dos primeros argumentos del constructor.
     El atributo ``filename`` es :ref:`None <python_obj_none>` cuando se cree la excepción
     con una cantidad de argumentos diferente de 3. Los atributos ``errno`` y ``strerror``
     son también ``None`` cuando la instancia no se cree con 2 ó 3 argumentos. En este
     último caso, ``args`` contiene los argumentos del constructor tal cual, en forma de
-    tupla. Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
+    :ref:`tupla <python_tuple>`. Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
 
 Las siguientes excepciones son las realmente lanzadas.
@@ -209,7 +209,7 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_keyerror:
 
 ``KeyError``
-    Se lanza cuando no se encuentra una clave de una correspondencia (diccionario) en
+    Se lanza cuando no se encuentra una clave de una correspondencia (:ref:`diccionario <python_dict>`) en
     el conjunto de claves existentes. Deriva de la clase raíz
     :ref:`LookupError <python_exception_lookuperror>`.
 
@@ -304,7 +304,7 @@ Las siguientes excepciones son las realmente lanzadas.
     Si se usan excepciones de clase, las instancias de esta clase tienen disponibles
     los atributos ``filename`` (nombre del archivo), ``lineno`` (nº de línea),
     ``offset`` (nº de columna) y ``text`` (texto), que ofrecen un acceso más fácil a
-    los detalles. En las excepciones de cadena, el valor asociado suele ser una tupla
+    los detalles. En las excepciones de cadena, el valor asociado suele ser una :ref:`tupla <python_tuple>`
     de la forma (mensaje, (nombreArchivo, numLinea, columna, texto)). En las excepciones
     de clase, ``str()`` sólo devuelve el mensaje. Deriva de la clase raíz
     :ref:`StandardError <python_exception_standarderror>`.

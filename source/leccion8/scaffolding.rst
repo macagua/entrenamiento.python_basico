@@ -11,7 +11,7 @@ Scaffolding en proyectos Python
     :Autor(es): Leonardo J. Caballero G.
     :Correo(s): :email:`leonardoc@plone.org`
     :Compatible con: Python 3.7 o versiones superiores
-    :Fecha: 11 de Enero de 2021
+    :Fecha: 23 de Noviembre de 2022
 
 .. _scaffolding_python:
 
@@ -41,7 +41,7 @@ ejecutando el siguiente comando:
 
 .. code-block:: console
 
-  (venv)$ pip install PasteScript
+    (venv)$ pip install PasteScript
 
 .. note::
 
@@ -56,99 +56,101 @@ tiene disponible para usa, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-  (venv)$ paster create --list-templates
-    Available templates:
-      basic_package:       A basic setuptools-enabled package
-      paste_deploy:        A web application deployed through paste.deploy
+    (venv)$ paster create --list-templates
+      Available templates:
+        basic_package:       A basic setuptools-enabled package
+        paste_deploy:        A web application deployed through paste.deploy
 
 Usted puede usar el comando :command:`paster` para crear paquetes Python.
 
 .. code-block:: console
 
-  (venv)$ paster create -t basic_package mipaquetepython
+    (venv)$ paster create -t basic_package mipaquetepython
 
-    Selected and implied templates:
+      Selected and implied templates:
 
-      PasteScript#basic_package  A basic setuptools-enabled package
+        PasteScript#basic_package  A basic setuptools-enabled package
 
-    Variables:
-      egg:      mipaquetepython
-      package:  mipaquetepython
-      project:  mipaquetepython
-    Enter version (Version (like 0.1)) ['']: 0.1
-    Enter description (One-line description of the package) ['']: Mi Paquete Básico
-    Enter long_description (Multi-line description (in reST)) ['']: Mi Paquete Básico para demostrar el uso de PasteScript
-    Enter keywords (Space-separated keywords/tags) ['']: PasteScript Basic Package Demo
-    Enter author (Author name) ['']: Pedro Picapiedra
-    Enter author_email (Author email) ['']: pedro@acme.com
-    Enter url (URL of homepage) ['']: https://github.com/pyve/mipaquetepython
-    Enter license_name (License name) ['']: GPL
-    Enter zip_safe (True/False: if the package can be distributed as a .zip file) [False]:
-    Creating template basic_package
-    Creating directory ./mipaquetepython
-      Recursing into +package+
-        Creating ./mipaquetepython/mipaquetepython/
-        Copying __init__.py to
-        ./mipaquetepython/mipaquetepython/__init__.py
-      Copying setup.cfg to ./mipaquetepython/setup.cfg
-      Copying setup.py_tmpl to ./mipaquetepython/setup.py
-    Running /home/macagua/virtualenv/venv/bin/python setup.py egg_info
+      Variables:
+        egg:      mipaquetepython
+        package:  mipaquetepython
+        project:  mipaquetepython
+      Enter version (Version (like 0.1)) ['']: 0.1
+      Enter description (One-line description of the package) ['']: Mi Paquete Básico
+      Enter long_description (Multi-line description (in reST)) ['']: Mi Paquete Básico para demostrar el uso de PasteScript
+      Enter keywords (Space-separated keywords/tags) ['']: PasteScript Basic Package Demo
+      Enter author (Author name) ['']: Pedro Picapiedra
+      Enter author_email (Author email) ['']: pedro@acme.com
+      Enter url (URL of homepage) ['']: https://github.com/pyve/mipaquetepython
+      Enter license_name (License name) ['']: GPL
+      Enter zip_safe (True/False: if the package can be distributed as a .zip file) [False]:
+      Creating template basic_package
+      Creating directory ./mipaquetepython
+        Recursing into +package+
+          Creating ./mipaquetepython/mipaquetepython/
+          Copying __init__.py to
+          ./mipaquetepython/mipaquetepython/__init__.py
+        Copying setup.cfg to ./mipaquetepython/setup.cfg
+        Copying setup.py_tmpl to ./mipaquetepython/setup.py
+      Running /home/macagua/virtualenv/venv/bin/python setup.py egg_info
 
 Usted puede verificar el paquete previamente creado y observará como este
 paquete básico ha habilitado el `Setuptools`_.
 
 .. code-block:: console
 
-  (venv)$ tree mipaquetepython/
-    mipaquetepython/
-    |-- mipaquetepython
-    |   `-- __init__.py
-    |-- mipaquetepython.egg-info
-    |   |-- PKG-INFO
-    |   |-- SOURCES.txt
-    |   |-- dependency_links.txt
-    |   |-- entry_points.txt
-    |   |-- not-zip-safe
-    |   `-- top_level.txt
-    |-- setup.cfg
-    `-- setup.py
+    (venv)$ tree mipaquetepython/
+      mipaquetepython/
+      |-- mipaquetepython
+      |   `-- __init__.py
+      |-- mipaquetepython.egg-info
+      |   |-- PKG-INFO
+      |   |-- SOURCES.txt
+      |   |-- dependency_links.txt
+      |   |-- entry_points.txt
+      |   |-- not-zip-safe
+      |   `-- top_level.txt
+      |-- setup.cfg
+      `-- setup.py
 
 Para instalar este paquete ejecute el siguiente comando:
 
 .. code-block:: console
 
-  (venv)$ cd mipaquetepython/mipaquetepython/
-  (venv)$ vim app.py
+    (venv)$ cd mipaquetepython/mipaquetepython/
+    (venv)$ vim app.py
 
 Escriba un simple código que solicita un valor y luego lo muestra:
 
 .. code-block:: python
+    :linenos:
 
-  var = input("Introduzca alguna frase: ")
-  print("Usted introdujo: ", var)
+    var = input("Introduzca alguna frase: ")
+    print("Usted introdujo: ", var)
 
 Guarde los cambios en el archivo :file:`app.py`, luego importe su aplicación
 :file:`app.py` en el archivo :file:`__init__.py` con el siguiente código fuente:
 
 .. code-block:: python
+    :linenos:
 
-  from mipaquetepython import app
+    from mipaquetepython import app
 
 Para comprobar su instalación ejecute el siguiente comando:
 
 .. code-block:: console
 
-  (venv)$ python
+    (venv)$ python
 
 Y realice una importación del paquete ``mipaquetepython`` ejecutando
 el siguiente comando:
 
 .. code-block:: pycon
 
-  >>> import mipaquetepython
-  Introduzca alguna frase: Esta cadena
-  Usted introdujo:  Esta cadena
-  >>> exit()
+    >>> import mipaquetepython
+    Introduzca alguna frase: Esta cadena
+    Usted introdujo:  Esta cadena
+    >>> exit()
 
 De esta forma tienes creado un :term:`paquete Egg` Python.
 

@@ -14,9 +14,9 @@
     7
 """
 
-# varible "valor1" guarda un valor entero, varible "valor2" guarda un valor cadena
+# variable "valor1" guarda un valor entero, variable "valor2" guarda un valor cadena
 valor1, valor2 = 2, "5"
-# se usa el metodo int() para convertir a entero
+# se usa el método int() para convertir a entero
 total = valor1 + int(valor2)
-# se usa el metodo str() para convertir a cadena
+# se usa el método str() para convertir a cadena
 print("El total es: " + str(total))

@@ -33,6 +33,7 @@ directorio).
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/principal.py
     :language: python
+    :linenos:
     :lines: 1-10
 
 Seguidamente dentro del directorio ``tostadas_pipo``, cree otro directorio
@@ -44,12 +45,14 @@ llamado ``utilidades``, dentro de este, cree los siguientes archivos:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/calculos.py
     :language: python
+    :linenos:
     :lines: 1-8
 
 - Archivo ``impuestos.py`` incluye el siguiente código:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/impuestos.py
     :language: python
+    :linenos:
     :lines: 1-7
 
 
@@ -72,6 +75,7 @@ se realiza de las siguientes formas:
 - Importar todos los módulo el sub-paquete ``utilidades``, ejecutando:
 
 .. code-block:: python
+    :linenos:
 
     import tostadas_pipo.utilidades
     from tostadas_pipo import utilidades
@@ -82,6 +86,7 @@ se realiza de las siguientes formas:
   ejecutando:
 
 .. code-block:: python
+    :linenos:
 
     from tostadas_pipo.utilidades import calculos
 
@@ -90,6 +95,7 @@ se realiza de las siguientes formas:
   sub-paquete ``utilidades``, ejecutando:
 
 .. code-block:: python
+    :linenos:
 
     from tostadas_pipo.utilidades.impuestos import impuesto_iva
 
@@ -100,6 +106,7 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/calculo_factura_pipo.py
     :language: python
+    :linenos:
     :lines: 1-9
 
 ----
@@ -140,8 +147,3 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
-
-.. raw:: html
-   :file: ../_templates/partials/soporte_profesional.html
-
-.. disqus::

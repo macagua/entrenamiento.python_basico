@@ -47,9 +47,9 @@ el final del objeto de destino (o con el tamaño especificado).
 
 El búfer en este caso anterior es una sub-cadena, inicia en la posición 5 con un
 ancho de 5 caracteres y es no toma espacio de almacenamiento extra - eso referencia
-a ``cortar`` una cadena de caracteres.
+a ``cortar`` una :ref:`cadena de caracteres <python_str>`.
 
-Este ejemplo anterior no es muy útil para cadenas de caracteres cortas como esta,
+Este ejemplo anterior no es muy útil para :ref:`cadena de caracteres <python_str>` cortas como esta,
 pero eso puede ser necesario cuando usa un gran numero de data. Este ejemplo puede
 usar un tipo mutable ``bytearray()``:
 
@@ -87,7 +87,7 @@ Python.
 En general un ``slice`` tomará extra almacenamiento, entonces, si ``cadena[5:10]`` será
 una copia. Si usted define ``cadena_buffer = cadena[5:10]`` y entonces ``del cadena``,
 eso liberaría la memoria que fue tomada por ``cadena``, proveyendo que ``cadena_buffer``
-fue copiada. (Para usar esto usted necesita una gran cadena de caracteres, en este ejemplo
+fue copiada. (Para usar esto usted necesita una gran :ref:`cadena de caracteres <python_str>`, en este ejemplo
 ``cadena`` y rastrear el uso de la memoria de Python). Es sin embargo mucho más eficiente
 que hacer la copia si no existe mucha data involucrada.
 
@@ -156,7 +156,9 @@ La sintaxis es la siguiente:
     >>> slice(start, stop[, step])
 
 
-.. todo:: TODO escribir sobre esta clase integrada.
+.. comments:
+
+    .. todo:: TODO escribir sobre esta clase integrada.
 
 
 .. _python_cls_staticmethod:
@@ -487,7 +489,7 @@ read()
 
 El método ``read()`` permite leer el contenido del archivo. El argumento es opcional
 y si no se especifica (o es -1) devuelve el contenido de todo el archivo. Una vez que
-se leyó todo el archivo, una nueva llamada a la función devuelve una cadena vacía ('').
+se leyó todo el archivo, una nueva llamada a la función devuelve una :ref:`cadena vacía <python_str>` ('').
 
 .. code-block:: pycon
 
@@ -517,7 +519,7 @@ readline()
 El método ``readline()`` permite leer una sola línea del archivo, devuelve al final de
 la línea el carácter de nueva línea y solo se omite en la última línea del archivo (si
 no termina con el carácter de nueva línea). Esto hace que el valor de retorno no sea
-ambiguo. Si devuelve una cadena de caracteres vacía se alcanzó el fin del archivo,
+ambiguo. Si devuelve una :ref:`cadena de caracteres <python_str>` vacía se alcanzó el fin del archivo,
 mientras que una línea en blanco se representa con un carácter de nueva línea.
 
 .. code-block:: pycon
@@ -535,7 +537,7 @@ mientras que una línea en blanco se representa con un carácter de nueva línea
 readlines()
 """""""""""
 
-El método ``readlines()`` devuelve una lista que contiene todas las líneas del archivo.
+El método ``readlines()`` devuelve una :ref:`lista <python_list>` que contiene todas las líneas del archivo.
 
 .. code-block:: pycon
 
@@ -700,11 +702,11 @@ actual. La disponibilidad de esta función depende de la versión del sistema op
 write()
 """""""
 
-El método ``write()`` permite escribir el contenido de la cadena de texto al archivo,
+El método ``write()`` permite escribir el contenido de la :ref:`cadena de texto <python_str>` al archivo,
 y devuelve la cantidad de caracteres escritos.
 
-Para escribir algo que no sea una cadena de caracteres, antes se debe convertir a
-cadena de caracteres.
+Para escribir algo que no sea una :ref:`cadena de caracteres <python_str>`, antes se debe convertir a
+:ref:`cadena de caracteres <python_str>`.
 
 .. code-block:: pycon
 
@@ -919,7 +921,9 @@ Los métodos de clase son diferentes a los métodos estáticos ``C++`` o ``Java`
 quieres eso, mira la clase :ref:`staticmethod <python_cls_staticmethod>` integrada
 en el interprete.
 
-.. todo:: TODO terminar de escribir sobre la clase integrada classmethod.
+.. comments:
+
+    .. todo:: TODO terminar de escribir sobre la clase integrada classmethod.
 
 
 .. _python_cls_memoryview:

@@ -43,7 +43,7 @@ Introducción a Python
 
 - `Wikipedia - Python <https://es.wikipedia.org/wiki/Python>`_.
 
-- Ver el anexo :numref:`anexos_CjmzDHMHxwU` sobre la *introducción al Lenguaje de Programación*.
+- Ver el anexo :numref:`anexos_mGH1uooFhGs` sobre la *introducción al Lenguaje de Programación*.
 
 
 Instalación
@@ -53,7 +53,7 @@ Instalación
 
 - `PyPI - the Python Package Index <https://pypi.org/>`_.
 
-- Ver el anexo :numref:`anexos_VTykmPa2KY` sobre la *instalación*.
+- Ver el anexo :numref:`anexos_Sk59ji0hZFg` sobre la *instalación*.
 
 
 Su primer programa
@@ -61,7 +61,7 @@ Su primer programa
 
 - `Getting Started with Python <https://www.cs.utexas.edu/~mitra/bytes/start.html>`_.
 
-- Ver el anexo :numref:`anexos_OtJEj7N9T6k` sobre *su primer programa*.
+- Ver el anexo :numref:`anexos_vDa5Vt002IY` sobre *Variables*.
 
 
 .. _lectura_extras_leccion2:
@@ -93,12 +93,15 @@ Lección 3 - Tipos y estructuras de datos
 
 - `Python Data Types <https://www.programiz.com/python-programming/variables-datatypes>`_.
 
+
 Variables y constantes
 ......................
 
 - `Python Variables, Constants and Literals <https://www.programiz.com/python-programming/variables-constants-literals>`_.
 
-- `Built-in Constants — Python 3.7 documentation <https://docs.python.org/es/3.7/library/constants.html>`_.
+- `Built-in Constants - Python 3.7 documentation <https://docs.python.org/es/3.7/library/constants.html>`_.
+
+- Ver el anexo :numref:`anexos_vDa5Vt002IY` sobre *Variables*.
 
 
 Operadores aritméticos, tipo enteros y reales
@@ -108,13 +111,13 @@ Operadores aritméticos, tipo enteros y reales
 
 - `Introducción a la programación en Python - clase 1 <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/2014/CursoPython_clase01.html>`_.
 
-- Ver el anexo :numref:`anexos_ssnkfbBbcuw` sobre los *operadores aritméticos, tipo enteros y reales*.
+- Ver el anexo :numref:`anexos_9YaC2_GdmJ8` sobre los *tipo enteros*.
 
 
 Tipo booleanos y cadenas de caracteres
 ......................................
 
-- Ver el anexo :numref:`anexos_ZrxcqbFYjiw` sobre los *tipo booleanos y cadenas de caracteres*.
+- Ver el anexo :numref:`anexos_ZqGynv-wgWg` sobre los *cadenas de caracteres*.
 
 
 Tipo listas
@@ -124,18 +127,22 @@ Tipo listas
 
 - `Listas I - clase 3 - Introducción a la programación en Python <https://www.eumus.edu.uy/eme/ensenanza/electivas/python/2014/CursoPython_clase03.html#Listas-I>`_.
 
+- Ver el anexo :numref:`anexos_sQ9iP7HhYJo` sobre los *tipo Listas*.
+
 
 Tipo tuplas
 ...........
 
 - `Seguimiento de una enumeración - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#seguimiento-de-una-enumeracion>`_.
 
+- Ver el anexo :numref:`anexos_DI8IHc3V-HQ` sobre los *tipo Tuplas*.
 
 Tipo diccionarios
 .................
 
 - `Bucle sobre un diccionario - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#bucle-sobre-un-diccionario>`_.
 
+- Ver el anexo :numref:`anexos__UELgsIxE7g` sobre los *tipo Diccionarios*.
 
 .. _lectura_extras_leccion4:
 
@@ -156,13 +163,14 @@ Condicional if
 
 - `Expresiones condicionales - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#expresiones-condicionales>`_.
 
-- Ver el anexo :numref:`anexos_hLqKvB7tGWk` sobre las *sentencias condicionales*.
+- Ver el anexo :numref:`anexos_BJXCnAd6pdM` sobre las *sentencias condicionales*.
 
 
 Operadores lógicos
 ..................
 
-- Ver el anexo :numref:`anexos_ZrxcqbFYjiw` sobre los *tipo booleanos y cadenas de caracteres*.
+.. todo::
+    TODO Terminar de escribir esta sección.
 
 
 Bucle while
@@ -172,9 +180,9 @@ Bucle while
 
 - `Ciclo while en Python <http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html>`_.
 
-- Ver el anexo :numref:`anexos_IyI2ZuOq_xQ` sobre los *bucles*.
+- Ver el anexo :numref:`anexos_u6Hqs0bL_Ew` sobre los *bucles While*.
 
-.. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=IyI2ZuOq_xQ
+.. _`Tutorial Python 11 - Bucles`: https://www.youtube.com/watch?v=I1a7piALq60
 
 
 Bucle for
@@ -182,7 +190,13 @@ Bucle for
 
 - Introducción a `Bucles 'for' <https://docs.python.org/es/3.7/tutorial/controlflow.html#la-sentencia-for>`_.
 
-- Ver el anexo :numref:`anexos_IyI2ZuOq_xQ` sobre los *bucles*.
+- Ver el anexo :numref:`anexos_aqnjB3dydik` sobre los *bucles For*.
+
+
+Iteradores
+..........
+
+- Ver el anexo :numref:`anexos_Z-8Khdd2BUQ` sobre *List Comprehension*.
 
 
 .. _lectura_extras_leccion5:
@@ -200,7 +214,19 @@ Funciones definidas por el usuario
 
 - `Funciones de orden superior <https://github.com/josuemontano/python_intro/wiki/Funciones-de-orden-superior>`_.
 
-- Ver el anexo :numref:`anexos__C7Uj7O5o_Q` sobre las *funciones*.
+- Ver el anexo :numref:`anexos_hF85etcCghY` sobre las *Funciones parte 1*.
+
+- Ver el anexo :numref:`anexos_vMTV0hY2jio` sobre las *Funciones parte 2*.
+
+- Ver el anexo :numref:`anexos_munC0mVXPWk` sobre las *Variables Globales*.
+
+- Ver el anexo :numref:`anexos_PeWKpuFpGZA` sobre las *Argumentos*.
+
+
+Decoradores
+...........
+
+- Ver el anexo :numref:`anexos_c9J7FHLjBds` sobre los *Decoradores*.
 
 
 Programación estructurada
@@ -218,11 +244,11 @@ Programación estructurada
 Lección 6 - Introspección a la depuración con pdb
 -------------------------------------------------
 
-- `pdb — The Python Debugger <https://docs.python.org/es/3.7/library/pdb.html>`_.
+- `pdb - The Python Debugger <https://docs.python.org/es/3.7/library/pdb.html>`_.
 
 - `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://claudiovz.github.io/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
 
-- Ver el anexo :numref:`anexos_N4NtB4r28h0` sobre el *Python Debugger*.
+- Ver el anexo :numref:`anexos_N4NtB4r28h0` sobre los *Depurando um programa Python com pdb*.
 
 
 .. _lectura_extras_leccion7:
@@ -237,10 +263,6 @@ Entrada / Salida en Python
 - `Python Programming / Input and Output <https://en.wikibooks.org/wiki/Python_Programming/Input_and_Output>`_.
 
 - `Python - Entrada / Salida. Ficheros <http://mundogeek.net/archivos/2008/04/02/python-entrada-salida-ficheros/>`_.
-
-- Ver el anexo :numref:`anexos_AzeUCuMvW6I` sobre la *entrada Estándar rawInput*.
-
-- Ver el anexo :numref:`anexos_JPXgxK3Oc` sobre la *salida Estándar rawInput*.
 
 
 Manipulación de archivos
@@ -259,6 +281,14 @@ Módulos Python
 ..............
 
 - `Reusando código: scripts y módulos - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/reusing_code.html>`_.
+
+- Ver el anexo :numref:`anexos__4QUMUlI2S8` sobre los *Módulos*.
+
+- Ver el anexo :numref:`anexos_S0wU4tqP6Bs` sobre los *Módulos Parte 2*.
+
+- Ver el anexo :numref:`anexos_t4Vsv8WAnUM` sobre la *Estructura del Módulo*.
+
+- Ver el anexo :numref:`anexos_yTvw1dVcER8` sobre los *Name*.
 
 
 Distribución de Software
@@ -285,13 +315,14 @@ Errores y excepciones
 
 - `Principales errores al comenzar con Python <http://www.cursosgis.com/principales-errores-al-comenzar-con-python/>`_.
 
+- Ver el anexo :numref:`anexos_sNTowPB4YHI` sobre *Excepciones*.
 
 Programación orientada a objetos
 ................................
 
 - `Programación orientada a objetos - Wikipedia <https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos>`_.
 
-- `Clases — Tutorial de Python v3.7 <https://docs.python.org/es/3.7/tutorial/classes.html>`_.
+- `Clases - Tutorial de Python v3.7 <https://docs.python.org/es/3.7/tutorial/classes.html>`_.
 
 - `Programación Orientada a Objetos (POO) - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/oop.html>`_.
 
@@ -299,25 +330,13 @@ Programación orientada a objetos
 
 - `What is the meaning of a single and a double underscore before an object name? <https://stackoverflow.com/questions/1301346/what-is-the-meaning-of-single-and-double-underscore-before-an-object-name>`_.
 
-- Ver el anexo :numref:`anexos_VYXdpjCZojA` sobre *Clases y Objetos*.
+- Ver el anexo :numref:`anexos_vdz9HGfFguc` sobre *Clases y Objetos*.
 
 
 .. _lectura_extras_leccion10:
 
-Lección 10 - Decoradores y la librería estándar
------------------------------------------------
-
-
-Iteradores
-..........
-
-- Ver el uso de :ref:`comprensión de listas <lectura_extras_leccion10_list_compre>`.
-
-- Ver el anexo :numref:`anexos_tvHbC_OZV14` sobre *Generadores*.
-
-- Ver el anexo :numref:`anexos_TaIWx9paNIA` sobre *Decoradores*.
-
-.. _`Tutorial Python 25 - Comprensión de Listas`: https://www.youtube.com/watch?v=87s8XQbUv1k
+Lección 10 - Listas de comprensión y la librería estándar
+---------------------------------------------------------
 
 
 .. _lectura_extras_leccion10_list_compre:
@@ -325,9 +344,61 @@ Iteradores
 Listas de comprensión
 .....................
 
-
 - `Listas por comprensión - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#listas-por-comprension>`_.
 
-- Ver el anexo :numref:`anexos_87s8XQbUv1k` sobre *Comprensión de Listas*.
+- Ver el anexo :numref:`anexos_aqnjB3dydik` sobre *Comprensión de Listas*.
+
+
+.. _lectura_extras_leccion10_datetime:
+
+datetime - Fecha y hora
+.......................
+
+- `datetime <https://docs.python.org/es/3.7/library/datetime.html>`_.
+
+- `datetime - Date and Time Value Manipulation <https://pymotw.com/3/datetime/index.html>`_.
+
+
+.. _lectura_extras_leccion10_locale:
+
+locale - Servicios de internacionalización
+..........................................
+
+- `locale <https://docs.python.org/es/3.7/library/locale.html>`_.
+
+- `Formatting Python Dates According to Locale <https://www.skybert.net/python/formatting-python-dates-according-to-locale/>`_.
+
+- `The C or POSIX locale <https://www.ibm.com/docs/en/aix/7.1?topic=locale-c-posix>`_.
+
+- `What Is a Locale <https://docs.oracle.com/cd/E19253-01/817-2521/overview-39/index.html>`_.
+
+
+.. _lectura_extras_leccion10_email:
+
+email - Correo electrónico
+..........................
+
+- `email - Un paquete de manejo de correo electrónico y MIME <https://docs.python.org/es/3.7/library/email.html>`_.
+
+- `email: Ejemplos <https://docs.python.org/es/3/library/email.examples.html>`_.
+
+- `Sending Emails With Python <https://realpython.com/python-send-email/>`_.
+
+
+
+.. _lectura_extras_leccion10_json:
+
+json - Codificador y decodificador JSON
+.......................................
+
+- `json - Codificador y decodificador JSON <https://docs.python.org/es/3.7/library/json.html>`_.
+
+- `json - JavaScript Object Notation <https://pymotw.com/3/json/index.html#module-json>`_.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::
 
 

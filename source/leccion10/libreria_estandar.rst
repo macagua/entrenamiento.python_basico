@@ -6,17 +6,17 @@
 Librería estándar Python
 ------------------------
 
-La librería estándar Python 3 incluye los siguientes módulos y librerías:
+La `librería estándar`_ Python 3 incluye los siguientes módulos y librerías:
 
 - :ref:`Funciones integradas <python_fun_builtins>` y funciones integradas no esenciales
 
 - Constantes integradas, con el módulo `site`_.
 
-- Tipos integrados, incluye 13 tipos, como :ref:`Booleano <python_bool>`, :ref:`Numérico <python_numericos>` y otros.
+- Tipos integrados, incluye 13 tipos, como :ref:`Booleano <python_bool>`, :ref:`Numérico <python_int>` y otros.
 
 - Manejo de :ref:`excepciones integradas <python_excepciones_builtins>`.
 
-- Servicios cadenas de caracteres, incluye 11 librerías, como `string`_, `re`_ y otros.
+- Servicios :ref:`cadenas de caracteres <python_str>`, incluye 11 librerías, como `string`_, `re`_ y otros.
 
 - Tipos de datos, incluye 19 librerías, como :ref:`datetime <python_modulo_datetime>`, `pprint`_ y otros.
 
@@ -89,7 +89,7 @@ La librería estándar Python 3 incluye los siguientes módulos y librerías:
 
 .. disqus::
 
-.. _`La biblioteca estándar Python 3.7`: https://docs.python.org/es/3.7/library/
+.. _`librería estándar`: https://docs.python.org/es/3.7/library/index.html
 .. _`site`: https://docs.python.org/es/3.7/library/site.html
 .. _`pprint`: https://docs.python.org/es/3.7/library/pprint.html
 .. _`string`: https://docs.python.org/es/3.7/library/string.html

@@ -335,6 +335,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
+    :linenos:
     :lines: 7-8
 
 
@@ -342,6 +343,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
+    :linenos:
     :lines: 11-12
 
 
@@ -349,6 +351,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
+    :linenos:
     :lines: 15-16
 
 
@@ -356,6 +359,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
+    :linenos:
     :lines: 19-21
 
 
@@ -363,6 +367,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
+    :linenos:
     :lines: 23-24
 
 
@@ -370,12 +375,13 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_listas.py
     :language: python
+    :linenos:
     :lines: 27-28
 
 **Iterar sobre cualquier secuencia**
 
-Usted puede iterar sobre cualquier secuencia (cadenas de caracteres, lista, claves
-en un diccionario, lineas en un archivo, ...):
+Usted puede iterar sobre cualquier secuencia (:ref:`cadenas de caracteres <python_str>`, lista, claves
+en un :ref:`diccionario <python_dict>`, lineas en un archivo, ...):
 
 *Iterar sobre una cadenas de caracteres*
 
@@ -390,7 +396,7 @@ en un diccionario, lineas en un archivo, ...):
 
 *Iterar sobre una lista*
 
-Para separar una cadena en frases, los valores pueden separarse con la función
+Para separar una :ref:`cadena <python_str>` en frases, los valores pueden separarse con la función
 integrada ``split()``.
 
 .. code-block:: pycon

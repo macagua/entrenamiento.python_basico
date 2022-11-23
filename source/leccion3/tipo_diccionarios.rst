@@ -86,10 +86,10 @@ Acceder a valor de clave
 Esta operación le permite acceder a un valor especifico del *diccionario* mediante su
 clave.
 
-.. code-block::pycon
+.. code-block:: pycon
 
-    >>> versiones = {'python': 3.7, 'zope': 5.2, 'plone': 6.0, 'django': 4.1}
-    >>> versiones['zope']
+    >>> versiones = {"python": 3.7, "zope": 5.2, "plone": 6.0, "django": 4.1}
+    >>> versiones["zope"]
     5.2
 
 
@@ -101,14 +101,14 @@ Asignar valor a clave
 Esta operación le permite asignar el valor especifico del *diccionario* mediante su
 clave.
 
-.. code-block::pycon
+.. code-block:: pycon
 
-    >>> versiones = {'python': 3.7, 'zope': 5.2, 'plone': None}
-    >>> versiones['plone']
-    >>> versiones['plone'] = 6.0
+    >>> versiones = {"python": 3.7, "zope": 5.2, "plone": None}
+    >>> versiones["plone"]
+    >>> versiones["plone"] = 6.0
     >>> versiones
     {'python': 3.7, 'zope': 5.2, 'plone': 6.0}
-    >>> versiones['plone']
+    >>> versiones["plone"]
     6.0
 
 
@@ -120,14 +120,14 @@ Iteración in
 Este operador es el mismo operador integrado :ref:`in <python_opers_in>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0, django=4.1)
     >>> print(versiones)
     {'zope': 5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
-    >>> 'plone' in versiones
+    >>> "plone" in versiones
     True
-    >>> 'flask' in versiones
+    >>> "flask" in versiones
     False
 
 En el ejemplo anterior este operador devuelve ``True`` si la clave esta en el diccionario
@@ -150,7 +150,7 @@ clear()
 
 Este método remueve todos los elementos desde el **diccionario**.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> print(versiones)
@@ -167,7 +167,7 @@ copy()
 
 Este método devuelve una copia superficial del tipo **diccionario**:
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> otro_versiones = versiones.copy()
@@ -183,20 +183,20 @@ fromkeys()
 Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de dato
 *secuencia*. El valor de ``value`` por defecto es el tipo :ref:`None <python_obj_none>`.
 
-.. code-block::pycon
+.. code-block:: pycon
 
-    >>> secuencia = ('python', 'zope', 'plone')
+    >>> secuencia = ("python", "zope", "plone")
     >>> versiones = dict.fromkeys(secuencia)
-    >>> print("Nuevo Diccionario : %s" %  str(versiones))
+    >>> print("Nuevo Diccionario : %s" % str(versiones))
     Nuevo Diccionario : {'python': None, 'zope': None, 'plone': None}
 
 En el ejemplo anterior inicializa los valores de cada clave a ``None``, mas puede
 inicializar un *valor* común por defecto para cada *clave*:
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict.fromkeys(secuencia, 0.1)
-    >>> print("Nuevo Diccionario : %s" %  str(versiones))
+    >>> print("Nuevo Diccionario : %s" % str(versiones))
     Nuevo Diccionario : {'python': 0.1, 'zope': 0.1, 'plone': 0.1}
 
 
@@ -208,12 +208,12 @@ get()
 Este método devuelve el valor en base a una coincidencia de búsqueda en un diccionario
 mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_none>`.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones.get('plone')
+    >>> versiones.get("plone")
     6.0
-    >>> versiones.get('php')
+    >>> versiones.get("php")
     >>>
 
 
@@ -225,12 +225,12 @@ has_key()
 Este método devuelve el valor ``True`` si el diccionario tiene presente la clave
 enviada como argumento.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones.has_key('plone')
+    >>> versiones.has_key("plone")
     True
-    >>> versiones.has_key('django')
+    >>> versiones.has_key("django")
     False
 
 
@@ -239,9 +239,9 @@ enviada como argumento.
 items()
 ~~~~~~~
 
-Este método devuelve una lista de pares de diccionarios (clave, valor), como 2 tuplas.
+Este método devuelve una :ref:`lista <python_list>` de pares de diccionarios (clave, valor), como 2 :ref:`tuplas <python_tuple>`.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> versiones.items()
@@ -257,7 +257,7 @@ Este método devuelve un :ref:`iterador <python_iter>` sobre las claves del dicc
 Lanza una excepción :ref:`StopIteration <python_exception_stopiteration>` si llega al
 final de la posición del **diccionario**.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> print(versiones)
@@ -288,9 +288,9 @@ final de la posición del **diccionario**.
 keys()
 ~~~~~~
 
-Este método devuelve una lista de las claves del diccionario:
+Este método devuelve una :ref:`lista <python_list>` de las claves del diccionario:
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> versiones.keys()
@@ -306,16 +306,16 @@ Este método remueve específicamente una clave de **diccionario** y devuelve va
 correspondiente. Lanza una excepción :ref:`KeyError <python_exception_keyerror>`
 si la **clave** no es encontrada.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> versiones
     {'zope': 5.2, 'python': 3.7, 'plone': 6.0}
-    >>> versiones.pop('zope')
+    >>> versiones.pop("zope")
     5.2
     >>> versiones
     {'python': 3.7, 'plone': 6.0}
-    >>> versiones.pop('django')
+    >>> versiones.pop("django")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     KeyError: 'django'
@@ -327,10 +327,10 @@ popitem()
 ~~~~~~~~~
 
 Este método remueve y devuelve algún par (clave, valor) del **diccionario** como
-una 2 tuplas. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si
+una 2 :ref:`tuplas <python_tuple>`. Lanza una excepción :ref:`KeyError <python_exception_keyerror>` si
 el **diccionario** esta vació.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> versiones
@@ -362,34 +362,34 @@ Este método es similar a :ref:`get(key, default_value) <python_dict_mtd_get>`, 
 asigna la clave ``key`` al valor por ``default_value`` para la clave si esta no se encuentra
 en el **diccionario**.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     D.setdefault(key[,default_value])
 
 A continuación un ejemplo de como trabaja el método ``setdefault()`` cuando la clave
 esta en el diccionario:
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> zope = versiones.setdefault('zope')
-    >>> print('Versiones instaladas:', versiones)
+    >>> zope = versiones.setdefault("zope")
+    >>> print("Versiones instaladas:", versiones)
     Versiones instaladas: {'zope': 5.2, 'python': 3.7, 'plone': 6.0}
-    >>> print('Versión de Zope:', zope)
+    >>> print("Versión de Zope:", zope)
     Versión de Zope: 5.2
 
 A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta
 en el diccionario:
 
-.. code-block::pycon
+.. code-block:: pycon
 
-    >>> paquetes = {'python': 3.7, 'zope': 5.2}
+    >>> paquetes = {"python": 3.7, "zope": 5.2}
     >>> print(paquetes)
     {'python': 3.7, 'zope': 5.2}
-    >>> plone = paquetes.setdefault('plone')
-    >>> print('paquetes: ', paquetes)
+    >>> plone = paquetes.setdefault("plone")
+    >>> print("paquetes: ", paquetes)
     paquetes:  {'python': 3.7, 'zope': 5.2, 'plone': None}
-    >>> print('plone: ', plone)
+    >>> print("plone: ", plone)
     plone:  None
 
 Si el valor no es proveído, el valor ``default_value`` será el tipo objeto integrado
@@ -398,15 +398,15 @@ Si el valor no es proveído, el valor ``default_value`` será el tipo objeto int
 A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta
 en el diccionario pero esta vez el ``default_value`` es proveído:
 
-.. code-block::pycon
+.. code-block:: pycon
 
-    >>> pkgs = {'python': 3.7, 'zope': 5.2, 'plone': None}
+    >>> pkgs = {"python": 3.7, "zope": 5.2, "plone": None}
     >>> print(pkgs)
     {'python': 3.7, 'zope': 5.2, 'plone': None}
-    >>> django = paquetes.setdefault('django', 4.1)
-    >>> print('paquetes =', pkgs)
+    >>> django = paquetes.setdefault("django", 4.1)
+    >>> print("paquetes =", pkgs)
     paquetes = {'python': 3.7, 'zope': 5.2, 'plone': None}
-    >>> print('django =', django)
+    >>> print("django =", django)
     django = 4.1
 
 A continuación otro ejemplo en donde puedes agrupar N :ref:`tuplas <python_tuple>`
@@ -414,13 +414,15 @@ por el valor el cual se repite más y construir un diccionario que cuyas claves 
 los valores mas repetidos y cuyos valores este agrupados en tipo
 :ref:`listas <python_list>`:
 
-.. code-block::pycon
+.. code-block:: pycon
 
-    >>> PKGS = (('zope', 'Zope'),
-    ...        ('zope', 'zope.pagetemplate'),
-    ...        ('plone', 'Plone'),
-    ...        ('plone', 'ZODB3'),
-    ...        ('plone', 'plone.volto'),)
+    >>> PKGS = (
+    ...     ("zope", "Zope"),
+    ...     ("zope", "zope.pagetemplate"),
+    ...     ("plone", "Plone"),
+    ...     ("plone", "ZODB3"),
+    ...     ("plone", "plone.volto"),
+    ... )
     >>>
     >>> paquetes = {}
     >>> for clave, valor in PKGS:
@@ -432,19 +434,21 @@ los valores mas repetidos y cuyos valores este agrupados en tipo
     >>> print(paquetes)
     {'zope': ['Zope', 'zope.pagetemplate'], 'plone': ['Plone', 'ZODB3', 'plone.volto']}
 
-En el tipo tupla ``PKGS`` los elementos mas repetidos son ``'zope'`` y ``'plone'``
-estos se convierten en clave del diccionario ``paquetes`` y los otros elementos se
-agrepan en listas como sus respectivos valores.
+En el tipo :ref:`tupla <python_tuple>` ``PKGS`` los elementos mas repetidos son ``'zope'``
+y ``'plone'`` estos se convierten en clave del diccionario ``paquetes`` y los otros elementos
+se agregan en listas como sus respectivos valores.
 
 A continuación un mejor aprovechamiento implementando el método ``setdefault()``:
 
-.. code-block::pycon
+.. code-block:: pycon
 
-    >>> PKGS = (('zope', 'Zope'),
-    ...        ('zope', 'zope.pagetemplate'),
-    ...        ('plone', 'Plone'),
-    ...        ('plone', 'ZODB3'),
-    ...        ('plone', 'plone.volto'),)
+    >>> PKGS = (
+    ...     ("zope", "Zope"),
+    ...     ("zope", "zope.pagetemplate"),
+    ...     ("plone", "Plone"),
+    ...     ("plone", "ZODB3"),
+    ...     ("plone", "plone.volto"),
+    ... )
     >>> paquetes = {}
     >>> for clave, valor in PKGS:
     ...     paquetes.setdefault(clave, []).append(valor)
@@ -465,10 +469,10 @@ Este método actualiza un **diccionario** agregando los pares clave-valores en u
 segundo diccionario. Este método no devuelve nada.
 
 El método ``update()`` toma un diccionario o un objeto iterable de pares clave/valor
-(generalmente tuplas). Si se llama a ``update()`` sin pasar parámetros, el diccionario
+(generalmente :ref:`tuplas <python_tuple>`). Si se llama a ``update()`` sin pasar parámetros, el diccionario
 permanece sin cambios.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> print(versiones)
@@ -482,7 +486,7 @@ Como puede apreciar este método no devuelve nada, más si muestra de nuevo el d
 ``versiones`` puede ver que este fue actualizado con el otro diccionario
 ``versiones_adicional``.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> print(versiones)
     {'zope': 5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
@@ -495,71 +499,71 @@ values()
 
 Este método devuelve una lista de los valores del diccionario:
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> versiones.values()
     [5.2, 3.7, 6.0]
 
 
-.. _python_dict_mtd_viewitems:
+.. _python_dict_mtd_items:
 
-viewitems()
-~~~~~~~~~~~
+items()
+~~~~~~~
 
 Este método devuelve un objeto como un conjunto mutable proveyendo una vista en los
 elementos del diccionario:
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones.viewkeys()
-    dict_keys(['zope', 'python', 'plone'])
-    >>> for clave,valor in versiones.items():
-    ...     print(clave,valor)
+    >>> versiones.keys()
+    dict_keys(['python', 'zope', 'plone'])
+    >>> for clave, valor in versiones.items():
+    ...     print(clave, valor)
     ...
-    zope 5.2
     python 3.7
+    zope 5.2
     plone 6.0
 
 
-.. _python_dict_mtd_viewkeys:
+.. _python_dict_mtd_keys:
 
-viewkeys()
-~~~~~~~~~~
+keys()
+~~~~~~
 
 Este método devuelve un objeto proveyendo una vista de las claves del **diccionario**.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones.viewkeys()
-    dict_keys(['zope', 'python', 'plone'])
-    >>> for clave in versiones.viewkeys():
+    >>> versiones.keys()
+    dict_keys(['python', 'zope', 'plone'])
+    >>> for clave in versiones.keys():
     ...     print(clave)
     ...
-    zope
     python
+    zope
     plone
 
 
-.. _python_dict_mtd_viewvalues:
+.. _python_dict_mtd_values:
 
-viewvalues()
-~~~~~~~~~~~~
+values()
+~~~~~~~~
 
 Este método devuelve un objeto proveyendo una vista de los valores del **diccionario**.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones.viewvalues()
-    dict_values([5.2, 3.7, 6.0])
-    >>> for valor in versiones.viewvalues():
+    >>> versiones.values()
+    dict_values([3.7, 5.2, 6.0])
+    >>> for valor in versiones.values():
     ...     print(valor)
     ...
-    5.2
     3.7
+    5.2
     6.0
 
 
@@ -572,28 +576,6 @@ Los objetos de tipo **diccionario** tienen disponibles una serie de *funciones*
 integradas en el interprete Python para su tratamiento, a continuación algunas
 de estas:
 
-.. _python_dict_fun_cmp:
-
-cmp()
-~~~~~
-
-Esta función es la misma función integrada :ref:`cmp() <python_fun_cmp>` en el
-interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
-
-.. code-block::pycon
-
-    >>> versiones_proyecto1 = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones_proyecto2 = dict(django=4.1, django-filter=1.1.0)
-    >>> print(cmp(versiones_proyecto1, versiones_proyecto2))
-    1
-
-La función ``cmp()`` es usado en Python para comparar valores y claves de dos
-diccionarios. Si la función devuelve el valor ``0`` si ambos diccionarios son
-igual, devuelve el valor ``1`` si el primer diccionario es mayor que el segundo
-diccionario y devuelve el valor ``-1`` si el primer diccionario es menor que el
-segundo diccionario.
-
-
 .. _python_dict_fun_len:
 
 len()
@@ -602,7 +584,7 @@ len()
 Esta función es la misma función integrada :ref:`len() <python_fun_len>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> len(versiones)
@@ -626,14 +608,14 @@ del
 Esta sentencia es la misma sentencia integrada :ref:`del <python_sent_del>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0, django=4.1)
     >>> print(versiones)
-    {'zope': 5.2, 'python': 3.7, 'plone': 6.0, 'django': 4.1}
-    >>> del versiones['django']
+    {'python': 3.7, 'zope': 5.2, 'plone': 6.0, 'django': 4.1}
+    >>> del versiones["django"]
     >>> print(versiones)
-    {'zope': 5.2, 'python': 3.7, 'plone': 6.0}
+    {'python': 3.7, 'zope': 5.2, 'plone': 6.0}
 
 En el código fuente anterior se usa la sentencia ``del`` para eliminar un elemento del
 diccionario mediante su respectiva clave.
@@ -661,24 +643,28 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
+    :linenos:
     :lines: 4-12
 
 **Operaciones con tipo diccionario con funciones propias**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
+    :linenos:
     :lines: 18-20
 
 **Iteración avanzada sobre diccionarios con función items**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
+    :linenos:
     :lines: 25-26
 
 **Caso real de usar tipo diccionario**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_diccionarios.py
     :language: python
+    :linenos:
     :lines: 29-46
 
 
@@ -688,7 +674,7 @@ Ayuda integrada
 Usted puede consultar toda la documentación disponible sobre los **diccionarios**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
-.. code-block::pycon
+.. code-block:: pycon
 
     >>> help(dict)
 

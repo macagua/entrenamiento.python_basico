@@ -29,6 +29,7 @@ conteo:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
+    :linenos:
     :lines: 10-15
 
 En este ejemplo tiene un contador con un valor inicial de cero, cada iteración del
@@ -49,6 +50,7 @@ por Evento:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
+    :linenos:
     :lines: 25-35
 
 En este casi el evento que se dispara cuando el usuario ingresa el valor ``-1``,
@@ -67,6 +69,7 @@ El nombre de la sentencia :ref:`else <python_sent_else>` es equivocada, ya que e
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
+    :linenos:
     :lines: 45-55
 
 La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis
@@ -90,13 +93,14 @@ sentencia ``break``:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
+    :linenos:
     :lines: 62-68
 
 Adicionalmente existe una forma alternativa de interrumpir o cortar los ciclos utilizando
 la palabra reservada ``break``.
 
 Esta nos permite salir del ciclo incluso si la expresión evaluada en ``while`` (o en
-otro ciclo como ``for``) permanece siendo ``True``. Para comprender mejor use el mismo
+otro ciclo como :ref:`for <python_bucle_for>`) permanece siendo ``True``. Para comprender mejor use el mismo
 ejemplo anterior pero se interrumpe el ciclo usando la sentencia ``break``.
 
 
@@ -128,6 +132,7 @@ con bucle ``while``:
 
 .. literalinclude:: ../../recursos/leccion4/fibonacci.py
     :language: python
+    :linenos:
     :lines: 4-9
 
 

@@ -1,7 +1,7 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_numericos:
+.. _python_int:
 
 Tipo números
 ------------
@@ -59,6 +59,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
+    :linenos:
     :lines: 4-5
 
 
@@ -114,6 +115,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
+    :linenos:
     :lines: 8-10
 
 
@@ -175,6 +177,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
+    :linenos:
     :lines: 14-17
 
 
@@ -182,6 +185,7 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
+    :linenos:
     :lines: 21-22
 
 ----
@@ -222,13 +226,14 @@ A continuación, se presentan un ejemplo de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
+    :linenos:
     :lines: 25-26
 
 
 Convertir a numéricos
 .....................
 
-Para convertir a :ref:`tipos numéricos <python_numericos>` debe usar las siguientes
+Para convertir a :ref:`tipos numéricos <python_int>` debe usar las siguientes
 :ref:`funciones integradas <python_fun_builtins>` en el interprete Python:
 
 - La función :ref:`int() <python_fun_int>` devuelve un tipo de datos

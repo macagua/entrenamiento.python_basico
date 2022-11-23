@@ -33,7 +33,7 @@ La salida siempre es un tipo de :ref:`lista <python_list>` Python.
 Ejemplo 1
 .........
 
-Si requiere crear una lista de 4 elementos y cada elemento calcularle la potencia
+Si requiere crear una :ref:`lista <python_list>` de 4 elementos y cada elemento calcularle la potencia
 de 2, usando el método tradicional, eso seria así:
 
 .. code-block:: pycon
@@ -56,7 +56,7 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 Ejemplo 2
 .........
 
-A continuación se crear una lista con las letras de una palabra, usando el método
+A continuación se crear una :ref:`lista <python_list>` con las letras de una palabra, usando el método
 tradicional, eso seria así:
 
 .. code-block:: pycon
@@ -78,16 +78,16 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
     ['c', 'a', 's', 'a']
 
 Como puede detallar en el ejemplo anterior, gracias a la listas de comprensión
-usted puede indicar directamente cada elemento que va a formar la lista, en este
+usted puede indicar directamente cada elemento que va a formar la :ref:`lista <python_list>`, en este
 caso cada letra, a la vez que definimos el :ref:`bucle for <python_bucle_for>`,
-entonces la lista está formada por cada letra que recorremos en el bucle ``for``.
+entonces la :ref:`lista <python_list>` está formada por cada letra que recorremos en el bucle :ref:`for <python_bucle_for>`.
 
 
 Ejemplo 3
 .........
 
-A continuación se crear una lista con las potencias de 2 de los primeros 10
-números, usando el método tradicional, eso seria así:
+A continuación se crear una :ref:`lista <python_list>` con las potencias de 2 de los primeros 10
+:ref:`números <python_int>`, usando el método tradicional, eso seria así:
 
 .. code-block:: pycon
 
@@ -107,13 +107,13 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
     [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 De este código anterior usted puede aprender que es posible modificar al vuelo
-los elementos los cuales van a formar la lista.
+los elementos los cuales van a formar la :ref:`lista <python_list>`.
 
 
 Ejemplo 4
 .........
 
-A continuación se crear una lista con los todos los múltiples de 2 entre 0 y 10,
+A continuación se crear una :ref:`lista <python_list>` con los todos los múltiples de 2 entre 0 y 10,
 usando el método tradicional, eso seria así:
 
 .. code-block:: pycon
@@ -126,7 +126,7 @@ usando el método tradicional, eso seria así:
     [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 
-También, si añade al código anterior, los números del 0 al 10 cuando su módulo de
+También, si añade al código anterior, los :ref:`números <python_int>` del 0 al 10 cuando su módulo de
 2 sea 0 usando el método tradicional, eso seria así:
 
 .. code-block:: pycon
@@ -139,7 +139,7 @@ También, si añade al código anterior, los números del 0 al 10 cuando su mód
     >>> print(lista)
     [0, 2, 4, 6, 8, 10]
 
-Entonces el ejemplo anterior donde crear una lista con los todos los múltiples de
+Entonces el ejemplo anterior donde crear una :ref:`lista <python_list>` con los todos los múltiples de
 2 entre 0 y 10, usando listas de comprensión, eso seria así:
 
 .. code-block:: pycon
@@ -148,7 +148,7 @@ Entonces el ejemplo anterior donde crear una lista con los todos los múltiples 
     >>> print(lista)
     [0, 2, 4, 6, 8, 10]
 
-Para el ejemplo anterior donde crear una lista con los todos los múltiples de 2
+Para el ejemplo anterior donde crear una :ref:`lista <python_list>` con los todos los múltiples de 2
 entre 0 y 10 cuando su módulo de 2 sea 0, usando listas de comprensión, eso seria
 así:
 
@@ -158,14 +158,14 @@ así:
     [0, 2, 4, 6, 8, 10]
 
 En este caso puede observar que incluso puede marcar una condición justo al final
-para añadir o no el elemento en la lista.
+para añadir o no el elemento en la :ref:`lista <python_list>`.
 
 
 Ejemplo 5
 .........
 
-A continuación se crear una lista de pares a partir de otra lista creada con las
-potencias de 2 de los primeros 10 números, usando el método tradicional, eso seria
+A continuación se crear una lista de pares a partir de otra :ref:`lista <python_list>` creada con las
+potencias de 2 de los primeros 10 :ref:`números <python_int>`, usando el método tradicional, eso seria
 así:
 
 .. code-block:: pycon
@@ -192,7 +192,7 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
     >>> print(lista)
     [0, 4, 16, 36, 64, 100]
 
-Crear listas a partir de listas anidadas le permite llevar la listas de comprensión
+Crear :ref:`listas <python_list>` a partir de :ref:`listas <python_list>` anidadas le permite llevar la listas de comprensión
 al siguiente nivel y además no hay un límite.
 
 

@@ -143,6 +143,7 @@ mensaje de error y luego re-generar la excepción (permitiéndole al que llama,
 manejar también la excepción):
 
 .. code-block:: python
+    :linenos:
 
     import sys
 
@@ -164,6 +165,7 @@ cuando está presente, debe seguir a los ``except``. Es útil para aquel código
 debe ejecutarse si el *bloque try* no genera una excepción. Por ejemplo:
 
 .. code-block:: python
+    :linenos:
 
     for arg in sys.argv[1:]:
         try:
@@ -248,7 +250,7 @@ El único argumento a ``raise`` indica la excepción a generarse. Tiene que ser 
 una instancia de excepción, o una clase de excepción (una clase que hereda de
 :ref:`Exception <python_exception>`).
 
-Si necesitás determinar cuando una excepción fue lanzada pero no querés manejarla,
+Si necesitas determinar cuando una excepción fue lanzada pero no quiries manejarla,
 una forma simplificada de la sentencia ``raise`` te permite relanzarla:
 
 .. code-block:: pycon
@@ -276,6 +278,7 @@ depuración dentro de un programa:
 La forma simple, "assert expression", es equivalente a:
 
 .. code-block:: python
+    :linenos:
 
     if __debug__:
         if not expression:
@@ -284,6 +287,7 @@ La forma simple, "assert expression", es equivalente a:
 La forma extendida, "assert expression1, expression2", es equivalente a:
 
 .. code-block:: python
+    :linenos:
 
     if __debug__:
         if not expression1:
@@ -311,7 +315,7 @@ Excepciones definidas por el usuario
 ....................................
 
 Los programas pueden nombrar sus propias excepciones creando una nueva clase excepción
-(mirá el apartado de :ref:`Clases <python_poo>` para más información sobre las clases
+(mira el apartado de :ref:`Clases <python_poo>` para más información sobre las clases
 de Python). Las excepciones, típicamente, deberán derivar de la clase
 :ref:`Exception <python_exception>`, directa o indirectamente. Por ejemplo:
 
@@ -347,6 +351,7 @@ crear una clase base para excepciones definidas en ese módulo y extenderla para
 clases excepciones específicas para distintas condiciones de error:
 
 .. code-block:: python
+    :linenos:
 
     class Error(Exception):
         """Clase base para excepciones en el módulo."""
@@ -405,7 +410,7 @@ limpieza que deben ser ejecutadas bajo ciertas circunstancias. Por ejemplo:
     ... finally:
     ...     print("Adiós, Mundo!")
     ...
-    Chau, Mundo!
+    Adios, Mundo!
     Traceback (most recent call last):
       File "<stdin>", line 2, in ?
     KeyboardInterrupt
@@ -466,6 +471,7 @@ objeto hayan sido exitosas o no. Mirá el siguiente ejemplo, que intenta
 pantalla.
 
 .. code-block:: python
+    :linenos:
 
     for linea in open("numeros.txt"):
         print(linea)
@@ -485,6 +491,7 @@ La sentencia ``with`` permite que objetos como archivos sean usados de una forma
 asegure que siempre se los libera rápido y en forma correcta.
 
 .. code-block:: python
+    :linenos:
 
     with open("numeros.txt") as f:
         for linea in f:

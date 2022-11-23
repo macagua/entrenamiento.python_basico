@@ -17,7 +17,7 @@ filter()
 ........
 
 La función ``filter()`` es una función la cual toma un :ref:`predicado <python_fun_predicado>`
-y una lista y devuelve una lista con los elementos que satisfacen el predicado. Tal como
+y una :ref:`lista <python_list>` y devuelve una :ref:`lista <python_list>` con los elementos que satisfacen el predicado. Tal como
 su nombre indica ``filter()`` significa filtrar, ya que a partir de una lista o iterador
 y una función condicional, es capaz de devolver una nueva colección con los elementos
 filtrados que cumplan la condición.
@@ -28,8 +28,8 @@ que usaran *predicados*. No hay ninguna regla que diga cuando usar la función
 :ref:`listas por comprensión <python_listas_comprension>`, simplemente debe decidir
 que es más legible dependiendo del contexto.
 
-Por ejemplo, suponga que tiene una lista varios números y requiere filtrarla,
-quedando únicamente con los números múltiples de 5, eso seria así:
+Por ejemplo, suponga que tiene una :ref:`lista <python_list>` varios números y requiere filtrarla,
+quedando únicamente con los :ref:`números <python_int>` múltiples de 5, eso seria así:
 
 .. code-block:: pycon
 
@@ -50,7 +50,7 @@ quedando únicamente con los números múltiples de 5, eso seria así:
     50
     >>>
 
-Si ejecuta el filtro obtiene una lista los números múltiples de 5. Por tanto cuando
+Si ejecuta el filtro obtiene una :ref:`lista <python_list>` los :ref:`números <python_int>` múltiples de 5. Por tanto cuando
 utiliza la función ``filter()`` tiene que enviar una función condicional, para esto,
 puede utilizar una función anónima ``lambda``, como se muestra a continuación:
 
@@ -66,7 +66,7 @@ puede utilizar una función anónima ``lambda``, como se muestra a continuación
     >>>
 
 Así, en una sola línea ha definido y ejecutado el filtro utilizando una función
-condicional anónima y devolviendo una lista de números.
+condicional anónima y devolviendo una :ref:`lista <python_list>` de :ref:`números <python_int>`.
 
 
 Filtrando objetos
@@ -74,9 +74,9 @@ Filtrando objetos
 
 Sin embargo, más allá de filtrar listas con valores simples, el verdadero potencial
 de la función ``filter()`` sale a relucir cuando usted necesita filtrar varios objetos
-de una lista.
+de una :ref:`lista <python_list>`.
 
-Por ejemplo, dada una lista con varias personas, a usted le gustaría filtrar únicamente
+Por ejemplo, dada una :ref:`lista <python_list>` con varias personas, a usted le gustaría filtrar únicamente
 las cuales son menores de edad:
 
 .. code-block:: pycon
@@ -111,14 +111,14 @@ forma amigable.
 map()
 .....
 
-La función ``map()`` toma una función y una lista y aplica esa función a cada elemento
-de esa lista, produciendo una nueva lista. Va a ver su definición de tipo y como se
+La función ``map()`` toma una función y una :ref:`lista <python_list>` y aplica esa función a cada elemento
+de esa :ref:`lista <python_list>`, produciendo una nueva :ref:`lista <python_list>`. Va a ver su definición de tipo y como se
 define.
 
 Esta función trabaja de una forma muy similar a :ref:`filter() <python_fun_filter>`,
-con la diferencia que en lugar de aplicar una condición a un elemento de una lista o
+con la diferencia que en lugar de aplicar una condición a un elemento de una :ref:`lista <python_list>` o
 secuencia, aplica una función sobre todos los elementos y como resultado se devuelve un
-lista de números doblado su valor:
+:ref:`lista <python_list>` de :ref:`números <python_int>` doblado su valor:
 
 .. code-block:: pycon
 
@@ -141,7 +141,7 @@ La función ``map()`` se utiliza mucho junto a expresiones ``lambda`` ya que per
 evitar escribir :ref:`bucles for <python_bucle_for>`.
 
 Además se puede utilizar sobre más de un objeto iterable con la condición que tengan
-la misma longitud. Por ejemplo, si requiere multiplicar los números de dos listas:
+la misma longitud. Por ejemplo, si requiere multiplicar los :ref:`números <python_int>` de dos :ref:`listas <python_list>`:
 
 .. code-block:: pycon
 

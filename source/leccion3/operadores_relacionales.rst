@@ -115,6 +115,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
+    :linenos:
     :lines: 3-5
 
 
@@ -122,6 +123,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
+    :linenos:
     :lines: 8-9
 
 
@@ -129,6 +131,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
+    :linenos:
     :lines: 18-19
 
 
@@ -136,6 +139,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
+    :linenos:
     :lines: 25-26
 
 
@@ -143,6 +147,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
+    :linenos:
     :lines: 29-30
 
 
@@ -150,6 +155,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
+    :linenos:
     :lines: 33-34
 
 
@@ -157,6 +163,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_relacionales.py
     :language: python
+    :linenos:
     :lines: 37-38
 
 

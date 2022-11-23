@@ -33,6 +33,7 @@ se crea una clase base llamada ``Persona``. A continuación un ejemplo de la cla
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
+    :linenos:
     :lines: 4-36
 
 
@@ -48,6 +49,7 @@ La instancia de dos nuevos objetos ``Persona`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
+    :linenos:
     :lines: 4-5
 
 El método constructor ``__init__`` es un método especial el cual debe escribir como:
@@ -66,11 +68,12 @@ de objeto el cual debe mostrar como:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
+    :linenos:
     :lines: 10
 
 En el anterior código se usan para cierto formato para imprimir la instancia de objeto
 usando la sentencia ``print``, concatenando el carácter ``\n`` para generar un salto
-de página y seguidamente convertir a formato cadena de caracteres usando la función
+de página y seguidamente convertir a formato :ref:`cadena de caracteres <python_str>` usando la función
 ``str()`` a la instancia de objeto llamada ``persona2``.
 
 
@@ -94,6 +97,7 @@ El siguiente es un ejemplo de la clase ``Supervisor`` que derivada de la clase
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
+    :linenos:
     :lines: 39-64
 
 Ahora, se creará una nueva clase ``Supervisor`` con los mismos métodos y atributos
@@ -104,6 +108,7 @@ La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
+    :linenos:
     :lines: 58
 
 Luego que genera la instancia del nuevo objeto ``Supervisor`` llamada ``supervisor1``
@@ -111,6 +116,7 @@ se puede imprimir sus detalles de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
+    :linenos:
     :lines: 63
 
 Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de la
@@ -118,6 +124,7 @@ clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
+    :linenos:
     :lines: 66-75
 
 Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se puede
@@ -125,6 +132,7 @@ imprimir de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
+    :linenos:
     :lines: 78-79
 
 .. note::
@@ -138,6 +146,7 @@ imprimir de la siguiente forma:
 
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
+    :linenos:
     :lines: 62-68
 
 
@@ -194,6 +203,7 @@ la declaración de la subclase:
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
+    :linenos:
     :lines: 59-96
 
 
@@ -204,22 +214,23 @@ Method Resolution Order (MRO)
 Ese es el orden en el cual el método debe heredar en la presencia de herencia múltiple.
 Usted puede ver el MRO usando el atributo ``__mro__``.
 
+.. code-block:: pycon
 
->>> JefeCuadrilla.__mro__
-(<class '__main__.JefeCuadrilla'>,
-<class '__main__.Supervisor'>,
-<class '__main__.Persona'>,
-<class '__main__.Destreza'>,
-<type 'object'>)
+    >>> JefeCuadrilla.__mro__
+    (<class '__main__.JefeCuadrilla'>,
+    <class '__main__.Supervisor'>,
+    <class '__main__.Persona'>,
+    <class '__main__.Destreza'>,
+    <type 'object'>)
 
->>> Supervisor.__mro__
-(<class '__main__.Supervisor'>,
-<class '__main__.Persona'>,
-<type 'object'>)
+    >>> Supervisor.__mro__
+    (<class '__main__.Supervisor'>,
+    <class '__main__.Persona'>,
+    <type 'object'>)
 
->>> Destreza.__mro__
-(<class '__main__.Destreza'>,
-<type 'object'>)
+    >>> Destreza.__mro__
+    (<class '__main__.Destreza'>,
+    <type 'object'>)
 
 El *MRO* es calculado en Python de la siguiente forma:
 

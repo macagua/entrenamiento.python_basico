@@ -11,7 +11,7 @@ acostumbrado en lenguajes como C o Pascal.  En lugar de siempre iterar sobre
 una progresión aritmética de números (como en Pascal) o darle al usuario la
 posibilidad de definir tanto el paso de la iteración como la condición de fin
 (como en C), la sentencia `for` de Python itera sobre los ítems de cualquier
-secuencia (una lista o una cadenas de caracteres), en el orden que aparecen
+secuencia (una :ref:`lista <python_list>` o una :ref:`cadena de caracteres <python_str>`), en el orden que aparecen
 en la secuencia.
 
 
@@ -29,6 +29,7 @@ estructuras de datos :ref:`listas <python_list>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
+    :linenos:
     :lines: 10-12
 
 
@@ -41,9 +42,10 @@ estructuras de datos :ref:`listas <python_list>` con la función
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
+    :linenos:
     :lines: 29-33
 
-Si se necesita iterar sobre una secuencia de números. Genera una lista conteniendo
+Si se necesita iterar sobre una secuencia de números. Genera una :ref:`lista <python_list>` conteniendo
 progresiones aritméticos, por ejemplo, como se hace en el fragmento de código fuente
 anterior.
 
@@ -56,6 +58,7 @@ estructuras de datos :ref:`Tuplas <python_tuple>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
+    :linenos:
     :lines: 42-44
 
 El ejemplo anterior itera una :ref:`tupla <python_tuple>` de parámetros.
@@ -69,6 +72,7 @@ estructuras de datos :ref:`diccionarios <python_dict>`:
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
+    :linenos:
     :lines: 53-67
 
 El ejemplo anterior itera un :ref:`diccionario <python_dict>` con datos
@@ -89,6 +93,7 @@ expresión condicional del bucle ``for`` sea ``False``, (a comparación de la
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
     :language: python
+    :linenos:
     :lines: 76-88
 
 La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis

@@ -148,8 +148,8 @@ puede cambiar cuando se cambia el valor de este último; sin embargo, el contene
 se considera inmutable, porque la colección de objetos que contiene no se puede cambiar.
 Por lo tanto, la inmutabilidad no es estrictamente lo mismo que tener un valor incambiable,
 es más sutil.) La mutabilidad de un objeto está determinada por su tipo; por ejemplo,
-los números, las cadenas y las tuplas son inmutables, mientras que los diccionarios y
-las listas son mutables.
+los :ref:`números <python_int>`, las :ref:`cadenas <python_str>` y las :ref:`tuplas <python_tuple>` son inmutables, mientras que los
+:ref:`diccionarios <python_dict>` y las :ref:`listas <python_list>` son mutables.
 
 Los objetos son la clave para entender la :ref:`POO <python_poo>`. Si mira a nuestro
 alrededor encontrará un sin fin de objetos de la vida real: perro, escritorio,
@@ -159,6 +159,7 @@ En Python puede definir una clase con la palabra reservada :ref:`class <python_c
 de la siguiente forma:
 
 .. code-block:: python
+    :linenos:
 
     class Persona:
         pass
@@ -175,14 +176,16 @@ Las clases pueden (y siempre deberían) tener comentarios.
     Diagrama de Objeto Persona
 
 
-Estado de un objeto
-~~~~~~~~~~~~~~~~~~~
+.. comments:
 
-El conjunto de datos y objetos relacionados con un objeto en un momento dado, se le
-conoce como "estado". Un objeto puede tener múltiples estados a lo largo de su
-existencia conforme se relaciona con su entorno y otros objetos.
+    Estado de un objeto
+    ~~~~~~~~~~~~~~~~~~~
 
-.. todo:: TODO explicar el concepto Estado de un objeto.
+    El conjunto de datos y objetos relacionados con un objeto en un momento dado, se le
+    conoce como "estado". Un objeto puede tener múltiples estados a lo largo de su
+    existencia conforme se relaciona con su entorno y otros objetos.
+
+    .. todo:: TODO explicar el concepto Estado de un objeto.
 
 
 .. _python_attrs:
@@ -198,6 +201,7 @@ Los atributos describen el estado de un objeto. Pueden ser de cualquier tipo de 
 
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
+    :linenos:
     :lines: 1-6
 
 Usted puede probar el código anterior, si lo transcribe en el
@@ -299,6 +303,7 @@ Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``,
 
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
+    :linenos:
     :lines: 1-26
 
 La única diferencia sintáctica entre la definición de un método y la definición de una
@@ -377,11 +382,12 @@ __str__()
 `````````
 
 El método ``__str__()`` es un método especial, el cual se ejecuta al momento en el
-cual un objeto se manda a mostrar, es decir es una cadena representativa de la clase,
+cual un objeto se manda a mostrar, es decir es una :ref:`cadena <python_str>` representativa de la clase,
 la cual puede incluir formatos personalizados de presentación del mismo.
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
+    :linenos:
     :lines: 14-22
 
 
@@ -456,23 +462,26 @@ conoce como "interfaz". Una interfaz bien definida permite a objetos de distinta
 índole interactuar entre sí de forma modular. La interfaz define el modo en que los
 objetos intercambian información.
 
-.. todo:: TODO explicar el concepto de Interfaces.
+.. tip::
+    Para mas detalle consulte el paquete `zope.interface <https://zopeinterface.readthedocs.io/en/latest/>`_.
 
 
-Implementaciones
-~~~~~~~~~~~~~~~~
+.. comments:
 
-Una implementación corresponde al mecanismo interno que se desencadena en un método
-cuando éste es llamado. Las implementaciones procesan las entradas proveniente de
-las interfaces y actúan en consecuencia ya sea:
+    Implementaciones
+    ~~~~~~~~~~~~~~~~
 
-- Modificando el estado del objeto.
+    Una implementación corresponde al mecanismo interno que se desencadena en un método
+    cuando éste es llamado. Las implementaciones procesan las entradas proveniente de
+    las interfaces y actúan en consecuencia ya sea:
 
-- Transfiriendo la información resultante del proceso interno a través de la
-  interfaces.
+    - Modificando el estado del objeto.
+
+    - Transfiriendo la información resultante del proceso interno a través de la
+    interfaces.
 
 
-.. todo:: TODO explicar el concepto de Implementaciones.
+    .. todo:: TODO explicar el concepto de Implementaciones.
 
 
 .. _python_clases:
@@ -512,7 +521,7 @@ La excepción :ref:`TypeError <python_exception_typeerror>` indica que el *méto
 constructor no toma argumentos*, esto se debe a que la momento de definir la clase a
 cada atributo se le asigno un valor (tipo de dato).
 
-Usted puede definir el metodo constructor de la clase usando el método
+Usted puede definir el método constructor de la clase usando el método
 :ref:`__init__() <python_mtd_init>`.
 
 
@@ -529,6 +538,7 @@ al instanciar un objeto.
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
+    :linenos:
     :lines: 7-12
 
 

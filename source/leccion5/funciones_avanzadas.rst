@@ -18,15 +18,19 @@ Las funciones de predicado no es más que una función la cual dice si algo es `
 o ``False``, es decir, es una función que devuelve un tipo de datos
 :ref:`booleano <python_bool>`.
 
-.. todo::
-    TODO terminar de escribir la sección Funciones de predicado.
+.. comments:
+
+    .. todo::
+        TODO terminar de escribir la sección Funciones de predicado.
 
 
-Objetos de función
-..................
+.. comments:
 
-.. todo::
-    TODO escribir la sección Objetos de función.
+    Objetos de función
+    ..................
+
+    .. todo::
+        TODO escribir la sección Objetos de función.
 
 
 .. _python_fun_anonimas:
@@ -156,7 +160,7 @@ A continuación, se presenta un ejemplo para comprobar si un número es impar:
 
 **Función lambda - operaciones de cadena**
 
-A continuación, se presenta un ejemplo para darle la vuelta a una cadena rebanándola
+A continuación, se presenta un ejemplo para darle la vuelta a una :ref:`cadena <python_str>` rebanándola
 en sentido inverso:
 
 .. code-block:: pycon
@@ -171,7 +175,7 @@ en sentido inverso:
 **Función lambda - varios parámetros**
 
 A continuación, se presenta un ejemplo para varios parámetros, por ejemplo para
-sumar dos números:
+sumar dos :ref:`números <python_int>`:
 
 .. code-block:: pycon
 

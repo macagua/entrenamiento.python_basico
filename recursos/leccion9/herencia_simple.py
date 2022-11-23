@@ -1,7 +1,7 @@
 from clases import Persona, Supervisor
 
 # Dos instancias de Objeto Persona
-persona1 = Persona("V-13458796", "Leonardo", "Caballero", "M")
+persona1 = Persona("V-26938401", "Leonardo", "Caballero", "M")
 persona2 = Persona("V-23569874", "Ana", "Poleo", "F")
 
 print(persona1.__doc__[25:34])

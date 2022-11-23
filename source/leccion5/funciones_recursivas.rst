@@ -47,7 +47,7 @@ Función recursiva con retorno
 .............................
 
 Un ejemplo de una función recursiva con retorno, es el ejemplo del calculo del
-factorial de un número corresponde al producto de todos los números desde 1 hasta
+factorial de un número corresponde al producto de todos los :ref:`números <python_int>` desde 1 hasta
 el propio número. Es el ejemplo con retorno más utilizado para mostrar la utilidad
 de este tipo de funciones:
 
@@ -73,8 +73,10 @@ de este tipo de funciones:
     valor final -> 120
     120
 
-.. todo::
-    TODO terminar de escribir la sección Funciones recursivas.
+.. comments:
+
+    .. todo::
+        TODO terminar de escribir la sección Funciones recursivas.
 
 ----
 

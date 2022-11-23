@@ -1,7 +1,7 @@
 class Persona:
     """Clase que representa una Persona"""
 
-    cedula = "V-13458796"
+    cedula = "V-26938401"
     nombre = "Leonardo"
     apellido = "Caballero"
     sexo = "M"

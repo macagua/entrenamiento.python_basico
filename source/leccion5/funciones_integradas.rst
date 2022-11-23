@@ -55,7 +55,7 @@ La función ``callable()`` le indica si un objecto puede ser llamado.
     >>> callable(list)
     True
 
-Una función se puede llamar, una lista no se puede llamar. Incluso la función integrada
+Una función se puede llamar, una :ref:`lista <python_list>` no se puede llamar. Incluso la función integrada
 ``callable()`` se puede llamar.
 
 
@@ -65,7 +65,7 @@ compile()
 ~~~~~~~~~
 
 La función ``compile()`` devuelve un código objeto Python. Usted usa la función
-integrada Python para convertir de la cadena de caracteres de código al código
+integrada Python para convertir de la :ref:`cadena de caracteres <python_str>` de código al código
 objeto.
 
 .. code-block:: pycon
@@ -296,7 +296,7 @@ la lógica ``dir()`` predeterminada y devuelve:
 eval()
 ~~~~~~
 
-Evalúa una cadena como una expresión:
+Evalúa una :ref:`cadena <python_str>` como una expresión:
 
 .. code-block:: pycon
 
@@ -318,7 +318,7 @@ execfile()
 ~~~~~~~~~~
 
 La función ``execfile()`` lee y ejecuta un script Python desde un archivo. Los
-``globals`` y ``locals`` son diccionarios, por defecto a los actuales  ``globals``
+``globals`` y ``locals`` son :ref:`diccionarios <python_dict>`, por defecto a los actuales  ``globals``
 y ``locals``.  Si solamente ``globals`` es dado, ``locals`` es por defecto a la
 misma.
 
@@ -333,7 +333,7 @@ misma.
 globals()
 ~~~~~~~~~
 
-La función ``globals()`` devuelve un diccionario conteniendo ámbito actual global de
+La función ``globals()`` devuelve un :ref:`diccionario <python_dict>` conteniendo ámbito actual global de
 las variables.
 
 .. code-block:: pycon
@@ -349,7 +349,7 @@ global dependiendo en la locación desde donde ella es llamada.
 Si la función ``globals()`` es llamada desde una función, eso devolverá todos los nombres
 que pueden ser accesibles globalmente desde esa función.
 
-El tipo de dato devuelto por función es un tipo diccionario. Por lo tanto, los nombres
+El tipo de dato devuelto por función es un tipo :ref:`diccionario <python_dict>`. Por lo tanto, los nombres
 pueden ser extraídos usando la función integrada ``keys()``.
 
 
@@ -455,7 +455,7 @@ Imprime el texto de la licencia.
 locals()
 ~~~~~~~~
 
-La función ``locals()`` devuelve un diccionario conteniendo ámbito actual local de
+La función ``locals()`` devuelve un :ref:`diccionario <python_dict>` conteniendo ámbito actual local de
 las variables.
 
 .. code-block:: pycon
@@ -470,7 +470,7 @@ local dependiendo en la locación desde donde ella es llamada.
 Si la función ``locals()`` es llamada desde una función, eso devolverá todos los nombres
 que pueden ser accesibles localmente desde esa función.
 
-El tipo de dato devuelto por la función es un tipo diccionario. Por lo tanto, los nombres
+El tipo de dato devuelto por la función es un tipo :ref:`diccionario <python_dict>`. Por lo tanto, los nombres
 pueden ser extraídos usando la función integrada ``keys()``.
 
 
@@ -520,7 +520,7 @@ Los argumentos son:
   +----------+-----------------------------------------------------------+
 
 - ``buffering``, si este argumento es dado, 0 significa sin búfer, 1 significa búfer
-  de línea y los números más grandes especifican el tamaño del búfer.
+  de línea y los :ref:`números <python_int>` más grandes especifican el tamaño del búfer.
 
 Para crear y abrir un archivo, seria así:
 
@@ -538,7 +538,7 @@ Agregue una 'U' a modo para abrir el archivo para la entrada con soporte de
 nueva línea universal. Cualquier línea que termine en el archivo de entrada
 se verá como '\n' en Python. Además, un archivo así abierto gana el atributo
 ``newlines``; el valor para este atributo es uno de Ninguno (aún no se ha
-leído una nueva línea), ``\r``, ``\n``, ``\r\n`` o una tupla que contiene
+leído una nueva línea), ``\r``, ``\n``, ``\r\n`` o una :ref:`tupla <python_tuple>` que contiene
 todos los tipos de nueva línea que se han visto.
 
 
@@ -557,7 +557,7 @@ todos los tipos de nueva línea que se han visto.
 range()
 ~~~~~~~
 
-La función ``range()`` devuelve una lista conteniendo una progresión aritmética
+La función ``range()`` devuelve una :ref:`lista <python_list>` conteniendo una progresión aritmética
 de enteros.
 
 ::
@@ -580,7 +580,7 @@ Cuando el ``paso`` es definido como un tercer argumento, ese especifica el incre
     [3, 5, 7]
 
 En el ejemplo anterior, la función ``range(3,9,2)`` devuelve **[3, 5, 7]**, es decir,
-el rango inicia en **3** y termina en **9** incrementando cada **2** números.
+el rango inicia en **3** y termina en **9** incrementando cada **2** :ref:`números <python_int>`.
 
 ::
 
@@ -593,7 +593,7 @@ el rango inicia en **3** y termina en **9** incrementando cada **2** números.
     [0, 1, 2, 3]
 
 En el ejemplo anterior, la función ``range(4)`` devuelve **[0, 1, 2, 3]**. ¡El punto
-final es omitido! Hay exactamente los indices validos para una lista de **4** elementos.
+final es omitido! Hay exactamente los indices validos para una :ref:`lista <python_list>` de **4** elementos.
 
 
 .. _python_fun_reload:
@@ -691,7 +691,7 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
 vars()
 ~~~~~~
 
-La función ``vars()`` devuelve un diccionario conteniendo ámbito actual de las
+La función ``vars()`` devuelve un :ref:`diccionario <python_dict>` conteniendo ámbito actual de las
 variables.
 
 .. code-block:: pycon
@@ -833,24 +833,6 @@ o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero 
     '0b1010'
 
 
-.. _python_fun_cmp:
-
-cmp()
-~~~~~
-
-La función ``cmp()`` devuelve un valor negativo si ``x<y``, un valor cero si ``x==y``,
-un valor positivo si ``x>y``:
-
-.. code-block:: pycon
-
-    >>> cmp(1, 2)
-    -1
-    >>> cmp(2, 2)
-    0
-    >>> cmp(2, 1)
-    1
-
-
 .. _python_fun_complex:
 
 complex()
@@ -959,7 +941,7 @@ La función ``int()`` devuelve un número entero. Es un constructor, que crea un
     >>> int(2.5)
     2
 
-También puede convertir una cadena de caracteres a un número entero.
+También puede convertir una :ref:`cadena de caracteres <python_str>` a un número entero.
 
 .. code-block:: pycon
 
@@ -968,7 +950,7 @@ También puede convertir una cadena de caracteres a un número entero.
 
 
 La función ``int()`` sólo procesa correctamente cadenas que contengan exclusivamente
-números. Si la cadena contiene cualquier otro carácter, la función devuelve una
+:ref:`números <python_int>`. Si la cadena contiene cualquier otro carácter, la función devuelve una
 excepción :ref:`ValueError <python_exception_valueerror>`.
 
 .. code-block:: pycon
@@ -1002,7 +984,7 @@ entero.
     >>> long(23.4)
     23L
 
-También puede convertir una cadena de caracteres a un número entero.
+También puede convertir una :ref:`cadena de caracteres <python_str>` a un número entero.
 
 .. code-block:: pycon
 
@@ -1136,7 +1118,7 @@ vacía.
     40
 
 En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es
-la lista ``[1, 2, 3, 4, 5]`` y el argumento ``inicial`` es ``5 * 5``
+la :ref:`lista <python_list>` ``[1, 2, 3, 4, 5]`` y el argumento ``inicial`` es ``5 * 5``
 
 .. code-block:: pycon
 
@@ -1144,7 +1126,7 @@ la lista ``[1, 2, 3, 4, 5]`` y el argumento ``inicial`` es ``5 * 5``
     25
 
 En el ejemplo anterior, la función, usada es ``lambda x, y: x + y``, la secuencia es
-la lista ``[0, 0, 0, 0, 0]`` y el argumento ``inicial`` es ``5 * 5``
+la :ref:`lista <python_list>` ``[0, 0, 0, 0, 0]`` y el argumento ``inicial`` es ``5 * 5``
 
 
 .. _python_fun_round:
@@ -1178,8 +1160,8 @@ a la baja:
 sum()
 ~~~~~
 
-La función ``sum()`` devuelve una lista ordenada de los elementos de la secuencia
-que recibe como argumento (lista o cadena). La secuencia original no es modificada.
+La función ``sum()`` devuelve una :ref:`lista <python_list>` ordenada de los elementos de la secuencia
+que recibe como argumento (:ref:`lista <python_list>` o :ref:`cadena de caracteres <python_str>`). La secuencia original no es modificada.
 
 .. code-block:: pycon
 
@@ -1231,7 +1213,7 @@ argumento dado es ``True``, de lo contrario ``False``.
     >>> bool(True)
     True
 
-Convertir desde un tipo :ref:`entero <python_numericos>` a tipo *booleano*:
+Convertir desde un tipo :ref:`entero <python_int>` a tipo *booleano*:
 
 .. code-block:: pycon
 
@@ -1292,7 +1274,7 @@ con MAYÚSCULA la primera palabra.
 chr()
 ~~~~~
 
-La función ``chr()`` recibe como argumento un entero, y devuelve una cadena con
+La función ``chr()`` recibe como argumento un entero, y devuelve una :ref:`cadena <python_str>` con
 el carácter cuyo código *Unicode* corresponde a ese valor. El rango válido para
 el argumento es de 0 a 256.
 
@@ -1314,7 +1296,7 @@ endswith()
 ~~~~~~~~~~
 
 La función ``endswith()`` devuelve un valor booleano ``True`` o ``False``
-si coincide que la cadena termine con el criterio enviado por parámetros
+si coincide que la :ref:`cadena <python_str>` termine con el criterio enviado por parámetros
 en la función.
 
 .. code-block:: pycon
@@ -1434,14 +1416,19 @@ describe cada opción a continuación:
 
 - ``*`` Es la opción del carácter de relleno, el cual rellena los espacio vacío después
   del formato.
-- ``>`` Es la opción de alineación a la derecha, el cual alinea la cadena de caracteres
+
+- ``>`` Es la opción de alineación a la derecha, el cual alinea la :ref:`cadena de caracteres <python_str>`
   de salida a la derecha.
+
 - ``+`` Es la opción de signo, el cual obliga al número a ser firmado (con un signo a
   su izquierda).
+
 - ``7`` Es la opción ancho, el cual obliga el número que tome un mínimo de ancho de 7,
   otros espacios serán rellenado por el carácter de relleno.
+
 - ``,`` Ese es el operador miles, el cual coloca un carácter coma entre todos los números
   miles.
+
 - ``d`` Es la opción tipo que especifica que el número es un
   :ref:`número entero <python_num_entero>`.
 
@@ -1457,8 +1444,8 @@ En el ejemplo anterior cuando se formatea el :ref:`número float <python_num_flo
 *123.4567*, usted especifico el especificador de formato ``^-09.3f``. Seguidamente, se
 describe cada opción a continuación:
 
-- ``^`` Es la opción de alineación centrar, el cual alinea la cadena de
-  caracteres de salida al centro del espacio restante.
+- ``^`` Es la opción de alineación centrar, el cual alinea la :ref:`cadena de caracteres <python_str>`
+  de salida al centro del espacio restante.
 
 - ``-`` Es la opción de signo el cual obliga solo a los números negativos a mostrar
   el signo.
@@ -1525,7 +1512,7 @@ intern()
 
 La función ``intern()`` introduce la cadena en la tabla de cadenas internadas (si no
 está ya allí). Esto ingresa la cadena en la tabla (global) de cadenas internas cuyo
-propósito es acelerar las búsquedas en el tipo diccionario.
+propósito es acelerar las búsquedas en el tipo :ref:`diccionario <python_dict>`.
 
 Al utilizar la función ``intern()``, se asegura de que nunca cree dos objetos de cadena
 de caracteres que tengan el mismo valor: cuando solicita la creación de un segundo
@@ -1536,17 +1523,17 @@ porque se lleva a cabo comparando las direcciones de memoria de los dos objetos 
 cadena de caracteres en lugar de su contenido.
 
 Esencialmente, la función ``intern()`` busca (o almacena si no está presente) la
-cadena de caracteres en una colección de cadenas de caracteres internadas, por lo
+:ref:`cadena de caracteres <python_str>` en una colección de cadenas de caracteres internadas, por lo
 que todas las instancias internadas compartirán la misma identidad. Cambia el costo
 único de buscar esta cadena de caracteres para realizar comparaciones más rápidas
 (la comparación puede devolver ``True`` después de solo verificar la identidad, en
 lugar de tener que comparar cada carácter), y reducir el uso de la memoria.
 
-Sin embargo, Python internará automáticamente cadenas de caracteres que sean pequeñas
+Sin embargo, Python internará automáticamente :ref:`cadena de caracteres <python_str>` que sean pequeñas
 o que parezcan identificadores, por lo que es posible que no obtengas ninguna mejora
 porque tus cadenas de caracteres ya están internadas entre bastidores.
 
-A continuación uno ejemplo de comparación de cadena de caracteres con operadores de relacionales:
+A continuación uno ejemplo de comparación de :ref:`cadena de caracteres <python_str>` con operadores de relacionales:
 
 .. code-block:: pycon
 
@@ -1559,7 +1546,7 @@ A continuación uno ejemplo de comparación de cadena de caracteres con operador
     >>> cadena0 is cadena1
     False
 
-A continuación uno ejemplo de comparación de cadena de caracteres con el operador
+A continuación uno ejemplo de comparación de :ref:`cadena de caracteres <python_str>` con el operador
 :ref:`is <python_opers_is>`:
 
 .. code-block:: pycon
@@ -1580,7 +1567,7 @@ isalnum()
 ~~~~~~~~~
 
 La función ``isalnum()`` devuelve un valor booleano ``True`` o ``False``
-si coincide que la cadena contenga caracteres alfanuméricos.
+si coincide que la :ref:`cadena <python_str>` contenga caracteres alfanuméricos.
 
 .. code-block:: pycon
 
@@ -1596,7 +1583,7 @@ isalpha()
 ~~~~~~~~~
 
 La función ``isalpha()`` devuelve un valor booleano ``True`` o ``False``
-si coincide que la cadena contenga caracteres alfabéticos.
+si coincide que la :ref:`cadena <python_str>` contenga caracteres alfabéticos.
 
 .. code-block:: pycon
 
@@ -1612,7 +1599,7 @@ isdigit()
 ~~~~~~~~~
 
 La función ``isdigit()`` devuelve un valor booleano ``True`` o ``False``
-si coincide que la cadena contenga caracteres dígitos.
+si coincide que la :ref:`cadena <python_str>` contenga caracteres dígitos.
 
 
 .. code-block:: pycon
@@ -1629,7 +1616,7 @@ islower()
 ~~~~~~~~~
 
 La función ``islower()`` devuelve un valor booleano ``True`` o ``False``
-si coincide que la cadena contenga caracteres en MINÚSCULAS.
+si coincide que la :ref:`cadena <python_str>` contenga caracteres en MINÚSCULAS.
 
 .. code-block:: pycon
 
@@ -1728,7 +1715,7 @@ ord()
 ~~~~~
 
 La función ``ord()`` es el inverso de :ref:`chr() <python_fun_chr>` dada una
-cadena representando un carácter Unicode, devuelve el entero del código correspondiente.
+:ref:`cadena <python_str>` representando un carácter Unicode, devuelve el entero del código correspondiente.
 
 .. code-block:: pycon
 
@@ -1762,8 +1749,8 @@ en la función.
 split()
 ~~~~~~~
 
-La función ``split()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>`
-separada por cada indice de la lista.
+La función ``split()`` devuelve una :ref:`lista <python_list>` con la :ref:`cadena de caracteres <python_str>`
+separada por cada indice de la :ref:`lista <python_list>`.
 
 .. code-block:: pycon
 
@@ -1776,8 +1763,8 @@ separada por cada indice de la lista.
 splitlines()
 ~~~~~~~~~~~~
 
-La función ``splitlines()`` devuelve una lista con la :ref:`cadena de caracteres <python_str>`
-separada por cada salto de linea en cada indice de la lista.
+La función ``splitlines()`` devuelve una :ref:`lista <python_list>` con la :ref:`cadena de caracteres <python_str>`
+separada por cada salto de linea en cada indice de la :ref:`lista <python_list>`.
 
 .. code-block:: pycon
 
@@ -1791,7 +1778,7 @@ startswith()
 ~~~~~~~~~~~~
 
 La función ``startswith()`` devuelve un valor booleano ``True`` o ``False``
-si coincide que la cadena inicie con el criterio enviado por parámetros
+si coincide que la :ref:`cadena <python_str>` inicie con el criterio enviado por parámetros
 en la función.
 
 .. code-block:: pycon
@@ -1810,7 +1797,7 @@ str()
 La función ``str()`` es el constructor del tipo de :ref:`cadenas de caracteres <python_str>`,
 se usa crear una *carácter* o *cadenas de caracteres* mediante la misma función ``str()``.
 
-Puede convertir un :ref:`número entero <python_num_entero>` a una *cadena de caracteres*,
+Puede convertir un :ref:`número entero <python_num_entero>` a una :ref:`cadena de caracteres <python_str>`,
 de la siguiente forma:
 
 .. code-block:: pycon
@@ -1818,7 +1805,7 @@ de la siguiente forma:
     >>> str(2)
     '2'
 
-Puede convertir un :ref:`número float <python_num_float>` a una *cadena de caracteres*,
+Puede convertir un :ref:`número float <python_num_float>` a una :ref:`cadena de caracteres <python_str>`,
 de la siguiente forma:
 
 .. code-block:: pycon
@@ -1828,7 +1815,7 @@ de la siguiente forma:
     >>> str(-2.5)
     '-2.5'
 
-Puede convertir un :ref:`número complex <python_num_complex>` a una *cadena de caracteres*,
+Puede convertir un :ref:`número complex <python_num_complex>` a una :ref:`cadena de caracteres <python_str>`,
 de la siguiente forma:
 
 .. code-block:: pycon
@@ -1836,7 +1823,7 @@ de la siguiente forma:
     >>> str(2.3 + 0j)
     '(2.3+0j)'
 
-Puede convertir un tipo :ref:`booleano <python_bool>` a una *cadena de caracteres*,
+Puede convertir un tipo :ref:`booleano <python_bool>` a una :ref:`cadena de caracteres <python_str>`,
 de la siguiente forma:
 
 .. code-block:: pycon
@@ -1965,7 +1952,7 @@ el objeto iterable tiene un valor de tipo :ref:`booleano <python_bool>` igual a 
 coerce()
 ~~~~~~~~
 
-La función ``coerce()`` devuelve una tupla que consta de los dos argumentos numéricos
+La función ``coerce()`` devuelve una :ref:`tupla <python_tuple>` que consta de los dos argumentos numéricos
 convertidos en un tipo común, utilizando las mismas reglas que las operaciones
 aritméticas. Si la coerción no es posible, levante una excepción
 :ref:`TypeError <python_exception_typeerror>`.
@@ -1984,14 +1971,14 @@ dict()
 ~~~~~~
 
 La función ``dict()`` es el constructor del tipo de :ref:`diccionario <python_dict>`,
-esta función se usa crear un diccionario:
+esta función se usa crear un :ref:`diccionario <python_dict>`:
 
 .. code-block:: pycon
 
     >>> dict(python=3.7, zope=5.2, plone=6.0)
     {'zope': 5.2, 'python': 3.7, 'plone': 6.0}
 
-También puede crear un diccionario indicando a las claves usando comillas simples:
+También puede crear un :ref:`diccionario <python_dict>` indicando a las claves usando comillas simples:
 
 .. code-block:: pycon
 
@@ -2001,7 +1988,7 @@ También puede crear un diccionario indicando a las claves usando comillas simpl
     {{'python': 3.7, 'zope': 5.2, 'plone': 6.0}
 
 Convertir desde un grupo de dos :ref:`listas <python_list>` de forma recursiva usando
-la función :ref:`zip() <python_fun_zip>` a tipo *diccionario*:
+la función :ref:`zip() <python_fun_zip>` a tipo :ref:`diccionario <python_dict>`:
 
 .. code-block:: pycon
 
@@ -2009,7 +1996,7 @@ la función :ref:`zip() <python_fun_zip>` a tipo *diccionario*:
     {'python': 3.7, 'zope': 5.2, 'plone': 6.0}
 
 Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una
-:ref:`lista <python_list>` a tipo *diccionario*:
+:ref:`lista <python_list>` a tipo :ref:`diccionario <python_dict>`:
 
 .. code-block:: pycon
 
@@ -2077,8 +2064,8 @@ list()
 ~~~~~~
 
 La función ``list()`` es el constructor del tipo de :ref:`lista <python_list>`,
-se usa crear una lista mediante la misma función ``list()`` de un iterable. Por
-ejemplo, una lista podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
+se usa crear una :ref:`lista <python_list>` mediante la misma función ``list()`` de un iterable. Por
+ejemplo, una :ref:`lista <python_list>` podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
 
 .. code-block:: pycon
 
@@ -2125,7 +2112,7 @@ tuple()
 
 La función ``tuple()`` es el constructor del tipo de :ref:`tuplas <python_tuple>`,
 se usa crear una tupla mediante la misma función ``tuple()`` de un iterable. Por
-ejemplo, una tupla podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
+ejemplo, una :ref:`tupla <python_tuple>` podría crearse mediante la función :ref:`range(10) <python_fun_range>`:
 
 .. code-block:: pycon
 
@@ -2158,8 +2145,8 @@ iterable :ref:`lista <python_list>`:
 sorted()
 ~~~~~~~~
 
-La función ``sorted()`` devuelve una lista ordenada de los elementos del tipo secuencia
-que recibe como argumento (lista o cadena de caracteres). La secuencia original no es
+La función ``sorted()`` devuelve una li:ref:`lista <python_list>`sta ordenada de los elementos del tipo secuencia
+que recibe como argumento (:ref:`lista <python_list>` o :ref:`cadena de caracteres <python_str>`). La secuencia original no es
 modificada.
 
 .. code-block:: pycon
@@ -2168,7 +2155,7 @@ modificada.
     >>> sorted(lista)
     [7, 13, 23, 37]
 
-La función ``sorted()`` siempre devuelve una lista, aunque reciba como argumento una
+La función ``sorted()`` siempre devuelve una :ref:`lista <python_list>`, aunque reciba como argumento una
 :ref:`cadena de caracteres <python_str>`.
 
 .. code-block:: pycon
@@ -2182,9 +2169,9 @@ La función ``sorted()`` siempre devuelve una lista, aunque reciba como argument
 zip()
 ~~~~~
 
-La función ``zip()`` devuelve una lista de :ref:`tuplas <python_tuple>`, donde cada
-tupla contiene el elemento i-th desde cada una de los tipos de secuencias de argumento.
-La lista devuelta es truncada en longitud a la longitud de la secuencia de argumentos
+La función ``zip()`` devuelve una :ref:`lista <python_list>` de :ref:`tuplas <python_tuple>`, donde cada
+:ref:`tupla <python_tuple>` contiene el elemento i-th desde cada una de los tipos de secuencias de argumento.
+La :ref:`lista <python_list>` devuelta es truncada en longitud a la longitud de la secuencia de argumentos
 más corta.
 
 .. code-block:: pycon
@@ -2342,7 +2329,7 @@ Los parámetros son:
 
 - *objeto*, es requerido. Un objeto.
 
-- *tipo*, un tipo o una clase, o una tupla de tipos y/o clases
+- *tipo*, un tipo o una clase, o una :ref:`tupla <python_tuple>` de tipos y/o clases
 
 Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
 
@@ -2353,8 +2340,8 @@ Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es
-uno de los tipos en la tupla.
+Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve ``True`` si le objeto es
+uno de los tipos en la :ref:`tupla <python_tuple>`.
 
 .. code-block:: pycon
 
@@ -2378,6 +2365,7 @@ La función ``issubclass()`` le permite corroborar si un objeto es instancia de 
 clase.
 
 .. code-block:: python
+    :linenos:
 
     issubclass(subclase, clase)
 
@@ -2394,8 +2382,8 @@ seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una tupla, esta función devuelve ``True`` si le objeto es
-uno de los tipos en la tupla.
+Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve ``True`` si le objeto es
+uno de los tipos en la :ref:`tupla <python_tuple>`.
 
 .. code-block:: pycon
 

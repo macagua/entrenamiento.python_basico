@@ -21,6 +21,7 @@ llamado ``utilidades.py``:
 
 .. literalinclude:: ../../recursos/leccion8/modulos/utilidades.py
     :language: python
+    :linenos:
     :lines: 1-8
 
 .. _python_sent_import:
@@ -48,6 +49,7 @@ un simple módulo, ``calculo_factura_pipo.py``.
 
 .. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
     :language: python
+    :linenos:
     :lines: 1-22
 
 Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
@@ -138,7 +140,7 @@ Espacios de nombres y alcance
 Las :ref:`variables <python_variable>` son nombres (identificadores) que se asignan
 a objetos.
 
-Un espacio de nombres o namespace, es un diccionario de nombres de variables (claves)
+Un espacio de nombres o namespace, es un :ref:`diccionario <python_dict>` de nombres de variables (claves)
 y sus objetos (valores) correspondientes.
 
 Una sentencia de Python puede acceder a las variables en un espacio de nombres local

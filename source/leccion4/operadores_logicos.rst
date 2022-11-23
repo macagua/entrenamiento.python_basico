@@ -68,6 +68,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
+    :linenos:
     :lines: 3
 
 
@@ -75,6 +76,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
+    :linenos:
     :lines: 11-16
 
 
@@ -82,6 +84,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
+    :linenos:
     :lines: 21-28
 
 
@@ -89,6 +92,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
+    :linenos:
     :lines: 33-36
 
 

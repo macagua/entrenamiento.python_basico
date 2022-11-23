@@ -30,7 +30,7 @@ strftime
 ~~~~~~~~
 
 ``strftime`` es un formateador de cadenas, esto formateará un objeto de fecha y hora en
-formato de cadena.
+formato de :ref:`cadena de caracteres <python_str>`.
 
 Los objetos ``date``, ``datetime``, y ``time`` admiten un método ``strftime(format)``,
 para crear una cadena que represente el objeto de fecha y hora bajo el control de una
@@ -54,11 +54,11 @@ strptime
 ~~~~~~~~
 
 
-``strptime`` es un analizador de cadenas, esto convertirá un formato de cadena a un objeto
+``strptime`` es un analizador de :ref:`cadenas <python_str>`, esto convertirá un formato de cadena a un objeto
 de fecha y hora.
 
 El método de clase ``datetime.strptime()`` crea un objeto ``datetime`` a partir de una
-:ref:`cadena <python_str>` que representa una fecha y hora y una cadena de formato correspondiente.
+:ref:`cadena de caracteres <python_str>` que representa una fecha y hora y una :ref:`cadena <python_str>` de formato correspondiente.
 
 .. literalinclude:: ../../recursos/leccion10/datetime_strptime.py
     :language: python
@@ -71,9 +71,10 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
     Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
 
+.. comments:
 
-.. todo::
-    TODO Terminar de escribir esta sección.
+    .. todo::
+        TODO Terminar de escribir esta sección.
 
 
 ----

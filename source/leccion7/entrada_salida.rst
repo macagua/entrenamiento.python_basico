@@ -49,11 +49,12 @@ el momento de la ejecución, algo muy útil para agregar dinamismo los *scripts*
 través de parámetros personalizables.
 
 A continuación, un ejemplo el cual simula a sala de chat del servicio *LatinChat.com*,
-validando datos de entradas numérico y tipo cadena de caracteres e interactuá con
-el usuario y en base a condicionales muestra un mensaje.
+validando datos de entradas numérico y tipo :ref:`cadena de caracteres <python_str>` e
+interactuá con el usuario y en base a condicionales muestra un mensaje.
 
 .. literalinclude:: ../../recursos/leccion7/entrada_salida.py
     :language: python
+    :linenos:
     :lines: 12-32
 
 
@@ -69,7 +70,7 @@ Scripts con argumentos
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Para poder enviar información a un script y manejarla, tenemos que utilizar la
-librería de sistema ``sys``. En ella encontraremos la lista ``argv`` que almacena
+librería de sistema ``sys``. En ella encontraremos la :ref:`lista <python_list>` ``argv`` que almacena
 los argumentos enviados al *script*.
 
 Usted debe crear un *script* llamado ``entrada_argumentos.py`` con el siguiente
@@ -77,6 +78,7 @@ contenido:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_argumentos.py
     :language: python
+    :linenos:
     :lines: 1-3
 
 Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
@@ -87,12 +89,12 @@ Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
     ['entrada_argumentos.py']
 
 
-Al ejecutarlo puede ver que devuelve una lista con una cadena que contiene el nombre
-del *script*. Entonces, el primer argumento de la lista ``sys.argv`` (es decir,
+Al ejecutarlo puede ver que devuelve una :ref:`lista <python_list>` con una cadena que contiene el nombre
+del *script*. Entonces, el primer argumento de la :ref:`lista <python_list>` ``sys.argv`` (es decir,
 ``sys.argv[0]``) es el propio nombre del *script*.
 
-Ahora si intenta ejecutar el *script* de nuevo pasando algunos valores como números
-y cadenas de caracteres entre comillas dobles, todo separado por espacios:
+Ahora si intenta ejecutar el *script* de nuevo pasando algunos valores como :ref:`números <python_int>`
+y :ref:`cadenas de caracteres <python_str>` entre comillas dobles, todo separado por espacios:
 
 .. code-block:: console
 
@@ -104,12 +106,13 @@ una forma de entrada de datos alternativa sin usar la función :ref:`input() <py
 
 
 A continuación, un ejemplo el cual usa un *script* con la librería ``sys``. El *script*
-recibe dos (02) argumentos: una cadena de caracteres y un número entero. Lo que hace
-es imprimir la cadena de caracteres tantas veces como le indique con el argumento de
+recibe dos (02) argumentos: una :ref:`cadena de caracteres <python_str>` y un número entero. Lo que hace
+es imprimir la :ref:`cadena de caracteres <python_str>` tantas veces como le indique con el argumento de
 tipo número:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_dos_argumentos.py
     :language: python
+    :linenos:
     :lines: 1-13
 
 Si quiere comprobar la validación de cuantos argumentos deben enviarme al script,
@@ -152,7 +155,7 @@ Sentencia ``print`` evalúa cada expresión, devuelve y escribe el objeto result
 a la salida estándar de la consola de comando. Si un objeto no es un
 :ref:`tipo cadena de caracteres <python_str>`, ese es primeramente convertido a un
 *tipo cadena de caracteres* usando las reglas para las
-:ref:`conversiones del tipo <python_fun_str>`. La *cadena de caracteres* (resultado
+:ref:`conversiones del tipo <python_fun_str>`. La :ref:`cadena de caracteres <python_str>` (resultado
 o original) es entonces escrito.
 
 Entonces para mostrar mensajes en pantalla, se utiliza el uso de la sentencia ``print``.
@@ -171,8 +174,8 @@ Formato de impresión de cadenas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-En la sentencia ``print`` se pueden usar el formato de impresión alternando las cadenas
-de caracteres y variables:
+En la sentencia ``print`` se pueden usar el formato de impresión alternando las
+:ref:`cadenas de caracteres <python_str>` y variables:
 
 .. code-block:: pycon
 
@@ -184,7 +187,7 @@ de caracteres y variables:
 
 .. seealso::
 
-    Hay disponibles otras formas de aplicar formato de cadenas de caracteres:
+    Hay disponibles otras formas de aplicar formato de :ref:`cadena de caracteres <python_str>`:
 
     - :ref:`Formateo % <python_str_formateo_modulo>`.
 

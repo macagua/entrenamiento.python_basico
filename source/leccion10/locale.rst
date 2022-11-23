@@ -196,8 +196,10 @@ Jugando con el módulo ``locale`` en el ``ipython``:
     In [13]: locale.setlocale(locale.LC_ALL, str(locale.getlocale()[0]) + "." + str(locale.getlocale()[1]))
     Out[13]: 'es_VE.UTF-8'
 
-.. todo::
-    TODO Terminar de escribir esta sección.
+.. comments:
+
+    .. todo::
+        TODO Terminar de escribir esta sección.
 
 ----
 

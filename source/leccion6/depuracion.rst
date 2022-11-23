@@ -293,6 +293,7 @@ Otras formas de comenzar una depuración
   Inserta la siguiente línea donde quieres que salte el depurador:
 
   .. code-block:: python
+    :linenos:
 
       import pdb
 

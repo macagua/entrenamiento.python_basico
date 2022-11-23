@@ -44,6 +44,7 @@ cuando la función es llamada.
 La sintaxis para una definición de función en Python es:
 
 .. code-block:: python
+    :linenos:
 
     def NOMBRE(LISTA_DE_PARAMETROS):
         """DOCSTRING_DE_FUNCION"""
@@ -57,7 +58,7 @@ A continuación se detallan el significado de pseudo código fuente anterior:
 - ``LISTA_DE_PARAMETROS``, es la lista de parámetros que puede recibir una
   función.
 
-- ``DOCSTRING_DE_FUNCION``, es la cadena de caracteres usada para
+- ``DOCSTRING_DE_FUNCION``, es la :ref:`cadena de caracteres <python_str>` usada para
   :ref:`documentar <python_str_docstrings_def>` la función.
 
 - ``SENTENCIAS``, es el bloque de sentencias en código fuente Python que realizar
@@ -90,15 +91,16 @@ de la función en el ejemplo anterior ``hola()`` y la lista de parámetros forma
 entre paréntesis. Las sentencias que forman el cuerpo de la función empiezan en la
 línea siguiente, y deben estar indentado.
 
-La primer sentencia del cuerpo de la función puede ser opcionalmente una cadenas de
-caracteres literal; esta es la cadenas de caracteres de documentación de la función,
+La primer sentencia del cuerpo de la función puede ser opcionalmente una :ref:`cadena de caracteres <python_str>`
+literal; esta es la :ref:`cadena de caracteres <python_str>` de documentación de la función,
 o ``docstrings``. (Puedes encontrar más acerca de ``docstrings`` en la sección
 :ref:`Cadenas de texto de documentación <python_str_docstrings>`).
 
-Hay herramientas que usan las ``docstrings`` para producir automáticamente documentación
-en línea o imprimible, o para permitirle al usuario que navegue el código en forma
-interactiva; es una buena práctica incluir ``docstrings`` en el código que uno escribe,
-por lo que se debe hacer un hábito de esto.
+Hay herramientas que usan las :ref:`docstrings <python_str_docstrings>` para producir
+automáticamente documentación en línea o imprimible, o para permitirle al usuario que
+navegue el código en forma interactiva; es una buena práctica incluir
+:ref:`docstrings <python_str_docstrings>` en el código que uno escribe, por lo que se
+debe hacer un hábito de esto.
 
 La ejecución de la función ``hola()`` muestra la impresión de un mensaje **Hola Plone !**
 que se imprime por consola. Devolver el objeto por los valores de retorno opcionales.
@@ -242,7 +244,7 @@ Por nombre
 ~~~~~~~~~~
 
 Para recibir un número indeterminado de parámetros por nombre (clave-valor o en
-inglés *keyword args*), usted debe crear un diccionario dinámico de argumentos
+inglés *keyword args*), usted debe crear un :ref:`diccionario <python_dict>` dinámico de argumentos
 definiendo el parámetro con dos asteriscos:
 
 .. code-block:: pycon
@@ -253,7 +255,7 @@ definiendo el parámetro con dos asteriscos:
     >>> indeterminados_nombre(n=5, c="Hola Plone", l=[1, 2, 3, 4, 5])
     {'c': 'Hola Plone', 'l': [1, 2, 3, 4, 5], 'n': 5}
 
-Al recibirse como un diccionario, puede iterarlo y mostrar la clave y valor de
+Al recibirse como un :ref:`diccionario <python_dict>`, puede iterarlo y mostrar la clave y valor de
 cada argumento:
 
 .. code-block:: pycon
@@ -336,6 +338,7 @@ se hace *devolviendo valores*. A continuación, un ejemplo de función usando ``
 
 .. literalinclude:: ../../recursos/leccion5/funciones.py
     :language: python
+    :linenos:
     :lines: 25-32
 
 Esta función se llama de la siguiente forma:
@@ -398,6 +401,7 @@ A continuación, se presenta un ejemplo del uso de definir funciones:
 
 .. literalinclude:: ../../recursos/leccion5/funciones.py
     :language: python
+    :linenos:
     :lines: 4-9
 
 
@@ -418,6 +422,7 @@ A continuación, se presenta un ejemplo del uso de funciones con argumentos múl
 
 .. literalinclude:: ../../recursos/leccion5/funciones.py
     :language: python
+    :linenos:
     :lines: 12-14
 
 Y se llama de la siguiente forma:

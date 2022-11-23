@@ -668,7 +668,7 @@ explicitar el tipo del objeto:
 
 - ``s`` para cadenas de caracteres (tipo :ref:`str <python_str>`).
 
-- ``d`` para números enteros (tipo :ref:`int <python_numericos>`).
+- ``d`` para números enteros (tipo :ref:`int <python_int>`).
 
 - ``f`` para números de coma flotante (tipo :ref:`float <python_num_float>`).
 
@@ -684,7 +684,7 @@ se imprima con cuatro dígitos después de la coma (``.4``).
     >>> print("el resultado de {0} es {resultado:.4f}".format(tipo_calculo, resultado=valor))
     el resultado de raíz cuadrada de dos es 1.4142
 
-Formateo de números enteros, rellenados con espacios, con las siguientes sentencias:
+Formateo de :ref:`números <python_int>` enteros, rellenados con espacios, con las siguientes sentencias:
 
 .. code-block:: pycon
 
@@ -696,7 +696,7 @@ Formateo de números enteros, rellenados con espacios, con las siguientes senten
     1000
 
 
-Formateo de números enteros, rellenados con ceros, con las siguientes sentencias:
+Formateo de :ref:`números <python_int>` enteros, rellenados con ceros, con las siguientes sentencias:
 
 .. code-block:: pycon
 
@@ -751,6 +751,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
+    :linenos:
     :lines: 7-8
 
 
@@ -758,6 +759,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
+    :linenos:
     :lines: 11-12
 
 
@@ -765,6 +767,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
+    :linenos:
     :lines: 15-16
 
 
@@ -772,6 +775,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
+    :linenos:
     :lines: 19-29
 
 
@@ -779,6 +783,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
+    :linenos:
     :lines: 32-33
 
 
@@ -786,6 +791,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
+    :linenos:
     :lines: 36-38
 
 
@@ -793,6 +799,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
+    :linenos:
     :lines: 41
 
 
@@ -800,6 +807,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
+    :linenos:
     :lines: 44
 
 

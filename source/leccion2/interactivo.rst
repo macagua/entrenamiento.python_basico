@@ -287,7 +287,7 @@ Entonces consulte la ayuda del módulo ``os``, ejecutando:
 
 Seguidamente presione la combinación de tecla **Crtl+d** para salir de la ayuda.
 
-Luego realice la importación de la `librería del estándar`_ Python llamada
+Luego realice la importación de la :ref:`librería estándar <python_libreria_estandar>` Python llamada
 ``os``, con el siguiente comando:
 
 .. code-block:: pycon
@@ -429,5 +429,4 @@ escritos en Python que tienes instalado en tu sistema.
 .. _`Javadoc`: https://es.wikipedia.org/wiki/Javadoc
 .. _`diagramas de clases`: https://es.wikipedia.org/wiki/Diagrama_de_clases
 .. _`Sphinx`: https://en.wikipedia.org/wiki/Sphinx_%28documentation_generator%29
-.. _`librería del estándar`: https://docs.python.org/es/3.7/library/index.html
 .. _`modo interactivo`: https://es.wikipedia.org/wiki/Python#Modo_interactivo

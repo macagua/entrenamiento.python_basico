@@ -233,6 +233,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_asignaciones.py
     :language: python
+    :linenos:
     :lines: 3-28
 
 ----

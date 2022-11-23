@@ -95,8 +95,10 @@ nombres agrega el nombre de la clase:
     19
     >>>
 
-.. todo::
-    TODO terminar de escribir esta sección
+.. comments:
+
+    .. todo::
+        TODO terminar de escribir esta sección
 
 
 ----

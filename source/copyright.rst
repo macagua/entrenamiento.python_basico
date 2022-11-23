@@ -32,7 +32,7 @@ Todas esta documentación es licencia por:
 
 * Copyright © 2014 - 2016 `Covantec R.L`_. Todos los derechos reservados.
 
-  .. figure:: _images/covantec_logo_web.jpg
+  .. figure:: _static/images/covantec_logo_web.jpg
      :align: center
      :alt: Covantec R.L.
      :target: https://github.com/covantec

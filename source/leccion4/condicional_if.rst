@@ -14,6 +14,7 @@ A continuación un de estructura condicional ``if``/``elif``/``else`` completo:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 48-58
 
 En el ejemplo anterior usa dos funciones integradas en el interprete Python:
@@ -95,8 +96,8 @@ contenga el valor del lado derecho:
     >>> 5 in b
     False
 
-En el ejemplo anterior, si ``b`` es una lista, este prueba que ``2`` y ``5`` sean
-elementos de la lista ``b``.
+En el ejemplo anterior, si ``b`` es una :ref:`lista <python_list>`, este prueba que ``2`` y ``5`` sean
+elementos de la :ref:`lista <python_list>` ``b``.
 
 
 .. _python_opers_notin:
@@ -115,8 +116,8 @@ El operador ``not in``, el contrario de operador :ref:`in <python_opers_in>`, de
     >>> 1 not in b
     False
 
-En el ejemplo anterior, si ``b`` es una lista, este prueba que ``4`` y ``1`` sean
-elementos de la lista ``b``.
+En el ejemplo anterior, si ``b`` es una :ref:`lista <python_list>`, este prueba que ``4`` y ``1`` sean
+elementos de la :ref:`lista <python_list>` ``b``.
 
 
 .. _python_expresiones_condicional:
@@ -178,6 +179,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 3
 
 
@@ -185,6 +187,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 11-14
 
 
@@ -192,6 +195,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 17-20
 
 
@@ -199,6 +203,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 17-20
 
 
@@ -206,6 +211,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 23-26
 
 
@@ -213,6 +219,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 29-32
 
 
@@ -220,6 +227,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 35-38
 
 
@@ -227,6 +235,7 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
+    :linenos:
     :lines: 41-44
 
 

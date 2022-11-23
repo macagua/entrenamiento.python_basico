@@ -288,3 +288,12 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
     :align: center
 
     Vídeo `31.- Curso Python - Clases y Objetos <https://www.youtube.com/watch?v=vdz9HGfFguc>`_, cortesía de `CodigoFacilito.com`_.
+
+
+.. _anexos_N4NtB4r28h0:
+
+.. figure:: ../_images/youtube/N4NtB4r28h0.jpg
+    :target: https://www.youtube.com/watch?v=munC0mVXPWk
+    :align: center
+
+    Vídeo `Depurando um programa Python com pdb - Python Debugger <https://www.youtube.com/watch?v=N4NtB4r28h0>`_, cortesía de *Youtube*.
