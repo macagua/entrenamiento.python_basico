@@ -12,7 +12,7 @@ a la vez que sencillo y fácil de aprender. Es un lenguaje de alto nivel, que pe
 procesar fácilmente todo tipo de estructuras de datos, tanto numéricos como de texto.
 
 
-.. figure:: ../_images/python_logo.png
+.. figure:: ../_static/images/python_logo.png
     :align: center
     :width: 70%
 
@@ -23,7 +23,7 @@ Este lenguaje fue creado a principios de los noventa por
 `Guido van Rossum <https://es.wikipedia.org/wiki/Guido_van_Rossum>`_ en los Países
 Bajos.
 
-.. figure:: ../_images/Guido_van_Rossum_2006.jpg
+.. figure:: ../_static/images/guido_van_rossum_2006.jpg
     :align: center
     :width: 40%
 
@@ -49,7 +49,7 @@ Open source
 Python se desarrolla bajo una licencia de Open source o código abierto aprobada por OSI,
 por lo que se puede usar y distribuir libremente, incluso para uso comercial.
 
-.. figure:: ../_images/Open_Source_Initiative.png
+.. figure:: ../_static/images/open_source_initiative.png
     :align: center
     :width: 40%
 
@@ -74,7 +74,7 @@ posee los derechos de propiedad intelectual detrás del lenguaje de programació
 Administramos las licencias de código abierto para Python versión 2.1 y posteriores, y
 poseemos y protegemos las marcas comerciales asociadas con Python.
 
-.. figure:: ../_images/psf_logo.png
+.. figure:: ../_static/images/python_psf_logo.png
     :align: center
     :width: 70%
 
@@ -103,7 +103,7 @@ Aplicaciones
 El `Python Package Index (PyPI) <https://pypi.org/>`_ o en español significa *Índice de
 paquetes de Python* alberga miles de módulos de terceros para Python.
 
-.. figure:: ../_images/landing_about.png
+.. figure:: ../_static/images/python_apps_pypi.png
     :align: center
     :width: 70%
 
@@ -135,7 +135,7 @@ Comunidad
 El gran software es soportado por grandes personas. La base de usuarios es entusiasta, dedicada
 a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.
 
-.. figure:: ../_images/PyCon_US_2018_BrettKeynote.png
+.. figure:: ../_static/images/python_pycon_us_2018_brett_keynote.png
     :align: center
     :width: 70%
 

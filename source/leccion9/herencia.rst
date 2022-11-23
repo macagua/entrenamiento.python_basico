@@ -19,7 +19,7 @@ Clase Base
 Clase Base o también conocida como *Clase abstracta* le permite definir una clase que
 puede heredarse en otras clases los atributos y comportamientos definido en esta.
 
-.. figure:: ../_images/clase_abstracta.png
+.. figure:: ../_static/images/poo_clase_abstracta.png
     :align: center
     :width: 70%
 
@@ -86,7 +86,7 @@ La herencia simple se apoya en el uso de :ref:`clases base <python_poo_clase_bas
 para compartir sus atributos y comportamientos con otros clases derivadas como los
 siguiente ejemplos el objeto ``Supervisor`` y el objeto ``Obrero``.
 
-.. figure:: ../_images/poo_herencia.png
+.. figure:: ../_static/images/poo_herencia.png
     :align: center
     :width: 70%
 

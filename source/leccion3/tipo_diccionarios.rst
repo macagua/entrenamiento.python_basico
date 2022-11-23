@@ -245,7 +245,13 @@ Este método devuelve una :ref:`lista <python_list>` de pares de diccionarios (c
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> versiones.items()
-    [('zope', 5.2), ('python', 3.7), ('plone', 6.0)]
+    dict_items([('python', 3.7), ('zope', 5.2), ('plone', 6.0)])
+    >>> for clave, valor in versiones.items():
+    ...     print(clave, valor)
+    ...
+    python 3.7
+    zope 5.2
+    plone 6.0
 
 
 .. _python_dict_mtd_iterkeys:
@@ -261,7 +267,7 @@ final de la posición del **diccionario**.
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> print(versiones)
-    {'zope': 5.2, 'python': 3.7, 'plone': 6.0}
+    {'python': 3.7, 'zope': 5.2, 'plone': 6.0}
     >>> versiones.keys()
     dict_keys(['python', 'zope', 'plone'])
     >>> for clave in versiones.keys():
@@ -288,13 +294,19 @@ final de la posición del **diccionario**.
 keys()
 ~~~~~~
 
-Este método devuelve una :ref:`lista <python_list>` de las claves del diccionario:
+Este método devuelve una :ref:`lista <python_list>` de las claves del **diccionario**:
 
 .. code-block:: pycon
 
     >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
     >>> versiones.keys()
-    ['zope', 'python', 'plone']
+    dict_keys(['python', 'zope', 'plone'])
+    >>> for clave in versiones.keys():
+    ...     print(clave)
+    ...
+    python
+    zope
+    plone
 
 
 .. _python_dict_mtd_pop:
@@ -497,62 +509,7 @@ Como puede apreciar este método no devuelve nada, más si muestra de nuevo el d
 values()
 ~~~~~~~~
 
-Este método devuelve una lista de los valores del diccionario:
-
-.. code-block:: pycon
-
-    >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones.values()
-    [5.2, 3.7, 6.0]
-
-
-.. _python_dict_mtd_items:
-
-items()
-~~~~~~~
-
-Este método devuelve un objeto como un conjunto mutable proveyendo una vista en los
-elementos del diccionario:
-
-.. code-block:: pycon
-
-    >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones.keys()
-    dict_keys(['python', 'zope', 'plone'])
-    >>> for clave, valor in versiones.items():
-    ...     print(clave, valor)
-    ...
-    python 3.7
-    zope 5.2
-    plone 6.0
-
-
-.. _python_dict_mtd_keys:
-
-keys()
-~~~~~~
-
-Este método devuelve un objeto proveyendo una vista de las claves del **diccionario**.
-
-.. code-block:: pycon
-
-    >>> versiones = dict(python=3.7, zope=5.2, plone=6.0)
-    >>> versiones.keys()
-    dict_keys(['python', 'zope', 'plone'])
-    >>> for clave in versiones.keys():
-    ...     print(clave)
-    ...
-    python
-    zope
-    plone
-
-
-.. _python_dict_mtd_values:
-
-values()
-~~~~~~~~
-
-Este método devuelve un objeto proveyendo una vista de los valores del **diccionario**.
+Este método devuelve una lista de los valores del **diccionario**:
 
 .. code-block:: pycon
 

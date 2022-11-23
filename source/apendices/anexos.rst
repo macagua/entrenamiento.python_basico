@@ -292,7 +292,7 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
 
 .. _anexos_N4NtB4r28h0:
 
-.. figure:: ../_images/youtube/N4NtB4r28h0.jpg
+.. figure:: ../_static/images/youtube/N4NtB4r28h0.jpg
     :target: https://www.youtube.com/watch?v=munC0mVXPWk
     :align: center
 
