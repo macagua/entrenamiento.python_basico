@@ -530,7 +530,7 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    pip install --user dist/tostadas_pipo-0.1.tar.gz
+    $ pip install --user dist/tostadas_pipo-0.1.tar.gz
 
 Si al ejecutar el comando anterior muestra el mensaje:
 
@@ -550,7 +550,7 @@ De nuevo vuelva a ejecutar en su consola de comando el comando:
 
 .. code-block:: console
 
-    pip install --user dist/tostadas_pipo-0.1.tar.gz
+    $ pip install --user dist/tostadas_pipo-0.1.tar.gz
     Processing ./dist/tostadas_pipo-0.1.tar.gz
     Building wheels for collected packages: tostadas-pipo
       Running setup.py bdist_wheel for tostadas-pipo ... done
