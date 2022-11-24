@@ -76,10 +76,10 @@ Un ejemplo simple de función esta seguidamente:
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
-    ...     print("Hola", arg, "!")
+    ...     print("¡Hola", arg, "!")
     ...
     >>> hola("Plone")
-    Hola Plone !
+    ¡Hola Plone !
 
 
 .. warning::

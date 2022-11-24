@@ -150,7 +150,7 @@ archivos y carpeta en su programa Python:
     >>> import os
     >>> os.chdir("Ana_Carolina")
     >>> archivo = open(os.getcwd() + "/datos.txt", "w")
-    >>> archivo.write("Se Feliz!")
+    >>> archivo.write("¡Se Feliz!")
     >>> archivo.close()
     >>> os.getcwd()
     '/home/usuario/python/Ana_Carolina'

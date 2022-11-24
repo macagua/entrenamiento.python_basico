@@ -1082,7 +1082,7 @@ Entonces, es accedido al índice 0 posición ``vm`` 'A' y el valor es impreso. L
 accedido al índice 1 posición ``vm`` 'B' y el valor es impreso. También, es accedido al
 índice 2 posición ``vm`` 'C' y el valor es impreso.
 
-Finalmente, es accedido todos los índices del objeto ``vm`` y convertidos a una lista.
+Finalmente, es accedido todos los índices del objeto ``vm`` y convertidos a una :ref:`lista <python_list>`.
 
 
 A continuación, otro ejemplo donde se modifica la data interna usando vista de memoria:
@@ -1105,7 +1105,7 @@ usando la función :ref:`chr() <python_fun_chr>`. Desde, el objeto de *vista de 
 el ``randomBA``.
 
 Desde adentro internamente el tipo ``bytearray`` almacena valores ``ASCII`` para el
-alfabeto, es decir, cada posición de la lista se debe indicar con su equivalente
+alfabeto, es decir, cada posición de la :ref:`lista <python_list>` se debe indicar con su equivalente
 numérico en la tabla ``ASCII``.
 
 .. code-block:: pycon

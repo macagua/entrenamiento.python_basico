@@ -50,10 +50,10 @@ mostrados aquí:
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
     ZeroDivisionError: integer division or modulo by zero
-    >>> 4 + spam * 3
+    >>> 4 + leonardo * 3
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
-    NameError: name 'spam' is not defined
+    NameError: name 'leonardo' is not defined
     >>> "2" + 2
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
@@ -101,7 +101,7 @@ señaliza generando la excepción :ref:`KeyboardInterrupt <python_exception_keyb
     ...         x = int(input("Por favor ingrese un número: "))
     ...         break
     ...     except ValueError:
-    ...         print("Oops!  No era válido. Intente nuevamente...")
+    ...         print("¡Oops!  No era válido. Intente nuevamente...")
     ...
 
 La sentencia ``try`` funciona de la siguiente manera:
@@ -258,10 +258,10 @@ una forma simplificada de la sentencia ``raise`` te permite relanzarla:
     >>> try:
     ...     raise NameError("Hola")
     ... except NameError:
-    ...     print("Ha sucedido una excepción!")
+    ...     print("¡Ha sucedido una excepción!")
     ...     raise
     ...
-    Ha sucedido una excepción!
+    ¡Ha sucedido una excepción!
     Traceback (most recent call last):
       File "<stdin>", line 2, in ?
     NameError: Hola
@@ -333,10 +333,10 @@ de Python). Las excepciones, típicamente, deberán derivar de la clase
     ...     print("Ha ocurrido mi excepción, valor:", e.valor)
     ...
     Ocurrió mi excepción, valor: 4
-    >>> raise MiError("oops!")
+    >>> raise MiError("¡Oops!")
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
-    __main__.MiError: 'oops!'
+    __main__.MiError: '¡Oops!'
 
 En este ejemplo, el método :meth:`__init__` de :ref:`Exception <python_exception>`
 fue sobrescrito. El nuevo comportamiento simplemente crea el atributo *valor*.
@@ -408,9 +408,9 @@ limpieza que deben ser ejecutadas bajo ciertas circunstancias. Por ejemplo:
     >>> try:
     ...     raise KeyboardInterrupt
     ... finally:
-    ...     print("Adiós, Mundo!")
+    ...     print("¡Adiós, Mundo!")
     ...
-    Adios, Mundo!
+    ¡Adios, Mundo!
     Traceback (most recent call last):
       File "<stdin>", line 2, in ?
     KeyboardInterrupt

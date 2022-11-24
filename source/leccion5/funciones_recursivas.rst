@@ -28,7 +28,7 @@ hasta cero a partir de un número:
     ...         print(numero)
     ...         cuenta_regresiva(numero)
     ...     else:
-    ...         print("Boooooooom!")
+    ...         print("¡Boooooooom!")
     ...     print("Fin de la función", numero)
     ...
     >>> cuenta_regresiva(5)
@@ -36,7 +36,7 @@ hasta cero a partir de un número:
     3
     2
     1
-    Boooooooom!
+    ¡Boooooooom!
     Fin de la función 0
     Fin de la función 1
     Fin de la función 2

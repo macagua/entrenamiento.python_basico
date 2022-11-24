@@ -348,10 +348,10 @@ de la declaración.
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
-    ...     print("Hola", arg, "!")
+    ...     print("¡Hola", arg, "!")
     ...
     >>> hola("Plone")
-    Hola Plone !
+    ¡Hola Plone !
 
 Puede puede consultar la documentación de la función ``hola()`` debe utilizar la
 función integrada :ref:`help() <python_fun_help>` y pasarle el argumento del objeto

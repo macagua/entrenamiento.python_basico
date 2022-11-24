@@ -509,7 +509,7 @@ Como puede apreciar este método no devuelve nada, más si muestra de nuevo el d
 values()
 ~~~~~~~~
 
-Este método devuelve una lista de los valores del **diccionario**:
+Este método devuelve una :ref:`lista <python_list>` de los valores del **diccionario**:
 
 .. code-block:: pycon
 
