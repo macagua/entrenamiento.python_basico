@@ -109,7 +109,7 @@ La instancia del nuevo objeto ``Supervisor`` seria de la siguiente forma:
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :linenos:
-    :lines: 58
+    :lines: 60
 
 Luego que genera la instancia del nuevo objeto ``Supervisor`` llamada ``supervisor1``
 se puede imprimir sus detalles de la siguiente forma:
@@ -117,7 +117,7 @@ se puede imprimir sus detalles de la siguiente forma:
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :linenos:
-    :lines: 63
+    :lines: 65
 
 Como la instancia de objeto ``supervisor1`` hereda los atributo(s) y método(s) de la
 clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
@@ -125,7 +125,7 @@ clase ``Persona`` usted puede reusarlo y llamarlo de la siguiente forma:
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :linenos:
-    :lines: 66-75
+    :lines: 67-81
 
 Si desea usar los atributo(s) y método(s) heredados de la clase ``Supervisor`` se puede
 imprimir de la siguiente forma:
@@ -133,21 +133,17 @@ imprimir de la siguiente forma:
 .. literalinclude:: ../../recursos/leccion9/herencia_simple.py
     :language: python
     :linenos:
-    :lines: 78-79
+    :lines: 85-97
 
 .. note::
     El uso de las clases y la programación orientada a objetos, le permite a usted que
     pueda organizar el código con diferentes clases correspondientes a diferentes objetos
     que encontrará (una clase ``Persona``, una clase ``Carro``, una clase ``Departamento``,
-    etc.), con sus propios métodos y atributos. Luego puede usar la herencia para considerar
-    las variaciones en torno a una clase base y reutilizar el código. Ej.: a partir de una
-    clase base de ``Persona``, usted puede crear clases derivadas como ``Supervisor``,
-    ``JefeCuadrilla``, ``Obrero``, etc.
+    etc.), con sus propios métodos y atributos.
 
-.. literalinclude:: ../../recursos/leccion9/herencia_simple.py
-    :language: python
-    :linenos:
-    :lines: 62-68
+    Luego puede usar la herencia para considerar las variaciones en torno a una clase base
+    y reutilizar el código. Ej.: a partir de una clase base de ``Persona``, usted puede
+    crear clases derivadas como ``Supervisor``, ``JefeCuadrilla``, ``Obrero``, etc.
 
 
 Función issubclass()
@@ -204,7 +200,7 @@ la declaración de la subclase:
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
     :linenos:
-    :lines: 59-96
+    :lines: 39-121
 
 
 .. _python_poo_herencia_multiple_mro:

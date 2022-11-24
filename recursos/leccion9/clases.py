@@ -143,10 +143,10 @@ class Obrero(Persona, Destreza):
             self.__doc__[37:44],
             self.nombre,
             self.apellido,
-            self.getPatriotismo(self.patriota),
+            self.obtener_patriotismo(self.patriota),
         )
 
-    def getPatriotismo(self, patriota):
+    def obtener_patriotismo(self, patriota):
         """Mostrar el patriotismo de un Obrero"""
         patriotismo = ("RODILLA EN TIERRA", "APATRIDA")
         if patriota == True:

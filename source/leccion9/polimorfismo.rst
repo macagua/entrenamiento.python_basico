@@ -58,12 +58,13 @@ Clase Base ``Persona``.
 
 .. _python_overloading_operators:
 
-Sobrecarga de Operadores
+Sobrecarga de operadores
 ........................
 
-La *sobrecarga de operadores* es también es conocida por *Overloading Operators*,
+La *sobrecarga de operadores* es también es conocida por `Overloading Operators`_,
 trata básicamente de lo mismo que la **sobrecarga de métodos** pero pertenece en
-esencia al ámbito de los operadores aritméticos, binarios, de comparación y lógicos.
+esencia al ámbito de los :ref:`operadores aritméticos <python_opers_aritmeticos>`,
+binarios, de :ref:`comparación <python_opers_relacionales>` y :ref:`lógicos <python_opers_logicos>`.
 
 .. code-block:: pycon
 
@@ -94,3 +95,5 @@ esencia al ámbito de los operadores aritméticos, binarios, de comparación y l
    :file: ../_templates/partials/soporte_profesional.html
 
 .. disqus::
+
+.. _`Overloading Operators`: https://en.wikipedia.org/wiki/Operator_overloading

@@ -84,7 +84,7 @@ print(f"- Herramienta con más destreza: {obrero1.herramienta}.")
 print(f"- Años de experiencia: {obrero1.experiencia}.")
 
 # Atributo(s) y Método(s) heredado de la clase Obrero
-print(f"- Patriotismo: {obrero1.getPatriotismo(obrero1.patriota)}.")
+print(f"- Patriotismo: {obrero1.obtener_patriotismo(obrero1.patriota)}.")
 
 # Mostrar los atributos y métodos propios de la clase Obrero
 # y los heredados de la clase Persona y Destreza.
@@ -99,6 +99,6 @@ ademas soy un '{}'.""".format(
         obrero1.area,
         obrero1.herramienta,
         obrero1.experiencia,
-        obrero1.getPatriotismo(obrero1.patriota),
+        obrero1.obtener_patriotismo(obrero1.patriota),
     )
 )
