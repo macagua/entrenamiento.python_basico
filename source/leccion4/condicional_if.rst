@@ -63,63 +63,6 @@ La sentencia ``else``, significa, **De lo contrario** se cumple sin evaluar ning
 sentencias seguidas.
 
 
-.. _python_opers_is:
-
-Operador is
-...........
-
-El operador ``is``, significa, que prueba identidad: ambos lados de la expresión
-condicional debe ser el mismo objecto:
-
-.. code-block:: pycon
-
-    >>> 1 is 1.0
-    False
-    >>> a, b = 1, 1
-    >>> a is b
-    True
-
-
-.. _python_opers_in:
-
-Operador in
-...........
-
-El operador ``in``, significa, para cualquier colección del valor del lado izquierdo
-contenga el valor del lado derecho:
-
-.. code-block:: pycon
-
-    >>> b = [1, 2, 3]
-    >>> 2 in b
-    True
-    >>> 5 in b
-    False
-
-En el ejemplo anterior, si ``b`` es una :ref:`lista <python_list>`, este prueba que ``2`` y ``5`` sean
-elementos de la :ref:`lista <python_list>` ``b``.
-
-
-.. _python_opers_notin:
-
-Operador not in
-................
-
-El operador ``not in``, el contrario de operador :ref:`in <python_opers_in>`, devuelve
-``True`` cuando un elemento no está en una secuencia.
-
-.. code-block:: pycon
-
-    >>> b = [1, 2, 3]
-    >>> 4 not in b
-    True
-    >>> 1 not in b
-    False
-
-En el ejemplo anterior, si ``b`` es una :ref:`lista <python_list>`, este prueba que ``4`` y ``1`` sean
-elementos de la :ref:`lista <python_list>` ``b``.
-
-
 .. _python_expresiones_condicional:
 
 Expresiones condicional
