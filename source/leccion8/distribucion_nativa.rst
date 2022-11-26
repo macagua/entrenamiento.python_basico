@@ -256,7 +256,7 @@ ejecute el siguiente comando:
 
     $ pyinstaller --onefile hello.py
 
-Asi de esta forma genera una distribución nativa para plataformas Windows.
+Asi de esta forma genera una distribución nativa para plataformas Linux.
 
 ----
 
