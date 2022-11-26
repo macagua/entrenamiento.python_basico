@@ -75,7 +75,7 @@ def main():
             # configurar los parámetros del mensaje
             msg["From"] = FROM_ADDRESS
             msg["To"] = correo
-            msg["Subject"] = "Esto es una PRUEBA"
+            msg["Subject"] = "Esto es un mensaje PRUEBA"
 
             # añadir en el cuerpo del mensaje
             msg.attach(MIMEText(mensaje, "plain"))

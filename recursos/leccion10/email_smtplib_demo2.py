@@ -11,7 +11,7 @@ SMTP_PORT = "587"
 
 remitente = "Macagua <leonardoc@plone.org>"
 destinatarios = ["Leonardo Caballero <leonardocaballero@gmail.com>"]
-asunto_mensaje = "Envio de Prueba de SMTP"
+asunto_mensaje = "Otro envio de prueba del SMTP"
 cuerpo_mensaje = "Esto es un mensaje de prueba por correo electronico."
 
 mensaje = f"""From: {remitente}

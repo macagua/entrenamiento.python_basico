@@ -14,7 +14,7 @@ destinatarios = ["leonardocaballero@gmail.com"]
 
 mensaje = """From: Macagua <leonardoc@plone.org>
 To: Leonardo Caballero <leonardocaballero@gmail.com>
-Subject: Envio de Prueba de SMTP
+Subject: Prueba de Envios del SMTP
 
 Esto es un mensaje de prueba por correo electronico.
 """

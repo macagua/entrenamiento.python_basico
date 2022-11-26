@@ -47,6 +47,17 @@ Y para captura todas las excepciones posibles, muestra el siguiente mensaje:
     Error: no se pudo enviar el correo
 
 
+El mensaje recibido en la cuenta Gmail desde el programa ``email_smtplib_demo1.py``
+luciría de la siguiente forma:
+
+.. figure:: ../_static/images/email_smtplib_demo1.png
+    :align: center
+    :width: 50%
+    :alt: Mensaje recibido en la cuenta Gmail desde el programa email_smtplib_demo1.py.
+
+    Mensaje recibido en la cuenta Gmail desde el programa ``email_smtplib_demo1.py``.
+
+
 Envío de correo personalizado
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -69,6 +80,17 @@ Y para captura todas las excepciones posibles, muestra el siguiente mensaje:
 .. code-block:: console
 
     Error: no se pudo enviar el correo
+
+
+El mensaje recibido en la cuenta Gmail desde el programa ``email_smtplib_demo2.py``
+luciría de la siguiente forma:
+
+.. figure:: ../_static/images/email_smtplib_demo2.png
+    :align: center
+    :width: 50%
+    :alt: Mensaje recibido en la cuenta Gmail desde el programa email_smtplib_demo2.py.
+
+    Mensaje recibido en la cuenta Gmail desde el programa ``email_smtplib_demo2.py``.
 
 
 Envío de correo avanzado
@@ -138,6 +160,18 @@ Y para captura todas las excepciones posibles, muestra el siguiente mensaje:
 
     Error: no se pudo enviar el correo: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials h199-20020a1f9ed0000000b003b7d46d80b6sm569582vke.16 - gsmtp')
 
+Puede ejecutar distribución binaria ``hello.exe`` generada, el cual mostrara la siguiente pantalla.
+
+
+El mensaje recibido en la cuenta Gmail desde el programa ``emails_gmail_send.py``
+luciría de la siguiente forma:
+
+.. figure:: ../_static/images/emails_gmail_send.png
+    :align: center
+    :width: 50%
+    :alt: Mensaje recibido en la cuenta Gmail desde el programa emails_gmail_send.py.
+
+    Mensaje recibido en la cuenta Gmail desde el programa ``emails_gmail_send.py``.
 
 Además de los procesos de permisos específicos de Gmail (que incluyen aplicaciones menos seguras,
 etc.), estas secuencias de comandos y ejemplos funcionarían con casi cualquier otro servicio de
