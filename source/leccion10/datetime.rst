@@ -84,4 +84,10 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10_datetime>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::
+
 .. _`datetime`: https://docs.python.org/es/3.7/library/datetime.html

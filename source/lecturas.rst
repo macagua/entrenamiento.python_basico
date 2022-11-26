@@ -35,7 +35,7 @@ Introducción a Python
 
 - `Tutorial de Python 3.7 <https://docs.python.org/es/3.7/contents.html>`_.
 
-- `Python para programadores con experiencia <http://es.diveintopython.net/odbchelper_divein.html>`_.
+- `Python para programadores con experiencia <https://argentinaenpython.com/quiero-aprender-python/inmersion-en-python-3.0.11.pdf>`_.
 
 - `Introducción a la programación con Python <https://www.mclibre.org/consultar/python/>`_.
 
@@ -169,8 +169,9 @@ Condicional if
 Operadores lógicos
 ..................
 
-.. todo::
-    TODO Terminar de escribir esta sección.
+- `Operadores lógicos <https://ellibrodepython.com/operadores-logicos>`_.
+
+- `Operadores Básicos en Python con ejemplos <https://www.freecodecamp.org/espanol/news/operadores-basicos-en-python-con-ejemplos/>`_.
 
 
 Bucle while

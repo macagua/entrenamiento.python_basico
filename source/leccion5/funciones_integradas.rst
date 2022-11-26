@@ -165,7 +165,7 @@ legibles desde este.
     'property', 'quit', 'range', 'reduce', 'reload',
     'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted',
     'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr',
-    'unicode', 'vars', 'zip']
+    'vars', 'zip']
 
 Si el objeto soporta un método llamado ``__dir__``, ese será usado; de lo contrario se usa
 la lógica ``dir()`` predeterminada y devuelve:
@@ -1686,8 +1686,7 @@ lstrip()
 La función ``lstrip()`` devuelve una copia de la :ref:`cadena de caracteres <python_str>`
 con el espacio en blanco inicial eliminado. Si se dan la cadena de caracteres y no es
 :ref:`None <python_obj_none>`, elimina los caracteres en la cadena de caracteres en su
-lugar. Si la cadena de caracteres son ``unicode``, serán convertidas a ``unicode`` antes
-de eliminar.
+lugar.
 
 .. code-block:: pycon
 

@@ -53,9 +53,7 @@ Se pueden resumir los tipos de datos *compuestos* estándar en la siguiente tabl
 +-----------------------+---------------+----------------------------------------------------------+
 |                       | ``str``       | :ref:`cadena de caracteres <python_str>`                 |
 | *Secuencias           +---------------+----------------------------------------------------------+
-| inmutables*           | ``unicode``   | :ref:`cadena de caracteres Unicode <python_unicode_cls>` |
-|                       +---------------+----------------------------------------------------------+
-|                       | ``tuple``     | :ref:`tupla <python_tuple>`                              |
+| inmutables*           | ``tuple``     | :ref:`tupla <python_tuple>`                              |
 +-----------------------+---------------+----------------------------------------------------------+
 |                       | ``list``      | :ref:`lista <python_list>`                               |
 | *Secuencias mutables* +---------------+----------------------------------------------------------+
