@@ -1,0 +1,7 @@
+
+Estimado(a) ${NOMBRE_PERSONA},
+
+Este es un mensaje de prueba.
+Espero tengas una gran semana!
+
+Sinceramente
