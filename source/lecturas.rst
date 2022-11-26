@@ -296,6 +296,13 @@ Distribución de Software
 
 - `Packaging Python Projects <https://packaging.python.org/en/latest/tutorials/packaging-projects/>`_.
 
+- `Create Executable of Python Script using PyInstaller <https://datatofish.com/executable-pyinstaller/>`_.
+
+- `Using PyInstaller to Easily Distribute Python Applications - Real Python <https://realpython.com/pyinstaller-python/>`_.
+
+- `PyInstaller - How to Turn Your Python Code into an Exe on Windows <https://www.blog.pythonlibrary.org/2021/05/27/pyinstaller-how-to-turn-your-python-code-into-an-exe-on-windows/>`_.
+
+
 
 Scaffolding en proyectos Python
 ...............................
