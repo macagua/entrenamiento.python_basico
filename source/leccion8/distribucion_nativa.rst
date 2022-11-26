@@ -133,13 +133,19 @@ A continuación el siguiente comando le permite instalarlo:
 
     $ pip install pyinstaller
 
-Supongamos que tiene el siguiente código:
+Para probar el funcionamiento del paquete ``pyinstaller`` requiere un modulo Python que
+convertir a nativo, para esto cree un modulo con el nombre ``hello.py`` con el siguiente
+código fuente:
 
 .. literalinclude:: ../../recursos/leccion8/hello.py
     :language: python
     :linenos:
     :lines: 1-12
 
+Este modulo usa las librerías `threading`_ y `time`_ para pausar la ejecución del modulo
+en dos veces distintas, asi poder apreciar el mensaje que se muestra por la linea de comando.
+
+A continuación se explica la genera de la distribución binara para plataformas Windows y Linux:
 
 Plataforma Windows
 ^^^^^^^^^^^^^^^^^^
@@ -258,3 +264,12 @@ Asi de esta forma genera una distribución nativa para plataformas Windows.
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+.. disqus::
+
+.. _`time`: https://docs.python.org/es/3.7/library/time.html#time.sleep
+.. _`threading`: https://docs.python.org/es/3.7/library/threading.html#threading.Timer
