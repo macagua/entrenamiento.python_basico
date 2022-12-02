@@ -8,7 +8,7 @@ Introspección del lenguaje Python
 
 En Python siendo un lenguaje interpretado tiene a disposición un shell
 de comando para hacer introspección del lenguaje, ademas también existe
-una forma de hacer mas interactiva la introspección del lenguaje, usando
+una forma de hacer más interactiva la introspección del lenguaje, usando
 el paquete ``ipython`` o ``bpython``.
 
 En esta lección se busca introducir a la introspección del lenguaje Python

@@ -209,7 +209,7 @@ Crear paquete
 ...............
 
 Usted puede crear diversos tipos de formatos de instalación y distribución de sus
-paquetes Python, a continuación se describen los mas usados:
+paquetes Python, a continuación se describen los más usados:
 
 
 .. _python_distro_crear_sdist:
@@ -371,7 +371,7 @@ Distribución binaria
 El módulo :ref:`setuptools <python_modulo_setuptools>` y
 :ref:`distutils <python_modulo_distutils>` le permiten crear una distribución binaria
 construida o built "binary" distribution (``bdist``) de su paquete en formato **egg**,
-**wheel**, **rpm**, etc. A continuación se describen los mas usados:
+**wheel**, **rpm**, etc. A continuación se describen los más usados:
 
 .. figure:: ../_static/images/python_eggs.jpg
     :align: center

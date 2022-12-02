@@ -96,7 +96,7 @@ su ejecución:
     - `MicroPython <http://micropython.org/>`_, Python ejecutando en micro controladores.
 
 - Versiones de Python en `otras plataformas <https://www.python.org/download/other/>`_,
-  la versión "tradicional" de Python (tiene nombre código ``CPython``), mas esta versión ha
+  la versión "tradicional" de Python (tiene nombre código ``CPython``), más esta versión ha
   sido migrada a un número plataformas especializadas y/o antiguas, a continuación se destacan
   algunas de ellas.
 

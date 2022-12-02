@@ -39,7 +39,7 @@ código en el intérprete, y/o escribir/ejecutar pequeños programas Python, per
 los programas informáticos no funcionan así.
 
 Se basan en escribir todas las instrucciones en archivos llamados *scripts*, que
-no es mas que guiones de instrucciones. Luego se envía este archivo al intérprete
+no es más que guiones de instrucciones. Luego se envía este archivo al intérprete
 como parámetro desde la terminal de comando (si es un lenguaje interpretado como
 Python) y éste ejecutará todas las instrucciones en bloque.
 

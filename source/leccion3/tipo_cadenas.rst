@@ -490,7 +490,7 @@ Formateo %
 El carácter modulo ``%`` es un operador integrado en Python. Ese es conocido como el
 operador de interpolación. Usted necesitará proveer el % seguido por el tipo que
 necesita ser formateado o convertido. El operador % entonces substituye la frase
-'%tipodato' con cero o mas elementos del tipo de datos especificado:
+'%tipodato' con cero o más elementos del tipo de datos especificado:
 
 .. code-block:: pycon
 

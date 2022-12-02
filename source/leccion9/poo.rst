@@ -463,7 +463,7 @@ conoce como "interfaz". Una interfaz bien definida permite a objetos de distinta
 objetos intercambian información.
 
 .. tip::
-    Para mas detalle consulte el paquete `zope.interface <https://zopeinterface.readthedocs.io/en/latest/>`_.
+    Para más detalle consulte el paquete `zope.interface <https://zopeinterface.readthedocs.io/en/latest/>`_.
 
 
 .. comments:

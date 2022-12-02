@@ -203,7 +203,7 @@ argumentos (conjuntos).
     >>> proyecto3
     set(['python'])
 
-La intersección de dos o mas conjuntos es el conjunto de elemento el cual es común a
+La intersección de dos o más conjuntos es el conjunto de elemento el cual es común a
 todos los conjuntos.
 
 

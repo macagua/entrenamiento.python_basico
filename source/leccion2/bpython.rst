@@ -6,7 +6,7 @@
 Interprete bpython
 ------------------
 
-Alternativamente puedes usar el paquete `bpython`_ que mejora aun mas la experiencia
+Alternativamente puedes usar el paquete `bpython`_ que mejora aun más la experiencia
 de trabajo con el paquete :ref:`ipython <python_modulo_ipython>`.
 
 Para mayor información visite su página principal de `interprete bpython`_ y si necesita

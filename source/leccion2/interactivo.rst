@@ -45,7 +45,7 @@ factores:
 - Hoy en día existente herramientas que te permiten generar
   documentación desde los códigos fuentes Python como `Sphinx`_.
 
-La forma mas fácil es iniciar tu relación con Python simplemente ejecutando
+La forma más fácil es iniciar tu relación con Python simplemente ejecutando
 el comando ``python`` de la siguiente forma:
 
 .. code-block:: console

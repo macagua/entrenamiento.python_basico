@@ -190,7 +190,7 @@ Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de d
     >>> print("Nuevo Diccionario : %s" % str(versiones))
     Nuevo Diccionario : {'python': None, 'zope': None, 'plone': None}
 
-En el ejemplo anterior inicializa los valores de cada clave a ``None``, mas puede
+En el ejemplo anterior inicializa los valores de cada clave a ``None``, más puede
 inicializar un *valor* común por defecto para cada *clave*:
 
 .. code-block:: pycon
@@ -423,7 +423,7 @@ en el diccionario pero esta vez el ``default_value`` es proveído:
 
 A continuación otro ejemplo en donde puedes agrupar N :ref:`tuplas <python_tuple>`
 por el valor el cual se repite más y construir un diccionario que cuyas claves son
-los valores mas repetidos y cuyos valores este agrupados en tipo
+los valores más repetidos y cuyos valores este agrupados en tipo
 :ref:`listas <python_list>`:
 
 .. code-block:: pycon
@@ -446,7 +446,7 @@ los valores mas repetidos y cuyos valores este agrupados en tipo
     >>> print(paquetes)
     {'zope': ['Zope', 'zope.pagetemplate'], 'plone': ['Plone', 'ZODB3', 'plone.volto']}
 
-En el tipo :ref:`tupla <python_tuple>` ``PKGS`` los elementos mas repetidos son ``'zope'``
+En el tipo :ref:`tupla <python_tuple>` ``PKGS`` los elementos más repetidos son ``'zope'``
 y ``'plone'`` estos se convierten en clave del diccionario ``paquetes`` y los otros elementos
 se agregan en listas como sus respectivos valores.
 

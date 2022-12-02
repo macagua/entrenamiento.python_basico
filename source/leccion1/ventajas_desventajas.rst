@@ -30,7 +30,7 @@ Las ventajas del lenguaje Python son las siguientes:
   Programar en Python se convierte en un estilo muy sano de programar: es sencillo
   de aprender, direccionado a las reglas perfectas, le hace como dependiente de mejorar,
   cumplir las reglas, el uso de las lineas, de variables". Ademas es un lenguaje que fue
-  hecho con productividad en mente, es decir, Python le hace ser mas productivo, le permite
+  hecho con productividad en mente, es decir, Python le hace ser más productivo, le permite
   entregar en los tiempos que me requieren.
 
 **Ordenado y limpio**

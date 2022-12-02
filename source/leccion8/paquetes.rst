@@ -69,7 +69,7 @@ Al final tendrá la siguiente estructura del directorios del paquete Python llam
         ├── impuestos.py
         └── __init__.py
 
-Entonces realizar importaciones desde una estructura de directorios mas completa
+Entonces realizar importaciones desde una estructura de directorios más completa
 se realiza de las siguientes formas:
 
 - Importar todos los módulo el sub-paquete ``utilidades``, ejecutando:
