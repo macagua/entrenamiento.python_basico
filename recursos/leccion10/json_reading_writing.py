@@ -1,4 +1,4 @@
-""" Programa de Python para leer y escribir un archivo JSON """
+""" Programa para leer y escribir un archivo JSON """
 
 import json
 import logging
