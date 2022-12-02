@@ -62,6 +62,7 @@ extensions = [
     "sphinx_contributors",
     "sphinx_immaterial",
     "sphinx_immaterial.kbd_keys",
+    "sphinx_tabs.tabs",
     "sphinxcontrib.email",
     "sphinxcontrib.quizdown",
     "yasfb",
@@ -493,6 +494,14 @@ todo_include_todos = True
 
 # If true, ....
 todo_emit_warnings = False
+
+# -- Options for sphinx-tabs extension -------------------------------
+
+# If needed, allow additional builders to be considered compatible.
+sphinx_tabs_valid_builders = ["linkcheck"]
+
+# Disable the tabs can be closed by selecting the open tab, by default
+sphinx_tabs_disabled_tab_closing = True
 
 # -- Options for sphinxcontrib-email extension -------------------------------
 
