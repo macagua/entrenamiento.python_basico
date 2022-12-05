@@ -55,7 +55,7 @@ la documentación y la estructura del lenguaje, con los siguientes comandos de e
     >>> print('Hola Mundo')
     Hola Mundo
     >>> for item in range(
-    ┌──────────────────────────────────────────────────────────────────────────────────────┐
+    ┌───────────────────────────────────────────────────────────────────────────────┐
     │ range: (stop)                                                                 │
     │ range(stop) -> range object                                                   │
     │ range(start, stop[, step]) -> range object                                    │
@@ -65,7 +65,7 @@ la documentación y la estructura del lenguaje, con los siguientes comandos de e
     │ start defaults to 0, and stop is omitted!  range(4) produces 0, 1, 2, 3.      │
     │ These are exactly the valid indices for a list of 4 elements.                 │
     │ When step is given, it specifies the increment (or decrement).                │
-    └──────────────────────────────────────────────────────────────────────────────────────┘
+    └───────────────────────────────────────────────────────────────────────────────┘
 
 
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
