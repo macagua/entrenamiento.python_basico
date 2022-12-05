@@ -18,24 +18,50 @@ Según Wikipedia
   funcionalidades. Es un componente del paquete `SciPy`_."
 
 Para mayor información visite su página principal de `ipython`_ y si necesita instalar
-este programa ejecute el siguiente comando:
+este programa ejecute el siguiente comando, el cual a continuación se presentan
+el correspondiente comando de tu sistema operativo:
 
-.. code-block:: console
+.. tabs::
 
-    $ pip install ipython
+   .. group-tab:: Linux
+
+      .. code-block:: console
+
+          $ pip install ipython
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          > pip install ipython
 
 
-Sustituya el comando ``python`` por ``ipython`` de la siguiente forma:
+Sustituya el comando ``python`` por ``ipython`` correspondiente a tu sistema
+operativo de la siguiente forma:
 
-.. code-block:: console
+.. tabs::
 
-    $ ipython
-    Python 3.7.3 (default, Oct 31 2022, 14:04:00)
-    Type 'copyright', 'credits' or 'license' for more information
-    IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
+   .. group-tab:: Linux
 
-        In [1]:
+      .. code-block:: console
 
+          $ ipython
+          Python 3.7.3 (default, Oct 31 2022, 14:04:00)
+          Type 'copyright', 'credits' or 'license' for more information
+          IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
+
+              In [1]:
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          > ipython
+          Python 3.7.3 (default, Oct 31 2022, 14:04:00)
+          Type 'copyright', 'credits' or 'license' for more information
+          IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
+
+              In [1]:
 
 Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
 ``dir`` y se ejecuta de la siguiente forma:

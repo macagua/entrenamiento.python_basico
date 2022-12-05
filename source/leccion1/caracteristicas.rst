@@ -76,7 +76,7 @@ su ejecución:
 
 - Versiones Python en `código fuente <https://www.python.org/downloads/source/>`_ (archivo
   tarball del código fuente comprimido con XZ y con Gz). Para las mayoría de los sistemas
-  Linux/UNIX, usted debe descargar y compilar el código fuente.
+  UNIX/Linux, usted debe descargar y compilar el código fuente.
 
   .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en un Linux <python_instalacion_linux>`.
 
@@ -106,7 +106,7 @@ su ejecución:
     - `ActivePython <https://www.activestate.com/products/python/>`_, Python para Solaris, Usted puede
       comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
       no de código abierto), o compilar desde una fuente si tiene un compilador de C.
-      Los paquetes UNIX tienen una variedad de versiones de Python para una variedad de versiones de
+      Los paquetes UNIX/Linux tienen una variedad de versiones de Python para una variedad de versiones de
       Solaris. Estos utilizan el estándar Sun ``pkgadd``.
 
   .. note::

@@ -102,7 +102,7 @@ la secuencia siguiente:
    la variable de entorno :ref:`PYTHONPATH <python_variable_entorno_path>` del
    sistema operativo.
 
-#. Si todas las anteriores fallan, Python busca la ruta predeterminada. En UNIX,
+#. Si todas las anteriores fallan, Python busca la ruta predeterminada. En UNIX/Linux,
    la ruta predeterminada normalmente esta ``/usr/local/lib/python/``.
 
 El ruta de búsqueda de módulo es almacenado en el módulo de system ``sys`` como
@@ -119,17 +119,23 @@ Es una variable de entorno del sistema operativo, consistiendo de una lista de
 directorios. La sintaxis de ``PYTHONPATH`` es la misma como la del shell de la
 variable ``PATH``.
 
-Así es una típica definición de ``PYTHONPATH`` desde un sistema Windows, ejecutando:
+.. tabs::
 
-.. code-block:: console
+   .. group-tab:: Linux
 
-    set PYTHONPATH = C:\python20\lib;
+      Así es una típica definición de ``PYTHONPATH`` desde un sistema UNIX/Linux, ejecutando el siguiente comando:
 
-Así es una típica definición de ``PYTHONPATH`` desde un sistema UNIX, ejecutando:
+      .. code-block:: console
 
-.. code-block:: console
+          $ set PYTHONPATH = /usr/local/lib/python
 
-    set PYTHONPATH = /usr/local/lib/python
+   .. group-tab:: Windows
+
+      Así es una típica definición de ``PYTHONPATH`` desde un sistema Windows, ejecutando el siguiente comando:
+
+      .. code-block:: console
+
+          > set PYTHONPATH = C:\Python37\lib;
 
 
 .. _python_modulos_namespace_alcance:

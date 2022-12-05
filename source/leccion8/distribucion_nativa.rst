@@ -33,13 +33,13 @@ A continuación el siguiente comando le permite instalarlo:
 
 .. code-block:: console
 
-    $ pip install auto-py-to-exe
+    > pip install auto-py-to-exe
 
 Para ejecutar el programa, ejecute el siguiente comando:
 
 .. code-block:: console
 
-    $ auto-py-to-exe
+    > .\auto-py-to-exe.exe
 
 Al ejecutar el comando previo, debe mostrarle la siguiente interfaz de usuario.
 
@@ -127,11 +127,22 @@ Paquete pyinstaller
 El paquete `pyinstaller <https://pypi.org/project/pyinstaller/>`_ le permite
 agrupar una aplicación de Python y todas sus dependencias en un solo paquete.
 
-A continuación el siguiente comando le permite instalarlo:
+Para instalar el paquete ``pyinstaller`` se presenta el correspondiente comando
+de tu sistema operativo:
 
-.. code-block:: console
+.. tabs::
 
-    $ pip install pyinstaller
+   .. group-tab:: Linux
+
+      .. code-block:: console
+
+          $ pip install pyinstaller
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          > pip install pyinstaller
 
 Para probar el funcionamiento del paquete ``pyinstaller`` requiere un modulo Python que
 convertir a nativo, para esto cree un modulo con el nombre ``hello.py`` con el siguiente
