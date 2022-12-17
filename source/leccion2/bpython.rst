@@ -82,5 +82,7 @@ tienes instalado en tu sistema.
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion2>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
+.. disqus::
+
 .. _`bpython`: https://pypi.org/project/bpython/
 .. _`interprete bpython`: https://bpython-interpreter.org/

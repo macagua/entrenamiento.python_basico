@@ -431,7 +431,7 @@ Las siguientes excepciones son las realmente lanzadas.
 
 ``BytesWarning``
     La clase base para las advertencias acerca de problemas relacionados con bytes y
-    buffer, mas relacionado a la conversión desde ``str`` o comparando a ``str``.
+    buffer, más relacionado a la conversión desde ``str`` o comparando a ``str``.
     Deriva de la excepción :ref:`Warning <python_exception_warning>`.
 
 
