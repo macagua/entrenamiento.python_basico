@@ -29,7 +29,7 @@ project = project_short_name[0].capitalize() + project_short_name[1:39]
 project_name = project_namecode.replace(".", "")
 project_details = f"Entrenamiento de {project_short_name}"
 publisher = "Leonardo J. Caballero G."
-years = "2014 - 2022"
+years = "2014 - 2023"
 copyright = f"{years}, {publisher}"
 author = "Leonardo J. Caballero G."
 
