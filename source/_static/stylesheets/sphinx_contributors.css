@@ -1,3 +1,7 @@
 .sphinx-contributors img {
     border-radius: 50%;
 }
+
+.sphinx-contributors--avatars .sphinx-contributors_contributor__image {
+    margin: 0 auto;
+}
