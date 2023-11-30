@@ -304,45 +304,63 @@ Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``,
 La única diferencia sintáctica entre la definición de un método y la definición de una
 función es que el primer parámetro del método por convención debe ser el nombre ``self``.
 
-Usted puede probar el código anterior, si lo transcribe en el
-:ref:`consola interactiva <python_interactivo>` Python como lo siguiente:
+Usted puede probar el código anterior, si lo transcribe en el :ref:`consola interactiva <python_interactivo>`
+Python como lo siguiente:
 
 .. code-block:: pycon
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
+    ...
     ...     cedula = "V-13458796"
     ...     nombre = "Leonardo"
     ...     apellido = "Caballero"
     ...     sexo = "M"
+    ...
     ...     def hablar(self, mensaje):
     ...         """Mostrar mensaje de saludo de Persona"""
     ...         return mensaje
     ...
     >>>
-    >>> macagua = Persona
-    >>> Persona().hablar("Hola, soy la clase {0}.".format(macagua.__name__))
-    'Hola, soy la clase Persona.'
-    >>> type(Persona().hablar)
-    <type 'instancemethod'>
-    >>> Persona().hablar.__doc__
-    'Mostrar mensaje de saludo de Persona'
 
-Si crea una instancia de objeto para la clase ``Persona`` e intenta llamar al método
-``hablar()`` esto lanzara una excepción :ref:`TypeError <python_exception_typeerror>`,
-como sucede a continuación:
+
+Analizar la estructura de la clase el cual representa a una Persona:
 
 .. code-block:: pycon
 
-    >>> macagua = Persona
+    >>> type(Persona())
+    <class '__main__.Persona'>
+    >>> Persona().__doc__
+    'Clase que representa una Persona'
+    >>> Persona().hablar.__doc__
+    'Mostrar mensaje de saludo de Persona'
+    >>> type(Persona().hablar)
+    <class 'method'>
+    >>> Persona().hablar.__doc__
+    'Mostrar mensaje de saludo de Persona'
+    >>> Persona().hablar("Hola, soy la clase {0}.".format(macagua.__class__.__name__))
+    'Hola, soy la clase Persona.'
+    >>>
+
+
+Crear una instancia de objeto para la clase ``Persona``:
+
+.. code-block:: pycon
+
+    >>> macagua = Persona()
+    >>> type(macagua)
+    <class '__main__.Persona'>
+    >>> macagua.__doc__
+    'Clase que representa una Persona'
+    >>> macagua.hablar.__doc__
+    'Mostrar mensaje de saludo de Persona'
+    >>> type(macagua.hablar)
+    <class 'method'>
     >>> macagua.hablar("Hola Plone")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    TypeError: unbound method hablar() must be called with Persona instance as first argument (got str instance instead)
-
-Esto sucede por...
-
-.. todo:: TODO explicar por que se lanza la excepción TypeError.
+    'Hola Plone'
+    >>> macagua.hablar("Hola, soy la clase {0}.".format(macagua.__class__.__name__))
+    'Hola, soy la clase Persona.'
+    >>>
 
 
 .. _python_mtd_ambito:
