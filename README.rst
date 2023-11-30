@@ -1,10 +1,10 @@
 .. -*- coding: utf-8 -*-
 
-=========================================================
-Entrenamiento "Programación en Python 3.7 - Nivel básico"
-=========================================================
+=======================================================
+Entrenamiento "Programación en Python 3 - Nivel básico"
+=======================================================
 
-Repositorio de manuales y recursos del entrenamiento "Programación en `Python 3.7`_ - Nivel
+Repositorio de manuales y recursos del entrenamiento "Programación en `Python 3`_ - Nivel
 básico" realizado por la empresa `Covantec R.L`_.
 
 .. contents :: :local:
@@ -146,6 +146,6 @@ directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como el idioma Espa�
 (LICENSE.es.rst).
 
 .. _`Covantec R.L`: https://github.com/Covantec
-.. _`Python 3.7`: https://docs.python.org/es/3.7/
+.. _`Python 3`: https://docs.python.org/es/3.11/
 .. _`entrenamiento.python_basico`: https://github.com/macagua/entrenamiento.python_basico
 .. _`ticket de soporte`: https://github.com/macagua/entrenamiento.python_basico/issues/new

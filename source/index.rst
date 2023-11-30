@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-=========================================
-Programación en Python 3.7 - Nivel básico
-=========================================
+=======================================
+Programación en Python 3 - Nivel básico
+=======================================
 
-Repositorio de manuales y recursos del entrenamiento **"Programación en** `Python 3.7`_ -
+Repositorio de manuales y recursos del entrenamiento **"Programación en** `Python 3`_ -
 **Nivel básico"**.
 
 .. warning::
@@ -75,4 +75,4 @@ Búsqueda
 
 * :ref:`search`
 
-.. _`Python 3.7`: https://docs.python.org/es/3.7/
+.. _`Python 3`: https://docs.python.org/es/3.11/

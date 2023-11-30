@@ -38,9 +38,9 @@ author = "Leonardo J. Caballero G."
 # built documents.
 #
 # The short X.Y version.
-version = "3.7"
+version = "3.11"
 # The full version, including alpha/beta/rc tags.
-release = "3.7.3"
+release = "3.11.5"
 
 
 # -- General configuration ---------------------------------------------------
@@ -489,7 +489,7 @@ epub_exclude_files = ["search.html"]
 # Add mappings
 # https://kev.inburke.com/kevin/sphinx-interlinks/
 intersphinx_mapping = {
-    "python3": ("https://docs.python.org/3.7/", None),
+    "python3": ("https://docs.python.org/3.11/", None),
 }
 intersphinx_timeout = 120
 

@@ -7,8 +7,8 @@ Glosario
 
 :Autor(es): Leonardo J. Caballero G.
 :Correo(s): :email:`leonardoc@plone.org`
-:Compatible con: Python 3.7.x
-:Fecha: 16 de Noviembre de 2022
+:Compatible con: Python 3.11.x
+:Fecha: 30 de Noviembre de 2023
 
 A continuación una serie de términos usados en las tecnologías Python.
 
@@ -136,7 +136,7 @@ A continuación una serie de términos usados en las tecnologías Python.
         Entonces el módulo Python se instalará.
 
         .. seealso::
-            - https://docs.python.org/es/3.7/install/index.html
+            - https://docs.python.org/es/3.11/install/index.html
 
     var
         Diminutivo en singular del termino :term:`variable`.

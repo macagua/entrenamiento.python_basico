@@ -76,10 +76,10 @@ Un ejemplo simple de función esta seguidamente:
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
-    ...     print("¡Hola", arg, "!")
+    ...     print("¡Hola {}!".format(arg))
     ...
     >>> hola("Plone")
-    ¡Hola Plone !
+    ¡Hola Plone!
 
 
 .. warning::
@@ -102,7 +102,7 @@ navegue el código en forma interactiva; es una buena práctica incluir
 :ref:`docstrings <python_str_docstrings>` en el código que uno escribe, por lo que se
 debe hacer un hábito de esto.
 
-La ejecución de la función ``hola()`` muestra la impresión de un mensaje **Hola Plone !**
+La ejecución de la función ``hola()`` muestra la impresión de un mensaje **¡Hola Plone!**
 que se imprime por consola. Devolver el objeto por los valores de retorno opcionales.
 
 La ejecución de una función introduce una nueva tabla de símbolos usada para las

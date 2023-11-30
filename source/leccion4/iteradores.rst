@@ -357,7 +357,7 @@ tipo :ref:`diccionario <python_dict>`, por defecto muestra la clave de la secuen
 
 .. code-block:: pycon
 
-    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.11, zope=5.2, plone=6.0)
     >>> paquete = iter(versiones_plone)
     >>> paquete
     <dict_keyiterator object at 0x7f792c68ff40>
@@ -386,14 +386,14 @@ método integrado :ref:`values() <python_dict_mtd_values>`:
 
 .. code-block:: pycon
 
-    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.11, zope=5.2, plone=6.0)
     >>> version = iter(versiones_plone.values())
     >>> version
     <dict_valueiterator object at 0x7f792c59ee50>
     >>> print(next(version))
     5.2
     >>> print(next(version))
-    3.7
+    3.11
     >>> print(next(version))
     6.0
     >>> print(next(version))
@@ -415,12 +415,12 @@ método integrado :ref:`items() <python_dict_mtd_items>`:
 
 .. code-block:: pycon
 
-    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.11, zope=5.2, plone=6.0)
     >>> paquete = iter(versiones_plone.items())
     >>> paquete
     <dict_itemiterator object at 0x7f792c59ee50>
     >>> print(next(paquete))
-    ('python', 3.7)
+    ('python', 3.11)
     >>> print(next(paquete))
     ('zope', 5.2)
     >>> print(next(paquete))
@@ -447,4 +447,4 @@ método integrado :ref:`items() <python_dict_mtd_items>`:
 
 .. disqus::
 
-.. _`iterator protocol`: https://docs.python.org/es/3.7/library/stdtypes.html#iterator-types
+.. _`iterator protocol`: https://docs.python.org/es/3.11/library/stdtypes.html#iterator-types

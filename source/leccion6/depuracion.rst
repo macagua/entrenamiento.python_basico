@@ -9,7 +9,7 @@ Depuración con pdb
 En este tutorial se exploran herramientas que ayudan a entender tu
 código: depuración para encontrar y corregir *bugs* (errores).
 
-El depurador python, `pdb <https://docs.python.org/es/3.7/library/pdb.html>`_,
+El depurador python, `pdb <https://docs.python.org/es/3.11/library/pdb.html>`_,
 te permite inspeccionar tu código de forma interactiva.
 
 Te permite:
@@ -116,11 +116,11 @@ En este caso esta depurando el archivo :download:`index_error.py <../../recursos
       -> """Small snippet to raise an IndexError."""
       (Pdb) continue
       Traceback (most recent call last):
-      File "/usr/lib/python3.7/pdb.py", line 1296, in main
+      File "/usr/lib/python3.11/pdb.py", line 1296, in main
           pdb._runscript(mainpyfile)
-      File "/usr/lib/python3.7/pdb.py", line 1215, in _runscript
+      File "/usr/lib/python3.11/pdb.py", line 1215, in _runscript
           self.run(statement)
-      File "/usr/lib/python3.7/bdb.py", line 372, in run
+      File "/usr/lib/python3.11/bdb.py", line 372, in run
           exec cmd in globals, locals
       File "<string>", line 1, in <module>
       File "index_error.py", line 8, in <module>
@@ -244,7 +244,7 @@ estamos haciendo aritmética con enteros.
         In [4]: %run wiener_filtering.py
         ---------------------------------------------------------------------------
         FloatingPointError                        Traceback (most recent call last)
-        /home/macagua/venv/lib/python3.7/site-packages/IPython/utils/py3compat.pyc
+        /home/macagua/venv/lib/python3.11/site-packages/IPython/utils/py3compat.pyc
         in execfile(fname, *where)
             176             else:
             177                 filename = fname

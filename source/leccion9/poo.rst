@@ -202,7 +202,7 @@ Los atributos describen el estado de un objeto. Pueden ser de cualquier tipo de 
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
     :linenos:
-    :lines: 1-6
+    :lines: 1-7
 
 Usted puede probar el código anterior, si lo transcribe en el
 :ref:`consola interactiva <python_interactivo>` Python como lo siguiente:
@@ -229,18 +229,13 @@ Usted puede probar el código anterior, si lo transcribe en el
     'Caballero'
     >>> macagua.sexo
     'M'
-    >>> print("El objeto de la clase " + macagua.__name__ + "," + macagua.__doc__ + ".")
+    >>> print("El objeto de la clase {}, {}.".format(macagua.__name__, macagua.__doc__))
     El objeto de la clase Persona, Clase que representa una Persona.
-    >>> print(
-    ...     "Hola, mucho gusto, mi nombre es '"
-    ...     + macagua.nombre
-    ...     + " "
-    ...     + macagua.apellido
-    ...     + "', \nmi cédula de identidad es '"
-    ...     + macagua.cedula
-    ...     + "', y mi sexo es '"
-    ...     + macagua.sexo
-    ...     + "'."
+    >>> print("Hola, mucho gusto, mi nombre es '{} {}', \nmi cédula de identidad es '{}', y mi sexo es '{}'.".format(
+    ...     macagua.nombre,
+    ...     macagua.apellido,
+    ...     macagua.cedula,
+    ...     macagua.sexo)
     ... )
     Hola, mucho gusto, mi nombre es 'Leonardo Caballero',
     mi cédula de identidad es 'V-13458796', y mi sexo es 'M'.
@@ -304,7 +299,7 @@ Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``,
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
     :linenos:
-    :lines: 1-26
+    :lines: 1-21
 
 La única diferencia sintáctica entre la definición de un método y la definición de una
 función es que el primer parámetro del método por convención debe ser el nombre ``self``.
@@ -419,7 +414,7 @@ atributos de la clase.
 
 ::
 
-    class <Clase>(object):
+    class <Clase>:
         ...
         ...
         @classmethod
@@ -445,7 +440,7 @@ prefijo.
 
 ::
 
-    class <Clase>(object):
+    class <Clase>:
         ...
         ...
         @staticmethod

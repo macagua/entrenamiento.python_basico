@@ -192,9 +192,9 @@ necesarios.
 .. disqus::
 
 
-.. _`email`: https://docs.python.org/es/3.7/library/email.html
-.. _`smtplib`: https://docs.python.org/es/3.7/library/smtplib.html
-.. _`smtpd`: https://docs.python.org/es/3.7/library/smtpd.html
-.. _`imaplib`: https://docs.python.org/es/3.7/library/imaplib.html
-.. _`mailbox`: https://docs.python.org/es/3.7/library/mailbox.html
-.. _`Template`: https://docs.python.org/es/3.7/library/string.html#template-strings
+.. _`email`: https://docs.python.org/es/3.11/library/email.html
+.. _`smtplib`: https://docs.python.org/es/3.11/library/smtplib.html
+.. _`smtpd`: https://docs.python.org/es/3.11/library/smtpd.html
+.. _`imaplib`: https://docs.python.org/es/3.11/library/imaplib.html
+.. _`mailbox`: https://docs.python.org/es/3.11/library/mailbox.html
+.. _`Template`: https://docs.python.org/es/3.11/library/string.html#template-strings

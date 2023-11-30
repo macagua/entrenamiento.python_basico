@@ -31,9 +31,9 @@ Introducción a Python
 
 - `Pagina Web Oficial <https://www.python.org/>`_.
 
-- `Documentación oficial de Python 3.7 <https://docs.python.org/es/3.7/>`_.
+- `Documentación oficial de Python 3 <https://docs.python.org/es/3.11/>`_.
 
-- `Tutorial de Python 3.7 <https://docs.python.org/es/3.7/contents.html>`_.
+- `Tutorial de Python 3 <https://docs.python.org/es/3.11/contents.html>`_.
 
 - `Python para programadores con experiencia <https://argentinaenpython.com/quiero-aprender-python/inmersion-en-python-3.0.11.pdf>`_.
 
@@ -75,11 +75,9 @@ Inmersión al modo interactivo de Python
 
 - `Una pequeña inmersión al modo interactivo de Python <https://lcaballero.wordpress.com/2012/07/01/inmersion-al-modo-interactivo-de-python/>`_ de la fundación Cenditel.
 
-- `A Guide To Object Introspection in Python <https://www.zeolearn.com/magazine/a-guide-to-object-introspection-in-python>`_.
-
 - `Inmersión en Python <https://diveintopython3.net/>`_.
 
-- `La librería estándar de Python <https://docs.python.org/es/3.7/library/index.html>`_.
+- `La librería estándar de Python <https://docs.python.org/es/3.11/library/index.html>`_.
 
 - `Guía de aprendizaje de Python <https://pyspanishdoc.sourceforge.net/tut/tut.html>`_.
 
@@ -99,7 +97,7 @@ Variables y constantes
 
 - `Python Variables, Constants and Literals <https://www.programiz.com/python-programming/variables-constants-literals>`_.
 
-- `Built-in Constants - Python 3.7 documentation <https://docs.python.org/es/3.7/library/constants.html>`_.
+- `Built-in Constants - Python 3 documentation <https://docs.python.org/es/3.11/library/constants.html>`_.
 
 - Ver el anexo :numref:`anexos_vDa5Vt002IY` sobre *Variables*.
 
@@ -157,7 +155,7 @@ Condicional if
 
 - `Operadores básicos de Python <http://codigoprogramacion.com/cursos/tutoriales-python/operadores-basicos-de-python.html>`_.
 
-- `Sentencias IF <https://docs.python.org/es/3.7/tutorial/controlflow.html#if-statements>`_.
+- `Sentencias IF <https://docs.python.org/es/3.11/tutorial/controlflow.html#if-statements>`_.
 
 - `Condicionales if y else en Python <http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html>`_.
 
@@ -177,7 +175,7 @@ Operadores lógicos
 Bucle while
 ...........
 
-- `Introducción a Bucles 'while' <https://docs.python.org/es/3.7/tutorial/introduction.html#primeros-pasos-hacia-la-programacion>`_.
+- `Introducción a Bucles 'while' <https://docs.python.org/es/3.11/tutorial/introduction.html#primeros-pasos-hacia-la-programacion>`_.
 
 - `Ciclo while en Python <http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html>`_.
 
@@ -189,7 +187,7 @@ Bucle while
 Bucle for
 .........
 
-- Introducción a `Bucles 'for' <https://docs.python.org/es/3.7/tutorial/controlflow.html#la-sentencia-for>`_.
+- Introducción a `Bucles 'for' <https://docs.python.org/es/3.11/tutorial/controlflow.html#la-sentencia-for>`_.
 
 - Ver el anexo :numref:`anexos_aqnjB3dydik` sobre los *bucles For*.
 
@@ -209,7 +207,7 @@ Lección 5 - Funciones y programación estructurada
 Funciones definidas por el usuario
 ..................................
 
-- `Introducción a Funciones <https://docs.python.org/es/3.7/tutorial/controlflow.html#definiendo-funciones>`_ - ¿Por qué?.
+- `Introducción a Funciones <https://docs.python.org/es/3.11/tutorial/controlflow.html#definiendo-funciones>`_ - ¿Por qué?.
 
 - `Definiendo una función - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/functions.html#definiendo-una-funcion>`_.
 
@@ -245,7 +243,7 @@ Programación estructurada
 Lección 6 - Introspección a la depuración con pdb
 -------------------------------------------------
 
-- `pdb - The Python Debugger <https://docs.python.org/es/3.7/library/pdb.html>`_.
+- `pdb - The Python Debugger <https://docs.python.org/es/3.11/library/pdb.html>`_.
 
 - `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://claudiovz.github.io/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
 
@@ -321,7 +319,7 @@ Lección 9 - Manejos de errores y orientación a objetos
 Errores y excepciones
 .....................
 
-- `Principales errores al comenzar con Python <http://www.cursosgis.com/principales-errores-al-comenzar-con-python/>`_.
+- `Principales errores al comenzar con Python <https://www.cursosgis.com/principales-errores-al-comenzar-con-python/>`_.
 
 - Ver el anexo :numref:`anexos_sNTowPB4YHI` sobre *Excepciones*.
 
@@ -330,7 +328,7 @@ Programación orientada a objetos
 
 - `Programación orientada a objetos - Wikipedia <https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos>`_.
 
-- `Clases - Tutorial de Python v3.7 <https://docs.python.org/es/3.7/tutorial/classes.html>`_.
+- `Clases - Tutorial de Python v3 <https://docs.python.org/es/3.11/tutorial/classes.html>`_.
 
 - `Programación Orientada a Objetos (POO) - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/oop.html>`_.
 
@@ -362,7 +360,7 @@ Listas de comprensión
 datetime - Fecha y hora
 .......................
 
-- `datetime <https://docs.python.org/es/3.7/library/datetime.html>`_.
+- `datetime <https://docs.python.org/es/3.11/library/datetime.html>`_.
 
 - `datetime - Date and Time Value Manipulation <https://pymotw.com/3/datetime/index.html>`_.
 
@@ -372,7 +370,7 @@ datetime - Fecha y hora
 locale - Servicios de internacionalización
 ..........................................
 
-- `locale <https://docs.python.org/es/3.7/library/locale.html>`_.
+- `locale <https://docs.python.org/es/3.11/library/locale.html>`_.
 
 - `Formatting Python Dates According to Locale <https://www.skybert.net/python/formatting-python-dates-according-to-locale/>`_.
 
@@ -386,7 +384,7 @@ locale - Servicios de internacionalización
 email - Correo electrónico
 ..........................
 
-- `email - Un paquete de manejo de correo electrónico y MIME <https://docs.python.org/es/3.7/library/email.html>`_.
+- `email - Un paquete de manejo de correo electrónico y MIME <https://docs.python.org/es/3.11/library/email.html>`_.
 
 - `email: Ejemplos <https://docs.python.org/es/3/library/email.examples.html>`_.
 
@@ -399,14 +397,14 @@ email - Correo electrónico
 json - Codificador y decodificador JSON
 .......................................
 
-- `json - Codificador y decodificador JSON <https://docs.python.org/es/3.7/library/json.html>`_.
+- `json - Codificador y decodificador JSON <https://docs.python.org/es/3.11/library/json.html>`_.
 
 - `json - JavaScript Object Notation <https://pymotw.com/3/json/index.html#module-json>`_.
 
 - `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/reading-and-writing-json-to-a-file-in-python/>`_.
 
 .. raw:: html
-   :file: ../_templates/partials/soporte_profesional.html
+   :file: _templates/partials/soporte_profesional.html
 
 .. disqus::
 

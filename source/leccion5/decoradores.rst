@@ -396,7 +396,7 @@ definir ``log_it``, pero en este caso como una clase en vez de con una función.
 
 .. code:: pycon
 
-    >>> class log_it(object):
+    >>> class log_it:
     ...     _logfile = "out.log"
     ...     def __init__(self, function):
     ...         self.function = function

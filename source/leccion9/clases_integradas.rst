@@ -387,7 +387,7 @@ la método :ref:`archivo.read() <python_mtd_read>` devuelve una excepción
     ValueError: I/O operation on closed file
 
 
-.. tip:: Para más detalles: https://docs.python.org/es/3.7/tutorial/inputoutput.html
+.. tip:: Para más detalles: https://docs.python.org/es/3.11/tutorial/inputoutput.html
 
 
 .. _python_mtd_flush:
@@ -1340,7 +1340,7 @@ Un ejemplo sencillo real se muestra a continuación:
 
 .. code-block:: pycon
 
-    >>> class Mamifero(object):
+    >>> class Mamifero:
     ...     def __init__(self, mamifero):
     ...         print(mamifero, "es un animal de sangre caliente.")
     ...
@@ -1367,7 +1367,7 @@ A continuación un ejemplo de cambiar la clase base a la clase RazaCanina:
 
 .. code-block:: pycon
 
-    >>> class Mamifero(object):
+    >>> class Mamifero:
     ...     def __init__(self, mamifero):
     ...         print(mamifero, "es un animal de sangre caliente.")
     ...
@@ -1398,7 +1398,7 @@ A continuación un ejemplo del uso ``super()`` con
 
 .. code-block:: pycon
 
-    >>> class Animal(object):
+    >>> class Animal:
     ...     def __init__(self, animal):
     ...         print(
     ...             animal,

@@ -37,7 +37,7 @@ comprobar la correcta instalación  solamente debería ejecutar el comando en la
 .. code-block:: console
 
     $ python3
-    Python 3.7.3 (default, Jan 22 2021, 20:04:44)
+    Python 3.11.5 (default, Sep 11 2023, 13:26:23)
     [GCC 8.3.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>

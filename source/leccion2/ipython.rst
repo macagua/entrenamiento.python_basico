@@ -46,7 +46,7 @@ operativo de la siguiente forma:
       .. code-block:: console
 
           $ ipython
-          Python 3.7.3 (default, Oct 31 2022, 14:04:00)
+          Python 3.11.5 (default, Sep 11 2023, 13:26:23)
           Type 'copyright', 'credits' or 'license' for more information
           IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
 
@@ -57,7 +57,7 @@ operativo de la siguiente forma:
       .. code-block:: console
 
           > ipython
-          Python 3.7.3 (default, Oct 31 2022, 14:04:00)
+          Python 3.11.5 (default, Sep 11 2023, 13:26:23)
           Type 'copyright', 'credits' or 'license' for more information
           IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
 
@@ -103,8 +103,8 @@ la librería ``os`` ejecutando el siguiente comando:
 
     In [2]: os?
     Type:        module
-    String form: <module 'os' from '/usr/lib/python3.7/os.py'>
-    File:        /usr/lib/python3.7/os.py
+    String form: <module 'os' from '/usr/lib/python3.11/os.py'>
+    File:        /usr/lib/python3.11/os.py
     Docstring:
     OS routines for NT or Posix depending on what system we're on.
 
@@ -149,7 +149,7 @@ librería importada
 .. code-block:: pycon
 
     In [4]: os.__file__
-    Out[4]: '/usr/lib/python3.7/os.py'
+    Out[4]: '/usr/lib/python3.11/os.py'
 
 
 También puede consultar la documentación de la librería ``os`` de la
@@ -201,7 +201,7 @@ ejecutando el siguiente comando:
         os - OS routines for NT or Posix depending on what system we're on.
 
     MODULE REFERENCE
-        https://docs.python.org/3.7/library/os
+        https://docs.python.org/3.11/library/os
 
         The following documentation is automatically generated from the Python
         source files.  It may be incomplete, incorrect or include features that

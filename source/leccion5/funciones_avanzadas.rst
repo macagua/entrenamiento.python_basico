@@ -100,12 +100,12 @@ siguiente forma:
     ...     return numero * 2
     ...
 
-    >>> lambda numero: numero * 2
-    <function <lambda> at 0x7f1023944e60>
     >>> doblar(2)
     4
     >>> type(doblar)
     <type 'function'>
+    >>> lambda numero: numero * 2
+    <function <lambda> at 0x7f1023944e60>
 
 
 Esta notación simple es la que una función ``lambda`` intenta replicar, observe,

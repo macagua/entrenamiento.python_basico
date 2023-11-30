@@ -21,9 +21,6 @@ Python distingue entre enteros, números de punto flotante y números complejos:
 +-------------+----------+-------------------------------------+-------------------------+
 | ``int``     | Números  | Número entero con precisión fija.   | ``42``                  |
 +-------------+----------+-------------------------------------+-------------------------+
-| ``long``    | Números  | Número entero en caso de overflow.  | ``42L`` ó               |
-|             |          |                                     | ``456966786151987643L`` |
-+-------------+----------+-------------------------------------+-------------------------+
 | ``float``   | Números  | Coma flotante de doble precisión.   | ``3.1415927``           |
 +-------------+----------+-------------------------------------+-------------------------+
 | ``complex`` | Números  | Parte real y parte imaginaria *j*.  | ``(4.5 + 3j)``          |
@@ -36,9 +33,7 @@ Enteros
 
 Los números enteros son aquellos que no tienen decimales, tanto positivos como negativos
 (además del cero). En Python se pueden representar mediante el tipo ``int`` (de integer,
-entero) o el tipo ``long`` (largo). La única diferencia es que el tipo long permite
-almacenar números más grandes. Es aconsejable no utilizar el tipo ``long`` a menos que
-sea necesario, para no malgastar memoria.
+entero).
 
 El tipo ``int`` de Python se implementa a bajo nivel mediante un tipo ``long`` de C.
 Y dado que Python utiliza C por debajo, como C, y a diferencia de Java, el rango de
@@ -61,62 +56,6 @@ A continuación, se presentan un ejemplo de su uso:
     :language: python
     :linenos:
     :lines: 4-5
-
-
-.. _python_num_entero_long:
-
-Enteros long
-............
-
-El tipo ``long`` de Python permite almacenar números de cualquier precisión, limitado
-por la memoria disponible en la máquina.
-
-Al asignar un número a una variable esta pasará a tener tipo ``int``, a menos que el
-número sea tan grande como para requerir el uso del tipo ``long``.
-
-.. code-block:: pycon
-
-    >>> entero = 23
-    >>> type(entero)
-    <type 'int'>
-
-También puede indicar a Python que un número se almacene usando ``long`` añadiendo
-una *L* al final:
-
-.. code-block:: pycon
-
-    >>> entero = 23l
-    >>> type(entero)
-    <type 'long'>
-
-
-El literal que se asigna a la variable también se puede expresar como un ``octal``,
-anteponiendo un cero:
-
-.. code-block:: pycon
-
-    # 027 octal = 23 en base 10
-    entero = 027
-
-o bien en hexadecimal, anteponiendo un ``0x``:
-
-.. code-block:: pycon
-
-    # 0x17 hexadecimal = 23 en base 10
-    entero = 0x17
-
-
-Ejemplo de enteros long
-~~~~~~~~~~~~~~~~~~~~~~~
-
-A continuación, se presentan un ejemplo de su uso:
-
-**Definición de un tipo entero long**
-
-.. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
-    :language: python
-    :linenos:
-    :lines: 8-10
 
 
 ----
@@ -173,12 +112,12 @@ Ejemplo de enteros float
 
 A continuación, se presentan un ejemplo de su uso:
 
-**Definiro coma flotante**
+**Definir coma flotante**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
     :linenos:
-    :lines: 14-17
+    :lines: 8-11
 
 
 **Definir tipo entero coma flotante con exponente en base 10**
@@ -186,7 +125,7 @@ A continuación, se presentan un ejemplo de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
     :linenos:
-    :lines: 21-22
+    :lines: 15-16
 
 ----
 
@@ -227,7 +166,7 @@ A continuación, se presentan un ejemplo de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_numericos.py
     :language: python
     :linenos:
-    :lines: 25-26
+    :lines: 19-20
 
 
 Convertir a numéricos
@@ -238,9 +177,6 @@ Para convertir a :ref:`tipos numéricos <python_int>` debe usar las siguientes
 
 - La función :ref:`int() <python_fun_int>` devuelve un tipo de datos
   :ref:`número entero <python_num_entero>`.
-
-- La función :ref:`long() <python_fun_long>` devuelve un tipo de datos
-  :ref:`número entero long <python_num_entero_long>`.
 
 - La función :ref:`float() <python_fun_float>` devuelve un tipo de datos
   :ref:`número entero float <python_num_float>`.
@@ -258,16 +194,6 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 .. code-block:: pycon
 
     >>> help(int)
-
-Para salir de esa ayuda presione la tecla :keys:`q`.
-
-
-Usted puede consultar toda la documentación disponible sobre las **números enteros
-long** desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
-
-.. code-block:: pycon
-
-    >>> help(long)
 
 Para salir de esa ayuda presione la tecla :keys:`q`.
 

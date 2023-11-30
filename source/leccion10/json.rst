@@ -11,7 +11,7 @@ Python. El módulo json proporciona una API similar a la de pickle convertir obj
 Python en memoria a una representación serializada conocida como notación de objetos de
 JavaScript (JSON).
 
-A diferencia de :ref:`pickle <python_modulo_pickle>`, JSON tiene la ventaja de tener
+A diferencia de `pickle <https://docs.python.org/es/3.11/library/pickle.html>`_`, JSON tiene la ventaja de tener
 implementaciones en muchos lenguajes (especialmente JavaScript). Se usa más ampliamente para
 la comunicación entre el servidor web y el cliente en una API REST, pero también es útil
 para otras necesidades de comunicación entre aplicaciones.
@@ -78,4 +78,4 @@ De esta forma se escribí y lee un archivo JSON.
 
 .. disqus::
 
-.. _`json`: https://docs.python.org/es/3.7/library/json.html
+.. _`json`: https://docs.python.org/es/3.11/library/json.html

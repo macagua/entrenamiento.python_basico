@@ -82,7 +82,7 @@ Una cadena puede estar precedida por el carácter:
         >>> type(raw)
         <type 'str'>
 
-- Python 3.7 soporta cadena que utiliza codificación **Unicode**.
+- Python 3.11 soporta cadena que utiliza codificación **Unicode**.
 
     .. code-block:: pycon
 
@@ -305,7 +305,7 @@ Docstrings
 En Python todos los objetos cuentan con una variable especial llamada ``__doc__``, gracias
 a la cual puede describir para qué sirven los objetos y cómo se usan. Estas variables
 reciben el nombre de ``docstrings``, o
-`cadenas de documentación <https://docs.python.org/es/3.7/tutorial/controlflow.html#tut-docstrings>`_.
+`cadenas de documentación <https://docs.python.org/es/3.11/tutorial/controlflow.html#tut-docstrings>`_.
 
 Ten en cuenta, una buena documentación siempre dará respuesta a las dos preguntas:
 
@@ -813,13 +813,12 @@ A continuación, se presentan algunos ejemplos de su uso:
     Help on class int in module __builtin__:
 
     class int(object)
-     |  int(x=0) -> int or long
-     |  int(x, base=10) -> int or long
-     |
-     |  Convert a number or string to an integer, or return 0 if no arguments
-     |  are given.  If x is floating point, the conversion truncates towards zero.
-     |  If x is outside the integer range, the function returns a long instead.
-
+    |  int([x]) -> integer
+    |  int(x, base=10) -> integer
+    |
+    |  Convert a number or string to an integer, or return 0 if no arguments
+    |  are given.  If x is a number, return x.__int__().  For floating point
+    |  numbers, this truncates towards zero.
 
 **Consulta de ayuda del módulo**
 

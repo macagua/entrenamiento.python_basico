@@ -90,4 +90,4 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
 .. disqus::
 
-.. _`datetime`: https://docs.python.org/es/3.7/library/datetime.html
+.. _`datetime`: https://docs.python.org/es/3.11/library/datetime.html

@@ -57,9 +57,9 @@ por lo que se puede usar y distribuir libremente, incluso para uso comercial.
 
 La licencia de Python es administrada por :ref:`Python Software Foundation <python_psf>`.
 
-- `Aprenda más sobre la licencia <https://docs.python.org/es/3.7/license.html>`_.
+- `Aprenda más sobre la licencia <https://docs.python.org/es/3.11/license.html>`_.
 
-- `Licencia Python en OSI <https://opensource.org/licenses/Python-2.0>`_.
+- `Licencia Python en OSI <https://opensource.org/license/python-2-0/>`_.
 
 - `Conozca más sobre la Fundación <https://www.python.org/psf-landing/>`_.
 
@@ -92,7 +92,7 @@ especiales.
 
     —De la `página de la Declaración de la Misión <https://www.python.org/psf/mission/>`_.
 
-.. note:: Mayor información consulte https://www.python.org/psf/
+.. note:: Mayor información consulte https://www.python.org/psf-landing/
 
 
 .. _python_aplicaciones:
@@ -171,7 +171,7 @@ Internet Relay Chat - IRC
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Existen muchos canales relacionados con Python en la red Internet Relay Chat (IRC) de Freenode. Todos
-los canales esta disponibles en el servidor de IRC en `Freenode <https://freenode.net/view/Main_Page>`_. Para
+los canales esta disponibles en el servidor de IRC en `Freenode <https://webchat.freenode.net/?chan=#help>`_. Para
 conectarse al servidor IRC use *irc.freenode.net* o puede usar la
 `interfaz web de chat IRC de Freenode <https://webchat.freenode.net/>`_.
 
@@ -191,7 +191,7 @@ Existe algunos recursos disponibles en formato de Foros, a continuación se list
 
 - `Python-Forum.de (German) <https://www.python-forum.de/>`_.
 
-- `/r/learnpython (English) <https://www.reddit.com/r/learnpython/>`_.
+- `/r/learnpython (English) <https://www.reddit.com/r/learnpython/?rdt=58781>`_.
 
 Si usted esta buscando un foro nativo en su idioma, por favor, consulte la pagina de los grupos
 locales en la `Wiki de Python <https://wiki.python.org/moin/>`_.
@@ -243,7 +243,7 @@ comunitario del proyecto Python en Sudamérica.
     toda aquella persona que se interese por Python a crecer dentro del sus interés. Entre las
     funciones de la comunidad organizamos eventos de distinto tipo para difundir el lenguaje,
     desde PyDay, meetup hasta simples reuniones para comentar ideas y experiencias. Más
-    información visite https://pythonpy.org
+    información visite https://t.me/pythonparaguay
 
 **Comunidad(es) de Python en Uruguay**
     Para más información visite https://uy.pyladies.com/

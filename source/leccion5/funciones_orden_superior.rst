@@ -253,7 +253,7 @@ esta instalada el módulo ``os`` en su sistema, ejecutando la siguiente sentenci
 .. code-block:: pycon
 
     >>> os.__file__
-    '/usr/lib/python3.7/os.pyc'
+    '/usr/lib/python3.11/os.pyc'
 
 Si con el método ``os.__file__`` obtiene la ruta del módulo ``os`` con el método
 ``replace("/os.pyc", "/")`` busca la cadena de carácter "/os.pyc" y la remplaza por
@@ -262,7 +262,7 @@ la cadena de carácter "/"
 .. code-block:: pycon
 
     >>> os.__file__.replace("/os.pyc", "/")
-    '/usr/lib/python3.7/'
+    '/usr/lib/python3.11/'
 
 Luego se define la variable ``archivos`` generando una lista de archivos usando la
 función ``os.listdir()``, pasando el parámetro obtenido de la ruta donde se instalo
@@ -270,7 +270,7 @@ el módulo ``os`` ejecutando en el comando previo, con la siguiente sentencia:
 
 .. code-block:: pycon
 
-    >>> archivos = os.listdir("/usr/lib/python3.7/")
+    >>> archivos = os.listdir("/usr/lib/python3.11/")
 
 De esta forma se define en la variable ``archivos`` un :ref:`tipo lista <python_list>`
 con un tamaño de *433*, como se puede comprobar a continuación:
@@ -292,13 +292,13 @@ una de las posiciones de la lista ``archivos``, ejecutando la siguiente sentenci
 
 Ya al comprobar que existe la cadena de caracteres "**os.pyc**" se usa una función
 ``lambda`` como parámetro de la función :ref:`filter() <python_fun_filter>` para
-filtrar todos los archivos del directorio "*/usr/lib/python3.7/*" por medio del función
+filtrar todos los archivos del directorio "*/usr/lib/python3.11/*" por medio del función
 ``os.listdir()`` que inicien con la cadena de caracteres "**os.**" usando la función
 :ref:`startswith() <python_fun_startswith>`.
 
 .. code-block:: pycon
 
-    >>> print(filter(lambda x: x.startswith("os."), os.listdir("/usr/lib/python3.7/")))
+    >>> print(filter(lambda x: x.startswith("os."), os.listdir("/usr/lib/python3.11/")))
     ['os.pyc', 'os.py']
 
 Así de esta forma se comprueba que existe el archivo compilado "**os.pyc**" de Python

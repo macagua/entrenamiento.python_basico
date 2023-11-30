@@ -35,12 +35,12 @@ Todas esta documentación es licencia por:
   .. figure:: _static/images/covantec_logo_web.jpg
      :align: center
      :alt: Covantec R.L.
-     :target: https://github.com/covantec
+     :target: https://github.com/Covantec
 
   * :email:`Leonardo J. Caballero G. <leonardocaballero@gmail.com>`
 
 .. seealso:: Ver :ref:`licencias` para información completa sobre los términos y licencia.
 
-.. _Fundación Python: https://www.python.org/psf/
-.. _Python Foundation: https://www.python.org/psf/
+.. _Fundación Python: https://www.python.org/psf-landing/
+.. _Python Foundation: https://www.python.org/psf-landing/
 .. _`Covantec R.L`: https://github.com/Covantec

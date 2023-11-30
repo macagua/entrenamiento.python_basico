@@ -208,5 +208,5 @@ Jugando con el módulo ``locale`` en el ``ipython``:
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10_locale>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
-.. _`locale`: https://docs.python.org/es/3.7/library/locale.html
+.. _`locale`: https://docs.python.org/es/3.11/library/locale.html
 .. _`POSIX locale`: https://es.wikipedia.org/wiki/Configuraci%C3%B3n_regional

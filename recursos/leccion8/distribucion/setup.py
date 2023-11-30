@@ -24,7 +24,8 @@ setup(
         "License :: OSI Approved :: GNU General Public License",
         # Indique versiones soportas, Python 2, Python 3 o ambos.
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.11",
         "Operating System :: OS Independent",
     ],
     keywords="ejemplo instalador paquete tostadas_pipo",

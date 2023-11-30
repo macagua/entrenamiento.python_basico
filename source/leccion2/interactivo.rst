@@ -51,7 +51,7 @@ el comando ``python`` de la siguiente forma:
 .. code-block:: console
 
     $ python
-    Python 3.7.3 (default, Jan 22 2021, 20:04:44)
+    Python 3.11.5 (default, Sep 11 2023, 13:26:23)
     [GCC 8.3.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
@@ -65,10 +65,10 @@ Puede solicitar la ayudar del interprete de Python, ejecutando:
     Type help() for interactive help, or help(object) for help about object.
     >>> help()
 
-    Welcome to Python 3.7's help utility!
+    Welcome to Python 3.11's help utility!
 
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at https://docs.python.org/3.7/tutorial/.
+    the tutorial on the internet at https://docs.python.org/3.11/tutorial/.
 
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
@@ -80,7 +80,6 @@ Puede solicitar la ayudar del interprete de Python, ejecutando:
     or summary contain a given string such as "spam", type "modules spam".
 
     help>
-
 
 Para ejecutar la ayuda disponible sobre la sintaxis Python ejecute el
 siguiente comando:
@@ -253,7 +252,7 @@ Entonces consulte la ayuda del módulo ``os``, ejecutando:
         os - OS routines for NT or Posix depending on what system we're on.
 
     MODULE REFERENCE
-        https://docs.python.org/3.7/library/os
+        https://docs.python.org/3.11/library/os
 
         The following documentation is automatically generated from the Python
         source files.  It may be incomplete, incorrect or include features that
@@ -366,7 +365,7 @@ ubicación de la librería importada de la siguiente forma:
 .. code-block:: pycon
 
     >>> os.__file__
-    '/usr/lib/python3.7/os.pyc'
+    '/usr/lib/python3.11/os.pyc'
     >>>
 
 También puede consultar la documentación de la librería ``os`` ejecutando el

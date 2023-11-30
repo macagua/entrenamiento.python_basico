@@ -43,8 +43,6 @@ Se pueden resumir los tipos de datos *compuestos* estándar en la siguiente tabl
 +-----------------------+---------------+----------------------------------------------------------+
 |                       | ``int``       | :ref:`entero <python_num_entero>`                        |
 | *Números inmutables*  +---------------+----------------------------------------------------------+
-|                       | ``long``      | :ref:`entero long <python_num_entero_long>`              |
-|                       +---------------+----------------------------------------------------------+
 |                       | ``float``     | :ref:`coma flotante <python_num_float>`                  |
 |                       +---------------+----------------------------------------------------------+
 |                       | ``complex``   | :ref:`complejo <python_num_complex>`                     |

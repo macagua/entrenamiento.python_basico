@@ -197,7 +197,7 @@ En la sentencia ``print`` se pueden usar el formato de impresión alternando las
 .. note::
 
     Una documentación completa del control de la salida de Python se encuentra en
-    https://docs.python.org/es/3.7/tutorial/inputoutput.html
+    https://docs.python.org/es/3.11/tutorial/inputoutput.html
 
 
 .. important::
