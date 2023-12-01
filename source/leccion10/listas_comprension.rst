@@ -199,9 +199,64 @@ al siguiente nivel y además no hay un límite.
 Usando Listas de comprensión con Archivos
 .........................................
 
-.. todo::
-    TODO escribir esta sección.
+Aquí hay un posible programa que usa listas de comprensión para manipular archivos en Python 3:
 
+.. literalinclude:: ../../recursos/leccion10/listas_comprension_archivo.py
+    :language: python
+    :linenos:
+    :lines: 1-21
+
+Archivo de texto a leer y manipular:
+
+.. literalinclude:: ../../recursos/leccion10/listas_comprension_archivo.txt
+    :language: text
+    :linenos:
+    :lines: 1-4
+
+
+Este programa usa listas de comprensión para transformar cada línea del archivo de texto según
+una expresión. Puedes cambiar la expresión según lo que quieras hacer con el archivo. Por ejemplo,
+puedes filtrar las líneas que contienen una palabra específica, o añadir algún prefijo o sufijo a
+cada línea.
+
+Asi queda el archivo manipulado:
+
+.. code-block:: text
+
+    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA.
+
+    UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO LABORIS NISI UT ALIQUIP EX EA COMMODO CONSEQUAT.
+
+    DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE VELIT ESSE CILLUM DOLORE EU FUGIAT NULLA PARIATUR.
+
+    EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT, SUNT IN CULPA QUI OFFICIA DESERUNT MOLLIT ANIM ID EST LABORUM.
+
+
+
+----
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en los
+    siguientes enlaces: :download:`listas_comprension_archivo.py <../../recursos/leccion10/listas_comprension_archivo.py>`
+    y :download:`listas_comprension_archivo.txt <../../recursos/leccion10/listas_comprension_archivo.txt>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`listas_comprension_archivo.py` y :file:`listas_comprension_archivo.txt`, abra una
+    consola de comando, acceda al directorio donde se encuentra ambos programas:
+
+    ::
+
+        leccion10/
+        ├── listas_comprension_archivo.py
+        └── listas_comprension_archivo.txt
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    .. code-block:: console
+
+        $ python listas_comprension_archivo.py
 
 ----
 
