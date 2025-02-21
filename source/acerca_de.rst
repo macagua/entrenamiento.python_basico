@@ -21,7 +21,7 @@ Novatos en la programación
 --------------------------
 
 Para los novatos en la programación si requieren dominar la algoritmia y el lenguaje de programación
-se tiene diseñado varios temarios y practicas en este entrenamiento para poder entender los conceptos
+se tiene diseñado varios temarios y prácticas en este entrenamiento para poder entender los conceptos
 y las mejores prácticas actuales del desarrollo en Python.
 
 La planificación de este entrenamiento se estima en:
@@ -33,7 +33,7 @@ Programadores que desconocen Python
 -----------------------------------
 
 Para los programadores que desconocen Python, si quieren dominar el lenguaje de programación se tiene
-diseñado varios temarios y practicas en este entrenamiento para las personas que son nuevas usándolo o
+diseñado varios temarios y prácticas en este entrenamiento para las personas que son nuevas usándolo o
 los que quieren aprender acerca de las mejores prácticas actuales del desarrollo en Python.
 
 La planificación de este entrenamiento se estima en:
@@ -64,7 +64,7 @@ Esta iniciativa no fuera realidad si el apoyo de las siguientes personas o empre
   .. figure:: _static/images/covantec_logo_web.jpg
      :align: center
      :alt: Covantec R.L.
-     :target: https://github.com/Covantec
+     :target: https://github.com/covantec
 
 
 .. _mantenedores:
@@ -118,7 +118,7 @@ Contribuir
 
 ¡Gracias por considerar contribuir a esta documentación!
 
-Conseguiste algun error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
+Conseguiste algún error (Bug), o error de transcripción "Typo", o tal ves tengas una gran idea para mejorar
 este material, puedes reportarla o solicitarla en:
 
 * Consulte el `issue tracker <https://github.com/macagua/entrenamiento.python_basico/issues>`_ para obtener

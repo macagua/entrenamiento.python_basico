@@ -39,7 +39,7 @@ Introducción a Python
 
 - `Introducción a la programación con Python <https://www.mclibre.org/consultar/python/>`_.
 
-- `Python Tutorial <http://www.tutorialspoint.com/python/index.htm>`_.
+- `Python Tutorial <https://www.tutorialspoint.com/python/index.htm>`_.
 
 - `Wikipedia - Python <https://es.wikipedia.org/wiki/Python>`_.
 
@@ -306,7 +306,7 @@ Distribución de Software
 Scaffolding en proyectos Python
 ...............................
 
-- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo <https://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout>`_
+- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo <https://plone-spanish-docs.readthedocs.io/es/latest/buildout/index.html>`_
   desde la comunidad de Plone Venezuela.
 
 
@@ -403,9 +403,12 @@ json - Codificador y decodificador JSON
 
 - `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/reading-and-writing-json-to-a-file-in-python/>`_.
 
+
+----
+
+
 .. raw:: html
    :file: _templates/partials/soporte_profesional.html
 
 .. disqus::
-
 

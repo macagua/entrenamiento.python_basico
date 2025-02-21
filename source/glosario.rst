@@ -8,50 +8,36 @@ Glosario
 :Autor(es): Leonardo J. Caballero G.
 :Correo(s): :email:`leonardoc@plone.org`
 :Compatible con: Python 3.11.x
-:Fecha: 30 de Noviembre de 2023
+:Fecha: 21 de Febrero de 2025
 
 A continuación una serie de términos usados en las tecnologías Python.
 
 .. glossary::
     :sorted:
 
-    buildout
-        En la herramienta `buildout`_, es un conjunto de partes
-        que describe como ensamblar una aplicación.
-
     bundle
         Ver :term:`Paquete bundle`.
-
-    Cheese shop
-        Ver :term:`PyPI`.
 
     Egg
         Ver :term:`paquetes Egg`.
 
     esqueleto
         Los archivos y carpetas recreados por un usuario el cual los genero ejecutando
-        alguna plantilla ``templer`` (``PasteScript``).
+        alguna plantilla de los módulos ``cookiecutter`` y ``copier``.
 
     estructura
         1) Una clase Python la cual controla la generación de un árbol de carpetas
         que contiene archivos.
 
-        2) Una unidad de carpetas y archivos proveídos por el sistema ``templer`` para ser
-        usado en una plantilla o plantillas. Las estructuras proporcionan recursos
-        estáticos compartidos, que pueden ser utilizados por cualquier paquete en
-        el sistema de ``templer``.
+        2) Una unidad de carpetas y archivos proveídos por los módulos ``cookiecutter``
+        o ``copier`` para ser usado en una plantilla de proyecto. Las estructuras
+        proporcionan recursos estáticos compartidos, que pueden ser utilizados por
+        cualquier otra plantilla de esos módulos.
 
         Las estructuras diferencian de las plantillas en que no proporcionan las :term:`vars`.
 
     filesystem
         Termino ingles File system, referido al sistema de archivo del sistema operativo.
-
-    grok
-        Ver la documentacion del proyecto `grok <https://grok-community-docs.readthedocs.io/en/latest/>`_.
-
-    local command
-        Una clase `Paste`_ la cual provee funcionalidad adicional a una estructura
-        de esqueleto de proyecto que ha sido generada.
 
     módulo
         Del Ingles ``module``, es un archivo fuente Python; un archivo en el sistema
@@ -60,7 +46,8 @@ A continuación una serie de términos usados en las tecnologías Python.
 
     Nombre de puntos Python
         Es la representación Python del "camino" para un determinado objeto / módulo / función,
-        por ejemplo, ``Products.GenericSetup.tool.exportToolset``. A menudo se utiliza como referencia en configuraciones ``Paste`` y ``setuptools`` a cosas en Python.
+        por ejemplo, ``Products.GenericSetup.tool.exportToolset``. A menudo se utiliza como
+        referencia en configuraciones ``setuptools`` a cosas en Python.
 
     PYTHONPATH
         Una lista de nombre de directorios, que contiene librerías Python, con la misma
@@ -72,10 +59,6 @@ A continuación una serie de términos usados en las tecnologías Python.
     PyPI
         Siglas del termino en Ingles :term:`Python Package Index`, es el servidor central
         de :term:`paquetes Egg` Python ubicado en la dirección https://pypi.org/.
-
-    part
-        En la herramienta :term:`buildout`, es un conjunto opciones que le permite a usted
-        construir una pieza de la aplicación.
 
     paquete
         Ver :term:`Paquete Python`.
@@ -114,12 +97,26 @@ A continuación una serie de términos usados en las tecnologías Python.
     plantilla
         1) Una clase Python la cual controla la generación de un esqueleto. Las
         plantillas contiene una lista de variables para obtener la respuesta de un
-        usuario. Las plantillas son ejecutadas con el comando ``templer`` suministrando
-        el nombre de la plantilla como un argumento ``templer basic_namespace my.package``.
+        usuario. Las plantillas son ejecutadas con el comando ``copier`` suministrando
+        el nombre de la plantilla como un argumento, como :
 
-        2) Los archivos y carpetas proveídas un paquete ``templer`` como contenido a ser
+        ``copier copy gh:Tecnativa/doodba-copier-template ~/path/to/your/subproject``.
+
+        2) Los archivos y carpetas proveídas un paquete ``copier`` como contenido a ser
         generado. Las respuestas proporcionadas por un usuario en respuesta a las variables
         se utilizan para rellenar los marcadores de posición en este contenido.
+
+    Requirement
+        Especificación de un `paquete`_ que debe instalarse. `pip`_, el instalador recomendado
+        por `PYPA`_, permite varias formas de especificación que pueden considerarse todas ellas
+        un "requisito". Para más información, consulte la referencia `pip install`_.
+
+    Requirements File
+        Un archivo que contiene una lista de requerimientos que pueden ser instalados usando `pip`_.
+        Para obtener más información, consulte la documentación de pip sobre `archivos de requerimientos`_.
+
+    ``requirements.txt``
+        Véase el termino :term:`Requirements File`.
 
     setup.py
         El archivo :file:`setup.py` es un módulo de Python, que por lo general indica que
@@ -131,7 +128,7 @@ A continuación una serie de términos usados en las tecnologías Python.
 
         .. code-block:: console
 
-            $ python setup.py install
+            $ python3 setup.py install
 
         Entonces el módulo Python se instalará.
 
@@ -146,7 +143,7 @@ A continuación una serie de términos usados en las tecnologías Python.
 
     variable
         1) Una pregunta que debe ser respondida por el usuario cuando esta generando una
-        estructura de esqueleto de proyecto usando el sistema de plantilla ``templer``. En este
+        estructura de esqueleto de proyecto usando el sistema de plantilla ``copier``. En este
         caso una variable (var) es una descripción de la información requerida, texto de
         ayuda y reglas de validación para garantizar la entrada de usuario correcta.
 
@@ -156,6 +153,19 @@ A continuación una serie de términos usados en las tecnologías Python.
     variables
         Plural del termino :term:`variable`.
 
+    virtualenv
+        Plural del termino :term:`Virtual Environment`.
+
+    Virtual Environment
+        Un entorno Python aislado que permite instalar paquetes para su uso por una aplicación
+        concreta, en lugar de instalarlos en todo el sistema. Para obtener más información,
+        consulte la sección `Creación de entornos virtuales`_.
+
+    Wheel
+        El formato estándar de `Built Distribution`_ originalmente introducido en `PEP 427`_ y
+        definido por la especificación del `formato de distribución Binario`_. Consulte los
+        `Formatos de paquetes`_ para obtener más información.
+
     ZCA
     Zope Component Architecture
         La `arquitectura de componentes de Zope (alias ZCA)`_, es un
@@ -164,6 +174,15 @@ A continuación una serie de términos usados en las tecnologías Python.
 
 .. _`sitio web de PEAK`: http://peak.telecommunity.com/DevCenter/setuptools
 .. _`Paste`: https://paste.readthedocs.io/en/latest/
-.. _`buildout`: https://plone-spanish-docs.readthedocs.io/es/latest/buildout/replicacion_proyectos_python.html
 .. _`setuptools`: https://plone-spanish-docs.readthedocs.io/es/latest/python/setuptools.html
 .. _`arquitectura de componentes de Zope (alias ZCA)`: https://plone-spanish-docs.readthedocs.io/es/latest/programacion/zca/zca-es.html
+.. _`Creación de entornos virtuales`: https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-and-using-virtual-environments
+.. _`Built Distribution`: https://packaging.python.org/en/latest/glossary/#term-Built-Distribution
+.. _`PEP 427`: https://peps.python.org/pep-0427/
+.. _`formato de distribución Binario`: https://packaging.python.org/en/latest/specifications/binary-distribution-format/#binary-distribution-format
+.. _`Formatos de paquetes`: https://packaging.python.org/en/latest/discussions/package-formats/#package-formats
+.. _`paquete`: https://packaging.python.org/en/latest/glossary/#term-Distribution-Package
+.. _`PyPA`: https://packaging.python.org/en/latest/glossary/#term-Python-Packaging-Authority-PyPA
+.. _`pip`: https://packaging.python.org/en/latest/key_projects/#pip
+.. _`pip install`: https://pip.pypa.io/en/latest/cli/pip_install/#pip-install
+.. _`archivos de requerimientos`: https://pip.pypa.io/en/latest/user_guide/#requirements-files
