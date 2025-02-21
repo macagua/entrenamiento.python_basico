@@ -208,7 +208,7 @@ interactuar de el mismo como se muestra a continuación:
 .. literalinclude:: ../../recursos/leccion7/archivo.py
     :language: python
     :linenos:
-    :lines: 6-46
+    :lines: 5-45
 
 
 Ayuda integrada

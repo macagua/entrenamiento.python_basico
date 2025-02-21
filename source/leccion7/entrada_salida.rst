@@ -55,7 +55,7 @@ interactuá con el usuario y en base a condicionales muestra un mensaje.
 .. literalinclude:: ../../recursos/leccion7/entrada_salida.py
     :language: python
     :linenos:
-    :lines: 12-32
+    :lines: 7-27
 
 
 .. tip::
@@ -113,7 +113,7 @@ tipo número:
 .. literalinclude:: ../../recursos/leccion7/entrada_dos_argumentos.py
     :language: python
     :linenos:
-    :lines: 1-13
+    :lines: 1-12
 
 Si quiere comprobar la validación de cuantos argumentos deben enviarme al script,
 ejecute el siguiente comando:
