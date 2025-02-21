@@ -1,4 +1,4 @@
-""" Ejemplo de uso de bucle 'for' """
+"""Ejemplo de uso de bucle 'for'"""
 
 # Bucle 'for' con estructura 'lista'
 print("\nBucle 'for' con estructura 'lista'")
@@ -17,7 +17,7 @@ for animal in animales:
 print("\nFunción range()")
 print("===============\n")
 
-print("Rango de 15 números:", range(15))
+print(f"Rango de 15 números: {range(15)}")
 
 
 # Bucle 'for' con estructura 'lista' y función range()
@@ -28,7 +28,7 @@ print("Ejemplo: Itera un cadena de caracteres con rango dinámico\n")
 
 oracion = "Mary entiende muy bien Python"
 frases = oracion.split()  # convierte a una lista cada palabra
-print("La oración analizada es:", oracion, ".\n")
+print("La oración analizada es: {oracion}\n")
 for palabra in range(len(frases)):
     print(f"Palabra: {frases[palabra]}, en la frase su posición es: {palabra}")
 
@@ -64,7 +64,7 @@ valor = datos_basicos.values()
 cantidad_datos = datos_basicos.items()
 
 for clave, valor in cantidad_datos:
-    print(clave + ": " + valor)
+    print(f"{clave}: {valor}")
 
 
 # Bucle 'for' con sentencia 'else'

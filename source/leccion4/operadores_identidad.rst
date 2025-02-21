@@ -104,7 +104,7 @@ El código anterior muestra el siguiente resultado:
 .. literalinclude:: ../../recursos/leccion4/operadores_identidad.py
     :language: python
     :linenos:
-    :lines: 38-66
+    :lines: 22-38
 
 El código anterior muestra el siguiente resultado:
 
@@ -114,13 +114,12 @@ El código anterior muestra el siguiente resultado:
     ===============
     Python crea dos objetos diferentes, uno para cada lista. Las listas son mutables.
     True
-    [1, 2, 3] su id es 140338744545664
-    [1, 2, 3] su id es 140338744540864
+    [1, 2, 3] su id es 140508292871232
+    [1, 2, 3] su id es 140508290502400
     Python reutiliza el objeto que almacena 5 por lo que ambas variables apuntan a el mismo.
     False
-    200 su id es 9807616
-    200 su id es 9807616
-
+    200 su id es 10875752
+    200 su id es 10875752
 
 ----
 

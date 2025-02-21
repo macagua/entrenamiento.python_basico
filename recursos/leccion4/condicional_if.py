@@ -1,11 +1,11 @@
-""" Ejemplo de uso del condicional 'if' usando operadores relacionales """
+"""Ejemplo de uso del condicional 'if' usando operadores relacionales"""
 
 dato1, dato2, dato3, dato4 = 21, 10, 5, 20
 
-print("Valor de variable 'dato1':", dato1)
-print("Valor de variable 'dato2':", dato2)
-print("Valor de variable 'dato3':", dato3)
-print("Valor de variable 'dato4':", dato4)
+print(f"Valor de variable 'dato1': {dato1}")
+print(f"Valor de variable 'dato2': {dato2}")
+print(f"Valor de variable 'dato3': {dato3}")
+print(f"Valor de variable 'dato4': {dato4}")
 
 # Operador de comparación Igual
 if dato1 == dato2:

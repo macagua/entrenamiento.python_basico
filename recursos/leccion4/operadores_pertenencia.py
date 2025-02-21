@@ -1,4 +1,4 @@
-""" Operadores lógicos """
+"""Operadores lógicos"""
 
 datos_basicos = {
     "nombres": "Leonardo Jose",
