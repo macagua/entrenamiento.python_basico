@@ -12,10 +12,5 @@ class Persona:
 
 
 macagua = Persona
-print("El objeto de la clase {}, {}.".format(macagua.__name__, macagua.__doc__))
-print("Hola, mucho gusto, mi nombre es '{} {}', \nmi cédula de identidad es '{}', y mi sexo es '{}'.".format(
-    macagua.nombre,
-    macagua.apellido,
-    macagua.cedula,
-    macagua.sexo)
-)
+print(f"El objeto de la clase {macagua.__name__}, {macagua.__doc__}.")
+print(f"Hola, mucho gusto, mi nombre es '{macagua.nombre} {macagua.apellido}', \nmi cédula de identidad es '{macagua.cedula}', y mi sexo es '{macagua.sexo}'.")

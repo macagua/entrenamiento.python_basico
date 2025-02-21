@@ -10,6 +10,7 @@ archivo = open(RUTA_ARCHIVO, "w")
 archivo.write("1\n2\n")
 archivo.close()
 
+total = 0
 try:
     archivo = open(RUTA_ARCHIVO)
     cadenas = archivo.readline()
@@ -23,7 +24,7 @@ except OSError as err:
 except ValueError:
     print("No pude convertir el dato a un entero.")
 except:
-    print("Error inesperado:", sys.exc_info()[0])
+    print(f"Error inesperado: {sys.exc_info()[0]}")
     raise
 
-print("El total es:", total)
+print(f"El total es: {total}")

@@ -1,4 +1,4 @@
-""" Módulo de clases comunes """
+"""Módulo de clases comunes"""
 
 
 class Persona:
@@ -13,19 +13,14 @@ class Persona:
 
     def __str__(self):
         """Devuelve una cadena representativa de Persona"""
-        return "{}: {}, {} {}, {}.".format(
-            self.__doc__[25:34],
-            str(self.cedula),
-            self.nombre,
-            self.apellido,
-            self.obtener_genero(self.sexo),
-        )
+        doc = self.__doc__[25:34] if self.__doc__ else "Persona"
+        return f"{doc}: {str(self.cedula)}, {self.nombre} {self.apellido}, {self.getGenero(self.sexo)}."
 
     def hablar(self, mensaje):
         """Mostrar mensaje de saludo de Persona"""
         return mensaje
 
-    def obtener_genero(self, sexo):
+    def getGenero(self, sexo):
         """Mostrar el genero de la Persona"""
         genero = ("Masculino", "Femenino")
         if sexo == "M":
@@ -51,13 +46,8 @@ class Supervisor(Persona):
 
     def __str__(self):
         """Devuelve una cadena representativa al Supervisor"""
-        return "{}: {} {}, rol: '{}', sus tareas: {}.".format(
-            self.__doc__[26:37],
-            self.nombre,
-            self.apellido,
-            self.rol,
-            self.consulta_tareas(),
-        )
+        doc = self.__doc__[26:37] if self.__doc__ else "Supervisor"
+        return f"{doc}: {self.nombre} {self.apellido}, rol: '{self.rol}', sus tareas: {self.consulta_tareas()}."
 
     def consulta_tareas(self):
         """Mostrar las tareas del Supervisor"""
@@ -110,15 +100,8 @@ class JefeCuadrilla(Supervisor, Destreza):
 
     def __str__(self):
         """Devuelve cadena representativa al Jefe de Cuadrilla"""
-        jq = "{0}: {1} {2}, rol '{3}', tareas {4}, cuadrilla: {5}"
-        return jq.format(
-            self.__doc__[28:46],
-            self.nombre,
-            self.apellido,
-            self.rol,
-            self.consulta_tareas(),
-            self.cuadrilla,
-        )
+        doc = self.__doc__[28:46] if self.__doc__ else "JefeCuadrilla"
+        return f"{doc}: {self.nombre} {self.apellido}, rol '{self.rol}', tareas {self.consulta_tareas()}, cuadrilla: {self.cuadrilla}" 
 
 
 class Obrero(Persona, Destreza):
@@ -139,12 +122,8 @@ class Obrero(Persona, Destreza):
 
     def __str__(self):
         """Devuelve una cadena representativa de un Obrero"""
-        return "{}: {} {}, es {}.".format(
-            self.__doc__[37:44],
-            self.nombre,
-            self.apellido,
-            self.obtener_patriotismo(self.patriota),
-        )
+        doc = self.__doc__[37:44] if self.__doc__ else "Obrero"
+        return f"{doc}: {self.nombre} {self.apellido}, es {self.obtener_patriotismo(self.patriota)}."
 
     def obtener_patriotismo(self, patriota):
         """Mostrar el patriotismo de un Obrero"""

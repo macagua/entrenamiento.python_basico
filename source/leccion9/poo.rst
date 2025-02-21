@@ -299,7 +299,7 @@ Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``,
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
     :linenos:
-    :lines: 1-21
+    :lines: 1-16
 
 La única diferencia sintáctica entre la definición de un método y la definición de una
 función es que el primer parámetro del método por convención debe ser el nombre ``self``.
@@ -401,7 +401,7 @@ la cual puede incluir formatos personalizados de presentación del mismo.
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
     :linenos:
-    :lines: 14-22
+    :lines: 14-17
 
 
 .. _python_mtd_del:
@@ -551,7 +551,6 @@ al instanciar un objeto.
 
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
-    :linenos:
     :lines: 7-12
 
 

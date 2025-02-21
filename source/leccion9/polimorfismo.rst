@@ -40,12 +40,12 @@ fracción matemática y definir el operador + para sumar dos fracciones.
     >>> class Fraccion:
     ...
     ...     def __init__(self, numerador, denominador):
-    ...         """ Método Constructor """
+    ...         """Método Constructor"""
     ...         self.numerador = numerador
     ...         self.denominador = denominador
     ...
     ...     def simplificar(self):
-    ...         """ Método para simplificar la fracción """
+    ...         """Método para simplificar la fracción"""
     ...         # Buscar el máximo común divisor
     ...         mcd = math.gcd(self.numerador, self.denominador)
     ...         # Dividir el numerador y el denominador por el mcd
@@ -53,11 +53,11 @@ fracción matemática y definir el operador + para sumar dos fracciones.
     ...         self.denominador //= mcd
     ...
     ...     def mostrar(self):
-    ...         """ Método para mostrar la fracción """
+    ...         """Método para mostrar la fracción"""
     ...         print(f"{self.numerador}/{self.denominador}")
     ...
     ...     def __add__(self, otra):
-    ...         """ Método para sobrecargar el operador + """
+    ...         """Método para sobrecargar el operador +"""
     ...         # Sumar las fracciones usando la regla de cruz
     ...         nuevo_numerador = self.numerador * otra.denominador + self.denominador * otra.numerador
     ...         nuevo_denominador = self.denominador * otra.denominador
@@ -109,12 +109,12 @@ matemática y definir el operador + para sumar dos fracciones.
     >>> class Punto:
     ...
     ...     def __init__(self, x=0, y=0):
-    ...         """ Método Constructor """
+    ...         """Método Constructor"""
     ...         self.x = x
     ...         self.y = y
     ...
     ...     def __add__(self, other):
-    ...         """ Método para sobrecargar el operador + """
+    ...         """Método para sobrecargar el operador +"""
     ...         x = self.x + other.x
     ...         y = self.y + other.y
     ...         return x, y

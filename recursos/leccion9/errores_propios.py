@@ -1,3 +1,4 @@
+"""Módulo que demuestra como lanzar excepciones propias."""
 from excepciones_propias import *
 
 
@@ -6,7 +7,7 @@ try:
     raise ConoDeLaMadreError("No joda")
 except ConoDeLaMadreError as cdlm:
     print(type(cdlm))  # la instancia de excepción
-    print("\t" + cdlm.__doc__)  # __doc__ permite imprimir la docstring de la Excepción
+    print(f"\t {cdlm.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
     print(f"{cdlm} \n")  # __str__ permite imprimir args directamente
 
 
@@ -15,7 +16,7 @@ try:
     raise MaduroError("Maldito Maduro")
 except MaduroError as m:
     print(type(m))  # la instancia de excepción
-    print("\t" + m.__doc__)  # __doc__ permite imprimir la docstring de la Excepción
+    print(f"\t {m.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
     print(m)  # __str__ permite imprimir args directamente
     print("Un sentimiento nacional es:", m.sentimiento, "\n")
 
@@ -25,7 +26,7 @@ try:
     raise CaraETablaError("Ramos Allud")
 except CaraETablaError as carae:
     print(type(carae))  # la instancia de excepción
-    print("\t" + carae.__doc__)  # __doc__ permite imprimir la docstring de la Excepción
+    print(f"\t {carae.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
     print(f"{carae} \n")  # __str__ permite imprimir args directamente
 
 
@@ -34,7 +35,7 @@ try:
     raise HijuEPutaError(13)
 except HijuEPutaError as hijue:
     print(type(hijue))  # la instancia de excepción
-    print("\t" + hijue.__doc__)  # __doc__ permite imprimir la docstring de la Excepción
+    print(f"\t {hijue.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
     print("\n¿Hace pacheco?")
     print(hijue)  # __str__ permite imprimir args directamente
 
@@ -44,7 +45,7 @@ try:
     raise PuesError("pollo" in ["carne", "leche", "huevos", "pan"])
 except PuesError as pues:
     print(type(pues))  # la instancia de excepción
-    print("\t" + pues.__doc__)  # __doc__ permite imprimir la docstring de la Excepción
+    print(f"\t {pues.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
     print("\n¿Es cierto?")
     print(pues)  # __str__ permite imprimir args directamente
 
@@ -56,7 +57,7 @@ try:
     )
 except MaracuchoError as mcho:
     print(type(mcho))  # la instancia de excepción
-    print("\t" + mcho.__doc__)  # __doc__ permite imprimir la docstring de la Excepción
+    print(f"\t {mcho.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
     print(f"{mcho} \n")  # __str__ permite imprimir args directamente
 
 
@@ -65,5 +66,5 @@ try:
     raise VergaError(120)
 except VergaError as verga:
     print(type(verga))  # la instancia de excepción
-    print("\t" + verga.__doc__)  # __doc__ permite imprimir la docstring de la Excepción
+    print(f"\t {verga.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
     print(f"{verga} \n")  # __str__ permite imprimir args directamente
