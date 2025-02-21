@@ -1,4 +1,4 @@
-""" Funciones en Python """
+"""Funciones en Python"""
 
 
 def iva():
@@ -6,7 +6,7 @@ def iva():
     iva = 12
     costo = int(input("¿Cual es el monto a calcular?: "))
     calculo = costo * iva / 100
-    print("El calculo de IVA es: " + str(calculo) + "\n")
+    print(f"El calculo de IVA es: {str(calculo)}\n")
 
 
 def suma(numero1, numero2):
@@ -15,7 +15,7 @@ def suma(numero1, numero2):
 
 
 # def imprime_fibonacci(n):
-#    """ Escribe la sucesión Fibonacci hasta n """
+#    """Escribe la sucesión Fibonacci hasta n"""
 #    a, b = 0, 1
 #    while b < n:
 #        print(b,)
@@ -46,6 +46,5 @@ mensaje2 = "Sucesión de Fibonacci"
 print(mensaje2)
 print("=" * len(mensaje2))
 
-# print("La sucesión Fibonacci hasta 10 es:", imprime_fibonacci(10))
-# print("\nLa sucesión Fibonacci hasta 50 es:", devuelve_fibonacci(50))
-print("La sucesión Fibonacci hasta 50 es:", devuelve_fibonacci(50))
+# print(f"La sucesión Fibonacci hasta 10 es: {imprime_fibonacci(10)}")
+print(f"La sucesión Fibonacci hasta 50 es: {devuelve_fibonacci(50)}")
