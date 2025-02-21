@@ -36,7 +36,7 @@ ejemplo de este concepto:
 .. literalinclude:: ../../recursos/leccion1/fuertemente_tipados.py
     :language: python
     :linenos:
-    :lines: 17-22
+    :lines: 16-21
 
 
 .. _python_tipado_dinamico:
@@ -51,7 +51,7 @@ A continuación un ejemplo de este concepto:
 .. literalinclude:: ../../recursos/leccion1/tipado_dinamico.py
     :language: python
     :linenos:
-    :lines: 14-20
+    :lines: 13-19
 
 
 .. _python_multiplataforma:
@@ -88,7 +88,7 @@ su ejecución:
 
     - `Jython <https://www.jython.org/>`_, Python ejecutando en el Java Virtual Machine.
 
-    - `PyPy <https://www.pypy.org/>`_, Una rápida implementación de python con un compilador JIT.
+    - `PyPy <https://pypy.org/>`_, Una rápida implementación de python con un compilador JIT.
 
     - `Stackless Python <https://github.com/stackless-dev/stackless/wiki/>`_, Una rama del desarrollo
       del ``CPython`` que soporta microthreads.
@@ -103,7 +103,7 @@ su ejecución:
     - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un
       completo entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
 
-    - `ActivePython <https://www.activestate.com/products/python/>`_, Python para Solaris, Usted puede
+    - `ActivePython <https://www.activestate.com/platform/supported-languages/python/>`_, Python para Solaris, Usted puede
       comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
       no de código abierto), o compilar desde una fuente si tiene un compilador de C.
       Los paquetes UNIX/Linux tienen una variedad de versiones de Python para una variedad de versiones de

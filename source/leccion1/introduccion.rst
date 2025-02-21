@@ -254,7 +254,7 @@ comunitario del proyecto Python en Sudamérica.
     principal es el desarrollo, ejecución y/o consultoría de proyectos científicos, tecnológicos
     y productivos, para cumplir fines de interés público en torno al desarrollo Nacional, haciendo
     uso y promoviendo para tal fin, el uso del lenguaje de programación Python y las tecnologías
-    asociadas a éste. Más información visite https://python.org.ve/
+    asociadas a éste. Más información visite https://github.com/pyve
 
 
 ----
