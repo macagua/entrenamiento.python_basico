@@ -50,7 +50,7 @@ un simple módulo, ``calculo_factura_pipo.py``.
 .. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
     :language: python
     :linenos:
-    :lines: 1-22
+    :lines: 1-15
 
 Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
 

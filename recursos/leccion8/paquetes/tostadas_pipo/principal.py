@@ -7,4 +7,4 @@ print(f"El impuesto IVA de {impuesto}%: {impuestos.impuesto_iva(monto, impuesto)
 
 suma = int(input("Introduzca un monto entero a sumar: "))
 # Llama función definida en el módulo "calculos"
-print("La suma total es:", calculos.suma_total(suma))
+print(f"La suma total es: {calculos.suma_total(suma)}")

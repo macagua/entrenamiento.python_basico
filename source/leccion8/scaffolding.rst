@@ -278,7 +278,7 @@ Referencias
 .. _`Esqueletos de proyectos Zope/Plone`: https://plone-spanish-docs.readthedocs.io/es/latest/python/skel_proyectos_plone.html
 .. _`Esqueletos de proyectos Odoo (Antiguo OpenERP)`: https://plone-spanish-docs.readthedocs.io/es/latest/python/skel_proyectos_openerp.html
 .. _`PIP`: https://plone-spanish-docs.readthedocs.io/es/latest/python/distribute_pip.html
-.. _`Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo`: https://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout
+.. _`Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo`: https://plone-spanish-docs.readthedocs.io/es/latest/buildout/index.html
 .. _`entorno virtual`: https://plone-spanish-docs.readthedocs.io/es/latest/python/creacion_entornos_virtuales.html
 .. _`easy_install`: https://plone-spanish-docs.readthedocs.io/es/latest/python/setuptools.html#que-es-easyinstall
 .. _`Setuptools`: https://plone-spanish-docs.readthedocs.io/es/latest/python/setuptools.html
