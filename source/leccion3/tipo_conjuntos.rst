@@ -488,7 +488,7 @@ A continuación, se presentan un ejemplo de conjuntos ``set``:
 .. literalinclude:: ../../recursos/leccion3/tipo_conjuntos.py
     :language: python
     :linenos:
-    :lines: 7-29
+    :lines: 6-28
 
 
 Conjuntos frozenset

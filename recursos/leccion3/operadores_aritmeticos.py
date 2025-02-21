@@ -1,4 +1,4 @@
-""" Operadores numéricos """
+"""Operadores numéricos"""
 
 a, b, c, d = 26, 11.3, 5, 3.5
 

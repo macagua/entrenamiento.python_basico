@@ -1,6 +1,5 @@
-"""
-    La lista son variables que almacenan arrays, internamente
-    cada posición puede ser un tipo de datos distinto.
+"""La lista son variables que almacenan arrays, internamente
+cada posición puede ser un tipo de datos distinto.
 """
 
 # Definir una colección ordenada / arreglos o vectores

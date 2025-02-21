@@ -1,7 +1,6 @@
-"""
-    Un conjunto, es una colección no ordenada y sin elementos repetidos.
-    Los usos básicos de éstos incluyen verificación de pertenencia y
-    eliminación de entradas duplicadas.
+"""Un conjunto, es una colección no ordenada y sin elementos repetidos.
+Los usos básicos de éstos incluyen verificación de pertenencia y
+eliminación de entradas duplicadas.
 """
 
 # crea un conjunto sin valores repetidos y lo asigna la variable
@@ -18,7 +17,7 @@ print("\nTostadas A que Pipo!")
 print("====================")
 
 # valida si un elemento esta en el conjunto
-print("Tenéis tequeno?:", "tequeno" in para_comer)
+print("Tenéis tequeño?:", "tequeno" in para_comer)
 
 # valida si un elemento esta en el conjunto
 print("Tenéis pa' tomar fresco?:", "refresco" in para_tomar)

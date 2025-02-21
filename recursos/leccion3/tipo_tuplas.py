@@ -1,6 +1,5 @@
-"""
-    Una tupla es una lista inmutable. Una tupla no puede
-    modificarse de ningún modo después de su creación.
+"""Una tupla es una lista inmutable. Una tupla no puede
+modificarse de ningún modo después de su creación.
 """
 
 # Ejemplo simple de tupla
@@ -21,7 +20,7 @@ conexion_bd = (
     "qwerty",
     "nomina",
 )
-print("Conexión típica:", conexion_bd, type(conexion_bd))
+print(f"Conexión típica: {conexion_bd}, {type(conexion_bd)}")
 
 conexion_completa = (
     conexion_bd,
@@ -29,22 +28,19 @@ conexion_completa = (
     "10",
 )
 print(
-    "\nConexión con parámetros adicionales:",
-    conexion_completa,
-    type(conexion_completa),
-    "\n",
+    f"\nConexión con parámetros adicionales: {conexion_completa}, {type(conexion_completa)}\n",
 )
 
-print("IP de la BD:", conexion_completa[0][0])
-print("Usuario de la BD:", conexion_completa[0][1])
-print("Contraseña de la BD:", conexion_completa[0][2])
-print("Nombre de la BD:", conexion_completa[0][3])
-print("Puerto de conexión:", conexion_completa[1])
-print("Tiempo de espera en conexión:", conexion_completa[2])
+print(f"IP de la BD: {conexion_completa[0][0]}")
+print(f"Usuario de la BD: {conexion_completa[0][1]}")
+print(f"Contraseña de la BD: {conexion_completa[0][2]}")
+print(f"Nombre de la BD: {conexion_completa[0][3]}")
+print(f"Puerto de conexión: {conexion_completa[1]}")
+print(f"Tiempo de espera en conexión: {conexion_completa[2]}")
 
 print(
     """\nMás información acerca de MySQL y Python \
-http://mysql-python.sf.net/MySQLdb.html"""
+https://pymysql.readthedocs.io/en/latest/"""
 )
 
 print("\nIterar tupla con función enumerate")

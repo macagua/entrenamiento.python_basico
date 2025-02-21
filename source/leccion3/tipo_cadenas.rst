@@ -230,8 +230,8 @@ ignorada), o después de finalizar una instrucción válida de código.
 
 .. _python_comentarios_multilinea:
 
-Comentarios multilínea
-~~~~~~~~~~~~~~~~~~~~~~
+Comentarios de multiples líneas
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Python no dispone de un método para delimitar bloques de comentarios de varias líneas.
 
@@ -248,7 +248,7 @@ Python, que crea el correspondiente objeto de tipo :ref:`cadena de caracteres <p
     'comentarios en varias lineas'
 
 
-A continuación, una comparación entre comentarios multilínea y comentarios en solo
+A continuación, una comparación entre comentarios de multiples líneas y comentarios en solo
 una linea:
 
 .. code-block:: pycon
@@ -259,17 +259,17 @@ una linea:
     ... de números Fibonacci"""
     'Calcula la sucesión \nde números Fibonacci'
 
-Entonces existen al menos dos (02) alternativas para introducir comentarios multilínea
+Entonces existen al menos dos (02) alternativas para introducir comentarios de multiples líneas
 son:
 
 - Comentar cada una de las líneas con el carácter #: en general todos los editores
   de programación y entornos de desarrollo (IDEs) disponen de mecanismos que permiten
   comentar y descomentar fácilmente un conjunto de líneas.
 
-- Utilizar triple comillas (simples o dobles) para generar una cadena multilínea:
+- Utilizar triple comillas (simples o dobles) para generar una cadena de multiples líneas:
   si bien este método es aceptado.
 
-A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
+A continuación, un ejemplo de Comentarios de multiples líneas y de solo una linea:
 
 .. code-block:: pycon
 
@@ -284,7 +284,7 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
     ...
     1 1 2 3 5 8 13 21 34 55 89
 
-Los comentarios multilínea usado con mucha frecuencia como en las varias sintaxis Python
+Los comentarios de multiples líneas usado con mucha frecuencia como en las varias sintaxis Python
 como :ref:`comentarios de documentación <python_str_docstrings>` a continuación se listan
 las sintaxis más comunes:
 
@@ -333,7 +333,7 @@ de la declaración.
     ¡Hola Plone !
 
 Puede puede consultar la documentación de la función ``hola()`` debe utilizar la
-función integrada :ref:`help() <python_fun_help>` y pasarle el argumento del objeto
+función integrada :ref:`help() <python_fun_help>` y enviarle el argumento del objeto
 de función ``hola()``:
 
 .. code-block:: pycon
@@ -402,17 +402,17 @@ En el archivo ``mi_modulo.py`` debe contener el siguiente código:
     """El docstring del módulo"""
 
     def despedir():
-        """ El docstring de la función despedir """
+        """El docstring de la función despedir"""
         print("Adiós! desde función despedir() del módulo prueba")
 
     def saludar():
-        """ El docstring de la función saludar """
+        """El docstring de la función saludar"""
         print("Hola! desde función saludar() del módulo prueba")
 
 
 Entonces, usted debe importar el módulo anterior, para consultar la documentación
 del módulo ``mi_modulo`` debe utilizar la función integrada
-:ref:`help() <python_fun_help>` y pasarle el argumento el nombre de módulo
+:ref:`help() <python_fun_help>` y enviarle el argumento el nombre de módulo
 ``mi_modulo``, de la siguiente manera:
 
 .. code-block:: pycon
