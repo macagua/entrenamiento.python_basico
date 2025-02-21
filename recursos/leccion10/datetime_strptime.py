@@ -5,12 +5,9 @@ datos_basicos = {
     "lugar_nacimiento": "Maracaibo, Zulia, Venezuela",
 }
 
-print(
-    "Fecha y lugar de nacimiento: {fecha} en {lugar}.".format(
-        fecha=datetime.datetime.strftime(
-            datetime.datetime.strptime(datos_basicos["fecha_nacimiento"], "%d/%m/%Y"),
-            "%d de %B de %Y",
-        ),
-        lugar=datos_basicos["lugar_nacimiento"],
-    )
-)
+fecha = datetime.datetime.strftime(
+    datetime.datetime.strptime(datos_basicos["fecha_nacimiento"], "%d/%m/%Y"),
+    "%d de %B de %Y",
+),
+lugar = datos_basicos["lugar_nacimiento"]
+print(f"Fecha y lugar de nacimiento: {fecha[0]} en {lugar}.")

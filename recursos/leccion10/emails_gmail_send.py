@@ -16,13 +16,13 @@ FROM_ADDRESS_PASSWORD = "TU_CONTRASEÑA_DE_APLICACIÓN_GOOGLE_AQUÍ"
 # Dirección del servidor SMTP
 SMTP_SERVER = "smtp.gmail.com"
 # Puerto del servidor SMTP
-SMTP_PORT = "587"
+SMTP_PORT = 587
 
 
 def leer_contacto(nombre_archivo):
-    """
-    Devuelve dos tipo lista nombres y correos electrónicos que contienen nombres y direcciones
-    de correo electrónico leídas de un archivo especificado por nombre de archivo.
+    """Devuelve dos tipo lista nombres y correos electrónicos que contienen nombres
+    y direcciones de correo electrónico leídas de un archivo especificado por nombre
+    de archivo.
     """
 
     nombres = []
@@ -35,8 +35,7 @@ def leer_contacto(nombre_archivo):
 
 
 def leer_plantilla(nombre_archivo):
-    """
-    Devuelve un objeto Template que incluye el contenido del
+    """Devuelve un objeto Template que incluye el contenido del
     archivo especificado por nombre de archivo.
     """
 
@@ -46,9 +45,7 @@ def leer_plantilla(nombre_archivo):
 
 
 def main():
-    """
-    Función principal del programa.
-    """
+    """Función principal del programa."""
 
     try:
         # leer contactos
@@ -65,25 +62,19 @@ def main():
         for nombre, correo in zip(nombres, correos):
             # crear un mensaje
             msg = MIMEMultipart()
-
             # agregue el nombre de la persona real a la plantilla de mensaje
             mensaje = mensaje_plantilla.substitute(NOMBRE_PERSONA=nombre.title())
-
             # Imprime el cuerpo del mensaje por nuestro bien
             print(mensaje)
-
             # configurar los parámetros del mensaje
             msg["From"] = FROM_ADDRESS
             msg["To"] = correo
             msg["Subject"] = "Esto es un mensaje PRUEBA"
-
             # añadir en el cuerpo del mensaje
             msg.attach(MIMEText(mensaje, "plain"))
-
             # enviar el mensaje a través del servidor configurado anteriormente.
             smtp.send_message(msg)
             del msg
-
         # Terminar la sesión SMTP y cerrar la conexión
         smtp.quit()
         print("Correo(s) enviado(s) correctamente")

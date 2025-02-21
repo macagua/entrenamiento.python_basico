@@ -39,7 +39,7 @@ para crear una cadena que represente el objeto de fecha y hora bajo el control d
 .. literalinclude:: ../../recursos/leccion10/datetime_strftime.py
     :language: python
     :linenos:
-    :lines: 1-19
+    :lines: 1-16
 
 El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
@@ -63,7 +63,7 @@ El método de clase ``datetime.strptime()`` crea un objeto ``datetime`` a partir
 .. literalinclude:: ../../recursos/leccion10/datetime_strptime.py
     :language: python
     :linenos:
-    :lines: 1-16
+    :lines: 1-13
 
 El anterior código al ejecutar debe mostrar el siguiente mensaje:
 

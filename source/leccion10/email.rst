@@ -15,8 +15,8 @@ medio de la librería `email`_.
 puede utilizar para crear un servidor de correo personalizado y proporciona clases
 útiles para depurar la transmisión de correo electrónico en otras aplicaciones.
 
-`imaplib`_ utiliza el protocolo IMAP para manipular mensajes almacenados en un servidor.
-Proporciona una API de bajo nivel para clientes IMAP y puede consultar, recuperar, mover
+`imaplib`_ utiliza el protocolo `IMAP`_ para manipular mensajes almacenados en un servidor.
+Proporciona una API de bajo nivel para clientes ``IMAP`` y puede consultar, recuperar, mover
 y eliminar mensajes.
 
 Los archivos de mensajes locales se pueden crear y modificar `mailbox`_ utilizando varios
@@ -103,7 +103,7 @@ para manipular los posibles errores:
 .. literalinclude:: ../../recursos/leccion10/emails_gmail_send.py
     :language: python
     :linenos:
-    :lines: 1-99
+    :lines: 1-90
 
 Archivo que incluye la lista de contactos:
 
@@ -191,7 +191,7 @@ necesarios.
 
 .. disqus::
 
-
+.. _`IMAP`: https://es.wikipedia.org/wiki/Protocolo_de_acceso_a_mensajes_de_Internet
 .. _`email`: https://docs.python.org/es/3.11/library/email.html
 .. _`smtplib`: https://docs.python.org/es/3.11/library/smtplib.html
 .. _`smtpd`: https://docs.python.org/es/3.11/library/smtpd.html
