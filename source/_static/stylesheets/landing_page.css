@@ -67,7 +67,7 @@ a, a:active, a:visited, a:hover, a:visited:hover {
 }
 
 .card .bottom {
-  height: 100px;
+  height: 20px;
   width: 100%;
 }
 
@@ -89,7 +89,7 @@ a, a:active, a:visited, a:hover, a:visited:hover {
 
 .card .bottom p {
   text-align: left;
-  height: 80px;
+  height: 70px;
   width: 100%;
   box-sizing: border-box;
   margin: 0;

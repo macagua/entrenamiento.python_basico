@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /_/downloads/
+
+# twitter.com bot
+User-agent: Twitterbot
+Allow: /_static/

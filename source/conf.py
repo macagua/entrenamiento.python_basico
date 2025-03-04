@@ -9,14 +9,14 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
+# import os
+# import sys
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 # sys.path.insert(0, os.path.abspath('.'))
-sys.path.append(os.path.abspath("sphinxext"))
+# sys.path.append(os.path.abspath("sphinxext"))
 
 
 # -- Project information -----------------------------------------------------
@@ -24,23 +24,23 @@ sys.path.append(os.path.abspath("sphinxext"))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project_namecode = "entrenamiento.python_basico"
-project_short_name = "Programación en Python"
+project_short_name = "programación en Python"
 project = project_short_name[0].capitalize() + project_short_name[1:39]
 project_name = project_namecode.replace(".", "")
 project_details = "Aprende Python desde el nivel más básico"
 publisher = "Leonardo J. Caballero G."
-years = "2014 - 2022"
+years = "2014 - 2025"
 copyright = f"{years}, {publisher}"
-author = "Leonardo J. Caballero G."
+author = publisher
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = "3.7"
+version = "3.11"
 # The full version, including alpha/beta/rc tags.
-release = "3.7.3"
+release = "3.11.11"
 
 
 # -- General configuration ---------------------------------------------------
@@ -48,7 +48,7 @@ release = "3.7.3"
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-needs_sphinx = "5.1.1"
+needs_sphinx = "8.2.1"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -109,23 +109,23 @@ pygments_style = "sphinx"
 
 # A string of reStructuredText that will be included at the end of every
 # source file that is read.
-rst_epilog = """
-.. _`CodigoFacilito.com`: https://codigofacilito.com/
-.. |psf| replace:: Python Software Foundation
-"""
+# rst_epilog = """
+# .. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+# .. |psf| replace:: Python Software Foundation
+# """
 
 # If true, figures, tables and code-blocks are automatically numbered if
 # they have a caption.
-numfig = True
+# numfig = True
 
 # A dictionary mapping 'figure', 'table', 'code-block' and 'section' to
 # strings that are used for format of figure numbers. As a special character,
 # %s will be replaced to figure number.
-numfig_format = {
-    "figure": "Figura %s,",
-    "table": "Tabla %s,",
-    "code-block": "Listado de código de bloque %s,",
-}
+# numfig_format = {
+#     "figure": "Figura %s,",
+#     "table": "Tabla %s,",
+#     "code-block": "Listado de código de bloque %s,",
+# }
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -140,23 +140,47 @@ html_theme = "sphinx_immaterial"
 # documentation.
 #
 html_theme_options = {
+    "analytics": {
+        "provider": "google",
+        "property": "G-W3KQBB73N0",
+        "feedback": {
+            "title": "¿Te ha resultado útil esta página?",
+            "ratings": [
+                {
+                    "icon": "material/emoticon-happy-outline",
+                    "name": "Esta página fue útil",
+                    "data": 1,
+                    "note": "Gracias por sus comentarios!",
+                },
+                {
+                    "icon": "material/emoticon-sad-outline",
+                    "name": "Esta página podría mejorarse",
+                    "data": 0,
+                    "note": "Gracias por sus comentarios. Ayúdenos a mejorar esta página "
+                    '<a href="https://github.com/macagua/entrenamiento.python_basico/issues">abriendo una incidencia</a>.',
+                },
+            ],
+        },
+    },
+    # BEGIN: Features
     "features": [
         "navigation.expand",
         # "navigation.tabs",
         # "navigation.tabs.sticky",
-        "toc.integrate",
+        "navigation.top",
         # "navigation.sections",
         # "navigation.instant",
-        # "header.autohide",
-        "navigation.top",
+        "toc.integrate",
     ],
+    # END: Features
+    # BEGIN: Palette toggle
     # "palette": [
     #     {
     #         # Palette toggle for light mode
     #         "media": "(prefers-color-scheme: light)",
     #         "scheme": "default",
-    #         #"primary": "light-green",
-    #         #"accent": "light-blue",
+    #         # "primary": "light-green",
+    #         # "accent": "light-blue",
     #         "toggle": {
     #             "icon": "material/weather-sunny",
     #             "name": "Cambiar al modo oscuro",
@@ -166,14 +190,54 @@ html_theme_options = {
     #         # Palette toggle for dark mode
     #         "media": "(prefers-color-scheme: dark)",
     #         "scheme": "slate",
-    #         #"primary": "deep-orange",
-    #         #"accent": "light",
+    #         # "primary": "deep-orange",
+    #         # "accent": "light",
     #         "toggle": {
     #             "icon": "material/weather-night",
     #             "name": "Cambiar al modo claro",
     #         }
     #     },
     # ],
+    # END: Palette toggle
+    # BEGIN: social icons
+    "social": [
+        {
+            "icon": "fontawesome/brands/linkedin",
+            "link": "https://linkedin.com/in/leonardojcaballerog",
+            "name": "My Linkedin",
+        },
+        {
+            "icon": "fontawesome/brands/twitter",
+            "link": "https://twitter.com/macagua",
+            "name": "My Twitter",
+        },
+        {
+            "icon": "fontawesome/brands/github",
+            "link": "https://github.com/macagua",
+            "name": "My Github",
+        },
+        {
+            "icon": "fontawesome/brands/gitlab",
+            "link": "https://gitlab.com/macagua",
+            "name": "My Gitlab",
+        },
+        {
+            "icon": "fontawesome/brands/bitbucket",
+            "link": "https://bitbucket.org/macagua",
+            "name": "My Bitbucket",
+        },
+        {
+            "icon": "fontawesome/brands/telegram",
+            "link": "https://t.me/leonardojcaballerog",
+            "name": "My Telegram",
+        },
+        # {
+        #     "icon": "fontawesome/brands/whatsapp",
+        #     "link": "https://wa.me/00504445556677?text=Hola%20Ing.%20Leonardo%20🙂,%20vi%20tu%20pagina%20web%20de%20aprender%20a%20programar%20Python%20y%20quisiera%20conocer%20mas%20de%20tus%20servicios%20de%20asesoría%20para%20programar%20en%20el%20lenguaje",
+        #     "name": "My WhatsApp",
+        # },
+    ],
+    # END: social icons
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -188,12 +252,12 @@ html_short_title = project_short_name[0].capitalize() + project_short_name[1:39]
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "_static/python_logo_web.png"
+html_logo = "_static/images/python_logo_web.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = "_static/favicon.png"
+html_favicon = "_static/favicon/favicon-16x16.png"
 
 # A list of CSS files. The entry must be a filename string or a tuple containing
 # the filename string and the attributes dictionary. The filename must be relative
@@ -213,13 +277,21 @@ html_css_files = [
 # The attributes is used for attributes of <script> tag. It defaults to an empty list.
 html_js_files = [
     "https://code.jquery.com/jquery-latest.min.js",
-    # "javascripts/real_time.js"
 ]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+# Add any extra paths that contain custom files (such as robots.txt or
+# .htaccess) here, relative to this directory. These files are copied
+# directly to the root of the documentation.
+html_extra_path = [
+    "_templates/browserconfig.xml",
+    "_templates/manifest.json",
+    "_templates/robots.txt",
+]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
