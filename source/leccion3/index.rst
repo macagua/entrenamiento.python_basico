@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_leccion3:
 
 Tipos y estructuras de datos
@@ -14,7 +11,9 @@ Para el caso de las estructuras de datos se usan variables y constantes las cual
 operadores para tratar los tipos de datos estándar.
 
 En esta lección se describen las variables, operadores y sus tipos de datos en el lenguaje
-Python, los cuales se resumieron en esta tabla. A continuación el temario de esta lección:
+Python, los cuales se resumieron en esta tabla.
+
+A continuación el temario de esta lección:
 
 .. toctree::
    :maxdepth: 2
@@ -33,5 +32,17 @@ Python, los cuales se resumieron en esta tabla. A continuación el temario de es
    tipo_conjuntos
 
 
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

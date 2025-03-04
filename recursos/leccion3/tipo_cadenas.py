@@ -43,4 +43,6 @@ print(f"El tamaño de la cadena es: {len(nombre_completo)}")
 print(f"Acceso a rango de cadena: {nombre_completo[3:13]}")
 
 # Formato de impresión de cadena usando la función format()
-print(f"El nombre es '{nombre_completo}', con un tamaño de la cadena es: {len(nombre_completo)}")
+print(
+    f"El nombre es '{nombre_completo}', con un tamaño de la cadena es: {len(nombre_completo)}"
+)

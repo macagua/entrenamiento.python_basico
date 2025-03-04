@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_leccion1:
 
 Introducción al lenguaje Python
@@ -24,11 +21,20 @@ la Web para tomar en cuenta. A continuación el temario de esta lección:
    holamundo
 
 
+----
+
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

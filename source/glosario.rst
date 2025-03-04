@@ -1,14 +1,13 @@
-.. -*- coding: utf-8 -*-
-
 .. _glosario:
 
 Glosario
 ========
 
-:Autor(es): Leonardo J. Caballero G.
-:Correo(s): :email:`leonardoc@plone.org`
-:Compatible con: Python 3.11.x
-:Fecha: 21 de Febrero de 2025
+.. note::
+
+   :Autor(es): Leonardo J. Caballero G.
+   :Correo(s): :email:`leonardoc@plone.org`
+   :Compatible con: Python 3.11.x
 
 A continuación una serie de términos usados en las tecnologías Python.
 
@@ -128,7 +127,7 @@ A continuación una serie de términos usados en las tecnologías Python.
 
         .. code-block:: console
 
-            $ python3 setup.py install
+            python3 setup.py install
 
         Entonces el módulo Python se instalará.
 
@@ -171,6 +170,13 @@ A continuación una serie de términos usados en las tecnologías Python.
         La `arquitectura de componentes de Zope (alias ZCA)`_, es un
         sistema que permite la aplicación y la expedición enchufabilidad complejo
         basado en objetos que implementan una interfaz.
+
+
+----
+
+
+..
+  .. disqus::
 
 .. _`sitio web de PEAK`: http://peak.telecommunity.com/DevCenter/setuptools
 .. _`Paste`: https://paste.readthedocs.io/en/latest/

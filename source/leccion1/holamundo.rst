@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_1er_programa:
 
 Su primer programa
@@ -59,7 +56,7 @@ Luego ejecute desde la consola de ``MS-DOS`` el siguiente comando:
 
 .. code-block:: console
 
-    C:\Python37\python C:\proyectos\holamundo.py
+    C:\Python311\python3 C:\proyectos\holamundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -116,7 +113,7 @@ Ejecutar un programa en macOS
 
 #. Ejecute ``ls`` y presione la tecla :keys:`Enter` y usted debería ver el archivo ``holamundo.py``.
 
-#. Para ejecutar el programa, escriba el siguiente comando ``python holamundo.py``
+#. Para ejecutar el programa, escriba el siguiente comando ``python3 holamundo.py``
    y presione la tecla :keys:`Enter`.
 
 #. Usted debe ver la línea *Hola Mundo*.
@@ -137,7 +134,7 @@ Luego ejecute desde la consola de comando el siguiente comando:
 
 .. code-block:: console
 
-    $ python $HOME/proyectos/holamundo.py
+    python3 ~/proyectos/holamundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -157,18 +154,23 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 
     .. code-block:: console
 
-        $ python holamundo.py
+        python3 holamundo.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

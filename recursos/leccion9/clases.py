@@ -101,7 +101,7 @@ class JefeCuadrilla(Supervisor, Destreza):
     def __str__(self):
         """Devuelve cadena representativa al Jefe de Cuadrilla"""
         doc = self.__doc__[28:46] if self.__doc__ else "JefeCuadrilla"
-        return f"{doc}: {self.nombre} {self.apellido}, rol '{self.rol}', tareas {self.consulta_tareas()}, cuadrilla: {self.cuadrilla}" 
+        return f"{doc}: {self.nombre} {self.apellido}, rol '{self.rol}', tareas {self.consulta_tareas()}, cuadrilla: {self.cuadrilla}"
 
 
 class Obrero(Persona, Destreza):

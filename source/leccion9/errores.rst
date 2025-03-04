@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_errores:
 
 Errores y excepciones
@@ -549,8 +546,11 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
     .. code-block:: console
 
-        $ python excepciones_integradas.py
-        $ python errores_propios.py
+        python3 excepciones_integradas.py
+
+    .. code-block:: console
+
+        python3 errores_propios.py
 
 
 ----
@@ -558,11 +558,15 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_set:
 
 Tipo conjuntos
@@ -517,6 +514,8 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
     >>> help(set)
 
+Para salir de esa ayuda presione la tecla :keys:`q`.
+
 Usted puede consultar toda la documentación disponible sobre los **conjuntos frozenset**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
@@ -528,8 +527,11 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion3/tipo_conjuntos.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+
+    - :download:`tipo_conjuntos.py <../../recursos/leccion3/tipo_conjuntos.py>`.
 
 
 .. tip::
@@ -538,16 +540,23 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        $ python tipo_conjuntos.py
+        python3 tipo_conjuntos.py
+
+
+----
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

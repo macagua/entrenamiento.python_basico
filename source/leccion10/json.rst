@@ -67,15 +67,20 @@ De esta forma se escribí y lee un archivo JSON.
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10_json>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion10_json>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`json`: https://docs.python.org/es/3.11/library/json.html

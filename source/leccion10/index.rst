@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_leccion10:
 
 Listas de comprensión y la librería estándar
@@ -17,5 +14,11 @@ Listas de comprensión y la librería estándar
    json
 
 
+----
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

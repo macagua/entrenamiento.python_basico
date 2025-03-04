@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_str:
 
 Tipo cadenas de caracteres
@@ -76,22 +73,22 @@ Una cadena puede estar precedida por el carácter:
   sus contrapartidas. Esto es especialmente útil, por ejemplo, para usar las
   expresiones regulares.
 
-    .. code-block:: pycon
+  .. code-block:: pycon
 
-        >>> raw = r"\t\nHola Plone\n"
-        >>> type(raw)
-        <type 'str'>
+      >>> raw = r"\t\nHola Plone\n"
+      >>> type(raw)
+      <type 'str'>
 
 - Python 3.11 soporta cadena que utiliza codificación **Unicode**.
 
-    .. code-block:: pycon
+  .. code-block:: pycon
 
-        >>> saber_mas = "Atüjaa oo'omüin..."
-        >>> type(saber_mas)
-        <type 'str'>
-        >>> vocales = "äóè"
-        >>> type(vocales)
-        <type 'str'>
+      >>> saber_mas = "Atüjaa oo'omüin..."
+      >>> type(saber_mas)
+      <type 'str'>
+      >>> vocales = "äóè"
+      >>> type(vocales)
+      <type 'str'>
 
 
 .. _python_str_escape:
@@ -327,10 +324,10 @@ de la declaración.
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
-    ...     print("¡Hola", arg, "!")
+    ...     print(f"¡Hola {arg}!")
     ...
     >>> hola("Plone")
-    ¡Hola Plone !
+    ¡Hola Plone!
 
 Puede puede consultar la documentación de la función ``hola()`` debe utilizar la
 función integrada :ref:`help() <python_fun_help>` y enviarle el argumento del objeto
@@ -432,7 +429,7 @@ del módulo ``mi_modulo`` debe utilizar la función integrada
 
 También puede consultar la documentación de la función ``despedir()`` dentro del
 módulo ``mi_modulo``, usando la función integrada :ref:`help() <python_fun_help>`
-y pasarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir,
+y enviarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir,
 ``mi_modulo.despedir``, de la siguiente manera:
 
 .. code-block:: pycon
@@ -731,7 +728,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 7-8
+    :lines: 6-7
 
 
 **Definir cadenas de caracteres con comillas dobles**
@@ -739,7 +736,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 11-12
+    :lines: 10-11
 
 
 **Definir cadenas de caracteres con código escapes**
@@ -747,7 +744,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 15-16
+    :lines: 14-15
 
 
 **Definir cadenas de caracteres con varias lineas**
@@ -755,7 +752,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 19-29
+    :lines: 18-28
 
 
 **Ejemplo operadores de repetición de cadenas de caracteres**
@@ -763,7 +760,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 32-33
+    :lines: 31-32
 
 
 **Ejemplo operadores de concatenación de cadenas de caracteres**
@@ -771,7 +768,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 36-38
+    :lines: 35-37
 
 
 **Calcular el tamaño de la cadena con función "len()"**
@@ -779,7 +776,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 41
+    :lines: 40
 
 
 **Acceder a rango de la cadena**
@@ -787,7 +784,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 44
+    :lines: 43
 
 
 **Consulta de ayuda a la función len**
@@ -795,6 +792,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. code-block:: pycon
 
     >>> help(len)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
 
     Help on built-in function len in module __builtin__:
 
@@ -809,6 +811,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. code-block:: pycon
 
     >>> help(int)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
 
     Help on class int in module __builtin__:
 
@@ -826,6 +833,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 
     >>> import datetime
     >>> help(datetime)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
 
     Help on built-in module datetime:
 
@@ -859,8 +871,11 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion3/tipo_cadenas.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+
+    - :download:`tipo_cadenas.py <../../recursos/leccion3/tipo_cadenas.py>`.
 
 
 .. tip::
@@ -870,18 +885,23 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        $ python tipo_cadenas.py
+        python3 tipo_cadenas.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

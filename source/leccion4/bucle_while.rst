@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_bucle_while:
 
 Bucle while
@@ -140,8 +137,12 @@ con bucle ``while``:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion4/bucle_while.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en los
+    siguientes enlaces:
+
+    - :download:`fibonacci.py <../../recursos/leccion4/fibonacci.py>`.
+
+    - :download:`bucle_while.py <../../recursos/leccion4/bucle_while.py>`.
 
 
 .. tip::
@@ -151,18 +152,27 @@ con bucle ``while``:
 
     .. code-block:: console
 
-        $ python bucle_while.py
+        python3 bucle_while.py
+
+    .. code-block:: console
+
+        python3 fibonacci.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

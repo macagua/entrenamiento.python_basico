@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_opers_identidad:
 
 Operadores de identidad
@@ -83,7 +80,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion4/operadores_identidad.py
     :language: python
     :linenos:
-    :lines: 7-31
+    :lines: 7-15
 
 El código anterior muestra el siguiente resultado:
 
@@ -135,12 +132,23 @@ El código anterior muestra el siguiente resultado:
 
     .. code-block:: console
 
-        $ python operadores_identidad.py
+        python3 operadores_identidad.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

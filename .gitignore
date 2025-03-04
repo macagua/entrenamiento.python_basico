@@ -27,7 +27,7 @@ parts/
 sdist/
 var/
 venv/
-py3.11/
+py3.*/
 *.bnk
 *.egg-info/
 .installed.cfg

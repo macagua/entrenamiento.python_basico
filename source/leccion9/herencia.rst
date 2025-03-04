@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_poo_herencia:
 
 Herencia
@@ -177,7 +174,7 @@ permite corroborar si un objeto es instancia de una clase.
 
     .. code-block:: console
 
-        $ python herencia_simple.py
+        python3 herencia_simple.py
 
 
 .. _python_poo_herencia_multiple:
@@ -258,16 +255,20 @@ a ``Supervisor`` primero por que ese aparece primero de izquierda a derecha.
 
     .. code-block:: console
 
-        $ python herencia_multiple.py
+        python3 herencia_multiple.py
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

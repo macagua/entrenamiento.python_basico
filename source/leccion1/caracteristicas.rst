@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_caracteristicas:
 
 Características
@@ -84,14 +81,14 @@ su ejecución:
   la versión "tradicional" de Python (tiene nombre código ``CPython``). Existen un número de
   implementaciones alternativas que están disponibles a continuación:
 
-    - `IronPython <https://ironpython.net/>`_, Python ejecutando en .NET.
+  - `IronPython <https://ironpython.net/>`_, Python ejecutando en .NET.
 
-    - `Jython <https://www.jython.org/>`_, Python ejecutando en el Java Virtual Machine.
+  - `Jython <https://www.jython.org/>`_, Python ejecutando en el Java Virtual Machine.
 
-    - `PyPy <https://pypy.org/>`_, Una rápida implementación de python con un compilador JIT.
+  - `PyPy <https://pypy.org/>`_, Una rápida implementación de Python con un compilador JIT.
 
-    - `Stackless Python <https://github.com/stackless-dev/stackless/wiki/>`_, Una rama del desarrollo
-      del ``CPython`` que soporta microthreads.
+  - `Stackless Python <https://github.com/stackless-dev/stackless/wiki/>`_, Una rama del desarrollo
+    del ``CPython`` que soporta microthreads.
 
     - `MicroPython <http://micropython.org/>`_, Python ejecutando en micro controladores.
 
@@ -100,14 +97,14 @@ su ejecución:
   sido migrada a un número plataformas especializadas y/o antiguas, a continuación se destacan
   algunas de ellas.
 
-    - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un
-      completo entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
+  - `Pythonista <http://omz-software.com/pythonista/index.html>`_, Python para iOS, ofrece un
+    completo entorno de desarrollo para escribir scripts Python en su iPad o iPhone.
 
-    - `ActivePython <https://www.activestate.com/platform/supported-languages/python/>`_, Python para Solaris, Usted puede
-      comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
-      no de código abierto), o compilar desde una fuente si tiene un compilador de C.
-      Los paquetes UNIX/Linux tienen una variedad de versiones de Python para una variedad de versiones de
-      Solaris. Estos utilizan el estándar Sun ``pkgadd``.
+  - `ActivePython <https://www.activestate.com/platform/supported-languages/python/>`_, Python para Solaris, Usted puede
+    comprarlo (versiones comerciales y comunitarias, incluidos los módulos de computación científica,
+    no de código abierto), o compilar desde una fuente si tiene un compilador de C.
+    Los paquetes UNIX/Linux tienen una variedad de versiones de Python para una variedad de versiones de
+    Solaris. Estos utilizan el estándar Sun ``pkgadd``.
 
   .. note::
 
@@ -189,16 +186,21 @@ También se incluye como un *huevo de pascua*, el cual se puede encontrar, desde
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 
 .. _`características`: https://es.wikipedia.org/wiki/Python#Características_y_paradigmas

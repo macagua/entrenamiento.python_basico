@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_modulo_datetime:
 
 datetime - Fecha y hora
@@ -15,7 +12,7 @@ aritmética de fecha y hora, por separado y en conjunto.
 .. literalinclude:: ../../recursos/leccion10/datetime_date.py
     :language: python
     :linenos:
-    :lines: 1-15
+    :lines: 1-11
 
 El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
@@ -63,7 +60,7 @@ El método de clase ``datetime.strptime()`` crea un objeto ``datetime`` a partir
 .. literalinclude:: ../../recursos/leccion10/datetime_strptime.py
     :language: python
     :linenos:
-    :lines: 1-13
+    :lines: 1-15
 
 El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
@@ -79,15 +76,20 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10_datetime>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion10_datetime>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`datetime`: https://docs.python.org/es/3.11/library/datetime.html

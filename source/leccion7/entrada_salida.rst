@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_entrada_salida:
 
 Entrada/Salida en Python
@@ -85,7 +82,13 @@ Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
 
 .. code-block:: console
 
-    $ python entrada_argumentos.py
+    python3 entrada_argumentos.py
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     ['entrada_argumentos.py']
 
 
@@ -98,7 +101,13 @@ y :ref:`cadenas de caracteres <python_str>` entre comillas dobles, todo separado
 
 .. code-block:: console
 
-    $ python entrada_argumentos.py 300 43.234 "Hola Plone"
+    python3 entrada_argumentos.py 300 43.234 "Hola Plone"
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     ['entrada_argumentos.py', '300', '43.234', 'Hola Plone']
 
 Cada valor que enviamos al *script* durante la llamada se llama argumento e implica
@@ -120,7 +129,13 @@ ejecute el siguiente comando:
 
 .. code-block:: console
 
-    $ python entrada_dos_argumentos.py "Hola Plone"
+    python3 entrada_dos_argumentos.py "Hola Plone"
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     ERROR: Introdujo uno (1) o más de dos (2) argumentos
     SOLUCIÓN: Introduce los argumentos correctamente
     Ejemplo: entrada_dos_argumentos.py "Texto" 5
@@ -130,7 +145,13 @@ argumentos, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    $ python entrada_dos_argumentos.py "Hola Plone" 3
+    python3 entrada_dos_argumentos.py "Hola Plone" 3
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     Hola Plone
     Hola Plone
     Hola Plone
@@ -223,18 +244,28 @@ En la sentencia ``print`` se pueden usar el formato de impresión alternando las
 
     .. code-block:: console
 
-        $ python entrada_salida.py
-        $ python entrada_argumentos.py
-        $ python entrada_dos_argumentos.py
+        python3 entrada_salida.py
+
+    .. code-block:: console
+
+        python3 entrada_argumentos.py
+
+    .. code-block:: console
+
+        python3 entrada_dos_argumentos.py
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion7>` del
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion7>` del
     entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

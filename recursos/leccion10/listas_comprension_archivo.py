@@ -7,7 +7,7 @@ DIR_ARCHIVO = os.path.dirname(os.path.abspath(__file__)) + os.sep
 ARCHIVO = DIR_ARCHIVO + NOMBRE_ARCHIVO
 
 
-with open(ARCHIVO, "r") as archivo_texto:
+with open(ARCHIVO) as archivo_texto:
     # Lee todas las líneas del archivo y las almacena en una lista
     lineas = archivo_texto.readlines()
 

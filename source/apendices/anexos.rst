@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _anexos_entrenamiento:
 
 Anexos del entrenamiento
@@ -297,3 +294,13 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
     :align: center
 
     Vídeo `Depurando um programa Python com pdb - Python Debugger <https://www.youtube.com/watch?v=N4NtB4r28h0>`_, cortesía de *Youtube*.
+
+
+----
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

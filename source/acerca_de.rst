@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _acerca_de:
 
 =========================
@@ -101,9 +98,6 @@ el tutorial. La lista completa de colaboradores está disponible en el repositor
    :avatars:
    :exclude: dependabot[bot]
 
-.. todo::
-    TODO corregir alineación de avatar de los colaboradores.
-
 Es muy fácil entrar en la lista. Simplemente escriba un artículo o proponga cambios
 en el repositorio del entrenamiento. Y obtenga el agradecimiento de todos.
 
@@ -138,5 +132,12 @@ Contáctenos
 
 .. raw:: html
    :file: _templates/partials/contactenos.html
+
+
+----
+
+
+..
+  .. disqus::
 
 .. _`Covantec R.L`: https://github.com/Covantec

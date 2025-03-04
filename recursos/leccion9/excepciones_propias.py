@@ -1,5 +1,6 @@
 """Módulo que contiene las clases excepciones personalizadas."""
 
+
 class VenezolanoError(Exception):
     """Clase base para expresiones Venezolanas."""
 
@@ -63,7 +64,9 @@ class MaracuchoError(VenezolanoError):
     def __str__(self) -> str:
         print("\n¿Eres de Maracaibo?")
         if self.evaluar:
-            return "Claro primo, cuando voy pa' Maracaibo y empiezo a pasar el puente..."
+            return (
+                "Claro primo, cuando voy pa' Maracaibo y empiezo a pasar el puente..."
+            )
         else:
             return "No primo, yo soy Zuliano, de Cabimas!!!"
 

@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_opers_relacionales:
 
 Operadores relacionales
@@ -171,8 +168,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion3/operadores_relacionales.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+
+    - :download:`operadores_relacionales.py <../../recursos/leccion3/operadores_relacionales.py>`.
 
 
 .. tip::
@@ -182,7 +182,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 
     .. code-block:: console
 
-        python operadores_relacionales.py
+        python3 operadores_relacionales.py
 
 
 ----
@@ -190,11 +190,15 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

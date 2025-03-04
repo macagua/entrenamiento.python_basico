@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_skel:
 
 Scaffolding en proyectos Python
@@ -41,7 +38,7 @@ ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    (venv)$ pip install PasteScript
+    pip install PasteScript
 
 .. note::
 
@@ -56,7 +53,10 @@ tiene disponible para usa, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    (venv)$ paster create --list-templates
+    paster create --list-templates
+
+.. code-block:: console
+
       Available templates:
         basic_package:       A basic setuptools-enabled package
         paste_deploy:        A web application deployed through paste.deploy
@@ -65,7 +65,9 @@ Usted puede usar el comando :command:`paster` para crear paquetes Python.
 
 .. code-block:: console
 
-    (venv)$ paster create -t basic_package mipaquetepython
+    paster create -t basic_package mipaquetepython
+
+.. code-block:: console
 
       Selected and implied templates:
 
@@ -99,7 +101,10 @@ paquete básico ha habilitado el `Setuptools`_.
 
 .. code-block:: console
 
-    (venv)$ tree mipaquetepython/
+    tree mipaquetepython/
+
+.. code-block:: console
+
       mipaquetepython/
       |-- mipaquetepython
       |   `-- __init__.py
@@ -117,8 +122,11 @@ Para instalar este paquete ejecute el siguiente comando:
 
 .. code-block:: console
 
-    (venv)$ cd mipaquetepython/mipaquetepython/
-    (venv)$ vim app.py
+    cd mipaquetepython/mipaquetepython/
+
+.. code-block:: console
+
+    vim app.py
 
 Escriba un simple código que solicita un valor y luego lo muestra:
 
@@ -140,7 +148,7 @@ Para comprobar su instalación ejecute el siguiente comando:
 
 .. code-block:: console
 
-    (venv)$ python
+    python3
 
 Y realice una importación del paquete ``mipaquetepython`` ejecutando
 el siguiente comando:
@@ -243,16 +251,21 @@ Referencias
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`PasteScript`: https://pypi.org/project/PasteScript
 .. _`paste.deploy`: https://pypi.org/project/PasteDeploy

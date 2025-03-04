@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_opers_aritmeticos:
 
 Operadores aritméticos
@@ -182,7 +179,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 3
 
 
@@ -190,7 +186,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 6
 
 
@@ -199,7 +194,6 @@ del lado izquierdo.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 9
 
 
@@ -208,7 +202,6 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 12
 
 
@@ -217,7 +210,6 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 15
 
 
@@ -225,7 +217,6 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 18
 
 
@@ -233,7 +224,6 @@ ambos lados del operador.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 21
 
 
@@ -243,7 +233,6 @@ decimal.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 25
 
 
@@ -252,15 +241,17 @@ por el operador del lado derecho y devuelve el resto.
 
 .. literalinclude:: ../../recursos/leccion3/operadores_aritmeticos.py
     :language: python
-    :linenos:
     :lines: 29
 
 ----
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion3/operadores_aritmeticos.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+
+    - :download:`operadores_aritmeticos.py <../../recursos/leccion3/operadores_aritmeticos.py>`.
 
 
 .. tip::
@@ -270,7 +261,7 @@ por el operador del lado derecho y devuelve el resto.
 
     .. code-block:: console
 
-        $ python operadores_aritmeticos.py
+        python3 operadores_aritmeticos.py
 
 
 ----
@@ -278,11 +269,15 @@ por el operador del lado derecho y devuelve el resto.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

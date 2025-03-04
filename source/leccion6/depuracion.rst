@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_modulo_pdb:
 
 Depuración con pdb
@@ -52,7 +49,7 @@ Postmortem
 
 En este caso esta depurando el archivo :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`. Escribe ``%debug`` y entrarás en el depurador.
 
-.. sourcecode:: ipython
+.. code-block:: pycon
 
     In [1]: %run index_error.py
     ---------------------------------------------------------------------------
@@ -102,11 +99,11 @@ En este caso esta depurando el archivo :download:`index_error.py <../../recursos
    En algunas situaciones no podrás usar IPython, por ejemplo para depurar
    un `script` que ha sido llamado desde la línea de comandos. En este caso,
    puedes ejecutar el `script` de la siguiente forma
-   ``python -m pdb script.py``:
+   ``python3 -m pdb script.py``:
 
    .. sourcecode:: console
 
-      $ python -m pdb index_error.py
+      python3 -m pdb index_error.py
 
    Este comando anterior muestra lo siguiente:
 
@@ -146,7 +143,7 @@ está haciendo correctamente.
 
 * Ejecuta el `script` en IPython con el depurador usando ``%run -d wiener_filtering.py``:
 
-  .. sourcecode:: ipython
+  .. code-block:: pycon
 
     In [1]: %run -d wiener_filtering.py
     *** Blank or comment
@@ -158,7 +155,7 @@ está haciendo correctamente.
 
 * Coloca un *breakpoint* en la línea 34 usando ``b 34``:
 
-  .. sourcecode:: ipython
+  .. code-block:: pycon
 
     ipdb> n
     > /home/macagua/python/entrenamiento/wiener_filtering.py(4)<module>()
@@ -171,7 +168,7 @@ está haciendo correctamente.
 
 * Continua la ejecución hasta el siguiente `breakpoint` con ``c(ont(inue))``:
 
-  .. sourcecode:: ipython
+  .. code-block:: pycon
 
     ipdb> c
     > /home/macagua/python/entrenamiento/wiener_filtering.py(34)iterated_wiener()
@@ -184,7 +181,7 @@ está haciendo correctamente.
   contexto de ejecución mientras que ``step`` se moverá entre los contextos
   en ejecución, i.e. permitiendo explorar dentro de llamadas a funciones:
 
-  .. sourcecode:: ipython
+  .. code-block:: pycon
 
     ipdb> s
     > /home/macagua/python/entrenamiento/wiener_filtering.py(35)iterated_wiener()
@@ -201,7 +198,7 @@ está haciendo correctamente.
 
 * Muévete unas pocas líneas y explora las variables locales:
 
-  .. sourcecode:: ipython
+  .. code-block:: pycon
 
     ipdb> n
     > /home/macagua/python/entrenamiento/wiener_filtering.py(37)iterated_wiener()
@@ -227,7 +224,7 @@ estamos haciendo aritmética con enteros.
     Cuando ejecuta el archivo :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`,
     se lanzarán los siguientes avisos:
 
-    .. sourcecode:: ipython
+    .. code-block:: pycon
 
         In [2]: %run wiener_filtering.py
         wiener_filtering.py:40: RuntimeWarning: divide by zero encountered in divide
@@ -237,7 +234,7 @@ estamos haciendo aritmética con enteros.
     hacer una depuración post-mortem sobre ellos y encontrar el problema
     de manera más rápida:
 
-    .. sourcecode:: ipython
+    .. code-block:: pycon
 
         In [3]: np.seterr(all='raise')
         Out[3]: {'divide': 'print', 'invalid': 'print', 'over': 'print', 'under': 'ignore'}
@@ -395,20 +392,31 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
     .. code-block:: console
 
-        $ python index_error.py
-        $ python wiener_filtering.py
-        $ python funcion_a_depurar.py
+        python3 index_error.py
+
+    .. code-block:: console
+
+        python3 wiener_filtering.py
+
+    .. code-block:: console
+
+        python3 funcion_a_depurar.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion6>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion6>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

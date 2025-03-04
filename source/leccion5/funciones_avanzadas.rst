@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_fun_avanzadas:
 
 Funciones avanzadas
@@ -186,11 +183,15 @@ sumar dos :ref:`números <python_int>`:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion5>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion5>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

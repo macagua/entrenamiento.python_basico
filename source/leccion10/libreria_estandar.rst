@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_libreria_estandar:
 
 Librería estándar Python
@@ -79,15 +76,21 @@ La `librería estándar`_ Python 3 incluye los siguientes módulos y librerías:
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion10>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
+
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`librería estándar`: https://docs.python.org/es/3.11/library/index.html
 .. _`site`: https://docs.python.org/es/3.11/library/site.html

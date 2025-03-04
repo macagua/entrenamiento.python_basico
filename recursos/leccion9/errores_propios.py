@@ -26,7 +26,9 @@ try:
     raise CaraETablaError("Ramos Allud")
 except CaraETablaError as carae:
     print(type(carae))  # la instancia de excepción
-    print(f"\t {carae.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
+    print(
+        f"\t {carae.__doc__}"
+    )  # __doc__ permite imprimir la docstring de la Excepción
     print(f"{carae} \n")  # __str__ permite imprimir args directamente
 
 
@@ -35,7 +37,9 @@ try:
     raise HijuEPutaError(13)
 except HijuEPutaError as hijue:
     print(type(hijue))  # la instancia de excepción
-    print(f"\t {hijue.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
+    print(
+        f"\t {hijue.__doc__}"
+    )  # __doc__ permite imprimir la docstring de la Excepción
     print("\n¿Hace pacheco?")
     print(hijue)  # __str__ permite imprimir args directamente
 
@@ -66,5 +70,7 @@ try:
     raise VergaError(120)
 except VergaError as verga:
     print(type(verga))  # la instancia de excepción
-    print(f"\t {verga.__doc__}")  # __doc__ permite imprimir la docstring de la Excepción
+    print(
+        f"\t {verga.__doc__}"
+    )  # __doc__ permite imprimir la docstring de la Excepción
     print(f"{verga} \n")  # __str__ permite imprimir args directamente

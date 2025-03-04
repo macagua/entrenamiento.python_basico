@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_poo:
 
 Programación orientada a objetos
@@ -231,11 +228,10 @@ Usted puede probar el código anterior, si lo transcribe en el
     'M'
     >>> print("El objeto de la clase {}, {}.".format(macagua.__name__, macagua.__doc__))
     El objeto de la clase Persona, Clase que representa una Persona.
-    >>> print("Hola, mucho gusto, mi nombre es '{} {}', \nmi cédula de identidad es '{}', y mi sexo es '{}'.".format(
-    ...     macagua.nombre,
-    ...     macagua.apellido,
-    ...     macagua.cedula,
-    ...     macagua.sexo)
+    >>> print(
+    ...     "Hola, mucho gusto, mi nombre es '{} {}', \nmi cédula de identidad es '{}', y mi sexo es '{}'.".format(
+    ...         macagua.nombre, macagua.apellido, macagua.cedula, macagua.sexo
+    ...     )
     ... )
     Hola, mucho gusto, mi nombre es 'Leonardo Caballero',
     mi cédula de identidad es 'V-13458796', y mi sexo es 'M'.
@@ -311,12 +307,10 @@ Python como lo siguiente:
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
-    ...
     ...     cedula = "V-13458796"
     ...     nombre = "Leonardo"
     ...     apellido = "Caballero"
     ...     sexo = "M"
-    ...
     ...     def hablar(self, mensaje):
     ...         """Mostrar mensaje de saludo de Persona"""
     ...         return mensaje
@@ -576,16 +570,20 @@ permite corroborar si un objeto es instancia de una clase.
 
     .. code-block:: console
 
-        $ python poo.py
+        python3 poo.py
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

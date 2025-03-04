@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_tuple:
 
 Tipo tuplas
@@ -90,24 +87,21 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :linenos:
-    :lines: 7-7
+    :lines: 6-6
 
 
 **Definir tuplas anidadas**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :linenos:
-    :lines: 10-10
+    :lines: 9-9
 
 
 **Operación asignar de valores de una tupla en variables**
 
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
-    :linenos:
-    :lines: 13-13
+    :lines: 12-12
 
 
 **Cuidar seguimiento del número de la numeración**
@@ -150,7 +144,7 @@ a una BD:
 .. literalinclude:: ../../recursos/leccion3/tipo_tuplas.py
     :language: python
     :linenos:
-    :lines: 18-43
+    :lines: 14-44
 
 Este script da como resultado el siguiente mensaje:
 
@@ -170,7 +164,7 @@ Este script da como resultado el siguiente mensaje:
     Puerto de conexión: 3307
     Tiempo de espera en conexión: 10
 
-    Más información acerca de MySQL y Python http://mysql-python.sf.net/MySQLdb.html
+    Más información acerca de MySQL y Python https://pymysql.readthedocs.io/en/latest/
 
 
 
@@ -184,10 +178,15 @@ Usted puede consultar toda la documentación disponible sobre las **tuplas** des
 
     >>> help(tuple)
 
+Para salir de esa ayuda presione la tecla :keys:`q`.
+
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion3/tipo_tuplas.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+
+    - :download:`tipo_tuplas.py <../../recursos/leccion3/tipo_tuplas.py>`.
 
 
 .. tip::
@@ -196,16 +195,23 @@ Usted puede consultar toda la documentación disponible sobre las **tuplas** des
 
     .. code-block:: console
 
-        $ python tipo_tuplas.py
+        python3 tipo_tuplas.py
+
+
+----
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

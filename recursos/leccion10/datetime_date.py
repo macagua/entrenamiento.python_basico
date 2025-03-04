@@ -8,8 +8,4 @@ ano = fecha_nacimiento[4:8]
 
 fecha_nacimiento = datetime.date(int(ano), int(mes), int(dia))
 
-print(
-    "Fecha de nacimiento: {fecha}.".format(
-        fecha=fecha_nacimiento,
-    )
-)
+print(f"Fecha de nacimiento: {fecha_nacimiento}.")

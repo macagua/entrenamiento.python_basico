@@ -41,6 +41,8 @@ fecha_nacimiento = datetime.datetime.strftime(
     "%d de %B de %Y",
 )
 locale.setlocale(locale.LC_ALL, os.environ["LANG"])
-print(f"Fecha y lugar de nacimiento: {fecha_nacimiento} en {datos_basicos['lugar_nacimiento']}.")
+print(
+    f"Fecha y lugar de nacimiento: {fecha_nacimiento} en {datos_basicos['lugar_nacimiento']}."
+)
 print(f"Nacionalidad: {datos_basicos['nacionalidad']}")
 print(f"Estado civil: {datos_basicos['estado_civil']}")

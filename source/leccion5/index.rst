@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_leccion5:
 
 Funciones y programación estructurada
@@ -11,7 +8,9 @@ de código fuente que pueden contener sentencias reusables de código fuente
 que puede ser personalizables vía parámetros.
 
 En esta lección se describen las estructuras de funciones del lenguaje Python,
-mostrando ejemplos prácticos y útiles. A continuación el temario de esta lección:
+mostrando ejemplos prácticos y útiles.
+
+A continuación el temario de esta lección:
 
 
 .. toctree::
@@ -26,5 +25,20 @@ mostrando ejemplos prácticos y útiles. A continuación el temario de esta lecc
    decoradores
 
 
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion5>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

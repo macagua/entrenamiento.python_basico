@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_distribucion_paquetes:
 
 Distribución de Software
@@ -168,7 +165,10 @@ el siguiente comando:
 
 .. code-block:: console
 
-    $ python ./setup.py -v build
+    python3 ./setup.py -v build
+
+.. code-block:: console
+
     running build
     running build_py
     creating build
@@ -224,7 +224,10 @@ archivo **zip**, etc. Para crear una paquete ``sdist``, ejecute el siguiente com
 
 .. code-block:: console
 
-    $ python ./setup.py -v sdist
+    python3 ./setup.py -v sdist
+
+.. code-block:: console
+
     running sdist
     running egg_info
     creating tostadas_pipo.egg-info
@@ -290,7 +293,13 @@ comando:
 
 .. code-block:: console
 
-    $ python ./setup.py sdist --formats=zip,gztar,bztar
+    python3 ./setup.py sdist --formats=zip,gztar,bztar
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     running sdist
     running egg_info
     writing tostadas_pipo.egg-info/PKG-INFO
@@ -388,7 +397,13 @@ siguiente comando:
 
 .. code-block:: console
 
-    $ python ./setup.py bdist_egg
+    python3 ./setup.py bdist_egg
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     running bdist_egg
     running egg_info
     writing tostadas_pipo.egg-info/PKG-INFO
@@ -450,7 +465,13 @@ siguiente comando:
 
 .. code-block:: console
 
-    $ python ./setup.py bdist_wheel
+    python3 ./setup.py bdist_wheel
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     running bdist_wheel
     running build
     running build_py
@@ -530,13 +551,19 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    $ pip install --user dist/tostadas_pipo-0.1.tar.gz
+    pip install --user dist/tostadas_pipo-0.1.tar.gz
 
 Si al ejecutar el comando anterior muestra el mensaje:
 
 .. code-block:: console
 
     pip
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     bash: pip: no se encontró la orden
 
 Esto es debido a que no tiene instalado dicha herramienta, así que debe ejecutar
@@ -550,7 +577,13 @@ De nuevo vuelva a ejecutar en su consola de comando el comando:
 
 .. code-block:: console
 
-    $ pip install --user dist/tostadas_pipo-0.1.tar.gz
+    pip install --user dist/tostadas_pipo-0.1.tar.gz
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     Processing ./dist/tostadas_pipo-0.1.tar.gz
     Building wheels for collected packages: tostadas-pipo
       Running setup.py bdist_wheel for tostadas-pipo ... done
@@ -574,7 +607,13 @@ realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    $ pip install --user ./dist/tostadas_pipo-0.1-py3-none-any.whl
+    pip install --user ./dist/tostadas_pipo-0.1-py3-none-any.whl
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     Processing ./dist/tostadas_pipo-0.1-py3-none-any.whl
     Installing collected packages: tostadas-pipo
     Successfully installed tostadas-pipo-0.1
@@ -599,7 +638,13 @@ Para instalar el paquete desde el código de proyecto, ejecute el siguiente coma
 
 .. code-block:: console
 
-    $ python ./setup.py -v install --user
+    python3 ./setup.py -v install --user
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     running install
     running bdist_egg
     running egg_info
@@ -680,7 +725,7 @@ disponible con el script ``setup.py``.
 .. warning::
 
     Al instalar el paquete usando el parámetro ``--user`` el paquete es instalado en el
-    directorio ``$HOME/.local/lib/python3.11/site-packages/``.
+    directorio ``~/.local/lib/python3.11/site-packages/``.
 
 ----
 
@@ -694,7 +739,13 @@ o binaria de su paquete, ejecute el siguiente comando:
 
 .. code-block:: console
 
-    $ pip list --user --format=freeze | grep "tostadas"
+    pip list --user --format=freeze | grep "tostadas"
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     tostadas-pipo==0.1
 
 De esta forma la herramienta de gestión de paquete indica que el ``tostadas-pipo`` en su
@@ -712,7 +763,13 @@ ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    $ python -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva; print("Función importada " + impuesto_iva.__doc__[1:36] + ".")'
+    python3 -c 'from tostadas_pipo.utilidades.impuestos import impuesto_iva; print("Función importada " + impuesto_iva.__doc__[1:36] + ".")'
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     Función importada Calcula el impuesto del IVA de 14%.
 
 El comando previo muestra la :ref:`docstring <python_str_docstrings>` de la
@@ -729,7 +786,13 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
 
 .. code-block:: console
 
-    $ pip uninstall tostadas_pipo
+    pip uninstall tostadas_pipo
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     Uninstalling tostadas-pipo-0.1:
       /home/leonardo/.local/bin/tostadas_pipo
       /home/leonardo/.local/lib/python3.11/site-packages/tostadas_pipo-0.1.dist-info/DESCRIPTION.rst
@@ -757,7 +820,7 @@ Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comand
 conocidas son:
 
 - Los paquetes basado en solamente en el módulo :ref:`distutils <python_modulo_distutils>` los
-  cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python setup.py install``
+  cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python3 setup.py install``
   desde el :ref:`código del paquete <python_distro_install_source_pkg>`.
 
   Instalándolo de esta forma, al momento de desintalarlo usando el comando ``pip uninstall tostadas_pipo``
@@ -771,7 +834,7 @@ conocidas son:
 
       Esta entrando a la cueva de los Dragones!!!
 
-- Los scripts wrappers instalados ejecutando el comando ``python setup.py develop``.
+- Los scripts wrappers instalados ejecutando el comando ``python3 setup.py develop``.
 
 De esta forma ya tiene eliminado su paquete de forma manual de su sistema.
 
@@ -785,7 +848,13 @@ ejecute el comando siguiente:
 
 .. code-block:: console
 
-    $ python ./setup.py --help-commands
+    python3 ./setup.py --help-commands
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     Standard commands:
       build             build everything needed to install
       build_py          "build" pure Python modules (copy to build directory)
@@ -836,7 +905,7 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 .. code-block:: console
 
-    $ python setup.py --help
+    python3 setup.py --help
 
 ----
 
@@ -855,13 +924,18 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

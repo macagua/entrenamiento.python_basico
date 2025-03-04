@@ -124,7 +124,6 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
 .. code-block:: console
 
-
     Estimado(a) Leonardo,
 
     Este es un mensaje de prueba.
@@ -180,16 +179,21 @@ necesarios.
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10_email>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion10_email>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`IMAP`: https://es.wikipedia.org/wiki/Protocolo_de_acceso_a_mensajes_de_Internet
 .. _`email`: https://docs.python.org/es/3.11/library/email.html

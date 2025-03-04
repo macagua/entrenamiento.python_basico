@@ -9,14 +9,14 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
+# import os
+# import sys
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 # sys.path.insert(0, os.path.abspath('.'))
-sys.path.append(os.path.abspath("sphinxext"))
+# sys.path.append(os.path.abspath("sphinxext"))
 
 
 # -- Project information -----------------------------------------------------
@@ -29,9 +29,9 @@ project = project_short_name[0].capitalize() + project_short_name[1:39]
 project_name = project_namecode.replace(".", "")
 project_details = f"Entrenamiento de {project_short_name}"
 publisher = "Leonardo J. Caballero G."
-years = "2014 - 2023"
+years = "2018 - 2025"
 copyright = f"{years}, {publisher}"
-author = "Leonardo J. Caballero G."
+author = publisher
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -40,7 +40,7 @@ author = "Leonardo J. Caballero G."
 # The short X.Y version.
 version = "3.11"
 # The full version, including alpha/beta/rc tags.
-release = "3.11.5"
+release = "3.11.11"
 
 
 # -- General configuration ---------------------------------------------------
@@ -48,7 +48,7 @@ release = "3.11.5"
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-needs_sphinx = "5.1.1"
+needs_sphinx = "8.2.1"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -64,9 +64,9 @@ extensions = [
     "sphinx_immaterial.kbd_keys",
     "sphinx_tabs.tabs",
     "sphinxcontrib.email",
-    "sphinxcontrib.quizdown",
-    "yasfb",
-    "sphinx_disqus.disqus",
+    # "sphinxcontrib.quizdown",
+    # "yasfb",
+    # "sphinx_disqus.disqus",
 ]
 
 # Options for the linkcheck builder
@@ -161,24 +161,61 @@ html_theme = "sphinx_immaterial"
 # documentation.
 #
 html_theme_options = {
-    "edit_uri": "edit/3.7/source",
-    "repo_url": "https://github.com/macagua/entrenamiento.python_basico",
-    "repo_name": "entrenamiento.python_basico",
-    "repo_type": "github",
+    "analytics": {
+        "provider": "google",
+        "property": "G-TT9XBL4W12",
+        "feedback": {
+            "title": "¿Te ha resultado útil esta página?",
+            "ratings": [
+                {
+                    "icon": "material/emoticon-happy-outline",
+                    "name": "Esta página fue útil",
+                    "data": 1,
+                    "note": "Gracias por sus comentarios!",
+                },
+                {
+                    "icon": "material/emoticon-sad-outline",
+                    "name": "Esta página podría mejorarse",
+                    "data": 0,
+                    "note": "Gracias por sus comentarios. Ayúdenos a mejorar esta página "
+                    '<a href="https://github.com/jbms/sphinx-immaterial/issues">abriendo una incidencia</a>.',
+                },
+            ],
+        },
+    },
     "icon": {
         "repo": "fontawesome/brands/github",
     },
+    "site_url": "https://entrenamiento-python-basico.readthedocs.io/es/3.7/",
+    "repo_url": "https://github.com/macagua/entrenamiento.python_basico",
+    "repo_name": "entrenamiento.frameworks_web_python",
+    "edit_uri": "edit/3.7/source",
+    "globaltoc_collapse": True,
     "features": [
         "navigation.expand",
-        "toc.integrate",
+        # "navigation.tabs",
+        # "navigation.tabs.sticky",
         "navigation.top",
+        "navigation.footer",
         "navigation.tracking",
         "search.highlight",
         "search.share",
+        "toc.integrate",
         "toc.follow",
         "toc.sticky",
+        "content.action.edit",
+        "content.action.view",
+        "content.code.copy",
+        "content.tooltips",
     ],
     "palette": [
+        {
+            "media": "(prefers-color-scheme)",
+            "toggle": {
+                "icon": "material/brightness-auto",
+                "name": "Cambiar al modo claro",
+            },
+        },
         {
             # Palette toggle for light mode
             "media": "(prefers-color-scheme: light)",
@@ -186,7 +223,7 @@ html_theme_options = {
             # "primary": "light-green",
             # "accent": "light-blue",
             "toggle": {
-                "icon": "material/weather-sunny",
+                "icon": "material/lightbulb",
                 "name": "Cambiar al modo oscuro",
             },
         },
@@ -195,10 +232,10 @@ html_theme_options = {
             "media": "(prefers-color-scheme: dark)",
             "scheme": "slate",
             # "primary": "deep-orange",
-            # "accent": "light",
+            # "accent": "lime",
             "toggle": {
-                "icon": "material/weather-night",
-                "name": "Cambiar al modo claro",
+                "icon": "material/lightbulb-outline",
+                "name": "Cambiar a preferencias del sistema",
             },
         },
     ],
@@ -217,6 +254,51 @@ html_theme_options = {
         },
     ],
     # END: version_dropdown
+    "toc_title_is_page_title": True,
+    # BEGIN: social icons
+    "social": [
+        {
+            "icon": "fontawesome/brands/linkedin",
+            "link": "https://linkedin.com/in/leonardojcaballerog",
+            "name": "My Linkedin",
+        },
+        {
+            "icon": "fontawesome/brands/twitter",
+            "link": "https://twitter.com/macagua",
+            "name": "My Twitter",
+        },
+        {
+            "icon": "fontawesome/brands/github",
+            "link": "https://github.com/macagua",
+            "name": "My Github",
+        },
+        {
+            "icon": "fontawesome/brands/gitlab",
+            "link": "https://gitlab.com/macagua",
+            "name": "My Gitlab",
+        },
+        {
+            "icon": "fontawesome/brands/bitbucket",
+            "link": "https://bitbucket.org/macagua",
+            "name": "My Bitbucket",
+        },
+        {
+            "icon": "fontawesome/brands/telegram",
+            "link": "https://t.me/leonardojcaballerog",
+            "name": "My Telegram",
+        },
+        # {
+        #     "icon": "fontawesome/brands/whatsapp",
+        #     "link": "https://wa.me/00504445556677?text=Hola%20Ing.%20Leonardo%20🙂,%20vi%20tu%20pagina%20web%20de%20aprender%20a%20programar%20Python%20y%20quisiera%20conocer%20mas%20de%20tus%20servicios%20de%20asesoría%20para%20programar%20en%20el%20lenguaje",
+        #     "name": "My WhatsApp",
+        # },
+        {
+            "icon": "material/rss-box",
+            "link": "https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/rss.xml",
+            "name": "RSS Feed",
+        },
+    ],
+    # END: social icons
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -231,13 +313,12 @@ html_short_title = project_short_name[0].capitalize() + project_short_name[1:39]
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "_static/python_logo_web.png"
+html_logo = "_static/images/python_logo_web.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-# html_favicon = '_static/favicon/favicon-16x16.png'
-html_favicon = "_static/favicon.png"
+html_favicon = "_static/favicon/favicon-16x16.png"
 
 # A list of CSS files. The entry must be a filename string or a tuple containing
 # the filename string and the attributes dictionary. The filename must be relative
@@ -249,7 +330,7 @@ html_css_files = [
     "stylesheets/soporte_profesional.css",
     "stylesheets/sphinx_contributors.css",
     "stylesheets/main/layout/_content.css",
-    "stylesheets/main/layout/_footer.css",
+    # "stylesheets/main/layout/_footer.css",
     # 'https://example.com/css/custom.css',
     # ('print.css', {'media': 'print'})
 ]
@@ -352,10 +433,10 @@ latex_elements = {
     "preamble": r"""
     \usepackage{pmboxdraw}
     \authoraddress{
-      \strong{Contactos:} \email{leonardocaballero@gmail.com} -
+      \strong{Email:} \email{leonardocaballero@gmail.com} -
       \url{https://github.com/macagua}\\
-      \strong{Ciudad de Mérida, Estado Mérida, Venezuela. 5101.}\\
-      \strong{Telf.} +58-412-473.53.76 (WhatsApp / Telegram)
+      \strong{Fuenlabrada, Madrid, España. 5101.}\\
+      \strong{Contactos} @leonardojcaballerog (Telegram)
     }
     \let\Verbatim=\OriginalVerbatim
     \let\endVerbatim=\endOriginalVerbatim
@@ -376,7 +457,7 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = "_static/python_logo_print.png"
+latex_logo = "_static/images/python_logo_print.png"
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -490,6 +571,22 @@ epub_exclude_files = ["search.html"]
 # https://kev.inburke.com/kevin/sphinx-interlinks/
 intersphinx_mapping = {
     "python3": ("https://docs.python.org/3.11/", None),
+    "entrenamiento-python-basico": (
+        "https://entrenamiento-python-basico.readthedocs.io/es/3.7/",
+        None,
+    ),
+    "entrenamiento-python-intermedio": (
+        "https://entrenamiento-python-intermedio.readthedocs.io/es/latest/",
+        None,
+    ),
+    "entrenamiento-python-avanzado": (
+        "https://entrenamiento-python-avanzado.readthedocs.io/es/latest/",
+        None,
+    ),
+    "entrenamiento-data-scientist-python": (
+        "https://entrenamiento-data-scientist-python.readthedocs.io/",
+        None,
+    ),
 }
 intersphinx_timeout = 120
 
@@ -517,32 +614,32 @@ email_automode = True
 # -- Options for quizdown extension ------------------------------------------
 
 # Global options passed to the quizdown library
-quizdown_config = {
-    # quizdown javascript
-    "quizdown_js": "https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js",
-    # detect and convert all divs with class quizdown
-    "start_on_load": True,
-    # shuffle answers for each question
-    "shuffle_answers": True,
-    # shuffle questions for each quiz
-    "shuffle_questions": True,
-    # primary CSS color
-    "primary_color": "#FF851B",
-    # secondary CSS color
-    "secondary_color": "#DDDDDD",
-    # text color of interactive elements
-    "text_color": "black",
-    # language of text in user interface
-    "locale": "es",
-}
+# quizdown_config = {
+#     # quizdown javascript
+#     "quizdown_js": "https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js",
+#     # detect and convert all divs with class quizdown
+#     "start_on_load": True,
+#     # shuffle answers for each question
+#     "shuffle_answers": True,
+#     # shuffle questions for each quiz
+#     "shuffle_questions": True,
+#     # primary CSS color
+#     "primary_color": "#FF851B",
+#     # secondary CSS color
+#     "secondary_color": "#DDDDDD",
+#     # text color of interactive elements
+#     "text_color": "black",
+#     # language of text in user interface
+#     "locale": "es",
+# }
 
 # -- Options for yasfb extension ---------------------------------------------
 
 # Set the Feed Base Url.
-feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3.7/"
+# feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3.7/"
 
 # Set the Feed Author Name.
-feed_author = "Leonardo Caballero"
+# feed_author = publisher
 
 # -- Options for disqus extension --------------------------------------------
 

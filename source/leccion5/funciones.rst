@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_funciones:
 
 Funciones
@@ -44,6 +41,7 @@ cuando la función es llamada.
 La sintaxis para una definición de función en Python es:
 
 .. code-block:: python
+    :class: no-copy
     :linenos:
 
     def NOMBRE(LISTA_DE_PARAMETROS):
@@ -76,7 +74,7 @@ Un ejemplo simple de función esta seguidamente:
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
-    ...     print("¡Hola {}!".format(arg))
+    ...     print(f"¡Hola {arg}!")
     ...
     >>> hola("Plone")
     ¡Hola Plone!
@@ -445,16 +443,20 @@ Y se llama de la siguiente forma:
 
     .. code-block:: console
 
-        $ python funciones.py
+        python3 funciones.py
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion5>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion5>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

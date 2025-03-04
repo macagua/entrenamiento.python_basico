@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_cls_tipos_builtins:
 
 Clases de tipos integrados
@@ -1484,11 +1481,15 @@ módulo estándar ``types`` define nombres para todos los tipos internos estánd
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

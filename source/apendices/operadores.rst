@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_opers:
 
 Operadores
@@ -198,7 +195,11 @@ Una corta referencia de los *operadores lógicos* se ofrece a continuación:
     :ref:`operadores lógicos <python_opers_logicos>`.
 
 
+----
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
