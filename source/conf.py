@@ -572,7 +572,7 @@ epub_exclude_files = ["search.html"]
 intersphinx_mapping = {
     "python3": ("https://docs.python.org/3.11/", None),
     "entrenamiento-python-basico": (
-        "https://entrenamiento-python-basico.readthedocs.io/es/3.7/",
+        "https://entrenamiento-python-basico.readthedocs.io/es/3/",
         None,
     ),
     "entrenamiento-python-intermedio": (
