@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_modulo_locale:
 
 locale — Servicios de internacionalización
@@ -203,10 +200,21 @@ Jugando con el módulo ``locale`` en el ``ipython``:
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10_locale>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion10_locale>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::
 
 .. _`locale`: https://docs.python.org/es/3.11/library/locale.html
 .. _`POSIX locale`: https://es.wikipedia.org/wiki/Configuraci%C3%B3n_regional

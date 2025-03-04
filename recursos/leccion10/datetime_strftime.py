@@ -11,9 +11,6 @@ ano = datos_basicos["fecha_nacimiento"][4:8]
 
 fecha_nacimiento = datetime.date(int(ano), int(mes), int(dia))
 
-print(
-    "Fecha y lugar de nacimiento: {fecha} en {lugar}.".format(
-        fecha=datetime.datetime.strftime(fecha_nacimiento, "%d de %B de %Y"),
-        lugar=datos_basicos["lugar_nacimiento"],
-    )
-)
+fecha = fecha_nacimiento.strftime("%d de %B de %Y")
+lugar = datos_basicos["lugar_nacimiento"]
+print(f"Fecha y lugar de nacimiento: {fecha} en {lugar}.")

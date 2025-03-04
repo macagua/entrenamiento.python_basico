@@ -1,4 +1,4 @@
-""" Small snippet to raise an IndexError. """
+"""Small snippet to raise an IndexError."""
 
 
 def index_error():

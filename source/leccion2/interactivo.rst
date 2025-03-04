@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_interactivo:
 
 Inmersión al modo interactivo
@@ -50,20 +47,43 @@ el comando ``python`` de la siguiente forma:
 
 .. code-block:: console
 
-    $ python
-    Python 3.11.5 (default, Sep 11 2023, 13:26:23)
-    [GCC 8.3.0] on linux
+    python3
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    Python 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
 
-Puede solicitar la ayudar del interprete de Python, ejecutando:
+Puede solicitar la ayuda del interprete de Python, ejecutando:
 
 .. code-block:: pycon
 
     >>> help
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    >>> help
     Type help() for interactive help, or help(object) for help about object.
+    >>>
+
+Puede entrar en la ayuda interactiva de Python, ejecutando:
+
+.. code-block:: pycon
+
     >>> help()
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
 
     Welcome to Python 3.11's help utility!
 
@@ -81,162 +101,117 @@ Puede solicitar la ayudar del interprete de Python, ejecutando:
 
     help>
 
-Para ejecutar la ayuda disponible sobre la sintaxis Python ejecute el
-siguiente comando:
+Para ejecutar la ayuda disponible sobre la sintaxis de los diversos Python
+ejecute el siguiente comando:
 
 .. code-block:: pycon
 
     help> modules
 
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     Please wait a moment while I gather a list of all available modules...
 
-    Crypto              brain_namedtuple_enum imaplib             regex
-    HtmlTagNames        brain_nose          imghdr              reportbug
-    HtmlVoidElements    brain_numpy         imp                 reprlib
-    OpenSSL             brain_pkg_resources importlib           requests
-    PIL                 brain_pytest        importlib_metadata  resource
-    PyQt5               brain_qt            importlib_resources restructuredtext_lint
-    __future__          brain_re            inspect             rlcompleter
-    _abc                brain_six           invoke              roman
-    _ast                brain_ssl           io                  rstcheck
-    _asyncio            brain_subprocess    ipaddress           runpy
-    _bisect             brain_threading     ipython_genutils    safety
-    _blake2             brain_typing        isort               sarge
-    _bootlocale         brain_uuid          iteration_utilities sched
-    _bz2                brlapi              itertools           scour
-    _cffi_backend       bs4                 itsdangerous        scspell
-    _codecs             builtins            jinja2              secrets
-    _codecs_cn          bz2                 jinja2_ansible_filters secretstorage
-    _codecs_hk          cProfile            joblib              select
-    _codecs_iso2022     cairo               jsbeautifier        selectors
-    _codecs_jp          calendar            json                setuptools
-    _codecs_kr          caribou             jsonschema          shelve
-    _codecs_tw          certifi             jupyter             shlex
-    _collections        cfgv                jupyter_core        shutil
-    _collections_abc    cgi                 kazam               signal
-    _compat_pickle      cgitb               keyring             simplejson
-    _compression        chardet             keyword             sip
-    _contextvars        chunk               lazy_object_proxy   sipconfig
-    _crypt              clang               ldap                sipconfig_nd7
-    _csv                click               ldap3               site
-    _ctypes             cmakelint           ldapurl             sitecustomize
-    _ctypes_test        cmath               ldif                six
-    _curses             cmd                 lib2to3             slapdtest
-    _curses_panel       coala_utils         libfuturize         smbc
-    _datetime           coalib              libpasteurize       smmap
-    _dbm                code                linecache           smtpd
-    _dbus_bindings      codecs              locale              smtplib
-    _dbus_glib_bindings codeop              logging             sndhdr
-    _decimal            collections         louis               snowballstemmer
-    _distutils_hack     colorama            lsb_release         socket
-    _dummy_thread       colorlog            lxml                socketserver
-    _elementtree        colorsys            lzma                softwareproperties
-    _functools          compileall          macpath             soupsieve
-    _hashlib            concurrent          mailbox             speaklater
-    _heapq              configobj           mailcap             speechd
-    _imp                configparser        mako                speechd_config
-    _io                 contextlib          mando               spellchecker
-    _json               contextvars         markdown            sphinx
-    _ldap               copier              markups             sphinx_rtd_theme
-    _locale             copy                markupsafe          spwd
-    _lsprof             copyreg             marshal             sqlalchemy
-    _lzma               cpp                 math                sqlite3
-    _markupbase         cpplint             mccabe              sqlparse
-    _md5                crypt               mdx_math            sre_compile
-    _multibytecodec     cryptography        meld                sre_constants
-    _multiprocessing    cssbeautifier       mimetypes           sre_parse
-    _opcode             csv                 mmap                sshtunnel
-    _openshot           ctypes              modulefinder        ssl
-    _operator           cups                multiprocessing     stat
-    _osx_support        cupshelpers         munkres             statistics
-    _pickle             curl                mypy                stevedore
-    _posixsubprocess    curses              nacl                string
-    _py_abc             dataclasses         nbformat            stringprep
-    _pydecimal          datetime            netrc               struct
-    _pyio               dateutil            nis                 subprocess
-    _pyrsistent_version dbm                 nltk                suds
-    _queue              dbus                nntplib             sunau
-    _random             deb822              nodeenv             symbol
-    _sha1               debconf             ntpath              symtable
-    _sha256             debian              nturl2path          sys
-    _sha3               debian_bundle       numbers             sysconfig
-    _sha512             debianbts           olefile             syslog
-    _signal             decimal             opcode              tabnanny
-    _sitebuiltins       dennis              openshot            tarfile
-    _smbc               dependency_management openshot_qt         telnetlib
-    _socket             difflib             operator            tempfile
-    _sqlite3            dis                 optparse            template_remover
-    _sre                distlib             orca                termcolor
-    _ssl                distro              os                  termios
-    _stat               distro_info         ossaudiodev         test
-    _string             distutils           packaging           tests
-    _strptime           djlint              paramiko            textile
-    _struct             docker              parser              textwrap
-    _symtable           docopt              passlib             this
-    _sysconfigdata_m_linux_x86_64-linux-gnu doctest             past                threading
-    _testbuffer         docutils            pathlib             time
-    _testcapi           dummy_threading     pathspec            timeit
-    _testimportmultiple dunamai             pbr                 tkinter
-    _testmultiphase     editor              pdb                 token
-    _thread             editorconfig        pickle              tokenize
-    _threading_local    email               pickletools         toml
-    _tkinter            enchant             pip                 tomli
-    _tracemalloc        encodings           pipes               tqdm
-    _uuid               ensurepip           pipx                trace
-    _version            entrypoints         pkg_resources       traceback
-    _warnings           enum                pkgutil             tracemalloc
-    _weakref            eradicate           platform            traitlets
-    _weakrefset         errno               platformdirs        tty
-    _xxtestfuzz         faulthandler        plistlib            turtle
-    _yaml               fcntl               plumbum             typeguard
-    abc                 filecmp             polib               types
-    aifc                fileinput           poplib              typing
-    alabaster           filelock            posix               typing_extensions
-    alembic             flask               posixpath           ufw
-    antigravity         flask_babelex       pprint              unicodedata
-    appdirs             flask_compress      pre_commit          unidiff
-    apt                 flask_gravatar      profile             unittest
-    apt_inst            flask_login         prompt_toolkit      uno
-    apt_pkg             flask_mail          proselint           unohelper
-    aptsources          flask_migrate       pstats              urllib
-    argcomplete         flask_paranoid      psutil              urllib3
-    argparse            flask_principal     psycopg2            userpath
-    array               flask_security      pty                 uu
-    asn1crypto          flask_sqlalchemy    pvectorc            uuid
-    ast                 flask_wtf           pwd                 validate
-    astroid             fnmatch             py_compile          venv
-    asynchat            formatter           pyasn1              virtualenv
-    asyncio             fractions           pyasn1_modules      vobject
-    asyncore            ftplib              pyatspi             vulture
-    atexit              functools           pyclbr              warnings
-    attr                future              pycodestyle         wave
-    attrs               gc                  pycurl              wcwidth
-    audioop             genericpath         pydantic            weakref
-    autoflake           getopt              pydoc               webbrowser
-    autopep8            getpass             pydoc_data          webencodings
-    babel               gettext             pydocstyle          websocket
-    backports           gi                  pyexpat             werkzeug
-    bandit              git                 pyflakes            wheel
-    base64              gitdb               pygls               wrapt
-    bcrypt              glob                pygments            wsgiref
-    bdb                 gnomemusic          pygtkcompat         wtforms
-    bears               gpg                 pyinotify           xdg
-    binascii            grp                 pylint              xdrlib
-    binhex              gtweak              pyparsing           xml
-    bisect              guess_language      pyprint             xmlrpc
-    blinker             gzip                pyroma              xxlimited
-    brain_attrs         hashlib             pyrsistent          xxsubtype
-    brain_builtin_inference heapq               pysimplesoap        yaml
-    brain_collections   hmac                pytz                yamlinclude
-    brain_curses        html                qrcode              yamllint
-    brain_dateutil      html5lib            questionary         yapf
-    brain_fstrings      html_linter         queue               yapftests
-    brain_functools     http                quopri              zipapp
-    brain_gi            httpie              radon               zipfile
-    brain_hashlib       httplib2            random              zipimport
-    brain_io            identify            re                  zipp
-    brain_mechanize     idna                readline            zlib
-    brain_multiprocessing imagesize           redshift_gtk        zmq
+    IPython             _xxtestfuzz         imagesize           selectors
+    __future__          _yaml               imaplib             setuptools
+    __hello__           _zoneinfo           imghdr              shelve
+    __phello__          abc                 imp                 shlex
+    _abc                aifc                importlib           shutil
+    _aix_support        alabaster           importlib_metadata  signal
+    _ast                antigravity         inflect             site
+    _asyncio            appdirs             inspect             sitecustomize
+    _bisect             argparse            io                  smtpd
+    _blake2             array               ipaddress           smtplib
+    _bootsubprocess     ast                 itertools           sndhdr
+    _bz2                asttokens           jedi                snowballstemmer
+    _codecs             asynchat            jinja2              socket
+    _codecs_cn          asyncio             json                socketserver
+    _codecs_hk          asyncore            keyword             sphinx
+    _codecs_iso2022     atexit              lib2to3             sphinx_contributors
+    _codecs_jp          audioop             linecache           sphinx_disqus
+    _codecs_kr          autocommand         locale              sphinx_immaterial
+    _codecs_tw          babel               logging             sphinx_tabs
+    _collections        backcall            lxml                sphinxlint
+    _collections_abc    backports           lzma                spwd
+    _compat_pickle      base64              mailbox             sqlite3
+    _compression        bdb                 mailcap             sre_compile
+    _contextvars        binascii            markdown            sre_constants
+    _crypt              bisect              markupsafe          sre_parse
+    _csv                builtins            marshal             ssl
+    _ctypes             bz2                 math                stack_data
+    _ctypes_test        cProfile            matplotlib_inline   stat
+    _curses             calendar            mimetypes           statistics
+    _curses_panel       certifi             mmap                string
+    _datetime           cfgv                modulefinder        stringprep
+    _dbm                cgi                 more_itertools      struct
+    _decimal            cgitb               multiprocessing     subprocess
+    _distutils_hack     charset_normalizer  netrc               sunau
+    _distutils_system_mod chunk               nis                 symtable
+    _elementtree        cmath               nntplib             sys
+    _functools          cmd                 nodeenv             sysconfig
+    _gdbm               code                ntpath              syslog
+    _hashlib            codecs              nturl2path          tabnanny
+    _heapq              codeop              numbers             tarfile
+    _imp                collections         opcode              telnetlib
+    _io                 colorsys            operator            tempfile
+    _json               compileall          optparse            termios
+    _locale             concurrent          os                  test
+    _lsprof             configparser        ossaudiodev         textwrap
+    _lzma               contextlib          packaging           this
+    _markupbase         contextvars         parso               threading
+    _md5                copy                pathlib             time
+    _multibytecodec     copyreg             pdb                 timeit
+    _multiprocessing    crypt               pexpect             tkinter
+    _opcode             cssselect           pickle              token
+    _operator           csv                 pickleshare         tokenize
+    _osx_support        ctypes              pickletools         tokenize_rt
+    _pickle             curses              pip                 toml
+    _posixshmem         dataclasses         pipes               tomli
+    _posixsubprocess    datetime            pkg_resources       tomllib
+    _py_abc             dbm                 pkgutil             trace
+    _pydecimal          decimal             platform            traceback
+    _pyio               decorator           platformdirs        tracemalloc
+    _queue              difflib             plistlib            traitlets
+    _random             dis                 poplib              tty
+    _sha1               distlib             posix               turtle
+    _sha256             distutils           posixpath           turtledemo
+    _sha3               doctest             pprint              typeguard
+    _sha512             docutils            pre_commit          types
+    _signal             email               profile             typing
+    _sitebuiltins       encodings           prompt_toolkit      typing_extensions
+    _socket             ensurepip           pstats              unicodedata
+    _sqlite3            enum                pty                 unittest
+    _sre                errno               ptyprocess          urllib
+    _ssl                executing           pure_eval           urllib3
+    _stat               faulthandler        pwd                 uu
+    _statistics         fcntl               py_compile          uuid
+    _string             filecmp             pyclbr              venv
+    _strptime           fileinput           pydantic            virtualenv
+    _struct             filelock            pydoc               warnings
+    _symtable           fnmatch             pydoc_data          wave
+    _sysconfigdata__linux_x86_64-linux-gnu fractions           pyexpat             wcwidth
+    _sysconfigdata__x86_64-linux-gnu ftplib              pygments            weakref
+    _testbuffer         functools           pymdownx            webbrowser
+    _testcapi           gc                  pyparsing           wheel
+    _testclinic         genericpath         pyquery             wsgiref
+    _testimportmultiple getopt              pytz                xdrlib
+    _testinternalcapi   getpass             pyupgrade           xml
+    _testmultiphase     gettext             queue               xmlrpc
+    _thread             glob                quopri              xxlimited
+    _threading_local    graphlib            random              xxlimited_35
+    _tkinter            grp                 re                  xxsubtype
+    _tokenize           gzip                readline            yaml
+    _tracemalloc        hashlib             reprlib             yasfb
+    _typing             heapq               requests            zipapp
+    _uuid               hmac                resource            zipfile
+    _virtualenv         html                rlcompleter         zipimport
+    _warnings           http                runpy               zipp
+    _weakref            identify            sched               zlib
+    _weakrefset         idlelib             secrets             zoneinfo
+    _xxsubinterpreters  idna                select
 
     Enter any module name to get more help.  Or, type "modules spam" to search
     for modules whose name or summary contain the string "spam".
@@ -246,13 +221,19 @@ Entonces consulte la ayuda del módulo ``os``, ejecutando:
 .. code-block:: pycon
 
     help> os
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     Help on module os:
 
     NAME
         os - OS routines for NT or Posix depending on what system we're on.
 
     MODULE REFERENCE
-        https://docs.python.org/3.11/library/os
+        https://docs.python.org/3.11/library/os.html
 
         The following documentation is automatically generated from the Python
         source files.  It may be incomplete, incorrect or include features that
@@ -284,7 +265,7 @@ Entonces consulte la ayuda del módulo ``os``, ejecutando:
 
 .. tip:: Presione la tecla :keys:`q` para salir de la ayuda del módulo ``os``.
 
-Seguidamente presione la combinación de tecla **Crtl+d** para salir de la ayuda.
+Seguidamente presione la combinación de tecla :keys:`Crtl+d` para salir de la ayuda.
 
 Luego realice la importación de la :ref:`librería estándar <python_libreria_estandar>` Python llamada
 ``os``, con el siguiente comando:
@@ -297,65 +278,78 @@ Luego realice la importación de la :ref:`librería estándar <python_libreria_e
 
 Previamente importada la librería usted puede usar la función ``dir()`` para
 listar o descubrir que atributos, métodos de la clase están disponibles con
-la importación
+la importación:
 
 .. code-block:: pycon
 
     >>> dir(os)
-    ['CLD_CONTINUED', 'CLD_DUMPED', 'CLD_EXITED', 'CLD_TRAPPED', 'DirEntry',
-    'EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 'EX_NOHOST',
-    'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER', 'EX_OK', 'EX_OSERR', 'EX_OSFILE',
-    'EX_PROTOCOL', 'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE',
-    'F_LOCK', 'F_OK', 'F_TEST', 'F_TLOCK', 'F_ULOCK', 'GRND_NONBLOCK',
-    'GRND_RANDOM', 'MutableMapping', 'NGROUPS_MAX', 'O_ACCMODE', 'O_APPEND',
-    'O_ASYNC', 'O_CLOEXEC', 'O_CREAT', 'O_DIRECT', 'O_DIRECTORY', 'O_DSYNC',
-    'O_EXCL', 'O_LARGEFILE', 'O_NDELAY', 'O_NOATIME', 'O_NOCTTY', 'O_NOFOLLOW',
-    'O_NONBLOCK', 'O_PATH', 'O_RDONLY', 'O_RDWR', 'O_RSYNC', 'O_SYNC',
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    ['CLD_CONTINUED', 'CLD_DUMPED', 'CLD_EXITED', 'CLD_KILLED', 'CLD_STOPPED',
+    'CLD_TRAPPED', 'DirEntry', 'EFD_CLOEXEC', 'EFD_NONBLOCK', 'EFD_SEMAPHORE',
+    'EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 'EX_NOHOST', 'EX_NOINPUT',
+    'EX_NOPERM', 'EX_NOUSER', 'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL',
+    'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE', 'F_LOCK', 'F_OK',
+    'F_TEST', 'F_TLOCK', 'F_ULOCK', 'GRND_NONBLOCK', 'GRND_RANDOM', 'GenericAlias',
+    'MFD_ALLOW_SEALING', 'MFD_CLOEXEC', 'MFD_HUGETLB', 'MFD_HUGE_16GB', 'MFD_HUGE_16MB',
+    'MFD_HUGE_1GB', 'MFD_HUGE_1MB', 'MFD_HUGE_256MB', 'MFD_HUGE_2GB', 'MFD_HUGE_2MB',
+    'MFD_HUGE_32MB', 'MFD_HUGE_512KB', 'MFD_HUGE_512MB', 'MFD_HUGE_64KB', 'MFD_HUGE_8MB',
+    'MFD_HUGE_MASK', 'MFD_HUGE_SHIFT', 'Mapping', 'MutableMapping', 'NGROUPS_MAX',
+    'O_ACCMODE', 'O_APPEND', 'O_ASYNC', 'O_CLOEXEC', 'O_CREAT', 'O_DIRECT', 'O_DIRECTORY',
+    'O_DSYNC', 'O_EXCL', 'O_FSYNC', 'O_LARGEFILE', 'O_NDELAY', 'O_NOATIME', 'O_NOCTTY',
+    'O_NOFOLLOW', 'O_NONBLOCK', 'O_PATH', 'O_RDONLY', 'O_RDWR', 'O_RSYNC', 'O_SYNC',
     'O_TMPFILE', 'O_TRUNC', 'O_WRONLY', 'POSIX_FADV_DONTNEED', 'POSIX_FADV_NOREUSE',
-    'POSIX_FADV_NORMAL', 'POSIX_FADV_RANDOM', 'POSIX_FADV_SEQUENTIAL',
-    'POSIX_FADV_WILLNEED', 'PRIO_PGRP', 'PRIO_PROCESS', 'PRIO_USER', 'P_ALL',
-    'P_NOWAIT', 'P_NOWAITO', 'P_PGID', 'P_PID', 'P_WAIT', 'PathLike', 'RTLD_DEEPBIND',
-    'RTLD_GLOBAL', 'RTLD_LAZY', 'RTLD_LOCAL', 'RTLD_NODELETE', 'RTLD_NOLOAD',
-    'RTLD_NOW', 'RWF_DSYNC', 'RWF_HIPRI', 'RWF_NOWAIT', 'RWF_SYNC', 'R_OK',
-    'SCHED_BATCH', 'SCHED_FIFO', 'SCHED_IDLE', 'SCHED_OTHER', 'SCHED_RESET_ON_FORK',
-    'SCHED_RR', 'SEEK_CUR', 'SEEK_DATA', 'SEEK_END', 'SEEK_HOLE', 'SEEK_SET',
-    'ST_APPEND', 'ST_MANDLOCK', 'ST_NOATIME', 'ST_NODEV', 'ST_NODIRATIME', 'ST_NOEXEC',
-    'ST_NOSUID', 'ST_RDONLY', 'ST_RELATIME', 'ST_SYNCHRONOUS', 'ST_WRITE', 'TMP_MAX',
-    'WCONTINUED', 'WCOREDUMP', 'WEXITED', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED',
-    'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WNOWAIT', 'WSTOPPED', 'WSTOPSIG', 'WTERMSIG',
-    'WUNTRACED', 'W_OK', 'XATTR_CREATE', 'XATTR_REPLACE', 'XATTR_SIZE_MAX', 'X_OK',
-    '_Environ', '__all__', '__builtins__', '__cached__', '__doc__', '__file__',
-    '__loader__', '__name__', '__package__', '__spec__', '_execvpe', '_exists', '_exit',
-    '_fspath', '_fwalk', '_get_exports_list', '_putenv', '_spawnvef', '_unsetenv',
-    '_wrap_close', 'abc', 'abort', 'access', 'altsep', 'chdir', 'chmod', 'chown',
-    'chroot', 'close', 'closerange', 'confstr', 'confstr_names', 'cpu_count', 'ctermid',
-    'curdir', 'defpath', 'device_encoding', 'devnull', 'dup', 'dup2', 'environ', 'environb',
-    'error', 'execl', 'execle', 'execlp', 'execlpe', 'execv', 'execve', 'execvp',
-    'execvpe', 'extsep', 'fchdir', 'fchmod', 'fchown', 'fdatasync', 'fdopen', 'fork',
-    'forkpty', 'fpathconf', 'fsdecode', 'fsencode', 'fspath', 'fstat', 'fstatvfs', 'fsync',
-    'ftruncate', 'fwalk', 'get_blocking', 'get_exec_path', 'get_inheritable',
-    'get_terminal_size', 'getcwd', 'getcwdb', 'getegid', 'getenv', 'getenvb', 'geteuid',
-    'getgid', 'getgrouplist', 'getgroups', 'getloadavg', 'getlogin', 'getpgid', 'getpgrp',
-    'getpid', 'getppid', 'getpriority', 'getrandom', 'getresgid', 'getresuid', 'getsid',
-    'getuid', 'getxattr', 'initgroups', 'isatty', 'kill', 'killpg', 'lchown', 'linesep',
-    'link', 'listdir', 'listxattr', 'lockf', 'lseek', 'lstat', 'major', 'makedev', 'makedirs',
-    'minor', 'mkdir', 'mkfifo', 'mknod', 'name', 'nice', 'open', 'openpty', 'pardir', 'path',
-    'pathconf', 'pathconf_names', 'pathsep', 'pipe', 'pipe2', 'popen', 'posix_fadvise',
-    'posix_fallocate', 'pread', 'preadv', 'putenv', 'pwrite', 'pwritev', 'read', 'readlink',
-    'readv', 'register_at_fork', 'remove', 'removedirs', 'removexattr', 'rename', 'renames',
-    'replace', 'rmdir', 'scandir', 'sched_get_priority_max', 'sched_get_priority_min',
-    'sched_getaffinity', 'sched_getparam', 'sched_getscheduler', 'sched_param',
-    'sched_rr_get_interval', 'sched_setaffinity', 'sched_setparam', 'sched_setscheduler',
-    'sched_yield', 'sendfile', 'sep', 'set_blocking', 'set_inheritable', 'setegid', 'seteuid',
-    'setgid', 'setgroups', 'setpgid', 'setpgrp', 'setpriority', 'setregid', 'setresgid',
-    'setresuid', 'setreuid', 'setsid', 'setuid', 'setxattr', 'spawnl', 'spawnle', 'spawnlp',
-    'spawnlpe', 'spawnv', 'spawnve', 'spawnvp', 'spawnvpe', 'st', 'stat', 'stat_result',
-    'statvfs', 'statvfs_result', 'strerror', 'supports_bytes_environ', 'supports_dir_fd',
-    'supports_effective_ids', 'supports_fd', 'supports_follow_symlinks', 'symlink', 'sync',
-    'sys', 'sysconf', 'sysconf_names', 'system', 'tcgetpgrp', 'tcsetpgrp', 'terminal_size',
-    'times', 'times_result', 'truncate', 'ttyname', 'umask', 'uname', 'uname_result', 'unlink',
-    'unsetenv', 'urandom', 'utime', 'wait', 'wait3', 'wait4', 'waitid', 'waitid_result',
-    'waitpid', 'walk', 'write', 'writev']
+    'POSIX_FADV_NORMAL', 'POSIX_FADV_RANDOM', 'POSIX_FADV_SEQUENTIAL', 'POSIX_FADV_WILLNEED',
+    'POSIX_SPAWN_CLOSE', 'POSIX_SPAWN_DUP2', 'POSIX_SPAWN_OPEN', 'PRIO_PGRP', 'PRIO_PROCESS',
+    'PRIO_USER', 'P_ALL', 'P_NOWAIT', 'P_NOWAITO', 'P_PGID', 'P_PID', 'P_PIDFD', 'P_WAIT',
+    'PathLike', 'RTLD_DEEPBIND', 'RTLD_GLOBAL', 'RTLD_LAZY', 'RTLD_LOCAL', 'RTLD_NODELETE',
+    'RTLD_NOLOAD', 'RTLD_NOW', 'RWF_APPEND', 'RWF_DSYNC', 'RWF_HIPRI', 'RWF_NOWAIT',
+    'RWF_SYNC', 'R_OK', 'SCHED_BATCH', 'SCHED_FIFO', 'SCHED_IDLE', 'SCHED_OTHER',
+    'SCHED_RESET_ON_FORK', 'SCHED_RR', 'SEEK_CUR', 'SEEK_DATA', 'SEEK_END', 'SEEK_HOLE',
+    'SEEK_SET', 'SPLICE_F_MORE', 'SPLICE_F_MOVE', 'SPLICE_F_NONBLOCK', 'ST_APPEND',
+    'ST_MANDLOCK', 'ST_NOATIME', 'ST_NODEV', 'ST_NODIRATIME', 'ST_NOEXEC', 'ST_NOSUID',
+    'ST_RDONLY', 'ST_RELATIME', 'ST_SYNCHRONOUS', 'ST_WRITE', 'TMP_MAX', 'WCONTINUED',
+    'WCOREDUMP', 'WEXITED', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED', 'WIFSIGNALED',
+    'WIFSTOPPED', 'WNOHANG', 'WNOWAIT', 'WSTOPPED', 'WSTOPSIG', 'WTERMSIG', 'WUNTRACED',
+    'W_OK', 'XATTR_CREATE', 'XATTR_REPLACE', 'XATTR_SIZE_MAX', 'X_OK', '_Environ',
+    '__all__', '__builtins__', '__doc__', '__file__', '__loader__', '__name__',
+    '__package__', '__spec__', '_check_methods', '_execvpe', '_exists', '_exit',
+    '_fspath', '_fwalk', '_get_exports_list', '_spawnvef', '_walk', '_wrap_close', 'abc',
+    'abort', 'access', 'altsep', 'chdir', 'chmod', 'chown', 'chroot', 'close',
+    'closerange', 'confstr', 'confstr_names', 'copy_file_range', 'cpu_count', 'ctermid',
+    'curdir', 'defpath', 'device_encoding', 'devnull', 'dup', 'dup2', 'environ',
+    'environb', 'error', 'eventfd', 'eventfd_read', 'eventfd_write', 'execl', 'execle',
+    'execlp', 'execlpe', 'execv', 'execve', 'execvp', 'execvpe', 'extsep', 'fchdir',
+    'fchmod', 'fchown', 'fdatasync', 'fdopen', 'fork', 'forkpty', 'fpathconf', 'fsdecode',
+    'fsencode', 'fspath', 'fstat', 'fstatvfs', 'fsync', 'ftruncate', 'fwalk',
+    'get_blocking', 'get_exec_path', 'get_inheritable', 'get_terminal_size', 'getcwd',
+    'getcwdb', 'getegid', 'getenv', 'getenvb', 'geteuid', 'getgid', 'getgrouplist',
+    'getgroups', 'getloadavg', 'getlogin', 'getpgid', 'getpgrp', 'getpid', 'getppid',
+    'getpriority', 'getrandom', 'getresgid', 'getresuid', 'getsid', 'getuid', 'getxattr',
+    'initgroups', 'isatty', 'kill', 'killpg', 'lchown', 'linesep', 'link', 'listdir',
+    'listxattr', 'lockf', 'login_tty', 'lseek', 'lstat', 'major', 'makedev', 'makedirs',
+    'memfd_create', 'minor', 'mkdir', 'mkfifo', 'mknod', 'name', 'nice', 'open', 'openpty',
+    'pardir', 'path', 'pathconf', 'pathconf_names', 'pathsep', 'pidfd_open', 'pipe', 'pipe2',
+    'popen', 'posix_fadvise', 'posix_fallocate', 'posix_spawn', 'posix_spawnp', 'pread',
+    'preadv', 'putenv', 'pwrite', 'pwritev', 'read', 'readlink', 'readv', 'register_at_fork',
+    'remove', 'removedirs', 'removexattr', 'rename', 'renames', 'replace', 'rmdir', 'scandir',
+    'sched_get_priority_max', 'sched_get_priority_min', 'sched_getaffinity', 'sched_getparam',
+    'sched_getscheduler', 'sched_param', 'sched_rr_get_interval', 'sched_setaffinity',
+    'sched_setparam', 'sched_setscheduler', 'sched_yield', 'sendfile', 'sep', 'set_blocking',
+    'set_inheritable', 'setegid', 'seteuid', 'setgid', 'setgroups', 'setpgid', 'setpgrp',
+    'setpriority', 'setregid', 'setresgid', 'setresuid', 'setreuid', 'setsid', 'setuid',
+    'setxattr', 'spawnl', 'spawnle', 'spawnlp', 'spawnlpe', 'spawnv', 'spawnve', 'spawnvp',
+    'spawnvpe', 'splice', 'st', 'stat', 'stat_result', 'statvfs', 'statvfs_result', 'strerror',
+    'supports_bytes_environ', 'supports_dir_fd', 'supports_effective_ids', 'supports_fd',
+    'supports_follow_symlinks', 'symlink', 'sync', 'sys', 'sysconf', 'sysconf_names', 'system',
+    'tcgetpgrp', 'tcsetpgrp', 'terminal_size', 'times', 'times_result', 'truncate', 'ttyname',
+    'umask', 'uname', 'uname_result', 'unlink', 'unsetenv', 'urandom', 'utime', 'wait', 'wait3',
+    'wait4', 'waitid', 'waitid_result', 'waitpid', 'waitstatus_to_exitcode', 'walk', 'write',
+    'writev']
     >>>
 
 
@@ -365,7 +359,13 @@ ubicación de la librería importada de la siguiente forma:
 .. code-block:: pycon
 
     >>> os.__file__
-    '/usr/lib/python3.11/os.pyc'
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    '/usr/lib/python3.11/os.py'
     >>>
 
 También puede consultar la documentación de la librería ``os`` ejecutando el
@@ -374,16 +374,22 @@ siguiente comando:
 .. code-block:: pycon
 
     >>> print(os.__doc__)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     OS routines for NT or Posix depending on what system we're on.
 
     This exports:
-      - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
-      - os.path is one of the modules posixpath, or ntpath
-      - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
-      - os.curdir is a string representing the current directory ('.' or ':')
-      - os.pardir is a string representing the parent directory ('..' or '::')
-      - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\')
-      - os.extsep is the extension separator ('.' or '/')
+      - all functions from posix or nt, e.g. unlink, stat, etc.
+      - os.path is either posixpath or ntpath
+      - os.name is either 'posix' or 'nt'
+      - os.curdir is a string representing the current directory (always '.')
+      - os.pardir is a string representing the parent directory (always '..')
+      - os.sep is the (or a most common) pathname separator ('/' or '\\')
+      - os.extsep is the extension separator (always '.')
       - os.altsep is the alternate pathname separator (None or '/')
       - os.pathsep is the component separator used in $PATH etc
       - os.linesep is the line separator in text files ('\r' or '\n' or '\r\n')
@@ -404,6 +410,14 @@ Ejecute el comando exit() para salir del interprete...
 
     >>> exit()
 
+
+Asi pudo salir de la sesión del interprete interactivo ``python3``.
+
+De esta forma aprendio nociones basicas con el interprete interactivo ``python3``.
+
+
+----
+
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
 aprender a conocer como manejarse en shell de Python, con el fin de conocer a
 través de la introspección del lenguaje, las librerías estándar y módulos propios
@@ -412,16 +426,22 @@ escritos en Python que tienes instalado en tu sistema.
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion2>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion2>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+
+..
+  .. disqus::
 
 
 .. _`Python`: https://www.python.org/

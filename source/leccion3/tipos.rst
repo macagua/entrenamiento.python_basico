@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_types:
 
 Jerarquía de tipos estándar
@@ -92,10 +89,23 @@ la función integrada :ref:`type() <python_fun_type>`. No hay operaciones especi
 en los tipos. El módulo estándar ``types`` defines los nombres para todos los tipos
 integrados estándar.
 
-Los tipos son escritos como esto: "<type 'int'>".
+Los tipos son escritos como esto: ``<type 'int'>``.
+
+
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

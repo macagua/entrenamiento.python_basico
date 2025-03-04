@@ -1,7 +1,6 @@
 import sys
 
-# Comprobación de seguridad, ejecutar sólo si se reciben 2
-# argumentos realemente
+# Comprobación de seguridad, ejecutar sólo si se reciben 2 argumentos.
 if len(sys.argv) == 3:
     texto = sys.argv[1]
     repeticiones = int(sys.argv[2])

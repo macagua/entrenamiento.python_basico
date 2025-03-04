@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_ventajas_desventajas:
 
 Ventajas y desventajas
@@ -65,13 +62,21 @@ Las desventajas del lenguaje Python son las siguientes:
   Algunas librerías que trae por defecto no son del gusto de amplio de la comunidad, y optan
   a usar librerías de terceros.
 
+
+----
+
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

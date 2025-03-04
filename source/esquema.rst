@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _esquema_entrenamiento:
 
 Esquema del entrenamiento
@@ -131,3 +128,9 @@ de Python.
 **Práctica:** Creación e uso de los módulos ``datetime``, ``locale``, ``email``, ``json``, de la
 librería estándar explorando el resultado en un paquete Python en el sistema de
 archivos.
+
+
+----
+
+..
+  .. disqus::

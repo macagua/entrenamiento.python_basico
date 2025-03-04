@@ -1,7 +1,7 @@
 import os.path
 
 
-def creararchivo():
+def crear_archivo():
     archivo = open(RUTA_ARCHIVO, "w")
     archivo.close()
     menu()
@@ -66,9 +66,7 @@ if __name__ == "__main__":
     """Inicia el programa Python"""
     RUTA_BASE = os.path.dirname(__file__)
     RUTA_ARCHIVO = os.path.join(RUTA_BASE, "datos.txt")
-    creararchivo()
+    crear_archivo()
     menu()
-elif __name__ == "prueba1":
-    initialize()
 else:
     print("Este programa esta mal configurado, debes llamar a su modulo....")

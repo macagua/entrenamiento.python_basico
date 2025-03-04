@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_opers_identidad:
 
 Operadores de identidad
@@ -83,7 +80,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion4/operadores_identidad.py
     :language: python
     :linenos:
-    :lines: 7-31
+    :lines: 7-15
 
 El código anterior muestra el siguiente resultado:
 
@@ -104,7 +101,7 @@ El código anterior muestra el siguiente resultado:
 .. literalinclude:: ../../recursos/leccion4/operadores_identidad.py
     :language: python
     :linenos:
-    :lines: 38-66
+    :lines: 22-38
 
 El código anterior muestra el siguiente resultado:
 
@@ -114,13 +111,12 @@ El código anterior muestra el siguiente resultado:
     ===============
     Python crea dos objetos diferentes, uno para cada lista. Las listas son mutables.
     True
-    [1, 2, 3] su id es 140338744545664
-    [1, 2, 3] su id es 140338744540864
+    [1, 2, 3] su id es 140508292871232
+    [1, 2, 3] su id es 140508290502400
     Python reutiliza el objeto que almacena 5 por lo que ambas variables apuntan a el mismo.
     False
-    200 su id es 9807616
-    200 su id es 9807616
-
+    200 su id es 10875752
+    200 su id es 10875752
 
 ----
 
@@ -136,12 +132,23 @@ El código anterior muestra el siguiente resultado:
 
     .. code-block:: console
 
-        $ python operadores_identidad.py
+        python3 operadores_identidad.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_condi_if:
 
 Condicional if
@@ -88,7 +85,8 @@ De lo contrario evaluá a ``True`` cuando se cumple la siguiente expresión esta
 
 - cualquier cosa de lo contrario.
 
-::
+.. code-block:: python
+    :class: no-copy
 
     if EXPRESION:
         pass
@@ -122,7 +120,6 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 .. literalinclude:: ../../recursos/leccion4/condicional_if.py
     :language: python
-    :linenos:
     :lines: 3
 
 
@@ -197,18 +194,23 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
     .. code-block:: console
 
-        $ python condicional_if.py
+        python3 condicional_if.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_listas_comprension:
 
 Listas de comprensión
@@ -256,17 +253,22 @@ Asi queda el archivo manipulado:
 
     .. code-block:: console
 
-        $ python listas_comprension_archivo.py
+        python3 listas_comprension_archivo.py
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion10>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

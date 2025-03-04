@@ -1,9 +1,9 @@
-""" Operadores lógicos """
+"""Operadores lógicos"""
 
 a, b = 10, 20
 
-print("Valor de variable 'a':", a)
-print("Valor de variable 'b':", b)
+print(f"Valor de variable 'a': {a}")
+print(f"Valor de variable 'b': {b}")
 
 # Operador and
 print("\nOperador and")

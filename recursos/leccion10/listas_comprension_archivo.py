@@ -7,15 +7,15 @@ DIR_ARCHIVO = os.path.dirname(os.path.abspath(__file__)) + os.sep
 ARCHIVO = DIR_ARCHIVO + NOMBRE_ARCHIVO
 
 
-with open(ARCHIVO, "r") as f:
+with open(ARCHIVO) as archivo_texto:
     # Lee todas las líneas del archivo y las almacena en una lista
-    lineas = f.readlines()
+    lineas = archivo_texto.readlines()
 
 # Crea una nueva lista con las líneas modificadas con la las letras a mayúsculas
 nuevas_lineas = [linea.upper() for linea in lineas]
 
-with open(ARCHIVO, "w") as f:
+with open(ARCHIVO, "w") as archivo_texto:
     # Escribe las nuevas líneas en el archivo, separadas por saltos de línea
-    f.write("\n".join(nuevas_lineas))
+    archivo_texto.write("\n".join(nuevas_lineas))
 
-f.close()
+archivo_texto.close()

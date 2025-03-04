@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_variable_constante:
 
 Variables y constantes
@@ -64,6 +61,7 @@ tipo de la variable al crearla. En *Java*, por ejemplo, definir una variable ser
 así:
 
 .. sourcecode:: java
+    :class: no-copy
 
     String c = "Hola Mundo";
     int e = 23;
@@ -196,11 +194,12 @@ Luego ejecuta el programa de la siguiente forma:
 
 .. code-block:: pycon
 
-    $ python main.py
+    python3 main.py
 
 Cuando usted ejecuta el programa, la salida será:
 
 .. code-block:: pycon
+    :class: no-copy
 
     scp -v -P 3307 root@127.0.0.1:/root/webapp/db.sql /srv/backup
 
@@ -337,13 +336,13 @@ y :ref:`constantes <python_constante>`:
   minúsculas (de *a* a la *z*) o MAYÚSCULAS (de la *A* a la *Z*) o dígitos (del
   *0* al *9*) o un ``underscore`` (_). Por ejemplo:
 
-    - snake_case
+  - snake_case
 
-    - MACRO_CASE
+  - MACRO_CASE
 
-    - camelCase
+  - camelCase
 
-    - CapWords
+  - CapWords
 
 - Los nombres que comienzan con guion bajo (simple ``_`` o doble ``__``) se reservan para
   variables con significado especial
@@ -462,8 +461,12 @@ precaución.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
-    siguientes enlaces: :download:`constantes.py <../../recursos/leccion3/constantes.py>`
-    y :download:`main.py <../../recursos/leccion3/main.py>`.
+    siguientes enlaces:
+
+
+    - :download:`constantes.py <../../recursos/leccion3/constantes.py>`.
+
+    - :download:`main.py <../../recursos/leccion3/main.py>`.
 
 
 .. tip::
@@ -480,7 +483,7 @@ precaución.
 
     .. code-block:: console
 
-        $ python main.py
+        python3 main.py
 
 
 ----
@@ -488,11 +491,15 @@ precaución.
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

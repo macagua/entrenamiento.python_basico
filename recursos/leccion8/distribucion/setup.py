@@ -1,4 +1,4 @@
-""" Instalador para el paquete "tostadas_pipo". """
+"""Instalador para el paquete "tostadas_pipo"."""
 
 from setuptools import setup
 

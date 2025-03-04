@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_bucle_for:
 
 Bucle for
@@ -104,8 +101,10 @@ que en las demás estructuras de control.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion4/bucle_for.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`bucle_for.py <../../recursos/leccion4/bucle_for.py>`.
 
 
 .. tip::
@@ -115,18 +114,23 @@ que en las demás estructuras de control.
 
     .. code-block:: console
 
-        $ python bucle_for.py
+        python3 bucle_for.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

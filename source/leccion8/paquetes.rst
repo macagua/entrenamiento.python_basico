@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_pkgs:
 
 Paquetes Python
@@ -136,19 +133,27 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
     .. code-block:: console
 
-        $ python calculo_factura_pipo.py
-        $ python tostadas_pipo/principal.py
+        python3 calculo_factura_pipo.py
+
+    .. code-block:: console
+
+        python3 tostadas_pipo/principal.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

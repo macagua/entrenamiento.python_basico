@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_opers_logicos:
 
 Operadores lógicos
@@ -68,7 +65,6 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 .. literalinclude:: ../../recursos/leccion4/operadores_logicos.py
     :language: python
-    :linenos:
     :lines: 3
 
 
@@ -110,18 +106,23 @@ A continuación, se presentan algunos ejemplos de su uso:
 
     .. code-block:: console
 
-        $ python operadores_logicos.py
+        python3 operadores_logicos.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

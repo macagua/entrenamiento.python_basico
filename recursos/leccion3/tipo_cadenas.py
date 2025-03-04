@@ -1,6 +1,5 @@
-"""
-    Una cadena de caracteres, no es más que varios caracteres
-    encerrado entre comillas simples ('cadena') o dobles ("cadena").
+"""Una cadena de caracteres, no es más que varios caracteres
+encerrado entre comillas simples ('cadena') o dobles ("cadena").
 """
 
 # Definir comillas simples
@@ -26,26 +25,24 @@ linea 4
 .
 .
 linea N"""
-print(cadena4 + ",", type(cadena4))
+print(f"{cadena4}, {type(cadena4)}")
 
 # Repetición de cadena con el operador de multiplicación
 cadena5 = "Cadena" * 3
-print(cadena5 + ",", type(cadena5))
+print(f"{cadena5}, {type(cadena5)}")
 
 # Concatenación de cadena
 nombre, apellido = "Leonardo", "Caballero"
 nombre_completo = nombre + " " + apellido
-print(nombre_completo + ",", type(nombre_completo))
+print(f"{nombre_completo}, {type(nombre_completo)}")
 
 # Función len() devuelve el tamaño de la cadena
-print("El tamaño de la cadena es:", len(nombre_completo))
+print(f"El tamaño de la cadena es: {len(nombre_completo)}")
 
 # Acceder a rango de cadena
-print("Acceso a rango de cadena: ", nombre_completo[3:13])
+print(f"Acceso a rango de cadena: {nombre_completo[3:13]}")
 
 # Formato de impresión de cadena usando la función format()
 print(
-    "El nombre es '{nombre}', con un tamaño de la cadena es: {tamano} ".format(
-        nombre=nombre_completo, tamano=len(nombre_completo)
-    )
+    f"El nombre es '{nombre_completo}', con un tamaño de la cadena es: {len(nombre_completo)}"
 )

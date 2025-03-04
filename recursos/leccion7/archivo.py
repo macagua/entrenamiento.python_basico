@@ -1,6 +1,5 @@
-"""
-   Manipula un archivo con permisos de escritura y
-   lectura, ademas de interactuar de el mismo
+"""Manipula un archivo con permisos de escritura y
+lectura, ademas de interactuar de el mismo.
 """
 
 import os
@@ -42,5 +41,5 @@ archivo.close()
 print("\nEliminar un archivo")
 print("===================")
 
-os.remove(os.getcwd() + os.sep + NOMBRE_ARCHIVO)
 print(f"\nEliminado archivo desde la ruta: \n\n\t{os.getcwd()}{os.sep}{NOMBRE_ARCHIVO}")
+os.remove(os.getcwd() + os.sep + NOMBRE_ARCHIVO)

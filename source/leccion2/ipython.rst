@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_modulo_ipython:
 
 Interprete ipython
@@ -27,17 +24,15 @@ el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install ipython
+          pip install ipython
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install ipython
+          pip install ipython
 
-
-Sustituya el comando ``python`` por ``ipython`` correspondiente a tu sistema
-operativo de la siguiente forma:
+Sustituya el comando ``python3`` por ``ipython3`` de la siguiente forma:
 
 .. tabs::
 
@@ -45,7 +40,10 @@ operativo de la siguiente forma:
 
       .. code-block:: console
 
-          $ ipython
+          ipython
+
+      .. code-block:: console
+
           Python 3.11.5 (default, Sep 11 2023, 13:26:23)
           Type 'copyright', 'credits' or 'license' for more information
           IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
@@ -56,12 +54,16 @@ operativo de la siguiente forma:
 
       .. code-block:: console
 
-          > ipython
+          ipython
+
+      .. code-block:: console
+
           Python 3.11.5 (default, Sep 11 2023, 13:26:23)
           Type 'copyright', 'credits' or 'license' for more information
           IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
 
               In [1]:
+
 
 Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
 ``dir`` y se ejecuta de la siguiente forma:
@@ -69,7 +71,13 @@ Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
 .. code-block:: pycon
 
     In [1]: help(dir)
-    Help on built-in function dir in module __builtin__:
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    Help on built-in function dir in module builtins:
 
     dir(...)
         dir([object]) -> list of strings
@@ -86,10 +94,9 @@ Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
         recursively the attributes of its class's base classes.
 
 
-Entonces presione la tecla **q** para salir de la ayuda de la función ``dir()``.
+Entonces presione la tecla :keys:`q` para salir de la ayuda de la función ``dir()``.
 
-De nuevo realice la importación de la librería del estándar Python llamada
-``os``.
+De nuevo realice la importación de la librería del estándar Python llamada ``os``.
 
 .. code-block:: pycon
 
@@ -102,8 +109,14 @@ la librería ``os`` ejecutando el siguiente comando:
 .. code-block:: pycon
 
     In [2]: os?
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     Type:        module
-    String form: <module 'os' from '/usr/lib/python3.11/os.py'>
+    String form: <module 'os' (frozen)>
     File:        /usr/lib/python3.11/os.py
     Docstring:
     OS routines for NT or Posix depending on what system we're on.
@@ -129,8 +142,8 @@ la librería ``os`` ejecutando el siguiente comando:
     (e.g., split and join).
 
 
-Escriba la librería *os.* y luego escribe dos **underscore** y presione *dos
-veces la tecla tabular* para usar la completado automático del interprete al
+Escriba la librería ``os.`` y luego escribe dos **underscore** y presione *dos
+veces la tecla tabular* :keys:`Tab` para usar la completado automático del interprete al
 `estilo de completación de lineas de comandos`_ en el shell UNIX/Linux para
 ayudar a la introspección del lenguaje y sus librerías.
 
@@ -144,13 +157,18 @@ ayudar a la introspección del lenguaje y sus librerías.
 
 
 De nuevo ejecute el método ``file`` para determinar la ubicación de la
-librería importada
+librería importada:
 
 .. code-block:: pycon
 
     In [4]: os.__file__
-    Out[4]: '/usr/lib/python3.11/os.py'
 
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    Out[4]: '/usr/lib/python3.11/os.py'
 
 También puede consultar la documentación de la librería ``os`` de la
 siguiente forma:
@@ -158,6 +176,12 @@ siguiente forma:
 .. code-block:: pycon
 
     In [5]: print(os.__doc__)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     OS routines for NT or Posix depending on what system we're on.
 
     This exports:
@@ -186,6 +210,12 @@ Otro ejemplo es imprimir el **nombre de la clase** con el siguiente comando:
 .. code-block:: pycon
 
     In[6]: os.__name__
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     Out[6]: "os"
 
 
@@ -195,13 +225,19 @@ ejecutando el siguiente comando:
 .. code-block:: pycon
 
     In [7]: help(os)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     Help on module os:
 
     NAME
         os - OS routines for NT or Posix depending on what system we're on.
 
     MODULE REFERENCE
-        https://docs.python.org/3.11/library/os
+        https://docs.python.org/3.11/library/os.html
 
         The following documentation is automatically generated from the Python
         source files.  It may be incomplete, incorrect or include features that
@@ -238,7 +274,20 @@ Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 .. code-block:: pycon
 
     In [8]: exit()
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     Do you really want to exit ([y]/n)? y
+
+Entonces presione la tecla :keys:`y` para salir de interprete interactivo ``ipython``.
+
+De esta forma aprendio nociones basicas con el interprete interactivo ``ipython``.
+
+
+----
 
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
 aprender a conocer como manejarse en el modo interactivo usando el paquete
@@ -249,10 +298,22 @@ en tu sistema.
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion2>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+
+..
+  .. disqus::
 
 
 .. _`modo interactivo`: https://es.wikipedia.org/wiki/Python#Modo_interactivo

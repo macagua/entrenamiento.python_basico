@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_fun_builtins:
 
 Funciones integradas
@@ -103,7 +100,7 @@ Imprime el texto de la nota de copyright.
 .. code-block:: pycon
 
     >>> copyright()
-    Copyright (c) 2001-2016 Python Software Foundation.
+    Copyright (c) 2001-2023 Python Software Foundation.
     All Rights Reserved.
 
     Copyright (c) 2000 BeOpen.com.
@@ -114,7 +111,7 @@ Imprime el texto de la nota de copyright.
 
     Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
     All Rights Reserved.
-
+    >>>
 
 .. _python_fun_dir:
 
@@ -363,10 +360,15 @@ Invoca el menú de ayuda del intérprete de Python:
 
     >>> help()
 
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     Welcome to Python 3.11's help utility!
 
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at https://docs.python.org/3.11/tutorial/.
+    the tutorial on the internet at https://docs.python.org/3.11/tutorial/.
 
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
@@ -421,10 +423,54 @@ Imprime el texto de la licencia.
 .. code-block:: pycon
 
     >>> license
-    See https://www.python.org/psf/license/
-    >>> license()
-    See https://www.python.org/psf/license/
 
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    Type license() to see the full license text
+
+Muestre la licencia de Pythonm, ejecutando el siguiente comando:
+
+.. code-block:: pycon
+
+    >>> license()
+
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    A. HISTORY OF THE SOFTWARE
+    ==========================
+
+    Python was created in the early 1990s by Guido van Rossum at Stichting
+    Mathematisch Centrum (CWI, see https://www.cwi.nl) in the Netherlands
+    as a successor of a language called ABC.  Guido remains Python's
+    principal author, although it includes many contributions from others.
+
+    In 1995, Guido continued his work on Python at the Corporation for
+    National Research Initiatives (CNRI, see https://www.cnri.reston.va.us)
+    in Reston, Virginia where he released several versions of the
+    software.
+
+    In May 2000, Guido and the Python core development team moved to
+    BeOpen.com to form the BeOpen PythonLabs team.  In October of the same
+    year, the PythonLabs team moved to Digital Creations, which became
+    Zope Corporation.  In 2001, the Python Software Foundation (PSF, see
+    https://www.python.org/psf/) was formed, a non-profit organization
+    created specifically to own Python-related Intellectual Property.
+    Zope Corporation was a sponsoring member of the PSF.
+
+    All Python releases are Open Source (see https://opensource.org for
+    the Open Source Definition).  Historically, most, but not all, Python
+    Hit Return for more, or q (and Return) to quit:
+
+Presione la tecla :keys:`Return` para mas informacion. Para salir de la lectura
+de la licencia presione la tecla :keys:`q`.
 
 .. _python_fun_locals:
 
@@ -460,7 +506,8 @@ La función ``open()`` es definida dentro del modulo integrado ``io``, esta le p
 un objeto del tipo :ref:`file <python_cls_file>` (ej. *archivo*), y se llama
 habitualmente con de dos a tres argumentos:
 
-::
+.. code-block:: pycon
+    :class: no-copy
 
     file(nombre[, modo[, buffering]]) -> objeto archivo
 
@@ -558,7 +605,8 @@ Cuando el ``paso`` es definido como un tercer argumento, ese especifica el incre
 En el ejemplo anterior, la función ``range(3,9,2)`` devuelve **[3, 5, 7]**, es decir,
 el rango inicia en **3** y termina en **9** incrementando cada **2** :ref:`números <python_int>`.
 
-::
+.. code-block:: pycon
+    :class: no-copy
 
     range(detener) -> lista de enteros
 
@@ -641,6 +689,11 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
 
         >>> import types
         >>> help(types)
+
+    Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+    .. code-block:: pycon
+        :class: no-copy
 
         Help on module types:
 
@@ -1263,13 +1316,18 @@ find()
 ~~~~~~
 
 La función ``find()`` devuelve un valor numérico ``0`` si encuentra el criterio
-de búsqueda o ``-1`` si no coincide el criterio de búsqueda enviado por parámetros
-en la función.
+de búsqueda como se muestra a continuación:
 
 .. code-block:: pycon
 
     >>> "leonardo caballero".find("leo")
     0
+
+devuelve un valor numérico ``-1`` si no coincide el criterio de búsqueda enviado
+por parámetros en la función como se muestra a continuación:
+
+.. code-block:: pycon
+
     >>> "leonardo caballero".find("ana")
     -1
 
@@ -1840,7 +1898,7 @@ all()
 ~~~~~
 
 La función ``all()`` toma un contenedor como un argumento. Esta devuelve las funciones
-integradas ``True`` si todo los valores en el objeto iterable python tienen un valor
+integradas ``True`` si todo los valores en el objeto iterable Python tienen un valor
 de tipo :ref:`booleano <python_bool>` igual a ``True``. Un valor vacío tiene un tipo
 :ref:`booleano <python_bool>` igual a ``False``.
 
@@ -2353,7 +2411,11 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
     - https://docs.python.org/es/3.11/library/functions.html
 
 
+----
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

@@ -1,4 +1,4 @@
-""" Módulo para cálculos diversos """
+"""Módulo para cálculos diversos"""
 
 
 def suma_total(monto=0):

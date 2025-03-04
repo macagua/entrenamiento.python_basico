@@ -1,12 +1,7 @@
-"""
-Ilustración de ingreso interactivo en Python.
-
-Simula a sala de chat del servicio LatinChat.com.
-
-Validando datos de entradas numérico y tipo cadena.
-
-E interactuá con el usuario y en base a condicionales
-muestra un mensaje.
+"""Ilustración de ingreso interactivo en Python.
+Simula a sala de chat del servicio LatinChat.com, Validando datos
+de entradas numérico y tipo cadena e interactúa con el usuario y
+en base a condicionales muestra un mensaje.
 """
 
 print("\nSimulando a LatinChat")
@@ -17,11 +12,11 @@ print("------------------------------\n")
 
 print("Ana: ¿Cómo se llama usted?: ")
 nombre = str(input("Yo: "))
-print("Ana: Hola', nombre, ', encantada de conocerte :3")
+print(f"Ana: Hola {nombre}, encantada de conocerte :3")
 
 print("Ana: ¿Que edad tiene usted?: ")
 edad = int(input("Yo: "))
-print("Usted tiene', edad, ', y yo ya no digo mi edad xD")
+print(f"Usted tiene {edad} y yo ya no digo mi edad xD")
 
 print('Ana: ¿Tiene WebCam?, ingrese "si" o "no", por favor!: ')
 tiene_WebCam = str(input("Yo: "))

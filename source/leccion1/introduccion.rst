@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_intro:
 
 Acerca de Python
@@ -213,7 +210,7 @@ comunitario del proyecto Python en Sudamérica.
 
 **Comunidad(es) de Python en Brasil**
     La comunidad Python Brasil reúne grupos de usuarios en todo el Brasil interesados en
-    difundir e divulgar a lenguaje de programación. Más información visite http://python.org.br
+    difundir e divulgar a lenguaje de programación. Más información visite https://python.org.br/
 
 **Comunidad(es) de Python en Chile**
     Una comunidad de amigos apasionados por la tecnología e informática, que busca compartir
@@ -254,30 +251,36 @@ comunitario del proyecto Python en Sudamérica.
     principal es el desarrollo, ejecución y/o consultoría de proyectos científicos, tecnológicos
     y productivos, para cumplir fines de interés público en torno al desarrollo Nacional, haciendo
     uso y promoviendo para tal fin, el uso del lenguaje de programación Python y las tecnologías
-    asociadas a éste. Más información visite https://python.org.ve/
+    asociadas a éste. Más información visite https://github.com/pyve
 
 
 ----
 
-.. _python_intro_quiz:
+..
+    .. _python_intro_quiz:
 
-Prueba
-......
+    Prueba
+    ......
 
-A continuación, presentamos una serie de preguntas para que validez usted mismo los conocimientos
-adquiridos en esta sección de la lección.
+    A continuación, presentamos una serie de preguntas para que validez usted mismo los conocimientos
+    adquiridos en esta sección de la lección.
 
-.. include:: ../_quizzes/leccion1/introduccion.rst
+    .. include:: ../_quizzes/leccion1/introduccion.rst
 
-----
+    ----
+
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

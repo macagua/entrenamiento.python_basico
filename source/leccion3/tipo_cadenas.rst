@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_str:
 
 Tipo cadenas de caracteres
@@ -76,22 +73,22 @@ Una cadena puede estar precedida por el carácter:
   sus contrapartidas. Esto es especialmente útil, por ejemplo, para usar las
   expresiones regulares.
 
-    .. code-block:: pycon
+  .. code-block:: pycon
 
-        >>> raw = r"\t\nHola Plone\n"
-        >>> type(raw)
-        <type 'str'>
+      >>> raw = r"\t\nHola Plone\n"
+      >>> type(raw)
+      <type 'str'>
 
 - Python 3.11 soporta cadena que utiliza codificación **Unicode**.
 
-    .. code-block:: pycon
+  .. code-block:: pycon
 
-        >>> saber_mas = "Atüjaa oo'omüin..."
-        >>> type(saber_mas)
-        <type 'str'>
-        >>> vocales = "äóè"
-        >>> type(vocales)
-        <type 'str'>
+      >>> saber_mas = "Atüjaa oo'omüin..."
+      >>> type(saber_mas)
+      <type 'str'>
+      >>> vocales = "äóè"
+      >>> type(vocales)
+      <type 'str'>
 
 
 .. _python_str_escape:
@@ -230,8 +227,8 @@ ignorada), o después de finalizar una instrucción válida de código.
 
 .. _python_comentarios_multilinea:
 
-Comentarios multilínea
-~~~~~~~~~~~~~~~~~~~~~~
+Comentarios de multiples líneas
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Python no dispone de un método para delimitar bloques de comentarios de varias líneas.
 
@@ -248,7 +245,7 @@ Python, que crea el correspondiente objeto de tipo :ref:`cadena de caracteres <p
     'comentarios en varias lineas'
 
 
-A continuación, una comparación entre comentarios multilínea y comentarios en solo
+A continuación, una comparación entre comentarios de multiples líneas y comentarios en solo
 una linea:
 
 .. code-block:: pycon
@@ -259,17 +256,17 @@ una linea:
     ... de números Fibonacci"""
     'Calcula la sucesión \nde números Fibonacci'
 
-Entonces existen al menos dos (02) alternativas para introducir comentarios multilínea
+Entonces existen al menos dos (02) alternativas para introducir comentarios de multiples líneas
 son:
 
 - Comentar cada una de las líneas con el carácter #: en general todos los editores
   de programación y entornos de desarrollo (IDEs) disponen de mecanismos que permiten
   comentar y descomentar fácilmente un conjunto de líneas.
 
-- Utilizar triple comillas (simples o dobles) para generar una cadena multilínea:
+- Utilizar triple comillas (simples o dobles) para generar una cadena de multiples líneas:
   si bien este método es aceptado.
 
-A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
+A continuación, un ejemplo de Comentarios de multiples líneas y de solo una linea:
 
 .. code-block:: pycon
 
@@ -284,7 +281,7 @@ A continuación, un ejemplo de Comentarios multilínea y de solo una linea:
     ...
     1 1 2 3 5 8 13 21 34 55 89
 
-Los comentarios multilínea usado con mucha frecuencia como en las varias sintaxis Python
+Los comentarios de multiples líneas usado con mucha frecuencia como en las varias sintaxis Python
 como :ref:`comentarios de documentación <python_str_docstrings>` a continuación se listan
 las sintaxis más comunes:
 
@@ -327,13 +324,13 @@ de la declaración.
 
     >>> def hola(arg):
     ...     """El docstring de la función"""
-    ...     print("¡Hola", arg, "!")
+    ...     print(f"¡Hola {arg}!")
     ...
     >>> hola("Plone")
-    ¡Hola Plone !
+    ¡Hola Plone!
 
 Puede puede consultar la documentación de la función ``hola()`` debe utilizar la
-función integrada :ref:`help() <python_fun_help>` y pasarle el argumento del objeto
+función integrada :ref:`help() <python_fun_help>` y enviarle el argumento del objeto
 de función ``hola()``:
 
 .. code-block:: pycon
@@ -402,17 +399,17 @@ En el archivo ``mi_modulo.py`` debe contener el siguiente código:
     """El docstring del módulo"""
 
     def despedir():
-        """ El docstring de la función despedir """
+        """El docstring de la función despedir"""
         print("Adiós! desde función despedir() del módulo prueba")
 
     def saludar():
-        """ El docstring de la función saludar """
+        """El docstring de la función saludar"""
         print("Hola! desde función saludar() del módulo prueba")
 
 
 Entonces, usted debe importar el módulo anterior, para consultar la documentación
 del módulo ``mi_modulo`` debe utilizar la función integrada
-:ref:`help() <python_fun_help>` y pasarle el argumento el nombre de módulo
+:ref:`help() <python_fun_help>` y enviarle el argumento el nombre de módulo
 ``mi_modulo``, de la siguiente manera:
 
 .. code-block:: pycon
@@ -432,7 +429,7 @@ del módulo ``mi_modulo`` debe utilizar la función integrada
 
 También puede consultar la documentación de la función ``despedir()`` dentro del
 módulo ``mi_modulo``, usando la función integrada :ref:`help() <python_fun_help>`
-y pasarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir,
+y enviarle el argumento el formato *nombre_modulo.nombre_funcion*, es decir,
 ``mi_modulo.despedir``, de la siguiente manera:
 
 .. code-block:: pycon
@@ -731,7 +728,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 7-8
+    :lines: 6-7
 
 
 **Definir cadenas de caracteres con comillas dobles**
@@ -739,7 +736,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 11-12
+    :lines: 10-11
 
 
 **Definir cadenas de caracteres con código escapes**
@@ -747,7 +744,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 15-16
+    :lines: 14-15
 
 
 **Definir cadenas de caracteres con varias lineas**
@@ -755,7 +752,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 19-29
+    :lines: 18-28
 
 
 **Ejemplo operadores de repetición de cadenas de caracteres**
@@ -763,7 +760,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 32-33
+    :lines: 31-32
 
 
 **Ejemplo operadores de concatenación de cadenas de caracteres**
@@ -771,7 +768,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 36-38
+    :lines: 35-37
 
 
 **Calcular el tamaño de la cadena con función "len()"**
@@ -779,7 +776,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 41
+    :lines: 40
 
 
 **Acceder a rango de la cadena**
@@ -787,7 +784,7 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. literalinclude:: ../../recursos/leccion3/tipo_cadenas.py
     :language: python
     :linenos:
-    :lines: 44
+    :lines: 43
 
 
 **Consulta de ayuda a la función len**
@@ -795,6 +792,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. code-block:: pycon
 
     >>> help(len)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
 
     Help on built-in function len in module __builtin__:
 
@@ -809,6 +811,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 .. code-block:: pycon
 
     >>> help(int)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
 
     Help on class int in module __builtin__:
 
@@ -826,6 +833,11 @@ A continuación, se presentan algunos ejemplos de su uso:
 
     >>> import datetime
     >>> help(datetime)
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
 
     Help on built-in module datetime:
 
@@ -859,8 +871,11 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion3/tipo_cadenas.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+
+    - :download:`tipo_cadenas.py <../../recursos/leccion3/tipo_cadenas.py>`.
 
 
 .. tip::
@@ -870,18 +885,23 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        $ python tipo_cadenas.py
+        python3 tipo_cadenas.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

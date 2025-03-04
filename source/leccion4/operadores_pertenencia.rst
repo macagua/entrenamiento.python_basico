@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_opers_pertenencia:
 
 Operadores de pertenencia
@@ -93,12 +90,23 @@ A continuación, se presentan algunos ejemplos de su uso:
 
     .. code-block:: console
 
-        $ python operadores_pertenencia.py
+        python3 operadores_pertenencia.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion4>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

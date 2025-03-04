@@ -7,12 +7,12 @@ FROM_ADDRESS_PASSWORD = "TU_CONTRASEÑA_DE_APLICACIÓN_GOOGLE_AQUÍ"
 # Tu dirección del host SMTP
 SMTP_SERVER = "smtp.gmail.com"
 # Tu puerto del host SMTP
-SMTP_PORT = "587"
+SMTP_PORT = 587
 
 remitente = "Macagua <leonardoc@plone.org>"
 destinatarios = ["Leonardo Caballero <leonardocaballero@gmail.com>"]
-asunto_mensaje = "Otro envio de prueba del SMTP"
-cuerpo_mensaje = "Esto es un mensaje de prueba por correo electronico."
+asunto_mensaje = "Otro envío de prueba del SMTP"
+cuerpo_mensaje = "Esto es un mensaje de prueba por correo electrónico."
 
 mensaje = f"""From: {remitente}
 To: {", ".join(destinatarios)}
@@ -27,6 +27,6 @@ try:
     smtp.login(FROM_ADDRESS, FROM_ADDRESS_PASSWORD)
     smtp.sendmail(remitente, destinatarios, mensaje)
     smtp.quit()
-    print("Correo enviado correctamente")
+    print("Correo electrónico enviado correctamente")
 except Exception:
-    print("Error: no se pudo enviar el correo")
+    print("Error: no se pudo enviar el correo electrónico")

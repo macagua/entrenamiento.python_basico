@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_iter:
 
 Iteradores
@@ -12,7 +9,7 @@ reemplazar varios de los enfoques propios con una característica estándar, nor
 deriva en hacer las cosas más legibles además de más interoperable.
 
   *Guido van Rossum* --- `Añadiendo tipado estático opcional a Python`
-  (`Adding Optional Static Typing to Python <https://www.artima.com/weblogs/viewpost.jsp?thread=86641>`_).
+  (`PEP 484 – Type Hints <https://peps.python.org/pep-0484/>`_).
 
 Un iterador es un objeto adherido al `iterator protocol`_, básicamente esto significa
 que tiene una función :ref:`next() <python_fun_next>`, es decir, cuando se le llama,
@@ -438,13 +435,17 @@ método integrado :ref:`items() <python_dict_mtd_items>`:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion10>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`iterator protocol`: https://docs.python.org/es/3.11/library/stdtypes.html#iterator-types

@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_dict:
 
 Tipo diccionarios
@@ -86,7 +83,7 @@ Acceder a valor de clave
 Esta operación le permite acceder a un valor especifico del *diccionario* mediante su
 clave.
 
-.. code-block:: pycon
+::
 
     >>> versiones = {"python": 3.11, "zope": 5.2, "plone": 6.0, "django": 4.2.7}
     >>> versiones["zope"]
@@ -120,7 +117,7 @@ Iteración in
 Este operador es el mismo operador integrado :ref:`in <python_opers_in>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
-.. code-block:: pycon
+::
 
     >>> versiones = dict(python=3.11, zope=5.2, plone=6.0, django=4.2.7)
     >>> print(versiones)
@@ -410,7 +407,7 @@ Si el valor no es proveído, el valor ``default_value`` será el tipo objeto int
 A continuación un ejemplo de como trabaja el método ``setdefault()`` la clave no esta
 en el diccionario pero esta vez el ``default_value`` es proveído:
 
-.. code-block:: pycon
+::
 
     >>> pkgs = {"python": 3.11, "zope": 5.2, "plone": None}
     >>> print(pkgs)
@@ -484,7 +481,7 @@ El método ``update()`` toma un diccionario o un objeto iterable de pares clave/
 (generalmente :ref:`tuplas <python_tuple>`). Si se llama a ``update()`` sin pasar parámetros, el diccionario
 permanece sin cambios.
 
-.. code-block:: pycon
+::
 
     >>> versiones = dict(python=3.11, zope=5.2, plone=6.0)
     >>> print(versiones)
@@ -565,7 +562,7 @@ del
 Esta sentencia es la misma sentencia integrada :ref:`del <python_sent_del>` en el
 interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
 
-.. code-block:: pycon
+::
 
     >>> versiones = dict(python=3.11, zope=5.2, plone=6.0, django=4.2.7)
     >>> print(versiones)
@@ -635,10 +632,15 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
     >>> help(dict)
 
+Para salir de esa ayuda presione la tecla :keys:`q`.
+
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion3/tipo_diccionarios.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+
+    - :download:`tipo_diccionarios.py <../../recursos/leccion3/tipo_diccionarios.py>`.
 
 
 .. tip::
@@ -647,16 +649,23 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
     .. code-block:: console
 
-        $ python tipo_diccionarios.py
+        python3 tipo_diccionarios.py
+
+
+----
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion3>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

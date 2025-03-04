@@ -1,4 +1,4 @@
-""" Módulo para calcular el impuesto """
+"""Módulo para calcular el impuesto"""
 
 
 def impuesto_iva(monto=0, impuesto=12):

@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_instalacion:
 
 Instalación
@@ -36,39 +33,56 @@ comprobar la correcta instalación  solamente debería ejecutar el comando en la
 
 .. code-block:: console
 
-    $ python3
-    Python 3.11.5 (default, Sep 11 2023, 13:26:23)
-    [GCC 8.3.0] on linux
+    python3
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
+    Python 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
 Si le muestra los mensajes anteriores esta correctamente instalado el interprete Python en su Linux.
 
-Si al ejecutar el comando anterior muestra el mensaje:
+.. tip::
+    Si al ejecutar el comando anterior muestra el mensaje:
 
-.. code-block:: console
+    .. code-block:: console
 
-    $ python3
-    bash: python: no se encontró la orden
+        python3
 
-Esto es debido a que no tiene instalado el interprete, así que debe ejecutar el siguiente comando:
+    Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
-.. code-block:: console
+    .. code-block:: console
+        :class: no-copy
 
-    $ sudo apt install -y python-dev
+        bash: python3: no se encontró la orden
 
-De nuevo vuelva a ejecutar en su consola de comando el comando ``python3``.
+    Esto es debido a que no tiene instalado el interprete, así que debe ejecutar el siguiente comando:
+
+    .. code-block:: console
+
+        sudo apt install -y python3-dev
+
+    De nuevo vuelva a ejecutar en su consola de comando el comando ``python3``.
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_leccion9:
 
 Manejos de errores y orientación a objetos
@@ -27,5 +24,20 @@ el temario de esta lección:
    clases_integradas
 
 
+----
+
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion9>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
+
+..
+  .. disqus::

@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_distribucion_nativa:
 
 Distribución nativa
@@ -33,13 +30,13 @@ A continuación el siguiente comando le permite instalarlo:
 
 .. code-block:: console
 
-    > pip install auto-py-to-exe
+    pip install auto-py-to-exe
 
 Para ejecutar el programa, ejecute el siguiente comando:
 
 .. code-block:: console
 
-    > .\auto-py-to-exe.exe
+    .\auto-py-to-exe.exe
 
 Al ejecutar el comando previo, debe mostrarle la siguiente interfaz de usuario.
 
@@ -62,7 +59,7 @@ Aquí puede definir lo siguiente:
 
     auto-py-to-exe con la interfaz vacía.
 
-Seguidamente rellene la interfaz indicando el modulo python que requiere generarle
+Seguidamente rellene la interfaz indicando el modulo Python que requiere generarle
 el instalador, y personalice los parámetros su necesidad.
 
 .. figure:: ../_static/images/autopytoexe_filled-out.png
@@ -136,13 +133,13 @@ de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install pyinstaller
+          pip install pyinstaller
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install pyinstaller
+          pip install pyinstaller
 
 Para probar el funcionamiento del paquete ``pyinstaller`` requiere un modulo Python que
 convertir a nativo, para esto cree un modulo con el nombre ``hello.py`` con el siguiente
@@ -166,7 +163,7 @@ ejecute el siguiente comando:
 
 .. code-block:: console
 
-    > pyinstaller.exe --onefile hello.py
+    pyinstaller.exe --onefile hello.py
 
 
 El comando anterior muestra la siguiente salida en la consola de comando:
@@ -265,22 +262,27 @@ ejecute el siguiente comando:
 
 .. code-block:: console
 
-    $ pyinstaller --onefile hello.py
+    pyinstaller --onefile hello.py
 
 Asi de esta forma genera una distribución nativa para plataformas Linux.
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`time`: https://docs.python.org/es/3.11/library/time.html#time.sleep
 .. _`threading`: https://docs.python.org/es/3.11/library/threading.html#threading.Timer

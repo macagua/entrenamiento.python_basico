@@ -1,4 +1,4 @@
-""" Ejemplo de uso de bucle 'while' """
+"""Ejemplo de uso de bucle 'while'"""
 
 # Bucle 'while' controlado con Conteo
 print("\nBucle 'while' controlado con Conteo")
@@ -12,7 +12,7 @@ suma, numero = 0, 1
 while numero <= 10:
     suma = numero + suma
     numero = numero + 1
-print("La suma es " + str(suma))
+print(f"La suma es {str(suma)}.")
 
 
 # Bucle 'while' controlado con Evento
@@ -32,7 +32,7 @@ while grado != -1:
     print("Introduzca la nota de un estudiante (-1 para salir): ")
     grado = int(input())
 promedio = total / contar
-print("Promedio de notas del grado escolar es: " + str(promedio))
+print(f"Promedio de notas del grado escolar es: {str(promedio)}")
 
 
 # Bucle 'while' con sentencia 'else'
@@ -52,7 +52,7 @@ while grado != -1:
     grado = int(input(mensaje))
 else:
     promedio = total / contar
-    print("Promedio de notas del grado escolar: " + str(promedio))
+    print(f"Promedio de notas del grado escolar: {str(promedio)}")
 
 
 # Bucle 'while' con sentencia 'break'
@@ -62,7 +62,7 @@ print("===================================\n")
 variable = 10
 
 while variable > 0:
-    print("Actual valor de variable:", variable)
+    print("Actual valor de variable: {variable}")
     variable = variable - 1
     if variable == 5:
         break
@@ -78,4 +78,4 @@ while variable > 0:
     variable = variable - 1
     if variable == 5:
         continue
-    print("Actual valor de variable:", variable)
+    print(f"Actual valor de variable: {variable}")

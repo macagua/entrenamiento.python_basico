@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_modulos:
 
 Módulos Python
@@ -50,7 +47,7 @@ un simple módulo, ``calculo_factura_pipo.py``.
 .. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
     :language: python
     :linenos:
-    :lines: 1-22
+    :lines: 1-15
 
 Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
 
@@ -127,7 +124,7 @@ variable ``PATH``.
 
       .. code-block:: console
 
-          $ set PYTHONPATH = /usr/local/lib/python
+          set PYTHONPATH = /usr/local/lib/python
 
    .. group-tab:: Windows
 
@@ -135,7 +132,7 @@ variable ``PATH``.
 
       .. code-block:: console
 
-          > set PYTHONPATH = C:\Python37\lib;
+          set PYTHONPATH = C:\Python311\lib;
 
 
 .. _python_modulos_namespace_alcance:
@@ -204,18 +201,23 @@ sentencia ``global``, se soluciona el problema.
 
     .. code-block:: console
 
-        $ python calculo_factura_pipo.py
+        python3 calculo_factura_pipo.py
 
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

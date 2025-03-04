@@ -1,4 +1,4 @@
-""" Operadores relacionales o comparación """
+"""Operadores relacionales o comparación"""
 
 a, b, a1, b1, c1 = 5, 5, 7, 3, 3
 cadena1, cadena2 = "Hola", "Adiós"

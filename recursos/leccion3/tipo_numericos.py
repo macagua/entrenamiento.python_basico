@@ -1,4 +1,4 @@
-""" Ejemplo del uso del numero enteros """
+"""Ejemplo del uso del numero enteros"""
 
 # Entero int
 entero = 7

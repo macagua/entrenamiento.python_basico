@@ -1,7 +1,4 @@
-.. -*- coding: utf-8 -*-
-
-
-.. _lectura_extras_entrenamiento:
+.. _lecturas_extras_entrenamiento:
 
 Lecturas suplementarias del entrenamiento
 =========================================
@@ -20,7 +17,7 @@ para ayudar a incrementar tanto la profundidad y amplitud en su conocimiento.
 Las lecturas están organizada como las lecciones y sus temas.
 
 
-.. _lectura_extras_leccion1:
+.. _lecturas_extras_leccion1:
 
 Lección 1 - Introducción al lenguaje Python
 -------------------------------------------
@@ -39,7 +36,7 @@ Introducción a Python
 
 - `Introducción a la programación con Python <https://www.mclibre.org/consultar/python/>`_.
 
-- `Python Tutorial <http://www.tutorialspoint.com/python/index.htm>`_.
+- `Python Tutorial <https://www.tutorialspoint.com/python/index.htm>`_.
 
 - `Wikipedia - Python <https://es.wikipedia.org/wiki/Python>`_.
 
@@ -64,7 +61,7 @@ Su primer programa
 - Ver el anexo :numref:`anexos_vDa5Vt002IY` sobre *Variables*.
 
 
-.. _lectura_extras_leccion2:
+.. _lecturas_extras_leccion2:
 
 Lección 2 - Introspección del lenguaje Python
 ---------------------------------------------
@@ -82,7 +79,7 @@ Inmersión al modo interactivo de Python
 - `Guía de aprendizaje de Python <https://pyspanishdoc.sourceforge.net/tut/tut.html>`_.
 
 
-.. _lectura_extras_leccion3:
+.. _lecturas_extras_leccion3:
 
 Lección 3 - Tipos y estructuras de datos
 ----------------------------------------
@@ -142,7 +139,7 @@ Tipo diccionarios
 
 - Ver el anexo :numref:`anexos__UELgsIxE7g` sobre los *tipo Diccionarios*.
 
-.. _lectura_extras_leccion4:
+.. _lecturas_extras_leccion4:
 
 Lección 4 - Bloques de código y estructuras de control
 ------------------------------------------------------
@@ -157,7 +154,7 @@ Condicional if
 
 - `Sentencias IF <https://docs.python.org/es/3.11/tutorial/controlflow.html#if-statements>`_.
 
-- `Condicionales if y else en Python <http://codigoprogramacion.com/cursos/tutoriales-python/condicionales-if-y-else-en-python.html>`_.
+- `Sentencia If Else de Python: Explicación de las sentencias condicionales <https://www.freecodecamp.org/espanol/news/sentencia-if-else-de-python-explicacion-de-las-sentencias-condiciones/>`_.
 
 - `Expresiones condicionales - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#expresiones-condicionales>`_.
 
@@ -198,7 +195,7 @@ Iteradores
 - Ver el anexo :numref:`anexos_Z-8Khdd2BUQ` sobre *List Comprehension*.
 
 
-.. _lectura_extras_leccion5:
+.. _lecturas_extras_leccion5:
 
 Lección 5 - Funciones y programación estructurada
 -------------------------------------------------
@@ -238,7 +235,7 @@ Programación estructurada
 - `Paseo por la programación estructurada y modular con Python - Rosalía Peña Ros <https://www.scribd.com/document/545079783/articulo-paseo>`_.
 
 
-.. _lectura_extras_leccion6:
+.. _lecturas_extras_leccion6:
 
 Lección 6 - Introspección a la depuración con pdb
 -------------------------------------------------
@@ -250,7 +247,7 @@ Lección 6 - Introspección a la depuración con pdb
 - Ver el anexo :numref:`anexos_N4NtB4r28h0` sobre los *Depurando um programa Python com pdb*.
 
 
-.. _lectura_extras_leccion7:
+.. _lecturas_extras_leccion7:
 
 Lección 7 - Operaciones de E/S y manipulación de archivos
 ---------------------------------------------------------
@@ -270,7 +267,7 @@ Manipulación de archivos
 - `Entrada y Salida - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/io.html>`_.
 
 
-.. _lectura_extras_leccion8:
+.. _lecturas_extras_leccion8:
 
 Lección 8 - Módulos, paquetes y distribución de software
 --------------------------------------------------------
@@ -306,11 +303,11 @@ Distribución de Software
 Scaffolding en proyectos Python
 ...............................
 
-- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo <https://coactivate.org/projects/ploneve/gestion-de-proyectos-con-buildout>`_
+- `Gestión de proyectos con Buildout, instalando Zope/Plone con este mecanismo <https://plone-spanish-docs.readthedocs.io/es/latest/buildout/index.html>`_
   desde la comunidad de Plone Venezuela.
 
 
-.. _lectura_extras_leccion9:
+.. _lecturas_extras_leccion9:
 
 Lección 9 - Manejos de errores y orientación a objetos
 ------------------------------------------------------
@@ -339,13 +336,13 @@ Programación orientada a objetos
 - Ver el anexo :numref:`anexos_vdz9HGfFguc` sobre *Clases y Objetos*.
 
 
-.. _lectura_extras_leccion10:
+.. _lecturas_extras_leccion10:
 
 Lección 10 - Listas de comprensión y la librería estándar
 ---------------------------------------------------------
 
 
-.. _lectura_extras_leccion10_list_compre:
+.. _lecturas_extras_leccion10_list_compre:
 
 Listas de comprensión
 .....................
@@ -355,7 +352,7 @@ Listas de comprensión
 - Ver el anexo :numref:`anexos_aqnjB3dydik` sobre *Comprensión de Listas*.
 
 
-.. _lectura_extras_leccion10_datetime:
+.. _lecturas_extras_leccion10_datetime:
 
 datetime - Fecha y hora
 .......................
@@ -365,7 +362,7 @@ datetime - Fecha y hora
 - `datetime - Date and Time Value Manipulation <https://pymotw.com/3/datetime/index.html>`_.
 
 
-.. _lectura_extras_leccion10_locale:
+.. _lecturas_extras_leccion10_locale:
 
 locale - Servicios de internacionalización
 ..........................................
@@ -379,7 +376,7 @@ locale - Servicios de internacionalización
 - `What Is a Locale <https://docs.oracle.com/cd/E19253-01/817-2521/overview-39/index.html>`_.
 
 
-.. _lectura_extras_leccion10_email:
+.. _lecturas_extras_leccion10_email:
 
 email - Correo electrónico
 ..........................
@@ -392,7 +389,7 @@ email - Correo electrónico
 
 
 
-.. _lectura_extras_leccion10_json:
+.. _lecturas_extras_leccion10_json:
 
 json - Codificador y decodificador JSON
 .......................................
@@ -403,9 +400,9 @@ json - Codificador y decodificador JSON
 
 - `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/reading-and-writing-json-to-a-file-in-python/>`_.
 
-.. raw:: html
-   :file: _templates/partials/soporte_profesional.html
 
-.. disqus::
+----
 
 
+..
+  .. disqus::

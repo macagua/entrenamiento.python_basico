@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_manipular_archivo:
 
 Manipulación de archivos
@@ -208,7 +205,7 @@ interactuar de el mismo como se muestra a continuación:
 .. literalinclude:: ../../recursos/leccion7/archivo.py
     :language: python
     :linenos:
-    :lines: 6-46
+    :lines: 5-45
 
 
 Ayuda integrada
@@ -236,16 +233,20 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        $ python archivo.py
+        python3 archivo.py
 
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion7>` del
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion7>` del
     entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

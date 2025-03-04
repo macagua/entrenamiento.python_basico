@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_modulo_bpython:
 
 Interprete bpython
@@ -19,13 +16,13 @@ el correspondiente comando de tu sistema operativo:
 
       .. code-block:: console
 
-          $ pip install bpython
+          pip install bpython
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > pip install bpython
+          pip install bpython
 
 
 Luego sustituya el comando ``python`` por ``bpython`` correspondiente a tu sistema
@@ -38,13 +35,13 @@ operativo de la siguiente forma:
 
       .. code-block:: console
 
-          $ bpython
+          bpython
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          > bpython
+          bpython
 
 
 Dentro de interprete Python puede apreciar que ofrece otra forma de presentar
@@ -53,7 +50,17 @@ la documentación y la estructura del lenguaje, con los siguientes comandos de e
 .. code-block:: console
 
     >>> print('Hola Mundo')
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: console
+    :class: no-copy
+
     Hola Mundo
+
+.. code-block:: console
+    :class: no-copy
+
     >>> for item in range(
     ┌───────────────────────────────────────────────────────────────────────────────┐
     │ range: (stop)                                                                 │
@@ -67,6 +74,27 @@ la documentación y la estructura del lenguaje, con los siguientes comandos de e
     │ When step is given, it specifies the increment (or decrement).                │
     └───────────────────────────────────────────────────────────────────────────────┘
 
+Y para cerrar la sesión con el ``bpython`` ejecute el siguiente comando:
+
+.. code-block:: pycon
+
+    >>> exit()
+
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    (None,)
+
+Asi pudo salir de la sesión del interprete interactivo ``bpython``.
+
+De esta forma, ha aprendió nociones básicas con el interprete interactivo ``bpython``.
+
+
+----
+
 
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
 aprender a conocer como manejarse en el modo interactivo usando el paquete
@@ -77,12 +105,22 @@ tienes instalado en tu sistema.
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion2>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion2>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
-.. disqus::
+
+----
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
+
+
+..
+  .. disqus::
 
 .. _`bpython`: https://pypi.org/project/bpython/
 .. _`interprete bpython`: https://bpython-interpreter.org/

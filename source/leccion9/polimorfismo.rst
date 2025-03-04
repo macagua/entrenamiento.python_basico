@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_poo_polimorfismo:
 
 Polimorfismo
@@ -38,28 +35,26 @@ fracción matemática y definir el operador + para sumar dos fracciones.
     >>> import math
     >>>
     >>> class Fraccion:
-    ...
     ...     def __init__(self, numerador, denominador):
-    ...         """ Método Constructor """
+    ...         """Método Constructor"""
     ...         self.numerador = numerador
     ...         self.denominador = denominador
-    ...
     ...     def simplificar(self):
-    ...         """ Método para simplificar la fracción """
+    ...         """Método para simplificar la fracción"""
     ...         # Buscar el máximo común divisor
     ...         mcd = math.gcd(self.numerador, self.denominador)
     ...         # Dividir el numerador y el denominador por el mcd
     ...         self.numerador //= mcd
     ...         self.denominador //= mcd
-    ...
     ...     def mostrar(self):
-    ...         """ Método para mostrar la fracción """
+    ...         """Método para mostrar la fracción"""
     ...         print(f"{self.numerador}/{self.denominador}")
-    ...
     ...     def __add__(self, otra):
-    ...         """ Método para sobrecargar el operador + """
+    ...         """Método para sobrecargar el operador +"""
     ...         # Sumar las fracciones usando la regla de cruz
-    ...         nuevo_numerador = self.numerador * otra.denominador + self.denominador * otra.numerador
+    ...         nuevo_numerador = (
+    ...             self.numerador * otra.denominador + self.denominador * otra.numerador
+    ...         )
     ...         nuevo_denominador = self.denominador * otra.denominador
     ...         # Crear una nueva fracción con el resultado
     ...         nueva_fraccion = Fraccion(nuevo_numerador, nuevo_denominador)
@@ -107,14 +102,12 @@ matemática y definir el operador + para sumar dos fracciones.
 .. code-block:: pycon
 
     >>> class Punto:
-    ...
     ...     def __init__(self, x=0, y=0):
-    ...         """ Método Constructor """
+    ...         """Método Constructor"""
     ...         self.x = x
     ...         self.y = y
-    ...
     ...     def __add__(self, other):
-    ...         """ Método para sobrecargar el operador + """
+    ...         """Método para sobrecargar el operador +"""
     ...         x = self.x + other.x
     ...         y = self.y + other.y
     ...         return x, y
@@ -212,7 +205,6 @@ dos subclases ``Perro`` y ``Gato`` que heredan de ``Animal`` y redefinen el mét
     ...     # Constructor
     ...     def __init__(self, nombre):
     ...         self.nombre = nombre
-    ...
     ...     # Método para hablar
     ...     def hablar(self):
     ...         print(f"Soy un animal. Me llamo {self.nombre}.")
@@ -254,15 +246,20 @@ Llamar al método ``hablar`` de cada objeto, este muestra los siguientes mensaje
 
 ----
 
+
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion9>`
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion9>`
     del entrenamiento para ampliar su conocimiento en esta temática.
+
+
+----
 
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`Overloading Operators`: https://en.wikipedia.org/wiki/Operator_overloading

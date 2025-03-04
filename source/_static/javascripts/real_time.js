@@ -4,19 +4,20 @@
 // Get Current Time from a specific Time Zone START
 //--------------------------------------------------
 $(document).ready(function(){
-    if ( document.getElementById("time") ) {
+    if (document.getElementById("time")) {
         const getCurrentTime = () => {
             const now = new Date();
-            const locale = new Intl.Locale('es-VE');
+            const locale = new Intl.Locale('es-ES');
             const currentTime = new Intl.DateTimeFormat(locale.baseName, {
                 hour: 'numeric',
                 hour12: true,
                 minute: 'numeric',
-                timeZone: locale.timeZones,
+                timeZone: 'Europe/Madrid' // Fixed timezone specification
             });
             document.getElementById("time").innerHTML = currentTime.format(now);
             setTimeout(getCurrentTime, 500);
         }
+        getCurrentTime(); // Added initial call
     }
 });
 //--------------------------------------------------

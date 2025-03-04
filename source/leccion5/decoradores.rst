@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_decoradores:
 
 Decoradores
@@ -343,7 +340,7 @@ también acepta parámetros de entrada.
 Anidando un Decorador dentro de una Función
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Vaya de vuelta al ejemplo de inicio de sesión, y cree un *wraper* que permita
+Vaya de vuelta al ejemplo de inicio de sesión, y cree un *wrapper* que permita
 especificar el archivo de salida que quiere usar para el archivo de *log*. Si
 se fijas, el decorador ahora acepta un parámetro de entrada.
 
@@ -459,10 +456,14 @@ Una vez creada la nueva clase que hereda de ``log_it``, si usa ``@email_log_it``
 como decorador tendrá el mismo comportamiento, pero además enviará un correo electrónico.
 
 
+----
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`Flask`: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion6/index.html
 .. _`Django`: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion7/index.html
