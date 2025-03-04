@@ -1,30 +1,75 @@
-# https://pypi.org/project/sphinx-immaterial/
-Jinja2==3.1.2
-Pygments==2.13.0
-alabaster==0.7.12
-appdirs==1.4.4
-babel==2.10.3
-certifi==2022.6.15
-charset-normalizer==2.1.1
-docutils==0.19
-idna==3.3
+# https://pypi.org/project/Sphinx/
+alabaster==1.0.0
+babel==2.17.0
+charset-normalizer==3.4.1
+certifi==2025.1.31
+docutils==0.21.2
+idna==3.10
 imagesize==1.4.1
-importlib-metadata==4.12.0
-markupsafe==2.1.1
-packaging==21.3
-pydantic==1.10.1
-pyparsing==3.0.9
-pytz==2022.2.1
-requests==2.28.1
+Jinja2==3.1.5
+MarkupSafe==3.0.2
+packaging==24.2
+Pygments==2.19.1
+requests==2.32.3
+roman-numerals-py==3.1.0
 snowballstemmer==2.2.0
-sphinx==5.1.1
-sphinx-immaterial==0.9.0
-sphinxcontrib-applehelp==1.0.2
-sphinxcontrib-devhelp==1.0.2
-sphinxcontrib-htmlhelp==2.0.0
+Sphinx==8.2.1
+sphinxcontrib-applehelp==2.0.0
+sphinxcontrib-devhelp==2.0.0
+sphinxcontrib-htmlhelp==2.1.0
 sphinxcontrib-jsmath==1.0.1
-sphinxcontrib-qthelp==1.0.3
-sphinxcontrib-serializinghtml==1.1.5
-typing-extensions==4.3.0
-urllib3==1.26.12
-zipp==3.8.1
+sphinxcontrib-qthelp==2.0.0
+sphinxcontrib-serializinghtml==2.0.0
+urllib3==2.3.0
+
+# https://pypi.org/project/sphinx-immaterial/
+annotated-types==0.7.0
+appdirs==1.4.4
+pydantic==2.10.6
+pydantic-core==2.27.2
+pydantic-extra-types==2.10.2
+sphinx-immaterial==0.13.0
+typing-extensions==4.12.2
+
+# sphinx-immaterial[keys] https://pypi.org/project/sphinx-immaterial/
+markdown==3.7
+pymdown-extensions==10.14.3
+pyyaml==6.0.2
+
+# https://pypi.org/project/ipython/
+# asttokens==3.0.0
+# decorator==5.2.1
+# executing==2.2.0
+# ipython==8.32.0
+# jedi==0.19.2
+# matplotlib-inline==0.1.7
+# parso==0.8.4
+# pexpect==4.9.0
+# prompt_toolkit==3.0.50
+# ptyprocess==0.7.0
+# pure-eval==0.2.3
+# stack_data==0.6.3
+# traitlets==5.14.3
+# wcwidth==0.2.13
+
+# https://pypi.org/project/sphinxcontrib-email/
+lxml==5.3.1
+sphinxcontrib-email==0.3.6
+
+# https://pypi.org/project/yasfb/
+cssselect==1.2.0
+pyquery==2.0.1
+yasfb==0.8.0
+
+# https://pypi.org/project/sphinx-disqus/
+# sphinx-disqus==1.3.0
+# sphinx-disqus==1.2.0
+
+# https://github.com/bonartm/sphinxcontrib-quizdown
+# sphinxcontrib-quizdown @ git+https://github.com/bonartm/sphinxcontrib-quizdown.git@d9f24a7a2305ad5b196e06597b1779c9414d1d85
+
+# https://pypi.org/project/sphinx_contributors/
+sphinx_contributors==0.2.7
+
+# https://pypi.org/project/sphinx-tabs/
+sphinx-tabs==3.4.7

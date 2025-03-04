@@ -9,9 +9,12 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.env
+.sass-cache
 env/
 bin/
 build/
+bnk/
 develop-eggs/
 dist/
 eggs/
@@ -24,6 +27,8 @@ parts/
 sdist/
 var/
 venv/
+py3.*/
+*.bnk
 *.egg-info/
 .installed.cfg
 *.egg
@@ -62,3 +67,6 @@ docs/_build/
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
+
+# Visual Studio Code
+*.code-workspace
