@@ -186,10 +186,10 @@ html_theme_options = {
     "icon": {
         "repo": "fontawesome/brands/github",
     },
-    "site_url": "https://entrenamiento-python-basico.readthedocs.io/es/3.7/",
+    "site_url": "https://entrenamiento-python-basico.readthedocs.io/es/3/",
     "repo_url": "https://github.com/macagua/entrenamiento.python_basico",
     "repo_name": "entrenamiento.frameworks_web_python",
-    "edit_uri": "edit/3.7/source",
+    "edit_uri": "edit/3/source",
     "globaltoc_collapse": True,
     "features": [
         "navigation.expand",
@@ -243,12 +243,12 @@ html_theme_options = {
     "version_dropdown": True,
     "version_info": [
         {
-            "version": "https://entrenamiento-python-basico.readthedocs.io/es/3.7/",
-            "title": "3.7",
+            "version": "https://entrenamiento-python-basico.readthedocs.io/es/3",
+            "title": "3",
             "aliases": [],
         },
         {
-            "version": "https://entrenamiento-python-basico.readthedocs.io/es/2.7/",
+            "version": "https://entrenamiento-python-basico.readthedocs.io/es/2.7",
             "title": "2.7",
             "aliases": [],
         },
@@ -636,7 +636,7 @@ email_automode = True
 # -- Options for yasfb extension ---------------------------------------------
 
 # Set the Feed Base Url.
-# feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3.7/"
+# feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3/"
 
 # Set the Feed Author Name.
 # feed_author = publisher

@@ -2,7 +2,7 @@
  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
  "name": "Aprende Python 3 desde 0",
  "short_name": "Aprende Python 3",
- "start_url": "https://entrenamiento-python-basico.readthedocs.io/es/3.7/",
+ "start_url": "https://entrenamiento-python-basico.readthedocs.io/es/3/",
  "display": "standalone",
  "theme_color": "#dfdfdf",
  "background_color": "#dfdfdf",
