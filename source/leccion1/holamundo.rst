@@ -49,7 +49,7 @@ Ejecutar un programa en Windows
 
 Cree un directorio llamado ``proyectos`` la unidad ``C:\`` y dentro
 de este, cree un archivo de texto plano con el siguiente nombre
-``holamundo.py`` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>`
+:file:`holamundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>`
 respectivamente.
 
 Luego ejecute desde la consola de ``MS-DOS`` el siguiente comando:
@@ -91,7 +91,7 @@ Ejecutar un programa en macOS
 
 #. Haga clic en ``Guardar como``.
 
-#. En el campo Guardar como: escriba ``holamundo.py``.
+#. En el campo Guardar como: escriba :file:`holamundo.py`.
 
 #. Seleccione ``Documentos`` y la carpeta de archivos ``proyectos``.
 
@@ -111,7 +111,7 @@ Ejecutar un programa en macOS
 
 #. Ejecute ``cd proyectos`` y presione la tecla :keys:`Enter`.
 
-#. Ejecute ``ls`` y presione la tecla :keys:`Enter` y usted debería ver el archivo ``holamundo.py``.
+#. Ejecute ``ls`` y presione la tecla :keys:`Enter` y usted debería ver el archivo :file:`holamundo.py`.
 
 #. Para ejecutar el programa, escriba el siguiente comando ``python3 holamundo.py``
    y presione la tecla :keys:`Enter`.
@@ -128,7 +128,7 @@ Ejecutar un programa en Linux
 
 Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
 y dentro de este, cree un archivo de texto plano con el siguiente
-nombre ``holamundo.py`` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>` respectivamente.
+nombre :file:`holamundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
 Luego ejecute desde la consola de comando el siguiente comando:
 
