@@ -208,6 +208,287 @@ interactuar de el mismo como se muestra a continuación:
     :lines: 5-45
 
 
+----
+
+
+Función open()
+..............
+
+A continuación se presenta una práctica más real de implementar el uso de la función
+integrada :ref:`open() <python_fun_open>` en Python, el cual se implementa para las
+operaciones de lectura y escritura en archivos``.csv``:
+
+.. literalinclude:: ../../recursos/leccion7/txt/main.py
+    :language: python
+    :linenos:
+    :lines: 1-30
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`colesterol.csv <../../recursos/leccion7/txt/colesterol.csv>`.
+
+    - :download:`main.py <../../recursos/leccion7/txt/main.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`main.py`, abra una consola de comando,
+    acceda al directorio donde se encuentra el programa:
+
+    .. code-block:: pycon
+        :class: no-copy
+
+        proyectos/
+        └── txt/
+            ├── colesterol.csv
+            └── main.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    .. code-block:: console
+
+        python3 main.py
+
+
+    La salida esperada será similar a la siguiente:
+
+    .. code-block:: console
+        :class: no-copy
+
+        ✅ Archivo leido desde la ruta '~/proyectos/txt/colesterol.csv'.
+
+        nombre,edad,sexo,peso,altura,colesterol
+        José Luis Martínez Izquierdo,18,H,85.0,1.79,182.0
+        Rosa Díaz Díaz,32,M,65.0,1.73,232.0
+        Javier García Sánchez,24,H,,1.81,191.0
+        Carmen López Pinzón,35,M,65.0,1.7,200.0
+        Marisa López Collado,46,M,51.0,1.58,148.0
+        Antonio Ruiz Cruz,68,H,66.0,1.74,249.0
+        Antonio Fernández Ocaña,51,H,62.0,1.72,276.0
+        Pilar Martín González,22,M,60.0,1.66,
+        Pedro Gálvez Tenorio,35,H,90.0,1.94,241.0
+        Santiago Reillo Manzano,46,H,75.0,1.85,280.0
+        Macarena Álvarez Luna,53,M,55.0,1.62,262.0
+        José María de la Guía Sanz,58,H,78.0,1.87,198.0
+        Miguel Angel Cuadrado Gutiérrez,27,H,109.0,1.98,210.0
+        Carolina Rubio Moreno,20,M,61.0,1.77,194.0
+
+        ✅ Archivo nuevo creado en la ruta '~/proyectos/txt/colesterol_modificado.csv'.
+
+        nombre,edad,sexo,peso,altura,colesterol
+        José Luis Martínez Izquierdo,18,H,85.0,1.79,182.0
+        Rosa Díaz Díaz,32,M,65.0,1.73,232.0
+        Javier García Sánchez,24,H,,1.81,191.0
+        Carmen López Pinzón,35,M,65.0,1.7,200.0
+        Marisa López Collado,46,M,51.0,1.58,148.0
+        Antonio Ruiz Cruz,68,H,66.0,1.74,249.0
+        Antonio Fernández Ocaña,51,H,62.0,1.72,276.0
+        Pilar Martín González,22,M,60.0,1.66,
+        Pedro Gálvez Tenorio,35,H,90.0,1.94,241.0
+        Santiago Reillo Manzano,46,H,75.0,1.85,280.0
+        Macarena Álvarez Luna,53,M,55.0,1.62,262.0
+        José María de la Guía Sanz,58,H,78.0,1.87,198.0
+        Miguel Angel Cuadrado Gutiérrez,27,H,109.0,1.98,210.0
+        Carolina Rubio Moreno,20,M,61.0,1.77,194.0
+        Leonardo Caballero,44,M,61.0,1.77,194.0
+
+        ✅ Archivo nuevo leido desde la ruta '~/proyectos/txt/colesterol_modificado.csv'.
+
+
+    La estructura de directorio debe ser similar a la siguiente:
+
+    .. code-block:: pycon
+        :class: no-copy
+
+        proyectos/
+        └── txt/
+            ├── colesterol_modificado.csv
+            ├── colesterol.csv
+            └── main.py
+
+.. tip::
+    En lugar de modificar directamente el archivo :file:`colesterol.csv` se
+    genera un nuevo archivo llamado :file:`colesterol_modificado.csv` para almacenar los
+    cambios realizados.
+
+Asi de esta forma puede ver un ejemplo practico de como manipular un archivo ``.csv`` con
+la función integrada :ref:`open() <python_fun_open>`.
+
+
+----
+
+
+Módulo csv
+..........
+
+A continuación se presenta una práctica más real de implementar el uso del módulo
+integrado en Python llamado `csv`_, el cual se implementa para operaciones de archivos
+``.csv``:
+
+.. literalinclude:: ../../recursos/leccion7/csv/main.py
+    :language: python
+    :linenos:
+    :lines: 1-38
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`colesterol.csv <../../recursos/leccion7/csv/colesterol.csv>`.
+
+    - :download:`main.py <../../recursos/leccion7/csv/main.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`main.py`, abra una consola de comando,
+    acceda al directorio donde se encuentra el programa:
+
+    .. code-block:: pycon
+        :class: no-copy
+
+        proyectos/
+        └── csv/
+            ├── colesterol.csv
+            └── main.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    .. code-block:: console
+
+        python3 main.py
+
+
+    La salida esperada será similar a la siguiente:
+
+    .. code-block:: console
+        :class: no-copy
+
+        ✅ Archivo leido desde la ruta '~/proyectos/csv/colesterol.csv'.
+
+        ['nombre', 'edad', 'sexo', 'peso', 'altura', 'colesterol']
+        ['José Luis Martínez Izquierdo', '18', 'H', '85.0', '1.79', '182.0']
+        ['Rosa Díaz Díaz', '32', 'M', '65.0', '1.73', '232.0']
+        ['Javier García Sánchez', '24', 'H', '', '1.81', '191.0']
+        ['Carmen López Pinzón', '35', 'M', '65.0', '1.7', '200.0']
+        ['Marisa López Collado', '46', 'M', '51.0', '1.58', '148.0']
+        ['Antonio Ruiz Cruz', '68', 'H', '66.0', '1.74', '249.0']
+        ['Antonio Fernández Ocaña', '51', 'H', '62.0', '1.72', '276.0']
+        ['Pilar Martín González', '22', 'M', '60.0', '1.66', '']
+        ['Pedro Gálvez Tenorio', '35', 'H', '90.0', '1.94', '241.0']
+        ['Santiago Reillo Manzano', '46', 'H', '75.0', '1.85', '280.0']
+        ['Macarena Álvarez Luna', '53', 'M', '55.0', '1.62', '262.0']
+        ['José María de la Guía Sanz', '58', 'H', '78.0', '1.87', '198.0']
+        ['Miguel Angel Cuadrado Gutiérrez', '27', 'H', '109.0', '1.98', '210.0']
+        ['Carolina Rubio Moreno', '20', 'M', '61.0', '1.77', '194.0']
+
+        ✅ Archivo nuevo creado en la ruta '~/proyectos/csv/colesterol_modificado.csv'.
+
+        ['nombre', 'edad', 'sexo', 'peso', 'altura', 'colesterol']
+        ['José Luis Martínez Izquierdo', '18', 'H', '85.0', '1.79', '182.0']
+        ['Rosa Díaz Díaz', '32', 'M', '65.0', '1.73', '232.0']
+        ['Javier García Sánchez', '24', 'H', '', '1.81', '191.0']
+        ['Carmen López Pinzón', '35', 'M', '65.0', '1.7', '200.0']
+        ['Marisa López Collado', '46', 'M', '51.0', '1.58', '148.0']
+        ['Antonio Ruiz Cruz', '68', 'H', '66.0', '1.74', '249.0']
+        ['Antonio Fernández Ocaña', '51', 'H', '62.0', '1.72', '276.0']
+        ['Pilar Martín González', '22', 'M', '60.0', '1.66', '']
+        ['Pedro Gálvez Tenorio', '35', 'H', '90.0', '1.94', '241.0']
+        ['Santiago Reillo Manzano', '46', 'H', '75.0', '1.85', '280.0']
+        ['Macarena Álvarez Luna', '53', 'M', '55.0', '1.62', '262.0']
+        ['José María de la Guía Sanz', '58', 'H', '78.0', '1.87', '198.0']
+        ['Miguel Angel Cuadrado Gutiérrez', '27', 'H', '109.0', '1.98', '210.0']
+        ['Carolina Rubio Moreno', '20', 'M', '61.0', '1.77', '194.0']
+        ['Leonardo Caballero', '44', 'H', '61.0', '1.77', '194.0']
+
+        ✅ Archivo nuevo leido desde la ruta '~/proyectos/csv/colesterol_modificado.csv'.
+
+    La estructura de directorio debe ser similar a la siguiente:
+
+    .. code-block:: pycon
+        :class: no-copy
+
+        proyectos/
+        └── csv/
+            ├── colesterol_modificado.csv
+            ├── colesterol.csv
+            └── main.py
+
+.. tip::
+    En lugar de modificar directamente el archivo :file:`colesterol.csv` se
+    genera un nuevo archivo llamado :file:`colesterol_modificado.csv` para almacenar los
+    cambios realizados.
+
+Asi de esta forma puede ver un ejemplo practico de como manipular un archivo ``.csv`` con
+el módulo `csv`_.
+
+
+----
+
+
+Librería pandas
+...............
+
+A continuación se presenta una práctica más real de implementar el uso de la librería
+externa  en Python llamada `pandas`_, el cual se implementa para operaciones de archivos
+``.csv``:
+
+.. literalinclude:: ../../recursos/leccion7/pandas/main.py
+    :language: python
+    :linenos:
+    :lines: 1-18
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`colesterol.csv <../../recursos/leccion7/pandas/colesterol.csv>`.
+
+    - :download:`main.py <../../recursos/leccion7/pandas/main.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`main.py`, abra una consola de comando,
+    acceda al directorio donde se encuentra el programa:
+
+    .. code-block:: pycon
+        :class: no-copy
+
+        proyectos/
+        └── pandas/
+            ├── colesterol.csv
+            └── main.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    .. code-block:: console
+
+        python3 main.py
+
+
+    La salida esperada será similar a la siguiente:
+
+    .. code-block:: console
+        :class: no-copy
+
+        ✅ El conjunto de datos en la ruta '~/proyectos/pandas/colesterol.csv' fue cargado correctamente.
+
+                                nombre  edad sexo  peso altura colesterol
+        0  José Luis Martínez Izquierdo    18    H  85.0   1.79      182.0
+        1                Rosa Díaz Díaz    32    M  65.0   1.73      232.0
+        2         Javier García Sánchez    24    H   NaN   1.81      191.0
+        3           Carmen López Pinzón    35    M  65.0    1.7      200.0
+        4          Marisa López Collado    46    M  51.0   1.58      148.0
+
+        📜 El conjunto de datos original contiene '14' lineas.
+
+Asi de esta forma puede ver un ejemplo practico de como manipular un archivo ``.csv`` con
+el módulo `pandas`_.
+
+
+----
+
+
 Ayuda integrada
 ...............
 
@@ -250,3 +531,6 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 ..
   .. disqus::
+
+.. _`csv`: https://docs.python.org/es/3.11/library/csv.html#module-csv
+.. _`pandas`: https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#io-read-csv-table

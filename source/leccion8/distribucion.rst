@@ -43,7 +43,8 @@ Estructura de proyecto
 Para poder empaquetar un proyecto necesita como mínimo la estructura de archivos
 siguiente:
 
-::
+.. code-block:: pycon
+    :class: no-copy
 
     DIRECTORIO-DEL-PROYECTO
     ├── LICENSE
@@ -75,27 +76,28 @@ A continuación se detallan el significado y uso de la estructura de directorio 
   licencia abra el archivo ``LICENSE`` e ingrese el texto de la licencia. Por ejemplo,
   si usted elije la licencia GPL:
 
-  ::
+  .. code-block:: console
+      :class: no-copy
 
-    License
-    =======
+      License
+      =======
 
-    PACKAGE-NAME Copyright YEAR, PACKAGE-AUTHOR
+      PACKAGE-NAME Copyright YEAR, PACKAGE-AUTHOR
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+      This program is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 2 of the License, or
+      (at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-    GNU General Public License for more details.
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+      GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
-    MA 02111-1307 USA.
+      You should have received a copy of the GNU General Public License
+      along with this program; if not, write to the Free Software
+      Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+      MA 02111-1307 USA.
 
 
 - ``MANIFEST.in``: es el archivo donde se define los criterios de inclusión
@@ -134,12 +136,13 @@ A continuación se detallan el significado y uso de la estructura de directorio 
 .. literalinclude:: ../../recursos/leccion8/distribucion/setup.py
     :language: python
     :linenos:
-    :lines: 1-39
+    :lines: 1-40
 
 Entonces debe cree la siguiente estructura de directorios, ya hecha para seguir
 adelante:
 
-::
+.. code-block:: console
+    :class: no-copy
 
     distribucion/
     ├── LICENSE
@@ -167,7 +170,10 @@ el siguiente comando:
 
     python3 ./setup.py -v build
 
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
 .. code-block:: console
+    :class: no-copy
 
     running build
     running build_py
@@ -187,7 +193,8 @@ De esta forma al terminar la ejecución del comando previo debe tener creado un
 directorio llamado ``build`` e incluyendo el paquete ``tostadas_pipo`` construido
 con todo lo necesario para crear su distribución, como se muestra a continuación:
 
-::
+.. code-block:: console
+    :class: no-copy
 
     build/
     └── lib.linux-x86_64-3.11
@@ -226,7 +233,10 @@ archivo **zip**, etc. Para crear una paquete ``sdist``, ejecute el siguiente com
 
     python3 ./setup.py -v sdist
 
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
 .. code-block:: console
+    :class: no-copy
 
     running sdist
     running egg_info
@@ -278,7 +288,8 @@ De esta forma al terminar la ejecución del comando previo debe tener creado un
 directorio llamado ``dist`` e incluyendo el paquete en formato de archivo tarball
 comprimido en *gztar*, como se muestra a continuación:
 
-::
+.. code-block:: console
+    :class: no-copy
 
     dist/
     └── tostadas_pipo-0.1.tar.gz
@@ -361,7 +372,8 @@ De esta forma al terminar la ejecución del comando previo debe tener creado un
 directorio llamado ``dist`` e incluyendo los tres paquetes en formatos de archivos
 tarball comprimido en *gzip/bzip2* y archivo comprimido en *zip*.
 
-::
+.. code-block:: console
+    :class: no-copy
 
     dist/
     ├── tostadas_pipo-0.1.tar.bz2
@@ -448,7 +460,8 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 De esta forma al terminar la ejecución del comando previo debe tener creado un
 directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *egg*.
 
-::
+.. code-block:: console
+    :class: no-copy
 
     dist/
     └── tostadas_pipo-0.1-py3.11.egg
@@ -522,7 +535,8 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 De esta forma al terminar la ejecución del comando previo debe tener creado un
 directorio llamado ``dist`` e incluyendo la distribución ``bdist`` en formato *whl*.
 
-::
+.. code-block:: console
+    :class: no-copy
 
     dist/
     ├── tostadas_pipo-0.1-py3.11.egg
