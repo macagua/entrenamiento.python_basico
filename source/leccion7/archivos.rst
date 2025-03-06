@@ -436,7 +436,7 @@ externa  en Python llamada `pandas`_, el cual se implementa para operaciones de 
 .. literalinclude:: ../../recursos/leccion7/pandas/main.py
     :language: python
     :linenos:
-    :lines: 1-18
+    :lines: 1-20
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en el
