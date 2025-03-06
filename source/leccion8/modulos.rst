@@ -13,8 +13,8 @@ Un módulo puede definir funciones, clases y variables, también puede incluir
 código ejecutable.
 
 El código Python para un módulo nombrado ``funciones`` normalmente reside un
-archivo llamado ``utilidades.py``. A continuación un ejemplo de un simple módulo
-llamado ``utilidades.py``:
+archivo llamado :file:`utilidades.py`. A continuación un ejemplo de un simple módulo
+llamado :file:`utilidades.py`:
 
 .. literalinclude:: ../../recursos/leccion8/modulos/utilidades.py
     :language: python
@@ -53,9 +53,9 @@ Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
 
 ::
 
-    Importo el modulo ``utilidades.pyc``
+    Importo el modulo 'utilidades.pyc'
 
-    Función ``suma_total`` del módulo ``utilidades.pyc`` llamado y mostró:
+    Función 'suma_total' del módulo 'utilidades.pyc' llamado y mostró:
     Ingrese un monto: 56987
     Monto total a facturar: 57007 Bs (VES).
 
@@ -183,8 +183,11 @@ sentencia ``global``, se soluciona el problema.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
-    siguientes enlaces: :download:`utilidades.py <../../recursos/leccion8/modulos/utilidades.py>`
-    y :download:`calculo_factura_pipo.py <../../recursos/leccion8/modulos/calculo_factura_pipo.py>`.
+    siguientes enlaces:
+
+    - :download:`utilidades.py <../../recursos/leccion8/modulos/utilidades.py>`.
+
+    - :download:`calculo_factura_pipo.py <../../recursos/leccion8/modulos/calculo_factura_pipo.py>`.
 
 
 .. tip::

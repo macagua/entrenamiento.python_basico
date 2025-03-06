@@ -4,7 +4,7 @@ Paquetes Python
 ---------------
 
 Los paquetes pueden contener módulos y otros paquetes. Son directorios.
-El único requisito es que contengan un archivo llamado ``__init__.py``.
+El único requisito es que contengan un archivo llamado :file:`__init__.py`.
 Este archivo puede estar vacío.
 
 
@@ -21,12 +21,12 @@ La sentencia ``from`` se utiliza en conjunto a la previa sentencia
     >>> from utilidades import suma_total
 
 Por ejemplo, cree un directorio llamado ``tostadas_pipo``, que contiene
-los archivos llamados ``__init__.py``, ``principal.py`` (dentro del mismo
+los archivos llamados :file:`__init__.py`, :file:`principal.py` (dentro del mismo
 directorio).
 
-- Archivo ``__init__.py``, este archivo no tiene ningún contenido.
+- Archivo :file:`__init__.py`, este archivo no tiene ningún contenido.
 
-- Archivo ``principal.py`` incluye el siguiente código:
+- Archivo :file:`principal.py` incluye el siguiente código:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/principal.py
     :language: python
@@ -36,16 +36,16 @@ directorio).
 Seguidamente dentro del directorio ``tostadas_pipo``, cree otro directorio
 llamado ``utilidades``, dentro de este, cree los siguientes archivos:
 
-- Archivo ``__init__.py``, este archivo no tiene ningún contenido.
+- Archivo :file:`__init__.py`, este archivo no tiene ningún contenido.
 
-- Archivo ``calculos.py`` incluye el siguiente código:
+- Archivo :file:`calculos.py` incluye el siguiente código:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/calculos.py
     :language: python
     :linenos:
     :lines: 1-8
 
-- Archivo ``impuestos.py`` incluye el siguiente código:
+- Archivo :file:`impuestos.py` incluye el siguiente código:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/tostadas_pipo/utilidades/impuestos.py
     :language: python
@@ -79,7 +79,7 @@ se realiza de las siguientes formas:
     from tostadas_pipo.utilidades import *
 
 
-- Importar el módulo ``calculos.py`` desde el sub-paquete ``utilidades``,
+- Importar el módulo :file:`calculos.py` desde el sub-paquete ``utilidades``,
   ejecutando:
 
 .. code-block:: python
@@ -88,7 +88,7 @@ se realiza de las siguientes formas:
     from tostadas_pipo.utilidades import calculos
 
 
-- Importar la función ``impuesto_iva()`` desde el módulo ``impuestos.py`` en el
+- Importar la función ``impuesto_iva()`` desde el módulo :file:`impuestos.py` en el
   sub-paquete ``utilidades``, ejecutando:
 
 .. code-block:: python
@@ -110,7 +110,9 @@ contiene las importaciones del paquete  ``tostadas_pipo``:
 
 .. important::
     Usted puede descargar el código usado en esta sección, haciendo clic en el
-    siguiente enlace: :download:`paquetes.zip <../../recursos/leccion8/paquetes.zip>`.
+    siguiente enlace:
+
+    - :download:`paquetes.zip <../../recursos/leccion8/paquetes.zip>`.
 
 
 .. tip::
