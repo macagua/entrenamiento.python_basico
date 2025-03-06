@@ -97,9 +97,9 @@ De esta forma, ha aprendió nociones básicas con el interprete interactivo ``bp
 
 
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
-aprender a conocer como manejarse en el modo interactivo usando el paquete
-``bpython``, con el fin de conocer a través de la introspección del lenguaje,
-las librerías estándar y módulos propios escritos en Python que
+aprender a conocer como manejarse en shell de Python y en el modo interactivo
+usando el paquete ``bpython``, con el fin de conocer a través de la introspección
+del lenguaje, las librerías estándar y módulos propios escritos en Python que
 tienes instalado en tu sistema.
 
 

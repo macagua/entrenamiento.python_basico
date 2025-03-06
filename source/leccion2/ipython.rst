@@ -4,33 +4,38 @@ Interprete ipython
 ------------------
 
 Para mejorar la experiencia con el interprete Python le sugerimos instalar el
-paquete ``ipython``, según su documentación:
+paquete `ipython`_, según su documentación:
 
 Según Wikipedia
 
-  "``ipython`` es un shell interactivo que añade funcionalidades extra al `modo
+  "`ipython`_ es un shell interactivo que añade funcionalidades extra al `modo
   interactivo`_ incluido con Python, como resaltado de líneas y errores
   mediante colores, una sintaxis adicional para el shell, completado automático
   mediante tabulador de variables, módulos y atributos; entre otras
   funcionalidades. Es un componente del paquete `SciPy`_."
 
-Para mayor información visite su página principal de `ipython`_ y si necesita instalar
-este programa ejecute el siguiente comando, el cual a continuación se presentan
-el correspondiente comando de tu sistema operativo:
+Para mayor información visite su página principal de ``ipython`` y si necesita instalar
+este programa ejecute el siguiente comando:
 
 .. tabs::
 
-   .. group-tab:: Linux
+   .. group-tab:: PIP
 
       .. code-block:: console
 
-          pip install ipython
+          pip3 install ipython
+
+   .. group-tab:: Ubuntu/Debian Linux
+
+      .. code-block:: console
+
+          sudo apt install -y ipython
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          pip install ipython
+          pip3 install ipython
 
 Sustituya el comando ``python3`` por ``ipython3`` de la siguiente forma:
 
@@ -38,25 +43,31 @@ Sustituya el comando ``python3`` por ``ipython3`` de la siguiente forma:
 
    .. group-tab:: Linux
 
-      .. code-block:: console
+    .. code-block:: console
 
-          ipython
+        ipython3
 
-      .. code-block:: console
+    Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
-          Python 3.11.5 (default, Sep 11 2023, 13:26:23)
-          Type 'copyright', 'credits' or 'license' for more information
-          IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
+    .. code-block:: console
+        :class: no-copy
 
-              In [1]:
+        Python 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+        Type 'copyright', 'credits' or 'license' for more information
+        IPython 8.10.0 -- An enhanced Interactive Python. Type '?' for help.
+
+            In [1]:
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
-          ipython
+          ipython3
+
+     Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
       .. code-block:: console
+          :class: no-copy
 
           Python 3.11.5 (default, Sep 11 2023, 13:26:23)
           Type 'copyright', 'credits' or 'license' for more information
@@ -150,10 +161,10 @@ ayudar a la introspección del lenguaje y sus librerías.
 .. code-block:: pycon
 
     In [3]: os.__
-    __all__      __doc__      __name__
-    __builtins__ __file__     __package__
-    __cached__   __loader__   __spec__
-    <unknown>
+    __all__      __file__     __package__
+    __builtins__ __loader__   __spec__
+    __doc__      __name__
+    instance
 
 
 De nuevo ejecute el método ``file`` para determinar la ubicación de la
@@ -290,11 +301,10 @@ De esta forma aprendio nociones basicas con el interprete interactivo ``ipython`
 ----
 
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
-aprender a conocer como manejarse en el modo interactivo usando el paquete
-``ipython``, con el fin de conocer a través de la introspección del lenguaje,
-las librerías estándar y módulos propios escritos en Python que tienes instalado
-en tu sistema.
-
+aprender a conocer como manejarse en shell de Python y en el modo interactivo
+usando el paquete ``ipython``, con el fin de conocer a través de la introspección
+del lenguaje, las librerías estándar y módulos propios escritos en Python que
+tienes instalado en tu sistema.
 
 ----
 
