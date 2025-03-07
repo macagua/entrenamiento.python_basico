@@ -221,7 +221,7 @@ operaciones de lectura y escritura en archivos``.csv``:
 .. literalinclude:: ../../recursos/leccion7/txt/main.py
     :language: python
     :linenos:
-    :lines: 1-30
+    :lines: 1-37
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en el
@@ -329,7 +329,7 @@ integrado en Python llamado `csv`_, el cual se implementa para operaciones de ar
 .. literalinclude:: ../../recursos/leccion7/csv/main.py
     :language: python
     :linenos:
-    :lines: 1-38
+    :lines: 1-45
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en el
@@ -436,7 +436,7 @@ externa  en Python llamada `pandas`_, el cual se implementa para operaciones de 
 .. literalinclude:: ../../recursos/leccion7/pandas/main.py
     :language: python
     :linenos:
-    :lines: 1-20
+    :lines: 1-24
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en el
