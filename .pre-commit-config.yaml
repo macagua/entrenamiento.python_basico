@@ -24,3 +24,10 @@ repos:
     hooks:
     -   id: pyupgrade
         args: [--py311-plus]
+-   repo: https://github.com/sqlfluff/sqlfluff
+    rev: 3.3.1
+    hooks:
+    -   id: sqlfluff-lint
+        args: [ '--dialect=tsql' ]
+    -   id: sqlfluff-fix
+        args: [ '--dialect=tsql' ]

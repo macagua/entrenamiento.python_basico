@@ -178,19 +178,21 @@ html_theme_options = {
                     "name": "Esta página podría mejorarse",
                     "data": 0,
                     "note": "Gracias por sus comentarios. Ayúdenos a mejorar esta página "
-                    '<a href="https://github.com/jbms/sphinx-immaterial/issues">abriendo una incidencia</a>.',
+                    '<a href="https://github.com/macagua/entrenamiento.python_basico/issues">abriendo una incidencia</a>.',
                 },
             ],
         },
     },
     "icon": {
         "repo": "fontawesome/brands/github",
+        "edit": "material/file-edit-outline",
     },
     "site_url": "https://entrenamiento-python-basico.readthedocs.io/es/3/",
     "repo_url": "https://github.com/macagua/entrenamiento.python_basico",
     "repo_name": "entrenamiento.frameworks_web_python",
     "edit_uri": "edit/3/source",
     "globaltoc_collapse": True,
+    # BEGIN: Features
     "features": [
         "navigation.expand",
         # "navigation.tabs",
@@ -208,6 +210,8 @@ html_theme_options = {
         "content.code.copy",
         "content.tooltips",
     ],
+    # END: Features
+    # BEGIN: Palette toggle
     "palette": [
         {
             "media": "(prefers-color-scheme)",
@@ -239,11 +243,12 @@ html_theme_options = {
             },
         },
     ],
+    # END: Palette toggle
     # BEGIN: version_dropdown
     "version_dropdown": True,
     "version_info": [
         {
-            "version": "https://entrenamiento-python-basico.readthedocs.io/es/3",
+            "version": "https://entrenamiento-python-basico.readthedocs.io/es/3/",
             "title": "3",
             "aliases": [],
         },
