@@ -29,7 +29,7 @@ Lección 2 - Introspección del lenguaje Python
 
 **Práctica:** Acceder al interprete Python demostrando la documentación propia integrada,
 analizar las estructuras de datos, métodos, clases y demás elementos disponibles del
-lenguaje. Instalar el paquete ``ipython`` y conocer sus ventajas.
+lenguaje. Instalar el paquete :ref:`ipython <python_modulo_ipython>` y conocer sus ventajas.
 
 
 .. _esquema_entrenamiento_leccion3:
@@ -50,8 +50,8 @@ texto, listas, tuplas, diccionarios y explorar el resultado desde el interprete 
 Lección 4 - Bloques de código y estructuras de control
 ------------------------------------------------------
 
-**Descripción:** Comprender las estructuras de control como ``if`` (``elif``, ``else``);
-``for``, ``while`` (``else``, ``break``, ``continue``, ``pass``); la función iterador
+**Descripción:** Comprender las estructuras de control como :ref:`if <python_sent_if>` (:ref:`elif <python_sent_elif>`, :ref:`else <python_sent_else>`);
+:ref:`for <python_bucle_for>`, :ref:`while <python_bucle_while>` (:ref:`else <python_sent_else>`, :ref:`break <python_sent_break>`, :ref:`continue <python_sent_continue>`, ``pass``); la función iterador
 :ref:`range() <python_fun_range>`; y los diversos tipos :ref:`iteradores() <python_iter>`.
 
 **Práctica:** Creación a estructuras condicionales, repetitivas y funciones
@@ -87,7 +87,7 @@ Lección 7 - Operaciones de E/S y manipulación de archivos
 
 **Descripción:** Comprender las operaciones de entrada/salida y manipular archivos.
 
-**Práctica:** Uso de la sentencia ``input``, ``print`` y ``pprint``, además la creación,
+**Práctica:** Uso de la función :ref:`input() <python_fun_input>`, :ref:`print <python_sent_print>` y ``pprint``, además la creación,
 apertura, lectura, escritura archivos y explorar el resultado en un módulo.
 
 
@@ -109,7 +109,7 @@ resultado en un módulo y paquete en el sistema de archivos.
 Lección 9 - Manejos de errores y orientación a objetos
 ------------------------------------------------------
 
-**Descripción:** Comprender el manejos de errores (``try``, ``except``, ``else``,
+**Descripción:** Comprender el manejos de errores (``try``, ``except``, :ref:`else <python_sent_else>`,
 ``finally``, y ``raise``) y el paradigma de programación orientada a objetos (clases,
 herencia simple y múltiple, sobrecarga de métodos).
 
@@ -122,11 +122,11 @@ en Python y explorar el resultado en un paquete en el sistema de archivos.
 Lección 10 - Uso prácticos de la librería estándar
 --------------------------------------------------
 
-**Descripción:** Comprender el uso de los módulos incorporados en la librería estándar
+**Descripción:** Comprender el uso de los módulos incorporados en la :ref:`librería estándar <python_libreria_estandar>`
 de Python.
 
 **Práctica:** Creación e uso de los módulos ``datetime``, ``locale``, ``email``, ``json``, de la
-librería estándar explorando el resultado en un paquete Python en el sistema de
+:ref:`librería estándar <python_libreria_estandar>` explorando el resultado en un paquete Python en el sistema de
 archivos.
 
 
