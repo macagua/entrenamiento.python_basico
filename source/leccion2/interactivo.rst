@@ -420,7 +420,7 @@ De esta forma aprendio nociones basicas con el interprete interactivo ``python3`
 
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
 aprender a conocer como manejarse en shell de Python, con el fin de conocer a
-través de la introspección del lenguaje, las librerías estándar y módulos propios
+través de la introspección del lenguaje, las :ref:`librerías estándar <python_libreria_estandar>` y módulos propios
 escritos en Python que tienes instalado en tu sistema.
 
 
