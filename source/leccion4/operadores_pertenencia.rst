@@ -33,7 +33,7 @@ Operador not in
 ................
 
 El operador ``not in``, el contrario de operador :ref:`in <python_opers_in>`, devuelve
-``True`` cuando un elemento no está en una secuencia.
+:ref:`True <python_bool>` cuando un elemento no está en una secuencia.
 
 .. code-block:: pycon
 

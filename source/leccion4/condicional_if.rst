@@ -4,7 +4,7 @@ Condicional if
 --------------
 
 La sentencia condicional ``if`` se usa para tomar decisiones, este evalúa básicamente
-una operación lógica, es decir una expresión que de como resultado ``True`` o ``False``,
+una operación lógica, es decir una expresión que de como resultado :ref:`True <python_bool>` o :ref:`False <python_bool>`,
 y ejecuta la pieza de código siguiente siempre y cuando el resultado sea verdadero.
 
 A continuación un de estructura condicional ``if``/``elif``/``else`` completo:
@@ -23,9 +23,9 @@ En el ejemplo anterior usa dos funciones integradas en el interprete Python:
   entrada estándar.
 
 El valor es ingresado en la variable ``numero`` comprobará en el sentencia condicional
-``if``, si la comprobación devuelve ``False`` intentará con el siguiente bloque
-condicional ``elif``, si la comprobación devuelve ``False`` nuevamente intentará con el
-siguiente bloque condicional ``elif`` si de nuevo la comprobación devuelve ``False`` por
+``if``, si la comprobación devuelve :ref:`False <python_bool>` intentará con el siguiente bloque
+condicional ``elif``, si la comprobación devuelve :ref:`False <python_bool>` nuevamente intentará con el
+siguiente bloque condicional ``elif`` si de nuevo la comprobación devuelve :ref:`False <python_bool>` por
 ultimo intentará con el siguiente bloque condicional ``else`` la cual se ejecutara sin
 comprobación.
 
@@ -71,7 +71,7 @@ Estos son los distintos tipos de expresiones condicionales:
 Expresión if
 ~~~~~~~~~~~~
 
-La expresión de la sentencia ``if`` se evalúa a ``False`` cuando se cumple las
+La expresión de la sentencia ``if`` se evalúa a :ref:`False <python_bool>` cuando se cumple las
 siguientes expresiones están presente:
 
 - Cualquier numero igual a cero (0, 0.0, 0+0j).
@@ -79,9 +79,9 @@ siguientes expresiones están presente:
 - Un contenedor vació (:ref:`lista <python_list>`, :ref:`tupla <python_tuple>`,
   :ref:`conjunto <python_set>`, :ref:`diccionario <python_dict>`).
 
-- ``False``, ``None``.
+- :ref:`False <python_bool>`, :ref:`None <python_obj_none>`.
 
-De lo contrario evaluá a ``True`` cuando se cumple la siguiente expresión esta presente:
+De lo contrario evaluá a :ref:`True <python_bool>` cuando se cumple la siguiente expresión esta presente:
 
 - cualquier cosa de lo contrario.
 
