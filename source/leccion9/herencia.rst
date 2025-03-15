@@ -69,7 +69,7 @@ de objeto el cual debe mostrar como:
     :lines: 10
 
 En el anterior código se usan para cierto formato para imprimir la instancia de objeto
-usando la sentencia ``print``, concatenando el carácter ``\n`` para generar un salto
+usando la sentencia :ref:`print <python_sent_print>`, concatenando el carácter ``\n`` para generar un salto
 de página y seguidamente convertir a formato :ref:`cadena de caracteres <python_str>` usando la función
 ``str()`` a la instancia de objeto llamada ``persona2``.
 

@@ -112,7 +112,7 @@ Las siguientes excepciones sólo se usan como clase base de otras excepciones.
     de los dos primeros argumentos del constructor.
     El atributo ``filename`` es :ref:`None <python_obj_none>` cuando se cree la excepción
     con una cantidad de argumentos diferente de 3. Los atributos ``errno`` y ``strerror``
-    son también ``None`` cuando la instancia no se cree con 2 ó 3 argumentos. En este
+    son también :ref:`None <python_obj_none>` cuando la instancia no se cree con 2 ó 3 argumentos. En este
     último caso, ``args`` contiene los argumentos del constructor tal cual, en forma de
     :ref:`tupla <python_tuple>`. Deriva de la clase raíz :ref:`StandardError <python_exception_standarderror>`.
 
@@ -122,7 +122,7 @@ Las siguientes excepciones son las realmente lanzadas.
 .. _python_exception_assertionerror:
 
 ``AssertionError``
-    Se lanza cuando una sentencia ``assert`` es ``False``. Deriva de la clase raíz
+    Se lanza cuando una sentencia ``assert`` es :ref:`False <python_bool>`. Deriva de la clase raíz
     :ref:`StandardError <python_exception_standarderror>`.
 
 
@@ -330,7 +330,7 @@ Las siguientes excepciones son las realmente lanzadas.
     normal sin errores). En el caso de ser de otro tipo, se presenta el valor del objeto
     y el estado de salida será ``1``.
     Las instancias tienen un atributo ``code`` cuyo valor se establece al estado de salida
-    o mensaje de error propuesto (inicialmente ``None``). Además, esta excepción deriva
+    o mensaje de error propuesto (inicialmente :ref:`None <python_obj_none>`). Además, esta excepción deriva
     directamente de :ref:`Exception <python_exception>` y no de la excepción
     :ref:`StandardError <python_exception_standarderror>`, ya que técnicamente no es un
     error. Una llamada a ``sys.exit()`` se traduce a un error para que los gestores de

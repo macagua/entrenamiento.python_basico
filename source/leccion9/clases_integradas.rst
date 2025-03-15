@@ -831,8 +831,8 @@ tener cuidado en las clases que redefinan el acceso a los atributos). Los tipos
 implementados en el lenguaje C tendrán que proporcionar un atributo ``softspace``
 escribible.
 
-Nota: Este atributo no se usa para controlar la sentencia ``print``, sino para permitir
-que la implementación de ``print`` lleve la cuenta de su estado interno.
+Nota: Este atributo no se usa para controlar la sentencia :ref:`print <python_sent_print>`, sino para permitir
+que la implementación de ``pri:ref:`print <python_sent_print>`nt`` lleve la cuenta de su estado interno.
 
 .. code-block:: pycon
 
