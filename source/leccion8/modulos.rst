@@ -40,9 +40,9 @@ Cuando el interprete encuentra una sentencia ``import``, este importa el módulo
 si el mismo esta presente en la ruta de búsqueda. Una ruta de búsqueda es una lista
 de directorios que el interprete busca antes de importar un módulo.
 
-Por ejemplo, al importar el módulo ``utilidades.py``, usted necesita colocar la
+Por ejemplo, al importar el módulo :file:`utilidades.py`, usted necesita colocar la
 siguiente sentencia al tope del otro script Python. A continuación un ejemplo de
-un simple módulo, ``calculo_factura_pipo.py``.
+un simple módulo llamado :file:`calculo_factura_pipo.py`.
 
 .. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
     :language: python
@@ -53,7 +53,7 @@ Cuando el código anterior es ejecutado, ese produce el siguiente resultado:
 
 ::
 
-    Importo el modulo 'utilidades.pyc'
+    Importo el módulo 'utilidades.pyc'
 
     Función 'suma_total' del módulo 'utilidades.pyc' llamado y mostró:
     Ingrese un monto: 56987

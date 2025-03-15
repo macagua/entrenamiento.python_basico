@@ -96,10 +96,10 @@ se realiza de las siguientes formas:
 
     from tostadas_pipo.utilidades.impuestos import impuesto_iva
 
-Por ejemplo, cree un módulo llamado ``calculo_factura_pipo.py``, que
-contiene las importaciones del paquete  ``tostadas_pipo``:
+Por ejemplo, cree un módulo llamado :file:`calculo_factura_pipo.py`, que
+contiene las importaciones del paquete Python llamado ``tostadas_pipo``:
 
-- Archivo ``calculo_factura_pipo.py`` incluye el siguiente código:
+- Archivo :file:`calculo_factura_pipo.py` incluye el siguiente código:
 
 .. literalinclude:: ../../recursos/leccion8/paquetes/calculo_factura_pipo.py
     :language: python

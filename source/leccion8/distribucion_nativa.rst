@@ -59,7 +59,7 @@ Aquí puede definir lo siguiente:
 
     auto-py-to-exe con la interfaz vacía.
 
-Seguidamente rellene la interfaz indicando el modulo Python que requiere generarle
+Seguidamente rellene la interfaz indicando el módulo Python que requiere generarle
 el instalador, y personalice los parámetros su necesidad.
 
 .. figure:: ../_static/images/autopytoexe_filled-out.png
@@ -141,8 +141,8 @@ de tu sistema operativo:
 
           pip install pyinstaller
 
-Para probar el funcionamiento del paquete ``pyinstaller`` requiere un modulo Python que
-convertir a nativo, para esto cree un modulo con el nombre ``hello.py`` con el siguiente
+Para probar el funcionamiento del paquete ``pyinstaller`` requiere un módulo Python que
+convertir a nativo, para esto cree un módulo con el nombre :file:`hello.py` con el siguiente
 código fuente:
 
 .. literalinclude:: ../../recursos/leccion8/hello.py
@@ -150,7 +150,7 @@ código fuente:
     :linenos:
     :lines: 1-12
 
-Este modulo usa las librerías `threading`_ y `time`_ para pausar la ejecución del modulo
+Este módulo usa las librerías `threading`_ y `time`_ para pausar la ejecución del modulo
 en dos veces distintas, asi poder apreciar el mensaje que se muestra por la linea de comando.
 
 A continuación se explica la genera de la distribución binara para plataformas Windows y Linux:
@@ -158,7 +158,7 @@ A continuación se explica la genera de la distribución binara para plataformas
 Plataforma Windows
 ^^^^^^^^^^^^^^^^^^
 
-Para generar la distribución nativa del modulo ``hello.py`` para plataformas Windows,
+Para generar la distribución nativa del módulo :file:`hello.py` para plataformas Windows,
 ejecute el siguiente comando:
 
 .. code-block:: console
@@ -234,7 +234,7 @@ El comando anterior muestra la siguiente salida en la consola de comando:
     61438 INFO: Fixing EXE headers
     64723 INFO: Building EXE from EXE-00.toc completed successfully.
 
-De esta forma genera dentro de la carpeta ``dist`` la distribución binaria ``hello.exe`` del modulo ``hello.py``.
+De esta forma genera dentro de la carpeta ``dist`` la distribución binaria :file:`hello.exe` del módulo :file:`hello.py`.
 
 .. figure:: ../_static/images/pyinstaller_dist_folder.png
     :align: center
@@ -243,7 +243,7 @@ De esta forma genera dentro de la carpeta ``dist`` la distribución binaria ``he
 
     distribución binaria hello.exe generada.
 
-Puede ejecutar distribución binaria ``hello.exe`` generada, el cual mostrara la siguiente pantalla.
+Puede ejecutar distribución binaria :file:`hello.exe` generada, el cual mostrara la siguiente pantalla.
 
 .. figure:: ../_static/images/pyinstaller_hello_exe.png
     :align: center
@@ -257,7 +257,7 @@ Asi de esta forma genera una distribución nativa para plataformas Windows.
 Plataforma Linux
 ^^^^^^^^^^^^^^^^
 
-Para generar la distribución nativa del modulo ``hello.py`` para plataformas Linux,
+Para generar la distribución nativa del módulo :file:`hello.py` para plataformas Linux,
 ejecute el siguiente comando:
 
 .. code-block:: console
