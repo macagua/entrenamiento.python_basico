@@ -1,4 +1,4 @@
-"""Programa para leer y escribir un archivo JSON"""
+"""Programa para escribir y leer un archivo JSON"""
 
 import json
 import logging
@@ -6,12 +6,12 @@ import os
 
 logging.basicConfig(level=logging.INFO)
 
-NOMBRE_ARCHIVO = "json_reading_writing.json"
-DIR_ARCHIVO = os.path.dirname(os.path.abspath(__file__)) + os.sep
-ARCHIVO = DIR_ARCHIVO + NOMBRE_ARCHIVO
-
+# Ruta del archivo
+RUTA = os.path.join(os.path.dirname(os.path.abspath(__file__)))
+# Nombre de archivo JSON
+ARCHIVO_JSON = "clientes.json"
 # Data a escribir
-DATA = {
+clientes_data = {
     "clientes": [
         {
             "nombre": "Leonardo",
@@ -26,29 +26,38 @@ DATA = {
             "telefono": "+58-426-5831297",
         },
         {
-            "nombre": "Pedro",
-            "apellido": "Lopez",
+            "nombre": "Manuel",
+            "apellido": "Matos",
             "codigo_postal": "4001",
             "telefono": "+58-414-2360943",
         },
     ]
 }
 
-print(DATA, type(DATA), "\n")
 
-# Abriendo archivo JSON para escribir un tipo diccionario
-with open(ARCHIVO, "w") as archivo_json:
-    json.dump(DATA, archivo_json)
-    logging.info("Se escribió un tipo diccionario en archivo JSON\n")
-
-# Abriendo archivo JSON
-with open(ARCHIVO) as archivo_json:
-    # Leyendo desde archivo JSON
-    data = json.load(archivo_json)
-    logging.info("Se leyó desde archivo JSON\n")
-    for cliente in data["clientes"]:
-        print(f"Nombre:", cliente["nombre"])
-        print(f"Apellido:", cliente["apellido"])
-        print(f"Código postal:", cliente["codigo_postal"])
-        print(f"Teléfono:", cliente["telefono"])
-        print(f"Datos detallados: {cliente}\n")
+try:
+    # Abriendo archivo para escribir un tipo diccionario 'clientes_data'
+    with open(
+        os.path.join(RUTA, ARCHIVO_JSON), mode="w", encoding="utf-8"
+    ) as json_nuevo:
+        json.dump(clientes_data, json_nuevo)
+        # Cerrar el archivo después de escribirlo
+        json_nuevo.close()
+        logging.info(f"✅ Se escribió el archivo JSON '{ARCHIVO_JSON}'.\n")
+    # Abrir el archivo en modo lectura
+    with open(os.path.join(RUTA, ARCHIVO_JSON), encoding="utf-8") as json_leido:
+        # Leyendo desde archivo JSON
+        data = json.load(json_leido)
+        for cliente in data["clientes"]:
+            print(f"📜 Nombre:", cliente["nombre"])
+            print(f"📜 Apellido:", cliente["apellido"])
+            print(f"📜 Código postal:", cliente["codigo_postal"])
+            print(f"📜 Teléfono:", cliente["telefono"])
+            print(f"📜 Datos detallados: {cliente}\n")
+        # Cerrar el archivo después de leerlo
+        json_leido.close()
+        logging.info(f"✅ Se leyó el archivo JSON '{ARCHIVO_JSON}'.")
+except FileNotFoundError as e:
+    print(f"❌ Error: No se encontró el archivo: {e}")
+except Exception as e:
+    print(f"❌ Error inesperado: {e}")

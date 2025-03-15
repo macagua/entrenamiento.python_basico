@@ -1,69 +1,157 @@
 .. _python_modulo_json:
 
-json - Codificador y decodificador JSON
-.......................................
+Módulo json
+-----------
 
 .. note::
-    **Propósito:** es una libraría para codificar y decodificar JSON (JavaScript Object Notation).
+    **Propósito:** usar el módulo que incorpora Python para codificar y decodificar **JavaScript Object
+    Notation** (:ref:`JSON <python_json>`).
 
-Codifique objetos de Python como cadenas JSON y decodifique cadenas JSON en objetos de
-Python. El módulo json proporciona una API similar a la de pickle convertir objetos de
-Python en memoria a una representación serializada conocida como notación de objetos de
-JavaScript (JSON).
+El módulo `json`_ expone una API familiar a los usuarios de los módulos de la biblioteca estándar `marshal`_
+y :ref:`pickle <python_modulo_pickle>`. Este le permite codificar objetos de Python como cadenas en formato
+:ref:`JSON <python_json>` y decodifiquelas en objetos de Python.
 
-A diferencia de `pickle <https://docs.python.org/es/3.11/library/pickle.html>`_`, JSON tiene la ventaja de tener
-implementaciones en muchos lenguajes (especialmente JavaScript). Se usa más ampliamente para
-la comunicación entre el servidor web y el cliente en una API REST, pero también es útil
-para otras necesidades de comunicación entre aplicaciones.
+Además proporciona una API similar al módulo :ref:`pickle <python_modulo_pickle>` para convertir objetos de
+Python en memoria a una representación serializada conocida como **JavaScript Object Notation (JSON)**.
 
-Escribir y leer JSON
+
+.. _python_modulo_json_scaffolding:
+
+Práctica - Caso real
 ^^^^^^^^^^^^^^^^^^^^
 
-A continuación, un ejemplo de un programa de Python para leer y escribir un archivo JSON
-basado en un tipo :ref:`diccionario <python_dict>`:
+A continuación se presenta una práctica más real de implementar el uso de proyectos
+con el módulo ``json`` para leer y escribir un archivo JSON basado en un tipo :ref:`diccionario <python_dict>`:
 
-.. literalinclude:: ../../recursos/leccion10/json_reading_writing.py
+
+Estructura de archivos
+^^^^^^^^^^^^^^^^^^^^^^
+
+Para crear la estructura de archivos del proyecto ``JSON`` debe ejecutar los siguientes comandos:
+
+.. tabs::
+
+   .. group-tab:: Linux
+
+      Crear y acceder al directorio ``json`` en un solo comando, ejecutando el siguiente comando:
+
+      .. code-block:: console
+
+          mkdir -p ~/proyectos/json && cd $_
+
+      El comando anterior crea la siguiente estructura de directorios:
+
+      .. code-block:: console
+          :class: no-copy
+
+          proyectos/
+          └── json/
+
+      Si tiene la estructura de archivo previa, entonces puede continuar con la siguiente sección.
+
+   .. group-tab:: Windows
+
+      Debe crear el directorio ``json``, ejecutando el siguiente comando:
+
+      .. code-block:: console
+
+          md .\proyectos\json
+
+      Debe acceder al directorio , ejecutando el siguiente comando:
+
+      .. code-block:: console
+
+          cd .\proyectos\json
+
+      El comando anterior crea la siguiente estructura de directorios:
+
+      .. code-block:: console
+          :class: no-copy
+
+          proyectos/
+          └── json/
+
+      Si tiene la estructura de archivo previa, entonces puede continuar con la siguiente sección.
+
+A continuación se presenta y explica el uso de cada archivo para este proyecto:
+
+*Archivo* :file:`json_reading_writing.py`
+
+Módulo de principal del programa.
+
+.. literalinclude:: ../../recursos/leccion3/json_reading_writing.py
     :language: python
     :linenos:
-    :lines: 1-54
-
-El anterior código al ejecutar debe mostrar el siguiente mensaje:
-
-.. code-block:: console
-
-    {'clientes': [{'nombre': 'Leonardo', 'apellido': 'Caballero', 'codigo_postal': '5001', 'telefono': '+58-412-4734567'}, {'nombre': 'Ana', 'apellido': 'Poleo', 'codigo_postal': '6302', 'telefono': '+58-426-5831297'}, {'nombre': 'Pedro', 'apellido': 'Lopez', 'codigo_postal': '4001', 'telefono': '+58-414-2360943'}]} <class 'dict'>
-
-    INFO:root:Se escribió un tipo diccionario en archivo JSON
-
-    INFO:root:Se leyó desde archivo JSON
-
-    Nombre: Leonardo
-    Apellido: Caballero
-    Código postal: 5001
-    Teléfono: +58-412-4734567
-    Datos detallados: {'nombre': 'Leonardo', 'apellido': 'Caballero', 'codigo_postal': '5001', 'telefono': '+58-412-4734567'}
-
-    Nombre: Ana
-    Apellido: Poleo
-    Código postal: 6302
-    Teléfono: +58-426-5831297
-    Datos detallados: {'nombre': 'Ana', 'apellido': 'Poleo', 'codigo_postal': '6302', 'telefono': '+58-426-5831297'}
-
-    Nombre: Pedro
-    Apellido: Lopez
-    Código postal: 4001
-    Teléfono: +58-414-2360943
-    Datos detallados: {'nombre': 'Pedro', 'apellido': 'Lopez', 'codigo_postal': '4001', 'telefono': '+58-414-2360943'}
+    :lines: 1-63
 
 
-El archivo JSON creado que incluye la información de los empleados:
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
 
-.. literalinclude:: ../../recursos/leccion10/json_reading_writing.json
-    :language: json
-    :linenos:
-    :lines: 1
+    - :download:`json_reading_writing.py <../../recursos/leccion3/json_reading_writing.py>`.
 
-De esta forma se escribí y lee un archivo JSON.
+
+.. tip::
+    Para ejecutar el código :file:`json_reading_writing.py`, abra una consola de comando,
+    acceda al directorio donde se encuentra el programa:
+
+    .. code-block:: console
+        :class: no-copy
+
+        proyectos/
+        └── json/
+            └── json_reading_writing.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
+
+    .. code-block:: console
+
+        python3 json_reading_writing.py
+
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    .. code-block:: console
+
+        INFO:root:✅ Se escribió el archivo JSON 'clientes.json'.
+
+        📜 Nombre: Leonardo
+        📜 Apellido: Caballero
+        📜 Código postal: 5001
+        📜 Teléfono: +58-412-4734567
+        📜 Datos detallados: {'nombre': 'Leonardo', 'apellido': 'Caballero', 'codigo_postal': '5001', 'telefono': '+58-412-4734567'}
+
+        📜 Nombre: Ana
+        📜 Apellido: Poleo
+        📜 Código postal: 6302
+        📜 Teléfono: +58-426-5831297
+        📜 Datos detallados: {'nombre': 'Ana', 'apellido': 'Poleo', 'codigo_postal': '6302', 'telefono': '+58-426-5831297'}
+
+        📜 Nombre: Manuel
+        📜 Apellido: Matos
+        📜 Código postal: 4001
+        📜 Teléfono: +58-414-2360943
+        📜 Datos detallados: {'nombre': 'Manuel', 'apellido': 'Matos', 'codigo_postal': '4001', 'telefono': '+58-414-2360943'}
+
+        INFO:root:✅ Se leyó el archivo JSON 'clientes.json'.
+
+    La ejecucion anterior generar la siguiente estructura:
+
+    .. code-block:: console
+        :class: no-copy
+
+        proyectos/
+        └── json/
+            ├── clientes.json
+            └── json_reading_writing.py
+
+    *Archivo* :file:`clientes.json`
+
+    Archivo en formato :ref:`JSON <python_json>` llamado :file:`clientes.json`
+    la cual no se incluye ya que cada vez que se inicia el programa :file:`json_reading_writing.py` se sustituye y crea
+    nuevamente, para cuidar la creación de los datos iniciales.
+
+Asi de esta forma puede leer y escribir registros en un archivo JSON usando la librería ``json``.
 
 ----
 
@@ -83,4 +171,9 @@ De esta forma se escribí y lee un archivo JSON.
 ..
   .. disqus::
 
+.. _`Standard ECMA-262 3rd Edition - Diciembre 1999`: https://ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf
+.. _`JavaScript`: https://es.wikipedia.org/wiki/JavaScript
+.. _`marshal`: https://docs.python.org/es/3.11/library/marshal.html#
 .. _`json`: https://docs.python.org/es/3.11/library/json.html
+.. _`formato JSON`: https://es.wikipedia.org/wiki/JSON
+.. _`API REST`: https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional
