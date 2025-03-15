@@ -49,7 +49,7 @@ La forma preferida para cerrar un archivo es usando el método del tipo objeto
 
 .. _python_archivos_mdl_os:
 
-Archivos con modulo os
+Archivos con módulo os
 ......................
 
 El módulo ``os`` de Python le permite a usted realizar operaciones dependiente del

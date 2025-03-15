@@ -70,7 +70,7 @@ Para poder enviar información a un script y manejarla, tenemos que utilizar la
 librería de sistema ``sys``. En ella encontraremos la :ref:`lista <python_list>` ``argv`` que almacena
 los argumentos enviados al *script*.
 
-Usted debe crear un *script* llamado ``entrada_argumentos.py`` con el siguiente
+Usted debe crear un *script* llamado :file:`entrada_argumentos.py` con el siguiente
 contenido:
 
 .. literalinclude:: ../../recursos/leccion7/entrada_argumentos.py
@@ -78,7 +78,7 @@ contenido:
     :linenos:
     :lines: 1-3
 
-Ejecuta el *script* llamado ``entrada_argumentos.py``, de la siguiente forma:
+Ejecuta el *script* llamado :file:`entrada_argumentos.py`, de la siguiente forma:
 
 .. code-block:: console
 
@@ -140,7 +140,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     SOLUCIÓN: Introduce los argumentos correctamente
     Ejemplo: entrada_dos_argumentos.py "Texto" 5
 
-Ahora si intenta ejecutar el *script* ``entrada_dos_argumentos.py`` con solo dos (2)
+Ahora si intenta ejecutar el *script* :file:`entrada_dos_argumentos.py` con solo dos (2)
 argumentos, ejecutando el siguiente comando:
 
 .. code-block:: console
@@ -195,7 +195,7 @@ Formato de impresión de cadenas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-En la sentencia ``print`` se pueden usar el formato de impresión alternando las
+En la sentencia :ref:`print <python_sent_print>` se pueden usar el formato de impresión alternando las
 :ref:`cadenas de caracteres <python_str>` y variables:
 
 .. code-block:: pycon
