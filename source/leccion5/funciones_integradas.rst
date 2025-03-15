@@ -501,7 +501,7 @@ pueden ser extraídos usando la función integrada ``keys()``.
 open()
 ~~~~~~
 
-La función ``open()`` es definida dentro del modulo integrado ``io``, esta le permite
+La función ``open()`` es definida dentro del módulo integrado ``io``, esta le permite
 :ref:`abrir un archivo <python_abrir_archivo>` usando el tipo objeto ``file``, devuelve
 un objeto del tipo :ref:`file <python_cls_file>` (ej. *archivo*), y se llama
 habitualmente con de dos a tres argumentos:
@@ -625,21 +625,21 @@ final es omitido! Hay exactamente los indices validos para una :ref:`lista <pyth
 reload()
 ~~~~~~~~
 
-Cuando el modulo es importado dentro de un script, el código en la porción del nivel
-superior de un modulo es ejecutado solamente una vez.
+Cuando el módulo es importado dentro de un script, el código en la porción del nivel
+superior de un módulo es ejecutado solamente una vez.
 
 Por lo tanto, si usted quiere volver a ejecutar la porción del nivel superior el código
-de un modulo, usted puede usar la función ``reload()``. Esta función importa otra vez
-un modulo previamente importado. La sintaxis de la función ``reload()`` es la siguiente:
+de un módulo, usted puede usar la función ``reload()``. Esta función importa otra vez
+un módulo previamente importado. La sintaxis de la función ``reload()`` es la siguiente:
 
 .. code-block:: pycon
 
     >>> from importlib import reload
     >>> reload(module_name)
 
-Aquí, ``module_name`` es el nombre del modulo que usted quiere volver a cargar y no la
+Aquí, ``module_name`` es el nombre del módulo que usted quiere volver a cargar y no la
 :ref:`cadena de caracteres <python_str>` contendiente el nombre del modulo. Por ejemplo,
-para recargar el modulo ``clases.py``, debe hacer lo siguiente:
+para recargar el módulo :file:`clases.py`, debe hacer lo siguiente:
 
 .. code-block:: pycon
 
@@ -681,7 +681,7 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
 
 .. tip::
 
-    La función ``type()`` devuelve el tipo del objeto, en base al modulo integrado
+    La función ``type()`` devuelve el tipo del objeto, en base al módulo integrado
     ``types``, el cual define los nombres para todos los símbolos tipo conocidos
     en el interprete estándar.
 
@@ -1510,7 +1510,7 @@ Esencialmente, la función ``intern()`` busca (o almacena si no está presente) 
 :ref:`cadena de caracteres <python_str>` en una colección de cadenas de caracteres internadas, por lo
 que todas las instancias internadas compartirán la misma identidad. Cambia el costo
 único de buscar esta cadena de caracteres para realizar comparaciones más rápidas
-(la comparación puede devolver ``True`` después de solo verificar la identidad, en
+(la comparación puede devolver :ref:`True <python_bool>` después de solo verificar la identidad, en
 lugar de tener que comparar cada carácter), y reducir el uso de la memoria.
 
 Sin embargo, Python internará automáticamente :ref:`cadena de caracteres <python_str>` que sean pequeñas
@@ -2323,7 +2323,7 @@ Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve ``True`` si le objeto es
+Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve :ref:`True <python_bool>` si le objeto es
 uno de los tipos en la :ref:`tupla <python_tuple>`.
 
 .. code-block:: pycon
@@ -2365,7 +2365,7 @@ seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve ``True`` si le objeto es
+Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve :ref:`True <python_bool>` si le objeto es
 uno de los tipos en la :ref:`tupla <python_tuple>`.
 
 .. code-block:: pycon

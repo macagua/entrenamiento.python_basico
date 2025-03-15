@@ -112,7 +112,7 @@ no los usas la función es pasada y puede ser asignada a una variable sin ser ej
 
 Va a analizar el código paso por paso. Al principio usa ``hey = hola()``, por lo que el
 parámetro para ``nombre`` que se toma es "Plone" ya que es el que se ha asignado por
-defecto. Esto hará que en el ``if`` se entre en ``nombre == "Plone"``, lo que hará que
+defecto. Esto hará que en el :ref:`if <python_sent_if>` se entre en ``nombre == "Plone"``, lo que hará que
 se devuelva la función saluda. Si por lo contrario hace la llamada a la función con
 ``hey = hola(nombre="Pelayo")``, la función devuelta será ``bienvenida``.
 

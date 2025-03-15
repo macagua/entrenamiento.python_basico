@@ -11,8 +11,8 @@ En Python hay varias funciones avanzadas que se describen a continuación:
 Funciones de predicado
 ......................
 
-Las funciones de predicado no es más que una función la cual dice si algo es ``True``
-o ``False``, es decir, es una función que devuelve un tipo de datos
+Las funciones de predicado no es más que una función la cual dice si algo es :ref:`True <python_bool>`
+o :ref:`False <python_bool>`, es decir, es una función que devuelve un tipo de datos
 :ref:`booleano <python_bool>`.
 
 .. comments:
