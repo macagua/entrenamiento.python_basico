@@ -85,6 +85,9 @@ Módulo de principal del programa.
     :lines: 1-63
 
 
+----
+
+
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en el
     siguiente enlace:

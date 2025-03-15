@@ -1,7 +1,7 @@
 .. _python_modulo_email:
 
-email - Correo electrónico
-..........................
+Módulo email
+............
 
 .. note::
     **Propósito:** es una libraría para administrar mensajes de correo electrónico.
@@ -11,16 +11,16 @@ pero sigue siendo una de las más populares. La libraría estándar de Python
 incluye módulos para enviar, recibir y almacenar mensajes de correo electrónico por
 medio de la librería `email`_.
 
-`smtplib`_ se comunica con un servidor de correo para entregar un mensaje. `smtpd`_ se
+El módulo `smtplib`_ se comunica con un servidor de correo para entregar un mensaje. El módulo `smtpd`_ se
 puede utilizar para crear un servidor de correo personalizado y proporciona clases
 útiles para depurar la transmisión de correo electrónico en otras aplicaciones.
 
-`imaplib`_ utiliza el protocolo `IMAP`_ para manipular mensajes almacenados en un servidor.
+El módulo `imaplib`_ utiliza el protocolo `IMAP`_ para manipular mensajes almacenados en un servidor.
 Proporciona una API de bajo nivel para clientes ``IMAP`` y puede consultar, recuperar, mover
 y eliminar mensajes.
 
-Los archivos de mensajes locales se pueden crear y modificar `mailbox`_ utilizando varios
-formatos estándar, incluidos los populares formatos ``mbox`` y ``Maildir`` utilizados por
+Los archivos de mensajes locales se pueden crear y modificar archivos ``mailbox`` usando el módulo `mailbox`_
+utilizando varios formatos estándar, incluidos los populares formatos ``mbox`` y ``Maildir`` utilizados por
 muchos programas de clientes de correo electrónico.
 
 Envío de correo básico
@@ -47,7 +47,7 @@ Y para captura todas las excepciones posibles, muestra el siguiente mensaje:
     Error: no se pudo enviar el correo
 
 
-El mensaje recibido en la cuenta Gmail desde el programa ``email_smtplib_demo1.py``
+El mensaje recibido en la cuenta Gmail desde el programa :file:`email_smtplib_demo1.py`
 luciría de la siguiente forma:
 
 .. figure:: ../_static/images/email_smtplib_demo1.png
@@ -55,7 +55,7 @@ luciría de la siguiente forma:
     :width: 50%
     :alt: Mensaje recibido en la cuenta Gmail desde el programa email_smtplib_demo1.py.
 
-    Mensaje recibido en la cuenta Gmail desde el programa ``email_smtplib_demo1.py``.
+    Mensaje recibido en la cuenta Gmail desde el programa :file:`email_smtplib_demo1.py`.
 
 
 Envío de correo personalizado
@@ -82,7 +82,7 @@ Y para captura todas las excepciones posibles, muestra el siguiente mensaje:
     Error: no se pudo enviar el correo
 
 
-El mensaje recibido en la cuenta Gmail desde el programa ``email_smtplib_demo2.py``
+El mensaje recibido en la cuenta Gmail desde el programa :file:`email_smtplib_demo2.py`
 luciría de la siguiente forma:
 
 .. figure:: ../_static/images/email_smtplib_demo2.png
@@ -90,7 +90,7 @@ luciría de la siguiente forma:
     :width: 50%
     :alt: Mensaje recibido en la cuenta Gmail desde el programa email_smtplib_demo2.py.
 
-    Mensaje recibido en la cuenta Gmail desde el programa ``email_smtplib_demo2.py``.
+    Mensaje recibido en la cuenta Gmail desde el programa :file:`email_smtplib_demo2.py`.
 
 
 Envío de correo avanzado
@@ -162,7 +162,7 @@ Y para captura todas las excepciones posibles, muestra el siguiente mensaje:
 Puede ejecutar distribución binaria ``hello.exe`` generada, el cual mostrara la siguiente pantalla.
 
 
-El mensaje recibido en la cuenta Gmail desde el programa ``emails_gmail_send.py``
+El mensaje recibido en la cuenta Gmail desde el programa :file:`emails_gmail_send.py`
 luciría de la siguiente forma:
 
 .. figure:: ../_static/images/emails_gmail_send.png
@@ -170,12 +170,61 @@ luciría de la siguiente forma:
     :width: 50%
     :alt: Mensaje recibido en la cuenta Gmail desde el programa emails_gmail_send.py.
 
-    Mensaje recibido en la cuenta Gmail desde el programa ``emails_gmail_send.py``.
+    Mensaje recibido en la cuenta Gmail desde el programa :file:`emails_gmail_send.py`.
 
 Además de los procesos de permisos específicos de Gmail (que incluyen aplicaciones menos seguras,
 etc.), estas secuencias de comandos y ejemplos funcionarían con casi cualquier otro servicio de
 correo que proporcione conectividad SMTP, siempre que tenga la dirección del servidor y el puerto
 necesarios.
+
+
+----
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en los
+    siguientes enlaces:
+
+    - :download:`email_smtplib_demo1.py <../../recursos/leccion10/email_smtplib_demo1.py>`.
+
+    - :download:`email_smtplib_demo2.py <../../recursos/leccion10/email_smtplib_demo2.py>`.
+
+    - :download:`email_contactos.txt <../../recursos/leccion10/email_contactos.txt>`.
+
+    - :download:`email_mensaje.txt <../../recursos/leccion10/email_mensaje.txt>`.
+
+    - :download:`emails_gmail_send.py <../../recursos/leccion10/emails_gmail_send.py>`.
+
+
+.. tip::
+    Para ejecutar el código, abra una consola de comando, acceda al directorio
+    donde se encuentra el programa:
+
+    .. code-block:: console
+        :class: no-copy
+
+        proyectos/
+        └── email/
+            ├── email_contactos.txt
+            ├── email_mensaje.txt
+            ├── email_smtplib_demo1.py
+            ├── email_smtplib_demo2.py
+            └── email_smtplib_demo1.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute los siguientes comandos:
+
+    .. code-block:: console
+
+        python3 email_smtplib_demo1.py
+
+    .. code-block:: console
+
+        python3 email_smtplib_demo2.py
+
+    .. code-block:: console
+
+        python3 emails_gmail_send.py
+
 
 ----
 

@@ -1,7 +1,7 @@
 .. _python_modulo_datetime:
 
-datetime - Fecha y hora
-.......................
+Módulo datetime
+...............
 
 .. note::
     **Propósito:** Manipulación de valores de fecha y hora
@@ -72,6 +72,48 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
     .. todo::
         TODO Terminar de escribir esta sección.
+
+
+----
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en los
+    siguientes enlaces:
+
+    - :download:`datetime_date.py <../../recursos/leccion10/datetime_date.py>`.
+
+    - :download:`datetime_strftime.py <../../recursos/leccion10/datetime_strftime.py>`.
+
+    - :download:`datetime_strptime.py <../../recursos/leccion10/datetime_strptime.py>`.
+
+
+.. tip::
+    Para ejecutar el código, abra una consola de comando, acceda al directorio
+    donde se encuentra el programa:
+
+    .. code-block:: console
+        :class: no-copy
+
+        proyectos/
+        └── datetime/
+            ├── datetime_date.py
+            ├── datetime_strftime.py
+            └── datetime_strptime.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute los siguientes comandos:
+
+    .. code-block:: console
+
+        python3 datetime_date.py
+
+    .. code-block:: console
+
+        python3 datetime_strftime.py
+
+    .. code-block:: console
+
+        python3 datetime_strptime.py
 
 
 ----

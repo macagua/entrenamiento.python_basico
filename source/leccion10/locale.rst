@@ -1,10 +1,10 @@
 .. _python_modulo_locale:
 
-locale — Servicios de internacionalización
-..........................................
+Módulo locale
+.............
 
 .. note::
-    **Propósito:** Formateo según la configuración regional
+    **Propósito:** Formateo según la configuración regional, como servicios de internacionalización
 
 El módulo `locale`_ abre el acceso a la base de datos y la funcionalidad de `POSIX locale`_.
 El mecanismo `POSIX locale`_ permite a los programadores tratar ciertos problemas culturales
@@ -28,7 +28,7 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
     miércoles, 03. diciembre 1980 12:00am
 
-Jugando con el módulo ``locale`` en el ``ipython``:
+Jugando con el módulo ``locale`` en el interprete :ref:`ipython <python_modulo_ipython>`:
 
 .. code-block:: pycon
 
@@ -197,6 +197,35 @@ Jugando con el módulo ``locale`` en el ``ipython``:
 
     .. todo::
         TODO Terminar de escribir esta sección.
+
+
+----
+
+
+.. important::
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`locales.py <../../recursos/leccion10/locales.py>`.
+
+
+.. tip::
+    Para ejecutar el código :file:`locales.py`, abra una consola de comando,
+    acceda al directorio donde se encuentra el programa:
+
+    .. code-block:: console
+        :class: no-copy
+
+        proyectos/
+        └── locale/
+            └── locales.py
+
+    Si tiene la estructura de archivo previa, entonces ejecute los siguientes comandos:
+
+    .. code-block:: console
+
+        python3 locales.py
+
 
 ----
 
