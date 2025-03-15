@@ -79,7 +79,7 @@ A continuación se presenta y explica el uso de cada archivo para este proyecto:
 
 Módulo de principal del programa.
 
-.. literalinclude:: ../../recursos/leccion3/json_reading_writing.py
+.. literalinclude:: ../../recursos/leccion10/json_reading_writing.py
     :language: python
     :linenos:
     :lines: 1-63
@@ -89,7 +89,7 @@ Módulo de principal del programa.
     Usted puede descargar el código usado en esta sección haciendo clic en el
     siguiente enlace:
 
-    - :download:`json_reading_writing.py <../../recursos/leccion3/json_reading_writing.py>`.
+    - :download:`json_reading_writing.py <../../recursos/leccion10/json_reading_writing.py>`.
 
 
 .. tip::
