@@ -37,7 +37,7 @@ este programa ejecute el siguiente comando:
 
           pip3 install ipython
 
-Sustituya el comando ``python3`` por ``ipython3`` de la siguiente forma:
+Sustituya el comando :command:`python3` por el comando :command:`ipython3` de la siguiente forma:
 
 .. tabs::
 
