@@ -312,7 +312,7 @@ operaciones de lectura y escritura en archivos``.csv``:
     genera un nuevo archivo llamado :file:`colesterol_modificado.csv` para almacenar los
     cambios realizados.
 
-Asi de esta forma puede ver un ejemplo practico de como manipular un archivo ``.csv`` con
+Así de esta forma puede ver un ejemplo práctico de como manipular un archivo ``.csv`` con
 la función integrada :ref:`open() <python_fun_open>`.
 
 
@@ -419,7 +419,7 @@ integrado en Python llamado `csv`_, el cual se implementa para operaciones de ar
     genera un nuevo archivo llamado :file:`colesterol_modificado.csv` para almacenar los
     cambios realizados.
 
-Asi de esta forma puede ver un ejemplo practico de como manipular un archivo ``.csv`` con
+Así de esta forma puede ver un ejemplo práctico de como manipular un archivo ``.csv`` con
 el módulo `csv`_.
 
 
@@ -482,7 +482,7 @@ externa  en Python llamada `pandas`_, el cual se implementa para operaciones de 
 
         📜 El conjunto de datos original contiene '14' lineas.
 
-Asi de esta forma puede ver un ejemplo practico de como manipular un archivo ``.csv`` con
+Así de esta forma puede ver un ejemplo práctico de como manipular un archivo ``.csv`` con
 el módulo `pandas`_.
 
 

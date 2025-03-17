@@ -252,7 +252,7 @@ Puede ejecutar distribución binaria :file:`hello.exe` generada, el cual mostrar
 
     distribución binaria hello.exe ejecutada.
 
-Asi de esta forma genera una distribución nativa para plataformas Windows.
+Así de esta forma genera una distribución nativa para plataformas Windows.
 
 Plataforma Linux
 ^^^^^^^^^^^^^^^^
@@ -264,7 +264,7 @@ ejecute el siguiente comando:
 
     pyinstaller --onefile hello.py
 
-Asi de esta forma genera una distribución nativa para plataformas Linux.
+Así de esta forma genera una distribución nativa para plataformas Linux.
 
 ----
 

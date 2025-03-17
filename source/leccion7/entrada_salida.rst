@@ -31,7 +31,7 @@ La función :ref:`input() <python_fun_input>` siempre devuelve un valor numéric
 Entrada por script
 ..................
 
-En muchas practicas de este entrenamiento usted lo que ha hecho ha sido escribir
+En muchas prácticas de este entrenamiento usted lo que ha hecho ha sido escribir
 código en el intérprete, y/o escribir/ejecutar pequeños programas Python, pero
 los programas informáticos no funcionan así.
 

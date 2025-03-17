@@ -411,7 +411,7 @@ Ejecute el comando exit() para salir del interprete...
     >>> exit()
 
 
-Asi pudo salir de la sesión del interprete interactivo ``python3``.
+Así pudo salir de la sesión del interprete interactivo ``python3``.
 
 De esta forma aprendio nociones basicas con el interprete interactivo ``python3``.
 

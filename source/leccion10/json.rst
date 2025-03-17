@@ -154,7 +154,7 @@ Módulo de principal del programa.
     la cual no se incluye ya que cada vez que se inicia el programa :file:`json_reading_writing.py` se sustituye y crea
     nuevamente, para cuidar la creación de los datos iniciales.
 
-Asi de esta forma puede leer y escribir registros en un archivo JSON usando la librería ``json``.
+Así de esta forma puede leer y escribir registros en un archivo JSON usando el módulo ``json``.
 
 ----
 

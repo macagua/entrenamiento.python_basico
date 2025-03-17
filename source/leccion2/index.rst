@@ -10,7 +10,7 @@ el interprete :ref:`ipython <python_modulo_ipython>` o ``bpython``.
 
 En esta lección se busca introducir a la introspección del lenguaje Python
 usando el interprete como el modo interactivo del paquete adicional :ref:`ipython <python_modulo_ipython>`,
-y las ventajas aplicar la técnica de **introspección** en sus practicas de
+y las ventajas aplicar la técnica de **introspección** en sus prácticas de
 programación diarias con el lenguaje.
 
 A continuación el temario de esta lección:

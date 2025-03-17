@@ -88,7 +88,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
     (None,)
 
-Asi pudo salir de la sesión del interprete interactivo ``bpython``.
+Así pudo salir de la sesión del interprete interactivo ``bpython``.
 
 De esta forma, ha aprendió nociones básicas con el interprete interactivo ``bpython``.
 
