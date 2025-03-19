@@ -181,6 +181,8 @@ sumar dos :ref:`números <python_int>`:
     7
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion5>`

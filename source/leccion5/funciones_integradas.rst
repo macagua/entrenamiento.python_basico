@@ -2413,6 +2413,10 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
 
 ----
 
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion5>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
