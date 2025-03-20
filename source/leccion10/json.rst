@@ -138,7 +138,7 @@ Módulo de principal del programa.
 
         INFO:root:✅ Se leyó el archivo JSON 'clientes.json'.
 
-    La ejecucion anterior generar la siguiente estructura:
+    La ejecución anterior generar la siguiente estructura:
 
     .. code-block:: console
         :class: no-copy
