@@ -7,7 +7,7 @@ En Python las diversas aplicaciones Python se encuentran dentro de módulos y pa
 los cuales los contienen el sistema de archivos.
 
 En esta lección se describen como crear módulos y paquetes, luego se enseña a usar las
-practicas de scaffolding de paquetes Python con mecanismo de instalación, mostrando
+prácticas de scaffolding de paquetes Python con mecanismo de instalación, mostrando
 ejemplos prácticos y útiles.
 
 A continuación el temario de esta lección:

@@ -128,7 +128,7 @@ A continuación se detallan el significado y uso de la estructura de directorio 
     `Restructured Text (reST) and Sphinx CheatSheet <http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html>`_.
 
 
-- ``setup.py``: es el archivo donde se define el paquete, el formato es el mismo
+- :file:`setup.py`: es el archivo donde se define el paquete, el formato es el mismo
   para el módulo :ref:`setuptools <python_modulo_setuptools>` y para el módulo
   :ref:`distutils <python_modulo_distutils>`. Lo puede ver a continuación. Este
   archivo incluye la configuración del paquete como se indica a continuación:
@@ -732,7 +732,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
 
 De esta forma tiene instalado su paquete en su interprete Python usando el comando ``install``
-disponible con el script ``setup.py``.
+disponible con el script :file:`setup.py`.
 
 ----
 

@@ -159,7 +159,7 @@ siguientes:
     El valor verdadero del tipo :ref:`booleano <python_bool>`.
 
 ``__debug__``
-    Esta constante su valor es ``True`` si Python no se inició con una opción ``-O``.
+    Esta constante su valor es :ref:`True <python_bool>` si Python no se inició con una opción ``-O``.
     Véase también la sentencia :ref:`assert <python_sent_assert>`.
 
 .. note::
@@ -176,14 +176,14 @@ A continuación, se presentan algunos ejemplos del uso de *constantes*:
 
 **Definir constantes desde un módulo externo**
 
-Crear un archivo llamado ``constantes.py`` con el siguiente contenido:
+Crear un archivo llamado :file:`constantes.py` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/constantes.py
     :language: python
     :linenos:
     :lines: 4-8
 
-Crear un archivo llamado ``main.py`` con el siguiente contenido:
+Crear un archivo llamado :file:`main.py` con el siguiente contenido:
 
 .. literalinclude:: ../../recursos/leccion3/main.py
     :language: python
@@ -203,12 +203,12 @@ Cuando usted ejecuta el programa, la salida será:
 
     scp -v -P 3307 root@127.0.0.1:/root/webapp/db.sql /srv/backup
 
-En el programa anterior, existe un archivo de módulo ``constantes.py``. Entonces
+En el programa anterior, existe un archivo de módulo :file:`constantes.py`. Entonces
 en este se asignan los valores de constantes ``IP_DB_SERVER``, ``PORT_DB_SERVER``,
 ``USER_DB_SERVER``, ``PASSWORD_DB_SERVER`` y ``DB_NAME``. Ademas, existe el archivo
-de módulo ``main.py`` el cual importa el módulo ``constantes``. Finalmente, se
+de módulo :file:`main.py` el cual importa el módulo ``constantes``. Finalmente, se
 imprime una linea de conexión del comando ``scp`` de Linux usando la función
-integrada en la librería estándar Python llamada :ref:`format() <python_fun_format>`.
+integrada en la :ref:`librería estándar <python_libreria_estandar>` de Python llamada :ref:`format() <python_fun_format>`.
 
 .. note::
     En realidad, no se usa las constantes en Python. El módulo ``globals`` o

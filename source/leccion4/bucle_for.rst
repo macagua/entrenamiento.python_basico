@@ -85,7 +85,7 @@ con una sentencia :ref:`else <python_sent_else>`.
 
 El nombre de la sentencia :ref:`else <python_sent_else>` es equivocada, ya que el bloque
 :ref:`else <python_sent_else>` se ejecutará en todos los casos, es decir, cuando la
-expresión condicional del bucle ``for`` sea ``False``, (a comparación de la
+expresión condicional del bucle ``for`` sea :ref:`False <python_bool>`, (a comparación de la
 :ref:`sentencia if <python_condi_if>`).
 
 .. literalinclude:: ../../recursos/leccion4/bucle_for.py
@@ -93,7 +93,7 @@ expresión condicional del bucle ``for`` sea ``False``, (a comparación de la
     :linenos:
     :lines: 76-88
 
-La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis
+La sentencia :ref:`else <python_sent_else>` tiene la ventaja de mantener el mismo nombre y la misma sintaxis
 que en las demás estructuras de control.
 
 

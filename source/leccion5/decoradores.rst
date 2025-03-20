@@ -112,7 +112,7 @@ no los usas la función es pasada y puede ser asignada a una variable sin ser ej
 
 Va a analizar el código paso por paso. Al principio usa ``hey = hola()``, por lo que el
 parámetro para ``nombre`` que se toma es "Plone" ya que es el que se ha asignado por
-defecto. Esto hará que en el ``if`` se entre en ``nombre == "Plone"``, lo que hará que
+defecto. Esto hará que en el :ref:`if <python_sent_if>` se entre en ``nombre == "Plone"``, lo que hará que
 se devuelva la función saluda. Si por lo contrario hace la llamada a la función con
 ``hey = hola(nombre="Pelayo")``, la función devuelta será ``bienvenida``.
 
@@ -282,8 +282,8 @@ Autorización
 
 Los decoradores permiten verificar si alguien está o no autorizado a usar una
 determinada función, por ejemplo en una aplicación web. Son muy usados en *frameworks*
-como `Flask`_ o `Django`_. Aquí se muestra como usar un decorador para verificar
-que se está autenticado.
+como :ref:`Flask <python_flask_introduccion>` o :ref:`Django <python_django_introduccion>`.
+Aquí se muestra como usar un decorador para verificar que se está autenticado.
 
 **Ejemplo:**
 
@@ -458,6 +458,10 @@ como decorador tendrá el mismo comportamiento, pero además enviará un correo 
 
 ----
 
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion5>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
@@ -465,5 +469,3 @@ como decorador tendrá el mismo comportamiento, pero además enviará un correo 
 ..
   .. disqus::
 
-.. _`Flask`: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion6/index.html
-.. _`Django`: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion7/index.html

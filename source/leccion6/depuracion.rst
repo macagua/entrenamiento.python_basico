@@ -1,7 +1,7 @@
 .. _python_modulo_pdb:
 
-Depuración con pdb
-------------------
+Módulo pdb
+----------
 
 En este tutorial se exploran herramientas que ayudan a entender tu
 código: depuración para encontrar y corregir *bugs* (errores).
@@ -24,7 +24,7 @@ Te permite:
 
 .. topic:: **print**
 
-    Sí, las declaraciones ``print`` sirven como herramienta de depuración.
+    Sí, las declaraciones :ref:`print <python_sent_print>` sirven como herramienta de depuración.
     Sin embargo, para inspeccionar en tiempo de ejecución es más
     eficiente usar el depurador.
 
@@ -45,7 +45,7 @@ Formas de lanzar el depurador:
 Postmortem
 ~~~~~~~~~~
 
-**Situación**: Estás trabajando en ``ipython`` y obtienes un error (`traceback`).
+**Situación**: Estás trabajando en el interprete :ref:`ipython <python_modulo_ipython>` y obtienes un error (:ref:`traceback <python_modulo_traceback>`).
 
 En este caso esta depurando el archivo :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`. Escribe ``%debug`` y entrarás en el depurador.
 
@@ -99,7 +99,7 @@ En este caso esta depurando el archivo :download:`index_error.py <../../recursos
    En algunas situaciones no podrás usar IPython, por ejemplo para depurar
    un `script` que ha sido llamado desde la línea de comandos. En este caso,
    puedes ejecutar el `script` de la siguiente forma
-   ``python3 -m pdb script.py``:
+   :command:`python3 -m pdb script.py`:
 
    .. sourcecode:: console
 
@@ -141,7 +141,7 @@ Por ejemplo, esta intentado depurar :download:`wiener_filtering.py <../../recurs
 A pesar de que el código se ejecuta, observa que el filtrado no se
 está haciendo correctamente.
 
-* Ejecuta el `script` en IPython con el depurador usando ``%run -d wiener_filtering.py``:
+* Ejecuta el `script` en IPython con el depurador usando :command:`%run -d wiener_filtering.py`:
 
   .. code-block:: pycon
 
@@ -271,7 +271,7 @@ Otras formas de comenzar una depuración
 
   Si encuentras tedioso el tener que anotar el número de línea para colocar
   un *break point*, puedes lanzar una excepción en el punto que quieres
-  inspeccionar y usar la 'magia' ``%debug`` de ``ipython``. Destacar que en este
+  inspeccionar y usar la 'magia' ``%debug`` del interprete :ref:`ipython <python_modulo_ipython>`. Destacar que en este
   caso no puedes moverte por el código y continuar después la ejecución.
 
 * **Depurando fallos de pruebas usando nosetests**
@@ -369,11 +369,15 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
-    siguientes enlaces: :download:`index_error.py <../../recursos/leccion6/index_error.py>`
-    y :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
+    siguientes enlaces:
+
+    - :download:`index_error.py <../../recursos/leccion6/index_error.py>`.
+
+    - :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
+
     Adicional se incluye otro código de ejemplo muy simple
     :download:`funcion_a_depurar.py <../../recursos/leccion6/funcion_a_depurar.py>`
-    usando la función ``set_trace()`` del paquete ``pdb``.
+    usando la función ``set_trace()`` del módulo ``pdb``.
 
 
 .. tip::

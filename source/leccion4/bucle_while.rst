@@ -8,8 +8,8 @@ ciclos, o bien secuencias periódicas que nos permiten ejecutar código múltipl
 veces.
 
 El ciclo ``while`` nos permite realizar múltiples iteraciones basándonos en el
-resultado de una expresión lógica que puede tener como resultado un valor ``True``
-o ``False``.
+resultado de una expresión lógica que puede tener como resultado un valor :ref:`True <python_bool>`
+o :ref:`False <python_bool>`.
 
 
 Tipos de Bucle 'while'
@@ -35,7 +35,7 @@ después de su primera iteración el contador tendrá un valor de 1, luego 2, y 
 sucesivamente.
 
 Eventualmente cuando el contador llegue a tener un valor de 10, la condición del ciclo
-``numero <= 10`` sera ``False``, por lo que el ciclo terminará arrojando el siguiente
+``numero <= 10`` sera :ref:`False <python_bool>`, por lo que el ciclo terminará arrojando el siguiente
 resultado.
 
 
@@ -61,15 +61,15 @@ Al igual que la sentencia :ref:`if <python_sent_if>`, la estructura ``while`` ta
 puede combinarse con una sentencia :ref:`else <python_sent_else>`).
 
 El nombre de la sentencia :ref:`else <python_sent_else>` es equivocada, ya que el bloque
-``else`` se ejecutará en todos los casos, es decir, cuando la expresión condicional del
-``while`` sea ``False``, (a comparación de la :ref:`sentencia if <python_sent_if>`).
+:ref:`else <python_sent_else>` se ejecutará en todos los casos, es decir, cuando la expresión condicional del
+``while`` sea :ref:`False <python_bool>`, (a comparación de la :ref:`sentencia if <python_sent_if>`).
 
 .. literalinclude:: ../../recursos/leccion4/bucle_while.py
     :language: python
     :linenos:
     :lines: 45-55
 
-La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma sintaxis
+La sentencia :ref:`else <python_sent_else>` tiene la ventaja de mantener el mismo nombre y la misma sintaxis
 que en las demás estructuras de control.
 
 
@@ -97,7 +97,7 @@ Adicionalmente existe una forma alternativa de interrumpir o cortar los ciclos u
 la palabra reservada ``break``.
 
 Esta nos permite salir del ciclo incluso si la expresión evaluada en ``while`` (o en
-otro ciclo como :ref:`for <python_bucle_for>`) permanece siendo ``True``. Para comprender mejor use el mismo
+otro ciclo como :ref:`for <python_bucle_for>`) permanece siendo :ref:`True <python_bool>`. Para comprender mejor use el mismo
 ejemplo anterior pero se interrumpe el ciclo usando la sentencia ``break``.
 
 

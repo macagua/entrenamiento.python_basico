@@ -174,7 +174,7 @@ Las cadenas también admiten operadores aritméticos como los siguientes:
       'trestrestres'
 
 
-- El operador :ref:`modulo <python_opers_arit_mod>` usado la técnica de interpolación
+- El operador :ref:`módulo <python_opers_arit_mod>` usado la técnica de interpolación
   variables dentro de una cadena de caracteres. Más información consulte la sección
   :ref:`formateo % <python_str_formateo_modulo>`.
 
@@ -392,7 +392,7 @@ Scripts y módulos
 Cuando tiene un script o módulo, la primera línea del mismo hará referencia al
 ``docstrings`` del módulo, en él debe explicar el funcionamiento del mismo:
 
-En el archivo ``mi_modulo.py`` debe contener el siguiente código:
+En el archivo :file:`mi_modulo.py` debe contener el siguiente código:
 
 .. code-block:: pycon
 
@@ -484,7 +484,7 @@ se describen:
 Formateo %
 ~~~~~~~~~~
 
-El carácter modulo ``%`` es un operador integrado en Python. Ese es conocido como el
+El carácter módulo ``%`` es un operador integrado en Python. Ese es conocido como el
 operador de interpolación. Usted necesitará proveer el % seguido por el tipo que
 necesita ser formateado o convertido. El operador % entonces substituye la frase
 '%tipodato' con cero o más elementos del tipo de datos especificado:

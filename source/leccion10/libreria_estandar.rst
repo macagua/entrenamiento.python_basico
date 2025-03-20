@@ -21,7 +21,7 @@ La `librería estándar`_ Python 3 incluye los siguientes módulos y librerías:
 
 - Acceso a archivos y directorios, incluye 12 librerías, como `os.path`_, `fileinput`_ y otros.
 
-- Persistencia de datos, incluye 13 librerías, como `pickle <https://docs.python.org/es/3.11/library/pickle.html>`_, `sqlite3 <https://docs.python.org/es/3.11/library/sqlite3.html>`_ y otros.
+- Persistencia de datos, incluye 13 librerías, como :ref:`pickle <python_modulo_pickle>`, :ref:`sqlite3 <python_modulo_sqlite3>` y otros.
 
 - Compresión de datos y de archivo, incluye 5 librerías, como `zlib`_, `gzip`_ y otros.
 

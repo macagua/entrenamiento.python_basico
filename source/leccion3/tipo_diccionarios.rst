@@ -127,8 +127,8 @@ interprete Python pero aplicada al uso de la secuencia de tipo **diccionario**.
     >>> "flask" in versiones
     False
 
-En el ejemplo anterior este operador devuelve ``True`` si la clave esta en el diccionario
-``versiones``, de lo contrario devuelve ``False``.
+En el ejemplo anterior este operador devuelve :ref:`True <python_bool>` si la clave esta en el diccionario
+``versiones``, de lo contrario devuelve :ref:`False <python_bool>`.
 
 
 .. _python_dict_mtds:
@@ -187,7 +187,7 @@ Este método crea un nuevo **diccionario** con *claves* a partir de un tipo de d
     >>> print("Nuevo Diccionario : %s" % str(versiones))
     Nuevo Diccionario : {'python': None, 'zope': None, 'plone': None}
 
-En el ejemplo anterior inicializa los valores de cada clave a ``None``, más puede
+En el ejemplo anterior inicializa los valores de cada clave a :ref:`None <python_obj_none>`, más puede
 inicializar un *valor* común por defecto para cada *clave*:
 
 .. code-block:: pycon
@@ -219,7 +219,7 @@ mediante una clave, de lo contrario devuelve el objeto :ref:`None <python_obj_no
 has_key()
 ~~~~~~~~~
 
-Este método devuelve el valor ``True`` si el diccionario tiene presente la clave
+Este método devuelve el valor :ref:`True <python_bool>` si el diccionario tiene presente la clave
 enviada como argumento.
 
 .. code-block:: pycon

@@ -3,9 +3,9 @@
 Operadores de identidad
 -----------------------
 
-El operador de identidad ``is`` indica si dos variables hacen referencia al mismo objeto.
+El operador de identidad :ref:`is <python_opers_is>` indica si dos variables hacen referencia al mismo objeto.
 Esto implica que si dos variables distintas tienen el mismo ``id()``, el resultado de
-aplicar el operador ``is`` sobre ellas será ``True``.
+aplicar el operador ``is`` sobre ellas será :ref:`True <python_bool>`.
 
 
 .. _python_opers_is:
@@ -53,7 +53,7 @@ Operador is not
 ...............
 
 El operador ``is not``, es la negación el contrario de operador :ref:`is <python_opers_is>`, devuelve
-``False`` si no hacen referencia a el mismo objeto.
+:ref:`False <python_bool>` si no hacen referencia a el mismo objeto.
 
 .. code-block:: pycon
 

@@ -293,7 +293,7 @@ y luego los cuales son por clave y valor:
 Los nombres ``args`` y ``kwargs`` no son obligatorios, pero se suelen utilizar por
 convención.
 
-Muchos frameworks y librerías los utilizan por lo que es una buena practica llamarlos
+Muchos frameworks y librerías los utilizan por lo que es una buena práctica llamarlos
 así.
 
 

@@ -297,8 +297,8 @@ Este método ordena los elementos de una lista.
     >>> print(versiones_plone)
     [2.1, 2.5, 3.6, 4, 5, 6]
 
-El método ``sort()`` admite la opción ``reverse``, por defecto, con valor ``False``.
-De tener valor ``True``, el ordenamiento se hace en sentido inverso.
+El método ``sort()`` admite la opción ``reverse``, por defecto, con valor :ref:`False <python_bool>`.
+De tener valor :ref:`True <python_bool>`, el ordenamiento se hace en sentido inverso.
 
 .. code-block:: pycon
 

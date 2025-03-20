@@ -26,7 +26,7 @@ el tipo de queja más común que tenés cuando todavía estás aprendiendo Pytho
 El intérprete repite la línea culpable y muestra una pequeña 'flecha' que apunta al
 primer lugar donde se detectó el error. Este es causado por (o al menos detectado en)
 el símbolo que *precede* a la flecha: en el ejemplo, el error se detecta en la
-sentencia ``print``, ya que faltan dos puntos (``':'``) antes del mismo. Se muestran
+sentencia :ref:`print <python_sent_print>`, ya que faltan dos puntos (``':'``) antes del mismo. Se muestran
 el nombre del archivo y el número de línea para que sepas dónde mirar en caso de que
 la entrada venga de un programa.
 
@@ -173,7 +173,7 @@ debe ejecutarse si el *bloque try* no genera una excepción. Por ejemplo:
             print(arg, "tiene", len(f.readlines()), "lineas")
             f.close()
 
-El uso de ``else`` es mejor que agregar código adicional en el ``try`` porque evita
+El uso de :ref:`else <python_sent_else>` es mejor que agregar código adicional en el ``try`` porque evita
 capturar accidentalmente una excepción que no fue generada por el código que está
 protegido por la sentencia ``try`` ... ``except``.
 
@@ -293,8 +293,8 @@ La forma extendida, "assert expression1, expression2", es equivalente a:
 Estas equivalencias suponen que ``__debug__`` y la excepción
 ":ref:`AssertionError <python_exception_assertionerror>`" se refieren a las
 variables incorporadas con esos nombres. En la corriente implementación, la
-variable incorporada ``__debug__`` es ``True`` en circunstancias normales,
-``False`` cuando se solicita la optimización (opción del línea de comando ``-O``).
+variable incorporada ``__debug__`` es :ref:`True <python_bool>` en circunstancias normales,
+:ref:`False <python_bool>` cuando se solicita la optimización (opción del línea de comando ``-O``).
 El generador de código actual no emite ningún código para una sentencia ``assert``
 cuando se solicita la optimización en tiempo de compilación. Nota que no es necesario
 incluir el código fuente de la expresión que falló en el mensaje de error; se mostrará
@@ -416,9 +416,9 @@ limpieza que deben ser ejecutadas bajo ciertas circunstancias. Por ejemplo:
 Una *sentencia finally* siempre es ejecutada antes de salir de la sentencia ``try``,
 ya sea que una excepción haya ocurrido o no. Cuando ocurre una excepción en la
 sentencia ``try`` y no fue manejada por una sentencia ``except`` (o ocurrió en una
-sentencia ``except`` o ``else``), es relanzada luego de que se ejecuta la sentencia
+sentencia ``except`` o :ref:`else <python_sent_else>`), es relanzada luego de que se ejecuta la sentencia
 ``finally``. La sentencia ``finally`` es también ejecutada "a la salida" cuando
-cualquier otra sentencia de la sentencia ``try`` es dejada vía ``break``, ``continue``
+cualquier otra sentencia de la sentencia ``try`` es dejada vía :ref:`break <python_sent_break>`, :ref:`continue <python_sent_continue>`
 or ``return``. Un ejemplo más complicado (sentencias ``except`` y ``finally`` en la
 misma sentencia ``try``):
 
@@ -498,19 +498,20 @@ Luego de que la sentencia sea ejecutada, el archivo *f* siempre es cerrado, incl
 se encuentra un problema al procesar las líneas. Otros objetos que provean acciones de
 limpieza predefinidas lo indicarán en su documentación.
 
+.. _python_modulo_traceback:
 
 Traceback
 .........
 
-El ``Traceback`` o *trazado inverso*, es un listado de las funciones en curso de ejecución,
+El ``traceback`` o *trazado inverso*, es un listado de las funciones en curso de ejecución,
 presentadas cuando sucede un error en tiempo de ejecución. Es común que al trazado inverso
 también se le conozca como *trazado de pila*, porque lista las funciones en el orden en el
 cual son almacenadas en la
 `pila de llamadas <https://es.wikipedia.org/wiki/Pila_(estructura_de_datos)#Pila_de_llamadas>`_.
 
-El módulo integrado `traceback <https://docs.python.org/3/library/traceback.html>`_ incorpora el
-comportamiento de ``Traceback`` o *trazado inverso* ya que extrae, formatea e imprime información
-acerca de *trazado del stack* de los errores y excepciones en Python.
+El módulo integrado `traceback`_ incorpora el mismo comportamiento de ``Traceback`` o *trazado
+inverso* ya que extrae, formatea e imprime información acerca de *trazado del stack* de los
+errores y excepciones en Python.
 
 .. code-block:: pycon
 
@@ -526,9 +527,12 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
     siguientes enlaces:
-    :download:`excepciones_integradas.py <../../recursos/leccion9/excepciones_integradas.py>`,
-    :download:`excepciones_propias.py <../../recursos/leccion9/excepciones_propias.py>`
-    y :download:`errores_propios.py <../../recursos/leccion9/errores_propios.py>`.
+
+    - :download:`excepciones_integradas.py <../../recursos/leccion9/excepciones_integradas.py>`.
+
+    - :download:`excepciones_propias.py <../../recursos/leccion9/excepciones_propias.py>`.
+
+    - :download:`errores_propios.py <../../recursos/leccion9/errores_propios.py>`.
 
 
 .. tip::
@@ -570,3 +574,5 @@ acerca de *trazado del stack* de los errores y excepciones en Python.
 
 ..
   .. disqus::
+
+.. _`traceback`: https://docs.python.org/es/3.11/library/traceback.html

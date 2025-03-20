@@ -45,8 +45,8 @@ El operador ``not`` devuelve el valor *opuesto* la valor booleano.
     >>> not True
     False
 
-Si la expresión es ``True`` el valor devuelto es ``False``, de lo contrario si la
-expresión es ``False`` el valor devuelto es ``True``.
+Si la expresión es :ref:`True <python_bool>` el valor devuelto es :ref:`False <python_bool>`, de lo contrario si la
+expresión es :ref:`False <python_bool>` el valor devuelto es :ref:`True <python_bool>`.
 
 .. code-block:: pycon
 

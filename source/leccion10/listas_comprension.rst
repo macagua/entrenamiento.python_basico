@@ -216,7 +216,7 @@ una expresión. Puedes cambiar la expresión según lo que quieras hacer con el 
 puedes filtrar las líneas que contienen una palabra específica, o añadir algún prefijo o sufijo a
 cada línea.
 
-Asi queda el archivo manipulado:
+Así queda el archivo manipulado:
 
 .. code-block:: text
 

@@ -209,7 +209,7 @@ todos los conjuntos.
 isdisjoint()
 ~~~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si no hay elementos comunes entre los
+Este método devuelve el valor :ref:`True <python_bool>` si no hay elementos comunes entre los
 **conjuntos mutables** o **conjuntos inmutables**.
 
 .. code-block:: pycon
@@ -228,7 +228,7 @@ Este método devuelve el valor ``True`` si no hay elementos comunes entre los
 issubset()
 ~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subconjunto* del
+Este método devuelve el valor :ref:`True <python_bool>` si el **conjunto mutable** es un *subconjunto* del
 **conjunto mutable** o del **conjunto inmutable** argumento.
 
 .. code-block:: pycon
@@ -253,7 +253,7 @@ Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subcon
 issuperset()
 ~~~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si el **conjunto mutable** o el **conjunto inmutable**
+Este método devuelve el valor :ref:`True <python_bool>` si el **conjunto mutable** o el **conjunto inmutable**
 es un *superset* del **conjunto mutable** argumento.
 
 .. code-block:: pycon

@@ -113,7 +113,7 @@ Ejecutar un programa en macOS
 
 #. Ejecute ``ls`` y presione la tecla :keys:`Enter` y usted debería ver el archivo :file:`holamundo.py`.
 
-#. Para ejecutar el programa, escriba el siguiente comando ``python3 holamundo.py``
+#. Para ejecutar el programa, escriba el siguiente comando :command:`python3 holamundo.py`
    y presione la tecla :keys:`Enter`.
 
 #. Usted debe ver la línea *Hola Mundo*.

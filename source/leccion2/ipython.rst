@@ -37,7 +37,7 @@ este programa ejecute el siguiente comando:
 
           pip3 install ipython
 
-Sustituya el comando ``python3`` por ``ipython3`` de la siguiente forma:
+Sustituya el comando :command:`python3` por el comando :command:`ipython3` de la siguiente forma:
 
 .. tabs::
 
@@ -107,7 +107,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
 Entonces presione la tecla :keys:`q` para salir de la ayuda de la función ``dir()``.
 
-De nuevo realice la importación de la librería del estándar Python llamada ``os``.
+De nuevo realice la importación de la :ref:`librería del estándar Python <python_libreria_estandar>` llamada ``os``.
 
 .. code-block:: pycon
 
@@ -303,7 +303,7 @@ De esta forma aprendio nociones basicas con el interprete interactivo ``ipython`
 Como puede apreciar este tutorial no le enseña a programar sino a simplemente
 aprender a conocer como manejarse en shell de Python y en el modo interactivo
 usando el paquete ``ipython``, con el fin de conocer a través de la introspección
-del lenguaje, las librerías estándar y módulos propios escritos en Python que
+del lenguaje, las :ref:`librerías estándar <python_libreria_estandar>` y módulos propios escritos en Python que
 tienes instalado en tu sistema.
 
 ----
