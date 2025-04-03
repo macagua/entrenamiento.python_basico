@@ -14,8 +14,10 @@ Según Wikipedia
   mediante tabulador de variables, módulos y atributos; entre otras
   funcionalidades. Es un componente del paquete `SciPy`_."
 
-Para mayor información visite su página principal de ``ipython`` y si necesita instalar
-este programa ejecute el siguiente comando:
+.. tip::
+    Para mayor información visite su página principal de `ipython`_.
+
+Si necesita instalar este módulo, ejecute el siguiente comando:
 
 .. tabs::
 
