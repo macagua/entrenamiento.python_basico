@@ -150,7 +150,7 @@ código fuente:
     :linenos:
     :lines: 1-12
 
-Este módulo usa las librerías `threading`_ y `time`_ para pausar la ejecución del modulo
+Este módulo usa las librerías :mod:`threading` y :mod:`time` para pausar la ejecución del modulo
 en dos veces distintas, asi poder apreciar el mensaje que se muestra por la linea de comando.
 
 A continuación se explica la genera de la distribución binara para plataformas Windows y Linux:
@@ -283,6 +283,3 @@ Así de esta forma genera una distribución nativa para plataformas Linux.
 
 ..
   .. disqus::
-
-.. _`time`: https://docs.python.org/es/3.11/library/time.html#time.sleep
-.. _`threading`: https://docs.python.org/es/3.11/library/threading.html#threading.Timer

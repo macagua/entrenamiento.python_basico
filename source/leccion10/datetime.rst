@@ -6,7 +6,7 @@ Módulo datetime
 .. note::
     **Propósito:** Manipulación de valores de fecha y hora
 
-El módulo `datetime`_ contiene funciones y clases para realizar análisis, formateo y
+El módulo :mod:`datetime` contiene funciones y clases para realizar análisis, formateo y
 aritmética de fecha y hora, por separado y en conjunto.
 
 .. literalinclude:: ../../recursos/leccion10/datetime_date.py
@@ -29,7 +29,7 @@ strftime
 ``strftime`` es un formateador de cadenas, esto formateará un objeto de fecha y hora en
 formato de :ref:`cadena de caracteres <python_str>`.
 
-Los objetos ``date``, ``datetime``, y ``time`` admiten un método ``strftime(format)``,
+Los objetos ``date``, :mod:`datetime`, y :mod:`time` admiten un método ``strftime(format)``,
 para crear una cadena que represente el objeto de fecha y hora bajo el control de una
 :ref:`cadena de caracteres <python_str>` de formato explícito.
 
@@ -54,7 +54,7 @@ strptime
 ``strptime`` es un analizador de :ref:`cadenas <python_str>`, esto convertirá un formato de cadena a un objeto
 de fecha y hora.
 
-El método de clase ``datetime.strptime()`` crea un objeto ``datetime`` a partir de una
+El método de clase ``datetime.strptime()`` crea un objeto :mod:`datetime` a partir de una
 :ref:`cadena de caracteres <python_str>` que representa una fecha y hora y una :ref:`cadena <python_str>` de formato correspondiente.
 
 .. literalinclude:: ../../recursos/leccion10/datetime_strptime.py
@@ -133,5 +133,3 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
 ..
   .. disqus::
-
-.. _`datetime`: https://docs.python.org/es/3.11/library/datetime.html

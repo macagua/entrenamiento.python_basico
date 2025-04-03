@@ -31,7 +31,7 @@ a programar.
 Módulo setuptools
 .................
 
-El módulo ``setuptools``, incorpora varias extensiones al módulo ``distutils`` para
+El módulo ``setuptools``, incorpora varias extensiones al módulo :mod:`distutils` para
 distribuciones de software grandes o complejas.
 
 

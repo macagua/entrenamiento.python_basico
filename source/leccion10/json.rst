@@ -7,7 +7,7 @@ Módulo json
     **Propósito:** usar el módulo que incorpora Python para codificar y decodificar **JavaScript Object
     Notation** (:ref:`JSON <python_json>`).
 
-El módulo `json`_ expone una API familiar a los usuarios de los módulos de la biblioteca estándar `marshal`_
+El módulo :mod:`json` expone una API familiar a los usuarios de los módulos de la biblioteca estándar :mod:`marshal`
 y :ref:`pickle <python_modulo_pickle>`. Este le permite codificar objetos de Python como cadenas en formato
 :ref:`JSON <python_json>` y decodifiquelas en objetos de Python.
 
@@ -21,7 +21,7 @@ Práctica - Caso real
 ^^^^^^^^^^^^^^^^^^^^
 
 A continuación se presenta una práctica más real de implementar el uso de proyectos
-con el módulo ``json`` para leer y escribir un archivo JSON basado en un tipo :ref:`diccionario <python_dict>`:
+con el módulo :mod:`json` para leer y escribir un archivo JSON basado en un tipo :ref:`diccionario <python_dict>`:
 
 
 Estructura de archivos
@@ -154,7 +154,7 @@ Módulo de principal del programa.
     la cual no se incluye ya que cada vez que se inicia el programa :file:`json_reading_writing.py` se sustituye y crea
     nuevamente, para cuidar la creación de los datos iniciales.
 
-Así de esta forma puede leer y escribir registros en un archivo JSON usando el módulo ``json``.
+Así de esta forma puede leer y escribir registros en un archivo JSON usando el módulo :mod:`json`.
 
 ----
 
@@ -176,7 +176,5 @@ Así de esta forma puede leer y escribir registros en un archivo JSON usando el 
 
 .. _`Standard ECMA-262 3rd Edition - Diciembre 1999`: https://ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf
 .. _`JavaScript`: https://es.wikipedia.org/wiki/JavaScript
-.. _`marshal`: https://docs.python.org/es/3.11/library/marshal.html#
-.. _`json`: https://docs.python.org/es/3.11/library/json.html
 .. _`formato JSON`: https://es.wikipedia.org/wiki/JSON
 .. _`API REST`: https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional

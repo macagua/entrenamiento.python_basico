@@ -52,14 +52,13 @@ La forma preferida para cerrar un archivo es usando el método del tipo objeto
 Archivos con módulo os
 ......................
 
-El módulo ``os`` de Python le permite a usted realizar operaciones dependiente del
+El módulo :mod:`os` de Python le permite a usted realizar operaciones dependiente del
 *Sistema Operativo* como crear una carpeta, listar contenidos de una carpeta, conocer
 acerca de un proceso, finalizar un proceso, etc. Este módulo tiene métodos para ver
 variables de entornos del *Sistema Operativo* con las cuales Python esta trabajando
-en mucho más. `Aquí <https://docs.python.org/es/3.11/library/os.html>`_ la documentación
-Python para el módulo ``os``.
+en mucho más.
 
-A continuación algunos útiles métodos del módulo ``os`` que pueden ayudar a manipular
+A continuación algunos útiles métodos del módulo :mod:`os` que pueden ayudar a manipular
 archivos y carpeta en su programa Python:
 
 *Crear una nueva carpeta*
@@ -323,7 +322,7 @@ Módulo csv
 ..........
 
 A continuación se presenta una práctica más real de implementar el uso del módulo
-integrado en Python llamado `csv`_, el cual se implementa para operaciones de archivos
+integrado en Python llamado :mod:`csv`, el cual se implementa para operaciones de archivos
 ``.csv``:
 
 .. literalinclude:: ../../recursos/leccion7/csv/main.py
@@ -420,7 +419,7 @@ integrado en Python llamado `csv`_, el cual se implementa para operaciones de ar
     cambios realizados.
 
 Así de esta forma puede ver un ejemplo práctico de como manipular un archivo ``.csv`` con
-el módulo `csv`_.
+el módulo :mod:`csv`.
 
 
 ----
@@ -532,5 +531,4 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 ..
   .. disqus::
 
-.. _`csv`: https://docs.python.org/es/3.11/library/csv.html#module-csv
 .. _`pandas`: https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#io-read-csv-table

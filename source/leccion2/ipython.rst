@@ -109,7 +109,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
 Entonces presione la tecla :keys:`q` para salir de la ayuda de la función ``dir()``.
 
-De nuevo realice la importación de la :ref:`librería del estándar Python <python_libreria_estandar>` llamada ``os``.
+De nuevo realice la importación de la :ref:`librería del estándar Python <python_libreria_estandar>` llamada :mod:`os`.
 
 .. code-block:: pycon
 
@@ -117,7 +117,7 @@ De nuevo realice la importación de la :ref:`librería del estándar Python <pyt
 
 
 También consultar los detalles acerca del 'objeto' para esto use como ejemplo
-la librería ``os`` ejecutando el siguiente comando:
+el módulo :mod:`os` ejecutando el siguiente comando:
 
 .. code-block:: pycon
 
@@ -155,7 +155,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     (e.g., split and join).
 
 
-Escriba la librería ``os.`` y luego escribe dos **underscore** y presione *dos
+Escriba el módulo ``os.`` y luego escribe dos **underscore** y presione *dos
 veces la tecla tabular* :keys:`Tab` para usar la completado automático del interprete al
 `estilo de completación de lineas de comandos`_ en el shell UNIX/Linux para
 ayudar a la introspección del lenguaje y sus librerías.
@@ -183,7 +183,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
     Out[4]: '/usr/lib/python3.11/os.py'
 
-También puede consultar la documentación de la librería ``os`` de la
+También puede consultar la documentación del módulo :mod:`os` de la
 siguiente forma:
 
 .. code-block:: pycon
@@ -232,7 +232,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     Out[6]: "os"
 
 
-Y otra forma de consultar la documentación de la librería ``os`` es
+Y otra forma de consultar la documentación del módulo :mod:`os` es
 ejecutando el siguiente comando:
 
 .. code-block:: pycon
@@ -280,7 +280,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
         (e.g., split and join).
     :
 
-Entonces presione la tecla :keys:`q` para salir de la ayuda del módulo ``os``.
+Entonces presione la tecla :keys:`q` para salir de la ayuda del módulo :mod:`os`.
 
 Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 

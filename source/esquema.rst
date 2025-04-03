@@ -125,7 +125,7 @@ Lección 10 - Uso prácticos de la librería estándar
 **Descripción:** Comprender el uso de los módulos incorporados en la :ref:`librería estándar <python_libreria_estandar>`
 de Python.
 
-**Práctica:** Creación e uso de los módulos ``datetime``, ``locale``, ``email``, ``json``, de la
+**Práctica:** Creación e uso de los módulos :mod:`datetime`, :mod:`locale`, :mod:`email`, :mod:`json`, de la
 :ref:`librería estándar <python_libreria_estandar>` explorando el resultado en un paquete Python en el sistema de
 archivos.
 

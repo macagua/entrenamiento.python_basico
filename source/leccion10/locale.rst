@@ -6,15 +6,15 @@ Módulo locale
 .. note::
     **Propósito:** Formateo según la configuración regional, como servicios de internacionalización
 
-El módulo `locale`_ abre el acceso a la base de datos y la funcionalidad de `POSIX locale`_.
+El módulo :mod:`locale` abre el acceso a la base de datos y la funcionalidad de `POSIX locale`_.
 El mecanismo `POSIX locale`_ permite a los programadores tratar ciertos problemas culturales
 en una aplicación, sin requerir que el programador conozca todos los detalles de cada país
 donde se ejecuta el software.
 
-El módulo ``locale`` se implementa en la parte superior del módulo ``_locale``, que a su vez
+El módulo :mod:`locale` se implementa en la parte superior del módulo ``_locale``, que a su vez
 utiliza una implementación de configuración regional ANSI C si está disponible.
 
-Uso del módulo ``locale``:
+Uso del módulo :mod:`locale`:
 
 
 .. literalinclude:: ../../recursos/leccion10/locales.py
@@ -28,7 +28,7 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
     miércoles, 03. diciembre 1980 12:00am
 
-Jugando con el módulo ``locale`` en el interprete :ref:`ipython <python_modulo_ipython>`:
+Jugando con el módulo :mod:`locale` en el interprete :ref:`ipython <python_modulo_ipython>`:
 
 .. code-block:: pycon
 
@@ -245,5 +245,4 @@ Jugando con el módulo ``locale`` en el interprete :ref:`ipython <python_modulo_
 ..
   .. disqus::
 
-.. _`locale`: https://docs.python.org/es/3.11/library/locale.html
 .. _`POSIX locale`: https://es.wikipedia.org/wiki/Configuraci%C3%B3n_regional
