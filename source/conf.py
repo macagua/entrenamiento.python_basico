@@ -588,6 +588,10 @@ intersphinx_mapping = {
         "https://entrenamiento-python-avanzado.readthedocs.io/es/latest/",
         None,
     ),
+    "entrenamiento-frameworks-web-python": (
+        "https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/",
+        None,
+    ),
     "entrenamiento-data-scientist-python": (
         "https://entrenamiento-data-scientist-python.readthedocs.io/",
         None,
