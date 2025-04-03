@@ -447,29 +447,31 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
     Usted puede descargar el código usado en esta sección haciendo clic en los
     siguientes enlaces:
 
+    - :download:`funcion_ipdb.py <../../recursos/leccion6/funcion_ipdb.py>`.
+
     - :download:`index_error.py <../../recursos/leccion6/index_error.py>`.
 
     - :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
 
-    Adicional se incluye otro código de ejemplo muy simple
-    :download:`funcion_ipdb.py <../../recursos/leccion6/funcion_ipdb.py>`
-    usando la función ``set_trace()`` del módulo ``ipdb``.
-
 
 .. tip::
-    Para ejecutar el código :file:`index_error.py`, :file:`wiener_filtering.py`
-    y :file:`funcion_ipdb.py`, abra una consola de comando, acceda al directorio
+    Para ejecutar el código :file:`funcion_ipdb.py`, :file:`index_error.py`
+    y :file:`wiener_filtering.py`, abra una consola de comando, acceda al directorio
     donde se encuentra ambos programas:
 
     .. code-block:: console
       :class: no-copy
 
       depuracion/
+      ├── funcion_ipdb.py
       ├── index_error.py
-      ├── wiener_filtering.py
-      └── funcion_ipdb.py
+      └── wiener_filtering.py
 
     Si tiene la estructura de archivo previa, entonces ejecute por separado cada comando:
+
+    .. code-block:: console
+
+        python3 funcion_ipdb.py
 
     .. code-block:: console
 
@@ -478,10 +480,6 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
     .. code-block:: console
 
         python3 -m ipdb wiener_filtering.py
-
-    .. code-block:: console
-
-        python3 funcion_ipdb.py
 
 
 ----

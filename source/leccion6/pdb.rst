@@ -6,8 +6,8 @@ Módulo pdb
 En este tutorial se exploran herramientas que ayudan a entender tu
 código: depuración para encontrar y corregir *bugs* (errores).
 
-El depurador Python, `pdb <https://docs.python.org/es/3.11/library/pdb.html>`_,
-te permite inspeccionar tu código de forma interactiva.
+El depurador Python, :mod:`pdb`, te permite inspeccionar tu código
+de forma interactiva.
 
 Te permite:
 
@@ -459,29 +459,31 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
     Usted puede descargar el código usado en esta sección haciendo clic en los
     siguientes enlaces:
 
+    - :download:`funcion_a_depurar.py <../../recursos/leccion6/funcion_a_depurar.py>`.
+
     - :download:`index_error.py <../../recursos/leccion6/index_error.py>`.
 
     - :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
 
-    Adicional se incluye otro código de ejemplo muy simple
-    :download:`funcion_a_depurar.py <../../recursos/leccion6/funcion_a_depurar.py>`
-    usando la función ``set_trace()`` del módulo ``pdb``.
-
 
 .. tip::
-    Para ejecutar el código :file:`index_error.py`, :file:`wiener_filtering.py`
-    y :file:`funcion_a_depurar.py`, abra una consola de comando, acceda al directorio
+    Para ejecutar el código :file:`funcion_a_depurar.py`, :file:`index_error.py`
+    y :file:`wiener_filtering.py`, abra una consola de comando, acceda al directorio
     donde se encuentra ambos programas:
 
     .. code-block:: console
       :class: no-copy
 
       depuracion/
+      ├── funcion_a_depurar.py
       ├── index_error.py
-      ├── wiener_filtering.py
-      └── funcion_a_depurar.py
+      └── wiener_filtering.py
 
     Si tiene la estructura de archivo previa, entonces ejecute por separado cada comando:
+
+    .. code-block:: console
+
+        python3 funcion_a_depurar.py
 
     .. code-block:: console
 
@@ -490,10 +492,6 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
     .. code-block:: console
 
         python3 -m pdb wiener_filtering.py
-
-    .. code-block:: console
-
-        python3 funcion_a_depurar.py
 
 
 ----
