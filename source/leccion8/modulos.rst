@@ -102,9 +102,10 @@ la secuencia siguiente:
 #. Si todas las anteriores fallan, Python busca la ruta predeterminada. En UNIX/Linux,
    la ruta predeterminada normalmente esta ``/usr/local/lib/python/``.
 
-El ruta de búsqueda de módulo es almacenado en el módulo de system ``sys`` como
-la variable ``sys.path``. La variable ``sys.path`` contiene el directorio actual,
-``PYTHONPATH``, y las predeterminadas dependencia de instalación.
+La ruta de búsqueda de módulo es almacenado en el módulo de Python :mod:`sys`, como
+en ``sys.path`` la cual es una lista de cadenas que especifica la ruta de búsqueda de
+los módulos. ``sys.path`` contiene el directorio actual, ``PYTHONPATH``, y las
+predeterminadas dependencia de instalación.
 
 
 .. _python_variable_entorno_path:
@@ -194,11 +195,12 @@ sentencia ``global``, se soluciona el problema.
     Para ejecutar el código :file:`utilidades.py` y :file:`calculo_factura_pipo.py`,
     abra una consola de comando, acceda al directorio donde se encuentra ambos programas:
 
-    ::
+    .. code-block:: console
+      :class: no-copy
 
-        leccion8/
-        ├── utilidades.py
-        └── calculo_factura_pipo.py
+      modulos/
+      ├── utilidades.py
+      └── calculo_factura_pipo.py
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 
