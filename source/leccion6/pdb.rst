@@ -45,9 +45,12 @@ Formas de lanzar el depurador:
 Postmortem
 ~~~~~~~~~~
 
-**Situación**: Estás trabajando en el interprete :ref:`ipython <python_modulo_ipython>` y obtienes un error (:ref:`traceback <python_modulo_traceback>`).
+**Situación**: Estás trabajando en el interprete :ref:`IPython <python_modulo_ipython>`
+y obtienes un error (:ref:`traceback <python_modulo_traceback>`).
 
-En este caso esta depurando el archivo :download:`index_error.py <../../recursos/leccion6/index_error.py>`. Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`. Escribe ``%debug`` y entrarás en el depurador.
+En este caso esta depurando el archivo :download:`index_error.py <../../recursos/leccion6/index_error.py>`.
+Cuando lo ejecutes verás como se lanza una excepción :ref:`IndexError <python_exception_indexerror>`.
+Escribe ``%debug`` y entrarás en el depurador.
 
 .. code-block:: pycon
 
@@ -94,12 +97,11 @@ En este caso esta depurando el archivo :download:`index_error.py <../../recursos
 
     In [3]:
 
-.. topic:: Depuración post-mortem sin ipython
+.. topic:: Depuración post-mortem sin IPython
 
-   En algunas situaciones no podrás usar IPython, por ejemplo para depurar
-   un `script` que ha sido llamado desde la línea de comandos. En este caso,
-   puedes ejecutar el `script` de la siguiente forma
-   :command:`python3 -m pdb script.py`:
+   En algunas situaciones no podrás usar :ref:`IPython <python_modulo_ipython>`, por ejemplo
+   para depurar un `script` que ha sido llamado desde la línea de comandos. En este caso,
+   puedes ejecutar el `script` de la siguiente forma :command:`python3 -m pdb script.py`:
 
    .. sourcecode:: console
 
@@ -153,7 +155,7 @@ está haciendo correctamente.
     NOTE: Enter 'c' at the ipdb>  prompt to start your script.
     > <string>(1)<module>()
 
-* Coloca un *breakpoint* en la línea 34 usando ``b 34``:
+* Coloca un ``breakpoint`` en la línea 34 usando ``b 34``:
 
   .. code-block:: pycon
 
@@ -166,7 +168,7 @@ está haciendo correctamente.
     ipdb> b 34
     Breakpoint 2 at /home/macagua/python/entrenamiento/wiener_filtering.py:34
 
-* Continua la ejecución hasta el siguiente `breakpoint` con ``c(ont(inue))``:
+* Continua la ejecución hasta el siguiente ``breakpoint`` con ``c(ont(inue))``:
 
   .. code-block:: pycon
 
@@ -216,7 +218,7 @@ está haciendo correctamente.
     ipdb> print(l_var.min())
     0
 
-*Oh dear*, solo ve entero y variación 0. Aquí está nuestro error,
+*Oh estimado(a)*, solo ve entero y variación 0. Aquí está nuestro error,
 estamos haciendo aritmética con enteros.
 
 .. topic:: Lanzando excepciones en errores numéricos
@@ -267,24 +269,6 @@ estamos haciendo aritmética con enteros.
 Otras formas de comenzar una depuración
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* **Lanzar una excepción "break point" a lo pobre**
-
-  Si encuentras tedioso el tener que anotar el número de línea para colocar
-  un *break point*, puedes lanzar una excepción en el punto que quieres
-  inspeccionar y usar la 'magia' ``%debug`` del interprete :ref:`ipython <python_modulo_ipython>`. Destacar que en este
-  caso no puedes moverte por el código y continuar después la ejecución.
-
-* **Depurando fallos de pruebas usando nosetests**
-
-  Puede ejecutar ``nosetests --pdb`` para saltar a la depuración
-  post-mortem de excepciones y ``nosetests --pdb-failure`` para inspeccionar
-  los fallos de pruebas usando el depurador.
-
-  Además, puedes usar la interfaz IPython para el depurador en **nose**
-  usando el plugin  de **nose**
-  `ipdbplugin <https://pypi.org/project/ipdbplugin>`_. Puede, entonces,
-  pasar las opciones ``--ipdb`` y ``--ipdb-failure`` a los *nosetests*.
-
 * **Llamando explícitamente al depurador**
 
   Inserta la siguiente línea donde quieres que salte el depurador:
@@ -292,16 +276,40 @@ Otras formas de comenzar una depuración
   .. code-block:: python
     :linenos:
 
-      import pdb
+    import pdb
 
-      pdb.set_trace()
+    pdb.set_trace()
 
+* **Lanzar una excepción "break point" a lo pobre**
 
-.. warning::
+  Si encuentras tedioso el tener que anotar el número de línea para colocar
+  un *break point*, puedes lanzar una excepción en el punto que quieres
+  inspeccionar y usar la *'magia'* ``%debug`` del interprete :ref:`IPython <python_modulo_ipython>`.
+  Destacar que en este caso no puedes moverte por el código y continuar después la ejecución.
 
-    Cuando se ejecutan ``nosetests``, se captura la salida y parecerá
-    que el depurador no está funcionando. Para evitar esto simplemente ejecuta
-    los ``nosetests`` con la etiqueta ``-s``.
+* **Depurando fallos de pruebas usando pytest**
+
+  Puede ejecutar pruebas usando `pytest <https://docs.pytest.org/en/stable/>`_ con el comando
+  :command:`pytest --pdb` este invocará al depurador de Python en cada fallo (o una excepción
+  :ref:`KeyboardInterrupt <python_exception_keyboardinterrupterror>` se dispara al momento que
+  el programador presiona el comando :keys:`Ctrl+C` o :keys:`Ctrl+Z` en su teclado, cuando está
+  presente en una línea de comandos (en Windows) o en una terminal(en iOS/Linux)). Ademas con el
+  comando :command:`pytest --trace`  puedes permite entrar en el prompt :ref:`pdb <python_modulo_pdb>`
+  inmediatamente al inicio de cada prueba.
+
+* **Depurando interactivamente en la consola**
+
+  `ipdb <https://pypi.org/project/ipdb/>`_ exporta funciones para acceder al depurador
+  :ref:`IPython <python_modulo_ipython>`, que cuenta con completado de tabulación, resaltado
+  de sintaxis, mejores trazas, mejor introspección con la misma interfaz que el módulo ``pdb``.
+  Inserta la siguiente línea donde quieres que salte el depurador ``ipdb``:
+
+  .. code-block:: python
+    :linenos:
+
+    import ipdb
+
+    ipdb.set_trace()
 
 
 .. topic:: Depuradores gráficos y alternativas
@@ -313,8 +321,6 @@ Otras formas de comenzar una depuración
     * De forma alternativa, `pudb <https://pypi.org/project/pudb>`_ es un
       buen depurador semi-gráfico con una interfaz de texto en la consola.
 
-    * También, estaría bien echarle un ojo al proyecto
-      `pydbgr <https://pypi.org/project/pydbgr/>`_
 
 Comandos del depurador e interacciones
 ......................................

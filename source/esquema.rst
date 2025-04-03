@@ -72,12 +72,12 @@ explorar el resultado desde el interprete Python.
 
 .. _esquema_entrenamiento_leccion6:
 
-Lección 6 - Introspección a la depuración con pdb
--------------------------------------------------
+Lección 6 - Introspección a la depuración de software
+-----------------------------------------------------
 
-**Descripción:** Conocer las capacidades de depuración que ofrece el lenguaje.
+**Descripción:** Conocer las capacidades de depuración de software que ofrece el lenguaje.
 
-**Práctica:** Uso de la herramienta ``pdb`` y explorar el resultado en un módulo.
+**Práctica:** Uso de uso del módulo ``pdb`` y explorar el resultado en módulos a depurar.
 
 
 .. _esquema_entrenamiento_leccion7:

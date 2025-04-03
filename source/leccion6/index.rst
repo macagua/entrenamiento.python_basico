@@ -1,9 +1,10 @@
 .. _python_leccion6:
 
-Introspección a la depuración con pdb
-=====================================
+Introspección a la depuración de software
+=========================================
 
-En Python puede realizar depuración de programas por defecto usando el módulo ``pdb``.
+En Python puede realizar de depuración de software usando usando el módulo :ref:`pdb <python_modulo_pdb>`
+incluida en la :ref:`librería estándar <python_libreria_estandar>` Python.
 
 En esta lección se describen como hacer depuración a programas en el lenguaje Python,
 mostrando ejemplos prácticos y útiles.
@@ -13,7 +14,7 @@ A continuación el temario de esta lección:
 .. toctree::
    :maxdepth: 2
 
-   depuracion
+   pdb
 
 
 ----
