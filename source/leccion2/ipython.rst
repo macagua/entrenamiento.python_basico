@@ -69,9 +69,9 @@ Sustituya el comando :command:`python3` por el comando :command:`ipython3` de la
       .. code-block:: console
           :class: no-copy
 
-          Python 3.11.5 (default, Sep 11 2023, 13:26:23)
+          Python 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
           Type 'copyright', 'credits' or 'license' for more information
-          IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
+          IPython 8.10.0 -- An enhanced Interactive Python. Type '?' for help.
 
               In [1]:
 
