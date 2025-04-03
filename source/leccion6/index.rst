@@ -15,6 +15,7 @@ A continuación el temario de esta lección:
    :maxdepth: 2
 
    pdb
+   ipdb
 
 
 ----

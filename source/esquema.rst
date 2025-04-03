@@ -77,7 +77,7 @@ Lección 6 - Introspección a la depuración de software
 
 **Descripción:** Conocer las capacidades de depuración de software que ofrece el lenguaje.
 
-**Práctica:** Uso de uso del módulo ``pdb`` y explorar el resultado en módulos a depurar.
+**Práctica:** Uso de uso de los módulos :ref:`pdb <python_modulo_pdb>` y :ref:`ipdb <python_modulo_ipdb>` explorar el resultado en módulos a depurar.
 
 
 .. _esquema_entrenamiento_leccion7:

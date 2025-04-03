@@ -1,32 +1,49 @@
-.. _python_modulo_pdb:
+.. _python_modulo_ipdb:
 
-Módulo pdb
-----------
+Módulo ipdb
+-----------
 
-En este tutorial se exploran herramientas que ayudan a entender tu
-código: depuración para encontrar y corregir *bugs* (errores).
+Depurando interactivamente en la consola
 
-El depurador Python, `pdb <https://docs.python.org/es/3.11/library/pdb.html>`_,
-te permite inspeccionar tu código de forma interactiva.
+El módulo `ipdb <https://pypi.org/project/ipdb>`_ exporta funciones para acceder al :ref:`IPython <python_modulo_ipython>`,
+que cuenta con completado de tabulación, resaltado de sintaxis, mejores trazas, mejor introspección con la misma interfaz
+que el módulo :ref:`pdb <python_modulo_pdb>` para depurar tu código fuente de forma interactiva.
 
-Te permite:
+Si necesita instalar este módulo, ejecute el siguiente comando:
 
--  Ver el código fuente.
+.. tabs::
 
--  Ir hacia arriba y hacia abajo del punto donde se ha producido
-   un error.
+   .. group-tab:: Linux
 
--  Inspeccionar valores de variables.
+      .. code-block:: console
 
--  Modificar valores de variables.
+          pip3 install ipdb
 
--  Establecer ``breakpoints`` (punto de parada del proceso).
+   .. group-tab:: Windows
 
-.. topic:: **print**
+      .. code-block:: console
 
-    Sí, las declaraciones :ref:`print <python_sent_print>` sirven como herramienta de depuración.
-    Sin embargo, para inspeccionar en tiempo de ejecución es más
-    eficiente usar el depurador.
+          pip3 install ipdb
+
+Puede probar si la instalación se realizo correctamente, ejecutando el siguiente
+comando correspondiente a tu sistema operativo:
+
+.. tabs::
+
+   .. group-tab:: Linux
+
+      .. code-block:: console
+
+          python3 -c "import ipdb ; print(ipdb.__package__)"
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          python3 -c "import ipdb ; print(ipdb.__package__)"
+
+Si muestra el nombre del paquete ``ipdb`` en la terminal, tiene correctamente
+instalada la módulo. Con esto, ya tiene todo listo para continuar.
 
 
 Invocando al depurador
@@ -39,7 +56,7 @@ Formas de lanzar el depurador:
 
 #. Lanza el módulo con el depurador.
 
-#. Llama al depurador desde dentro del módulo.
+#. Lanza al depurador desde dentro del módulo.
 
 
 Postmortem
@@ -112,38 +129,44 @@ Entonces ejecute el comando :command:`%debug` y entrarás en el depurador.
 
    En algunas situaciones no podrás usar :ref:`IPython <python_modulo_ipython>`, por ejemplo
    para depurar un `script` que ha sido llamado desde la línea de comandos. En este caso,
-   puedes ejecutar el `script` de la siguiente forma :command:`python3 -m pdb script.py`:
+   puedes ejecutar el `script` de la siguiente forma :command:`python3 -m ipdb script.py`:
 
    .. sourcecode:: console
 
-      python3 -m pdb index_error.py
+      python3 -m ipdb index_error.py
 
    Este comando anterior muestra lo siguiente:
 
    .. code-block:: pycon
 
-      > /home/macagua/python/entrenamiento/index_error.py(1)<module>()
-      -> """Small snippet to raise an IndexError."""
-      (Pdb) continue
-      Traceback (most recent call last):
-        File "/usr/lib/python3.11/pdb.py", line 1774, in main
-          pdb._run(target)
-        File "/usr/lib/python3.11/pdb.py", line 1652, in _run
-          self.run(target.code)
-        File "/usr/lib/python3.11/bdb.py", line 597, in run
-          exec(cmd, globals, locals)
-        File "<string>", line 1, in <module>
-        File "/home/macagua/python/entrenamiento/index_error.py", line 10, in <module>
-          index_error()
-        File "/home/macagua/python/entrenamiento/index_error.py", line 6, in index_error
-          print(lst[len(lst)])
-                ~~~^^^^^^^^^^
-      IndexError: list index out of range
-      Uncaught exception. Entering post mortem debugging
-      Running 'cont' or 'step' will restart the program
-      > /home/macagua/python/entrenamiento/index_error.py(6)index_error()
-      -> print(lst[len(lst)])
-      (Pdb)
+       > /home/macagua/python/entrenamiento/index_error.py(1)<module>()
+       ----> 1 """Small snippet to raise an IndexError."""
+             2
+             3
+
+       ipdb> continue
+       Traceback (most recent call last):
+          File "/usr/lib/python3.11/ipdb/__main__.py", line 318, in main
+            pdb._run(stdlib_pdb._ScriptTarget(mainpyfile))
+          File "/usr/lib/python3.11/pdb.py", line 1652, in _run
+            self.run(target.code)
+          File "/usr/lib/python3.11/bdb.py", line 597, in run
+            exec(cmd, globals, locals)
+          File "<string>", line 1, in <module>
+          File "/home/macagua/python/entrenamiento/index_error.py", line 10, in <module>
+            index_error()
+          File "/home/macagua/python/entrenamiento/index_error.py", line 6, in index_error
+            print(lst[len(lst)])
+                  ~~~^^^^^^^^^^
+          IndexError: list index out of range
+          Uncaught exception. Entering post mortem debugging
+          Running 'cont' or 'step' will restart the program
+          > /home/macagua/python/entrenamiento/index_error.py(6)index_error()
+                5     lst = list("foobar")
+          ----> 6     print(lst[len(lst)])
+                7
+
+          ipdb>
 
 De esta forma, puedes ejecutar postmortem la depuración del código del módulo.
 
@@ -165,22 +188,29 @@ está haciendo correctamente.
     *** Blank or comment
     *** Blank or comment
     *** Blank or comment
-    Breakpoint 1 at /home/macagua/python/entrenamiento/wiener_filtering.py:4
-    NOTE: Enter 'c' at the ipdb>  prompt to start your script.
-    > <string>(1)<module>()
+    NOTE: Enter 'c' at the ipdb>  prompt to continue execution.
+    > /home/macagua/python/entrenamiento/wiener_filtering.py(1)<module>()
+    ----> 1 """Wiener filtering a noisy Lena: this module is buggy"""
+          2
+          3 import numpy as np
+          4 import scipy as sp
+          5 import pylab as pl
+
 
 * Coloca un ``breakpoint`` en la línea 34 usando ``b 34``:
 
   .. code-block:: pycon
 
     ipdb> n
-    > /home/macagua/python/entrenamiento/wiener_filtering.py(4)<module>()
-          3
-    1---> 4 import numpy as np
-          5 import scipy as sp
+    > /home/macagua/python/entrenamiento/wiener_filtering.py(3)<module>()
+          1 """Wiener filtering a noisy Lena: this module is buggy"""
+          2
+    ----> 3 import numpy as np
+          4 import scipy as sp
+          5 import pylab as pl
 
     ipdb> b 34
-    Breakpoint 2 at /home/macagua/python/entrenamiento/wiener_filtering.py:34
+    Breakpoint 1 at /home/macagua/python/entrenamiento/wiener_filtering.py:34
 
 * Continua la ejecución hasta el siguiente ``breakpoint`` con ``c(ont(inue))``:
 
@@ -293,34 +323,37 @@ donde quieres que salte el depurador:
 .. code-block:: python
     :linenos:
 
-    import pdb
+    import ipdb
 
-    pdb.set_trace()
+    ipdb.set_trace()
 
 A continuación, se muestra un ejemplo del uso de la función ``set_trace()``:
 
-.. literalinclude:: ../../recursos/leccion6/funcion_a_depurar.py
+.. literalinclude:: ../../recursos/leccion6/funcion_ipdb.py
     :language: python
     :linenos:
     :lines: 1-13
 
 .. tip::
-    Para ejecutar el código fuente de esta práctica debe invocar al módulo :file:`funcion_a_depurar.py`,
-    abra una consola de comando, acceda al directorio donde se encuentra el módulo :file:`funcion_a_depurar.py`
+    Para ejecutar el código fuente de esta práctica debe invocar al módulo :file:`funcion_ipdb.py`,
+    abra una consola de comando, acceda al directorio donde se encuentra el módulo :file:`funcion_ipdb.py`
     y ejecute el siguiente comando:
 
 .. code-block:: console
 
-    python3 funcion_a_depurar.py
+    python3 funcion_ipdb.py
 
 El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
 .. code-block:: console
     :class: no-copy
 
-    > /home/macagua/python/entrenamiento/funcion_a_depurar.py(6)calculo()
-    -> if args[0]:
-    (Pdb) c
+    > /home/macagua/python/entrenamiento/funcion_ipdb.py(6)calculo()
+          5     ipdb.set_trace()
+    ----> 6     if args[0]:
+          7         print(args[0])
+
+    ipdb> c
     12
     14522590
 
@@ -340,83 +373,30 @@ Existen otras formas de comenzar una depuración, a continuación se describen:
   inspeccionar y usar la *'magia'* ``%debug`` del interprete :ref:`IPython <python_modulo_ipython>`.
   Destacar que en este caso no puedes moverte por el código y continuar después la ejecución.
 
-* **Depurando fallos de pruebas usando pytest**
 
-  Puede ejecutar pruebas usando `pytest <https://docs.pytest.org/en/stable/>`_ con el comando
-  :command:`pytest --pdb` este invocará al depurador de Python en cada fallo (o una excepción
-  :ref:`KeyboardInterrupt <python_exception_keyboardinterrupterror>` se dispara al momento que
-  el programador presiona el comando :keys:`Ctrl+C` o :keys:`Ctrl+Z` en su teclado, cuando está
-  presente en una línea de comandos (en Windows) o en una terminal(en iOS/Linux)). Ademas con el
-  comando :command:`pytest --trace`  puedes permite entrar en el prompt :ref:`pdb <python_modulo_pdb>`
-  inmediatamente al inicio de cada prueba.
+.. _python_modulo_ipdb_comandos:
 
-* **Depurando interactivamente en la consola**
-
-  Consulte el módulo :ref:`ipdb <python_modulo_ipdb>`.
-
-
-.. topic:: Depuradores gráficos y alternativas
-
-    * Quizá encuentres más conveniente usar un depurador gráfico como
-      `winpdb <https://pypi.org/project/winpdb/>`_. para inspeccionar saltas a través del
-      código e inspeccionar las variables
-
-    * De forma alternativa, `pudb <https://pypi.org/project/pudb>`_ es un
-      buen depurador semi-gráfico con una interfaz de texto en la consola.
-
-
-.. _python_modulo_pdb_comandos:
-
-Comandos del depurador
-......................
+Comandos del depurador interactivo
+..................................
 
 A continuación se muestra una tabla con los comandos más comunes
 de depuración y sus descripciones:
 
+.. tip::
+    Consulte los :ref:`comandos del pdb <python_modulo_pdb_comandos>`.
+
 ============================= ======================================================================
-``EOF``                       Maneja la recepción de EOF como un comando
-``alias <nombre> <comando>``  Crea un alias para el comando
-``a``, ``args``               Imprime la lista de argumentos de la función actual
-``b``, ``break``              Establece un *breakpoint* en la línea actual
-``bt``                        Muestra el *call stack*
-``cl``, ``clear``             Limpia todos los *breakpoints*
-``cl <n>``                    Limpia el *breakpoint* número ``n``
-``!command``                  Ejecuta el comando **Python** proporcionado (en oposición a comandos ``pdb``)
-``commands <n>``              Muestra los comandos del *breakpoint* número ``n``
-``commands <n> <comando>``    Añade un comando al *breakpoint* número ``n``
-``condition <n> <c>``         Establece la condición ``c`` para el *breakpoint* número ``n``
-``c``, ``cont``, ``continue`` Continua la ejecución hasta el siguiente *breakpoint*
-``debug``                     Introduce un depurador recursivo que recorre el argumento de código (que es una expresión o sentencia arbitraria a ejecutar en el entorno actual).
-``disable <n>``               Desactiva el *breakpoint* número ``n``
-``display <objeto>``          Muestra el valor del objeto dado
-``d``, ``down``               Paso abajo de la llamada a la pila (*call stack*)
-``enable <n>``                Activa el *breakpoint* número ``n``
-``exec``                      Ejecuta la sentencia (de una línea) en el contexto del marco de pila actual
-``exit``                      Salir del depurador
-``h``, ``help``               Muestra la ayuda de los comandos
-``h <command>``               Muestra la ayuda del comando ``command``
-``ignore <n> <c>``            Ignora el *breakpoint* número ``n`` si la condición ``c`` es verdadera
-``interact``                  Ejecuta el comando ``pdb`` en el contexto de la función actual
-``j``, ``jump``               Salta a la línea especificada (no se puede usar en el contexto de una función)
-``l``, ``list``               Lista el código en la posición actual
-``ll``, ``longlist``          Lista el código en la posición actual (más líneas)
-``n``, ``next``               Ejecuta la siguiente línea (no va hacia abajo en funciones nuevas)
-``p``, ``print``              Imprime el valor de una variable
-``pp``                        Imprime el valor de una variable (con formato)
-``q``, ``quit``               Salir del depurador
-``restart``                   Reiniciar el programa python depurado
-``r``, ``return``             Regresa de la función actual
-``run``                       Iniciar el programa python depurado
-``rv``, ``retval``            Imprime el valor de retorno del último retorno de una función
-``source``                    Intenta obtener el código fuente del objeto dado y mostrarlo
-``s``, ``step``               Ejecuta la siguiente línea (va hacia abajo en las nuevas funciones)
-``tbreak``                    Establece un *breakpoint* temporal
-``unalias <nombre>``          Elimina el alias
-``undisplay <n>``             Elimina el *display* número ``n``
-``unt``, ``until``            Sin argumento, continúa la ejecución hasta alcanzar la línea con un número mayor que el actual.
-``u``, ``up``                 Paso arriba de la llamada a la pila (*call stack*)
-``whatis <objeto>``           Muestra el tipo del objeto dado
-``w``, ``where``              Muestra la traza de la pila actual
+``exceptions``                Listar o modificar la excepción actual en una cadena de excepciones
+``pdef``                      Imprime la firma de llamada de cualquier objeto invocable.
+``pdoc``                      Imprime la cadena de documentación de un objeto.
+``pfile``                     Imprime el archivo donde se define un objeto.
+``pinfo``                     Proporciona información detallada sobre un objeto.
+``pinfo2``                    Proporciona información extra detallada sobre un objeto.
+``psource``                   Imprime el código fuente de un objeto.
+``retval``, ``rv``            Imprime el valor de retorno de la última función llamada.
+``s(tep)``                    Ejecuta la línea actual, deteniéndose en la primera ocasión posible.
+``skip_hidden``               Cambia si se deben omitir o no los marcos con el atributo ``__tracebackhide__``.
+``skip_predicates``           La opción global de omitir (o no) los fotogramas ocultos se establece con ``skip_hidden``
 ============================= ======================================================================
 
 .. warning:: **Los comandos de depuración no son código Python**
@@ -427,30 +407,38 @@ de depuración y sus descripciones:
     variables cuando este tecleando código en el depurador**.
 
 
-.. _python_modulo_pdb_ayuda:
+.. _python_modulo_ipdb_ayuda:
 
-Ayuda del depurador
-...................
+Ayuda del depurador interactivo
+...............................
 
 Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
 
 .. sourcecode:: pycon
 
-    (Pdb) help
+    ipdb> help
 
     Documented commands (type help <topic>):
     ========================================
-    EOF    c          d        h         list      q        rv       undisplay
-    a      cl         debug    help      ll        quit     s        unt
-    alias  clear      disable  ignore    longlist  r        source   until
-    args   commands   display  interact  n         restart  step     up
-    b      condition  down     j         next      return   tbreak   w
-    break  cont       enable   jump      p         retval   u        whatis
-    bt     continue   exit     l         pp        run      unalias  where
+    EOF    commands   enable      ll        pp       s                until
+    a      condition  exceptions  longlist  psource  skip_hidden      up
+    alias  cont       exit        n         q        skip_predicates  w
+    args   context    h           next      quit     source           whatis
+    b      continue   help        p         r        step             where
+    break  d          ignore      pdef      restart  tbreak
+    bt     debug      j           pdoc      return   u
+    c      disable    jump        pfile     retval   unalias
+    cl     display    l           pinfo     run      undisplay
+    clear  down       list        pinfo2    rv       unt
 
     Miscellaneous help topics:
     ==========================
     exec  pdb
+
+    Undocumented commands:
+    ======================
+    interact
+
 
 ----
 
@@ -464,13 +452,13 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
     - :download:`wiener_filtering.py <../../recursos/leccion6/wiener_filtering.py>`.
 
     Adicional se incluye otro código de ejemplo muy simple
-    :download:`funcion_a_depurar.py <../../recursos/leccion6/funcion_a_depurar.py>`
-    usando la función ``set_trace()`` del módulo ``pdb``.
+    :download:`funcion_ipdb.py <../../recursos/leccion6/funcion_ipdb.py>`
+    usando la función ``set_trace()`` del módulo ``ipdb``.
 
 
 .. tip::
     Para ejecutar el código :file:`index_error.py`, :file:`wiener_filtering.py`
-    y :file:`funcion_a_depurar.py`, abra una consola de comando, acceda al directorio
+    y :file:`funcion_ipdb.py`, abra una consola de comando, acceda al directorio
     donde se encuentra ambos programas:
 
     .. code-block:: console
@@ -479,21 +467,21 @@ Teclea ``h`` o ``help`` para acceder a la ayuda interactiva:
       depuracion/
       ├── index_error.py
       ├── wiener_filtering.py
-      └── funcion_a_depurar.py
+      └── funcion_ipdb.py
 
     Si tiene la estructura de archivo previa, entonces ejecute por separado cada comando:
 
     .. code-block:: console
 
-        pdb3 index_error.py
+        ipdb3 index_error.py
 
     .. code-block:: console
 
-        python3 -m pdb wiener_filtering.py
+        python3 -m ipdb wiener_filtering.py
 
     .. code-block:: console
 
-        python3 funcion_a_depurar.py
+        python3 funcion_ipdb.py
 
 
 ----
