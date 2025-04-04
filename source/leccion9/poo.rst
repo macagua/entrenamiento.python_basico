@@ -560,8 +560,10 @@ permite corroborar si un objeto es instancia de una clase.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion9/poo.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`poo.py <../../recursos/leccion9/poo.py>`.
 
 
 .. tip::

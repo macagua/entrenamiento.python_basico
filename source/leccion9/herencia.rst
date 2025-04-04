@@ -156,8 +156,11 @@ permite corroborar si un objeto es instancia de una clase.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
-    siguientes enlaces: :download:`clases.py <../../recursos/leccion9/clases.py>`
-    y :download:`herencia_simple.py <../../recursos/leccion9/herencia_simple.py>`.
+    siguientes enlaces:
+
+    - :download:`clases.py <../../recursos/leccion9/clases.py>`.
+
+    - :download:`herencia_simple.py <../../recursos/leccion9/herencia_simple.py>`.
 
 
 .. tip::
@@ -237,8 +240,11 @@ a ``Supervisor`` primero por que ese aparece primero de izquierda a derecha.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
-    siguientes enlaces: :download:`clases.py <../../recursos/leccion9/clases.py>`
-    y :download:`herencia_multiple.py <../../recursos/leccion9/herencia_multiple.py>`.
+    siguientes enlaces:
+
+    - :download:`clases.py <../../recursos/leccion9/clases.py>`.
+
+    - :download:`herencia_multiple.py <../../recursos/leccion9/herencia_multiple.py>`.
 
 
 .. tip::

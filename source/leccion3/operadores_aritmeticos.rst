@@ -250,7 +250,6 @@ por el operador del lado derecho y devuelve el resto.
     Usted puede descargar el código usado en esta sección haciendo clic en el
     siguiente enlace:
 
-
     - :download:`operadores_aritmeticos.py <../../recursos/leccion3/operadores_aritmeticos.py>`.
 
 

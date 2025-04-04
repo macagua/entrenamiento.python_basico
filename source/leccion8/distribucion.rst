@@ -926,7 +926,9 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
 
 .. important::
     Usted puede descargar el código usado en esta sección, haciendo clic en el
-    siguiente enlace: :download:`distribucion.zip <../../recursos/leccion8/distribucion.zip>`.
+    siguiente enlace:
+
+    - :download:`distribucion.zip <../../recursos/leccion8/distribucion.zip>`.
 
 
 .. tip::

@@ -463,7 +463,6 @@ precaución.
     Usted puede descargar el código usado en esta sección haciendo clic en los
     siguientes enlaces:
 
-
     - :download:`constantes.py <../../recursos/leccion3/constantes.py>`.
 
     - :download:`main.py <../../recursos/leccion3/main.py>`.

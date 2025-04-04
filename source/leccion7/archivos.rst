@@ -223,8 +223,8 @@ operaciones de lectura y escritura en archivos``.csv``:
     :lines: 1-37
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic en el
-    siguiente enlace:
+    Usted puede descargar el código usado en esta sección haciendo clic en los
+    siguientes enlaces:
 
     - :download:`colesterol.csv <../../recursos/leccion7/txt/colesterol.csv>`.
 
@@ -331,8 +331,8 @@ integrado en Python llamado :mod:`csv`, el cual se implementa para operaciones d
     :lines: 1-45
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic en el
-    siguiente enlace:
+    Usted puede descargar el código usado en esta sección haciendo clic en los
+    siguientes enlaces:
 
     - :download:`colesterol.csv <../../recursos/leccion7/csv/colesterol.csv>`.
 
@@ -438,8 +438,8 @@ externa  en Python llamada `pandas`_, el cual se implementa para operaciones de 
     :lines: 1-24
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic en el
-    siguiente enlace:
+    Usted puede descargar el código usado en esta sección haciendo clic en los
+    siguientes enlaces:
 
     - :download:`colesterol.csv <../../recursos/leccion7/pandas/colesterol.csv>`.
 
@@ -503,8 +503,10 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion7/archivo.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`archivo.py <../../recursos/leccion7/archivo.py>`.
 
 
 .. tip::
