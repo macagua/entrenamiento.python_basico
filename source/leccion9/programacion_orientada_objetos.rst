@@ -581,6 +581,14 @@ permite corroborar si un objeto es instancia de una clase.
         python3 poo.py
 
 
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    ::
+
+        Hola, mucho gusto, mi nombre es 'Leonardo Caballero',
+        mi cédula de identidad es 'V-26938401', y mi sexo es 'M'.
+
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lecturas_extras_leccion9>`
