@@ -227,12 +227,10 @@ Usted puede probar el código anterior, si lo transcribe en el
     'Caballero'
     >>> macagua.sexo
     'M'
-    >>> print("El objeto de la clase {}, {}.".format(macagua.__name__, macagua.__doc__))
+    >>> print(f"El objeto de la clase {macagua.__name__}, {macagua.__doc__}.")
     El objeto de la clase Persona, Clase que representa una Persona.
     >>> print(
-    ...     "Hola, mucho gusto, mi nombre es '{} {}', \nmi cédula de identidad es '{}', y mi sexo es '{}'.".format(
-    ...         macagua.nombre, macagua.apellido, macagua.cedula, macagua.sexo
-    ...     )
+    ...     f"Hola, mucho gusto, mi nombre es '{macagua.nombre} {macagua.apellido}', \nmi cédula de identidad es '{macagua.cedula}', y mi sexo es '{macagua.sexo}'."
     ... )
     Hola, mucho gusto, mi nombre es 'Leonardo Caballero',
     mi cédula de identidad es 'V-13458796', y mi sexo es 'M'.
@@ -338,7 +336,7 @@ Analizar la estructura de la clase el cual representa a una Persona:
     <class 'method'>
     >>> Persona().hablar.__doc__
     'Mostrar mensaje de saludo de Persona'
-    >>> Persona().hablar("Hola, soy la clase {0}.".format(macagua.__class__.__name__))
+    >>> Persona().hablar(f"Hola, soy la clase {macagua.__class__.__name__}.")
     'Hola, soy la clase Persona.'
     >>>
 
