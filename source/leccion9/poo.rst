@@ -299,7 +299,7 @@ Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``,
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
     :linenos:
-    :lines: 1-16
+    :lines: 1-18
 
 La única diferencia sintáctica entre la definición de un método y la definición de una
 función es que el primer parámetro del método por convención debe ser el nombre ``self``.
