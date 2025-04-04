@@ -15,6 +15,7 @@ A continuación el temario de esta lección:
 .. toctree::
    :maxdepth: 2
 
+   programacion_modular
    modulos
    paquetes
    distribucion
