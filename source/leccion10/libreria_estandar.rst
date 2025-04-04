@@ -47,7 +47,7 @@ La `librería estándar`_ Python 3 incluye los siguientes módulos y librerías:
 
 - Program Frameworks, incluye las librerías :mod:`cmd` y :mod:`shlex`.
 
-- Interfaces gráficas de usuario con Tk, incluye 7 librerías, como :mod:`tkinter`, :mod:`IDLE` y otros.
+- Interfaces gráficas de usuario con Tk, incluye 7 librerías, como :mod:`tkinter`, `IDLE`_ y otros.
 
 - Herramientas de desarrollo, incluye 6 librerías, como :mod:`unittest`, :mod:`test` y otros.
 
@@ -93,3 +93,4 @@ La `librería estándar`_ Python 3 incluye los siguientes módulos y librerías:
   .. disqus::
 
 .. _`librería estándar`: https://docs.python.org/es/3.11/library/index.html
+.. _`IDLE`: https://docs.python.org/es/3.11/library/idle.html#idle
