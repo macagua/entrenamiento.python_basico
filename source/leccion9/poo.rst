@@ -246,7 +246,7 @@ especiales.
     >>> macagua.__name__
     'Persona'
 
-- __doc__, contiene la documentación de un módulo, una clase, o método especifico,
+- ``__doc__``, contiene la documentación de un módulo, una clase, o método especifico,
   escrita en el formato :ref:`docstrings <python_str_docstrings>`.
 
 .. code-block:: pycon
@@ -283,8 +283,8 @@ La ejecución de un método puede conducir a cambiar el estado del objeto.
 
 Se definen de la misma forma que las funciones normales pero deben declararse dentro
 de la clase y su primer argumento siempre referencia a la instancia que la llama, de
-esta forma se afirma que los métodos son
-:ref:`funciones <python_funciones>`, adjuntadas a :ref:`objectos <python_objetos>`.
+esta forma se afirma que los métodos son :ref:`funciones <python_funciones>`,
+adjuntadas a :ref:`objectos <python_objetos>`.
 
 .. note::
     Usted puede encontrar ejemplos en las funciones de
