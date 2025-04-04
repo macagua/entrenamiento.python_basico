@@ -189,7 +189,7 @@ html_theme_options = {
     },
     "site_url": "https://entrenamiento-python-basico.readthedocs.io/es/3/",
     "repo_url": "https://github.com/macagua/entrenamiento.python_basico",
-    "repo_name": "entrenamiento.frameworks_web_python",
+    "repo_name": "entrenamiento.python_basico",
     "edit_uri": "edit/3/source",
     "globaltoc_collapse": True,
     # BEGIN: Features
