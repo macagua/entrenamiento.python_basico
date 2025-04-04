@@ -16,7 +16,7 @@ El código Python para un módulo nombrado ``funciones`` normalmente reside un
 archivo llamado :file:`utilidades.py`. A continuación un ejemplo de un simple módulo
 llamado :file:`utilidades.py`:
 
-.. literalinclude:: ../../recursos/leccion8/modulos/utilidades.py
+.. literalinclude:: ../../recursos/leccion8/modulos/pipo/utilidades.py
     :language: python
     :linenos:
     :lines: 1-8
@@ -44,7 +44,7 @@ Por ejemplo, al importar el módulo :file:`utilidades.py`, usted necesita coloca
 siguiente sentencia al tope del otro script Python. A continuación un ejemplo de
 un simple módulo llamado :file:`calculo_factura_pipo.py`.
 
-.. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
+.. literalinclude:: ../../recursos/leccion8/modulos/pipo/calculo_factura_pipo.py
     :language: python
     :linenos:
     :lines: 1-15
@@ -186,9 +186,9 @@ sentencia ``global``, se soluciona el problema.
     Usted puede descargar el código usado en esta sección haciendo clic en los
     siguientes enlaces:
 
-    - :download:`utilidades.py <../../recursos/leccion8/modulos/utilidades.py>`.
+    - :download:`utilidades.py <../../recursos/leccion8/modulos/pipo/utilidades.py>`.
 
-    - :download:`calculo_factura_pipo.py <../../recursos/leccion8/modulos/calculo_factura_pipo.py>`.
+    - :download:`calculo_factura_pipo.py <../../recursos/leccion8/modulos/pipo/calculo_factura_pipo.py>`.
 
 
 .. tip::
