@@ -205,6 +205,7 @@ Usted puede probar el código anterior, si lo transcribe en el
 :ref:`consola interactiva <python_interactivo>` Python como lo siguiente:
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -242,6 +243,7 @@ especiales.
 - __name__, describe el nombre del objeto o del método.
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> macagua.__name__
     'Persona'
@@ -250,6 +252,7 @@ especiales.
   escrita en el formato :ref:`docstrings <python_str_docstrings>`.
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> macagua.__doc__
     'Clase que representa una Persona'
@@ -258,6 +261,7 @@ Si el nombre de un atributo esta con dobles guiones bajos al principio son atrib
 "escondidos". A continuación un pseudo código que ilustra un ejemplo:
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> ms_windows.__privado
     'True'
@@ -304,6 +308,7 @@ Usted puede probar el código anterior, si lo transcribe en el :ref:`consola int
 Python como lo siguiente:
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -321,6 +326,7 @@ Python como lo siguiente:
 Analizar la estructura de la clase el cual representa a una Persona:
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> type(Persona())
     <class '__main__.Persona'>
@@ -424,7 +430,8 @@ en lugar de ``self``.
 Del mismo modo, los métodos de clase utilizan el prefijo ``cls`` para referirse a los
 atributos de la clase.
 
-::
+.. code-block:: console
+    :class: no-copy
 
     class <Clase>:
         ...
@@ -450,7 +457,8 @@ y métodos de la instancia.
 Para referirse a los elementos de la clase, se debe utilizar el nombre de la clase como
 prefijo.
 
-::
+.. code-block:: console
+    :class: no-copy
 
     class <Clase>:
         ...
