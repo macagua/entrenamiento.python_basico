@@ -54,7 +54,7 @@ codigo fuente:
 .. literalinclude:: ../../recursos/leccion8/modulos/calculadora/calculos_matematicos.py
     :language: python
     :linenos:
-    :lines: 1-17
+    :lines: 1-19
 
 Para ejecutar el módulo :file:`calculos_matematicos.py`, abra una consola de comando, acceda al
 directorio donde se encuentra el mismo, y ejecute el siguiente comando:
@@ -78,7 +78,7 @@ propone separar las funciones genericas en un módulo separado, por ejemplo, un 
 .. literalinclude:: ../../recursos/leccion8/modulos/calculadora/operaciones.py
     :language: python
     :linenos:
-    :lines: 1-16
+    :lines: 1-17
 
 
 .. tip::

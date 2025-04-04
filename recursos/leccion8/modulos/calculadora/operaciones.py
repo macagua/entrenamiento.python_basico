@@ -1,5 +1,6 @@
 """Este módulo contiene funciones para realizar cálculos matemáticos básicos."""
 
+
 def suma(a, b):
     """
     Esta función suma dos números y devuelve el resultado.
