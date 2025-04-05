@@ -31,7 +31,7 @@ Para crear la estructura de archivos del proyecto ``JSON`` debe ejecutar los sig
 
 .. tabs::
 
-   .. group-tab:: Linux
+   .. group-tab:: macOS, Linux, y Windows con WSL
 
       Crear y acceder al directorio ``json`` en un solo comando, ejecutando el siguiente comando:
 

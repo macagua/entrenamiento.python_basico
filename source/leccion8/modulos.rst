@@ -119,7 +119,7 @@ variable ``PATH``.
 
 .. tabs::
 
-   .. group-tab:: Linux
+   .. group-tab:: macOS, Linux, y Windows con WSL
 
       Así es una típica definición de ``PYTHONPATH`` desde un sistema UNIX/Linux, ejecutando el siguiente comando:
 

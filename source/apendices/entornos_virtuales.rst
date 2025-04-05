@@ -15,17 +15,17 @@ ejecute el siguiente comando:
 
 .. tabs::
 
-   .. group-tab:: PIP
-
-      .. code-block:: console
-
-          pip3 install virtualenv
-
-   .. group-tab:: Ubuntu/Debian Linux
+   .. group-tab:: macOS, Linux, y Windows con WSL
 
       .. code-block:: console
 
           sudo apt install -y python3-virtualenv
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          pip3 install virtualenv
 
 Cree un directorio raíz para almacenar los diversos entornos virtuales,
 ejecutando el siguiente comando:
