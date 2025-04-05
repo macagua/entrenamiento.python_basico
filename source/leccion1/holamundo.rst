@@ -130,7 +130,7 @@ Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
 y dentro de este, cree un archivo de texto plano con el siguiente
 nombre :file:`holamundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
-Luego ejecute desde la consola de comando el siguiente comando:
+Luego desde la consola de comando ejecute el siguiente comando:
 
 .. code-block:: console
 

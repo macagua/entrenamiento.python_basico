@@ -29,7 +29,7 @@ Instalando Python en un Linux
 .............................
 
 En una distribución estándar Linux dispone por defecto el interprete Python instalado, para
-comprobar la correcta instalación  solamente debería ejecutar el comando en la consola:
+comprobar la correcta instalación solamente debería ejecutar el comando en la consola:
 
 .. code-block:: console
 
