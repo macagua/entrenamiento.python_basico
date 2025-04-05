@@ -4,9 +4,9 @@ Distribución de Software
 ------------------------
 
 La distribución de código Python, le permite hacer portable de forma amigable usando
-herramienta de gestión de paquetes Python como la herramienta ``pip``. Esta labor se
-hace mediante el módulo :ref:`distutils <python_modulo_distutils>`, y más
-reciente incorporando el módulo :ref:`setuptools <python_modulo_setuptools>`.
+herramienta de gestión de paquetes Python como la herramienta :ref:`pip <python_pip>`.
+Esta labor se hace mediante el módulo :ref:`distutils <python_modulo_distutils>`, y
+más reciente incorporando el módulo :ref:`setuptools <python_modulo_setuptools>`.
 
 
 .. _python_modulo_distutils:
@@ -561,7 +561,7 @@ Instalar distribución código fuente
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Para instalar una distribución código fuente de su paquete previamente creado, se
-realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
+realizar usando la herramienta :ref:`pip <python_pip>`, ejecutando el siguiente comando:
 
 .. code-block:: console
 
@@ -608,7 +608,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
 
 De esta forma tiene instalado una distribución código fuente en formato **tarball**
-de su paquete en el interprete Python usando la herramienta ``pip``.
+de su paquete en el interprete Python usando la herramienta :ref:`pip <python_pip>`.
 
 
 .. _python_distro_instalar_bdist:
@@ -617,7 +617,7 @@ Instalar distribución binaria
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Para instalar una distribución binaria de su paquete previamente creado, se
-realizar usando la herramienta ``pip``, ejecutando el siguiente comando:
+realizar usando la herramienta :ref:`pip <python_pip>`, ejecutando el siguiente comando:
 
 .. code-block:: console
 
@@ -633,7 +633,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     Successfully installed tostadas-pipo-0.1
 
 De esta forma tiene instalado una distribución binaria en formato **wheel** de su
-paquete en el interprete Python usando la herramienta ``pip``.
+paquete en el interprete Python usando la herramienta :ref:`pip <python_pip>`.
 
 ----
 
@@ -796,7 +796,7 @@ paquete ``tostadas_pipo-0.1`` se instalo correctamente.
 Eliminar paquete
 ................
 
-Para eliminar paquete usando la herramienta ``pip``, ejecute el siguiente comando:
+Para eliminar paquete usando la herramienta :ref:`pip <python_pip>`, ejecute el siguiente comando:
 
 .. code-block:: console
 
@@ -830,18 +830,18 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
       Successfully uninstalled tostadas-pipo-0.1
 
 
-``pip`` esta habilitado a desinstalar la mayoría de paquetes instalados. Las excepciones
+:ref:`pip <python_pip>` esta habilitado a desinstalar la mayoría de paquetes instalados. Las excepciones
 conocidas son:
 
 - Los paquetes basado en solamente en el módulo :ref:`distutils <python_modulo_distutils>` los
-  cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python3 setup.py install``
+  cuales fueron instalados sin la herramienta :ref:`pip <python_pip>` usando el comando :command:`python3 setup.py install`
   desde el :ref:`código del paquete <python_distro_install_source_pkg>`.
 
   Instalándolo de esta forma, al momento de desintalarlo usando el comando :command:`pip uninstall tostadas_pipo`
   este comando removerá solo la metadata, no detrás dejando de la instalación metadata para
   determinar que archivos fueron instalados.
 
-  Entonces para solventar este problema tiene que ir manualmente al directorio ``site-packages`` a
+  Entonces para solventar este problema tiene que ir manualmente al directorio :file:`site-packages` a
   eliminar manualmente el paquete que instalo.
 
   .. warning::
