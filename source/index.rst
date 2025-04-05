@@ -56,6 +56,8 @@ Apéndices
    lecturas
    apendices/anexos
    apendices/operadores
+   apendices/entornos_virtuales
+   apendices/pip
    glosario
    copyright
    licencia
