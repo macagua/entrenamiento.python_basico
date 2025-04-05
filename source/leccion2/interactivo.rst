@@ -43,7 +43,7 @@ factores:
   documentación desde los códigos fuentes Python como `Sphinx`_.
 
 La forma más fácil es iniciar tu relación con Python simplemente ejecutando
-el comando ``python`` de la siguiente forma:
+el comando :command:`python` de la siguiente forma:
 
 .. code-block:: console
 

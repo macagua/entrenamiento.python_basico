@@ -207,7 +207,7 @@ En el programa anterior, existe un archivo de módulo :file:`constantes.py`. Ent
 en este se asignan los valores de constantes ``IP_DB_SERVER``, ``PORT_DB_SERVER``,
 ``USER_DB_SERVER``, ``PASSWORD_DB_SERVER`` y ``DB_NAME``. Ademas, existe el archivo
 de módulo :file:`main.py` el cual importa el módulo ``constantes``. Finalmente, se
-imprime una linea de conexión del comando ``scp`` de Linux usando la función
+imprime una linea de conexión del comando :command:`scp` de Linux usando la función
 integrada en la :ref:`librería estándar <python_libreria_estandar>` de Python llamada :ref:`format() <python_fun_format>`.
 
 .. note::

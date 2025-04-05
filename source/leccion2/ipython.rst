@@ -78,7 +78,7 @@ Sustituya el comando :command:`python3` por el comando :command:`ipython3` de la
               In [1]:
 
 
-Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
+Un ejemplo de uso del comando :command:`help` es consultar la ayuda del comando
 ``dir`` y se ejecuta de la siguiente forma:
 
 .. code-block:: pycon

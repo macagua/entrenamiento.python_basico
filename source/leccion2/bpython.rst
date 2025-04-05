@@ -25,7 +25,7 @@ el correspondiente comando de tu sistema operativo:
           pip install bpython
 
 
-Luego sustituya el comando ``python`` por ``bpython`` correspondiente a tu sistema
+Luego sustituya el comando :command:`python` por :command:`bpython` correspondiente a tu sistema
 operativo de la siguiente forma:
 
 

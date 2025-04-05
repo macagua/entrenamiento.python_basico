@@ -731,7 +731,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     Finished processing dependencies for tostadas-pipo==0.1
 
 
-De esta forma tiene instalado su paquete en su interprete Python usando el comando ``install``
+De esta forma tiene instalado su paquete en su interprete Python usando el comando :command:`install`
 disponible con el script :file:`setup.py`.
 
 ----
@@ -837,7 +837,7 @@ conocidas son:
   cuales fueron instalados sin la herramienta ``pip`` usando el comando ``python3 setup.py install``
   desde el :ref:`código del paquete <python_distro_install_source_pkg>`.
 
-  Instalándolo de esta forma, al momento de desintalarlo usando el comando ``pip uninstall tostadas_pipo``
+  Instalándolo de esta forma, al momento de desintalarlo usando el comando :command:`pip uninstall tostadas_pipo`
   este comando removerá solo la metadata, no detrás dejando de la instalación metadata para
   determinar que archivos fueron instalados.
 
@@ -848,7 +848,7 @@ conocidas son:
 
       Esta entrando a la cueva de los Dragones!!!
 
-- Los scripts wrappers instalados ejecutando el comando ``python3 setup.py develop``.
+- Los scripts wrappers instalados ejecutando el comando :command:`python3 setup.py develop`.
 
 De esta forma ya tiene eliminado su paquete de forma manual de su sistema.
 

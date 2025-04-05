@@ -66,7 +66,7 @@ Si le muestra los mensajes anteriores esta correctamente instalado el interprete
 
         sudo apt install -y python3-dev
 
-    De nuevo vuelva a ejecutar en su consola de comando el comando :command:`python3`.
+    De nuevo vuelva a su consola de comando para ejecutar el comando :command:`python3`.
 
 
 ----
