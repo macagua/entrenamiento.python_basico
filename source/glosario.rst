@@ -96,7 +96,7 @@ A continuación una serie de términos usados en las tecnologías Python.
     plantilla
         1) Una clase Python la cual controla la generación de un esqueleto. Las
         plantillas contiene una lista de variables para obtener la respuesta de un
-        usuario. Las plantillas son ejecutadas con el comando ``copier`` suministrando
+        usuario. Las plantillas son ejecutadas con el comando :command:`copier` suministrando
         el nombre de la plantilla como un argumento, como :
 
         ``copier copy gh:Tecnativa/doodba-copier-template ~/path/to/your/subproject``.
