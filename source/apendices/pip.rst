@@ -52,13 +52,13 @@ se presentan el correspondiente comando de tu sistema operativo:
 
          python get-pip.py
 
-      Para verificar que :command:`pip` se ha instalado correctamente, escriba:
+      Para verificar que el comando :command:`pip` se ha instalado correctamente, escriba:
 
       .. code-block:: console
 
          pip --version
 
-      Para verificar que el comando :command:`pip` se ha instalado correctamente, escriba:
+      Si muestra la versión del comando :command:`pip`, tiene correctamente instalado el módulo.
 
       Si se encuentra con un error "pip no reconocido", añada el comando :command:`pip` a su variable de entorno ``PATH``:
 
