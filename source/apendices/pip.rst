@@ -32,7 +32,7 @@ se presentan el correspondiente comando de tu sistema operativo:
    .. group-tab:: Windows
 
       En primer lugar, asegúrese de que Python está instalado en su sistema. Abra el símbolo
-      del sistema y escriba:
+      del sistema y escriba el siguiente comando:
 
       .. code-block:: console
 
@@ -40,19 +40,20 @@ se presentan el correspondiente comando de tu sistema operativo:
 
       Si Python está instalado, mostrará el número de versión.
 
-      Descargue el script :file:`get-pip.py` de la pagina web oficial:
+      Descargue el script :file:`get-pip.py` de la pagina web oficial, con el siguiente comando:
 
       .. code-block:: console
 
          curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
-      Ejecute el script descargado utilizando Python:
+      Ejecute el script descargado utilizando Python, con el siguiente comando:
 
       .. code-block:: console
 
          python get-pip.py
 
-      Para verificar que el comando :command:`pip` se ha instalado correctamente, escriba:
+      Para verificar que el comando :command:`pip` se ha instalado correctamente, escriba el
+      siguiente comando:
 
       .. code-block:: console
 
