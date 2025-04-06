@@ -28,30 +28,103 @@ comando de tu sistema operativo:
 
           pip3 install virtualenv
 
-Cree un directorio raíz para almacenar los diversos entornos virtuales,
-ejecutando el siguiente comando:
+Para verificar que el comando :command:`virtualenv` se ha instalado correctamente, escriba:
 
-.. code-block:: console
+.. tabs::
 
-    mkdir ~/virtualenv && cd $_
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          virtualenv --version
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          virtualenv --version
+
+
+Si muestra la versión del módulo ``virtualenv``, tiene correctamente instalado el módulo.
+
+
+Crear entorno virtual
+---------------------
+
+Cree un directorio raíz para almacenar los diversos entornos virtuales, ejecutando
+el siguiente comando:
+
+.. tabs::
+
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          mkdir ~/virtualenv && cd $_
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          mkdir C:\virtualenv
+
 
 Cree un entorno virtual llamado :command:`python3`, ejecutando el siguiente comando:
 
-.. code-block:: console
+.. tabs::
 
-    virtualenv --python /usr/bin/python3 python3
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          virtualenv --python /usr/bin/python3 python3
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          virtualenv --python C:\Python311\python.exe C:\virtualenv\python3
+
+
+Activar entorno virtual
+-----------------------
 
 Activar el entorno virtual llamado :command:`python3`, ejecutando el siguiente comando:
 
-.. code-block:: console
+.. tabs::
 
-    source ~/virtualenv/python3/bin/activate
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          source ~/virtualenv/python3/bin/activate
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          source C:\virtualenv\python3\bin\activate
+
+
+Desactivar entorno virtual
+--------------------------
 
 Para desactivar entorno virtual creado, con el siguiente comando:
 
-.. code-block:: console
+.. tabs::
 
-    deactivate
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          deactivate
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          deactivate
+
 
 De esta forma, puedes tener un directorio común para almacenar diversos entornos virtuales.
 Con herramientas como ``virtualenv`` puede gestionar diversos entornos virtuales de Python
