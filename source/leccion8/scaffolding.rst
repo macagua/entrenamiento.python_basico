@@ -25,7 +25,9 @@ Este concepto *scaffolding*, es muy útil para del arranque de su desarrollo, of
 serie de colecciones de plantillas *esqueletos* que permiten iniciar rápidamente proyectos,
 existente diversos *esqueletos* orientados a tipos de desarrollos específicos.
 
+
 ----
+
 
 ¿Por qué usar Scaffolding?
 ..........................
@@ -38,7 +40,9 @@ existente diversos *esqueletos* orientados a tipos de desarrollos específicos.
 
 - Acelera el inicio del desarrollo en frameworks web o CLI.
 
+
 ----
+
 
 Herramientas comunes de Scaffolding en Python
 .............................................
@@ -58,25 +62,42 @@ Herramientas comunes de Scaffolding en Python
 |                             | para :ref:`FastAPI <python_fastapi>`.      |                      |
 +-----------------------------+--------------------------------------------+----------------------+
 
+
 ----
 
-🛠️ Ejemplo 1: Usar `cookiecutter` para crear un proyecto Python
-................................................................
 
-`cookiecutter`_, ofrece varias plantillas para cualquier tipo de proyecto.
+Ejemplo 1: Scaffolding con paquete Python
+.........................................
 
-Paso 1: Instalar cookiecutter
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`cookiecutter`_, ofrece varias plantillas para cualquier tipo de proyecto Python.
 
-Para instalar ``cookiecutter``, puedes usar :ref:`pip <python_pip>` ejecute con el siguiente comando:
+Para este caso, vamos a generar un proyecto de ejemplo para un paquete Python
+que se llama ``mi_paquete``.
 
-.. code-block:: console
+Paso 1: Instalación
+~~~~~~~~~~~~~~~~~~~
 
-    pip install cookiecutter
+Para instalar este paquete ``cookiecutter`` use la herramienta :ref:`pip <python_pip>`
+ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
+comando de tu sistema operativo:
+
+.. tabs::
+
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          pip3 install cookiecutter
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          pip3 install cookiecutter
 
 
-Paso 2: Ejecutar una plantilla pública
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Paso 2: Crear paquete Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `cookiecutter-pypackage`_, es una plantilla ``cookiecutter`` para un paquete Python.
 
@@ -162,19 +183,31 @@ El generador te preguntará:
 ----
 
 
-🛠️ Ejemplo 2: Scaffolding con Django
-.....................................
+Ejemplo 2: Scaffolding con Django
+.................................
 
-Por defecto, :ref:`Django <python_django>` incluye un comando para crear un nuevo proyecto.
+Por defecto, :ref:`Django <python_django>` incluye un comando para crear un nuevo proyecto y aplicaciones.
 
-Paso 1: Instalar Django
-~~~~~~~~~~~~~~~~~~~~~~~
+Paso 1: Instalación
+~~~~~~~~~~~~~~~~~~~
 
-Para instalar :ref:`Django <python_django>`, puedes usar :ref:`pip <python_pip>` ejecute con el siguiente comando:
+Para instalar este paquete :ref:`Django <python_django>` use la herramienta :ref:`pip <python_pip>`
+ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
+comando de tu sistema operativo:
 
-.. code-block:: console
+.. tabs::
 
-    pip3 install Django
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          pip3 install Django
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          pip3 install Django
 
 
 Paso 2: Crear proyecto
@@ -187,8 +220,8 @@ Para crear un nuevo proyecto :ref:`Django <python_django>`, ejecuta el siguiente
     django-admin startproject mi_sitio && cd mi_sitio
 
 
-Paso 3: Crear una aplicación
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Paso 3: Crear aplicación
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Para crear una aplicación dentro del proyecto :ref:`Django <python_django>`, usa el siguiente comando:
 
@@ -224,10 +257,11 @@ Para crear una aplicación dentro del proyecto :ref:`Django <python_django>`, us
 ----
 
 
-🛠️ Ejemplo 3: Scaffolding con FastAPI + SQLModel + Typer
-.........................................................
+Ejemplo 3: Scaffolding con FastAPI
+..................................
 
-Puedes usar generadores como `fastapi-code-generator`_ para :ref:`FastAPI <python_fastapi>` o montar tu estructura así:
+Puedes usar generadores como `fastapi-code-generator`_ para :ref:`FastAPI <python_fastapi>`, `SQLModel`_,  y `Typer`_
+o montar tu estructura así:
 
 .. code-block:: console
     :class: no-copy
@@ -241,12 +275,34 @@ Puedes usar generadores como `fastapi-code-generator`_ para :ref:`FastAPI <pytho
 
 O usar generadores personalizados.
 
+Paso 1: Instalación
+~~~~~~~~~~~~~~~~~~~
+
+Para instalar este paquete ``fastapi-code-generator`` use la herramienta :ref:`pip <python_pip>`
+ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
+comando de tu sistema operativo:
+
+.. tabs::
+
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          pip3 install fastapi-code-generator
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          pip3 install fastapi-code-generator
+
 ----
 
-📌 Conclusión
-..............
+Conclusión
+..........
 
-- **Scaffolding** en Python no es algo nativo del lenguaje, pero se apoya en herramientas que te ayudan a estructurar proyectos rápidamente.
+- **Scaffolding** en Python no es algo nativo del lenguaje, pero se apoya en herramientas que te ayudan a estructurar
+  sus proyectos rápidamente.
 
 - Puedes usarlo para crear APIs, CLI, librerías, dashboards y más.
 
@@ -273,5 +329,7 @@ O usar generadores personalizados.
 
 .. _`cookiecutter`: https://pypi.org/project/cookiecutter/
 .. _`cookiecutter-pypackage`: https://github.com/audreyfeldroy/cookiecutter-pypackage
-.. _`fastapi-code-generator`: https://pypi.org/project/fastapi-code-generator/
 .. _`Django`: https://www.djangoproject.com/
+.. _`fastapi-code-generator`: https://pypi.org/project/fastapi-code-generator/
+.. _`SQLModel`: https://sqlmodel.tiangolo.com/
+.. _`Typer`: https://typer.tiangolo.com/

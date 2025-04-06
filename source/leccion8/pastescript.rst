@@ -2,7 +2,7 @@
 
 PasteScript
 -----------
- 
+
 `PasteScript`_, es una herramienta de linea de comando basada en plugins que le permiten crear
 estructuras de paquetes ":ref:`Scaffolding <python_scaffolding>`" de proyectos Python además
 sirve aplicaciones web, con configuraciones basadas en `paste.deploy`_.
