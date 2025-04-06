@@ -21,6 +21,7 @@ A continuación el temario de esta lección:
    distribucion
    distribucion_nativa
    scaffolding
+   pastescript
 
 
 ----
