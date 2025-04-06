@@ -51,16 +51,28 @@ Desventajas
 
 Las desventajas del lenguaje Python son las siguientes:
 
-**Curva de aprendizaje**
-  La "curva de aprendizaje cuando ya estás en la parte web no es tan sencilla".
-
 **Hosting**
   La mayoría de los servidores no tienen soporte a Python, y si lo soportan, la configuración
   es un poco difícil.
 
-**Librerías incluidas**
-  Algunas librerías que trae por defecto no son del gusto de amplio de la comunidad, y optan
-  a usar librerías de terceros.
+**Incompatibilidad con versiones anteriores**
+  Algunas bibliotecas y extensiones C pueden no estar listas o no haber migrado a Python 3.11
+  justo después del lanzamiento. Puede haber cambios sutiles en el comportamiento que rompan
+  código existente. Python 3 no es compatible con Python 2, por lo que si usted tiene un programa
+  en Python 2 no podrá ejecutarlo en Python 3. Esto puede ser un problema si se necesita mantener
+  un programa antiguo.
+
+**Tiempo de adopción en entornos empresariales**
+  Aunque es más rápido, muchas empresas aún usan versiones LTS como Python 3.8 o 3.9 por temas de
+  compatibilidad y soporte.
+
+**Velocidad**
+  Python es un lenguaje interpretado, por lo que es más lento que otros lenguajes
+  compilados. Esto puede ser un problema si se necesita un rendimiento óptimo.
+
+**Cambios internos aún experimentales**
+  Algunas mejoras de rendimiento están en proceso de estabilización, lo que puede implicar bugs raros
+  en escenarios muy específicos.
 
 
 ----

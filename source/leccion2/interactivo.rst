@@ -36,7 +36,7 @@ factores:
   interprete, por mucho tiempo no estaba disponible documentación tipo
   `Javadoc`_ o `diagramas de clases`_ del propio lenguaje por lo cual
   muchas programadores **Python** se acostumbraron a estudiar su código de
-  esta forma, así que le recomiendo que use el interprete ``python`` para
+  esta forma, así que le recomiendo que use el interprete :command:`python` para
   eso.
 
 - Hoy en día existente herramientas que te permiten generar

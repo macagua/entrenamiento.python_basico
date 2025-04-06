@@ -47,7 +47,7 @@ Python. A continuación un procedimiento básico para las principales plataforma
 Ejecutar un programa en Windows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Cree un directorio llamado ``proyectos`` la unidad ``C:\`` y dentro
+Cree un directorio llamado :file:`proyectos` la unidad ``C:\`` y dentro
 de este, cree un archivo de texto plano con el siguiente nombre
 :file:`holamundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>`
 respectivamente.
@@ -70,11 +70,11 @@ Ejecutar un programa en macOS
 
 #. Haga clic en ``Archivo`` y luego la nueva Ventana del ``Finder``.
 
-#. Haga clic en ``Documentos``.
+#. Haga clic en :file:`Documentos`.
 
 #. Haga clic en ``Archivo`` y luego en ``Nueva carpeta``.
 
-#. Llame a la carpeta ``proyectos``.
+#. Llame a la carpeta :file:`proyectos`.
 
 #. Usted va a almacenar todos los programas relacionados con la clase allí.
 
@@ -93,7 +93,7 @@ Ejecutar un programa en macOS
 
 #. En el campo Guardar como: escriba :file:`holamundo.py`.
 
-#. Seleccione ``Documentos`` y la carpeta de archivos ``proyectos``.
+#. Seleccione la carpeta :file:`Documentos` y la carpeta de archivos :file:`proyectos`.
 
 #. Haga clic en ``Guardar``.
 
@@ -101,17 +101,17 @@ Ejecutar un programa en macOS
 
 #. Seleccione ``Aplicaciones``, a continuación, ``Utilidades y Terminal``.
 
-#. En la ventana ``Terminal`` ejecute ``ls`` y presione la tecla :keys:`Enter`.
+#. En la ventana ``Terminal`` ejecute el comando :command:`ls` y presione la tecla :keys:`Enter`.
    Se debe dar una lista de todas las carpetas de nivel superior. Usted debe
-   ver la carpeta de ``Documentos``.
+   ver la carpeta de :file:`Documentos`.
 
-#. Ejecute ``cd Documentos`` y presione la tecla :keys:`Enter`.
+#. Ejecute el comando :command:`cd Documentos` y presione la tecla :keys:`Enter`.
 
-#. Ejecute ``ls`` y presione la tecla :keys:`Enter` y debería ver la carpeta ``proyectos``.
+#. Ejecute el comando :command:`ls` y presione la tecla :keys:`Enter` y debería ver la carpeta :file:`proyectos`.
 
-#. Ejecute ``cd proyectos`` y presione la tecla :keys:`Enter`.
+#. Ejecute el comando :command:`cd proyectos` y presione la tecla :keys:`Enter`.
 
-#. Ejecute ``ls`` y presione la tecla :keys:`Enter` y usted debería ver el archivo :file:`holamundo.py`.
+#. Ejecute el comando :command:`ls` y presione la tecla :keys:`Enter` y usted debería ver el archivo :file:`holamundo.py`.
 
 #. Para ejecutar el programa, escriba el siguiente comando :command:`python3 holamundo.py`
    y presione la tecla :keys:`Enter`.
@@ -126,7 +126,7 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 Ejecutar un programa en Linux
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Cree un directorio llamado ``proyectos`` el ``home`` de su usuario
+Cree un directorio llamado :file:`proyectos` el ``home`` de su usuario
 y dentro de este, cree un archivo de texto plano con el siguiente
 nombre :file:`holamundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
@@ -143,14 +143,14 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 ----
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion1/holamundo.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic:
+
+    - :download:`holamundo.py <../../recursos/leccion1/holamundo.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`holamundo.py`, abra una
-    consola de comando, acceda al directorio donde se encuentra el mismo,
-    y ejecute el siguiente comando:
+    Para ejecutar el código :file:`holamundo.py`, abra una consola de comando, acceda al
+    directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     .. code-block:: console
 

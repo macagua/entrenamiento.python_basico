@@ -12,7 +12,7 @@ ciertos recursos para los sistemas operativos más populares:
 Instalando Python en Windows
 ............................
 
-- `Instalando Python en Windows <https://www.youtube.com/watch?v=VTykmP-a2KY>`_.
+- `Instalando Python en Windows <https://es.wikibooks.org/wiki/Python/Instalaci%C3%B3n_de_Python/Python_en_Windows>`_.
 
 
 .. _python_instalacion_macos:
@@ -25,8 +25,8 @@ Instalando Python en macOS
 
 .. _python_instalacion_linux:
 
-Instalando Python en un Linux
-.............................
+Instalando Python en Linux
+...........................
 
 En una distribución estándar Linux dispone por defecto el interprete Python instalado, para
 comprobar la correcta instalación solamente debería ejecutar el comando en la consola:
