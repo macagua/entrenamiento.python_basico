@@ -17,7 +17,9 @@ Según Wikipedia
 .. tip::
     Para mayor información visite su página principal de `ipython`_.
 
-Si necesita instalar este módulo, ejecute el siguiente comando:
+Para instalar este paquete ``ipython`` use la herramienta :ref:`pip <python_pip>`
+ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
+comando de tu sistema operativo:
 
 .. tabs::
 

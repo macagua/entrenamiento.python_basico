@@ -10,8 +10,9 @@ conflictos entre diferentes proyectos.
 Instalación
 -----------
 
-Para la instalación de la herramienta de entornos virtuales en Python,
-ejecute el siguiente comando:
+Para instalar este paquete ``virtualenv`` use la herramienta :ref:`pip <python_pip>`
+ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
+comando de tu sistema operativo:
 
 .. tabs::
 

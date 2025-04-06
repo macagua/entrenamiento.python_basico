@@ -9,7 +9,9 @@ El módulo `ipdb <https://pypi.org/project/ipdb>`_ exporta funciones para accede
 que cuenta con completado de tabulación, resaltado de sintaxis, mejores trazas, mejor introspección con la misma interfaz
 que el módulo :ref:`pdb <python_modulo_pdb>` para depurar tu código fuente de forma interactiva.
 
-Si necesita instalar este módulo, ejecute el siguiente comando:
+Para instalar este paquete ``ipdb`` use la herramienta :ref:`pip <python_pip>`
+ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
+comando de tu sistema operativo:
 
 .. tabs::
 

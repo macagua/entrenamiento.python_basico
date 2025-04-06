@@ -11,12 +11,24 @@ sirve aplicaciones web, con configuraciones basadas en `paste.deploy`_.
 Instalación
 ~~~~~~~~~~~
 
-Dentro de su `entorno virtual`_ activado debe instalar el paquete `PasteScript`_,
-ejecutando el siguiente comando:
+Para instalar este paquete ``PasteScript`` dentro de su `entorno virtual`_ activado use la
+herramienta :ref:`pip <python_pip>` ejecutando el siguiente comando, el cual a continuación
+se presentan el correspondiente comando de tu sistema operativo:
 
-.. code-block:: console
+.. tabs::
 
-    pip install PasteScript
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          pip install PasteScript
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          pip install PasteScript
+
 
 .. note::
 
