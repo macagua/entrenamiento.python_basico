@@ -22,7 +22,7 @@ Uso del módulo :mod:`locale`:
     :linenos:
     :lines: 1-27
 
-Jugando con el módulo :mod:`locale` en el interprete :ref:`ipython <python_modulo_ipython>`:
+Jugando con el módulo :mod:`locale` en el interprete :ref:`IPython <python_modulo_ipython>`:
 
 Obtener el nombre del mes de Diciembre en base a la configuración regional actual:
 

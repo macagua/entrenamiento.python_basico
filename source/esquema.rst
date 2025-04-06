@@ -29,7 +29,7 @@ Lección 2 - Introspección del lenguaje Python
 
 **Práctica:** Acceder al interprete Python demostrando la documentación propia integrada,
 analizar las estructuras de datos, métodos, clases y demás elementos disponibles del
-lenguaje. Instalar el paquete :ref:`ipython <python_modulo_ipython>` y conocer sus ventajas.
+lenguaje. Instalar el paquete :ref:`IPython <python_modulo_ipython>` y conocer sus ventajas.
 
 
 .. _esquema_entrenamiento_leccion3:
