@@ -24,7 +24,7 @@ Paquete auto-py-to-exe
 
 El paquete `auto-py-to-exe <https://pypi.org/project/auto-py-to-exe/>`_ le permite
 convertir archivos ``.py`` a archivos ``.exe`` usando una simple interfaz gráfica
-de usuario para sistemas operativos Windows/Mac OS X.
+de usuario para sistemas operativos Windows/macOS.
 
 A continuación el siguiente comando le permite instalarlo:
 
@@ -83,13 +83,13 @@ Aquí puede definir lo siguiente:
 
     - Como generar el ``.exe``
 
-    - Opciones especificas de *Windows/Mac OS X*.
+    - Opciones especificas de *Windows/macOS*.
 
     - Opciones especificas de *Windows*.
 
     - Opciones de búsqueda de ensamblaje en paralelo para *Windows* (avanzadas).
 
-    - Opciones especificas de *Mac OS X*.
+    - Opciones especificas de *macOS*.
 
     - Opciones especiales raramente usadas.
 

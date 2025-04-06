@@ -66,10 +66,10 @@ su ejecución:
 
   .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en Windows <python_instalacion_windows>`.
 
-- Versiones Python para `macOS (Macintosh) <https://www.python.org/downloads/macos/>`_
+- Versiones Python para `macOS <https://www.python.org/downloads/macos/>`_
   (arquitectura 32bit/64bit en presentación de instalador ejecutable).
 
-  .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en una Mac <python_instalacion_mac>`.
+  .. tip:: Para mayor información consulte la sección :ref:`Instalando Python en una macOS <python_instalacion_macos>`.
 
 - Versiones Python en `código fuente <https://www.python.org/downloads/source/>`_ (archivo
   tarball del código fuente comprimido con XZ y con Gz). Para las mayoría de los sistemas

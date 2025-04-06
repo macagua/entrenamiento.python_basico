@@ -36,7 +36,7 @@ Las ventajas del lenguaje Python son las siguientes:
   Los módulos están bien organizados, a diferencia de otros lenguajes.
 
 **Portable**
-  Es un lenguaje muy portable (ya sea en Mac, Linux o Windows) en comparación con otros
+  Es un lenguaje muy portable (ya sea en macOS, Linux o Windows) en comparación con otros
   lenguajes. La filosofía de baterías incluidas, son las librerías que más usted necesita
   al día a día de programación, ya están dentro del interprete, no tiene la necesidad de
   instalarlas adicionalmente con en otros lenguajes.

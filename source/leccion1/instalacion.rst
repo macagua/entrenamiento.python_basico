@@ -15,12 +15,12 @@ Instalando Python en Windows
 - `Instalando Python en Windows <https://www.youtube.com/watch?v=VTykmP-a2KY>`_.
 
 
-.. _python_instalacion_mac:
+.. _python_instalacion_macos:
 
-Instalando Python en una Mac
-............................
+Instalando Python en macOS
+..........................
 
-- `Instalando Python en una Mac <https://es.wikibooks.org/wiki/Python/Instalaci%C3%B3n_de_Python/Python_en_Mac_OS_X>`_.
+- `Instalando Python en una macOS <https://es.wikibooks.org/wiki/Python/Instalaci%C3%B3n_de_Python/Python_en_Mac_OS_X>`_.
 
 
 .. _python_instalacion_linux:
