@@ -18,6 +18,56 @@ Instalar la herramienta :ref:`pip <python_pip>`, ejecute el siguiente comando:
 
     sudo apt install -y python3-pip
 
+Para instalar este paquete ``pip`` ejecute el siguiente comando, el cual a continuación
+se presentan el correspondiente comando de tu sistema operativo:
+
+.. tabs::
+
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          sudo apt install -y python3-pip
+
+   .. group-tab:: Windows
+
+      En primer lugar, asegúrese de que Python está instalado en su sistema. Abra el símbolo
+      del sistema y escriba:
+
+      .. code-block:: console
+
+         python --version
+
+      Si Python está instalado, mostrará el número de versión.
+
+      Descargue el script :file:`get-pip.py` de la pagina web oficial:
+
+      .. code-block:: console
+
+         curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+      Ejecute el script descargado utilizando Python:
+
+      .. code-block:: console
+
+         python get-pip.py
+
+      Para verificar que :command:`pip` se ha instalado correctamente, escriba:
+
+      .. code-block:: console
+
+         pip --version
+
+      Para verificar que el comando :command:`pip` se ha instalado correctamente, escriba:
+
+      Si se encuentra con un error "pip no reconocido", añada el comando :command:`pip` a su variable de entorno ``PATH``:
+
+      #. Localice el directorio de instalación del comando :command:`pip` (por ejemplo, :file:`C:\\Python311\\Scripts`).
+
+      #. Vaya a *Panel de control* > *Sistema y seguridad* > *Sistema* > *Configuración avanzada del sistema*.
+
+      #. Haga clic en *Variables de entorno*, busque la variable ``PATH`` y añada el directorio donde está instalado el comando :command:`pip`.
+
 Para comprobar que la instalación de la herramienta :ref:`pip <python_pip>` este correctamente hecha,
 ejecute el siguiente comando:
 
@@ -32,7 +82,9 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     pip 25.0.1 from /usr/bin/lib/python3.11/site-packages/pip (python 3.11)
 
 Si muestra el numero de la versión instalada de :ref:`pip <python_pip>`, tiene correctamente instalada
-la paquete. Con esto, ya tiene todo listo para continuar.
+la paquete.
+
+Con esto, ya tiene todo listo para continuar.
 
 ----
 
