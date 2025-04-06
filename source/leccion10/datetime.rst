@@ -14,12 +14,6 @@ aritmética de fecha y hora, por separado y en conjunto.
     :linenos:
     :lines: 1-11
 
-El anterior código al ejecutar debe mostrar el siguiente mensaje:
-
-.. code-block:: console
-
-    Fecha de nacimiento: 1980-12-03.
-
 
 .. _python_fun_strftime:
 
@@ -38,12 +32,6 @@ para crear una cadena que represente el objeto de fecha y hora bajo el control d
     :linenos:
     :lines: 1-16
 
-El anterior código al ejecutar debe mostrar el siguiente mensaje:
-
-.. code-block:: console
-
-    Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
-
 
 .. _python_fun_strptime:
 
@@ -61,12 +49,6 @@ El método de clase ``datetime.strptime()`` crea un objeto :mod:`datetime` a par
     :language: python
     :linenos:
     :lines: 1-15
-
-El anterior código al ejecutar debe mostrar el siguiente mensaje:
-
-.. code-block:: console
-
-    Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
 
 .. comments:
 
@@ -103,17 +85,44 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
     Si tiene la estructura de archivo previa, entonces ejecute los siguientes comandos:
 
+    Para ejecutar el código usando el módulo ``date``, abra una consola de comando, acceda
+    al directorio y ejecute el siguiente comando:
+
     .. code-block:: console
 
         python3 datetime_date.py
+
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    .. code-block:: console
+
+        Fecha de nacimiento: 1980-12-03.
+
+    Para ejecutar el código usando el método ``strftime``, abra una consola de comando, acceda
+    al directorio y ejecute el siguiente comando:
 
     .. code-block:: console
 
         python3 datetime_strftime.py
 
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    .. code-block:: console
+
+        Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
+
+    Para ejecutar el código usando el método ``strptime``, abra una consola de comando, acceda
+    al directorio y ejecute el siguiente comando:
+
     .. code-block:: console
 
         python3 datetime_strptime.py
+
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    .. code-block:: console
+
+        Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
 
 
 ----
