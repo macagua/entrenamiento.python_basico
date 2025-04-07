@@ -29,7 +29,7 @@ Lección 2 - Introspección del lenguaje Python
 
 **Práctica:** Acceder al interprete Python demostrando la documentación propia integrada,
 analizar las estructuras de datos, métodos, clases y demás elementos disponibles del
-lenguaje. Instalar el paquete :ref:`ipython <python_modulo_ipython>` y conocer sus ventajas.
+lenguaje. Instalar el paquete :ref:`IPython <python_modulo_ipython>` y conocer sus ventajas.
 
 
 .. _esquema_entrenamiento_leccion3:
@@ -72,12 +72,12 @@ explorar el resultado desde el interprete Python.
 
 .. _esquema_entrenamiento_leccion6:
 
-Lección 6 - Introspección a la depuración con pdb
--------------------------------------------------
+Lección 6 - Introspección a la depuración de software
+-----------------------------------------------------
 
-**Descripción:** Conocer las capacidades de depuración que ofrece el lenguaje.
+**Descripción:** Conocer las capacidades de depuración de software que ofrece el lenguaje.
 
-**Práctica:** Uso de la herramienta ``pdb`` y explorar el resultado en un módulo.
+**Práctica:** Uso de uso de los módulos :ref:`pdb <python_modulo_pdb>` y :ref:`ipdb <python_modulo_ipdb>` explorar el resultado en módulos a depurar.
 
 
 .. _esquema_entrenamiento_leccion7:
@@ -125,7 +125,7 @@ Lección 10 - Uso prácticos de la librería estándar
 **Descripción:** Comprender el uso de los módulos incorporados en la :ref:`librería estándar <python_libreria_estandar>`
 de Python.
 
-**Práctica:** Creación e uso de los módulos ``datetime``, ``locale``, ``email``, ``json``, de la
+**Práctica:** Creación e uso de los módulos :mod:`datetime`, :mod:`locale`, :mod:`email`, :mod:`json`, de la
 :ref:`librería estándar <python_libreria_estandar>` explorando el resultado en un paquete Python en el sistema de
 archivos.
 

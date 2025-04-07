@@ -4,15 +4,18 @@ Interprete bpython
 ------------------
 
 Alternativamente puedes usar el paquete `bpython`_ que mejora aun más la experiencia
-de trabajo con el paquete :ref:`ipython <python_modulo_ipython>`.
+de trabajo con el paquete :ref:`IPython <python_modulo_ipython>`.
 
-Para mayor información visite su página principal de `interprete bpython`_ y si necesita
-instalar este programa ejecute el siguiente comando, el cual a continuación se presentan
-el correspondiente comando de tu sistema operativo:
+.. tip::
+    Para mayor información visite su página principal de `interprete bpython`_.
+
+Para instalar este paquete ``bpython`` use la herramienta :ref:`pip <python_pip>`
+ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
+comando de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: Linux
+   .. group-tab:: macOS, Linux, y Windows con WSL
 
       .. code-block:: console
 
@@ -25,13 +28,13 @@ el correspondiente comando de tu sistema operativo:
           pip install bpython
 
 
-Luego sustituya el comando ``python`` por ``bpython`` correspondiente a tu sistema
+Luego sustituya el comando :command:`python` por :command:`bpython` correspondiente a tu sistema
 operativo de la siguiente forma:
 
 
 .. tabs::
 
-   .. group-tab:: Linux
+   .. group-tab:: macOS, Linux, y Windows con WSL
 
       .. code-block:: console
 

@@ -235,8 +235,11 @@ Así queda el archivo manipulado:
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
-    siguientes enlaces: :download:`listas_comprension_archivo.py <../../recursos/leccion10/listas_comprension_archivo.py>`
-    y :download:`listas_comprension_archivo.txt <../../recursos/leccion10/listas_comprension_archivo.txt>`.
+    siguientes enlaces:
+
+    - :download:`listas_comprension_archivo.py <../../recursos/leccion10/listas_comprension_archivo.py>`.
+
+    - :download:`listas_comprension_archivo.txt <../../recursos/leccion10/listas_comprension_archivo.txt>`.
 
 
 .. tip::

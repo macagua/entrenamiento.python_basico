@@ -252,7 +252,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     ['os.pyc', 'os.py']
 
 En el ejemplo anterior se usa el método ``os.__file__`` para obtener la ruta donde
-esta instalada el módulo ``os`` en su sistema, ejecutando la siguiente sentencia:
+esta instalada el módulo :mod:`os` en su sistema, ejecutando la siguiente sentencia:
 
 .. code-block:: pycon
 
@@ -266,7 +266,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
     '/usr/lib/python3.11/os.pyc'
 
-Si con el método ``os.__file__`` obtiene la ruta del módulo ``os`` con el método
+Si con el método ``os.__file__`` obtiene la ruta del módulo :mod:`os` con el método
 ``replace("/os.pyc", "/")`` busca la cadena de carácter "/os.pyc" y la remplaza por
 la cadena de carácter "/"
 
@@ -284,7 +284,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
 Luego se define la variable ``archivos`` generando una lista de archivos usando la
 función ``os.listdir()``, pasando el parámetro obtenido de la ruta donde se instalo
-el módulo ``os`` ejecutando en el comando previo, con la siguiente sentencia:
+el módulo :mod:`os` ejecutando en el comando previo, con la siguiente sentencia:
 
 .. code-block:: pycon
 

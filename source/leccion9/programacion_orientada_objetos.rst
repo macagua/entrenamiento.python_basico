@@ -205,6 +205,7 @@ Usted puede probar el código anterior, si lo transcribe en el
 :ref:`consola interactiva <python_interactivo>` Python como lo siguiente:
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -226,12 +227,10 @@ Usted puede probar el código anterior, si lo transcribe en el
     'Caballero'
     >>> macagua.sexo
     'M'
-    >>> print("El objeto de la clase {}, {}.".format(macagua.__name__, macagua.__doc__))
+    >>> print(f"El objeto de la clase {macagua.__name__}, {macagua.__doc__}.")
     El objeto de la clase Persona, Clase que representa una Persona.
     >>> print(
-    ...     "Hola, mucho gusto, mi nombre es '{} {}', \nmi cédula de identidad es '{}', y mi sexo es '{}'.".format(
-    ...         macagua.nombre, macagua.apellido, macagua.cedula, macagua.sexo
-    ...     )
+    ...     f"Hola, mucho gusto, mi nombre es '{macagua.nombre} {macagua.apellido}', \nmi cédula de identidad es '{macagua.cedula}', y mi sexo es '{macagua.sexo}'."
     ... )
     Hola, mucho gusto, mi nombre es 'Leonardo Caballero',
     mi cédula de identidad es 'V-13458796', y mi sexo es 'M'.
@@ -242,14 +241,16 @@ especiales.
 - __name__, describe el nombre del objeto o del método.
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> macagua.__name__
     'Persona'
 
-- __doc__, contiene la documentación de un módulo, una clase, o método especifico,
+- ``__doc__``, contiene la documentación de un módulo, una clase, o método especifico,
   escrita en el formato :ref:`docstrings <python_str_docstrings>`.
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> macagua.__doc__
     'Clase que representa una Persona'
@@ -258,6 +259,7 @@ Si el nombre de un atributo esta con dobles guiones bajos al principio son atrib
 "escondidos". A continuación un pseudo código que ilustra un ejemplo:
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> ms_windows.__privado
     'True'
@@ -281,8 +283,8 @@ La ejecución de un método puede conducir a cambiar el estado del objeto.
 
 Se definen de la misma forma que las funciones normales pero deben declararse dentro
 de la clase y su primer argumento siempre referencia a la instancia que la llama, de
-esta forma se afirma que los métodos son
-:ref:`funciones <python_funciones>`, adjuntadas a :ref:`objectos <python_objetos>`.
+esta forma se afirma que los métodos son :ref:`funciones <python_funciones>`,
+adjuntadas a :ref:`objectos <python_objetos>`.
 
 .. note::
     Usted puede encontrar ejemplos en las funciones de
@@ -295,7 +297,7 @@ Si el objeto es ``Persona``, los métodos pueden ser: ``hablar``, ``caminar``,
 .. literalinclude:: ../../recursos/leccion9/poo.py
     :language: python
     :linenos:
-    :lines: 1-16
+    :lines: 1-18
 
 La única diferencia sintáctica entre la definición de un método y la definición de una
 función es que el primer parámetro del método por convención debe ser el nombre ``self``.
@@ -304,6 +306,7 @@ Usted puede probar el código anterior, si lo transcribe en el :ref:`consola int
 Python como lo siguiente:
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> class Persona:
     ...     """Clase que representa una Persona"""
@@ -321,6 +324,7 @@ Python como lo siguiente:
 Analizar la estructura de la clase el cual representa a una Persona:
 
 .. code-block:: pycon
+    :class: no-copy
 
     >>> type(Persona())
     <class '__main__.Persona'>
@@ -332,7 +336,7 @@ Analizar la estructura de la clase el cual representa a una Persona:
     <class 'method'>
     >>> Persona().hablar.__doc__
     'Mostrar mensaje de saludo de Persona'
-    >>> Persona().hablar("Hola, soy la clase {0}.".format(macagua.__class__.__name__))
+    >>> Persona().hablar(f"Hola, soy la clase {macagua.__class__.__name__}.")
     'Hola, soy la clase Persona.'
     >>>
 
@@ -424,7 +428,8 @@ en lugar de ``self``.
 Del mismo modo, los métodos de clase utilizan el prefijo ``cls`` para referirse a los
 atributos de la clase.
 
-::
+.. code-block:: console
+    :class: no-copy
 
     class <Clase>:
         ...
@@ -450,7 +455,8 @@ y métodos de la instancia.
 Para referirse a los elementos de la clase, se debe utilizar el nombre de la clase como
 prefijo.
 
-::
+.. code-block:: console
+    :class: no-copy
 
     class <Clase>:
         ...
@@ -560,8 +566,10 @@ permite corroborar si un objeto es instancia de una clase.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion9/poo.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`poo.py <../../recursos/leccion9/poo.py>`.
 
 
 .. tip::
@@ -571,6 +579,14 @@ permite corroborar si un objeto es instancia de una clase.
     .. code-block:: console
 
         python3 poo.py
+
+
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    ::
+
+        Hola, mucho gusto, mi nombre es 'Leonardo Caballero',
+        mi cédula de identidad es 'V-26938401', y mi sexo es 'M'.
 
 
 .. seealso::

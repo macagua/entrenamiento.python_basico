@@ -80,8 +80,10 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion4/operadores_pertenencia.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`operadores_pertenencia.py <../../recursos/leccion4/operadores_pertenencia.py>`.
 
 
 .. tip::

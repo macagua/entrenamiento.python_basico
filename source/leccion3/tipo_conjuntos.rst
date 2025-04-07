@@ -530,7 +530,6 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
     Usted puede descargar el código usado en esta sección haciendo clic en el
     siguiente enlace:
 
-
     - :download:`tipo_conjuntos.py <../../recursos/leccion3/tipo_conjuntos.py>`.
 
 

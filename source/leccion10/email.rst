@@ -9,17 +9,17 @@ Módulo email
 El correo electrónico es una de las formas más antiguas de comunicación digital,
 pero sigue siendo una de las más populares. La libraría estándar de Python
 incluye módulos para enviar, recibir y almacenar mensajes de correo electrónico por
-medio de la librería `email`_.
+medio de la librería :mod:`email`.
 
-El módulo `smtplib`_ se comunica con un servidor de correo para entregar un mensaje. El módulo `smtpd`_ se
+El módulo :mod:`smtplib` se comunica con un servidor de correo para entregar un mensaje. El módulo :mod:`smtpd` se
 puede utilizar para crear un servidor de correo personalizado y proporciona clases
 útiles para depurar la transmisión de correo electrónico en otras aplicaciones.
 
-El módulo `imaplib`_ utiliza el protocolo `IMAP`_ para manipular mensajes almacenados en un servidor.
+El módulo :mod:`imaplib` utiliza el protocolo `IMAP`_ para manipular mensajes almacenados en un servidor.
 Proporciona una API de bajo nivel para clientes ``IMAP`` y puede consultar, recuperar, mover
 y eliminar mensajes.
 
-Los archivos de mensajes locales se pueden crear y modificar archivos ``mailbox`` usando el módulo `mailbox`_
+Los archivos de mensajes locales se pueden crear y modificar archivos ``mailbox`` usando el módulo :mod:`mailbox`
 utilizando varios formatos estándar, incluidos los populares formatos ``mbox`` y ``Maildir`` utilizados por
 muchos programas de clientes de correo electrónico.
 
@@ -245,9 +245,4 @@ necesarios.
   .. disqus::
 
 .. _`IMAP`: https://es.wikipedia.org/wiki/Protocolo_de_acceso_a_mensajes_de_Internet
-.. _`email`: https://docs.python.org/es/3.11/library/email.html
-.. _`smtplib`: https://docs.python.org/es/3.11/library/smtplib.html
-.. _`smtpd`: https://docs.python.org/es/3.11/library/smtpd.html
-.. _`imaplib`: https://docs.python.org/es/3.11/library/imaplib.html
-.. _`mailbox`: https://docs.python.org/es/3.11/library/mailbox.html
 .. _`Template`: https://docs.python.org/es/3.11/library/string.html#template-strings

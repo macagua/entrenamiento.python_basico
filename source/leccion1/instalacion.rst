@@ -12,24 +12,24 @@ ciertos recursos para los sistemas operativos más populares:
 Instalando Python en Windows
 ............................
 
-- `Instalando Python en Windows <https://www.youtube.com/watch?v=VTykmP-a2KY>`_.
+- `Instalando Python en Windows <https://es.wikibooks.org/wiki/Python/Instalaci%C3%B3n_de_Python/Python_en_Windows>`_.
 
 
-.. _python_instalacion_mac:
+.. _python_instalacion_macos:
 
-Instalando Python en una Mac
-............................
+Instalando Python en macOS
+..........................
 
-- `Instalando Python en una Mac <https://es.wikibooks.org/wiki/Python/Instalaci%C3%B3n_de_Python/Python_en_Mac_OS_X>`_.
+- `Instalando Python en una macOS <https://es.wikibooks.org/wiki/Python/Instalaci%C3%B3n_de_Python/Python_en_Mac_OS_X>`_.
 
 
 .. _python_instalacion_linux:
 
-Instalando Python en un Linux
-.............................
+Instalando Python en Linux
+...........................
 
 En una distribución estándar Linux dispone por defecto el interprete Python instalado, para
-comprobar la correcta instalación  solamente debería ejecutar el comando en la consola:
+comprobar la correcta instalación solamente debería ejecutar el comando en la consola:
 
 .. code-block:: console
 
@@ -66,7 +66,7 @@ Si le muestra los mensajes anteriores esta correctamente instalado el interprete
 
         sudo apt install -y python3-dev
 
-    De nuevo vuelva a ejecutar en su consola de comando el comando :command:`python3`.
+    De nuevo vuelva a su consola de comando para ejecutar el comando :command:`python3`.
 
 
 ----

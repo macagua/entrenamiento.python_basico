@@ -36,14 +36,14 @@ factores:
   interprete, por mucho tiempo no estaba disponible documentación tipo
   `Javadoc`_ o `diagramas de clases`_ del propio lenguaje por lo cual
   muchas programadores **Python** se acostumbraron a estudiar su código de
-  esta forma, así que le recomiendo que use el interprete ``python`` para
+  esta forma, así que le recomiendo que use el interprete :command:`python` para
   eso.
 
 - Hoy en día existente herramientas que te permiten generar
   documentación desde los códigos fuentes Python como `Sphinx`_.
 
 La forma más fácil es iniciar tu relación con Python simplemente ejecutando
-el comando ``python`` de la siguiente forma:
+el comando :command:`python` de la siguiente forma:
 
 .. code-block:: console
 
@@ -216,7 +216,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     Enter any module name to get more help.  Or, type "modules spam" to search
     for modules whose name or summary contain the string "spam".
 
-Entonces consulte la ayuda del módulo ``os``, ejecutando:
+Entonces consulte la ayuda del módulo :mod:`os`, ejecutando:
 
 .. code-block:: pycon
 
@@ -263,7 +263,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
         (e.g., split and join).
     :
 
-.. tip:: Presione la tecla :keys:`q` para salir de la ayuda del módulo ``os``.
+.. tip:: Presione la tecla :keys:`q` para salir de la ayuda del módulo :mod:`os`.
 
 Seguidamente presione la combinación de tecla :keys:`Crtl+d` para salir de la ayuda.
 
@@ -368,7 +368,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     '/usr/lib/python3.11/os.py'
     >>>
 
-También puede consultar la documentación de la librería ``os`` ejecutando el
+También puede consultar la documentación de la librería :mod:`os` ejecutando el
 siguiente comando:
 
 .. code-block:: pycon
