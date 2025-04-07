@@ -66,8 +66,8 @@ Herramientas comunes de Scaffolding en Python
 ----
 
 
-Ejemplo 1: Scaffolding con paquete Python
-.........................................
+Ejemplo 1: Paquete Python
+.........................
 
 `cookiecutter`_, ofrece varias plantillas para cualquier tipo de proyecto Python.
 
@@ -183,8 +183,8 @@ El generador te preguntará:
 ----
 
 
-Ejemplo 2: Scaffolding con Django
-.................................
+Ejemplo 2: Proyecto Django
+..........................
 
 Por defecto, :ref:`Django <python_django>` incluye un comando para crear un nuevo proyecto y aplicaciones.
 
@@ -257,8 +257,8 @@ Para crear una aplicación dentro del proyecto :ref:`Django <python_django>`, us
 ----
 
 
-Ejemplo 3: Scaffolding con FastAPI
-..................................
+Ejemplo 3: Proyecto FastAPI
+...........................
 
 Puedes usar generadores como `fastapi-code-generator`_ para :ref:`FastAPI <python_fastapi>`, `SQLModel`_,  y `Typer`_
 o montar tu estructura así:
@@ -288,13 +288,64 @@ comando de tu sistema operativo:
 
       .. code-block:: console
 
-          pip3 install fastapi-code-generator
+          pip3 install "fastapi-code-generator==0.5.2"
 
    .. group-tab:: Windows
 
       .. code-block:: console
 
           pip3 install fastapi-code-generator
+
+Usted puede probar la instalación existe, ejecutando el siguiente comando:
+
+.. tabs::
+
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          python3 -c "import fastapi_code_generator ; print(fastapi_code_generator.__package__)"
+
+   .. group-tab:: Windows
+
+      .. code-block:: console
+
+          python3 -c "import fastapi_code_generator ; print(fastapi_code_generator.__package__)"
+
+Si muestra el nombre del módulo ``fastapi_code_generator``, tiene correctamente instalado el módulo.
+Con esto, ya tiene todo listo para continuar.
+
+.. code-block:: console
+
+    fastapi-codegen --help
+
+
+
+.. code-block:: console
+    :class: no-copy
+
+    Usage: fastapi-codegen [OPTIONS]
+
+    ╭─ Options ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+    │    --encoding               -e      TEXT                                                                                 [default: utf-8]                                                                     │
+    │ *  --input                  -i      TEXT                                                                                 [default: None] [required]                                                           │
+    │ *  --output                 -o      PATH                                                                                 [default: None] [required]                                                           │
+    │    --model-file             -m      TEXT                                                                                 [default: None]                                                                      │
+    │    --template-dir           -t      PATH                                                                                 [default: None]                                                                      │
+    │    --model-template-dir             PATH                                                                                 [default: None]                                                                      │
+    │    --enum-field-as-literal          [all|one]                                                                            [default: None]                                                                      │
+    │    --generate-routers       -r                                                                                                                                                                                │
+    │    --specify-tags                   TEXT                                                                                 [default: None]                                                                      │
+    │    --custom-visitor         -c      PATH                                                                                 [default: None]                                                                      │
+    │    --disable-timestamp                                                                                                                                                                                        │
+    │    --output-model-type      -d      [pydantic.BaseModel|pydantic_v2.BaseModel|dataclasses.dataclass|typing.TypedDict|ms  [default: pydantic.BaseModel]                                                        │
+    │                                     gspec.Struct]                                                                                                                                                             │
+    │    --python-version         -p      [3.6|3.7|3.8|3.9|3.10|3.11|3.12]                                                     [default: 3.8]                                                                       │
+    │    --install-completion                                                                                                  Install completion for the current shell.                                            │
+    │    --show-completion                                                                                                     Show completion for the current shell, to copy it or customize the installation.     │
+    │    --help                                                                                                                Show this message and exit.                                                          │
+    ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
 
 ----
 
@@ -307,6 +358,16 @@ Conclusión
 - Puedes usarlo para crear APIs, CLI, librerías, dashboards y más.
 
 - Ideal para mantener orden desde el principio y escalar de forma profesional.
+
+----
+
+.. important::
+    Usted puede descargar el código usado en esta sección, haciendo clic en los
+    siguientes enlaces:
+
+    - :download:`mi_paquete.zip <../../recursos/leccion8/mi_paquete.zip>`.
+
+    - :download:`mi_sitio.zip <../../recursos/leccion8/mi_sitio.zip>`.
 
 
 ----
