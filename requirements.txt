@@ -20,7 +20,7 @@ sphinxcontrib-htmlhelp==2.1.0
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
-urllib3==2.3.0
+urllib3==2.8.0
 
 # https://pypi.org/project/sphinx-immaterial/
 annotated-types==0.7.0
