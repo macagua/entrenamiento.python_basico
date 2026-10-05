@@ -33,7 +33,7 @@ typing-extensions==4.12.2
 
 # sphinx-immaterial[keys] https://pypi.org/project/sphinx-immaterial/
 markdown==3.7
-pymdown-extensions==10.14.3
+pymdown-extensions==11.0.1
 pyyaml==6.0.2
 
 # https://pypi.org/project/ipython/
