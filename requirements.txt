@@ -10,7 +10,7 @@ Jinja2==3.1.6
 MarkupSafe==3.0.2
 packaging==24.2
 Pygments==2.20.0
-requests==2.32.3
+requests==2.33.0
 roman-numerals-py==3.1.0
 snowballstemmer==2.2.0
 Sphinx==8.2.1
