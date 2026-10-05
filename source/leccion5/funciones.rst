@@ -432,8 +432,10 @@ Y se llama de la siguiente forma:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion5/funciones.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`funciones.py <../../recursos/leccion5/funciones.py>`.
 
 
 .. tip::

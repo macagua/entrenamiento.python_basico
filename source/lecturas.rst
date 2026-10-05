@@ -78,6 +78,10 @@ Inmersión al modo interactivo de Python
 
 - `Guía de aprendizaje de Python <https://pyspanishdoc.sourceforge.net/tut/tut.html>`_.
 
+- `ipython - PyPI <https://pypi.org/project/ipython/>`_.
+
+- `bpython - PyPI <https://pypi.org/project/bpython/>`_.
+
 
 .. _lecturas_extras_leccion3:
 
@@ -237,12 +241,14 @@ Programación estructurada
 
 .. _lecturas_extras_leccion6:
 
-Lección 6 - Introspección a la depuración con pdb
--------------------------------------------------
+Lección 6 - Introspección a la depuración de software
+-----------------------------------------------------
 
 - `pdb - The Python Debugger <https://docs.python.org/es/3.11/library/pdb.html>`_.
 
 - `Usando el depurador Python - Python Scientific Lecture Notes (Spanish translation) <https://claudiovz.github.io/scipy-lecture-notes-ES/advanced/debugging/index.html#usando-el-depurador-python>`_.
+
+- `ipdb - PyPI <https://pypi.org/project/ipdb/>`_.
 
 - Ver el anexo :numref:`anexos_N4NtB4r28h0` sobre los *Depurando um programa Python com pdb*.
 

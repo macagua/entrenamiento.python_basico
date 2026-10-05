@@ -506,10 +506,9 @@ Traceback
 El ``traceback`` o *trazado inverso*, es un listado de las funciones en curso de ejecución,
 presentadas cuando sucede un error en tiempo de ejecución. Es común que al trazado inverso
 también se le conozca como *trazado de pila*, porque lista las funciones en el orden en el
-cual son almacenadas en la
-`pila de llamadas <https://es.wikipedia.org/wiki/Pila_(estructura_de_datos)#Pila_de_llamadas>`_.
+cual son almacenadas en la `pila de llamadas`_.
 
-El módulo integrado `traceback`_ incorpora el mismo comportamiento de ``Traceback`` o *trazado
+El módulo integrado :mod:`traceback` incorpora el mismo comportamiento de ``Traceback`` o *trazado
 inverso* ya que extrae, formatea e imprime información acerca de *trazado del stack* de los
 errores y excepciones en Python.
 
@@ -575,4 +574,5 @@ errores y excepciones en Python.
 ..
   .. disqus::
 
-.. _`traceback`: https://docs.python.org/es/3.11/library/traceback.html
+
+.. _`pila de llamadas`: https://es.wikipedia.org/wiki/Pila_(estructura_de_datos)#Pila_de_llamadas

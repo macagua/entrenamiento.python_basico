@@ -16,7 +16,7 @@ el temario de esta lección:
 
    errores
    exceptions
-   poo
+   programacion_orientada_objetos
    herencia
    abstraccion
    polimorfismo

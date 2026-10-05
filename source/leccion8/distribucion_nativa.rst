@@ -24,7 +24,7 @@ Paquete auto-py-to-exe
 
 El paquete `auto-py-to-exe <https://pypi.org/project/auto-py-to-exe/>`_ le permite
 convertir archivos ``.py`` a archivos ``.exe`` usando una simple interfaz gráfica
-de usuario para sistemas operativos Windows/Mac OS X.
+de usuario para sistemas operativos Windows/macOS.
 
 A continuación el siguiente comando le permite instalarlo:
 
@@ -83,13 +83,13 @@ Aquí puede definir lo siguiente:
 
     - Como generar el ``.exe``
 
-    - Opciones especificas de *Windows/Mac OS X*.
+    - Opciones especificas de *Windows/macOS*.
 
     - Opciones especificas de *Windows*.
 
     - Opciones de búsqueda de ensamblaje en paralelo para *Windows* (avanzadas).
 
-    - Opciones especificas de *Mac OS X*.
+    - Opciones especificas de *macOS*.
 
     - Opciones especiales raramente usadas.
 
@@ -129,7 +129,7 @@ de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: Linux
+   .. group-tab:: macOS, Linux, y Windows con WSL
 
       .. code-block:: console
 
@@ -150,7 +150,7 @@ código fuente:
     :linenos:
     :lines: 1-12
 
-Este módulo usa las librerías `threading`_ y `time`_ para pausar la ejecución del modulo
+Este módulo usa las librerías :mod:`threading` y :mod:`time` para pausar la ejecución del modulo
 en dos veces distintas, asi poder apreciar el mensaje que se muestra por la linea de comando.
 
 A continuación se explica la genera de la distribución binara para plataformas Windows y Linux:
@@ -283,6 +283,3 @@ Así de esta forma genera una distribución nativa para plataformas Linux.
 
 ..
   .. disqus::
-
-.. _`time`: https://docs.python.org/es/3.11/library/time.html#time.sleep
-.. _`threading`: https://docs.python.org/es/3.11/library/threading.html#threading.Timer

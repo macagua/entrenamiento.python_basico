@@ -122,8 +122,10 @@ El código anterior muestra el siguiente resultado:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion4/operadores_identidad.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`operadores_identidad.py <../../recursos/leccion4/operadores_identidad.py>`.
 
 
 .. tip::

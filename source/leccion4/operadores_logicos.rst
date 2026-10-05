@@ -96,8 +96,10 @@ A continuación, se presentan algunos ejemplos de su uso:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion4/operadores_logicos.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`operadores_logicos.py <../../recursos/leccion4/operadores_logicos.py>`.
 
 
 .. tip::

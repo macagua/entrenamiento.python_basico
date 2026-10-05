@@ -14,22 +14,26 @@ Según Wikipedia
   mediante tabulador de variables, módulos y atributos; entre otras
   funcionalidades. Es un componente del paquete `SciPy`_."
 
-Para mayor información visite su página principal de ``ipython`` y si necesita instalar
-este programa ejecute el siguiente comando:
+.. tip::
+    Para mayor información visite su página principal de `ipython`_.
+
+Para instalar este paquete ``ipython`` use la herramienta :ref:`pip <python_pip>`
+ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
+comando de tu sistema operativo:
 
 .. tabs::
+
+   .. group-tab:: macOS, Linux, y Windows con WSL
+
+      .. code-block:: console
+
+          sudo apt install -y ipython
 
    .. group-tab:: PIP
 
       .. code-block:: console
 
           pip3 install ipython
-
-   .. group-tab:: Ubuntu/Debian Linux
-
-      .. code-block:: console
-
-          sudo apt install -y ipython
 
    .. group-tab:: Windows
 
@@ -41,7 +45,7 @@ Sustituya el comando :command:`python3` por el comando :command:`ipython3` de la
 
 .. tabs::
 
-   .. group-tab:: Linux
+   .. group-tab:: macOS, Linux, y Windows con WSL
 
     .. code-block:: console
 
@@ -69,14 +73,14 @@ Sustituya el comando :command:`python3` por el comando :command:`ipython3` de la
       .. code-block:: console
           :class: no-copy
 
-          Python 3.11.5 (default, Sep 11 2023, 13:26:23)
+          Python 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
           Type 'copyright', 'credits' or 'license' for more information
-          IPython 7.34.0 -- An enhanced Interactive Python. Type '?' for help.
+          IPython 8.10.0 -- An enhanced Interactive Python. Type '?' for help.
 
               In [1]:
 
 
-Un ejemplo de uso del comando ``help`` es consultar la ayuda del comando
+Un ejemplo de uso del comando :command:`help` es consultar la ayuda del comando
 ``dir`` y se ejecuta de la siguiente forma:
 
 .. code-block:: pycon
@@ -107,7 +111,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
 Entonces presione la tecla :keys:`q` para salir de la ayuda de la función ``dir()``.
 
-De nuevo realice la importación de la :ref:`librería del estándar Python <python_libreria_estandar>` llamada ``os``.
+De nuevo realice la importación de la :ref:`librería del estándar Python <python_libreria_estandar>` llamada :mod:`os`.
 
 .. code-block:: pycon
 
@@ -115,7 +119,7 @@ De nuevo realice la importación de la :ref:`librería del estándar Python <pyt
 
 
 También consultar los detalles acerca del 'objeto' para esto use como ejemplo
-la librería ``os`` ejecutando el siguiente comando:
+el módulo :mod:`os` ejecutando el siguiente comando:
 
 .. code-block:: pycon
 
@@ -153,7 +157,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     (e.g., split and join).
 
 
-Escriba la librería ``os.`` y luego escribe dos **underscore** y presione *dos
+Escriba el módulo ``os.`` y luego escribe dos **underscore** y presione *dos
 veces la tecla tabular* :keys:`Tab` para usar la completado automático del interprete al
 `estilo de completación de lineas de comandos`_ en el shell UNIX/Linux para
 ayudar a la introspección del lenguaje y sus librerías.
@@ -181,7 +185,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
     Out[4]: '/usr/lib/python3.11/os.py'
 
-También puede consultar la documentación de la librería ``os`` de la
+También puede consultar la documentación del módulo :mod:`os` de la
 siguiente forma:
 
 .. code-block:: pycon
@@ -230,7 +234,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
     Out[6]: "os"
 
 
-Y otra forma de consultar la documentación de la librería ``os`` es
+Y otra forma de consultar la documentación del módulo :mod:`os` es
 ejecutando el siguiente comando:
 
 .. code-block:: pycon
@@ -278,7 +282,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
         (e.g., split and join).
     :
 
-Entonces presione la tecla :keys:`q` para salir de la ayuda del módulo ``os``.
+Entonces presione la tecla :keys:`q` para salir de la ayuda del módulo :mod:`os`.
 
 Y para cerrar la sesión con el ``ipython`` ejecute el siguiente comando:
 

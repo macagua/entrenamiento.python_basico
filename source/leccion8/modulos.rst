@@ -16,7 +16,7 @@ El código Python para un módulo nombrado ``funciones`` normalmente reside un
 archivo llamado :file:`utilidades.py`. A continuación un ejemplo de un simple módulo
 llamado :file:`utilidades.py`:
 
-.. literalinclude:: ../../recursos/leccion8/modulos/utilidades.py
+.. literalinclude:: ../../recursos/leccion8/modulos/pipo/utilidades.py
     :language: python
     :linenos:
     :lines: 1-8
@@ -44,7 +44,7 @@ Por ejemplo, al importar el módulo :file:`utilidades.py`, usted necesita coloca
 siguiente sentencia al tope del otro script Python. A continuación un ejemplo de
 un simple módulo llamado :file:`calculo_factura_pipo.py`.
 
-.. literalinclude:: ../../recursos/leccion8/modulos/calculo_factura_pipo.py
+.. literalinclude:: ../../recursos/leccion8/modulos/pipo/calculo_factura_pipo.py
     :language: python
     :linenos:
     :lines: 1-15
@@ -102,9 +102,10 @@ la secuencia siguiente:
 #. Si todas las anteriores fallan, Python busca la ruta predeterminada. En UNIX/Linux,
    la ruta predeterminada normalmente esta ``/usr/local/lib/python/``.
 
-El ruta de búsqueda de módulo es almacenado en el módulo de system ``sys`` como
-la variable ``sys.path``. La variable ``sys.path`` contiene el directorio actual,
-``PYTHONPATH``, y las predeterminadas dependencia de instalación.
+La ruta de búsqueda de módulo es almacenado en el módulo de Python :mod:`sys`, como
+en ``sys.path`` la cual es una lista de cadenas que especifica la ruta de búsqueda de
+los módulos. ``sys.path`` contiene el directorio actual, ``PYTHONPATH``, y las
+predeterminadas dependencia de instalación.
 
 
 .. _python_variable_entorno_path:
@@ -118,7 +119,7 @@ variable ``PATH``.
 
 .. tabs::
 
-   .. group-tab:: Linux
+   .. group-tab:: macOS, Linux, y Windows con WSL
 
       Así es una típica definición de ``PYTHONPATH`` desde un sistema UNIX/Linux, ejecutando el siguiente comando:
 
@@ -185,20 +186,21 @@ sentencia ``global``, se soluciona el problema.
     Usted puede descargar el código usado en esta sección haciendo clic en los
     siguientes enlaces:
 
-    - :download:`utilidades.py <../../recursos/leccion8/modulos/utilidades.py>`.
+    - :download:`utilidades.py <../../recursos/leccion8/modulos/pipo/utilidades.py>`.
 
-    - :download:`calculo_factura_pipo.py <../../recursos/leccion8/modulos/calculo_factura_pipo.py>`.
+    - :download:`calculo_factura_pipo.py <../../recursos/leccion8/modulos/pipo/calculo_factura_pipo.py>`.
 
 
 .. tip::
     Para ejecutar el código :file:`utilidades.py` y :file:`calculo_factura_pipo.py`,
     abra una consola de comando, acceda al directorio donde se encuentra ambos programas:
 
-    ::
+    .. code-block:: console
+      :class: no-copy
 
-        leccion8/
-        ├── utilidades.py
-        └── calculo_factura_pipo.py
+      modulos/
+      ├── utilidades.py
+      └── calculo_factura_pipo.py
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:
 

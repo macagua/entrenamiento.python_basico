@@ -117,7 +117,7 @@ resultante también será correcto en Python 3.0.
 quit
 ~~~~~
 
-Es el método constructor de la clase ``Quitter`` incluida en el módulo ``site`` el
+Es el método constructor de la clase ``Quitter`` incluida en el módulo :mod:`site` el
 cual le permite salir de la consola interactiva Python:
 
 .. code-block:: pycon
@@ -337,7 +337,7 @@ Las clases de tipos *archivos* se describen a continuación:
 file()
 ~~~~~~
 
-El objeto ``file()`` se implementan con el paquete del lenguaje C ``stdio`` y se pueden
+El objeto ``file()`` se implementan con el paquete del *lenguaje C* ``stdio`` y se pueden
 crear con la función interna :ref:`open() <python_fun_open>`. También son el resultado
 de otras funciones y métodos internos, por ejemplo, ``os.popen()`` y ``os.fdopen()`` y
 el método ``makefile()`` de los objetos ``socket``.
@@ -371,8 +371,8 @@ recursos tomados por el manejo del archivo. Eso se hace con la sentencia ``archi
     >>> archivo.close()  # cierra el archivo datos.txt
 
 
-Luego de lo cual no se puede acceder al archivo ``datos.txt``, si intenta una llamada a
-la método :ref:`archivo.read() <python_mtd_read>` devuelve una excepción
+Luego de lo cual no se puede acceder al archivo :file:`datos.txt`, si intenta una llamada
+al método :ref:`archivo.read() <python_mtd_read>` devuelve una excepción
 :ref:`ValueError <python_exception_valueerror>`, porque el archivo está cerrado:
 
 .. code-block:: pycon
@@ -558,7 +558,7 @@ El método ``seek()`` lleva la siguiente nomenclatura:
 
     >>> seek(posicion_actual[, punto_referencia])
 
-A continuación, un ejemplo que escribir y leer el archivo ``datos.txt`` agregando una
+A continuación, un ejemplo que escribir y leer el archivo :file:`datos.txt` agregando una
 lista de lineas al principio del archivo, como al final del archivo:
 
 .. code-block:: pycon

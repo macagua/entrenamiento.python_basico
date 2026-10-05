@@ -171,7 +171,6 @@ A continuación, se presentan algunos ejemplos de su uso:
     Usted puede descargar el código usado en esta sección haciendo clic en el
     siguiente enlace:
 
-
     - :download:`operadores_relacionales.py <../../recursos/leccion3/operadores_relacionales.py>`.
 
 

@@ -6,19 +6,13 @@ Módulo datetime
 .. note::
     **Propósito:** Manipulación de valores de fecha y hora
 
-El módulo `datetime`_ contiene funciones y clases para realizar análisis, formateo y
+El módulo :mod:`datetime` contiene funciones y clases para realizar análisis, formateo y
 aritmética de fecha y hora, por separado y en conjunto.
 
 .. literalinclude:: ../../recursos/leccion10/datetime_date.py
     :language: python
     :linenos:
     :lines: 1-11
-
-El anterior código al ejecutar debe mostrar el siguiente mensaje:
-
-.. code-block:: console
-
-    Fecha de nacimiento: 1980-12-03.
 
 
 .. _python_fun_strftime:
@@ -29,7 +23,7 @@ strftime
 ``strftime`` es un formateador de cadenas, esto formateará un objeto de fecha y hora en
 formato de :ref:`cadena de caracteres <python_str>`.
 
-Los objetos ``date``, ``datetime``, y ``time`` admiten un método ``strftime(format)``,
+Los objetos ``date``, :mod:`datetime`, y :mod:`time` admiten un método ``strftime(format)``,
 para crear una cadena que represente el objeto de fecha y hora bajo el control de una
 :ref:`cadena de caracteres <python_str>` de formato explícito.
 
@@ -37,12 +31,6 @@ para crear una cadena que represente el objeto de fecha y hora bajo el control d
     :language: python
     :linenos:
     :lines: 1-16
-
-El anterior código al ejecutar debe mostrar el siguiente mensaje:
-
-.. code-block:: console
-
-    Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
 
 
 .. _python_fun_strptime:
@@ -54,19 +42,13 @@ strptime
 ``strptime`` es un analizador de :ref:`cadenas <python_str>`, esto convertirá un formato de cadena a un objeto
 de fecha y hora.
 
-El método de clase ``datetime.strptime()`` crea un objeto ``datetime`` a partir de una
+El método de clase ``datetime.strptime()`` crea un objeto :mod:`datetime` a partir de una
 :ref:`cadena de caracteres <python_str>` que representa una fecha y hora y una :ref:`cadena <python_str>` de formato correspondiente.
 
 .. literalinclude:: ../../recursos/leccion10/datetime_strptime.py
     :language: python
     :linenos:
     :lines: 1-15
-
-El anterior código al ejecutar debe mostrar el siguiente mensaje:
-
-.. code-block:: console
-
-    Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
 
 .. comments:
 
@@ -103,17 +85,44 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
     Si tiene la estructura de archivo previa, entonces ejecute los siguientes comandos:
 
+    Para ejecutar el código usando el módulo ``date``, abra una consola de comando, acceda
+    al directorio y ejecute el siguiente comando:
+
     .. code-block:: console
 
         python3 datetime_date.py
+
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    .. code-block:: console
+
+        Fecha de nacimiento: 1980-12-03.
+
+    Para ejecutar el código usando el método ``strftime``, abra una consola de comando, acceda
+    al directorio y ejecute el siguiente comando:
 
     .. code-block:: console
 
         python3 datetime_strftime.py
 
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    .. code-block:: console
+
+        Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
+
+    Para ejecutar el código usando el método ``strptime``, abra una consola de comando, acceda
+    al directorio y ejecute el siguiente comando:
+
     .. code-block:: console
 
         python3 datetime_strptime.py
+
+    El anterior código al ejecutar debe mostrar el siguiente mensaje:
+
+    .. code-block:: console
+
+        Fecha y lugar de nacimiento: 03 de December de 1980 en Maracaibo, Zulia, Venezuela.
 
 
 ----
@@ -133,5 +142,3 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
 
 ..
   .. disqus::
-
-.. _`datetime`: https://docs.python.org/es/3.11/library/datetime.html

@@ -183,8 +183,10 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion4/condicional_if.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+    - :download:`condicional_if.py <../../recursos/leccion4/condicional_if.py>`.
 
 
 .. tip::
