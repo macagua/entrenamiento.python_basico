@@ -4,7 +4,7 @@ babel==2.17.0
 charset-normalizer==3.4.1
 certifi==2025.1.31
 docutils==0.21.2
-idna==3.10
+idna==3.15
 imagesize==1.4.1
 Jinja2==3.1.6
 MarkupSafe==3.0.2
