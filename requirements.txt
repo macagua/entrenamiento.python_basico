@@ -9,7 +9,7 @@ imagesize==1.4.1
 Jinja2==3.1.6
 MarkupSafe==3.0.2
 packaging==24.2
-Pygments==2.19.1
+Pygments==2.20.0
 requests==2.32.3
 roman-numerals-py==3.1.0
 snowballstemmer==2.2.0
