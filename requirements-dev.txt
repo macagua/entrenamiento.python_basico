@@ -10,7 +10,7 @@ identify==2.6.8
 nodeenv==1.9.1
 platformdirs==4.3.6
 pre-commit==4.1.0
-virtualenv==20.29.2
+virtualenv==21.14.9
 
 # https://pypi.org/project/pyupgrade/
 pyupgrade==3.19.1
