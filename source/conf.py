@@ -481,6 +481,8 @@ latex_appendices = [
     "esquema",
     "lecturas",
     "apendices/operadores",
+    "apendices/entornos_virtuales/index",
+    "apendices/pip",
     "apendices/anexos",
     "glosario",
     "copyright",
