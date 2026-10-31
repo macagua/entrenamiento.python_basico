@@ -141,8 +141,8 @@ Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,
 94041, EE.UU.
 
 Una copia de esta licencia en formato de texto se incluye en este paquete dentro del
-directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como el idioma Español
-(LICENSE.es.rst).
+directorio ``docs`` tanto en el idioma Ingles (``LICENSE.rst``) como el idioma Español
+(``LICENSE.es.rst``).
 
 .. _`Covantec R.L`: https://github.com/Covantec
 .. _`Python 3`: https://docs.python.org/es/3.11/
