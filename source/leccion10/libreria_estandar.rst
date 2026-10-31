@@ -93,4 +93,4 @@ La `librería estándar`_ Python 3 incluye los siguientes módulos y librerías:
   .. disqus::
 
 .. _`librería estándar`: https://docs.python.org/es/3.11/library/index.html
-.. _`IDLE`: https://docs.python.org/es/3.11/library/idle.html#idle
+.. _`IDLE`: https://docs.python.org/es/3.11/library/idle.html
