@@ -1,0 +1,53 @@
+/* sphinx-tabs override for sphinx-immaterial palette compatibility.
+   Uses only --md-* variables; no hardcoded colors.
+   Dark mode: [data-md-color-scheme="slate"] (immaterial selector, not data-theme). */
+
+[role="tablist"] {
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.sphinx-tabs-tab {
+    background: transparent;
+    color: var(--md-default-fg-color--light);
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    margin-bottom: -1px;
+    transition: color 0.15s;
+}
+
+.sphinx-tabs-tab:hover {
+    color: var(--md-accent-fg-color);
+}
+
+.sphinx-tabs-tab[aria-selected="true"] {
+    background: var(--md-default-bg-color);
+    color: var(--md-typeset-a-color);
+    border-color: var(--md-default-fg-color--lightest);
+    border-bottom-color: var(--md-default-bg-color);
+    font-weight: 700;
+}
+
+.sphinx-tabs-panel {
+    background: var(--md-default-bg-color);
+    color: var(--md-default-fg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    padding: 1rem;
+    margin: 0;
+}
+
+.sphinx-tabs-panel.code-tab {
+    background: var(--md-code-bg-color);
+    color: var(--md-code-fg-color);
+    padding: 0;
+}
+
+/* slate scheme — no additional overrides needed; --md-* vars already flip */

@@ -334,6 +334,7 @@ html_css_files = [
     "stylesheets/virtual_business_card.css",
     "stylesheets/soporte_profesional.css",
     "stylesheets/sphinx_contributors.css",
+    "stylesheets/sphinx_tabs.css",
     "stylesheets/main/layout/_content.css",
     # "stylesheets/main/layout/_footer.css",
     # 'https://example.com/css/custom.css',
@@ -608,6 +609,9 @@ todo_include_todos = True
 todo_emit_warnings = False
 
 # -- Options for sphinx-tabs extension -------------------------------
+
+# Disable original tabs.css so our override in _static/stylesheets/sphinx_tabs.css is sole source.
+sphinx_tabs_disable_css_loading = True
 
 # If needed, allow additional builders to be considered compatible.
 sphinx_tabs_valid_builders = ["linkcheck"]
