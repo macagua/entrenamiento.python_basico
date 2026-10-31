@@ -69,6 +69,22 @@ Cree un entorno virtual llamado ``venv``, ejecutando el siguiente comando:
 Activar entorno virtual
 -----------------------
 
+Los comandos de activación varían según el sistema operativo y el intérprete de comandos.
+
++-------------+----------------+--------------------------------------+
+|     SO      |   Shell        | Comando de activación                |
++-------------+----------------+--------------------------------------+
+| Windows     | Command Prompt | ruta\\al\\venv\\Scripts\\activate    |
++-------------+----------------+--------------------------------------+
+| Windows     | PowerShell     | .\\ruta\\al\\venv\\Scripts\\Activate |
++-------------+----------------+--------------------------------------+
+| macOS/Linux | Bash source    | ruta/al/venv/bin/activate            |
++-------------+----------------+--------------------------------------+
+| macOS/Linux | Fish source    | ruta/al/venv/bin/activate.fish       |
++-------------+----------------+--------------------------------------+
+| macOS/Linux | PowerShell     | ruta\\al\\venv\\Scripts\\Activate    |
++-------------+----------------+--------------------------------------+
+
 Activar el entorno virtual llamado ``venv``, ejecutando el siguiente comando:
 
 .. tabs::
@@ -83,7 +99,7 @@ Activar el entorno virtual llamado ``venv``, ejecutando el siguiente comando:
 
       .. code-block:: console
 
-          source C:\venv\bin\activate
+          source C:\venv\Scripts\activate
 
 
 Desactivar entorno virtual
@@ -116,8 +132,11 @@ De esta forma, puedes tener un directorio común para almacenar diversos :ref:`e
 
 Con esto, ya tiene todo listo para continuar.
 
-
-----
+El uso del módulo ``venv`` de Python para crear un entorno virtual es una buena
+práctica que te ayuda a gestionar las dependencias y a evitar conflictos entre
+proyectos. Mantiene tu entorno de desarrollo limpio, organizado y más fácil de
+mantener. Ahora que ya sabes cómo crear, activar y utilizar entornos virtuales,
+estás listo para desarrollar aplicaciones en Python con confianza y claridad.
 
 
 .. raw:: html

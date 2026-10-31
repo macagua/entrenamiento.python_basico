@@ -69,7 +69,7 @@ el siguiente comando:
           mkdir C:\virtualenv
 
 
-Cree un entorno virtual llamado :command:`python3`, ejecutando el siguiente comando:
+Cree un entorno virtual llamado ``python3``, ejecutando el siguiente comando:
 
 .. tabs::
 
@@ -89,7 +89,23 @@ Cree un entorno virtual llamado :command:`python3`, ejecutando el siguiente coma
 Activar entorno virtual
 -----------------------
 
-Activar el entorno virtual llamado :command:`python3`, ejecutando el siguiente comando:
+Los comandos de activación varían según el sistema operativo y el intérprete de comandos.
+
++-------------+----------------+-----------------------------------------------------+
+|     SO      |   Shell        |                Comando de activación                |
++-------------+----------------+-----------------------------------------------------+
+| Windows     | Command Prompt | ruta\\al\\virtualenv\\python3\\Scripts\\activate    |
++-------------+----------------+-----------------------------------------------------+
+| Windows     | PowerShell     | .\\ruta\\al\\virtualenv\\python3\\Scripts\\Activate |
++-------------+----------------+-----------------------------------------------------+
+| macOS/Linux | Bash source    | ruta/al/virtualenv/python3/bin/activate             |
++-------------+----------------+-----------------------------------------------------+
+| macOS/Linux | Fish source    | ruta/al/virtualenv/python3/bin/activate.fish        |
++-------------+----------------+-----------------------------------------------------+
+| macOS/Linux | PowerShell     | ruta\\al\\virtualenv\\python3\\Scripts\\Activate    |
++-------------+----------------+-----------------------------------------------------+
+
+Activar el entorno virtual llamado ``python3``, ejecutando el siguiente comando:
 
 .. tabs::
 
@@ -135,24 +151,37 @@ requiera la versión ``3.9`` y y al otro proyecto que requiera la versión ``3.1
 caso puede gestionar la instalación de las dos versiones de Python con la herramienta `pyenv`_
 y luego crear dos :ref:`entornos virtuales <python_entornos_virtuales>` para cada version, con los siguientes comandos:
 
-Crear y activar un entorno virtual para la versión Python ``3.9``, ejecutando el siguiente comando:
+Crear un entorno virtual para la versión Python ``3.9``, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    virtualenv --python ~/.pyenv/shims/python3.9 ~/virtualenv/python39 && source ~/virtualenv/python39/bin/activate
+    virtualenv --python ~/.pyenv/shims/python3.9 ~/virtualenv/python39
 
-
-Crear y activar un entorno virtual para la versión Python ``3.11``, ejecutando el siguiente comando:
+Activar el entorno virtual para la versión Python ``3.9``, ejecutando el siguiente comando:
 
 .. code-block:: console
 
-    virtualenv --python ~/.pyenv/shims/python3.11 ~/virtualenv/python311 && source ~/virtualenv/python311/bin/activate
+    source ~/virtualenv/python39/bin/activate
+
+
+Crear un entorno virtual para la versión Python ``3.11``, ejecutando el siguiente comando:
+
+.. code-block:: console
+
+    virtualenv --python ~/.pyenv/shims/python3.11 ~/virtualenv/python311
+
+
+Activar el entorno virtual para la versión Python ``3.11``, ejecutando el siguiente comando:
+
+.. code-block:: console
+
+    source ~/virtualenv/python311/bin/activate
 
 
 En estos casos anteriores, hemos creado dos :ref:`entornos virtuales <python_entornos_virtuales>` como ``python39`` y ``python311``,
 esto le permite crear diversos :ref:`entornos virtuales <python_entornos_virtuales>` para proyectos, con el nombre que quiera,
 podría ser un entorno virtual para llamado ``acme_inc`` para un cliente llamado **ACME Industry**
-o otro entorno virtual llamado ``test-django`` para unas pruebas de un proyecto de Django.
+o otro entorno virtual llamado ``test-django`` para unas pruebas de un proyecto de :ref:`Django <python_django>`.
 
 .. tip::
 
