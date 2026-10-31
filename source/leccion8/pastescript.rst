@@ -220,8 +220,6 @@ A continuación se muestran algunos esqueletos útiles:
   - `TracLegosScript`_, TracLegos es un software diseñado para ofrecer plantillas
     para proyectos Trac y asiste con la creación de proyecto trac.
 
-  - `trac_project`_, Plantilla de proyecto Trac de software de código abierto.
-
 
 Recomendaciones
 ...............
@@ -259,7 +257,7 @@ Referencias
 
 .. _`PasteScript`: https://pypi.org/project/PasteScript
 .. _`paste.deploy`: https://pypi.org/project/PasteDeploy
-.. _`Odoo`: https://www.odoo.com/
+.. _`Odoo`: https://www.odoo.com/es
 .. _`django-project-templates`: https://pypi.org/project/django-project-templates
 .. _`fez.djangoskel`: https://pypi.org/project/fez.djangoskel
 .. _`django-harness`: https://pypi.org/project/django-harness
@@ -274,7 +272,6 @@ Referencias
 .. _`BlastOff`: https://pypi.org/project/BlastOff/
 .. _`Trac`: https://pypi.org/project/Trac
 .. _`TracLegosScript`: https://trac-hacks.org/wiki/TracLegosScript
-.. _`trac_project`: https://trac-hacks.org/browser/traclegosscript/anyrelease/example/oss
 .. _`Esqueletos de proyectos Zope/Plone`: https://plone-spanish-docs.readthedocs.io/es/latest/python/skel_proyectos_plone.html
 .. _`Esqueletos de proyectos Odoo (Antiguo OpenERP)`: https://plone-spanish-docs.readthedocs.io/es/latest/python/skel_proyectos_openerp.html
 .. _`PIP`: https://plone-spanish-docs.readthedocs.io/es/latest/python/distribute_pip.html

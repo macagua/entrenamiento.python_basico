@@ -56,7 +56,7 @@ La licencia de Python es administrada por :ref:`Python Software Foundation <pyth
 
 - `Aprenda más sobre la licencia <https://docs.python.org/es/3.11/license.html>`_.
 
-- `Licencia Python en OSI <https://opensource.org/license/python-2-0/>`_.
+- `Licencia Python en OSI <https://opensource.org/license/Python-2.0>`_.
 
 - `Conozca más sobre la Fundación <https://www.python.org/psf-landing/>`_.
 
@@ -226,7 +226,7 @@ comunitario del proyecto Python en Sudamérica.
 **Comunidad(es) de Python en Ecuador**
     Somos una comunidad independiente, conformada por entusiastas de Python, con la filosofía
     común de que el conocimiento debe ser libre. No lucramos con ningún evento, y esperamos
-    llegar a todos aquellos que desean aprender. Más información visite https://python.ec/
+    llegar a todos aquellos que desean aprender. Más información visite https://www.meetup.com/python-ecuador/
 
 **Comunidad(es) de Python en Perú**
     Comunidad de estudiantes, profesionales e interesados en tener un espacio donde conversar,

@@ -404,7 +404,7 @@ json - Codificador y decodificador JSON
 
 - `json - JavaScript Object Notation <https://pymotw.com/3/json/index.html#module-json>`_.
 
-- `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/reading-and-writing-json-to-a-file-in-python/>`_.
+- `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/python/reading-and-writing-json-to-a-file-in-python/>`_.
 
 
 ----
