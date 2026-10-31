@@ -129,7 +129,7 @@ de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 

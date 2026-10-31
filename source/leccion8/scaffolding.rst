@@ -83,7 +83,7 @@ comando de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
@@ -197,7 +197,7 @@ comando de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
@@ -284,7 +284,7 @@ comando de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
@@ -300,7 +300,7 @@ Usted puede probar la instalación existe, ejecutando el siguiente comando:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 

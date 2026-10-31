@@ -23,7 +23,7 @@ comando de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
@@ -39,13 +39,13 @@ comando de tu sistema operativo:
 
       .. code-block:: console
 
-          pip3 install ipython
+          pip3.exe install ipython
 
 Sustituya el comando :command:`python3` por el comando :command:`ipython3` de la siguiente forma:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
     .. code-block:: console
 

@@ -16,7 +16,7 @@ comando de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: Linux, y WSL
 
       .. code-block:: console
 
@@ -30,7 +30,7 @@ Para verificar que el módulo ``venv`` se ha instalado correctamente, escriba:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
@@ -53,7 +53,7 @@ Cree un entorno virtual llamado ``venv``, ejecutando el siguiente comando:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
@@ -73,7 +73,7 @@ Activar el entorno virtual llamado ``venv``, ejecutando el siguiente comando:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
@@ -93,7 +93,7 @@ Para desactivar entorno virtual creado, con el siguiente comando:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
