@@ -64,20 +64,20 @@ Sustituya el comando :command:`python3` por el comando :command:`ipython3` de la
 
    .. group-tab:: Windows
 
-      .. code-block:: console
+    .. code-block:: console
 
           ipython3
 
-     Si ejecuto el comando anterior, este da como resultado lo siguiente:
+    Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
-      .. code-block:: console
-          :class: no-copy
+    .. code-block:: console
+        :class: no-copy
 
-          Python 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
-          Type 'copyright', 'credits' or 'license' for more information
-          IPython 8.10.0 -- An enhanced Interactive Python. Type '?' for help.
+        Python 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+        Type 'copyright', 'credits' or 'license' for more information
+        IPython 8.10.0 -- An enhanced Interactive Python. Type '?' for help.
 
-              In [1]:
+            In [1]:
 
 
 Un ejemplo de uso del comando :command:`help` es consultar la ayuda del comando
