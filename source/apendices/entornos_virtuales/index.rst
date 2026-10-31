@@ -45,9 +45,6 @@ A continuación, se describe cada una de estas, como parte del temario de esta l
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../../_templates/partials/soporte_profesional.html
 

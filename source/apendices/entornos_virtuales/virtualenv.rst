@@ -163,9 +163,6 @@ o otro entorno virtual llamado ``test-django`` para unas pruebas de un proyecto 
 Con esto, ya tiene todo listo para continuar.
 
 
-----
-
-
 .. raw:: html
    :file: ../../_templates/partials/soporte_profesional.html
 
