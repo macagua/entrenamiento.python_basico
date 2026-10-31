@@ -3,20 +3,21 @@
 -r requirements.txt
 
 # https://pypi.org/project/pre-commit/
-cfgv==3.4.0
-distlib==0.3.9
-filelock==3.17.0
-identify==2.6.8
-nodeenv==1.9.1
-platformdirs==4.3.6
-pre-commit==4.1.0
-virtualenv==21.14.9
+cfgv==3.5.0
+distlib==0.4.4
+filelock==4.2.5
+identify==2.6.20
+nodeenv==1.11.1
+platformdirs==4.14.0
+pre-commit==4.7.0
+python-discovery==1.9.0
+virtualenv==21.15.2
 
 # https://pypi.org/project/pyupgrade/
-pyupgrade==3.19.1
-tokenize-rt==6.1.0
+pyupgrade==3.22.0
+tokenize-rt==6.2.0
 
 # https://pypi.org/project/sphinx-lint/
 polib==1.2.0
-regex==2024.11.6
-sphinx-lint==1.0.0
+regex==2026.9.29
+sphinx-lint==1.0.2

@@ -1,40 +1,41 @@
 # https://pypi.org/project/Sphinx/
 alabaster==1.0.0
-babel==2.17.0
-charset-normalizer==3.4.1
-certifi==2025.1.31
-docutils==0.21.2
-idna==3.10
-imagesize==1.4.1
+babel==2.18.0
+certifi==2026.10.23
+charset_normalizer==3.5.2
+docutils==0.22.4
+idna==3.20
+imagesize==2.0.1
 Jinja2==3.1.6
-MarkupSafe==3.0.2
-packaging==24.2
-Pygments==2.19.1
-requests==2.32.3
-roman-numerals-py==3.1.0
-snowballstemmer==2.2.0
-Sphinx==8.2.1
+markupsafe==3.0.4
+packaging==26.3
+Pygments==2.21.0
+requests==2.34.2
+roman-numerals==4.1.0
+snowballstemmer==3.1.1
+sphinx==9.0.4
 sphinxcontrib-applehelp==2.0.0
 sphinxcontrib-devhelp==2.0.0
 sphinxcontrib-htmlhelp==2.1.0
-sphinxcontrib-jsmath==1.0.1
+sphinxcontrib-jsmath==2.0.0
 sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
-urllib3==2.3.0
+urllib3==2.8.0
 
 # https://pypi.org/project/sphinx-immaterial/
-annotated-types==0.7.0
+annotated-types==0.8.0
 appdirs==1.4.4
-pydantic==2.10.6
-pydantic-core==2.27.2
-pydantic-extra-types==2.10.2
-sphinx-immaterial==0.13.0
-typing-extensions==4.12.2
+pydantic==2.14.2
+pydantic-core==2.50.2
+pydantic-extra-types==2.11.1
+sphinx-immaterial==0.13.9
+typing-extensions==4.16.0
+typing-inspection==0.4.4
 
 # sphinx-immaterial[keys] https://pypi.org/project/sphinx-immaterial/
-markdown==3.7
-pymdown-extensions==10.14.3
-pyyaml==6.0.2
+markdown==3.11.2
+pymdown-extensions==12.3
+pyyaml==6.0.3
 
 # https://pypi.org/project/ipython/
 # asttokens==3.0.0
@@ -53,12 +54,12 @@ pyyaml==6.0.2
 # wcwidth==0.2.13
 
 # https://pypi.org/project/sphinxcontrib-email/
-lxml==5.3.1
+lxml==6.1.3
 sphinxcontrib-email==0.3.6
 
 # https://pypi.org/project/yasfb/
-cssselect==1.2.0
-pyquery==2.0.1
+cssselect==1.6.0
+pyquery==2.1.0
 yasfb==0.8.0
 
 # https://pypi.org/project/sphinx-disqus/
@@ -69,7 +70,7 @@ yasfb==0.8.0
 # sphinxcontrib-quizdown @ git+https://github.com/bonartm/sphinxcontrib-quizdown.git@d9f24a7a2305ad5b196e06597b1779c9414d1d85
 
 # https://pypi.org/project/sphinx_contributors/
-sphinx_contributors==0.2.7
+sphinx_contributors==0.3.0
 
 # https://pypi.org/project/sphinx-tabs/
-sphinx-tabs==3.4.7
+sphinx-tabs==3.5.0
