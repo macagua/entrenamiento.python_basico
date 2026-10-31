@@ -529,7 +529,7 @@ errores y excepciones en Python.
 
     - :download:`excepciones_integradas.py <../../recursos/leccion9/excepciones_integradas.py>`.
 
-    - :download:`excepciones_propias.py <../../recursos/leccion9/excepciones_propias.py>`.
+    - :download:`excepciones_venezolanas.py <../../recursos/leccion9/excepciones_venezolanas.py>`.
 
     - :download:`errores_propios.py <../../recursos/leccion9/errores_propios.py>`.
 
@@ -542,7 +542,7 @@ errores y excepciones en Python.
 
         leccion9/
         ├── excepciones_integradas.py
-        ├── excepciones_propias.py
+        ├── excepciones_venezolanas.py
         └── errores_propios.py
 
     Si tiene la estructura de archivo previa, entonces ejecute el siguiente comando:

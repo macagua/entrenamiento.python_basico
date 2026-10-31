@@ -1,5 +1,13 @@
-"""Módulo que demuestra como lanzar excepciones propias."""
-from excepciones_propias import *
+"""Módulo que demuestra como lanzar excepciones propias Venezolanas."""
+from excepciones_venezolanas import (
+    CaraETablaError,
+    ConoDeLaMadreError,
+    HijuEPutaError,
+    MaracuchoError,
+    MaduroError,
+    PuesError,
+    VergaError,
+)
 
 
 # Excepción ConoDeLaMadreError
