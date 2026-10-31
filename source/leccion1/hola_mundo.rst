@@ -49,14 +49,14 @@ Ejecutar un programa en Windows
 
 Cree un directorio llamado :file:`proyectos` la unidad ``C:\`` y dentro
 de este, cree un archivo de texto plano con el siguiente nombre
-:file:`holamundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>`
+:file:`hola_mundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>`
 respectivamente.
 
 Luego ejecute desde la consola de ``MS-DOS`` el siguiente comando:
 
 .. code-block:: console
 
-    C:\Python311\python3 C:\proyectos\holamundo.py
+    C:\Python311\python3 C:\proyectos\hola_mundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -91,7 +91,7 @@ Ejecutar un programa en macOS
 
 #. Haga clic en ``Guardar como``.
 
-#. En el campo Guardar como: escriba :file:`holamundo.py`.
+#. En el campo Guardar como: escriba :file:`hola_mundo.py`.
 
 #. Seleccione la carpeta :file:`Documentos` y la carpeta de archivos :file:`proyectos`.
 
@@ -111,9 +111,9 @@ Ejecutar un programa en macOS
 
 #. Ejecute el comando :command:`cd proyectos` y presione la tecla :keys:`Enter`.
 
-#. Ejecute el comando :command:`ls` y presione la tecla :keys:`Enter` y usted debería ver el archivo :file:`holamundo.py`.
+#. Ejecute el comando :command:`ls` y presione la tecla :keys:`Enter` y usted debería ver el archivo :file:`hola_mundo.py`.
 
-#. Para ejecutar el programa, escriba el siguiente comando :command:`python3 holamundo.py`
+#. Para ejecutar el programa, escriba el siguiente comando :command:`python3 hola_mundo.py`
    y presione la tecla :keys:`Enter`.
 
 #. Usted debe ver la línea *Hola Mundo*.
@@ -128,13 +128,13 @@ Ejecutar un programa en Linux
 
 Cree un directorio llamado :file:`proyectos` el ``home`` de su usuario
 y dentro de este, cree un archivo de texto plano con el siguiente
-nombre :file:`holamundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>` respectivamente.
+nombre :file:`hola_mundo.py` y escriba la sintaxis de :ref:`Python 3 <python3_hola_mundo>` respectivamente.
 
 Luego desde la consola de comando ejecute el siguiente comando:
 
 .. code-block:: console
 
-    python3 ~/proyectos/holamundo.py
+    python3 ~/proyectos/hola_mundo.py
 
 Usted debe ver la línea *Hola Mundo*.
 
@@ -145,16 +145,16 @@ Enhorabuena, usted ha ejecutado su primer programa Python.
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic:
 
-    - :download:`holamundo.py <../../recursos/leccion1/holamundo.py>`.
+    - :download:`hola_mundo.py <../../recursos/leccion1/hola_mundo.py>`.
 
 
 .. tip::
-    Para ejecutar el código :file:`holamundo.py`, abra una consola de comando, acceda al
+    Para ejecutar el código :file:`hola_mundo.py`, abra una consola de comando, acceda al
     directorio donde se encuentra el mismo, y ejecute el siguiente comando:
 
     .. code-block:: console
 
-        python3 holamundo.py
+        python3 hola_mundo.py
 
 
 ----
