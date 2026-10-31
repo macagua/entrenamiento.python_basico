@@ -17,7 +17,7 @@ Autores
 
 Todas esta documentación es licencia por:
 
-* Copyright © 2017 - 2025 **Leonardo J. Caballero G.** Todos los derechos reservados.
+* Copyright © 2017 - 2026 **Leonardo J. Caballero G.** Todos los derechos reservados.
 
   * :email:`Leonardo J. Caballero G. <leonardocaballero@gmail.com>`
 
