@@ -45,10 +45,11 @@ los siguientes comando:
 ::
 
   $ sudo apt update && sudo apt upgrade -y
-  $ sudo apt install -y python3-dev python3-pip python3-virtualenv python3-setuptools git
+  $ sudo apt install -y python3-dev python3-pip python3-setuptools git
   $ sudo apt install -y texlive texlive-base texlive-latex-base texlive-extra-utils \
                         texlive-font-utils texlive-fonts-recommended texlive-latex-extra \
                         texlive-latex-recommended texlive-lang-spanish dvi2ps dvipng latexmk
+  $ sudo pip3 install virtualenv
 
 
 Descargar repositorio
@@ -68,7 +69,7 @@ comando:
 ::
 
   $ cd ~/entrenamiento.python_basico
-  $ virtualenv --python /usr/bin/python3 venv
+  $ virtualenv --python=/usr/bin/python3 venv
   $ source ./venv/bin/activate
 
 Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente comando:
