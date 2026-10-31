@@ -265,37 +265,37 @@ html_theme_options = {
         {
             "icon": "fontawesome/brands/linkedin",
             "link": "https://linkedin.com/in/leonardojcaballerog",
-            "name": "My Linkedin",
+            "name": "Mi Linkedin",
         },
         {
             "icon": "fontawesome/brands/twitter",
             "link": "https://twitter.com/macagua",
-            "name": "My Twitter",
+            "name": "Mi Twitter",
         },
         {
             "icon": "fontawesome/brands/github",
             "link": "https://github.com/macagua",
-            "name": "My Github",
+            "name": "Mi Github",
         },
         {
             "icon": "fontawesome/brands/gitlab",
             "link": "https://gitlab.com/macagua",
-            "name": "My Gitlab",
+            "name": "Mi Gitlab",
         },
         {
             "icon": "fontawesome/brands/bitbucket",
             "link": "https://bitbucket.org/macagua",
-            "name": "My Bitbucket",
+            "name": "Mi Bitbucket",
         },
         {
             "icon": "fontawesome/brands/telegram",
-            "link": "https://t.me/leonardojcaballerog",
-            "name": "My Telegram",
+            "link": "https://t.me/macagua",
+            "name": "Mi Telegram",
         },
         # {
         #     "icon": "fontawesome/brands/whatsapp",
         #     "link": "https://wa.me/00504445556677?text=Hola%20Ing.%20Leonardo%20🙂,%20vi%20tu%20pagina%20web%20de%20aprender%20a%20programar%20Python%20y%20quisiera%20conocer%20mas%20de%20tus%20servicios%20de%20asesoría%20para%20programar%20en%20el%20lenguaje",
-        #     "name": "My WhatsApp",
+        #     "name": "Mi WhatsApp",
         # },
         {
             "icon": "material/rss-box",
