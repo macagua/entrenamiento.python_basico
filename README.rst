@@ -78,6 +78,18 @@ Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente coman
 
   (venv)$ pip install -r requirements-dev.txt
 
+Ademas instale los hooks del paquete ``pre-commit``, ejecutando el siguiente comando:
+
+::
+
+  (venv)$ pre-commit install-hooks
+
+Ejecute las validaciones de los hooks del paquete ``pre-commit``, ejecutando el siguiente comando:
+
+::
+
+  (venv)$ pre-commit run
+
 
 Recursos del entrenamiento
 ==========================

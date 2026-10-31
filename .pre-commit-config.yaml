@@ -4,28 +4,28 @@ default_language_version:
     python: python3.11
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v6.0.0
     hooks:
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
 -   repo: https://github.com/psf/black
-    rev: 22.8.0
+    rev: 26.10.1
     hooks:
     -   id: black
 -   repo: https://github.com/asottile/blacken-docs
-    rev: 1.19.1
+    rev: 1.20.0
     hooks:
     -   id: blacken-docs
         additional_dependencies:
         - black==22.12.0
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.1
+    rev: v3.22.0
     hooks:
     -   id: pyupgrade
         args: [--py311-plus]
 -   repo: https://github.com/sqlfluff/sqlfluff
-    rev: 3.3.1
+    rev: 4.5.0
     hooks:
     -   id: sqlfluff-lint
         args: [ '--dialect=tsql' ]
