@@ -12,18 +12,12 @@ que no sean :term:`Egg`, y puede instalar desde repositorios de control de versi
 Instalación
 -----------
 
-Instalar la herramienta :ref:`pip <python_pip>`, ejecute el siguiente comando:
-
-.. code-block:: console
-
-    sudo apt install -y python3-pip
-
 Para instalar este paquete ``pip`` ejecute el siguiente comando, el cual a continuación
 se presentan el correspondiente comando de tu sistema operativo:
 
 .. tabs::
 
-   .. group-tab:: macOS, Linux, y Windows con WSL
+   .. group-tab:: macOS, Linux, y WSL
 
       .. code-block:: console
 
@@ -80,7 +74,7 @@ Si ejecuto el comando anterior, este da como resultado lo siguiente:
 
 .. code-block:: console
 
-    pip 25.0.1 from /usr/bin/lib/python3.11/site-packages/pip (python 3.11)
+    pip 26.2.2 from /usr/bin/lib/python3.11/site-packages/pip (python 3.11)
 
 Si muestra el numero de la versión instalada de :ref:`pip <python_pip>`, tiene correctamente instalada
 la paquete.
@@ -174,7 +168,7 @@ Agregue el siguiente contenido:
 
 .. code-block:: console
 
-    cookiecutter==2.6.0
+    cookiecutter==2.7.1
 
 Guarde el archivo y procede a ejecutar la herramienta :ref:`pip <python_pip>`, con el parámetro ``-r``
 seguido de la ruta absoluta o relativa del archivo previamente creado.
@@ -203,28 +197,27 @@ Si ejecuto el comando anterior, debería mostrar algo parecido al siguiente mens
 .. code-block:: console
     :class: no-copy
 
-    arrow==1.3.0
-    binaryornot==0.4.4
-    certifi==2025.1.31
-    chardet==5.2.0
-    charset-normalizer==3.4.1
-    click==8.1.8
-    cookiecutter==2.6.0
-    idna==3.10
+    arrow==1.4.0
+    binaryornot==0.6.0
+    certifi==2026.10.23
+    charset-normalizer==3.5.2
+    click==8.5.0
+    cookiecutter==2.7.1
+    idna==3.20
     Jinja2==3.1.6
-    markdown-it-py==3.0.0
-    MarkupSafe==3.0.2
+    markdown-it-py==4.2.0
+    MarkupSafe==3.0.4
     mdurl==0.1.2
-    Pygments==2.19.1
-    python-dateutil==2.9.0.post0
-    python-slugify==8.0.4
-    PyYAML==6.0.2
-    requests==2.32.3
-    rich==13.9.4
+    Pygments==2.21.0
+    python-dateutil==3.0.0
+    python-slugify==9.1.3
+    PyYAML==6.0.3
+    requests==2.34.2
+    rich==15.0.0
     six==1.17.0
     text-unidecode==1.3
-    types-python-dateutil==2.9.0.20241206
-    urllib3==2.3.0
+    tzdata==2026.6
+    urllib3==2.8.0
 
 Usted puede actualizar el archivo ``requirements.txt`` con el resultado de la ejecución el comando
 ``pip3 freeze`` ejecutando el siguiente comando:
