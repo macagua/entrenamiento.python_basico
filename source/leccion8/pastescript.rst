@@ -176,21 +176,21 @@ A continuación se muestran algunos esqueletos útiles:
 - **Esqueletos de proyectos Django**:
 
   .. note::
-      `Django`_, es un Framework Web Python, de propósito general.
+      :ref:`Django <python_django>`, es un Framework Web Python, de propósito general.
 
   - `django-project-templates`_, plantillas Paster para crear proyectos
-    Django.
+    :ref:`Django <python_django>`.
 
   - `fez.djangoskel`_, es una colección de plantillas Paster para crear
     aplicaciones Django como :term:`paquetes Egg`.
 
   - `django-harness`_, es una aplicación destinada a simplificar las
     tareas típicas relacionadas con la creación de un sitio web hechos
-    con Django, el mantenimiento de varias instalaciones (local, producción,
+    con :ref:`Django <python_django>`, el mantenimiento de varias instalaciones (local, producción,
     etc) y cuidando su instalación global y su estructura de "esqueleto"
     actualizado del sitio de manera fácil.
 
-  - `lfc-skel`_, Provee una plantilla para crear una aplicación `django-lfc`_ CMS.
+  - `lfc-skel`_, Provee una plantilla para crear una aplicación `django-lfc`_ CMS de :ref:`Django <python_django>`.
 
 - **Esqueletos de proyectos Pylons**:
 
@@ -260,7 +260,6 @@ Referencias
 .. _`PasteScript`: https://pypi.org/project/PasteScript
 .. _`paste.deploy`: https://pypi.org/project/PasteDeploy
 .. _`Odoo`: https://www.odoo.com/
-.. _`Django`: https://www.djangoproject.com/
 .. _`django-project-templates`: https://pypi.org/project/django-project-templates
 .. _`fez.djangoskel`: https://pypi.org/project/fez.djangoskel
 .. _`django-harness`: https://pypi.org/project/django-harness
