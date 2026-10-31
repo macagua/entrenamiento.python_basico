@@ -35,7 +35,7 @@ se presentan el correspondiente comando de tu sistema operativo:
   No olvidar que estos paquetes han sido instalados con el entorno virtual que
   previamente usted activo, eso quiere decir que los paquetes previamente
   instalados con `easy_install`_ están instalados en el
-  directorio :file:`~/virtualenv/venv/lib/python3.x/site-packages/` en ves del
+  directorio :file:`~/venv/lib/python3.x/site-packages/` en ves del
   directorio de su versión de Python de sistema :file:`/usr/lib/python3.x/site-packages/`
 
 Al finalizar la instalación podrá opcionalmente consultar cuales plantillas
@@ -90,7 +90,7 @@ El anterior código al ejecutar debe mostrar el siguiente mensaje:
           ./mipaquetepython/mipaquetepython/__init__.py
         Copying setup.cfg to ./mipaquetepython/setup.cfg
         Copying setup.py_tmpl to ./mipaquetepython/setup.py
-      Running /home/macagua/virtualenv/venv/bin/python setup.py egg_info
+      Running /home/macagua/venv/bin/python setup.py egg_info
 
 Usted puede verificar el paquete previamente creado y observará como este
 paquete básico ha habilitado el `Setuptools`_.

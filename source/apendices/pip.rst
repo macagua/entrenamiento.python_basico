@@ -4,8 +4,8 @@
 Python package installer - pip
 ==============================
 
-`pip`_, es el instalador de paquetes de Python. Se integra con la herramienta
-:ref:`virtualenv <python_entornos_virtuales>`, no hace instalaciones parciales,
+`pip`_, es el instalador de paquetes de Python. Se integra con el módulo
+:ref:`venv <python_modulo_venv>`, no hace instalaciones parciales,
 puede guardar el estado del paquete para reproducirlo, puede instalar desde fuentes
 que no sean :term:`Egg`, y puede instalar desde repositorios de control de versiones.
 
@@ -146,14 +146,6 @@ comando con el parámetro ``--timeout`` habilitado para el tiempo de espera:
 
 .. code-block:: console
 
-    virtualenv --python /usr/bin/python3 venv
-
-.. code-block:: console
-
-    source ./venv/bin/activate
-
-.. code-block:: console
-
     pip3 install -U pip && pip3 install cookiecutter --timeout 120
 
 También puede gestionar una lista de instalación de paquetes y sus versiones para indicar
@@ -184,9 +176,47 @@ una salida de la versión.
 
     cookiecutter -V
 
-Luego de la instalación puede ejecuta el comando :command:`pip3 freeze` el cual ofrece una salida de
-paquetes instalados en formato de archivos `requirements <https://pip.pypa.io/en/stable/user_guide/#requirements-files>`_.
-Los paquetes se enumeran en un ordenan de forma tal que no distingue entre mayúsculas y minúsculas.
+El comando :command:`pip list` mostrará todos los paquetes instalados en el entorno virtual:
+
+.. code-block:: console
+
+    pip list
+
+Si ejecuto el comando anterior, debería mostrar algo parecido al siguiente mensaje:
+
+.. code-block:: console
+    :class: no-copy
+
+    Package            Version
+    ------------------ ----------
+    arrow              1.4.0
+    binaryornot        0.6.0
+    certifi            2026.10.23
+    charset-normalizer 3.5.2
+    click              8.5.0
+    cookiecutter       2.7.1
+    idna               3.20
+    Jinja2             3.1.6
+    markdown-it-py     4.2.0
+    MarkupSafe         3.0.4
+    mdurl              0.1.2
+    pip                23.0.1
+    Pygments           2.21.0
+    python-dateutil    3.0.0
+    python-slugify     9.1.3
+    PyYAML             6.0.3
+    requests           2.34.2
+    rich               15.0.0
+    setuptools         66.1.1
+    six                1.17.0
+    text-unidecode     1.3
+    tzdata             2026.6
+    urllib3            2.8.0
+
+
+El comando :command:`pip freeze` generará una lista similar de los paquetes instalados,
+pero la salida utiliza el formato que espera el comando :command:`pip install`.
+Una convención habitual es incluir esta lista en un archivo `requirements.txt <https://pip.pypa.io/en/stable/user_guide/#requirements-files>`_.
 
 .. code-block:: console
 
@@ -226,8 +256,7 @@ Usted puede actualizar el archivo ``requirements.txt`` con el resultado de la ej
 
     pip3 freeze > requirements.txt
 
-Así de esta forma congela las versiones usadas para el proceso de instalación de sus paquetes Python.
-
+Así de esta forma ``congela`` las versiones usadas para el proceso de instalación de sus paquetes Python.
 
 Con esto, ya tiene todo listo para continuar.
 
@@ -243,9 +272,9 @@ Con esto, ya tiene todo listo para continuar.
 
 
 .. tip::
-    Para ejecutar el archivo :file:`requirements.txt`, abra una consola de comando, active el entorno
-    virtual Python, y te ubicas en el directorio donde descargo el archivo, entonces ejecute el siguiente
-    comando:
+    Para ejecutar el archivo :file:`requirements.txt`, abra una consola de comando, active el
+    :ref:`entorno virtual Python <python_entornos_virtuales>`, y se ubicas en el directorio
+    donde descargo el archivo, entonces ejecute el siguiente comando:
 
     .. code-block:: console
 
