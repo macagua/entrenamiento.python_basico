@@ -154,7 +154,7 @@ Condicional if
 
 - `Python - Tipos básicos <http://mundogeek.net/archivos/2008/01/17/python-tipos-basicos/>`_.
 
-- `Operadores básicos de Python <http://codigoprogramacion.com/cursos/tutoriales-python/operadores-basicos-de-python.html>`_.
+- `Operadores Básicos en Python con ejemplos <https://www.freecodecamp.org/espanol/news/operadores-basicos-en-python-con-ejemplos/>`_.
 
 - `Sentencias IF <https://docs.python.org/es/3.11/tutorial/controlflow.html#if-statements>`_.
 
@@ -178,7 +178,7 @@ Bucle while
 
 - `Introducción a Bucles 'while' <https://docs.python.org/es/3.11/tutorial/introduction.html#primeros-pasos-hacia-la-programacion>`_.
 
-- `Ciclo while en Python <http://codigoprogramacion.com/cursos/tutoriales-python/ciclo-while-en-python.html>`_.
+- `Ciclo while en Python. Cómo crear, escribir y usar un while en Python <https://www.programarya.com/Cursos/Python/Ciclos/Ciclo-while>`_.
 
 - Ver el anexo :numref:`anexos_u6Hqs0bL_Ew` sobre los *bucles While*.
 
@@ -302,7 +302,7 @@ Distribución de Software
 
 - `Using PyInstaller to Easily Distribute Python Applications - Real Python <https://realpython.com/pyinstaller-python/>`_.
 
-- `PyInstaller - How to Turn Your Python Code into an Exe on Windows <https://www.blog.pythonlibrary.org/2021/05/27/pyinstaller-how-to-turn-your-python-code-into-an-exe-on-windows/>`_.
+- `PyInstaller - How to Turn Your Python Code into an Exe on Windows <https://blog.pythonlibrary.org/2021/05/27/pyinstaller-how-to-turn-your-python-code-into-an-exe-on-windows/>`_.
 
 
 
@@ -377,7 +377,7 @@ locale - Servicios de internacionalización
 
 - `Formatting Python Dates According to Locale <https://www.skybert.net/python/formatting-python-dates-according-to-locale/>`_.
 
-- `The C or POSIX locale <https://www.ibm.com/docs/en/aix/7.1?topic=locale-c-posix>`_.
+- `The C or POSIX locale <https://www.ibm.com/docs/en/aix/7.1.0?topic=locale-c-posix>`_.
 
 - `What Is a Locale <https://docs.oracle.com/cd/E19253-01/817-2521/overview-39/index.html>`_.
 

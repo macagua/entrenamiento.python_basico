@@ -168,9 +168,9 @@ Internet Relay Chat - IRC
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Existen muchos canales relacionados con Python en la red Internet Relay Chat (IRC) de Freenode. Todos
-los canales esta disponibles en el servidor de IRC en `Freenode <https://webchat.freenode.net/?chan=#help>`_. Para
+los canales esta disponibles en el servidor de IRC en `Freenode <https://irc.com/?chan=>`_. Para
 conectarse al servidor IRC use *irc.freenode.net* o puede usar la
-`interfaz web de chat IRC de Freenode <https://webchat.freenode.net/>`_.
+`interfaz web de chat IRC de Freenode <https://irc.com/>`_.
 
 Para preguntas cortas, usted puede obtener ayuda inmediata visitando el canal ``#python``. Usted
 necesitará registrar su apodo con FreeNode, usando la guiá de
@@ -221,7 +221,7 @@ comunitario del proyecto Python en Sudamérica.
 **Comunidad(es) de Python en Colombia**
     Somos una comunidad enfocada en extender en el territorio nacional el uso y aprendizaje de
     las distintas tecnologías Python y sus numerosas aplicaciones. Más información visite
-    https://www.python.org.co/
+    https://python.org.co/
 
 **Comunidad(es) de Python en Ecuador**
     Somos una comunidad independiente, conformada por entusiastas de Python, con la filosofía
@@ -231,7 +231,7 @@ comunitario del proyecto Python en Sudamérica.
 **Comunidad(es) de Python en Perú**
     Comunidad de estudiantes, profesionales e interesados en tener un espacio donde conversar,
     preguntar e intercambiar ideas todo acerca del lenguaje de programación Python. Más
-    información visite https://www.facebook.com/groups/495963587131551/
+    información visite https://python.pe/
 
 **Comunidad(es) de Python en Paraguay**
     Las comunidades de Python están presentes en todo el mundo, con el objeto de apoyar a los

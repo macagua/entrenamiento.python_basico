@@ -257,7 +257,7 @@ Referencias
 
 .. _`PasteScript`: https://pypi.org/project/PasteScript
 .. _`paste.deploy`: https://pypi.org/project/PasteDeploy
-.. _`Odoo`: https://www.odoo.com/es
+.. _`Odoo`: https://www.odoo.com/es/
 .. _`django-project-templates`: https://pypi.org/project/django-project-templates
 .. _`fez.djangoskel`: https://pypi.org/project/fez.djangoskel
 .. _`django-harness`: https://pypi.org/project/django-harness
