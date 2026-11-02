@@ -131,7 +131,7 @@ pygments_style = "sphinx"
 # A string of reStructuredText that will be included at the end of every
 # source file that is read.
 rst_epilog = """
-.. _`CodigoFacilito.com`: https://www.codigofacilito.com/
+.. _`CodigoFacilito.com`: https://codigofacilito.com/
 .. |psf| replace:: Python Software Foundation
 """
 
@@ -299,7 +299,7 @@ html_theme_options = {
         # },
         {
             "icon": "material/rss-box",
-            "link": "https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/rss.xml",
+            "link": "https://entrenamiento-python-basico.readthedocs.io/es/latest/rss.xml",
             "name": "RSS Feed",
         },
     ],
@@ -651,7 +651,7 @@ email_automode = True
 # -- Options for yasfb extension ---------------------------------------------
 
 # Set the Feed Base Url.
-# feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3/"
+feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3/"
 
 # Set the Feed Author Name.
 # feed_author = publisher
