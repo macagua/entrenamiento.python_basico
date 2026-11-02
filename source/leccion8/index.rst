@@ -20,7 +20,7 @@ A continuación el temario de esta lección:
    paquetes
    distribucion
    distribucion_nativa
-   scaffolding
+   scaffolding/index
    pastescript
 
 
