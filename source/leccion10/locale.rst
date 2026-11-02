@@ -122,9 +122,6 @@ Obtener el valor de la variable de entorno ``LANG`` en base a la configuración 
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

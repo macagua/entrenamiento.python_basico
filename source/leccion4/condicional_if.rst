@@ -208,9 +208,6 @@ A continuación, se presenta un ejemplo del uso de condicionales ``if``:
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

@@ -193,9 +193,6 @@ También se incluye como un *huevo de pascua*, el cual se puede encontrar, desde
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

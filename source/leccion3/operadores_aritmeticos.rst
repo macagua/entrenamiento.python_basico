@@ -272,9 +272,6 @@ por el operador del lado derecho y devuelve el resto.
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

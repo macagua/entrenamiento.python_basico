@@ -947,9 +947,6 @@ y :ref:`distutils <python_modulo_distutils>`, ejecute el comando siguiente:
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

@@ -261,9 +261,6 @@ En la sentencia :ref:`print <python_sent_print>` se pueden usar el formato de im
     entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

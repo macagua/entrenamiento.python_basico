@@ -253,9 +253,6 @@ Llamar al método ``hablar`` de cada objeto, este muestra los siguientes mensaje
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

@@ -151,9 +151,6 @@ contiene las importaciones del paquete Python llamado ``tostadas_pipo``:
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

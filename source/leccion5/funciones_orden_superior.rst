@@ -350,9 +350,6 @@ junto con el mismo módulo Python ":file:`os.py`".
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

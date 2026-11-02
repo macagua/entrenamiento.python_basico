@@ -270,9 +270,6 @@ a ``Supervisor`` primero por que ese aparece primero de izquierda a derecha.
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

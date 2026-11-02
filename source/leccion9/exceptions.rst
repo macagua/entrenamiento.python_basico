@@ -498,9 +498,6 @@ Las siguientes excepciones son las realmente lanzadas.
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

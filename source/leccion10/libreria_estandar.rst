@@ -83,9 +83,6 @@ La `librería estándar`_ Python 3 incluye los siguientes módulos y librerías:
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

@@ -524,9 +524,6 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
     entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

@@ -13,9 +13,6 @@ Listas de comprensión y la librería estándar
    email
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

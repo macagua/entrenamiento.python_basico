@@ -78,9 +78,6 @@ Si le muestra los mensajes anteriores esta correctamente instalado el interprete
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
