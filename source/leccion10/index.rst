@@ -11,7 +11,6 @@ Listas de comprensión y la librería estándar
    datetime
    locale
    email
-   json
 
 
 ----
