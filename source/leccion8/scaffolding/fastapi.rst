@@ -108,7 +108,6 @@ De esta manera, puedes generar un proyecto FastAPI listo para ser usado y desple
 ..
   .. disqus::
 
-.. _`cookiecutter`: https://pypi.org/project/cookiecutter/
 .. _`fastapi-code-generator`: https://pypi.org/project/fastapi-code-generator/
 .. _`SQLModel`: https://sqlmodel.tiangolo.com/
 .. _`Typer`: https://typer.tiangolo.com/

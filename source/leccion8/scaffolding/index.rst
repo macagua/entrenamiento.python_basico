@@ -99,9 +99,3 @@ Conclusión
 
 ..
   .. disqus::
-
-.. _`cookiecutter`: https://pypi.org/project/cookiecutter/
-.. _`cookiecutter-pypackage`: https://github.com/audreyfeldroy/cookiecutter-pypackage
-.. _`fastapi-code-generator`: https://pypi.org/project/fastapi-code-generator/
-.. _`SQLModel`: https://sqlmodel.tiangolo.com/
-.. _`Typer`: https://typer.tiangolo.com/
