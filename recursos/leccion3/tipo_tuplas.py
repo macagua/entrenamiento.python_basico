@@ -38,10 +38,8 @@ print(f"Nombre de la BD: {conexion_completa[0][3]}")
 print(f"Puerto de conexión: {conexion_completa[1]}")
 print(f"Tiempo de espera en conexión: {conexion_completa[2]}")
 
-print(
-    """\nMás información acerca de MySQL y Python \
-https://pymysql.readthedocs.io/en/latest/"""
-)
+print("""\nMás información acerca de MySQL y Python \
+https://pymysql.readthedocs.io/en/latest/""")
 
 print("\nIterar tupla con función enumerate")
 print("==================================\n")

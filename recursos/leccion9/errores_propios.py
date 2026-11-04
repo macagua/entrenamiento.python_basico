@@ -1,4 +1,5 @@
 """Módulo que demuestra como lanzar excepciones propias Venezolanas."""
+
 from excepciones_venezolanas import (
     CaraETablaError,
     ConoDeLaMadreError,
@@ -8,7 +9,6 @@ from excepciones_venezolanas import (
     PuesError,
     VergaError,
 )
-
 
 # Excepción ConoDeLaMadreError
 try:

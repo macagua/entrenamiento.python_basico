@@ -1,7 +1,6 @@
 import os.path
 import sys
 
-
 RUTA_BASE = os.path.dirname(__file__)
 RUTA_ARCHIVO = os.path.join(RUTA_BASE, "numeros.txt")
 linea1, linea2 = 1, 3
