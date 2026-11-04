@@ -46,5 +46,7 @@ mensaje2 = "Sucesión de Fibonacci"
 print(mensaje2)
 print("=" * len(mensaje2))
 
+# print("La sucesión Fibonacci hasta 10 es:", imprime_fibonacci(10))
 # print(f"La sucesión Fibonacci hasta 10 es: {imprime_fibonacci(10)}")
+# print("La sucesión Fibonacci hasta 50 es:", devuelve_fibonacci(50))
 print(f"La sucesión Fibonacci hasta 50 es: {devuelve_fibonacci(50)}")

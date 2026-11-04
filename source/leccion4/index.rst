@@ -21,7 +21,6 @@ A continuación el temario de esta lección:
    operadores_logicos
    bucle_while
    bucle_for
-   iteradores
 
 
 ----

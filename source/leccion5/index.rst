@@ -18,11 +18,6 @@ A continuación el temario de esta lección:
 
    programacion_estructurada
    funciones
-   funciones_avanzadas
-   funciones_recursivas
-   funciones_orden_superior
-   funciones_integradas
-   decoradores
 
 
 ----
