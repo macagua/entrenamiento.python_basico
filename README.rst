@@ -4,8 +4,9 @@
 Entrenamiento "Programación en Python - Nivel básico"
 =========================================================
 
-Repositorio de manuales y recursos del entrenamiento "Programación en `Python`_ - Nivel
-básico".
+Repositorio de manuales y recursos del entrenamiento "Programación en `Python 3.11`_ - Nivel
+básico"_ realizado por la empresa `Covantec R.L`_ actualmente mantenido por
+`Leonardo J. Caballero G.`_.
 
 .. contents :: :local:
 
@@ -44,8 +45,8 @@ los siguientes comando:
 
 ::
 
-  $ sudo apt install python-pip python-setuptools git
-  $ sudo pip install virtualenv
+  $ sudo apt update && sudo apt upgrade -y
+  $ sudo apt install -y python3-dev python3-pip python3-setuptools git
 
 
 Descargar repositorio
@@ -64,8 +65,8 @@ comando:
 
 ::
 
-  $ cd $HOME/entrenamiento.python_basico
-  $ virtualenv --python=/usr/bin/python2.7 venv
+  $ cd ~/entrenamiento.python_basico
+  $ python3 -m venv ./venv
   $ source ./venv/bin/activate
 
 Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente comando:
@@ -74,18 +75,30 @@ Luego instale dependencias del paquete ``Sphinx``, ejecutando el siguiente coman
 
   (venv)$ pip install -r requirements.txt
 
+Ademas instale los hooks del paquete ``pre-commit``, ejecutando el siguiente comando:
+
+::
+
+  (venv)$ pre-commit install-hooks
+
+Ejecute las validaciones de los hooks del paquete ``pre-commit``, ejecutando el siguiente comando:
+
+::
+
+  (venv)$ pre-commit run --all
+
 
 Recursos del entrenamiento
 ==========================
 
-La herramienta Sphinx le permite generar los recursos usado en el entrenamiento, en diversos
+La herramienta ``Sphinx`` le permite generar los recursos usado en el entrenamiento, en diversos
 formatos, actualmente se tiene bien soportado los siguientes:
 
 
 Formato HTML
 ------------
 
-Usted puede generar la documentación en HTML del módulo *1, 2, 3, 4, 5, 6, 7, 8, 9, 10*; ejecute
+Usted puede generar la documentación en HTML de los módulos *1, 2, 3, 4, 5, 6, 7, 8, 9, 10*; ejecute
 los siguientes comando:
 
 ::
@@ -115,16 +128,18 @@ registrando un `ticket de soporte`_.
 Licencia
 ========
 
-Esta obra está licenciada bajo la licencia Creative Commons Atribución-CompartirIgual
-3.0 Venezuela. Para ver una copia de esta licencia, visite
-https://creativecommons.org/licenses/by-sa/3.0/ve/ o envíe una carta a Creative Commons,
-444 Castro Street, Suite 900, Mountain View, California, 94041, EE.UU.
+Esta obra está licenciada bajo la licencia Creative Commons
+Atribución-CompartirIgual 3.0 Venezuela. Para ver una copia de esta licencia,
+visite https://creativecommons.org/licenses/by-sa/3.0/ve/ o envíe una carta a
+Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,
+94041, EE.UU.
 
 Una copia de esta licencia en formato de texto se incluye en este paquete dentro del
-directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como el idioma Español
-(LICENSE.es.rst).
+directorio ``docs`` tanto en el idioma Ingles (``LICENSE.rst``) como el idioma Español
+(``LICENSE.es.rst``).
 
 .. _`Covantec R.L`: https://github.com/Covantec
-.. _`Python`: https://docs.python.org/
+.. _`Leonardo J. Caballero G.`: https://www.linkedin.com/in/leonardojcaballerog/
+.. _`Python 3.11`: https://docs.python.org/es/3.11/
 .. _`entrenamiento.python_basico`: https://github.com/Covantec/entrenamiento.python_basico
 .. _`ticket de soporte`: https://github.com/Covantec/entrenamiento.python_basico/issues/new
