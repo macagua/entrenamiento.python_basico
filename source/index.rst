@@ -10,11 +10,6 @@ Programación en Python 3 - Nivel básico
 Repositorio de manuales y recursos del entrenamiento **"Programación en** `Python 3.11`_ -
 **Nivel básico"**.
 
-.. warning::
-   Si esta buscando los manuales y recursos del entrenamiento **Programación en Python 2.7 - Nivel básico** visite el siguiente enlace:
-   `https://entrenamiento-python-basico.readthedocs.io/es/latest/ <https://entrenamiento-python-basico.readthedocs.io/es/latest/>`_.
-
-
 .. note::
 
     Desde lo básico con explicaciones simples pero detalladas.
@@ -26,6 +21,11 @@ Repositorio de manuales y recursos del entrenamiento **"Programación en** `Pyth
    de incluir las partes más importantes de lo que enseñamos
    en la narrativa no puede considerarse completa sin la
    palabra hablada.
+
+.. warning::
+   Si esta buscando los manuales y recursos del entrenamiento **Programación en Python 2.7 - Nivel básico** visite el siguiente enlace:
+   `https://entrenamiento-python-basico.readthedocs.io/es/2.7/ <https://entrenamiento-python-basico.readthedocs.io/es/2.7/>`_.
+
 
 
 .. toctree::
