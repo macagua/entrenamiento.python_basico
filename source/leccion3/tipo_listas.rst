@@ -394,7 +394,7 @@ en un :ref:`diccionario <python_dict>`, lineas en un archivo, ...):
 *Iterar sobre una lista*
 
 Para separar una :ref:`cadena <python_str>` en frases, los valores pueden separarse con la función
-integrada ``split()``.
+integrada :ref:`split() <python_fun_split>`.
 
 .. code-block:: pycon
 

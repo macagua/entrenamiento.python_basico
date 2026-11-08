@@ -305,7 +305,6 @@ Distribución de Software
 - `PyInstaller - How to Turn Your Python Code into an Exe on Windows <https://blog.pythonlibrary.org/2021/05/27/pyinstaller-how-to-turn-your-python-code-into-an-exe-on-windows/>`_.
 
 
-
 Scaffolding en proyectos Python
 ...............................
 

@@ -130,9 +130,6 @@ de Python.
 archivos.
 
 
-----
-
-
 .. raw:: html
    :file: _templates/partials/soporte_profesional.html
 

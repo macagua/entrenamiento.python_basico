@@ -10,7 +10,7 @@ cada uno con su propio conjunto independiente de paquetes de Python instalados e
 Instalación
 -----------
 
-Para instalar este módulo ``venv`` use la herramienta :ref:`pip <python_pip>`
+Para instalar este módulo :mod:`venv` use la herramienta :ref:`pip <python_pip>`
 ejecutando el siguiente comando, el cual a continuación se presentan el correspondiente
 comando de tu sistema operativo:
 
@@ -26,7 +26,7 @@ comando de tu sistema operativo:
 
       Ya esta incluido en el instalador de Python
 
-Para verificar que el módulo ``venv`` se ha instalado correctamente, escriba:
+Para verificar que el módulo :mod:`venv` se ha instalado correctamente, escriba:
 
 .. tabs::
 
@@ -43,7 +43,7 @@ Para verificar que el módulo ``venv`` se ha instalado correctamente, escriba:
           python3 -m venv --help
 
 
-Si muestra la versión del módulo ``venv``, tiene correctamente instalado el módulo.
+Si muestra la versión del módulo :mod:`venv`, tiene correctamente instalado el módulo.
 
 
 Crear entorno virtual
@@ -132,7 +132,7 @@ De esta forma, puedes tener un directorio común para almacenar diversos :ref:`e
 
 Con esto, ya tiene todo listo para continuar.
 
-El uso del módulo ``venv`` de Python para crear un entorno virtual es una buena
+El uso del módulo :mod:`venv` de Python para crear un entorno virtual es una buena
 práctica que te ayuda a gestionar las dependencias y a evitar conflictos entre
 proyectos. Mantiene tu entorno de desarrollo limpio, organizado y más fácil de
 mantener. Ahora que ya sabes cómo crear, activar y utilizar entornos virtuales,
