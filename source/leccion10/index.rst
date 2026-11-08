@@ -1,12 +1,11 @@
 .. _python_leccion10:
 
-Listas de comprensión y la librería estándar
-============================================
+La librería estándar
+=====================
 
 .. toctree::
    :maxdepth: 2
 
-   listas_comprension
    libreria_estandar
    datetime
    locale

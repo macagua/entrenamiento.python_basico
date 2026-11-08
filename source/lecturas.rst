@@ -344,18 +344,8 @@ Programación orientada a objetos
 
 .. _lecturas_extras_leccion10:
 
-Lección 10 - Listas de comprensión y la librería estándar
----------------------------------------------------------
-
-
-.. _lecturas_extras_leccion10_list_compre:
-
-Listas de comprensión
-.....................
-
-- `Listas por comprensión - Scipy lecture notes <https://claudiovz.github.io/scipy-lecture-notes-ES/intro/language/control_flow.html#listas-por-comprension>`_.
-
-- Ver el anexo :numref:`anexos_aqnjB3dydik` sobre *Comprensión de Listas*.
+Lección 10 - La librería estándar
+---------------------------------
 
 
 .. _lecturas_extras_leccion10_datetime:
@@ -392,19 +382,6 @@ email - Correo electrónico
 - `email: Ejemplos <https://docs.python.org/es/3/library/email.examples.html>`_.
 
 - `Sending Emails With Python <https://realpython.com/python-send-email/>`_.
-
-
-
-.. _lecturas_extras_leccion10_json:
-
-json - Codificador y decodificador JSON
-.......................................
-
-- `json - Codificador y decodificador JSON <https://docs.python.org/es/3.11/library/json.html>`_.
-
-- `json - JavaScript Object Notation <https://pymotw.com/3/json/index.html#module-json>`_.
-
-- `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/python/reading-and-writing-json-to-a-file-in-python/>`_.
 
 
 ----
