@@ -1,4 +1,4 @@
-from clases import Destreza, JefeCuadrilla, Obrero
+from clases import JefeCuadrilla, Obrero
 
 # Una instancia de Objeto JefeCuadrilla
 jefe_cuadrilla1 = JefeCuadrilla(

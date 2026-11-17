@@ -14,13 +14,13 @@ class Persona:
     def __str__(self):
         """Devuelve una cadena representativa de Persona"""
         doc = self.__doc__[25:34] if self.__doc__ else "Persona"
-        return f"{doc}: {str(self.cedula)}, {self.nombre} {self.apellido}, {self.getGenero(self.sexo)}."
+        return f"{doc}: {str(self.cedula)}, {self.nombre} {self.apellido}, {self.obtener_genero(self.sexo)}."
 
     def hablar(self, mensaje):
         """Mostrar mensaje de saludo de Persona"""
         return mensaje
 
-    def getGenero(self, sexo):
+    def obtener_genero(self, sexo):
         """Mostrar el genero de la Persona"""
         genero = ("Masculino", "Femenino")
         if sexo == "M":
