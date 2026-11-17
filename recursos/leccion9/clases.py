@@ -128,9 +128,9 @@ class Obrero(Persona, Destreza):
     def obtener_patriotismo(self, patriota):
         """Mostrar el patriotismo de un Obrero"""
         patriotismo = ("RODILLA EN TIERRA", "APATRIDA")
-        if patriota == True:
+        if patriota:
             return patriotismo[0]
-        elif patriota == False:
+        elif not patriota:
             return patriotismo[1]
         else:
             return "NINI"

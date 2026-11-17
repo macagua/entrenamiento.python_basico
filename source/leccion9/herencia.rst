@@ -31,7 +31,7 @@ se crea una clase base llamada ``Persona``. A continuación un ejemplo de la cla
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
     :linenos:
-    :lines: 4-36
+    :lines: 4-32
 
 
 En el ejemplo previo, es donde empieza a crear una clase (lo hace con la palabra
@@ -95,7 +95,7 @@ El siguiente es un ejemplo de la clase ``Supervisor`` que derivada de la clase
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
     :linenos:
-    :lines: 39-64
+    :lines: 34-54
 
 Ahora, se creará una nueva clase ``Supervisor`` con los mismos métodos y atributos
 como la clase ``Persona``, pero con dos nuevos atributos ``rol`` y ``tareas``.
@@ -200,7 +200,7 @@ la declaración de la subclase:
 .. literalinclude:: ../../recursos/leccion9/clases.py
     :language: python
     :linenos:
-    :lines: 39-121
+    :lines: 76-136
 
 
 .. _python_poo_herencia_multiple_mro:
